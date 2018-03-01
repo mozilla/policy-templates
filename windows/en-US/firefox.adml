@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0" >
+  <displayName/>
+  <description/>
+  <resources >
+    <stringTable >
+      <string id="SUPPORTED_WINXPSP2" >Microsoft Windows XP SP2 or later</string>
+      <string id="BlockAboutAddons" >Block About Addons</string>
+      <string id="BlockAboutAddons_Explain" >Block access to the Add-ons Mananger (about:addons).</string>      
+      <string id="BlockAboutConfig">Block About Config</string>
+      <string id="BlockAboutConfig_Explain">Blocks access to the about:config page.</string>
+      <string id="BlockAboutProfiles">Block About Profiles</string>
+      <string id="BlockAboutProfiles_Explain">Blocks access to the about:profiles page.</string>
+      <string id="BlockAboutSupport">Block About Support</string>
+      <string id="BlockAboutSupport_Explain">Blocks access to the about:support page.</string>
+      <string id="BlockSetDesktopBackground">Block Set Desktop Background</string>
+      <string id="BlockSetDesktopBackground_Explain">Prevents usage of the &quot;Set Image as Desktop Background&quot; feature.</string>
+      <string id="CreateMasterPassword">Create Master Password</string>
+      <string id="CreateMasterPassword_Explain">If false, removes access to create a master password.</string>
+      <string id="DisableAppUpdate">Disable Update</string>
+      <string id="DisableAppUpdate_Explain">Prevent the browser from updating.</string>
+      <string id="DisableDeveloperTools">Disable Developer Tools</string>
+      <string id="DisableDeveloperTools_Explain">Prevents access to developer tools.</string>
+      <string id="DisableFirefoxScreenshots">Disable Firefox Screenshots</string>
+      <string id="DisableFirefoxScreenshots_Explain">Prevents usage of the Firefox Screenshots feature.</string>
+      <string id="DisableFirefoxStudies">Disable Firefox Studies</string>
+      <string id="DisableFirefoxStudies_Explain">Prevents Firefox from running studies.</string>
+      <string id="DisableFormHistory">Disable Form History</string>
+      <string id="DisableFormHistory_Explain">Don't remember search and form history.</string>
+      <string id="DisablePocket">Disable Pocket</string>
+      <string id="DisablePocket_Explain">Prevents ability to save webpages to Pocket.</string>
+      <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
+      <string id="DisplayBookmarksToolbar_Explain">Causes the bookmarks toolbar to be displayed by default.</string>
+      <string id="DisplayMenuBar">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Explain">Causes the menu bar to be displayed by default.</string>
+      <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
+      <string id="DontCheckDefaultBrowser_Explain">Don't check for the default browser on startup.</string>
+      <string id="RememberPasswords">Rember Passwords</string>
+      <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

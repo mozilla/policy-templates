@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitions revision="1.0" schemaVersion="1.0" >
+  <policyNamespaces >
+    <target prefix="firefox" namespace="Mozilla.Policies.Firefox" />
+    <using prefix="Mozilla" namespace="Mozilla.Policies" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <supportedOn >
+    <definitions >
+      <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)" />
+    </definitions>
+  </supportedOn>
+  <policies >
+    <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="BlockAboutConfig" class="Both" displayName="$(string.BlockAboutConfig)" explainText="$(string.BlockAboutConfig_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutConfig" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="BlockAboutSupport" class="Both" displayName="$(string.BlockAboutSupport)" explainText="$(string.BlockAboutSupport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutSupport" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="BlockSetDesktopBackground" class="Both" displayName="$(string.BlockSetDesktopBackground)" explainText="$(string.BlockSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockSetDesktopBackground" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="CreateMasterPassword" class="Both" displayName="$(string.CreateMasterPassword)" explainText="$(string.CreateMasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CreateMasterPassword" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisableDeveloperTools" class="Both" displayName="$(string.DisableDeveloperTools)" explainText="$(string.DisableDeveloperTools_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableDeveloperTools" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisableFirefoxScreenshots" class="Both" displayName="$(string.DisableFirefoxScreenshots)" explainText="$(string.DisableFirefoxScreenshots_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxScreenshots" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisableFirefoxStudies" class="Both" displayName="$(string.DisableFirefoxStudies)" explainText="$(string.DisableFirefoxStudies_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxStudies" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisableFormHistory" class="Both" displayName="$(string.DisableFormHistory)" explainText="$(string.DisableFormHistory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFormHistory" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisablePocket" class="Both" displayName="$(string.DisablePocket)" explainText="$(string.DisablePocket_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisablePocket" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisplayBookmarksToolbar" class="Both" displayName="$(string.DisplayBookmarksToolbar)" explainText="$(string.DisplayBookmarksToolbar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisplayBookmarksToolbar" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DisplayMenuBar" class="Both" displayName="$(string.DisplayMenuBar)" explainText="$(string.DisplayMenuBar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisplayMenuBar" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="DontCheckDefaultBrowser" class="Both" displayName="$(string.DontCheckDefaultBrowser)" explainText="$(string.DontCheckDefaultBrowser_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DontCheckDefaultBrowser" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+    <policy name="RememberPasswords" class="Both" displayName="$(string.RememberPasswords)" explainText="$(string.RememberPasswords_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="RememberPasswords" >
+      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue >
+        <string >1</string>
+      </enabledValue>
+      <disabledValue >
+        <string >0</string>
+      </disabledValue>
+    </policy>
+  </policies>
+</policyDefinitions>
