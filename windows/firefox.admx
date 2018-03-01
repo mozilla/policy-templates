@@ -30,6 +30,9 @@
     <category displayName="$(string.Flash_group)" name="Flash">
       <parentCategory ref="Permissions"/>
     </category>
+    <category displayName="$(string.Bookmarks_group)" name="Bookmarks">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
@@ -222,6 +225,116 @@
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
         <list id="FlashBlockDesc" key="Software\Policies\Mozilla\Firefox\Flash\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Bookmark1)" name="Bookmark1" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
+      <parentCategory ref="Bookmarks" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="BookmarkTitle" valueName="Title" required="true" />
+        <text id="BookmarkURL" valueName="URL" required="true" />
+        <text id="BookmarkFolder" valueName="Folder" />
+        <text id="BookmarkFavicon" valueName="Favicon" />
+        <enum id="BookmarkPlacement" valueName="Placement">
+          <item displayName="$(string.BookmarkPlacementToolbar)">
+            <value>
+              <string>toolbar</string>
+            </value>
+          </item>
+          <item displayName="$(string.BookmarkPlacementFolder)">
+            <value>
+              <string>folder</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Bookmark2)" name="Bookmark2" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)" >
+      <parentCategory ref="Bookmarks" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="BookmarkTitle" valueName="Title" required="true" />
+        <text id="BookmarkURL" valueName="URL" required="true" />
+        <text id="BookmarkFolder" valueName="Folder" />
+        <text id="BookmarkFavicon" valueName="Favicon" />
+        <enum id="BookmarkPlacement" valueName="Placement">
+          <item displayName="$(string.BookmarkPlacementToolbar)">
+            <value>
+              <string>toolbar</string>
+            </value>
+          </item>
+          <item displayName="$(string.BookmarkPlacementFolder)">
+            <value>
+              <string>folder</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Bookmark3)" name="Bookmark3" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)" >
+      <parentCategory ref="Bookmarks" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="BookmarkTitle" valueName="Title" required="true" />
+        <text id="BookmarkURL" valueName="URL" required="true" />
+        <text id="BookmarkFolder" valueName="Folder" />
+        <text id="BookmarkFavicon" valueName="Favicon" />
+        <enum id="BookmarkPlacement" valueName="Placement">
+          <item displayName="$(string.BookmarkPlacementToolbar)">
+            <value>
+              <string>toolbar</string>
+            </value>
+          </item>
+          <item displayName="$(string.BookmarkPlacementFolder)">
+            <value>
+              <string>folder</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Bookmark4)" name="Bookmark4" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)" >
+      <parentCategory ref="Bookmarks" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="BookmarkTitle" valueName="Title" required="true" />
+        <text id="BookmarkURL" valueName="URL" required="true" />
+        <text id="BookmarkFolder" valueName="Folder" />
+        <text id="BookmarkFavicon" valueName="Favicon" />
+        <enum id="BookmarkPlacement" valueName="Placement">
+          <item displayName="$(string.BookmarkPlacementToolbar)">
+            <value>
+              <string>toolbar</string>
+            </value>
+          </item>
+          <item displayName="$(string.BookmarkPlacementFolder)">
+            <value>
+              <string>folder</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Bookmark5)" name="Bookmark5" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5s" presentation="$(presentation.Bookmark)" >
+      <parentCategory ref="Bookmarks" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="BookmarkTitle" valueName="Title" required="true" />
+        <text id="BookmarkURL" valueName="URL" required="true" />
+        <text id="BookmarkFolder" valueName="Folder" />
+        <text id="BookmarkFavicon" valueName="Favicon" />
+        <enum id="BookmarkPlacement" valueName="Placement">
+          <item displayName="$(string.BookmarkPlacementToolbar)">
+            <value>
+              <string>toolbar</string>
+            </value>
+          </item>
+          <item displayName="$(string.BookmarkPlacementFolder)">
+            <value>
+              <string>folder</string>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
   </policies>
