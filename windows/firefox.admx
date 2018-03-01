@@ -10,9 +10,30 @@
       <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)" />
     </definitions>
   </supportedOn>
+  <categories>
+    <category displayName="$(string.firefox)" name="firefox">
+      <parentCategory ref="Mozilla:Cat_Mozilla"/>
+    </category>
+
+    <category displayName="$(string.Permissions_group)" name="Permissions">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.Popups_group)" name="Popups" >
+      <parentCategory ref="Permissions" />
+    </category>
+    <category displayName="$(string.Cookies_group)" name="Cookies" >
+      <parentCategory ref="Permissions" />
+    </category>
+    <category displayName="$(string.Addons_group)" name="Addons" >
+      <parentCategory ref="Permissions" />
+    </category>
+    <category displayName="$(string.Flash_group)" name="Flash" >
+      <parentCategory ref="Permissions" />
+    </category>
+  </categories>
   <policies >
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -22,7 +43,7 @@
       </disabledValue>
     </policy>
     <policy name="BlockAboutConfig" class="Both" displayName="$(string.BlockAboutConfig)" explainText="$(string.BlockAboutConfig_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutConfig" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -32,7 +53,7 @@
       </disabledValue>
     </policy>
     <policy name="BlockAboutSupport" class="Both" displayName="$(string.BlockAboutSupport)" explainText="$(string.BlockAboutSupport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutSupport" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -42,7 +63,7 @@
       </disabledValue>
     </policy>
     <policy name="BlockSetDesktopBackground" class="Both" displayName="$(string.BlockSetDesktopBackground)" explainText="$(string.BlockSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockSetDesktopBackground" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -52,7 +73,7 @@
       </disabledValue>
     </policy>
     <policy name="CreateMasterPassword" class="Both" displayName="$(string.CreateMasterPassword)" explainText="$(string.CreateMasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CreateMasterPassword" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -62,7 +83,7 @@
       </disabledValue>
     </policy>
     <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -72,7 +93,7 @@
       </disabledValue>
     </policy>
     <policy name="DisableDeveloperTools" class="Both" displayName="$(string.DisableDeveloperTools)" explainText="$(string.DisableDeveloperTools_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableDeveloperTools" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -82,7 +103,7 @@
       </disabledValue>
     </policy>
     <policy name="DisableFirefoxScreenshots" class="Both" displayName="$(string.DisableFirefoxScreenshots)" explainText="$(string.DisableFirefoxScreenshots_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxScreenshots" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -92,7 +113,7 @@
       </disabledValue>
     </policy>
     <policy name="DisableFirefoxStudies" class="Both" displayName="$(string.DisableFirefoxStudies)" explainText="$(string.DisableFirefoxStudies_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxStudies" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -102,7 +123,7 @@
       </disabledValue>
     </policy>
     <policy name="DisableFormHistory" class="Both" displayName="$(string.DisableFormHistory)" explainText="$(string.DisableFormHistory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFormHistory" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -112,7 +133,7 @@
       </disabledValue>
     </policy>
     <policy name="DisablePocket" class="Both" displayName="$(string.DisablePocket)" explainText="$(string.DisablePocket_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisablePocket" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -122,7 +143,7 @@
       </disabledValue>
     </policy>
     <policy name="DisplayBookmarksToolbar" class="Both" displayName="$(string.DisplayBookmarksToolbar)" explainText="$(string.DisplayBookmarksToolbar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisplayBookmarksToolbar" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -132,7 +153,7 @@
       </disabledValue>
     </policy>
     <policy name="DisplayMenuBar" class="Both" displayName="$(string.DisplayMenuBar)" explainText="$(string.DisplayMenuBar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisplayMenuBar" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -142,7 +163,7 @@
       </disabledValue>
     </policy>
     <policy name="DontCheckDefaultBrowser" class="Both" displayName="$(string.DontCheckDefaultBrowser)" explainText="$(string.DontCheckDefaultBrowser_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DontCheckDefaultBrowser" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -152,7 +173,7 @@
       </disabledValue>
     </policy>
     <policy name="RememberPasswords" class="Both" displayName="$(string.RememberPasswords)" explainText="$(string.RememberPasswords_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="RememberPasswords" >
-      <parentCategory ref="Mozilla:Cat_Mozilla" />
+      <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <enabledValue >
         <string >1</string>
@@ -160,6 +181,48 @@
       <disabledValue >
         <string >0</string>
       </disabledValue>
+    </policy>
+    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.PopupsAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="PopupsAllow" presentation="$(presentation.PopupsAllow)">
+      <parentCategory ref="Popups"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="PopupsAllowDesc" key="Software\Policies\Mozilla\Firefox\Popups\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.AddonsAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="AddonsAllow" presentation="$(presentation.AddonsAllow)">
+      <parentCategory ref="Addons"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="AddonsAllowDesc" key="Software\Policies\Mozilla\Firefox\Addons\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.CookiesAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="CookiesAllow" presentation="$(presentation.CookiesAllow)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="CookiesAllowDesc" key="Software\Policies\Mozilla\Firefox\Cookies\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Block)" explainText="$(string.CookiesBlock_Explain)" key="Software\Policies\Mozilla\Firefox" name="CookiesBlock" presentation="$(presentation.CookiesBlock)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="CookiesBlockDesc" key="Software\Policies\Mozilla\Firefox\Cookies\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.FlashAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="FlashAllow" presentation="$(presentation.FlashAllow)">
+      <parentCategory ref="Flash"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="FlashAllowDesc" key="Software\Policies\Mozilla\Firefox\Flash\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.Block)" explainText="$(string.FlashBlock_Explain)" key="Software\Policies\Mozilla\Firefox" name="FlashBlock" presentation="$(presentation.FlashBlock)">
+      <parentCategory ref="Flash"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="FlashBlockDesc" key="Software\Policies\Mozilla\Firefox\Flash\Block" valuePrefix=""/>
+      </elements>
     </policy>
   </policies>
 </policyDefinitions>

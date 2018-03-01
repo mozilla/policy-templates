@@ -4,8 +4,16 @@
   <description/>
   <resources >
     <stringTable >
-      <string id="SUPPORTED_WINXPSP2" >Microsoft Windows XP SP2 or later</string>
-      <string id="BlockAboutAddons" >Block About Addons</string>
+      <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 or later</string>
+      <string id="firefox">Firefox</string>
+      <string id="Permissions_group">Permissions</string>
+      <string id="Popups_group">Popups</string>
+      <string id="Cookies_group">Cookies</string>
+      <string id="Addons_group">Addons</string>
+      <string id="Flash_group">Flash</string>
+      <string id="Allow">Allow</string>
+      <string id="Block">Block</string>
+      <string id="BlockAboutAddons">Block About Addons</string>
       <string id="BlockAboutAddons_Explain" >Block access to the Add-ons Mananger (about:addons).</string>      
       <string id="BlockAboutConfig">Block About Config</string>
       <string id="BlockAboutConfig_Explain">Blocks access to the about:config page.</string>
@@ -37,6 +45,20 @@
       <string id="DontCheckDefaultBrowser_Explain">Don't check for the default browser on startup.</string>
       <string id="RememberPasswords">Rember Passwords</string>
       <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
+      <string id="PopupsAllow_Explain">URLs to allow popups.</string>
+      <string id="AddonsAllow_Explain">URLs to allow addons.</string>
+      <string id="CookiesAllow_Explain">URLs to allow cookies.</string>
+      <string id="CookiesBlock_Explain">URLs to block cookies.</string>
+      <string id="FlashAllow_Explain">URLs to allow Flash.</string>
+      <string id="FlashBlock_Explain">URLs to block Flash.</string>
     </stringTable>
+    <presentationTable>
+      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
+      <presentation id="AddonsAllow"><listBox refId="AddonsAllowDesc">Allow add-ons for websites</listBox></presentation>
+      <presentation id="CookiesAllow"><listBox refId="CookiesAllowDesc">Allow cookies for websites</listBox></presentation>
+      <presentation id="CookiesBlock"><listBox refId="CookiesBlockDesc">Block cookies for websites</listBox></presentation>
+      <presentation id="FlashAllow"><listBox refId="FlashAllowDesc">Allow Flash for websites</listBox></presentation>
+      <presentation id="FlashBlock"><listBox refId="FlashBlockDesc">Block Flash for websites</listBox></presentation>
+    </presentationTable>
   </resources>
 </policyDefinitionResources>
