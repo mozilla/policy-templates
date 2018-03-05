@@ -196,7 +196,7 @@
       <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="AddonsAllowDesc" key="Software\Policies\Mozilla\Firefox\Addons\Allow" valuePrefix=""/>
+        <list id="AddonsAllowDesc" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy class="Both" displayName="$(string.Allow)" explainText="$(string.CookiesAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="CookiesAllow" presentation="$(presentation.CookiesAllow)">
