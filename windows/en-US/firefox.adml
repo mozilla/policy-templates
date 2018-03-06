@@ -30,6 +30,8 @@
       <string id="DisableAppUpdate_Explain">Prevent the browser from updating.</string>
       <string id="DisableDeveloperTools">Disable Developer Tools</string>
       <string id="DisableDeveloperTools_Explain">Prevents access to developer tools.</string>
+      <string id="DisableFirefoxAccounts">Disable Firefox Accounts</string>
+      <string id="DisableFirefoxAccounts_Explain">Disables Firefox Account based services, including Sync.</string>
       <string id="DisableFirefoxScreenshots">Disable Firefox Screenshots</string>
       <string id="DisableFirefoxScreenshots_Explain">Prevents usage of the Firefox Screenshots feature.</string>
       <string id="DisableFirefoxStudies">Disable Firefox Studies</string>
