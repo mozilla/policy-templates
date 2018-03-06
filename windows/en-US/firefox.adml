@@ -40,6 +40,8 @@
       <string id="DisableFormHistory_Explain">Don't remember search and form history.</string>
       <string id="DisablePocket">Disable Pocket</string>
       <string id="DisablePocket_Explain">Prevents ability to save webpages to Pocket.</string>
+      <string id="DisablePrivateBrowsing">Disable Private Browsing</string>
+      <string id="DisablePrivateBrowsing_Explain">Disables private browsing.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
       <string id="DisplayBookmarksToolbar_Explain">Causes the bookmarks toolbar to be displayed by default.</string>
       <string id="DisplayMenuBar">Display Menu Bar</string>
