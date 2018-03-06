@@ -247,6 +247,22 @@
         <list id="FlashBlockDesc" key="Software\Policies\Mozilla\Firefox\Flash\Block" valuePrefix=""/>
       </elements>
     </policy>
+    <policy class="Both" displayName="$(string.Homepage)" name="Homepage" explainText="$(string.Homepage_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.Homepage)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="HomepageURL" valueName="URL" required="true" />
+        <boolean id="HomepageLocked" key="Software\Policies\Mozilla\Firefox\Homepage" valueName="Locked">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <list id="HomepageAdditional" key="Software\Policies\Mozilla\Firefox\Homepage\Additional" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy class="Both" displayName="$(string.Bookmark1)" name="Bookmark1" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />

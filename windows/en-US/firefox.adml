@@ -64,6 +64,8 @@
       <string id="Bookmark_Explain">Bookmark Explanation</string>
       <string id="BookmarkPlacementToolbar">Toolbar</string>
       <string id="BookmarkPlacementFolder">Folder</string>
+      <string id="Homepage">Homepage</string>
+      <string id="Homepage_Explain">Homepage Settings</string>
     </stringTable>
     <presentationTable>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
@@ -72,6 +74,14 @@
       <presentation id="CookiesBlock"><listBox refId="CookiesBlockDesc">Block cookies for websites</listBox></presentation>
       <presentation id="FlashAllow"><listBox refId="FlashAllowDesc">Allow Flash for websites</listBox></presentation>
       <presentation id="FlashBlock"><listBox refId="FlashBlockDesc">Block Flash for websites</listBox></presentation>
+      <presentation id="Homepage">
+        <text>URL:</text>
+        <textBox refId="HomepageURL">
+          <label/>
+        </textBox>
+        <checkBox refId="HomepageLocked">Don't allow the homepage to be changed.</checkBox>
+        <listBox refId="HomepageAdditional">Additional homepages (optional)</listBox>
+      </presentation>
       <presentation id="Bookmark">
         <text>Title:</text>
         <textBox refId="BookmarkTitle">
