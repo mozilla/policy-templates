@@ -48,7 +48,7 @@
       <string id="DisplayMenuBar_Explain">Causes the menu bar to be displayed by default.</string>
       <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
       <string id="DontCheckDefaultBrowser_Explain">Don't check for the default browser on startup.</string>
-      <string id="RememberPasswords">Rember Passwords</string>
+      <string id="RememberPasswords">Remember Passwords</string>
       <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
       <string id="PopupsAllow_Explain">URLs to allow popups.</string>
       <string id="AddonsAllow_Explain">URLs to allow addons.</string>
