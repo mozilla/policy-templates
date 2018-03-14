@@ -82,10 +82,10 @@
         <textBox refId="HomepageURL">
           <label/>
         </textBox>
-		<checkBox refId="HomepageLocked">Don't allow the homepage to be changed.</checkBox>
+        <checkBox refId="HomepageLocked">Don't allow the homepage to be changed.</checkBox>
       </presentation>
       <presentation id="HomepageAdditional">
-		<listBox refId="HomepageAdditional">Additional homepages</listBox>
+        <listBox refId="HomepageAdditional">Additional homepages</listBox>
       </presentation>
       <presentation id="Bookmark">
         <text>Title:</text>
