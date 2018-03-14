@@ -12,6 +12,7 @@
       <string id="Cookies_group">Cookies</string>
       <string id="Addons_group">Addons</string>
       <string id="Flash_group">Flash</string>
+      <string id="Homepage_group">Home page</string>
       <string id="Allow">Allow</string>
       <string id="Block">Block</string>
       <string id="BlockAboutAddons">Block About Addons</string>
@@ -64,8 +65,10 @@
       <string id="Bookmark_Explain">Bookmark Explanation</string>
       <string id="BookmarkPlacementToolbar">Toolbar</string>
       <string id="BookmarkPlacementFolder">Folder</string>
-      <string id="Homepage">Homepage</string>
-      <string id="Homepage_Explain">Homepage Settings</string>
+      <string id="HomepageURL">URL for Home page</string>
+      <string id="HomepageURL_Explain">Homepage Settings</string>
+      <string id="HomepageAdditional">Additional Homepages</string>
+      <string id="HomepageAdditional_Explain">If you want to have more than one homepage</string>
     </stringTable>
     <presentationTable>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
@@ -74,13 +77,15 @@
       <presentation id="CookiesBlock"><listBox refId="CookiesBlockDesc">Block cookies for websites</listBox></presentation>
       <presentation id="FlashAllow"><listBox refId="FlashAllowDesc">Allow Flash for websites</listBox></presentation>
       <presentation id="FlashBlock"><listBox refId="FlashBlockDesc">Block Flash for websites</listBox></presentation>
-      <presentation id="Homepage">
+      <presentation id="HomepageURL">
         <text>URL:</text>
         <textBox refId="HomepageURL">
           <label/>
         </textBox>
-        <checkBox refId="HomepageLocked">Don't allow the homepage to be changed.</checkBox>
-        <listBox refId="HomepageAdditional">Additional homepages (optional)</listBox>
+		<checkBox refId="HomepageLocked">Don't allow the homepage to be changed.</checkBox>
+      </presentation>
+      <presentation id="HomepageAdditional">
+		<listBox refId="HomepageAdditional">Additional homepages</listBox>
       </presentation>
       <presentation id="Bookmark">
         <text>Title:</text>

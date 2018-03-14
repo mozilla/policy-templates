@@ -33,6 +33,9 @@
     <category displayName="$(string.Bookmarks_group)" name="Bookmarks">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.Homepage_group)" name="Homepage">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
@@ -247,20 +250,26 @@
         <list id="FlashBlockDesc" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Block" valuePrefix=""/>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Homepage)" name="Homepage" explainText="$(string.Homepage_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.Homepage)" >
-      <parentCategory ref="firefox" />
+    <policy class="Both" displayName="$(string.HomepageURL)" name="HomepageURL" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
+      <parentCategory ref="Homepage" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
         <text id="HomepageURL" valueName="URL" required="true" />
-        <boolean id="HomepageLocked" key="Software\Policies\Mozilla\Firefox\Homepage" valueName="Locked">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <list id="HomepageAdditional" key="Software\Policies\Mozilla\Firefox\Homepage\Additional" valuePrefix=""/>
+		<boolean id="HomepageLocked" key="Software\Policies\Mozilla\Firefox\Homepage" valueName="Locked">
+		<trueValue>
+		<decimal value="1"/>
+		</trueValue>
+		<falseValue>
+		<decimal value="0"/>
+		</falseValue>
+		</boolean>
+      </elements>
+    </policy>
+    <policy class="Both" displayName="$(string.HomepageAdditional)" name="HomepageAdditional" explainText="$(string.HomepageAdditional_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageAdditional)" >
+      <parentCategory ref="Homepage" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+		<list id="HomepageAdditional" key="Software\Policies\Mozilla\Firefox\Homepage\Additional" valuePrefix=""/>
       </elements>
     </policy>
     <policy class="Both" displayName="$(string.Bookmark1)" name="Bookmark1" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
