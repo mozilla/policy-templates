@@ -4,6 +4,7 @@ The content of the JSON file should look like this:
 {
   "policies": {
     ...POLICIES...
+  }
 }
 ```
 Policies are documented below.
@@ -14,6 +15,7 @@ This policy removes access to about:addons.
 {
   "policies": {
     "BlockAboutAddons": true
+  }
 }
 ```
 ### BlockAboutConfig
@@ -22,6 +24,7 @@ This policy removes access to about:config.
 {
   "policies": {
     "BlockAboutConfig": true
+  }
 }
 ```
 ### BlockAboutSupport
