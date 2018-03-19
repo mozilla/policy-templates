@@ -188,6 +188,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableSafeMode" class="Both" displayName="$(string.DisableSafeMode)" explainText="$(string.DisableSafeMode_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSafeMode">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableSysAddonUpdate" class="Both" displayName="$(string.DisableSysAddonUpdate)" explainText="$(string.DisableSysAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSysAddonUpdate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
