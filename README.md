@@ -134,6 +134,15 @@ This policy removes access to private browsing
   }
 }
 ```
+### DisableSysAddonUpdate
+This policy prevents system add-ons from being updated or installed.
+```
+{
+  "policies": {
+    "DisableSysAddonUpdate": true
+  }
+}
+```
 ### DisplayBookmarksToolbar
 This policy turns on the bookmarks toolbar by default. A user can still turn it off and it will stay off.
 ```

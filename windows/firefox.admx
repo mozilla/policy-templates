@@ -168,6 +168,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableSysAddonUpdate" class="Both" displayName="$(string.DisableSysAddonUpdate)" explainText="$(string.DisableSysAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSysAddonUpdate">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisplayBookmarksToolbar" class="Both" displayName="$(string.DisplayBookmarksToolbar)" explainText="$(string.DisplayBookmarksToolbar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisplayBookmarksToolbar">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
