@@ -47,6 +47,8 @@
       <string id="DisablePocket_Explain">Prevents ability to save webpages to Pocket.</string>
       <string id="DisablePrivateBrowsing">Disable Private Browsing</string>
       <string id="DisablePrivateBrowsing_Explain">Disables private browsing.</string>
+      <string id="DisableSafeMode">Disable Safe Mode</string>
+      <string id="DisableSafeMode_Explain">Prevents ability to restart in safe mode.</string>
       <string id="DisableSysAddonUpdate">Disable System Addon Updates</string>
       <string id="DisableSysAddonUpdate_Explain">Prevent the browser from installing and updating system addons.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
