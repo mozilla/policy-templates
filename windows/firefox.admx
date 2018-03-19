@@ -400,7 +400,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Bookmark5)" name="Bookmark5" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5s" presentation="$(presentation.Bookmark)" >
+    <policy class="Both" displayName="$(string.Bookmark5)" name="Bookmark5" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
