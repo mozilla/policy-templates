@@ -29,6 +29,8 @@
       <string id="CreateMasterPassword_Explain">If false, removes access to create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
       <string id="DisableAppUpdate_Explain">Prevent the browser from updating.</string>
+      <string id="DisableBuiltinPDFViewer">Disable Builtin PDF Viewer</string>
+      <string id="DisableBuiltinPDFViewer_Explain">Disables PDF.js, which displays PDFs within Firefox.</string>
       <string id="DisableDeveloperTools">Disable Developer Tools</string>
       <string id="DisableDeveloperTools_Explain">Prevents access to developer tools.</string>
       <string id="DisableFirefoxAccounts">Disable Firefox Accounts</string>
