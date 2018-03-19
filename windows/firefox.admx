@@ -118,7 +118,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="DisableFirefoxScreenshots" class="Both" displayName="$(string.DisableFirefoxScreenshots)" explainText="$(string.DisableFirefoxScreenshots_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxScreenshots">
+    <policy name="DisableFeedbackCommands" class="Both" displayName="$(string.DisableFeedbackCommands)" explainText="$(string.DisableFeedbackCommands_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFeedbackCommands">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -129,6 +129,16 @@
       </disabledValue>
     </policy>
     <policy name="DisableFirefoxAccounts" class="Both" displayName="$(string.DisableFirefoxAccounts)" explainText="$(string.DisableFirefoxScreenshots_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxAccounts">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisableFirefoxScreenshots" class="Both" displayName="$(string.DisableFirefoxScreenshots)" explainText="$(string.DisableFirefoxScreenshots_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxScreenshots">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>

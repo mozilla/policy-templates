@@ -33,6 +33,8 @@
       <string id="DisableBuiltinPDFViewer_Explain">Disables PDF.js, which displays PDFs within Firefox.</string>
       <string id="DisableDeveloperTools">Disable Developer Tools</string>
       <string id="DisableDeveloperTools_Explain">Prevents access to developer tools.</string>
+      <string id="DisableFeedbackCommands">Disable Feedback Commands</string>
+      <string id="DisableFeedbackCommands_Explain">Prevents ability to send feedback from the help menu (&quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot;).</string>
       <string id="DisableFirefoxAccounts">Disable Firefox Accounts</string>
       <string id="DisableFirefoxAccounts_Explain">Disables Firefox Account based services, including Sync.</string>
       <string id="DisableFirefoxScreenshots">Disable Firefox Screenshots</string>
