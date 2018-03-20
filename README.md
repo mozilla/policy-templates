@@ -189,7 +189,7 @@ This policy stops Firefox from checking if it is the default browser at startup.
 }
 ```
 ### EnableTrackingProtection
-This policy enables affects tracking protection.
+This policy affects tracking protection.
 
 If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
 
