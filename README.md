@@ -62,12 +62,12 @@ This policy turns off application updates.
   }
 }
 ```
-### DisableDeveloperTools
-This policy removes access to all developer tools.
+### DisableBuiltinPDFViewer
+This policy disables the built in PDF viewer. PDF files are downloaded and sent externally.
 ```
 {
   "policies": {
-    "DisableDeveloperTools": true
+    "DisableBuiltinPDFViewer": true
   }
 }
 ```
@@ -77,6 +77,15 @@ This policy removes access to all developer tools.
 {
   "policies": {
     "DisableDeveloperTools": true
+  }
+}
+```
+### DisableFeedbackCommands
+This policy disables the menus for reporting sites (Submit Feedback, Report Deceptive Site)
+```
+{
+  "policies": {
+    "DisableFeedbackCommands": true
   }
 }
 ```
@@ -131,6 +140,15 @@ This policy removes access to private browsing
 {
   "policies": {
     "DisablePrivateBrowsing": true
+  }
+}
+```
+### DisableSafeMode
+This policy disables safe mode on Windows only
+```
+{
+  "policies": {
+    "DisableSafeMode": true
   }
 }
 ```
