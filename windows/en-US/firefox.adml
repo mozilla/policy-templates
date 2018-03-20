@@ -131,12 +131,13 @@
       </presentation>
       <presentation id="Proxy">
         <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox> 
-	   <dropdownList refId="ConnectionType"/>
+        <text>Connection Type:</text>
+        <dropdownList refId="ConnectionType"/>
         <text>HTTP Proxy:</text>
         <textBox refId="HTTPProxy">
           <label/>
         </textBox>
-		<checkBox refId="UseHTTPProxyForAllProtocols">Use this proxy server for all protocols.</checkBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">Use this proxy server for all protocols.</checkBox>
         <text>SSL Proxy:</text>
         <textBox refId="SSLProxy">
           <label/>
@@ -149,6 +150,7 @@
         <textBox refId="SOCKSProxy">
           <label/>
         </textBox>
+        <text>SOCKS Version:</text>
         <dropdownList refId="SOCKSVersion"/>
         <text>No proxy for</text>
         <textBox refId="Passthrough">
@@ -159,7 +161,7 @@
         <textBox refId="AutoConfigURL">
           <label/>
         </textBox>
-		<checkBox refId="AutoLogin">Do not prompt for authentication if password is saved.</checkBox>
+        <checkBox refId="AutoLogin">Do not prompt for authentication if password is saved.</checkBox>
         <checkBox refId="UseProxyForDNS">Proxy DNS when using SOCKS v5.</checkBox>
       </presentation>
     </presentationTable>

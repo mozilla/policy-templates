@@ -260,3 +260,24 @@ same folder name are grouped together.
   }
 }
 ```
+### Proxy
+This policy allows you to specify proxy settings. These settings correspond to the connection settings in Firefox preferences.
+To specify ports, append them to the URLs with a colon (:). If Locked is set to true, the values can't be changed by the user.
+```
+{
+  "Proxy": {
+    "Mode": ["none", "system", "manual", "autoDetect", "autoConfig"]
+    "Locked": [true, false]
+Z   "HTTPProxy": "URL_TO_PROXY",
+    "UseHTTPProxyForAllProtocols": [true, false]
+    "SSLProxy": "URL_TO_PROXY",
+    "FTPProxy": "URL_TO_PROXY",
+    "SOCKSProxy": { "URL_TO_PROXY",
+    "SOCKSVersion": [4, 5],
+    "Passthrough": "List of passthrough addresses/domains",
+    "AutoConfigURL": "URL_TO_AUTOCONFIG",
+    "AutoLogin":  [true, false],
+    "UseProxyForDNS": [true, false]
+  }
+}
+```
