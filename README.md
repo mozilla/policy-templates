@@ -188,6 +188,24 @@ This policy stops Firefox from checking if it is the default browser at startup.
   }
 }
 ```
+### EnableTrackingProtection
+This policy enables affects tracking protection.
+
+If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
+
+If Value is set to false, tracking protection is disabled and locked in both the browser and private browsing.
+
+If Value is set to true, private browsing is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
+```
+{
+  "policies": {
+    "EnableTrackingProtection": {
+      "Value": [true, false],
+      "Locked": [true, false]
+    }
+  }
+}
+```
 ### RememberPasswords
 This policy sets the signon.rememberSignons preference. It can either be enabled or disabled.
 ```
