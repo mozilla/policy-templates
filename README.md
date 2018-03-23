@@ -27,6 +27,15 @@ This policy removes access to about:config.
   }
 }
 ```
+### BlockAboutProfiles
+This policy removes access to about:profiles.
+```
+{
+  "policies": {
+    "BlockAboutProfiles": true
+  }
+}
+```
 ### BlockAboutSupport
 This policy removes access to about:support.
 ```
