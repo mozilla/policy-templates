@@ -197,6 +197,24 @@ This policy stops Firefox from checking if it is the default browser at startup.
   }
 }
 ```
+### NoDefaultBookmarks
+Don't create the default bookmarks. Note: this policy is only effective if used before the first run of the profile.
+```
+{
+  "policies": {
+    "NoDefaultBookmarks": true
+  }
+}
+```
+### NoSmartBookmarks
+Remove the Smart Bookmarks (Most Visited, Recent Tags)
+```
+{
+  "policies": {
+    "NoSmartBookmarks": true
+  }
+}
+```
 ### RememberPasswords
 This policy sets the signon.rememberSignons preference. It can either be enabled or disabled.
 ```
