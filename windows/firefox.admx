@@ -326,9 +326,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -348,9 +348,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -370,9 +370,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -392,9 +392,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -414,9 +414,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
