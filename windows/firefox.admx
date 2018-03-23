@@ -58,6 +58,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="BlockAboutProfiles" class="Both" displayName="$(string.BlockAboutProfiles)" explainText="$(string.BlockAboutProfiles_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutProfiles">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="BlockAboutSupport" class="Both" displayName="$(string.BlockAboutSupport)" explainText="$(string.BlockAboutSupport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutSupport">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
@@ -346,9 +356,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -368,9 +378,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -390,9 +400,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -412,9 +422,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -434,9 +444,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>

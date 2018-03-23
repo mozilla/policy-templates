@@ -27,6 +27,15 @@ This policy removes access to about:config.
   }
 }
 ```
+### BlockAboutProfiles
+This policy removes access to about:profiles.
+```
+{
+  "policies": {
+    "BlockAboutProfiles": true
+  }
+}
+```
 ### BlockAboutSupport
 This policy removes access to about:support.
 ```
@@ -289,8 +298,8 @@ same folder name are grouped together.
     {"Title": "Example",
      "URL": "http://example.org",
      "Favicon": "http://example.com/favicon.ico",
-     "Placement": "toolbar",
-     "Folder": "Bookmarks"
+     "Placement": ["toolbar", "menu"],
+     "Folder": "FolderName"
      }
     ]
   }
