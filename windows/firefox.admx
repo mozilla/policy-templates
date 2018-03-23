@@ -248,16 +248,6 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="NoSmartBookmarks" class="Both" displayName="$(string.NoSmartBookmarks)" explainText="$(string.NoSmartBookmarks_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NoSmartBookmarks">
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
     <policy name="DontCheckDefaultBrowser" class="Both" displayName="$(string.DontCheckDefaultBrowser)" explainText="$(string.DontCheckDefaultBrowser_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DontCheckDefaultBrowser">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>

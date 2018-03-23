@@ -74,9 +74,7 @@
       <string id="BookmarkPlacementToolbar">Toolbar</string>
       <string id="BookmarkPlacementMenu">Menu</string>
       <string id="NoDefaultBookmarks">No Default Bookmarks</string>
-      <string id="NoDefaultBookmarks_Explain">Don't create the default bookmarks. Note: this policy is only effective if used before the first run of the profile.</string>
-      <string id="NoSmartBookmarks">No Smart Bookmarks</string>
-      <string id="NoSmartBookmarks_Explain">Remove the Smart Bookmarks (Most Visited, Recent Tags)</string>
+      <string id="NoDefaultBookmarks_Explain">Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.</string>
       <string id="HomepageURL">URL for Home page</string>
       <string id="HomepageURL_Explain">Homepage Settings</string>
       <string id="HomepageAdditional">Additional Homepages</string>
