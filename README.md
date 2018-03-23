@@ -214,20 +214,11 @@ If Value is set to true, private browsing is enabled by default in both the brow
     }
 ```
 ### NoDefaultBookmarks
-Don't create the default bookmarks. Note: this policy is only effective if used before the first run of the profile.
+Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
 ```
 {
   "policies": {
     "NoDefaultBookmarks": true
-  }
-}
-```
-### NoSmartBookmarks
-Remove the Smart Bookmarks (Most Visited, Recent Tags)
-```
-{
-  "policies": {
-    "NoSmartBookmarks": true
   }
 }
 ```
