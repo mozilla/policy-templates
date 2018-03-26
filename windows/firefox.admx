@@ -58,6 +58,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="BlockAboutProfiles" class="Both" displayName="$(string.BlockAboutProfiles)" explainText="$(string.BlockAboutProfiles_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutProfiles">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="BlockAboutSupport" class="Both" displayName="$(string.BlockAboutSupport)" explainText="$(string.BlockAboutSupport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutSupport">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
@@ -228,6 +238,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="NoDefaultBookmarks" class="Both" displayName="$(string.NoDefaultBookmarks)" explainText="$(string.NoDefaultBookmarks_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NoDefaultBookmarks">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DontCheckDefaultBrowser" class="Both" displayName="$(string.DontCheckDefaultBrowser)" explainText="$(string.DontCheckDefaultBrowser_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DontCheckDefaultBrowser">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
@@ -237,6 +257,26 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="TrackingProtection" class="Both" displayName="$(string.TrackingProtection)" explainText="$(string.TrackingProtection_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value" presentation="$(presentation.TrackingProtection)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+      <elements >
+        <boolean id="TrackingProtectionLocked" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
     </policy>
     <policy name="RememberPasswords" class="Both" displayName="$(string.RememberPasswords)" explainText="$(string.RememberPasswords_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="RememberPasswords">
       <parentCategory ref="firefox"/>
@@ -326,9 +366,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -348,9 +388,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -370,9 +410,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -392,9 +432,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>
@@ -414,9 +454,9 @@
               <string>toolbar</string>
             </value>
           </item>
-          <item displayName="$(string.BookmarkPlacementFolder)">
+          <item displayName="$(string.BookmarkPlacementMenu)">
             <value>
-              <string>folder</string>
+              <string>menu</string>
             </value>
           </item>
         </enum>

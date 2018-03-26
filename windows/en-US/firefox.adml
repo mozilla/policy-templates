@@ -72,7 +72,9 @@
       <string id="Bookmark5">Bookmark 5</string>
       <string id="Bookmark_Explain">Bookmark Explanation</string>
       <string id="BookmarkPlacementToolbar">Toolbar</string>
-      <string id="BookmarkPlacementFolder">Folder</string>
+      <string id="BookmarkPlacementMenu">Menu</string>
+      <string id="NoDefaultBookmarks">No Default Bookmarks</string>
+      <string id="NoDefaultBookmarks_Explain">Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.</string>
       <string id="HomepageURL">URL for Home page</string>
       <string id="HomepageURL_Explain">Homepage Settings</string>
       <string id="HomepageAdditional">Additional Homepages</string>
@@ -91,6 +93,12 @@
       <string id="ManualProxy">Manual proxy configuration</string>
       <string id="AutoDetectProxy">Auto-detect proxy settings</string>
       <string id="AutoConfigProxy">Automatic proxy configuration</string>
+      <string id="TrackingProtection">Tracking Protection</string>
+      <string id="TrackingProtection_Explain">If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
+
+If this policy is disabled, tracking protection is disabled and locked in both the browser and private browsing.
+
+If this policy is enabled, private browsing is enabled by default in both the browser and private browsing and you can choose whether or not to prevent the user from changing it.</string>
     </stringTable>
     <presentationTable>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
@@ -99,6 +107,9 @@
       <presentation id="CookiesBlock"><listBox refId="CookiesBlockDesc">Block cookies for websites</listBox></presentation>
       <presentation id="FlashAllow"><listBox refId="FlashAllowDesc">Allow Flash for websites</listBox></presentation>
       <presentation id="FlashBlock"><listBox refId="FlashBlockDesc">Block Flash for websites</listBox></presentation>
+      <presentation id="TrackingProtection">
+        <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
+      </presentation>
       <presentation id="HomepageURL">
         <text>URL:</text>
         <textBox refId="HomepageURL">

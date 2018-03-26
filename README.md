@@ -27,6 +27,15 @@ This policy removes access to about:config.
   }
 }
 ```
+### BlockAboutProfiles
+This policy removes access to about:profiles.
+```
+{
+  "policies": {
+    "BlockAboutProfiles": true
+  }
+}
+```
 ### BlockAboutSupport
 This policy removes access to about:support.
 ```
@@ -62,12 +71,12 @@ This policy turns off application updates.
   }
 }
 ```
-### DisableDeveloperTools
-This policy removes access to all developer tools.
+### DisableBuiltinPDFViewer
+This policy disables the built in PDF viewer. PDF files are downloaded and sent externally.
 ```
 {
   "policies": {
-    "DisableDeveloperTools": true
+    "DisableBuiltinPDFViewer": true
   }
 }
 ```
@@ -77,6 +86,15 @@ This policy removes access to all developer tools.
 {
   "policies": {
     "DisableDeveloperTools": true
+  }
+}
+```
+### DisableFeedbackCommands
+This policy disables the menus for reporting sites (Submit Feedback, Report Deceptive Site)
+```
+{
+  "policies": {
+    "DisableFeedbackCommands": true
   }
 }
 ```
@@ -134,6 +152,15 @@ This policy removes access to private browsing
   }
 }
 ```
+### DisableSafeMode
+This policy disables safe mode on Windows only
+```
+{
+  "policies": {
+    "DisableSafeMode": true
+  }
+}
+```
 ### DisableSysAddonUpdate
 This policy prevents system add-ons from being updated or installed.
 ```
@@ -167,6 +194,31 @@ This policy stops Firefox from checking if it is the default browser at startup.
 {
   "policies": {
     "DontCheckDefaultBrowser": true
+  }
+}
+```
+### EnableTrackingProtection
+This policy affects tracking protection.
+
+If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
+
+If Value is set to false, tracking protection is disabled and locked in both the browser and private browsing.
+
+If Value is set to true, private browsing is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
+```
+{
+  "policies": {
+    "EnableTrackingProtection": {
+      "Value": [true, false],
+      "Locked": [true, false]
+    }
+```
+### NoDefaultBookmarks
+Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
+```
+{
+  "policies": {
+    "NoDefaultBookmarks": true
   }
 }
 ```
@@ -253,8 +305,8 @@ same folder name are grouped together.
     {"Title": "Example",
      "URL": "http://example.org",
      "Favicon": "http://example.com/favicon.ico",
-     "Placement": "toolbar",
-     "Folder": "Bookmarks"
+     "Placement": ["toolbar", "menu"],
+     "Folder": "FolderName"
      }
     ]
   }
