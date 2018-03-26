@@ -141,7 +141,7 @@ If this policy is enabled, private browsing is enabled by default in both the br
         </textBox>
       </presentation>
       <presentation id="Proxy">
-        <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox> 
+        <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox>
         <text>Connection Type:</text>
         <dropdownList refId="ConnectionType"/>
         <text>HTTP Proxy:</text>
