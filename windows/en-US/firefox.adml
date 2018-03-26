@@ -79,6 +79,20 @@
       <string id="HomepageURL_Explain">Homepage Settings</string>
       <string id="HomepageAdditional">Additional Homepages</string>
       <string id="HomepageAdditional_Explain">If you want to have more than one homepage</string>
+      <string id="Proxy">Proxy Settings</string>
+      <string id="Proxy_Explain">If this policy is enabled, you should select the connection type and then fill in the appropriate sections. Due to a bug, you must select a value for the SOCKS proxy version.</string>
+      <string id="SOCKSVersion4">SOCKS v4</string>
+      <string id="SOCKSVersion5">SOCKS v5</string>
+      <string id="AutoConfigURL">Automatic proxy configuration URL</string>
+      <string id="AutoConfigURL_Explain">These should only be set if you selected autoConfig</string>
+      <string id="Passthrough">Proxy bypass URLs</string>
+      <string id="Passthrough_Explain">These should only be set if you selected manual proxy</string>
+      <string id="Connection">Connection Type</string>
+      <string id="NoProxy">No Proxy</string>
+      <string id="SystemProxy">Use system proxy settings</string>
+      <string id="ManualProxy">Manual proxy configuration</string>
+      <string id="AutoDetectProxy">Auto-detect proxy settings</string>
+      <string id="AutoConfigProxy">Automatic proxy configuration</string>
       <string id="TrackingProtection">Tracking Protection</string>
       <string id="TrackingProtection_Explain">If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
 
@@ -125,6 +139,41 @@ If this policy is enabled, private browsing is enabled by default in both the br
         <textBox refId="BookmarkFolder">
           <label/>
         </textBox>
+      </presentation>
+      <presentation id="Proxy">
+        <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox>
+        <text>Connection Type:</text>
+        <dropdownList refId="ConnectionType"/>
+        <text>HTTP Proxy:</text>
+        <textBox refId="HTTPProxy">
+          <label/>
+        </textBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">Use this proxy server for all protocols.</checkBox>
+        <text>SSL Proxy:</text>
+        <textBox refId="SSLProxy">
+          <label/>
+        </textBox>
+        <text>FTP Proxy:</text>
+        <textBox refId="FTPProxy">
+          <label/>
+        </textBox>
+        <text>SOCKS Host:</text>
+        <textBox refId="SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>SOCKS Version:</text>
+        <dropdownList refId="SOCKSVersion"/>
+        <text>No proxy for</text>
+        <textBox refId="Passthrough">
+          <label/>
+        </textBox>
+        <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Automatic proxy configuration URL:</text>
+        <textBox refId="AutoConfigURL">
+          <label/>
+        </textBox>
+        <checkBox refId="AutoLogin">Do not prompt for authentication if password is saved.</checkBox>
+        <checkBox refId="UseProxyForDNS">Proxy DNS when using SOCKS v5.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
