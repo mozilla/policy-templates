@@ -1,4 +1,5 @@
-Policies can either be specified using the GPO templates or by putting a file called policies.json in the distribution directory.
+Policies can either be specified using the Group Policy templates or by creating a file called policies.json. On Windows, create a directory called distribution where the EXE is located and place the file there. On Mac, the file goes into Firefox.app/Content/Resources/distribution.
+
 The content of the JSON file should look like this:
 ```
 {
