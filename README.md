@@ -324,7 +324,7 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
     "UseHTTPProxyForAllProtocols": [true, false]
     "SSLProxy": "hostname",
     "FTPProxy": "hostname",
-    "SOCKSProxy": { "hostname",
+    "SOCKSProxy": "hostname",
     "SOCKSVersion": [4, 5],
     "Passthrough": "List of passthrough addresses/domains",
     "AutoConfigURL": "URL_TO_AUTOCONFIG",

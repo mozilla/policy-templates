@@ -516,12 +516,12 @@
         <enum id="SOCKSVersion" valueName="SOCKSVersion">
           <item displayName="$(string.SOCKSVersion4)">
             <value>
-              <string>4</string>
+              <decimal value="4"/>
             </value>
           </item>
           <item displayName="$(string.SOCKSVersion5)">
             <value>
-              <string>5</string>
+              <decimal value="5"/>
             </value>
           </item>
         </enum>
