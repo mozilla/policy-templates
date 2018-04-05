@@ -53,6 +53,10 @@ If this policy is not configured or disabled, Firefox will not read certificates
       <string id="DisableFirefoxScreenshots_Explain">Prevents usage of the Firefox Screenshots feature.</string>
       <string id="DisableFirefoxStudies">Disable Firefox Studies</string>
       <string id="DisableFirefoxStudies_Explain">Prevents Firefox from running studies.</string>
+      <string id="DisableForgetButton">Disable Forget Button</string>
+      <string id="DisableForgetButton_Explain">If this policy is enabled, the &quot;Forget&quot; button is not available.
+
+If this policy is not configured or disabled, the &quot;Forget&quot; button is available.</string>
       <string id="DisableFormHistory">Disable Form History</string>
       <string id="DisableFormHistory_Explain">Don't remember search and form history.</string>
       <string id="DisablePocket">Disable Pocket</string>

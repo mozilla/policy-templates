@@ -165,6 +165,15 @@ This policy disables Firefox studies (Shield)
   }
 }
 ```
+### DisableForgetButton
+This policy disables the "Forget" button
+```
+{
+  "policies": {
+    "DisableForgetButton": true
+  }
+}
+```
 ### DisableFormHistory
 This policy turns off the browser.formfill.enable preferences
 ```
