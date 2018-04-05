@@ -272,6 +272,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableForgetButton" class="Both" displayName="$(string.DisableForgetButton)" explainText="$(string.DisableForgetButton_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableForgetButton">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableFormHistory" class="Both" displayName="$(string.DisableFormHistory)" explainText="$(string.DisableFormHistory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFormHistory">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
