@@ -63,6 +63,10 @@ If this policy is not configured or disabled, the &quot;Forget&quot; button is a
       <string id="DisablePocket_Explain">Prevents ability to save webpages to Pocket.</string>
       <string id="DisablePrivateBrowsing">Disable Private Browsing</string>
       <string id="DisablePrivateBrowsing_Explain">Disables private browsing.</string>
+      <string id="DisableProfileRefresh">Disable Profile Refresh</string>
+      <string id="DisableProfileRefresh_Explain">If this policy is enabled, the &quot;Refresh Firefox&quot; button is not available on the about:support page or on support.mozilla.org.
+
+If this policy is not configured or disabled, the &quot;Refresh Firefox&quot; button is available.</string>
       <string id="DisableSafeMode">Disable Safe Mode</string>
       <string id="DisableSafeMode_Explain">Prevents ability to restart in safe mode.</string>
       <string id="DisableSysAddonUpdate">Disable System Addon Updates</string>
