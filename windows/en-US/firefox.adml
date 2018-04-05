@@ -7,6 +7,7 @@
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
+      <string id="Authentication_group">Authentication</string>
       <string id="Bookmarks_group">Bookmarks</string>
       <string id="Popups_group">Popups</string>
       <string id="Cookies_group">Cookies</string>
@@ -15,6 +16,12 @@
       <string id="Homepage_group">Home page</string>
       <string id="Allow">Allow</string>
       <string id="Block">Block</string>
+      <string id="Authentication_SPNEGO">SPNEGO</string>
+      <string id="Authentication_SPNEGO_Explain">List of sites that are permitted to engage in SPNEGO authentication with the browser.</string>
+      <string id="Authentication_Delegated">Delegated</string>
+      <string id="Authentication_Delegated_Explain">List of sites for which the browser may delegate user authorization to the server.</string>
+      <string id="Authentication_NTLM">NTLM</string>
+      <string id="Authentication_NTLM_Explain">List of sites trusted to use NTLM authentification.</string>
       <string id="BlockAboutAddons">Block About Addons</string>
       <string id="BlockAboutAddons_Explain" >Block access to the Add-ons Mananger (about:addons).</string>      
       <string id="BlockAboutConfig">Block About Config</string>
@@ -101,6 +108,9 @@ If this policy is disabled, tracking protection is disabled and locked in both t
 If this policy is enabled, private browsing is enabled by default in both the browser and private browsing and you can choose whether or not to prevent the user from changing it.</string>
     </stringTable>
     <presentationTable>
+      <presentation id="Authentication">
+        <listBox refId="Authentication"/>
+      </presentation>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
       <presentation id="AddonsAllow"><listBox refId="AddonsAllowDesc">Allow add-ons for websites</listBox></presentation>
       <presentation id="CookiesAllow"><listBox refId="CookiesAllowDesc">Allow cookies for websites</listBox></presentation>

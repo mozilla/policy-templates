@@ -36,8 +36,32 @@
     <category displayName="$(string.Homepage_group)" name="Homepage">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.Authentication_group)" name="Authentication">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
+    <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Authentication_Delegated" class="Both" displayName="$(string.Authentication_Delegated)"  key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" explainText="$(string.Authentication_Delegated_Explain)" presentation="$(presentation.Authentication)">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Authentication_NTLM" class="Both" displayName="$(string.Authentication_NTLM)"  key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" explainText="$(string.Authentication_NTLM_Explain)" presentation="$(presentation.Authentication)">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
