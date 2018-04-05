@@ -201,6 +201,15 @@ This policy removes access to private browsing
   }
 }
 ```
+### DisableProfileRefresh
+This policy disables the Refresh Firefox button on about:support and support.mozilla.org.
+```
+{
+  "policies": {
+    "DisableProfileRefresh": true
+  }
+}
+```
 ### DisableSafeMode
 This policy disables safe mode on Windows only
 ```
