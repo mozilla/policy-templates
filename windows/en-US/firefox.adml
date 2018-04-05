@@ -13,6 +13,7 @@
       <string id="Popups_group">Popups</string>
       <string id="Cookies_group">Cookies</string>
       <string id="Addons_group">Addons</string>
+      <string id="Extensions_group">Extensions</string>
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Home page</string>
       <string id="Allow">Allow</string>
@@ -91,6 +92,20 @@ Mozilla strongly recommends that you do NOT disable telemetry if you do not have
       <string id="DisplayMenuBar_Explain">Causes the menu bar to be displayed by default.</string>
       <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
       <string id="DontCheckDefaultBrowser_Explain">Don't check for the default browser on startup.</string>
+      <string id="Extensions_Install">Install</string>
+      <string id="Extensions_Install_Explain">If this policy is enabled, you can specify a list of extension URLs or paths that will be installed when Firefox is started.
+Anytime this list is changed, the extensions will be reinstalled.
+
+If this policy is disabled or not configured, no extensions are installed.</string>
+      <string id="Extensions_Uninstall">Uninstall</string>
+      <string id="Extensions_Uninstall_Explain">If this policy is enabled, you can specify a list of extension IDs that will be uninstalled.
+Anytime this list is changed, the extensions will be uninstalled.
+
+If this policy is disabled or not configured, no extensions are uninstalled.</string>
+      <string id="Extensions_Locked">Locked</string>
+      <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
+
+If this policy is disabled or not configured, no extensions are locked.</string>
       <string id="RememberPasswords">Remember Passwords</string>
       <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
       <string id="PopupsAllow_Explain">URLs to allow popups.</string>
@@ -160,6 +175,9 @@ If this policy is enabled, private browsing is enabled by default in both the br
     <presentationTable>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Extensions">
+        <listBox refId="Extensions"/>
       </presentation>
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
