@@ -200,6 +200,7 @@ This policy removes access to private browsing
     "DisablePrivateBrowsing": true
   }
 }
+```
 ### DisableProfileRefresh
 This policy disables the Refresh Firefox button on about:support and support.mozilla.org.
 ```
