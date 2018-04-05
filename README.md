@@ -240,6 +240,15 @@ This policy prevents system add-ons from being updated or installed.
   }
 }
 ```
+### DisableTelemetry
+This policy prevents the upload of telemetry data. Mozilla strongly recommends that you do NOT disable telemetry if you do not have a business need to do so.
+```
+{
+  "policies": {
+    "DisableTelemetry": true
+  }
+}
+```
 ### DisplayBookmarksToolbar
 This policy turns on the bookmarks toolbar by default. A user can still turn it off and it will stay off.
 ```

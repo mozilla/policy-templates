@@ -36,7 +36,7 @@
       <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
-If this policy is not configured or disabled, Firefox will not read certificates from the Windows certificate store.</string>
+If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
       <string id="CreateMasterPassword">Create Master Password</string>
       <string id="CreateMasterPassword_Explain">If false, removes access to create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
@@ -56,7 +56,7 @@ If this policy is not configured or disabled, Firefox will not read certificates
       <string id="DisableForgetButton">Disable Forget Button</string>
       <string id="DisableForgetButton_Explain">If this policy is enabled, the &quot;Forget&quot; button is not available.
 
-If this policy is not configured or disabled, the &quot;Forget&quot; button is available.</string>
+If this policy is disabled or not configured, the &quot;Forget&quot; button is available.</string>
       <string id="DisableFormHistory">Disable Form History</string>
       <string id="DisableFormHistory_Explain">Don't remember search and form history.</string>
       <string id="DisablePocket">Disable Pocket</string>
@@ -66,19 +66,25 @@ If this policy is not configured or disabled, the &quot;Forget&quot; button is a
       <string id="DisableProfileRefresh">Disable Profile Refresh</string>
       <string id="DisableProfileRefresh_Explain">If this policy is enabled, the &quot;Refresh Firefox&quot; button is not available on the about:support page or on support.mozilla.org.
 
-If this policy is not configured or disabled, the &quot;Refresh Firefox&quot; button is available.</string>
+If this policy is disabled or not configured, the &quot;Refresh Firefox&quot; button is available.</string>
       <string id="DisableSafeMode">Disable Safe Mode</string>
       <string id="DisableSafeMode_Explain">Prevents ability to restart in safe mode.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Prevent overriding certificate errors</string>
       <string id="DisableSecurityBypass_InvalidCertificate_Explain">If this policy is enabled, the &quot;Add Exception&quot; button is not available when a certificate is invalid. This prevents the user from overriding the certificate error.
 
-If this policy is not configured or disabled, certificate errors can be overridden.</string>
+If this policy is disabled or not configured, certificate errors can be overridden.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Prevent overriding safe browsing errors</string>
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">If this policy is enabled, a user can not bypass the warning and visit a harmful site.
 
-If this policy is not configured or disabled, a user can choose to visit a harmful site.</string>
+If this policy is disabled or not configured, a user can choose to visit a harmful site.</string>
       <string id="DisableSysAddonUpdate">Disable System Addon Updates</string>
       <string id="DisableSysAddonUpdate_Explain">Prevent the browser from installing and updating system addons.</string>
+      <string id="DisableTelemetry">Disable Telemetry</string>
+      <string id="DisableTelemetry_Explain">If this policy is enabled, telemetry is not uploaded.
+
+If this policy is disabled or not configured, telemetry is collected and uploaded.
+
+Mozilla strongly recommends that you do NOT disable telemetry if you do not have a business need to do so.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
       <string id="DisplayBookmarksToolbar_Explain">Causes the bookmarks toolbar to be displayed by default.</string>
       <string id="DisplayMenuBar">Display Menu Bar</string>
@@ -91,10 +97,10 @@ If this policy is not configured or disabled, a user can choose to visit a harmf
       <string id="AddonsAllow_Explain">URLs to allow addons.</string>
       <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
 
-If this policy is not configured or disabled, the default cookie policy is followed.</string>
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the URLS indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
 
-If this policy is not configured or disabled, cookies are not blocked by default.</string>
+If this policy is disabled or not configured, cookies are not blocked by default.</string>
       <string id="Cookies_Default">Accept cookies from websites</string>
       <string id="Cookies_Default_Explain">If this policy is disabled, cookies are not accepted from websites by default.
 
@@ -102,18 +108,18 @@ If this policy is not configured or enabled, cookies are accepted from websites.
       <string id="Cookies_AcceptThirdParty">Accept third-party cookies</string>
       <string id="Cookies_AcceptThirdParty_Explain">If this policy is enabled and cookies are allowed, you can set when to accept third-party cookies.
 
-This setting is ignored if this policy is not configured or disabled or if cookies are not allowed.</string>
+This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
       <string id="Cookies_AcceptThirdParty_All">Always</string>
       <string id="Cookies_AcceptThirdParty_None">Never</string>
       <string id="Cookies_AcceptThirdParty_FromVisited">From visited</string>
       <string id="Cookies_ExpireAtSessionEnd">Keep cookies until Firefox is closed</string>
       <string id="Cookies_ExpireAtSessionEnd_Explain">If this policy is enabled and cookies are allowed, they will expire when Firefox is closed.
 
-This setting is ignored if this policy is not configured or disabled or if cookies are not allowed.</string>
+This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
       <string id="Cookies_Locked">Do not allow preferences to be changed</string>
       <string id="Cookies_Locked_Explain">If this policy is enabled cookie preferences cannot be changed by the user.
 
-If this policy is not configured or disabled, the user can change their cookie preferences.</string>
+If this policy is disabled or not configured, the user can change their cookie preferences.</string>
       <string id="FlashAllow_Explain">URLs to allow Flash.</string>
       <string id="FlashBlock_Explain">URLs to block Flash.</string>
       <string id="Bookmark1">Bookmark 1</string>

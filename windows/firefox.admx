@@ -362,6 +362,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableTelemetry" class="Both" displayName="$(string.DisableTelemetry)" explainText="$(string.DisableTelemetry_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableTelemetry">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisplayBookmarksToolbar" class="Both" displayName="$(string.DisplayBookmarksToolbar)" explainText="$(string.DisplayBookmarksToolbar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisplayBookmarksToolbar">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
