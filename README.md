@@ -219,6 +219,18 @@ This policy disables safe mode on Windows only
   }
 }
 ```
+### DisableSecurityBypass
+This policy prevents the user from bypassign security in certain cases.
+```
+{
+  "policies": {
+    "DisableSecurityBypass": {
+      "InvalidCertificate": [true|false], /* Prevents adding an exception when an invalid certificate is shown */
+      "SafeBrowsing": [true|false]        /* Prevents selecting "ignore the risk" and visiting a harmful site anyway */
+    }
+  }
+}
+```
 ### DisableSysAddonUpdate
 This policy prevents system add-ons from being updated or installed.
 ```

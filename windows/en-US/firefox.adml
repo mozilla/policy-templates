@@ -69,6 +69,14 @@ If this policy is not configured or disabled, the &quot;Forget&quot; button is a
 If this policy is not configured or disabled, the &quot;Refresh Firefox&quot; button is available.</string>
       <string id="DisableSafeMode">Disable Safe Mode</string>
       <string id="DisableSafeMode_Explain">Prevents ability to restart in safe mode.</string>
+      <string id="DisableSecurityBypass_InvalidCertificate">Prevent overriding certificate errors</string>
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">If this policy is enabled, the &quot;Add Exception&quot; button is not available when a certificate is invalid. This prevents the user from overriding the certificate error.
+
+If this policy is not configured or disabled, certificate errors can be overridden.</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Prevent overriding safe browsing errors</string>
+      <string id="DisableSecurityBypass_SafeBrowsing_Explain">If this policy is enabled, a user can not bypass the warning and visit a harmful site.
+
+If this policy is not configured or disabled, a user can choose to visit a harmful site.</string>
       <string id="DisableSysAddonUpdate">Disable System Addon Updates</string>
       <string id="DisableSysAddonUpdate_Explain">Prevent the browser from installing and updating system addons.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
