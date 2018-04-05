@@ -22,7 +22,7 @@
       <parentCategory ref="Permissions"/>
     </category>
     <category displayName="$(string.Cookies_group)" name="Cookies">
-      <parentCategory ref="Permissions"/>
+      <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Addons_group)" name="Addons">
       <parentCategory ref="Permissions"/>
@@ -117,6 +117,73 @@
     </policy>
     <policy name="Certificates_ImportEnterpriseRoots" class="Both" displayName="$(string.Certificates_ImportEnterpriseRoots)" explainText="$(string.Certificates_ImportEnterpriseRoots_Explain)" key="Software\Policies\Mozilla\Firefox\Certificates" valueName="ImportEnterpriseRoots">
       <parentCategory ref="Certificates"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Cookies_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Cookies_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Cookies\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Cookies_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Cookies_Block_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Cookies\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Cookies_Default" class="Both" displayName="$(string.Cookies_Default)" explainText="$(string.Cookies_Default_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="Default">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Cookies_AcceptThirdParty" class="Both" displayName="$(string.Cookies_AcceptThirdParty)" explainText="$(string.Cookies_AcceptThirdParty_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies"  presentation="$(presentation.Cookies_AcceptThirdParty)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <enum id="Cookies_AcceptThirdParty" valueName="Cookies_AcceptThirdParty">
+          <item displayName="$(string.Cookies_AcceptThirdParty_All)">
+            <value>
+              <string>all</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_AcceptThirdParty_None)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_AcceptThirdParty_FromVisited)">
+            <value>
+              <string>from-visited</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="Cookies_ExpireAtSessionEnd" class="Both" displayName="$(string.Cookies_ExpireAtSessionEnd)" explainText="$(string.Cookies_ExpireAtSessionEnd_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="ExpireAtSessionEnd">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Cookies_Locked" class="Both" displayName="$(string.Cookies_Locked)" explainText="$(string.Cookies_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="Locked">
+      <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
         <decimal value="1"/>
@@ -337,20 +404,6 @@
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
         <list id="AddonsAllowDesc" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
-      </elements>
-    </policy>
-    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.CookiesAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="CookiesAllow" presentation="$(presentation.CookiesAllow)">
-      <parentCategory ref="Cookies"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <elements>
-        <list id="CookiesAllowDesc" key="Software\Policies\Mozilla\Firefox\Cookies\Allow" valuePrefix=""/>
-      </elements>
-    </policy>
-    <policy class="Both" displayName="$(string.Block)" explainText="$(string.CookiesBlock_Explain)" key="Software\Policies\Mozilla\Firefox" name="CookiesBlock" presentation="$(presentation.CookiesBlock)">
-      <parentCategory ref="Cookies"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <elements>
-        <list id="CookiesBlockDesc" key="Software\Policies\Mozilla\Firefox\Cookies\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy class="Both" displayName="$(string.Allow)" explainText="$(string.FlashAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="FlashAllow" presentation="$(presentation.FlashAllow)">
