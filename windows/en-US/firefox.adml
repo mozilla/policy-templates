@@ -9,6 +9,7 @@
       <string id="Permissions_group">Permissions</string>
       <string id="Authentication_group">Authentication</string>
       <string id="Bookmarks_group">Bookmarks</string>
+      <string id="Certificates_group">Certificates</string>
       <string id="Popups_group">Popups</string>
       <string id="Cookies_group">Cookies</string>
       <string id="Addons_group">Addons</string>
@@ -32,6 +33,10 @@
       <string id="BlockAboutSupport_Explain">Blocks access to the about:support page.</string>
       <string id="BlockSetDesktopBackground">Block Set Desktop Background</string>
       <string id="BlockSetDesktopBackground_Explain">Prevents usage of the &quot;Set Image as Desktop Background&quot; feature.</string>
+      <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
+      <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
+
+If this policy is not configured or disabled, Firefox will not read certificates from the Windows certificate store.</string>
       <string id="CreateMasterPassword">Create Master Password</string>
       <string id="CreateMasterPassword_Explain">If false, removes access to create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>

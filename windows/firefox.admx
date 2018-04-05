@@ -39,6 +39,9 @@
     <category displayName="$(string.Authentication_group)" name="Authentication">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.Certificates_group)" name="Certificates">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
@@ -104,6 +107,16 @@
     </policy>
     <policy name="BlockSetDesktopBackground" class="Both" displayName="$(string.BlockSetDesktopBackground)" explainText="$(string.BlockSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockSetDesktopBackground">
       <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Certificates_ImportEnterpriseRoots" class="Both" displayName="$(string.Certificates_ImportEnterpriseRoots)" explainText="$(string.Certificates_ImportEnterpriseRoots_Explain)" key="Software\Policies\Mozilla\Firefox\Certificates" valueName="ImportEnterpriseRoots">
+      <parentCategory ref="Certificates"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
         <decimal value="1"/>
