@@ -292,6 +292,19 @@ If Value is set to true, private browsing is enabled by default in both the brow
       "Locked": [true, false]
     }
 ```
+### Extensions
+This policy controls the install, uninstall and locking of extensions. Locked extensions cannot be disabled or uninstalled.
+For Install, you can specify a list of URLs or paths.
+For Uninstall and Locked, you specify extension IDs.
+```
+{
+  "policies": {
+    "Extensions": {
+      "Install": ["https://addons.mozilla.org/firefox/downloads/somefile.xpi", "//path/to/xpi"]
+      "Uninstall": ["addon_id@mozilla.org"],
+      "Locked":  ["addon_id@mozilla.org"]
+    }
+```
 ### NoDefaultBookmarks
 Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
 ```

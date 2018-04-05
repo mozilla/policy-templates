@@ -42,6 +42,9 @@
     <category displayName="$(string.Certificates_group)" name="Certificates">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.Extensions_group)" name="Extensions">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
@@ -391,6 +394,27 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="Extensions_Install" class="Both" displayName="$(string.Extensions_Install)"  key="Software\Policies\Mozilla\Firefox\Extensions\Install" explainText="$(string.Extensions_Install_Explain)" presentation="$(presentation.Extensions)">
+      <parentCategory ref="Extensions"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Extensions_Uninstall" class="Both" displayName="$(string.Extensions_Uninstall)"  key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" explainText="$(string.Extensions_Uninstall_Explain)" presentation="$(presentation.Extensions)">
+      <parentCategory ref="Extensions"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Extensions_Locked" class="Both" displayName="$(string.Extensions_Locked)"  key="Software\Policies\Mozilla\Firefox\Extensions\Locked" explainText="$(string.Extensions_Locked_Explain)" presentation="$(presentation.Extensions)">
+      <parentCategory ref="Extensions"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
+      </elements>
     </policy>
     <policy name="NoDefaultBookmarks" class="Both" displayName="$(string.NoDefaultBookmarks)" explainText="$(string.NoDefaultBookmarks_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NoDefaultBookmarks">
       <parentCategory ref="firefox"/>
