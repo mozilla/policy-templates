@@ -8,7 +8,7 @@ The content of the JSON file should look like this:
   }
 }
 ```
-Policies are documented below.
+Policies are documented below. Note that even though comments are used in this file for documentation, comments are not allowed for JSON files.
 ### Authentication
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 ```
@@ -73,6 +73,22 @@ This is a Windows only policy that tells Firefox to read certificates from the W
   "policies": {
     "Certificates": {
       "ImportEnterpriseRoots": [true|false]
+    }
+  }
+}
+```
+### Cookies
+This policy controls various settings related to cookies.
+```
+{
+  "policies": {
+    "Cookies": {
+      "Allow": ["http://example.org/"], /* Domains where cookies are always allowed */
+      "Block": ["http://example.edu/"], /* Domains where cookies are always blocked */
+      "Default": [true|false], /* This sets the default value for "Accept cookies from websites" */
+      "AcceptThirdParty": ["all", "none", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
+      "ExpireAtSessionEnd":  [true|false], /* This determines when cookies expire */
+      "Locked": [true|false] /* If this is true, cookies preferences can't be changed */
     }
   }
 }
@@ -289,18 +305,6 @@ This policy sets domains that can install extensions
     "InstallAddons": {
       "Allow": ["http://example.org/",
                 "http://example.edu/"]
-    }
-  }
-}
-```
-### Cookies
-This policy sets domains that can set or not set cookies.
-```
-{
-  "policies": {
-    "Cookies": {
-      "Allow": ["http://example.org/"],
-      "Block": ["http://example.edu/"]
     }
   }
 }

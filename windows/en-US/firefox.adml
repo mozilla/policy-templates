@@ -73,8 +73,31 @@ If this policy is not configured or disabled, Firefox will not read certificates
       <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
       <string id="PopupsAllow_Explain">URLs to allow popups.</string>
       <string id="AddonsAllow_Explain">URLs to allow addons.</string>
-      <string id="CookiesAllow_Explain">URLs to allow cookies.</string>
-      <string id="CookiesBlock_Explain">URLs to block cookies.</string>
+      <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is not configured or disabled, the default cookie policy is followed.</string>
+      <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the URLS indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
+
+If this policy is not configured or disabled, cookies are not blocked by default.</string>
+      <string id="Cookies_Default">Accept cookies from websites</string>
+      <string id="Cookies_Default_Explain">If this policy is disabled, cookies are not accepted from websites by default.
+
+If this policy is not configured or enabled, cookies are accepted from websites.</string>
+      <string id="Cookies_AcceptThirdParty">Accept third-party cookies</string>
+      <string id="Cookies_AcceptThirdParty_Explain">If this policy is enabled and cookies are allowed, you can set when to accept third-party cookies.
+
+This setting is ignored if this policy is not configured or disabled or if cookies are not allowed.</string>
+      <string id="Cookies_AcceptThirdParty_All">Always</string>
+      <string id="Cookies_AcceptThirdParty_None">Never</string>
+      <string id="Cookies_AcceptThirdParty_FromVisited">From visited</string>
+      <string id="Cookies_ExpireAtSessionEnd">Keep cookies until Firefox is closed</string>
+      <string id="Cookies_ExpireAtSessionEnd_Explain">If this policy is enabled and cookies are allowed, they will expire when Firefox is closed.
+
+This setting is ignored if this policy is not configured or disabled or if cookies are not allowed.</string>
+      <string id="Cookies_Locked">Do not allow preferences to be changed</string>
+      <string id="Cookies_Locked_Explain">If this policy is enabled cookie preferences cannot be changed by the user.
+
+If this policy is not configured or disabled, the user can change their cookie preferences.</string>
       <string id="FlashAllow_Explain">URLs to allow Flash.</string>
       <string id="FlashBlock_Explain">URLs to block Flash.</string>
       <string id="Bookmark1">Bookmark 1</string>
@@ -116,10 +139,12 @@ If this policy is enabled, private browsing is enabled by default in both the br
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
       </presentation>
+      <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
       <presentation id="AddonsAllow"><listBox refId="AddonsAllowDesc">Allow add-ons for websites</listBox></presentation>
-      <presentation id="CookiesAllow"><listBox refId="CookiesAllowDesc">Allow cookies for websites</listBox></presentation>
-      <presentation id="CookiesBlock"><listBox refId="CookiesBlockDesc">Block cookies for websites</listBox></presentation>
+      <presentation id="Cookies_AcceptThirdParty">
+        <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
       <presentation id="FlashAllow"><listBox refId="FlashAllowDesc">Allow Flash for websites</listBox></presentation>
       <presentation id="FlashBlock"><listBox refId="FlashBlockDesc">Block Flash for websites</listBox></presentation>
       <presentation id="TrackingProtection">
