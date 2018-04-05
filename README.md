@@ -9,7 +9,19 @@ The content of the JSON file should look like this:
 }
 ```
 Policies are documented below.
-
+### Authentication
+This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
+```
+{
+  "policies": {
+    "Authentication": {
+      "SPNEGO": ["mydomain.com", "https://myotherdomain.com"],
+      "Delegated": ["mydomain.com", "https://myotherdomain.com"],
+      "NTLM": ["mydomain.com", "https://myotherdomain.com"]
+    }
+  }
+}
+```
 ### BlockAboutAddons
 This policy removes access to about:addons.
 ```
