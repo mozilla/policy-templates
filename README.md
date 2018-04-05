@@ -66,6 +66,17 @@ This policy removes the "Set As Desktop Background..." menuitem when right click
   }
 }
 ```
+### Certificates
+This is a Windows only policy that tells Firefox to read certificates from the Windows certificate store.
+```
+{
+  "policies": {
+    "Certificates": {
+      "ImportEnterpriseRoots": [true|false]
+    }
+  }
+}
+```
 ### CreateMasterPassword
 This policy removes the master password functionality.
 ```
