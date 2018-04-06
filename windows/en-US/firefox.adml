@@ -109,7 +109,13 @@ If this policy is disabled or not configured, no extensions are locked.</string>
       <string id="RememberPasswords">Remember Passwords</string>
       <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
       <string id="PopupsAllow_Explain">URLs to allow popups.</string>
-      <string id="AddonsAllow_Explain">URLs to allow addons.</string>
+      <string id="InstallAddons_Allow_Explain">If this policy is enabled, add-ons are always allowed for the URLS indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default add-on policy is followed.</string>
+      <string id="InstallAddons_Default">Allow add-on installs from websites</string>
+      <string id="InstallAddons_Default_Explain">If this policy is disabled, add-ons cannot be installed.
+
+If this policy is not configured or enabled, add-ons can be installed.</string>
       <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default cookie policy is followed.</string>
@@ -196,7 +202,6 @@ If this policy is enabled, private browsing is enabled by default in both the br
       </presentation>
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
-      <presentation id="AddonsAllow"><listBox refId="AddonsAllowDesc">Allow add-ons for websites</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
       </presentation>

@@ -473,12 +473,22 @@
         <list id="PopupsAllowDesc" key="Software\Policies\Mozilla\Firefox\Popups\Allow" valuePrefix=""/>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.AddonsAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="AddonsAllow" presentation="$(presentation.AddonsAllow)">
-      <parentCategory ref="Addons"/>
+    <policy name="InstallAddons_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.InstallAddons_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+      <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="AddonsAllowDesc" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
       </elements>
+    </policy>
+    <policy name="InstallAddons_Default" class="Both" displayName="$(string.InstallAddons_Default)" explainText="$(string.InstallAddons_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddons" valueName="Default">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
     <policy name="FlashPlugin_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.FlashPlugin_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Flash"/>

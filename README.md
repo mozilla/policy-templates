@@ -350,13 +350,14 @@ This policy sets domains for which popups are allowed
 }
 ```
 ### InstallAddons
-This policy sets domains that can install extensions
+This policy sets domains that can install extensions, as well as the default behavior.
 ```
 {
   "policies": {
     "InstallAddons": {
       "Allow": ["http://example.org/",
                 "http://example.edu/"]
+      "Default": [true|false], /* If this is set to false, add-ons cannot be installed by the user */
     }
   }
 }
