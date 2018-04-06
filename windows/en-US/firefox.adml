@@ -16,8 +16,8 @@
       <string id="Extensions_group">Extensions</string>
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Home page</string>
-      <string id="Allow">Allow</string>
-      <string id="Block">Block</string>
+      <string id="Allow">Allowed Sites</string>
+      <string id="Block">Blocked Sites</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">List of sites that are permitted to engage in SPNEGO authentication with the browser.</string>
       <string id="Authentication_Delegated">Delegated</string>
@@ -135,8 +135,23 @@ This setting is ignored if this policy is disabled or not configured or if cooki
       <string id="Cookies_Locked_Explain">If this policy is enabled cookie preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their cookie preferences.</string>
-      <string id="FlashAllow_Explain">URLs to allow Flash.</string>
-      <string id="FlashBlock_Explain">URLs to block Flash.</string>
+      <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the URLS indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default Flash policy is followed.</string>
+      <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the URLS indicated. If a top level domain is specified (http://example.org), Flas is blocked from all subdomains as well.
+
+If this policy is disabled or not configured, the default Flash policy is followed.</string>
+      <string id="FlashPlugin_Default">Activate Flash on websites</string>
+      <string id="FlashPlugin_Default_Explain">If this policy is enabled, Flash is always activates on websites.
+
+If this policy is disabled, Flash is never activated on websites, even if they are in the specified in the Allow list.
+
+If this policy is not configured Flash, Flash is click to play.</string>
+      <string id="FlashPlugin_Locked">Do not allow preferences to be changed</string>
+      <string id="FlashPlugin_Locked_Explain">If this policy is enabled Flash preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their Flash preferences.</string>
+
       <string id="Bookmark1">Bookmark 1</string>
       <string id="Bookmark2">Bookmark 2</string>
       <string id="Bookmark3">Bookmark 3</string>
@@ -185,8 +200,6 @@ If this policy is enabled, private browsing is enabled by default in both the br
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
       </presentation>
-      <presentation id="FlashAllow"><listBox refId="FlashAllowDesc">Allow Flash for websites</listBox></presentation>
-      <presentation id="FlashBlock"><listBox refId="FlashBlockDesc">Block Flash for websites</listBox></presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
       </presentation>
