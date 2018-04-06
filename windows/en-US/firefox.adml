@@ -161,6 +161,10 @@ If this policy is disabled or not configured, the user can change their Flash pr
       <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
 
 If this policy is disabled or not configured the first run page is displayed.</string>
+      <string id="OverridePostUpdatePage">Override the upgrade page</string>
+      <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
+
+If this policy is disabled or not configured the upgrade is displayed.</string>
       <string id="Bookmark1">Bookmark 1</string>
       <string id="Bookmark2">Bookmark 2</string>
       <string id="Bookmark3">Bookmark 3</string>
@@ -211,8 +215,8 @@ If this policy is enabled, private browsing is enabled by default in both the br
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
       </presentation>
-      <presentation id="OverrideFirstRunPage">
-        <textBox refId="OverrideFirstRunPage">
+      <presentation id="OverridePage">
+        <textBox refId="OverridePage">
           <label>URL:</label>
         </textBox>
       </presentation>
