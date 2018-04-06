@@ -28,7 +28,7 @@
       <parentCategory ref="Permissions"/>
     </category>
     <category displayName="$(string.Flash_group)" name="Flash">
-      <parentCategory ref="Permissions"/>
+      <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Bookmarks_group)" name="Bookmarks">
       <parentCategory ref="firefox"/>
@@ -480,19 +480,39 @@
         <list id="AddonsAllowDesc" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.FlashAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="FlashAllow" presentation="$(presentation.FlashAllow)">
+    <policy name="FlashPlugin_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.FlashPlugin_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Flash"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="FlashAllowDesc" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Allow" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Allow" valuePrefix=""/>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Block)" explainText="$(string.FlashBlock_Explain)" key="Software\Policies\Mozilla\Firefox" name="FlashBlock" presentation="$(presentation.FlashBlock)">
+    <policy name="FlashPlugin_Block" class="Both" displayName="$(string.Block)" explainText="$(string.FlashPlugin_Block_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Flash"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="FlashBlockDesc" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Block" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Block" valuePrefix=""/>
       </elements>
+    </policy>
+    <policy name="FlashPlugin_Default" class="Both" displayName="$(string.FlashPlugin_Default)" explainText="$(string.FlashPlugin_Default_Explain)" key="Software\Policies\Mozilla\Firefox\FlashPlugin" valueName="Default">
+      <parentCategory ref="Flash"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="FlashPlugin_Locked" class="Both" displayName="$(string.FlashPlugin_Locked)" explainText="$(string.FlashPlugin_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\FlashPlugin" valueName="Locked">
+      <parentCategory ref="Flash"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
     <policy class="Both" displayName="$(string.HomepageURL)" name="HomepageURL" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />

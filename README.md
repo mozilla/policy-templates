@@ -362,13 +362,15 @@ This policy sets domains that can install extensions
 }
 ```
 ### FlashPlugin
-This policy sets domains that can use or not use Flash
+This policy sets the behavior of Flash on the specified domains, as well as the default behavior.
 ```
 {
   "policies": {
     "FlashPlugin": {
-      "Allow": ["http://example.org/"],
-      "Block": ["http://example.edu/"]
+      "Allow": ["http://example.org/"], /* Sites on the allow list do not override Flash being completely disabled */
+      "Block": ["http://example.edu/"],
+      "Default": [true|false], /* If this is set to true, flash is always enabled. If it is set to false, Flash is never enabled */
+      "Locked": [true|false]
     }
   }
 }
