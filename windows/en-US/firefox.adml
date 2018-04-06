@@ -157,7 +157,10 @@ If this policy is not configured Flash, Flash is click to play.</string>
       <string id="FlashPlugin_Locked_Explain">If this policy is enabled Flash preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their Flash preferences.</string>
+      <string id="OverrideFirstRunPage">Override the first run page</string>
+      <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
 
+If this policy is disabled or not configured the first run page is displayed.</string>
       <string id="Bookmark1">Bookmark 1</string>
       <string id="Bookmark2">Bookmark 2</string>
       <string id="Bookmark3">Bookmark 3</string>
@@ -207,6 +210,11 @@ If this policy is enabled, private browsing is enabled by default in both the br
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
+      </presentation>
+      <presentation id="OverrideFirstRunPage">
+        <textBox refId="OverrideFirstRunPage">
+          <label>URL:</label>
+        </textBox>
       </presentation>
       <presentation id="HomepageURL">
         <text>URL:</text>
