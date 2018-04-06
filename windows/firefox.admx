@@ -524,6 +524,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="OverrideFirstRunPage" class="Both" displayName="$(string.OverrideFirstRunPage)" explainText="$(string.OverrideFirstRunPage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverrideFirstRunPage)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="OverrideFirstRunPage" key="Software\Policies\Mozilla\Firefox" valueName="OverrideFirstRunPage"/>
+      </elements>
+    </policy>
     <policy class="Both" displayName="$(string.HomepageURL)" name="HomepageURL" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />

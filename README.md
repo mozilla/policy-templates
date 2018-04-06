@@ -376,6 +376,15 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
   }
 }
 ```
+### OverrideFirstRunPage
+This policy allowed you to override the first run page. If you leave the URL blank, the first run page will not be displayed.
+```
+{
+  "policies": {
+    "OverrideFirstRunPage": "http://example.org"
+  }
+}
+```
 ### Bookmarks
 This policy allows you to specify bookmarks. You can have any number of bookmarks although only ten are specified in the ADMX file.
 Placement can be specified as either toolbar or menu. If a folder is specified, it is automatically created and bookmarks with the
