@@ -493,14 +493,14 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="InstallAddons_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.InstallAddons_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+    <policy name="InstallAddonsPermission_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.InstallAddonsPermission_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="InstallAddons_Default" class="Both" displayName="$(string.InstallAddons_Default)" explainText="$(string.InstallAddons_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddons" valueName="Default">
+    <policy name="InstallAddonsPermission_Default" class="Both" displayName="$(string.InstallAddonsPermission_Default)" explainText="$(string.InstallAddonsPermission_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission" valueName="Default">
       <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>

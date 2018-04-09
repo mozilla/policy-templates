@@ -127,11 +127,11 @@ If this policy is not configured or enabled, popups are not allowed from website
       <string id="PopupBlocking_Locked_Explain">If this policy is enabled pop-up preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their pop-up preferences.</string>
-      <string id="InstallAddons_Allow_Explain">If this policy is enabled, add-ons are always allowed for the URLS indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
+      <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the URLS indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default add-on policy is followed.</string>
-      <string id="InstallAddons_Default">Allow add-on installs from websites</string>
-      <string id="InstallAddons_Default_Explain">If this policy is disabled, add-ons cannot be installed.
+      <string id="InstallAddonsPermission_Default">Allow add-on installs from websites</string>
+      <string id="InstallAddonsPermission_Default_Explain">If this policy is disabled, add-ons cannot be installed.
 
 If this policy is not configured or enabled, add-ons can be installed.</string>
       <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
