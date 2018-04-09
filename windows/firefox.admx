@@ -456,7 +456,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="RememberPasswords" class="Both" displayName="$(string.RememberPasswords)" explainText="$(string.RememberPasswords_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="RememberPasswords">
+    <policy name="OfferToSaveLogins" class="Both" displayName="$(string.OfferToSaveLogins)" explainText="$(string.OfferToSaveLogins_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfferToSaveLogins">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>

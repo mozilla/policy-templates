@@ -112,8 +112,10 @@ If this policy is disabled or not configured, no extensions are uninstalled.</st
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
 If this policy is disabled or not configured, no extensions are locked.</string>
-      <string id="RememberPasswords">Remember Passwords</string>
-      <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
+      <string id="OfferToSaveLogins">Offer to save logins</string>
+      <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
+
+If this policy is disabled, firefox will not offer to save website logins and passwords.</string>
       <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default pop-up policy is followed.</string>

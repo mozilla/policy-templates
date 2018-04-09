@@ -314,12 +314,12 @@ Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent 
   }
 }
 ```
-### RememberPasswords
-This policy sets the signon.rememberSignons preference. It can either be enabled or disabled.
+### OfferToSaveLogins
+This policy sets the signon.rememberSignons preference. It determines whether or not Firefox offers to save passwords. It can either be enabled or disabled.
 ```
 {
   "policies": {
-    "RememberPasswords": true
+    "OfferToSaveLogins": true
   }
 }
 ```
