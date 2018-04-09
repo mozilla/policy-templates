@@ -454,3 +454,13 @@ This policy can be used to determine if the search bar is separate or combined w
   }
 }
 ```
+### WebsiteFilter
+Blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. The arrays are limited to 1000 entries each.
+```
+{
+  "policies": {
+    "Block": ["<all_urls>"],
+    "Exceptions": ["http://example.org/*"]
+  }
+}
+```
