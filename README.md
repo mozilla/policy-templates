@@ -392,7 +392,7 @@ This policy allowed you to override the upgrade page page. If you leave the URL 
 ```
 {
   "policies": {
-    "OverridePostUpdatePagep": "http://example.org"
+    "OverridePostUpdatePage": "http://example.org"
   }
 }
 ```
@@ -433,6 +433,15 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
     "AutoConfigURL": "URL_TO_AUTOCONFIG",
     "AutoLogin":  [true, false],
     "UseProxyForDNS": [true, false]
+  }
+}
+```
+### SanitizeOnShutdown
+If this policy is set to true,  all data is cleared when Firefox is closed. This includes Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
+```
+{
+  "policies": {
+    "SanitizeOnShutdown": [true|false]
   }
 }
 ```
