@@ -159,12 +159,12 @@
         <enum id="Cookies_AcceptThirdParty" valueName="Cookies_AcceptThirdParty">
           <item displayName="$(string.Cookies_AcceptThirdParty_All)">
             <value>
-              <string>all</string>
+              <string>always</string>
             </value>
           </item>
           <item displayName="$(string.Cookies_AcceptThirdParty_None)">
             <value>
-              <string>none</string>
+              <string>never</string>
             </value>
           </item>
           <item displayName="$(string.Cookies_AcceptThirdParty_FromVisited)">

@@ -86,7 +86,7 @@ This policy controls various settings related to cookies.
       "Allow": ["http://example.org/"], /* Domains where cookies are always allowed */
       "Block": ["http://example.edu/"], /* Domains where cookies are always blocked */
       "Default": [true|false], /* This sets the default value for "Accept cookies from websites" */
-      "AcceptThirdParty": ["all", "none", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
+      "AcceptThirdParty": ["always", "never", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
       "ExpireAtSessionEnd":  [true|false], /* This determines when cookies expire */
       "Locked": [true|false] /* If this is true, cookies preferences can't be changed */
     }
