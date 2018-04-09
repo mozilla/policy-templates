@@ -57,12 +57,12 @@ This policy removes access to about:support.
     "BlockAboutSupport": true
 }
 ```
-### BlockSetDesktopBackground
+### DisableSetDesktopBackground
 This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
 ```
 {
   "policies": {
-    "BlockAboutSupport": true
+    "DisableSetDesktopBackground": true
   }
 }
 ```

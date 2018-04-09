@@ -32,8 +32,10 @@
       <string id="BlockAboutProfiles_Explain">Blocks access to the about:profiles page.</string>
       <string id="BlockAboutSupport">Block About Support</string>
       <string id="BlockAboutSupport_Explain">Blocks access to the about:support page.</string>
-      <string id="BlockSetDesktopBackground">Block Set Desktop Background</string>
-      <string id="BlockSetDesktopBackground_Explain">Prevents usage of the &quot;Set Image as Desktop Background&quot; feature.</string>
+      <string id="DisableSetDesktopBackground">Disable Set Desktop Background</string>
+      <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user can not set an image as their desktop background.
+
+If this policy is disabled or not configured, users can set images as their desktop background.</string>
       <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 

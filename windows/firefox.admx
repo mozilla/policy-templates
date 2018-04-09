@@ -108,7 +108,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="BlockSetDesktopBackground" class="Both" displayName="$(string.BlockSetDesktopBackground)" explainText="$(string.BlockSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockSetDesktopBackground">
+    <policy name="DisableSetDesktopBackground" class="Both" displayName="$(string.DisableSetDesktopBackground)" explainText="$(string.DisableSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSetDesktopBackground">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
