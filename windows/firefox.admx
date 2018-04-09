@@ -19,13 +19,13 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Popups_group)" name="Popups">
-      <parentCategory ref="Permissions"/>
+      <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Cookies_group)" name="Cookies">
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Addons_group)" name="Addons">
-      <parentCategory ref="Permissions"/>
+      <parentCategory ref="addons"/>
     </category>
     <category displayName="$(string.Flash_group)" name="Flash">
       <parentCategory ref="firefox"/>
@@ -466,22 +466,42 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy class="Both" displayName="$(string.Allow)" explainText="$(string.PopupsAllow_Explain)" key="Software\Policies\Mozilla\Firefox" name="PopupsAllow" presentation="$(presentation.PopupsAllow)">
+    <policy name="PopupBlocking_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.PopupBlocking_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Popups"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="PopupsAllowDesc" key="Software\Policies\Mozilla\Firefox\Popups\Allow" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\PopupBlocking\Allow" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="PopupBlocking_Default" class="Both" displayName="$(string.PopupBlocking_Default)" explainText="$(string.PopupBlocking_Default_Explain)" key="Software\Policies\Mozilla\Firefox\PopupBlocking" valueName="Default">
+      <parentCategory ref="Popups"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="PopupBlocking_Locked" class="Both" displayName="$(string.PopupBlocking_Locked)" explainText="$(string.PopupBlocking_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\PopupBlocking" valueName="Locked">
+      <parentCategory ref="Popups"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="InstallAddons_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.InstallAddons_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
-      <parentCategory ref="firefox"/>
+      <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
         <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="InstallAddons_Default" class="Both" displayName="$(string.InstallAddons_Default)" explainText="$(string.InstallAddons_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddons" valueName="Default">
-      <parentCategory ref="firefox"/>
+      <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
         <decimal value="1"/>
