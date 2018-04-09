@@ -337,14 +337,16 @@ This policy sets the default homepage value. It can also be used to lock the hom
   }
 }
 ```
-### Popups
-This policy sets domains for which popups are allowed
+### PopupBlocking
+This policy sets domains for which pop-up windows are allowed. It also set the default pop-up policy
 ```
 {
   "policies": {
-    "Popups": {
+    "PopupBlocking": {
       "Allow": ["http://example.org/",
-                "http://example.edu/"]
+                "http://example.edu/"],
+      "Default": [true|false], /* If this is set to false, pop-up window are enabled by default. */
+      "Locked": [true|false]
     }
   }
 }
@@ -390,7 +392,7 @@ This policy allowed you to override the upgrade page page. If you leave the URL 
 ```
 {
   "policies": {
-    "OverridePostUpdatePage": "http://example.org"
+    "OverridePostUpdatePagep": "http://example.org"
   }
 }
 ```
