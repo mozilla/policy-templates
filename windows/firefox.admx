@@ -558,6 +558,16 @@
         <text id="OverridePage" valueName="OverridePostUpdatePage"/>
       </elements>
     </policy>
+    <policy name="SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Both" displayName="$(string.HomepageURL)" name="HomepageURL" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />

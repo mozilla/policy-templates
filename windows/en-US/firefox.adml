@@ -175,6 +175,10 @@ If this policy is disabled or not configured the first run page is displayed.</s
       <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
 
 If this policy is disabled or not configured the upgrade is displayed.</string>
+      <string id="SanitizeOnShutdown">Clear all data when browser is closed</string>
+      <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
+
+If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
       <string id="Bookmark1">Bookmark 1</string>
       <string id="Bookmark2">Bookmark 2</string>
       <string id="Bookmark3">Bookmark 3</string>
