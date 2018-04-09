@@ -355,7 +355,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="DisableSysAddonUpdate" class="Both" displayName="$(string.DisableSysAddonUpdate)" explainText="$(string.DisableSysAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSysAddonUpdate">
+    <policy name="DisableSystemAddonUpdate" class="Both" displayName="$(string.DisableSystemAddonUpdate)" explainText="$(string.DisableSystemAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSystemAddonUpdate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>

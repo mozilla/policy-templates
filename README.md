@@ -231,12 +231,12 @@ This policy prevents the user from bypassign security in certain cases.
   }
 }
 ```
-### DisableSysAddonUpdate
+### DisableSystemAddonUpdate
 This policy prevents system add-ons from being updated or installed.
 ```
 {
   "policies": {
-    "DisableSysAddonUpdate": true
+    "DisableSystemAddonUpdate": true
   }
 }
 ```
