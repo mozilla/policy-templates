@@ -187,6 +187,14 @@ If this policy is disabled or not configured the upgrade is displayed.</string>
       <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
 
 If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
+      <string id="WebsiteFilter_Block">Blocked websites</string>
+      <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. There is a 1000 entry limit.",
+
+If this policy is disabled or not configured, no websites are blocked.</string>
+      <string id="WebsiteFilter_Exceptions">Exceptions to blocked websites</string>
+      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. There is a 1000 entry limit.",
+
+If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
       <string id="Bookmark1">Bookmark 1</string>
       <string id="Bookmark2">Bookmark 2</string>
       <string id="Bookmark3">Bookmark 3</string>
@@ -234,6 +242,9 @@ If this policy is not configured or disabled, new users get a unified search bar
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>
+      </presentation>
+      <presentation id="WebsiteFilter">
+        <listBox refId="WebsiteFilter"/>
       </presentation>
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>

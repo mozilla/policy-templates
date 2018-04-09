@@ -801,5 +801,19 @@
         </enum>
       </elements>
     </policy>
+    <policy name="WebsiteFilter_Block" class="Both" displayName="$(string.WebsiteFilter_Block)" explainText="$(string.WebsiteFilter_Block_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Block" presentation="$(presentation.WebsiteFilter)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="WebsiteFilter_Exceptions" class="Both" displayName="$(string.WebsiteFilter_Exceptions)" explainText="$(string.WebsiteFilter_Exceptions_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Exceptions" presentation="$(presentation.WebsiteFilter)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
