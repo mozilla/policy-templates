@@ -108,7 +108,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="BlockSetDesktopBackground" class="Both" displayName="$(string.BlockSetDesktopBackground)" explainText="$(string.BlockSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockSetDesktopBackground">
+    <policy name="DisableSetDesktopBackground" class="Both" displayName="$(string.DisableSetDesktopBackground)" explainText="$(string.DisableSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSetDesktopBackground">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -159,12 +159,12 @@
         <enum id="Cookies_AcceptThirdParty" valueName="Cookies_AcceptThirdParty">
           <item displayName="$(string.Cookies_AcceptThirdParty_All)">
             <value>
-              <string>all</string>
+              <string>always</string>
             </value>
           </item>
           <item displayName="$(string.Cookies_AcceptThirdParty_None)">
             <value>
-              <string>none</string>
+              <string>never</string>
             </value>
           </item>
           <item displayName="$(string.Cookies_AcceptThirdParty_FromVisited)">
@@ -195,7 +195,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="CreateMasterPassword" class="Both" displayName="$(string.CreateMasterPassword)" explainText="$(string.CreateMasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CreateMasterPassword">
+    <policy name="DisableMasterPasswordCreation" class="Both" displayName="$(string.DisableMasterPasswordCreation)" explainText="$(string.DisableMasterPasswordCreation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableMasterPasswordCreation">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -355,7 +355,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="DisableSysAddonUpdate" class="Both" displayName="$(string.DisableSysAddonUpdate)" explainText="$(string.DisableSysAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSysAddonUpdate">
+    <policy name="DisableSystemAddonUpdate" class="Both" displayName="$(string.DisableSystemAddonUpdate)" explainText="$(string.DisableSystemAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSystemAddonUpdate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -456,7 +456,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="RememberPasswords" class="Both" displayName="$(string.RememberPasswords)" explainText="$(string.RememberPasswords_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="RememberPasswords">
+    <policy name="OfferToSaveLogins" class="Both" displayName="$(string.OfferToSaveLogins)" explainText="$(string.OfferToSaveLogins_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfferToSaveLogins">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -493,14 +493,14 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="InstallAddons_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.InstallAddons_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+    <policy name="InstallAddonsPermission_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.InstallAddonsPermission_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddons\Allow" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="InstallAddons_Default" class="Both" displayName="$(string.InstallAddons_Default)" explainText="$(string.InstallAddons_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddons" valueName="Default">
+    <policy name="InstallAddonsPermission_Default" class="Both" displayName="$(string.InstallAddonsPermission_Default)" explainText="$(string.InstallAddonsPermission_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission" valueName="Default">
       <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>

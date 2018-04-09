@@ -32,14 +32,18 @@
       <string id="BlockAboutProfiles_Explain">Blocks access to the about:profiles page.</string>
       <string id="BlockAboutSupport">Block About Support</string>
       <string id="BlockAboutSupport_Explain">Blocks access to the about:support page.</string>
-      <string id="BlockSetDesktopBackground">Block Set Desktop Background</string>
-      <string id="BlockSetDesktopBackground_Explain">Prevents usage of the &quot;Set Image as Desktop Background&quot; feature.</string>
+      <string id="DisableSetDesktopBackground">Disable Set Desktop Background</string>
+      <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user can not set an image as their desktop background.
+
+If this policy is disabled or not configured, users can set images as their desktop background.</string>
       <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
 If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
-      <string id="CreateMasterPassword">Create Master Password</string>
-      <string id="CreateMasterPassword_Explain">If false, removes access to create a master password.</string>
+      <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
+      <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
+
+If this policy is disabled or not configured, users can create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
       <string id="DisableAppUpdate_Explain">Prevent the browser from updating.</string>
       <string id="DisableBuiltinPDFViewer">Disable Builtin PDF Viewer</string>
@@ -78,8 +82,10 @@ If this policy is disabled or not configured, certificate errors can be overridd
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">If this policy is enabled, a user can not bypass the warning and visit a harmful site.
 
 If this policy is disabled or not configured, a user can choose to visit a harmful site.</string>
-      <string id="DisableSysAddonUpdate">Disable System Addon Updates</string>
-      <string id="DisableSysAddonUpdate_Explain">Prevent the browser from installing and updating system addons.</string>
+      <string id="DisableSystemAddonUpdate">Disable System Addon Updates</string>
+      <string id="DisableSystemAddonUpdate_Explain">If this policy is enabled, new system add-ons will not be installed and existing system add-ons will not be updated.
+
+If this policy is disabled or not configured, system add-ons are installed and updated.</string>
       <string id="DisableTelemetry">Disable Telemetry</string>
       <string id="DisableTelemetry_Explain">If this policy is enabled, telemetry is not uploaded.
 
@@ -106,8 +112,10 @@ If this policy is disabled or not configured, no extensions are uninstalled.</st
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
 If this policy is disabled or not configured, no extensions are locked.</string>
-      <string id="RememberPasswords">Remember Passwords</string>
-      <string id="RememberPasswords_Explain">Enforces the setting to allow Firefox to remember saved logins and passwords. Both true and false values are accepted.</string>
+      <string id="OfferToSaveLogins">Offer to save logins</string>
+      <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
+
+If this policy is disabled, firefox will not offer to save website logins and passwords.</string>
       <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default pop-up policy is followed.</string>
@@ -119,11 +127,11 @@ If this policy is not configured or enabled, popups are not allowed from website
       <string id="PopupBlocking_Locked_Explain">If this policy is enabled pop-up preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their pop-up preferences.</string>
-      <string id="InstallAddons_Allow_Explain">If this policy is enabled, add-ons are always allowed for the URLS indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
+      <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the URLS indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default add-on policy is followed.</string>
-      <string id="InstallAddons_Default">Allow add-on installs from websites</string>
-      <string id="InstallAddons_Default_Explain">If this policy is disabled, add-ons cannot be installed.
+      <string id="InstallAddonsPermission_Default">Allow add-on installs from websites</string>
+      <string id="InstallAddonsPermission_Default_Explain">If this policy is disabled, add-ons cannot be installed.
 
 If this policy is not configured or enabled, add-ons can be installed.</string>
       <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.

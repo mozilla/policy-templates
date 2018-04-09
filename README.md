@@ -57,12 +57,12 @@ This policy removes access to about:support.
     "BlockAboutSupport": true
 }
 ```
-### BlockSetDesktopBackground
+### DisableSetDesktopBackground
 This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
 ```
 {
   "policies": {
-    "BlockAboutSupport": true
+    "DisableSetDesktopBackground": true
   }
 }
 ```
@@ -86,19 +86,19 @@ This policy controls various settings related to cookies.
       "Allow": ["http://example.org/"], /* Domains where cookies are always allowed */
       "Block": ["http://example.edu/"], /* Domains where cookies are always blocked */
       "Default": [true|false], /* This sets the default value for "Accept cookies from websites" */
-      "AcceptThirdParty": ["all", "none", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
+      "AcceptThirdParty": ["always", "never", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
       "ExpireAtSessionEnd":  [true|false], /* This determines when cookies expire */
       "Locked": [true|false] /* If this is true, cookies preferences can't be changed */
     }
   }
 }
 ```
-### CreateMasterPassword
-This policy removes the master password functionality.
+### DisableMasterPasswordCreation
+This policy removes the master password functionality if set to true.
 ```
 {
   "policies": {
-    "CreateMasterPassword": false
+    "DisableMasterPasswordCreation": [true|false]
   }
 }
 ```
@@ -231,12 +231,12 @@ This policy prevents the user from bypassign security in certain cases.
   }
 }
 ```
-### DisableSysAddonUpdate
+### DisableSystemAddonUpdate
 This policy prevents system add-ons from being updated or installed.
 ```
 {
   "policies": {
-    "DisableSysAddonUpdate": true
+    "DisableSystemAddonUpdate": true
   }
 }
 ```
@@ -314,12 +314,12 @@ Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent 
   }
 }
 ```
-### RememberPasswords
-This policy sets the signon.rememberSignons preference. It can either be enabled or disabled.
+### OfferToSaveLogins
+This policy sets the signon.rememberSignons preference. It determines whether or not Firefox offers to save passwords. It can either be enabled or disabled.
 ```
 {
   "policies": {
-    "RememberPasswords": true
+    "OfferToSaveLogins": true
   }
 }
 ```
@@ -351,12 +351,12 @@ This policy sets domains for which pop-up windows are allowed. It also set the d
   }
 }
 ```
-### InstallAddons
+### InstallAddonsPermission
 This policy sets domains that can install extensions, as well as the default behavior.
 ```
 {
   "policies": {
-    "InstallAddons": {
+    "InstallAddonsPermission": {
       "Allow": ["http://example.org/",
                 "http://example.edu/"]
       "Default": [true|false], /* If this is set to false, add-ons cannot be installed by the user */
