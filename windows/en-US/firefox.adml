@@ -213,6 +213,12 @@ If this policy is disabled or not configured, data is not cleared when the brows
 If this policy is disabled, tracking protection is disabled and locked in both the browser and private browsing.
 
 If this policy is enabled, private browsing is enabled by default in both the browser and private browsing and you can choose whether or not to prevent the user from changing it.</string>
+      <string id="SearchBar">Search bar location</string>
+      <string id="SearchBar_Explain">If this policy is enabled, you can set whether the search bar is separate from the URL bar.
+
+If this policy is not configured or disabled, new users get a unified search bar, users upgrading from Firefox 56 and below get a separate search bar.</string>
+      <string id="SearchBar_Unified">Unified</string>
+      <string id="SearchBar_Separate">Separate</string>
     </stringTable>
     <presentationTable>
       <presentation id="Authentication">
@@ -225,6 +231,9 @@ If this policy is enabled, private browsing is enabled by default in both the br
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="SearchBar">
+        <dropdownList refId="SearchBar"/>
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
