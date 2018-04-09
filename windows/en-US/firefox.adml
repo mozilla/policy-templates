@@ -40,8 +40,10 @@ If this policy is disabled or not configured, users can set images as their desk
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
 If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
-      <string id="CreateMasterPassword">Create Master Password</string>
-      <string id="CreateMasterPassword_Explain">If false, removes access to create a master password.</string>
+      <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
+      <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
+
+If this policy is disabled or not configured, users can create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
       <string id="DisableAppUpdate_Explain">Prevent the browser from updating.</string>
       <string id="DisableBuiltinPDFViewer">Disable Builtin PDF Viewer</string>

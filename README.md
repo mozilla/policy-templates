@@ -93,12 +93,12 @@ This policy controls various settings related to cookies.
   }
 }
 ```
-### CreateMasterPassword
-This policy removes the master password functionality.
+### DisableMasterPasswordCreation
+This policy removes the master password functionality if set to true.
 ```
 {
   "policies": {
-    "CreateMasterPassword": false
+    "DisableMasterPasswordCreation": [true|false]
   }
 }
 ```

@@ -195,7 +195,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="CreateMasterPassword" class="Both" displayName="$(string.CreateMasterPassword)" explainText="$(string.CreateMasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CreateMasterPassword">
+    <policy name="DisableMasterPasswordCreation" class="Both" displayName="$(string.DisableMasterPasswordCreation)" explainText="$(string.DisableMasterPasswordCreation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableMasterPasswordCreation">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
