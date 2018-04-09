@@ -783,5 +783,23 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="SearchBar" class="Both" displayName="$(string.SearchBar)" explainText="$(string.SearchBar_Explain)" key="Software\Policies\Mozilla\Firefox"  presentation="$(presentation.SearchBar)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <elements>
+        <enum id="SearchBar" valueName="SearchBar">
+          <item displayName="$(string.SearchBar_Unified)">
+            <value>
+              <string>unified</string>
+            </value>
+          </item>
+          <item displayName="$(string.SearchBar_Separate)">
+            <value>
+              <string>separate</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

@@ -445,3 +445,12 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
   }
 }
 ```
+### SearchBar
+This policy can be used to determine if the search bar is separate or combined with the URL bar.
+```
+{
+  "policies": {
+    "SearchBar": ["unified", "separate"]
+  }
+}
+```
