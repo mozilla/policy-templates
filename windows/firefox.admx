@@ -318,6 +318,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableProfileImport" class="Both" displayName="$(string.DisableProfileImport)" explainText="$(string.DisableProfileImport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableProfileImport">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableProfileRefresh" class="Both" displayName="$(string.DisableProfileRefresh)" explainText="$(string.DisableProfileRefresh_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableProfileRefresh">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
