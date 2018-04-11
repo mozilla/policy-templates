@@ -45,6 +45,9 @@
     <category displayName="$(string.Extensions_group)" name="Extensions">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.Search_group)" name="Search">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
@@ -814,6 +817,143 @@
       <elements>
         <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
       </elements>
+    </policy>
+    <policy name="SearchEngines_1" class="Both" displayName="$(string.SearchEngines_1)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\1" presentation="$(presentation.SearchEngine)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="SearchEngine_Name" valueName="Name" required="true" />
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <enum id="SearchEngine_Method" valueName="Method">
+          <item displayName="$(string.SearchEngine_Method_GET)">
+            <value>
+              <string>GET</string>
+            </value>
+          </item>
+          <item displayName="$(string.SearchEngine_Method_POST)">
+            <value>
+              <string>POST</string>
+            </value>
+          </item>
+        </enum>
+        <text id="SearchEngine_IconURL" valueName="IconURL"/>
+        <text id="SearchEngine_Alias" valueName="Alias"/>
+        <text id="SearchEngine_Description" valueName="Description"/>
+        <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
+      </elements>
+    </policy>
+    <policy name="SearchEngines_2" class="Both" displayName="$(string.SearchEngines_2)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\2" presentation="$(presentation.SearchEngine)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="SearchEngine_Name" valueName="Name" required="true" />
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <enum id="SearchEngine_Method" valueName="Method">
+          <item displayName="$(string.SearchEngine_Method_GET)">
+            <value>
+              <string>GET</string>
+            </value>
+          </item>
+          <item displayName="$(string.SearchEngine_Method_POST)">
+            <value>
+              <string>POST</string>
+            </value>
+          </item>
+        </enum>
+        <text id="SearchEngine_IconURL" valueName="IconURL"/>
+        <text id="SearchEngine_Alias" valueName="Alias"/>
+        <text id="SearchEngine_Description" valueName="Description"/>
+        <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
+      </elements>
+    </policy>
+    <policy name="SearchEngines_3" class="Both" displayName="$(string.SearchEngines_3)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\3" presentation="$(presentation.SearchEngine)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="SearchEngine_Name" valueName="Name" required="true" />
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <enum id="SearchEngine_Method" valueName="Method">
+          <item displayName="$(string.SearchEngine_Method_GET)">
+            <value>
+              <string>GET</string>
+            </value>
+          </item>
+          <item displayName="$(string.SearchEngine_Method_POST)">
+            <value>
+              <string>POST</string>
+            </value>
+          </item>
+        </enum>
+        <text id="SearchEngine_IconURL" valueName="IconURL"/>
+        <text id="SearchEngine_Alias" valueName="Alias"/>
+        <text id="SearchEngine_Description" valueName="Description"/>
+        <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
+      </elements>
+    </policy>
+    <policy name="SearchEngines_4" class="Both" displayName="$(string.SearchEngines_4)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\4" presentation="$(presentation.SearchEngine)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="SearchEngine_Name" valueName="Name" required="true" />
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <enum id="SearchEngine_Method" valueName="Method">
+          <item displayName="$(string.SearchEngine_Method_GET)">
+            <value>
+              <string>GET</string>
+            </value>
+          </item>
+          <item displayName="$(string.SearchEngine_Method_POST)">
+            <value>
+              <string>POST</string>
+            </value>
+          </item>
+        </enum>
+        <text id="SearchEngine_IconURL" valueName="IconURL"/>
+        <text id="SearchEngine_Alias" valueName="Alias"/>
+        <text id="SearchEngine_Description" valueName="Description"/>
+        <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
+      </elements>
+    </policy>
+    <policy name="SearchEngines_5" class="Both" displayName="$(string.SearchEngines_5)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\5" presentation="$(presentation.SearchEngine)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="SearchEngine_Name" valueName="Name" required="true" />
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <enum id="SearchEngine_Method" valueName="Method">
+          <item displayName="$(string.SearchEngine_Method_GET)">
+            <value>
+              <string>GET</string>
+            </value>
+          </item>
+          <item displayName="$(string.SearchEngine_Method_POST)">
+            <value>
+              <string>POST</string>
+            </value>
+          </item>
+        </enum>
+        <text id="SearchEngine_IconURL" valueName="IconURL"/>
+        <text id="SearchEngine_Alias" valueName="Alias"/>
+        <text id="SearchEngine_Description" valueName="Description"/>
+        <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
+      </elements>
+    </policy>
+    <policy name="SearchEngines_Default" class="Both" displayName="$(string.SearchEngines_Default)" explainText="$(string.SearchEngines_Default_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" presentation="$(presentation.SearchEngines_Default)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements >
+        <text id="SearchEngines_Default" valueName="Default" required="true" />
+      </elements>
+    </policy>
+    <policy name="SearchEngines_PreventInstalls" class="Both" displayName="$(string.SearchEngines_PreventInstalls)" explainText="$(string.SearchEngines_PreventInstalls_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" valueName="PreventInstalls">
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>

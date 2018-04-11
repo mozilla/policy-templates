@@ -16,6 +16,7 @@
       <string id="Extensions_group">Extensions</string>
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Home page</string>
+      <string id="Search_group">Search</string>
       <string id="Allow">Allowed Sites</string>
       <string id="Block">Blocked Sites</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
@@ -233,8 +234,26 @@ If this policy is enabled, private browsing is enabled by default in both the br
       <string id="SearchBar_Explain">If this policy is enabled, you can set whether the search bar is separate from the URL bar.
 
 If this policy is not configured or disabled, new users get a unified search bar, users upgrading from Firefox 56 and below get a separate search bar.</string>
+      <string id="SearchEngines_1">Search Engine One</string>
+      <string id="SearchEngines_2">Search Engine Two</string>
+      <string id="SearchEngines_3">Search Engine Three</string>
+      <string id="SearchEngines_4">Search Engine Four</string>
+      <string id="SearchEngines_5">Search Engine Five</string>
+      <string id="SearchEngines_Explain">If this policy is enabled, you can configure a search engine to be added to Firefox. Use {searchTerms} to indicate where the search term is placed. Due to a bug, you must select the method (usually GET). Note that you must specify the search engines in order.
+
+If this policy is not configured or disabled, a new search engine is not added.</string>
       <string id="SearchBar_Unified">Unified</string>
       <string id="SearchBar_Separate">Separate</string>
+      <string id="SearchEngine_Method_GET">GET</string>
+      <string id="SearchEngine_Method_POST">POST</string>
+      <string id="SearchEngines_Default">Default Search Engine</string>
+      <string id="SearchEngines_Default_Explain">If this policy is enabled, you can set type the name of a search engine to be used as the default.
+
+If this policy is not configured or disabled, the Firefox default engine is used.</string>
+      <string id="SearchEngines_PreventInstalls">Prevent Search Engine Installs</string>
+      <string id="SearchEngines_PreventInstalls_Explain">If this policy is enabled, the user cannot install search engines from web page.
+
+If this policy is not configured or disabled, search engines can be installed from web pages.</string>
     </stringTable>
     <presentationTable>
       <presentation id="Authentication">
@@ -289,6 +308,33 @@ If this policy is not configured or disabled, new users get a unified search bar
         <dropdownList refId="BookmarkPlacement"/>
         <text>Folder name:</text>
         <textBox refId="BookmarkFolder">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngine">
+        <textBox refId="SearchEngine_Name">
+          <label>Name:</label>
+        </textBox>
+        <textBox refId="SearchEngine_URLTemplate">
+          <label>URL Template:</label>
+        </textBox>
+        <text>Method:</text>
+        <dropdownList refId="SearchEngine_Method"/>
+        <textBox refId="SearchEngine_IconURL">
+          <label>Icon URL:</label>
+        </textBox>
+        <textBox refId="SearchEngine_Alias">
+          <label>Alias:</label>
+        </textBox>
+        <textBox refId="SearchEngine_Description">
+          <label>Description:</label>
+        </textBox>
+        <textBox refId="SearchEngine_SuggestURLTemplate">
+          <label>Suggest URL Template:</label>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Default">
+        <textBox refId="SearchEngines_Default">
           <label/>
         </textBox>
       </presentation>

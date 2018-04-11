@@ -405,12 +405,13 @@ same folder name are grouped together.
 {
   "policies": {
     "Bookmarks": [
-    {"Title": "Example",
-     "URL": "http://example.org",
-     "Favicon": "http://example.com/favicon.ico",
-     "Placement": ["toolbar", "menu"],
-     "Folder": "FolderName"
-     }
+      {
+        "Title": "Example",
+        "URL": "http://example.org",
+        "Favicon": "http://example.com/favicon.ico",
+        "Placement": ["toolbar", "menu"],
+        "Folder": "FolderName"
+      }
     ]
   }
 }
@@ -461,6 +462,29 @@ Blocks websites from being visited. The parameters take an array of Match Patter
   "policies": {
     "Block": ["<all_urls>"],
     "Exceptions": ["http://example.org/*"]
+  }
+}
+```
+### Search Engines
+This policy allows you to add new search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
+```
+{
+  "policies": {
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "",
+          "URLTemplate": "URL including {searchTerms} to substitute for the terms",
+          "Method": ["GET", "POST"],
+          "IconURL": "URL to icon",
+          "Alias": "Alias that can be used to access the engine",
+          "Description": "Description",
+          "SuggestURLTemplate": "URL for suggestions using {searchTerms}"
+        }
+      ],
+      "Default": "Name of engine",
+      "PreventInstalls": [true|false]
+    }
   }
 }
 ```
