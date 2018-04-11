@@ -92,7 +92,7 @@ If this policy is disabled or not configured, system add-ons are installed and u
 
 If this policy is disabled or not configured, telemetry is collected and uploaded.
 
-Mozilla strongly recommends that you do NOT disable telemetry if you do not have a business need to do so.</string>
+Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
       <string id="DisplayBookmarksToolbar_Explain">Causes the bookmarks toolbar to be displayed by default.</string>
       <string id="DisplayMenuBar">Display Menu Bar</string>
