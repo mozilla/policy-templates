@@ -241,7 +241,9 @@ This policy prevents system add-ons from being updated or installed.
 }
 ```
 ### DisableTelemetry
-This policy prevents the upload of telemetry data. Mozilla strongly recommends that you do NOT disable telemetry if you do not have a business need to do so.
+This policy prevents the upload of telemetry data.
+
+Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
 ```
 {
   "policies": {
