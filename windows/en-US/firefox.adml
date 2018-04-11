@@ -103,17 +103,17 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
       <string id="DisplayMenuBar_Explain">Causes the menu bar to be displayed by default.</string>
       <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
       <string id="DontCheckDefaultBrowser_Explain">Don't check for the default browser on startup.</string>
-      <string id="Extensions_Install">Install</string>
+      <string id="Extensions_Install">Extensions to Install</string>
       <string id="Extensions_Install_Explain">If this policy is enabled, you can specify a list of extension URLs or paths that will be installed when Firefox is started.
 Anytime this list is changed, the extensions will be reinstalled.
 
 If this policy is disabled or not configured, no extensions are installed.</string>
-      <string id="Extensions_Uninstall">Uninstall</string>
+      <string id="Extensions_Uninstall">Extensions to Uninstall</string>
       <string id="Extensions_Uninstall_Explain">If this policy is enabled, you can specify a list of extension IDs that will be uninstalled.
 Anytime this list is changed, the extensions will be uninstalled.
 
 If this policy is disabled or not configured, no extensions are uninstalled.</string>
-      <string id="Extensions_Locked">Locked</string>
+      <string id="Extensions_Locked">Prevent extensions fromb being disabled or removed</string>
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
 If this policy is disabled or not configured, no extensions are locked.</string>

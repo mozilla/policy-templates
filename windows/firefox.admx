@@ -15,7 +15,7 @@
       <parentCategory ref="Mozilla:Cat_Mozilla"/>
     </category>
 
-    <category displayName="$(string.Permissions_group)" name="Permissions">
+    <category displayName="$(string.Authentication_group)" name="Authentication">
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Popups_group)" name="Popups">
@@ -34,9 +34,6 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Homepage_group)" name="Homepage">
-      <parentCategory ref="firefox"/>
-    </category>
-    <category displayName="$(string.Authentication_group)" name="Authentication">
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.Certificates_group)" name="Certificates">
@@ -102,16 +99,6 @@
       </disabledValue>
     </policy>
     <policy name="BlockAboutSupport" class="Both" displayName="$(string.BlockAboutSupport)" explainText="$(string.BlockAboutSupport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutSupport">
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="DisableSetDesktopBackground" class="Both" displayName="$(string.DisableSetDesktopBackground)" explainText="$(string.DisableSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSetDesktopBackground">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -190,16 +177,6 @@
     </policy>
     <policy name="Cookies_Locked" class="Both" displayName="$(string.Cookies_Locked)" explainText="$(string.Cookies_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="Locked">
       <parentCategory ref="Cookies"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="DisableMasterPasswordCreation" class="Both" displayName="$(string.DisableMasterPasswordCreation)" explainText="$(string.DisableMasterPasswordCreation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableMasterPasswordCreation">
-      <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
         <decimal value="1"/>
@@ -298,6 +275,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableMasterPasswordCreation" class="Both" displayName="$(string.DisableMasterPasswordCreation)" explainText="$(string.DisableMasterPasswordCreation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableMasterPasswordCreation">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisablePocket" class="Both" displayName="$(string.DisablePocket)" explainText="$(string.DisablePocket_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisablePocket">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
@@ -348,17 +335,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="DisableSecurityBypass_InvalidCertificate" class="Both" displayName="$(string.DisableSecurityBypass_InvalidCertificate)" explainText="$(string.DisableSecurityBypass_InvalidCertificate_Explain)" key="Software\Policies\Mozilla\Firefox\DisableSecurityBypass" valueName="InvalidCertificate">
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="DisableSecurityBypass_SafeBrowsing" class="Both" displayName="$(string.DisableSecurityBypass_SafeBrowsing)" explainText="$(string.DisableSecurityBypass_SafeBrowsing_Explain)" key="Software\Policies\Mozilla\Firefox\DisableSecurityBypass" valueName="SafeBrowsing">
+    <policy name="DisableSetDesktopBackground" class="Both" displayName="$(string.DisableSetDesktopBackground)" explainText="$(string.DisableSetDesktopBackground_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSetDesktopBackground">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -448,26 +425,6 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-    </policy>
-    <policy name="TrackingProtection" class="Both" displayName="$(string.TrackingProtection)" explainText="$(string.TrackingProtection_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value" presentation="$(presentation.TrackingProtection)">
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_WINXPSP2"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-      <elements >
-        <boolean id="TrackingProtectionLocked" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-      </elements>
     </policy>
     <policy name="OfferToSaveLogins" class="Both" displayName="$(string.OfferToSaveLogins)" explainText="$(string.OfferToSaveLogins_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfferToSaveLogins">
       <parentCategory ref="firefox"/>
@@ -571,7 +528,8 @@
         <text id="OverridePage" valueName="OverridePostUpdatePage"/>
       </elements>
     </policy>
-    <policy name="SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown">
+    <!-- Alphabetization is based on name, so had to add P -->
+    <policy name="P_DisableSecurityBypass_InvalidCertificate" class="Both" displayName="$(string.DisableSecurityBypass_InvalidCertificate)" explainText="$(string.DisableSecurityBypass_InvalidCertificate_Explain)" key="Software\Policies\Mozilla\Firefox\DisableSecurityBypass" valueName="InvalidCertificate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
@@ -581,7 +539,29 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy class="Both" displayName="$(string.HomepageURL)" name="HomepageURL" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
+    <!-- Alphabetization is based on name, so had to add P -->
+    <policy name="P_DisableSecurityBypass_SafeBrowsing" class="Both" displayName="$(string.DisableSecurityBypass_SafeBrowsing)" explainText="$(string.DisableSecurityBypass_SafeBrowsing_Explain)" key="Software\Policies\Mozilla\Firefox\DisableSecurityBypass" valueName="SafeBrowsing">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <!-- Alphabetization is based on name, so had to add C -->
+    <policy name="C_SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="HomepageURL" class="Both" displayName="$(string.HomepageURL)" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -596,14 +576,14 @@
         </boolean>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.HomepageAdditional)" name="HomepageAdditional" explainText="$(string.HomepageAdditional_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageAdditional)" >
+    <policy name="HomepageAdditional" class="Both" displayName="$(string.HomepageAdditional)" explainText="$(string.HomepageAdditional_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageAdditional)" >
       <parentCategory ref="Homepage" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
         <list id="HomepageAdditional" key="Software\Policies\Mozilla\Firefox\Homepage\Additional" valuePrefix=""/>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Bookmark1)" name="Bookmark1" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark1" class="Both" displayName="$(string.Bookmark1)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -625,7 +605,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Bookmark2)" name="Bookmark2" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark2" class="Both" displayName="$(string.Bookmark2)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -647,7 +627,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Bookmark3)" name="Bookmark3" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark3" class="Both" displayName="$(string.Bookmark3)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -669,7 +649,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Bookmark4)" name="Bookmark4" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark4" class="Both" displayName="$(string.Bookmark4)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -691,7 +671,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Bookmark5)" name="Bookmark5" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark5" class="Both" displayName="$(string.Bookmark5)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -713,7 +693,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Both" displayName="$(string.Proxy)" name="Proxy" explainText="$(string.Proxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy)" >
+    <policy name="Proxy" class="Both" displayName="$(string.Proxy)" explainText="$(string.Proxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_WINXPSP2" />
       <elements >
@@ -814,14 +794,36 @@
         </enum>
       </elements>
     </policy>
-    <policy name="WebsiteFilter_Block" class="Both" displayName="$(string.WebsiteFilter_Block)" explainText="$(string.WebsiteFilter_Block_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Block" presentation="$(presentation.WebsiteFilter)">
+    <policy name="TrackingProtection" class="Both" displayName="$(string.TrackingProtection)" explainText="$(string.TrackingProtection_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value" presentation="$(presentation.TrackingProtection)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_WINXPSP2"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+      <elements >
+        <boolean id="TrackingProtectionLocked" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <!-- Alphabetization is based on name, so had to add B -->
+    <policy name="B_WebsiteFilter_Block" class="Both" displayName="$(string.WebsiteFilter_Block)" explainText="$(string.WebsiteFilter_Block_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Block" presentation="$(presentation.WebsiteFilter)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
         <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Block" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="WebsiteFilter_Exceptions" class="Both" displayName="$(string.WebsiteFilter_Exceptions)" explainText="$(string.WebsiteFilter_Exceptions_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Exceptions" presentation="$(presentation.WebsiteFilter)">
+    <!-- Alphabetization is based on name, so had to add B -->
+    <policy name="B_WebsiteFilter_Exceptions" class="Both" displayName="$(string.WebsiteFilter_Exceptions)" explainText="$(string.WebsiteFilter_Exceptions_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Exceptions" presentation="$(presentation.WebsiteFilter)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
