@@ -201,6 +201,15 @@ This policy removes access to private browsing
   }
 }
 ```
+### DisableProfileImport
+This policy disables the"Import data from another browser" option in the bookmarks window.
+```
+{
+  "policies": {
+    "DisableProfileImport": true
+  }
+}
+```
 ### DisableProfileRefresh
 This policy disables the Refresh Firefox button on about:support and support.mozilla.org.
 ```

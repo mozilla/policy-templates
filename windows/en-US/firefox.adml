@@ -69,6 +69,10 @@ If this policy is disabled or not configured, the &quot;Forget&quot; button is a
       <string id="DisablePocket_Explain">Prevents ability to save webpages to Pocket.</string>
       <string id="DisablePrivateBrowsing">Disable Private Browsing</string>
       <string id="DisablePrivateBrowsing_Explain">Disables private browsing.</string>
+      <string id="DisableProfileImport">Disable Profile Import</string>
+      <string id="DisableProfileImport_Explain">If this policy is enabled, the &quot;Import data from another browser&quot; option is not available in the bookmarks window.
+
+If this policy is disabled or not configured, the &quot;Import data from another browser&quot; option is available.</string>
       <string id="DisableProfileRefresh">Disable Profile Refresh</string>
       <string id="DisableProfileRefresh_Explain">If this policy is enabled, the &quot;Refresh Firefox&quot; button is not available on the about:support page or on support.mozilla.org.
 
