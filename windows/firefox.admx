@@ -146,7 +146,7 @@
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <elements>
-        <enum id="Cookies_AcceptThirdParty" valueName="Cookies_AcceptThirdParty">
+        <enum id="Cookies_AcceptThirdParty" valueName="AcceptThirdParty">
           <item displayName="$(string.Cookies_AcceptThirdParty_All)">
             <value>
               <string>always</string>
