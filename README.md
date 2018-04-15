@@ -471,8 +471,10 @@ Blocks websites from being visited. The parameters take an array of Match Patter
 ```
 {
   "policies": {
-    "Block": ["<all_urls>"],
-    "Exceptions": ["http://example.org/*"]
+    "WebsiteFilter": {
+      "Block": ["<all_urls>"],
+      "Exceptions": ["http://example.org/*"]
+    }
   }
 }
 ```
