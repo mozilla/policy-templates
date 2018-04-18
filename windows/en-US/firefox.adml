@@ -113,7 +113,7 @@ If this policy is disabled or not configured, no extensions are installed.</stri
 Anytime this list is changed, the extensions will be uninstalled.
 
 If this policy is disabled or not configured, no extensions are uninstalled.</string>
-      <string id="Extensions_Locked">Prevent extensions fromb being disabled or removed</string>
+      <string id="Extensions_Locked">Prevent extensions from being disabled or removed</string>
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
 If this policy is disabled or not configured, no extensions are locked.</string>
