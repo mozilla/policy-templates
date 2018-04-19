@@ -20,19 +20,39 @@
       <string id="Allow">Allowed Sites</string>
       <string id="Block">Blocked Sites</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
-      <string id="Authentication_SPNEGO_Explain">List of sites that are permitted to engage in SPNEGO authentication with the browser.</string>
+      <string id="Authentication_SPNEGO_Explain">If this policy is enabled, the specified websites are permitted to engage in SPNEGO authentication with the browser. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
+
+If this policy is disabled or not configured, No websites are permitted to engage in SPNEGO authentication with the browser.
+
+For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_Delegated">Delegated</string>
-      <string id="Authentication_Delegated_Explain">List of sites for which the browser may delegate user authorization to the server.</string>
+      <string id="Authentication_Delegated_Explain">If this policy is enabled, the browser may delegate user authorization to the server for the specified websites. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
+
+If this policy is disabled or not configured, the browser will not delegate user authorization to the server for any websites.
+
+For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_NTLM">NTLM</string>
-      <string id="Authentication_NTLM_Explain">List of sites trusted to use NTLM authentification.</string>
-      <string id="BlockAboutAddons">Block About Addons</string>
-      <string id="BlockAboutAddons_Explain" >Block access to the Add-ons Mananger (about:addons).</string>      
-      <string id="BlockAboutConfig">Block About Config</string>
-      <string id="BlockAboutConfig_Explain">Blocks access to the about:config page.</string>
-      <string id="BlockAboutProfiles">Block About Profiles</string>
-      <string id="BlockAboutProfiles_Explain">Blocks access to the about:profiles page.</string>
-      <string id="BlockAboutSupport">Block About Support</string>
-      <string id="BlockAboutSupport_Explain">Blocks access to the about:support page.</string>
+      <string id="Authentication_NTLM_Explain">If this policy is enabled, the specified websites are trusted to use NTLM authentification. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
+
+If this policy is disabled or not configured, No websites are trusted to use NTLM authentification.
+
+For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="BlockAboutAddons">Block Add-ons Manager</string>
+      <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user can not access the Add-ons Manager or about:addons.
+
+If this policy is disabled or not configured, the user can access the Add-ons Manager and about:addons.</string>
+      <string id="BlockAboutConfig">Block about:config</string>
+      <string id="BlockAboutConfig_Explain">If this policy is enabled, the user can not access about:config.
+
+If this policy is disabled or not configured, the user can access about:config.</string>
+      <string id="BlockAboutProfiles">Block about:profiles</string>
+      <string id="BlockAboutProfiles_Explain">If this policy is enabled, the user can not access about:profiles.
+
+If this policy is disabled or not configured, the user can access about:profiles.</string>
+      <string id="BlockAboutSupport">Block Troubleshooting Information</string>
+      <string id="BlockAboutSupport_Explain">If this policy is enabled, the user can not access Troubleshooting Information or about:support.
+
+If this policy is disabled or not configured, the user can access Troubleshooting Information and about:support.</string>
       <string id="DisableSetDesktopBackground">Disable Set Desktop Background</string>
       <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user can not set an image as their desktop background.
 
@@ -46,29 +66,51 @@ If this policy is disabled or not configured, Firefox will not read certificates
 
 If this policy is disabled or not configured, users can create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
-      <string id="DisableAppUpdate_Explain">Prevent the browser from updating.</string>
-      <string id="DisableBuiltinPDFViewer">Disable Builtin PDF Viewer</string>
-      <string id="DisableBuiltinPDFViewer_Explain">Disables PDF.js, which displays PDFs within Firefox.</string>
+      <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive udpates.
+
+If this policy is disabled or not configured, the browser receives updates.</string>
+      <string id="DisableBuiltinPDFViewer">Disable Built-in PDF Viewer (PDF.js)</string>
+      <string id="DisableBuiltinPDFViewer_Explain">If this policy is enabled, PDF files are not viewed within Firefox.
+
+If this policy is disabled or not configured, PDF files are viewed within Firefox.</string>
       <string id="DisableDeveloperTools">Disable Developer Tools</string>
-      <string id="DisableDeveloperTools_Explain">Prevents access to developer tools.</string>
+      <string id="DisableDeveloperTools_Explain">If this policy is enabled, web developer tools are not available within Firefox.
+
+If this policy is disabled or not configured, web developer tools are available within Firefox.</string>
       <string id="DisableFeedbackCommands">Disable Feedback Commands</string>
-      <string id="DisableFeedbackCommands_Explain">Prevents ability to send feedback from the help menu (&quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot;).</string>
+      <string id="DisableFeedbackCommands_Explain">If this policy is enabled, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are not available from the help menu.
+
+If this policy is disabled or not configured, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are available from the help menu.</string>
       <string id="DisableFirefoxAccounts">Disable Firefox Accounts</string>
-      <string id="DisableFirefoxAccounts_Explain">Disables Firefox Account based services, including Sync.</string>
+      <string id="DisableFirefoxAccounts_Explain">If this policy is enabled, Firefox Accounts is disabled which includes disabling Sync.
+
+If this policy is disabled or not configured, Firefox Accounts and Sync are available.</string>
       <string id="DisableFirefoxScreenshots">Disable Firefox Screenshots</string>
-      <string id="DisableFirefoxScreenshots_Explain">Prevents usage of the Firefox Screenshots feature.</string>
+      <string id="DisableFirefoxScreenshots_Explain">If this policy is enabled, Firefox Screenshots is not available.
+
+If this policy is disabled or not configured, Firefox Screenshots is available.</string>
       <string id="DisableFirefoxStudies">Disable Firefox Studies</string>
-      <string id="DisableFirefoxStudies_Explain">Prevents Firefox from running studies.</string>
+      <string id="DisableFirefoxStudies_Explain">If this policy is enabled, Firefox will never run SHIELD studies or do Heartbeat surveys.
+
+If this policy is disabled or not configured, the user can choose to enable SHIELD studies or Heartbeat surveys.
+
+For more information, see https://support.mozilla.org/en-US/kb/shield and https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Disable Forget Button</string>
       <string id="DisableForgetButton_Explain">If this policy is enabled, the &quot;Forget&quot; button is not available.
 
 If this policy is disabled or not configured, the &quot;Forget&quot; button is available.</string>
       <string id="DisableFormHistory">Disable Form History</string>
-      <string id="DisableFormHistory_Explain">Don't remember search and form history.</string>
+      <string id="DisableFormHistory_Explain">If this policy is enabled, Firefox will not remember form or search history.
+
+If this policy is disabled or not configured, Firefox will remember form and search history.</string>
       <string id="DisablePocket">Disable Pocket</string>
-      <string id="DisablePocket_Explain">Prevents ability to save webpages to Pocket.</string>
+      <string id="DisablePocket_Explain">If this policy is enabled, Pocket is not available.
+
+If this policy is disabled or not configured, Pocket is available.</string>
       <string id="DisablePrivateBrowsing">Disable Private Browsing</string>
-      <string id="DisablePrivateBrowsing_Explain">Disables private browsing.</string>
+      <string id="DisablePrivateBrowsing_Explain">If this policy is enabled, private browsing is not allowed.
+
+If this policy is disabled or not configured, private browsing is allowed.</string>
       <string id="DisableProfileImport">Disable Profile Import</string>
       <string id="DisableProfileImport_Explain">If this policy is enabled, the &quot;Import data from another browser&quot; option is not available in the bookmarks window.
 
@@ -78,7 +120,9 @@ If this policy is disabled or not configured, the &quot;Import data from another
 
 If this policy is disabled or not configured, the &quot;Refresh Firefox&quot; button is available.</string>
       <string id="DisableSafeMode">Disable Safe Mode</string>
-      <string id="DisableSafeMode_Explain">Prevents ability to restart in safe mode.</string>
+      <string id="DisableSafeMode_Explain">If this policy is enabled, the user cannot restart the browser into safe mode.
+
+If this policy is disabled or not configured, safe mode is allowed.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Prevent overriding certificate errors</string>
       <string id="DisableSecurityBypass_InvalidCertificate_Explain">If this policy is enabled, the &quot;Add Exception&quot; button is not available when a certificate is invalid. This prevents the user from overriding the certificate error.
 
@@ -98,11 +142,17 @@ If this policy is disabled or not configured, telemetry is collected and uploade
 
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
-      <string id="DisplayBookmarksToolbar_Explain">Causes the bookmarks toolbar to be displayed by default.</string>
+      <string id="DisplayBookmarksToolbar_Explain">If this policy is enabled, the bookmarks toolbar is displayed by default. The user can still hide it.
+
+If this policy is disabled or not configured, the bookmarks toolbar is not displayed by default.</string>
       <string id="DisplayMenuBar">Display Menu Bar</string>
-      <string id="DisplayMenuBar_Explain">Causes the menu bar to be displayed by default.</string>
+      <string id="DisplayMenuBar_Explain">If this policy is enabled, the menu bar is displayed by default. The user can still hide it.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
       <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
-      <string id="DontCheckDefaultBrowser_Explain">Don't check for the default browser on startup.</string>
+      <string id="DontCheckDefaultBrowser_Explain">If this policy is enabled, Firefox does not check to see if it is the default browser at startup.
+
+If this policy is disabled or not configured, Firefox checks to see if it is the default browser at startup.</string>
       <string id="Extensions_Install">Extensions to Install</string>
       <string id="Extensions_Install_Explain">If this policy is enabled, you can specify a list of extension URLs or paths that will be installed when Firefox is started.
 Anytime this list is changed, the extensions will be reinstalled.
@@ -200,22 +250,36 @@ If this policy is disabled or not configured, no websites are blocked.</string>
       <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. There is a 1000 entry limit.",
 
 If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
-      <string id="Bookmark1">Bookmark 1</string>
-      <string id="Bookmark2">Bookmark 2</string>
-      <string id="Bookmark3">Bookmark 3</string>
-      <string id="Bookmark4">Bookmark 4</string>
-      <string id="Bookmark5">Bookmark 5</string>
-      <string id="Bookmark_Explain">Bookmark Explanation</string>
+      <string id="Bookmark1">Bookmark One</string>
+      <string id="Bookmark2">Bookmark Two</string>
+      <string id="Bookmark3">Bookmark Three</string>
+      <string id="Bookmark4">Bookmark Four</string>
+      <string id="Bookmark5">Bookmark Five</string>
+      <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark be added to Firefox.  Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
+
+If this policy is not configured or disabled, a new bookmark is not added.</string>
       <string id="BookmarkPlacementToolbar">Toolbar</string>
       <string id="BookmarkPlacementMenu">Menu</string>
       <string id="NoDefaultBookmarks">No Default Bookmarks</string>
-      <string id="NoDefaultBookmarks_Explain">Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.</string>
+      <string id="NoDefaultBookmarks_Explain">If this policy is enabled, the default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) are not created.
+
+If this policy is disabled or not configured, default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) are created.
+
+Note: this policy is only effective if used before the first run of the profile.</string>
       <string id="HomepageURL">URL for Home page</string>
-      <string id="HomepageURL_Explain">Homepage Settings</string>
+      <string id="HomepageURL_Explain">If this policy is enabled, you can set a default home page. You can also lock the home page.
+
+If this policy is disabled or not configured, the user can set and change the home page.</string>
       <string id="HomepageAdditional">Additional Homepages</string>
-      <string id="HomepageAdditional_Explain">If you want to have more than one homepage</string>
+      <string id="HomepageAdditional_Explain">If this policy is enabled, you can have additional home pages. They are opened in multiple tabs.
+
+If this policy is disabled or not configured, there is only one home page.</string>
       <string id="Proxy">Proxy Settings</string>
-      <string id="Proxy_Explain">If this policy is enabled, you should select the connection type and then fill in the appropriate sections. Due to a bug, you must select a value for the SOCKS proxy version.</string>
+      <string id="Proxy_Explain">If this policy is enabled, you can configure and lock network settings.
+
+Select the connection type and then fill in the appropriate sections. Due to a bug, you must select a value for the SOCKS proxy version.
+
+If this policy is disabled or not configured, the default network settings are used and user can change them.</string>
       <string id="SOCKSVersion4">SOCKS v4</string>
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Automatic proxy configuration URL</string>
