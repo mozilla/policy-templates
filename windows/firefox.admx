@@ -225,7 +225,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="DisableFirefoxAccounts" class="Both" displayName="$(string.DisableFirefoxAccounts)" explainText="$(string.DisableFirefoxScreenshots_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxAccounts">
+    <policy name="DisableFirefoxAccounts" class="Both" displayName="$(string.DisableFirefoxAccounts)" explainText="$(string.DisableFirefoxAccounts_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFirefoxAccounts">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_WINXPSP2"/>
       <enabledValue>
