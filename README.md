@@ -164,7 +164,7 @@ This policy disables Firefox studies (Shield)
 ```
 {
   "policies": {
-    "DisableFirefoxAccounts": true
+    "DisableFirefoxStudies": true
   }
 }
 ```
