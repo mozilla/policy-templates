@@ -232,7 +232,7 @@ This policy disables safe mode on Windows only
 }
 ```
 ### DisableSecurityBypass
-This policy prevents the user from bypassign security in certain cases.
+This policy prevents the user from bypassing security in certain cases.
 ```
 {
   "policies": {
