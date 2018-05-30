@@ -26,6 +26,85 @@
 
       <td>Prevent access to about:profiles</td>
     </tr>
+
+    <tr>
+      <td><a href="#BlockAboutSupport">BlockAboutSupport</a></td>
+
+      <td>Prevent access to about:support</td>
+    </tr>
+
+    <tr>
+      <td><a href="#Certificates">Certificates</a></td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#ImportEnterpriseRoots">ImportEnterpriseRoots</a></td>
+
+      <td>Read certificates from the Windows certificate store.</td>
+    </tr>
+
+    <tr>
+      <td><a href="#Cookies">Cookies</a></td>
+
+      <td></td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#CookiesAllow">Allow</a></td>
+
+      <td>Sites that are always allowed to set cookies</td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#CookiesBlock">Block</a></td>
+
+      <td>Sites that are blocked from setting cookies</td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#CookiesDefault">Default</a></td>
+
+      <td>Default cookie setting</td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#CookiesAcceptThirdParty">AcceptThirdParty</a></td>
+
+      <td>Accept third-party cookies</td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#CookiesExpireAtSessionEnd">ExpireAtSessionEnd</a></td>
+
+      <td>When cookies expire</td>
+    </tr>
+
+    <tr>
+      <td style="padding-left: 21px"><a href="#CookiesLocked">Locked</a></td>
+
+      <td>Don't allow cookie preferences to be changed</td>
+    </tr>
+
+    <tr>
+      <td><a href="#DisableSetDesktopBackground">DisableSetDesktopBackground</a></td>
+
+      <td>Disable setting an image as the desktop background</td>
+    </tr>
+
+    <tr>
+      <td><a href="#DisableMasterPasswordCreation">DisableMasterPasswordCreation</a></td>
+
+      <td>Remove the master password functionality</td>
+    </tr>
+
+    <tr>
+      <td><a href="#DisableAppUpdate">DisableAppUpdate</a></td>
+
+      <td>Turn off application update</td>
+    </tr>
+
   </table>
 
   <div style="margin-left:0px">
@@ -51,6 +130,14 @@
           <li>Firefox (Linux, Mac, Windows) RR and ESR since version 60</li>
         </ul>
       </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">disableAddonsManager</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
 
       <dt style="font-weight:bold">Description:</dt>
 
@@ -84,6 +171,14 @@
         </ul>
       </dd>
 
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">disableAboutConfig</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
       <dt style="font-weight:bold">Description:</dt>
 
       <dd>
@@ -116,10 +211,499 @@
         </ul>
       </dd>
 
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">disableAboutProfiles</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
       <dt style="font-weight:bold">Description:</dt>
 
       <dd>
         <p>If this policy is set to true, the user can not access about:profiles.</p>
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="BlockAboutSupport" id="BlockAboutSupport"></a>BlockAboutSupport</h3><span>Prevent access to about:support</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\BlockAboutSupport</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace">BlockAboutSupport</dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Linux, Mac, Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">disableAboutSupport</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, the user can not access about:support and the "Troubleshooting Information menu" is disabled.</p>
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+
+  <div style="margin-left:0px">
+    <h3><a name="DisableSetDesktopBackground" id="DisableSetDesktopBackground"></a>DisableSetDesktopBackground</h3>
+
+    <span>Disable setting an image as the desktop background.</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace">DisableSetDesktopBackground</dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Linux, Mac, Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">removeSetDesktopBackground</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, the "Set As Desktop Background..." menuitem is removed.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="ImportEnterpriseRoots" id="ImportEnterpriseRoots"></a>ImportEnterpriseRoots</h3>
+
+    <span>Read certificates from the Windows certificate store</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Certificates\ImportEnterpriseRoots</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Certificates": {
+  "ImportEnterpriseRoots": [true|false]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">N/A</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd style="font-family:monospace">security.enterprise_roots.enabled</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, Firefox will read certificates from the Windows certificate store.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="CookiesAllow" id="CookiesAllow"></a>Cookies - Allow</h3>
+
+    <span>Sites that are always allowed to set cookies</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Array of strings (URLS) [Windows:REG_SZ]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Cookies\Allow</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Cookies": {
+  "Allow": ["http://example.org", "http://example.com"]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">permissions->domain_name->cookie->1</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.</p>
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="CookiesBlock" id="CookieBlock"></a>Cookies - Block</h3>
+
+    <span>Sites that are blocked from setting cookies</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Array of strings (URLS) [Windows:REG_SZ]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Cookies\Block</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Cookies": {
+  "Block": ["http://example.org", "http://example.com"]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">permissions->domain_name->cookie->2</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set, cookies are never allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.</p>
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+
+  <div style="margin-left:0px">
+    <h3><a name="CookiesDefault" id="CookiesDefault"></a>Cookies - Default</h3>
+
+    <span>Default cookie setting</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Cookies\Default</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Cookies": {
+  "Default": [true|false]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">N/A</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd style="font-family:monospace">network.cookie.cookieBehavior</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to false, Firefox will not accept cookies.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="CookiesAcceptThirdParty" id="CookiesAcceptThirdParty"></a>Cookies - AcceptThirdParty</h3>
+
+    <span>Accept third-party cookies</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>String [Windows:REG_SZ]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Cookies": {
+  "AcceptThirdParty": ["always"|"never"|"from-visited"]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">N/A</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd style="font-family:monospace">network.cookie.cookieBehavior</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If you have enabled cookies, you can use this policy to determine how third-party cookies are handled:
+        <ul>
+          <li>always: Always accept third-party cookies</li>
+          <li>never: Never accept third-party cookies</li>
+          <li>from-visted: Accept third-party cookies from sites I've already visited</li>
+        </ul>
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="CookiesExpireAtSessionEnd" id="CookiesExpireAtSessionEnd"></a>Cookies - ExpireAtSessionEnd</h3>
+
+    <span>When cookies expire</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Cookies\ExpireAtSessionEnd</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Cookies": {
+  "ExpireAtSessionEnd": [true|false]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">N/A</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd style="font-family:monospace">network.cookie.lifetimePolicy</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, cookies will expire when Firefox is closed.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="CookiesLocked" id="CookiesLocked"></a>Cookies - Locked</h3>
+
+    <span>Don't allow cookie preferences to be changed</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\Cookies\Locked</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace"><pre>"Cookies": {
+  "Locked": [true|false]
+}</pre></dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">N/A</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd style="font-family:monospace">N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, cookie preferences cannot be changed.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="DisableMasterPasswordCreation" id="DisableMasterPasswordCreation"></a>DisableMasterPasswordCreation</h3>
+
+    <span>Remove master password functionality</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace">DisableMasterPasswordCreation</dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Linux, Mac, Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">noMasterPassword</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, the master password functionality is removed from the browser.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+
+  <div style="margin-left:0px">
+    <h3><a name="DisableAppUpdate" id="DisableAppUpdate"></a>DisableAppUpdate</h3>
+
+    <span>Disable application updates</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\DisableAppUpdate</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace">DisableAppUpdate</dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Linux, Mac, Windows) ESR only since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">disableFirefoxUpdates</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, Firefox updates are disabled and locked.
       </dd>
     </dl><a href="#top">Back to top</a>
   </div>
