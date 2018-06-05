@@ -1,4 +1,4 @@
-Policies can either be specified using the Group Policy templates or by creating a file called policies.json. On Windows, create a directory called distribution where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Content/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
+Policies can either be specified using the Group Policy templates or by creating a file called policies.json. On Windows, create a directory called distribution where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
 
 The content of the JSON file should look like this:
 ```
