@@ -8,7 +8,10 @@ The content of the JSON file should look like this:
   }
 }
 ```
-Policies are documented below. Note that even though comments are used in this file for documentation, comments are not allowed for JSON files.
+Policies are documented below.   
+
+
+**Note**: though comments are used in this readme file for documentation, comments are not valid in actual JSON files. Remove all comments before attempting to deploy.
 
 Some of the policies are only available on the ESR for security reasons. These policies are marked ESR only.
 
