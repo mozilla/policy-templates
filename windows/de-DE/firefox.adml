@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.0" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.1" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 oder höher</string>
+      <string id="SUPPORTED_FF60">Firefox 60 oder höher</string>
+      <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Authentication_group">Authentifizierung</string>
