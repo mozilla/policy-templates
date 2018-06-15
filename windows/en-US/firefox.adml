@@ -68,7 +68,7 @@ If this policy is disabled or not configured, Firefox will not read certificates
 
 If this policy is disabled or not configured, users can create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
-      <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive udpates.
+      <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive updates.
 
 If this policy is disabled or not configured, the browser receives updates.</string>
       <string id="DisableBuiltinPDFViewer">Disable Built-in PDF Viewer (PDF.js)</string>
