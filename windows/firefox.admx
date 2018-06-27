@@ -70,6 +70,28 @@
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="Authentication_AllowNonFQDN" class="Both" displayName="$(string.Authentication_AllowNonFQDN)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowNonFQDN_Explain)" presentation="$(presentation.Authentication_AllowNonFQDN)">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <boolean id="Authentication_AllowNonFQDN_NTLM" key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" valueName="NTLM">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="Authentication_AllowNonFQDN_SPNEGO" key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" valueName="SPNEGO">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
