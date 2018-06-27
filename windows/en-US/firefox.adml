@@ -173,7 +173,7 @@ If this policy is disabled or not configured, no extensions are locked.</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 
 If this policy is disabled, firefox will not offer to save website logins and passwords.</string>
-      <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
+      <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the origins indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default pop-up policy is followed.</string>
       <string id="PopupBlocking_Default">Allow pop-ups from websites</string>
@@ -184,17 +184,17 @@ If this policy is not configured or enabled, popups are not allowed from website
       <string id="PopupBlocking_Locked_Explain">If this policy is enabled pop-up preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their pop-up preferences.</string>
-      <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the URLS indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
+      <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the origins indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default add-on policy is followed.</string>
       <string id="InstallAddonsPermission_Default">Allow add-on installs from websites</string>
       <string id="InstallAddonsPermission_Default_Explain">If this policy is disabled, add-ons cannot be installed.
 
 If this policy is not configured or enabled, add-ons can be installed.</string>
-      <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the URLS indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+      <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the origins indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default cookie policy is followed.</string>
-      <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the URLS indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
+      <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the origins indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
 
 If this policy is disabled or not configured, cookies are not blocked by default.</string>
       <string id="Cookies_Default">Accept cookies from websites</string>
@@ -216,10 +216,10 @@ This setting is ignored if this policy is disabled or not configured or if cooki
       <string id="Cookies_Locked_Explain">If this policy is enabled cookie preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their cookie preferences.</string>
-      <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the URLS indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
+      <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the origins indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
-      <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the URLS indicated. If a top level domain is specified (http://example.org), Flas is blocked from all subdomains as well.
+      <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the origins indicated. If a top level domain is specified (http://example.org), Flas is blocked from all subdomains as well.
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
       <string id="FlashPlugin_Default">Activate Flash on websites</string>
