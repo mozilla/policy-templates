@@ -295,12 +295,12 @@ If this policy is disabled or not configured, there are no exceptions to the web
 	<string id="Bookmark41">Bookmark Forty-one</string>
 	<string id="Bookmark42">Bookmark Forty-two</string>
 	<string id="Bookmark43">Bookmark Forty-three</string>
-	<string id="Bookmark44">Bookmark Fourty-four</string>
-	<string id="Bookmark45">Bookmark Fourty-five</string>
-	<string id="Bookmark46">Bookmark Fourty-six</string>
-	<string id="Bookmark47">Bookmark Fourty-seven</string>
-	<string id="Bookmark48">Bookmark Fourty-eight</string>
-	<string id="Bookmark49">Bookmark Fourty-nine</string>
+	<string id="Bookmark44">Bookmark Forty-four</string>
+	<string id="Bookmark45">Bookmark Forty-five</string>
+	<string id="Bookmark46">Bookmark Forty-six</string>
+	<string id="Bookmark47">Bookmark Forty-seven</string>
+	<string id="Bookmark48">Bookmark Forty-eight</string>
+	<string id="Bookmark49">Bookmark Forty-nine</string>
 	<string id="Bookmark50">Bookmark Fifty</string>
       <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark be added to Firefox.  Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
 
