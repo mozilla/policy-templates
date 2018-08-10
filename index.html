@@ -42,7 +42,7 @@
     <tr>
       <td style="padding-left: 21px"><a href="#ImportEnterpriseRoots">ImportEnterpriseRoots</a></td>
 
-      <td>Read certificates from the Windows certificate store.</td>
+      <td>Read certificates from the Windows certificate store</td>
     </tr>
 
     <tr>
@@ -267,50 +267,13 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
-
   <div style="margin-left:0px">
-    <h3><a name="DisableSetDesktopBackground" id="DisableSetDesktopBackground"></a>DisableSetDesktopBackground</h3>
-
-    <span>Disable setting an image as the desktop background.</span>
-
-    <dl>
-      <dt style="font-weight:bold">Data type:</dt>
-
-      <dd>Boolean [Windows:REG_DWORD]</dd>
-
-      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
-
-      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground</dd>
-
-      <dt style="font-weight:bold">Policies.json:</dt>
-
-      <dd style="font-family:monospace">DisableSetDesktopBackground</dd>
-
-      <dt style="font-weight:bold">Supported on:</dt>
-
-      <dd>
-        <ul style="padding-left:0px;margin-left:0px">
-          <li>Firefox (Linux, Mac, Windows) RR and ESR since version 60</li>
-        </ul>
-      </dd>
-
-      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
-
-      <dd style="font-family:monospace">removeSetDesktopBackground</dd>
-
-      <dt style="font-weight:bold">Preferences modified:</dt>
-
-      <dd>N/A</dd>
-
-      <dt style="font-weight:bold">Description:</dt>
-
-      <dd>
-        <p>If this policy is set to true, the "Set As Desktop Background..." menuitem is removed.
-      </dd>
-    </dl><a href="#top">Back to top</a>
+    <h3><a name="Certificates" id="Certificates"></a>Certificates</h3><span>Manage Enterprise Certificates on Windows</span>
+	<dl>
+	</dl><a href="#top">Back to top</a>
   </div>
-
-  <div style="margin-left:0px">
+  
+  <div style="margin-left:50px">
     <h3><a name="ImportEnterpriseRoots" id="ImportEnterpriseRoots"></a>ImportEnterpriseRoots</h3>
 
     <span>Read certificates from the Windows certificate store</span>
@@ -355,6 +318,12 @@
   </div>
 
   <div style="margin-left:0px">
+    <h3><a name="Cookies" id="Cookies"></a>Cookies</h3><span>Manage cookie settings</span>
+	<dl>
+	</dl><a href="#top">Back to top</a>
+  </div>
+  
+  <div style="margin-left:50px">
     <h3><a name="CookiesAllow" id="CookiesAllow"></a>Cookies - Allow</h3>
 
     <span>Sites that are always allowed to set cookies</span>
@@ -398,7 +367,7 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
-  <div style="margin-left:0px">
+  <div style="margin-left:50px">
     <h3><a name="CookiesBlock" id="CookieBlock"></a>Cookies - Block</h3>
 
     <span>Sites that are blocked from setting cookies</span>
@@ -442,8 +411,7 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
-
-  <div style="margin-left:0px">
+  <div style="margin-left:50px">
     <h3><a name="CookiesDefault" id="CookiesDefault"></a>Cookies - Default</h3>
 
     <span>Default cookie setting</span>
@@ -487,7 +455,7 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
-  <div style="margin-left:0px">
+  <div style="margin-left:50px">
     <h3><a name="CookiesAcceptThirdParty" id="CookiesAcceptThirdParty"></a>Cookies - AcceptThirdParty</h3>
 
     <span>Accept third-party cookies</span>
@@ -536,7 +504,7 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
-  <div style="margin-left:0px">
+  <div style="margin-left:50px">
     <h3><a name="CookiesExpireAtSessionEnd" id="CookiesExpireAtSessionEnd"></a>Cookies - ExpireAtSessionEnd</h3>
 
     <span>When cookies expire</span>
@@ -580,7 +548,7 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
-  <div style="margin-left:0px">
+  <div style="margin-left:50px">
     <h3><a name="CookiesLocked" id="CookiesLocked"></a>Cookies - Locked</h3>
 
     <span>Don't allow cookie preferences to be changed</span>
@@ -624,6 +592,48 @@
     </dl><a href="#top">Back to top</a>
   </div>
 
+  <div style="margin-left:0px">
+    <h3><a name="DisableSetDesktopBackground" id="DisableSetDesktopBackground"></a>DisableSetDesktopBackground</h3>
+
+    <span>Disable setting an image as the desktop background.</span>
+
+    <dl>
+      <dt style="font-weight:bold">Data type:</dt>
+
+      <dd>Boolean [Windows:REG_DWORD]</dd>
+
+      <dt style="font-weight:bold">Windows registry location for Windows clients:</dt>
+
+      <dd style="font-family:monospace">Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground</dd>
+
+      <dt style="font-weight:bold">Policies.json:</dt>
+
+      <dd style="font-family:monospace">DisableSetDesktopBackground</dd>
+
+      <dt style="font-weight:bold">Supported on:</dt>
+
+      <dd>
+        <ul style="padding-left:0px;margin-left:0px">
+          <li>Firefox (Linux, Mac, Windows) RR and ESR since version 60</li>
+        </ul>
+      </dd>
+
+      <dt style="font-weight:bold">CCK2 Equivalent:</dt>
+
+      <dd style="font-family:monospace">removeSetDesktopBackground</dd>
+
+      <dt style="font-weight:bold">Preferences modified:</dt>
+
+      <dd>N/A</dd>
+
+      <dt style="font-weight:bold">Description:</dt>
+
+      <dd>
+        <p>If this policy is set to true, the "Set As Desktop Background..." menuitem is removed.
+      </dd>
+    </dl><a href="#top">Back to top</a>
+  </div>
+  
   <div style="margin-left:0px">
     <h3><a name="DisableMasterPasswordCreation" id="DisableMasterPasswordCreation"></a>DisableMasterPasswordCreation</h3>
 
