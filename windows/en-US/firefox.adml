@@ -245,11 +245,11 @@ If this policy is disabled or not configured, the upgrade is displayed.</string>
 
 If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
       <string id="WebsiteFilter_Block">Blocked websites</string>
-      <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit."
+      <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
 If this policy is disabled or not configured, no websites are blocked.</string>
       <string id="WebsiteFilter_Exceptions">Exceptions to blocked websites</string>
-      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit."
+      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
 If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
       <string id="Bookmark1">Bookmark One</string>
