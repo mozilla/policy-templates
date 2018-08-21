@@ -24,7 +24,7 @@
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">If this policy is enabled, the specified websites are permitted to engage in SPNEGO authentication with the browser. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
 
-If this policy is disabled or not configured, No websites are permitted to engage in SPNEGO authentication with the browser.
+If this policy is disabled or not configured, no websites are permitted to engage in SPNEGO authentication with the browser.
 
 For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_Delegated">Delegated</string>
@@ -36,27 +36,27 @@ For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integ
       <string id="Authentication_NTLM">NTLM</string>
       <string id="Authentication_NTLM_Explain">If this policy is enabled, the specified websites are trusted to use NTLM authentification. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
 
-If this policy is disabled or not configured, No websites are trusted to use NTLM authentification.
+If this policy is disabled or not configured, no websites are trusted to use NTLM authentification.
 
 For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="BlockAboutAddons">Block Add-ons Manager</string>
-      <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user can not access the Add-ons Manager or about:addons.
+      <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
 
 If this policy is disabled or not configured, the user can access the Add-ons Manager and about:addons.</string>
       <string id="BlockAboutConfig">Block about:config</string>
-      <string id="BlockAboutConfig_Explain">If this policy is enabled, the user can not access about:config.
+      <string id="BlockAboutConfig_Explain">If this policy is enabled, the user cannot access about:config.
 
 If this policy is disabled or not configured, the user can access about:config.</string>
       <string id="BlockAboutProfiles">Block about:profiles</string>
-      <string id="BlockAboutProfiles_Explain">If this policy is enabled, the user can not access about:profiles.
+      <string id="BlockAboutProfiles_Explain">If this policy is enabled, the user cannot access about:profiles.
 
 If this policy is disabled or not configured, the user can access about:profiles.</string>
       <string id="BlockAboutSupport">Block Troubleshooting Information</string>
-      <string id="BlockAboutSupport_Explain">If this policy is enabled, the user can not access Troubleshooting Information or about:support.
+      <string id="BlockAboutSupport_Explain">If this policy is enabled, the user cannot access Troubleshooting Information or about:support.
 
 If this policy is disabled or not configured, the user can access Troubleshooting Information and about:support.</string>
       <string id="DisableSetDesktopBackground">Disable Set Desktop Background</string>
-      <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user can not set an image as their desktop background.
+      <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user cannot set an image as their desktop background.
 
 If this policy is disabled or not configured, users can set images as their desktop background.</string>
       <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
@@ -130,7 +130,7 @@ If this policy is disabled or not configured, safe mode is allowed.</string>
 
 If this policy is disabled or not configured, certificate errors can be overridden.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Prevent overriding safe browsing errors</string>
-      <string id="DisableSecurityBypass_SafeBrowsing_Explain">If this policy is enabled, a user can not bypass the warning and visit a harmful site.
+      <string id="DisableSecurityBypass_SafeBrowsing_Explain">If this policy is enabled, a user cannot bypass the warning and visit a harmful site.
 
 If this policy is disabled or not configured, a user can choose to visit a harmful site.</string>
       <string id="DisableSystemAddonUpdate">Disable System Addon Updates</string>
@@ -172,7 +172,7 @@ If this policy is disabled or not configured, no extensions are locked.</string>
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 
-If this policy is disabled, firefox will not offer to save website logins and passwords.</string>
+If this policy is disabled, Firefox will not offer to save website logins and passwords.</string>
       <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the origins indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default pop-up policy is followed.</string>
@@ -181,7 +181,7 @@ If this policy is disabled or not configured, the default pop-up policy is follo
 
 If this policy is not configured or enabled, popups are not allowed from websites.</string>
       <string id="PopupBlocking_Locked">Do not allow preferences to be changed</string>
-      <string id="PopupBlocking_Locked_Explain">If this policy is enabled pop-up preferences cannot be changed by the user.
+      <string id="PopupBlocking_Locked_Explain">If this policy is enabled, pop-up preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their pop-up preferences.</string>
       <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the origins indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
@@ -213,13 +213,13 @@ This setting is ignored if this policy is disabled or not configured or if cooki
 
 This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
       <string id="Cookies_Locked">Do not allow preferences to be changed</string>
-      <string id="Cookies_Locked_Explain">If this policy is enabled cookie preferences cannot be changed by the user.
+      <string id="Cookies_Locked_Explain">If this policy is enabled, cookie preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their cookie preferences.</string>
       <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the origins indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
-      <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the origins indicated. If a top level domain is specified (http://example.org), Flas is blocked from all subdomains as well.
+      <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the origins indicated. If a top level domain is specified (http://example.org), Flash is blocked from all subdomains as well.
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
       <string id="FlashPlugin_Default">Activate Flash on websites</string>
@@ -227,29 +227,29 @@ If this policy is disabled or not configured, the default Flash policy is follow
 
 If this policy is disabled, Flash is never activated on websites, even if they are in the specified in the Allow list.
 
-If this policy is not configured Flash, Flash is click to play.</string>
+If this policy is not configured, Flash is click to play.</string>
       <string id="FlashPlugin_Locked">Do not allow preferences to be changed</string>
-      <string id="FlashPlugin_Locked_Explain">If this policy is enabled Flash preferences cannot be changed by the user.
+      <string id="FlashPlugin_Locked_Explain">If this policy is enabled, Flash preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their Flash preferences.</string>
       <string id="OverrideFirstRunPage">Override the first run page</string>
       <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
 
-If this policy is disabled or not configured the first run page is displayed.</string>
+If this policy is disabled or not configured, the first run page is displayed.</string>
       <string id="OverridePostUpdatePage">Override the upgrade page</string>
       <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
 
-If this policy is disabled or not configured the upgrade is displayed.</string>
+If this policy is disabled or not configured, the upgrade is displayed.</string>
       <string id="SanitizeOnShutdown">Clear all data when browser is closed</string>
       <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
 
 If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
       <string id="WebsiteFilter_Block">Blocked websites</string>
-      <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. There is a 1000 entry limit.",
+      <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
 If this policy is disabled or not configured, no websites are blocked.</string>
       <string id="WebsiteFilter_Exceptions">Exceptions to blocked websites</string>
-      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. There is a 1000 entry limit.",
+      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
 If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
       <string id="Bookmark1">Bookmark One</string>
@@ -259,7 +259,7 @@ If this policy is disabled or not configured, there are no exceptions to the web
       <string id="Bookmark5">Bookmark Five</string>
       <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark be added to Firefox.  Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
 
-If this policy is not configured or disabled, a new bookmark is not added.</string>
+If this policy is disabled or not configured, a new bookmark is not added.</string>
       <string id="BookmarkPlacementToolbar">Toolbar</string>
       <string id="BookmarkPlacementMenu">Menu</string>
       <string id="NoDefaultBookmarks">No Default Bookmarks</string>
@@ -303,7 +303,7 @@ If this policy is enabled, private browsing is enabled by default in both the br
       <string id="SearchBar">Search bar location</string>
       <string id="SearchBar_Explain">If this policy is enabled, you can set whether the search bar is separate from the URL bar.
 
-If this policy is not configured or disabled, new users get a unified search bar, users upgrading from Firefox 56 and below get a separate search bar.</string>
+If this policy is disabled or not configured, new users get a unified search bar, users upgrading from Firefox 56 and below get a separate search bar.</string>
       <string id="SearchEngines_1">Search Engine One</string>
       <string id="SearchEngines_2">Search Engine Two</string>
       <string id="SearchEngines_3">Search Engine Three</string>
@@ -311,19 +311,19 @@ If this policy is not configured or disabled, new users get a unified search bar
       <string id="SearchEngines_5">Search Engine Five</string>
       <string id="SearchEngines_Explain">If this policy is enabled, you can configure a search engine to be added to Firefox. Use {searchTerms} to indicate where the search term is placed. Due to a bug, you must select the method (usually GET). Note that you must specify the search engines in order.
 
-If this policy is not configured or disabled, a new search engine is not added.</string>
+If this policy is disabled or not configured, a new search engine is not added.</string>
       <string id="SearchBar_Unified">Unified</string>
       <string id="SearchBar_Separate">Separate</string>
       <string id="SearchEngine_Method_GET">GET</string>
       <string id="SearchEngine_Method_POST">POST</string>
       <string id="SearchEngines_Default">Default Search Engine</string>
-      <string id="SearchEngines_Default_Explain">If this policy is enabled, you can set type the name of a search engine to be used as the default.
+      <string id="SearchEngines_Default_Explain">If this policy is enabled, you can set the name of a search engine to be used as the default.
 
-If this policy is not configured or disabled, the Firefox default engine is used.</string>
+If this policy is disabled or not configured, the Firefox default engine is used.</string>
       <string id="SearchEngines_PreventInstalls">Prevent Search Engine Installs</string>
       <string id="SearchEngines_PreventInstalls_Explain">If this policy is enabled, the user cannot install search engines from web page.
 
-If this policy is not configured or disabled, search engines can be installed from web pages.</string>
+If this policy is disabled or not configured, search engines can be installed from web pages.</string>
     </stringTable>
     <presentationTable>
       <presentation id="Authentication">
