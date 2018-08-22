@@ -13,9 +13,9 @@ Policies are documented below.
 
 **Note**: though comments are used in this readme file for documentation, comments are not valid in actual JSON files. Remove all comments before attempting to deploy.
 
-Some of the policies are only available on the ESR for security reasons. These policies are marked ESR only.
+Some of the policies were originally only available on the ESR for security reasons. As of Firefox 62, these policies are available outside of the ESR, but only via JSON file or a Local Machine-based Group Policy. User-based Group Policies are not allowed to set values for these policies. The descriptions below mark such policies as "Machine only".
 
-### Authentication (ESR only)
+### Authentication (Machine only)
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 ```
 {
@@ -108,7 +108,7 @@ If this policy is set to true, the master password functionality is removed.
   }
 }
 ```
-### DisableAppUpdate (ESR only)
+### DisableAppUpdate (Machine only)
 This policy turns off application updates.
 ```
 {
@@ -246,7 +246,7 @@ This policy prevents the user from bypassing security in certain cases.
   }
 }
 ```
-### DisableSystemAddonUpdate (ESR only)
+### DisableSystemAddonUpdate (Machine only)
 This policy prevents system add-ons from being updated or installed.
 ```
 {
@@ -255,7 +255,7 @@ This policy prevents system add-ons from being updated or installed.
   }
 }
 ```
-### DisableTelemetry (ESR only)
+### DisableTelemetry (Machine only)
 This policy prevents the upload of telemetry data.
 
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
@@ -310,7 +310,7 @@ If Value is set to true, private browsing is enabled by default in both the brow
     }
 }
 ```
-### Extensions (ESR only)
+### Extensions (Machine only)
 This policy controls the installation, uninstallation and locking of extensions. Locked extensions cannot be disabled or uninstalled.
 For Install, you specify a list of URLs or paths.
 For Uninstall and Locked, you specify extension IDs.
@@ -342,7 +342,7 @@ This policy sets the signon.rememberSignons preference. It determines whether or
   }
 }
 ```
-### Homepage (ESR only)
+### Homepage (Machine only)
 This policy sets the default homepage value. It can also be used to lock the homepage and add additional homepages.
 ```
 {
@@ -397,7 +397,7 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
   }
 }
 ```
-### OverrideFirstRunPage (ESR only)
+### OverrideFirstRunPage (Machine only)
 This policy allows you to override the first run page. If you leave the URL blank, the first run page will not be displayed.
 ```
 {
@@ -406,7 +406,7 @@ This policy allows you to override the first run page. If you leave the URL blan
   }
 }
 ```
-### OverridePostUpdatePage (ESR only)
+### OverridePostUpdatePage (Machine only)
 This policy allows you to override the upgrade page. If you leave the URL blank, the upgrade page will not be displayed.
 ```
 {
@@ -467,7 +467,7 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
   }
 }
 ```
-### SearchBar (ESR only)
+### SearchBar (Machine only)
 This policy can be used to determine if the search bar is separate or combined with the URL bar.
 ```
 {
@@ -476,7 +476,7 @@ This policy can be used to determine if the search bar is separate or combined w
   }
 }
 ```
-### WebsiteFilter (ESR only)
+### WebsiteFilter (Machine only)
 This policy blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 ```
 {
@@ -488,7 +488,7 @@ This policy blocks websites from being visited. The parameters take an array of 
   }
 }
 ```
-### Search Engines (ESR only)
+### Search Engines (Machine only)
 This policy allows you to add new search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
 ```
 {
