@@ -5,7 +5,8 @@
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 or later</string>
-      <string id="SUPPORTED_FF60">Firefox 60 or later</string>
+      <string id="SUPPORTED_FF60">Firefox 60 or later, Firefox 60 ESR or later</string>
+      <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -39,6 +40,10 @@ For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integ
 If this policy is disabled or not configured, no websites are trusted to use NTLM authentification.
 
 For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_AllowNonFQDN">Allow Non FQDN</string>
+      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled, you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
+
+If this policy is disabled or not configured, NTLM and SPNEGO are not enabled on non FQDNs.</string>
       <string id="BlockAboutAddons">Block Add-ons Manager</string>
       <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
 
@@ -63,12 +68,13 @@ If this policy is disabled or not configured, users can set images as their desk
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
 If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
+
       <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
       <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
 
 If this policy is disabled or not configured, users can create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
-      <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive updates.
+      <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive udpates.
 
 If this policy is disabled or not configured, the browser receives updates.</string>
       <string id="DisableBuiltinPDFViewer">Disable Built-in PDF Viewer (PDF.js)</string>
@@ -328,6 +334,10 @@ If this policy is disabled or not configured, search engines can be installed fr
     <presentationTable>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Authentication_AllowNonFQDN">
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>

@@ -25,7 +25,11 @@ This policy is for configuring sites that support integrated authentication. See
     "Authentication": {
       "SPNEGO": ["mydomain.com", "https://myotherdomain.com"],
       "Delegated": ["mydomain.com", "https://myotherdomain.com"],
-      "NTLM": ["mydomain.com", "https://myotherdomain.com"]
+      "NTLM": ["mydomain.com", "https://myotherdomain.com"],
+      "AllowNonFQDN": {
+        "SPNEGO": true,
+        "NTLM": true
+      }
     }
   }
 }
