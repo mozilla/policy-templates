@@ -329,6 +329,10 @@ If this policy is disabled or not configured, the Firefox default engine is used
       <string id="SearchEngines_PreventInstalls_Explain">If this policy is enabled, the user cannot install search engines from web page.
 
 If this policy is disabled or not configured, search engines can be installed from web pages.</string>
+      <string id="SearchEngines_Remove">Remove Search Engines</string>
+      <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
+
+If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
     </stringTable>
     <presentationTable>
       <presentation id="Authentication">
@@ -416,6 +420,9 @@ If this policy is disabled or not configured, search engines can be installed fr
         <textBox refId="SearchEngines_Default">
           <label/>
         </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Remove">
+        <listBox refId="SearchEngines_Remove"/>
       </presentation>
       <presentation id="Proxy">
         <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox>

@@ -329,6 +329,10 @@ Se questo criterio è disabilitato o non configurato, verrà utilizzato il motor
       <string id="SearchEngines_PreventInstalls_Explain">Se questo criterio è abilitato, l'utente non potrà installare motori di ricerca dalle pagine Web.
 
 Se questo criterio è disabilitato o non configurato, i motori di ricerca potranno essere installati dalle pagine Web.</string>
+      <string id="SearchEngines_Remove">Remove Search Engines</string>
+      <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
+
+If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
     </stringTable>
     <presentationTable>
       <presentation id="Authentication">
@@ -416,6 +420,9 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
         <textBox refId="SearchEngines_Default">
           <label/>
         </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Remove">
+        <listBox refId="SearchEngines_Remove"/>
       </presentation>
       <presentation id="Proxy">
         <checkBox refId="ProxyLocked">Non consentire la modifica delle impostazioni del proxy.</checkBox>

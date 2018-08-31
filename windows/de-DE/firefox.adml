@@ -329,6 +329,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="SearchEngines_PreventInstalls_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer keine Suchmaschinen hinzufügen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Suchmaschinen hinzugefügt werden.</string>
+      <string id="SearchEngines_Remove">Remove Search Engines</string>
+      <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
+
+If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
     </stringTable>
     <presentationTable>
       <presentation id="Authentication">
@@ -416,6 +420,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
         <textBox refId="SearchEngines_Default">
           <label/>
         </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Remove">
+        <listBox refId="SearchEngines_Remove"/>
       </presentation>
       <presentation id="Proxy">
         <checkBox refId="ProxyLocked">Ändern der Proxy-Einstellungen nicht erlauben</checkBox>
