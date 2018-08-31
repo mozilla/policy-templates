@@ -306,7 +306,7 @@ If this policy is not configured, tracking protection is not enabled by default 
 
 If Value is set to false, tracking protection is disabled and locked in both the browser and private browsing.
 
-If Value is set to true, private browsing is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
+If Value is set to true, tracking protection is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
 ```
 {
   "policies": {
@@ -397,7 +397,7 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
     "FlashPlugin": {
       "Allow": ["http://example.org/"], /* Sites on the allow list do not override Flash being completely disabled */
       "Block": ["http://example.edu/"],
-      "Default": [true|false], /* If this is set to true, flash is always enabled. If it is set to false, Flash is never enabled */
+      "Default": [true|false], /* If this is set to true, Flash is always enabled. If it is set to false, Flash is never enabled */
       "Locked": [true|false]
     }
   }
