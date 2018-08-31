@@ -49,6 +49,14 @@
     </category>
   </categories>
   <policies>
+    <policies>
+      <policy name="AppUpdateURL" class="Both" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)" >
+      <parentCategory ref="Firefox" />
+      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <elements >
+        <text id="AppUpdateURL" valueName="URL" required="true" />
+      </elements>
+    </policy>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60ESR"/>
