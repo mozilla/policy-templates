@@ -228,7 +228,7 @@ If this policy is disabled or not configured, the default Flash policy is follow
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
       <string id="FlashPlugin_Default">Activate Flash on websites</string>
-      <string id="FlashPlugin_Default_Explain">If this policy is enabled, Flash is always activates on websites.
+      <string id="FlashPlugin_Default_Explain">If this policy is enabled, Flash is always activated on websites.
 
 If this policy is disabled, Flash is never activated on websites, even if they are in the specified in the Allow list.
 
