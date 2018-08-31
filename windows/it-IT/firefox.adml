@@ -6,6 +6,7 @@
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
       <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
+      <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -39,6 +40,10 @@ Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozill
 Se questo criterio è disabilitato o non configurato, nessun sito Web è considerato attendibile per l'utilizzo dell'autenticazione NTLM.
 
 Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_AllowNonFQDN">Allow Non FQDN</string>
+      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled, you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
+
+If this policy is disabled or not configured, NTLM and SPNEGO are not enabled on non FQDNs.</string>
       <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
       <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
 
@@ -328,6 +333,10 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
     <presentationTable>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Authentication_AllowNonFQDN">
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>
