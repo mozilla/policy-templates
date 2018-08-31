@@ -17,7 +17,7 @@ Policies are documented below.
 
 Some of the policies were originally only available on the ESR for security reasons. As of Firefox 62, these policies are available outside of the ESR, but only via JSON file or a Local Machine-based Group Policy. User-based Group Policies are not allowed to set values for these policies. The descriptions below mark such policies as "Machine only".
 
-### Authentication (Machine only)
+### Authentication
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 ```
 {
@@ -473,7 +473,7 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
   }
 }
 ```
-### SearchBar (Machine only)
+### SearchBar
 This policy can be used to determine if the search bar is separate or combined with the URL bar.
 ```
 {
@@ -494,7 +494,7 @@ This policy blocks websites from being visited. The parameters take an array of 
   }
 }
 ```
-### Search Engines (Machine only)
+### Search Engines (This policy is only available on the ESR.)
 This policy allows you to add new search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
 ```
 {
