@@ -75,7 +75,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableAppUpdate">Update deaktivieren</string>
       <string id="DisableAppUpdate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird nicht nach Updates gesucht.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden Updates automatisch installiert.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden Updates automatisch installiert.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableBuiltinPDFViewer">PDF-Ansicht (PDF.js) deaktivieren</string>
       <string id="DisableBuiltinPDFViewer_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden PDF-Dateien nicht in Firefox angezeigt.
 
@@ -141,13 +143,17 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSystemAddonUpdate">System Addon Updates deaktivieren</string>
       <string id="DisableSystemAddonUpdate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden neue System-Add-ons nicht installiert und installierte Add-ons werden nicht mit Updates versorgt.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden System Add-ons installiert und mit Updates versorgt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden System Add-ons installiert und mit Updates versorgt.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableTelemetry">Telemetry deaktivieren</string>
       <string id="DisableTelemetry_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden keine Telemetriedaten versendet.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden Telemetriedaten versendet.
 
-Mozilla empfiehlt, die Telemetrie nicht zu deaktivieren. Durch Telemetrie gesammelte Informationen helfen uns, ein besseres Produkt für Unternehmen wie Ihres zu erstellen.</string>
+Mozilla empfiehlt, die Telemetrie nicht zu deaktivieren. Durch Telemetrie gesammelte Informationen helfen uns, ein besseres Produkt für Unternehmen wie Ihres zu erstellen.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisplayBookmarksToolbar">Lesezeichenleiste anzeigen</string>
       <string id="DisplayBookmarksToolbar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Lesezeichenleiste standardmäßig in der Menüleiste angezeigt, der Benutzer kann diese wieder ausblenden.
 
@@ -164,16 +170,22 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, über
       <string id="Extensions_Install_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Liste mit Erweiterungs-URLs oder -pfaden angeben, die beim Start von Firefox installiert werden.
 Jedes Mal, wenn diese Liste geändert wird, werden die Erweiterungen erneut installiert.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen installiert.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen installiert.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Uninstall">Erweiterungen deinstallieren</string>
       <string id="Extensions_Uninstall_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Liste mit Erweiterungs-IDs angeben, die beim Start deinstalliert werden.
 Jedes Mal, wenn diese Liste geändert wird, werden die Erweiterungen deinstalliert.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen deinstalliert.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen deinstalliert.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Locked">Erweiterungen deaktivieren und löschen verhindern</string>
       <string id="Extensions_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Liste mit Erweiterungs-IDs angeben, die den Benutzer hindert die angegebenen Erweiterungen zu deinstallieren oder zu deaktivieren.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen gesperrt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen gesperrt.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OfferToSaveLogins">Zugangsdaten und Passwörter für Webseiten speichen</string>
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
@@ -240,11 +252,15 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="OverrideFirstRunPage">Willkommen Seite ändern</string>
       <string id="OverrideFirstRunPage_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine URL angeben, die als Willkommensseite beim ersten Start von Firefox verwendet werden soll. Wenn Sie die URL leer lassen, wird keine Willkommensseite angezeigt.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Willkommensseite angezeigt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Willkommensseite angezeigt.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OverridePostUpdatePage">Upgrade Seite ändern</string>
       <string id="OverridePostUpdatePage_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine URL angeben, die nach der Aktualisierung von Firefox angezeigt wird. Wenn Sie die URL leer lassen, wird keine Upgrade-Seite angezeigt.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren wird eine Upgrade Seite angezeigt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren wird eine Upgrade Seite angezeigt.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="SanitizeOnShutdown">Die Chronik löschen, wenn Firefox geschlossen wird</string>
       <string id="SanitizeOnShutdown_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden alle Daten der Chronik gelöscht, wenn Firefox geschlossen wird. Dies beinhaltet Browsing &amp; Download Verlauf, Cookies, Aktive Logins, Cache, Form &amp; Suchverlauf, Website-Einstellungen und Offline-Website-Daten.
 
@@ -252,11 +268,15 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="WebsiteFilter_Block">Gesperrte Webseites</string>
       <string id="WebsiteFilter_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Übereinstimmungsmuster für zu blockierende Webseiten angeben. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Derzeit werden nur http / https-Zugriffe unterstützt. Es gibt eine Beschränkung von 1000 Einträgen. 
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Webseiten gesperrt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Webseiten gesperrt.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="WebsiteFilter_Exceptions">Ausnahmen zu gesperrten Webseiten</string>
       <string id="WebsiteFilter_Exceptions_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und der Webseiten-Filter aktiviert ist, können Sie Übereinstimmungsmuster für Webseiten angeben, die nicht blockiert werden sollen. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Derzeit werden nur http / https-Zugriffe unterstützt. Es gibt eine Beschränkung von 1000 Einträgen.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Bookmark1">Lesezeichen 1</string>
       <string id="Bookmark2">Lesezeichen 2</string>
       <string id="Bookmark3">Lesezeichen 3</string>
@@ -276,11 +296,15 @@ Hinweis: Diese Richtlinie ist nur wirksam, wenn Sie vor der ersten Ausführung v
       <string id="HomepageURL">Startseite</string>
       <string id="HomepageURL_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Startseite festlegen. Sie können die Startseite auch sperren.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer eine Startseite festlegen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer eine Startseite festlegen.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="HomepageAdditional">Zusätzliche Startseiten</string>
       <string id="HomepageAdditional_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie zusätzliche Startseiten festlegen. Diese werden in mehreren Registerkarten geöffnet.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird nur eine Startseite angezeigt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird nur eine Startseite angezeigt.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Proxy">Proxy Einstellungen</string>
       <string id="Proxy_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Netzwerkeinstellungen ändern und sperren.
 
