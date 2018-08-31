@@ -330,6 +330,15 @@ For Uninstall and Locked, you specify extension IDs.
     }
 }
 ```
+### HardwareAcceleration
+This policy disables hardware acceleration by locking the preference layers.acceleration.disabled to true.
+```
+{
+  "policies": {
+    "HardwareAcceleration": false
+  }
+}
+```
 ### NoDefaultBookmarks
 This policy prevents the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags) from being created. Note: this policy is only effective if used before the first run of the profile.
 ```

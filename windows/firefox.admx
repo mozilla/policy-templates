@@ -299,6 +299,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="HardwareAcceleration" class="Both" displayName="$(string.HardwareAcceleration)" explainText="$(string.HardwareAcceleration_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="HardwareAcceleration">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableMasterPasswordCreation" class="Both" displayName="$(string.DisableMasterPasswordCreation)" explainText="$(string.DisableMasterPasswordCreation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableMasterPasswordCreation">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
