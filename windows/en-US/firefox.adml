@@ -24,7 +24,7 @@
       <string id="Block">Blocked Sites</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="AppUpdateURL">URL for Firefox Updates</string>
-      <string id="AppUpdateURL_Explain">If this policy is enabled, you can set a URL to an other update server than the default. This could be helpful, if you run your own update server in your network and the clients have no direct access to the internet and the Mozilla update server.
+      <string id="AppUpdateURL_Explain">If this policy is enabled, you can set a URL to an update server other than the default. This could be helpful if you run your own update server on your network.
 
 If this policy is disabled or not configured, the default update URL is used.</string>
       <string id="Authentication_SPNEGO_Explain">If this policy is enabled, the specified websites are permitted to engage in SPNEGO authentication with the browser. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
