@@ -72,7 +72,6 @@ If this policy is disabled or not configured, users can set images as their desk
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
 If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
-
       <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
       <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
 
@@ -80,7 +79,9 @@ If this policy is disabled or not configured, users can create a master password
       <string id="DisableAppUpdate">Disable Update</string>
       <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive udpates.
 
-If this policy is disabled or not configured, the browser receives updates.</string>
+If this policy is disabled or not configured, the browser receives updates.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableBuiltinPDFViewer">Disable Built-in PDF Viewer (PDF.js)</string>
       <string id="DisableBuiltinPDFViewer_Explain">If this policy is enabled, PDF files are not viewed within Firefox.
 
@@ -146,13 +147,17 @@ If this policy is disabled or not configured, a user can choose to visit a harmf
       <string id="DisableSystemAddonUpdate">Disable System Addon Updates</string>
       <string id="DisableSystemAddonUpdate_Explain">If this policy is enabled, new system add-ons will not be installed and existing system add-ons will not be updated.
 
-If this policy is disabled or not configured, system add-ons are installed and updated.</string>
+If this policy is disabled or not configured, system add-ons are installed and updated.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableTelemetry">Disable Telemetry</string>
       <string id="DisableTelemetry_Explain">If this policy is enabled, telemetry is not uploaded.
 
 If this policy is disabled or not configured, telemetry is collected and uploaded.
 
-Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.</string>
+Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
       <string id="DisplayBookmarksToolbar_Explain">If this policy is enabled, the bookmarks toolbar is displayed by default. The user can still hide it.
 
@@ -169,16 +174,22 @@ If this policy is disabled or not configured, Firefox checks to see if it is the
       <string id="Extensions_Install_Explain">If this policy is enabled, you can specify a list of extension URLs or paths that will be installed when Firefox is started.
 Anytime this list is changed, the extensions will be reinstalled.
 
-If this policy is disabled or not configured, no extensions are installed.</string>
+If this policy is disabled or not configured, no extensions are installed.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Uninstall">Extensions to Uninstall</string>
       <string id="Extensions_Uninstall_Explain">If this policy is enabled, you can specify a list of extension IDs that will be uninstalled.
 Anytime this list is changed, the extensions will be uninstalled.
 
-If this policy is disabled or not configured, no extensions are uninstalled.</string>
+If this policy is disabled or not configured, no extensions are uninstalled.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Locked">Prevent extensions from being disabled or removed</string>
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
-If this policy is disabled or not configured, no extensions are locked.</string>
+If this policy is disabled or not configured, no extensions are locked
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 
@@ -233,7 +244,7 @@ If this policy is disabled or not configured, the default Flash policy is follow
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
       <string id="FlashPlugin_Default">Activate Flash on websites</string>
-      <string id="FlashPlugin_Default_Explain">If this policy is enabled, Flash is always activates on websites.
+      <string id="FlashPlugin_Default_Explain">If this policy is enabled, Flash is always activated on websites.
 
 If this policy is disabled, Flash is never activated on websites, even if they are in the specified in the Allow list.
 
@@ -245,11 +256,15 @@ If this policy is disabled or not configured, the user can change their Flash pr
       <string id="OverrideFirstRunPage">Override the first run page</string>
       <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
 
-If this policy is disabled or not configured, the first run page is displayed.</string>
+If this policy is disabled or not configured, the first run page is displayed.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OverridePostUpdatePage">Override the upgrade page</string>
       <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
 
-If this policy is disabled or not configured, the upgrade is displayed.</string>
+If this policy is disabled or not configured, the upgrade is displayed.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="SanitizeOnShutdown">Clear all data when browser is closed</string>
       <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
 
@@ -257,11 +272,15 @@ If this policy is disabled or not configured, data is not cleared when the brows
       <string id="WebsiteFilter_Block">Blocked websites</string>
       <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
-If this policy is disabled or not configured, no websites are blocked.</string>
+If this policy is disabled or not configured, no websites are blocked.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="WebsiteFilter_Exceptions">Exceptions to blocked websites</string>
       <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
-If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
+If this policy is disabled or not configured, there are no exceptions to the website filter.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Bookmark1">Bookmark One</string>
       <string id="Bookmark2">Bookmark Two</string>
       <string id="Bookmark3">Bookmark Three</string>
@@ -281,11 +300,15 @@ Note: this policy is only effective if used before the first run of the profile.
       <string id="HomepageURL">URL for Home page</string>
       <string id="HomepageURL_Explain">If this policy is enabled, you can set a default home page. You can also lock the home page.
 
-If this policy is disabled or not configured, the user can set and change the home page.</string>
+If this policy is disabled or not configured, the user can set and change the home page.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="HomepageAdditional">Additional Homepages</string>
       <string id="HomepageAdditional_Explain">If this policy is enabled, you can have additional home pages. They are opened in multiple tabs.
 
-If this policy is disabled or not configured, there is only one home page.</string>
+If this policy is disabled or not configured, there is only one home page.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Proxy">Proxy Settings</string>
       <string id="Proxy_Explain">If this policy is enabled, you can configure and lock network settings.
 

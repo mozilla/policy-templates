@@ -6,6 +6,7 @@
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
       <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
+      <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -39,6 +40,10 @@ Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozill
 Se questo criterio è disabilitato o non configurato, nessun sito Web è considerato attendibile per l'utilizzo dell'autenticazione NTLM.
 
 Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_AllowNonFQDN">Allow Non FQDN</string>
+      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled, you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
+
+If this policy is disabled or not configured, NTLM and SPNEGO are not enabled on non FQDNs.</string>
       <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
       <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
 
@@ -70,7 +75,9 @@ Se questo criterio è disabilitato o non configurato, gli utenti possono creare 
       <string id="DisableAppUpdate">Disabilita aggiornamenti</string>
       <string id="DisableAppUpdate_Explain">Se questo criterio è abilitato, il browser non riceverà aggiornamenti.
 
-Se questo criterio è disabilitato o non configurato, il browser riceverà aggiornamenti.</string>
+Se questo criterio è disabilitato o non configurato, il browser riceverà aggiornamenti.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableBuiltinPDFViewer">Disabilita visualizzatore PDF integrato (PDF.js)</string>
       <string id="DisableBuiltinPDFViewer_Explain">Se questo criterio è abilitato, i file PDF non sono visualizzati all'interno di Firefox.
 
@@ -136,13 +143,17 @@ Se questo criterio è disabilitato o non configurato, un utente può decidere di
       <string id="DisableSystemAddonUpdate">Disabilita aggiornamenti componenti aggiuntivi di sistema</string>
       <string id="DisableSystemAddonUpdate_Explain">Se questo criterio è abilitato, non saranno installati nuovi componenti aggiuntivi di sistema e i componenti aggiuntivi di sistema esistenti non saranno aggiornati.
 
-Se questo criterio è disabilitato o non configurato, i componenti aggiuntivi di sistema saranno installati e aggiornati.</string>
+Se questo criterio è disabilitato o non configurato, i componenti aggiuntivi di sistema saranno installati e aggiornati.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableTelemetry">Disabilita telemetria</string>
       <string id="DisableTelemetry_Explain">Se questo criterio è abilitato, la telemetria non è caricata.
 
 Se questo criterio è disabilitato o non configurato, la telemetria è raccolta e caricata.
 
-Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tramite la telemetria ci consentono di realizzare un prodotto migliore per le aziende come la tua.</string>
+Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tramite la telemetria ci consentono di realizzare un prodotto migliore per le aziende come la tua.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisplayBookmarksToolbar">Visualizza barra degli strumenti Segnalibri</string>
       <string id="DisplayBookmarksToolbar_Explain">Se questo criterio è abilitato, la barra degli strumenti Segnalibri è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
@@ -159,16 +170,22 @@ Se questo criterio è disabilitato o non configurato, Firefox all'avvio controll
       <string id="Extensions_Install_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di URL o percorsi a estensioni che saranno installate all'avvio di Firefox.
 Le estensioni saranno reinstallate a ogni modifica dell'elenco.
 
-Se questo criterio è disabilitato o non configurato, non sarà installata alcuna estensione.</string>
+Se questo criterio è disabilitato o non configurato, non sarà installata alcuna estensione.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Uninstall">Estensioni da disinstallare</string>
       <string id="Extensions_Uninstall_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID di estensioni da disinstallare.
 Le estensioni saranno disinstallate a ogni modifica dell'elenco.
 
-Se questo criterio è disabilitato o non configurato, non sarà disinstallata alcuna estensione.</string>
+Se questo criterio è disabilitato o non configurato, non sarà disinstallata alcuna estensione.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Locked">Impedisci la disabilitazione o la rimozione delle estensioni</string>
       <string id="Extensions_Locked_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID delle estensioni che l'utente non sarà in grado di disinstallare o disabilitare.
 
-Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.</string>
+Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 
@@ -235,11 +252,15 @@ Se questo criterio è disabilitato o non configurato, l'utente può modificare l
       <string id="OverrideFirstRunPage">Esegui l'override della pagina visualizzata al primo avvio</string>
       <string id="OverrideFirstRunPage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare al primo avvio del browser. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina al primo avvio.
 
-Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.</string>
+Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OverridePostUpdatePage">Esegui l'override della pagina visualizzata dopo un aggiornamento</string>
       <string id="OverridePostUpdatePage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare dopo l'aggiornamento di Firefox. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina dopo l'aggiornamento.
 
-Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento verrà visualizzata la pagina predefinita.</string>
+Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento verrà visualizzata la pagina predefinita.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="SanitizeOnShutdown">Cancella tutti i dati alla chiusura del browser</string>
       <string id="SanitizeOnShutdown_Explain">Se questo criterio è abilitato, tutti i dati saranno cancellati alla chiusura di Firefox. Ciò include la cronologia di navigazione e dei download, i cookie, gli accessi effettuati, la cache, la cronologia dei moduli e di ricerca, le preferenze e i dati non in linea dei siti Web.
 
@@ -247,11 +268,15 @@ Se questo criterio è disabilitato o non configurato, i dati non sono cancellati
       <string id="WebsiteFilter_Block">Siti Web bloccati</string>
       <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
 
-Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun sito.</string>
+Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun sito.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="WebsiteFilter_Exceptions">Eccezioni ai siti Web bloccati</string>
       <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
 
-Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.</string>
+Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Bookmark1">Segnalibro 1</string>
       <string id="Bookmark2">Segnalibro 2</string>
       <string id="Bookmark3">Segnalibro 3</string>
@@ -271,11 +296,15 @@ Nota: questo criterio ha efficacia solo se è utilizzato prima della prima esecu
       <string id="HomepageURL">Indirizzo pagina iniziale</string>
       <string id="HomepageURL_Explain">Se questo criterio è abilitato, è possibile specificare una pagina iniziale predefinita. È anche possibile bloccare l'impostazione relativa alla pagina iniziale.
 
-Se questo criterio è disabilitato o non configurato, l'utente può impostare e modificare la pagina iniziale.</string>
+Se questo criterio è disabilitato o non configurato, l'utente può impostare e modificare la pagina iniziale.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="HomepageAdditional">Pagine iniziali aggiuntive</string>
       <string id="HomepageAdditional_Explain">Se questo criterio è abilitato, è possibile avere pagine iniziali aggiuntive. Queste saranno aperte in schede multiple.
 
-Se questo criterio è disabilitato o non configurato, ci sarà una sola pagina iniziale.</string>
+Se questo criterio è disabilitato o non configurato, ci sarà una sola pagina iniziale.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Proxy">Impostazioni proxy</string>
       <string id="Proxy_Explain">Se questo criterio è abilitato, è possibile configurare e bloccare le impostazioni di rete.
 
@@ -328,6 +357,10 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
     <presentationTable>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Authentication_AllowNonFQDN">
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>

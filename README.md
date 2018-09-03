@@ -17,7 +17,7 @@ Policies are documented below.
 
 Some of the policies were originally only available on the ESR for security reasons. As of Firefox 62, these policies are available outside of the ESR, but only via JSON file or a Local Machine-based Group Policy. User-based Group Policies are not allowed to set values for these policies. The descriptions below mark such policies as "Machine only".
 
-### Authentication (Machine only)
+### Authentication
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 ```
 {
@@ -306,7 +306,7 @@ If this policy is not configured, tracking protection is not enabled by default 
 
 If Value is set to false, tracking protection is disabled and locked in both the browser and private browsing.
 
-If Value is set to true, private browsing is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
+If Value is set to true, tracking protection is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
 ```
 {
   "policies": {
@@ -397,7 +397,7 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
     "FlashPlugin": {
       "Allow": ["http://example.org/"], /* Sites on the allow list do not override Flash being completely disabled */
       "Block": ["http://example.edu/"],
-      "Default": [true|false], /* If this is set to true, flash is always enabled. If it is set to false, Flash is never enabled */
+      "Default": [true|false], /* If this is set to true, Flash is always enabled. If it is set to false, Flash is never enabled */
       "Locked": [true|false]
     }
   }
@@ -473,7 +473,7 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
   }
 }
 ```
-### SearchBar (Machine only)
+### SearchBar
 This policy can be used to determine if the search bar is separate or combined with the URL bar.
 ```
 {
@@ -494,7 +494,7 @@ This policy blocks websites from being visited. The parameters take an array of 
   }
 }
 ```
-### Search Engines (Machine only)
+### Search Engines (This policy is only available on the ESR.)
 This policy allows you to add new search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
 ```
 {
