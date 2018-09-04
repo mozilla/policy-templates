@@ -517,3 +517,37 @@ This policy allows you to add new search engines, as well as set the default and
   }
 }
 ```
+### Permissions
+This policy allows you to change the permissions associated with camera, microphone, location, and notifications
+```
+{
+  "policies": {
+    "Permissions": {
+      "Camera": {
+        "Allow": ["http://example.org/"], /* Origins where camera access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where camera access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the camera */
+        "Locked": [true|false] /* Don't allow the user to change the camera preferences */
+      },
+      "Microphone": {
+        "Allow": ["http://example.org/"], /* Origins where microphone access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where microphone access  is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the microphone */
+        "Locked": [true|false] /* Don't allow the user to change the microphone preferences */
+      },
+      "Location": {
+        "Allow": ["http://example.org/"], /* Origins where location access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where location access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access location */
+        "Locked": [true|false] /* Don't allow the user to change the location preferences */
+      },
+      "Notifications": {
+        "Allow": ["http://example.org/"], /* Origins where sending notifications is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where sending notifications is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to send notifications */
+        "Locked": [true|false] /* Don't allow the user to change the notification preferences */
+      }
+    }
+  }
+}
+```

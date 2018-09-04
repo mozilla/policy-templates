@@ -10,6 +10,10 @@
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
+      <string id="Camera_group">Camera</string>
+      <string id="Microphone_group">Microphone</string>
+      <string id="Location_group">Location</string>
+      <string id="Notifications_group">Notifications</string>
       <string id="Authentication_group">Authentifizierung</string>
       <string id="Bookmarks_group">Lesezeichen</string>
       <string id="Certificates_group">Zertifikate</string>
@@ -233,6 +237,62 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder w
       <string id="Cookies_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren können Benutzer die Cookie-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Cookie-Einstellungen ändern.</string>
+      <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default camera policy is followed.</string>
+      <string id="Camera_Block_Explain">If this policy is enabled, access to the camera is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to the camera is not blocked by default.</string>
+      <string id="Camera_BlockNewRequests">Block new requests asking to access the camera</string>
+      <string id="Camera_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the camera.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the camera.</string>
+      <string id="Camera_Locked">Do not allow preferences to be changed</string>
+      <string id="Camera_Locked_Explain">If this policy is enabled, camera preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their camera preferences.</string>
+      <string id="Microphone_Allow_Explain">If this policy is enabled, access to the microphone is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default microphone policy is followed.</string>
+      <string id="Microphone_Block_Explain">If this policy is enabled, access to the microphone is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to the microphone is not blocked by default.</string>
+      <string id="Microphone_BlockNewRequests">Block new requests asking to access the microphone</string>
+      <string id="Microphone_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the microphone.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the microphone.</string>
+      <string id="Microphone_Locked">Do not allow preferences to be changed</string>
+      <string id="Microphone_Locked_Explain">If this policy is enabled, microphone preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their camera preferences.</string>
+      <string id="Location_Allow_Explain">If this policy is enabled, access to location is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default location policy is followed.</string>
+      <string id="Location_Block_Explain">If this policy is enabled, access to location is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to location is not blocked by default.</string>
+      <string id="Location_BlockNewRequests">Block new requests asking to access location</string>
+      <string id="Location_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access location.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access location.</string>
+      <string id="Location_Locked">Do not allow preferences to be changed</string>
+      <string id="Location_Locked_Explain">If this policy is enabled, location preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change location preferences.</string>
+      <string id="Notifications_Allow_Explain">If this policy is enabled, notifications can always be sent for the origins indicated.
+
+If this policy is disabled or not configured, the default nofication policy is followed.</string>
+      <string id="Notifications_Block_Explain">If this policy is enabled, notifications are always blocked for the origins indicated.
+
+If this policy is disabled or not configured, notifications are not blocked by default.</string>
+      <string id="Notifications_BlockNewRequests">Block new requests asking to send notifications</string>
+      <string id="Notifications_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to send notifications.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to send notifications.</string>
+      <string id="Notifications_Locked">Do not allow preferences to be changed</string>
+      <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their notification preferences.</string>
       <string id="FlashPlugin_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, ist Flash standardmäßig für die angegebenen URLs aktiviert, es sei denn, Flash ist vollständig deaktiviert. Wenn eine Top-Level-Domäne angegeben ist (http://example.org), ist Flash auch für alle Sub-Domains zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Flash Richtlinie verwendet.</string>
