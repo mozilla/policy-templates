@@ -22,6 +22,10 @@
       <string id="Search_group">Ricerca</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
+      <string id="AppUpdateURL">Custom Update URL</string>
+      <string id="AppUpdateURL_Explain">If this policy is enabled, you can set a URL to an update server other than the default. This could be helpful if you run your own update server on your network.
+
+If this policy is disabled or not configured, the default update URL is used.</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">Se questo criterio è abilitato, i siti Web specificati possono utilizzare l'autenticazione SPNEGO nel browser. Le voci dell'elenco devono essere nel formato mydomain.com o https://myotherdomain.com.
 
@@ -355,6 +359,11 @@ Se questo criterio è disabilitato o non configurato, verrà utilizzato il motor
 Se questo criterio è disabilitato o non configurato, i motori di ricerca potranno essere installati dalle pagine Web.</string>
     </stringTable>
     <presentationTable>
+      <presentation id="AppUpdateURL">
+        <textBox refId="AppUpdateURL">
+          <label>URL:</label>
+        </textBox>
+      </presentation>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
       </presentation>

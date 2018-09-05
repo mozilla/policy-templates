@@ -22,7 +22,7 @@
       <string id="Search_group">Suche</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
-      <string id="AppUpdateURL">URL für Firefox Updates</string>
+      <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
       <string id="AppUpdateURL_Explain">Wenn diese Policy aktiviert ist, dann können Sie eine URL zu einem Update-Server setzen, die eine andere ist, als die standardmäßige. Dies kann hilfreich sein, in dem Fall, wenn Sie einen eigenen Update-Server in Ihrem Netzwerk betreiben.
 
 Wenn diese Policy deaktiviert oder nicht konfiguriert ist, dann wird die Standard-URL verwendet.</string>
@@ -359,6 +359,11 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Suchmaschinen hinzugefügt werden.</string>
     </stringTable>
     <presentationTable>
+      <presentation id="AppUpdateURL">
+        <textBox refId="AppUpdateURL">
+          <label>URL:</label>
+        </textBox>
+      </presentation>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
       </presentation>
