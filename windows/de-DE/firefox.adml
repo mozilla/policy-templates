@@ -194,6 +194,10 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen gesperrt.
 
 Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="HardwareAcceleration">Hardware Acceleration</string>
+      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+
+If this policy is enabled or not configured, hardware acceleration is enabled.</string>
       <string id="OfferToSaveLogins">Zugangsdaten und Passwörter für Webseiten speichen</string>
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 

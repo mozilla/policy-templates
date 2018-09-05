@@ -194,6 +194,10 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
 If this policy is disabled or not configured, no extensions are locked
 
 Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="HardwareAcceleration">Hardware Acceleration</string>
+      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+
+If this policy is enabled or not configured, hardware acceleration is enabled.</string>
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 

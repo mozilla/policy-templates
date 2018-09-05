@@ -194,6 +194,10 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
 Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.
 
 Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="HardwareAcceleration">Hardware Acceleration</string>
+      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+
+If this policy is enabled or not configured, hardware acceleration is enabled.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 
