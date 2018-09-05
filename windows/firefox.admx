@@ -47,6 +47,21 @@
     <category displayName="$(string.Search_group)" name="Search">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.Permissions_group)" name="Permissions">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.Camera_group)" name="Camera">
+      <parentCategory ref="Permissions"/>
+    </category>
+    <category displayName="$(string.Microphone_group)" name="Microphone">
+      <parentCategory ref="Permissions"/>
+    </category>
+    <category displayName="$(string.Location_group)" name="Location">
+      <parentCategory ref="Permissions"/>
+    </category>
+    <category displayName="$(string.Notifications_group)" name="Notifications">
+      <parentCategory ref="Permissions"/>
+    </category>
   </categories>
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
@@ -68,6 +83,28 @@
       <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Authentication_AllowNonFQDN" class="Both" displayName="$(string.Authentication_AllowNonFQDN)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowNonFQDN_Explain)" presentation="$(presentation.Authentication_AllowNonFQDN)">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <boolean id="Authentication_AllowNonFQDN_NTLM" key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" valueName="NTLM">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="Authentication_AllowNonFQDN_SPNEGO" key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" valueName="SPNEGO">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
@@ -187,6 +224,142 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Camera_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Camera_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Camera"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Camera_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Camera_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Camera"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Camera\Permissions\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Camera_BlockNewRequests" class="Both" displayName="$(string.Camera_BlockNewRequests)" explainText="$(string.Camera_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Camera" valueName="BlockNewRequests">
+      <parentCategory ref="Camera"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Camera_Locked" class="Both" displayName="$(string.Camera_Locked)" explainText="$(string.Camera_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Camera" valueName="Locked">
+      <parentCategory ref="Camera"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Microphone_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Microphone_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Microphone"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Microphone_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Microphone_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Microphone"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Microphone_BlockNewRequests" class="Both" displayName="$(string.Microphone_BlockNewRequests)" explainText="$(string.Microphone_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone" valueName="BlockNewRequests">
+      <parentCategory ref="Microphone"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Microphone_Locked" class="Both" displayName="$(string.Microphone_Locked)" explainText="$(string.Microphone_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone" valueName="Locked">
+      <parentCategory ref="Microphone"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Location_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Location_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Location"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Location\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Location_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Location_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Location"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Location\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Location_BlockNewRequests" class="Both" displayName="$(string.Location_BlockNewRequests)" explainText="$(string.Location_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Location" valueName="BlockNewRequests">
+      <parentCategory ref="Location"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Location_Locked" class="Both" displayName="$(string.Location_Locked)" explainText="$(string.Location_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Location" valueName="Locked">
+      <parentCategory ref="Location"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Notifications_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Notifications_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Notifications"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Notifications_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Notifications_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Notifications"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Notifications_BlockNewRequests" class="Both" displayName="$(string.Notifications_BlockNewRequests)" explainText="$(string.Notifications_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications" valueName="BlockNewRequests">
+      <parentCategory ref="Notifications"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Notifications_Locked" class="Both" displayName="$(string.Notifications_Locked)" explainText="$(string.Notifications_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications" valueName="Locked">
+      <parentCategory ref="Notifications"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60ESR"/>
@@ -270,6 +443,16 @@
     <policy name="DisableFormHistory" class="Both" displayName="$(string.DisableFormHistory)" explainText="$(string.DisableFormHistory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableFormHistory">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="HardwareAcceleration" class="Both" displayName="$(string.HardwareAcceleration)" explainText="$(string.HardwareAcceleration_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="HardwareAcceleration">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -1958,6 +2141,20 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="SearchEngines_Remove" class="Both" displayName="$(string.SearchEngines_Remove)" explainText="$(string.SearchEngines_Remove_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" presentation="$(presentation.SearchEngines_Remove)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <elements >
+        <list id="SearchEngines_Remove" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="AppUpdateURL" class="Both" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF62" />
+      <elements >
+        <text id="AppUpdateURL" valueName="URL" required="true" />
+      </elements>
     </policy>
   </policies>
 </policyDefinitions>

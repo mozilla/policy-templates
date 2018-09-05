@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.1" schemaVersion="1.0" >
+  <displayName/>
+  <description/>
+  <resources >
+    <stringTable >
+      <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
+      <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
+      <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
+      <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
+      <string id="firefox">Firefox</string>
+      <string id="Permissions_group">Permessi</string>
+      <string id="Camera_group">Camera</string>
+      <string id="Microphone_group">Microphone</string>
+      <string id="Location_group">Location</string>
+      <string id="Notifications_group">Notifications</string>
+      <string id="Authentication_group">Autenticazione</string>
+      <string id="Bookmarks_group">Segnalibri</string>
+      <string id="Certificates_group">Certificati</string>
+      <string id="Popups_group">Pop-up</string>
+      <string id="Cookies_group">Cookie</string>
+      <string id="Addons_group">Plugin</string>
+      <string id="Extensions_group">Estensioni</string>
+      <string id="Flash_group">Flash</string>
+      <string id="Homepage_group">Pagina iniziale</string>
+      <string id="Search_group">Ricerca</string>
+      <string id="Allow">Siti consentiti</string>
+      <string id="Block">Siti bloccati</string>
+      <string id="AppUpdateURL">Custom Update URL</string>
+      <string id="AppUpdateURL_Explain">If this policy is enabled, you can set a URL to an update server other than the default. This could be helpful if you run your own update server on your network.
+
+If this policy is disabled or not configured, the default update URL is used.</string>
+      <string id="Authentication_SPNEGO">SPNEGO</string>
+      <string id="Authentication_SPNEGO_Explain">Se questo criterio è abilitato, i siti Web specificati possono utilizzare l'autenticazione SPNEGO nel browser. Le voci dell'elenco devono essere nel formato mydomain.com o https://myotherdomain.com.
+
+Se questo criterio è disabilitato o non configurato, nessun sito Web può utilizzare l'autenticazione SPNEGO nel browser.
+
+Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_Delegated">Delegata</string>
+      <string id="Authentication_Delegated_Explain">Se questo criterio è abilitato, il browser può delegare l'autorizzazione utente al server per i siti Web specificato. Le voci dell'elenco devono essere nel formato mydomain.com o https://myotherdomain.com.
+
+Se questo criterio è disabilitato o non configurato, il browser non delegherà l'autorizzazione utente per nessun sito Web.
+
+Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_NTLM">NTLM</string>
+      <string id="Authentication_NTLM_Explain">Se questo criterio è abilitato, i siti Web specificati sono considerati attendibili per l'utilizzo dell'autenticazione NTLM. Le voci dell'elenco devono essere nel formato mydomain.com o https://myotherdomain.com.
+
+Se questo criterio è disabilitato o non configurato, nessun sito Web è considerato attendibile per l'utilizzo dell'autenticazione NTLM.
+
+Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_AllowNonFQDN">Allow Non FQDN</string>
+      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled, you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
+
+If this policy is disabled or not configured, NTLM and SPNEGO are not enabled on non FQDNs.</string>
+      <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
+      <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
+
+Se questo criterio è disabilitato o non configurato, l'utente può accedere al Gestore componenti aggiuntivi e ad about:addons.</string>
+      <string id="BlockAboutConfig">Blocca about:config</string>
+      <string id="BlockAboutConfig_Explain">Se questo criterio è abilitato, l'utente non può accedere ad about:config.
+
+Se questo criterio è disabilitato o non configurato, l'utente può accedere ad about:config.</string>
+      <string id="BlockAboutProfiles">Blocca about:profiles</string>
+      <string id="BlockAboutProfiles_Explain">Se questo criterio è abilitato, l'utente non può accedere ad about:profiles.
+
+Se questo criterio è disabilitato o non configurato, l'utente può accedere ad about:profiles.</string>
+      <string id="BlockAboutSupport">Blocca Informazioni per la risoluzione dei problemi</string>
+      <string id="BlockAboutSupport_Explain">Se questo criterio è abilitato, l'utente non può accedere a Informazioni per la risoluzione dei problemi o ad about:support.
+
+Se questo criterio è disabilitato o non configurato, l'utente può accedere a Informazioni per la risoluzione dei problemi e ad about:support.</string>
+      <string id="DisableSetDesktopBackground">Disabilita Imposta come sfondo del desktop</string>
+      <string id="DisableSetDesktopBackground_Explain">Se questo criterio è abilitato, l'utente non può impostare un'immagine come sfondo del Desktop.
+
+Se questo criterio è disabilitato o non configurato, l'utente può impostare un'immagine come sfondo del Desktop.</string>
+      <string id="Certificates_ImportEnterpriseRoots">Importa Autorità di certificazione radice enterprise</string>
+      <string id="Certificates_ImportEnterpriseRoots_Explain">Se questo criterio è abilitato, Firefox utilizzerà i certificati radice nell'Archivio certificati di Windows.
+
+Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i certificati radice nell'Archivio certificati di Windows.</string>
+      <string id="DisableMasterPasswordCreation">Disabilita creazione password principale</string>
+      <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
+
+Se questo criterio è disabilitato o non configurato, gli utenti possono creare una password principale.</string>
+      <string id="DisableAppUpdate">Disabilita aggiornamenti</string>
+      <string id="DisableAppUpdate_Explain">Se questo criterio è abilitato, il browser non riceverà aggiornamenti.
+
+Se questo criterio è disabilitato o non configurato, il browser riceverà aggiornamenti.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="DisableBuiltinPDFViewer">Disabilita visualizzatore PDF integrato (PDF.js)</string>
+      <string id="DisableBuiltinPDFViewer_Explain">Se questo criterio è abilitato, i file PDF non sono visualizzati all'interno di Firefox.
+
+Se questo criterio è disabilitato o non configurato, i file PDF sono visualizzati all'interno di Firefox.</string>
+      <string id="DisableDeveloperTools">Disabilita Strumenti Sviluppo web</string>
+      <string id="DisableDeveloperTools_Explain">Se questo criterio è abilitato, gli Strumenti Sviluppo web non sono disponibili all'interno di Firefox.
+
+Se questo criterio è disabilitato o non configurato, gli Strumenti Sviluppo web sono disponibili all'interno di Firefox.</string>
+      <string id="DisableFeedbackCommands">Disabilita comandi feedback</string>
+      <string id="DisableFeedbackCommands_Explain">Se questo criterio è abilitato, le voci di menù &quot;Invia feedback&quot; e &quot;Segnala un sito ingannevole&quot; non sono disponibili nel menù Aiuto.
+
+Se questo criterio è disabilitato o non configurato, le voci di menù &quot;Invia feedback&quot; e &quot;Segnala un sito ingannevole&quot; sono disponibili nel menù Aiuto.</string>
+      <string id="DisableFirefoxAccounts">Disabilita Account Firefox</string>
+      <string id="DisableFirefoxAccounts_Explain">Se questo criterio è abilitato, la funzionalità Account Firefox è disabilitata (ciò include la disabilitazione di Sync).
+
+Se questo criterio è disabilitato o non configurato, Account Firefox e Sync sono disponibili.</string>
+      <string id="DisableFirefoxScreenshots">Disabilita Firefox Screenshots</string>
+      <string id="DisableFirefoxScreenshots_Explain">Se questo criterio è abilitato, Firefox Screenshots non è disponibile.
+
+Se questo criterio è disabilitato o non configurato, Firefox Screenshots è disponibile.</string>
+      <string id="DisableFirefoxStudies">Disabilita Firefox Studies</string>
+      <string id="DisableFirefoxStudies_Explain">Se questo criterio è abilitato, Firefox non eseguirà mai studi SHIELD né proporrà sondaggi Heartbeat.
+
+Se questo criterio è disabilitato o non configurato, l'utente può scegliere di abilitare gli studi SHIELD o i sondaggi Heartbeat.
+
+Per ulteriori informazioni, vedi https://support.mozilla.org/en-US/kb/shield e https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
+      <string id="DisableForgetButton">Disabilita pulsante Dimentica</string>
+      <string id="DisableForgetButton_Explain">Se questo criterio è abilitato, il pulsante &quot;Dimentica&quot; non è disponibile.
+
+Se questo criterio è disabilitato o non configurato, il pulsante &quot;Dimentica&quot; è disponibile.</string>
+      <string id="DisableFormHistory">Disabilita Cronologia moduli</string>
+      <string id="DisableFormHistory_Explain">Se questo criterio è abilitato, Firefox non ricorderà la cronologia dei moduli o di ricerca.
+
+Se questo criterio è disabilitato o non configurato, Firefox ricorderà la cronologia dei moduli e di ricerca.</string>
+      <string id="DisablePocket">Disabilita Pocket</string>
+      <string id="DisablePocket_Explain">Se questo criterio è abilitato, Pocket non è disponibile.
+
+Se questo criterio è disabilitato o non configurato, Pocket è disponibile.</string>
+      <string id="DisablePrivateBrowsing">Disabilita Navigazione anonima</string>
+      <string id="DisablePrivateBrowsing_Explain">Se questo criterio è abilitato, la navigazione anonima non è consentita.
+
+Se questo criterio è disabilitato o non configurato, la navigazione anonima è consentita.</string>
+      <string id="DisableProfileImport">Disabilita importazione profilo</string>
+      <string id="DisableProfileImport_Explain">Se questo criterio è abilitato, l'opzione &quot;Importa dati da un altro browser&quot; non è disponibile nella finestra Segnalibri.
+
+Se questo criterio è disabilitato o non configurato, l'opzione &quot;Importa dati da un altro browser&quot; è disponibile.</string>
+      <string id="DisableProfileRefresh">Disabilita Ripristino profilo</string>
+      <string id="DisableProfileRefresh_Explain">Se questo criterio è abilitato, il pulsante &quot;Ripristina Firefox&quot; non è disponibile nella pagina about:support page o su support.mozilla.org.
+
+Se questo criterio è disabilitato o non configurato, il pulsante &quot;Ripristina Firefox&quot; è disponibile.</string>
+      <string id="DisableSafeMode">Disabilita Modalità provvisoria</string>
+      <string id="DisableSafeMode_Explain">Se questo criterio è abilitato, l'utente non può riavviare il browser in Modalità provvisoria.
+
+Se questo criterio è disabilitato o non configurato, la Modalità provvisoria è consentita.</string>
+      <string id="DisableSecurityBypass_InvalidCertificate">Impedisci l'override degli errori certificato</string>
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Se questo criterio è abilitato, il pulsante &quot;Aggiungi eccezione&quot; non è disponibile se un certificato non è valido. Ciò impedisce all'utente di eseguire l'override dell'errore del certificato.
+
+Se questo criterio è disabilitato o non configurato, è possibile eseguire l'override degli errori certificato.</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Impedisci l'override degli errori Protezione phishing e malware</string>
+      <string id="DisableSecurityBypass_SafeBrowsing_Explain">Se questo criterio è abilitato, un utente non può ignorare l'avvertimento e visitare un sito malevolo.
+
+Se questo criterio è disabilitato o non configurato, un utente può decidere di visitare un sito malevolo.</string>
+      <string id="DisableSystemAddonUpdate">Disabilita aggiornamenti componenti aggiuntivi di sistema</string>
+      <string id="DisableSystemAddonUpdate_Explain">Se questo criterio è abilitato, non saranno installati nuovi componenti aggiuntivi di sistema e i componenti aggiuntivi di sistema esistenti non saranno aggiornati.
+
+Se questo criterio è disabilitato o non configurato, i componenti aggiuntivi di sistema saranno installati e aggiornati.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="DisableTelemetry">Disabilita telemetria</string>
+      <string id="DisableTelemetry_Explain">Se questo criterio è abilitato, la telemetria non è caricata.
+
+Se questo criterio è disabilitato o non configurato, la telemetria è raccolta e caricata.
+
+Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tramite la telemetria ci consentono di realizzare un prodotto migliore per le aziende come la tua.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="DisplayBookmarksToolbar">Visualizza barra degli strumenti Segnalibri</string>
+      <string id="DisplayBookmarksToolbar_Explain">Se questo criterio è abilitato, la barra degli strumenti Segnalibri è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
+
+Se questo criterio è disabilitato o non configurato, la barra degli strumenti Segnalibri non è visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar_Explain">Se questo criterio è abilitato, la barra dei menù è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
+
+Se questo criterio è disabilitato o non configurato, la barra dei menù non viene visualizzata per impostazione predefinita.</string>
+      <string id="DontCheckDefaultBrowser">Non controllare il browser predefinito</string>
+      <string id="DontCheckDefaultBrowser_Explain">Se questo criterio è abilitato, Firefox all'avvio non controlla se è il browser predefinito.
+
+Se questo criterio è disabilitato o non configurato, Firefox all'avvio controlla se è il browser predefinito.</string>
+      <string id="Extensions_Install">Estensioni da installare</string>
+      <string id="Extensions_Install_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di URL o percorsi a estensioni che saranno installate all'avvio di Firefox.
+Le estensioni saranno reinstallate a ogni modifica dell'elenco.
+
+Se questo criterio è disabilitato o non configurato, non sarà installata alcuna estensione.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="Extensions_Uninstall">Estensioni da disinstallare</string>
+      <string id="Extensions_Uninstall_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID di estensioni da disinstallare.
+Le estensioni saranno disinstallate a ogni modifica dell'elenco.
+
+Se questo criterio è disabilitato o non configurato, non sarà disinstallata alcuna estensione.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="Extensions_Locked">Impedisci la disabilitazione o la rimozione delle estensioni</string>
+      <string id="Extensions_Locked_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID delle estensioni che l'utente non sarà in grado di disinstallare o disabilitare.
+
+Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="HardwareAcceleration">Hardware Acceleration</string>
+      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+
+If this policy is enabled or not configured, hardware acceleration is enabled.</string>
+      <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
+      <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
+
+Se questo criterio è disabilitato, Firefox non offrirà la possibilità di salvare i nomi utente e le password di accesso ai siti.</string>
+      <string id="PopupBlocking_Allow_Explain">Se questo criterio è abilitato, le finestre pop-up sui siti indicati sono sempre consentite. Se è specificato un dominio di primo livello (http://example.org), le finestre pop-up sono consentite anche per tutti i sottodomini.
+
+Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita delle finestre pop-up.</string>
+      <string id="PopupBlocking_Default">Consenti le finestre pop-up dei siti Web</string>
+      <string id="PopupBlocking_Default_Explain">Se questo criterio è disabilitato, le finestre pop-up dei siti Web sono consentite per impostazione predefinita.
+
+Se questo criterio non è configurato o abilitato, le finestre pop-up dei siti Web non sono consentite.</string>
+      <string id="PopupBlocking_Locked">Non consentire la modifica delle preferenze</string>
+      <string id="PopupBlocking_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle finestre pop-up non possono essere modificate dall'utente.
+
+Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle finestre pop-up.</string>
+      <string id="InstallAddonsPermission_Allow_Explain">Se questo criterio è abilitato, l'installazione dei componenti aggiuntivi dai siti indicati è sempre consentita a meno che questa non sia disabilitata in generale. Se è specificato un dominio di primo livello (http://example.org), l'installazione dei componenti aggiuntivi è consentita anche da tutti i sottodomini.
+
+Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per i componenti aggiuntivi.</string>
+      <string id="InstallAddonsPermission_Default">Consenti l'installazione di componenti aggiuntivi dai siti Web</string>
+      <string id="InstallAddonsPermission_Default_Explain">Se questo criterio è disabilitato, non è possibile installare componenti aggiuntivi.
+
+Se questo criterio non è configurato o è abilitato, è possibile installare componenti aggiuntivi.</string>
+      <string id="Cookies_Allow_Explain">Se questo criterio è abilitato, i cookie dai siti indicati sono sempre consentiti. Se è specificato un dominio di primo livello (http://example.org), i cookie sono consentiti anche da tutti i sottodomini.
+
+Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per i cookie.</string>
+      <string id="Cookies_Block_Explain">Se questo criterio è abilitato, i cookie dai siti indicati sono bloccati. Se è specificato un dominio di primo livello (http://example.org), i cookie sono bloccati anche da tutti i sottodomini.
+
+Se questo criterio è disabilitato o non configurato, i cookie non sono bloccati per impostazione predefinita.</string>
+      <string id="Cookies_Default">Accetta i cookie dai siti Web</string>
+      <string id="Cookies_Default_Explain">Se questo criterio è disabilitato, i cookie dai siti Web non sono accettati per impostazione predefinita.
+
+Se questo criterio non è configurato o è abilitato, i cookie dai siti Web sono accettati.</string>
+      <string id="Cookies_AcceptThirdParty">Accetta cookie di terze parti</string>
+      <string id="Cookies_AcceptThirdParty_Explain">Se questo criterio è abilitato e i cookie sono consentiti, è possibile impostare quando accettare i cookie di terze parti.
+
+Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
+      <string id="Cookies_AcceptThirdParty_All">Sempre</string>
+      <string id="Cookies_AcceptThirdParty_None">Mai</string>
+      <string id="Cookies_AcceptThirdParty_FromVisited">Dai siti visitati</string>
+      <string id="Cookies_ExpireAtSessionEnd">Conserva i cookie fino alla chiusura di Firefox</string>
+      <string id="Cookies_ExpireAtSessionEnd_Explain">Se questo criterio è abilitato e i cookie sono consentiti, questi scadranno alla chiusura di Firefox.
+
+Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
+      <string id="Cookies_Locked">Non consentire la modifica delle preferenze</string>
+      <string id="Cookies_Locked_Explain">Se questo criterio è abilitato, le preferenze relative ai cookie non possono essere modificate dall'utente.
+
+Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative ai cookie.</string>
+      <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default camera policy is followed.</string>
+      <string id="Camera_Block_Explain">If this policy is enabled, access to the camera is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to the camera is not blocked by default.</string>
+      <string id="Camera_BlockNewRequests">Block new requests asking to access the camera</string>
+      <string id="Camera_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the camera.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the camera.</string>
+      <string id="Camera_Locked">Do not allow preferences to be changed</string>
+      <string id="Camera_Locked_Explain">If this policy is enabled, camera preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their camera preferences.</string>
+      <string id="Microphone_Allow_Explain">If this policy is enabled, access to the microphone is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default microphone policy is followed.</string>
+      <string id="Microphone_Block_Explain">If this policy is enabled, access to the microphone is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to the microphone is not blocked by default.</string>
+      <string id="Microphone_BlockNewRequests">Block new requests asking to access the microphone</string>
+      <string id="Microphone_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the microphone.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the microphone.</string>
+      <string id="Microphone_Locked">Do not allow preferences to be changed</string>
+      <string id="Microphone_Locked_Explain">If this policy is enabled, microphone preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their camera preferences.</string>
+      <string id="Location_Allow_Explain">If this policy is enabled, access to location is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default location policy is followed.</string>
+      <string id="Location_Block_Explain">If this policy is enabled, access to location is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to location is not blocked by default.</string>
+      <string id="Location_BlockNewRequests">Block new requests asking to access location</string>
+      <string id="Location_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access location.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access location.</string>
+      <string id="Location_Locked">Do not allow preferences to be changed</string>
+      <string id="Location_Locked_Explain">If this policy is enabled, location preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change location preferences.</string>
+      <string id="Notifications_Allow_Explain">If this policy is enabled, notifications can always be sent for the origins indicated.
+
+If this policy is disabled or not configured, the default nofication policy is followed.</string>
+      <string id="Notifications_Block_Explain">If this policy is enabled, notifications are always blocked for the origins indicated.
+
+If this policy is disabled or not configured, notifications are not blocked by default.</string>
+      <string id="Notifications_BlockNewRequests">Block new requests asking to send notifications</string>
+      <string id="Notifications_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to send notifications.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to send notifications.</string>
+      <string id="Notifications_Locked">Do not allow preferences to be changed</string>
+      <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their notification preferences.</string>
+      <string id="FlashPlugin_Allow_Explain">Se questo criterio è abilitato, Flash è attivato per impostazione predefinita sui siti indicati a meno che non sia completamente disabilitato. Se è specificato un dominio di primo livello (http://example.org), Flash è consentito anche su tutti i sottodomini.
+
+Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per Flash.</string>
+      <string id="FlashPlugin_Block_Explain">Se questo criterio è abilitato, Flash è bloccato sui siti indicati. If a top level domain is specified (http://example.org), Se è specificato un dominio di primo livello (http://example.org), Flash è bloccato anche su tutti i sottodomini.
+
+Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per Flash.</string>
+      <string id="FlashPlugin_Default">Attiva Flash sui siti Web</string>
+      <string id="FlashPlugin_Default_Explain">Se questo criterio è abilitato, Flash è sempre attivato sui siti Web.
+
+Se questo criterio è disabilitato, Flash non è mai attivato sui siti Web, anche nel caso in cui questi siano specificati nella lista Consenti.
+
+Se questo criterio non è configurato, Flash viene eseguito in modalità &quot;Chiedi prima di attivare&quot;.</string>
+      <string id="FlashPlugin_Locked">Non consentire la modifica delle preferenze</string>
+      <string id="FlashPlugin_Locked_Explain">Se questo criterio è abilitato, le preferenze relative a Flash non possono essere modificate dall'utente.
+
+Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative a Flash.</string>
+      <string id="OverrideFirstRunPage">Esegui l'override della pagina visualizzata al primo avvio</string>
+      <string id="OverrideFirstRunPage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare al primo avvio del browser. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina al primo avvio.
+
+Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="OverridePostUpdatePage">Esegui l'override della pagina visualizzata dopo un aggiornamento</string>
+      <string id="OverridePostUpdatePage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare dopo l'aggiornamento di Firefox. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina dopo l'aggiornamento.
+
+Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento verrà visualizzata la pagina predefinita.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="SanitizeOnShutdown">Cancella tutti i dati alla chiusura del browser</string>
+      <string id="SanitizeOnShutdown_Explain">Se questo criterio è abilitato, tutti i dati saranno cancellati alla chiusura di Firefox. Ciò include la cronologia di navigazione e dei download, i cookie, gli accessi effettuati, la cache, la cronologia dei moduli e di ricerca, le preferenze e i dati non in linea dei siti Web.
+
+Se questo criterio è disabilitato o non configurato, i dati non sono cancellati alla chiusura del browser.</string>
+      <string id="WebsiteFilter_Block">Siti Web bloccati</string>
+      <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
+
+Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun sito.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="WebsiteFilter_Exceptions">Eccezioni ai siti Web bloccati</string>
+      <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
+
+Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="Bookmark1">Segnalibro 1</string>
+      <string id="Bookmark2">Segnalibro 2</string>
+      <string id="Bookmark3">Segnalibro 3</string>
+      <string id="Bookmark4">Segnalibro 4</string>
+      <string id="Bookmark5">Segnalibro 5</string>
+      <string id="Bookmark_Explain">Se questo criterio è abilitato, è possibile configurare l'aggiunta di un segnalibro a Firefox. A causa di un bug, è necessario selezionare l'indirizzo. I segnalibri devono essere specificati in ordine.
+
+Se questo criterio è disabilitato o non configurato, non sarà aggiunto un nuovo segnalibro.</string>
+      <string id="BookmarkPlacementToolbar">Barra degli strumenti</string>
+      <string id="BookmarkPlacementMenu">Menù</string>
+      <string id="NoDefaultBookmarks">Nessun segnalibro predefinito</string>
+      <string id="NoDefaultBookmarks_Explain">Se questo criterio è abilitato, i segnalibri predefiniti e i segnalibri smart (Più visitati, Tag recenti) non saranno creati.
+
+Se questo criterio è disabilitato o non configurato, i segnalibri predefiniti e i segnalibri smart (Più visitati, Tag recenti) saranno creati.
+
+Nota: questo criterio ha efficacia solo se è utilizzato prima della prima esecuzione del profilo.</string>
+      <string id="HomepageURL">Indirizzo pagina iniziale</string>
+      <string id="HomepageURL_Explain">Se questo criterio è abilitato, è possibile specificare una pagina iniziale predefinita. È anche possibile bloccare l'impostazione relativa alla pagina iniziale.
+
+Se questo criterio è disabilitato o non configurato, l'utente può impostare e modificare la pagina iniziale.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="HomepageAdditional">Pagine iniziali aggiuntive</string>
+      <string id="HomepageAdditional_Explain">Se questo criterio è abilitato, è possibile avere pagine iniziali aggiuntive. Queste saranno aperte in schede multiple.
+
+Se questo criterio è disabilitato o non configurato, ci sarà una sola pagina iniziale.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="Proxy">Impostazioni proxy</string>
+      <string id="Proxy_Explain">Se questo criterio è abilitato, è possibile configurare e bloccare le impostazioni di rete.
+
+Selezionare il tipo di connessione e quindi compilare le sezioni appropriate. A causa di un bug, è necessario selezionare un valore per la versione del proxy SOCKS.
+
+Se questo criterio è disabilitato o non configurato, saranno utilizzate le impostazioni di rete predefinite e l'utente potrà modificarle.</string>
+      <string id="SOCKSVersion4">SOCKS v4</string>
+      <string id="SOCKSVersion5">SOCKS v5</string>
+      <string id="AutoConfigURL">URL configurazione automatica proxy</string>
+      <string id="AutoConfigURL_Explain">Queste opzioni devono essere impostate solo se è stata selezionata la configurazione automatica</string>
+      <string id="Passthrough">Nessun proxy per</string>
+      <string id="Passthrough_Explain">Queste opzioni devono essere impostate solo se è stata selezionata la configurazione manuale dei proxy</string>
+      <string id="Connection">Tipo connessione</string>
+      <string id="NoProxy">Nessun proxy</string>
+      <string id="SystemProxy">Utilizza le impostazioni proxy del sistema</string>
+      <string id="ManualProxy">Configurazione manuale dei proxy</string>
+      <string id="AutoDetectProxy">Individua automaticamente le impostazioni proxy</string>
+      <string id="AutoConfigProxy">Configurazione automatica proxy</string>
+      <string id="TrackingProtection">Protezione antitracciamento</string>
+      <string id="TrackingProtection_Explain">Se questo criterio non è configurato, la protezione antitracciamento non è abilitata nel browser per impostazione preddefinita ma è abilitata per impostazione predefinita in Navigazione anonima e l'utente può modificarla.
+
+Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e bloccata sia nel browser, sia in Navigazione anonima.
+
+Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
+      <string id="SearchBar">Posizione barra di ricerca</string>
+      <string id="SearchBar_Explain">Se questo criterio è abilitato, è possibile impostare se la barra di ricerca sarà separata dalla barra degli indirizzi.
+
+Se questo criterio è disabilitato o non configurato, i nuovi utenti visualizzeranno una barra di ricerca unificata, gli utenti che eseguono l'aggiornamento da Firefox 56 o da una versione precedente visualizzeranno una barra di ricerca separata.</string>
+      <string id="SearchEngines_1">Motore di ricerca 1</string>
+      <string id="SearchEngines_2">Motore di ricerca 2</string>
+      <string id="SearchEngines_3">Motore di ricerca 3</string>
+      <string id="SearchEngines_4">Motore di ricerca 4</string>
+      <string id="SearchEngines_5">Motore di ricerca 5</string>
+      <string id="SearchEngines_Explain">Se questo criterio è abilitato, è possibile configurare un motore di ricerca da aggiungere a Firefox. Utilizzare {searchTerms} per indicare dove inserire il termine di ricerca. A causa di un bug, è necessario selezionare il metodo (di solito GET). Si noti che è necessario specificare i motori di ricerca in ordine.
+
+Se questo criterio è disabilitato o non configurato, non verrà aggiunto nessun nuovo motore di ricerca.</string>
+      <string id="SearchBar_Unified">Unificata</string>
+      <string id="SearchBar_Separate">Separata</string>
+      <string id="SearchEngine_Method_GET">GET</string>
+      <string id="SearchEngine_Method_POST">POST</string>
+      <string id="SearchEngines_Default">Motore di ricerca predefinito</string>
+      <string id="SearchEngines_Default_Explain">Se questo criterio è abilitato, è possibile digitare il nome del motore di ricerca da utilizzare per impostazione predefinita.
+
+Se questo criterio è disabilitato o non configurato, verrà utilizzato il motore di ricerca predefinito di Firefox.</string>
+      <string id="SearchEngines_PreventInstalls">Impedisci l'installazione dei motori di ricerca</string>
+      <string id="SearchEngines_PreventInstalls_Explain">Se questo criterio è abilitato, l'utente non potrà installare motori di ricerca dalle pagine Web.
+
+Se questo criterio è disabilitato o non configurato, i motori di ricerca potranno essere installati dalle pagine Web.</string>
+      <string id="SearchEngines_Remove">Remove Search Engines</string>
+      <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
+
+If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="AppUpdateURL">
+        <textBox refId="AppUpdateURL">
+          <label>URL:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Authentication">
+        <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Authentication_AllowNonFQDN">
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
+      </presentation>
+      <presentation id="Extensions">
+        <listBox refId="Extensions"/>
+      </presentation>
+      <presentation id="WebsiteFilter">
+        <listBox refId="WebsiteFilter"/>
+      </presentation>
+      <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
+      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Consenti le finestre pop-up dai siti Web</listBox></presentation>
+      <presentation id="Cookies_AcceptThirdParty">
+        <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="SearchBar">
+        <dropdownList refId="SearchBar"/>
+      </presentation>
+      <presentation id="TrackingProtection">
+        <checkBox refId="TrackingProtectionLocked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento.</checkBox>
+      </presentation>
+      <presentation id="OverridePage">
+        <textBox refId="OverridePage">
+          <label>Indirizzo:</label>
+        </textBox>
+      </presentation>
+      <presentation id="HomepageURL">
+        <text>Indirizzo:</text>
+        <textBox refId="HomepageURL">
+          <label/>
+        </textBox>
+        <checkBox refId="HomepageLocked">Non consentire la modifica della pagina iniziale.</checkBox>
+      </presentation>
+      <presentation id="HomepageAdditional">
+        <listBox refId="HomepageAdditional">Pagine iniziali aggiuntive</listBox>
+      </presentation>
+      <presentation id="Bookmark">
+        <text>Titolo:</text>
+        <textBox refId="BookmarkTitle">
+          <label/>
+        </textBox>
+        <text>Indirizzo:</text>
+        <textBox refId="BookmarkURL">
+          <label/>
+        </textBox>
+        <text>Indirizzo icona segnalibro:</text>
+        <textBox refId="BookmarkFavicon">
+          <label/>
+        </textBox>
+        <text>Posizione:</text>
+        <dropdownList refId="BookmarkPlacement"/>
+        <text>Nome cartella:</text>
+        <textBox refId="BookmarkFolder">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngine">
+        <textBox refId="SearchEngine_Name">
+          <label>Nome:</label>
+        </textBox>
+        <textBox refId="SearchEngine_URLTemplate">
+          <label>Modello indirizzo:</label>
+        </textBox>
+        <text>Metodo:</text>
+        <dropdownList refId="SearchEngine_Method"/>
+        <textBox refId="SearchEngine_IconURL">
+          <label>Indirizzo icona:</label>
+        </textBox>
+        <textBox refId="SearchEngine_Alias">
+          <label>Alias:</label>
+        </textBox>
+        <textBox refId="SearchEngine_Description">
+          <label>Descrizione:</label>
+        </textBox>
+        <textBox refId="SearchEngine_SuggestURLTemplate">
+          <label>Modello indirizzo suggerimenti:</label>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Default">
+        <textBox refId="SearchEngines_Default">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Remove">
+        <listBox refId="SearchEngines_Remove"/>
+      </presentation>
+      <presentation id="Proxy">
+        <checkBox refId="ProxyLocked">Non consentire la modifica delle impostazioni del proxy.</checkBox>
+        <text>Tipo connessione:</text>
+        <dropdownList refId="ConnectionType"/>
+        <text>Proxy HTTP:</text>
+        <textBox refId="HTTPProxy">
+          <label/>
+        </textBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">Utilizza questo server proxy per tutti i protocolli.</checkBox>
+        <text>Proxy SSL:</text>
+        <textBox refId="SSLProxy">
+          <label/>
+        </textBox>
+        <text>Proxy FTP:</text>
+        <textBox refId="FTPProxy">
+          <label/>
+        </textBox>
+        <text>Host SOCKS:</text>
+        <textBox refId="SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>Versione SOCKS:</text>
+        <dropdownList refId="SOCKSVersion"/>
+        <text>Nessun proxy per</text>
+        <textBox refId="Passthrough">
+          <label/>
+        </textBox>
+        <text>Esempio: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>URL configurazione automatica proxy:</text>
+        <textBox refId="AutoConfigURL">
+          <label/>
+        </textBox>
+        <checkBox refId="AutoLogin">Non richiedere l'autenticazione se la password è salvata.</checkBox>
+        <checkBox refId="UseProxyForDNS">DNS proxy per SOCKS v5.</checkBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,3 +1,5 @@
+**IMPORTANT**: This file is in active development along with the policies in Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
+
 Policies can either be specified using the Group Policy templates or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
 
 The content of the JSON file should look like this:
@@ -13,9 +15,9 @@ Policies are documented below.
 
 **Note**: though comments are used in this readme file for documentation, comments are not valid in actual JSON files. Remove all comments before attempting to deploy.
 
-Some of the policies are only available on the ESR for security reasons. These policies are marked ESR only.
+Some of the policies were originally only available on the ESR for security reasons. As of Firefox 62, these policies are available outside of the ESR, but only via JSON file or a Local Machine-based Group Policy. User-based Group Policies are not allowed to set values for these policies. The descriptions below mark such policies as "Machine only".
 
-### Authentication (ESR only)
+### Authentication
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 ```
 {
@@ -23,7 +25,11 @@ This policy is for configuring sites that support integrated authentication. See
     "Authentication": {
       "SPNEGO": ["mydomain.com", "https://myotherdomain.com"],
       "Delegated": ["mydomain.com", "https://myotherdomain.com"],
-      "NTLM": ["mydomain.com", "https://myotherdomain.com"]
+      "NTLM": ["mydomain.com", "https://myotherdomain.com"],
+      "AllowNonFQDN": {
+        "SPNEGO": true,
+        "NTLM": true
+      }
     }
   }
 }
@@ -73,7 +79,7 @@ This policy removes the "Set As Desktop Background..." menuitem when right click
 }
 ```
 ### Certificates
-This is a Windows only policy that tells Firefox to read certificates from the Windows certificate store.
+If this Windows only policy is set to true, Firefox reads certificates from the Windows certificate store.
 ```
 {
   "policies": {
@@ -100,7 +106,7 @@ This policy controls various settings related to cookies.
 }
 ```
 ### DisableMasterPasswordCreation
-This policy removes the master password functionality if set to true.
+If this policy is set to true, the master password functionality is removed.
 ```
 {
   "policies": {
@@ -108,7 +114,7 @@ This policy removes the master password functionality if set to true.
   }
 }
 ```
-### DisableAppUpdate (ESR only)
+### DisableAppUpdate (Machine only)
 This policy turns off application updates.
 ```
 {
@@ -136,7 +142,7 @@ This policy removes access to all developer tools.
 }
 ```
 ### DisableFeedbackCommands
-This policy disables the menus for reporting sites (Submit Feedback, Report Deceptive Site)
+This policy disables the menus for reporting sites (Submit Feedback, Report Deceptive Site).
 ```
 {
   "policies": {
@@ -145,7 +151,7 @@ This policy disables the menus for reporting sites (Submit Feedback, Report Dece
 }
 ```
 ### DisableFirefoxScreenshots
-This policy removes access to Firefox Screenshots
+This policy removes access to Firefox Screenshots.
 ```
 {
   "policies": {
@@ -154,7 +160,7 @@ This policy removes access to Firefox Screenshots
 }
 ```
 ### DisableFirefoxAccounts
-This policy disables Sync
+This policy disables Sync.
 ```
 {
   "policies": {
@@ -163,7 +169,7 @@ This policy disables Sync
 }
 ```
 ### DisableFirefoxStudies
-This policy disables Firefox studies (Shield)
+This policy disables Firefox studies (Shield).
 ```
 {
   "policies": {
@@ -172,7 +178,7 @@ This policy disables Firefox studies (Shield)
 }
 ```
 ### DisableForgetButton
-This policy disables the "Forget" button
+This policy disables the "Forget" button.
 ```
 {
   "policies": {
@@ -181,7 +187,7 @@ This policy disables the "Forget" button
 }
 ```
 ### DisableFormHistory
-This policy turns off the browser.formfill.enable preferences
+This policy turns off the browser.formfill.enable preferences.
 ```
 {
   "policies": {
@@ -190,7 +196,7 @@ This policy turns off the browser.formfill.enable preferences
 }
 ```
 ### DisablePocket
-This policy turns off Pocket
+This policy turns off Pocket.
 ```
 {
   "policies": {
@@ -199,7 +205,7 @@ This policy turns off Pocket
 }
 ```
 ### DisablePrivateBrowsing
-This policy removes access to private browsing
+This policy removes access to private browsing.
 ```
 {
   "policies": {
@@ -208,7 +214,7 @@ This policy removes access to private browsing
 }
 ```
 ### DisableProfileImport
-This policy disables the"Import data from another browser" option in the bookmarks window.
+This policy disables the "Import data from another browser" option in the bookmarks window.
 ```
 {
   "policies": {
@@ -226,7 +232,7 @@ This policy disables the Refresh Firefox button on about:support and support.moz
 }
 ```
 ### DisableSafeMode
-This policy disables safe mode on Windows only
+This policy disables safe mode on Windows only.
 ```
 {
   "policies": {
@@ -246,7 +252,7 @@ This policy prevents the user from bypassing security in certain cases.
   }
 }
 ```
-### DisableSystemAddonUpdate (ESR only)
+### DisableSystemAddonUpdate (Machine only)
 This policy prevents system add-ons from being updated or installed.
 ```
 {
@@ -255,7 +261,7 @@ This policy prevents system add-ons from being updated or installed.
   }
 }
 ```
-### DisableTelemetry (ESR only)
+### DisableTelemetry (Machine only)
 This policy prevents the upload of telemetry data.
 
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
@@ -267,7 +273,7 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 }
 ```
 ### DisplayBookmarksToolbar
-This policy turns on the bookmarks toolbar by default. A user can still turn it off and it will stay off.
+This policy turns on the bookmarks toolbar by default. A user can still turn it off, and it will stay off.
 ```
 {
   "policies": {
@@ -276,7 +282,7 @@ This policy turns on the bookmarks toolbar by default. A user can still turn it 
 }
 ```
 ### DisplayMenuBar
-This policy turns on the menubar by default. A user can still turn it off and it will stay off.
+This policy turns on the menubar by default. A user can still turn it off, and it will stay off.
 ```
 {
   "policies": {
@@ -296,11 +302,11 @@ This policy stops Firefox from checking if it is the default browser at startup.
 ### EnableTrackingProtection
 This policy affects tracking protection.
 
-If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
+If this policy is not configured, tracking protection is not enabled by default in the browser, but it is enabled by default in private browsing and the user can change it.
 
 If Value is set to false, tracking protection is disabled and locked in both the browser and private browsing.
 
-If Value is set to true, private browsing is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
+If Value is set to true, tracking protection is enabled by default in both the browser and private browsing and you can choose set the Locked value if you want to prevent the user from changing it.
 ```
 {
   "policies": {
@@ -310,9 +316,9 @@ If Value is set to true, private browsing is enabled by default in both the brow
     }
 }
 ```
-### Extensions (ESR only)
-This policy controls the install, uninstall and locking of extensions. Locked extensions cannot be disabled or uninstalled.
-For Install, you can specify a list of URLs or paths.
+### Extensions (Machine only)
+This policy controls the installation, uninstallation and locking of extensions. Locked extensions cannot be disabled or uninstalled.
+For Install, you specify a list of URLs or paths.
 For Uninstall and Locked, you specify extension IDs.
 ```
 {
@@ -324,8 +330,17 @@ For Uninstall and Locked, you specify extension IDs.
     }
 }
 ```
+### HardwareAcceleration
+This policy disables hardware acceleration by locking the preference layers.acceleration.disabled to true.
+```
+{
+  "policies": {
+    "HardwareAcceleration": false
+  }
+}
+```
 ### NoDefaultBookmarks
-Don't create the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
+This policy prevents the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags) from being created. Note: this policy is only effective if used before the first run of the profile.
 ```
 {
   "policies": {
@@ -342,7 +357,7 @@ This policy sets the signon.rememberSignons preference. It determines whether or
   }
 }
 ```
-### Homepage (ESR only)
+### Homepage (Machine only)
 This policy sets the default homepage value. It can also be used to lock the homepage and add additional homepages.
 ```
 {
@@ -357,7 +372,7 @@ This policy sets the default homepage value. It can also be used to lock the hom
 }
 ```
 ### PopupBlocking
-This policy sets domains for which pop-up windows are allowed. It also set the default pop-up policy
+This policy sets domains for which pop-up windows are allowed. It also sets the default pop-up policy.
 ```
 {
   "policies": {
@@ -391,14 +406,14 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
     "FlashPlugin": {
       "Allow": ["http://example.org/"], /* Sites on the allow list do not override Flash being completely disabled */
       "Block": ["http://example.edu/"],
-      "Default": [true|false], /* If this is set to true, flash is always enabled. If it is set to false, Flash is never enabled */
+      "Default": [true|false], /* If this is set to true, Flash is always enabled. If it is set to false, Flash is never enabled */
       "Locked": [true|false]
     }
   }
 }
 ```
-### OverrideFirstRunPage (ESR only)
-This policy allowed you to override the first run page. If you leave the URL blank, the first run page will not be displayed.
+### OverrideFirstRunPage (Machine only)
+This policy allows you to override the first run page. If you leave the URL blank, the first run page will not be displayed.
 ```
 {
   "policies": {
@@ -406,8 +421,8 @@ This policy allowed you to override the first run page. If you leave the URL bla
   }
 }
 ```
-### OverridePostUpdatePage (ESR only)
-This policy allowed you to override the upgrade page page. If you leave the URL blank, the upgrade page will not be displayed.
+### OverridePostUpdatePage (Machine only)
+This policy allows you to override the upgrade page. If you leave the URL blank, the upgrade page will not be displayed.
 ```
 {
   "policies": {
@@ -416,7 +431,7 @@ This policy allowed you to override the upgrade page page. If you leave the URL 
 }
 ```
 ### Bookmarks
-This policy allows you to specify bookmarks. You can have any number of bookmarks although only ten are specified in the ADMX file.
+This policy allows you to specify bookmarks. You can have any number of bookmarks, although only ten are specified in the ADMX file.
 Placement can be specified as either toolbar or menu. If a folder is specified, it is automatically created and bookmarks with the
 same folder name are grouped together.
 
@@ -467,7 +482,7 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
   }
 }
 ```
-### SearchBar (ESR only)
+### SearchBar
 This policy can be used to determine if the search bar is separate or combined with the URL bar.
 ```
 {
@@ -476,8 +491,8 @@ This policy can be used to determine if the search bar is separate or combined w
   }
 }
 ```
-### WebsiteFilter (ESR only)
-Blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https accesses are supported at the moment. The arrays are limited to 1000 entries each.
+### WebsiteFilter (Machine only)
+This policy blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 ```
 {
   "policies": {
@@ -488,8 +503,8 @@ Blocks websites from being visited. The parameters take an array of Match Patter
   }
 }
 ```
-### Search Engines (ESR only)
-This policy allows you to add new search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
+### Search Engines (This policy is only available on the ESR.)
+This policy allows you to add new search engines, remove or hide search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
 ```
 {
   "policies": {
@@ -506,7 +521,42 @@ This policy allows you to add new search engines, as well as set the default and
         }
       ],
       "Default": "Name of engine",
-      "PreventInstalls": [true|false]
+      "PreventInstalls": [true|false],
+      "Remove": ["Twitter", "Wikipedia (en)"]
+    }
+  }
+}
+```
+### Permissions
+This policy allows you to change the permissions associated with camera, microphone, location, and notifications
+```
+{
+  "policies": {
+    "Permissions": {
+      "Camera": {
+        "Allow": ["http://example.org/"], /* Origins where camera access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where camera access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the camera */
+        "Locked": [true|false] /* Don't allow the user to change the camera preferences */
+      },
+      "Microphone": {
+        "Allow": ["http://example.org/"], /* Origins where microphone access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where microphone access  is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the microphone */
+        "Locked": [true|false] /* Don't allow the user to change the microphone preferences */
+      },
+      "Location": {
+        "Allow": ["http://example.org/"], /* Origins where location access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where location access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access location */
+        "Locked": [true|false] /* Don't allow the user to change the location preferences */
+      },
+      "Notifications": {
+        "Allow": ["http://example.org/"], /* Origins where sending notifications is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where sending notifications is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to send notifications */
+        "Locked": [true|false] /* Don't allow the user to change the notification preferences */
+      }
     }
   }
 }
