@@ -17,7 +17,7 @@ Policies are documented below.
 
 Some of the policies were originally only available on the ESR for security reasons. As of Firefox 62, these policies are available outside of the ESR, but only via JSON file or a Local Machine-based Group Policy. User-based Group Policies are not allowed to set values for these policies. The descriptions below mark such policies as "Machine only".
 
-### Authentication (Machine only)
+### Authentication
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 ```
 {
@@ -330,6 +330,15 @@ For Uninstall and Locked, you specify extension IDs.
     }
 }
 ```
+### HardwareAcceleration
+This policy disables hardware acceleration by locking the preference layers.acceleration.disabled to true.
+```
+{
+  "policies": {
+    "HardwareAcceleration": false
+  }
+}
+```
 ### NoDefaultBookmarks
 This policy prevents the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags) from being created. Note: this policy is only effective if used before the first run of the profile.
 ```
@@ -473,7 +482,7 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
   }
 }
 ```
-### SearchBar (Machine only)
+### SearchBar
 This policy can be used to determine if the search bar is separate or combined with the URL bar.
 ```
 {
@@ -494,7 +503,7 @@ This policy blocks websites from being visited. The parameters take an array of 
   }
 }
 ```
-### Search Engines (Machine only)
+### Search Engines (This policy is only available on the ESR.)
 This policy allows you to add new search engines, remove or hide search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
 ```
 {
@@ -514,6 +523,40 @@ This policy allows you to add new search engines, remove or hide search engines,
       "Default": "Name of engine",
       "PreventInstalls": [true|false],
       "Remove": ["Twitter", "Wikipedia (en)"]
+    }
+  }
+}
+```
+### Permissions
+This policy allows you to change the permissions associated with camera, microphone, location, and notifications
+```
+{
+  "policies": {
+    "Permissions": {
+      "Camera": {
+        "Allow": ["http://example.org/"], /* Origins where camera access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where camera access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the camera */
+        "Locked": [true|false] /* Don't allow the user to change the camera preferences */
+      },
+      "Microphone": {
+        "Allow": ["http://example.org/"], /* Origins where microphone access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where microphone access  is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the microphone */
+        "Locked": [true|false] /* Don't allow the user to change the microphone preferences */
+      },
+      "Location": {
+        "Allow": ["http://example.org/"], /* Origins where location access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where location access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access location */
+        "Locked": [true|false] /* Don't allow the user to change the location preferences */
+      },
+      "Notifications": {
+        "Allow": ["http://example.org/"], /* Origins where sending notifications is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where sending notifications is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to send notifications */
+        "Locked": [true|false] /* Don't allow the user to change the notification preferences */
+      }
     }
   }
 }

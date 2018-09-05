@@ -10,6 +10,10 @@
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
+      <string id="Camera_group">Camera</string>
+      <string id="Microphone_group">Microphone</string>
+      <string id="Location_group">Location</string>
+      <string id="Notifications_group">Notifications</string>
       <string id="Authentication_group">Authentication</string>
       <string id="Bookmarks_group">Bookmarks</string>
       <string id="Certificates_group">Certificates</string>
@@ -22,6 +26,10 @@
       <string id="Search_group">Search</string>
       <string id="Allow">Allowed Sites</string>
       <string id="Block">Blocked Sites</string>
+      <string id="AppUpdateURL">Custom Update URL</string>
+      <string id="AppUpdateURL_Explain">If this policy is enabled, you can set a URL to an update server other than the default. This could be helpful if you run your own update server on your network.
+
+If this policy is disabled or not configured, the default update URL is used.</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">If this policy is enabled, the specified websites are permitted to engage in SPNEGO authentication with the browser. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.
 
@@ -75,7 +83,9 @@ If this policy is disabled or not configured, users can create a master password
       <string id="DisableAppUpdate">Disable Update</string>
       <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive udpates.
 
-If this policy is disabled or not configured, the browser receives updates.</string>
+If this policy is disabled or not configured, the browser receives updates.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableBuiltinPDFViewer">Disable Built-in PDF Viewer (PDF.js)</string>
       <string id="DisableBuiltinPDFViewer_Explain">If this policy is enabled, PDF files are not viewed within Firefox.
 
@@ -141,13 +151,17 @@ If this policy is disabled or not configured, a user can choose to visit a harmf
       <string id="DisableSystemAddonUpdate">Disable System Addon Updates</string>
       <string id="DisableSystemAddonUpdate_Explain">If this policy is enabled, new system add-ons will not be installed and existing system add-ons will not be updated.
 
-If this policy is disabled or not configured, system add-ons are installed and updated.</string>
+If this policy is disabled or not configured, system add-ons are installed and updated.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisableTelemetry">Disable Telemetry</string>
       <string id="DisableTelemetry_Explain">If this policy is enabled, telemetry is not uploaded.
 
 If this policy is disabled or not configured, telemetry is collected and uploaded.
 
-Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.</string>
+Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
       <string id="DisplayBookmarksToolbar_Explain">If this policy is enabled, the bookmarks toolbar is displayed by default. The user can still hide it.
 
@@ -164,16 +178,26 @@ If this policy is disabled or not configured, Firefox checks to see if it is the
       <string id="Extensions_Install_Explain">If this policy is enabled, you can specify a list of extension URLs or paths that will be installed when Firefox is started.
 Anytime this list is changed, the extensions will be reinstalled.
 
-If this policy is disabled or not configured, no extensions are installed.</string>
+If this policy is disabled or not configured, no extensions are installed.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Uninstall">Extensions to Uninstall</string>
       <string id="Extensions_Uninstall_Explain">If this policy is enabled, you can specify a list of extension IDs that will be uninstalled.
 Anytime this list is changed, the extensions will be uninstalled.
 
-If this policy is disabled or not configured, no extensions are uninstalled.</string>
+If this policy is disabled or not configured, no extensions are uninstalled.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Extensions_Locked">Prevent extensions from being disabled or removed</string>
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
-If this policy is disabled or not configured, no extensions are locked.</string>
+If this policy is disabled or not configured, no extensions are locked
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+      <string id="HardwareAcceleration">Hardware Acceleration</string>
+      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+
+If this policy is enabled or not configured, hardware acceleration is enabled.</string>
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 
@@ -221,6 +245,62 @@ This setting is ignored if this policy is disabled or not configured or if cooki
       <string id="Cookies_Locked_Explain">If this policy is enabled, cookie preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their cookie preferences.</string>
+      <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default camera policy is followed.</string>
+      <string id="Camera_Block_Explain">If this policy is enabled, access to the camera is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to the camera is not blocked by default.</string>
+      <string id="Camera_BlockNewRequests">Block new requests asking to access the camera</string>
+      <string id="Camera_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the camera.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the camera.</string>
+      <string id="Camera_Locked">Do not allow preferences to be changed</string>
+      <string id="Camera_Locked_Explain">If this policy is enabled, camera preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their camera preferences.</string>
+      <string id="Microphone_Allow_Explain">If this policy is enabled, access to the microphone is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default microphone policy is followed.</string>
+      <string id="Microphone_Block_Explain">If this policy is enabled, access to the microphone is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to the microphone is not blocked by default.</string>
+      <string id="Microphone_BlockNewRequests">Block new requests asking to access the microphone</string>
+      <string id="Microphone_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the microphone.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the microphone.</string>
+      <string id="Microphone_Locked">Do not allow preferences to be changed</string>
+      <string id="Microphone_Locked_Explain">If this policy is enabled, microphone preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their camera preferences.</string>
+      <string id="Location_Allow_Explain">If this policy is enabled, access to location is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default location policy is followed.</string>
+      <string id="Location_Block_Explain">If this policy is enabled, access to location is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to location is not blocked by default.</string>
+      <string id="Location_BlockNewRequests">Block new requests asking to access location</string>
+      <string id="Location_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access location.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access location.</string>
+      <string id="Location_Locked">Do not allow preferences to be changed</string>
+      <string id="Location_Locked_Explain">If this policy is enabled, location preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change location preferences.</string>
+      <string id="Notifications_Allow_Explain">If this policy is enabled, notifications can always be sent for the origins indicated.
+
+If this policy is disabled or not configured, the default nofication policy is followed.</string>
+      <string id="Notifications_Block_Explain">If this policy is enabled, notifications are always blocked for the origins indicated.
+
+If this policy is disabled or not configured, notifications are not blocked by default.</string>
+      <string id="Notifications_BlockNewRequests">Block new requests asking to send notifications</string>
+      <string id="Notifications_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to send notifications.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to send notifications.</string>
+      <string id="Notifications_Locked">Do not allow preferences to be changed</string>
+      <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their notification preferences.</string>
       <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the origins indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
@@ -240,11 +320,15 @@ If this policy is disabled or not configured, the user can change their Flash pr
       <string id="OverrideFirstRunPage">Override the first run page</string>
       <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
 
-If this policy is disabled or not configured, the first run page is displayed.</string>
+If this policy is disabled or not configured, the first run page is displayed.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="OverridePostUpdatePage">Override the upgrade page</string>
       <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
 
-If this policy is disabled or not configured, the upgrade is displayed.</string>
+If this policy is disabled or not configured, the upgrade is displayed.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="SanitizeOnShutdown">Clear all data when browser is closed</string>
       <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
 
@@ -252,11 +336,15 @@ If this policy is disabled or not configured, data is not cleared when the brows
       <string id="WebsiteFilter_Block">Blocked websites</string>
       <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
-If this policy is disabled or not configured, no websites are blocked.</string>
+If this policy is disabled or not configured, no websites are blocked.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="WebsiteFilter_Exceptions">Exceptions to blocked websites</string>
       <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
 
-If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
+If this policy is disabled or not configured, there are no exceptions to the website filter.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Bookmark1">Bookmark One</string>
       <string id="Bookmark2">Bookmark Two</string>
       <string id="Bookmark3">Bookmark Three</string>
@@ -276,11 +364,15 @@ Note: this policy is only effective if used before the first run of the profile.
       <string id="HomepageURL">URL for Home page</string>
       <string id="HomepageURL_Explain">If this policy is enabled, you can set a default home page. You can also lock the home page.
 
-If this policy is disabled or not configured, the user can set and change the home page.</string>
+If this policy is disabled or not configured, the user can set and change the home page.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="HomepageAdditional">Additional Homepages</string>
       <string id="HomepageAdditional_Explain">If this policy is enabled, you can have additional home pages. They are opened in multiple tabs.
 
-If this policy is disabled or not configured, there is only one home page.</string>
+If this policy is disabled or not configured, there is only one home page.
+
+Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
       <string id="Proxy">Proxy Settings</string>
       <string id="Proxy_Explain">If this policy is enabled, you can configure and lock network settings.
 
@@ -335,6 +427,11 @@ If this policy is disabled or not configured, search engines can be installed fr
 If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
     </stringTable>
     <presentationTable>
+      <presentation id="AppUpdateURL">
+        <textBox refId="AppUpdateURL">
+          <label>URL:</label>
+        </textBox>
+      </presentation>
       <presentation id="Authentication">
         <listBox refId="Authentication"/>
       </presentation>
