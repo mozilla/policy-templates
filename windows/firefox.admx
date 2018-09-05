@@ -1152,6 +1152,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="SearchEngines_Remove" class="Both" displayName="$(string.SearchEngines_Remove)" explainText="$(string.SearchEngines_Remove_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" presentation="$(presentation.SearchEngines_Remove)" >
+      <parentCategory ref="Search" />
+      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <elements >
+        <list id="SearchEngines_Remove" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="AppUpdateURL" class="Both" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF62" />

@@ -504,7 +504,7 @@ This policy blocks websites from being visited. The parameters take an array of 
 }
 ```
 ### Search Engines (This policy is only available on the ESR.)
-This policy allows you to add new search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
+This policy allows you to add new search engines, remove or hide search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
 ```
 {
   "policies": {
@@ -521,7 +521,8 @@ This policy allows you to add new search engines, as well as set the default and
         }
       ],
       "Default": "Name of engine",
-      "PreventInstalls": [true|false]
+      "PreventInstalls": [true|false],
+      "Remove": ["Twitter", "Wikipedia (en)"]
     }
   }
 }
