@@ -345,11 +345,26 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.
 
 Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="Bookmark1">Lesezeichen 1</string>
-      <string id="Bookmark2">Lesezeichen 2</string>
-      <string id="Bookmark3">Lesezeichen 3</string>
-      <string id="Bookmark4">Lesezeichen 4</string>
-      <string id="Bookmark5">Lesezeichen 5</string>
+      <string id="Bookmark1">Lesezeichen 01</string>
+      <string id="Bookmark2">Lesezeichen 02</string>
+      <string id="Bookmark3">Lesezeichen 03</string>
+      <string id="Bookmark4">Lesezeichen 04</string>
+      <string id="Bookmark5">Lesezeichen 05</string>
+      <string id="Bookmark6">Lesezeichen 06</string>
+      <string id="Bookmark7">Lesezeichen 07</string>
+      <string id="Bookmark8">Lesezeichen 08</string>
+      <string id="Bookmark9">Lesezeichen 09</string>
+      <string id="Bookmark10">Lesezeichen 10</string>
+      <string id="Bookmark11">Lesezeichen 11</string>
+      <string id="Bookmark12">Lesezeichen 12</string>
+      <string id="Bookmark13">Lesezeichen 13</string>
+      <string id="Bookmark14">Lesezeichen 14</string>
+      <string id="Bookmark15">Lesezeichen 15</string>
+      <string id="Bookmark16">Lesezeichen 16</string>
+      <string id="Bookmark17">Lesezeichen 17</string>
+      <string id="Bookmark18">Lesezeichen 18</string>
+      <string id="Bookmark19">Lesezeichen 19</string>
+      <string id="Bookmark20">Lesezeichen 20</string>
       <string id="Bookmark_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie ein Lesezeichen konfigurieren, können Sie ein Lesezeichen konfigurieren, das zu Firefox hinzugefügt wird. Aufgrund eines Fehlers müssen Sie den Speicherort auswählen. Beachten Sie, dass Sie die Lesezeichen in der Reihenfolge angeben müssen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Lesezeichen zu Firefox hinzugefügt.</string>

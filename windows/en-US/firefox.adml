@@ -345,11 +345,26 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
 If this policy is disabled or not configured, there are no exceptions to the website filter.
 
 Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="Bookmark1">Bookmark One</string>
-      <string id="Bookmark2">Bookmark Two</string>
-      <string id="Bookmark3">Bookmark Three</string>
-      <string id="Bookmark4">Bookmark Four</string>
-      <string id="Bookmark5">Bookmark Five</string>
+      <string id="Bookmark1">Bookmark 01</string>
+      <string id="Bookmark2">Bookmark 02</string>
+      <string id="Bookmark3">Bookmark 03</string>
+      <string id="Bookmark4">Bookmark 04</string>
+      <string id="Bookmark5">Bookmark 05</string>
+      <string id="Bookmark6">Bookmark 06</string>
+      <string id="Bookmark7">Bookmark 07</string>
+      <string id="Bookmark8">Bookmark 08</string>
+      <string id="Bookmark9">Bookmark 09</string>
+      <string id="Bookmark10">Bookmark 10</string>
+      <string id="Bookmark11">Bookmark 11</string>
+      <string id="Bookmark12">Bookmark 12</string>
+      <string id="Bookmark13">Bookmark 13</string>
+      <string id="Bookmark14">Bookmark 14</string>
+      <string id="Bookmark15">Bookmark 15</string>
+      <string id="Bookmark16">Bookmark 16</string>
+      <string id="Bookmark17">Bookmark 17</string>
+      <string id="Bookmark18">Bookmark 18</string>
+      <string id="Bookmark19">Bookmark 19</string>
+      <string id="Bookmark20">Bookmark 20</string>
       <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark be added to Firefox.  Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
 
 If this policy is disabled or not configured, a new bookmark is not added.</string>
