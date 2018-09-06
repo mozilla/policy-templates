@@ -345,11 +345,26 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
 Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.
 
 Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="Bookmark1">Segnalibro 1</string>
-      <string id="Bookmark2">Segnalibro 2</string>
-      <string id="Bookmark3">Segnalibro 3</string>
-      <string id="Bookmark4">Segnalibro 4</string>
-      <string id="Bookmark5">Segnalibro 5</string>
+      <string id="Bookmark1">Segnalibro 01</string>
+      <string id="Bookmark2">Segnalibro 02</string>
+      <string id="Bookmark3">Segnalibro 03</string>
+      <string id="Bookmark4">Segnalibro 04</string>
+      <string id="Bookmark5">Segnalibro 05</string>
+      <string id="Bookmark6">Segnalibro 06</string>
+      <string id="Bookmark7">Segnalibro 07</string>
+      <string id="Bookmark8">Segnalibro 08</string>
+      <string id="Bookmark9">Segnalibro 09</string>
+      <string id="Bookmark10">Segnalibro 10</string>
+      <string id="Bookmark11">Segnalibro 11</string>
+      <string id="Bookmark12">Segnalibro 12</string>
+      <string id="Bookmark13">Segnalibro 13</string>
+      <string id="Bookmark14">Segnalibro 14</string>
+      <string id="Bookmark15">Segnalibro 15</string>
+      <string id="Bookmark16">Segnalibro 16</string>
+      <string id="Bookmark17">Segnalibro 17</string>
+      <string id="Bookmark18">Segnalibro 18</string>
+      <string id="Bookmark19">Segnalibro 19</string>
+      <string id="Bookmark20">Segnalibro 20</string>
       <string id="Bookmark_Explain">Se questo criterio è abilitato, è possibile configurare l'aggiunta di un segnalibro a Firefox. A causa di un bug, è necessario selezionare l'indirizzo. I segnalibri devono essere specificati in ordine.
 
 Se questo criterio è disabilitato o non configurato, non sarà aggiunto un nuovo segnalibro.</string>
