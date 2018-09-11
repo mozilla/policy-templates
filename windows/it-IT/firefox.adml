@@ -292,7 +292,7 @@ Se questo criterio è disabilitato o non configurato, l'utente può modificare l
 Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per le notifiche.</string>
       <string id="Notifications_Block_Explain">Se questo criterio è abilitato, le notifiche sono sempre bloccate dalle origini indicate.
 
-Se questo criterio è disabilitato o non configurato, le notifiche non sono bloccate per impostazione predefinita.
+Se questo criterio è disabilitato o non configurato, le notifiche non sono bloccate per impostazione predefinita.</string>
       <string id="Notifications_BlockNewRequests">Blocca nuove richieste di invio notifiche</string>
       <string id="Notifications_BlockNewRequests_Explain">Se questo criterio è abilitato, ai siti non nel criterio Consenti non sarà consentito chiedere il permesso di inviare notifiche.
 
