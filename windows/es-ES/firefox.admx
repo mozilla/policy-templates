@@ -111,7 +111,7 @@ If this policy is disabled or not configured, Firefox Screenshots is available.<
 
 If this policy is disabled or not configured, the user can choose to enable SHIELD studies or Heartbeat surveys.
 
-For more information, see https://support.mozilla.org/en-US/kb/shield and https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
+Para más información, visite https://support.mozilla.org/en-US/kb/shield y https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Disable Forget Button</string>
       <string id="DisableForgetButton_Explain">If this policy is enabled, the &quot;Forget&quot; button is not available.
 
@@ -153,7 +153,7 @@ If this policy is disabled or not configured, a user can choose to visit a harmf
 
 If this policy is disabled or not configured, system add-ons are installed and updated.
 
-Comenzando con Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="DisableTelemetry">Deshabilitar telemetría</string>
       <string id="DisableTelemetry_Explain">Si esta política está habilitada, la telemetría no se carga.
 
@@ -306,76 +306,76 @@ If this policy is disabled or not configured, the user can change their notifica
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
       <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the origins indicated. If a top level domain is specified (http://example.org), Flash is blocked from all subdomains as well.
 
-If this policy is disabled or not configured, the default Flash policy is followed.</string>
-      <string id="FlashPlugin_Default">Activate Flash on websites</string>
-      <string id="FlashPlugin_Default_Explain">If this policy is enabled, Flash is always activated on websites.
+Si esta política está deshabilitada o no está configurada, se sigue la política de Flash predeterminada.</string>
+      <string id="FlashPlugin_Default">Activar Flash en sitios web</string>
+      <string id="FlashPlugin_Default_Explain">Si esta política está habilitada, Flash siempre se activa en los sitios web.
 
-If this policy is disabled, Flash is never activated on websites, even if they are in the specified in the Allow list.
+Si esta política está deshabilitada, Flash nunca se activa en los sitios web, incluso si se encuentran en la lista especificada en permitir.
 
-If this policy is not configured, Flash is click to play.</string>
-      <string id="FlashPlugin_Locked">Do not allow preferences to be changed</string>
-      <string id="FlashPlugin_Locked_Explain">If this policy is enabled, Flash preferences cannot be changed by the user.
+Si esta política no está configurada, hace clic para ejecutar Flash.</string>
+      <string id="FlashPlugin_Locked">No permitir que se cambien las preferencias</string>
+      <string id="FlashPlugin_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de Flash.
 
-If this policy is disabled or not configured, the user can change their Flash preferences.</string>
-      <string id="OverrideFirstRunPage">Override the first run page</string>
-      <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de Flash.</string>
+      <string id="OverrideFirstRunPage">Bloquear la primera página de ejecución</string>
+      <string id="OverrideFirstRunPage_Explain">Si esta política está habilitada, puede especificar una URL para ser utilizada como la primera página de ejecución. Si deja la URL en blanco, no se mostrará la primera página de ejecución.
 
-If this policy is disabled or not configured, the first run page is displayed.
+Si esta política está deshabilitada o no está configurada, se muestra la primera página de ejecución.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="OverridePostUpdatePage">Override the upgrade page</string>
-      <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+      <string id="OverridePostUpdatePage">Bloquear la página de actualización</string>
+      <string id="OverridePostUpdatePage_Explain">Si esta política está habilitada, puede especificar que se muestre una URL después de actualizar Firefox. Si deja la URL en blanco, no se mostrará ninguna página de actualización.
 
-If this policy is disabled or not configured, the upgrade is displayed.
+Si esta política está deshabilitada o no está configurada, se muestra la actualización.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="SanitizeOnShutdown">Clear all data when browser is closed</string>
-      <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+      <string id="SanitizeOnShutdown">Borrar todos los datos cuando el navegador está cerrado</string>
+      <string id="SanitizeOnShutdown_Explain">Si esta política está habilitada, todos los datos se borran cuando se cierra Firefox. Esto incluye el historial de descargas del navegador, cookies, inicios de sesión activos, caché, historial de formularios y búsquedas, preferencias del sitio y los datos del sitios web sin conexión.
 
-If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
+Si esta política está deshabilitada o no está configurada, los datos no se borran cuando se cierra el navegador.</string>
       <string id="WebsiteFilter_Block">Sitios web bloqueados</string>
       <string id="WebsiteFilter_Block_Explain">Si esta política está habilitada, puede especificar patrones de coincidencia que indiquen que sitios se bloquearán. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
 
-If this policy is disabled or not configured, no websites are blocked.
+Si esta política está deshabilitada o no está configurada, no se bloquean los sitios web.
 
-A partir de Firefox 62, esta política solo funcionará desde la Configuración del equipo.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="WebsiteFilter_Exceptions">Excepciones a sitios web bloqueados</string>
       <string id="WebsiteFilter_Exceptions_Explain">Si esta política está habilitada y el filtro del sitio web está habilitado, puede especificar patrones de coincidencia para los sitios que no desea bloquear. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
 
 Si esta política está deshabilitada o no está configurada, no hay excepciones para el filtro de sitios web.
 
 A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
-      <string id="Bookmark1">Bookmark 01</string>
-      <string id="Bookmark2">Bookmark 02</string>
-      <string id="Bookmark3">Bookmark 03</string>
-      <string id="Bookmark4">Bookmark 04</string>
-      <string id="Bookmark5">Bookmark 05</string>
-      <string id="Bookmark6">Bookmark 06</string>
-      <string id="Bookmark7">Bookmark 07</string>
-      <string id="Bookmark8">Bookmark 08</string>
-      <string id="Bookmark9">Bookmark 09</string>
-      <string id="Bookmark10">Bookmark 10</string>
-      <string id="Bookmark11">Bookmark 11</string>
-      <string id="Bookmark12">Bookmark 12</string>
-      <string id="Bookmark13">Bookmark 13</string>
-      <string id="Bookmark14">Bookmark 14</string>
-      <string id="Bookmark15">Bookmark 15</string>
-      <string id="Bookmark16">Bookmark 16</string>
-      <string id="Bookmark17">Bookmark 17</string>
-      <string id="Bookmark18">Bookmark 18</string>
-      <string id="Bookmark19">Bookmark 19</string>
-      <string id="Bookmark20">Bookmark 20</string>
-      <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark be added to Firefox.  Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
+      <string id="Bookmark1">Marcador 01</string>
+      <string id="Bookmark2">Marcador 02</string>
+      <string id="Bookmark3">Marcador 03</string>
+      <string id="Bookmark4">Marcador 04</string>
+      <string id="Bookmark5">Marcador 05</string>
+      <string id="Bookmark6">Marcador 06</string>
+      <string id="Bookmark7">Marcador 07</string>
+      <string id="Bookmark8">Marcador 08</string>
+      <string id="Bookmark9">Marcador 09</string>
+      <string id="Bookmark10">Marcador 10</string>
+      <string id="Bookmark11">Marcador 11</string>
+      <string id="Bookmark12">Marcador 12</string>
+      <string id="Bookmark13">Marcador 13</string>
+      <string id="Bookmark14">Marcador 14</string>
+      <string id="Bookmark15">Marcador 15</string>
+      <string id="Bookmark16">Marcador 16</string>
+      <string id="Bookmark17">Marcador 17</string>
+      <string id="Bookmark18">Marcador 18</string>
+      <string id="Bookmark19">Marcador 19</string>
+      <string id="Bookmark20">Marcador 20</string>
+      <string id="Bookmark_Explain">Si esta política está habilitada, puede configurar que se agregue un marcador a Firefox. Debido a un error, debe seleccionar la ubicación. Tenga en cuenta que debe especificar los marcadores en orden.
 
-If this policy is disabled or not configured, a new bookmark is not added.</string>
+Si esta política está deshabilitada o no está configurada, no se agregará un nuevo marcador.</string>
       <string id="BookmarkPlacementToolbar">Barra de herramientas</string>
       <string id="BookmarkPlacementMenu">Menú</string>
-      <string id="NoDefaultBookmarks">No Default Bookmarks</string>
-      <string id="NoDefaultBookmarks_Explain">If this policy is enabled, the default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) are not created.
+      <string id="NoDefaultBookmarks">Sin marcadores predeterminados</string>
+      <string id="NoDefaultBookmarks_Explain">Si esta política está habilitada, los marcadores predeterminados y los marcadores inteligentes (etiquetas más visitadas y recientes) no se crean.
 
-If this policy is disabled or not configured, default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) are created.
+Si esta política está deshabilitada o no está configurada, se crean los marcadores predeterminados y los marcadores inteligentes (etiquetas más visitadas y recientes).
 
-Note: this policy is only effective if used before the first run of the profile.</string>
+Nota: esta política solo es efectiva si se usa antes de la primera ejecución del perfil.</string>
       <string id="HomepageURL">URL de la página de inicio</string>
       <string id="HomepageURL_Explain">Si esta política está habilitada, puede establecer una página de inicio predeterminada. También puedes bloquear la página de inicio.
 
@@ -388,12 +388,12 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
 Si esta política está deshabilitada o no está configurada, solo hay una página de inicio.
 
 A partir de Firefox 62, esta política solo funcionará desde la Configuración del equipo.</string>
-      <string id="Proxy">Proxy Settings</string>
-      <string id="Proxy_Explain">If this policy is enabled, you can configure and lock network settings.
+      <string id="Proxy">Configuración del proxy</string>
+      <string id="Proxy_Explain">Si esta política está habilitada, puede configurar y bloquear la configuración de red.
 
 Select the connection type and then fill in the appropriate sections. Due to a bug, you must select a value for the SOCKS proxy version.
 
-If this policy is disabled or not configured, the default network settings are used and user can change them.</string>
+Si esta política está deshabilitada o no está configurada, se usa la configuración de red predeterminada y el usuario puede cambiarla.</string>
       <string id="SOCKSVersion4">SOCKS v4</string>
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Configuración automática de URL de proxy</string>
@@ -412,34 +412,34 @@ If this policy is disabled or not configured, the default network settings are u
 Si esta política está deshabilitada, la protección de rastreo se deshabilitará y se bloquea tanto en el navegador como en la navegación privada.
 
 Si esta política está habilitada, la navegación privada está habilitada de forma predeterminada tanto en el navegador como en la navegación privada y puede elegir si desea evitar que el usuario la cambie.</string>
-      <string id="SearchBar">Search bar location</string>
-      <string id="SearchBar_Explain">If this policy is enabled, you can set whether the search bar is separate from the URL bar.
+      <string id="SearchBar">Ubicación de la barra de búsqueda</string>
+      <string id="SearchBar_Explain">Si esta política está habilitada, puede establecer si la barra de búsqueda está separada de la barra de URL.
 
-If this policy is disabled or not configured, new users get a unified search bar, users upgrading from Firefox 56 and below get a separate search bar.</string>
-      <string id="SearchEngines_1">Search Engine One</string>
-      <string id="SearchEngines_2">Search Engine Two</string>
-      <string id="SearchEngines_3">Search Engine Three</string>
-      <string id="SearchEngines_4">Search Engine Four</string>
-      <string id="SearchEngines_5">Search Engine Five</string>
-      <string id="SearchEngines_Explain">If this policy is enabled, you can configure a search engine to be added to Firefox. Use {searchTerms} to indicate where the search term is placed. Due to a bug, you must select the method (usually GET). Note that you must specify the search engines in order.
+Si esta política está deshabilitada o no está configurada, los nuevos usuarios obtienen una barra de búsqueda unificada, los usuarios que actualicen desde Firefox 56 y abajo obtendrán una barra de búsqueda por separado.</string>
+      <string id="SearchEngines_1">Motor de búsqueda uno</string>
+      <string id="SearchEngines_2">Motor de búsqueda dos</string>
+      <string id="SearchEngines_3">Motor de búsqueda tres</string>
+      <string id="SearchEngines_4">Motor de búsqueda cuatro</string>
+      <string id="SearchEngines_5">Motor de búsqueda cinco</string>
+      <string id="SearchEngines_Explain">Si esta política está habilitada, puede configurar un motor de búsqueda para ser agregado a Firefox. Utilice {términos de búsqueda} para indicar dónde se encuentra el término de búsqueda. Debido a un error, debe seleccionar el método (normalmente GET). Tenga en cuenta que debe especificar los motores de búsqueda en orden.
 
-If this policy is disabled or not configured, a new search engine is not added.</string>
+Si esta política está deshabilitada o no está configurada, no se agregará un nuevo motor de búsqueda.</string>
       <string id="SearchBar_Unified">Unified</string>
       <string id="SearchBar_Separate">Separate</string>
       <string id="SearchEngine_Method_GET">GET</string>
       <string id="SearchEngine_Method_POST">POST</string>
-      <string id="SearchEngines_Default">Default Search Engine</string>
-      <string id="SearchEngines_Default_Explain">If this policy is enabled, you can set the name of a search engine to be used as the default.
+      <string id="SearchEngines_Default">Motor de búsqueda predeterminado</string>
+      <string id="SearchEngines_Default_Explain">Si esta política está habilitada, puede configurar el nombre de un motor de búsqueda para usar como predeterminado.
 
-If this policy is disabled or not configured, the Firefox default engine is used.</string>
-      <string id="SearchEngines_PreventInstalls">Prevent Search Engine Installs</string>
-      <string id="SearchEngines_PreventInstalls_Explain">If this policy is enabled, the user cannot install search engines from web page.
+Si esta política está deshabilitada o no está configurada, se utiliza el motor predeterminado de Firefox.</string>
+      <string id="SearchEngines_PreventInstalls">Evitar la instalación de motores de búsqueda</string>
+      <string id="SearchEngines_PreventInstalls_Explain">Si esta política está habilitada, el usuario no puede instalar motores de búsqueda desde la página web.
 
-If this policy is disabled or not configured, search engines can be installed from web pages.</string>
-      <string id="SearchEngines_Remove">Remove Search Engines</string>
-      <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
+Si esta política está deshabilitada o no está configurada, los motores de búsqueda pueden instalarse desde páginas web.</string>
+      <string id="SearchEngines_Remove">Borrar motores de búsqueda</string>
+      <string id="SearchEngines_Remove_Explain">Si esta política está habilitada, puede especificar los nombres de los motores que se borrarán u ocultarán.
 
-If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
+Si esta política está deshabilitada o no configurada, los motores de búsqueda no se borrarán ni se ocultarán.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -461,7 +461,7 @@ If this policy is disabled or not configured, search engines will not be removed
         <listBox refId="WebsiteFilter"/>
       </presentation>
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
-      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
+      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Permitir ventanas emergentes para sitios web</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
       </presentation>
@@ -469,7 +469,7 @@ If this policy is disabled or not configured, search engines will not be removed
         <dropdownList refId="SearchBar"/>
       </presentation>
       <presentation id="TrackingProtection">
-        <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
+        <checkBox refId="TrackingProtectionLocked">No permitir que se cambien las preferencias de protección de seguimiento.</checkBox>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
@@ -481,10 +481,10 @@ If this policy is disabled or not configured, search engines will not be removed
         <textBox refId="HomepageURL">
           <label/>
         </textBox>
-        <checkBox refId="HomepageLocked">Don't allow the homepage to be changed.</checkBox>
+        <checkBox refId="HomepageLocked">No permitir que se cambie la página de inicio.</checkBox>
       </presentation>
       <presentation id="HomepageAdditional">
-        <listBox refId="HomepageAdditional">Additional homepages</listBox>
+        <listBox refId="HomepageAdditional">Páginas de inicio adicionales</listBox>
       </presentation>
       <presentation id="Bookmark">
         <text>Título:</text>
@@ -537,7 +537,7 @@ If this policy is disabled or not configured, search engines will not be removed
         <listBox refId="SearchEngines_Remove"/>
       </presentation>
       <presentation id="Proxy">
-        <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox>
+        <checkBox refId="ProxyLocked">No permitir que se cambie la configuración del proxy.</checkBox>
         <text>Tipo de conexión:</text>
         <dropdownList refId="ConnectionType"/>
         <text>Proxy HTTP:</text>
