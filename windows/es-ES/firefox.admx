@@ -76,32 +76,32 @@ Si esta política está deshabilitada o no está configurada, los usuarios puede
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
 If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
-      <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
-      <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
+      <string id="DisableMasterPasswordCreation">Deshabilitar la creación de contraseña maestra</string>
+      <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
 
-If this policy is disabled or not configured, users can create a master password.</string>
-      <string id="DisableAppUpdate">Disable Update</string>
-      <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive udpates.
+Si esta política está deshabilitada o no está configurada, los usuarios pueden crear una contraseña maestra.</string>
+      <string id="DisableAppUpdate">Deshabilitar actualización</string>
+      <string id="DisableAppUpdate_Explain">Si esta política está habilitada, el navegador no recibirá actualizaciones.
 
-If this policy is disabled or not configured, the browser receives updates.
+Si esta política está deshabilitada o no está configurada, el navegador recibirá actualizaciones.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="DisableBuiltinPDFViewer">Disable Built-in PDF Viewer (PDF.js)</string>
-      <string id="DisableBuiltinPDFViewer_Explain">If this policy is enabled, PDF files are not viewed within Firefox.
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+      <string id="DisableBuiltinPDFViewer">Deshabilitar el visor de PDF incorporado (PDF.js)</string>
+      <string id="DisableBuiltinPDFViewer_Explain">Si esta política está habilitada, los archivos PDF no se visualizan dentro de Firefox.
 
-If this policy is disabled or not configured, PDF files are viewed within Firefox.</string>
-      <string id="DisableDeveloperTools">Disable Developer Tools</string>
-      <string id="DisableDeveloperTools_Explain">If this policy is enabled, web developer tools are not available within Firefox.
+Si esta política está desactivada o no está configurada, los archivos PDF se visualizan dentro de Firefox.</string>
+      <string id="DisableDeveloperTools">Deshabilitar herramientas para desarrolladores</string>
+      <string id="DisableDeveloperTools_Explain">Si esta política está habilitada, las herramientas para desarrolladores web no están disponibles dentro de Firefox.
 
-If this policy is disabled or not configured, web developer tools are available within Firefox.</string>
+Si esta política está desactivada o no está configurada, las herramientas para desarrolladores web están disponibles dentro de Firefox.</string>
       <string id="DisableFeedbackCommands">Disable Feedback Commands</string>
       <string id="DisableFeedbackCommands_Explain">If this policy is enabled, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are not available from the help menu.
 
 If this policy is disabled or not configured, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are available from the help menu.</string>
-      <string id="DisableFirefoxAccounts">Disable Firefox Accounts</string>
-      <string id="DisableFirefoxAccounts_Explain">If this policy is enabled, Firefox Accounts is disabled which includes disabling Sync.
+      <string id="DisableFirefoxAccounts">Deshabilitar cuentas de Firefox</string>
+      <string id="DisableFirefoxAccounts_Explain">Si esta política está habilitada, las cuentas de Firefox están deshabilitadas, lo que incluye deshabilitar Sync.
 
-If this policy is disabled or not configured, Firefox Accounts and Sync are available.</string>
+Si esta política está deshabilitada o no está configurada, las las cuentas de Firefox y Sync están disponibles.</string>
       <string id="DisableFirefoxScreenshots">Disable Firefox Screenshots</string>
       <string id="DisableFirefoxScreenshots_Explain">If this policy is enabled, Firefox Screenshots is not available.
 
@@ -120,14 +120,14 @@ If this policy is disabled or not configured, the &quot;Forget&quot; button is a
       <string id="DisableFormHistory_Explain">Si esta política está habilitada, Firefox no recordará el formulario ni el historial de búsqueda.
 
 If this policy is disabled or not configured, Firefox will remember form and search history.</string>
-      <string id="DisablePocket">Disable Pocket</string>
-      <string id="DisablePocket_Explain">If this policy is enabled, Pocket is not available.
+      <string id="DisablePocket">Deshabilitadar Pocket</string>
+      <string id="DisablePocket_Explain">Si esta política está habilitada, Pocket no está disponible.
 
-If this policy is disabled or not configured, Pocket is available.</string>
-      <string id="DisablePrivateBrowsing">Disable Private Browsing</string>
-      <string id="DisablePrivateBrowsing_Explain">If this policy is enabled, private browsing is not allowed.
+Si esta política está deshabilitada o no está configurada, Pocket está disponible.</string>
+      <string id="DisablePrivateBrowsing">Deshabilitar la navegación privada</string>
+      <string id="DisablePrivateBrowsing_Explain">Si esta política está habilitada, no se permite la navegación privada.
 
-If this policy is disabled or not configured, private browsing is allowed.</string>
+Si esta política está deshabilitada o no está configurada, se permite la navegación privada.</string>
       <string id="DisableProfileImport">Disable Profile Import</string>
       <string id="DisableProfileImport_Explain">If this policy is enabled, the &quot;Import data from another browser&quot; option is not available in the bookmarks window.
 
@@ -333,18 +333,18 @@ Starting with Firefox 62, this policy will only work from Computer Configuration
       <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
 
 If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
-      <string id="WebsiteFilter_Block">Blocked websites</string>
-      <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
+      <string id="WebsiteFilter_Block">Sitios web bloqueados</string>
+      <string id="WebsiteFilter_Block_Explain">Si esta política está habilitada, puede especificar patrones de coincidencia que indiquen que sitios se bloquearán. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
 
 If this policy is disabled or not configured, no websites are blocked.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="WebsiteFilter_Exceptions">Exceptions to blocked websites</string>
-      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
+A partir de Firefox 62, esta política solo funcionará desde la Configuración del equipo.</string>
+      <string id="WebsiteFilter_Exceptions">Excepciones a sitios web bloqueados</string>
+      <string id="WebsiteFilter_Exceptions_Explain">Si esta política está habilitada y el filtro del sitio web está habilitado, puede especificar patrones de coincidencia para los sitios que no desea bloquear. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
 
-If this policy is disabled or not configured, there are no exceptions to the website filter.
+Si esta política está deshabilitada o no está configurada, no hay excepciones para el filtro de sitios web.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="Bookmark1">Bookmark 01</string>
       <string id="Bookmark2">Bookmark 02</string>
       <string id="Bookmark3">Bookmark 03</string>
@@ -376,18 +376,18 @@ If this policy is disabled or not configured, a new bookmark is not added.</stri
 If this policy is disabled or not configured, default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) are created.
 
 Note: this policy is only effective if used before the first run of the profile.</string>
-      <string id="HomepageURL">URL for Home page</string>
-      <string id="HomepageURL_Explain">If this policy is enabled, you can set a default home page. You can also lock the home page.
+      <string id="HomepageURL">URL de la página de inicio</string>
+      <string id="HomepageURL_Explain">Si esta política está habilitada, puede establecer una página de inicio predeterminada. También puedes bloquear la página de inicio.
 
-If this policy is disabled or not configured, the user can set and change the home page.
+Si esta política está deshabilitada o no está configurada, el usuario puede establecer y cambiar la página de inicio.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
-      <string id="HomepageAdditional">Additional Homepages</string>
-      <string id="HomepageAdditional_Explain">If this policy is enabled, you can have additional home pages. They are opened in multiple tabs.
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+      <string id="HomepageAdditional">Páginas de inicio adicionales</string>
+      <string id="HomepageAdditional_Explain">Si esta política está habilitada, puede tener páginas principales adicionales. Se abren en varias pestañas.
 
-If this policy is disabled or not configured, there is only one home page.
+Si esta política está deshabilitada o no está configurada, solo hay una página de inicio.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+A partir de Firefox 62, esta política solo funcionará desde la Configuración del equipo.</string>
       <string id="Proxy">Proxy Settings</string>
       <string id="Proxy_Explain">If this policy is enabled, you can configure and lock network settings.
 
