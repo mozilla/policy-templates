@@ -487,7 +487,7 @@ If this policy is disabled or not configured, search engines will not be removed
         <listBox refId="HomepageAdditional">Additional homepages</listBox>
       </presentation>
       <presentation id="Bookmark">
-        <text>Title:</text>
+        <text>Título:</text>
         <textBox refId="BookmarkTitle">
           <label/>
         </textBox>
@@ -495,34 +495,34 @@ If this policy is disabled or not configured, search engines will not be removed
         <textBox refId="BookmarkURL">
           <label/>
         </textBox>
-        <text>Favicon URL:</text>
+        <text>URL de Favicon:</text>
         <textBox refId="BookmarkFavicon">
           <label/>
         </textBox>
-        <text>Placement:</text>
+        <text>Colocación:</text>
         <dropdownList refId="BookmarkPlacement"/>
-        <text>Folder name:</text>
+        <text>Nombre de carpeta:</text>
         <textBox refId="BookmarkFolder">
           <label/>
         </textBox>
       </presentation>
       <presentation id="SearchEngine">
         <textBox refId="SearchEngine_Name">
-          <label>Name:</label>
+          <label>Nombre:</label>
         </textBox>
         <textBox refId="SearchEngine_URLTemplate">
-          <label>URL Template:</label>
+          <label>Plantilla de URL:</label>
         </textBox>
         <text>Method:</text>
         <dropdownList refId="SearchEngine_Method"/>
         <textBox refId="SearchEngine_IconURL">
-          <label>Icon URL:</label>
+          <label>Ícono de URL:</label>
         </textBox>
         <textBox refId="SearchEngine_Alias">
           <label>Alias:</label>
         </textBox>
         <textBox refId="SearchEngine_Description">
-          <label>Description:</label>
+          <label>Descripción:</label>
         </textBox>
         <textBox refId="SearchEngine_SuggestURLTemplate">
           <label>Suggest URL Template:</label>
@@ -538,18 +538,18 @@ If this policy is disabled or not configured, search engines will not be removed
       </presentation>
       <presentation id="Proxy">
         <checkBox refId="ProxyLocked">Don't allow proxy settings to be changed.</checkBox>
-        <text>Connection Type:</text>
+        <text>Tipo de conexión:</text>
         <dropdownList refId="ConnectionType"/>
-        <text>HTTP Proxy:</text>
+        <text>Proxy HTTP:</text>
         <textBox refId="HTTPProxy">
           <label/>
         </textBox>
         <checkBox refId="UseHTTPProxyForAllProtocols">Use this proxy server for all protocols.</checkBox>
-        <text>SSL Proxy:</text>
+        <text>Proxy SSL:</text>
         <textBox refId="SSLProxy">
           <label/>
         </textBox>
-        <text>FTP Proxy:</text>
+        <text>Proxy FTP:</text>
         <textBox refId="FTPProxy">
           <label/>
         </textBox>
@@ -557,19 +557,19 @@ If this policy is disabled or not configured, search engines will not be removed
         <textBox refId="SOCKSProxy">
           <label/>
         </textBox>
-        <text>SOCKS Version:</text>
+        <text>Versión de SOCKS:</text>
         <dropdownList refId="SOCKSVersion"/>
-        <text>No proxy for</text>
+        <text>Sin proxy para</text>
         <textBox refId="Passthrough">
           <label/>
         </textBox>
-        <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
-        <text>Automatic proxy configuration URL:</text>
+        <text>Ejemplo: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Configuración automática de URL de proxy:</text>
         <textBox refId="AutoConfigURL">
           <label/>
         </textBox>
-        <checkBox refId="AutoLogin">Do not prompt for authentication if password is saved.</checkBox>
-        <checkBox refId="UseProxyForDNS">Proxy DNS when using SOCKS v5.</checkBox>
+        <checkBox refId="AutoLogin">No solicitar la autenticación si se guarda la contraseña.</checkBox>
+        <checkBox refId="UseProxyForDNS">DNS proxy cuando se utiliza SOCKS v5.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
