@@ -73,9 +73,9 @@ If this policy is disabled or not configured, the user can access Troubleshootin
 
 Si esta política está deshabilitada o no está configurada, los usuarios pueden establecer imágenes como fondo de escritorio.</string>
       <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
-      <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
+      <string id="Certificates_ImportEnterpriseRoots_Explain">Si esta política está habilitada, Firefox leerá los certificados del almacén de certificados de Windows.
 
-If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
+Si esta política está deshabilitada o no está configurada, Firefox no leerá los certificados del almacén de certificados de Windows.</string>
       <string id="DisableMasterPasswordCreation">Deshabilitar la creación de contraseña maestra</string>
       <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
 
@@ -161,11 +161,11 @@ Si esta política está deshabilitada o no está configurada, la telemetría se 
 
 Mozilla recomienda que no deshabilite la telemetría. La información recopilada a través de la telemetría nos ayuda a construir un mejor producto para empresas como la suya.
 
-Comenzando con Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
-      <string id="DisplayBookmarksToolbar">Display Bookmarks Toolbar</string>
-      <string id="DisplayBookmarksToolbar_Explain">If this policy is enabled, the bookmarks toolbar is displayed by default. The user can still hide it.
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+      <string id="DisplayBookmarksToolbar">Mostrar barra de herramientas de marcadores</string>
+      <string id="DisplayBookmarksToolbar_Explain">Si esta política está habilitada, la barra de herramientas de marcadores se muestra de forma predeterminada. El usuario aún puede ocultarlo.
 
-If this policy is disabled or not configured, the bookmarks toolbar is not displayed by default.</string>
+Si esta política está deshabilitada o no está configurada, la barra de herramientas de marcadores no se muestra de forma predeterminada.</string>
       <string id="DisplayMenuBar">Mostrar barra de menús</string>
       <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menús se muestra de forma predeterminada. El usuario aún puede ocultarlo.
 
@@ -180,20 +180,20 @@ Cada vez que se cambie esta lista, las extensiones se reinstalarán.
 
 Si esta política está deshabilitada o no está configurada, no se instalarán extensiones.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="Extensions_Uninstall">Extensiones para desinstalar</string>
       <string id="Extensions_Uninstall_Explain">Si esta política está habilitada, puede especificar una lista de ID de extensiones que se desinstalarán.
 Cada vez que se cambie esta lista, las extensiones se desinstalarán.
 
 Si esta política está deshabilitada o no está configurada, no se desinstalarán extensiones.
 
-Starting with Firefox 62, this policy will only work from Computer Configuration.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="Extensions_Locked">Evitar que las extensiones se deshabiliten o se borrén</string>
       <string id="Extensions_Locked_Explain">Si esta política está habilitada, puede especificar una lista de ID de extensiones que el usuario no podrá desinstalar o deshabilitar.
 
 Si esta política está deshabilitada o no está configurada, no hay extensiones bloqueadas.
 
-Comenzando con Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración de hardware no se puede habilitar.
 
@@ -201,18 +201,18 @@ Si esta política está habilitada o no está configurada, la aceleración por h
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 
-If this policy is disabled, Firefox will not offer to save website logins and passwords.</string>
-      <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the origins indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
+Si esta política está deshabilitada, Firefox no ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.</string>
+      <string id="PopupBlocking_Allow_Explain">Si esta política está habilitada, las ventanas emergentes siempre están permitidas para los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permiten ventanas emergentes para todos los subdominios.
 
-If this policy is disabled or not configured, the default pop-up policy is followed.</string>
-      <string id="PopupBlocking_Default">Allow pop-ups from websites</string>
-      <string id="PopupBlocking_Default_Explain">If this policy is disabled, pop-up windows are allowed from websites by default.
+Si esta política está deshabilitada o no está configurada, se sigue la política de ventanas emergentes predeterminada.</string>
+      <string id="PopupBlocking_Default">Permitir ventanas emergentes de sitios web</string>
+      <string id="PopupBlocking_Default_Explain">Si esta política está deshabilitada, se permiten ventanas emergentes de los sitios web de forma predeterminada.
 
-If this policy is not configured or enabled, popups are not allowed from websites.</string>
-      <string id="PopupBlocking_Locked">Do not allow preferences to be changed</string>
-      <string id="PopupBlocking_Locked_Explain">If this policy is enabled, pop-up preferences cannot be changed by the user.
+Si esta política no está configurada o habilitada, las ventanas emergentes no están permitidas desde los sitios web.</string>
+      <string id="PopupBlocking_Locked">No permita que se cambien las preferencias</string>
+      <string id="PopupBlocking_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de ventanas emergentes.
 
-If this policy is disabled or not configured, the user can change their pop-up preferences.</string>
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de ventanas emergentes.</string>
       <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the origins indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default add-on policy is followed.</string>
@@ -222,43 +222,43 @@ If this policy is disabled or not configured, the default add-on policy is follo
 If this policy is not configured or enabled, add-ons can be installed.</string>
       <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the origins indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
 
-If this policy is disabled or not configured, the default cookie policy is followed.</string>
-      <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the origins indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
+Si esta política está deshabilitada o no está configurada, se sigue la política de cookies predeterminada.</string>
+      <string id="Cookies_Block_Explain">Si esta política está habilitada, las cookies están bloqueadas por los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se bloquean las cookies de todos los subdominios.
 
-If this policy is disabled or not configured, cookies are not blocked by default.</string>
-      <string id="Cookies_Default">Accept cookies from websites</string>
-      <string id="Cookies_Default_Explain">If this policy is disabled, cookies are not accepted from websites by default.
+Si esta política está deshabilitada o no está configurada, las cookies no están bloqueadas de manera predeterminada.</string>
+      <string id="Cookies_Default">Aceptar cookies de sitios web</string>
+      <string id="Cookies_Default_Explain">Si esta política está deshabilitada, las cookies no son aceptadas por los sitios web de forma predeterminada.
 
 Si esta política no está configurada o habilitada, se aceptan cookies de los sitios web.</string>
       <string id="Cookies_AcceptThirdParty">Aceptar cookies de terceros</string>
       <string id="Cookies_AcceptThirdParty_Explain">Si esta política está habilitada y se permiten las cookies, puede establecer cuándo aceptar las cookies de terceros.
 
 Esta configuración se ignora si esta política está deshabilitada o no está configurada o si las cookies no están permitidas.</string>
-      <string id="Cookies_AcceptThirdParty_All">Always</string>
+      <string id="Cookies_AcceptThirdParty_All">Permitir</string>
       <string id="Cookies_AcceptThirdParty_None">Nunca</string>
-      <string id="Cookies_AcceptThirdParty_FromVisited">From visited</string>
-      <string id="Cookies_ExpireAtSessionEnd">Keep cookies until Firefox is closed</string>
-      <string id="Cookies_ExpireAtSessionEnd_Explain">If this policy is enabled and cookies are allowed, they will expire when Firefox is closed.
+      <string id="Cookies_AcceptThirdParty_FromVisited">Desde visitado</string>
+      <string id="Cookies_ExpireAtSessionEnd">Guardar las cookies hasta que Firefox esté cerrado</string>
+      <string id="Cookies_ExpireAtSessionEnd_Explain">Si esta política está habilitada y las cookies están permitidas, caducarán cuando se cierre Firefox.
 
-This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
-      <string id="Cookies_Locked">Do not allow preferences to be changed</string>
-      <string id="Cookies_Locked_Explain">If this policy is enabled, cookie preferences cannot be changed by the user.
+Esta configuración se ignora si esta política está deshabilitada o no está configurada, o si las cookies no están permitidas.</string>
+      <string id="Cookies_Locked">No permitir que se cambien las preferencias</string>
+      <string id="Cookies_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de cookies.
 
-If this policy is disabled or not configured, the user can change their cookie preferences.</string>
-      <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de cookies.</string>
+      <string id="Camera_Allow_Explain">Si esta política está habilitada, el acceso a la cámara siempre está permitido para los orígenes indicados.
 
-If this policy is disabled or not configured, the default camera policy is followed.</string>
-      <string id="Camera_Block_Explain">If this policy is enabled, access to the camera is blocked for the origins indicated.
+Si esta política está deshabilitada o no está configurada, se sigue la política de cámara predeterminada.</string>
+      <string id="Camera_Block_Explain">Si esta política está habilitada, el acceso a la cámara está bloqueado por los orígenes indicados.
 
-If this policy is disabled or not configured, access to the camera is not blocked by default.</string>
-      <string id="Camera_BlockNewRequests">Block new requests asking to access the camera</string>
-      <string id="Camera_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the camera.
+Si esta política está deshabilitada o no está configurada, el acceso a la cámara no está bloqueado de forma predeterminada.</string>
+      <string id="Camera_BlockNewRequests">Bloquear nuevas solicitudes para acceder a la cámara</string>
+      <string id="Camera_BlockNewRequests_Explain">Si esta política está habilitada, los sitios que no están en la política permitir no podrán solicitar permiso para acceder a la cámara.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the camera.</string>
-      <string id="Camera_Locked">Do not allow preferences to be changed</string>
-      <string id="Camera_Locked_Explain">If this policy is enabled, camera preferences cannot be changed by the user.
+Si esta política está deshabilitada o no está configurada, cualquier sitio que no esté en la política de bloqueo puede solicitar permiso para acceder a la cámara.</string>
+      <string id="Camera_Locked">No permitir que se cambien las preferencias</string>
+      <string id="Camera_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de la cámara.
 
-If this policy is disabled or not configured, the user can change their camera preferences.</string>
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de la cámara.</string>
       <string id="Microphone_Allow_Explain">If this policy is enabled, access to the microphone is always allowed for the origins indicated.
 
 Si esta política está deshabilitada o no está configurada, se sigue la política de micrófono predeterminada.</string>
@@ -269,42 +269,42 @@ Si esta política está deshabilitada o no está configurada, el acceso al micr�
       <string id="Microphone_BlockNewRequests_Explain">Si esta política está habilitada, los sitios que no están en la política permitir no podrán solicitar permiso para acceder al micrófono.
 
 Si esta política está deshabilitada o no está configurada, cualquier sitio que no esté en la política de bloqueo puede solicitar permiso para acceder al micrófono.</string>
-      <string id="Microphone_Locked">Do not allow preferences to be changed</string>
-      <string id="Microphone_Locked_Explain">If this policy is enabled, microphone preferences cannot be changed by the user.
+      <string id="Microphone_Locked">No permitir que se cambien las preferencias</string>
+      <string id="Microphone_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias del micrófono.
 
-If this policy is disabled or not configured, the user can change their camera preferences.</string>
-      <string id="Location_Allow_Explain">If this policy is enabled, access to location is always allowed for the origins indicated.
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de la cámara.</string>
+      <string id="Location_Allow_Explain">Si esta política está habilitada, el acceso a la ubicación siempre está permitido para los orígenes indicados.
 
-If this policy is disabled or not configured, the default location policy is followed.</string>
-      <string id="Location_Block_Explain">If this policy is enabled, access to location is blocked for the origins indicated.
+Si esta política está deshabilitada o no está configurada, se sigue la política de ubicación predeterminada.</string>
+      <string id="Location_Block_Explain">Si esta política está habilitada, el acceso a la ubicación está bloqueado por los orígenes indicados.
 
-If this policy is disabled or not configured, access to location is not blocked by default.</string>
-      <string id="Location_BlockNewRequests">Block new requests asking to access location</string>
-      <string id="Location_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access location.
+Si esta política está deshabilitada o no está configurada, el acceso a la ubicación no está bloqueado de manera predeterminada.</string>
+      <string id="Location_BlockNewRequests">Bloquear nuevas solicitudes para acceder a la ubicación</string>
+      <string id="Location_BlockNewRequests_Explain">Si esta política está habilitada, los sitios que no están en la política permitir no podrán solicitar permiso para acceder a la ubicación.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access location.</string>
-      <string id="Location_Locked">Do not allow preferences to be changed</string>
-      <string id="Location_Locked_Explain">If this policy is enabled, location preferences cannot be changed by the user.
+Si esta política está deshabilitada o no está configurada, cualquier sitio que no esté en la política de bloqueo puede solicitar permiso para acceder a la ubicación.</string>
+      <string id="Location_Locked">No permitir que se cambien las preferencias</string>
+      <string id="Location_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de ubicación.
 
-If this policy is disabled or not configured, the user can change location preferences.</string>
-      <string id="Notifications_Allow_Explain">If this policy is enabled, notifications can always be sent for the origins indicated.
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar las preferencias de ubicación.</string>
+      <string id="Notifications_Allow_Explain">Si esta política está habilitada, las notificaciones siempre se pueden enviar para los orígenes indicados.
 
-If this policy is disabled or not configured, the default nofication policy is followed.</string>
-      <string id="Notifications_Block_Explain">If this policy is enabled, notifications are always blocked for the origins indicated.
+Si esta política está deshabilitada o no está configurada, se sigue la política de notificaciones predeterminada.</string>
+      <string id="Notifications_Block_Explain">Si esta política está habilitada, las notificaciones siempre están bloqueadas por los orígenes indicados.
 
-If this policy is disabled or not configured, notifications are not blocked by default.</string>
-      <string id="Notifications_BlockNewRequests">Block new requests asking to send notifications</string>
-      <string id="Notifications_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to send notifications.
+Si esta política está deshabilitada o no está configurada, las notificaciones no están bloqueadas de manera predeterminada.</string>
+      <string id="Notifications_BlockNewRequests">Bloquear nuevas solicitudes para enviar notificaciones</string>
+      <string id="Notifications_BlockNewRequests_Explain">Si esta política está habilitada, los sitios que no están en la política permitir no podrán solicitar permiso para enviar notificaciones.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to send notifications.</string>
-      <string id="Notifications_Locked">Do not allow preferences to be changed</string>
-      <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
+Si esta política está deshabilitada o no está configurada, cualquier sitio que no esté en la política de bloqueo puede solicitar permiso para enviar notificaciones.</string>
+      <string id="Notifications_Locked">No permitir que se cambien las preferencias</string>
+      <string id="Notifications_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de notificaciones.
 
-If this policy is disabled or not configured, the user can change their notification preferences.</string>
-      <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the origins indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
+Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de notificaciones.</string>
+      <string id="FlashPlugin_Allow_Explain">Si esta política está habilitada, Flash se activa de manera predeterminada para los orígenes indicados, a menos que Flash esté completamente deshabilitado. Si se especifica un dominio de nivel superior (http://ejemplo.org), Flash también está permitido para todos los subdominios.
 
-If this policy is disabled or not configured, the default Flash policy is followed.</string>
-      <string id="FlashPlugin_Block_Explain">If this policy is enabled, Flash is blocked for the origins indicated. If a top level domain is specified (http://example.org), Flash is blocked from all subdomains as well.
+Si esta política está deshabilitada o no está configurada, se sigue la política de Flash predeterminada.</string>
+      <string id="FlashPlugin_Block_Explain">Si esta política está habilitada, Flash está bloqueado por los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), Flash también está bloqueado para todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, se sigue la política de Flash predeterminada.</string>
       <string id="FlashPlugin_Default">Activar Flash en sitios web</string>
