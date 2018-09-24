@@ -12,10 +12,10 @@
       <string id="Permissions_group">Permisos</string>
       <string id="Camera_group">Camera</string>
       <string id="Microphone_group">Micrófono</string>
-      <string id="Location_group">Location</string>
+      <string id="Location_group">Ubicación</string>
       <string id="Notifications_group">Notificaciones</string>
       <string id="Authentication_group">Autenticación</string>
-      <string id="Bookmarks_group">Bookmarks</string>
+      <string id="Bookmarks_group">Marcadores</string>
       <string id="Certificates_group">Certificados</string>
       <string id="Popups_group">Ventanas emergentes</string>
       <string id="Cookies_group">Cookies</string>
@@ -52,10 +52,10 @@ Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/
       <string id="Authentication_AllowNonFQDN_Explain">Si esta política está habilitada, siempre puede permitir SPNEGO o NTLM que no sean FQDN (nombres de dominio totalmente calificados).
 
 Si esta política está deshabilitada o no está configurada, NTLM y SPNEGO no están habilitados en que no sean FQDN.</string>
-      <string id="BlockAboutAddons">Block Add-ons Manager</string>
-      <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
+      <string id="BlockAboutAddons">Bloquear el administrador de complementos</string>
+      <string id="BlockAboutAddons_Explain">Si esta política está habilitada, el usuario no puede acceder al administrador de complementos o en about:addons.
 
-If this policy is disabled or not configured, the user can access the Add-ons Manager and about:addons.</string>
+Si esta política está deshabilitada o no está configurada, el usuario puede acceder al administrador de complementos o en about:addons.</string>
       <string id="BlockAboutConfig">Bloquear about:config</string>
       <string id="BlockAboutConfig_Explain">Si esta política está habilitada, el usuario no puede acceder en about:config.
 
@@ -102,24 +102,24 @@ If this policy is disabled or not configured, the &quot;Submit Feedback&quot; an
       <string id="DisableFirefoxAccounts_Explain">Si esta política está habilitada, las cuentas de Firefox están deshabilitadas, lo que incluye deshabilitar Sync.
 
 Si esta política está deshabilitada o no está configurada, las las cuentas de Firefox y Sync están disponibles.</string>
-      <string id="DisableFirefoxScreenshots">Disable Firefox Screenshots</string>
-      <string id="DisableFirefoxScreenshots_Explain">If this policy is enabled, Firefox Screenshots is not available.
+      <string id="DisableFirefoxScreenshots">Deshabilitar captura de pantalla de Firefox</string>
+      <string id="DisableFirefoxScreenshots_Explain">Si esta política está habilitada, capturar de pantalla de Firefox no estará disponible.
 
-If this policy is disabled or not configured, Firefox Screenshots is available.</string>
+Si esta política está deshabilitada o no está configurada, capturar de pantalla de Firefox estará disponible.</string>
       <string id="DisableFirefoxStudies">Disable Firefox Studies</string>
       <string id="DisableFirefoxStudies_Explain">If this policy is enabled, Firefox will never run SHIELD studies or do Heartbeat surveys.
 
 If this policy is disabled or not configured, the user can choose to enable SHIELD studies or Heartbeat surveys.
 
 Para más información, visite https://support.mozilla.org/en-US/kb/shield y https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
-      <string id="DisableForgetButton">Disable Forget Button</string>
-      <string id="DisableForgetButton_Explain">If this policy is enabled, the &quot;Forget&quot; button is not available.
+      <string id="DisableForgetButton">Deshabilitar el botón olvidar</string>
+      <string id="DisableForgetButton_Explain">Si esta política está habilitada, el botón &quot;Olvidar&quot; no estará disponible.
 
-If this policy is disabled or not configured, the &quot;Forget&quot; button is available.</string>
+Si esta política está deshabilitada o no está configurada, el botón &quot;Olvidar&quot; estará disponible.</string>
       <string id="DisableFormHistory">Deshabilitar historial de formulario</string>
       <string id="DisableFormHistory_Explain">Si esta política está habilitada, Firefox no recordará el formulario ni el historial de búsqueda.
 
-If this policy is disabled or not configured, Firefox will remember form and search history.</string>
+Si esta política está deshabilitada o no está configurada, Firefox recordará el formulario y el historial de búsqueda.</string>
       <string id="DisablePocket">Deshabilitadar Pocket</string>
       <string id="DisablePocket_Explain">Si esta política está habilitada, Pocket no está disponible.
 
@@ -128,30 +128,30 @@ Si esta política está deshabilitada o no está configurada, Pocket está dispo
       <string id="DisablePrivateBrowsing_Explain">Si esta política está habilitada, no se permite la navegación privada.
 
 Si esta política está deshabilitada o no está configurada, se permite la navegación privada.</string>
-      <string id="DisableProfileImport">Disable Profile Import</string>
-      <string id="DisableProfileImport_Explain">If this policy is enabled, the &quot;Import data from another browser&quot; option is not available in the bookmarks window.
+      <string id="DisableProfileImport">Deshabilitar importación de perfil</string>
+      <string id="DisableProfileImport_Explain">Si esta política está habilitada, la opción &quot;Importar datos desde otro navegador&quot; no estará disponible en la ventana de marcadores.
 
-If this policy is disabled or not configured, the &quot;Import data from another browser&quot; option is available.</string>
-      <string id="DisableProfileRefresh">Disable Profile Refresh</string>
-      <string id="DisableProfileRefresh_Explain">If this policy is enabled, the &quot;Refresh Firefox&quot; button is not available on the about:support page or on support.mozilla.org.
+Si esta política está ddeshabilitada o no está configurada, la opción &quot;Importar datos desde otro navegador&quot; estará disponible.</string>
+      <string id="DisableProfileRefresh">Deshabilitar actualización de perfil</string>
+      <string id="DisableProfileRefresh_Explain">Si esta política está habilitada, el botón &quot;Actualizar Firefox&quot; no estará disponible en la página about:support o en support.mozilla.org.
 
-If this policy is disabled or not configured, the &quot;Refresh Firefox&quot; button is available.</string>
-      <string id="DisableSafeMode">Disable Safe Mode</string>
-      <string id="DisableSafeMode_Explain">If this policy is enabled, the user cannot restart the browser into safe mode.
+Si esta política está deshabilitada o no está configurada, el botón &quot;Actualizar Firefox&quot; estará disponible.</string>
+      <string id="DisableSafeMode">Deshabilitar modo seguro</string>
+      <string id="DisableSafeMode_Explain">Si esta política está habilitada, el usuario no puede reiniciar el navegador en modo seguro.
 
-If this policy is disabled or not configured, safe mode is allowed.</string>
-      <string id="DisableSecurityBypass_InvalidCertificate">Prevent overriding certificate errors</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">If this policy is enabled, the &quot;Add Exception&quot; button is not available when a certificate is invalid. This prevents the user from overriding the certificate error.
+Si esta política está deshabilitada o no está configurada, se permite el modo seguro.</string>
+      <string id="DisableSecurityBypass_InvalidCertificate">Evitar anular los errores de certificado</string>
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Si esta política está habilitada, el botón &quot;Añadir excepción&quot; no estará disponible cuando un certificado no es válido. Esto evita que el usuario anule el error de certificado.
 
-If this policy is disabled or not configured, certificate errors can be overridden.</string>
-      <string id="DisableSecurityBypass_SafeBrowsing">Prevent overriding safe browsing errors</string>
-      <string id="DisableSecurityBypass_SafeBrowsing_Explain">If this policy is enabled, a user cannot bypass the warning and visit a harmful site.
+Si esta política está deshabilitada o no está configurada, los errores de certificado pueden anularse.</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Evitar anular los errores de navegación segura</string>
+      <string id="DisableSecurityBypass_SafeBrowsing_Explain">Si esta política está habilitada, un usuario no puede eludir la advertencia y visitar un sitio dañino.
 
-If this policy is disabled or not configured, a user can choose to visit a harmful site.</string>
-      <string id="DisableSystemAddonUpdate">Disable System Addon Updates</string>
-      <string id="DisableSystemAddonUpdate_Explain">If this policy is enabled, new system add-ons will not be installed and existing system add-ons will not be updated.
+Si esta política está deshabilitada o no está configurada, un usuario puede elegir visitar un sitio dañino.</string>
+      <string id="DisableSystemAddonUpdate">Deshabilitar actualización de complementos del sistema</string>
+      <string id="DisableSystemAddonUpdate_Explain">Si esta política está habilitada, los nuevos complementos del sistema no se instalarán y los complementos del sistema existentes no se actualizarán.
 
-If this policy is disabled or not configured, system add-ons are installed and updated.
+Si esta política está deshabilitada o no está configurada, los complementos del sistema se instalan y actualizan.
 
 A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="DisableTelemetry">Deshabilitar telemetría</string>
@@ -166,14 +166,14 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
       <string id="DisplayBookmarksToolbar_Explain">Si esta política está habilitada, la barra de herramientas de marcadores se muestra de forma predeterminada. El usuario aún puede ocultarlo.
 
 Si esta política está deshabilitada o no está configurada, la barra de herramientas de marcadores no se muestra de forma predeterminada.</string>
-      <string id="DisplayMenuBar">Mostrar barra de menús</string>
-      <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menús se muestra de forma predeterminada. El usuario aún puede ocultarlo.
+      <string id="DisplayMenuBar">Mostrar barra de menú</string>
+      <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menú se muestra de forma predeterminada. El usuario aún puede ocultarlo.
 
-Si esta política está deshabilitada o no está configurada, la barra de menús no se muestra de forma predeterminada.</string>
-      <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
-      <string id="DontCheckDefaultBrowser_Explain">If this policy is enabled, Firefox does not check to see if it is the default browser at startup.
+Si esta política está deshabilitada o no está configurada, la barra de menú no se muestra de forma predeterminada.</string>
+      <string id="DontCheckDefaultBrowser">No verificar el navegador predeterminado</string>
+      <string id="DontCheckDefaultBrowser_Explain">Si esta política está habilitada, Firefox no verificará si es el navegador predeterminado al inicio.
 
-If this policy is disabled or not configured, Firefox checks to see if it is the default browser at startup.</string>
+Si esta política está deshabilitada o no está configurada, Firefox comprueba si es el navegador predeterminado al inicio.</string>
       <string id="Extensions_Install">Extensiones para instalar</string>
       <string id="Extensions_Install_Explain">Si esta política está habilitada, puede especificar una lista de URL de extensiones o rutas que se instalarán cuando se inicie Firefox.
 Cada vez que se cambie esta lista, las extensiones se reinstalarán.
@@ -198,8 +198,8 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración de hardware no se puede habilitar.
 
 Si esta política está habilitada o no está configurada, la aceleración por hardware está habilitada.</string>
-      <string id="OfferToSaveLogins">Offer to save logins</string>
-      <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
+      <string id="OfferToSaveLogins">Sugerir guardar inicios de sesión</string>
+      <string id="OfferToSaveLogins_Explain">Si esta política está habilitada o no está configurada, Firefox ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 
 Si esta política está deshabilitada, Firefox no ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.</string>
       <string id="PopupBlocking_Allow_Explain">Si esta política está habilitada, las ventanas emergentes siempre están permitidas para los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permiten ventanas emergentes para todos los subdominios.
@@ -213,14 +213,14 @@ Si esta política no está configurada o habilitada, las ventanas emergentes no 
       <string id="PopupBlocking_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de ventanas emergentes.
 
 Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de ventanas emergentes.</string>
-      <string id="InstallAddonsPermission_Allow_Explain">If this policy is enabled, add-ons are always allowed for the origins indicated unless add-on install is disabled. If a top level domain is specified (http://example.org), add-ons are allowed for all subdomains as well.
+      <string id="InstallAddonsPermission_Allow_Explain">Si esta política está habilitada, los complementos siempre están permitidos para los orígenes indicados a menos que la instalación de complementos esté deshabilitada. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permiten complementos para todos los subdominios.
 
-If this policy is disabled or not configured, the default add-on policy is followed.</string>
-      <string id="InstallAddonsPermission_Default">Allow add-on installs from websites</string>
-      <string id="InstallAddonsPermission_Default_Explain">If this policy is disabled, add-ons cannot be installed.
+Si esta política está deshabilitada o no está configurada, se sigue la política de complementos predeterminada.</string>
+      <string id="InstallAddonsPermission_Default">Permitir instalaciones complementarias desde sitios web</string>
+      <string id="InstallAddonsPermission_Default_Explain">Si esta política está deshabilitada, no se pueden instalar complementos.
 
-If this policy is not configured or enabled, add-ons can be installed.</string>
-      <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the origins indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+Si esta política no está configurada o habilitada, se pueden instalar complementos.</string>
+      <string id="Cookies_Allow_Explain">Si esta política está habilitada, las cookies siempre están permitidas para los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permiten cookies para todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, se sigue la política de cookies predeterminada.</string>
       <string id="Cookies_Block_Explain">Si esta política está habilitada, las cookies están bloqueadas por los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se bloquean las cookies de todos los subdominios.
@@ -387,24 +387,24 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
 
 Si esta política está deshabilitada o no está configurada, solo hay una página de inicio.
 
-A partir de Firefox 62, esta política solo funcionará desde la Configuración del equipo.</string>
+A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
       <string id="Proxy">Configuración del proxy</string>
       <string id="Proxy_Explain">Si esta política está habilitada, puede configurar y bloquear la configuración de red.
 
-Select the connection type and then fill in the appropriate sections. Due to a bug, you must select a value for the SOCKS proxy version.
+Seleccione el tipo de conexión y luego complete las secciones correspondientes. Debido a un error, debe seleccionar un valor para la versión proxy de SOCKS.
 
 Si esta política está deshabilitada o no está configurada, se usa la configuración de red predeterminada y el usuario puede cambiarla.</string>
       <string id="SOCKSVersion4">SOCKS v4</string>
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Configuración automática de URL de proxy</string>
-      <string id="AutoConfigURL_Explain">These should only be set if you selected autoConfig</string>
+      <string id="AutoConfigURL_Explain">Estos solo debería establecerse si seleccionó autoConfig</string>
       <string id="Passthrough">Proxy bypass URLs</string>
       <string id="Passthrough_Explain">These should only be set if you selected manual proxy</string>
       <string id="Connection">Tipo de conexión</string>
       <string id="NoProxy">Sin proxy</string>
-      <string id="SystemProxy">Use system proxy settings</string>
-      <string id="ManualProxy">Configuración manual de proxy</string>
-      <string id="AutoDetectProxy">Auto-detect proxy settings</string>
+      <string id="SystemProxy">Usar la configuración de proxy del sistema</string>
+      <string id="ManualProxy">Configuración manual del proxy</string>
+      <string id="AutoDetectProxy">Detección automática de la configuración del proxy</string>
       <string id="AutoConfigProxy">Configuración automática de proxy</string>
       <string id="TrackingProtection">Protección de seguimiento</string>
       <string id="TrackingProtection_Explain">Si esta política no está configurada, la protección de seguimiento no está habilitada de forma predeterminada en el navegador, pero está habilitada de manera predeterminada en la navegación privada y el usuario puede cambiarla.
@@ -424,8 +424,8 @@ Si esta política está deshabilitada o no está configurada, los nuevos usuario
       <string id="SearchEngines_Explain">Si esta política está habilitada, puede configurar un motor de búsqueda para ser agregado a Firefox. Utilice {términos de búsqueda} para indicar dónde se encuentra el término de búsqueda. Debido a un error, debe seleccionar el método (normalmente GET). Tenga en cuenta que debe especificar los motores de búsqueda en orden.
 
 Si esta política está deshabilitada o no está configurada, no se agregará un nuevo motor de búsqueda.</string>
-      <string id="SearchBar_Unified">Unified</string>
-      <string id="SearchBar_Separate">Separate</string>
+      <string id="SearchBar_Unified">Unificado</string>
+      <string id="SearchBar_Separate">Separado</string>
       <string id="SearchEngine_Method_GET">GET</string>
       <string id="SearchEngine_Method_POST">POST</string>
       <string id="SearchEngines_Default">Motor de búsqueda predeterminado</string>
@@ -451,8 +451,8 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <listBox refId="Authentication"/>
       </presentation>
       <presentation id="Authentication_AllowNonFQDN">
-        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
-        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Permitir siempre NTLM que no sean FQDN</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Permitir siempre SPNEGO que no sean FQDN</checkBox>
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>
@@ -525,7 +525,7 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
           <label>Descripción:</label>
         </textBox>
         <textBox refId="SearchEngine_SuggestURLTemplate">
-          <label>Suggest URL Template:</label>
+          <label>Sugerir plantilla de URL:</label>
         </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
@@ -544,7 +544,7 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <textBox refId="HTTPProxy">
           <label/>
         </textBox>
-        <checkBox refId="UseHTTPProxyForAllProtocols">Use this proxy server for all protocols.</checkBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">Utilizar este servidor proxy para todos los protocolos.</checkBox>
         <text>Proxy SSL:</text>
         <textBox refId="SSLProxy">
           <label/>
@@ -553,7 +553,7 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <textBox refId="FTPProxy">
           <label/>
         </textBox>
-        <text>SOCKS Host:</text>
+        <text>Host SOCKS:</text>
         <textBox refId="SOCKSProxy">
           <label/>
         </textBox>
