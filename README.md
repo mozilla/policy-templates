@@ -79,12 +79,12 @@ This policy removes the "Set As Desktop Background..." menuitem when right click
 }
 ```
 ### Certificates
-If this Windows only policy is set to true, Firefox reads certificates from the Windows certificate store.
+If this policy is set to any value, Firefox reads certificates from the system certificate store. This is currently only supported on Windows, but will be available on macOS with Firefox 63.
 ```
 {
   "policies": {
     "Certificates": {
-      "ImportEnterpriseRoots": [true|false]
+      "ImportEnterpriseRoots": true
     }
   }
 }
