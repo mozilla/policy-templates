@@ -790,7 +790,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark02" class="Both" displayName="$(string.Bookmark02)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\12" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark02" class="Both" displayName="$(string.Bookmark02)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\10" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -812,7 +812,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark03" class="Both" displayName="$(string.Bookmark03)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\13" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark03" class="Both" displayName="$(string.Bookmark03)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\11" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -834,7 +834,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark04" class="Both" displayName="$(string.Bookmark04)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\14" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark04" class="Both" displayName="$(string.Bookmark04)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\12" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -856,7 +856,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark05" class="Both" displayName="$(string.Bookmark05)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\15" presentation="$(presentation.Bookmark)" >
+    <policy name="Bookmark05" class="Both" displayName="$(string.Bookmark05)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\13" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -878,7 +878,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark06" class="Both" displayName="$(string.Bookmark06)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\16" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark06" class="Both" displayName="$(string.Bookmark06)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\14" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -900,7 +900,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark07" class="Both" displayName="$(string.Bookmark07)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\17" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark07" class="Both" displayName="$(string.Bookmark07)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\15" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -922,7 +922,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark08" class="Both" displayName="$(string.Bookmark08)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\18" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark08" class="Both" displayName="$(string.Bookmark08)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\16" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -944,7 +944,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark09" class="Both" displayName="$(string.Bookmark09)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\19" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark09" class="Both" displayName="$(string.Bookmark09)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\17" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -966,7 +966,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark10" class="Both" displayName="$(string.Bookmark10)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark10" class="Both" displayName="$(string.Bookmark10)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\18" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -988,7 +988,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark11" class="Both" displayName="$(string.Bookmark11)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\21" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark11" class="Both" displayName="$(string.Bookmark11)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\19" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1010,7 +1010,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark12" class="Both" displayName="$(string.Bookmark12)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\22" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark12" class="Both" displayName="$(string.Bookmark12)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1032,7 +1032,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark13" class="Both" displayName="$(string.Bookmark13)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\23" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark13" class="Both" displayName="$(string.Bookmark13)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\20" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1054,7 +1054,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark14" class="Both" displayName="$(string.Bookmark14)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\24" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark14" class="Both" displayName="$(string.Bookmark14)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\21" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1076,7 +1076,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark15" class="Both" displayName="$(string.Bookmark15)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\25" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark15" class="Both" displayName="$(string.Bookmark15)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\22" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1098,7 +1098,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark16" class="Both" displayName="$(string.Bookmark16)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\26" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark16" class="Both" displayName="$(string.Bookmark16)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\23" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1120,7 +1120,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark17" class="Both" displayName="$(string.Bookmark17)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\27" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark17" class="Both" displayName="$(string.Bookmark17)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\24" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1142,7 +1142,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark18" class="Both" displayName="$(string.Bookmark18)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\28" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark18" class="Both" displayName="$(string.Bookmark18)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\25" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1164,7 +1164,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark19" class="Both" displayName="$(string.Bookmark19)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\29" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark19" class="Both" displayName="$(string.Bookmark19)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\26" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1186,7 +1186,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark20" class="Both" displayName="$(string.Bookmark20)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark20" class="Both" displayName="$(string.Bookmark20)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\27" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1208,7 +1208,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark21" class="Both" displayName="$(string.Bookmark21)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\31" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark21" class="Both" displayName="$(string.Bookmark21)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\28" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1230,7 +1230,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark22" class="Both" displayName="$(string.Bookmark22)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\32" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark22" class="Both" displayName="$(string.Bookmark22)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\29" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1252,7 +1252,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark23" class="Both" displayName="$(string.Bookmark23)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\33" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark23" class="Both" displayName="$(string.Bookmark23)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1274,7 +1274,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark24" class="Both" displayName="$(string.Bookmark24)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\34" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark24" class="Both" displayName="$(string.Bookmark24)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\30" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1296,7 +1296,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark25" class="Both" displayName="$(string.Bookmark25)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\35" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark25" class="Both" displayName="$(string.Bookmark25)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\31" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1318,7 +1318,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark26" class="Both" displayName="$(string.Bookmark26)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\36" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark26" class="Both" displayName="$(string.Bookmark26)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\32" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1340,7 +1340,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark27" class="Both" displayName="$(string.Bookmark27)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\37" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark27" class="Both" displayName="$(string.Bookmark27)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\33" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1362,7 +1362,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark28" class="Both" displayName="$(string.Bookmark28)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\38" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark28" class="Both" displayName="$(string.Bookmark28)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\34" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1384,7 +1384,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark29" class="Both" displayName="$(string.Bookmark29)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\39" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark29" class="Both" displayName="$(string.Bookmark29)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\35" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1406,7 +1406,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark30" class="Both" displayName="$(string.Bookmark30)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark30" class="Both" displayName="$(string.Bookmark30)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\36" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1428,7 +1428,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark31" class="Both" displayName="$(string.Bookmark31)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\41" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark31" class="Both" displayName="$(string.Bookmark31)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\37" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1450,7 +1450,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark32" class="Both" displayName="$(string.Bookmark32)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\42" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark32" class="Both" displayName="$(string.Bookmark32)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\38" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1472,7 +1472,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark33" class="Both" displayName="$(string.Bookmark33)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\43" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark33" class="Both" displayName="$(string.Bookmark33)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\39" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1494,7 +1494,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark34" class="Both" displayName="$(string.Bookmark34)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\44" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark34" class="Both" displayName="$(string.Bookmark34)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1516,7 +1516,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark35" class="Both" displayName="$(string.Bookmark35)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\45" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark35" class="Both" displayName="$(string.Bookmark35)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\40" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1538,7 +1538,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark36" class="Both" displayName="$(string.Bookmark36)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\46" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark36" class="Both" displayName="$(string.Bookmark36)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\41" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1560,7 +1560,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark37" class="Both" displayName="$(string.Bookmark37)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\47" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark37" class="Both" displayName="$(string.Bookmark37)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\42" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1582,7 +1582,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark38" class="Both" displayName="$(string.Bookmark38)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\48" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark38" class="Both" displayName="$(string.Bookmark38)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\43" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1604,7 +1604,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark39" class="Both" displayName="$(string.Bookmark39)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\49" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark39" class="Both" displayName="$(string.Bookmark39)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\44" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1626,7 +1626,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark40" class="Both" displayName="$(string.Bookmark40)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark40" class="Both" displayName="$(string.Bookmark40)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\45" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1648,7 +1648,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark41" class="Both" displayName="$(string.Bookmark41)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\51" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark41" class="Both" displayName="$(string.Bookmark41)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\46" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1670,7 +1670,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark42" class="Both" displayName="$(string.Bookmark42)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\52" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark42" class="Both" displayName="$(string.Bookmark42)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\47" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1692,7 +1692,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark43" class="Both" displayName="$(string.Bookmark43)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\53" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark43" class="Both" displayName="$(string.Bookmark43)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\48" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1714,7 +1714,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark44" class="Both" displayName="$(string.Bookmark44)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\54" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark44" class="Both" displayName="$(string.Bookmark44)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\49" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1736,7 +1736,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark45" class="Both" displayName="$(string.Bookmark45)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\55" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark45" class="Both" displayName="$(string.Bookmark45)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1758,7 +1758,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark46" class="Both" displayName="$(string.Bookmark46)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\56" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark46" class="Both" displayName="$(string.Bookmark46)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\50" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1780,7 +1780,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark47" class="Both" displayName="$(string.Bookmark47)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\57" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark47" class="Both" displayName="$(string.Bookmark47)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\6" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1802,7 +1802,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark48" class="Both" displayName="$(string.Bookmark48)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\58" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark48" class="Both" displayName="$(string.Bookmark48)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\7" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1824,7 +1824,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark49" class="Both" displayName="$(string.Bookmark49)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\59" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark49" class="Both" displayName="$(string.Bookmark49)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\8" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
@@ -1846,7 +1846,7 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark50" class="Both" displayName="$(string.Bookmark50)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\6" presentation="$(presentation.Bookmark)" >
+	<policy name="Bookmark50" class="Both" displayName="$(string.Bookmark50)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\9" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />
       <elements >
