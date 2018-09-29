@@ -64,15 +64,15 @@ Si esta política está deshabilitada o no está configurada, el usuario puede a
       <string id="BlockAboutProfiles_Explain">Si esta política está habilitada, el usuario no puede acceder en about:profiles.
 
 Si esta política está deshabilitada o no está configurada, el usuario puede acceder en about:profiles.</string>
-      <string id="BlockAboutSupport">Block Troubleshooting Information</string>
-      <string id="BlockAboutSupport_Explain">If this policy is enabled, the user cannot access Troubleshooting Information or about:support.
+      <string id="BlockAboutSupport">Bloquear información de solución de problemas</string>
+      <string id="BlockAboutSupport_Explain">Si esta política está habilitada, el usuario no puede acceder a la información de solución de problemas o about:support.
 
-If this policy is disabled or not configured, the user can access Troubleshooting Information and about:support.</string>
-      <string id="DisableSetDesktopBackground">Disable Set Desktop Background</string>
-      <string id="DisableSetDesktopBackground_Explain">Si esta política está habilitada, el usuario no puede establecer una imagen como fondo de escritorio.
+Si esta política está deshabilitada o no está configurada, el usuario puede acceder a la información de solución de problemas y en about:support.</string>
+      <string id="DisableSetDesktopBackground">Deshabilitar establecer imagen de fondo</string>
+      <string id="DisableSetDesktopBackground_Explain">Si esta política está habilitada, el usuario no puede establecer una imagen como imagen de fondo.
 
-Si esta política está deshabilitada o no está configurada, los usuarios pueden establecer imágenes como fondo de escritorio.</string>
-      <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
+Si esta política está deshabilitada o no está configurada, los usuarios pueden establecer imágenes como imagen de fondo.</string>
+      <string id="Certificates_ImportEnterpriseRoots">Importar certificados raíces</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si esta política está habilitada, Firefox leerá los certificados del almacén de certificados de Windows.
 
 Si esta política está deshabilitada o no está configurada, Firefox no leerá los certificados del almacén de certificados de Windows.</string>
@@ -89,15 +89,15 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
       <string id="DisableBuiltinPDFViewer">Deshabilitar el visor de PDF incorporado (PDF.js)</string>
       <string id="DisableBuiltinPDFViewer_Explain">Si esta política está habilitada, los archivos PDF no se visualizan dentro de Firefox.
 
-Si esta política está desactivada o no está configurada, los archivos PDF se visualizan dentro de Firefox.</string>
+Si esta política está deshabilitada o no está configurada, los archivos PDF se visualizan dentro de Firefox.</string>
       <string id="DisableDeveloperTools">Deshabilitar herramientas para desarrolladores</string>
       <string id="DisableDeveloperTools_Explain">Si esta política está habilitada, las herramientas para desarrolladores web no están disponibles dentro de Firefox.
 
-Si esta política está desactivada o no está configurada, las herramientas para desarrolladores web están disponibles dentro de Firefox.</string>
-      <string id="DisableFeedbackCommands">Disable Feedback Commands</string>
-      <string id="DisableFeedbackCommands_Explain">If this policy is enabled, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are not available from the help menu.
+Si esta política está deshabilitada o no está configurada, las herramientas para desarrolladores web están disponibles dentro de Firefox.</string>
+      <string id="DisableFeedbackCommands">Deshabilitar comandos de comentarios</string>
+      <string id="DisableFeedbackCommands_Explain">Si esta política está habilitada, los menús &quot;Enviar comentario&quot; y &quot;Reportar sitio engañoso&quot; no estarán disponibles en el menú de ayuda.
 
-If this policy is disabled or not configured, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are available from the help menu.</string>
+Si esta política está deshabilitada o no está configurada, los menús &quot;Enviar comentario&quot; y &quot;Reportar sitio engañoso&quot; estarán disponibles en el menú de ayuda.</string>
       <string id="DisableFirefoxAccounts">Deshabilitar cuentas de Firefox</string>
       <string id="DisableFirefoxAccounts_Explain">Si esta política está habilitada, las cuentas de Firefox están deshabilitadas, lo que incluye deshabilitar Sync.
 
@@ -106,10 +106,10 @@ Si esta política está deshabilitada o no está configurada, las las cuentas de
       <string id="DisableFirefoxScreenshots_Explain">Si esta política está habilitada, capturar de pantalla de Firefox no estará disponible.
 
 Si esta política está deshabilitada o no está configurada, capturar de pantalla de Firefox estará disponible.</string>
-      <string id="DisableFirefoxStudies">Disable Firefox Studies</string>
-      <string id="DisableFirefoxStudies_Explain">If this policy is enabled, Firefox will never run SHIELD studies or do Heartbeat surveys.
+      <string id="DisableFirefoxStudies">Deshabilitar estudios de Firefox</string>
+      <string id="DisableFirefoxStudies_Explain">Si esta política está habilitada, Firefox nunca ejecutará estudios de SHIELD ni realizará encuestas de Heartbeat.
 
-If this policy is disabled or not configured, the user can choose to enable SHIELD studies or Heartbeat surveys.
+Si esta política está deshabilitada o no está configurada, el usuario puede elegir habilitar los estudios SHIELD o las encuestas Heartbeat.
 
 Para más información, visite https://support.mozilla.org/en-US/kb/shield y https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Deshabilitar el botón olvidar</string>
@@ -398,8 +398,8 @@ Si esta política está deshabilitada o no está configurada, se usa la configur
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Configuración automática de URL de proxy</string>
       <string id="AutoConfigURL_Explain">Estos solo debería establecerse si seleccionó autoConfig</string>
-      <string id="Passthrough">Proxy bypass URLs</string>
-      <string id="Passthrough_Explain">These should only be set if you selected manual proxy</string>
+      <string id="Passthrough">URLs proxy omitidas</string>
+      <string id="Passthrough_Explain">Esto solo debe configurarse si seleccionó proxy manual</string>
       <string id="Connection">Tipo de conexión</string>
       <string id="NoProxy">Sin proxy</string>
       <string id="SystemProxy">Usar la configuración de proxy del sistema</string>
@@ -495,7 +495,7 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <textBox refId="BookmarkURL">
           <label/>
         </textBox>
-        <text>URL de Favicon:</text>
+        <text>URL de favicon:</text>
         <textBox refId="BookmarkFavicon">
           <label/>
         </textBox>
