@@ -69,12 +69,22 @@ This policy removes access to about:support.
     "BlockAboutSupport": true
 }
 ```
-### DisableSetDesktopBackground
-This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
+### Bookmarks
+This policy allows you to specify bookmarks. You can have any number of bookmarks, although only ten are specified in the ADMX file.
+Placement can be specified as either toolbar or menu. If a folder is specified, it is automatically created and bookmarks with the
+same folder name are grouped together.
 ```
 {
   "policies": {
-    "DisableSetDesktopBackground": true
+    "Bookmarks": [
+      {
+        "Title": "Example",
+        "URL": "http://example.org",
+        "Favicon": "http://example.com/favicon.ico",
+        "Placement": ["toolbar", "menu"],
+        "Folder": "FolderName"
+      }
+    ]
   }
 }
 ```
@@ -102,6 +112,15 @@ This policy controls various settings related to cookies.
       "ExpireAtSessionEnd":  [true|false], /* This determines when cookies expire */
       "Locked": [true|false] /* If this is true, cookies preferences can't be changed */
     }
+  }
+}
+```
+### DisableSetDesktopBackground
+This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
+```
+{
+  "policies": {
+    "DisableSetDesktopBackground": true
   }
 }
 ```
@@ -430,23 +449,37 @@ This policy allows you to override the upgrade page. If you leave the URL blank,
   }
 }
 ```
-### Bookmarks
-This policy allows you to specify bookmarks. You can have any number of bookmarks, although only ten are specified in the ADMX file.
-Placement can be specified as either toolbar or menu. If a folder is specified, it is automatically created and bookmarks with the
-same folder name are grouped together.
-
+### Permissions
+This policy allows you to change the permissions associated with camera, microphone, location, and notifications
 ```
 {
   "policies": {
-    "Bookmarks": [
-      {
-        "Title": "Example",
-        "URL": "http://example.org",
-        "Favicon": "http://example.com/favicon.ico",
-        "Placement": ["toolbar", "menu"],
-        "Folder": "FolderName"
+    "Permissions": {
+      "Camera": {
+        "Allow": ["http://example.org/"], /* Origins where camera access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where camera access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the camera */
+        "Locked": [true|false] /* Don't allow the user to change the camera preferences */
+      },
+      "Microphone": {
+        "Allow": ["http://example.org/"], /* Origins where microphone access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where microphone access  is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access the microphone */
+        "Locked": [true|false] /* Don't allow the user to change the microphone preferences */
+      },
+      "Location": {
+        "Allow": ["http://example.org/"], /* Origins where location access is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where location access is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to access location */
+        "Locked": [true|false] /* Don't allow the user to change the location preferences */
+      },
+      "Notifications": {
+        "Allow": ["http://example.org/"], /* Origins where sending notifications is allowed by default */
+        "Block": ["http://example.org/"], /* Origins where sending notifications is blocked by default */
+        "BlockNewRequests": [true|false], /* Block new requests to send notifications */
+        "Locked": [true|false] /* Don't allow the user to change the notification preferences */
       }
-    ]
+    }
   }
 }
 ```
@@ -527,37 +560,14 @@ This policy allows you to add new search engines, remove or hide search engines,
   }
 }
 ```
-### Permissions
-This policy allows you to change the permissions associated with camera, microphone, location, and notifications
+### SecurityDevices
+This policy allows you to add PKCS #11 Modules
 ```
 {
   "policies": {
-    "Permissions": {
-      "Camera": {
-        "Allow": ["http://example.org/"], /* Origins where camera access is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where camera access is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to access the camera */
-        "Locked": [true|false] /* Don't allow the user to change the camera preferences */
-      },
-      "Microphone": {
-        "Allow": ["http://example.org/"], /* Origins where microphone access is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where microphone access  is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to access the microphone */
-        "Locked": [true|false] /* Don't allow the user to change the microphone preferences */
-      },
-      "Location": {
-        "Allow": ["http://example.org/"], /* Origins where location access is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where location access is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to access location */
-        "Locked": [true|false] /* Don't allow the user to change the location preferences */
-      },
-      "Notifications": {
-        "Allow": ["http://example.org/"], /* Origins where sending notifications is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where sending notifications is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to send notifications */
-        "Locked": [true|false] /* Don't allow the user to change the notification preferences */
-      }
-    }
+    "SecurityDevices": [
+      "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
+    ]
   }
 }
 ```
