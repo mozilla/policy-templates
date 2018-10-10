@@ -506,6 +506,15 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
   }
 }
 ```
+### RequestedLocales
+This policy sets the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+```
+{
+  "policies": {
+    "RequestedLocales": ["de", "en-US"]
+  }
+}
+```
 ### SanitizeOnShutdown
 If this policy is set to true,  all data is cleared when Firefox is closed. This includes Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
 ```
