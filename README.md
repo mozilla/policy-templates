@@ -115,6 +115,19 @@ This policy controls various settings related to cookies.
   }
 }
 ```
+### DNSOverHTTPS
+This policy configures DNS over HTTPS.
+```
+{
+  "policies": {
+    "DNSOverHTTPS": {
+      "Enabled": [true|false],
+      "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
+      "Locked": [true|false]
+    }
+  }
+}
+```
 ### DisableSetDesktopBackground
 This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
 ```
