@@ -519,15 +519,6 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
   }
 }
 ```
-### RequestedLocales
-This policy sets the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
-```
-{
-  "policies": {
-    "RequestedLocales": ["de", "en-US"]
-  }
-}
-```
 ### SanitizeOnShutdown
 If this policy is set to true,  all data is cleared when Firefox is closed. This includes Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
 ```
@@ -579,17 +570,6 @@ This policy allows you to add new search engines, remove or hide search engines,
       "PreventInstalls": [true|false],
       "Remove": ["Twitter", "Wikipedia (en)"]
     }
-  }
-}
-```
-### SecurityDevices
-This policy allows you to add PKCS #11 Modules
-```
-{
-  "policies": {
-    "SecurityDevices": [
-      "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
-    ]
   }
 }
 ```
