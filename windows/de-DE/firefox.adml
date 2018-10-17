@@ -6,7 +6,8 @@
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 oder höher</string>
       <string id="SUPPORTED_FF60">Firefox 60 oder höher</string>
-      <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
+      <string id="SUPPORTED_FF62">Firefox 62 oder höher, Firefox 60.2 ESR oder höher</string>
+      <string id="SUPPORTED_FF63">Firefox 63 oder höherr</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
@@ -80,6 +81,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer ein Master-Passwort vergeben.</string>
+      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+
+If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
       <string id="DisableAppUpdate">Update deaktivieren</string>
       <string id="DisableAppUpdate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird nicht nach Updates gesucht.
 
@@ -570,6 +575,14 @@ If this policy is disabled or not configured, search engines will not be removed
         </textBox>
         <checkBox refId="AutoLogin">Keine Authentifizierungsanfrage bei gespeichertem Passwort.</checkBox>
         <checkBox refId="UseProxyForDNS">Bei Verwendung von SOCKS v5 den Proxy für DNS-Anfragen verwenden.</checkBox>
+      </presentation>
+      <presentation id="DNSOverHTTPS">
+        <text>Provider URL:</text>
+        <textBox refId="ProviderURL">
+          <label/>
+        </textBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
