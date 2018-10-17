@@ -350,15 +350,15 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
 Si esta política está deshabilitada o no está configurada, no hay excepciones para el filtro de sitios web.
 
 A partir de Firefox 62, esta política solo funcionará desde la configuración del equipo.</string>
-      <string id="Bookmark1">Marcador 01</string>
-      <string id="Bookmark2">Marcador 02</string>
-      <string id="Bookmark3">Marcador 03</string>
-      <string id="Bookmark4">Marcador 04</string>
-      <string id="Bookmark5">Marcador 05</string>
-      <string id="Bookmark6">Marcador 06</string>
-      <string id="Bookmark7">Marcador 07</string>
-      <string id="Bookmark8">Marcador 08</string>
-      <string id="Bookmark9">Marcador 09</string>
+      <string id="Bookmark01">Marcador 01</string>
+      <string id="Bookmark02">Marcador 02</string>
+      <string id="Bookmark03">Marcador 03</string>
+      <string id="Bookmark04">Marcador 04</string>
+      <string id="Bookmark05">Marcador 05</string>
+      <string id="Bookmark06">Marcador 06</string>
+      <string id="Bookmark07">Marcador 07</string>
+      <string id="Bookmark08">Marcador 08</string>
+      <string id="Bookmark09">Marcador 09</string>
       <string id="Bookmark10">Marcador 10</string>
       <string id="Bookmark11">Marcador 11</string>
       <string id="Bookmark12">Marcador 12</string>
@@ -370,6 +370,36 @@ A partir de Firefox 62, esta política solo funcionará desde la configuración 
       <string id="Bookmark18">Marcador 18</string>
       <string id="Bookmark19">Marcador 19</string>
       <string id="Bookmark20">Marcador 20</string>
+      <string id="Bookmark21">Marcador 21</string>
+      <string id="Bookmark22">Marcador 22</string>
+      <string id="Bookmark23">Marcador 23</string>
+      <string id="Bookmark24">Marcador 24</string>
+      <string id="Bookmark25">Marcador 25</string>
+      <string id="Bookmark26">Marcador 26</string>
+      <string id="Bookmark27">Marcador 27</string>
+      <string id="Bookmark28">Marcador 28</string>
+      <string id="Bookmark29">Marcador 29</string>
+      <string id="Bookmark30">Marcador 30</string>
+      <string id="Bookmark31">Marcador 31</string>
+      <string id="Bookmark32">Marcador 32</string>
+      <string id="Bookmark33">Marcador 33</string>
+      <string id="Bookmark34">Marcador 34</string>
+      <string id="Bookmark35">Marcador 35</string>
+      <string id="Bookmark36">Marcador 36</string>
+      <string id="Bookmark37">Marcador 37</string>
+      <string id="Bookmark38">Marcador 38</string>
+      <string id="Bookmark39">Marcador 39</string>
+      <string id="Bookmark40">Marcador 40</string>
+      <string id="Bookmark41">Marcador 41</string>
+      <string id="Bookmark42">Marcador 42</string>
+      <string id="Bookmark43">Marcador 43</string>
+      <string id="Bookmark44">Marcador 44</string>
+      <string id="Bookmark45">Marcador 45</string>
+      <string id="Bookmark46">Marcador 46</string>
+      <string id="Bookmark47">Marcador 47</string>
+      <string id="Bookmark48">Marcador 48</string>
+      <string id="Bookmark49">Marcador 49</string>
+      <string id="Bookmark50">Marcador 50</string>
       <string id="Bookmark_Explain">Si esta política está habilitada, puede configurar que se agregue un marcador a Firefox. Debido a un error, debe seleccionar la ubicación. Tenga en cuenta que debe especificar los marcadores en orden.
 
 Si esta política está deshabilitada o no está configurada, no se agregará un nuevo marcador.</string>
