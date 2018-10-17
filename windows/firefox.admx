@@ -10,6 +10,8 @@
       <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)"/>
       <definition name="SUPPORTED_FF60" displayName="$(string.SUPPORTED_FF60)"/>
       <definition name="SUPPORTED_FF60ESR" displayName="$(string.SUPPORTED_FF60ESR)"/>
+      <definition name="SUPPORTED_FF62" displayName="$(string.SUPPORTED_FF62)"/>
+      <definition name="SUPPORTED_FF63" displayName="$(string.SUPPORTED_FF63)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -359,6 +361,29 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="DNSOverHTTPS" class="Both" displayName="$(string.DNSOverHTTPS)" explainText="$(string.DNSOverHTTPS_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.DNSOverHTTPS)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF63ESR" />
+      <elements >
+        <text id="ProviderURL" valueName="ProviderURL" />
+        <boolean id="DNSOverHTTPSEnabled" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Enabled">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="DNSOverHTTPSLocked" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Locked">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
     </policy>
     <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate">
       <parentCategory ref="firefox"/>

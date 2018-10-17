@@ -7,6 +7,7 @@
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o posterior</string>
       <string id="SUPPORTED_FF60">Firefox 60 o posterior, Firefox 60 ESR o posterior</string>
       <string id="SUPPORTED_FF62">Firefox 62 o posterior, Firefox 60.2 ESR o posterior</string>
+      <string id="SUPPORTED_FF63">Firefox 63 o posterior</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
@@ -80,6 +81,10 @@ Si esta política está deshabilitada o no está configurada, Firefox no leerá 
       <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
 
 Si esta política está deshabilitada o no está configurada, los usuarios pueden crear una contraseña maestra.</string>
+      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+
+If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
       <string id="DisableAppUpdate">Deshabilitar actualización</string>
       <string id="DisableAppUpdate_Explain">Si esta política está habilitada, el navegador no recibirá actualizaciones.
 
@@ -570,6 +575,14 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         </textBox>
         <checkBox refId="AutoLogin">No solicitar la autenticación si se guarda la contraseña.</checkBox>
         <checkBox refId="UseProxyForDNS">DNS proxy cuando se utiliza SOCKS v5.</checkBox>
+      </presentation>
+      <presentation id="DNSOverHTTPS">
+        <text>Provider URL:</text>
+        <textBox refId="ProviderURL">
+          <label/>
+        </textBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
       </presentation>
     </presentationTable>
   </resources>

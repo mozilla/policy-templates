@@ -7,6 +7,7 @@
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 or later</string>
       <string id="SUPPORTED_FF60">Firefox 60 or later, Firefox 60 ESR or later</string>
       <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
+      <string id="SUPPORTED_FF63">Firefox 63 or later</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -76,6 +77,10 @@ If this policy is disabled or not configured, users can set images as their desk
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
 If this policy is disabled or not configured, Firefox will not read certificates from the Windows certificate store.</string>
+      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+
+If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
       <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
       <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
 
@@ -600,6 +605,14 @@ If this policy is disabled or not configured, search engines will not be removed
         </textBox>
         <checkBox refId="AutoLogin">Do not prompt for authentication if password is saved.</checkBox>
         <checkBox refId="UseProxyForDNS">Proxy DNS when using SOCKS v5.</checkBox>
+      </presentation>
+      <presentation id="DNSOverHTTPS">
+        <text>Provider URL:</text>
+        <textBox refId="ProviderURL">
+          <label/>
+        </textBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
