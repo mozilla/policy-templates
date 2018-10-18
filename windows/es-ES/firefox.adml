@@ -81,10 +81,10 @@ Si esta política está deshabilitada o no está configurada, Firefox no leerá 
       <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
 
 Si esta política está deshabilitada o no está configurada, los usuarios pueden crear una contraseña maestra.</string>
-      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+      <string id="DNSOverHTTPS">Configurar DNS sobre HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se puede cambiar la configuración predeterminada de DNS sobre HTTPS.
 
-If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
+Si esta política está deshabilitada o no está configurada, DNS sobre HTTPS usa la configuración predeterminada de Firefox.</string>
       <string id="DisableAppUpdate">Deshabilitar actualización</string>
       <string id="DisableAppUpdate_Explain">Si esta política está habilitada, el navegador no recibirá actualizaciones.
 
@@ -548,7 +548,7 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <textBox refId="SearchEngine_URLTemplate">
           <label>Plantilla de URL:</label>
         </textBox>
-        <text>Method:</text>
+        <text>Método:</text>
         <dropdownList refId="SearchEngine_Method"/>
         <textBox refId="SearchEngine_IconURL">
           <label>Ícono de URL:</label>
@@ -607,12 +607,12 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <checkBox refId="UseProxyForDNS">DNS proxy cuando se utiliza SOCKS v5.</checkBox>
       </presentation>
       <presentation id="DNSOverHTTPS">
-        <text>Provider URL:</text>
+        <text>URL del proveedor:</text>
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Habilitar DNS sobre HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">No permitir que se cambien las preferencias de DNS sobre HTTPS.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
