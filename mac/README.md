@@ -20,11 +20,11 @@ For example, this policy:
 ```
 which would be set in the plist file like this:
 ```
-	<key>Homepage</key>
-	<dict>
-		<key>URL</key>
-		<string>http://example.com</string>
-    </dict>
+  <key>Homepage</key>
+  <dict>
+    <key>URL</key>
+    <string>http://example.com</string>
+  </dict>
 ```
 can be set via the command line like this:
 ```
