@@ -68,21 +68,21 @@
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Authentication_Delegated" class="Both" displayName="$(string.Authentication_Delegated)"  key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" explainText="$(string.Authentication_Delegated_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Authentication_NTLM" class="Both" displayName="$(string.Authentication_NTLM)"  key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" explainText="$(string.Authentication_NTLM_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
       </elements>
@@ -159,6 +159,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Certificates_Install" class="Both" displayName="$(string.Certificates_Install)" explainText="$(string.Certificates_Install_Explain)" key="Software\Policies\Mozilla\Certificates" presentation="$(presentation.Certificates_Install)" >
+      <parentCategory ref="Certificates" />
+      <supportedOn ref="SUPPORTED_FF64" />
+      <elements >
+        <list id="Certificates_Install" key="Software\Policies\Mozilla\Firefox\Certificates\Install" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="Cookies_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Cookies_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF60"/>
@@ -209,6 +216,16 @@
     <policy name="Cookies_ExpireAtSessionEnd" class="Both" displayName="$(string.Cookies_ExpireAtSessionEnd)" explainText="$(string.Cookies_ExpireAtSessionEnd_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="ExpireAtSessionEnd">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Cookies_RejectTracker" class="Both" displayName="$(string.Cookies_RejectTracker)" explainText="$(string.Cookies_RejectTracker_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="RejectTracker">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_FF64"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -387,7 +404,7 @@
     </policy>
     <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -557,7 +574,7 @@
     </policy>
     <policy name="DisableSystemAddonUpdate" class="Both" displayName="$(string.DisableSystemAddonUpdate)" explainText="$(string.DisableSystemAddonUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableSystemAddonUpdate">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -567,7 +584,7 @@
     </policy>
     <policy name="DisableTelemetry" class="Both" displayName="$(string.DisableTelemetry)" explainText="$(string.DisableTelemetry_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableTelemetry">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -597,21 +614,21 @@
     </policy>
     <policy name="Extensions_Install" class="Both" displayName="$(string.Extensions_Install)"  key="Software\Policies\Mozilla\Firefox\Extensions\Install" explainText="$(string.Extensions_Install_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Extensions_Uninstall" class="Both" displayName="$(string.Extensions_Uninstall)"  key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" explainText="$(string.Extensions_Uninstall_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Extensions_Locked" class="Both" displayName="$(string.Extensions_Locked)"  key="Software\Policies\Mozilla\Firefox\Extensions\Locked" explainText="$(string.Extensions_Locked_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
       </elements>
@@ -726,14 +743,14 @@
     </policy>
     <policy name="OverrideFirstRunPage" class="Both" displayName="$(string.OverrideFirstRunPage)" explainText="$(string.OverrideFirstRunPage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverridePage)" >
       <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <supportedOn ref="SUPPORTED_FF60" />
       <elements>
         <text id="OverridePage" valueName="OverrideFirstRunPage"/>
       </elements>
     </policy>
     <policy name="OverridePostUpdatePage" class="Both" displayName="$(string.OverridePostUpdatePage)" explainText="$(string.OverridePostUpdatePage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverridePage)" >
       <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <supportedOn ref="SUPPORTED_FF60" />
       <elements>
         <text id="OverridePage" valueName="OverridePostUpdatePage"/>
       </elements>
@@ -773,7 +790,7 @@
     </policy>
     <policy name="HomepageURL" class="Both" displayName="$(string.HomepageURL)" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <supportedOn ref="SUPPORTED_FF60" />
       <elements >
         <text id="HomepageURL" valueName="URL" required="true" />
         <boolean id="HomepageLocked" key="Software\Policies\Mozilla\Firefox\Homepage" valueName="Locked">
@@ -788,9 +805,32 @@
     </policy>
     <policy name="HomepageAdditional" class="Both" displayName="$(string.HomepageAdditional)" explainText="$(string.HomepageAdditional_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageAdditional)" >
       <parentCategory ref="Homepage" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <supportedOn ref="SUPPORTED_FF60" />
       <elements >
         <list id="HomepageAdditional" key="Software\Policies\Mozilla\Firefox\Homepage\Additional" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="HomepageStartPage" class="Both" displayName="$(string.HomepageStartPage)" explainText="$(string.HomepageStartPage_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.StartPage)" >
+      <parentCategory ref="Homepage" />
+      <supportedOn ref="SUPPORTED_FF64" />
+      <elements >
+        <enum id="StartPage" valueName="StartPage">
+          <item displayName="$(string.None)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.Homepage)">
+            <value>
+              <string>homepage</string>
+            </value>
+          </item>
+          <item displayName="$(string.PreviousSession)">
+            <value>
+              <string>previous-session</string>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
     <policy name="Bookmark01" class="Both" displayName="$(string.Bookmark01)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
@@ -1978,7 +2018,7 @@
     </policy>
     <policy name="SearchBar" class="Both" displayName="$(string.SearchBar)" explainText="$(string.SearchBar_Explain)" key="Software\Policies\Mozilla\Firefox"  presentation="$(presentation.SearchBar)">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <enum id="SearchBar" valueName="SearchBar">
           <item displayName="$(string.SearchBar_Unified)">
@@ -2017,7 +2057,7 @@
     <!-- Alphabetization is based on name, so had to add B -->
     <policy name="B_WebsiteFilter_Block" class="Both" displayName="$(string.WebsiteFilter_Block)" explainText="$(string.WebsiteFilter_Block_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Block" presentation="$(presentation.WebsiteFilter)">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Block" valuePrefix=""/>
       </elements>
@@ -2025,7 +2065,7 @@
     <!-- Alphabetization is based on name, so had to add B -->
     <policy name="B_WebsiteFilter_Exceptions" class="Both" displayName="$(string.WebsiteFilter_Exceptions)" explainText="$(string.WebsiteFilter_Exceptions_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Exceptions" presentation="$(presentation.WebsiteFilter)">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60ESR"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
       </elements>
@@ -2179,6 +2219,20 @@
       <supportedOn ref="SUPPORTED_FF62" />
       <elements >
         <text id="AppUpdateURL" valueName="AppUpdateURL" required="true" />
+      </elements>
+    </policy>
+    <policy name="SecurityDevices" class="Both" displayName="$(string.SecurityDevices)" explainText="$(string.SecurityDevices_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF64" />
+      <elements >
+        <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices" valuePrefix="" explicitValue="true"/>
+      </elements>
+    </policy>
+    <policy name="RequestedLocales" class="Both" displayName="$(string.RequestedLocales)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.RequestedLocales)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF64" />
+      <elements >
+        <list id="RequestedLocales" key="Software\Policies\Mozilla\Firefox\RequestedLocales" valuePrefix=""/>
       </elements>
     </policy>
   </policies>
