@@ -98,15 +98,15 @@ same folder name are grouped together.
 ### Certificates
 This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows. Certificates can be located in the following locations:
 - Windows
- - %USERPROFILE%\AppData\Local\Mozilla\Certificates
- - %USERPROFILE%\AppData\Roaming\Mozilla\Certificates
-* macOS
- - /Library/Application Support/Mozilla/Certificates
- - ~/Library/Application Support/Mozilla/Certificates
-* Linux
- - /usr/lib/mozilla/certificates
- - /usr/lib64/mozilla/certificates
- - ~/.mozilla/certificates
+  - %USERPROFILE%\AppData\Local\Mozilla\Certificates
+  - %USERPROFILE%\AppData\Roaming\Mozilla\Certificates
+- macOS
+  - /Library/Application Support/Mozilla/Certificates
+  - ~/Library/Application Support/Mozilla/Certificates
+- Linux
+  - /usr/lib/mozilla/certificates
+  - /usr/lib64/mozilla/certificates
+  - ~/.mozilla/certificates
  
 In Firefox 65, you can specify a fully qualified path.
 
