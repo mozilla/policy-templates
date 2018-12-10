@@ -7,7 +7,7 @@
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
       <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
       <string id="SUPPORTED_FF62">Firefox 62 o versione successiva, Firefox 60.2 ESR o versione successiva</string>
-      <string id="SUPPORTED_FF63">Firefox 63 versione successiva</string>
+      <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -81,10 +81,10 @@ Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i 
       <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
 
 Se questo criterio è disabilitato o non configurato, gli utenti possono creare una password principale.</string>
-      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+      <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
-If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
+Se questo criterio è disabilitato o non configurato, DNS su HTTPS utilizza la configurazione predefinita di Firefox.</string>
       <string id="DisableAppUpdate">Disabilita aggiornamenti</string>
       <string id="DisableAppUpdate_Explain">Se questo criterio è abilitato, il browser non riceverà aggiornamenti.
 
@@ -486,8 +486,8 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca non sa
         <listBox refId="Authentication"/>
       </presentation>
       <presentation id="Authentication_AllowNonFQDN">
-        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
-        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Consenti sempre NTLM su nomi di dominio non completamente qualificati</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Consenti sempre SPNEGO su nomi di dominio non completamente qualificati</checkBox>
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>
@@ -607,12 +607,12 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca non sa
         <checkBox refId="UseProxyForDNS">DNS proxy per SOCKS v5.</checkBox>
       </presentation>
       <presentation id="DNSOverHTTPS">
-        <text>Provider URL:</text>
+        <text>URL provider:</text>
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Abilita DNS su HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Non consentire la modifica delle preferenze relative a DNS su HTTPS.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
