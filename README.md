@@ -15,7 +15,14 @@ Policies are documented below.
 
 **Note**: though comments are used in this readme file for documentation, comments are not valid in actual JSON files. Remove all comments before attempting to deploy.
 
-Some of the policies were originally only available on the ESR for security reasons. As of Firefox 62, these policies are available outside of the ESR, but only via JSON file or a Local Machine-based Group Policy. User-based Group Policies are not allowed to set values for these policies. The descriptions below mark such policies as "Machine only".
+### AppUpdateURL
+This policy is for changing the URL used for application update
+```
+{
+  "AppUpdateURL": "http://yoursite.com"
+}
+```
+
 
 ### Authentication
 This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
@@ -89,12 +96,26 @@ same folder name are grouped together.
 }
 ```
 ### Certificates
-If this policy is set to any value, Firefox reads certificates from the system certificate store. This is currently only supported on Windows, but will be available on macOS with Firefox 63.
+This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows. Certificates can be located in the following locations:
+- Windows
+ - %USERPROFILE%\AppData\Local\Mozilla\Certificates
+ - %USERPROFILE%\AppData\Roaming\Mozilla\Certificates
+* macOS
+ - /Library/Application Support/Mozilla/Certificates
+ - ~/Library/Application Support/Mozilla/Certificates
+* Linux
+ - /usr/lib/mozilla/certificates
+ - /usr/lib64/mozilla/certificates
+ - ~/.mozilla/certificates
+ 
+In Firefox 65, you can specify a fully qualified path.
+
 ```
 {
   "policies": {
     "Certificates": {
-      "ImportEnterpriseRoots": true
+      "ImportEnterpriseRoots": true,
+      "Install": ["cert1.der", "cert2.pem"]
     }
   }
 }
@@ -110,6 +131,7 @@ This policy controls various settings related to cookies.
       "Default": [true|false], /* This sets the default value for "Accept cookies from websites" */
       "AcceptThirdParty": ["always", "never", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
       "ExpireAtSessionEnd":  [true|false], /* This determines when cookies expire */
+      "RejectTracker": [true|false], /* Only reject trackers */
       "Locked": [true|false] /* If this is true, cookies preferences can't be changed */
     }
   }
@@ -146,7 +168,7 @@ If this policy is set to true, the master password functionality is removed.
   }
 }
 ```
-### DisableAppUpdate (Machine only)
+### DisableAppUpdate
 This policy turns off application updates.
 ```
 {
@@ -284,7 +306,7 @@ This policy prevents the user from bypassing security in certain cases.
   }
 }
 ```
-### DisableSystemAddonUpdate (Machine only)
+### DisableSystemAddonUpdate
 This policy prevents system add-ons from being updated or installed.
 ```
 {
@@ -293,7 +315,7 @@ This policy prevents system add-ons from being updated or installed.
   }
 }
 ```
-### DisableTelemetry (Machine only)
+### DisableTelemetry
 This policy prevents the upload of telemetry data.
 
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
@@ -348,7 +370,7 @@ If Value is set to true, tracking protection is enabled by default in both the b
     }
 }
 ```
-### Extensions (Machine only)
+### Extensions
 This policy controls the installation, uninstallation and locking of extensions. Locked extensions cannot be disabled or uninstalled.
 For Install, you specify a list of URLs or paths.
 For Uninstall and Locked, you specify extension IDs.
@@ -389,8 +411,8 @@ This policy sets the signon.rememberSignons preference. It determines whether or
   }
 }
 ```
-### Homepage (Machine only)
-This policy sets the default homepage value. It can also be used to lock the homepage and add additional homepages.
+### Homepage
+This policy sets the default homepage value and the default start page.  It can also be used to lock the homepage or add additional homepages.
 ```
 {
   "policies": {
@@ -398,7 +420,8 @@ This policy sets the default homepage value. It can also be used to lock the hom
       "URL": "http://example.com/",
       "Locked": true,
       "Additional": ["http://example.org/",
-                     "http://example.edu/"]
+                     "http://example.edu/"],
+      "StartPage": ["none", "homepage", "previous-session"]
     }
   }
 }
@@ -444,7 +467,7 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
   }
 }
 ```
-### OverrideFirstRunPage (Machine only)
+### OverrideFirstRunPage
 This policy allows you to override the first run page. If you leave the URL blank, the first run page will not be displayed.
 ```
 {
@@ -453,7 +476,7 @@ This policy allows you to override the first run page. If you leave the URL blan
   }
 }
 ```
-### OverridePostUpdatePage (Machine only)
+### OverridePostUpdatePage
 This policy allows you to override the upgrade page. If you leave the URL blank, the upgrade page will not be displayed.
 ```
 {
@@ -519,6 +542,15 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
   }
 }
 ```
+### RequestedLocales
+This policy sets the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+```
+{
+  "policies": {
+    "RequestedLocales": ["de", "en-US"]
+  }
+}
+```
 ### SanitizeOnShutdown
 If this policy is set to true,  all data is cleared when Firefox is closed. This includes Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
 ```
@@ -537,7 +569,7 @@ This policy can be used to determine if the search bar is separate or combined w
   }
 }
 ```
-### WebsiteFilter (Machine only)
+### WebsiteFilter
 This policy blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 ```
 {
@@ -570,6 +602,17 @@ This policy allows you to add new search engines, remove or hide search engines,
       "PreventInstalls": [true|false],
       "Remove": ["Twitter", "Wikipedia (en)"]
     }
+  }
+}
+```
+### SecurityDevices
+This policy allows you to add PKCS #11 Modules
+```
+{
+  "policies": {
+    "SecurityDevices": [
+      "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
+    ]
   }
 }
 ```
