@@ -2178,7 +2178,7 @@
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF62" />
       <elements >
-        <text id="AppUpdateURL" valueName="URL" required="true" />
+        <text id="AppUpdateURL" valueName="AppUpdateURL" required="true" />
       </elements>
     </policy>
   </policies>
