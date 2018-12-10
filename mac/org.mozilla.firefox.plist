@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>EnterprisePoliciesEnabled</key>
-	<true/>
+	<false/>
 	<key>AppUpdateURL</key>
 	<string>https://www.example.com/update.xml</string>
 	<key>Authentication</key>
@@ -187,7 +187,7 @@
 	<key>Homepage</key>
 	<dict>
 		<key>URL</key>
-		<string>about:policies</string>
+		<string>http://example.com</string>
 		<key>Locked</key>
 		<true/>
 		<key>Additional</key>
