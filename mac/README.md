@@ -9,7 +9,7 @@ https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.
 If you want to set specific options from the command line, we also provide flattened shortcuts to any item that is nested in the plist file.
 
 For example, this policy:
-```
+```json
 {
   "policies": {
     "Homepage": {
@@ -19,18 +19,18 @@ For example, this policy:
 }
 ```
 which would be set in the plist file like this:
-```
+```plist
   <key>Homepage</key>
   <dict>
     <key>URL</key>
     <string>http://example.com</string>
   </dict>
 ```
-can be set via the command line like this:
-```
-defaults write org.mozilla.firefox Homepage__URL -string "http://example.com"
+Correctly writing the nested value with the `defaults` command can be hard, so you can flatten the keys by separating them with `__`, like this:
+```bash
+sudo defaults write /Library/Preferences/org.mozilla.firefox Homepage__URL -string "http://example.com"
 ```
 Before any command line policies will work, you need to enable policies like this:
-```
-defaults write org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
+```bash
+sudo defaults write /Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
 ```
