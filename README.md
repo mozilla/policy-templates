@@ -610,9 +610,9 @@ This policy allows you to add PKCS #11 Modules
 ```
 {
   "policies": {
-    "SecurityDevices": [
+    "SecurityDevices": {
       "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
-    ]
+    }
   }
 }
 ```
