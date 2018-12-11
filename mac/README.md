@@ -9,7 +9,7 @@ https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.
 If you want to set specific options from the command line, we also provide flattened shortcuts to any item that is nested in the plist file.
 
 For example, this policy:
-```
+```json
 {
   "policies": {
     "Homepage": {
@@ -19,7 +19,7 @@ For example, this policy:
 }
 ```
 which would be set in the plist file like this:
-```
+```plist
   <key>Homepage</key>
   <dict>
     <key>URL</key>
