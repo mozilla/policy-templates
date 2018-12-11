@@ -38,7 +38,7 @@ Si esta política está deshabilitada o no está configurada, se utiliza la URL 
 Si esta política está deshabilitada o no está configurada, no se permite que ningún sitio web participe en la autenticación SPNEGO con el navegador.
 
 Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
-      <string id="Authentication_Delegated">Delegado</string>
+      <string id="Authentication_Delegated">Delegar</string>
       <string id="Authentication_Delegated_Explain">Si esta política está habilitada, el navegador puede delegar la autorización del usuario al servidor para los sitios web especificados. Las entradas en la lista tienen el formato de midominio.com o https://miotrodominio.com.
 
 Si esta política está deshabilitada o no está configurada, el navegador no delegará la autorización del usuario al servidor para ningún sitio web.
@@ -78,10 +78,10 @@ Si esta política está deshabilitada o no está configurada, los usuarios puede
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si esta política está habilitada, Firefox leerá los certificados del almacén de certificados de Windows.
 
 Si esta política está deshabilitada o no está configurada, Firefox no leerá los certificados del almacén de certificados de Windows.</string>
-      <string id="Certificates_Install">Install Certificates</string>
-      <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
+      <string id="Certificates_Install">Instalar certificados</string>
+      <string id="Certificates_Install_Explain">Si esta política está habilitada, Firefox instalará los certificados listados en Firefox. Se verá en %USERPROFILE%\AppData\Local\Mozilla\Certificates y %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
-If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
+Si esta política está deshabilitada o no está configurada, Firefox no instalará certificados adicionales.</string>
       <string id="DisableMasterPasswordCreation">Deshabilitar la creación de contraseña maestra</string>
       <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
 
@@ -239,10 +239,10 @@ Esta configuración se ignora si esta política está deshabilitada o no está c
       <string id="Cookies_ExpireAtSessionEnd_Explain">Si esta política está habilitada y las cookies están permitidas, caducarán cuando se cierre Firefox.
 
 Esta configuración se ignora si esta política está deshabilitada o no está configurada, o si las cookies no están permitidas.</string>
-      <string id="Cookies_RejectTracker">Reject trackers</string>
-      <string id="Cookies_RejectTracker_Explain">If this policy is enabled and cookies are allowed, Firefox will reject tracker cookies by default.
+      <string id="Cookies_RejectTracker">Rechazar rastreadores</string>
+      <string id="Cookies_RejectTracker_Explain">Si esta política está habilitada y las cookies están permitidas, Firefox rechazará las cookies de rastreo de forma predeterminada.
 
-This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
+Esta configuración se ignora si esta política está deshabilitada o no está configurada o si las cookies no están permitidas.</string>
       <string id="Cookies_Locked">No permitir que se cambien las preferencias</string>
       <string id="Cookies_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de cookies.
 
@@ -261,7 +261,7 @@ Si esta política está deshabilitada o no está configurada, cualquier sitio qu
       <string id="Camera_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de la cámara.
 
 Si esta política está deshabilitada o no está configurada, el usuario puede cambiar sus preferencias de la cámara.</string>
-      <string id="Microphone_Allow_Explain">If this policy is enabled, access to the microphone is always allowed for the origins indicated.
+      <string id="Microphone_Allow_Explain">Si esta política está habilitada, el acceso al micrófono siempre está permitido para los orígenes indicados.
 
 Si esta política está deshabilitada o no está configurada, se sigue la política de micrófono predeterminada.</string>
       <string id="Microphone_Block_Explain">Si esta política está habilitada, el acceso al micrófono está bloqueado por los orígenes indicados.
@@ -408,13 +408,13 @@ Si esta política está deshabilitada o no está configurada, el usuario puede e
       <string id="HomepageAdditional_Explain">Si esta política está habilitada, puede tener páginas principales adicionales. Se abren en varias pestañas.
 
 Si esta política está deshabilitada o no está configurada, solo hay una página de inicio.</string>
-      <string id="HomepageStartPage">Start Page</string>
-      <string id="HomepageStartPage_Explain">If this policy is enabled, you can change what is displayed when Firefox starts. It can be the homepage, the previous session, or a blank page.
+      <string id="HomepageStartPage">Página de inicio</string>
+      <string id="HomepageStartPage_Explain">Si esta política está habilitada, puede cambiar lo que se muestra cuando se inicia Firefox. Puede ser la página de inicio, la sesión anterior o una página en blanco.
 
-If this policy is disabled or not configured, the start page defaults to the previous session.</string>
-      <string id="None">None</string>
-      <string id="Homepage">Homepage</string>
-      <string id="PreviousSession">Previous Session</string>
+Si esta política está deshabilitada o no está configurada, la página de inicio se establece de manera predeterminada en la sesión anterior.</string>
+      <string id="None">Ninguno</string>
+      <string id="Homepage">Página de inicio</string>
+      <string id="PreviousSession">Sesión anterior</string>
       <string id="Proxy">Configuración del proxy</string>
       <string id="Proxy_Explain">Si esta política está habilitada, puede configurar y bloquear la configuración de red.
 
@@ -439,14 +439,14 @@ Si esta política está deshabilitada o no está configurada, se usa la configur
 Si esta política está deshabilitada, la protección de rastreo se deshabilitará y se bloquea tanto en el navegador como en la navegación privada.
 
 Si esta política está habilitada, la navegación privada está habilitada de forma predeterminada tanto en el navegador como en la navegación privada y puede elegir si desea evitar que el usuario la cambie.</string>
-      <string id="RequestedLocales">Requested locale</string>
-      <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+      <string id="RequestedLocales">Solicitud de localización</string>
+      <string id="RequestedLocales_Explain">Si esta política está habilitada, puede especificar una lista de las localizaciones solicitadas para la aplicación en orden de preferencia. Esto hará que el paquete de idioma correspondiente se active.
 
-If this policy is disabled or not configured, the application will use the default locale.</string>
-      <string id="SecurityDevices">Security Devices</string>
-      <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
+Si esta política está deshabilitada o no está configurada, la aplicación utilizará la localización predeterminada.</string>
+      <string id="SecurityDevices">Dispositivos de seguridad</string>
+      <string id="SecurityDevices_Explain">Si esta política está habilitada, puede especificar una lista de los módulos PKCS #11 que se instalarán. Los módulos se especifican como un nombre y una ruta de acceso completa.
 
-If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
+Si esta política está deshabilitada o no está configurada, no se instalarán módulos adicionales de PKCS #11.</string>
       <string id="SearchBar">Ubicación de la barra de búsqueda</string>
       <string id="SearchBar_Explain">Si esta política está habilitada, puede establecer si la barra de búsqueda está separada de la barra de URL.
 
@@ -563,7 +563,7 @@ Si esta política está deshabilitada o no configurada, los motores de búsqueda
         <text>Método:</text>
         <dropdownList refId="SearchEngine_Method"/>
         <textBox refId="SearchEngine_IconURL">
-          <label>Ícono de URL:</label>
+          <label>Icono de URL:</label>
         </textBox>
         <textBox refId="SearchEngine_Alias">
           <label>Alias:</label>
