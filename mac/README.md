@@ -26,7 +26,7 @@ which would be set in the plist file like this:
     <string>http://example.com</string>
   </dict>
 ```
-As correctly writing nested values with the `defaults` command can be hard, Firefox also supports writing nested values by separating them with `__`, like this:
+Correctly writing the nested value with the `defaults` command can be hard, so you can flatten the keys by separating them with `__`, like this:
 ```bash
 sudo defaults write /Library/Preferences/org.mozilla.firefox Homepage__URL -string "http://example.com"
 ```
