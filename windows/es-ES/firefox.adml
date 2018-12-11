@@ -239,10 +239,10 @@ Esta configuración se ignora si esta política está deshabilitada o no está c
       <string id="Cookies_ExpireAtSessionEnd_Explain">Si esta política está habilitada y las cookies están permitidas, caducarán cuando se cierre Firefox.
 
 Esta configuración se ignora si esta política está deshabilitada o no está configurada, o si las cookies no están permitidas.</string>
-      <string id="Cookies_RejectTracker">Rechazar rastreadores</string>
-      <string id="Cookies_RejectTracker_Explain">Si esta política está habilitada y las cookies están permitidas, Firefox rechazará las cookies de rastreo de forma predeterminada.
+      <string id="Cookies_RejectTracker">Bloquear rastreadores</string>
+      <string id="Cookies_RejectTracker_Explain">Si esta política está habilitada y las cookies están permitidas, Firefox bloqueará las cookies de rastreo de forma predeterminada.
 
-Esta configuración se ignora si esta política está deshabilitada o no está configurada o si las cookies no están permitidas.</string>
+Esta configuración se ignora si esta política está deshabilitada o no está configurada, o si las cookies no están permitidas.</string>
       <string id="Cookies_Locked">No permitir que se cambien las preferencias</string>
       <string id="Cookies_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de cookies.
 
