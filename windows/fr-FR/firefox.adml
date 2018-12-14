@@ -17,7 +17,7 @@
       <string id="Location_group">Location</string>
       <string id="Notifications_group">Notifications</string>
       <string id="Authentication_group">Authentication</string>
-      <string id="Bookmarks_group">Bookmarks</string>
+      <string id="Bookmarks_group">Signets</string>
       <string id="Certificates_group">Certificats</string>
       <string id="Popups_group">Popups</string>
       <string id="Cookies_group">Cookies</string>
@@ -78,10 +78,10 @@ Si cette stratégie est désactivée ou non configurée, les utilisateurs peuven
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si cette stratégie est activée, Firefox lira les certificats à partir du magasin de certificats Windows.
 
 Si cette stratégie est désactivée ou non configurée, Firefox ne lira pas les certificats du magasin de certificats Windows.</string>
-      <string id="Certificates_Install">Install Certificates</string>
-      <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
+      <string id="Certificates_Install">Installation des Certificats</string>
+      <string id="Certificates_Install_Explain">Si cette stratégie est activée, Firefox installera les certificats répertoriés dans Firefox. Il recherchera dans %USERPROFILE%\AppData\Local\Mozilla\Certificates et %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
-If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
+Si cette stratégie est désactivée ou non configurée, Firefox n'installe pas de certificats supplémentaires.</string>
       <string id="DNSOverHTTPS">Configurer DNS sur HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Si cette stratégie est activée, la configuration par défaut de DNS sur HTTPS peut être modifiée.
 
@@ -239,10 +239,10 @@ Ce paramètre est ignoré si cette stratégie est désactivée ou non configuré
       <string id="Cookies_ExpireAtSessionEnd_Explain">Si cette stratégie est activée et que les cookies sont autorisés, ils expireront à la fermeture de Firefox.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés.</string>
-      <string id="Cookies_RejectTracker">Reject trackers</string>
-      <string id="Cookies_RejectTracker_Explain">If this policy is enabled and cookies are allowed, Firefox will reject tracker cookies by default.
+      <string id="Cookies_RejectTracker">Rejet des cookies de suivi</string>
+      <string id="Cookies_RejectTracker_Explain">Si cette stratégie est activée et que les cookies sont autorisés, Firefox rejettera les cookies de suivi par défaut.
 
-This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
+Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés..</string>
       <string id="Cookies_Locked">Ne pas autoriser la modification des préférences</string>
       <string id="Cookies_Locked_Explain">Si cette stratégie est activée, les préférences en matière de cookies ne peuvent pas être modifiées par l'utilisateur.
 
@@ -408,13 +408,13 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut déf
       <string id="HomepageAdditional_Explain">Si cette stratégie est activée, vous pouvez avoir des pages d'accueil supplémentaires. Ils sont ouverts dans plusieurs onglets.
 
 Si cette stratégie est désactivée ou non configurée, il n'y a qu'une seule page d'accueil.</string>
-      <string id="HomepageStartPage">Start Page</string>
-      <string id="HomepageStartPage_Explain">If this policy is enabled, you can change what is displayed when Firefox starts. It can be the homepage, the previous session, or a blank page.
+      <string id="HomepageStartPage">Page de démarrage </string>
+      <string id="HomepageStartPage_Explain">Si cette stratégie est activée, vous pouvez modifier ce qui est affiché au démarrage de Firefox. Il peut s'agir de la page d'accueil, de la session précédente ou d'une page vierge.
 
-If this policy is disabled or not configured, the start page defaults to the previous session.</string>
-      <string id="None">None</string>
-      <string id="Homepage">Homepage</string>
-      <string id="PreviousSession">Previous Session</string>
+Si cette stratégie est désactivée ou non configurée, la page de démarrage affiche par défaut la session précédente.</string>
+      <string id="None">Page vierge</string>
+      <string id="Homepage">Page d'accueil</string>
+      <string id="PreviousSession">Session précédente</string>
       <string id="Proxy">Paramètres du proxy</string>
       <string id="Proxy_Explain">Si cette stratégie est activée, vous pouvez configurer et verrouiller les paramètres réseau.
 
@@ -439,14 +439,14 @@ Si cette stratégie est désactivée ou non configurée, les paramètres réseau
 Si cette stratégie est désactivée, la protection de suivi est désactivée et verrouillée à la fois dans le navigateur et dans la navigation privée.
 
 Si cette stratégie est activée, la navigation privée est activée par défaut à la fois dans le navigateur et dans la navigation privée et vous pouvez choisir d’empêcher ou non l’utilisateur de la modifier.</string>
-      <string id="RequestedLocales">Requested locale</string>
-      <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+      <string id="RequestedLocales">liste des paramètres régionaux</string>
+      <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste des paramètres régionaux demandés pour l'application par ordre de préférence. Le module linguistique correspondant deviendra actif.
 
-If this policy is disabled or not configured, the application will use the default locale.</string>
-      <string id="SecurityDevices">Security Devices</string>
-      <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
+Si cette stratégie est désactivée ou non configurée, l'application utilisera les paramètres régionaux par défaut..</string>
+      <string id="SecurityDevices">Dispositif de sécurité</string>
+      <string id="SecurityDevices_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de modules PKCS#11 à installer. Les modules sont spécifiés sous la forme d'un nom et d'un chemin complet.
 
-If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
+Si cette stratégie est désactivée ou non configurée, aucun module PKCS#11 supplémentaire ne sera installé..</string>
       <string id="SearchBar">Emplacement de la barre de recherche</string>
       <string id="SearchBar_Explain">Si cette stratégie est activée, vous pouvez définir si la barre de recherche est distincte de la barre d'URL.
 
@@ -610,7 +610,7 @@ Si cette stratégie est désactivée ou non configurée, les moteurs de recherch
         <textBox refId="Passthrough">
           <label/>
         </textBox>
-        <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Exemple: .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>URL de configuration automatique du proxy:</text>
         <textBox refId="AutoConfigURL">
           <label/>
