@@ -7,7 +7,8 @@
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
       <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
       <string id="SUPPORTED_FF62">Firefox 62 o versione successiva, Firefox 60.2 ESR o versione successiva</string>
-      <string id="SUPPORTED_FF63">Firefox 63 versione successiva</string>
+      <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
+      <string id="SUPPORTED_FF64">Firefox 64 o versione successiva, Firefox 60.4 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -81,16 +82,18 @@ Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i 
       <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
 
 Se questo criterio è disabilitato o non configurato, gli utenti possono creare una password principale.</string>
-      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+      <string id="Certificates_Install">Install Certificates</string>
+      <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
-If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
+If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
+      <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
+
+Se questo criterio è disabilitato o non configurato, DNS su HTTPS utilizza la configurazione predefinita di Firefox.</string>
       <string id="DisableAppUpdate">Disabilita aggiornamenti</string>
       <string id="DisableAppUpdate_Explain">Se questo criterio è abilitato, il browser non riceverà aggiornamenti.
 
-Se questo criterio è disabilitato o non configurato, il browser riceverà aggiornamenti.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, il browser riceverà aggiornamenti.</string>
       <string id="DisableBuiltinPDFViewer">Disabilita visualizzatore PDF integrato (PDF.js)</string>
       <string id="DisableBuiltinPDFViewer_Explain">Se questo criterio è abilitato, i file PDF non sono visualizzati all'interno di Firefox.
 
@@ -156,17 +159,13 @@ Se questo criterio è disabilitato o non configurato, un utente può decidere di
       <string id="DisableSystemAddonUpdate">Disabilita aggiornamenti componenti aggiuntivi di sistema</string>
       <string id="DisableSystemAddonUpdate_Explain">Se questo criterio è abilitato, non saranno installati nuovi componenti aggiuntivi di sistema e i componenti aggiuntivi di sistema esistenti non saranno aggiornati.
 
-Se questo criterio è disabilitato o non configurato, i componenti aggiuntivi di sistema saranno installati e aggiornati.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, i componenti aggiuntivi di sistema saranno installati e aggiornati.</string>
       <string id="DisableTelemetry">Disabilita telemetria</string>
       <string id="DisableTelemetry_Explain">Se questo criterio è abilitato, la telemetria non è caricata.
 
 Se questo criterio è disabilitato o non configurato, la telemetria è raccolta e caricata.
 
-Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tramite la telemetria ci consentono di realizzare un prodotto migliore per le aziende come la tua.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tramite la telemetria ci consentono di realizzare un prodotto migliore per le aziende come la tua.</string>
       <string id="DisplayBookmarksToolbar">Visualizza barra degli strumenti Segnalibri</string>
       <string id="DisplayBookmarksToolbar_Explain">Se questo criterio è abilitato, la barra degli strumenti Segnalibri è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
@@ -183,22 +182,16 @@ Se questo criterio è disabilitato o non configurato, Firefox all'avvio controll
       <string id="Extensions_Install_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di URL o percorsi a estensioni che saranno installate all'avvio di Firefox.
 Le estensioni saranno reinstallate a ogni modifica dell'elenco.
 
-Se questo criterio è disabilitato o non configurato, non sarà installata alcuna estensione.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, non sarà installata alcuna estensione.</string>
       <string id="Extensions_Uninstall">Estensioni da disinstallare</string>
       <string id="Extensions_Uninstall_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID di estensioni da disinstallare.
 Le estensioni saranno disinstallate a ogni modifica dell'elenco.
 
-Se questo criterio è disabilitato o non configurato, non sarà disinstallata alcuna estensione.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, non sarà disinstallata alcuna estensione.</string>
       <string id="Extensions_Locked">Impedisci la disabilitazione o la rimozione delle estensioni</string>
       <string id="Extensions_Locked_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID delle estensioni che l'utente non sarà in grado di disinstallare o disabilitare.
 
-Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.</string>
       <string id="HardwareAcceleration">Accelerazione hardware</string>
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
@@ -246,6 +239,10 @@ Quest'impostazione è ignorata se questo criterio è disabilitato o non configur
       <string id="Cookies_ExpireAtSessionEnd_Explain">Se questo criterio è abilitato e i cookie sono consentiti, questi scadranno alla chiusura di Firefox.
 
 Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
+      <string id="Cookies_RejectTracker">Reject trackers</string>
+      <string id="Cookies_RejectTracker_Explain">If this policy is enabled and cookies are allowed, Firefox will reject tracker cookies by default.
+
+This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
       <string id="Cookies_Locked">Non consentire la modifica delle preferenze</string>
       <string id="Cookies_Locked_Explain">Se questo criterio è abilitato, le preferenze relative ai cookie non possono essere modificate dall'utente.
 
@@ -325,15 +322,11 @@ Se questo criterio è disabilitato o non configurato, l'utente può modificare l
       <string id="OverrideFirstRunPage">Esegui l'override della pagina visualizzata al primo avvio</string>
       <string id="OverrideFirstRunPage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare al primo avvio del browser. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina al primo avvio.
 
-Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.</string>
       <string id="OverridePostUpdatePage">Esegui l'override della pagina visualizzata dopo un aggiornamento</string>
       <string id="OverridePostUpdatePage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare dopo l'aggiornamento di Firefox. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina dopo l'aggiornamento.
 
-Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento verrà visualizzata la pagina predefinita.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento verrà visualizzata la pagina predefinita.</string>
       <string id="SanitizeOnShutdown">Cancella tutti i dati alla chiusura del browser</string>
       <string id="SanitizeOnShutdown_Explain">Se questo criterio è abilitato, tutti i dati saranno cancellati alla chiusura di Firefox. Ciò include la cronologia di navigazione e dei download, i cookie, gli accessi effettuati, la cache, la cronologia dei moduli e di ricerca, le preferenze e i dati non in linea dei siti Web.
 
@@ -341,15 +334,11 @@ Se questo criterio è disabilitato o non configurato, i dati non sono cancellati
       <string id="WebsiteFilter_Block">Siti Web bloccati</string>
       <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
 
-Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun sito.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun sito.</string>
       <string id="WebsiteFilter_Exceptions">Eccezioni ai siti Web bloccati</string>
       <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
 
-Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.</string>
       <string id="Bookmark01">Segnalibro 01</string>
       <string id="Bookmark02">Segnalibro 02</string>
       <string id="Bookmark03">Segnalibro 03</string>
@@ -414,15 +403,18 @@ Nota: questo criterio ha efficacia solo se è utilizzato prima della prima esecu
       <string id="HomepageURL">Indirizzo pagina iniziale</string>
       <string id="HomepageURL_Explain">Se questo criterio è abilitato, è possibile specificare una pagina iniziale predefinita. È anche possibile bloccare l'impostazione relativa alla pagina iniziale.
 
-Se questo criterio è disabilitato o non configurato, l'utente può impostare e modificare la pagina iniziale.
-
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+Se questo criterio è disabilitato o non configurato, l'utente può impostare e modificare la pagina iniziale.</string>
       <string id="HomepageAdditional">Pagine iniziali aggiuntive</string>
       <string id="HomepageAdditional_Explain">Se questo criterio è abilitato, è possibile avere pagine iniziali aggiuntive. Queste saranno aperte in schede multiple.
 
-Se questo criterio è disabilitato o non configurato, ci sarà una sola pagina iniziale.
+Se questo criterio è disabilitato o non configurato, ci sarà una sola pagina iniziale.</string>
+      <string id="HomepageStartPage">Start Page</string>
+      <string id="HomepageStartPage_Explain">If this policy is enabled, you can change what is displayed when Firefox starts. It can be the homepage, the previous session, or a blank page.
 
-A partire da Firefox 62 questo criterio funzionerà solo se impostato nella sezione Configurazione computer.</string>
+If this policy is disabled or not configured, the start page defaults to the previous session.</string>
+      <string id="None">None</string>
+      <string id="Homepage">Homepage</string>
+      <string id="PreviousSession">Previous Session</string>
       <string id="Proxy">Impostazioni proxy</string>
       <string id="Proxy_Explain">Se questo criterio è abilitato, è possibile configurare e bloccare le impostazioni di rete.
 
@@ -447,6 +439,14 @@ Se questo criterio è disabilitato o non configurato, saranno utilizzate le impo
 Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e bloccata sia nel browser, sia in Navigazione anonima.
 
 Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
+      <string id="RequestedLocales">Requested locale</string>
+      <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+
+If this policy is disabled or not configured, the application will use the default locale.</string>
+      <string id="SecurityDevices">Security Devices</string>
+      <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
+
+If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
       <string id="SearchBar">Posizione barra di ricerca</string>
       <string id="SearchBar_Explain">Se questo criterio è abilitato, è possibile impostare se la barra di ricerca sarà separata dalla barra degli indirizzi.
 
@@ -486,8 +486,17 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca non sa
         <listBox refId="Authentication"/>
       </presentation>
       <presentation id="Authentication_AllowNonFQDN">
-        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
-        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Consenti sempre NTLM su nomi di dominio non completamente qualificati</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Consenti sempre SPNEGO su nomi di dominio non completamente qualificati</checkBox>
+      </presentation>
+      <presentation id="Certificates_Install">
+        <listBox refId="Certificates_Install"/>
+      </presentation>
+      <presentation id="RequestedLocales">
+        <listBox refId="RequestedLocales"/>
+      </presentation>
+      <presentation id="SecurityDevices">
+        <listBox refId="SecurityDevices"/>
       </presentation>
       <presentation id="Extensions">
         <listBox refId="Extensions"/>
@@ -520,6 +529,9 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca non sa
       </presentation>
       <presentation id="HomepageAdditional">
         <listBox refId="HomepageAdditional">Pagine iniziali aggiuntive</listBox>
+      </presentation>
+      <presentation id="StartPage">
+        <dropdownList refId="StartPage"/>
       </presentation>
       <presentation id="Bookmark">
         <text>Titolo:</text>
@@ -607,12 +619,12 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca non sa
         <checkBox refId="UseProxyForDNS">DNS proxy per SOCKS v5.</checkBox>
       </presentation>
       <presentation id="DNSOverHTTPS">
-        <text>Provider URL:</text>
+        <text>URL provider:</text>
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Abilita DNS su HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Non consentire la modifica delle preferenze relative a DNS su HTTPS.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
