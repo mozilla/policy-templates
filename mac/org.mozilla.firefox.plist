@@ -92,6 +92,8 @@
 		<string>never</string>
 		<key>ExpireAtSessionEnd</key>
 		<true/>
+		<key>RejectTracker</key>
+		<true/>		
 		<key>Locked</key>
 		<true/>
 	</dict>
