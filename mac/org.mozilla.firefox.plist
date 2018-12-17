@@ -181,6 +181,10 @@
 		<array>
 			<string>https://www.example.org</string>
 		</array>
+		<key>Default</key>
+		<true/>
+		<key>Locked</key>
+		<true/>
 	</dict>
 	<key>HardwareAcceleration</key>
 	<false/>
