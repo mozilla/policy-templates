@@ -96,7 +96,13 @@ same folder name are grouped together.
 }
 ```
 ### Certificates
-This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows. Certificates can be located in the following locations:
+This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows.
+
+The ImportEnterpriseRoots key will cause Firefox to import from the system certificate store.
+
+The Install key by default will search for certificates in the locations listed below. Starting in Firefox 65, you can specify a fully qualified path (see cert3.der and cert4.pem in example). If Firefox does not find something at your fully qualified path, it will search the default directories.
+
+Certificates can be located in the following locations:
 - Windows
   - %USERPROFILE%\AppData\Local\Mozilla\Certificates
   - %USERPROFILE%\AppData\Roaming\Mozilla\Certificates
@@ -107,15 +113,14 @@ This policy can be used to install certificates or to read certificates from the
   - /usr/lib/mozilla/certificates
   - /usr/lib64/mozilla/certificates
   - ~/.mozilla/certificates
- 
-In Firefox 65, you can specify a fully qualified path.
+
 
 ```
 {
   "policies": {
     "Certificates": {
       "ImportEnterpriseRoots": true,
-      "Install": ["cert1.der", "cert2.pem"]
+      "Install": ["cert1.der", "cert2.pem", "%SYSTEMDRIVE%\Company\cert3.der", "/Library/Company/cert4.pem"]
     }
   }
 }
