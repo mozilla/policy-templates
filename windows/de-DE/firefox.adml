@@ -7,8 +7,8 @@
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 oder höher</string>
       <string id="SUPPORTED_FF60">Firefox 60 oder höher</string>
       <string id="SUPPORTED_FF62">Firefox 62 oder höher, Firefox 60.2 ESR oder höher</string>
-      <string id="SUPPORTED_FF63">Firefox 63 oder höherr</string>
-      <string id="SUPPORTED_FF64">Firefox 64 oder höherr, Firefox 60.4 ESR oder höher</string>
+      <string id="SUPPORTED_FF63">Firefox 63 oder höher</string>
+      <string id="SUPPORTED_FF64">Firefox 64 oder höher, Firefox 60.4 ESR oder höher</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
