@@ -82,10 +82,10 @@ Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i 
       <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
 
 Se questo criterio è disabilitato o non configurato, gli utenti possono creare una password principale.</string>
-      <string id="Certificates_Install">Install Certificates</string>
-      <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
+      <string id="Certificates_Install">Installa certificati</string>
+      <string id="Certificates_Install_Explain">Se questo criterio è abilitato, Firefox installerà i certificati elencati in Firefox. Questi saranno cercati in %USERPROFILE%\AppData\Local\Mozilla\Certificates e in %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
-If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
+Se questo criterio è disabilitato o non configurato, Firefox non installerà certificati aggiuntivi.</string>
       <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
@@ -239,10 +239,10 @@ Quest'impostazione è ignorata se questo criterio è disabilitato o non configur
       <string id="Cookies_ExpireAtSessionEnd_Explain">Se questo criterio è abilitato e i cookie sono consentiti, questi scadranno alla chiusura di Firefox.
 
 Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
-      <string id="Cookies_RejectTracker">Reject trackers</string>
-      <string id="Cookies_RejectTracker_Explain">If this policy is enabled and cookies are allowed, Firefox will reject tracker cookies by default.
+      <string id="Cookies_RejectTracker">Rifiuta elementi traccianti</string>
+      <string id="Cookies_RejectTracker_Explain">Se questo criterio è abilitato e i cookie sono consentiti, Firefox rifiuterà gli elementi traccianti per impostazione predefinita.
 
-This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
+Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
       <string id="Cookies_Locked">Non consentire la modifica delle preferenze</string>
       <string id="Cookies_Locked_Explain">Se questo criterio è abilitato, le preferenze relative ai cookie non possono essere modificate dall'utente.
 
@@ -408,13 +408,13 @@ Se questo criterio è disabilitato o non configurato, l'utente può impostare e 
       <string id="HomepageAdditional_Explain">Se questo criterio è abilitato, è possibile avere pagine iniziali aggiuntive. Queste saranno aperte in schede multiple.
 
 Se questo criterio è disabilitato o non configurato, ci sarà una sola pagina iniziale.</string>
-      <string id="HomepageStartPage">Start Page</string>
-      <string id="HomepageStartPage_Explain">If this policy is enabled, you can change what is displayed when Firefox starts. It can be the homepage, the previous session, or a blank page.
+      <string id="HomepageStartPage">Pagina iniziale</string>
+      <string id="HomepageStartPage_Explain">Se questo criterio è abilitato, è possibile modificare la pagina visualizzata all'avvio di Firefox. Si può scegliere la pagina iniziale, la sessione precedente o una pagina vuota.
 
-If this policy is disabled or not configured, the start page defaults to the previous session.</string>
-      <string id="None">None</string>
-      <string id="Homepage">Homepage</string>
-      <string id="PreviousSession">Previous Session</string>
+Se questo criterio è disabilitato o non configurato, per impostazione predefinita come pagina iniziale verrà visualizzata la sessione precedente.</string>
+      <string id="None">Nessuna</string>
+      <string id="Homepage">Pagina iniziale</string>
+      <string id="PreviousSession">Sessione precedente</string>
       <string id="Proxy">Impostazioni proxy</string>
       <string id="Proxy_Explain">Se questo criterio è abilitato, è possibile configurare e bloccare le impostazioni di rete.
 
@@ -439,14 +439,14 @@ Se questo criterio è disabilitato o non configurato, saranno utilizzate le impo
 Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e bloccata sia nel browser, sia in Navigazione anonima.
 
 Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
-      <string id="RequestedLocales">Requested locale</string>
-      <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+      <string id="RequestedLocales">Lingua richiesta</string>
+      <string id="RequestedLocales_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di lingue richieste per l'applicazione in ordine di preferenza. Il pacchetto lingue corrispondente sarà attivato.
 
-If this policy is disabled or not configured, the application will use the default locale.</string>
-      <string id="SecurityDevices">Security Devices</string>
-      <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
+Se questo criterio è disabilitato o non configurato, l'applicazione utilizzerà la lingua predefinita.</string>
+      <string id="SecurityDevices">Dispositivi di sicurezza</string>
+      <string id="SecurityDevices_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di moduli PKCS #11 da installare. I moduli devono essere specificati come nome e percorso completo.
 
-If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
+Se questo criterio è disabilitato o non configurato, non sarà installato alcun modulo PKCS #11 aggiuntivo.</string>
       <string id="SearchBar">Posizione barra di ricerca</string>
       <string id="SearchBar_Explain">Se questo criterio è abilitato, è possibile impostare se la barra di ricerca sarà separata dalla barra degli indirizzi.
 
