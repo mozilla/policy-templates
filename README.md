@@ -100,7 +100,14 @@ This policy can be used to install certificates or to read certificates from the
 
 The ImportEnterpriseRoots key will cause Firefox to import from the system certificate store.
 
-The Install key by default will search for certificates in the locations listed below. Starting in Firefox 65, you can specify a fully qualified path (see cert3.der and cert4.pem in example). If Firefox does not find something at your fully qualified path, it will search the default directories.
+The Install Certificates key by default will search for certificates in the locations listed below. 
+Starting in Firefox 65 you can specify a fully qualified path including UNC. (See cert3.der and cert4.pem, in example).
+
+**Be advised if you wish to load a certificate from a UNC path you must use double backslahes.**
+Example: \\SERVER\\CERTS\CERT5.PEM
+
+
+If Firefox does not find something at your fully qualified path, it will search the default directories.
 
 Certificates can be located in the following locations:
 - Windows
@@ -120,7 +127,7 @@ Certificates can be located in the following locations:
   "policies": {
     "Certificates": {
       "ImportEnterpriseRoots": true,
-      "Install": ["cert1.der", "cert2.pem", "%SYSTEMDRIVE%\Company\cert3.der", "/Library/Company/cert4.pem"]
+      "Install": ["cert1.der", "cert2.pem", "%SYSTEMDRIVE%\Company\cert3.der", "/Library/Company/cert4.pem", "\\server\\certs\\cert.pem"]
     }
   }
 }
