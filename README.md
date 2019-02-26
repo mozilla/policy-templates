@@ -396,6 +396,7 @@ For Uninstall and Locked, you specify extension IDs.
       "Uninstall": ["addon_id@mozilla.org"],
       "Locked":  ["addon_id@mozilla.org"]
     }
+  }
 }
 ```
 ### HardwareAcceleration
