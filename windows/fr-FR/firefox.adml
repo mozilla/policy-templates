@@ -14,9 +14,9 @@
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
       <string id="Microphone_group">Microphone</string>
-      <string id="Location_group">Location</string>
+      <string id="Location_group">Localisation</string>
       <string id="Notifications_group">Notifications</string>
-      <string id="Authentication_group">Authentication</string>
+      <string id="Authentication_group">Authentification</string>
       <string id="Bookmarks_group">Signets</string>
       <string id="Certificates_group">Certificats</string>
       <string id="Popups_group">Popups</string>
