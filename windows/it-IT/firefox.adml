@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.3" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -9,6 +9,7 @@
       <string id="SUPPORTED_FF62">Firefox 62 o versione successiva, Firefox 60.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
       <string id="SUPPORTED_FF64">Firefox 64 o versione successiva, Firefox 60.4 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF66">Firefox 66 o versione successiva, Firefox 60.6 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -475,6 +476,18 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
       <string id="SearchEngines_Remove_Explain">Se questo criterio è abilitato, è possibile specificare i nomi dei motori di ricerca da rimuovere o nascondere.
 
 Se questo criterio è disabilitato o non configurato, i motori di ricerca non saranno né rimossi né nascosti.</string>
+      <string id="SSLVersionMin">Minimum SSL version enabled</string>
+      <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
+
+If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
+      <string id="SSLVersionMax">Maximum SSL version enabled</string>
+      <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
+
+If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
+      <string id="TLS1">TLS 1.0</string>
+      <string id="TLS1_1">TLS 1.1</string>
+      <string id="TLS1_2">TLS 1.2</string>
+      <string id="TLS1_3">TLS 1.3</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -625,6 +638,9 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca non sa
         </textBox>
         <checkBox refId="DNSOverHTTPSEnabled">Abilita DNS su HTTPS.</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">Non consentire la modifica delle preferenze relative a DNS su HTTPS.</checkBox>
+      </presentation>
+      <presentation id="SSLVersion">
+        <dropdownList refId="SSLVersion"/>
       </presentation>
     </presentationTable>
   </resources>
