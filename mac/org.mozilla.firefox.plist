@@ -335,5 +335,9 @@
 		<key>NAME_OF_DEVICE</key>
 		<string>PATH_TO_LIBRARY_FOR_DEVICE</string>
 	</dict>
+	<key>SSLMinVersion</key>
+	<string>tls1.2</string>
+	<key>SSLMaxVersion</key>
+	<string>tls1.3</string>
 </dict>
 </plist>

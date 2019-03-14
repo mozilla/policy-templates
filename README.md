@@ -630,4 +630,23 @@ This policy allows you to add PKCS #11 Modules
     }
   }
 }
+### SSLVersionMin
+This policy allows you to set the minimum TLS version.
+```
+{
+  "policies": {
+    "SSSLVersionMin": ["tls1", "tls1.1", "tls1.2",. "tls1.3"]
+  }
+}
+
+```
+### SSLVersionMax
+This policy allows you to set the maximum TLS version.
+```
+{
+  "policies": {
+    "SSSLVersionMax": ["tls1", "tls1.1", "tls1.2",. "tls1.3"]
+  }
+}
+
 ```

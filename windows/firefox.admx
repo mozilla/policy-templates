@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="1.3" schemaVersion="1.0">
+<policyDefinitions revision="1.4" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="1.3"/>
+  <resources minRequiredRevision="1.4"/>
   <supportedOn>
     <definitions>
       <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)"/>
@@ -12,6 +12,8 @@
       <definition name="SUPPORTED_FF60ESR" displayName="$(string.SUPPORTED_FF60ESR)"/>
       <definition name="SUPPORTED_FF62" displayName="$(string.SUPPORTED_FF62)"/>
       <definition name="SUPPORTED_FF63" displayName="$(string.SUPPORTED_FF63)"/>
+      <definition name="SUPPORTED_FF64" displayName="$(string.SUPPORTED_FF64)"/>
+      <definition name="SUPPORTED_FF66" displayName="$(string.SUPPORTED_FF66)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -2235,5 +2237,62 @@
         <list id="RequestedLocales" key="Software\Policies\Mozilla\Firefox\RequestedLocales" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="SSLVersionMin" class="Both" displayName="$(string.SSLVersionMin)" explainText="$(string.SSLVersionMin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersion)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF66" />
+      <elements >
+        <enum id="SSLVersion" valueName="SSLVersionMin">
+          <item displayName="$(string.TLS1)">
+            <value>
+              <string>tls1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLS1_1)">
+            <value>
+              <string>tls1.1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLS1_2)">
+            <value>
+              <string>tls1.2</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLS1_3)">
+            <value>
+              <string>tls1.3</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SSLVersionMax" class="Both" displayName="$(string.SSLVersionMax)" explainText="$(string.SSLVersionMax_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersion)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF66" />
+      <elements >
+        <enum id="SSLVersion" valueName="SSLVersionMax">
+          <item displayName="$(string.TLS1)">
+            <value>
+              <string>tls1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLS1_1)">
+            <value>
+              <string>tls1.1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLS1_2)">
+            <value>
+              <string>tls1.2</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLS1_3)">
+            <value>
+              <string>tls1.3</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
+
