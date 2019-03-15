@@ -475,15 +475,15 @@ Si esta política está deshabilitada o no está configurada, los motores de bú
       <string id="SearchEngines_Remove">Borrar motores de búsqueda</string>
       <string id="SearchEngines_Remove_Explain">Si esta política está habilitada, puede especificar los nombres de los motores que se borrarán u ocultarán.
 
-Si esta política está deshabilitada o no configurada, los motores de búsqueda no se borrarán ni se ocultarán.</string>
-      <string id="SSLVersionMin">Minimum SSL version enabled</string>
-      <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
+Si esta política está deshabilitada o no está configurada, los motores de búsqueda no se borrarán ni se ocultarán.</string>
+      <string id="SSLVersionMin">Versión mínima de SSL habilitada</string>
+      <string id="SSLVersionMin_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS inferiores al valor especificado.
 
-If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
-      <string id="SSLVersionMax">Maximum SSL version enabled</string>
-      <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
+Si esta política está deshabilitada o no está configurada, Firefox se establece de manera predeterminada un mínimo de TLS 1.0.</string>
+      <string id="SSLVersionMax">Versión máxima de SSL habilitada</string>
+      <string id="SSLVersionMax_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS superiores al valor especificado.
 
-If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
+Si esta política está deshabilitada o no está configurada, Firefox establece de manera predeterminada un máximo de TLS 1.3.</string>
       <string id="TLS1">TLS 1.0</string>
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
@@ -636,8 +636,8 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">Habilitar DNS sobre HTTPS.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">No permitir que se cambien las preferencias de DNS sobre HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Habilitar DNS a través de HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">No permitir que se cambien las preferencias de DNS a través de HTTPS.</checkBox>
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
