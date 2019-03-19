@@ -476,14 +476,14 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
       <string id="SearchEngines_Remove_Explain">Se questo criterio è abilitato, è possibile specificare i nomi dei motori di ricerca da rimuovere o nascondere.
 
 Se questo criterio è disabilitato o non configurato, i motori di ricerca non saranno né rimossi né nascosti.</string>
-      <string id="SSLVersionMin">Minimum SSL version enabled</string>
-      <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
+      <string id="SSLVersionMin">Abilita versione minima SSL</string>
+      <string id="SSLVersionMin_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS minori del valore specificato.
 
-If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
-      <string id="SSLVersionMax">Maximum SSL version enabled</string>
-      <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
+Se questo criterio è disabilitato o non configurato, per impostazione predefinita Firefox utilizzerà TLS 1.0 come versione minima.</string>
+      <string id="SSLVersionMax">Abilita versione massima SSL</string>
+      <string id="SSLVersionMax_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS maggiori del valore specificato.
 
-If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
+Se questo criterio è disabilitato o non configurato, per impostazione predefinita Firefox utilizzerà TLS 1.3 come versione massima.</string>
       <string id="TLS1">TLS 1.0</string>
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
