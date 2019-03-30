@@ -46,9 +46,9 @@ Si esta política está deshabilitada o no está configurada, el navegador no de
 
 Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_NTLM">NTLM</string>
-      <string id="Authentication_NTLM_Explain">Si esta política está habilitada, se confía en que los sitios web especificados que utilicen la autentificación NTLM. Las entradas en la lista tienen el formato de midominio.com o https://miotrodominio.com.
+      <string id="Authentication_NTLM_Explain">Si esta política está habilitada, se confía en que los sitios web especificados que utilicen la autenticación NTLM. Las entradas en la lista tienen el formato de midominio.com o https://miotrodominio.com.
 
-Si esta política está deshabilitada o no está configurada, no se confía en que los sitios web utilicen la autentificación NTLM.
+Si esta política está deshabilitada o no está configurada, no se confía en que los sitios web utilicen la autenticación NTLM.
 
 Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Permitir que no sean FQDN</string>
@@ -87,10 +87,10 @@ Si esta política está deshabilitada o no está configurada, Firefox no instala
       <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
 
 Si esta política está deshabilitada o no está configurada, los usuarios pueden crear una contraseña maestra.</string>
-      <string id="DNSOverHTTPS">Configurar DNS sobre HTTPS</string>
-      <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se puede cambiar la configuración predeterminada de DNS sobre HTTPS.
+      <string id="DNSOverHTTPS">Configurar DNS mediante HTTPS</string>
+      <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se puede cambiar la configuración predeterminada de DNS mediante HTTPS.
 
-Si esta política está deshabilitada o no está configurada, DNS sobre HTTPS usa la configuración predeterminada de Firefox.</string>
+Si esta política está deshabilitada o no está configurada, DNS mediante HTTPS usa la configuración predeterminada de Firefox.</string>
       <string id="DisableAppUpdate">Deshabilitar actualización</string>
       <string id="DisableAppUpdate_Explain">Si esta política está habilitada, el navegador no recibirá actualizaciones.
 
