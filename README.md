@@ -95,6 +95,14 @@ same folder name are grouped together.
   }
 }
 ```
+### CaptivePortal
+This policy enables or disables captive portal support by setting and locking the preference `network.captive-portal-service.enabled`.
+```
+{
+  "policies": {
+    "CaptivePortal": [true|false]
+}
+```
 ### Certificates
 This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows.
 
@@ -399,6 +407,14 @@ For Uninstall and Locked, you specify extension IDs.
   }
 }
 ```
+### ExtensionUpdate
+This policy enables or disables extension updates by setting and locking the preference `extensions.update.enabled`.
+```
+{
+  "policies": {
+    "ExtensionUpdate": [true|false]
+}
+```
 ### HardwareAcceleration
 This policy disables hardware acceleration by locking the preference layers.acceleration.disabled to true.
 ```
@@ -480,6 +496,14 @@ This policy sets the behavior of Flash on the specified domains, as well as the 
       "Locked": [true|false]
     }
   }
+}
+```
+### NetworkPrediction
+This policy enables or disables network prediction (DNS prefetching) by setting and locking the preferences `network.dns.disablePrefetch` and `network.dns.disablePrefetchFromHTTPS`.
+```
+{
+  "policies": {
+    "NetworkPrediction": [true|false]
 }
 ```
 ### OverrideFirstRunPage

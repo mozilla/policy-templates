@@ -66,6 +66,8 @@
 			<string>Example2Folder</string>
 		</dict>
 	</array>
+	<key>CaptivePortal</key>
+	<false/>
 	<key>Certificates</key>
 	<dict>
 		<key>ImportEnterpriseRoots</key>
@@ -173,6 +175,8 @@
 			<string>firefox@ghostery.com</string>
 		</array>
 	</dict>
+	<key>ExtensionUpdate</key>
+	<false/>
 	<key>FlashPlugin</key>
 	<dict>
 		<key>Allow</key>
@@ -215,6 +219,8 @@
 		<key>Default</key>
 		<false/>
 	</dict>
+	<key>NetworkPrediction</key>
+	<false/>
 	<key>NoDefaultBookmarks</key>
 	<true/>
 	<key>OfferToSaveLogins</key>
