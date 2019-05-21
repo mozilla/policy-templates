@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 or later</string>
       <string id="SUPPORTED_FF64">Firefox 64 or later, Firefox 60.4 ESR or later</string>
       <string id="SUPPORTED_FF66">Firefox 66 or later, Firefox 60.6 ESR or later</string>
+      <string id="SUPPORTED_FF67">Firefox 67 or later, Firefox 60.7 ESR or later</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -75,6 +76,10 @@ If this policy is disabled or not configured, the user can access Troubleshootin
       <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user cannot set an image as their desktop background.
 
 If this policy is disabled or not configured, users can set images as their desktop background.</string>
+      <string id="CaptivePortal">Captive Portal</string>
+      <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
+
+If this policy is enabled or not configured, captive portal support is enabled.</string>
       <string id="Certificates_ImportEnterpriseRoots">Import Enterprise Roots</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">If this policy is enabled, Firefox will read certificates from the Windows certificate store.
 
@@ -193,10 +198,18 @@ If this policy is disabled or not configured, no extensions are uninstalled.</st
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
 If this policy is disabled or not configured, no extensions are locked</string>
+      <string id="ExtensionUpdate">Extension Update</string>
+      <string id="ExtensionUpdate_Explain">If this policy is disabled, extensions will not be updated automatically.
+
+If this policy is enabled or not configured, extensions will be updated automatically.</string>
       <string id="HardwareAcceleration">Hardware Acceleration</string>
       <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
 
 If this policy is enabled or not configured, hardware acceleration is enabled.</string>
+      <string id="NetworkPrediction">Network Prediction</string>
+      <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
+
+If this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.</string>
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 

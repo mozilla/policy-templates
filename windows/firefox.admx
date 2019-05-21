@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="1.4" schemaVersion="1.0">
+<policyDefinitions revision="1.5" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
@@ -14,6 +14,7 @@
       <definition name="SUPPORTED_FF63" displayName="$(string.SUPPORTED_FF63)"/>
       <definition name="SUPPORTED_FF64" displayName="$(string.SUPPORTED_FF64)"/>
       <definition name="SUPPORTED_FF66" displayName="$(string.SUPPORTED_FF66)"/>
+      <definition name="SUPPORTED_FF67" displayName="$(string.SUPPORTED_FF67)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -144,6 +145,16 @@
     <policy name="BlockAboutSupport" class="Both" displayName="$(string.BlockAboutSupport)" explainText="$(string.BlockAboutSupport_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutSupport">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="CaptivePortal" class="Both" displayName="$(string.CaptivePortal)" explainText="$(string.CaptivePortal_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CaptivePortal">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF67"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -655,6 +666,26 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="ExtensionUpdate" class="Both" displayName="$(string.ExtensionUpdate)" explainText="$(string.ExtensionUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="ExtensionUpdate">
+      <parentCategory ref="Extensions"/>
+      <supportedOn ref="SUPPORTED_FF67"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="NetworkPrediction" class="Both" displayName="$(string.NetworkPrediction)" explainText="$(string.NetworkPrediction_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NetworkPrediction">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF67"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>    
     <policy name="OfferToSaveLogins" class="Both" displayName="$(string.OfferToSaveLogins)" explainText="$(string.OfferToSaveLogins_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfferToSaveLogins">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
