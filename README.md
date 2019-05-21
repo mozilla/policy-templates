@@ -674,3 +674,16 @@ This policy allows you to set the maximum TLS version.
   }
 }
 ```
+### SupportMenu
+This policy adds a menuitem to the help menu for specifying support information.
+```
+{
+  "policies": {
+    "SupportMenu": {
+      "Title": "Click here for help", /* Title of the menu */
+      "URL": "http://example.edu/", /* Destination URL */
+      "AccessKey": "C" /* Shortcut key */
+    }
+  }
+}
+```

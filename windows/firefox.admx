@@ -2324,6 +2324,15 @@
         </enum>
       </elements>
     </policy>
+    <policy name="SupportMenu" class="Both" displayName="$(string.SupportMenu)" explainText="$(string.SupportMenu_Explain)" key="Software\Policies\Mozilla\Firefox\SupportMenu" presentation="$(presentation.SupportMenu)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF67" />
+      <elements >
+        <text id="SupportMenuTitle" valueName="Title" required="true" />
+        <text id="SupportMenuURL" valueName="URL" required="true" />
+        <text id="SupportMenuAccessKey" valueName="AccessKey" />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
 

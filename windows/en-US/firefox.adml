@@ -497,6 +497,10 @@ If this policy is disabled or not configured, Firefox defaults to a minimum of T
       <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
 
 If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
+      <string id="SupportMenu">Support Menu</string>
+      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+
+If this policy is disabled or not configured, no menuitem is added.</string>
       <string id="TLS1">TLS 1.0</string>
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
@@ -654,6 +658,20 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
+      </presentation>
+      <presentation id="SupportMenu">
+        <text>Title:</text>
+        <textBox refId="SupportMenuTitle">
+          <label/>
+        </textBox>
+        <text>URL:</text>
+        <textBox refId="SupportMenuURL">
+          <label/>
+        </textBox>
+        <text>Access key:</text>
+        <textBox refId="SupportMenuAccessKey">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
