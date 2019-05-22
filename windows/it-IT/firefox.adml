@@ -76,10 +76,10 @@ Se questo criterio è disabilitato o non configurato, l'utente può accedere a I
       <string id="DisableSetDesktopBackground_Explain">Se questo criterio è abilitato, l'utente non può impostare un'immagine come sfondo del Desktop.
 
 Se questo criterio è disabilitato o non configurato, l'utente può impostare un'immagine come sfondo del Desktop.</string>
-      <string id="CaptivePortal">Captive Portal</string>
-      <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
+      <string id="CaptivePortal">Captive portal</string>
+      <string id="CaptivePortal_Explain">Se questo criterio è disabilitato, il supporto per i captive portal è disabilitato.
 
-If this policy is enabled or not configured, captive portal support is enabled.</string>
+Se questo criterio è abilitato o non configurato, il supporto per i captive portal è abilitato.</string>
       <string id="Certificates_ImportEnterpriseRoots">Importa Autorità di certificazione radice enterprise</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Se questo criterio è abilitato, Firefox utilizzerà i certificati radice nell'Archivio certificati di Windows.
 
@@ -198,18 +198,18 @@ Se questo criterio è disabilitato o non configurato, non sarà disinstallata al
       <string id="Extensions_Locked_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID delle estensioni che l'utente non sarà in grado di disinstallare o disabilitare.
 
 Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.</string>
-      <string id="ExtensionUpdate">Extension Update</string>
-      <string id="ExtensionUpdate_Explain">If this policy is disabled, extensions will not be updated automatically.
+      <string id="ExtensionUpdate">Aggiornamento estensioni</string>
+      <string id="ExtensionUpdate_Explain">Se questo criterio è disabilitato, le estensioni non saranno aggiornate automaticamente.
 
-If this policy is enabled or not configured, extensions will be updated automatically.</string>
+Se questo criterio è abilitato o non configurato, le estensioni saranno aggiornate automaticamente.</string>
       <string id="HardwareAcceleration">Accelerazione hardware</string>
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
 Se questo criterio è abilitato o non configurato, l'accelerazione hardware è abilitata.</string>
-      <string id="NetworkPrediction">Network Prediction</string>
-      <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
+      <string id="NetworkPrediction">Previsione di rete</string>
+      <string id="NetworkPrediction_Explain">Se questo criterio è disabilitato, la previsione di rete (prefetching DNS) sarà disabilitata.
 
-If this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.</string>
+Se questo criterio è abilitato o non configurato, la previsione di rete (prefetching DNS) sarà abilitata.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 
