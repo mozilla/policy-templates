@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 oder höher</string>
       <string id="SUPPORTED_FF64">Firefox 64 oder höher, Firefox 60.4 ESR oder höher</string>
       <string id="SUPPORTED_FF66">Firefox 66 oder höher, Firefox 60.6 ESR oder höher</string>
+      <string id="SUPPORTED_FF67">Firefox 67 oder höher, Firefox 60.7 ESR oder höher</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
@@ -75,6 +76,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSetDesktopBackground_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Bilder nicht mit Hilfe von "Als Hintergrundbild einrichten…" als Desktophintergrund festlegen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Bilder mit Hilfe von "Als Hintergrundbild einrichten.." als Desktophintergrund festlegen.</string>
+      <string id="CaptivePortal">Captive Portal</string>
+      <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
+
+If this policy is enabled or not configured, captive portal support is enabled.</string>
       <string id="Certificates_ImportEnterpriseRoots">Windows Zertifikatsspeicher benutzen</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows Zertifikatsspeicher.
 
@@ -83,14 +88,14 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
-      <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
-      <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
-
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer ein Master-Passwort vergeben.</string>
       <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
       <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
 
 If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
+      <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
+      <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
+
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer ein Master-Passwort vergeben.</string>
       <string id="DisableAppUpdate">Update deaktivieren</string>
       <string id="DisableAppUpdate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird nicht nach Updates gesucht.
 
@@ -193,10 +198,18 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="Extensions_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Liste mit Erweiterungs-IDs angeben, die den Benutzer hindert die angegebenen Erweiterungen zu deinstallieren oder zu deaktivieren.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen gesperrt.</string>
+      <string id="ExtensionUpdate">Extension Update</string>
+      <string id="ExtensionUpdate_Explain">If this policy is disabled, extensions will not be updated automatically.
+
+If this policy is enabled or not configured, extensions will be updated automatically.</string>
       <string id="HardwareAcceleration">Hardware Acceleration</string>
       <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
 
 If this policy is enabled or not configured, hardware acceleration is enabled.</string>
+      <string id="NetworkPrediction">Network Prediction</string>
+      <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
+
+If this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.</string>
       <string id="OfferToSaveLogins">Zugangsdaten und Passwörter für Webseiten speichen</string>
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 

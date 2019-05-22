@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 ou superieur</string>
       <string id="SUPPORTED_FF64">Firefox 64 ou superieur, Firefox 60.4 ESR ou superieur</string>
       <string id="SUPPORTED_FF66">Firefox 66 ou superieur, Firefox 60.6 ESR ou superieur</string>
+      <string id="SUPPORTED_FF67">Firefox 67 ou superieur, Firefox 60.7 ESR ou superieur</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR ou superieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -75,6 +76,10 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut acc�
       <string id="DisableSetDesktopBackground_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas définir une image comme arrière-plan de leur bureau.
 
 Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent définir des images comme arrière-plan de leur bureau.</string>
+      <string id="CaptivePortal">Captive Portal</string>
+      <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
+
+If this policy is enabled or not configured, captive portal support is enabled.</string>
       <string id="Certificates_ImportEnterpriseRoots">Importer des certificats racines d'entreprise</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si cette stratégie est activée, Firefox lira les certificats à partir du magasin de certificats Windows.
 
@@ -193,10 +198,18 @@ Si cette stratégie est désactivée ou non configurée, aucune extension n'est 
       <string id="Extensions_Locked_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d'ID d'extension que l'utilisateur ne pourra ni désinstaller ni désactiver.
 
 Si cette stratégie est désactivée ou non configurée, aucune extension n'est verrouillée</string>
+      <string id="ExtensionUpdate">Extension Update</string>
+      <string id="ExtensionUpdate_Explain">If this policy is disabled, extensions will not be updated automatically.
+
+If this policy is enabled or not configured, extensions will be updated automatically.</string>
       <string id="HardwareAcceleration">Accélération matérielle</string>
       <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle ne peut pas être activée.
 
 Si cette stratégie est activée ou non configurée, l'accélération matérielle est activée.</string>
+      <string id="NetworkPrediction">Network Prediction</string>
+      <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
+
+If this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.</string>
       <string id="OfferToSaveLogins">Offre de sauvegarder les identifiants</string>
       <string id="OfferToSaveLogins_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera de sauvegarder les identifiants de connexion et les mots de passe du site Web.
 
