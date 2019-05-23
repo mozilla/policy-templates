@@ -106,7 +106,8 @@ This policy enables or disables captive portal support by setting and locking th
 ### Certificates
 This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows.
 
-The ImportEnterpriseRoots key will cause Firefox to import from the system certificate store.
+The ImportEnterpriseRoots key will cause Firefox to import 3rd party certificates that have been added by a user administrator from the system certificate store.
+It does not import all certificates. These certificates will not display in the Firefox certificates manager.
 
 The Install Certificates key by default will search for certificates in the locations listed below. 
 Starting in Firefox 65 you can specify a fully qualified path including UNC. (See cert3.der and cert4.pem, in example).
@@ -135,7 +136,7 @@ Certificates can be located in the following locations:
   "policies": {
     "Certificates": {
       "ImportEnterpriseRoots": true,
-      "Install": ["cert1.der", "cert2.pem", "%SYSTEMDRIVE%\Company\cert3.der", "/Library/Company/cert4.pem", "\\server\\certs\\cert.pem"]
+      "Install": ["cert1.der", "cert2.pem", "%SYSTEMDRIVE%\\Company\\cert3.der", "/Library/Company/cert4.pem", "\\\\server\\certs\\cert.pem"]
     }
   }
 }
