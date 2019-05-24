@@ -197,7 +197,7 @@ Si esta política está deshabilitada o no está configurada, no se desinstalar�
       <string id="Extensions_Locked">Evitar que las extensiones se deshabiliten o se borrén</string>
       <string id="Extensions_Locked_Explain">Si esta política está habilitada, puede especificar una lista de ID de extensiones que el usuario no podrá desinstalar o deshabilitar.
 
-Si esta política está deshabilitada o no está configurada, no hay extensiones bloqueadas.</string>
+Si esta política está deshabilitada o no está configurada, no se bloquearán las extensiones.</string>
       <string id="ExtensionUpdate">Actualización de extensiones</string>
       <string id="ExtensionUpdate_Explain">Si esta política está deshabilitada, las extensiones no se actualizarán automáticamente.
 
