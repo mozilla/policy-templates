@@ -76,10 +76,10 @@ Si esta política está deshabilitada o no está configurada, el usuario puede a
       <string id="DisableSetDesktopBackground_Explain">Si esta política está habilitada, el usuario no puede establecer una imagen como imagen de fondo.
 
 Si esta política está deshabilitada o no está configurada, los usuarios pueden establecer imágenes como imagen de fondo.</string>
-      <string id="CaptivePortal">Captive Portal</string>
-      <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
+      <string id="CaptivePortal">Portal cautivo</string>
+      <string id="CaptivePortal_Explain">Si esta política está deshabilitada, el soporte del portal cautivo está deshabilitado.
 
-If this policy is enabled or not configured, captive portal support is enabled.</string>
+Si esta política está habilitada o no está configurada, el soporte del portal cautivo está habilitado.</string>
       <string id="Certificates_ImportEnterpriseRoots">Importar certificados raíces</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si esta política está habilitada, Firefox leerá los certificados del almacén de certificados de Windows.
 
@@ -197,19 +197,19 @@ Si esta política está deshabilitada o no está configurada, no se desinstalar�
       <string id="Extensions_Locked">Evitar que las extensiones se deshabiliten o se borrén</string>
       <string id="Extensions_Locked_Explain">Si esta política está habilitada, puede especificar una lista de ID de extensiones que el usuario no podrá desinstalar o deshabilitar.
 
-Si esta política está deshabilitada o no está configurada, no hay extensiones bloqueadas.</string>
-      <string id="ExtensionUpdate">Extension Update</string>
-      <string id="ExtensionUpdate_Explain">If this policy is disabled, extensions will not be updated automatically.
+Si esta política está deshabilitada o no está configurada, no se bloquearán las extensiones.</string>
+      <string id="ExtensionUpdate">Actualización de extensiones</string>
+      <string id="ExtensionUpdate_Explain">Si esta política está deshabilitada, las extensiones no se actualizarán automáticamente.
 
-If this policy is enabled or not configured, extensions will be updated automatically.</string>
+Si esta política está habilitada o no está configurada, las extensiones se actualizarán automáticamente.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración de hardware no se puede habilitar.
 
 Si esta política está habilitada o no está configurada, la aceleración por hardware está habilitada.</string>
-      <string id="NetworkPrediction">Network Prediction</string>
-      <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
+      <string id="NetworkPrediction">Predicción de red</string>
+      <string id="NetworkPrediction_Explain">Si esta política está deshabilitada, la predicción de red (preprocesamiento DNS) se deshabilitará.
 
-If this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.</string>
+Si esta política está habilitada o no está configurada, se habilitará la predicción de red (preprocesamiento DNS).</string>
       <string id="OfferToSaveLogins">Sugerir guardar inicios de sesión</string>
       <string id="OfferToSaveLogins_Explain">Si esta política está habilitada o no está configurada, Firefox ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 
@@ -637,7 +637,7 @@ Si esta política está deshabilitada o no está configurada, Firefox establece 
           <label/>
         </textBox>
         <text>Ejemplo: .mozilla.org, .net.nz, 192.168.1.0/24</text>
-        <text>Configuración automática de URL de proxy:</text>
+        <text>Configuración automática de URL del proxy:</text>
         <textBox refId="AutoConfigURL">
           <label/>
         </textBox>
