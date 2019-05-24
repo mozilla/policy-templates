@@ -112,8 +112,8 @@ It does not import all certificates. These certificates will not display in the 
 The Install Certificates key by default will search for certificates in the locations listed below. 
 Starting in Firefox 65 you can specify a fully qualified path including UNC. (See cert3.der and cert4.pem, in example).
 
-**Be advised if you wish to load a certificate from a UNC path you must use double backslahes.**
-Example: \\SERVER\\CERTS\CERT5.PEM
+**Be advised if you wish to load a certificate from a UNC path you must use double backslashes.**
+Example: \\\\SERVER\\CERTS\\CERT5.PEM
 
 
 If Firefox does not find something at your fully qualified path, it will search the default directories.
