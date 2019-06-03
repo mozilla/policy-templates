@@ -647,6 +647,79 @@ This policy allows you to add new search engines, remove or hide search engines,
 {
   "policies": {
     "SearchEngines": {
+      "Default": "Name of engine",
+      "PreventInstalls": [true|false],
+      "Remove": ["Twitter", "Wikipedia (en)"]
+    }
+  }
+}
+```
+### Search Engines
+
+### Search Engines | Add
+
+This policy allows you to add up to five new search engines. This policy is only available on the ESR.
+
+**Compatibility:** Firefox ESR 60\
+**CCK2 Equivalent:** `config.searchplugins`\
+**Preferences Affected:** N/A
+
+### Keys
+
+| Key | Type | Default | Description |
+| --- | ---- | ------- | ----------- |
+| `Name` | String | _required_ | The name of the search engine. |
+| `URLTemplate` | String | _required_ | Search URL with {searchTerms} to substitute for the search term. |
+| `Method` | String | GET | GET or POST |
+| `IconURL` | String | — | URL for the icon to use. |
+| `Alias` | String | — | Keyword to use for the engine. |
+| `Description` | String | —| Description of the search engine. |
+| `SuggestURLTemplate` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate` |
+
+#### macOS
+```
+<dict>
+  <key>Search</key>
+  <dict>
+    <key>Add</key>
+    <array>
+      <dict>
+        <key>Name</key>
+        <string>Example1</string>
+        <key>URLTemplate</key>
+        <string>https://www.example.org</string>
+        <key>Method</key>
+        <string>https://www.example.org/favicon.ico</string>
+        <key>IconURL</key>
+        <string>toolbar</string>
+        <key>Alias</key>
+        <string>Example1Folder</string>
+        <key>Description</key>
+        <string>Example1Folder</string>
+        <key>Alias</key>
+        <string>SuggestURLTemplate</string>
+      </dict>
+    <array>
+  </dict>
+</dict>
+```
+
+### JSON
+```
+{
+  "policies": {
+    "SearchEngines": {
       "Add": [
         {
           "Name": "",
@@ -657,14 +730,15 @@ This policy allows you to add new search engines, remove or hide search engines,
           "Description": "Description",
           "SuggestURLTemplate": "URL for suggestions using {searchTerms}"
         }
-      ],
-      "Default": "Name of engine",
-      "PreventInstalls": [true|false],
-      "Remove": ["Twitter", "Wikipedia (en)"]
+      ]
     }
   }
 }
 ```
+
+
+
+
 ### SecurityDevices
 A dictionary with the names and locations of PKCS #11 modules to be installed.
 
