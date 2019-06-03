@@ -119,7 +119,7 @@ A Boolean value that enables or disables captive portal support by setting and l
 ```
 {
   "policies": {
-	  "CaptivePortal": true | false
+    "CaptivePortal": true | false
   }
 }
 ```
