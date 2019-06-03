@@ -788,7 +788,7 @@ A String value that sets and locks the maximum version of TLS
 ```
 <dict>
   <key>SSLVersionMax</key>
-  <string>tls1 | tls1.1 | tls1.2 | tls1.3<string>
+  <string>tls1 | tls1.1 | tls1.2 | tls1.3</string>
 </dict>
 ```
 
@@ -816,7 +816,7 @@ A String value that sets and locks the minimum version of TLS
 ```
 <dict>
   <key>SSLVersionMin</key>
-  <string>tls1 | tls1.1 | tls1.2 | tls1.3<string>
+  <string>tls1 | tls1.1 | tls1.2 | tls1.3</string>
 </dict>
 ```
 
