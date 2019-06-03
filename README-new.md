@@ -98,10 +98,8 @@ same folder name are grouped together.
 ### CaptivePortal
 A Boolean value that enables or disables captive portal support by setting and locking the preference `network.captive-portal-service.enabled`.
 
-**Compatibility:** Firefox 67, Firefox ESR 60.7
-
-**CCK2 Equivalent:** N/A
-
+**Compatibility:** Firefox 67, Firefox ESR 60.7\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.captive-portal-service.enabled`
 
 #### Windows
