@@ -96,11 +96,33 @@ same folder name are grouped together.
 }
 ```
 ### CaptivePortal
-This policy enables or disables captive portal support by setting and locking the preference `network.captive-portal-service.enabled`.
+A Boolean value that enables or disables captive portal support by setting and locking the preference `network.captive-portal-service.enabled`.
+
+**Compatibility:** Firefox 67, Firefox ESR 60.7
+
+**CCK2 Equivalent:** N/A
+
+**Preferences Affected:** `network.captive-portal-service.enabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\CaptivePortal` |
+
+#### macOS
+```
+<dict>
+  <key>CaptivePortal</key>
+  <true/> | <false/>
+</dict>
+```
+
+#### JSON
 ```
 {
   "policies": {
-    "CaptivePortal": [true|false]
+	  "CaptivePortal": true | false
+  }
 }
 ```
 ### Certificates
