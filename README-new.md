@@ -680,7 +680,7 @@ This policy allows you to add PKCS #11 Modules
 A String value that sets and locks the maximum version of TLS
 
 **Compatibility:** Firefox 67, Firefox ESR 60.7\
-**CCK2 Equivalent:** N/A
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.max`
 
 #### Windows
@@ -708,7 +708,7 @@ A String value that sets and locks the maximum version of TLS
 A String value that sets and locks the minimum version of TLS
 
 **Compatibility:** Firefox 67, Firefox ESR 60.7\
-**CCK2 Equivalent:** N/A
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.min`
 
 #### Windows
