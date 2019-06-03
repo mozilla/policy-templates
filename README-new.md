@@ -666,7 +666,29 @@ This policy allows you to add new search engines, remove or hide search engines,
 }
 ```
 ### SecurityDevices
-This policy allows you to add PKCS #11 Modules
+A dictionary with the names and locations of PKCS #11 modules to be installed.
+
+**Compatibility:** Firefox 64, Firefox ESR 60.4\
+**CCK2 Equivalent:** `certs.devices`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location | Registry Value |
+| ---- | ----------------- | -------------- |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SecurityDevices\NAME_OF_DEVICE` | `PATH_TO_LIBRARY_FOR_DEVICE`
+
+#### macOS
+```
+<dict>
+  <key>SecurityDevices</key>
+  <dict>
+    <key>NAME_OF_DEVICE</key>
+    <string>PATH_TO_LIBRARY_FOR_DEVICE</string>
+  </dict>
+</dict>
+```
+
+#### JSON
 ```
 {
   "policies": {
@@ -679,7 +701,7 @@ This policy allows you to add PKCS #11 Modules
 ### SSLVersionMax
 A String value that sets and locks the maximum version of TLS
 
-**Compatibility:** Firefox 67, Firefox ESR 60.7\
+**Compatibility:** Firefox 66, Firefox ESR 60.6\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.max`
 
@@ -707,7 +729,7 @@ A String value that sets and locks the maximum version of TLS
 ### SSLVersionMin
 A String value that sets and locks the minimum version of TLS
 
-**Compatibility:** Firefox 67, Firefox ESR 60.7\
+**Compatibility:** Firefox 66, Firefox ESR 60.6\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.min`
 
