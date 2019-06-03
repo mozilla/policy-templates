@@ -676,22 +676,59 @@ This policy allows you to add PKCS #11 Modules
   }
 }
 ```
-### SSLVersionMin
-This policy allows you to set the minimum TLS version.
+### SSLVersionMax
+A String value that sets and locks the maximum version of TLS
+
+**Compatibility:** Firefox 67, Firefox ESR 60.7\
+**CCK2 Equivalent:** N/A
+**Preferences Affected:** `security.tls.version.max`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SSLVersionMax` |
+
+#### macOS
+```
+<dict>
+  <key>SSLVersionMax</key>
+  <string>tls1 | tls1.1 | tls1.2 | tls1.3<string>
+</dict>
+```
+
+#### JSON
 ```
 {
   "policies": {
-    "SSSLVersionMin": ["tls1", "tls1.1", "tls1.2",. "tls1.3"]
+    "SSLVersionMax": "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
   }
 }
-
 ```
-### SSLVersionMax
-This policy allows you to set the maximum TLS version.
+### SSLVersionMin
+A String value that sets and locks the minimum version of TLS
+
+**Compatibility:** Firefox 67, Firefox ESR 60.7\
+**CCK2 Equivalent:** N/A
+**Preferences Affected:** `security.tls.version.min`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SSLVersionMin` |
+
+#### macOS
+```
+<dict>
+  <key>SSLVersionMin</key>
+  <string>tls1 | tls1.1 | tls1.2 | tls1.3<string>
+</dict>
+```
+
+#### JSON
 ```
 {
   "policies": {
-    "SSSLVersionMax": ["tls1", "tls1.1", "tls1.2",. "tls1.3"]
+    "SSLVersionMin": "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
   }
 }
 ```
