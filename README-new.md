@@ -42,38 +42,111 @@ This policy is for configuring sites that support integrated authentication. See
 }
 ```
 ### BlockAboutAddons
-This policy removes access to about:addons.
+A Boolean value that blocks access to about:addons.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableAddonsManager`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutAddons` |
+
+#### macOS
+```
+<dict>
+  <key>BlockAboutAddons</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "BlockAboutAddons": true
+    "BlockAboutAddons": true | false
   }
 }
 ```
 ### BlockAboutConfig
-This policy removes access to about:config.
+A Boolean value that blocks access to about:config.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableAboutConfig`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutConfig` |
+
+#### macOS
+```
+<dict>
+  <key>BlockAboutConfig</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "BlockAboutConfig": true
+    "BlockAboutConfig": true | false
   }
 }
 ```
 ### BlockAboutProfiles
-This policy removes access to about:profiles.
+A Boolean value that blocks access to about:profiles.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableAboutProfiles`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutProfiles` |
+
+#### macOS
+```
+<dict>
+  <key>BlockAboutProfiles</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "BlockAboutProfiles": true
+    "BlockAboutProfiles": true | false
   }
 }
 ```
 ### BlockAboutSupport
-This policy removes access to about:support.
+A Boolean value that blocks access to about:support.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableAboutSupport`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutSupport` |
+
+#### macOS
+```
+<dict>
+  <key>BlockAboutSupport</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "BlockAboutSupport": true
+    "BlockAboutSupport": true | false
+  }
 }
 ```
 ### Bookmarks
@@ -114,7 +187,6 @@ A Boolean value that enables or disables captive portal support by setting and l
   <true/> | <false/>
 </dict>
 ```
-
 #### JSON
 ```
 {
@@ -193,145 +265,433 @@ This policy configures DNS over HTTPS.
 ```
 ### DisableSetDesktopBackground
 This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `removeSetDesktopBackground`\
+**Preferences Affected:** `devtools.policy.disabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground` |
+
+#### macOS
+```
+<dict>
+  <key>DisableSetDesktopBackground</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableSetDesktopBackground": true
+    "DisableSetDesktopBackground": true | false
   }
 }
 ```
 ### DisableMasterPasswordCreation
 If this policy is set to true, the master password functionality is removed.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `noMasterPassword`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation` |
+
+#### macOS
+```
+<dict>
+  <key>DisableMasterPasswordCreation</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableMasterPasswordCreation": [true|false]
+    "DisableMasterPasswordCreation": true | false
   }
 }
 ```
 ### DisableAppUpdate
 This policy turns off application updates.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableFirefoxUpdates`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableAppUpdate` |
+
+#### macOS
+```
+<dict>
+  <key>DisableAppUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableAppUpdate": true
+    "DisableAppUpdate": true | false
   }
 }
 ```
 ### DisableBuiltinPDFViewer
 This policy disables the built in PDF viewer. PDF files are downloaded and sent externally.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disablePDFjs`\
+**Preferences Affected:** `pdfjs.disabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer` |
+
+#### macOS
+```
+<dict>
+  <key>DisableBuiltinPDFViewer</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableBuiltinPDFViewer": true
+    "DisableBuiltinPDFViewer": true | false
   }
 }
 ```
 ### DisableDeveloperTools
 This policy removes access to all developer tools.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `removeDeveloperTools`\
+**Preferences Affected:** `devtools.policy.disabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableDeveloperTools` |
+
+#### macOS
+```
+<dict>
+  <key>DisableDeveloperTools</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableDeveloperTools": true
+    "DisableDeveloperTools": true | false
   }
 }
 ```
 ### DisableFeedbackCommands
 This policy disables the menus for reporting sites (Submit Feedback, Report Deceptive Site).
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFeedbackCommands` |
+
+#### macOS
+```
+<dict>
+  <key>DisableFeedbackCommands</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableFeedbackCommands": true
+    "DisableFeedbackCommands": true | false
   }
 }
 ```
 ### DisableFirefoxScreenshots
 This policy removes access to Firefox Screenshots.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `extensions.screenshots.disabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots` |
+
+#### macOS
+```
+<dict>
+  <key>DisableFirefoxScreenshots</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableFirefoxScreenshots": true
+    "DisableFirefoxScreenshots": true | false
   }
 }
 ```
 ### DisableFirefoxAccounts
-This policy disables Sync.
+A boolean possibly that disables sync.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableSync`\
+**Preferences Affected:** `identity.fxaccounts.enabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts` |
+
+#### macOS
+```
+<dict>
+  <key>DisableFirefoxAccounts</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableFirefoxAccounts": true
+    "DisableFirefoxAccounts": true | false
   }
 }
 ```
 ### DisableFirefoxStudies
 This policy disables Firefox studies (Shield).
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableForget`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFirefoxStudies` |
+
+#### macOS
+```
+<dict>
+  <key>DisableFirefoxStudies</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableFirefoxStudies": true
+    "DisableFirefoxStudies": true | false
   }
 }
 ```
 ### DisableForgetButton
-This policy disables the "Forget" button.
+This policy turns disables the "Forget" button.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableForget`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableForgetButton` |
+
+#### macOS
+```
+<dict>
+  <key>DisableForgetButton</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableForgetButton": true
+    "DisableForgetButton": true | false
   }
 }
 ```
 ### DisableFormHistory
-This policy turns off the browser.formfill.enable preferences.
+This policy turns off saving information on web forms and the search bar.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableFormFill`\
+**Preferences Affected:** ` browser.formfill.enable`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFormHistory` |
+
+#### macOS
+```
+<dict>
+  <key>DisableFormHistory</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableFormHistory": true
+    "DisableFormHistory": true | false
   }
 }
 ```
 ### DisablePocket
-This policy turns off Pocket.
+This policy removes Pocket in the Firefox UI. It does not remove it from the new tab page.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disablePocket`\
+**Preferences Affected:** `extensions.pocket.enabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisablePocket` |
+
+#### macOS
+```
+<dict>
+  <key>DisablePocket</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisablePocket": true
+    "DisablePocket": true | false
   }
 }
 ```
 ### DisablePrivateBrowsing
 This policy removes access to private browsing.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disablePrivateBrowsing`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisablePrivateBrowsing` |
+
+#### macOS
+```
+<dict>
+  <key>DisablePrivateBrowsing</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisablePrivateBrowsing": true
+    "DisablePrivateBrowsing": true | false
   }
 }
 ```
 ### DisableProfileImport
 This policy disables the "Import data from another browser" option in the bookmarks window.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableProfileImport` |
+
+#### macOS
+```
+<dict>
+  <key>DisableProfileImport</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableProfileImport": true
+    "DisableProfileImport": true | false
   }
 }
 ```
 ### DisableProfileRefresh
-This policy disables the Refresh Firefox button on about:support and support.mozilla.org.
+This policy disables the Refresh Firefox button on about:support and support.mozilla.org, as well as the prompt that displays offering to refresh Firefox when you haven't used it in a while.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableResetFirefox`\
+**Preferences Affected:** `browser.disableResetPrompt`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableProfileRefresh` |
+
+#### macOS
+```
+<dict>
+  <key>DisableProfileRefresh</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableProfileRefresh": true
+    "DisableProfileRefresh": true | false
   }
 }
 ```
 ### DisableSafeMode
-This policy disables safe mode on Windows and macOS only.
+This boolean value disables safe mode.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Windows, macOS)\
+**CCK2 Equivalent:** `disableSafeMode`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableSafeMode` |
+
+#### macOS
+```
+<dict>
+  <key>DisableSafeMode</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableSafeMode": true
+    "DisableSafeMode": true | false
   }
 }
 ```
@@ -348,49 +708,139 @@ This policy prevents the user from bypassing security in certain cases.
 }
 ```
 ### DisableSystemAddonUpdate
-This policy prevents system add-ons from being updated or installed.
+This boolean value prevents system add-ons from being updated or installed.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableSystemAddonUpdate` |
+
+#### macOS
+```
+<dict>
+  <key>DisableSystemAddonUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableSystemAddonUpdate": true
+    "DisableSystemAddonUpdate": true | false
   }
 }
 ```
 ### DisableTelemetry
-This policy prevents the upload of telemetry data.
+This boolean value prevents the upload of telemetry data.
 
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `disableTelemetry`\
+**Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableTelemetry` |
+
+#### macOS
+```
+<dict>
+  <key>DisableTelemetry</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisableTelemetry": true
+    "DisableTelemetry": true | false
   }
 }
 ```
 ### DisplayBookmarksToolbar
-This policy turns on the bookmarks toolbar by default. A user can still turn it off, and it will stay off.
+This boolean value turns on the bookmarks toolbar by default. A user can still turn it off, and it will stay off.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `displayBookmarksToolbar`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar` |
+
+#### macOS
+```
+<dict>
+  <key>DisplayBookmarksToolbar</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DisplayBookmarksToolbar": true
-  }
-}
-```
-### DisplayMenuBar
-This policy turns on the menubar by default. A user can still turn it off, and it will stay off.
-```
-{
-  "policies": {
-    "DisplayMenuBar": true
+    "DisplayBookmarksToolbar": true | false
   }
 }
 ```
 ### DontCheckDefaultBrowser
-This policy stops Firefox from checking if it is the default browser at startup.
+This boolean value turns on the menubar by default. A user can still turn it off, and it will stay off.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
+**CCK2 Equivalent:** `displayMenuBar`\
+**Preferences Affected:** N/~
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisplayMenuBar` |
+
+#### macOS
+```
+<dict>
+  <key>DisplayMenuBar</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "DontCheckDefaultBrowser": true
+    "DisplayMenuBar": true | false
+  }
+}
+```
+### DontCheckDefaultBrowser
+This boolean value stops Firefox from checking if it is the default browser at startup.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `dontCheckDefaultBrowser`\
+**Preferences Affected:** `browser.shell.checkDefaultBrowser`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser` |
+
+#### macOS
+```
+<dict>
+  <key>DontCheckDefaultBrowser</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "DontCheckDefaultBrowser": true | false
   }
 }
 ```
@@ -429,37 +879,110 @@ For Uninstall and Locked, you specify extension IDs.
 }
 ```
 ### ExtensionUpdate
-This policy enables or disables extension updates by setting and locking the preference `extensions.update.enabled`.
+This boolean value determines extension update are enabled.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `extensions.update.enabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\ExtensionUpdate` |
+
+#### macOS
+```
+<dict>
+  <key>ExtensionUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "ExtensionUpdate": [true|false]
+    "ExtensionUpdate": true | false
+  }
 }
 ```
 ### HardwareAcceleration
-This policy disables hardware acceleration by locking the preference layers.acceleration.disabled to true.
+This boolean value determines if hardware acceleration is enabled.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `layers.acceleration.disabled`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\HardwareAcceleration` |
+
+#### macOS
+```
+<dict>
+  <key>HardwareAcceleration</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "HardwareAcceleration": false
+    "HardwareAcceleration": true | false
   }
 }
 ```
 ### NoDefaultBookmarks
-This policy prevents the default bookmarks or the Smart Bookmarks (Most Visited, Recent Tags) from being created. Note: this policy is only effective if used before the first run of the profile.
+A Boolean value that prevents the default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) from being created. Note: this policy is only effective if used before the first run of the profile. Also, the smart bookmarks were removed in Firefox 63.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `removeDefaultBookmarks`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\NoDefaultBookmarks` |
+
+#### macOS
+```
+<dict>
+  <key>NoDefaultBookmarks</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "NoDefaultBookmarks": true
+    "NoDefaultBookmarks": true | false
   }
 }
 ```
 ### OfferToSaveLogins
-This policy sets the signon.rememberSignons preference. It determines whether or not Firefox offers to save passwords. It can either be enabled or disabled.
+This boolean value determines whether or not Firefox offers to save passwords.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `dontRememberPasswords`\
+**Preferences Affected:** `signon.rememberSignons`
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\OfferToSaveLogins` |
+
+#### macOS
+```
+<dict>
+  <key>OfferToSaveLogins</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "OfferToSaveLogins": true
+    "OfferToSaveLogins": true | false
   }
 }
 ```
@@ -602,12 +1125,122 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
   }
 }
 ```
+**Compatibility:** Firefox ESR 60\
+**CCK2 Equivalent:** `networkProxy*`\
+**Preferences Affected:** N/A
+
+### Keys
+| Key | Type | Default | Description |
+| --- | ---- | ------- | ----------- |
+| `Mode` | String | _required_ | The name of the search engine. |
+| `Locked` | Boolean | _required_ | Search URL with {searchTerms} to substitute for the search term. |
+| `HTTPProxy` | String | GET | GET or POST |
+| `UseHTTPProxyForAllProtocols` | Boolean | — | URL for the icon to use. |
+| `SSLProxy` | String | — | Keyword to use for the engine. |
+| `FTPProxy` | String | —| Description of the search engine. |
+| `SOCKSProxy` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+| `SOCKSVersion` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+| `Passthrough` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+| `AutoConfigURL` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+| `AutoLogin` | Boolean | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+| `UseProxyForDNS` | Boolean | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\Mode` |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\Locked` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\HTTPProxy` |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\UseHTTPProxyForAllProtocols` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\SSLProxy` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\FTPProxy` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\SOCKSProxy` |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\SOCKSVersion` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\Passthrough` |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\AutoConfigURL` |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\AutoLogin` |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\UseProxyForDNS` |
+
+#### macOS
+```
+<dict>
+  <key>Search</key>
+  <dict>
+    <key>Proxy</key>
+    <array>
+      <dict>
+        <key>Mode</key>
+        <string>none | system | manual | autoDetect| autoConfig</string>
+        <key>Locked</key>
+        <true> | </false>
+        <key>HTTPProxy</key>
+        <string>https://httpproxy.example.com</string>
+        <key>UseHTTPProxyForAllProtocols</key>
+        <true> | </false>
+        <key>SSLProxy</key>
+        <string>https://sslproxy.example.com</string>
+        <key>FTPProxy</key>
+        <string>https://ftpproxy.example.com</string>
+        <key>SOCKSProxy</key>
+        <string>https://socksproxy.example.com</string>
+      </dict>
+    <array>
+  </dict>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "",
+          "URLTemplate": "URL including {searchTerms} to substitute for the terms",
+          "Method": ["GET", "POST"],
+          "IconURL": "URL to icon",
+          "Alias": "Alias that can be used to access the engine",
+          "Description": "Description",
+          "SuggestURLTemplate": "URL for suggestions using {searchTerms}"
+        }
+      ]
+    }
+  }
+}
+```
 ### RequestedLocales
 This policy sets the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 ```
 {
   "policies": {
     "RequestedLocales": ["de", "en-US"]
+  }
+}
+```
+### SanitizeOnShutdown
+A boolean value that tells Firefox to clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown,privacy.clearOnShutdown.cache,privacy.clearOnShutdown.cookies,privacy.clearOnShutdown.downloads,privacy.clearOnShutdown.formdata,privacy.clearOnShutdown.history,privacy.clearOnShutdown.sessions,privacy.clearOnShutdown.siteSettings,privacy.clearOnShutdown.offlineApps`
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SanitizeOnShutdown` |
+
+#### macOS
+```
+<dict>
+  <key>SanitizeOnShutdown</key>
+  <true/> | <false/>
+</dict>
+```
+
+#### JSON
+```
+{
+  "policies": {
+    "SanitizeOnShutdown": true | false
   }
 }
 ```
@@ -621,11 +1254,30 @@ If this policy is set to true,  all data is cleared when Firefox is closed. This
 }
 ```
 ### SearchBar
-This policy can be used to determine if the search bar is separate or combined with the URL bar.
+A String value that sets whether or not the search bar is displayed.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `showSearchBar`\
+**Preferences Affected:** N/A
+
+#### Windows
+| Type | Registry Location |
+| ---- | ----------------- |
+| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchBar` |
+
+#### macOS
+```
+<dict>
+  <key>SearchBar</key>
+  <string>unified | separate</string>
+</dict>
+```
+
+#### JSON
 ```
 {
   "policies": {
-    "SearchBar": ["unified", "separate"]
+    "SearchBar": "unified" | "separate"
   }
 }
 ```
@@ -665,7 +1317,6 @@ This policy allows you to add up to five new search engines. This policy is only
 **Preferences Affected:** N/A
 
 ### Keys
-
 | Key | Type | Default | Description |
 | --- | ---- | ------- | ----------- |
 | `Name` | String | _required_ | The name of the search engine. |
@@ -714,7 +1365,6 @@ This policy allows you to add up to five new search engines. This policy is only
   </dict>
 </dict>
 ```
-
 ### JSON
 ```
 {
@@ -735,10 +1385,6 @@ This policy allows you to add up to five new search engines. This policy is only
   }
 }
 ```
-
-
-
-
 ### SecurityDevices
 A dictionary with the names and locations of PKCS #11 modules to be installed.
 
