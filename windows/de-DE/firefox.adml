@@ -650,8 +650,8 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">DNS over HTTPS aktivieren.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS over HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
