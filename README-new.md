@@ -12,20 +12,85 @@ The content of the JSON file should look like this:
 ```
 Policies are documented below.   
 
-
-**Note**: though comments are used in this readme file for documentation, comments are not valid in actual JSON files. Remove all comments before attempting to deploy.
-
 ### AppUpdateURL
-This policy is for changing the URL used for application update
+
+Change the URL for application update.
+
+**Compatibility:** Firefox 62, Firefox ESR 60.2\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `app.update.url`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\AppUpdateURL = "https://yoursite.com"
+```
+#### macOS
+```
+<dict>
+  <key>AppUpdateURL</key>
+  <string>https://yoursite.com</string>
+</dict>
+```
+### JSON
 ```
 {
-  "AppUpdateURL": "http://yoursite.com"
+  "policies": {
+    "AppUpdateURL": "https://yoursite.com"
+  }
 }
 ```
-
-
 ### Authentication
-This policy is for configuring sites that support integrated authentication. See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
+
+Configure sites that support integrated authentication.
+
+See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.negotiate-auth.trusted-uris`, `network.negotiate-auth.delegation-uris`, `network.automatic-ntlm-auth.trusted-uris`, `network.automatic-ntlm-auth.allow-non-fqdn`, `network.negotiate-auth.allow-non-fqdn`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Authentication\SPNEGO\1 = "mydomain.com"
+Software\Policies\Mozilla\Firefox\Authentication\SPNEGO\2 = "https://myotherdomain.com"
+Software\Policies\Mozilla\Firefox\Authentication\Delegated\1 = "mydomain.com"
+Software\Policies\Mozilla\Firefox\Authentication\Delegated\2 = "https://myotherdomain.com"
+Software\Policies\Mozilla\Firefox\Authentication\NTLM\1 = "mydomain.com"
+Software\Policies\Mozilla\Firefox\Authentication\NTLM\2 = "https://myotherdomain.com"
+Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\SPNEGO = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>Authentication</key>
+  <dict>
+    <key>SPNEGO</key>
+    <array>
+      <string>mydomain.com</string>
+      <string>https://myotherdomain.com</string>
+    </array>
+    <key>Delegated</key>
+    <array>
+      <string>mydomain.com</string>
+      <string>https://myotherdomain.com</string>
+    </array>
+    <key>NTLM</key>
+    <array>
+      <string>mydomain.com</string>
+      <string>https://myotherdomain.com</string>
+    </array>
+    <key>AllowNonFQDN</key>
+      <dict>
+      <key>SPNEGO</key>
+      <true/> | <false/>
+      <key>NTLM</key>
+      <true/> | <false/>
+    </dict>
+  </dict>
+</dict>
+```
+### JSON
 ```
 {
   "policies": {
@@ -34,25 +99,25 @@ This policy is for configuring sites that support integrated authentication. See
       "Delegated": ["mydomain.com", "https://myotherdomain.com"],
       "NTLM": ["mydomain.com", "https://myotherdomain.com"],
       "AllowNonFQDN": {
-        "SPNEGO": true,
-        "NTLM": true
+        "SPNEGO": true | false,
+        "NTLM": true | false
       }
     }
   }
 }
 ```
 ### BlockAboutAddons
-A Boolean value that blocks access to about:addons.
+
+Block access to the Add-ons Manager (about:addons).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableAddonsManager`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutAddons` |
-
+```
+Software\Policies\Mozilla\Firefox\BlockAboutAddons = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -69,17 +134,17 @@ A Boolean value that blocks access to about:addons.
 }
 ```
 ### BlockAboutConfig
-A Boolean value that blocks access to about:config.
+
+Block access to about:config.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableAboutConfig`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutConfig` |
-
+```
+Software\Policies\Mozilla\Firefox\BlockAboutConfig = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -96,17 +161,17 @@ A Boolean value that blocks access to about:config.
 }
 ```
 ### BlockAboutProfiles
-A Boolean value that blocks access to about:profiles.
+
+Block access to About Profiles (about:profiles).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableAboutProfiles`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutProfiles` |
-
+```
+Software\Policies\Mozilla\Firefox\BlockAboutProfiles = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -123,17 +188,17 @@ A Boolean value that blocks access to about:profiles.
 }
 ```
 ### BlockAboutSupport
-A Boolean value that blocks access to about:support.
+
+Block access to Troubleshooting Information (about:support).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableAboutSupport`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\BlockAboutSupport` |
-
+```
+Software\Policies\Mozilla\Firefox\BlockAboutSupport = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -150,18 +215,51 @@ A Boolean value that blocks access to about:support.
 }
 ```
 ### Bookmarks
-This policy allows you to specify bookmarks. You can have any number of bookmarks, although only ten are specified in the ADMX file.
-Placement can be specified as either toolbar or menu. If a folder is specified, it is automatically created and bookmarks with the
-same folder name are grouped together.
+
+Add bookmarks in either the bookmarks toolbar or menu. Only `Title` and `URL` are required. If `Placement` is not specified, the bookmark will be placed on the toolbar. If `Folder` is specified, it is automatically created and bookmarks with the same folder name are grouped together.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `bookmarks.toolbar`,`bookmarks.menu`\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Bookmarks\1\Title = "Example"
+Software\Policies\Mozilla\Firefox\Bookmarks\1\URL = "https://example.com"
+Software\Policies\Mozilla\Firefox\Bookmarks\1\Favicon = "https://example.com/favicon.ico"
+Software\Policies\Mozilla\Firefox\Bookmarks\1\Placement = "toolbar" | "menu"
+Software\Policies\Mozilla\Firefox\Bookmarks\1\Folder = "FolderName"
+```
+#### macOS
+```
+<dict>
+  <key>Bookmarks</key>
+  <array>
+    <dict>
+      <key>Title</key>
+      <string>Example</string>
+      <key>URL</key>
+      <string>https://example.com</string>
+      <key>Favicon</key>
+      <string>https://example.com/favicon.ico</string>
+      <key>Placement</key>
+      <string>toolbar | menu</string>
+      <key>Folder</key>
+      <string>FolderName</string>
+    </dict>
+  </array>
+</dict>
+```
+### JSON
 ```
 {
   "policies": {
     "Bookmarks": [
       {
         "Title": "Example",
-        "URL": "http://example.org",
-        "Favicon": "http://example.com/favicon.ico",
-        "Placement": ["toolbar", "menu"],
+        "URL": "https://example.com",
+        "Favicon": "https://example.com/favicon.ico",
+        "Placement": "toolbar" | "menu",
         "Folder": "FolderName"
       }
     ]
@@ -169,17 +267,16 @@ same folder name are grouped together.
 }
 ```
 ### CaptivePortal
-A Boolean value that enables or disables captive portal support by setting and locking the preference `network.captive-portal-service.enabled`.
+Enable or disable the detection of captive portals.
 
 **Compatibility:** Firefox 67, Firefox ESR 60.7\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.captive-portal-service.enabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\CaptivePortal` |
-
+```
+Software\Policies\Mozilla\Firefox\CaptivePortal = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -196,21 +293,45 @@ A Boolean value that enables or disables captive portal support by setting and l
 }
 ```
 ### Certificates
-This policy can be used to install certificates or to read certificates from the system certificate store on Mac and Windows.
 
-The ImportEnterpriseRoots key will cause Firefox to import 3rd party certificates that have been added by a user administrator from the system certificate store.
-It does not import all certificates. These certificates will not display in the Firefox certificates manager.
+### Certificates | ImportEnterpriseRoots
 
-The Install Certificates key by default will search for certificates in the locations listed below. 
-Starting in Firefox 65 you can specify a fully qualified path including UNC. (See cert3.der and cert4.pem, in example).
+Trust certificates that have been added to the operating system certificate store by a user or administrator.
 
-**Be advised if you wish to load a certificate from a UNC path you must use double backslashes.**
-Example: \\\\SERVER\\CERTS\\CERT5.PEM
+See https://support.mozilla.org/kb/setting-certificate-authorities-firefox for more detail.
 
+**Compatibility:** Firefox 60, Firefox ESR 60 (macOS support in Firefox 63, Firefox ESR 68)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `security.enterprise_roots.enabled`
 
-If Firefox does not find something at your fully qualified path, it will search the default directories.
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Certificates\ImportEnterpriseRoots = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>Certificates</key>
+  <dict>
+    <key>ImportEnterpriseRoots</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "Certificates": {
+      "ImportEnterpriseRoots": true | false
+    }
+  }
+}
+```
+### Certificates | Install
 
-Certificates can be located in the following locations:
+Install certificates into the Firefox certificate store. If only a filename is specified, Firefox searches for the file in the following locations:
+
 - Windows
   - %USERPROFILE%\AppData\Local\Mozilla\Certificates
   - %USERPROFILE%\AppData\Roaming\Mozilla\Certificates
@@ -222,58 +343,175 @@ Certificates can be located in the following locations:
   - /usr/lib64/mozilla/certificates
   - ~/.mozilla/certificates
 
+Starting with Firefox 65, Firefox 60.5 ESR, a fully qualified path can be used, including UNC paths. You should use the native path style for your operating system. We do not support using %USERPROFILE% or other environment variables on Windows.
 
+If you are specifying the path in the policies.json file on Windows, you need to escape your backslashes (`\\`) which means that for UNC paths, you need to escape both (`\\\\`). If you use group policy, you only need one backslash.
+
+Certificates are installed using the trust string `CT,CT,`.
+
+Binary (DER) and ASCII (PEM) certificates are both supported.
+
+**Compatibility:** Firefox 64, Firefox ESR 64\
+**CCK2 Equivalent:** `certs.ca`\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Certificates\Install\1 = "cert1.der"
+Software\Policies\Mozilla\Firefox\Certificates\Install\2 = "C:\Users\username\cert2.pem"
+```
+#### macOS
+```
+<dict>
+  <key>Certificates</key>
+  <dict>
+    <key>Install</key>
+    <array>
+      <string>cert1.der</string>
+      <string>/Users/username/cert2.pem</string>
+    </array>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "Certificates": {
-      "ImportEnterpriseRoots": true,
-      "Install": ["cert1.der", "cert2.pem", "%SYSTEMDRIVE%\\Company\\cert3.der", "/Library/Company/cert4.pem", "\\\\server\\certs\\cert.pem"]
+      "Install": ["cert1.der", "/home/username/cert2.pem"]
     }
   }
 }
 ```
 ### Cookies
-This policy controls various settings related to cookies.
+Configure cookie preferences.
+
+`Allow` is a list of origins (not domains) where cookies are always allowed. You must include http or https.
+
+`Block` is a list of origins (not domains) where cookies are always blocked. You must include http or https.
+
+`Default` determines whether cookies are accepted at all.
+
+`AcceptThirdParty` determines how third-party cookies are handled.
+
+`ExpireAtSessionEnd` determines when cookies expire.
+
+`RejectTracker` only rejects cookies for trackers.
+
+`Locked` prevents the user from changing cookie preferences.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker was added in Firefox 63)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.cookie.cookieBehavior`,`network.cookie.lifetimePolicy`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Cookies\Allow\1 = "https://example.com"
+Software\Policies\Mozilla\Firefox\Cookies\Block\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Cookies\Default = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty = "always" | "never" |"from-visited"
+Software\Policies\Mozilla\Firefox\Cookies\ExpireAtSessionEnd = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Cookies\RejectTracker = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>Cookies</key>
+  <dict>
+    <key>Allow</key>
+    <array>
+      <string>http://example.com</string>
+    </array>
+    <key>Block</key>
+    <array>
+      <string>http://example.org</string>
+    </array>
+    <key>Default</key>
+    <true/> | <false/>
+    <key>AcceptThirdParty</key>
+    <string>always | never | from-visited</string>
+    <key>ExpireAtSessionEnd</key>
+    <true/> | <false/>
+    <key>RejectTracker</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "Cookies": {
-      "Allow": ["http://example.org/"], /* Domains where cookies are always allowed */
-      "Block": ["http://example.edu/"], /* Domains where cookies are always blocked */
-      "Default": [true|false], /* This sets the default value for "Accept cookies from websites" */
-      "AcceptThirdParty": ["always", "never", "from-visited"], /* This sets the default value for "Accept third-party cookies" */
-      "ExpireAtSessionEnd":  [true|false], /* This determines when cookies expire */
-      "RejectTracker": [true|false], /* Only reject trackers */
-      "Locked": [true|false] /* If this is true, cookies preferences can't be changed */
+      "Allow": ["http://example.org/"],
+      "Block": ["http://example.edu/"],
+      "Default": true | false,
+      "AcceptThirdParty": "always" | "never" | "from-visited"],
+      "ExpireAtSessionEnd": true | false,
+      "RejectTracker": true | false,
+      "Locked": true | false
     }
   }
 }
 ```
 ### DNSOverHTTPS
-This policy configures DNS over HTTPS.
+Configure DNS over HTTPS.
+
+`Enabled` determines whether DNS over HTTPS is enabled
+
+`ProviderURL` is a URL to another provider.
+
+`Locked` prevents the user from changing DNS over HTTPS preferences.
+
+**Compatibility:** Firefox 63, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.trr.mode`,`network.trr.uri`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Cookies\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Cookies\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
+Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>Cookies</key>
+  <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
+    <key>ProviderURL</key>
+    <string>URL_TO_ALTERNATE_PROVIDER</string>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "DNSOverHTTPS": {
-      "Enabled": [true|false],
+      "Enabled":  true | false,
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
-      "Locked": [true|false]
+      "Locked": true | false
     }
   }
 }
 ```
 ### DisableSetDesktopBackground
-This policy removes the "Set As Desktop Background..." menuitem when right clicking on an image.
+Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `removeSetDesktopBackground`\
-**Preferences Affected:** `devtools.policy.disabled`
+**Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground` |
+```
+Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground = 0x1 | 0x0
+```
 
 #### macOS
 ```
@@ -291,16 +529,16 @@ This policy removes the "Set As Desktop Background..." menuitem when right click
 }
 ```
 ### DisableMasterPasswordCreation
-If this policy is set to true, the master password functionality is removed.
+Remove the master password functionality.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `noMasterPassword`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation` |
+```
+Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation = 0x1 | 0x0
+```
 
 #### macOS
 ```
@@ -318,17 +556,16 @@ If this policy is set to true, the master password functionality is removed.
 }
 ```
 ### DisableAppUpdate
-This policy turns off application updates.
+Turn off application updates.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableFirefoxUpdates`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableAppUpdate` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableAppUpdate = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -345,16 +582,16 @@ This policy turns off application updates.
 }
 ```
 ### DisableBuiltinPDFViewer
-This policy disables the built in PDF viewer. PDF files are downloaded and sent externally.
+Disable the built in PDF viewer. PDF files are downloaded and sent externally.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePDFjs`\
 **Preferences Affected:** `pdfjs.disabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer` |
+```
+Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
+```
 
 #### macOS
 ```
@@ -372,16 +609,16 @@ This policy disables the built in PDF viewer. PDF files are downloaded and sent 
 }
 ```
 ### DisableDeveloperTools
-This policy removes access to all developer tools.
+Remove access to all developer tools.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `removeDeveloperTools`\
 **Preferences Affected:** `devtools.policy.disabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableDeveloperTools` |
+```
+Software\Policies\Mozilla\Firefox\DisableDeveloperTools = 0x1 | 0x0`
+```
 
 #### macOS
 ```
@@ -399,17 +636,16 @@ This policy removes access to all developer tools.
 }
 ```
 ### DisableFeedbackCommands
-This policy disables the menus for reporting sites (Submit Feedback, Report Deceptive Site).
+Disable the menus for reporting sites (Submit Feedback, Report Deceptive Site).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFeedbackCommands` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableFeedbackCommands = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -426,17 +662,16 @@ This policy disables the menus for reporting sites (Submit Feedback, Report Dece
 }
 ```
 ### DisableFirefoxScreenshots
-This policy removes access to Firefox Screenshots.
+Remove access to Firefox Screenshots.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `extensions.screenshots.disabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -453,17 +688,16 @@ This policy removes access to Firefox Screenshots.
 }
 ```
 ### DisableFirefoxAccounts
-A boolean possibly that disables sync.
+Disable Firefox Accounts intergration (Sync).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableSync`\
 **Preferences Affected:** `identity.fxaccounts.enabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -480,17 +714,16 @@ A boolean possibly that disables sync.
 }
 ```
 ### DisableFirefoxStudies
-This policy disables Firefox studies (Shield).
+Disable Firefox studies (Shield).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableForget`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFirefoxStudies` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableFirefoxStudies = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -507,17 +740,16 @@ This policy disables Firefox studies (Shield).
 }
 ```
 ### DisableForgetButton
-This policy turns disables the "Forget" button.
+Disable the "Forget" button.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableForget`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableForgetButton` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableForgetButton = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -534,17 +766,16 @@ This policy turns disables the "Forget" button.
 }
 ```
 ### DisableFormHistory
-This policy turns off saving information on web forms and the search bar.
+Turn off saving information on web forms and the search bar.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableFormFill`\
 **Preferences Affected:** ` browser.formfill.enable`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableFormHistory` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableFormHistory = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -561,17 +792,16 @@ This policy turns off saving information on web forms and the search bar.
 }
 ```
 ### DisablePocket
-This policy removes Pocket in the Firefox UI. It does not remove it from the new tab page.
+Removes Pocket in the Firefox UI. It does not remove it from the new tab page.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePocket`\
 **Preferences Affected:** `extensions.pocket.enabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisablePocket` |
-
+```
+Software\Policies\Mozilla\Firefox\DisablePocket = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -588,17 +818,16 @@ This policy removes Pocket in the Firefox UI. It does not remove it from the new
 }
 ```
 ### DisablePrivateBrowsing
-This policy removes access to private browsing.
+Removes access to private browsing.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePrivateBrowsing`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisablePrivateBrowsing` |
-
+```
+Software\Policies\Mozilla\Firefox\DisablePrivateBrowsing = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -615,17 +844,16 @@ This policy removes access to private browsing.
 }
 ```
 ### DisableProfileImport
-This policy disables the "Import data from another browser" option in the bookmarks window.
+Disables the "Import data from another browser" option in the bookmarks window.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableProfileImport` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableProfileImport = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -642,17 +870,16 @@ This policy disables the "Import data from another browser" option in the bookma
 }
 ```
 ### DisableProfileRefresh
-This policy disables the Refresh Firefox button on about:support and support.mozilla.org, as well as the prompt that displays offering to refresh Firefox when you haven't used it in a while.
+Disable the Refresh Firefox button on about:support and support.mozilla.org, as well as the prompt that displays offering to refresh Firefox when you haven't used it in a while.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableResetFirefox`\
 **Preferences Affected:** `browser.disableResetPrompt`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableProfileRefresh` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableProfileRefresh = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -669,17 +896,16 @@ This policy disables the Refresh Firefox button on about:support and support.moz
 }
 ```
 ### DisableSafeMode
-This boolean value disables safe mode.
+Disable safe mode.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, macOS)\
 **CCK2 Equivalent:** `disableSafeMode`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableSafeMode` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableSafeMode = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -696,29 +922,55 @@ This boolean value disables safe mode.
 }
 ```
 ### DisableSecurityBypass
-This policy prevents the user from bypassing security in certain cases.
+Prevent the user from bypassing security in certain cases.
+
+`InvalidCertificate` prevents adding an exception when an invalid certificate is shown.
+
+`SafeBrowsing` prevents selecting "ignore the risk" and visiting a harmful site anyway.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `security.certerror.hideAddException`,`browser.safebrowsing.allowOverride`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\DisableSecurityBypass\InvalidCertificate = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisableSecurityBypass\SafeBrowsing = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>DisableSecurityBypass</key>
+  <dict>
+    <key>InvalidCertificate</key>
+    <true/> | <false/>
+ 
+    <key><SafeBrowsing/key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "DisableSecurityBypass": {
-      "InvalidCertificate": [true|false], /* Prevents adding an exception when an invalid certificate is shown */
-      "SafeBrowsing": [true|false]        /* Prevents selecting "ignore the risk" and visiting a harmful site anyway */
+      "InvalidCertificate": true false,
+      "SafeBrowsing": true false
     }
   }
 }
 ```
 ### DisableSystemAddonUpdate
-This boolean value prevents system add-ons from being updated or installed.
+Prevent system add-ons from being installed or update.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableSystemAddonUpdate` |
-
+```Software\Policies\Mozilla\Firefox\DisableSystemAddonUpdate = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -735,7 +987,7 @@ This boolean value prevents system add-ons from being updated or installed.
 }
 ```
 ### DisableTelemetry
-This boolean value prevents the upload of telemetry data.
+Prevent the upload of telemetry data.
 
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
 
@@ -744,10 +996,9 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 **Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisableTelemetry` |
-
+```
+Software\Policies\Mozilla\Firefox\DisableTelemetry = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -764,17 +1015,16 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 }
 ```
 ### DisplayBookmarksToolbar
-This boolean value turns on the bookmarks toolbar by default. A user can still turn it off, and it will stay off.
+Set the initial state of the bookmarks toolbar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `displayBookmarksToolbar`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar` |
-
+```
+Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -791,17 +1041,16 @@ This boolean value turns on the bookmarks toolbar by default. A user can still t
 }
 ```
 ### DontCheckDefaultBrowser
-This boolean value turns on the menubar by default. A user can still turn it off, and it will stay off.
+Set the initial state of the menubar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
 **CCK2 Equivalent:** `displayMenuBar`\
 **Preferences Affected:** N/~
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DisplayMenuBar` |
-
+```
+Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -818,17 +1067,16 @@ This boolean value turns on the menubar by default. A user can still turn it off
 }
 ```
 ### DontCheckDefaultBrowser
-This boolean value stops Firefox from checking if it is the default browser at startup.
+Don't check if Firefox is the default browser at startup.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `dontCheckDefaultBrowser`\
 **Preferences Affected:** `browser.shell.checkDefaultBrowser`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser` |
-
+```
+Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -845,15 +1093,37 @@ This boolean value stops Firefox from checking if it is the default browser at s
 }
 ```
 ### EnableTrackingProtection
-This policy affects tracking protection.
+Configure tracking proection.
 
 If this policy is not configured, tracking protection is not enabled by default in the browser, but it is enabled by default in private browsing and the user can change it.
 
-If Value is set to false, tracking protection is disabled and locked in both the regular browser and private browsing.
+If `Value` is set to false, tracking protection is disabled and locked in both the regular browser and private browsing.
 
-If Value is set to true, tracking protection is enabled by default in both the regular browser and private browsing.
+If `Value` is set to true, tracking protection is enabled by default in both the regular browser and private browsing and the `Locked` value determines whether or not a user can change it.
 
-You can choose to set the Locked value if you want to prevent the user from changing it.
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `dontCheckDefaultBrowser`\
+**Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>EnableTrackingProtection</key>
+  <dict>
+    <key>Value</key>
+    <true/> | <false/>
+ 
+    <key><Locked/key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
@@ -864,32 +1134,71 @@ You can choose to set the Locked value if you want to prevent the user from chan
 }
 ```
 ### Extensions
-This policy controls the installation, uninstallation and locking of extensions. Locked extensions cannot be disabled or uninstalled.
-For Install, you specify a list of URLs or paths.
-For Uninstall and Locked, you specify extension IDs.
+Controls the installation, uninstallation and locking of extensions.
+
+`Install` is a list of URLs or native paths for extensions to be installed. 
+
+`Uninstall` is a list of extension IDs that should be uninstalled if found.
+
+`Locked` is a list of extension IDs that the user cannot disable or uninstall.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `addons`\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Extensions\Install\1 = "https://addons.mozilla.org/firefox/downloads/somefile.xpi"
+Software\Policies\Mozilla\Firefox\Extensions\Install\2 = "//path/to/xpi"
+Software\Policies\Mozilla\Firefox\Extensions\Uninstall\1 = "bad_addon_id@mozilla.org"
+Software\Policies\Mozilla\Firefox\Extensions\Locked\1 = "addon_id@mozilla.org"
+```
+#### macOS
+```
+<dict>
+  <key>Extensions</key>
+  <dict>
+    <key>Install</key>
+    <array>
+      <string>https://addons.mozilla.org/firefox/downloads/somefile.xpi</string>
+      <string>//path/to/xpi</string>
+    </array>
+    <key>Uninstall</key>
+    <array>
+      <string>bad_addon_id@mozilla.org</string>
+    </array>
+    <key>Locked</key>
+    <array>
+      <string>addon_id@mozilla.org</string>
+    </array>
+  </dict>
+</dict>
+```
+#### JSON
+
+
 ```
 {
   "policies": {
     "Extensions": {
       "Install": ["https://addons.mozilla.org/firefox/downloads/somefile.xpi", "//path/to/xpi"],
-      "Uninstall": ["addon_id@mozilla.org"],
+      "Uninstall": ["bad_addon_id@mozilla.org"],
       "Locked":  ["addon_id@mozilla.org"]
     }
   }
 }
 ```
 ### ExtensionUpdate
-This boolean value determines extension update are enabled.
+Control extension updates.
 
-**Compatibility:** Firefox 60, Firefox ESR 60\
+**Compatibility:** Firefox 67, Firefox ESR 60.7\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `extensions.update.enabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\ExtensionUpdate` |
-
+```
+Software\Policies\Mozilla\Firefox\ExtensionUpdate = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -906,17 +1215,16 @@ This boolean value determines extension update are enabled.
 }
 ```
 ### HardwareAcceleration
-This boolean value determines if hardware acceleration is enabled.
+Control hardware acceleration.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `layers.acceleration.disabled`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\HardwareAcceleration` |
-
+```
+Software\Policies\Mozilla\Firefox\HardwareAcceleration = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -933,17 +1241,18 @@ This boolean value determines if hardware acceleration is enabled.
 }
 ```
 ### NoDefaultBookmarks
-A Boolean value that prevents the default bookmarks and Smart Bookmarks (Most Visited, Recent Tags) from being created. Note: this policy is only effective if used before the first run of the profile. Also, the smart bookmarks were removed in Firefox 63.
+Disable the creation of default bookmarks.
+
+This policy is only effective if the user profile has not been created yet.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `removeDefaultBookmarks`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\NoDefaultBookmarks` |
-
+```
+Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -960,17 +1269,16 @@ A Boolean value that prevents the default bookmarks and Smart Bookmarks (Most Vi
 }
 ```
 ### OfferToSaveLogins
-This boolean value determines whether or not Firefox offers to save passwords.
+Control whether or not Firefox offers to save passwords.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `dontRememberPasswords`\
 **Preferences Affected:** `signon.rememberSignons`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\OfferToSaveLogins` |
-
+```
+Software\Policies\Mozilla\Firefox\OfferToSaveLogins = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -987,116 +1295,415 @@ This boolean value determines whether or not Firefox offers to save passwords.
 }
 ```
 ### Homepage
-This policy sets the default homepage value and the default start page.  It can also be used to lock the homepage or add additional homepages.
+Configure the default homepage and how Firefox starts.
+
+`URL` is the default homepage.
+
+`Locked` prevents the user from changing homepage preferences.
+
+`Additional` allows for more than one homepage.
+
+`StartPage` is how Firefox starts. The choices are no homepage, the default homepage or the previous session.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (StartPage was added in Firefox 60, Firefox ESR 60.4)\
+**CCK2 Equivalent:** `homePage`,`lockHomePage`\
+**Preferences Affected:** `browser.startup.homepage`,`browser.startup.page`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Homepage\URL = "https://example.com"
+Software\Policies\Mozilla\Firefox\Homepage\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Homepage\Additional\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Homepage\Additional\2 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "previous-session"
+```
+#### macOS
+```
+<dict>
+  <key>Homepage</key>
+  <dict>
+    <key>URL</key>
+    <string>http://example.com</string>
+    <key>Locked</key>
+    <true/> | <false/>
+    <key>Additional</key>
+    <array>
+      <string>http://example.org</string>
+      <string>http://example.edu</string>
+    </array>
+    <key>StartPage</key>
+    <string>always | never | from-visited</string>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "Homepage": {
       "URL": "http://example.com/",
-      "Locked": true,
+      "Locked": true | false,
       "Additional": ["http://example.org/",
                      "http://example.edu/"],
-      "StartPage": ["none", "homepage", "previous-session"]
+      "StartPage": "none" | "homepage" |  "previous-session"
     }
   }
 }
 ```
 ### PopupBlocking
-This policy sets domains for which pop-up windows are allowed. It also sets the default pop-up policy.
+Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
+
+`Allow` is a list of origins where popup-windows are allowed.
+
+`Default` determines whether or not pop-up windows are allowed by default.
+
+`Locked` prevents the user from changing pop-up preferences.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `permissions.popup`\
+**Preferences Affected:** `dom.disable_open_during_load`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\2 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\PopupBlocking\Default = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\PopupBlocking\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>PopupBlocking</key>
+  <dict>
+    <key>Allow</key>
+    <array>
+      <string>http://example.org</string>
+      <string>http://example.edu</string>
+    </array>
+    <key>Default</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "PopupBlocking": {
       "Allow": ["http://example.org/",
                 "http://example.edu/"],
-      "Default": [true|false], /* If this is set to false, pop-up window are enabled by default. */
-      "Locked": [true|false]
+      "Default": true | false,
+      "Locked": true | false
     }
   }
 }
 ```
 ### InstallAddonsPermission
-This policy sets domains that can install extensions, as well as the default behavior.
+Configure the default extension install policy as well as origins for extension installs are allowed. This policy does not override turning off all extension installs.
+
+`Allow` is a list of origins where extension installs are allowed.
+
+`Default` determines whether or not extension installs are allowed by default.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `permissions.install`\
+**Preferences Affected:** `xpinstall.enabled`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow\2 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Default = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>InstallAddonsPermission</key>
+  <dict>
+    <key>Allow</key>
+    <array>
+      <string>http://example.org</string>
+      <string>http://example.edu</string>
+    </array>
+    <key>Default</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "InstallAddonsPermission": {
       "Allow": ["http://example.org/",
                 "http://example.edu/"],
-      "Default": [true|false] /* If this is set to false, add-ons cannot be installed by the user */
+      "Default": true | false
     }
   }
 }
 ```
 ### FlashPlugin
-This policy sets the behavior of Flash on the specified domains, as well as the default behavior.
+Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+
+`Allow` is a list of origins where Flash are allowed.
+
+`Block` is a list of origins where Flash is not allowed.
+
+`Default` determines whether or not Flash is allowed by default.
+
+`Locked` prevents the user from changing Flash preferences.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `permissions.plugin`\
+**Preferences Affected:** `plugin.state.flash`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\FlashPlugin\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\FlashPlugin\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\FlashPlugin\Default = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>FlashPlugin</key>
+  <dict>
+    <key>Allow</key>
+    <array>
+      <string>http://example.org</string>
+    </array>
+    <key>Block</key>
+    <array>
+      <string>http://example.edu</string>
+    </array>
+    <key>Default</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "FlashPlugin": {
-      "Allow": ["http://example.org/"], /* Sites on the allow list do not override Flash being completely disabled */
+      "Allow": ["http://example.org/"],
       "Block": ["http://example.edu/"],
-      "Default": [true|false], /* If this is set to true, Flash is always enabled. If it is set to false, Flash is never enabled */
-      "Locked": [true|false]
+      "Default": true | false,
+      "Locked": true | false
     }
   }
 }
 ```
 ### NetworkPrediction
-This policy enables or disables network prediction (DNS prefetching) by setting and locking the preferences `network.dns.disablePrefetch` and `network.dns.disablePrefetchFromHTTPS`.
+Enable or disable  network prediction (DNS prefetching).
+
+**Compatibility:** Firefox 67, Firefox ESR 60.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.dns.disablePrefetch`,`network.dns.disablePrefetchFromHTTPS`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\NetworkPrediction = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>NetworkPrediction</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "NetworkPrediction": [true|false]
+    "NetworkPrediction": true | false
 }
 ```
 ### OverrideFirstRunPage
-This policy allows you to override the first run page. If you leave the URL blank, the first run page will not be displayed.
+Override the first run page. If the value is blank, no first run page is displayed.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `welcomePage`,`noWelcomePage`\
+**Preferences Affected:** `startup.homepage_welcome_url`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\OverrideFirstRunPage = "http://example.org"
+```
+#### macOS
+```
+<dict>
+  <key>OverrideFirstRunPage</key>
+  <string>http://example.org</string>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "OverrideFirstRunPage": "http://example.org"
-  }
+    "OverrideFirstRunPage": ""http://example.org""
 }
 ```
 ### OverridePostUpdatePage
-This policy allows you to override the upgrade page. If you leave the URL blank, the upgrade page will not be displayed.
+Override the upgrade page. If the value is blank, no upgrade page is displayed.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `upgradePage`,`noUpgradePage`\
+**Preferences Affected:** `startup.homepage_override_url`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\OverridePostUpdatePage = "http://example.org"
+```
+#### macOS
+```
+<dict>
+  <key>OverridePostUpdatePage</key>
+  <string>http://example.org</string>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
-    "OverridePostUpdatePage": "http://example.org"
-  }
+    "OverridePostUpdatePage": ""http://example.org""
 }
 ```
 ### Permissions
-This policy allows you to change the permissions associated with camera, microphone, location, and notifications
+Set permissions associated with camera, microphone, location, and notifications
+
+`Allow` is a list of origins where the feature is allowed.
+
+`Block` is a list of origins where the feature is not allowed.
+
+`BlockNewRequests` determines whether or not new requests can be made for the feature.
+
+`Locked` prevents the user from changing preferences for the feature.
+
+**Compatibility:** Firefox 62, Firefox ESR 60.2\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Camera\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\Camera\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Camera\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Microphone\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Microphone\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\Microphone\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Microphone\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Location\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Location\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\Location\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Location\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\Notifications\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>Permissions</key>
+  <dict>
+    <key>Camera</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+      <key>BlockNewRequests</key>
+      <true/>
+      <key>Locked</key>
+      <true/>
+    </dict>
+    <key>Microphone</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+      <key>BlockNewRequests</key>
+      <true/>
+      <key>Locked</key>
+      <true/>
+    </dict>
+    <key>Location</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+      <key>BlockNewRequests</key>
+      <true/>
+      <key>Locked</key>
+      <true/>
+    </dict>
+    <key>Notifications</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+      <key>BlockNewRequests</key>
+      <true/>
+      <key>Locked</key>
+      <true/>
+    </dict>
+  </dict>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
     "Permissions": {
       "Camera": {
-        "Allow": ["http://example.org/"], /* Origins where camera access is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where camera access is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to access the camera */
-        "Locked": [true|false] /* Don't allow the user to change the camera preferences */
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
       },
       "Microphone": {
-        "Allow": ["http://example.org/"], /* Origins where microphone access is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where microphone access  is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to access the microphone */
-        "Locked": [true|false] /* Don't allow the user to change the microphone preferences */
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
       },
       "Location": {
-        "Allow": ["http://example.org/"], /* Origins where location access is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where location access is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to access location */
-        "Locked": [true|false] /* Don't allow the user to change the location preferences */
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
       },
       "Notifications": {
-        "Allow": ["http://example.org/"], /* Origins where sending notifications is allowed by default */
-        "Block": ["http://example.org/"], /* Origins where sending notifications is blocked by default */
-        "BlockNewRequests": [true|false], /* Block new requests to send notifications */
-        "Locked": [true|false] /* Don't allow the user to change the notification preferences */
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
       }
     }
   }
@@ -1104,87 +1711,80 @@ This policy allows you to change the permissions associated with camera, microph
 ```
 ### Proxy
 This policy allows you to specify proxy settings. These settings correspond to the connection settings in Firefox preferences.
-To specify ports, append them to the hostnames with a colon (:). If Locked is set to true, the values can't be changed by the user.
-```
-{
-  "policies": {
-    "Proxy": {
-      "Mode": ["none", "system", "manual", "autoDetect", "autoConfig"],
-      "Locked": [true, false],
-      "HTTPProxy": "hostname",
-      "UseHTTPProxyForAllProtocols": [true, false],
-      "SSLProxy": "hostname",
-      "FTPProxy": "hostname",
-      "SOCKSProxy": "hostname",
-      "SOCKSVersion": [4, 5],
-      "Passthrough": "List of passthrough addresses/domains",
-      "AutoConfigURL": "URL_TO_AUTOCONFIG",
-      "AutoLogin":  [true, false],
-      "UseProxyForDNS": [true, false]
-    }
-  }
-}
-```
-**Compatibility:** Firefox ESR 60\
-**CCK2 Equivalent:** `networkProxy*`\
-**Preferences Affected:** N/A
+To specify ports, append them to the hostnames with a colon (:).
 
-### Keys
-| Key | Type | Default | Description |
-| --- | ---- | ------- | ----------- |
-| `Mode` | String | _required_ | The name of the search engine. |
-| `Locked` | Boolean | _required_ | Search URL with {searchTerms} to substitute for the search term. |
-| `HTTPProxy` | String | GET | GET or POST |
-| `UseHTTPProxyForAllProtocols` | Boolean | — | URL for the icon to use. |
-| `SSLProxy` | String | — | Keyword to use for the engine. |
-| `FTPProxy` | String | —| Description of the search engine. |
-| `SOCKSProxy` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
-| `SOCKSVersion` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
-| `Passthrough` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
-| `AutoConfigURL` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
-| `AutoLogin` | Boolean | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
-| `UseProxyForDNS` | Boolean | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
+`Mode` is the proxy method being used.
+
+`Locked` is whether or not proxy settings can be changed.
+
+`HTTPProxy` is the HTTP proxy server.
+
+`UseHTTPProxyForAllProtocols` is whether or not the HTTP proxy should be used for all other proxies.
+
+`SSLProxy` is the SSL proxy server.
+
+`FTPProxy` is the FTP proxy server.
+
+`SOCKSProxy` is the SOCKS proxy server
+
+`SOCKSVersion` is the SOCKS version (4 or 5)
+
+`Passthrough` is list of hostnames or IP addresses that will not be proxied. Use `<local>` to bypass proxying for all hostnames which do not contain periods.
+
+`AutoConfigURL` is a  URL for proxy configuration (only used if Mode is autoConfig).
+
+| `AutoLogin` means do not prompt for authentication if password is saved.
+
+| `UseProxyForDNS` to use proxy DNS when using SOCK v5.
+
+**Compatibility:** Firefoox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `networkProxy*`\
+**Preferences Affected:** `network.proxy.type`,`network.proxy.autoconfig_url`,`network.proxy.socks_remote_dns`,`signon.autologin.proxy`,`network.proxy.socks_version`,`network.proxy.no_proxies_on`,`network.proxy.share_proxy_settings`,`network.proxy.http`,`network.proxy.http_port`,`network.proxy.ftp`,`network.proxy.ftp_port`,`network.proxy.ssl`,`network.proxy.ssl_port`,`network.proxy.socks`,`network.proxy.socks_port`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\Mode` |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\Locked` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\HTTPProxy` |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\UseHTTPProxyForAllProtocols` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\SSLProxy` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\FTPProxy` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\SOCKSProxy` |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\SOCKSVersion` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\Passthrough` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\AutoConfigURL` |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\AutoLogin` |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SearchEngines\Proxy\UseProxyForDNS` |
-
+```
+Software\Policies\Mozilla\Firefox\Proxy\Mode = "none", "system", "manual", "autoDetect", "autoConfig"
+Software\Policies\Mozilla\Firefox\Proxy\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\=Proxy\HTTPProxy = https://httpproxy.example.com
+Software\Policies\Mozilla\Firefox\Proxy\UseHTTPProxyForAllProtocols = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Proxy\SSLProxy = https://sslproxy.example.com
+Software\Policies\Mozilla\Firefox\Proxy\FTPProxy = https://ftpproxy.example.com
+Software\Policies\Mozilla\Firefox\Proxy\SOCKSProxy = https://socksproxy.example.com
+Software\Policies\Mozilla\Firefox\Proxy\SOCKSVersion = 0x4 | 0x5
+Software\Policies\Mozilla\Firefox\Proxy\Passthrough = <local>
+Software\Policies\Mozilla\Firefox\Proxy\AutoConfigURL = URL_TO_AUTOCONFIG
+Software\Policies\Mozilla\Firefox\Proxy\AutoLogin = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
-  <key>Search</key>
+  <key>Proxy</key>
   <dict>
-    <key>Proxy</key>
-    <array>
-      <dict>
-        <key>Mode</key>
-        <string>none | system | manual | autoDetect| autoConfig</string>
-        <key>Locked</key>
-        <true> | </false>
-        <key>HTTPProxy</key>
-        <string>https://httpproxy.example.com</string>
-        <key>UseHTTPProxyForAllProtocols</key>
-        <true> | </false>
-        <key>SSLProxy</key>
-        <string>https://sslproxy.example.com</string>
-        <key>FTPProxy</key>
-        <string>https://ftpproxy.example.com</string>
-        <key>SOCKSProxy</key>
-        <string>https://socksproxy.example.com</string>
-      </dict>
-    <array>
+    <key>Mode</key>
+    <string>none | system | manual | autoDetect| autoConfig</string>
+    <key>Locked</key>
+    <true> | </false>
+    <key>HTTPProxy</key>
+    <string>https://httpproxy.example.com</string>
+    <key>UseHTTPProxyForAllProtocols</key>
+    <true> | </false>
+    <key>SSLProxy</key>
+    <string>https://sslproxy.example.com</string>
+    <key>FTPProxy</key>
+    <string>https://ftpproxy.example.com</string>
+    <key>SOCKSProxy</key>
+    <string>https://socksproxy.example.com</string>
+    <key>SOCKSVersion</key>
+    <string>4 | 5</string>
+    <key>Passthrough</key>
+    <string>&lt;local>&gt;</string>
+    <key>AutoConfigURL</key>
+    <string>URL_TO_AUTOCONFIG</string>
+    <key>AutoLogin</key>
+    <true> | </false>
+    <key>UseProxyForDNS</key>
+    <true> | </false>
   </dict>
 </dict>
 ```
@@ -1192,24 +1792,45 @@ To specify ports, append them to the hostnames with a colon (:). If Locked is se
 ```
 {
   "policies": {
-    "SearchEngines": {
-      "Add": [
-        {
-          "Name": "",
-          "URLTemplate": "URL including {searchTerms} to substitute for the terms",
-          "Method": ["GET", "POST"],
-          "IconURL": "URL to icon",
-          "Alias": "Alias that can be used to access the engine",
-          "Description": "Description",
-          "SuggestURLTemplate": "URL for suggestions using {searchTerms}"
-        }
-      ]
+    "Proxy": {
+      "Mode": "none", "system", "manual", "autoDetect", "autoConfig",
+      "Locked": [true, false],
+      "HTTPProxy": "hostname",
+      "UseHTTPProxyForAllProtocols": [true, false],
+      "SSLProxy": "hostname",
+      "FTPProxy": "hostname",
+      "SOCKSProxy": "hostname",
+      "SOCKSVersion": 4 | 5
+      "Passthrough": "<local>",
+      "AutoConfigURL": "URL_TO_AUTOCONFIG",
+      "AutoLogin":  [true, false],
+      "UseProxyForDNS": [true, false]
     }
   }
 }
 ```
 ### RequestedLocales
-This policy sets the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+Set the the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+
+**Compatibility:** Firefox 64, Firefox ESR 60.4\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\RequestedLocales\1 = "de"
+Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
+```
+#### macOS
+```
+<dict>
+  <key>RequestedLocales</key>
+  <array>
+    <string>de</string>
+    <string>en-US</string>
+  </array>
+</dict>
+```
+#### JSON
 ```
 {
   "policies": {
@@ -1218,16 +1839,15 @@ This policy sets the list of requested locales for the application in order of p
 }
 ```
 ### SanitizeOnShutdown
-A boolean value that tells Firefox to clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
+Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown,privacy.clearOnShutdown.cache,privacy.clearOnShutdown.cookies,privacy.clearOnShutdown.downloads,privacy.clearOnShutdown.formdata,privacy.clearOnShutdown.history,privacy.clearOnShutdown.sessions,privacy.clearOnShutdown.siteSettings,privacy.clearOnShutdown.offlineApps`
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_DWORD` | `Software\Policies\Mozilla\Firefox\SanitizeOnShutdown` |
-
+```
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
+```
 #### macOS
 ```
 <dict>
@@ -1235,7 +1855,6 @@ A boolean value that tells Firefox to clear all data on shutdown, including Brow
   <true/> | <false/>
 </dict>
 ```
-
 #### JSON
 ```
 {
@@ -1244,27 +1863,17 @@ A boolean value that tells Firefox to clear all data on shutdown, including Brow
   }
 }
 ```
-### SanitizeOnShutdown
-If this policy is set to true,  all data is cleared when Firefox is closed. This includes Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
-```
-{
-  "policies": {
-    "SanitizeOnShutdown": [true|false]
-  }
-}
-```
 ### SearchBar
-A String value that sets whether or not the search bar is displayed.
+Sets whether or not search bar is displayed.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `showSearchBar`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchBar` |
-
+```
+Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
+```
 #### macOS
 ```
 <dict>
@@ -1282,7 +1891,36 @@ A String value that sets whether or not the search bar is displayed.
 }
 ```
 ### WebsiteFilter
+Block webs
 This policy blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
+Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
+```
+#### macOS
+```
+<dict>
+  <key>WebsiteFilter</key>
+  <dict>
+    <key>Block</key>
+    <array>
+      <string><all_urls></string>
+    </array>
+    <key>Exceptions</key>
+    <array>
+      <string>http://example.org/*</string>
+    </array>
+  </dict>
+
+</dict>
+```
+### JSON
 ```
 {
   "policies": {
@@ -1293,55 +1931,146 @@ This policy blocks websites from being visited. The parameters take an array of 
   }
 }
 ```
-### Search Engines (This policy is only available on the ESR.)
-This policy allows you to add new search engines, remove or hide search engines, as well as set the default and prevent the install of search engines from web pages. Only Name and URLTemplate is required.
+
+
+
+
+### SearchEngines (This policy is only available on the ESR.)
+
+### SearchEngines | Default
+
+This policy allows you to set the default search engine. This policy is only available on the ESR.
+
+**Compatibility:** Firefox ESR 60\
+**CCK2 Equivalent:** `defaultSearchEngine`\
+**Preferences Affected:** N/A
+
+### Windows
+```
+Software\Policies\Mozilla\Firefox\SearchEngines\Default = NAME_OF_SEARCH_ENGINE
+```
+#### macOS
+```
+<dict>
+  <key>SearchEngines</key>
+  <dict>
+    <key>Default</key>
+    <string>NAME_OF_SEARCH_ENGINE</string>
+  </dict>
+</dict>
+```
+### JSON
 ```
 {
   "policies": {
     "SearchEngines": {
-      "Default": "Name of engine",
-      "PreventInstalls": [true|false],
-      "Remove": ["Twitter", "Wikipedia (en)"]
+      "Default": "NAME_OF_SEARCH_ENGINE"
     }
   }
 }
 ```
-### Search Engines
+### SearchEngines | PreventInstalls
 
-### Search Engines | Add
+Prevent installing search engines from webpages.
 
-This policy allows you to add up to five new search engines. This policy is only available on the ESR.
+**Compatibility:** Firefox ESR 60\
+**CCK2 Equivalent:** `disableSearchEngineInstall`\
+**Preferences Affected:** N/A
+
+### Windows
+```
+Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>SearchEngines</key>
+  <dict>
+    <key>PreventInstalls</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SearchEngines": {
+      "PreventInstalls": true | false
+    }
+  }
+}
+```
+### SearchEngines | Remove
+
+This policy allows you to hide built-in search engines. This policy is only available on the ESR.
+
+**Compatibility:** Firefox ESR 60\
+**CCK2 Equivalent:** `removeDefaultSearchEngines` (removed all built-in engines)\
+**Preferences Affected:** N/A
+
+### Windows
+```
+Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
+```
+#### macOS
+```
+<dict>
+  <key>SearchEngines</key>
+  <dict>
+    <key>Remove</key>
+    <array>
+      <string>NAME_OF_SEARCH_ENGINE</string>
+    </array>
+  </dict>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SearchEngines": {
+      "Remove": ["NAME_OF_SEARCH_ENGINE"]
+    }
+  }
+}
+```
+### SearchEngines | Add
+
+This policy allows you to add up to five new search engines. This policy is only available on the ESR. `Name` and `URLTemplate` are required.
+
+### Keys
+`Name` is the name of the search engine.
+
+`URLTemplate` is the search URL with {searchTerms} to substitute for the search term.
+
+`Method` is either GET or POST
+
+`IconURL` is a URL for the icon to use.
+
+`Alias` is a keyword to use for the engine.
+
+`Description` is a description of the search engine.
+
+`SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
 
 **Compatibility:** Firefox ESR 60\
 **CCK2 Equivalent:** `config.searchplugins`\
 **Preferences Affected:** N/A
 
-### Keys
-| Key | Type | Default | Description |
-| --- | ---- | ------- | ----------- |
-| `Name` | String | _required_ | The name of the search engine. |
-| `URLTemplate` | String | _required_ | Search URL with {searchTerms} to substitute for the search term. |
-| `Method` | String | GET | GET or POST |
-| `IconURL` | String | — | URL for the icon to use. |
-| `Alias` | String | — | Keyword to use for the engine. |
-| `Description` | String | —| Description of the search engine. |
-| `SuggestURLTemplate` | String | — | Search suggestions URL with {searchTerms} to substitute for the search term. |
-
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description` |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate` |
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate =
 
 #### macOS
 ```
 <dict>
-  <key>Search</key>
+  <key>SearchEngines</key>
   <dict>
     <key>Add</key>
     <array>
@@ -1386,17 +2115,17 @@ This policy allows you to add up to five new search engines. This policy is only
 }
 ```
 ### SecurityDevices
-A dictionary with the names and locations of PKCS #11 modules to be installed.
+
+Install PKCS #11 modules.
 
 **Compatibility:** Firefox 64, Firefox ESR 60.4\
 **CCK2 Equivalent:** `certs.devices`\
 **Preferences Affected:** N/A
 
 #### Windows
-| Type | Registry Location | Registry Value |
-| ---- | ----------------- | -------------- |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SecurityDevices\NAME_OF_DEVICE` | `PATH_TO_LIBRARY_FOR_DEVICE`
-
+```
+Software\Policies\Mozilla\Firefox\SecurityDevices\NAME_OF_DEVICE = PATH_TO_LIBRARY_FOR_DEVICE
+```
 #### macOS
 ```
 <dict>
@@ -1419,17 +2148,17 @@ A dictionary with the names and locations of PKCS #11 modules to be installed.
 }
 ```
 ### SSLVersionMax
-A String value that sets and locks the maximum version of TLS
+
+Set and lock the maximum version of TLS.
 
 **Compatibility:** Firefox 66, Firefox ESR 60.6\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.max`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SSLVersionMax` |
-
+```
+Software\Policies\Mozilla\Firefox\SSLVersionMax = "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
+```
 #### macOS
 ```
 <dict>
@@ -1447,17 +2176,17 @@ A String value that sets and locks the maximum version of TLS
 }
 ```
 ### SSLVersionMin
-A String value that sets and locks the minimum version of TLS
+
+Set and lock the minimum version of TLS.
 
 **Compatibility:** Firefox 66, Firefox ESR 60.6\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.min`
 
 #### Windows
-| Type | Registry Location |
-| ---- | ----------------- |
-| `Windows:REG_SZ` | `Software\Policies\Mozilla\Firefox\SSLVersionMin` |
-
+```
+Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
+```
 #### macOS
 ```
 <dict>
