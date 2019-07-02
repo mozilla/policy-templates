@@ -1,71 +1,71 @@
-**IMPORTANT**: This file is in active development along with the policies in Firefox. Make sure to check compatibility to see if a policy is available in a specific version of Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
+**IMPORTANT**: This file is in active development along with the policies in Firefox. Make sure to check the compatibility section to see if a policy is available in a specific version of Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
 
 Policies can be specified using the Group Policy templates on Windows (https://github.com/mozilla/policy-templates/tree/master/windows), configuration profiles on macOS (https://github.com/mozilla/policy-templates/tree/master/mac), or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
 
-| Policy Name | Description |
+| Policy Name | Description
 | --- | --- |
-| **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update. |
-| **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication. |
-| **[`BlockAboutAddons`](#blockaboutaddons)** |Block access to the Add-ons Manager (about:addons).
-| **[`BlockAboutConfig`](#blockaboutconfig)** |Block access to about:config.
-| **[`BlockAboutProfiles`](#blockaboutprofiles)** |Block access to About Profiles (about:profiles).
-| **[`BlockAboutSupport`](#blockaboutsupport)** |Block access to Troubleshooting Information (about:support).
-| **[`Bookmarks`](#bookmarks)** |Add bookmarks in either the bookmarks toolbar or menu. 
-| **[`CaptivePortal`](#captiveportal)** |Enable or disable the detection of captive portals.
+| **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update.
+| **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication.
+| **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
+| **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
+| **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
+| **[`BlockAboutSupport`](#blockaboutsupport)** | Block access to Troubleshooting Information (about:support).
+| **[`Bookmarks`](#bookmarks)** | Add bookmarks in either the bookmarks toolbar or menu.
+| **[`CaptivePortal`](#captiveportal)** | Enable or disable the detection of captive portals.
 | **[`Certificates`](#certificates)** |
-| **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** |Trust certificates that have been added to the operating system certificate store by a user or administrator.
-| **[`Certificates -> Install`](#certificates--install)** |Install certificates into the Firefox certificate store.
-| **[`Cookies`](#cookies)** |Configure cookie preferences.
-| **[`DNSOverHTTPS`](#dnsoverhttps)** |Configure DNS over HTTPS.
-| **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** |Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
-| **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** |Remove the master password functionality.
-| **[`DisableAppUpdate`](#disableappupdate)** |Turn off application updates.
-| **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** |Disable the built in PDF viewer.
-| **[`DisableDeveloperTools`](#disabledevelopertools)** |Remove access to all developer tools.
-| **[`DisableFeedbackCommands`](#disablefeedbackcommands)** |Disable the menus for reporting sites.
-| **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** |Remove access to Firefox Screenshots.
-| **[`DisableFirefoxAccounts`](#disablefirefoxaccounts)** |Disable Firefox Accounts integration (Sync).
-| **[`DisableFirefoxStudies`](#disablefirefoxstudies)** |Disable Firefox studies (Shield).
-| **[`DisableForgetButton`](#disableforgetbutton)** |Disable the "Forget" button.
-| **[`DisableFormHistory`](#disableformhistory)** |Turn off saving information on web forms and the search bar.
-| **[`DisablePocket`](#disablepocket)** |Remove Pocket in the Firefox UI.
-| **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** |Remove access to private browsing.
-| **[`DisableProfileImport`](#disableprofileimport)** |Disables the "Import data from another browser" option in the bookmarks window.
-| **[`DisableProfileRefresh`](#disableprofilerefresh)** |Disable the Refresh Firefox button on about:support and support.mozilla.org
-| **[`DisableSafeMode`](#disablesafemode)** |Disable safe mode.
-| **[`DisableSecurityBypass`](#disablesecuritybypass)** |Prevent the user from bypassing security in certain cases.
-| **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** |Prevent system add-ons from being installed or update.
-| **[`DisableTelemetry`](#disabletelemetry)** |DisableTelemetry
-| **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** |Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar`](#displaymenubar)** |Set the initial state of the menubar
-| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** |Don't check if Firefox is the default browser at startup.
-| **[`EnableTrackingProtection`](#enabletrackingprotection)** |Configure tracking protection.
-| **[`Extensions`](#extensions)** |Control the installation, uninstallation and locking of extensions.
-| **[`ExtensionUpdate`](#extensionupdate)** |Control extension updates.
-| **[`HardwareAcceleration`](#hardwareacceleration)** |Control hardware acceleration.
-| **[`NoDefaultBookmarks`](#nodefaultbookmarks)** |Disable the creation of default bookmarks.
-| **[`OfferToSaveLogins`](#offertosavelogins)** |Control whether or not Firefox offers to save passwords.
-| **[`Homepage`](#homepage)** |Configure the default homepage and how Firefox starts.
-| **[`PopupBlocking`](#popupblocking)** |Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
-| **[`InstallAddonsPermission`](#installaddonspermission)** |Configure the default extension install policy as well as origins for extension installs are allowed.
-| **[`FlashPlugin`](#flashplugin)** |Configure the default Flash plugin policy as well as origins for which Flash is allowed.
-| **[`NetworkPrediction`](#networkprediction)** |Enable or disable network prediction (DNS prefetching).
-| **[`OverrideFirstRunPage`](#overridefirstrunpage)** |Override the first run page.
-| **[`OverridePostUpdatePage`](#overridepostupdatepage)** |Override the upgrade page.
-| **[`Permissions`](#permissions)** |Set permissions associated with camera, microphone, location, and notifications.
-| **[`Proxy`](#proxy)** |Configure proxy settings.
-| **[`RequestedLocales`](#requestedlocales)** |Set the the list of requested locales for the application in order of preference.
-| **[`SanitizeOnShutdown`](#sanitizeonshutdown)** |Clear all data on shutdown.
-| **[`SearchBar`](#searchbar)** |Set whether or not search bar is displayed.
-| **[`WebsiteFilter`](#websitefilter)** |Block websites from being visited.
+| **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
+| **[`Certificates -> Install`](#certificates--install)** | Install certificates into the Firefox certificate store.
+| **[`Cookies`](#cookies)** | Configure cookie preferences.
+| **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** | Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
+| **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
+| **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
+| **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
+| **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
+| **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
+| **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
+| **[`DisableFirefoxAccounts`](#disablefirefoxaccounts)** | Disable Firefox Accounts integration (Sync).
+| **[`DisableFirefoxStudies`](#disablefirefoxstudies)** | Disable Firefox studies (Shield).
+| **[`DisableForgetButton`](#disableforgetbutton)** | Disable the "Forget" button.
+| **[`DisableFormHistory`](#disableformhistory)** | Turn off saving information on web forms and the search bar.
+| **[`DisablePocket`](#disablepocket)** | Remove Pocket in the Firefox UI.
+| **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
+| **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
+| **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
+| **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode.
+| **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
+| **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
+| **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
+| **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
+| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar
+| **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
+| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
+| **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
+| **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
+| **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
+| **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+| **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
+| **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
+| **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
+| **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
+| **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
+| **[`OfferToSaveLogins`](#offertosavelogins)** | Control whether or not Firefox offers to save passwords.
+| **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
+| **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
+| **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
+| **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
+| **[`Proxy`](#proxy)** | Configure proxy settings.
+| **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
+| **[`SanitizeOnShutdown`](#sanitizeonshutdown)** | Clear all data on shutdown.
+| **[`SearchBar`](#searchbar)** | Set whether or not search bar is displayed.
 | **[`SearchEngines`](#searchengines-this-policy-is-only-available-on-the-esr)** |
-| **[`SearchEngines -> Default`](#searchengines--default)** |Set the default search engine. 
-| **[`SearchEngines -> PreventInstalls`](#searchengines--preventinstalls)** |Prevent installing search engines from webpages.
-| **[`SearchEngines -> Remove`](#searchengines--remove)** |Hide built-in search engines.
-| **[`SearchEngines -> Add`](#searchengines--add)** |Add new search engines.
-| **[`SecurityDevices`](#securitydevices)** |Install PKCS #11 modules.
-| **[`SSLVersionMax`](#sslversionmax)** |Set and lock the maximum version of TLS.
-| **[`SSLVersionMin`](#sslversionmin)** |Set and lock the minimum version of TLS.
+| **[`SearchEngines -> Default`](#searchengines--default)** | Set the default search engine.
+| **[`SearchEngines -> PreventInstalls`](#searchengines--preventinstalls)** | Prevent installing search engines from webpages.
+| **[`SearchEngines -> Remove`](#searchengines--remove)** | Hide built-in search engines.
+| **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
+| **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
+| **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
+| **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
+| **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 
 
 ### AppUpdateURL
@@ -507,51 +507,6 @@ Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
       "AcceptThirdParty": "always" | "never" | "from-visited"],
       "ExpireAtSessionEnd": true | false,
       "RejectTracker": true | false,
-      "Locked": true | false
-    }
-  }
-}
-```
-### DNSOverHTTPS
-Configure DNS over HTTPS.
-
-`Enabled` determines whether DNS over HTTPS is enabled
-
-`ProviderURL` is a URL to another provider.
-
-`Locked` prevents the user from changing DNS over HTTPS preferences.
-
-**Compatibility:** Firefox 63, Firefox ESR 68\
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.trr.mode`,`network.trr.uri`
-
-#### Windows
-```
-Software\Policies\Mozilla\Firefox\Cookies\Enabled = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\Cookies\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
-Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
-```
-#### macOS
-```
-<dict>
-  <key>Cookies</key>
-  <dict>
-    <key>Enabled</key>
-    <true/> | <false/>
-    <key>ProviderURL</key>
-    <string>URL_TO_ALTERNATE_PROVIDER</string>
-    <key>Locked</key>
-    <true/> | <false/>
-  </dict>
-</dict>
-```
-#### JSON
-```
-{
-  "policies": {
-    "DNSOverHTTPS": {
-      "Enabled":  true | false,
-      "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
       "Locked": true | false
     }
   }
@@ -1000,7 +955,6 @@ Software\Policies\Mozilla\Firefox\DisableSecurityBypass\SafeBrowsing = 0x1 | 0x0
   <dict>
     <key>InvalidCertificate</key>
     <true/> | <false/>
- 
     <key><SafeBrowsing/key>
     <true/> | <false/>
   </dict>
@@ -1119,6 +1073,51 @@ Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
 {
   "policies": {
     "DisplayMenuBar": true | false
+  }
+}
+```
+### DNSOverHTTPS
+Configure DNS over HTTPS.
+
+`Enabled` determines whether DNS over HTTPS is enabled
+
+`ProviderURL` is a URL to another provider.
+
+`Locked` prevents the user from changing DNS over HTTPS preferences.
+
+**Compatibility:** Firefox 63, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.trr.mode`,`network.trr.uri`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Cookies\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Cookies\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
+Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>Cookies</key>
+  <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
+    <key>ProviderURL</key>
+    <string>URL_TO_ALTERNATE_PROVIDER</string>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "DNSOverHTTPS": {
+      "Enabled":  true | false,
+      "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
+      "Locked": true | false
+    }
   }
 }
 ```
@@ -1270,6 +1269,61 @@ Software\Policies\Mozilla\Firefox\ExtensionUpdate = 0x1 | 0x0
   }
 }
 ```
+### FlashPlugin
+Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+
+`Allow` is a list of origins where Flash are allowed.
+
+`Block` is a list of origins where Flash is not allowed.
+
+`Default` determines whether or not Flash is allowed by default.
+
+`Locked` prevents the user from changing Flash preferences.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `permissions.plugin`\
+**Preferences Affected:** `plugin.state.flash`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\FlashPlugin\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\FlashPlugin\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\FlashPlugin\Default = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>FlashPlugin</key>
+  <dict>
+    <key>Allow</key>
+    <array>
+      <string>http://example.org</string>
+    </array>
+    <key>Block</key>
+    <array>
+      <string>http://example.edu</string>
+    </array>
+    <key>Default</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "FlashPlugin": {
+      "Allow": ["http://example.org/"],
+      "Block": ["http://example.edu/"],
+      "Default": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
 ### HardwareAcceleration
 Control hardware acceleration.
 
@@ -1293,60 +1347,6 @@ Software\Policies\Mozilla\Firefox\HardwareAcceleration = 0x1 | 0x0
 {
   "policies": {
     "HardwareAcceleration": true | false
-  }
-}
-```
-### NoDefaultBookmarks
-Disable the creation of default bookmarks.
-
-This policy is only effective if the user profile has not been created yet.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `removeDefaultBookmarks`\
-**Preferences Affected:** N/A
-
-#### Windows
-```
-Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
-```
-#### macOS
-```
-<dict>
-  <key>NoDefaultBookmarks</key>
-  <true/> | <false/>
-</dict>
-```
-#### JSON
-```
-{
-  "policies": {
-    "NoDefaultBookmarks": true | false
-  }
-}
-```
-### OfferToSaveLogins
-Control whether or not Firefox offers to save passwords.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `dontRememberPasswords`\
-**Preferences Affected:** `signon.rememberSignons`
-
-#### Windows
-```
-Software\Policies\Mozilla\Firefox\OfferToSaveLogins = 0x1 | 0x0
-```
-#### macOS
-```
-<dict>
-  <key>OfferToSaveLogins</key>
-  <true/> | <false/>
-</dict>
-```
-#### JSON
-```
-{
-  "policies": {
-    "OfferToSaveLogins": true | false
   }
 }
 ```
@@ -1406,56 +1406,6 @@ Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "p
   }
 }
 ```
-### PopupBlocking
-Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
-
-`Allow` is a list of origins where popup-windows are allowed.
-
-`Default` determines whether or not pop-up windows are allowed by default.
-
-`Locked` prevents the user from changing pop-up preferences.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `permissions.popup`\
-**Preferences Affected:** `dom.disable_open_during_load`
-
-#### Windows
-```
-Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\1 = "https://example.org"
-Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\2 = "https://example.edu"
-Software\Policies\Mozilla\Firefox\PopupBlocking\Default = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\PopupBlocking\Locked = 0x1 | 0x0
-```
-#### macOS
-```
-<dict>
-  <key>PopupBlocking</key>
-  <dict>
-    <key>Allow</key>
-    <array>
-      <string>http://example.org</string>
-      <string>http://example.edu</string>
-    </array>
-    <key>Default</key>
-    <true/> | <false/>
-    <key>Locked</key>
-    <true/> | <false/>
-  </dict>
-</dict>
-```
-#### JSON
-```
-{
-  "policies": {
-    "PopupBlocking": {
-      "Allow": ["http://example.org/",
-                "http://example.edu/"],
-      "Default": true | false,
-      "Locked": true | false
-    }
-  }
-}
-```
 ### InstallAddonsPermission
 Configure the default extension install policy as well as origins for extension installs are allowed. This policy does not override turning off all extension installs.
 
@@ -1500,58 +1450,31 @@ Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Default = 0x1 | 0x0
   }
 }
 ```
-### FlashPlugin
-Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+### NoDefaultBookmarks
+Disable the creation of default bookmarks.
 
-`Allow` is a list of origins where Flash are allowed.
-
-`Block` is a list of origins where Flash is not allowed.
-
-`Default` determines whether or not Flash is allowed by default.
-
-`Locked` prevents the user from changing Flash preferences.
+This policy is only effective if the user profile has not been created yet.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `permissions.plugin`\
-**Preferences Affected:** `plugin.state.flash`
+**CCK2 Equivalent:** `removeDefaultBookmarks`\
+**Preferences Affected:** N/A
 
 #### Windows
 ```
-Software\Policies\Mozilla\Firefox\FlashPlugin\Allow\1 = "https://example.org"
-Software\Policies\Mozilla\Firefox\FlashPlugin\Block\1 = "https://example.edu"
-Software\Policies\Mozilla\Firefox\FlashPlugin\Default = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
 ```
 #### macOS
 ```
 <dict>
-  <key>FlashPlugin</key>
-  <dict>
-    <key>Allow</key>
-    <array>
-      <string>http://example.org</string>
-    </array>
-    <key>Block</key>
-    <array>
-      <string>http://example.edu</string>
-    </array>
-    <key>Default</key>
-    <true/> | <false/>
-    <key>Locked</key>
-    <true/> | <false/>
-  </dict>
+  <key>NoDefaultBookmarks</key>
+  <true/> | <false/>
 </dict>
 ```
 #### JSON
 ```
 {
   "policies": {
-    "FlashPlugin": {
-      "Allow": ["http://example.org/"],
-      "Block": ["http://example.edu/"],
-      "Default": true | false,
-      "Locked": true | false
-    }
+    "NoDefaultBookmarks": true | false
   }
 }
 ```
@@ -1578,6 +1501,32 @@ Software\Policies\Mozilla\Firefox\NetworkPrediction = 0x1 | 0x0
 {
   "policies": {
     "NetworkPrediction": true | false
+}
+```
+### OfferToSaveLogins
+Control whether or not Firefox offers to save passwords.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `dontRememberPasswords`\
+**Preferences Affected:** `signon.rememberSignons`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\OfferToSaveLogins = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>OfferToSaveLogins</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "OfferToSaveLogins": true | false
+  }
 }
 ```
 ### OverrideFirstRunPage
@@ -1765,6 +1714,56 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
   }
 }
 ```
+### PopupBlocking
+Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
+
+`Allow` is a list of origins where popup-windows are allowed.
+
+`Default` determines whether or not pop-up windows are allowed by default.
+
+`Locked` prevents the user from changing pop-up preferences.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `permissions.popup`\
+**Preferences Affected:** `dom.disable_open_during_load`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\2 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\PopupBlocking\Default = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\PopupBlocking\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>PopupBlocking</key>
+  <dict>
+    <key>Allow</key>
+    <array>
+      <string>http://example.org</string>
+      <string>http://example.edu</string>
+    </array>
+    <key>Default</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "PopupBlocking": {
+      "Allow": ["http://example.org/",
+                "http://example.edu/"],
+      "Default": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
 ### Proxy
 Configugre proxy settings. These settings correspond to the connection settings in Firefox preferences.
 To specify ports, append them to the hostnames with a colon (:).
@@ -1789,9 +1788,9 @@ To specify ports, append them to the hostnames with a colon (:).
 
 `AutoConfigURL` is a  URL for proxy configuration (only used if Mode is autoConfig).
 
-| `AutoLogin` means do not prompt for authentication if password is saved.
+`AutoLogin` means do not prompt for authentication if password is saved.
 
-| `UseProxyForDNS` to use proxy DNS when using SOCK v5.
+`UseProxyForDNS` to use proxy DNS when using SOCKS v5.
 
 **Compatibility:** Firefoox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `networkProxy*`\
@@ -1946,46 +1945,7 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
   }
 }
 ```
-### WebsiteFilter
-Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** N/A
-
-#### Windows
-```
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
-```
-#### macOS
-```
-<dict>
-  <key>WebsiteFilter</key>
-  <dict>
-    <key>Block</key>
-    <array>
-      <string><all_urls></string>
-    </array>
-    <key>Exceptions</key>
-    <array>
-      <string>http://example.org/*</string>
-    </array>
-  </dict>
-
-</dict>
-```
-### JSON
-```
-{
-  "policies": {
-    "WebsiteFilter": {
-      "Block": ["<all_urls>"],
-      "Exceptions": ["http://example.org/*"]
-    }
-  }
-}
-```
 
 
 
@@ -2109,7 +2069,7 @@ Adddd new search engines (up to five). This policy is only available on the ESR.
 `SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
 
 **Compatibility:** Firefox ESR 60\
-**CCK2 Equivalent:** `config.searchplugins`\
+**CCK2 Equivalent:** `searchplugins`\
 **Preferences Affected:** N/A
 
 #### Windows
@@ -2254,6 +2214,46 @@ Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" |
 {
   "policies": {
     "SSLVersionMin": "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
+  }
+}
+```
+### WebsiteFilter
+Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
+Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
+```
+#### macOS
+```
+<dict>
+  <key>WebsiteFilter</key>
+  <dict>
+    <key>Block</key>
+    <array>
+      <string><all_urls></string>
+    </array>
+    <key>Exceptions</key>
+    <array>
+      <string>http://example.org/*</string>
+    </array>
+  </dict>
+
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "WebsiteFilter": {
+      "Block": ["<all_urls>"],
+      "Exceptions": ["http://example.org/*"]
+    }
   }
 }
 ```
