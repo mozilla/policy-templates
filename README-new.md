@@ -1101,7 +1101,7 @@ Set the initial state of the menubar. A user can still hide it and it will stay 
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
 **CCK2 Equivalent:** `displayMenuBar`\
-**Preferences Affected:** N/~
+**Preferences Affected:** N/A
 
 #### Windows
 ```
@@ -2060,7 +2060,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
 
 Hide built-in search engines. This policy is only available on the ESR.
 
-**Compatibility:** Firefox ESR 60\
+**Compatibility:** Firefox ESR 60.2\
 **CCK2 Equivalent:** `removeDefaultSearchEngines` (removed all built-in engines)\
 **Preferences Affected:** N/A
 
@@ -2113,13 +2113,13 @@ Adddd new search engines (up to five). This policy is only available on the ESR.
 **Preferences Affected:** N/A
 
 #### Windows
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name =
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate =
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method =
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL =
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias =
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description =
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate =
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name = "Example1"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate = "https://www.example.org/q={searchTerms}"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method = "GET" | "POST"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL = "https://www.example.org/favicon.ico"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias = "example"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description = "Example Description"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "https://www.example.org/suggestions/q={searchTerms}"
 
 #### macOS
 ```
@@ -2132,17 +2132,17 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate =
         <key>Name</key>
         <string>Example1</string>
         <key>URLTemplate</key>
-        <string>https://www.example.org</string>
+        <string>https://www.example.org/q={searchTerms}</string>
         <key>Method</key>
-        <string>https://www.example.org/favicon.ico</string>
+        <string>GET | POST </string>
         <key>IconURL</key>
-        <string>toolbar</string>
+        <string>https://www.example.org/favicon.ico</string>
         <key>Alias</key>
-        <string>Example1Folder</string>
+        <string>example</string>
         <key>Description</key>
-        <string>Example1Folder</string>
-        <key>Alias</key>
-        <string>SuggestURLTemplate</string>
+        <string>Example Description</string>
+        <key>SuggestURLTemplate</key>
+        <string>https://www.example.org/suggestions/q={searchTerms}</string>
       </dict>
     <array>
   </dict>
@@ -2155,13 +2155,13 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate =
     "SearchEngines": {
       "Add": [
         {
-          "Name": "",
-          "URLTemplate": "URL including {searchTerms} to substitute for the terms",
-          "Method": ["GET", "POST"],
-          "IconURL": "URL to icon",
-          "Alias": "Alias that can be used to access the engine",
+          "Name": "Example1",
+          "URLTemplate": "https://www.example.org/q={searchTerms}",
+          "Method": "GET" | "POST",
+          "IconURL": "https://www.example.org/favicon.ico",
+          "Alias": "example",
           "Description": "Description",
-          "SuggestURLTemplate": "URL for suggestions using {searchTerms}"
+          "SuggestURLTemplate": "https://www.example.org/suggestions/q={searchTerms}"
         }
       ]
     }
