@@ -1,15 +1,7 @@
-**IMPORTANT**: This file is in active development along with the policies in Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
+**IMPORTANT**: This file is in active development along with the policies in Firefox. Make sure to check compatibility to see if a policy is available in a specific version of Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
 
 Policies can be specified using the Group Policy templates on Windows (https://github.com/mozilla/policy-templates/tree/master/windows), configuration profiles on macOS (https://github.com/mozilla/policy-templates/tree/master/mac), or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
 
-The content of the JSON file should look like this:
-```
-{
-  "policies": {
-    ...POLICIES...
-  }
-}
-```
 | Policy Name | Description |
 | --- | --- |
 | **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update. |
@@ -45,8 +37,8 @@ The content of the JSON file should look like this:
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** |Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** |DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** |Set the initial state of the bookmarks toolbar.
-| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** |Set the initial state of the menubar
-| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser-1)** |Don't check if Firefox is the default browser at startup.
+| **[`DisplayMenuBar`](#displaymenubar)** |Set the initial state of the menubar
+| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** |Don't check if Firefox is the default browser at startup.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** |Configure tracking protection.
 | **[`Extensions`](#extensions)** |Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** |Control extension updates.
@@ -66,7 +58,7 @@ The content of the JSON file should look like this:
 | **[`SanitizeOnShutdown`](#sanitizeonshutdown)** |Clear all data on shutdown.
 | **[`SearchBar`](#searchbar)** |Set whether or not search bar is displayed.
 | **[`WebsiteFilter`](#websitefilter)** |Block websites from being visited.
-| **[`SearchEngines`](#searchengines--this-policy-is-only-available-on-the-esr-)** |
+| **[`SearchEngines`](#searchengines-this-policy-is-only-available-on-the-esr)** |
 | **[`SearchEngines -> Default`](#searchengines--default)** |Set the default search engine. 
 | **[`SearchEngines -> PreventInstalls`](#searchengines--preventinstalls)** |Prevent installing search engines from webpages.
 | **[`SearchEngines -> Remove`](#searchengines--remove)** |Hide built-in search engines.
@@ -1104,7 +1096,7 @@ Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
   }
 }
 ```
-### DontCheckDefaultBrowser
+### DisplayMenuBar
 Set the initial state of the menubar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
