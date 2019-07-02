@@ -10,7 +10,71 @@ The content of the JSON file should look like this:
   }
 }
 ```
-Policies are documented below.   
+| Policy Name | Description |
+| --- | --- |
+| **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update. |
+| **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication. |
+| **[`BlockAboutAddons`](#blockaboutaddons)** |Block access to the Add-ons Manager (about:addons).
+| **[`BlockAboutConfig`](#blockaboutconfig)** |Block access to about:config.
+| **[`BlockAboutProfiles`](#blockaboutprofiles)** |Block access to About Profiles (about:profiles).
+| **[`BlockAboutSupport`](#blockaboutsupport)** |Block access to Troubleshooting Information (about:support).
+| **[`Bookmarks`](#bookmarks)** |Add bookmarks in either the bookmarks toolbar or menu. 
+| **[`CaptivePortal`](#captiveportal)** |Enable or disable the detection of captive portals.
+| **[`Certificates`](#certificates)** |
+| **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** |Trust certificates that have been added to the operating system certificate store by a user or administrator.
+| **[`Certificates -> Install`](#certificates--install)** |Install certificates into the Firefox certificate store.
+| **[`Cookies`](#cookies)** |Configure cookie preferences.
+| **[`DNSOverHTTPS`](#dnsoverhttps)** |Configure DNS over HTTPS.
+| **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** |Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
+| **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** |Remove the master password functionality.
+| **[`DisableAppUpdate`](#disableappupdate)** |Turn off application updates.
+| **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** |Disable the built in PDF viewer.
+| **[`DisableDeveloperTools`](#disabledevelopertools)** |Remove access to all developer tools.
+| **[`DisableFeedbackCommands`](#disablefeedbackcommands)** |Disable the menus for reporting sites.
+| **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** |Remove access to Firefox Screenshots.
+| **[`DisableFirefoxAccounts`](#disablefirefoxaccounts)** |Disable Firefox Accounts integration (Sync).
+| **[`DisableFirefoxStudies`](#disablefirefoxstudies)** |Disable Firefox studies (Shield).
+| **[`DisableForgetButton`](#disableforgetbutton)** |Disable the "Forget" button.
+| **[`DisableFormHistory`](#disableformhistory)** |Turn off saving information on web forms and the search bar.
+| **[`DisablePocket`](#disablepocket)** |Remove Pocket in the Firefox UI.
+| **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** |Remove access to private browsing.
+| **[`DisableProfileImport`](#disableprofileimport)** |Disables the "Import data from another browser" option in the bookmarks window.
+| **[`DisableProfileRefresh`](#disableprofilerefresh)** |Disable the Refresh Firefox button on about:support and support.mozilla.org
+| **[`DisableSafeMode`](#disablesafemode)** |Disable safe mode.
+| **[`DisableSecurityBypass`](#disablesecuritybypass)** |Prevent the user from bypassing security in certain cases.
+| **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** |Prevent system add-ons from being installed or update.
+| **[`DisableTelemetry`](#disabletelemetry)** |DisableTelemetry
+| **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** |Set the initial state of the bookmarks toolbar.
+| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** |Set the initial state of the menubar
+| **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser-1)** |Don't check if Firefox is the default browser at startup.
+| **[`EnableTrackingProtection`](#enabletrackingprotection)** |Configure tracking protection.
+| **[`Extensions`](#extensions)** |Control the installation, uninstallation and locking of extensions.
+| **[`ExtensionUpdate`](#extensionupdate)** |Control extension updates.
+| **[`HardwareAcceleration`](#hardwareacceleration)** |Control hardware acceleration.
+| **[`NoDefaultBookmarks`](#nodefaultbookmarks)** |Disable the creation of default bookmarks.
+| **[`OfferToSaveLogins`](#offertosavelogins)** |Control whether or not Firefox offers to save passwords.
+| **[`Homepage`](#homepage)** |Configure the default homepage and how Firefox starts.
+| **[`PopupBlocking`](#popupblocking)** |Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
+| **[`InstallAddonsPermission`](#installaddonspermission)** |Configure the default extension install policy as well as origins for extension installs are allowed.
+| **[`FlashPlugin`](#flashplugin)** |Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+| **[`NetworkPrediction`](#networkprediction)** |Enable or disable network prediction (DNS prefetching).
+| **[`OverrideFirstRunPage`](#overridefirstrunpage)** |Override the first run page.
+| **[`OverridePostUpdatePage`](#overridepostupdatepage)** |Override the upgrade page.
+| **[`Permissions`](#permissions)** |Set permissions associated with camera, microphone, location, and notifications.
+| **[`Proxy`](#proxy)** |Configure proxy settings.
+| **[`RequestedLocales`](#requestedlocales)** |Set the the list of requested locales for the application in order of preference.
+| **[`SanitizeOnShutdown`](#sanitizeonshutdown)** |Clear all data on shutdown.
+| **[`SearchBar`](#searchbar)** |Set whether or not search bar is displayed.
+| **[`WebsiteFilter`](#websitefilter)** |Block websites from being visited.
+| **[`SearchEngines`](#searchengines--this-policy-is-only-available-on-the-esr-)** |
+| **[`SearchEngines -> Default`](#searchengines--default)** |Set the default search engine. 
+| **[`SearchEngines -> PreventInstalls`](#searchengines--preventinstalls)** |Prevent installing search engines from webpages.
+| **[`SearchEngines -> Remove`](#searchengines--remove)** |Hide built-in search engines.
+| **[`SearchEngines -> Add`](#searchengines--add)** |Add new search engines.
+| **[`SecurityDevices`](#securitydevices)** |Install PKCS #11 modules.
+| **[`SSLVersionMax`](#sslversionmax)** |Set and lock the maximum version of TLS.
+| **[`SSLVersionMin`](#sslversionmin)** |Set and lock the minimum version of TLS.
+
 
 ### AppUpdateURL
 
@@ -688,7 +752,7 @@ Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
 }
 ```
 ### DisableFirefoxAccounts
-Disable Firefox Accounts intergration (Sync).
+Disable Firefox Accounts integration (Sync).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableSync`\
@@ -792,7 +856,7 @@ Software\Policies\Mozilla\Firefox\DisableFormHistory = 0x1 | 0x0
 }
 ```
 ### DisablePocket
-Removes Pocket in the Firefox UI. It does not remove it from the new tab page.
+Remove Pocket in the Firefox UI. It does not remove it from the new tab page.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePocket`\
@@ -818,7 +882,7 @@ Software\Policies\Mozilla\Firefox\DisablePocket = 0x1 | 0x0
 }
 ```
 ### DisablePrivateBrowsing
-Removes access to private browsing.
+Remove access to private browsing.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePrivateBrowsing`\
@@ -1093,7 +1157,7 @@ Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser = 0x1 | 0x0
 }
 ```
 ### EnableTrackingProtection
-Configure tracking proection.
+Configure tracking protection.
 
 If this policy is not configured, tracking protection is not enabled by default in the browser, but it is enabled by default in private browsing and the user can change it.
 
@@ -1134,7 +1198,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 }
 ```
 ### Extensions
-Controls the installation, uninstallation and locking of extensions.
+Control the installation, uninstallation and locking of extensions.
 
 `Install` is a list of URLs or native paths for extensions to be installed. 
 
@@ -1710,7 +1774,7 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
 }
 ```
 ### Proxy
-This policy allows you to specify proxy settings. These settings correspond to the connection settings in Firefox preferences.
+Configugre proxy settings. These settings correspond to the connection settings in Firefox preferences.
 To specify ports, append them to the hostnames with a colon (:).
 
 `Mode` is the proxy method being used.
@@ -1864,7 +1928,7 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
 }
 ```
 ### SearchBar
-Sets whether or not search bar is displayed.
+Set whether or not search bar is displayed.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `showSearchBar`\
@@ -1891,8 +1955,7 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
 }
 ```
 ### WebsiteFilter
-Block webs
-This policy blocks websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
+Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
@@ -1939,7 +2002,7 @@ Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.
 
 ### SearchEngines | Default
 
-This policy allows you to set the default search engine. This policy is only available on the ESR.
+Set the default search engine. This policy is only available on the ESR.
 
 **Compatibility:** Firefox ESR 60\
 **CCK2 Equivalent:** `defaultSearchEngine`\
@@ -2003,7 +2066,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
 ```
 ### SearchEngines | Remove
 
-This policy allows you to hide built-in search engines. This policy is only available on the ESR.
+Hide built-in search engines. This policy is only available on the ESR.
 
 **Compatibility:** Firefox ESR 60\
 **CCK2 Equivalent:** `removeDefaultSearchEngines` (removed all built-in engines)\
@@ -2037,9 +2100,8 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
 ```
 ### SearchEngines | Add
 
-This policy allows you to add up to five new search engines. This policy is only available on the ESR. `Name` and `URLTemplate` are required.
+Adddd new search engines (up to five). This policy is only available on the ESR. `Name` and `URLTemplate` are required.
 
-### Keys
 `Name` is the name of the search engine.
 
 `URLTemplate` is the search URL with {searchTerms} to substitute for the search term.
