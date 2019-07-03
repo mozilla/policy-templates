@@ -341,9 +341,9 @@
 		<key>NAME_OF_DEVICE</key>
 		<string>PATH_TO_LIBRARY_FOR_DEVICE</string>
 	</dict>
-	<key>SSLMinVersion</key>
+	<key>SSLVersionMin</key>
 	<string>tls1.2</string>
-	<key>SSLMaxVersion</key>
+	<key>SSLVersionMax</key>
 	<string>tls1.3</string>
 	<key>SupportMenu</key>
 	<dict>

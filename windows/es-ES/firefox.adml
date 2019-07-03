@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 o posterior</string>
       <string id="SUPPORTED_FF64">Firefox 64 o posterior, Firefox 60.4 ESR o posterior</string>
       <string id="SUPPORTED_FF66">Firefox 66 o posterior, Firefox 60.6 ESR o posterior</string>
+      <string id="SUPPORTED_FF67">Firefox 67 o posterior, Firefox 60.7 ESR o posterior</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
@@ -75,6 +76,10 @@ Si esta política está deshabilitada o no está configurada, el usuario puede a
       <string id="DisableSetDesktopBackground_Explain">Si esta política está habilitada, el usuario no puede establecer una imagen como imagen de fondo.
 
 Si esta política está deshabilitada o no está configurada, los usuarios pueden establecer imágenes como imagen de fondo.</string>
+      <string id="CaptivePortal">Portal cautivo</string>
+      <string id="CaptivePortal_Explain">Si esta política está deshabilitada, el soporte del portal cautivo está deshabilitado.
+
+Si esta política está habilitada o no está configurada, el soporte del portal cautivo está habilitado.</string>
       <string id="Certificates_ImportEnterpriseRoots">Importar certificados raíces</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si esta política está habilitada, Firefox leerá los certificados del almacén de certificados de Windows.
 
@@ -83,14 +88,14 @@ Si esta política está deshabilitada o no está configurada, Firefox no leerá 
       <string id="Certificates_Install_Explain">Si esta política está habilitada, Firefox instalará los certificados listados en Firefox. Se verá en %USERPROFILE%\AppData\Local\Mozilla\Certificates y %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Si esta política está deshabilitada o no está configurada, Firefox no instalará certificados adicionales.</string>
-      <string id="DisableMasterPasswordCreation">Deshabilitar la creación de contraseña maestra</string>
-      <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
-
-Si esta política está deshabilitada o no está configurada, los usuarios pueden crear una contraseña maestra.</string>
       <string id="DNSOverHTTPS">Configurar DNS mediante HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se puede cambiar la configuración predeterminada de DNS mediante HTTPS.
 
 Si esta política está deshabilitada o no está configurada, DNS mediante HTTPS usa la configuración predeterminada de Firefox.</string>
+      <string id="DisableMasterPasswordCreation">Deshabilitar la creación de contraseña maestra</string>
+      <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no pueden crear una contraseña maestra.
+
+Si esta política está deshabilitada o no está configurada, los usuarios pueden crear una contraseña maestra.</string>
       <string id="DisableAppUpdate">Deshabilitar actualización</string>
       <string id="DisableAppUpdate_Explain">Si esta política está habilitada, el navegador no recibirá actualizaciones.
 
@@ -192,11 +197,19 @@ Si esta política está deshabilitada o no está configurada, no se desinstalar�
       <string id="Extensions_Locked">Evitar que las extensiones se deshabiliten o se borrén</string>
       <string id="Extensions_Locked_Explain">Si esta política está habilitada, puede especificar una lista de ID de extensiones que el usuario no podrá desinstalar o deshabilitar.
 
-Si esta política está deshabilitada o no está configurada, no hay extensiones bloqueadas.</string>
+Si esta política está deshabilitada o no está configurada, no se bloquearán las extensiones.</string>
+      <string id="ExtensionUpdate">Actualización de extensiones</string>
+      <string id="ExtensionUpdate_Explain">Si esta política está deshabilitada, las extensiones no se actualizarán automáticamente.
+
+Si esta política está habilitada o no está configurada, las extensiones se actualizarán automáticamente.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración de hardware no se puede habilitar.
 
 Si esta política está habilitada o no está configurada, la aceleración por hardware está habilitada.</string>
+      <string id="NetworkPrediction">Predicción de red</string>
+      <string id="NetworkPrediction_Explain">Si esta política está deshabilitada, la predicción de red (preprocesamiento DNS) se deshabilitará.
+
+Si esta política está habilitada o no está configurada, se habilitará la predicción de red (preprocesamiento DNS).</string>
       <string id="OfferToSaveLogins">Sugerir guardar inicios de sesión</string>
       <string id="OfferToSaveLogins_Explain">Si esta política está habilitada o no está configurada, Firefox ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 
@@ -624,7 +637,7 @@ Si esta política está deshabilitada o no está configurada, Firefox establece 
           <label/>
         </textBox>
         <text>Ejemplo: .mozilla.org, .net.nz, 192.168.1.0/24</text>
-        <text>Configuración automática de URL de proxy:</text>
+        <text>Configuración automática de URL del proxy:</text>
         <textBox refId="AutoConfigURL">
           <label/>
         </textBox>

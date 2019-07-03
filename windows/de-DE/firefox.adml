@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 oder höher</string>
       <string id="SUPPORTED_FF64">Firefox 64 oder höher, Firefox 60.4 ESR oder höher</string>
       <string id="SUPPORTED_FF66">Firefox 66 oder höher, Firefox 60.6 ESR oder höher</string>
+      <string id="SUPPORTED_FF67">Firefox 67 oder höher, Firefox 60.7 ESR oder höher</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
@@ -22,7 +23,7 @@
       <string id="Certificates_group">Zertifikate</string>
       <string id="Popups_group">Popups</string>
       <string id="Cookies_group">Cookies</string>
-      <string id="Addons_group">Addons</string>
+      <string id="Addons_group">Add-ons</string>
       <string id="Extensions_group">Erweiterungen</string>
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
@@ -75,6 +76,11 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSetDesktopBackground_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Bilder nicht mit Hilfe von "Als Hintergrundbild einrichten…" als Desktophintergrund festlegen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Bilder mit Hilfe von "Als Hintergrundbild einrichten.." als Desktophintergrund festlegen.</string>
+      <string id="
+                  Portal">Captive Portal Unterstützung</string>
+      <string id="CaptivePortal_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Unterstützung für Captive Portals deaktiviert.
+
+Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Unterstützung für Captive Portals aktiviert.</string>
       <string id="Certificates_ImportEnterpriseRoots">Windows Zertifikatsspeicher benutzen</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows Zertifikatsspeicher.
 
@@ -83,14 +89,14 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
-      <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
-      <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
-
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer ein Master-Passwort vergeben.</string>
       <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
       <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
 
 If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
+      <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
+      <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
+
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer ein Master-Passwort vergeben.</string>
       <string id="DisableAppUpdate">Update deaktivieren</string>
       <string id="DisableAppUpdate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird nicht nach Updates gesucht.
 
@@ -157,7 +163,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz nicht umgehen um eine schädliche Webseite zu besuchen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz umgehen um eine schädliche Webseite zu besuchen.</string>
-      <string id="DisableSystemAddonUpdate">System Addon Updates deaktivieren</string>
+      <string id="DisableSystemAddonUpdate">System Add-on Updates deaktivieren</string>
       <string id="DisableSystemAddonUpdate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden neue System-Add-ons nicht installiert und installierte Add-ons werden nicht mit Updates versorgt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden System Add-ons installiert und mit Updates versorgt.</string>
@@ -193,10 +199,18 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="Extensions_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Liste mit Erweiterungs-IDs angeben, die den Benutzer hindert die angegebenen Erweiterungen zu deinstallieren oder zu deaktivieren.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen gesperrt.</string>
-      <string id="HardwareAcceleration">Hardware Acceleration</string>
-      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+      <string id="ExtensionUpdate">Add-on Updates</string>
+      <string id="ExtensionUpdate_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Add-ons nicht automatisch aktualisiert.
 
-If this policy is enabled or not configured, hardware acceleration is enabled.</string>
+Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden Add-ons automatisch aktualisiert.</string>
+      <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
+      <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
+
+Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Hardware-Beschleunigung aktiviert.</string>
+      <string id="NetworkPrediction">Network Prediction</string>
+      <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
+
+Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird Network Prediction (DNS prefetching) aktiviert.</string>
       <string id="OfferToSaveLogins">Zugangsdaten und Passwörter für Webseiten speichen</string>
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
@@ -636,8 +650,8 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">DNS over HTTPS aktivieren.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS over HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
       <string id="SUPPORTED_FF64">Firefox 64 o versione successiva, Firefox 60.4 ESR o versione successiva</string>
       <string id="SUPPORTED_FF66">Firefox 66 o versione successiva, Firefox 60.6 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF67">Firefox 67 o versione successiva, Firefox 60.7 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -75,14 +76,14 @@ Se questo criterio è disabilitato o non configurato, l'utente può accedere a I
       <string id="DisableSetDesktopBackground_Explain">Se questo criterio è abilitato, l'utente non può impostare un'immagine come sfondo del Desktop.
 
 Se questo criterio è disabilitato o non configurato, l'utente può impostare un'immagine come sfondo del Desktop.</string>
+      <string id="CaptivePortal">Captive portal</string>
+      <string id="CaptivePortal_Explain">Se questo criterio è disabilitato, il supporto per i captive portal è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il supporto per i captive portal è abilitato.</string>
       <string id="Certificates_ImportEnterpriseRoots">Importa Autorità di certificazione radice enterprise</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Se questo criterio è abilitato, Firefox utilizzerà i certificati radice nell'Archivio certificati di Windows.
 
 Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i certificati radice nell'Archivio certificati di Windows.</string>
-      <string id="DisableMasterPasswordCreation">Disabilita creazione password principale</string>
-      <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
-
-Se questo criterio è disabilitato o non configurato, gli utenti possono creare una password principale.</string>
       <string id="Certificates_Install">Installa certificati</string>
       <string id="Certificates_Install_Explain">Se questo criterio è abilitato, Firefox installerà i certificati elencati in Firefox. Questi saranno cercati in %USERPROFILE%\AppData\Local\Mozilla\Certificates e in %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
@@ -91,6 +92,10 @@ Se questo criterio è disabilitato o non configurato, Firefox non installerà ce
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
 Se questo criterio è disabilitato o non configurato, DNS su HTTPS utilizza la configurazione predefinita di Firefox.</string>
+      <string id="DisableMasterPasswordCreation">Disabilita creazione password principale</string>
+      <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
+
+Se questo criterio è disabilitato o non configurato, gli utenti possono creare una password principale.</string>
       <string id="DisableAppUpdate">Disabilita aggiornamenti</string>
       <string id="DisableAppUpdate_Explain">Se questo criterio è abilitato, il browser non riceverà aggiornamenti.
 
@@ -193,10 +198,18 @@ Se questo criterio è disabilitato o non configurato, non sarà disinstallata al
       <string id="Extensions_Locked_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di ID delle estensioni che l'utente non sarà in grado di disinstallare o disabilitare.
 
 Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna estensione.</string>
+      <string id="ExtensionUpdate">Aggiornamento estensioni</string>
+      <string id="ExtensionUpdate_Explain">Se questo criterio è disabilitato, le estensioni non saranno aggiornate automaticamente.
+
+Se questo criterio è abilitato o non configurato, le estensioni saranno aggiornate automaticamente.</string>
       <string id="HardwareAcceleration">Accelerazione hardware</string>
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
 Se questo criterio è abilitato o non configurato, l'accelerazione hardware è abilitata.</string>
+      <string id="NetworkPrediction">Previsione di rete</string>
+      <string id="NetworkPrediction_Explain">Se questo criterio è disabilitato, la previsione di rete (prefetching DNS) sarà disabilitata.
+
+Se questo criterio è abilitato o non configurato, la previsione di rete (prefetching DNS) sarà abilitata.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 

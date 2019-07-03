@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -10,6 +10,7 @@
       <string id="SUPPORTED_FF63">Firefox 63 ou superieur</string>
       <string id="SUPPORTED_FF64">Firefox 64 ou superieur, Firefox 60.4 ESR ou superieur</string>
       <string id="SUPPORTED_FF66">Firefox 66 ou superieur, Firefox 60.6 ESR ou superieur</string>
+      <string id="SUPPORTED_FF67">Firefox 67 ou superieur, Firefox 60.7 ESR ou superieur</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR ou superieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -75,6 +76,10 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut acc�
       <string id="DisableSetDesktopBackground_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas définir une image comme arrière-plan de leur bureau.
 
 Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent définir des images comme arrière-plan de leur bureau.</string>
+      <string id="CaptivePortal">Portail captif</string>
+      <string id="CaptivePortal_Explain">Si cette stratégie est désactivée, Portail captif est désactivé.
+
+Si cette stratégie est sactivée ou non configurée, Portail captif est activé .</string>
       <string id="Certificates_ImportEnterpriseRoots">Importer des certificats racines d'entreprise</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si cette stratégie est activée, Firefox lira les certificats à partir du magasin de certificats Windows.
 
@@ -193,10 +198,18 @@ Si cette stratégie est désactivée ou non configurée, aucune extension n'est 
       <string id="Extensions_Locked_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d'ID d'extension que l'utilisateur ne pourra ni désinstaller ni désactiver.
 
 Si cette stratégie est désactivée ou non configurée, aucune extension n'est verrouillée</string>
+      <string id="ExtensionUpdate">mise à jour des extensions</string>
+      <string id="ExtensionUpdate_Explain">Si cette stratégie est désactivée, les extensions ne seront pas mise à jour automatiquement.
+
+Si cette stratégie est activée ou non configurée, les extensions seront mise à jour automatiquement.</string>
       <string id="HardwareAcceleration">Accélération matérielle</string>
       <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle ne peut pas être activée.
 
 Si cette stratégie est activée ou non configurée, l'accélération matérielle est activée.</string>
+      <string id="NetworkPrediction">Découverte réseau</string>
+      <string id="NetworkPrediction_Explain">Si cette stratégie est désactivée, la découverte réseau (préférence DNS) sera désactivéeill be disabled.
+
+Si cette stratégie est activée ou  non configurée, la découverte réseau (préférence DNS) sera activée.</string>
       <string id="OfferToSaveLogins">Offre de sauvegarder les identifiants</string>
       <string id="OfferToSaveLogins_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera de sauvegarder les identifiants de connexion et les mots de passe du site Web.
 
@@ -476,14 +489,14 @@ Si cette stratégie est désactivée ou non configurée, les moteurs de recherch
       <string id="SearchEngines_Remove_Explain">Si cette stratégie est activée, vous pouvez spécifier les noms des moteurs à supprimer ou à masquer.
 
 Si cette stratégie est désactivée ou non configurée, les moteurs de recherche ne seront ni supprimés ni masqués.</string>
-      <string id="SSLVersionMin">Minimum SSL version enabled</string>
-      <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
+      <string id="SSLVersionMin">Version SSL minimum utilisée</string>
+      <string id="SSLVersionMin_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL / TLS inférieures à la valeur spécifiée.
 
-If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
-      <string id="SSLVersionMax">Maximum SSL version enabled</string>
-      <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
+Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut TLS 1.0.</string>
+      <string id="SSLVersionMax">Version SSL maximum utilisée</string>
+      <string id="SSLVersionMax_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL / TLS supérieures à la valeur spécifiée.
 
-If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
+Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut TLS 1.3.</string>
       <string id="TLS1">TLS 1.0</string>
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
