@@ -15,13 +15,13 @@
       <definition name="SUPPORTED_FF64" displayName="$(string.SUPPORTED_FF64)"/>
       <definition name="SUPPORTED_FF66" displayName="$(string.SUPPORTED_FF66)"/>
       <definition name="SUPPORTED_FF67" displayName="$(string.SUPPORTED_FF67)"/>
+      <definition name="SUPPORTED_FF68" displayName="$(string.SUPPORTED_FF68)"/>
     </definitions>
   </supportedOn>
   <categories>
     <category displayName="$(string.firefox)" name="firefox">
       <parentCategory ref="Mozilla:Cat_Mozilla"/>
     </category>
-
     <category displayName="$(string.Authentication_group)" name="Authentication">
       <parentCategory ref="firefox"/>
     </category>
@@ -66,6 +66,9 @@
     </category>
     <category displayName="$(string.Notifications_group)" name="Notifications">
       <parentCategory ref="Permissions"/>
+    </category>
+    <category displayName="$(string.Preferences_group)" name="Preferences">
+      <parentCategory ref="firefox"/>
     </category>
   </categories>
   <policies>
@@ -2324,6 +2327,244 @@
         </enum>
       </elements>
     </policy>
+    <policy name="app.update.auto" class="Both" displayName="$(string.app_update_auto)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="app.update.auto">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.cache.disk.enable" class="Both" displayName="$(string.browser_cache_disk_enable)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.cache.disk.enable">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.fixup.dns_first_for_single_words" class="Both" displayName="$(string.browser_fixup_dns_first_for_single_words)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.fixup.dns_first_for_single_words">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.search.update" class="Both" displayName="$(string.browser_search_update)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.search.update">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.tabs.warnOnClose" class="Both" displayName="$(string.browser_tabs_warnOnClose)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.tabs.warnOnClose">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.urlbar.suggest.bookmark" class="Both" displayName="$(string.browser_urlbar_suggest_bookmark)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.urlbar.suggest.bookmark">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.urlbar.suggest.history" class="Both" displayName="$(string.browser_urlbar_suggest_history)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.urlbar.suggest.history">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.urlbar.suggest.openpage" class="Both" displayName="$(string.browser_urlbar_suggest_openpage)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.urlbar.suggest.openpage">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="datareporting.policy.dataSubmissionPolicyBypassNotification" class="Both" displayName="$(string.datareporting_policy_dataSubmissionPolicyBypassNotification)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="datareporting.policy.dataSubmissionPolicyBypassNotification">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="dom.disable_window_flip" class="Both" displayName="$(string.dom_disable_window_flip)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.dom.disable_window_flip">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="dom.disable_window_move_resize" class="Both" displayName="$(string.dom_disable_window_move_resize)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.disable_window_move_resize">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="dom.event.contextmenu.enabled" class="Both" displayName="$(string.dom_event_contextmenu_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.event.contextmenu.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="extensions.getAddons.showPane" class="Both" displayName="$(string.extensions_getAddons_showPane)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="extensions.getAddons.showPane">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="media.gmp-gmpopenh264.enabled" class="Both" displayName="$(string.media_gmp-gmpopenh264_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="media.gmp-gmpopenh264.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="media.gmp-widevinecdm.enabled" class="Both" displayName="$(string.media_gmp-widevinecdm_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="media.gmp-widevinecdm.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="network.dns.disableIPv6" class="Both" displayName="$(string.network_dns_disableIPv6)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="network.dns.disableIPv6">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="network.IDN_show_punycode" class="Both" displayName="$(string.network_IDN_show_punycode)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="network.IDN_show_punycode">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="places.history.enabled" class="Both" displayName="$(string.places_history_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="places.history.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="security.ssl.errorReporting.enabled" class="Both" displayName="$(string.security_ssl_errorReporting_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.ssl.errorReporting.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ui.key.menuAccessKeyFocuses" class="Both" displayName="$(string.ui_key_menuAccessKeyFocuses)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="ui.key.menuAccessKeyFocuses">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser.cache.disk.parent_directory" class="Both" displayName="$(string.browser_cache_disk_parent_directory)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="Preferences" />
+      <supportedOn ref="SUPPORTED_FF68" />
+      <elements >
+        <text id="Preferences_String" valueName="browser.cache.disk.parent_directory" required="true" />
+      </elements>
+    </policy>
+    <policy name="dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="Preferences" />
+      <supportedOn ref="SUPPORTED_FF68" />
+      <elements >
+        <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl" required="true" />
+      </elements>
+    </policy>
+    <policy name="dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="Preferences" />
+      <supportedOn ref="SUPPORTED_FF68" />
+      <elements >
+        <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl" required="true" />
+      </elements>
+    </policy>
+    <policy name="security.default_personal_cert" class="Both" displayName="$(string.security_default_personal_cert)" explainText="$(string.Preferences_Enum_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_security_default_personal_cert)" >
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <elements>
+        <enum id="Preferences_security_default_personal_cert" valueName="security.default_personal_cert">
+          <item displayName="$(string.Preferences_security_default_personal_cert_Ask_Every_Time)">
+            <value>
+              <string>Ask Every Time</string>
+            </value>
+          </item>
+          <item displayName="$(string.Preferences_security_default_personal_cert_Select_Automatically)">
+            <value>
+              <string>Select Automatically</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
-
