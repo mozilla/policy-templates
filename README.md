@@ -65,8 +65,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
+| **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
-
 
 ### AppUpdateURL
 
@@ -2217,6 +2217,45 @@ Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" |
   }
 }
 ```
+### SupportMenu
+Add a menuitem to the help menu for specifying support information.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** helpMenu\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\SupportMenu\Title = "Support Menu"
+Software\Policies\Mozilla\Firefox\SupportMenu\URL = "http://example.com/support"
+Software\Policies\Mozilla\Firefox\SupportMenu\Title = "S"
+```
+#### macOS
+```
+<dict>
+  <key>SupportMenu</key>
+  <dict>
+    <key>Title</key>
+    <string>SupportMenu</string>
+    <key>URL</key>
+    <string>http://example.com/support</string>
+    <key>AccessKey</key>
+    <string>S</string>
+  </dict>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SupportMenu": {
+      "Title": "Support Menu",
+      "URL": "http://example.com/support",
+      "AccessKey": "S"
+    }
+  }
+}
+```
 ### WebsiteFilter
 Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 
@@ -2253,19 +2292,6 @@ Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.
     "WebsiteFilter": {
       "Block": ["<all_urls>"],
       "Exceptions": ["http://example.org/*"]
-    }
-  }
-}
-```
-### SupportMenu
-This policy adds a menuitem to the help menu for specifying support information.
-```
-{
-  "policies": {
-    "SupportMenu": {
-      "Title": "Click here for help", /* Title of the menu */
-      "URL": "http://example.edu/", /* Destination URL */
-      "AccessKey": "C" /* Shortcut key */
     }
   }
 }
