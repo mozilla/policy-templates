@@ -208,6 +208,10 @@ If this policy is enabled or not configured, extensions will be updated automati
       <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
 
 If this policy is enabled or not configured, hardware acceleration is enabled.</string>
+      <string id="LocalFileLinks">Local File Links</string>
+      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+
+If this policy is disabled or not configured, websites can't link to local files.</string>
       <string id="NetworkPrediction">Network Prediction</string>
       <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
 
@@ -703,6 +707,9 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
       </presentation>
     </presentationTable>
   </resources>

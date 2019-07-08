@@ -679,6 +679,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="LocalFileLinks" class="Both" displayName="$(string.LocalFileLinks)" explainText="$(string.LocalFileLinks_Explain)" key="Software\Policies\Mozilla\Firefox\LocalFileLinks" presentation="$(presentation.LocalFileLinks)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF68ESR" />
+      <elements >
+        <list id="LocalFileLinks" key="Software\Policies\Mozilla\Firefox\LocalFileLinks" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="NetworkPrediction" class="Both" displayName="$(string.NetworkPrediction)" explainText="$(string.NetworkPrediction_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NetworkPrediction">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF67"/>

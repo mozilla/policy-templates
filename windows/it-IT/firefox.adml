@@ -206,6 +206,10 @@ Se questo criterio è abilitato o non configurato, le estensioni saranno aggiorn
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
 Se questo criterio è abilitato o non configurato, l'accelerazione hardware è abilitata.</string>
+      <string id="LocalFileLinks">Local File Links</string>
+      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+
+If this policy is disabled or not configured, websites can't link to local files.</string>
       <string id="NetworkPrediction">Previsione di rete</string>
       <string id="NetworkPrediction_Explain">Se questo criterio è disabilitato, la previsione di rete (prefetching DNS) sarà disabilitata.
 
@@ -701,6 +705,9 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
       </presentation>
     </presentationTable>
   </resources>
