@@ -88,6 +88,14 @@ Si esta política está deshabilitada o no está configurada, Firefox no leerá 
       <string id="Certificates_Install_Explain">Si esta política está habilitada, Firefox instalará los certificados listados en Firefox. Se verá en %USERPROFILE%\AppData\Local\Mozilla\Certificates y %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Si esta política está deshabilitada o no está configurada, Firefox no instalará certificados adicionales.</string>
+      <string id="DefaultDownloadDirectory">Default Download Directory</string>
+      <string id="DefaultDownloadDirectory_Explain">If this policy is enabled, you can set the default directory for downloads. ${home} can be used for the native home path.
+
+If this policy is disabled or not configured, the default Firefox download directory is used.</string>
+      <string id="DownloadDirectory">Download Directory</string>
+      <string id="DownloadDirectory_Explain">If this policy is enabled, you can set and lock the directory for downloads. ${home} can be used for the native home path.
+
+If this policy is disabled or not configured, the default Firefox download directory is used and the user cna change it.</string>
       <string id="DNSOverHTTPS">Configurar DNS mediante HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se puede cambiar la configuración predeterminada de DNS mediante HTTPS.
 
@@ -437,6 +445,12 @@ Si esta política está deshabilitada o no está configurada, la página de inic
       <string id="None">Ninguno</string>
       <string id="Homepage">Página de inicio</string>
       <string id="PreviousSession">Sesión anterior</string>
+      <string id="PromptForDownloadLocation">Prompt for download location</string>
+      <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
+
+If this policy is enabled, the user is always prompted for a download location.
+
+If this policy is not configured, the user is prompted for a download location, but can change the default.</string>
       <string id="Proxy">Configuración del proxy</string>
       <string id="Proxy_Explain">Si esta política está habilitada, puede configurar y bloquear la configuración de red.
 

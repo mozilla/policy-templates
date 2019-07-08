@@ -89,6 +89,14 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
+      <string id="DefaultDownloadDirectory">Default Download Directory</string>
+      <string id="DefaultDownloadDirectory_Explain">If this policy is enabled, you can set the default directory for downloads. ${home} can be used for the native home path.
+
+If this policy is disabled or not configured, the default Firefox download directory is used.</string>
+      <string id="DownloadDirectory">Download Directory</string>
+      <string id="DownloadDirectory_Explain">If this policy is enabled, you can set and lock the directory for downloads. ${home} can be used for the native home path.
+
+If this policy is disabled or not configured, the default Firefox download directory is used and the user cna change it.</string>
       <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
       <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
 
@@ -438,6 +446,12 @@ If this policy is disabled or not configured, the start page defaults to the pre
       <string id="None">None</string>
       <string id="Homepage">Homepage</string>
       <string id="PreviousSession">Previous Session</string>
+      <string id="PromptForDownloadLocation">Prompt for download location</string>
+      <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
+
+If this policy is enabled, the user is always prompted for a download location.
+
+If this policy is not configured, the user is prompted for a download location, but can change the default.</string>
       <string id="Proxy">Proxy Einstellungen</string>
       <string id="Proxy_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Netzwerkeinstellungen ändern und sperren.
 

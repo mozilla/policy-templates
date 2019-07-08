@@ -395,6 +395,20 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DefaultDownloadDirectory" class="Both" displayName="$(string.DefaultDownloadDirectory)" explainText="$(string.DefaultDownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <elements>
+        <text id="Preferences_String" valueName="DefaultDownloadDirectory" />
+      </elements>
+    </policy>
+    <policy name="DownloadDirectory" class="Both" displayName="$(string.DownloadDirectory)" explainText="$(string.DownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <elements>
+        <text id="Preferences_String" valueName="DownloadDirectory" />
+      </elements>
+    </policy>
     <policy name="DNSOverHTTPS" class="Both" displayName="$(string.DNSOverHTTPS)" explainText="$(string.DNSOverHTTPS_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.DNSOverHTTPS)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF63ESR" />
@@ -808,6 +822,16 @@
         <text id="OverridePage" valueName="OverridePostUpdatePage"/>
       </elements>
     </policy>
+    <policy name="PromptForDownloadLocation" class="Both" displayName="$(string.PromptForDownloadLocation)" explainText="$(string.PromptForDownloadLocation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="PromptForDownloadLocation">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <!-- Alphabetization is based on name, so had to add P -->
     <policy name="P_DisableSecurityBypass_InvalidCertificate" class="Both" displayName="$(string.DisableSecurityBypass_InvalidCertificate)" explainText="$(string.DisableSecurityBypass_InvalidCertificate_Explain)" key="Software\Policies\Mozilla\Firefox\DisableSecurityBypass" valueName="InvalidCertificate">
       <parentCategory ref="firefox"/>
@@ -833,7 +857,7 @@
     <!-- Alphabetization is based on name, so had to add C -->
     <policy name="C_SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown" presentation="$(presentation.SanitizeOnShutdown)" >
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
