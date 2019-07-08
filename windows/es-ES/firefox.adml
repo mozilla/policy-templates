@@ -210,6 +210,10 @@ Si esta política está habilitada o no está configurada, la aceleración por h
       <string id="NetworkPrediction_Explain">Si esta política está deshabilitada, la predicción de red (preprocesamiento DNS) se deshabilitará.
 
 Si esta política está habilitada o no está configurada, se habilitará la predicción de red (preprocesamiento DNS).</string>
+      <string id="NewTabPage">New Tab Page</string>
+      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+
+If this policy is enabled or not configured, the new tab page will be the default.</string>
       <string id="OfferToSaveLogins">Sugerir guardar inicios de sesión</string>
       <string id="OfferToSaveLogins_Explain">Si esta política está habilitada o no está configurada, Firefox ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 

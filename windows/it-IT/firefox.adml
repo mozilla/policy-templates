@@ -210,6 +210,10 @@ Se questo criterio è abilitato o non configurato, l'accelerazione hardware è a
       <string id="NetworkPrediction_Explain">Se questo criterio è disabilitato, la previsione di rete (prefetching DNS) sarà disabilitata.
 
 Se questo criterio è abilitato o non configurato, la previsione di rete (prefetching DNS) sarà abilitata.</string>
+      <string id="NewTabPage">New Tab Page</string>
+      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+
+If this policy is enabled or not configured, the new tab page will be the default.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 

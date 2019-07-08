@@ -212,6 +212,10 @@ If this policy is enabled or not configured, hardware acceleration is enabled.</
       <string id="NetworkPrediction_Explain">If this policy is disabled, network prediction (DNS prefetching) will be disabled.
 
 If this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.</string>
+      <string id="NewTabPage">New Tab Page</string>
+      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+
+If this policy is enabled or not configured, the new tab page will be the default.</string>
       <string id="OfferToSaveLogins">Offer to save logins</string>
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 

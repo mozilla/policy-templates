@@ -211,6 +211,10 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird di
       <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird Network Prediction (DNS prefetching) aktiviert.</string>
+      <string id="NewTabPage">New Tab Page</string>
+      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+
+If this policy is enabled or not configured, the new tab page will be the default.</string>
       <string id="OfferToSaveLogins">Zugangsdaten und Passwörter für Webseiten speichen</string>
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 

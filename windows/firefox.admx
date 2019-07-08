@@ -688,7 +688,17 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-    </policy>    
+    </policy>
+    <policy name="NewTabPage" class="Both" displayName="$(string.NewTabPage)" explainText="$(string.NewTabPage_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NewTabPage">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="OfferToSaveLogins" class="Both" displayName="$(string.OfferToSaveLogins)" explainText="$(string.OfferToSaveLogins_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfferToSaveLogins">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
