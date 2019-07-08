@@ -831,7 +831,7 @@
       </disabledValue>
     </policy>
     <!-- Alphabetization is based on name, so had to add C -->
-    <policy name="C_SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown">
+    <policy name="C_SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown" presentation="$(presentation.SanitizeOnShutdown)" >
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <enabledValue>
@@ -840,6 +840,72 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+      <elements >
+        <boolean id="SanitizeOnShutdown_Cache" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cache">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_Cookies" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cookies">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_Downloads" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Downloads">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_FormData" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="FormData">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_History" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="History">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_Sessions" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Sessions">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_SiteSettings" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="SiteSettings">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="SanitizeOnShutdown_OfflineApps" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="OfflineApps">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
     </policy>
     <policy name="HomepageURL" class="Both" displayName="$(string.HomepageURL)" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />
