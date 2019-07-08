@@ -31,7 +31,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
 | **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
-| **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode.
+| **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
 | **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
@@ -51,8 +51,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`OfferToSaveLogins`](#offertosavelogins)** | Control whether or not Firefox offers to save passwords.
 | **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
 | **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
-| **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
+| **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -908,7 +908,9 @@ Software\Policies\Mozilla\Firefox\DisableProfileRefresh = 0x1 | 0x0
 }
 ```
 ### DisableSafeMode
-Disable safe mode.
+Disable safe mode within the browser.
+
+On Windows, this disables safe mode via the command line as well.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, macOS)\
 **CCK2 Equivalent:** `disableSafeMode`\
@@ -1827,7 +1829,7 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 }
 ```
 ### Proxy
-Configugre proxy settings. These settings correspond to the connection settings in Firefox preferences.
+Configure proxy settings. These settings correspond to the connection settings in Firefox preferences.
 To specify ports, append them to the hostnames with a colon (:).
 
 `Mode` is the proxy method being used.
