@@ -53,6 +53,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
+| **[`Preferences`](#preferences)** | Set and lock some preferences.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
 | **[`SanitizeOnShutdown`](#sanitizeonshutdown)** | Clear all data on shutdown.
@@ -1760,6 +1761,67 @@ Software\Policies\Mozilla\Firefox\PopupBlocking\Locked = 0x1 | 0x0
                 "http://example.edu/"],
       "Default": true | false,
       "Locked": true | false
+    }
+  }
+}
+```
+### Preferences
+Set and lock certain preferences.
+
+**Compatibility:** See below\
+**CCK2 Equivalent:** `preferences`\
+**Preferences Affected:** See below
+
+| Preference | Type | Compatibility
+| --- | --- | ---
+| app.update.auto | boolean | Firefox 68, Firefox 68 ESR
+| browser.cache.disk.enable | boolean | Firefox 68, Firefox 68 ESR
+| browser.cache.disk.parent_directory | string | Firefox 68, Firefox 68 ESR
+| browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox 68 ESR
+| browser.search.update | boolean | Firefox 68, Firefox 68 ESR
+| browser.tabs.warnOnClose | boolean | Firefox 68, Firefox 68 ESR
+| browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox 68 ESR
+| browser.urlbar.suggest.history | boolean | Firefox 68, Firefox 68 ESR
+| browser.urlbar.suggest.openpage | boolean | Firefox 68, Firefox 68 ESR
+| datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox 68 ESR
+| dom.disable_window_flip | boolean | Firefox 68, Firefox 68 ESR
+| dom.disable_window_move_resize | boolean | Firefox 68, Firefox 68 ESR
+| dom.event.contextmenu.enabled | boolean | Firefox 68, Firefox 68 ESR
+| dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl | string | Firefox 68, Firefox 68 ESR
+| dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox 68 ESR
+| extensions.getAddons.showPane | boolean | Firefox 68, Firefox 68 ESR
+| media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox 68 ESR
+| media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox 68 ESR
+| network.dns.disableIPv6 | boolean | Firefox 68, Firefox 68 ESR
+| network.IDN_show_punycode | boolean | Firefox 68, Firefox 68 ESR
+| places.history.enabled | boolean | Firefox 68, Firefox 68 ESR
+| security.default_personal_cert | string | Firefox 68, Firefox 68 ESR
+| security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox 68 ESR
+| ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox 68 ESR
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_value"
+```
+#### macOS
+```
+<dict>
+  <key>Preference</key>
+  <dict>
+    <key>boolean_preference_name</key>
+    <true/> | <false/>
+    <key>string_preference_name</key>
+    <string>string_value</string>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "Preference": {
+      "boolean_preference_name": true | false,
+      "string_preference_name": "string_value"
     }
   }
 }
