@@ -36,9 +36,11 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar
+| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
+| **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
+| **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
@@ -56,6 +58,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
+| **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
 | **[`SanitizeOnShutdown` (All)](#sanitizeonshutdown-all)** | Clear all data on shutdown.
@@ -1154,6 +1157,60 @@ Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser = 0x1 | 0x0
   }
 }
 ```
+### DefaultDownloadDirectory
+Set the default download directory.
+
+You can use ${home} for the native home directory.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.download.dir`,`browser.download.folderList`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
+```
+#### macOS
+```
+<dict>
+  <key>DefaultDownloadDirectory</key>
+  <string>${home}/Downloads</string>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "DefaultDownloadDirectory": "${home}/Downloads"
+}
+```
+### DownloadDirectory
+Set and lock the download directory.
+
+You can use ${home} for the native home directory.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.download.dir`,`browser.download.folderList`,`browser.download.useDownloadDir`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\DownloadDirectory = "${home}\Downloads"
+```
+#### macOS
+```
+<dict>
+  <key>DownloadDirectory</key>
+  <string>${home}/Downloads</string>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "DownloadDirectory": "${home}/Downloads"
+}
+```
 ### EnableTrackingProtection
 Configure tracking protection.
 
@@ -1614,7 +1671,7 @@ Software\Policies\Mozilla\Firefox\OverrideFirstRunPage = "http://example.org"
 ```
 {
   "policies": {
-    "OverrideFirstRunPage": ""http://example.org""
+    "OverrideFirstRunPage": "http://example.org"
 }
 ```
 ### OverridePostUpdatePage
@@ -1639,7 +1696,7 @@ Software\Policies\Mozilla\Firefox\OverridePostUpdatePage = "http://example.org"
 ```
 {
   "policies": {
-    "OverridePostUpdatePage": ""http://example.org""
+    "OverridePostUpdatePage": "http://example.org"
 }
 ```
 ### Permissions
@@ -1885,6 +1942,32 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
       "boolean_preference_name": true | false,
       "string_preference_name": "string_value"
     }
+  }
+}
+```
+### PromptForDownloadLocation
+Ask where to save each file before downloading.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A
+**Preferences Affected:** `browser.download.useDownloadDir`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\PromptForDownloadLocation = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>PromptForDownloadLocation</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "PromptForDownloadLocation": true | false
   }
 }
 ```

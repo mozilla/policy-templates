@@ -88,6 +88,14 @@ Si cette stratégie est désactivée ou non configurée, Firefox ne lira pas les
       <string id="Certificates_Install_Explain">Si cette stratégie est activée, Firefox installera les certificats répertoriés dans Firefox. Il recherchera dans %USERPROFILE%\AppData\Local\Mozilla\Certificates et %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Si cette stratégie est désactivée ou non configurée, Firefox n'installe pas de certificats supplémentaires.</string>
+      <string id="DefaultDownloadDirectory">Default Download Directory</string>
+      <string id="DefaultDownloadDirectory_Explain">If this policy is enabled, you can set the default directory for downloads. ${home} can be used for the native home path.
+
+If this policy is disabled or not configured, the default Firefox download directory is used.</string>
+      <string id="DownloadDirectory">Download Directory</string>
+      <string id="DownloadDirectory_Explain">If this policy is enabled, you can set and lock the directory for downloads. ${home} can be used for the native home path.
+
+If this policy is disabled or not configured, the default Firefox download directory is used and the user cna change it.</string>
       <string id="DNSOverHTTPS">Configurer DNS sur HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Si cette stratégie est activée, la configuration par défaut de DNS sur HTTPS peut être modifiée.
 
@@ -437,6 +445,12 @@ Si cette stratégie est désactivée ou non configurée, la page de démarrage a
       <string id="None">Page vierge</string>
       <string id="Homepage">Page d'accueil</string>
       <string id="PreviousSession">Session précédente</string>
+      <string id="PromptForDownloadLocation">Prompt for download location</string>
+      <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
+
+If this policy is enabled, the user is always prompted for a download location.
+
+If this policy is not configured, the user is prompted for a download location, but can change the default.</string>
       <string id="Proxy">Paramètres du proxy</string>
       <string id="Proxy_Explain">Si cette stratégie est activée, vous pouvez configurer et verrouiller les paramètres réseau.
 
