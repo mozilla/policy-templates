@@ -206,6 +206,10 @@ Si esta política está habilitada o no está configurada, las extensiones se ac
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración de hardware no se puede habilitar.
 
 Si esta política está habilitada o no está configurada, la aceleración por hardware está habilitada.</string>
+      <string id="LocalFileLinks">Local File Links</string>
+      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+
+If this policy is disabled or not configured, websites can't link to local files.</string>
       <string id="NetworkPrediction">Predicción de red</string>
       <string id="NetworkPrediction_Explain">Si esta política está deshabilitada, la predicción de red (preprocesamiento DNS) se deshabilitará.
 
@@ -701,6 +705,9 @@ Si esta política está deshabilitada o no está configurada, Firefox establece 
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
       </presentation>
     </presentationTable>
   </resources>

@@ -207,6 +207,10 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden 
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Hardware-Beschleunigung aktiviert.</string>
+      <string id="LocalFileLinks">Local File Links</string>
+      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+
+If this policy is disabled or not configured, websites can't link to local files.</string>
       <string id="NetworkPrediction">Network Prediction</string>
       <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
 
@@ -702,6 +706,9 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
       </presentation>
     </presentationTable>
   </resources>

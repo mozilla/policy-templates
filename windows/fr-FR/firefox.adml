@@ -206,6 +206,10 @@ Si cette stratégie est activée ou non configurée, les extensions seront mise 
       <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle ne peut pas être activée.
 
 Si cette stratégie est activée ou non configurée, l'accélération matérielle est activée.</string>
+      <string id="LocalFileLinks">Local File Links</string>
+      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+
+If this policy is disabled or not configured, websites can't link to local files.</string>
       <string id="NetworkPrediction">Découverte réseau</string>
       <string id="NetworkPrediction_Explain">Si cette stratégie est désactivée, la découverte réseau (préférence DNS) sera désactivéeill be disabled.
 
@@ -701,6 +705,9 @@ Si cette stratégie est désactivée ou non configurée, Firefox utilise par dé
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
       </presentation>
     </presentationTable>
   </resources>

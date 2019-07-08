@@ -46,6 +46,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
+| **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -1452,6 +1453,37 @@ Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Default = 0x1 | 0x0
                 "http://example.edu/"],
       "Default": true | false
     }
+  }
+}
+```
+### LocalFileLinks
+Enable linking to local files by origin.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `capability.policy.localfilelinks.*`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\LocalFileLinks\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\LocalFileLinks\2 = "https://example.edu"
+```
+#### macOS
+```
+<dict>
+  <key>LocalFileLinks</key>
+  <array>
+    <string>http://example.org</string>
+    <string>http://example.edu</string>
+  </array>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "LocalFileLinks": ["http://example.org/",
+                       "http://example.edu/"]
   }
 }
 ```
