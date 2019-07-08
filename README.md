@@ -65,6 +65,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SearchEngines -> Remove`](#searchengines--remove)** | Hide built-in search engines.
 | **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
+| **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
@@ -2215,6 +2216,33 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "http
         }
       ]
     }
+  }
+}
+```
+### SearchSuggestEnabled
+
+Enable search suggestions.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.urlbar.suggest.searches`,`browser.search.suggest.enabled`
+
+### Windows
+```
+Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>SearchSuggestEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SearchSuggestEnabled": true | false
   }
 }
 ```

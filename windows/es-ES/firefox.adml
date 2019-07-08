@@ -493,6 +493,12 @@ Si esta política está deshabilitada o no está configurada, los motores de bú
       <string id="SearchEngines_Remove_Explain">Si esta política está habilitada, puede especificar los nombres de los motores que se borrarán u ocultarán.
 
 Si esta política está deshabilitada o no está configurada, los motores de búsqueda no se borrarán ni se ocultarán.</string>
+      <string id="SearchSuggestEnabled">Search Suggestions</string>
+      <string id="SearchSuggestEnabled_Explain">If this policy is disabled, search suggestions will be disabled.
+
+If this policy is enabled, search suggestions will be enabled.
+
+If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
       <string id="SSLVersionMin">Versión mínima de SSL habilitada</string>
       <string id="SSLVersionMin_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS inferiores al valor especificado.
 

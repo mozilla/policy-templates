@@ -2080,6 +2080,16 @@
         </enum>
       </elements>
     </policy>
+    <policy name="SearchSuggestEnabled" class="Both" displayName="$(string.SearchSuggestEnabled)" explainText="$(string.SearchSuggestEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SearchSuggestEnabled">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="TrackingProtection" class="Both" displayName="$(string.TrackingProtection)" explainText="$(string.TrackingProtection_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value" presentation="$(presentation.TrackingProtection)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
