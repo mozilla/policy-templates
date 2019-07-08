@@ -351,8 +351,8 @@ If this policy is disabled or not configured, the first run page is displayed.</
       <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.
 
 If this policy is disabled or not configured, the upgrade is displayed.</string>
-      <string id="SanitizeOnShutdown">Clear all data when browser is closed</string>
-      <string id="SanitizeOnShutdown_Explain">If this policy is enabled, all data is cleared when Firefox is closed. This includes Browsing &amp; Download History, Cookies, Active Logins, Cache, Form &amp; Search History, Site Preferences and Offline Website Data.
+      <string id="SanitizeOnShutdown">Clear data when browser is closed</string>
+      <string id="SanitizeOnShutdown_Explain">If this policy is enabled, you can choose data to be cleared when Firefox is closed.
 
 If this policy is disabled or not configured, data is not cleared when the browser is closed.</string>
       <string id="WebsiteFilter_Block">Blocked websites</string>
@@ -710,6 +710,16 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       </presentation>
       <presentation id="LocalFileLinks">
         <listBox refId="LocalFileLinks"/>
+      </presentation>
+      <presentation id="SanitizeOnShutdown">
+        <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Download History</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Form &amp; Search History</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Browsing History</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
       </presentation>
     </presentationTable>
   </resources>

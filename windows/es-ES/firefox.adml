@@ -709,6 +709,16 @@ Si esta política está deshabilitada o no está configurada, Firefox establece 
       <presentation id="LocalFileLinks">
         <listBox refId="LocalFileLinks"/>
       </presentation>
+      <presentation id="SanitizeOnShutdown">
+        <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Download History</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Form &amp; Search History</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Browsing History</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

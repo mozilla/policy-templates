@@ -58,7 +58,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
-| **[`SanitizeOnShutdown`](#sanitizeonshutdown)** | Clear all data on shutdown.
+| **[`SanitizeOnShutdown` (All)](#sanitizeonshutdown-all)** | Clear all data on shutdown.
+| **[`SanitizeOnShutdown` (Selective)](#sanitizeonshutdown-selective)** | Clear data on shutdown.
 | **[`SearchBar`](#searchbar)** | Set whether or not search bar is displayed.
 | **[`SearchEngines`](#searchengines-this-policy-is-only-available-on-the-esr)** |
 | **[`SearchEngines -> Default`](#searchengines--default)** | Set the default search engine.
@@ -2016,12 +2017,70 @@ Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
   }
 }
 ```
-### SanitizeOnShutdown
+### SanitizeOnShutdown (Selective)
+Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Downloads = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>SanitizeOnShutdown</key>
+  <dict>
+    <key>Cache</key>
+    <true/> | <false/>
+    <key>Cookies</key>
+    <true/> | <false/>
+    <key>Downloads</key>
+    <true/> | <false/>
+    <key>FormData</key>
+    <true/> | <false/>
+    <key>History</key>
+    <true/> | <false/>
+    <key>Sessions</key>
+    <true/> | <false/>
+    <key>SiteSettings</key>
+    <true/> | <false/>
+    <key>OfflineApps</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "SanitizeOnShutdown": {
+      "Cache": true | false,
+      "Cookies": true | false,
+      "Downloads": true | false,
+      "FormData": true | false,
+      "History": true | false,
+      "Sessions": true | false,
+      "SiteSettings": true | false,
+      "OfflineApps": true | false
+    }
+  }
+}
+```
+### SanitizeOnShutdown (All)
 Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown,privacy.clearOnShutdown.cache,privacy.clearOnShutdown.cookies,privacy.clearOnShutdown.downloads,privacy.clearOnShutdown.formdata,privacy.clearOnShutdown.history,privacy.clearOnShutdown.sessions,privacy.clearOnShutdown.siteSettings,privacy.clearOnShutdown.offlineApps`
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
 #### Windows
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
