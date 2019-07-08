@@ -1512,7 +1512,7 @@ Enable or disable the New Tab page.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** N/A
+**Preferences Affected:** `browser.newtabpage.enabled`
 
 #### Windows
 ```
