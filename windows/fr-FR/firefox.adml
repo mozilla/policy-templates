@@ -210,6 +210,10 @@ Si cette stratégie est activée ou non configurée, l'accélération matériell
       <string id="NetworkPrediction_Explain">Si cette stratégie est désactivée, la découverte réseau (préférence DNS) sera désactivéeill be disabled.
 
 Si cette stratégie est activée ou  non configurée, la découverte réseau (préférence DNS) sera activée.</string>
+      <string id="NewTabPage">New Tab Page</string>
+      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+
+If this policy is enabled or not configured, the new tab page will be the default.</string>
       <string id="OfferToSaveLogins">Offre de sauvegarder les identifiants</string>
       <string id="OfferToSaveLogins_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera de sauvegarder les identifiants de connexion et les mots de passe du site Web.
 

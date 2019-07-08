@@ -47,6 +47,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
+| **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
 | **[`OfferToSaveLogins`](#offertosavelogins)** | Control whether or not Firefox offers to save passwords.
 | **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
@@ -1482,7 +1483,7 @@ Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
 }
 ```
 ### NetworkPrediction
-Enable or disable  network prediction (DNS prefetching).
+Enable or disable network prediction (DNS prefetching).
 
 **Compatibility:** Firefox 67, Firefox ESR 60.7\
 **CCK2 Equivalent:** N/A\
@@ -1504,6 +1505,31 @@ Software\Policies\Mozilla\Firefox\NetworkPrediction = 0x1 | 0x0
 {
   "policies": {
     "NetworkPrediction": true | false
+}
+```
+### NewTabPage
+Enable or disable the New Tab page.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\NewTabPage = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>NewTabPage</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "NewTabPage": true | false
 }
 ```
 ### OfferToSaveLogins
