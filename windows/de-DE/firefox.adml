@@ -494,6 +494,12 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
 
 If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
+      <string id="SearchSuggestEnabled">Search Suggestions</string>
+      <string id="SearchSuggestEnabled_Explain">If this policy is disabled, search suggestions will be disabled.
+
+If this policy is enabled, search suggestions will be enabled.
+
+If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
       <string id="SSLVersionMin">Minimum SSL version enabled</string>
       <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
 

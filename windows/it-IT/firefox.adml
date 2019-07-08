@@ -493,6 +493,12 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
       <string id="SearchEngines_Remove_Explain">Se questo criterio è abilitato, è possibile specificare i nomi dei motori di ricerca da rimuovere o nascondere.
 
 Se questo criterio è disabilitato o non configurato, i motori di ricerca non saranno né rimossi né nascosti.</string>
+      <string id="SearchSuggestEnabled">Search Suggestions</string>
+      <string id="SearchSuggestEnabled_Explain">If this policy is disabled, search suggestions will be disabled.
+
+If this policy is enabled, search suggestions will be enabled.
+
+If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
       <string id="SSLVersionMin">Abilita versione minima SSL</string>
       <string id="SSLVersionMin_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS minori del valore specificato.
 
