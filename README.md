@@ -47,6 +47,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+| **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
@@ -1385,6 +1386,57 @@ Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
       "Allow": ["http://example.org/"],
       "Block": ["http://example.edu/"],
       "Default": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
+### FirefoxHome
+Customize the Firefox Home page.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`,`browser.newtabpage.activity-stream.feeds.topsites`,`browser.newtabpage.activity-stream.feeds.section.highlights`,`browser.newtabpage.activity-stream.feeds.section.topstories`,`browser.newtabpage.activity-stream.feeds.snippets`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\FirefoxHome\Search = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Highlights = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Pocket = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Snippets = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>FirefoxHome</key>
+  <dict>
+    <key>Search</key>
+    <true/> | <false/>
+    <key>TopSites</key>
+    <true/> | <false/>
+    <key>Highlights</key>
+    <true/> | <false/>
+    <key>Pocket</key>
+    <true/> | <false/>
+    <key>Snippets</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "FirefoxHome": {
+      "Search": true | false,
+      "TopSites": true | false,
+      "Highlights": true | false,
+      "Pocket": true | false,
+      "Snippets": true | false,
       "Locked": true | false
     }
   }

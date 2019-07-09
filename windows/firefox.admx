@@ -774,6 +774,60 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="CustomizeFirefoxHome" class="Both" displayName="$(string.FirefoxHome)" explainText="$(string.FirefoxHome_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.FirefoxHome)" >
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <elements >
+        <boolean id="FirefoxHome_Search" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Search">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="FirefoxHome_TopSites" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="TopSites">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="FirefoxHome_Highlights" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Highlights">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="FirefoxHome_Pocket" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Pocket">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="FirefoxHome_Snippets" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Snippets">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="FirefoxHome_Locked" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Locked">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <policy name="FlashPlugin_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.FlashPlugin_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Flash"/>
       <supportedOn ref="SUPPORTED_FF60"/>
