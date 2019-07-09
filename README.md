@@ -44,7 +44,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
-| **[`Extensions` (Deprecated)](#extensions-deprecated)** | Control the installation, uninstallation and locking of extensions.
+| **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
@@ -1256,7 +1256,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
     }
 }
 ```
-### Extensions (Deprecated)
+### Extensions
 Control the installation, uninstallation and locking of extensions.
 
 `Install` is a list of URLs or native paths for extensions to be installed. 
