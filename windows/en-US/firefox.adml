@@ -97,7 +97,7 @@ If this policy is disabled or not configured, the default Firefox download direc
       <string id="DownloadDirectory">Download Directory</string>
       <string id="DownloadDirectory_Explain">If this policy is enabled, you can set and lock the directory for downloads. ${home} can be used for the native home path.
 
-If this policy is disabled or not configured, the default Firefox download directory is used and the user cna change it.</string>
+If this policy is disabled or not configured, the default Firefox download directory is used and the user can change it.</string>
       <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
       <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
 

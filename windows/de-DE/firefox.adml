@@ -85,22 +85,22 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird di
       <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows Zertifikatsspeicher.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox den eigenen Zertifikatsspeicher.</string>
-      <string id="Certificates_Install">Install Certificates</string>
-      <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
+      <string id="Certificates_Install">Zertifikate installieren</string>
+      <string id="Certificates_Install_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox die gelisteten Zertifikate installieren. Es wird in folgende Verzeichnisse geschaut %USERPROFILE%\AppData\Local\Mozilla\Certificates und %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
-If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
-      <string id="DefaultDownloadDirectory">Default Download Directory</string>
-      <string id="DefaultDownloadDirectory_Explain">If this policy is enabled, you can set the default directory for downloads. ${home} can be used for the native home path.
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird Firefox keine weiteren Zertifikate installieren.</string>
+      <string id="DefaultDownloadDirectory">Standard Download Verzeichnis</string>
+      <string id="DefaultDownloadDirectory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie das Standard Verzeichnis für Downloads definieren. ${home} kann für den nativen Profilpfad verwendet werden.
 
-If this policy is disabled or not configured, the default Firefox download directory is used.</string>
-      <string id="DownloadDirectory">Download Directory</string>
-      <string id="DownloadDirectory_Explain">If this policy is enabled, you can set and lock the directory for downloads. ${home} can be used for the native home path.
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das Standard Firefox Download Verzeichnis benutzt.</string>
+      <string id="DownloadDirectory">Download Verzeichnis</string>
+      <string id="DownloadDirectory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie das Standard Verzeichnis für Downloads definieren und sperren. ${home} kann für den nativen Profilpfad verwendet werden.
 
-If this policy is disabled or not configured, the default Firefox download directory is used and the user cna change it.</string>
-      <string id="DNSOverHTTPS">Configure DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Explain">If this policy is enabled, the default configuration for DNS over HTTPS can be changed.
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das Standard Firefox Download Verzeichnis benutzt und der Benutzer kann dies ändern.</string>
+      <string id="DNSOverHTTPS">DNS Over HTTPS konfigurieren</string>
+      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, die Standardeinstellungen für DNS over HTTPS können geändert werden.
 
-If this policy is disabled or not configured, DNS Over HTTPS uses the default Firefox configuration.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, DNS Over HTTPS benutzt die Standard Firefox Einstellungen.</string>
       <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
@@ -508,22 +508,22 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="SearchEngines_PreventInstalls_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer keine Suchmaschinen hinzufügen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Suchmaschinen hinzugefügt werden.</string>
-      <string id="SearchEngines_Remove">Remove Search Engines</string>
-      <string id="SearchEngines_Remove_Explain">If this policy is enabled, you can specify the names of engines to be removed or hidden.
+      <string id="SearchEngines_Remove">Suchmaschinen entfernen</string>
+      <string id="SearchEngines_Remove_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Namen der Suchmaschinen definieren welche entfernt oder ausgeblendet werden sollen.
 
 If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
-      <string id="SearchSuggestEnabled">Search Suggestions</string>
-      <string id="SearchSuggestEnabled_Explain">If this policy is disabled, search suggestions will be disabled.
+      <string id="SearchSuggestEnabled">Suchvorschläge</string>
+      <string id="SearchSuggestEnabled_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren werden die Suchvorschläge abgeschaltet.
 
 If this policy is enabled, search suggestions will be enabled.
 
 If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
-      <string id="SSLVersionMin">Minimum SSL version enabled</string>
-      <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
+      <string id="SSLVersionMin">Minimum SSL Version</string>
+      <string id="SSLVersionMin_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine SSL/TLS Version unter der angegebenen Version verwenden.
 
 If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
-      <string id="SSLVersionMax">Maximum SSL version enabled</string>
-      <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
+      <string id="SSLVersionMax">Maximum SSL Version</string>
+      <string id="SSLVersionMax_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine höhere SSL/TLS Version als der angegebenen Version verwenden.
 
 If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
       <string id="TLS1">TLS 1.0</string>
@@ -533,8 +533,8 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.</string>
       <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.</string>
       <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.</string>
-      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Ask Every Time</string>
-      <string id="Preferences_security_default_personal_cert_Select_Automatically">Select Automatically</string>
+      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Jedes Mal nachfragen</string>
+      <string id="Preferences_security_default_personal_cert_Select_Automatically">Automatisch auswählen</string>
       <string id="app_update_auto">app.update.auto</string>
       <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
       <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
@@ -727,12 +727,12 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       <presentation id="SanitizeOnShutdown">
         <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
         <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Downloads">Download History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Form &amp; Search History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_History">Browsing History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
-        <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
-        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Download-Chronik</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe & Formulardaten</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Besuchte Seiten</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Aktive Logins</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline-Website-Daten</checkBox>
       </presentation>
     </presentationTable>
   </resources>
