@@ -335,6 +335,10 @@ If this policy is disabled or not configured, any site that is not in the Block 
       <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their notification preferences.</string>
+      <string id="FirefoxHome">Customize Firefox Home</string>
+      <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
+
+If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
       <string id="FlashPlugin_Allow_Explain">If this policy is enabled, Flash is activated by default for the origins indicated unless Flash is completely disabled. If a top level domain is specified (http://example.org), Flash is allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default Flash policy is followed.</string>
@@ -734,6 +738,14 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
         <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
         <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
+      </presentation>
+      <presentation id="FirefoxHome">
+        <checkBox refId="FirefoxHome_Search">Search</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Top Sites</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Download History</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Recommended by Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Don't allow settings to be changed</checkBox>
       </presentation>
     </presentationTable>
   </resources>

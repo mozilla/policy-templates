@@ -335,6 +335,10 @@ If this policy is disabled or not configured, any site that is not in the Block 
       <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their notification preferences.</string>
+      <string id="FirefoxHome">Customize Firefox Home</string>
+      <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
+
+If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
       <string id="FlashPlugin_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, ist Flash standardmäßig für die angegebenen URLs aktiviert, es sei denn, Flash ist vollständig deaktiviert. Wenn eine Top-Level-Domäne angegeben ist (http://example.org), ist Flash auch für alle Sub-Domains zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Flash Richtlinie verwendet.</string>
@@ -734,6 +738,14 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <checkBox refId="SanitizeOnShutdown_Sessions">Aktive Logins</checkBox>
         <checkBox refId="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</checkBox>
         <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline-Website-Daten</checkBox>
+      </presentation>
+      <presentation id="FirefoxHome">
+        <checkBox refId="FirefoxHome_Search">Search</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Top Sites</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Download History</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Recommended by Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Don't allow settings to be changed</checkBox>
       </presentation>
     </presentationTable>
   </resources>

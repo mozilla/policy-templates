@@ -335,6 +335,10 @@ Se questo criterio è disabilitato o non configurato, qualunque sito non nel cri
       <string id="Notifications_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle notifiche non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle notifiche.</string>
+      <string id="FirefoxHome">Customize Firefox Home</string>
+      <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
+
+If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
       <string id="FlashPlugin_Allow_Explain">Se questo criterio è abilitato, Flash è attivato per impostazione predefinita sui siti indicati a meno che non sia completamente disabilitato. Se è specificato un dominio di primo livello (http://example.org), Flash è consentito anche su tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per Flash.</string>
@@ -734,6 +738,14 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
         <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
         <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
         <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
+      </presentation>
+      <presentation id="FirefoxHome">
+        <checkBox refId="FirefoxHome_Search">Search</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Top Sites</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Download History</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Recommended by Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Don't allow settings to be changed</checkBox>
       </presentation>
     </presentationTable>
   </resources>
