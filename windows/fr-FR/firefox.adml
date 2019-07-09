@@ -11,6 +11,7 @@
       <string id="SUPPORTED_FF64">Firefox 64 ou superieur, Firefox 60.4 ESR ou superieur</string>
       <string id="SUPPORTED_FF66">Firefox 66 ou superieur, Firefox 60.6 ESR ou superieur</string>
       <string id="SUPPORTED_FF67">Firefox 67 ou superieur, Firefox 60.7 ESR ou superieur</string>
+      <string id="SUPPORTED_FF68">Firefox 68 ou superieur, Firefox 68 ESR ou superieur</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR ou superieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -28,6 +29,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Page accueil</string>
       <string id="Search_group">Recherche</string>
+      <string id="Preferences_group">Preferences</string>
       <string id="Allow">Sites autorisés</string>
       <string id="Block">Sites bloqués</string>
       <string id="AppUpdateURL">URL de mise à jour personnalisée</string>

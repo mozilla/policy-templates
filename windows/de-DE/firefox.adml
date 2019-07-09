@@ -5,12 +5,13 @@
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 oder höher</string>
-      <string id="SUPPORTED_FF60">Firefox 60 oder höher</string>
+      <string id="SUPPORTED_FF60">Firefox 60 oder höher, Firefox 60 ESR oder höher</string>
       <string id="SUPPORTED_FF62">Firefox 62 oder höher, Firefox 60.2 ESR oder höher</string>
       <string id="SUPPORTED_FF63">Firefox 63 oder höher</string>
       <string id="SUPPORTED_FF64">Firefox 64 oder höher, Firefox 60.4 ESR oder höher</string>
       <string id="SUPPORTED_FF66">Firefox 66 oder höher, Firefox 60.6 ESR oder höher</string>
       <string id="SUPPORTED_FF67">Firefox 67 oder höher, Firefox 60.7 ESR oder höher</string>
+      <string id="SUPPORTED_FF68">Firefox 68 oder höher, Firefox 68 ESR oder höher</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
@@ -28,6 +29,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
+      <string id="Preferences_group">Preferences</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
       <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
@@ -76,8 +78,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSetDesktopBackground_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Bilder nicht mit Hilfe von "Als Hintergrundbild einrichten…" als Desktophintergrund festlegen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Bilder mit Hilfe von "Als Hintergrundbild einrichten.." als Desktophintergrund festlegen.</string>
-      <string id="
-                  Portal">Captive Portal Unterstützung</string>
+      <string id="Portal">Captive Portal Unterstützung</string>
       <string id="CaptivePortal_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Unterstützung für Captive Portals deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Unterstützung für Captive Portals aktiviert.</string>
@@ -728,7 +729,7 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
         <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
         <checkBox refId="SanitizeOnShutdown_Downloads">Download-Chronik</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe & Formulardaten</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe &amp; Formulardaten</checkBox>
         <checkBox refId="SanitizeOnShutdown_History">Besuchte Seiten</checkBox>
         <checkBox refId="SanitizeOnShutdown_Sessions">Aktive Logins</checkBox>
         <checkBox refId="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</checkBox>

@@ -5,12 +5,13 @@
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
-      <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
+      <string id="SUPPORTED_FF60">Firefox 60 o versione successiva, Firefox 60 ESR o versione successiva</string>
       <string id="SUPPORTED_FF62">Firefox 62 o versione successiva, Firefox 60.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
       <string id="SUPPORTED_FF64">Firefox 64 o versione successiva, Firefox 60.4 ESR o versione successiva</string>
       <string id="SUPPORTED_FF66">Firefox 66 o versione successiva, Firefox 60.6 ESR o versione successiva</string>
       <string id="SUPPORTED_FF67">Firefox 67 o versione successiva, Firefox 60.7 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF68">Firefox 68 o versione successiva, Firefox 68 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -28,6 +29,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Pagina iniziale</string>
       <string id="Search_group">Ricerca</string>
+      <string id="Preferences_group">Preferences</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
       <string id="AppUpdateURL">URL aggiornamento personalizzato</string>
