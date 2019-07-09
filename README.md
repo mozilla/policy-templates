@@ -1337,10 +1337,7 @@ The configuration for each extension is another dictionary that can contain the 
 **Preferences Affected:** N/A
 
 #### Windows
-Due to limitations with group policy on Windows, you need to create the JSON that corresponds to your settings and set that directly into the entry field for the policy.
-```
-Software\Policies\Mozilla\Firefox\ExtensionSettings = JSON from below
-```
+Due to a bug in Firefox 68, this policy is not working via GPO on Windows. We will have a fix soon.
 #### macOS
 ```
 <dict>
