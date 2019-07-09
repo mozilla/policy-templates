@@ -78,7 +78,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSetDesktopBackground_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Bilder nicht mit Hilfe von "Als Hintergrundbild einrichten…" als Desktophintergrund festlegen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Bilder mit Hilfe von "Als Hintergrundbild einrichten.." als Desktophintergrund festlegen.</string>
-      <string id="Portal">Captive Portal Unterstützung</string>
+      <string id="CaptivePortal">Captive Portal Unterstützung</string>
       <string id="CaptivePortal_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Unterstützung für Captive Portals deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Unterstützung für Captive Portals aktiviert.</string>
