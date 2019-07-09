@@ -1,4 +1,4 @@
-**IMPORTANT**: Complete Firefox 68 policies will be released later today.
+**IMPORTANT**: **Complete Firefox 68 policies will be released later today.**
 
 **IMPORTANT**: This file is in active development along with the policies in Firefox. Make sure to check the compatibility section to see if a policy is available in a specific version of Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
 
