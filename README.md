@@ -1,3 +1,5 @@
+**IMPORTANT**: This file is in active development along with the policies in Firefox. Make sure to check the compatibility section to see if a policy is available in a specific version of Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
+
 Policies can be specified using the Group Policy templates on Windows (https://github.com/mozilla/policy-templates/tree/master/windows), configuration profiles on macOS (https://github.com/mozilla/policy-templates/tree/master/mac), or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
 
 | Policy Name | Description
