@@ -664,6 +664,9 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
         <textBox refId="SearchEngine_SuggestURLTemplate">
           <label>Modello indirizzo suggerimenti:</label>
         </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>POST data:</label>
+        </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
         <textBox refId="SearchEngines_Default">

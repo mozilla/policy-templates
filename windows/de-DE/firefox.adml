@@ -664,6 +664,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
         <textBox refId="SearchEngine_SuggestURLTemplate">
           <label>Vorlagen Suchvorschläge:</label>
         </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>POST data:</label>
+        </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
         <textBox refId="SearchEngines_Default">

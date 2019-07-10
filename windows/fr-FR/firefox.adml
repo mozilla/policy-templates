@@ -664,6 +664,9 @@ Si cette stratégie est désactivée ou non configurée, Firefox utilise par dé
         <textBox refId="SearchEngine_SuggestURLTemplate">
           <label>Suggest URL Template:</label>
         </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>POST data:</label>
+        </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
         <textBox refId="SearchEngines_Default">

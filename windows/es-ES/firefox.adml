@@ -664,6 +664,9 @@ Si esta política está deshabilitada o no está configurada, Firefox establece 
         <textBox refId="SearchEngine_SuggestURLTemplate">
           <label>Sugerir plantilla de URL:</label>
         </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>POST data:</label>
+        </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
         <textBox refId="SearchEngines_Default">
