@@ -15,10 +15,10 @@
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
-      <string id="Camera_group">Camera</string>
-      <string id="Microphone_group">Microphone</string>
-      <string id="Location_group">Location</string>
-      <string id="Notifications_group">Notifications</string>
+      <string id="Camera_group">Kamera</string>
+      <string id="Microphone_group">Mikrofon</string>
+      <string id="Location_group">Standort</string>
+      <string id="Notifications_group">Benachrichtigungen</string>
       <string id="Authentication_group">Authentifizierung</string>
       <string id="Bookmarks_group">Lesezeichen</string>
       <string id="Certificates_group">Zertifikate</string>
@@ -29,7 +29,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
-      <string id="Preferences_group">Preferences</string>
+      <string id="Preferences_group">Einstellungen</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
       <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
@@ -516,21 +516,21 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="SearchEngines_Remove">Suchmaschinen entfernen</string>
       <string id="SearchEngines_Remove_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Namen der Suchmaschinen definieren welche entfernt oder ausgeblendet werden sollen.
 
-If this policy is disabled or not configured, search engines will not be removed or hidden.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Suchmaschinen entfernt bzw. ausgeblendet.</string>
       <string id="SearchSuggestEnabled">Suchvorschläge</string>
       <string id="SearchSuggestEnabled_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren werden die Suchvorschläge abgeschaltet.
 
-If this policy is enabled, search suggestions will be enabled.
+Wenn Sie die Richtlinieneinstellung aktivieren, werden Suchvorschläge aktiviert.
 
-If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
+Wenn Sie die Richtlinieneinstellung nicht konfigurieren, werden Suchvorschläge aktiviert, aber der Benutzer kann diese abschalten.</string>
       <string id="SSLVersionMin">Minimum SSL Version</string>
       <string id="SSLVersionMin_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine SSL/TLS Version unter der angegebenen Version verwenden.
 
-If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.0.</string>
       <string id="SSLVersionMax">Maximum SSL Version</string>
       <string id="SSLVersionMax_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine höhere SSL/TLS Version als der angegebenen Version verwenden.
 
-If this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.3.</string>
       <string id="TLS1">TLS 1.0</string>
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
@@ -740,12 +740,12 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
         <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline-Website-Daten</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
-        <checkBox refId="FirefoxHome_Search">Search</checkBox>
-        <checkBox refId="FirefoxHome_TopSites">Top Sites</checkBox>
-        <checkBox refId="FirefoxHome_Highlights">Download History</checkBox>
-        <checkBox refId="FirefoxHome_Pocket">Recommended by Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Search">Suche</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Top Seiten</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Download Verlauf</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Von Pocket empfohlen</checkBox>
         <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
-        <checkBox refId="FirefoxHome_Locked">Don't allow settings to be changed</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Es ist nicht erlaubt, dass Einstellungen geändert werden.</checkBox>
       </presentation>
     </presentationTable>
   </resources>
