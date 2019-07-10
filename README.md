@@ -44,6 +44,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
+| **[`EnterprisePoliciesEnabled`](#enterprisepoliciesenabled)** | Enable policy support on macOS.
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
@@ -1256,6 +1257,20 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
     }
 }
 ```
+### EnterprisePoliciesEnabled
+Enable policy support on macOS.
+
+**Compatibility:** Firefox 63, Firefox ESR 60.3 (macOS only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### macOS
+```
+<dict>
+  <key>EnterprisePoliciesEnabled</key>
+  <true/>
+</dict>
+```
 ### Extensions
 Control the installation, uninstallation and locking of extensions.
 
@@ -2052,7 +2067,7 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 #### macOS
 ```
 <dict>
-  <key>Preference</key>
+  <key>Preferences</key>
   <dict>
     <key>boolean_preference_name</key>
     <true/> | <false/>
@@ -2065,7 +2080,7 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 ```
 {
   "policies": {
-    "Preference": {
+    "Preferences": {
       "boolean_preference_name": true | false,
       "string_preference_name": "string_value"
     }
