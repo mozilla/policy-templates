@@ -1383,7 +1383,7 @@ Due to a bug in Firefox 68, this policy is not working via GPO on Windows. We wi
 ```
 {
   "policies": {
-    "ExtensionsSettings": {
+    "ExtensionSettings": {
       "*": {
         "blocked_install_message": "Custom error message.",
         "install_sources": ["https://addons.mozilla.org/"],
@@ -2216,13 +2216,19 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
 ### RequestedLocales
 Set the the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 
-**Compatibility:** Firefox 64, Firefox ESR 60.4\
+Note: For Firefox 68, this can now be a string so that you can specify an empty value.
+
+**Compatibility:** Firefox 64, Firefox ESR 60.4, Updated in Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 #### Windows
 ```
 Software\Policies\Mozilla\Firefox\RequestedLocales\1 = "de"
 Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
+
+or
+
+Software\Policies\Mozilla\Firefox\RequestedLocales = "de,en-US"
 ```
 #### macOS
 ```
@@ -2233,12 +2239,28 @@ Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
     <string>en-US</string>
   </array>
 </dict>
+
+or
+
+<dict>
+  <key>RequestedLocales</key>
+  <string>de,en-US</string>
+</dict>
+
 ```
 #### JSON
 ```
 {
   "policies": {
     "RequestedLocales": ["de", "en-US"]
+  }
+}
+
+or
+
+{
+  "policies": {
+    "RequestedLocales": "de,en-US"
   }
 }
 ```
