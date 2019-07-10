@@ -2495,9 +2495,11 @@ Adddd new search engines (up to five). This policy is only available on the ESR.
 
 `Description` is a description of the search engine.
 
+`PostData` is the POST data as name value pairs separated by &.
+
 `SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
 
-**Compatibility:** Firefox ESR 60\
+**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68)\
 **CCK2 Equivalent:** `searchplugins`\
 **Preferences Affected:** N/A
 
@@ -2509,6 +2511,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL = "https://www.exa
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias = "example"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description = "Example Description"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "https://www.example.org/suggestions/q={searchTerms}"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={searchTerms}"
 
 #### macOS
 ```
@@ -2532,6 +2535,8 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "http
         <string>Example Description</string>
         <key>SuggestURLTemplate</key>
         <string>https://www.example.org/suggestions/q={searchTerms}</string>
+        <key>PostData</key>
+        <string>name=value&q={searchTerms}</string>
       </dict>
     <array>
   </dict>
@@ -2550,6 +2555,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "http
           "IconURL": "https://www.example.org/favicon.ico",
           "Alias": "example",
           "Description": "Description",
+          "PostData": "name=value&q={searchTerms}",
           "SuggestURLTemplate": "https://www.example.org/suggestions/q={searchTerms}"
         }
       ]
