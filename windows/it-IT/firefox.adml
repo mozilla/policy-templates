@@ -482,6 +482,7 @@ Se questo criterio è disabilitato, la protezione antitracciamento è disabilita
 
 Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
       <string id="RequestedLocales">Lingua richiesta</string>
+      <string id="RequestedLocalesString">Lingua richiesta (string)</string>
       <string id="RequestedLocales_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di lingue richieste per l'applicazione in ordine di preferenza. Il pacchetto lingue corrispondente sarà attivato.
 
 Se questo criterio è disabilitato o non configurato, l'applicazione utilizzerà la lingua predefinita.</string>

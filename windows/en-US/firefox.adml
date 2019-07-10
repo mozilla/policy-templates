@@ -482,6 +482,7 @@ If this policy is disabled, tracking protection is disabled and locked in both t
 
 If this policy is enabled, private browsing is enabled by default in both the browser and private browsing and you can choose whether or not to prevent the user from changing it.</string>
       <string id="RequestedLocales">Requested locale</string>
+      <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 
 If this policy is disabled or not configured, the application will use the default locale.</string>

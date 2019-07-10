@@ -2442,6 +2442,13 @@
         <list id="RequestedLocales" key="Software\Policies\Mozilla\Firefox\RequestedLocales" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="RequestedLocalesString" class="Both" displayName="$(string.RequestedLocalesString)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF68" />
+      <elements >
+        <text id="Preferences_String" valueName="RequestedLocales"/>
+      </elements>
+    </policy>
     <policy name="SSLVersionMin" class="Both" displayName="$(string.SSLVersionMin)" explainText="$(string.SSLVersionMin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersion)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF66" />

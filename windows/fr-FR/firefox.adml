@@ -482,6 +482,7 @@ Si cette stratégie est désactivée, la protection de suivi est désactivée et
 
 Si cette stratégie est activée, la navigation privée est activée par défaut à la fois dans le navigateur et dans la navigation privée et vous pouvez choisir d’empêcher ou non l’utilisateur de la modifier.</string>
       <string id="RequestedLocales">liste des paramètres régionaux</string>
+      <string id="RequestedLocalesString">liste des paramètres régionaux (string)</string>
       <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste des paramètres régionaux demandés pour l'application par ordre de préférence. Le module linguistique correspondant deviendra actif.
 
 Si cette stratégie est désactivée ou non configurée, l'application utilisera les paramètres régionaux par défaut..</string>

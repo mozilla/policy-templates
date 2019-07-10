@@ -482,6 +482,7 @@ Si esta política está deshabilitada, la protección de rastreo se deshabilitar
 
 Si esta política está habilitada, la navegación privada está habilitada de forma predeterminada tanto en el navegador como en la navegación privada y puede elegir si desea evitar que el usuario la cambie.</string>
       <string id="RequestedLocales">Solicitud de localización</string>
+      <string id="RequestedLocalesString">Solicitud de localización (string)</string>
       <string id="RequestedLocales_Explain">Si esta política está habilitada, puede especificar una lista de las localizaciones solicitadas para la aplicación en orden de preferencia. Esto hará que el paquete de idioma correspondiente se active.
 
 Si esta política está deshabilitada o no está configurada, la aplicación utilizará la localización predeterminada.</string>
