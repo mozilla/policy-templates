@@ -29,7 +29,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Pagina iniziale</string>
       <string id="Search_group">Ricerca</string>
-      <string id="Preferences_group">Preferences</string>
+      <string id="Preferences_group">Preferenze</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
       <string id="AppUpdateURL">URL aggiornamento personalizzato</string>
@@ -90,14 +90,14 @@ Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i 
       <string id="Certificates_Install_Explain">Se questo criterio è abilitato, Firefox installerà i certificati elencati in Firefox. Questi saranno cercati in %USERPROFILE%\AppData\Local\Mozilla\Certificates e in %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Se questo criterio è disabilitato o non configurato, Firefox non installerà certificati aggiuntivi.</string>
-      <string id="DefaultDownloadDirectory">Default Download Directory</string>
-      <string id="DefaultDownloadDirectory_Explain">If this policy is enabled, you can set the default directory for downloads. ${home} can be used for the native home path.
+      <string id="DefaultDownloadDirectory">Directory di download predefinita</string>
+      <string id="DefaultDownloadDirectory_Explain">Se questo criterio è abilitato, è possibile impostare la directory predefinita per i download. È possibile usare ${home} per specificare il percorso nativo della directory utente.
 
-If this policy is disabled or not configured, the default Firefox download directory is used.</string>
-      <string id="DownloadDirectory">Download Directory</string>
-      <string id="DownloadDirectory_Explain">If this policy is enabled, you can set and lock the directory for downloads. ${home} can be used for the native home path.
+Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la directory di download predefinita.</string>
+      <string id="DownloadDirectory">Directory di download</string>
+      <string id="DownloadDirectory_Explain">Se questo criterio è abilitato, è possibile impostare e rendere non modificabile la directory per i download. È possibile usare ${home} per specificare il percorso nativo della directory utente.
 
-If this policy is disabled or not configured, the default Firefox download directory is used and the user cna change it.</string>
+Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la directory di download predefinita e l'utente sarà in grado di modificarla.</string>
       <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
@@ -216,18 +216,18 @@ Se questo criterio è abilitato o non configurato, le estensioni saranno aggiorn
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
 Se questo criterio è abilitato o non configurato, l'accelerazione hardware è abilitata.</string>
-      <string id="LocalFileLinks">Local File Links</string>
-      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+      <string id="LocalFileLinks">Collegamenti file locali</string>
+      <string id="LocalFileLinks_Explain">Se questo criterio è abilitato, è possibile specificare le origini da cui sono consentiti i collegamenti ai file locali.
 
-If this policy is disabled or not configured, websites can't link to local files.</string>
+Se questo criterio è disabilitato o non configurato, i siti Web non possono includere collegamenti a file locali.</string>
       <string id="NetworkPrediction">Previsione di rete</string>
       <string id="NetworkPrediction_Explain">Se questo criterio è disabilitato, la previsione di rete (prefetching DNS) sarà disabilitata.
 
 Se questo criterio è abilitato o non configurato, la previsione di rete (prefetching DNS) sarà abilitata.</string>
-      <string id="NewTabPage">New Tab Page</string>
-      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+      <string id="NewTabPage">Pagina Nuova scheda</string>
+      <string id="NewTabPage_Explain">Se questo criterio è disabilitato, la pagina Nuova scheda sarà vuota.
 
-If this policy is enabled or not configured, the new tab page will be the default.</string>
+Se questo criterio è abilitato o non configurato, la pagina Nuova scheda sarà quella predefinita.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 
@@ -335,10 +335,10 @@ Se questo criterio è disabilitato o non configurato, qualunque sito non nel cri
       <string id="Notifications_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle notifiche non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle notifiche.</string>
-      <string id="FirefoxHome">Customize Firefox Home</string>
-      <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
+      <string id="FirefoxHome">Personalizza pagina iniziale di Firefox</string>
+      <string id="FirefoxHome_Explain">Se questo criterio è abilitato, è possibile scegliere le sezioni visualizzate nella pagina iniziale di Firefox e impedire all'utente di modificarle.
 
-If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
+Se questo criterio è disabilitato o non configurato, saranno visualizzate le sezioni predefinite e l'utente potrà modificarle.</string>
       <string id="FlashPlugin_Allow_Explain">Se questo criterio è abilitato, Flash è attivato per impostazione predefinita sui siti indicati a meno che non sia completamente disabilitato. Se è specificato un dominio di primo livello (http://example.org), Flash è consentito anche su tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per Flash.</string>
@@ -451,12 +451,12 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="None">Nessuna</string>
       <string id="Homepage">Pagina iniziale</string>
       <string id="PreviousSession">Sessione precedente</string>
-      <string id="PromptForDownloadLocation">Prompt for download location</string>
-      <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
+      <string id="PromptForDownloadLocation">Richiedi percorso di download</string>
+      <string id="PromptForDownloadLocation_Explain">Se questo criterio è disabilitato, all'utente non verrà chiesto un percorso di download.
 
-If this policy is enabled, the user is always prompted for a download location.
+Se questo criterio è abilitato, all'utente verrà sempre chiesto un percorso di download.
 
-If this policy is not configured, the user is prompted for a download location, but can change the default.</string>
+Se questo criterio non è configurato, all'utente sarà richiesto un percorso di download, ma potrà modificare quello predefinito.</string>
       <string id="Proxy">Impostazioni proxy</string>
       <string id="Proxy_Explain">Se questo criterio è abilitato, è possibile configurare e bloccare le impostazioni di rete.
 
@@ -517,12 +517,12 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
       <string id="SearchEngines_Remove_Explain">Se questo criterio è abilitato, è possibile specificare i nomi dei motori di ricerca da rimuovere o nascondere.
 
 Se questo criterio è disabilitato o non configurato, i motori di ricerca non saranno né rimossi né nascosti.</string>
-      <string id="SearchSuggestEnabled">Search Suggestions</string>
-      <string id="SearchSuggestEnabled_Explain">If this policy is disabled, search suggestions will be disabled.
+      <string id="SearchSuggestEnabled">Suggerimenti di ricerca</string>
+      <string id="SearchSuggestEnabled_Explain">Se questo criterio è disabilitato, i suggerimenti di ricerca saranno disabilitati.
 
-If this policy is enabled, search suggestions will be enabled.
+Se questo criterio è abilitato, i suggerimenti di ricerca saranno abilitati.
 
-If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
+Se questo criterio non è configurato, i suggerimenti di ricerca saranno abilitati, ma l'utente li potrà disabilitare.</string>
       <string id="SSLVersionMin">Abilita versione minima SSL</string>
       <string id="SSLVersionMin_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS minori del valore specificato.
 
@@ -535,11 +535,11 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
-      <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.</string>
-      <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.</string>
-      <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.</string>
-      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Ask Every Time</string>
-      <string id="Preferences_security_default_personal_cert_Select_Automatically">Select Automatically</string>
+      <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.</string>
+      <string id="Preferences_String_Explain">Se questo criterio è abilitato, la preferenza è impostata alla stringa immessa e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.</string>
+      <string id="Preferences_Enum_Explain">Se questo criterio è abilitato, la preferenza è impostata al valore selezionato e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.</string>
+      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Chiedi ogni volta</string>
+      <string id="Preferences_security_default_personal_cert_Select_Automatically">Seleziona automaticamente</string>
       <string id="app_update_auto">app.update.auto</string>
       <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
       <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
@@ -731,21 +731,21 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       </presentation>
       <presentation id="SanitizeOnShutdown">
         <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Downloads">Download History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Form &amp; Search History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_History">Browsing History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
-        <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
-        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Cookies">Cookie</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Cronologia dei download</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Cronologia delle ricerche e dei moduli</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Cronologia di navigazione</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Accessi effettuati</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Preferenze dei siti web</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Dati non in linea dei siti web</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
-        <checkBox refId="FirefoxHome_Search">Search</checkBox>
-        <checkBox refId="FirefoxHome_TopSites">Top Sites</checkBox>
-        <checkBox refId="FirefoxHome_Highlights">Download History</checkBox>
-        <checkBox refId="FirefoxHome_Pocket">Recommended by Pocket</checkBox>
-        <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
-        <checkBox refId="FirefoxHome_Locked">Don't allow settings to be changed</checkBox>
+        <checkBox refId="FirefoxHome_Search">Ricerca sul Web</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Siti principali</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Cronologia dei download</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Raccomandati da Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Snippet</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Non consentire la modifica delle preferenze</checkBox>
       </presentation>
     </presentationTable>
   </resources>
