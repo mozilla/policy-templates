@@ -55,9 +55,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
 
 Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Allow Non FQDN</string>
-      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled, you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
+      <string id="Authentication_AllowNonFQDN_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden SPNEGO und NTLM auf Nicht-FQDN (Fully Qualified Domain Name) Adressen aktiviert sein.
 
-If this policy is disabled or not configured, NTLM and SPNEGO are not enabled on non FQDNs.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, sind NTLM und SPNEGO auf Nicht-FQDN Adressen nicht aktiviert.</string>
       <string id="BlockAboutAddons">Zugriff auf Add-ons Manager verhindern</string>
       <string id="BlockAboutAddons_Explain" >Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
 
@@ -281,14 +281,14 @@ This setting is ignored if this policy is disabled or not configured or if cooki
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Cookie-Einstellungen ändern.</string>
       <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
 
-If this policy is disabled or not configured, the default camera policy is followed.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die standardmäßige Richtlinieneinstellung befolgt.</string>
       <string id="Camera_Block_Explain">If this policy is enabled, access to the camera is blocked for the origins indicated.
 
 If this policy is disabled or not configured, access to the camera is not blocked by default.</string>
-      <string id="Camera_BlockNewRequests">Block new requests asking to access the camera</string>
-      <string id="Camera_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the camera.
+      <string id="Camera_BlockNewRequests">Neue Anfragen zur Kameranutzung deaktivieren</string>
+      <string id="Camera_BlockNewRequests_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, sind Seiten, die nicht in der Erlauben-Richtlinie sind, daran gehindert nach der Berechrechtigung für den Kamera-Zugang zu fragen.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the camera.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann jede Seite, die nicht in der Blockieren-Richtlinie ist, nach der Berechtigung zur Kamera-Nutzung fragen.</string>
       <string id="Camera_Locked">Do not allow preferences to be changed</string>
       <string id="Camera_Locked_Explain">If this policy is enabled, camera preferences cannot be changed by the user.
 
