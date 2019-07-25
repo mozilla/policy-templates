@@ -31,31 +31,41 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
 | **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
-| **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode.
+| **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
 | **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar
+| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
+| **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
+| **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
+| **[`EnterprisePoliciesEnabled`](#enterprisepoliciesenabled)** | Enable policy support on macOS.
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
+| **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+| **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
+| **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
+| **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
 | **[`OfferToSaveLogins`](#offertosavelogins)** | Control whether or not Firefox offers to save passwords.
 | **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
 | **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
-| **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
+| **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
+| **[`Preferences`](#preferences)** | Set and lock some preferences.
+| **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
-| **[`SanitizeOnShutdown`](#sanitizeonshutdown)** | Clear all data on shutdown.
+| **[`SanitizeOnShutdown` (All)](#sanitizeonshutdown-all)** | Clear all data on shutdown.
+| **[`SanitizeOnShutdown` (Selective)](#sanitizeonshutdown-selective)** | Clear data on shutdown.
 | **[`SearchBar`](#searchbar)** | Set whether or not search bar is displayed.
 | **[`SearchEngines`](#searchengines-this-policy-is-only-available-on-the-esr)** |
 | **[`SearchEngines -> Default`](#searchengines--default)** | Set the default search engine.
@@ -63,6 +73,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SearchEngines -> Remove`](#searchengines--remove)** | Hide built-in search engines.
 | **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
+| **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
@@ -907,7 +918,9 @@ Software\Policies\Mozilla\Firefox\DisableProfileRefresh = 0x1 | 0x0
 }
 ```
 ### DisableSafeMode
-Disable safe mode.
+Disable safe mode within the browser.
+
+On Windows, this disables safe mode via the command line as well.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, macOS)\
 **CCK2 Equivalent:** `disableSafeMode`\
@@ -1147,6 +1160,60 @@ Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser = 0x1 | 0x0
   }
 }
 ```
+### DefaultDownloadDirectory
+Set the default download directory.
+
+You can use ${home} for the native home directory.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.download.dir`,`browser.download.folderList`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
+```
+#### macOS
+```
+<dict>
+  <key>DefaultDownloadDirectory</key>
+  <string>${home}/Downloads</string>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "DefaultDownloadDirectory": "${home}/Downloads"
+}
+```
+### DownloadDirectory
+Set and lock the download directory.
+
+You can use ${home} for the native home directory.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.download.dir`,`browser.download.folderList`,`browser.download.useDownloadDir`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\DownloadDirectory = "${home}\Downloads"
+```
+#### macOS
+```
+<dict>
+  <key>DownloadDirectory</key>
+  <string>${home}/Downloads</string>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "DownloadDirectory": "${home}/Downloads"
+}
+```
 ### EnableTrackingProtection
 Configure tracking protection.
 
@@ -1187,6 +1254,20 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
       "Locked": [true, false]
     }
 }
+```
+### EnterprisePoliciesEnabled
+Enable policy support on macOS.
+
+**Compatibility:** Firefox 63, Firefox ESR 60.3 (macOS only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### macOS
+```
+<dict>
+  <key>EnterprisePoliciesEnabled</key>
+  <true/>
+</dict>
 ```
 ### Extensions
 Control the installation, uninstallation and locking of extensions.
@@ -1243,6 +1324,78 @@ Software\Policies\Mozilla\Firefox\Extensions\Locked\1 = "addon_id@mozilla.org"
   }
 }
 ```
+### ExtensionSettings
+Manage all aspects of extensions. This policy is based heavily on the [Chrome policy](https://dev.chromium.org/administrators/policy-list-3/extension-settings-full) of the same name.
+
+This policy maps an extension ID to its configuration. With an extension ID, configuration will be applied to the specified extension only. A default configuration can be set for the special ID "*", which will apply to all extensions that don't have a custom configuration set in this policy.
+
+To obtain an extension ID, install the extension and go to about:support. You will see the ID in the Extensions section.
+
+The configuration for each extension is another dictionary that can contain the fields documented below.
+
+| Name | Description |
+| --- | --- |
+| `installation_mode` | Maps to a string indicating the installation mode for the extension. The valid strings are `allowed`,`blocked`,`force_installed`, and `normal_installed`.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`allowed` | Allows the extension to be installed by the user. This is the default behavior.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blocked`| Blocks installation of the extension and removes it from the device if already installed.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
+| `install_url`| Maps to a string indicating where Firefox can download a force_installed or normal_installed extension. If installing from the addons.mozilla.org, use the following URL (substituting SHORT_NAME from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/SHORT_NAME/latest.xpi
+| `install_sources` | Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
+| `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "langpack" This setting can be used only for the default configuration.
+| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+Due to a bug in Firefox 68, this policy is not working via GPO on Windows. We will have a fix soon.
+#### macOS
+```
+<dict>
+  <key>ExtensionSettings</key>
+  <dict>
+    <key>*</key>
+    <dict>
+      <key>blocked_install_message</key>
+      <string>Custom error message.</string>
+      <key>install_sources</key>
+      <array>
+        <string>https://addons.mozilla.org/</string>
+      </array>
+      <key>installation_mode</key>
+      <string>blocked</string>
+    </dict>
+    <key>uBlock0@raymondhill.net</key>
+    <dict>
+      <key>installation_mode</key>
+       <string>force_installed</string>
+      <key>install_url</key>
+      <string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
+    </dict>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "ExtensionSettings": {
+      "*": {
+        "blocked_install_message": "Custom error message.",
+        "install_sources": ["https://addons.mozilla.org/"],
+        "installation_mode": "blocked"
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      }
+    }
+  }
+}
+```
+
 ### ExtensionUpdate
 Control extension updates.
 
@@ -1319,6 +1472,57 @@ Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
       "Allow": ["http://example.org/"],
       "Block": ["http://example.edu/"],
       "Default": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
+### FirefoxHome
+Customize the Firefox Home page.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`,`browser.newtabpage.activity-stream.feeds.topsites`,`browser.newtabpage.activity-stream.feeds.section.highlights`,`browser.newtabpage.activity-stream.feeds.section.topstories`,`browser.newtabpage.activity-stream.feeds.snippets`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\FirefoxHome\Search = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Highlights = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Pocket = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Snippets = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>FirefoxHome</key>
+  <dict>
+    <key>Search</key>
+    <true/> | <false/>
+    <key>TopSites</key>
+    <true/> | <false/>
+    <key>Highlights</key>
+    <true/> | <false/>
+    <key>Pocket</key>
+    <true/> | <false/>
+    <key>Snippets</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "FirefoxHome": {
+      "Search": true | false,
+      "TopSites": true | false,
+      "Highlights": true | false,
+      "Pocket": true | false,
+      "Snippets": true | false,
       "Locked": true | false
     }
   }
@@ -1450,6 +1654,37 @@ Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Default = 0x1 | 0x0
   }
 }
 ```
+### LocalFileLinks
+Enable linking to local files by origin.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `capability.policy.localfilelinks.*`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\LocalFileLinks\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\LocalFileLinks\2 = "https://example.edu"
+```
+#### macOS
+```
+<dict>
+  <key>LocalFileLinks</key>
+  <array>
+    <string>http://example.org</string>
+    <string>http://example.edu</string>
+  </array>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "LocalFileLinks": ["http://example.org/",
+                       "http://example.edu/"]
+  }
+}
+```
 ### NoDefaultBookmarks
 Disable the creation of default bookmarks.
 
@@ -1479,7 +1714,7 @@ Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
 }
 ```
 ### NetworkPrediction
-Enable or disable  network prediction (DNS prefetching).
+Enable or disable network prediction (DNS prefetching).
 
 **Compatibility:** Firefox 67, Firefox ESR 60.7\
 **CCK2 Equivalent:** N/A\
@@ -1501,6 +1736,31 @@ Software\Policies\Mozilla\Firefox\NetworkPrediction = 0x1 | 0x0
 {
   "policies": {
     "NetworkPrediction": true | false
+}
+```
+### NewTabPage
+Enable or disable the New Tab page.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.newtabpage.enabled`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\NewTabPage = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>NewTabPage</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "NewTabPage": true | false
 }
 ```
 ### OfferToSaveLogins
@@ -1551,7 +1811,7 @@ Software\Policies\Mozilla\Firefox\OverrideFirstRunPage = "http://example.org"
 ```
 {
   "policies": {
-    "OverrideFirstRunPage": ""http://example.org""
+    "OverrideFirstRunPage": "http://example.org"
 }
 ```
 ### OverridePostUpdatePage
@@ -1576,7 +1836,7 @@ Software\Policies\Mozilla\Firefox\OverridePostUpdatePage = "http://example.org"
 ```
 {
   "policies": {
-    "OverridePostUpdatePage": ""http://example.org""
+    "OverridePostUpdatePage": "http://example.org"
 }
 ```
 ### Permissions
@@ -1764,8 +2024,95 @@ Software\Policies\Mozilla\Firefox\PopupBlocking\Locked = 0x1 | 0x0
   }
 }
 ```
+### Preferences
+Set and lock certain preferences.
+
+**Compatibility:** See below\
+**CCK2 Equivalent:** `preferences`\
+**Preferences Affected:** See below
+
+| Preference | Type | Compatibility
+| --- | --- | ---
+| app.update.auto | boolean | Firefox 68, Firefox 68 ESR
+| browser.cache.disk.enable | boolean | Firefox 68, Firefox 68 ESR
+| browser.cache.disk.parent_directory | string | Firefox 68, Firefox 68 ESR
+| browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox 68 ESR
+| browser.search.update | boolean | Firefox 68, Firefox 68 ESR
+| browser.tabs.warnOnClose | boolean | Firefox 68, Firefox 68 ESR
+| browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox 68 ESR
+| browser.urlbar.suggest.history | boolean | Firefox 68, Firefox 68 ESR
+| browser.urlbar.suggest.openpage | boolean | Firefox 68, Firefox 68 ESR
+| datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox 68 ESR
+| dom.disable_window_flip | boolean | Firefox 68, Firefox 68 ESR
+| dom.disable_window_move_resize | boolean | Firefox 68, Firefox 68 ESR
+| dom.event.contextmenu.enabled | boolean | Firefox 68, Firefox 68 ESR
+| dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl | string | Firefox 68, Firefox 68 ESR
+| dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox 68 ESR
+| extensions.getAddons.showPane | boolean | Firefox 68, Firefox 68 ESR
+| media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox 68 ESR
+| media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox 68 ESR
+| network.dns.disableIPv6 | boolean | Firefox 68, Firefox 68 ESR
+| network.IDN_show_punycode | boolean | Firefox 68, Firefox 68 ESR
+| places.history.enabled | boolean | Firefox 68, Firefox 68 ESR
+| security.default_personal_cert | string | Firefox 68, Firefox 68 ESR
+| security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox 68 ESR
+| ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox 68 ESR
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_value"
+```
+#### macOS
+```
+<dict>
+  <key>Preferences</key>
+  <dict>
+    <key>boolean_preference_name</key>
+    <true/> | <false/>
+    <key>string_preference_name</key>
+    <string>string_value</string>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "Preferences": {
+      "boolean_preference_name": true | false,
+      "string_preference_name": "string_value"
+    }
+  }
+}
+```
+### PromptForDownloadLocation
+Ask where to save each file before downloading.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A
+**Preferences Affected:** `browser.download.useDownloadDir`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\PromptForDownloadLocation = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>PromptForDownloadLocation</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "PromptForDownloadLocation": true | false
+  }
+}
+```
 ### Proxy
-Configugre proxy settings. These settings correspond to the connection settings in Firefox preferences.
+Configure proxy settings. These settings correspond to the connection settings in Firefox preferences.
 To specify ports, append them to the hostnames with a colon (:).
 
 `Mode` is the proxy method being used.
@@ -1867,13 +2214,19 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
 ### RequestedLocales
 Set the the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 
-**Compatibility:** Firefox 64, Firefox ESR 60.4\
+Note: For Firefox 68, this can now be a string so that you can specify an empty value.
+
+**Compatibility:** Firefox 64, Firefox ESR 60.4, Updated in Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 #### Windows
 ```
 Software\Policies\Mozilla\Firefox\RequestedLocales\1 = "de"
 Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
+
+or
+
+Software\Policies\Mozilla\Firefox\RequestedLocales = "de,en-US"
 ```
 #### macOS
 ```
@@ -1884,6 +2237,14 @@ Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
     <string>en-US</string>
   </array>
 </dict>
+
+or
+
+<dict>
+  <key>RequestedLocales</key>
+  <string>de,en-US</string>
+</dict>
+
 ```
 #### JSON
 ```
@@ -1892,13 +2253,79 @@ Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
     "RequestedLocales": ["de", "en-US"]
   }
 }
+
+or
+
+{
+  "policies": {
+    "RequestedLocales": "de,en-US"
+  }
+}
 ```
-### SanitizeOnShutdown
+### SanitizeOnShutdown (Selective)
+Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Downloads = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>SanitizeOnShutdown</key>
+  <dict>
+    <key>Cache</key>
+    <true/> | <false/>
+    <key>Cookies</key>
+    <true/> | <false/>
+    <key>Downloads</key>
+    <true/> | <false/>
+    <key>FormData</key>
+    <true/> | <false/>
+    <key>History</key>
+    <true/> | <false/>
+    <key>Sessions</key>
+    <true/> | <false/>
+    <key>SiteSettings</key>
+    <true/> | <false/>
+    <key>OfflineApps</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "SanitizeOnShutdown": {
+      "Cache": true | false,
+      "Cookies": true | false,
+      "Downloads": true | false,
+      "FormData": true | false,
+      "History": true | false,
+      "Sessions": true | false,
+      "SiteSettings": true | false,
+      "OfflineApps": true | false
+    }
+  }
+}
+```
+### SanitizeOnShutdown (All)
 Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown,privacy.clearOnShutdown.cache,privacy.clearOnShutdown.cookies,privacy.clearOnShutdown.downloads,privacy.clearOnShutdown.formdata,privacy.clearOnShutdown.history,privacy.clearOnShutdown.sessions,privacy.clearOnShutdown.siteSettings,privacy.clearOnShutdown.offlineApps`
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
 #### Windows
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
@@ -2052,7 +2479,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
 ```
 ### SearchEngines | Add
 
-Adddd new search engines (up to five). This policy is only available on the ESR. `Name` and `URLTemplate` are required.
+Add new search engines (up to five). This policy is only available on the ESR. `Name` and `URLTemplate` are required.
 
 `Name` is the name of the search engine.
 
@@ -2066,9 +2493,11 @@ Adddd new search engines (up to five). This policy is only available on the ESR.
 
 `Description` is a description of the search engine.
 
+`PostData` is the POST data as name value pairs separated by &.
+
 `SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
 
-**Compatibility:** Firefox ESR 60\
+**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68)\
 **CCK2 Equivalent:** `searchplugins`\
 **Preferences Affected:** N/A
 
@@ -2080,6 +2509,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL = "https://www.exa
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias = "example"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description = "Example Description"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "https://www.example.org/suggestions/q={searchTerms}"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={searchTerms}"
 
 #### macOS
 ```
@@ -2103,6 +2533,8 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "http
         <string>Example Description</string>
         <key>SuggestURLTemplate</key>
         <string>https://www.example.org/suggestions/q={searchTerms}</string>
+        <key>PostData</key>
+        <string>name=value&q={searchTerms}</string>
       </dict>
     <array>
   </dict>
@@ -2121,10 +2553,38 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "http
           "IconURL": "https://www.example.org/favicon.ico",
           "Alias": "example",
           "Description": "Description",
+          "PostData": "name=value&q={searchTerms}",
           "SuggestURLTemplate": "https://www.example.org/suggestions/q={searchTerms}"
         }
       ]
     }
+  }
+}
+```
+### SearchSuggestEnabled
+
+Enable search suggestions.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.urlbar.suggest.searches`,`browser.search.suggest.enabled`
+
+### Windows
+```
+Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>SearchSuggestEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SearchSuggestEnabled": true | false
   }
 }
 ```
@@ -2220,7 +2680,7 @@ Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" |
 ### SupportMenu
 Add a menuitem to the help menu for specifying support information.
 
-**Compatibility:** Firefox 68, Firefox ESR 68\
+**Compatibility:** Firefox 68.0.1, Firefox ESR 68.0.1\
 **CCK2 Equivalent:** helpMenu\
 **Preferences Affected:** N/A
 

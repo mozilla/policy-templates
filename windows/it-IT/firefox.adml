@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.5" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.6" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
-      <string id="SUPPORTED_FF60">Firefox 60 o versione successiva</string>
+      <string id="SUPPORTED_FF60">Firefox 60 o versione successiva, Firefox 60 ESR o versione successiva</string>
       <string id="SUPPORTED_FF62">Firefox 62 o versione successiva, Firefox 60.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
       <string id="SUPPORTED_FF64">Firefox 64 o versione successiva, Firefox 60.4 ESR o versione successiva</string>
       <string id="SUPPORTED_FF66">Firefox 66 o versione successiva, Firefox 60.6 ESR o versione successiva</string>
       <string id="SUPPORTED_FF67">Firefox 67 o versione successiva, Firefox 60.7 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF68">Firefox 68 o versione successiva, Firefox 68 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -28,6 +29,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Pagina iniziale</string>
       <string id="Search_group">Ricerca</string>
+      <string id="Preferences_group">Preferenze</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
       <string id="AppUpdateURL">URL aggiornamento personalizzato</string>
@@ -88,6 +90,14 @@ Se questo criterio è disabilitato o non configurato, Firefox non utilizzerà i 
       <string id="Certificates_Install_Explain">Se questo criterio è abilitato, Firefox installerà i certificati elencati in Firefox. Questi saranno cercati in %USERPROFILE%\AppData\Local\Mozilla\Certificates e in %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Se questo criterio è disabilitato o non configurato, Firefox non installerà certificati aggiuntivi.</string>
+      <string id="DefaultDownloadDirectory">Directory di download predefinita</string>
+      <string id="DefaultDownloadDirectory_Explain">Se questo criterio è abilitato, è possibile impostare la directory predefinita per i download. È possibile usare ${home} per specificare il percorso nativo della directory utente.
+
+Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la directory di download predefinita.</string>
+      <string id="DownloadDirectory">Directory di download</string>
+      <string id="DownloadDirectory_Explain">Se questo criterio è abilitato, è possibile impostare e rendere non modificabile la directory per i download. È possibile usare ${home} per specificare il percorso nativo della directory utente.
+
+Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la directory di download predefinita e l'utente sarà in grado di modificarla.</string>
       <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
@@ -206,10 +216,18 @@ Se questo criterio è abilitato o non configurato, le estensioni saranno aggiorn
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
 Se questo criterio è abilitato o non configurato, l'accelerazione hardware è abilitata.</string>
+      <string id="LocalFileLinks">Collegamenti file locali</string>
+      <string id="LocalFileLinks_Explain">Se questo criterio è abilitato, è possibile specificare le origini da cui sono consentiti i collegamenti ai file locali.
+
+Se questo criterio è disabilitato o non configurato, i siti Web non possono includere collegamenti a file locali.</string>
       <string id="NetworkPrediction">Previsione di rete</string>
       <string id="NetworkPrediction_Explain">Se questo criterio è disabilitato, la previsione di rete (prefetching DNS) sarà disabilitata.
 
 Se questo criterio è abilitato o non configurato, la previsione di rete (prefetching DNS) sarà abilitata.</string>
+      <string id="NewTabPage">Pagina Nuova scheda</string>
+      <string id="NewTabPage_Explain">Se questo criterio è disabilitato, la pagina Nuova scheda sarà vuota.
+
+Se questo criterio è abilitato o non configurato, la pagina Nuova scheda sarà quella predefinita.</string>
       <string id="OfferToSaveLogins">Offri di salvare le credenziali di accesso</string>
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 
@@ -317,6 +335,10 @@ Se questo criterio è disabilitato o non configurato, qualunque sito non nel cri
       <string id="Notifications_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle notifiche non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle notifiche.</string>
+      <string id="FirefoxHome">Personalizza pagina iniziale di Firefox</string>
+      <string id="FirefoxHome_Explain">Se questo criterio è abilitato, è possibile scegliere le sezioni visualizzate nella pagina iniziale di Firefox e impedire all'utente di modificarle.
+
+Se questo criterio è disabilitato o non configurato, saranno visualizzate le sezioni predefinite e l'utente potrà modificarle.</string>
       <string id="FlashPlugin_Allow_Explain">Se questo criterio è abilitato, Flash è attivato per impostazione predefinita sui siti indicati a meno che non sia completamente disabilitato. Se è specificato un dominio di primo livello (http://example.org), Flash è consentito anche su tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per Flash.</string>
@@ -429,6 +451,12 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="None">Nessuna</string>
       <string id="Homepage">Pagina iniziale</string>
       <string id="PreviousSession">Sessione precedente</string>
+      <string id="PromptForDownloadLocation">Richiedi percorso di download</string>
+      <string id="PromptForDownloadLocation_Explain">Se questo criterio è disabilitato, all'utente non verrà chiesto un percorso di download.
+
+Se questo criterio è abilitato, all'utente verrà sempre chiesto un percorso di download.
+
+Se questo criterio non è configurato, all'utente sarà richiesto un percorso di download, ma potrà modificare quello predefinito.</string>
       <string id="Proxy">Impostazioni proxy</string>
       <string id="Proxy_Explain">Se questo criterio è abilitato, è possibile configurare e bloccare le impostazioni di rete.
 
@@ -454,6 +482,7 @@ Se questo criterio è disabilitato, la protezione antitracciamento è disabilita
 
 Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
       <string id="RequestedLocales">Lingua richiesta</string>
+      <string id="RequestedLocalesString">Lingua richiesta (string)</string>
       <string id="RequestedLocales_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di lingue richieste per l'applicazione in ordine di preferenza. Il pacchetto lingue corrispondente sarà attivato.
 
 Se questo criterio è disabilitato o non configurato, l'applicazione utilizzerà la lingua predefinita.</string>
@@ -489,6 +518,12 @@ Se questo criterio è disabilitato o non configurato, i motori di ricerca potran
       <string id="SearchEngines_Remove_Explain">Se questo criterio è abilitato, è possibile specificare i nomi dei motori di ricerca da rimuovere o nascondere.
 
 Se questo criterio è disabilitato o non configurato, i motori di ricerca non saranno né rimossi né nascosti.</string>
+      <string id="SearchSuggestEnabled">Suggerimenti di ricerca</string>
+      <string id="SearchSuggestEnabled_Explain">Se questo criterio è disabilitato, i suggerimenti di ricerca saranno disabilitati.
+
+Se questo criterio è abilitato, i suggerimenti di ricerca saranno abilitati.
+
+Se questo criterio non è configurato, i suggerimenti di ricerca saranno abilitati, ma l'utente li potrà disabilitare.</string>
       <string id="SSLVersionMin">Abilita versione minima SSL</string>
       <string id="SSLVersionMin_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS minori del valore specificato.
 
@@ -501,6 +536,35 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
+      <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.</string>
+      <string id="Preferences_String_Explain">Se questo criterio è abilitato, la preferenza è impostata alla stringa immessa e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.</string>
+      <string id="Preferences_Enum_Explain">Se questo criterio è abilitato, la preferenza è impostata al valore selezionato e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.</string>
+      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Chiedi ogni volta</string>
+      <string id="Preferences_security_default_personal_cert_Select_Automatically">Seleziona automaticamente</string>
+      <string id="app_update_auto">app.update.auto</string>
+      <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
+      <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
+      <string id="browser_search_update">browser.search.update</string>
+      <string id="browser_tabs_warnOnClose">browser.tabs.warnOnClose</string>
+      <string id="browser_cache_disk_parent_directory">browser.cache.disk.parent_directory</string>
+      <string id="browser_urlbar_suggest_bookmark">browser.urlbar.suggest.bookmark</string>
+      <string id="browser_urlbar_suggest_history">browser.urlbar.suggest.history</string>
+      <string id="browser_urlbar_suggest_openpage">browser.urlbar.suggest.openpage</string>
+      <string id="datareporting_policy_dataSubmissionPolicyBypassNotification">datareporting.policy.dataSubmissionPolicyBypassNotification</string>
+      <string id="dom_disable_window_flip">browser.dom.disable_window_flip</string>
+      <string id="dom_disable_window_move_resize">dom.disable_window_move_resize</string>
+      <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
+      <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
+      <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
+      <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
+      <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
+      <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
+      <string id="network_IDN_show_punycode">network.IDN_show_punycode</string>
+      <string id="places_history_enabled">places.history.enabled</string>
+      <string id="security_default_personal_cert">security.default_personal_cert</string>
+      <string id="security_ssl_errorReporting_enabled">security.ssl.errorReporting.enabled</string>
+      <string id="ui_key_menuAccessKeyFocuses">ui.key.menuAccessKeyFocuses</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -600,6 +664,9 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
         <textBox refId="SearchEngine_SuggestURLTemplate">
           <label>Modello indirizzo suggerimenti:</label>
         </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>POST data:</label>
+        </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
         <textBox refId="SearchEngines_Default">
@@ -654,6 +721,35 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
+      </presentation>
+      <presentation id="Preferences_String">
+        <textBox refId="Preferences_String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Preferences_security_default_personal_cert">
+        <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
+      </presentation>
+      <presentation id="SanitizeOnShutdown">
+        <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Cookies">Cookie</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Cronologia dei download</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Cronologia delle ricerche e dei moduli</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Cronologia di navigazione</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Accessi effettuati</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Preferenze dei siti web</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Dati non in linea dei siti web</checkBox>
+      </presentation>
+      <presentation id="FirefoxHome">
+        <checkBox refId="FirefoxHome_Search">Ricerca sul Web</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Siti principali</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Cronologia dei download</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Raccomandati da Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Snippet</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Non consentire la modifica delle preferenze</checkBox>
       </presentation>
     </presentationTable>
   </resources>
