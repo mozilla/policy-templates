@@ -12,6 +12,7 @@
       <string id="SUPPORTED_FF66">Firefox 66 o posterior, Firefox 60.6 ESR o posterior</string>
       <string id="SUPPORTED_FF67">Firefox 67 o posterior, Firefox 60.7 ESR o posterior</string>
       <string id="SUPPORTED_FF68">Firefox 68 o posterior, Firefox 68 ESR o posterior</string>
+      <string id="SUPPORTED_FF6801">Firefox 68.0.1 o posterior, Firefox 68.0.1 ESR o posterior</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
@@ -536,6 +537,10 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
+      <string id="SupportMenu">Support Menu</string>
+      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+
+If this policy is disabled or not configured, no menuitem is added.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.</string>
       <string id="Preferences_String_Explain">Si esta política está habilitada, la preferencia se bloquea en la cadena ingresada. Si esta política está deshabilitada, no tiene ningún efecto.</string>
       <string id="Preferences_Enum_Explain">Si esta política está habilitada, la preferencia se bloquea al valor seleccionado. Si esta política está deshabilitada, no tiene ningún efecto.</string>
@@ -721,6 +726,20 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
+      </presentation>
+      <presentation id="SupportMenu">
+        <text>Title:</text>
+        <textBox refId="SupportMenuTitle">
+          <label/>
+        </textBox>
+        <text>URL:</text>
+        <textBox refId="SupportMenuURL">
+          <label/>
+        </textBox>
+        <text>Access key:</text>
+        <textBox refId="SupportMenuAccessKey">
+          <label/>
+        </textBox>
       </presentation>
       <presentation id="Preferences_String">
         <textBox refId="Preferences_String">
