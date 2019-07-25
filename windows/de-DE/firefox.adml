@@ -214,9 +214,13 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden Add-ons automatisch aktualisiert.</string>
       <string id="ExtensionSettings">Extension Management</string>
-      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy. For detailed information, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy.
 
-If this policy is disabled or not configured, extensions will not be managed.</string>
+If this policy is disabled or not configured, extensions will not be managed.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+
+You must remove all new lines when inserting the JSON. We will be fixing this in a future release.</string>
       <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 

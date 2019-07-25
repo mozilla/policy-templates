@@ -214,9 +214,13 @@ Si esta política está deshabilitada o no está configurada, no se bloquearán 
 
 Si esta política está habilitada o no está configurada, las extensiones se actualizarán automáticamente.</string>
       <string id="ExtensionSettings">Extension Management</string>
-      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy. For detailed information, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy.
 
-If this policy is disabled or not configured, extensions will not be managed.</string>
+If this policy is disabled or not configured, extensions will not be managed.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+
+You must remove all new lines when inserting the JSON. We will be fixing this in a future release.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración por hardware no se puede habilitar.
 

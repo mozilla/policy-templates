@@ -214,9 +214,13 @@ Si cette stratégie est désactivée ou non configurée, aucune extension n'est 
 
 Si cette stratégie est activée ou non configurée, les extensions seront mise à jour automatiquement.</string>
       <string id="ExtensionSettings">Extension Management</string>
-      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy. For detailed information, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy.
 
-If this policy is disabled or not configured, extensions will not be managed.</string>
+If this policy is disabled or not configured, extensions will not be managed.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+
+You must remove all new lines when inserting the JSON. We will be fixing this in a future release.</string>
       <string id="HardwareAcceleration">Accélération matérielle</string>
       <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle ne peut pas être activée.
 
