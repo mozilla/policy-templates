@@ -1,5 +1,3 @@
-**IMPORTANT**: This file is in active development along with the policies in Firefox. Make sure to check the compatibility section to see if a policy is available in a specific version of Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
-
 Policies can be specified using the Group Policy templates on Windows (https://github.com/mozilla/policy-templates/tree/master/windows), configuration profiles on macOS (https://github.com/mozilla/policy-templates/tree/master/mac), or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution.
 
 | Policy Name | Description
@@ -1345,12 +1343,14 @@ The configuration for each extension is another dictionary that can contain the 
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "langpack" This setting can be used only for the default configuration.
 | `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else.
 
-**Compatibility:** Firefox 68, Firefox ESR 68\
+**Compatibility:** Firefox 68, Firefox ESR 68, Firefox 68.0.1 (Windows)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows
-Due to a bug in Firefox 68, this policy is not working via GPO on Windows. We will have a fix soon.
+Currently, you have to remove all newlines from your JSON. We will be removing that limitation in a future release.
+
+Software\Policies\Mozilla\Firefox\ExtensionSettings = '{"*": {"installation_mode": "blocked"}}`
 #### macOS
 ```
 <dict>
