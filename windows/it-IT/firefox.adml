@@ -12,6 +12,7 @@
       <string id="SUPPORTED_FF66">Firefox 66 o versione successiva, Firefox 60.6 ESR o versione successiva</string>
       <string id="SUPPORTED_FF67">Firefox 67 o versione successiva, Firefox 60.7 ESR o versione successiva</string>
       <string id="SUPPORTED_FF68">Firefox 68 o versione successiva, Firefox 68 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF6801">Firefox 68.0.1 o versione successiva, Firefox 68.0.1 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
@@ -536,6 +537,10 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
+      <string id="SupportMenu">Support Menu</string>
+      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+
+If this policy is disabled or not configured, no menuitem is added.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.</string>
       <string id="Preferences_String_Explain">Se questo criterio è abilitato, la preferenza è impostata alla stringa immessa e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.</string>
       <string id="Preferences_Enum_Explain">Se questo criterio è abilitato, la preferenza è impostata al valore selezionato e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.</string>
@@ -721,6 +726,20 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
+      </presentation>
+      <presentation id="SupportMenu">
+        <text>Title:</text>
+        <textBox refId="SupportMenuTitle">
+          <label/>
+        </textBox>
+        <text>URL:</text>
+        <textBox refId="SupportMenuURL">
+          <label/>
+        </textBox>
+        <text>Access key:</text>
+        <textBox refId="SupportMenuAccessKey">
+          <label/>
+        </textBox>
       </presentation>
       <presentation id="Preferences_String">
         <textBox refId="Preferences_String">

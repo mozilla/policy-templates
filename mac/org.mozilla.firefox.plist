@@ -399,5 +399,14 @@
 	<string>tls1.2</string>
 	<key>SSLVersionMax</key>
 	<string>tls1.3</string>
+	<key>SupportMenu</key>
+	<dict>
+		<key>Title</key>
+		<string>Click here for help</string>
+		<key>URL</key>
+		<string>http://example.edu/</string>
+		<key>AccessKey</key>
+		<string>C</string>
+	</dict>
 </dict>
 </plist>

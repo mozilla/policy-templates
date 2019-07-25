@@ -76,8 +76,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
+| **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
-
 
 ### AppUpdateURL
 
@@ -2674,6 +2674,45 @@ Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" |
 {
   "policies": {
     "SSLVersionMin": "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
+  }
+}
+```
+### SupportMenu
+Add a menuitem to the help menu for specifying support information.
+
+**Compatibility:** Firefox 68.0.1, Firefox ESR 68.0.1\
+**CCK2 Equivalent:** helpMenu\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\SupportMenu\Title = "Support Menu"
+Software\Policies\Mozilla\Firefox\SupportMenu\URL = "http://example.com/support"
+Software\Policies\Mozilla\Firefox\SupportMenu\Title = "S"
+```
+#### macOS
+```
+<dict>
+  <key>SupportMenu</key>
+  <dict>
+    <key>Title</key>
+    <string>SupportMenu</string>
+    <key>URL</key>
+    <string>http://example.com/support</string>
+    <key>AccessKey</key>
+    <string>S</string>
+  </dict>
+</dict>
+```
+### JSON
+```
+{
+  "policies": {
+    "SupportMenu": {
+      "Title": "Support Menu",
+      "URL": "http://example.com/support",
+      "AccessKey": "S"
+    }
   }
 }
 ```

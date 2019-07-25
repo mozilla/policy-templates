@@ -2510,6 +2510,15 @@
         </enum>
       </elements>
     </policy>
+    <policy name="SupportMenu" class="Both" displayName="$(string.SupportMenu)" explainText="$(string.SupportMenu_Explain)" key="Software\Policies\Mozilla\Firefox\SupportMenu" presentation="$(presentation.SupportMenu)" >
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF6801" />
+      <elements >
+        <text id="SupportMenuTitle" valueName="Title" required="true" />
+        <text id="SupportMenuURL" valueName="URL" required="true" />
+        <text id="SupportMenuAccessKey" valueName="AccessKey" />
+      </elements>
+    </policy>
     <policy name="app.update.auto" class="Both" displayName="$(string.app_update_auto)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="app.update.auto">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
