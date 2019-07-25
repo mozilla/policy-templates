@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="1.6" schemaVersion="1.0">
+<policyDefinitions revision="1.6.1" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="1.6"/>
+  <resources minRequiredRevision="1.6.1"/>
   <supportedOn>
     <definitions>
       <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)"/>
@@ -16,6 +16,7 @@
       <definition name="SUPPORTED_FF66" displayName="$(string.SUPPORTED_FF66)"/>
       <definition name="SUPPORTED_FF67" displayName="$(string.SUPPORTED_FF67)"/>
       <definition name="SUPPORTED_FF68" displayName="$(string.SUPPORTED_FF68)"/>
+      <definition name="SUPPORTED_FF6801" displayName="$(string.SUPPORTED_FF6801)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -661,6 +662,14 @@
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="ExtensionSettings" class="Both" displayName="$(string.ExtensionSettings)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)"  presentation="$(presentation.ExtensionSettings)">">
+      <parentCategory ref="Extensions"/>
+      <supportedOn ref="SUPPORTED_FF6801"/>
+      <elements>
+<!--        <multiText id="ExtensionSettings" valueName="ExtensionSettings" /> -->
+        <text id="ExtensionSettings" valueName="ExtensionSettings" />
       </elements>
     </policy>
     <policy name="NoDefaultBookmarks" class="Both" displayName="$(string.NoDefaultBookmarks)" explainText="$(string.NoDefaultBookmarks_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NoDefaultBookmarks">
