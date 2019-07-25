@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.6" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.6.1" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -213,6 +213,14 @@ Si esta política está deshabilitada o no está configurada, no se bloquearán 
       <string id="ExtensionUpdate_Explain">Si esta política está deshabilitada, las extensiones no se actualizarán automáticamente.
 
 Si esta política está habilitada o no está configurada, las extensiones se actualizarán automáticamente.</string>
+      <string id="ExtensionSettings">Extension Management</string>
+      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy.
+
+If this policy is disabled or not configured, extensions will not be managed.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+
+You must remove all new lines when inserting the JSON. We will be fixing this in a future release.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración por hardware no se puede habilitar.
 
@@ -769,6 +777,12 @@ If this policy is disabled or not configured, no menuitem is added.</string>
         <checkBox refId="FirefoxHome_Pocket">Recomendado por Pocket</checkBox>
         <checkBox refId="FirefoxHome_Snippets">Fragmentos</checkBox>
         <checkBox refId="FirefoxHome_Locked">No permitir que se cambie la configuración</checkBox>
+      </presentation>
+      <presentation id="ExtensionSettings">
+<!--        <multiTextBox refId="ExtensionSettings"/> -->
+        <textBox refId="ExtensionSettings">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
