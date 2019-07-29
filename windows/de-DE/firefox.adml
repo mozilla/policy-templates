@@ -100,9 +100,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das Standard Firefox Download Verzeichnis benutzt und der Benutzer kann dies ändern.</string>
       <string id="DNSOverHTTPS">DNS Over HTTPS konfigurieren</string>
-      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, die Standardeinstellungen für DNS over HTTPS können geändert werden.
+      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS over HTTPS geändert werden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, DNS Over HTTPS benutzt die Standard Firefox Einstellungen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS Over HTTPS benutzt.</string>
       <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
@@ -233,10 +233,10 @@ If this policy is disabled or not configured, websites can't link to local files
       <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird Network Prediction (DNS prefetching) aktiviert.</string>
-      <string id="NewTabPage">New Tab Page</string>
-      <string id="NewTabPage_Explain">If this policy is disabled, the new tab page will be blank.
+      <string id="NewTabPage">Neuer Tab Seite</string>
+      <string id="NewTabPage_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die Neuer Tab Seite leer sein.
 
-If this policy is enabled or not configured, the new tab page will be the default.</string>
+Wenn die Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die Neuer Tab Seite standardmäßig aktiviert sein.</string>
       <string id="OfferToSaveLogins">Zugangsdaten und Passwörter für Webseiten speichen</string>
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
@@ -280,7 +280,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder w
       <string id="Cookies_ExpireAtSessionEnd_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlaubt sind, werden diese gelöscht sobald Firefox geschlossen wird.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn &quot;Cookies und Website-Daten annehmen&quot; deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
-      <string id="Cookies_RejectTracker">Reject trackers</string>
+      <string id="Cookies_RejectTracker">Tracker ablehnen</string>
       <string id="Cookies_RejectTracker_Explain">Wenn diese Richtlinieneinstellung aktiviert ist und Cookies aktiviert sind, werden Tracker-Cookies standardmäßig abgewiesen.
 
 Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist oder Cookies durch eine andere Richtlinie oder Einstellung nicht erlaubt sind.</string>
@@ -288,66 +288,66 @@ Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert o
       <string id="Cookies_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren können Benutzer die Cookie-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Cookie-Einstellungen ändern.</string>
-      <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
+      <string id="Camera_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Kamera für die genannten Quellen automatisch freigegeben.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die standardmäßige Richtlinieneinstellung befolgt.</string>
-      <string id="Camera_Block_Explain">If this policy is enabled, access to the camera is blocked for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Camera_Block_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird der Kamerazugriff für die genannten Quellen immer geblockt.
 
-If this policy is disabled or not configured, access to the camera is not blocked by default.</string>
-      <string id="Camera_BlockNewRequests">Neue Anfragen zur Kameranutzung deaktivieren</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Camera_BlockNewRequests">Neue Anfragen zur Kameranutzung blockieren</string>
       <string id="Camera_BlockNewRequests_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, sind Seiten, die nicht in der Erlauben-Richtlinie sind, daran gehindert nach der Berechrechtigung für den Kamera-Zugang zu fragen.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann jede Seite, die nicht in der Blockieren-Richtlinie ist, nach der Berechtigung zur Kamera-Nutzung fragen.</string>
-      <string id="Camera_Locked">Einstellungen dürfen nicht geändert werden</string>
+      <string id="Camera_Locked">Änderung der Einstellungen verbieten</string>
       <string id="Camera_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Nutzer nicht die Einstellungen für Kamera Zugriff ändern.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer die Einstellungen für den Kamera Zugriff ändern.</string>
-      <string id="Microphone_Allow_Explain">If this policy is enabled, access to the microphone is always allowed for the origins indicated.
+      <string id="Microphone_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird das Mikrofon für die genannten Quellen automatisch freigegeben.
 
-If this policy is disabled or not configured, the default microphone policy is followed.</string>
-      <string id="Microphone_Block_Explain">If this policy is enabled, access to the microphone is blocked for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Microphone_Block_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird der Mikrofonzugriff für die genannten Quellen immer geblockt.
 
-If this policy is disabled or not configured, access to the microphone is not blocked by default.</string>
-      <string id="Microphone_BlockNewRequests">Block new requests asking to access the microphone</string>
-      <string id="Microphone_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access the microphone.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Microphone_BlockNewRequests">Neue Anfragen zur Mikrofon Nutzung blockieren</string>
+      <string id="Microphone_BlockNewRequests_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Seiten, denen es nicht explizit erlaubt ist, das Mikrofon zu nutzen, keine Anfragen zur Mikrofon-Nutzung mehr stellen.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access the microphone.</string>
-      <string id="Microphone_Locked">Do not allow preferences to be changed</string>
-      <string id="Microphone_Locked_Explain">If this policy is enabled, microphone preferences cannot be changed by the user.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann jede Seite, der es nicht verboten ist, das Mikrofon zu nutzen, die Erlaubnis zur Mikrofon-Nutzung zu erbitten.</string>
+      <string id="Microphone_Locked">Änderung der Einstellungen verbieten</string>
+      <string id="Microphone_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zur Mikrofon-Nutzung nicht vom Anwender geändert werden.
 
-If this policy is disabled or not configured, the user can change their camera preferences.</string>
-      <string id="Location_Allow_Explain">If this policy is enabled, access to location is always allowed for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer seine Einstellungen zur Mikrofon-Nutzung ändern.</string>
+      <string id="Location_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird der Standort für die genannten Quellen automatisch freigegeben.
 
-If this policy is disabled or not configured, the default location policy is followed.</string>
-      <string id="Location_Block_Explain">If this policy is enabled, access to location is blocked for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Location_Block_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird der Standort für die genannten Quellen immer geblockt.
 
-If this policy is disabled or not configured, access to location is not blocked by default.</string>
-      <string id="Location_BlockNewRequests">Block new requests asking to access location</string>
-      <string id="Location_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access location.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Location_BlockNewRequests">Neue Anfragen zum Standort blockieren</string>
+      <string id="Location_BlockNewRequests_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Seiten, denen es nicht explizit erlaubt ist, den Standort zu nutzen, keine Anfragen zum Standort mehr stellen.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access location.</string>
-      <string id="Location_Locked">Do not allow preferences to be changed</string>
-      <string id="Location_Locked_Explain">If this policy is enabled, location preferences cannot be changed by the user.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann jede Seite, der es nicht verboten ist, den Standort zu nutzen, die Erlaubnis zur Standort-Nutzung zu erbitten.</string>
+      <string id="Location_Locked">Änderung der Einstellungen verbieten</string>
+      <string id="Location_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zur Standort-Nutzung nicht vom Anwender geändert werden.
 
-If this policy is disabled or not configured, the user can change location preferences.</string>
-      <string id="Notifications_Allow_Explain">If this policy is enabled, notifications can always be sent for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer seine Einstellungen zur Standort-Nutzung ändern.</string>
+      <string id="Notifications_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Benachrichtigungen für die genannten Quellen automatisch versendet werden.
 
-If this policy is disabled or not configured, the default nofication policy is followed.</string>
-      <string id="Notifications_Block_Explain">If this policy is enabled, notifications are always blocked for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Notifications_Block_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die genannten Quellen keine Benachrichtigungen versenden.
 
-If this policy is disabled or not configured, notifications are not blocked by default.</string>
-      <string id="Notifications_BlockNewRequests">Block new requests asking to send notifications</string>
-      <string id="Notifications_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to send notifications.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
+      <string id="Notifications_BlockNewRequests">Neue Anfragen zum Senden von Benachrichtigungen blockieren</string>
+      <string id="Notifications_BlockNewRequests_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Seiten, denen es nicht explizit erlaubt ist, Benachrichtigungen zu versenden, nicht mehr um Erlaubnis bitten, Benachrichtigungen senden zu dürfen.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to send notifications.</string>
-      <string id="Notifications_Locked">Do not allow preferences to be changed</string>
-      <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann jede Seite der es nicht verboten ist, Benachrichtigung zu senden, nach der Erlaubnis fragen, Benachrichtigungen zu versenden.</string>
+      <string id="Notifications_Locked">Änderung der Einstellungen verbieten</string>
+      <string id="Notifications_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zu Benachrichtigungen nicht vom Anwender geändert werden.
 
-If this policy is disabled or not configured, the user can change their notification preferences.</string>
-      <string id="FirefoxHome">Customize Firefox Home</string>
-      <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer seine Einstellungen zu Benachrichtigungen ändern.</string>
+      <string id="FirefoxHome">Firefox Home anpassen</string>
+      <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 
-If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden dem Anwender die standardmäßigen Sektionen angezeigt und der Anwender kann diese anpassen.</string>
       <string id="FlashPlugin_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, ist Flash standardmäßig für die angegebenen URLs aktiviert, es sei denn, Flash ist vollständig deaktiviert. Wenn eine Top-Level-Domäne angegeben ist (http://example.org), ist Flash auch für alle Sub-Domains zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Flash Richtlinie verwendet.</string>
@@ -453,19 +453,19 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="HomepageAdditional_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie zusätzliche Startseiten festlegen. Diese werden in mehreren Registerkarten geöffnet.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird nur eine Startseite angezeigt.</string>
-      <string id="HomepageStartPage">Start Page</string>
-      <string id="HomepageStartPage_Explain">If this policy is enabled, you can change what is displayed when Firefox starts. It can be the homepage, the previous session, or a blank page.
+      <string id="HomepageStartPage">Startseite beim Start</string>
+      <string id="HomepageStartPage_Explain">Mit dieser aktivierten Richtlinieneinstellung kann definiert werden, ob die Startseite, die vorherige Sitzung oder eine leere Seite beim Start angezeigt wird.
 
-If this policy is disabled or not configured, the start page defaults to the previous session.</string>
-      <string id="None">None</string>
-      <string id="Homepage">Homepage</string>
-      <string id="PreviousSession">Previous Session</string>
-      <string id="PromptForDownloadLocation">Prompt for download location</string>
-      <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird standardmäßig die letzte Sitzung beim Start geöffnet.</string>
+      <string id="None">Leere Seite</string>
+      <string id="Homepage">Startseite</string>
+      <string id="PreviousSession">Letzte Sitzung</string>
+      <string id="PromptForDownloadLocation">Abfrage des Download Verzeichnisses</string>
+      <string id="PromptForDownloadLocation_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Nutzer nicht nach einem Verzeichnis für den Download gefragt.
 
-If this policy is enabled, the user is always prompted for a download location.
+Wenn diese Richtlinieneinstellung aktiviert ist, wird der Nutzer immer nach einem Verzeichnis für den Download gefragt.
 
-If this policy is not configured, the user is prompted for a download location, but can change the default.</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, wird der Nutzer nach einem Verzeichnis für den Download gefragt aber kann die Einstellung ändern.</string>
       <string id="Proxy">Proxy Einstellungen</string>
       <string id="Proxy_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Netzwerkeinstellungen ändern und sperren.
 
