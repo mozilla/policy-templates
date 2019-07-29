@@ -100,9 +100,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das Standard Firefox Download Verzeichnis benutzt und der Benutzer kann dies ändern.</string>
       <string id="DNSOverHTTPS">DNS Over HTTPS konfigurieren</string>
-      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, die Standardeinstellungen für DNS over HTTPS können geändert werden.
+      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS over HTTPS geändert werden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, DNS Over HTTPS benutzt die Standard Firefox Einstellungen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS Over HTTPS benutzt.</string>
       <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
