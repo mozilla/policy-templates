@@ -179,27 +179,6 @@
 			<string>firefox@ghostery.com</string>
 		</array>
 	</dict>
-	<key>ExtensionSettings</key>
-	<dict>
-		<key>*</key>
-		<dict>
-			<key>blocked_install_message</key>
-			<string>Custom error message.</string>
-			<key>install_sources</key>
-			<array>
-				<string>https://addons.mozilla.org/</string>
-			</array>
-			<key>installation_mode</key>
-			<string>blocked</string>
-		</dict>
-		<key>uBlock0@raymondhill.net</key>
-		<dict>
-			<key>installation_mode</key>
-			 <string>force_installed</string>
-			<key>install_url</key>
-			<string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
-		</dict>
-	</dict>
 	<key>ExtensionUpdate</key>
 	<false/>
 	<key>FirefoxHome</key>
