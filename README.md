@@ -1101,14 +1101,14 @@ Configure DNS over HTTPS.
 
 #### Windows
 ```
-Software\Policies\Mozilla\Firefox\Cookies\Enabled = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\Cookies\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
-Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
+Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
 ```
 #### macOS
 ```
 <dict>
-  <key>Cookies</key>
+  <key>DNSOverHTTPS</key>
   <dict>
     <key>Enabled</key>
     <true/> | <false/>
