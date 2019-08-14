@@ -213,14 +213,14 @@ Si esta política está deshabilitada o no está configurada, no se bloquearán 
       <string id="ExtensionUpdate_Explain">Si esta política está deshabilitada, las extensiones no se actualizarán automáticamente.
 
 Si esta política está habilitada o no está configurada, las extensiones se actualizarán automáticamente.</string>
-      <string id="ExtensionSettings">Extension Management</string>
-      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy.
+      <string id="ExtensionSettings">Gestión de extensiones</string>
+      <string id="ExtensionSettings_Explain">Si esta política está habilitada, podrá utilizar JSON para describir la política de gestión de extensiones.
 
-If this policy is disabled or not configured, extensions will not be managed.
+Si esta política está deshabilitada o no está configurada, las extensiones no se gestionarán.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
+Para obtener información detallada sobre la creación de la política, visite https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
 
-You must remove all new lines when inserting the JSON. We will be fixing this in a future release.</string>
+Debe eliminar todas las líneas nuevas al insertar el JSON. Arreglaremos esto en un futuro lanzamiento.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración por hardware no se puede habilitar.
 
@@ -545,10 +545,10 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
-      <string id="SupportMenu">Support Menu</string>
-      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+      <string id="SupportMenu">Menú de soporte</string>
+      <string id="SupportMenu_Explain">Si esta política está habilitada, se añadirá un elemento nuevo al menú de ayuda con información de soporte.
 
-If this policy is disabled or not configured, no menuitem is added.</string>
+Si esta política está deshabilitada o no está configurada, no se añadirá ningún elemento al menú.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.</string>
       <string id="Preferences_String_Explain">Si esta política está habilitada, la preferencia se bloquea en la cadena ingresada. Si esta política está deshabilitada, no tiene ningún efecto.</string>
       <string id="Preferences_Enum_Explain">Si esta política está habilitada, la preferencia se bloquea al valor seleccionado. Si esta política está deshabilitada, no tiene ningún efecto.</string>
@@ -767,7 +767,7 @@ If this policy is disabled or not configured, no menuitem is added.</string>
         <checkBox refId="SanitizeOnShutdown_FormData">Historial de búsqueda y formularios</checkBox>
         <checkBox refId="SanitizeOnShutdown_History">Historial de navegación</checkBox>
         <checkBox refId="SanitizeOnShutdown_Sessions">Inicios de sesión activos</checkBox>
-        <checkBox refId="SanitizeOnShutdown_SiteSettings">Preferencias del sitios</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Preferencias de sitios</checkBox>
         <checkBox refId="SanitizeOnShutdown_OfflineApps">Datos de sitios web sin conexión</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
