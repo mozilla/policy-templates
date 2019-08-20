@@ -1177,11 +1177,18 @@ Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
   <string>${home}/Downloads</string>
 </dict>
 ```
-#### JSON
+#### JSON (macOS and Linux)
 ```
 {
   "policies": {
     "DefaultDownloadDirectory": "${home}/Downloads"
+}
+```
+#### JSON (Windows)
+```
+{
+  "policies": {
+    "DefaultDownloadDirectory": "${home}\\Downloads"
 }
 ```
 ### DownloadDirectory
@@ -1204,11 +1211,18 @@ Software\Policies\Mozilla\Firefox\DownloadDirectory = "${home}\Downloads"
   <string>${home}/Downloads</string>
 </dict>
 ```
-#### JSON
+#### JSON (macOS and Linux)
 ```
 {
   "policies": {
     "DownloadDirectory": "${home}/Downloads"
+}
+```
+#### JSON (Windows)
+```
+{
+  "policies": {
+    "DownloadDirectory": "${home}\\Downloads"
 }
 ```
 ### EnableTrackingProtection
