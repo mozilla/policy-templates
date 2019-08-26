@@ -180,7 +180,7 @@
       <parentCategory ref="Certificates" />
       <supportedOn ref="SUPPORTED_FF64" />
       <elements >
-        <list id="Certificates_Install" key="Software\Policies\Mozilla\Firefox\Certificates\Install" valuePrefix=""/>
+        <list id="Certificates_Install" key="Software\Policies\Mozilla\Firefox\Certificates\Install" valuePrefix="" expandable="true"/>
       </elements>
     </policy>
     <policy name="Cookies_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Cookies_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
@@ -400,14 +400,14 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
-        <text id="Preferences_String" valueName="DefaultDownloadDirectory" />
+        <text id="Preferences_String" valueName="DefaultDownloadDirectory" expandable="true"/>
       </elements>
     </policy>
     <policy name="DownloadDirectory" class="Both" displayName="$(string.DownloadDirectory)" explainText="$(string.DownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
-        <text id="Preferences_String" valueName="DownloadDirectory" />
+        <text id="Preferences_String" valueName="DownloadDirectory" expandable="true"/>
       </elements>
     </policy>
     <policy name="DNSOverHTTPS" class="Both" displayName="$(string.DNSOverHTTPS)" explainText="$(string.DNSOverHTTPS_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.DNSOverHTTPS)" >
@@ -647,7 +647,7 @@
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix=""/>
+        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix="" expandable="true"/>
       </elements>
     </policy>
     <policy name="Extensions_Uninstall" class="Both" displayName="$(string.Extensions_Uninstall)"  key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" explainText="$(string.Extensions_Uninstall_Explain)" presentation="$(presentation.Extensions)">
@@ -2447,7 +2447,7 @@
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF64" />
       <elements >
-        <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices" valuePrefix="" explicitValue="true"/>
+        <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices" valuePrefix="" explicitValue="true" expandable="true"/>
       </elements>
     </policy>
     <policy name="RequestedLocales" class="Both" displayName="$(string.RequestedLocales)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.RequestedLocales)" >
@@ -2733,7 +2733,7 @@
       <parentCategory ref="Preferences" />
       <supportedOn ref="SUPPORTED_FF68" />
       <elements >
-        <text id="Preferences_String" valueName="browser.cache.disk.parent_directory" required="true" />
+        <text id="Preferences_String" valueName="browser.cache.disk.parent_directory" required="true" expandable="true"/>
       </elements>
     </policy>
     <policy name="dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
