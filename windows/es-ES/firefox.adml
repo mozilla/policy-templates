@@ -218,9 +218,7 @@ Si esta política está habilitada o no está configurada, las extensiones se ac
 
 Si esta política está deshabilitada o no está configurada, las extensiones no se gestionarán.
 
-Para obtener información detallada sobre la creación de la política, visite https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
-
-Debe eliminar todas las líneas nuevas al insertar el JSON. Arreglaremos esto en un futuro lanzamiento.</string>
+Para obtener información detallada sobre la creación de la política, visite https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración por hardware no se puede habilitar.
 
@@ -779,10 +777,7 @@ Si esta política está deshabilitada o no está configurada, no se añadirá ni
         <checkBox refId="FirefoxHome_Locked">No permitir que se cambie la configuración</checkBox>
       </presentation>
       <presentation id="ExtensionSettings">
-<!--        <multiTextBox refId="ExtensionSettings"/> -->
-        <textBox refId="ExtensionSettings">
-          <label/>
-        </textBox>
+        <multiTextBox refId="ExtensionSettings"/>
       </presentation>
     </presentationTable>
   </resources>

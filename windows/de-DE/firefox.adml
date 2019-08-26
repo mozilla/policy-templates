@@ -218,9 +218,7 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden 
 
 If this policy is disabled or not configured, extensions will not be managed.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
-
-You must remove all new lines when inserting the JSON. We will be fixing this in a future release.</string>
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
@@ -779,10 +777,7 @@ If this policy is disabled or not configured, no menuitem is added.</string>
         <checkBox refId="FirefoxHome_Locked">Es ist nicht erlaubt, dass Einstellungen geändert werden.</checkBox>
       </presentation>
       <presentation id="ExtensionSettings">
-<!--        <multiTextBox refId="ExtensionSettings"/> -->
-        <textBox refId="ExtensionSettings">
-          <label/>
-        </textBox>
+        <multiTextBox refId="ExtensionSettings"/>
       </presentation>
     </presentationTable>
   </resources>

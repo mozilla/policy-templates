@@ -664,15 +664,13 @@
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
       </elements>
     </policy>
-    <!--
     <policy name="ExtensionSettings" class="Both" displayName="$(string.ExtensionSettings)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)"  presentation="$(presentation.ExtensionSettings)">">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF6801"/>
       <elements>
-        <multiText id="ExtensionSettings" valueName="ExtensionSettings" />
+        <multiText id="ExtensionSettings" valueName="ExtensionSettings"  maxLength="2048"/>
       </elements>
     </policy>
-    -->
     <policy name="NoDefaultBookmarks" class="Both" displayName="$(string.NoDefaultBookmarks)" explainText="$(string.NoDefaultBookmarks_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NoDefaultBookmarks">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>

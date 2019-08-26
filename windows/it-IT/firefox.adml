@@ -218,9 +218,7 @@ Se questo criterio è abilitato o non configurato, le estensioni saranno aggiorn
 
 Se questo criterio è disabilitato o non configurato, le estensioni non saranno gestite.
 
-Per informazioni dettagliate sulla creazione della policy, si veda https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings
-
-È necessario rimuovere tutti i caratteri di ritorno a capo durante l'inserimento del JSON. Correggeremo questo bug in un rilascio successivo.</string>
+Per informazioni dettagliate sulla creazione della policy, si veda https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Accelerazione hardware</string>
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
@@ -779,10 +777,7 @@ Se questo criterio è disabilitato o non configurato, non sarà aggiunta nessuna
         <checkBox refId="FirefoxHome_Locked">Non consentire la modifica delle preferenze</checkBox>
       </presentation>
       <presentation id="ExtensionSettings">
-<!--        <multiTextBox refId="ExtensionSettings"/> -->
-        <textBox refId="ExtensionSettings">
-          <label/>
-        </textBox>
+        <multiTextBox refId="ExtensionSettings"/>
       </presentation>
     </presentationTable>
   </resources>
