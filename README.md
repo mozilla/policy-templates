@@ -1336,8 +1336,77 @@ Software\Policies\Mozilla\Firefox\Extensions\Locked\1 = "addon_id@mozilla.org"
 }
 ```
 ### ExtensionSettings
-Do NOT use this policy. You risk uninstalling your search extensions.
+Manage all aspects of extensions. This policy is based heavily on the [Chrome policy](https://dev.chromium.org/administrators/policy-list-3/extension-settings-full) of the same name.
 
+This policy maps an extension ID to its configuration. With an extension ID, the configuration will be applied to the specified extension only. A default configuration can be set for the special ID "*", which will apply to all extensions that don't have a custom configuration set in this policy.
+
+To obtain an extension ID, install the extension and go to about:support. You will see the ID in the Extensions section.
+
+The configuration for each extension is another dictionary that can contain the fields documented below.
+
+| Name | Description |
+| --- | --- |
+| `installation_mode` | Maps to a string indicating the installation mode for the extension. The valid strings are `allowed`,`blocked`,`force_installed`, and `normal_installed`.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`allowed` | Allows the extension to be installed by the user. This is the default behavior.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blocked`| Blocks installation of the extension and removes it from the device if already installed.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
+| `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension. If installing from the addons.mozilla.org, use the following URL (substituting SHORT_NAME from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/SHORT_NAME/latest.xpi. If installing frmo the local file system, use a file:/// URL.
+| `install_sources` | Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
+| `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "langpack" This setting can be used only for the default configuration.
+| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else.
+
+**Compatibility:** Firefox 69, Firefox ESR 68.1\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+
+Software\Policies\Mozilla\Firefox\ExtensionSettings = '{"*": {"installation_mode": "blocked"}}`
+#### macOS
+```
+<dict>
+  <key>ExtensionSettings</key>
+  <dict>
+    <key>*</key>
+    <dict>
+      <key>blocked_install_message</key>
+      <string>Custom error message.</string>
+      <key>install_sources</key>
+      <array>
+        <string>https://addons.mozilla.org/</string>
+      </array>
+      <key>installation_mode</key>
+      <string>blocked</string>
+    </dict>
+    <key>uBlock0@raymondhill.net</key>
+    <dict>
+      <key>installation_mode</key>
+       <string>force_installed</string>
+      <key>install_url</key>
+      <string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
+    </dict>
+  </dict>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "ExtensionSettings": {
+      "*": {
+        "blocked_install_message": "Custom error message.",
+        "install_sources": ["https://addons.mozilla.org/"],
+        "installation_mode": "blocked"
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      }
+    }
+  }
+}
+```
 ### ExtensionUpdate
 Control extension updates.
 
