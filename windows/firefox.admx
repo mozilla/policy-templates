@@ -2619,7 +2619,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="dom.disable_window_flip" class="Both" displayName="$(string.dom_disable_window_flip)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.dom.disable_window_flip">
+    <policy name="dom.disable_window_flip" class="Both" displayName="$(string.dom_disable_window_flip)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.disable_window_flip">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
       <enabledValue>
