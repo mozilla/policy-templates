@@ -666,7 +666,7 @@
     </policy>
     <policy name="ExtensionSettings" class="Both" displayName="$(string.ExtensionSettings)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)"  presentation="$(presentation.ExtensionSettings)">">
       <parentCategory ref="Extensions"/>
-      <supportedOn ref="SUPPORTED_FF6801"/>
+      <supportedOn ref="SUPPORTED_FF69"/>
       <elements>
         <multiText id="ExtensionSettings" valueName="ExtensionSettings"  maxLength="2048"/>
       </elements>
