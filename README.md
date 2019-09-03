@@ -46,6 +46,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
 | **[`EnterprisePoliciesEnabled`](#enterprisepoliciesenabled)** | Enable policy support on macOS.
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
+| **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
@@ -1365,8 +1366,9 @@ The configuration for each extension is another dictionary that can contain the 
 **Preferences Affected:** N/A
 
 #### Windows
-
-Software\Policies\Mozilla\Firefox\ExtensionSettings = '{"*": {"installation_mode": "blocked"}}`
+```
+Software\Policies\Mozilla\Firefox\ExtensionSettings = '{"*": {"installation_mode": "blocked"}}'
+```
 #### macOS
 ```
 <dict>
