@@ -100,7 +100,7 @@ Software\Policies\Mozilla\Firefox\AppUpdateURL = "https://yoursite.com"
   <string>https://yoursite.com</string>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -159,7 +159,7 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -319,7 +319,7 @@ Software\Policies\Mozilla\Firefox\Bookmarks\1\Folder = "FolderName"
   </array>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2207,7 +2207,7 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2404,7 +2404,7 @@ Set the default search engine. This policy is only available on the ESR.
 **CCK2 Equivalent:** `defaultSearchEngine`\
 **Preferences Affected:** N/A
 
-### Windows
+#### Windows
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\Default = NAME_OF_SEARCH_ENGINE
 ```
@@ -2418,7 +2418,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Default = NAME_OF_SEARCH_ENGINE
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2436,7 +2436,7 @@ Prevent installing search engines from webpages.
 **CCK2 Equivalent:** `disableSearchEngineInstall`\
 **Preferences Affected:** N/A
 
-### Windows
+#### Windows
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
 ```
@@ -2450,7 +2450,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2468,7 +2468,7 @@ Hide built-in search engines. This policy is only available on the ESR.
 **CCK2 Equivalent:** `removeDefaultSearchEngines` (removed all built-in engines)\
 **Preferences Affected:** N/A
 
-### Windows
+#### Windows
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
 ```
@@ -2484,7 +2484,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2519,6 +2519,7 @@ Add new search engines (up to five). This policy is only available on the ESR. `
 **Preferences Affected:** N/A
 
 #### Windows
+```
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name = "Example1"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate = "https://www.example.org/q={searchTerms}"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method = "GET" | "POST"
@@ -2527,6 +2528,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias = "example"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description = "Example Description"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "https://www.example.org/suggestions/q={searchTerms}"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={searchTerms}"
+```
 
 #### macOS
 ```
@@ -2557,7 +2559,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2586,7 +2588,7 @@ Enable search suggestions.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.urlbar.suggest.searches`,`browser.search.suggest.enabled`
 
-### Windows
+#### Windows
 ```
 Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
 ```
@@ -2597,7 +2599,7 @@ Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2721,7 +2723,7 @@ Software\Policies\Mozilla\Firefox\SupportMenu\Title = "S"
   </dict>
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
@@ -2762,7 +2764,7 @@ Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.
 
 </dict>
 ```
-### JSON
+#### JSON
 ```
 {
   "policies": {
