@@ -495,10 +495,10 @@ Wenn Sie die Richtlinieneinstellung aktivieren, privates Surfen ist sowohl im Br
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 
 If this policy is disabled or not configured, the application will use the default locale.</string>
-      <string id="SecurityDevices">Security Devices</string>
-      <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
+      <string id="SecurityDevices">Sicherheitsgeräte</string>
+      <string id="SecurityDevices_Explain">Wenn diese Richtlinie aktiviert ist, können Sie eine Liste mit PKCS #11 Modulen definieren. Module werden mit einem Namen und einem qualifizierten Pfad benannt.
 
-If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine weiteren PKCS #11 Module installiert.</string>
       <string id="SearchBar">Position der Suchleiste</string>
       <string id="SearchBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie festlegen, ob die Suchleiste von der Adressleiste getrennt ist.
 
