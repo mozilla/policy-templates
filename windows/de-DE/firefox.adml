@@ -545,10 +545,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
-      <string id="SupportMenu">Support Menu</string>
-      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+      <string id="SupportMenu">Support Menü</string>
+      <string id="SupportMenu_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird ein Menüeintrag mit spezifizierten Supportinformationen zum "Hilfe"-Menü hinzugefügt.
 
-If this policy is disabled or not configured, no menuitem is added.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird kein Menüeintrag hinzugefügt.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.</string>
       <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.</string>
       <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.</string>
