@@ -2707,7 +2707,6 @@ Add a menuitem to the help menu for specifying support information.
 ```
 Software\Policies\Mozilla\Firefox\SupportMenu\Title = "Support Menu"
 Software\Policies\Mozilla\Firefox\SupportMenu\URL = "http://example.com/support"
-Software\Policies\Mozilla\Firefox\SupportMenu\Title = "S"
 ```
 #### macOS
 ```
