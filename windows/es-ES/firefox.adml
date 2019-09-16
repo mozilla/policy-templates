@@ -736,7 +736,7 @@ Si esta política está deshabilitada o no está configurada, no se añadirá ni
         <dropdownList refId="SSLVersion"/>
       </presentation>
       <presentation id="SupportMenu">
-        <text>Title:</text>
+        <text>Título:</text>
         <textBox refId="SupportMenuTitle">
           <label/>
         </textBox>
@@ -744,7 +744,7 @@ Si esta política está deshabilitada o no está configurada, no se añadirá ni
         <textBox refId="SupportMenuURL">
           <label/>
         </textBox>
-        <text>Access key:</text>
+        <text>Clave de acceso:</text>
         <textBox refId="SupportMenuAccessKey">
           <label/>
         </textBox>
