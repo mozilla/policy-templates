@@ -15,7 +15,7 @@
       <string id="SUPPORTED_FF6801">Firefox 68.0.1 o posterior, Firefox 68.0.1 ESR o posterior</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o posterior</string>
       <string id="SUPPORTED_FF69">Firefox 69 o posterior, Firefox 68.1 ESR o posterior</string>
-      <string id="SUPPORTED_FF69">Firefox 70 o posterior, Firefox 68.2 ESR o posterior</string>
+      <string id="SUPPORTED_FF70">Firefox 70 o posterior, Firefox 68.2 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
       <string id="Camera_group">Camera</string>
@@ -736,7 +736,7 @@ Si esta política está deshabilitada o no está configurada, no se añadirá ni
         <dropdownList refId="SSLVersion"/>
       </presentation>
       <presentation id="SupportMenu">
-        <text>Title:</text>
+        <text>Título:</text>
         <textBox refId="SupportMenuTitle">
           <label/>
         </textBox>
@@ -744,7 +744,7 @@ Si esta política está deshabilitada o no está configurada, no se añadirá ni
         <textBox refId="SupportMenuURL">
           <label/>
         </textBox>
-        <text>Access key:</text>
+        <text>Clave de acceso:</text>
         <textBox refId="SupportMenuAccessKey">
           <label/>
         </textBox>
