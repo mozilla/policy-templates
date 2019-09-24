@@ -1367,7 +1367,7 @@ The configuration for each extension is another dictionary that can contain the 
 
 #### Windows
 ```
-Software\Policies\Mozilla\Firefox\ExtensionSettings = '{"*": {"installation_mode": "blocked"}}'
+Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) = '{"*": {"installation_mode": "blocked"}}'
 ```
 #### macOS
 ```
