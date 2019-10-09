@@ -495,10 +495,10 @@ Wenn Sie die Richtlinieneinstellung aktivieren, privates Surfen ist sowohl im Br
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 
 If this policy is disabled or not configured, the application will use the default locale.</string>
-      <string id="SecurityDevices">Security Devices</string>
-      <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
+      <string id="SecurityDevices">Sicherheitsgeräte</string>
+      <string id="SecurityDevices_Explain">Wenn diese Richtlinie aktiviert ist, können Sie eine Liste mit PKCS #11 Modulen definieren. Module werden mit einem Namen und einem qualifizierten Pfad benannt.
 
-If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine weiteren PKCS #11 Module installiert.</string>
       <string id="SearchBar">Position der Suchleiste</string>
       <string id="SearchBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie festlegen, ob die Suchleiste von der Adressleiste getrennt ist.
 
@@ -545,13 +545,13 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
-      <string id="SupportMenu">Support Menu</string>
-      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+      <string id="SupportMenu">Support Menü</string>
+      <string id="SupportMenu_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird ein Menüeintrag mit spezifizierten Supportinformationen zum "Hilfe"-Menü hinzugefügt.
 
-If this policy is disabled or not configured, no menuitem is added.</string>
-      <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.</string>
-      <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.</string>
-      <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird kein Menüeintrag hinzugefügt.</string>
+      <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.</string>
+      <string id="Preferences_String_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf den spezifizierten String-Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.</string>
+      <string id="Preferences_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist sie auf den spezifizierten Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Jedes Mal nachfragen</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Automatisch auswählen</string>
       <string id="app_update_auto">app.update.auto</string>
