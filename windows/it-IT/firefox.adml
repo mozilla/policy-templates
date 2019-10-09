@@ -225,6 +225,10 @@ Per informazioni dettagliate sulla creazione della policy, si veda https://githu
       <string id="HardwareAcceleration_Explain">Se questo criterio è disabilitato, l'accelerazione hardware non può essere abilitata.
 
 Se questo criterio è abilitato o non configurato, l'accelerazione hardware è abilitata.</string>
+      <string id="LegacyProfiles">Legacy Profiles</string>
+      <string id="LegacyProfiles_Explain">If this policy is enabled, Firefox will not try to create different profiles for installations of Firefox in different directories. This is the equivalent of the MOZ_LEGACY_PROFILES environment variable.
+
+If this policy is disabled or not configured, Firefox will create a new profile for each unique installation of Firefox.</string>
       <string id="LocalFileLinks">Collegamenti file locali</string>
       <string id="LocalFileLinks_Explain">Se questo criterio è abilitato, è possibile specificare le origini da cui sono consentiti i collegamenti ai file locali.
 

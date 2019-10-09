@@ -17,6 +17,7 @@
       <definition name="SUPPORTED_FF67" displayName="$(string.SUPPORTED_FF67)"/>
       <definition name="SUPPORTED_FF68" displayName="$(string.SUPPORTED_FF68)"/>
       <definition name="SUPPORTED_FF6801" displayName="$(string.SUPPORTED_FF6801)"/>
+      <definition name="SUPPORTED_FF70" displayName="$(string.SUPPORTED_FF70)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -694,6 +695,16 @@
     <policy name="ExtensionUpdate" class="Both" displayName="$(string.ExtensionUpdate)" explainText="$(string.ExtensionUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="ExtensionUpdate">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF67"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LegacyProfiles" class="Both" displayName="$(string.LegacyProfiles)" explainText="$(string.LegacyProfiles_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="LegacyProfiles">
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF70"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

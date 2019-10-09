@@ -53,6 +53,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
+| **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
@@ -1670,6 +1671,23 @@ Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Default = 0x1 | 0x0
     }
   }
 }
+```
+### LegacyProfiles
+Disable the feature enforcing a separate profile for each installation.
+
+If this policy set to true, Firefox will not try to create different profiles for installations of Firefox in different directories. This is the equivalent of the MOZ_LEGACY_PROFILES environment variable.
+
+If this policy set to false, Firefox will create a new profile for each unique installation of Firefox.
+
+This policy only work on Windows via GPO (not policies.json).
+
+**Compatibility:** Firefox 70, Firefox ESR 68.2 (Windows only, GPO only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\LegacyProfiles = = 0x1 | 0x0
 ```
 ### LocalFileLinks
 Enable linking to local files by origin.
