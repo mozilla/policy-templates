@@ -225,6 +225,10 @@ For detailed information on creating the policy, see https://github.com/mozilla/
       <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
 
 If this policy is enabled or not configured, hardware acceleration is enabled.</string>
+      <string id="LegacyProfiles">Legacy Profiles</string>
+      <string id="LegacyProfiles_Explain">If this policy is enabled, Firefox will not try to create different profiles for installations of Firefox in different directories. This is the equivalent of the MOZ_LEGACY_PROFILES environment variable.
+
+If this policy is disabled or not configured, Firefox will create a new profile for each unique installation of Firefox.</string>
       <string id="LocalFileLinks">Local File Links</string>
       <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
 
