@@ -225,10 +225,10 @@ For detailed information on creating the policy, see https://github.com/mozilla/
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Hardware-Beschleunigung aktiviert.</string>
-      <string id="LegacyProfiles">Legacy Profiles</string>
-      <string id="LegacyProfiles_Explain">If this policy is enabled, Firefox will not try to create different profiles for installations of Firefox in different directories. This is the equivalent of the MOZ_LEGACY_PROFILES environment variable.
+      <string id="LegacyProfiles">Legacy Profile</string>
+      <string id="LegacyProfiles_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox keine seperaten Profile bei mehreren parallelen Installationen anlegen. Diese Einstellung equivalent zu der Umgebungsvariable MOZ_LEGACY_PROFILES.
 
-If this policy is disabled or not configured, Firefox will create a new profile for each unique installation of Firefox.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Firefox seperate Profile für jede Installation anlegen.</string>
       <string id="LocalFileLinks">Local File Links</string>
       <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
 
