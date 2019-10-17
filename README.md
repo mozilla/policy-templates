@@ -2068,53 +2068,85 @@ Set and lock certain preferences.
 
 | Preference | Type | Compatibility | Default
 | --- | --- | --- | ---
-| app.update.auto | boolean | Firefox 68, Firefox 68 ESR | true
+| accessibility.force_disabled | integer | Firefox 70, Firefox ESR 6.2 | 0
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
+| app.update.auto | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Firefox doesn't automatically install update.
-| browser.cache.disk.enable | boolean | Firefox 68, Firefox 68 ESR | true
+| browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 6.2 | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
+| browser.bookmarks.file | string | Firefox 70, Firefox ESR 6.2 | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;
+| browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 6.2 | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored from the profile at startup.
+| browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
-| browser.cache.disk.parent_directory | string | Firefox 68, Firefox 68 ESR | Profile temporary directory
+| browser.cache.disk.parent_directory | string | Firefox 68, Firefox ESR 68 | Profile temporary directory
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, changes the location of the disk cache.
-| browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox 68 ESR | false
+| browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
-| browser.search.update | boolean | Firefox 68, Firefox 68 ESR | true
+| browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 6.2
+| &nbsp;&nbsp;&nbsp;&nbsp;
+| browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, phishing protection is not enabled (Not recommended)
+| browser.safebrowsing.malware.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;IF false, malware protection is not enabled (Not recommended)
+| browser.search.update | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, updates for search engines are not checked.
-| browser.tabs.warnOnClose | boolean | Firefox 68, Firefox 68 ESR | true
+| browser.slowStartup.notificationDisabled | string | Firefox 70, Firefox ESR 6.2 | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, a notification isn't shown if startup is slow.
+| browser.tabs.warnOnClose | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, there is no warning when the browser is closed.
-| browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox 68 ESR | true
+| browser.taskbar.previews.enable | string | Firefox 70, Firefox ESR 6.2 (Windows only) | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, tab previews are shown in the Windows taskbar.
+| browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, bookmarks aren't suggested when typing in the URL bar.
-| browser.urlbar.suggest.history | boolean | Firefox 68, Firefox 68 ESR | true
+| browser.urlbar.suggest.history | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, history isn't suggested when typing in the URL bar.
-| browser.urlbar.suggest.openpage | boolean | Firefox 68, Firefox 68 ESR | true
+| browser.urlbar.suggest.openpage | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, open tabs aren't suggested when typing in the URL bar.
-| datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox 68 ESR | false
+| datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, don't show the privacy policy tab on first run.
-| dom.disable_window_flip | boolean | Firefox 68, Firefox 68 ESR | true
+| dom.allow_scripts_to_close_windows | string | Firefox 70, Firefox ESR 6.2 | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, web page can close windows.
+| dom.disable_window_flip | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can focus and activate windows.
-| dom.disable_window_move_resize | boolean | Firefox 68, Firefox 68 ESR | false
+| dom.disable_window_move_resize | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, web pages can't move or resize windows.
-| dom.event.contextmenu.enabled | boolean | Firefox 68, Firefox 68 ESR | true
+| dom.event.contextmenu.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can't override context menus.
-| dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl | string | Firefox 68, Firefox 68 ESR | N/A
+| dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl | string | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox 68 ESR | N/A
+| dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| extensions.getAddons.showPane | boolean | Firefox 68, Firefox 68 ESR | N/A
+| extensions.blocklist.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
+| extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Recommendations tab is not displayed in the Add-ons Manager.
-| media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox 68 ESR | true
+| geo.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
+| intl.accept_languages | string | Firefox 70, Firefox ESR 6.2
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
+| media.eme.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, Encrypted Media Extensions are not enabled.
+| media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
-| media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox 68 ESR | true
+| media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Widevine plugin is not downloaded.
-| network.dns.disableIPv6 | boolean | Firefox 68, Firefox 68 ESR | false
+| network.dns.disableIPv6 | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, IPv6 DNS lokoups are disabled.
-| network.IDN_show_punycode | boolean | Firefox 68, Firefox 68 ESR | false
+| network.IDN_show_punycode | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names. 
-| places.history.enabled | boolean | Firefox 68, Firefox 68 ESR | true
+| places.history.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, history is not enabled.
-| security.default_personal_cert | string | Firefox 68, Firefox 68 ESR | Ask Every Time
+| print.save_print_settings | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, print settings are not saved between jobs.
+| security.default_personal_cert | string | Firefox 68, Firefox ESR 68 | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
-| security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox 68 ESR | true
+| security.mixed_content.block_active_content | string | Firefox 70, Firefox ESR 6.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
+| security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
-| ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox 68 ESR | true
+| ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Alt key doesn't show the menubar on Windows.
 #### Windows
 ```
