@@ -2140,9 +2140,9 @@ Set and lock certain preferences.
 | browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 6.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
 | browser.bookmarks.file | string | Firefox 70, Firefox ESR 6.2 | N/A
-| &nbsp;&nbsp;&nbsp;&nbsp;
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, the name of the file where bookmarks are exported and imported.
 | browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 6.2 | N/A
-| &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored from the profile at startup.
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
 | browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
 | browser.cache.disk.parent_directory | string | Firefox 68, Firefox ESR 68 | Profile temporary directory
@@ -2150,7 +2150,7 @@ Set and lock certain preferences.
 | browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
 | browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 6.2
-| &nbsp;&nbsp;&nbsp;&nbsp;
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
 | browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 6.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, phishing protection is not enabled (Not recommended)
 | browser.safebrowsing.malware.enabled | string | Firefox 70, Firefox ESR 6.2 | true
