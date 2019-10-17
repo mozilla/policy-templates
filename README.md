@@ -59,8 +59,10 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
 | **[`OfferToSaveLogins`](#offertosavelogins)** | Control whether or not Firefox offers to save passwords.
+| **[`OfferToSaveLoginsDefault`](#offertosaveloginsdefault)** | Set the default value for whether or not Firefox offers to save passwords.
 | **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
 | **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
+| **[`PasswordManagerEnabled`](#passwordmanagerenabled)** | Remove (some) access to the password manager.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
@@ -1240,14 +1242,20 @@ If `Value` is set to false, tracking protection is disabled and locked in both t
 
 If `Value` is set to true, tracking protection is enabled by default in both the regular browser and private browsing and the `Locked` value determines whether or not a user can change it.
 
-**Compatibility:** Firefox 60, Firefox ESR 60\
+If `Cryptomining` is set to true, cryptomining scripts on websites are blocked.
+
+If `Fingerprinting` is set to true, fingerprinting scripts on websites are blocked.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2)\
 **CCK2 Equivalent:** `dontCheckDefaultBrowser`\
-**Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`
+**Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
 
 #### Windows
 ```
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
 ```
 #### macOS
 ```
@@ -1256,8 +1264,11 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
   <dict>
     <key>Value</key>
     <true/> | <false/>
- 
     <key><Locked/key>
+    <true/> | <false/>
+    <key><Cryptomining/key>
+    <true/> | <false/>
+    <key><Fingerprinting/key>
     <true/> | <false/>
   </dict>
 </dict>
@@ -1268,7 +1279,9 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
   "policies": {
     "EnableTrackingProtection": {
       "Value": [true, false],
-      "Locked": [true, false]
+      "Locked": [true, false],
+      "Cryptomining": [true, false],
+      "Fingerprinting": [true, false]
     }
 }
 ```
@@ -1824,6 +1837,32 @@ Software\Policies\Mozilla\Firefox\OfferToSaveLogins = 0x1 | 0x0
   }
 }
 ```
+### OfferToSaveLoginsDefault
+Sets the default value of signon.rememberSignons without locking it.
+
+**Compatibility:** Firefox 70, Firefox ESR 60.2\
+**CCK2 Equivalent:** `dontRememberPasswords`\
+**Preferences Affected:** `signon.rememberSignons`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\OfferToSaveLoginsDefault = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>OfferToSaveLoginsDefault</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "OfferToSaveLoginsDefault": true | false
+  }
+}
+```
 ### OverrideFirstRunPage
 Override the first run page. If the value is blank, no first run page is displayed.
 
@@ -1872,6 +1911,32 @@ Software\Policies\Mozilla\Firefox\OverridePostUpdatePage = "http://example.org"
 {
   "policies": {
     "OverridePostUpdatePage": "http://example.org"
+}
+```
+### PasswordManagerEnabled
+Remove access to the password manager via preferences and blocks about:logins on Firefox 70.
+
+**Compatibility:** Firefox 70, Firefox ESR 60.2\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `prefs.privacy.disable_button.view_passwords`
+
+#### Windows
+```
+Software\Policies\Mozilla\Firefox\PasswordManagerEnabled = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>PasswordManagerEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### JSON
+```
+{
+  "policies": {
+    "PasswordManagerEnabled": true | false
+  }
 }
 ```
 ### Permissions
