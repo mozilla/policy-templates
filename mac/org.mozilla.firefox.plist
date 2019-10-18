@@ -30,6 +30,13 @@
 			<key>NTLM</key>
 			<true/>
 		</dict>
+		<key>AllowProxies</key>
+		<dict>
+			<key>SPNEGO</key>
+			<true/>
+			<key>NTLM</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>BlockAboutAddons</key>
 	<true/>

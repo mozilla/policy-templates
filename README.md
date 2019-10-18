@@ -117,9 +117,9 @@ Configure sites that support integrated authentication.
 
 See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2)\
+**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2, AllowProcies added in 70/68.2)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.negotiate-auth.trusted-uris`, `network.negotiate-auth.delegation-uris`, `network.automatic-ntlm-auth.trusted-uris`, `network.automatic-ntlm-auth.allow-non-fqdn`, `network.negotiate-auth.allow-non-fqdn`
+**Preferences Affected:** `network.negotiate-auth.trusted-uris`,`network.negotiate-auth.delegation-uris`,`network.automatic-ntlm-auth.trusted-uris`,`network.automatic-ntlm-auth.allow-non-fqdn`,`network.negotiate-auth.allow-non-fqdn`,`network.automatic-ntlm-auth.allow-proxies`,`network.negotiate-auth.allow-proxies`
 
 #### Windows
 ```
@@ -131,6 +131,8 @@ Software\Policies\Mozilla\Firefox\Authentication\NTLM\1 = "mydomain.com"
 Software\Policies\Mozilla\Firefox\Authentication\NTLM\2 = "https://myotherdomain.com"
 Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\SPNEGO = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\SPNEGO = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
 ```
 #### macOS
 ```
@@ -159,6 +161,13 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
       <key>NTLM</key>
       <true/> | <false/>
     </dict>
+    <key>AllowProxies</key>
+      <dict>
+      <key>SPNEGO</key>
+      <true/> | <false/>
+      <key>NTLM</key>
+      <true/> | <false/>
+    </dict>
   </dict>
 </dict>
 ```
@@ -171,6 +180,10 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
       "Delegated": ["mydomain.com", "https://myotherdomain.com"],
       "NTLM": ["mydomain.com", "https://myotherdomain.com"],
       "AllowNonFQDN": {
+        "SPNEGO": true | false,
+        "NTLM": true | false
+      },
+      "AllowProxies": {
         "SPNEGO": true | false,
         "NTLM": true | false
       }

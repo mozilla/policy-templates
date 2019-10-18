@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="1.9" schemaVersion="1.0">
+<policyDefinitions revision="1.10" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="1.9"/>
+  <resources minRequiredRevision="1.10"/>
   <supportedOn>
     <definitions>
+      <definition name="UNSUPPORTED" displayName="$(string.UNSUPPORTED)"/>
       <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)"/>
       <definition name="SUPPORTED_FF60" displayName="$(string.SUPPORTED_FF60)"/>
       <definition name="SUPPORTED_FF60ESR" displayName="$(string.SUPPORTED_FF60ESR)"/>
@@ -108,6 +109,28 @@
           </falseValue>
         </boolean>
         <boolean id="Authentication_AllowNonFQDN_SPNEGO" key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" valueName="SPNEGO">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="Authentication_AllowProxies" class="Both" displayName="$(string.Authentication_AllowProxies)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowProxies_Explain)" presentation="$(presentation.Authentication_AllowProxies)">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <elements>
+        <boolean id="Authentication_AllowProxies_NTLM" key="Software\Policies\Mozilla\Firefox\Authentication\AllowProxies" valueName="NTLM">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="Authentication_AllowProxies_SPNEGO" key="Software\Policies\Mozilla\Firefox\Authentication\AllowProxies" valueName="SPNEGO">
           <trueValue>
             <decimal value="1"/>
           </trueValue>
@@ -2538,9 +2561,54 @@
         <text id="SupportMenuAccessKey" valueName="AccessKey" />
       </elements>
     </policy>
-    <policy name="app_update_auto" class="Both" displayName="$(string.app_update_auto)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="app.update.auto">
+    <policy name="accessibility_force_disabled" class="Both" displayName="$(string.accessibility_force_disabled)" explainText="$(string.Preferences_Enum_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_accessibility_force_disabled)" >
       <parentCategory ref="Preferences"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <elements>
+        <enum id="Preferences_accessibility_force_disabled" valueName="accessibility.force_disabled">
+          <item displayName="$(string.Preferences_accessibility_force_disabled_auto)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.Preferences_accessibility_force_disabled_off)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="app_update_auto" class="Both" displayName="$(string.app_update_auto)" explainText="$(string.Preferences_Unsupported_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="app.update.auto">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="UNSUPPORTED"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser_bookmarks_autoExportHTML" class="Both" displayName="$(string.browser_bookmarks_autoExportHTML)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.bookmarks.autoExportHTML">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser_bookmarks_file" class="Both" displayName="$(string.browser_bookmarks_file)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="Preferences" />
+      <supportedOn ref="SUPPORTED_FF70" />
+      <elements >
+        <text id="Preferences_String" valueName="browser.bookmarks.file" required="true" expandable="true"/>
+      </elements>
+    </policy>
+    <policy name="browser_bookmarks_restore_default_bookmarks" class="Both" displayName="$(string.browser_bookmarks_restore_default_bookmarks)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.bookmarks.restore_default_bookmarks">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -2568,6 +2636,46 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="browser_places_importBookmarksHTML" class="Both" displayName="$(string.browser_places_importBookmarksHTML)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.places.importBookmarksHTML">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser_safebrowsing_phishing_enabled" class="Both" displayName="$(string.browser_safebrowsing_phishing_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.safebrowsing.phishing.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser_safebrowsing_malware_enabled" class="Both" displayName="$(string.browser_safebrowsing_malware_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.safebrowsing.malware.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser_slowStartup_notificationDisabled" class="Both" displayName="$(string.browser_slowStartup_notificationDisabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.slowStartup.notificationDisabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="browser_search_update" class="Both" displayName="$(string.browser_search_update)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.search.update">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
@@ -2581,6 +2689,16 @@
     <policy name="browser_tabs_warnOnClose" class="Both" displayName="$(string.browser_tabs_warnOnClose)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.tabs.warnOnClose">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="browser_taskbar_previews_enable" class="Both" displayName="$(string.browser_taskbar_previews_enable)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="browser.taskbar.previews.enable">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -2628,6 +2746,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="dom_allow_scripts_to_close_windows" class="Both" displayName="$(string.dom_allow_scripts_to_close_windows)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.allow_scripts_to_close_windows">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="dom_disable_window_flip" class="Both" displayName="$(string.dom_disable_window_flip)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.disable_window_flip">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
@@ -2658,9 +2786,46 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="extensions_blocklist_enabled" class="Both" displayName="$(string.extensions_blocklist_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="extensions.blocklist.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="extensions_getAddons_showPane" class="Both" displayName="$(string.extensions_getAddons_showPane)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="extensions.getAddons.showPane">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="geo_enabled" class="Both" displayName="$(string.geo_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="geo.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="intl_accept_languages" class="Both" displayName="$(string.intl_accept_languages)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="Preferences" />
+      <supportedOn ref="SUPPORTED_FF70" />
+      <elements >
+        <text id="Preferences_String" valueName="intl.accept_languages" required="true" expandable="true"/>
+      </elements>
+    </policy>
+    <policy name="media_eme_enabled" class="Both" displayName="$(string.media_eme_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="media.eme.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -2718,6 +2883,26 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="print_save_print_settings" class="Both" displayName="$(string.print_save_print_settings)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="print.save_print_settings">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="security_mixed_content_block_active_content" class="Both" displayName="$(string.security_mixed_content_block_active_content)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.mixed_content.block_active_content">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="security_ssl_errorReporting_enabled" class="Both" displayName="$(string.security_ssl_errorReporting_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.ssl.errorReporting.enabled">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
@@ -2738,21 +2923,21 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="browser_cache_disk_parent_directory" class="Both" displayName="$(string.browser_cache_disk_parent_directory)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+    <policy name="browser_cache_disk_parent_directory" class="Both" displayName="$(string.browser_cache_disk_parent_directory)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
       <parentCategory ref="Preferences" />
       <supportedOn ref="SUPPORTED_FF68" />
       <elements >
         <text id="Preferences_String" valueName="browser.cache.disk.parent_directory" required="true" expandable="true"/>
       </elements>
     </policy>
-    <policy name="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+    <policy name="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
       <parentCategory ref="Preferences" />
       <supportedOn ref="SUPPORTED_FF68" />
       <elements >
         <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl" required="true" />
       </elements>
     </policy>
-    <policy name="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+    <policy name="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
       <parentCategory ref="Preferences" />
       <supportedOn ref="SUPPORTED_FF68" />
       <elements >
