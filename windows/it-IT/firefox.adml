@@ -5,7 +5,7 @@
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
-      <string id="UNSUPPORTED">No longer supported.</string>
+      <string id="UNSUPPORTED">Non più supportato.</string>
       <string id="SUPPORTED_FF60">Firefox 60 o versione successiva, Firefox 60 ESR o versione successiva</string>
       <string id="SUPPORTED_FF62">Firefox 62 o versione successiva, Firefox 60.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF63">Firefox 63 o versione successiva</string>
@@ -62,10 +62,10 @@ Per ulteriori informazioni, vedi https://developer.mozilla.org/en-US/docs/Mozill
       <string id="Authentication_AllowNonFQDN_Explain">Se questo criterio è abilitato, è sempre possibile consentire SPNEGO o NTLM su nomi non FQDN (nomi di dominio completamente qualificati).
 
 Se questo criterio è disabilitato o non configurato, NTLM e SPNEGO non sono abilitati su nomi non FQDN.</string>
-      <string id="Authentication_AllowProxies">Allow Proxies</string>
-      <string id="Authentication_AllowProxies_Explain">If this disabled, SPNEGO and NTLM will not authenticate with proxy servers.
+      <string id="Authentication_AllowProxies">Consenti proxy</string>
+      <string id="Authentication_AllowProxies_Explain">Se questo criterio è disabilitato, SPNEGO e NTLM non eseguiranno l'autenticazione con i server proxy.
 
-If this policy is enabled (and the checkboxes are checked) or not configured, NTLM and SPNEGO will always authenticate with proxies.</string>
+Se questo criterio è abilitato (e le caselle di controllo sono selezionate) o non configurato, NTLM e SPNEGO eseguiranno sempre l'autenticazione con i proxy.</string>
       <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
       <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
 
@@ -560,26 +560,26 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
 Se questo criterio è disabilitato o non configurato, non sarà aggiunta nessuna voce.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
-For a description of the preference, see:
+Per una descrizione della preferenza, si veda:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_String_Explain">Se questo criterio è abilitato, la preferenza è impostata alla stringa immessa e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.
 
-For a description of the preference, see:
+Per una descrizione della preferenza, si veda:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_Enum_Explain">Se questo criterio è abilitato, la preferenza è impostata al valore selezionato e resa non modificabile. Se questo criterio è disabilitato, non avrà effetto.
 
-For a description of the preference, see:
+Per una descrizione della preferenza, si veda:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-      <string id="Preferences_Unsupported_Explain">This preference is no longer support on Windows. We are investigating creating a policy.</string>
-      <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
-      <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
+      <string id="Preferences_Unsupported_Explain">Questa preferenza non è più supportata su Windows. Stiamo valutando la creazione di un criterio.</string>
+      <string id="Preferences_accessibility_force_disabled_auto">Automatico (0)</string>
+      <string id="Preferences_accessibility_force_disabled_off">Sempre disabilitato (1)</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Chiedi ogni volta</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Seleziona automaticamente</string>
       <string id="accessibility_force_disabled">accessibility.force_disabled</string>
-      <string id="app_update_auto">app.update.auto (Deprecated)</string>
+      <string id="app_update_auto">app.update.auto (deprecata)</string>
       <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
       <string id="browser_bookmarks_file">browser.bookmarks.file</string>
       <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
@@ -633,8 +633,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Consenti sempre SPNEGO su nomi di dominio non completamente qualificati</checkBox>
       </presentation>
       <presentation id="Authentication_AllowProxies">
-        <checkBox refId="Authentication_AllowProxies_NTLM">Allow NTLM to automatically authenticate with proxy servers</checkBox>
-        <checkBox refId="Authentication_AllowProxies_SPNEGO">Allow SPNEGO to automatically authenticate with proxy servers</checkBox>
+        <checkBox refId="Authentication_AllowProxies_NTLM">Consenti a NTLM di eseguire automaticamente l'autenticazione con i server proxy</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">Consenti a SPNEGO di eseguire automaticamente l'autenticazione con i server proxy</checkBox>
       </presentation>
       <presentation id="Certificates_Install">
         <listBox refId="Certificates_Install"/>
