@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.9" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.10" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 or later</string>
+      <string id="UNSUPPORTED">No longer supported.</string>
       <string id="SUPPORTED_FF60">Firefox 60 or later, Firefox 60 ESR or later</string>
       <string id="SUPPORTED_FF62">Firefox 62 or later, Firefox 60.2 ESR or later</string>
       <string id="SUPPORTED_FF63">Firefox 63 or later</string>
@@ -58,9 +59,13 @@ If this policy is disabled or not configured, no websites are trusted to use NTL
 
 For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Allow Non FQDN</string>
-      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled, you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
+      <string id="Authentication_AllowNonFQDN_Explain">If this policy is enabled (and the checkboxes are checked), you can always allow SPNEGO or NTLM on non FQDNs (fully qualified domain names).
 
 If this policy is disabled or not configured, NTLM and SPNEGO are not enabled on non FQDNs.</string>
+      <string id="Authentication_AllowProxies">Allow Proxies</string>
+      <string id="Authentication_AllowProxies_Explain">If this disabled, SPNEGO and NTLM will not authenticate with proxy servers.
+
+If this policy is enabled (and the checkboxes are checked) or not configured, NTLM and SPNEGO will always authenticate with proxies.</string>
       <string id="BlockAboutAddons">Block Add-ons Manager</string>
       <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
 
@@ -553,34 +558,65 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
 
 If this policy is disabled or not configured, no menuitem is added.</string>
-      <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.</string>
-      <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.</string>
-      <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.</string>
+      <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
+
+For a description of the preference, see:
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.
+
+For a description of the preference, see:
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.
+
+For a description of the preference, see:
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+      <string id="Preferences_Unsupported_Explain">This preference is no longer support on Windows. We are investigating creating a policy.</string>
+      <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
+      <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Ask Every Time</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Select Automatically</string>
-      <string id="app_update_auto">app.update.auto</string>
+      <string id="accessibility_force_disabled">accessibility.force_disabled</string>
+      <string id="app_update_auto">app.update.auto (Deprecated)</string>
+      <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
+      <string id="browser_bookmarks_file">browser.bookmarks.file</string>
+      <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
       <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
       <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
+      <string id="browser_places_importBookmarksHTML">browser.places.importBookmarksHTML</string>
+      <string id="browser_safebrowsing_phishing_enabled">browser.safebrowsing.phishing.enabled</string>
+      <string id="browser_safebrowsing_malware_enabled">browser.safebrowsing.malware.enabled</string>
       <string id="browser_search_update">browser.search.update</string>
       <string id="browser_tabs_warnOnClose">browser.tabs.warnOnClose</string>
       <string id="browser_cache_disk_parent_directory">browser.cache.disk.parent_directory</string>
+      <string id="browser_slowStartup_notificationDisabled">browser.slowStartup.notificationDisabled</string>
+      <string id="browser_taskbar_previews_enable">browser.taskbar.previews.enable</string>
       <string id="browser_urlbar_suggest_bookmark">browser.urlbar.suggest.bookmark</string>
       <string id="browser_urlbar_suggest_history">browser.urlbar.suggest.history</string>
       <string id="browser_urlbar_suggest_openpage">browser.urlbar.suggest.openpage</string>
       <string id="datareporting_policy_dataSubmissionPolicyBypassNotification">datareporting.policy.dataSubmissionPolicyBypassNotification</string>
+      <string id="dom_allow_scripts_to_close_windows">dom.allow_scripts_to_close_windows</string>
       <string id="dom_disable_window_flip">browser.dom.disable_window_flip</string>
       <string id="dom_disable_window_move_resize">dom.disable_window_move_resize</string>
       <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
       <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
       <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
+      <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
+      <string id="intl_accept_languages">intl.accept_languages</string>
+      <string id="media_eme_enabled">media.eme.enabled</string>
       <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
       <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
       <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
       <string id="network_IDN_show_punycode">network.IDN_show_punycode</string>
       <string id="places_history_enabled">places.history.enabled</string>
+      <string id="print_save_print_settings">print.save_print_settings</string>
       <string id="security_default_personal_cert">security.default_personal_cert</string>
       <string id="security_ssl_errorReporting_enabled">security.ssl.errorReporting.enabled</string>
+      <string id="security_mixed_content_block_active_content">security.mixed_content.block_active_content</string>
       <string id="ui_key_menuAccessKeyFocuses">ui.key.menuAccessKeyFocuses</string>
     </stringTable>
     <presentationTable>
@@ -595,6 +631,10 @@ If this policy is disabled or not configured, no menuitem is added.</string>
       <presentation id="Authentication_AllowNonFQDN">
         <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
         <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
+      </presentation>
+      <presentation id="Authentication_AllowProxies">
+        <checkBox refId="Authentication_AllowProxies_NTLM">Allow NTLM to automatically authenticate with proxy servers</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">Allow SPNEGO to automatically authenticate with proxy servers</checkBox>
       </presentation>
       <presentation id="Certificates_Install">
         <listBox refId="Certificates_Install"/>
@@ -757,6 +797,9 @@ If this policy is disabled or not configured, no menuitem is added.</string>
         <textBox refId="Preferences_String">
           <label/>
         </textBox>
+      </presentation>
+      <presentation id="Preferences_accessibility_force_disabled">
+        <dropdownList refId="Preferences_accessibility_force_disabled"/>
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>

@@ -30,6 +30,13 @@
 			<key>NTLM</key>
 			<true/>
 		</dict>
+		<key>AllowProxies</key>
+		<dict>
+			<key>SPNEGO</key>
+			<true/>
+			<key>NTLM</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>BlockAboutAddons</key>
 	<true/>
@@ -165,6 +172,10 @@
 		<true/>
 		<key>Locked</key>
 		<true/>
+		<key>Cryptomining</key>
+		<true/>
+		<key>Fingerprinting</key>
+		<true/>
 	</dict>
 	<key>Extensions</key>
 	<dict>
@@ -272,10 +283,14 @@
 	<true/>
 	<key>OfferToSaveLogins</key>
 	<false/>
+	<key>OfferToSaveLoginsDefault</key>
+	<true/>
 	<key>OverrideFirstRunPage</key>
 	<string>https://www.example.com</string>
 	<key>OverridePostUpdatePage</key>
 	<string></string>
+	<key>PasswordManagerEnabled</key>
+	<false/>
 	<key>Permissions</key>
 	<dict>
 		<key>Camera</key>
