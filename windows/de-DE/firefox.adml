@@ -207,7 +207,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 Jedes Mal, wenn diese Liste geändert wird, werden die Erweiterungen deinstalliert.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen deinstalliert.</string>
-      <string id="Extensions_Locked">Erweiterungen deaktivieren und löschen verhindern</string>
+      <string id="Extensions_Locked">Verhindern, dass Erweiterungen deaktiviert oder gelöscht werden</string>
       <string id="Extensions_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Liste mit Erweiterungs-IDs angeben, die den Benutzer hindert die angegebenen Erweiterungen zu deinstallieren oder zu deaktivieren.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Erweiterungen gesperrt.</string>
