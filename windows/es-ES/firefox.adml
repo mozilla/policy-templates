@@ -5,7 +5,7 @@
   <resources >
     <stringTable >
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o posterior</string>
-      <string id="UNSUPPORTED">No longer supported.</string>
+      <string id="UNSUPPORTED">Ya no tiene soporte</string>
       <string id="SUPPORTED_FF60">Firefox 60 o posterior, Firefox 60 ESR o posterior</string>
       <string id="SUPPORTED_FF62">Firefox 62 o posterior, Firefox 60.2 ESR o posterior</string>
       <string id="SUPPORTED_FF63">Firefox 63 o posterior</string>
@@ -62,10 +62,10 @@ Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/
       <string id="Authentication_AllowNonFQDN_Explain">Si esta política está habilitada, siempre podrá permitir SPNEGO o NTLM que no sean FQDN (nombres de dominio totalmente calificados).
 
 Si esta política está deshabilitada o no está configurada, NTLM y SPNEGO no están habilitados en que no sean FQDN.</string>
-      <string id="Authentication_AllowProxies">Allow Proxies</string>
-      <string id="Authentication_AllowProxies_Explain">If this disabled, SPNEGO and NTLM will not authenticate with proxy servers.
+      <string id="Authentication_AllowProxies">Permitir proxies</string>
+      <string id="Authentication_AllowProxies_Explain">Si está deshabilitado, SPNEGO y NTLM no se autenticarán con servidores proxy.
 
-If this policy is enabled (and the checkboxes are checked) or not configured, NTLM and SPNEGO will always authenticate with proxies.</string>
+Si esta política está habilitada (y las casillas de verificación están marcadas) o no está configurada, NTLM y SPNEGO siempre se autenticarán con proxies.</string>
       <string id="BlockAboutAddons">Bloquear el administrador de complementos</string>
       <string id="BlockAboutAddons_Explain">Si esta política está habilitada, el usuario no podrá acceder al administrador de complementos o en about:addons.
 
@@ -230,10 +230,10 @@ Para obtener información detallada sobre la creación de la política, visite h
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración por hardware no se puede habilitar.
 
 Si esta política está habilitada o no está configurada, la aceleración por hardware está habilitada.</string>
-      <string id="LegacyProfiles">Legacy Profiles</string>
-      <string id="LegacyProfiles_Explain">If this policy is enabled, Firefox will not try to create different profiles for installations of Firefox in different directories. This is the equivalent of the MOZ_LEGACY_PROFILES environment variable.
+      <string id="LegacyProfiles">Perfiles heredados</string>
+      <string id="LegacyProfiles_Explain">Si esta política está habilitada, Firefox no intentará crear diferentes perfiles para instalaciones de Firefox en diferentes directorios. Esto es el equivalente de la variable de entorno MOZ_LEGACY_PROFILES.
 
-If this policy is disabled or not configured, Firefox will create a new profile for each unique installation of Firefox.</string>
+Si esta política está deshabilitada o no está configurada, Firefox creará un perfil nuevo para cada instalación única de Firefox.</string>
       <string id="LocalFileLinks">Enlaces a archivos locales</string>
       <string id="LocalFileLinks_Explain">Si esta política está habilitada, podrá especificar orígenes donde se permita la vinculación a archivos locales.
 
@@ -560,26 +560,26 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
 Si esta política está deshabilitada o no está configurada, no se añadirá ningún elemento al menú.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.
 
-For a description of the preference, see:
+Para una descripción de la preferencia, visite:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_String_Explain">Si esta política está habilitada, la preferencia se bloquea en la cadena ingresada. Si esta política está deshabilitada, no tiene ningún efecto.
 
-For a description of the preference, see:
+Para una descripción de la preferencia, visite:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_Enum_Explain">Si esta política está habilitada, la preferencia se bloquea al valor seleccionado. Si esta política está deshabilitada, no tiene ningún efecto.
 
-For a description of the preference, see:
+Para una descripción de la preferencia, visite:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-      <string id="Preferences_Unsupported_Explain">This preference is no longer support on Windows. We are investigating creating a policy.</string>
+      <string id="Preferences_Unsupported_Explain">Esta preferencia ya no tiene soporte para Windows. Estamos investigando la creación de una política.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
-      <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
+      <string id="Preferences_accessibility_force_disabled_off">Siempre apagado (1)</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Preguntar siempre</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Seleccionar automáticamente</string>
       <string id="accessibility_force_disabled">accessibility.force_disabled</string>
-      <string id="app_update_auto">app.update.auto (Deprecated)</string>
+      <string id="app_update_auto">app.update.auto (obsoleto)</string>
       <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
       <string id="browser_bookmarks_file">browser.bookmarks.file</string>
       <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
@@ -633,8 +633,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Permitir siempre SPNEGO que no sean FQDN</checkBox>
       </presentation>
       <presentation id="Authentication_AllowProxies">
-        <checkBox refId="Authentication_AllowProxies_NTLM">Allow NTLM to automatically authenticate with proxy servers</checkBox>
-        <checkBox refId="Authentication_AllowProxies_SPNEGO">Allow SPNEGO to automatically authenticate with proxy servers</checkBox>
+        <checkBox refId="Authentication_AllowProxies_NTLM">Permitir que NTLM se autentique automáticamente con servidores proxy</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">Permitir que SPNEGO se autentique automáticamente con servidores proxy</checkBox>
       </presentation>
       <presentation id="Certificates_Install">
         <listBox refId="Certificates_Install"/>
