@@ -567,13 +567,13 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
 
 Für eine Beschreibung der Einstellung, siehe:
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englsich)</string>
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="Preferences_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist sie auf den spezifizierten Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.
 
 
 Für eine Beschreibung der Einstellung, siehe:
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englsich)</string>
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="Preferences_Unsupported_Explain">Diese Richtlinieneinstellung ist nicht mehr unterstützt. Wir arbeiten an einer Lösung.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
       <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
