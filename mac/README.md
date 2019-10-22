@@ -19,12 +19,12 @@ For example, this policy:
 }
 ```
 which would be set in the plist file like this:
-```plist
-  <key>Homepage</key>
-  <dict>
-    <key>URL</key>
-    <string>http://example.com</string>
-  </dict>
+```xml
+<key>Homepage</key>
+<dict>
+  <key>URL</key>
+  <string>http://example.com</string>
+</dict>
 ```
 Correctly writing the nested value with the `defaults` command can be hard, so you can flatten the keys by separating them with `__`, like this:
 ```bash
