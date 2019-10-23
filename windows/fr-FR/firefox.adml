@@ -250,6 +250,12 @@ Si cette stratégie est activée ou non configurée, le contenu du nouvel onglet
       <string id="OfferToSaveLogins_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera de sauvegarder les identifiants de connexion et les mots de passe du site Web.
 
 Si cette stratégie est désactivée, Firefox ne proposera pas de sauvegarder les noms de connexion et les mots de passe des sites Web.</string>
+      <string id="OfferToSaveLoginsDefault">Proposer de sauvegarder les identifiants (default)</string>
+      <string id="OfferToSaveLoginsDefault_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera de sauvegarder les identifiants de connexion et les mots de passe du site Web.
+
+Si cette stratégie est désactivée, Firefox ne proposera pas de sauvegarder les noms de connexion et les mots de passe des sites Web.
+
+In either case, the user will be able to change the value (it is not locked).</string>
       <string id="PopupBlocking_Allow_Explain">Si cette stratégie est activée, les fenêtres contextuelles sont toujours autorisées pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les fenêtres contextuelles sont également autorisées pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut des fenêtres contextuelles est suivie.</string>
@@ -469,6 +475,10 @@ Si cette stratégie est désactivée ou non configurée, la page de démarrage a
       <string id="None">Page vierge</string>
       <string id="Homepage">Page d'accueil</string>
       <string id="PreviousSession">Session précédente</string>
+      <string id="PasswordManagerEnabled">Password Manager</string>
+      <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
+
+If this policy is enabled or not configured, the password manager is available via preferences.</string>
       <string id="PromptForDownloadLocation">Prompt for download location</string>
       <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
 
@@ -661,6 +671,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Ne pas autoriser la modification des préférences de protection du suivi.</checkBox>
+        <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
+        <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">

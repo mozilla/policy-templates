@@ -250,6 +250,12 @@ If this policy is enabled or not configured, the new tab page will be the defaul
       <string id="OfferToSaveLogins_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
 
 If this policy is disabled, Firefox will not offer to save website logins and passwords.</string>
+      <string id="OfferToSaveLoginsDefault">Offer to save logins (default)</string>
+      <string id="OfferToSaveLoginsDefault_Explain">If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.
+
+If this policy is disabled, Firefox will not offer to save website logins and passwords.
+
+In either case, the user will be able to change the value (it is not locked).</string>
       <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the origins indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default pop-up policy is followed.</string>
@@ -469,6 +475,10 @@ If this policy is disabled or not configured, the start page defaults to the pre
       <string id="None">None</string>
       <string id="Homepage">Homepage</string>
       <string id="PreviousSession">Previous Session</string>
+      <string id="PasswordManagerEnabled">Password Manager</string>
+      <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
+
+If this policy is enabled or not configured, the password manager is available via preferences.</string>
       <string id="PromptForDownloadLocation">Prompt for download location</string>
       <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
 
@@ -661,6 +671,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Don't allow tracking protection preferences to be changed.</checkBox>
+        <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
+        <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">

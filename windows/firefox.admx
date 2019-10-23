@@ -772,6 +772,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="OfferToSaveLoginsDefault" class="Both" displayName="$(string.OfferToSaveLoginsDefault)" explainText="$(string.OfferToSaveLoginsDefault_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfferToSaveLoginsDefault">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="PopupBlocking_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.PopupBlocking_Allow_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Popups"/>
       <supportedOn ref="SUPPORTED_FF60"/>
@@ -2172,6 +2182,16 @@
         </enum>
       </elements>
     </policy>
+    <policy name="PasswordManagerEnabled" class="Both" displayName="$(string.PasswordManagerEnabled)" explainText="$(string.PasswordManagerEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="PasswordManagerEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="Proxy" class="Both" displayName="$(string.Proxy)" explainText="$(string.Proxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF60" />
@@ -2294,6 +2314,22 @@
       </disabledValue>
       <elements >
         <boolean id="TrackingProtectionLocked" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="Cryptomining" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Cryptomining">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="Fingerprinting" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Fingerprinting">
           <trueValue>
             <decimal value="1"/>
           </trueValue>

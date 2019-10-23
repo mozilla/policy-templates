@@ -250,6 +250,12 @@ Se questo criterio è abilitato o non configurato, la pagina Nuova scheda sarà 
       <string id="OfferToSaveLogins_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
 
 Se questo criterio è disabilitato, Firefox non offrirà la possibilità di salvare i nomi utente e le password di accesso ai siti.</string>
+      <string id="OfferToSaveLoginsDefault">Offri di salvare le credenziali di accesso (default)</string>
+      <string id="OfferToSaveLoginsDefault_Explain">Se questo criterio è abilitato o non configurato, Firefox si offrirà di salvare i nomi utente e le password di accesso ai siti.
+
+Se questo criterio è disabilitato, Firefox non offrirà la possibilità di salvare i nomi utente e le password di accesso ai siti.
+
+In either case, the user will be able to change the value (it is not locked).</string>
       <string id="PopupBlocking_Allow_Explain">Se questo criterio è abilitato, le finestre pop-up sui siti indicati sono sempre consentite. Se è specificato un dominio di primo livello (http://example.org), le finestre pop-up sono consentite anche per tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita delle finestre pop-up.</string>
@@ -469,6 +475,10 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="None">Nessuna</string>
       <string id="Homepage">Pagina iniziale</string>
       <string id="PreviousSession">Sessione precedente</string>
+      <string id="PasswordManagerEnabled">Password Manager</string>
+      <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
+
+If this policy is enabled or not configured, the password manager is available via preferences.</string>
       <string id="PromptForDownloadLocation">Richiedi percorso di download</string>
       <string id="PromptForDownloadLocation_Explain">Se questo criterio è disabilitato, all'utente non verrà chiesto un percorso di download.
 
@@ -661,6 +671,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento.</checkBox>
+        <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
+        <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
