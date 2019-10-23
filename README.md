@@ -2146,15 +2146,15 @@ Set and lock certain preferences.
 
 | Preference | Type | Compatibility | Default
 | --- | --- | --- | ---
-| accessibility.force_disabled | integer | Firefox 70, Firefox ESR 6.2 | 0
+| accessibility.force_disabled | integer | Firefox 70, Firefox ESR 68.2 | 0
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
 | app.update.auto | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Firefox doesn't automatically install update.
-| browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 6.2 | false
+| browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
-| browser.bookmarks.file | string | Firefox 70, Firefox ESR 6.2 | N/A
+| browser.bookmarks.file | string | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, the name of the file where bookmarks are exported and imported.
-| browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 6.2 | N/A
+| browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
 | browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
@@ -2162,19 +2162,19 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, changes the location of the disk cache.
 | browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
-| browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 6.2
+| browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
-| browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, phishing protection is not enabled (Not recommended)
-| browser.safebrowsing.malware.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| browser.safebrowsing.malware.enabled | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;IF false, malware protection is not enabled (Not recommended)
 | browser.search.update | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, updates for search engines are not checked.
-| browser.slowStartup.notificationDisabled | string | Firefox 70, Firefox ESR 6.2 | false
+| browser.slowStartup.notificationDisabled | string | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, a notification isn't shown if startup is slow.
 | browser.tabs.warnOnClose | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, there is no warning when the browser is closed.
-| browser.taskbar.previews.enable | string | Firefox 70, Firefox ESR 6.2 (Windows only) | false
+| browser.taskbar.previews.enable | string | Firefox 70, Firefox ESR 68.2 (Windows only) | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, tab previews are shown in the Windows taskbar.
 | browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, bookmarks aren't suggested when typing in the URL bar.
@@ -2184,7 +2184,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, open tabs aren't suggested when typing in the URL bar.
 | datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, don't show the privacy policy tab on first run.
-| dom.allow_scripts_to_close_windows | string | Firefox 70, Firefox ESR 6.2 | false
+| dom.allow_scripts_to_close_windows | string | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web page can close windows.
 | dom.disable_window_flip | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can focus and activate windows.
@@ -2196,15 +2196,15 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
 | dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| extensions.blocklist.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| extensions.blocklist.enabled | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
 | extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Recommendations tab is not displayed in the Add-ons Manager.
-| geo.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| geo.enabled | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
-| intl.accept_languages | string | Firefox 70, Firefox ESR 6.2
+| intl.accept_languages | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
-| media.eme.enabled | string | Firefox 70, Firefox ESR 6.2 | true
+| media.eme.enabled | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Encrypted Media Extensions are not enabled.
 | media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
@@ -2216,11 +2216,11 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names. 
 | places.history.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, history is not enabled.
-| print.save_print_settings | string | Firefox 70, Firefox ESR 6.2 | true
+| print.save_print_settings | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, print settings are not saved between jobs.
 | security.default_personal_cert | string | Firefox 68, Firefox ESR 68 | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
-| security.mixed_content.block_active_content | string | Firefox 70, Firefox ESR 6.2 | true
+| security.mixed_content.block_active_content | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
 | security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
