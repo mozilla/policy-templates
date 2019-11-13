@@ -92,7 +92,7 @@ Change the URL for application update.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `app.update.url`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\AppUpdateURL = "https://yoursite.com"
 ```
@@ -103,7 +103,7 @@ Software\Policies\Mozilla\Firefox\AppUpdateURL = "https://yoursite.com"
   <string>https://yoursite.com</string>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -121,7 +121,7 @@ See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication f
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.negotiate-auth.trusted-uris`,`network.negotiate-auth.delegation-uris`,`network.automatic-ntlm-auth.trusted-uris`,`network.automatic-ntlm-auth.allow-non-fqdn`,`network.negotiate-auth.allow-non-fqdn`,`network.automatic-ntlm-auth.allow-proxies`,`network.negotiate-auth.allow-proxies`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Authentication\SPNEGO\1 = "mydomain.com"
 Software\Policies\Mozilla\Firefox\Authentication\SPNEGO\2 = "https://myotherdomain.com"
@@ -171,7 +171,7 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -199,7 +199,7 @@ Block access to the Add-ons Manager (about:addons).
 **CCK2 Equivalent:** `disableAddonsManager`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutAddons = 0x1 | 0x0
 ```
@@ -210,7 +210,7 @@ Software\Policies\Mozilla\Firefox\BlockAboutAddons = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -226,7 +226,7 @@ Block access to about:config.
 **CCK2 Equivalent:** `disableAboutConfig`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutConfig = 0x1 | 0x0
 ```
@@ -237,7 +237,7 @@ Software\Policies\Mozilla\Firefox\BlockAboutConfig = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -253,7 +253,7 @@ Block access to About Profiles (about:profiles).
 **CCK2 Equivalent:** `disableAboutProfiles`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutProfiles = 0x1 | 0x0
 ```
@@ -264,7 +264,7 @@ Software\Policies\Mozilla\Firefox\BlockAboutProfiles = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -280,7 +280,7 @@ Block access to Troubleshooting Information (about:support).
 **CCK2 Equivalent:** `disableAboutSupport`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutSupport = 0x1 | 0x0
 ```
@@ -291,7 +291,7 @@ Software\Policies\Mozilla\Firefox\BlockAboutSupport = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -307,7 +307,7 @@ Add bookmarks in either the bookmarks toolbar or menu. Only `Title` and `URL` ar
 **CCK2 Equivalent:** `bookmarks.toolbar`,`bookmarks.menu`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Title = "Example"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\URL = "https://example.com"
@@ -335,7 +335,7 @@ Software\Policies\Mozilla\Firefox\Bookmarks\1\Folder = "FolderName"
   </array>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -358,7 +358,7 @@ Enable or disable the detection of captive portals.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.captive-portal-service.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\CaptivePortal = 0x1 | 0x0
 ```
@@ -369,7 +369,7 @@ Software\Policies\Mozilla\Firefox\CaptivePortal = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -389,7 +389,7 @@ See https://support.mozilla.org/kb/setting-certificate-authorities-firefox for m
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.enterprise_roots.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Certificates\ImportEnterpriseRoots = 0x1 | 0x0
 ```
@@ -403,7 +403,7 @@ Software\Policies\Mozilla\Firefox\Certificates\ImportEnterpriseRoots = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -440,7 +440,7 @@ Binary (DER) and ASCII (PEM) certificates are both supported.
 **CCK2 Equivalent:** `certs.ca`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Certificates\Install\1 = "cert1.der"
 Software\Policies\Mozilla\Firefox\Certificates\Install\2 = "C:\Users\username\cert2.pem"
@@ -458,7 +458,7 @@ Software\Policies\Mozilla\Firefox\Certificates\Install\2 = "C:\Users\username\ce
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -489,7 +489,7 @@ Configure cookie preferences.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.cookie.cookieBehavior`,`network.cookie.lifetimePolicy`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Cookies\Allow\1 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Cookies\Block\1 = "https://example.org"
@@ -525,7 +525,7 @@ Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -548,7 +548,7 @@ Remove the "Set As Desktop Background..." menuitem when right clicking on an ima
 **CCK2 Equivalent:** `removeSetDesktopBackground`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground = 0x1 | 0x0
 ```
@@ -560,7 +560,7 @@ Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -575,7 +575,7 @@ Remove the master password functionality.
 **CCK2 Equivalent:** `noMasterPassword`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation = 0x1 | 0x0
 ```
@@ -587,7 +587,7 @@ Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -602,7 +602,7 @@ Turn off application updates.
 **CCK2 Equivalent:** `disableFirefoxUpdates`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableAppUpdate = 0x1 | 0x0
 ```
@@ -613,7 +613,7 @@ Software\Policies\Mozilla\Firefox\DisableAppUpdate = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -628,7 +628,7 @@ Disable the built in PDF viewer. PDF files are downloaded and sent externally.
 **CCK2 Equivalent:** `disablePDFjs`\
 **Preferences Affected:** `pdfjs.disabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
 ```
@@ -640,7 +640,7 @@ Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -655,7 +655,7 @@ Remove access to all developer tools.
 **CCK2 Equivalent:** `removeDeveloperTools`\
 **Preferences Affected:** `devtools.policy.disabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableDeveloperTools = 0x1 | 0x0`
 ```
@@ -667,7 +667,7 @@ Software\Policies\Mozilla\Firefox\DisableDeveloperTools = 0x1 | 0x0`
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -682,7 +682,7 @@ Disable the menus for reporting sites (Submit Feedback, Report Deceptive Site).
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFeedbackCommands = 0x1 | 0x0
 ```
@@ -693,7 +693,7 @@ Software\Policies\Mozilla\Firefox\DisableFeedbackCommands = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -708,7 +708,7 @@ Remove access to Firefox Screenshots.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `extensions.screenshots.disabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
 ```
@@ -719,7 +719,7 @@ Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -734,7 +734,7 @@ Disable Firefox Accounts integration (Sync).
 **CCK2 Equivalent:** `disableSync`\
 **Preferences Affected:** `identity.fxaccounts.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts = 0x1 | 0x0
 ```
@@ -745,7 +745,7 @@ Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -760,7 +760,7 @@ Disable Firefox studies (Shield).
 **CCK2 Equivalent:** `disableForget`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFirefoxStudies = 0x1 | 0x0
 ```
@@ -771,7 +771,7 @@ Software\Policies\Mozilla\Firefox\DisableFirefoxStudies = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -786,7 +786,7 @@ Disable the "Forget" button.
 **CCK2 Equivalent:** `disableForget`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableForgetButton = 0x1 | 0x0
 ```
@@ -797,7 +797,7 @@ Software\Policies\Mozilla\Firefox\DisableForgetButton = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -812,7 +812,7 @@ Turn off saving information on web forms and the search bar.
 **CCK2 Equivalent:** `disableFormFill`\
 **Preferences Affected:** ` browser.formfill.enable`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFormHistory = 0x1 | 0x0
 ```
@@ -823,7 +823,7 @@ Software\Policies\Mozilla\Firefox\DisableFormHistory = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -838,7 +838,7 @@ Remove Pocket in the Firefox UI. It does not remove it from the new tab page.
 **CCK2 Equivalent:** `disablePocket`\
 **Preferences Affected:** `extensions.pocket.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisablePocket = 0x1 | 0x0
 ```
@@ -849,7 +849,7 @@ Software\Policies\Mozilla\Firefox\DisablePocket = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -864,7 +864,7 @@ Remove access to private browsing.
 **CCK2 Equivalent:** `disablePrivateBrowsing`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisablePrivateBrowsing = 0x1 | 0x0
 ```
@@ -875,7 +875,7 @@ Software\Policies\Mozilla\Firefox\DisablePrivateBrowsing = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -890,7 +890,7 @@ Disables the "Import data from another browser" option in the bookmarks window.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableProfileImport = 0x1 | 0x0
 ```
@@ -901,7 +901,7 @@ Software\Policies\Mozilla\Firefox\DisableProfileImport = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -916,7 +916,7 @@ Disable the Refresh Firefox button on about:support and support.mozilla.org, as 
 **CCK2 Equivalent:** `disableResetFirefox`\
 **Preferences Affected:** `browser.disableResetPrompt`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableProfileRefresh = 0x1 | 0x0
 ```
@@ -927,7 +927,7 @@ Software\Policies\Mozilla\Firefox\DisableProfileRefresh = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -944,7 +944,7 @@ On Windows, this disables safe mode via the command line as well.
 **CCK2 Equivalent:** `disableSafeMode`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableSafeMode = 0x1 | 0x0
 ```
@@ -955,7 +955,7 @@ Software\Policies\Mozilla\Firefox\DisableSafeMode = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -974,7 +974,7 @@ Prevent the user from bypassing security in certain cases.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.certerror.hideAddException`,`browser.safebrowsing.allowOverride`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableSecurityBypass\InvalidCertificate = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DisableSecurityBypass\SafeBrowsing = 0x1 | 0x0
@@ -991,7 +991,7 @@ Software\Policies\Mozilla\Firefox\DisableSecurityBypass\SafeBrowsing = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1009,7 +1009,7 @@ Prevent system add-ons from being installed or update.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```Software\Policies\Mozilla\Firefox\DisableSystemAddonUpdate = 0x1 | 0x0
 ```
 #### macOS
@@ -1019,7 +1019,7 @@ Prevent system add-ons from being installed or update.
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1036,7 +1036,7 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 **CCK2 Equivalent:** `disableTelemetry`\
 **Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableTelemetry = 0x1 | 0x0
 ```
@@ -1047,7 +1047,7 @@ Software\Policies\Mozilla\Firefox\DisableTelemetry = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1062,7 +1062,7 @@ Set the initial state of the bookmarks toolbar. A user can still hide it and it 
 **CCK2 Equivalent:** `displayBookmarksToolbar`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
 ```
@@ -1073,7 +1073,7 @@ Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1088,7 +1088,7 @@ Set the initial state of the menubar. A user can still hide it and it will stay 
 **CCK2 Equivalent:** `displayMenuBar`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
 ```
@@ -1099,7 +1099,7 @@ Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1120,7 +1120,7 @@ Configure DNS over HTTPS.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.trr.mode`,`network.trr.uri`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
@@ -1140,7 +1140,7 @@ Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1159,7 +1159,7 @@ Don't check if Firefox is the default browser at startup.
 **CCK2 Equivalent:** `dontCheckDefaultBrowser`\
 **Preferences Affected:** `browser.shell.checkDefaultBrowser`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser = 0x1 | 0x0
 ```
@@ -1170,7 +1170,7 @@ Software\Policies\Mozilla\Firefox\DontCheckDefaultBrowser = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1187,7 +1187,7 @@ You can use ${home} for the native home directory.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.download.dir`,`browser.download.folderList`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
 ```
@@ -1198,14 +1198,14 @@ Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
   <string>${home}/Downloads</string>
 </dict>
 ```
-#### JSON (macOS and Linux)
+#### policies.json (macOS and Linux)
 ```
 {
   "policies": {
     "DefaultDownloadDirectory": "${home}/Downloads"
 }
 ```
-#### JSON (Windows)
+#### policies.json (Windows)
 ```
 {
   "policies": {
@@ -1221,7 +1221,7 @@ You can use ${home} for the native home directory.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.download.dir`,`browser.download.folderList`,`browser.download.useDownloadDir`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DownloadDirectory = "${home}\Downloads"
 ```
@@ -1232,14 +1232,14 @@ Software\Policies\Mozilla\Firefox\DownloadDirectory = "${home}\Downloads"
   <string>${home}/Downloads</string>
 </dict>
 ```
-#### JSON (macOS and Linux)
+#### policies.json (macOS and Linux)
 ```
 {
   "policies": {
     "DownloadDirectory": "${home}/Downloads"
 }
 ```
-#### JSON (Windows)
+#### policies.json (Windows)
 ```
 {
   "policies": {
@@ -1263,7 +1263,7 @@ If `Fingerprinting` is set to true, fingerprinting scripts on websites are block
 **CCK2 Equivalent:** `dontCheckDefaultBrowser`\
 **Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
@@ -1286,7 +1286,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1325,7 +1325,7 @@ Control the installation, uninstallation and locking of extensions.
 **CCK2 Equivalent:** `addons`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Extensions\Install\1 = "https://addons.mozilla.org/firefox/downloads/somefile.xpi"
 Software\Policies\Mozilla\Firefox\Extensions\Install\2 = "//path/to/xpi"
@@ -1353,9 +1353,7 @@ Software\Policies\Mozilla\Firefox\Extensions\Locked\1 = "addon_id@mozilla.org"
   </dict>
 </dict>
 ```
-#### JSON
-
-
+#### policies.json
 ```
 {
   "policies": {
@@ -1392,9 +1390,20 @@ The configuration for each extension is another dictionary that can contain the 
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) = '{"*": {"installation_mode": "blocked"}}'
+Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
+{
+  "*": {
+    "blocked_install_message": "Custom error message.",
+    "install_sources": ["https://addons.mozilla.org/"],
+    "installation_mode": "blocked"
+  },
+  "uBlock0@raymondhill.net": {
+    "installation_mode": "force_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+  }
+}
 ```
 #### macOS
 ```
@@ -1422,7 +1431,7 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) = '{"*": {"in
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1447,7 +1456,7 @@ Control extension updates.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `extensions.update.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\ExtensionUpdate = 0x1 | 0x0
 ```
@@ -1458,7 +1467,7 @@ Software\Policies\Mozilla\Firefox\ExtensionUpdate = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1481,7 +1490,7 @@ Configure the default Flash plugin policy as well as origins for which Flash is 
 **CCK2 Equivalent:** `permissions.plugin`\
 **Preferences Affected:** `plugin.state.flash`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\FlashPlugin\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\FlashPlugin\Block\1 = "https://example.edu"
@@ -1508,7 +1517,7 @@ Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1528,7 +1537,7 @@ Customize the Firefox Home page.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`,`browser.newtabpage.activity-stream.feeds.topsites`,`browser.newtabpage.activity-stream.feeds.section.highlights`,`browser.newtabpage.activity-stream.feeds.section.topstories`,`browser.newtabpage.activity-stream.feeds.snippets`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\FirefoxHome\Search = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
@@ -1557,7 +1566,7 @@ Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1579,7 +1588,7 @@ Control hardware acceleration.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `layers.acceleration.disabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\HardwareAcceleration = 0x1 | 0x0
 ```
@@ -1590,7 +1599,7 @@ Software\Policies\Mozilla\Firefox\HardwareAcceleration = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1613,7 +1622,7 @@ Configure the default homepage and how Firefox starts.
 **CCK2 Equivalent:** `homePage`,`lockHomePage`\
 **Preferences Affected:** `browser.startup.homepage`,`browser.startup.page`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Homepage\URL = "https://example.com"
 Software\Policies\Mozilla\Firefox\Homepage\Locked = 0x1 | 0x0
@@ -1640,7 +1649,7 @@ Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "p
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1665,7 +1674,7 @@ Configure the default extension install policy as well as origins for extension 
 **CCK2 Equivalent:** `permissions.install`\
 **Preferences Affected:** `xpinstall.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow\2 = "https://example.edu"
@@ -1686,7 +1695,7 @@ Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Default = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1711,7 +1720,7 @@ This policy only work on Windows via GPO (not policies.json).
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\LegacyProfiles = = 0x1 | 0x0
 ```
@@ -1722,7 +1731,7 @@ Enable linking to local files by origin.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `capability.policy.localfilelinks.*`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\LocalFileLinks\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\LocalFileLinks\2 = "https://example.edu"
@@ -1737,7 +1746,7 @@ Software\Policies\Mozilla\Firefox\LocalFileLinks\2 = "https://example.edu"
   </array>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1755,7 +1764,7 @@ This policy is only effective if the user profile has not been created yet.
 **CCK2 Equivalent:** `removeDefaultBookmarks`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
 ```
@@ -1766,7 +1775,7 @@ Software\Policies\Mozilla\Firefox\NoDefaultBookmarks = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1781,7 +1790,7 @@ Enable or disable network prediction (DNS prefetching).
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.dns.disablePrefetch`,`network.dns.disablePrefetchFromHTTPS`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\NetworkPrediction = 0x1 | 0x0
 ```
@@ -1792,7 +1801,7 @@ Software\Policies\Mozilla\Firefox\NetworkPrediction = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1806,7 +1815,7 @@ Enable or disable the New Tab page.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\NewTabPage = 0x1 | 0x0
 ```
@@ -1817,7 +1826,7 @@ Software\Policies\Mozilla\Firefox\NewTabPage = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1831,7 +1840,7 @@ Control whether or not Firefox offers to save passwords.
 **CCK2 Equivalent:** `dontRememberPasswords`\
 **Preferences Affected:** `signon.rememberSignons`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\OfferToSaveLogins = 0x1 | 0x0
 ```
@@ -1842,7 +1851,7 @@ Software\Policies\Mozilla\Firefox\OfferToSaveLogins = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1857,7 +1866,7 @@ Sets the default value of signon.rememberSignons without locking it.
 **CCK2 Equivalent:** `dontRememberPasswords`\
 **Preferences Affected:** `signon.rememberSignons`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\OfferToSaveLoginsDefault = 0x1 | 0x0
 ```
@@ -1868,7 +1877,7 @@ Software\Policies\Mozilla\Firefox\OfferToSaveLoginsDefault = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1883,7 +1892,7 @@ Override the first run page. If the value is blank, no first run page is display
 **CCK2 Equivalent:** `welcomePage`,`noWelcomePage`\
 **Preferences Affected:** `startup.homepage_welcome_url`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\OverrideFirstRunPage = "http://example.org"
 ```
@@ -1894,7 +1903,7 @@ Software\Policies\Mozilla\Firefox\OverrideFirstRunPage = "http://example.org"
   <string>http://example.org</string>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1908,7 +1917,7 @@ Override the upgrade page. If the value is blank, no upgrade page is displayed.
 **CCK2 Equivalent:** `upgradePage`,`noUpgradePage`\
 **Preferences Affected:** `startup.homepage_override_url`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\OverridePostUpdatePage = "http://example.org"
 ```
@@ -1919,7 +1928,7 @@ Software\Policies\Mozilla\Firefox\OverridePostUpdatePage = "http://example.org"
   <string>http://example.org</string>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1933,7 +1942,7 @@ Remove access to the password manager via preferences and blocks about:logins on
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `prefs.privacy.disable_button.view_passwords`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\PasswordManagerEnabled = 0x1 | 0x0
 ```
@@ -1944,7 +1953,7 @@ Software\Policies\Mozilla\Firefox\PasswordManagerEnabled = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -1967,7 +1976,7 @@ Set permissions associated with camera, microphone, location, and notifications
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Block\1 = "https://example.edu"
@@ -2054,7 +2063,7 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2100,7 +2109,7 @@ Configure the default pop-up window policy as well as origins for which pop-up w
 **CCK2 Equivalent:** `permissions.popup`\
 **Preferences Affected:** `dom.disable_open_during_load`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\PopupBlocking\Allow\2 = "https://example.edu"
@@ -2124,7 +2133,7 @@ Software\Policies\Mozilla\Firefox\PopupBlocking\Locked = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2226,7 +2235,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
 | ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Alt key doesn't show the menubar on Windows.
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_value"
@@ -2243,7 +2252,7 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2261,7 +2270,7 @@ Ask where to save each file before downloading.
 **CCK2 Equivalent:** N/A
 **Preferences Affected:** `browser.download.useDownloadDir`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\PromptForDownloadLocation = 0x1 | 0x0
 ```
@@ -2272,7 +2281,7 @@ Software\Policies\Mozilla\Firefox\PromptForDownloadLocation = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2312,7 +2321,7 @@ To specify ports, append them to the hostnames with a colon (:).
 **CCK2 Equivalent:** `networkProxy*`\
 **Preferences Affected:** `network.proxy.type`,`network.proxy.autoconfig_url`,`network.proxy.socks_remote_dns`,`signon.autologin.proxy`,`network.proxy.socks_version`,`network.proxy.no_proxies_on`,`network.proxy.share_proxy_settings`,`network.proxy.http`,`network.proxy.http_port`,`network.proxy.ftp`,`network.proxy.ftp_port`,`network.proxy.ssl`,`network.proxy.ssl_port`,`network.proxy.socks`,`network.proxy.socks_port`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Proxy\Mode = "none", "system", "manual", "autoDetect", "autoConfig"
 Software\Policies\Mozilla\Firefox\Proxy\Locked = 0x1 | 0x0
@@ -2359,7 +2368,7 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2388,7 +2397,7 @@ Note: For Firefox 68, this can now be a string so that you can specify an empty 
 **Compatibility:** Firefox 64, Firefox ESR 60.4, Updated in Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\RequestedLocales\1 = "de"
 Software\Policies\Mozilla\Firefox\RequestedLocales\2 = "en-US"
@@ -2415,7 +2424,7 @@ or
 </dict>
 
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2437,7 +2446,7 @@ Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Sea
 **Compatibility:** Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
@@ -2472,7 +2481,7 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2495,7 +2504,7 @@ Clear all data on shutdown, including Browsing & Download History, Cookies, Acti
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
 ```
@@ -2506,7 +2515,7 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2521,7 +2530,7 @@ Set whether or not search bar is displayed.
 **CCK2 Equivalent:** `showSearchBar`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
 ```
@@ -2533,7 +2542,7 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
 </dict>
 ```
 
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2556,7 +2565,7 @@ Set the default search engine. This policy is only available on the ESR.
 **CCK2 Equivalent:** `defaultSearchEngine`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\Default = NAME_OF_SEARCH_ENGINE
 ```
@@ -2570,7 +2579,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Default = NAME_OF_SEARCH_ENGINE
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2588,7 +2597,7 @@ Prevent installing search engines from webpages.
 **CCK2 Equivalent:** `disableSearchEngineInstall`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
 ```
@@ -2602,7 +2611,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\PreventInstalls = 0x1 | 0x0
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2620,7 +2629,7 @@ Hide built-in search engines. This policy is only available on the ESR.
 **CCK2 Equivalent:** `removeDefaultSearchEngines` (removed all built-in engines)\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
 ```
@@ -2636,7 +2645,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Remove\1 = NAME_OF_SEARCH_ENGINE
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2670,7 +2679,7 @@ Add new search engines (up to five). This policy is only available on the ESR. `
 **CCK2 Equivalent:** `searchplugins`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name = "Example1"
 Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate = "https://www.example.org/q={searchTerms}"
@@ -2711,7 +2720,7 @@ Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2740,7 +2749,7 @@ Enable search suggestions.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.urlbar.suggest.searches`,`browser.search.suggest.enabled`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
 ```
@@ -2751,7 +2760,7 @@ Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
   <true/> | <false/>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2767,7 +2776,7 @@ Install PKCS #11 modules.
 **CCK2 Equivalent:** `certs.devices`\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SecurityDevices\NAME_OF_DEVICE = PATH_TO_LIBRARY_FOR_DEVICE
 ```
@@ -2782,7 +2791,7 @@ Software\Policies\Mozilla\Firefox\SecurityDevices\NAME_OF_DEVICE = PATH_TO_LIBRA
 </dict>
 ```
 
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2800,7 +2809,7 @@ Set and lock the maximum version of TLS.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.max`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SSLVersionMax = "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
 ```
@@ -2812,7 +2821,7 @@ Software\Policies\Mozilla\Firefox\SSLVersionMax = "tls1" | "tls1.1" | "tls1.2" |
 </dict>
 ```
 
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2828,7 +2837,7 @@ Set and lock the minimum version of TLS.
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.tls.version.min`
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" | "tls1.3"
 ```
@@ -2840,7 +2849,7 @@ Software\Policies\Mozilla\Firefox\SSLVersionMin = "tls1" | "tls1.1" | "tls1.2" |
 </dict>
 ```
 
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2855,7 +2864,7 @@ Add a menuitem to the help menu for specifying support information.
 **CCK2 Equivalent:** helpMenu\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SupportMenu\Title = "Support Menu"
 Software\Policies\Mozilla\Firefox\SupportMenu\URL = "http://example.com/support"
@@ -2875,7 +2884,7 @@ Software\Policies\Mozilla\Firefox\SupportMenu\AccessKey = "S"
   </dict>
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
@@ -2894,7 +2903,7 @@ Block websites from being visited. The parameters take an array of Match Pattern
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
-#### Windows
+#### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
 Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
@@ -2916,7 +2925,7 @@ Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.
 
 </dict>
 ```
-#### JSON
+#### policies.json
 ```
 {
   "policies": {
