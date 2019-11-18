@@ -606,7 +606,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       <string id="browser_urlbar_suggest_openpage">browser.urlbar.suggest.openpage</string>
       <string id="datareporting_policy_dataSubmissionPolicyBypassNotification">datareporting.policy.dataSubmissionPolicyBypassNotification</string>
       <string id="dom_allow_scripts_to_close_windows">dom.allow_scripts_to_close_windows</string>
-      <string id="dom_disable_window_flip">browser.dom.disable_window_flip</string>
+      <string id="dom_disable_window_flip">dom.disable_window_flip</string>
       <string id="dom_disable_window_move_resize">dom.disable_window_move_resize</string>
       <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
       <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
