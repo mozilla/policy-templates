@@ -2504,7 +2504,7 @@
         <list id="SearchEngines_Remove" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="AppUpdateURL" class="Both" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)" >
+    <policy name="AppUpdateURL" class="Machine" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF62" />
       <elements >
