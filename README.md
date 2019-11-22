@@ -1645,7 +1645,7 @@ Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "p
       <string>http://example.edu</string>
     </array>
     <key>StartPage</key>
-    <string>always | never | from-visited</string>
+    <string>none | homepage | previous-session</string>
   </dict>
 </dict>
 ```
@@ -1658,7 +1658,7 @@ Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "p
       "Locked": true | false,
       "Additional": ["http://example.org/",
                      "http://example.edu/"],
-      "StartPage": "none" | "homepage" |  "previous-session"
+      "StartPage": "none" | "homepage" | "previous-session"
     }
   }
 }
