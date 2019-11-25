@@ -37,6 +37,8 @@
 			<key>NTLM</key>
 			<true/>
 		</dict>
+		<key>Locked</key>
+		<true/>
 	</dict>
 	<key>BlockAboutAddons</key>
 	<true/>
@@ -138,6 +140,8 @@
 	<key>DisableFormHistory</key>
 	<true/>
 	<key>DisableMasterPasswordCreation</key>
+	<true/>
+	<key>DisablePasswordReveal</key>
 	<true/>
 	<key>DisablePocket</key>
 	<true/>
