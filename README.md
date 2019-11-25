@@ -207,6 +207,15 @@ Block access to the Add-ons Manager (about:addons).
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutAddons = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BlockAboutAddons
+```
+Value (string):
+```
+<enabled/>
+```
 #### macOS
 ```
 <dict>
@@ -233,6 +242,15 @@ Block access to about:config.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutConfig = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BlockAboutConfig
+```
+Value (string):
+```
+<enabled/>
 ```
 #### macOS
 ```
@@ -261,6 +279,15 @@ Block access to About Profiles (about:profiles).
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutProfiles = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BlockAboutProfiles
+```
+Value (string):
+```
+<enabled/>
+```
 #### macOS
 ```
 <dict>
@@ -287,6 +314,15 @@ Block access to Troubleshooting Information (about:support).
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\BlockAboutSupport = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BlockAboutSupport
+```
+Value (string):
+```
+<enabled/>
 ```
 #### macOS
 ```
@@ -1660,6 +1696,38 @@ Software\Policies\Mozilla\Firefox\Homepage\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Homepage\Additional\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Homepage\Additional\2 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "previous-session"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/HomepageURL
+```
+Value (string):
+```
+<enabled/>
+
+<data id="HomepageURL" value="https://example.com"/>
+<data id="HomepageLocked" value="true | false"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/HomepageAdditional
+```
+Value (string):
+```
+<enabled/>
+
+<data id="HomepageAdditional" value="1&#xF000;http://example.org&#xF000;2&#xF000;http://example.edu"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/HomepageStartPage
+```
+Value (string):
+```
+<enabled/>
+
+<data id="StartPage" value="none | homepage | previous-session"/>
 ```
 #### macOS
 ```
