@@ -17,6 +17,7 @@
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
       <string id="SUPPORTED_FF69">Firefox 69 o versione successiva, Firefox 68.1 ESR o versione successiva</string>
       <string id="SUPPORTED_FF70">Firefox 70 o versione successiva, Firefox 68.2 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF71">Firefox 71 o versione successiva, Firefox 68.3 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
@@ -66,6 +67,10 @@ Se questo criterio è disabilitato o non configurato, NTLM e SPNEGO non sono abi
       <string id="Authentication_AllowProxies_Explain">Se questo criterio è disabilitato, SPNEGO e NTLM non eseguiranno l'autenticazione con i server proxy.
 
 Se questo criterio è abilitato (e le caselle di controllo sono selezionate) o non configurato, NTLM e SPNEGO eseguiranno sempre l'autenticazione con i proxy.</string>
+      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
+      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+
+If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
       <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
       <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
 
@@ -152,6 +157,10 @@ Se questo criterio è disabilitato o non configurato, il pulsante &quot;Dimentic
       <string id="DisableFormHistory_Explain">Se questo criterio è abilitato, Firefox non ricorderà la cronologia dei moduli o di ricerca.
 
 Se questo criterio è disabilitato o non configurato, Firefox ricorderà la cronologia dei moduli e di ricerca.</string>
+      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
+      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+
+If this policy is disabled or not configured, users can show passwords in saved logins.</string>
       <string id="DisablePocket">Disabilita Pocket</string>
       <string id="DisablePocket_Explain">Se questo criterio è abilitato, Pocket non è disponibile.
 

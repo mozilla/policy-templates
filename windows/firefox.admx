@@ -19,6 +19,7 @@
       <definition name="SUPPORTED_FF68" displayName="$(string.SUPPORTED_FF68)"/>
       <definition name="SUPPORTED_FF6801" displayName="$(string.SUPPORTED_FF6801)"/>
       <definition name="SUPPORTED_FF70" displayName="$(string.SUPPORTED_FF70)"/>
+      <definition name="SUPPORTED_FF71" displayName="$(string.SUPPORTED_FF71)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -139,6 +140,16 @@
           </falseValue>
         </boolean>
       </elements>
+    </policy>
+    <policy name="Authentication_Locked" class="Both" displayName="$(string.Authentication_Locked)" explainText="$(string.Authentication_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Authentication" valueName="Locked">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_FF71"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
       <parentCategory ref="firefox"/>
@@ -560,6 +571,16 @@
     <policy name="DisableMasterPasswordCreation" class="Both" displayName="$(string.DisableMasterPasswordCreation)" explainText="$(string.DisableMasterPasswordCreation_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableMasterPasswordCreation">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisablePasswordReveal" class="Both" displayName="$(string.DisablePasswordReveal)" explainText="$(string.DisablePasswordReveal_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisablePasswordReveal">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF71"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

@@ -17,6 +17,7 @@
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR 或更新版本</string>
       <string id="SUPPORTED_FF69">Firefox 69 或更新版本、Firefox 68.1 ESR 或更新版本</string>
       <string id="SUPPORTED_FF70">Firefox 70 或更新版本、Firefox 68.2 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF71">Firefox 71 或更新版本、Firefox 68.3 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -66,6 +67,10 @@
       <string id="Authentication_AllowProxies_Explain">若停用此原則，則不會對代理伺服器進行 SPNEGO 或 NTLM 身分驗證。
 
 若啟用（並勾選選取盒）或不設定此原則，則總是會對代理伺服器進行 SPNEGO 或 NTLM 身分驗證。</string>
+      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
+      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+
+If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
       <string id="BlockAboutAddons">封鎖附加元件管理員</string>
       <string id="BlockAboutAddons_Explain" >若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
 
@@ -152,6 +157,10 @@
       <string id="DisableFormHistory_Explain">若啟用此原則，Firefox 將不會保留表單填寫或搜尋紀錄。
 
 若停用或不設定此原則，Firefox 則會保留表單填寫及搜尋紀錄。</string>
+      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
+      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+
+If this policy is disabled or not configured, users can show passwords in saved logins.</string>
       <string id="DisablePocket">停用 Pocket</string>
       <string id="DisablePocket_Explain">若啟用此原則，將無法使用 Pocket。
 
