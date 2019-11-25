@@ -135,6 +135,58 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\SPNEGO = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\Locked = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_SPNEGO
+```
+Value (string):
+```
+<enabled/>
+
+<data id="Authentication" value="1&#xF000;mydomain&#xF000;2&#xF000;https://myotherdomain.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_Delegated
+```
+Value (string):
+```
+<enabled/>
+
+<data id="Authentication" value="1&#xF000;mydomain&#xF000;2&#xF000;https://myotherdomain.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_NTLM
+```
+Value (string):
+```
+<enabled/>
+
+<data id="Authentication" value="1&#xF000;mydomain&#xF000;2&#xF000;https://myotherdomain.com"/>
+```
+```OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_AllowNonFQDN
+```
+Value (string):
+```
+<enabled/>
+
+<data id="Authentication_AllowNonFQDN_NTLM" value="true | false"/>
+<data id="Authentication_AllowNonFQDN_SPNEGO" value="true | false"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/HomepageStartPage
+```
+Value (string):
+```
+<enabled/>
+
+<data id="StartPage" value="none | homepage | previous-session"/>
+```
 #### macOS
 ```
 <dict>
