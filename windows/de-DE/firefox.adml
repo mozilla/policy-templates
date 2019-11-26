@@ -67,10 +67,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, sind 
       <string id="Authentication_AllowProxies_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, findet keine SPNEGO oder NTLM Authentifizierung gegenüber einem Proxy statt.
 
 Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert) oder nicht konfiguriert ist, findet SPNEGO und NTLM Authentifizierung gegenüber einem Proxy statt.</string>
-      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
-      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+      <string id="Authentication_Locked">Änderungen an Authentifizierungseinstellungen verbieten</string>
+      <string id="Authentication_Locked_Explain">Wenn diese Gruppenrichtlinie deaktiviert ist, können Nutzer Änderungen an den Einstellungen zur Authentifizierung vornehmen.
 
-If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+Wenn diese Gruppenrichtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer  Einstellungen zur Authentifizierung nicht ändern.</string>
       <string id="BlockAboutAddons">Zugriff auf Add-ons Manager verhindern</string>
       <string id="BlockAboutAddons_Explain" >Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
 
@@ -157,10 +157,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht
       <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox dieselben Einstellungen wie im Privaten Modus verwenden und keinerlei Chronik anlegen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, Firefox wird eine Chronik anlegen.</string>
-      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
-      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+      <string id="DisablePasswordReveal">Verbieten, dass Nutzer Passwörter in Gespeicherte Zugangsdaten anzeigen können</string>
+      <string id="DisablePasswordReveal_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Nutzer Gespeicherte Zugangsdaten nicht anzeigen lassen.
 
-If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer Gespeicherte Zugangsdaten anzeigen lassen.</string>
       <string id="DisablePocket">Pocket für Firefox deaktivieren</string>
       <string id="DisablePocket_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht Pocket nicht zur Verfügung.
 
