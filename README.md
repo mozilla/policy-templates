@@ -117,7 +117,7 @@ Configure sites that support integrated authentication.
 
 See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2, AllowProxies added in 70/68.2)\
+**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2, AllowProxies added in 70/68.2, Locked added in 71/68.3)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.negotiate-auth.trusted-uris`,`network.negotiate-auth.delegation-uris`,`network.automatic-ntlm-auth.trusted-uris`,`network.automatic-ntlm-auth.allow-non-fqdn`,`network.negotiate-auth.allow-non-fqdn`,`network.automatic-ntlm-auth.allow-proxies`,`network.negotiate-auth.allow-proxies`
 
@@ -133,6 +133,7 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\SPNEGO = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\SPNEGO = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Authentication\Locked = 0x1 | 0x0
 ```
 #### macOS
 ```
@@ -168,6 +169,8 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
       <key>NTLM</key>
       <true/> | <false/>
     </dict>
+    <key>Locked</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -186,7 +189,8 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
       "AllowProxies": {
         "SPNEGO": true | false,
         "NTLM": true | false
-      }
+      },
+      "Locked": true | false
     }
   }
 }
@@ -828,6 +832,33 @@ Software\Policies\Mozilla\Firefox\DisableFormHistory = 0x1 | 0x0
 {
   "policies": {
     "DisableFormHistory": true | false
+  }
+}
+```
+### DisablePasswordReveal
+Do not allow passwords to be shown in saved logins
+
+**Compatibility:** Firefox 71, Firefox ESR 68.3\
+**CCK2 Equivalent:** N/A
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisablePasswordReveal = 0x1 | 0x0
+```
+
+#### macOS
+```
+<dict>
+  <key>DisablePasswordReveal</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisablePasswordReveal": true | false
   }
 }
 ```
@@ -1645,7 +1676,7 @@ Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "p
       <string>http://example.edu</string>
     </array>
     <key>StartPage</key>
-    <string>always | never | from-visited</string>
+    <string>none | homepage | previous-session</string>
   </dict>
 </dict>
 ```
@@ -1658,7 +1689,7 @@ Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "p
       "Locked": true | false,
       "Additional": ["http://example.org/",
                      "http://example.edu/"],
-      "StartPage": "none" | "homepage" |  "previous-session"
+      "StartPage": "none" | "homepage" | "previous-session"
     }
   }
 }

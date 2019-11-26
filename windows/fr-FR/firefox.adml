@@ -17,6 +17,7 @@
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR ou supérieur</string>
       <string id="SUPPORTED_FF69">Firefox 69 ou supérieur, Firefox 68.1 ESR ou supérieur</string>
       <string id="SUPPORTED_FF70">Firefox 70 ou supérieur, Firefox 68.2 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF71">Firefox 71 ou supérieur, Firefox 68.3 ESR ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -66,6 +67,10 @@ Si cette stratégie est désactivée ou non configurée, NTLM et SPNEGO ne sont 
       <string id="Authentication_AllowProxies_Explain">If this disabled, SPNEGO and NTLM will not authenticate with proxy servers.
 
 If this policy is enabled (and the checkboxes are checked) or not configured, NTLM and SPNEGO will always authenticate with proxies.</string>
+      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
+      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+
+If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
       <string id="BlockAboutAddons">Gestion de modules Add-ons </string>
       <string id="BlockAboutAddons_Explain" >Si cette stratégie est activée, l'utilisateur ne peut pas accéder au gestionnaire de modules complémentaires ou aux modules add:.
 
@@ -152,6 +157,10 @@ Si cette stratégie est désactivée ou non configurée, le bouton "Forget" est 
       <string id="DisableFormHistory_Explain">Si cette stratégie est activée, Firefox ne conservera pas l'historique du formulaire ou de la recherche.
 
 Si cette stratégie est désactivée ou non configurée, Firefox conservera l'historique des formulaires et des recherches.</string>
+      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
+      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+
+If this policy is disabled or not configured, users can show passwords in saved logins.</string>
       <string id="DisablePocket">Désactiver Pocket</string>
       <string id="DisablePocket_Explain">Si cette stratégie est activée, Pocket n'est pas disponible.
 
