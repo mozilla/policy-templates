@@ -2244,7 +2244,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
 | intl.accept_languages | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
-| media.eme.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| media.eme.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Encrypted Media Extensions are not enabled.
 | media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
