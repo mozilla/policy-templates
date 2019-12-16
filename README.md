@@ -1428,7 +1428,8 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
   "*": {
     "blocked_install_message": "Custom error message.",
     "install_sources": ["https://addons.mozilla.org/"],
-    "installation_mode": "blocked"
+    "installation_mode": "blocked",
+    "allowed_types": ["extension"]
   },
   "uBlock0@raymondhill.net": {
     "installation_mode": "force_installed",
@@ -1451,6 +1452,10 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
       </array>
       <key>installation_mode</key>
       <string>blocked</string>
+      <key>allowed_types</key>
+      <array>
+        <string>extension</string>
+      </array>
     </dict>
     <key>uBlock0@raymondhill.net</key>
     <dict>
@@ -1470,7 +1475,8 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
       "*": {
         "blocked_install_message": "Custom error message.",
         "install_sources": ["https://addons.mozilla.org/"],
-        "installation_mode": "blocked"
+        "installation_mode": "blocked",
+        "allowed_types": ["extension"]
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
