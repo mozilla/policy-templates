@@ -537,7 +537,7 @@ Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
       "Allow": ["http://example.org/"],
       "Block": ["http://example.edu/"],
       "Default": true | false,
-      "AcceptThirdParty": "always" | "never" | "from-visited"],
+      "AcceptThirdParty": "always" | "never" | "from-visited",
       "ExpireAtSessionEnd": true | false,
       "RejectTracker": true | false,
       "Locked": true | false
