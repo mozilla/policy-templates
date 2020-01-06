@@ -2208,6 +2208,8 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, changes the location of the disk cache.
 | browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
+| browser.newtabpage.activity-stream.default.sites | string | Firefox 72, ESR 68.4 | Locale dependent
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of URLs to use as the default top sites on the new tab page.
 | browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
 | browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 68.2 | true
@@ -2246,6 +2248,8 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
 | extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Recommendations tab is not displayed in the Add-ons Manager.
+| extensions.htmlaboutaddons.recommendations.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, recommendations are not shown on the Extensions tab in the Add-ons Manager.
 | geo.enabled | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
 | intl.accept_languages | string | Firefox 70, Firefox ESR 68.2
@@ -2256,6 +2260,11 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
 | media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Widevine plugin is not downloaded.
+| media.peerconnection.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, WebRTC is disabled
+| media.peerconnection.ice.obfuscate_host_addresses.whitelist | string | Firefox 72, Firefox ESR 68.4 | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of domains for which mDNS hostname obfuscation is
+disabled
 | network.dns.disableIPv6 | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, IPv6 DNS lokoups are disabled.
 | network.IDN_show_punycode | boolean | Firefox 68, Firefox ESR 68 | false
@@ -2268,10 +2277,16 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
 | security.mixed_content.block_active_content | string | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
+| security.osclientcerts.autoload | boolean | Firefox 72, Firefox ESR 68.4 (Windows only) | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
+| security.tls.hello_downgrade_check | boolean | Firefox 72, Firefox ESR 68.4 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
 | ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Alt key doesn't show the menubar on Windows.
+| widget.content.gtk-theme-override | string | Firefox 72, Firefox ESR 68.4 (Linux only) | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, overrides the GTK theme for widgets.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
