@@ -2204,8 +2204,8 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
 | browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
-| browser.cache.disk.parent_directory | string | Firefox 68, Firefox ESR 68 | Profile temporary directory
-| &nbsp;&nbsp;&nbsp;&nbsp;If set, changes the location of the disk cache.
+| ~browser.cache.disk.parent_directory~ | string | Firefox 68, Firefox ESR 68 | Profile temporary directory
+| &nbsp;&nbsp;&nbsp;&nbsp;~If set, changes the location of the disk cache.~ This policy doesn't work. It's being worked on.
 | browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
 | browser.newtabpage.activity-stream.default.sites | string | Firefox 72, ESR 68.4 | Locale dependent
