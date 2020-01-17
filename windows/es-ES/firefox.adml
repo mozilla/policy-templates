@@ -61,17 +61,17 @@ Si esta política está deshabilitada o no está configurada, no se confía en q
 
 Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Permitir que no sean FQDN</string>
-      <string id="Authentication_AllowNonFQDN_Explain">Si esta política está habilitada, siempre podrá permitir SPNEGO o NTLM que no sean FQDN (nombres de dominio totalmente calificados).
+      <string id="Authentication_AllowNonFQDN_Explain">Si esta política está habilitada (y las casillas de verificación están marcadas), siempre podrá permitir SPNEGO o NTLM que no sean FQDN (nombres de dominio totalmente calificados).
 
 Si esta política está deshabilitada o no está configurada, NTLM y SPNEGO no están habilitados en que no sean FQDN.</string>
       <string id="Authentication_AllowProxies">Permitir proxies</string>
-      <string id="Authentication_AllowProxies_Explain">Si está deshabilitado, SPNEGO y NTLM no se autenticarán con servidores proxy.
+      <string id="Authentication_AllowProxies_Explain">Si esta política está deshabilitada, SPNEGO y NTLM no se autenticarán con servidores proxy.
 
 Si esta política está habilitada (y las casillas de verificación están marcadas) o no está configurada, NTLM y SPNEGO siempre se autenticarán con proxies.</string>
-      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
-      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+      <string id="Authentication_Locked">No permitir que se cambien las preferencias de autenticación</string>
+      <string id="Authentication_Locked_Explain">Si esta política está deshabilitada, el usuario podrá cambiar las preferencias de autenticación.
 
-If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+Si esta política está habilitada o no está configurada, el usuario no podrá cambiar las preferencias de autenticación.</string>
       <string id="BlockAboutAddons">Bloquear el administrador de complementos</string>
       <string id="BlockAboutAddons_Explain">Si esta política está habilitada, el usuario no podrá acceder al administrador de complementos o en about:addons.
 
@@ -158,10 +158,10 @@ Si esta política está deshabilitada o no está configurada, el botón &quot;Ol
       <string id="DisableFormHistory_Explain">Si esta política está habilitada, Firefox no recordará el formulario ni el historial de búsqueda.
 
 Si esta política está deshabilitada o no está configurada, Firefox recordará el formulario y el historial de búsqueda.</string>
-      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
-      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+      <string id="DisablePasswordReveal">No permitir que se revelen las contraseñas en los inicios de sesión guardados</string>
+      <string id="DisablePasswordReveal_Explain">Si esta política está habilitada, los usuarios no podrán ver las contraseñas en los inicios de sesión guardados.
 
-If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+Si esta política está deshabilitada o no está configurada, los usuarios podrán ver las contraseñas en los inicios de sesión guardados.</string>
       <string id="DisablePocket">Deshabilitadar Pocket</string>
       <string id="DisablePocket_Explain">Si esta política está habilitada, Pocket no está disponible.
 
@@ -260,12 +260,12 @@ Si esta política está habilitada o no está configurada, la página de la pest
       <string id="OfferToSaveLogins_Explain">Si esta política está habilitada o no está configurada, Firefox ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 
 Si esta política está deshabilitada, Firefox no ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.</string>
-      <string id="OfferToSaveLoginsDefault">Sugerir guardar inicios de sesión (default)</string>
+      <string id="OfferToSaveLoginsDefault">Sugerir guardar inicios de sesión (predeterminado)</string>
       <string id="OfferToSaveLoginsDefault_Explain">Si esta política está habilitada o no está configurada, Firefox ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 
 Si esta política está deshabilitada, Firefox no ofrecerá guardar los inicios de sesión y las contraseñas de sitios web.
 
-In either case, the user will be able to change the value (it is not locked).</string>
+En cualquier caso, el usuario podrá cambiar el valor (no está bloqueado).</string>
       <string id="PopupBlocking_Allow_Explain">Si esta política está habilitada, las ventanas emergentes siempre estarán permitidas para los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permitirán ventanas emergentes para todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política de ventanas emergentes predeterminada.</string>
@@ -485,10 +485,10 @@ Si esta política está deshabilitada o no está configurada, la página de inic
       <string id="None">Ninguno</string>
       <string id="Homepage">Página de inicio</string>
       <string id="PreviousSession">Sesión anterior</string>
-      <string id="PasswordManagerEnabled">Password Manager</string>
-      <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
+      <string id="PasswordManagerEnabled">Administrador de contraseñas</string>
+      <string id="PasswordManagerEnabled_Explain">Si esta política está deshabilitada, el administrador de contraseñas no estará disponible a través de las preferencias.
 
-If this policy is enabled or not configured, the password manager is available via preferences.</string>
+Si esta política está habilitada o no está configurada, el administrador de contraseñas estará disponible a través de preferencias.</string>
       <string id="PromptForDownloadLocation">Solicitar ubicación de descarga</string>
       <string id="PromptForDownloadLocation_Explain">Si esta política está deshabilitada, no se solicitará al usuario una ubicación de descarga.
 
@@ -594,7 +594,7 @@ Para una descripción de la preferencia, visite:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_Unsupported_Explain">Esta preferencia ya no tiene soporte para Windows. Estamos investigando la creación de una política.</string>
-      <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
+      <string id="Preferences_accessibility_force_disabled_auto">Automático (0)</string>
       <string id="Preferences_accessibility_force_disabled_off">Siempre apagado (1)</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Preguntar siempre</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Seleccionar automáticamente</string>
@@ -688,8 +688,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">No permitir que se cambien las preferencias de protección contra rastreo.</checkBox>
-        <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
-        <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
+        <checkBox refId="Cryptomining">Bloquear scripts de minado de criptomonedas.</checkBox>
+        <checkBox refId="Fingerprinting">Bloquear scripts de huellas digitales.</checkBox>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
