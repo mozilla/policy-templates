@@ -120,7 +120,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="Authentication_AllowProxies" class="Both" displayName="$(string.Authentication_AllowProxies)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowProxies_Explain)" presentation="$(presentation.Authentication_AllowProxies)">
+    <policy name="Authentication_AllowProxies" class="Both" displayName="$(string.Authentication_AllowProxies)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowProxies" explainText="$(string.Authentication_AllowProxies_Explain)" presentation="$(presentation.Authentication_AllowProxies)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF70"/>
       <elements>
