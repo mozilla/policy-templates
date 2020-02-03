@@ -1999,7 +1999,7 @@ Software\Policies\Mozilla\Firefox\PasswordManagerEnabled = 0x1 | 0x0
 }
 ```
 ### Permissions
-Set permissions associated with camera, microphone, location, and notifications
+Set permissions associated with camera, microphone, location, and notifications. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
 
 `Allow` is a list of origins where the feature is allowed.
 
@@ -2016,6 +2016,7 @@ Set permissions associated with camera, microphone, location, and notifications
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\2 = "https://example.org:1234"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Locked = 0x1 | 0x0
@@ -2042,6 +2043,7 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
       <key>Allow</key>
       <array>
         <string>https://example.org</string>
+        <string>https://example.org:1234</string>
       </array>
       <key>Block</key>
       <array>
@@ -2106,7 +2108,7 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
   "policies": {
     "Permissions": {
       "Camera": {
-        "Allow": ["https://example.org"],
+        "Allow": ["https://example.org","https://example.org:1234"],
         "Block": ["https://example.edu"],
         "BlockNewRequests": true | false,
         "Locked": true | false
