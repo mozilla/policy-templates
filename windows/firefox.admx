@@ -21,6 +21,7 @@
       <definition name="SUPPORTED_FF70" displayName="$(string.SUPPORTED_FF70)"/>
       <definition name="SUPPORTED_FF71" displayName="$(string.SUPPORTED_FF71)"/>
       <definition name="SUPPORTED_FF72" displayName="$(string.SUPPORTED_FF72)"/>
+      <definition name="SUPPORTED_FF73" displayName="$(string.SUPPORTED_FF73)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -688,6 +689,34 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="DisplayMenuBar_Enum" class="Both" displayName="$(string.DisplayMenuBar_Enum)" explainText="$(string.DisplayMenuBar_Enum_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.DisplayMenuBar)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF73"/>
+        <elements>
+        <enum id="DisplayMenuBar" valueName="DisplayMenuBar">
+          <item displayName="$(string.DisplayMenuBar_Always)">
+            <value>
+              <string>always</string>
+            </value>
+          </item>
+          <item displayName="$(string.DisplayMenuBar_Never)">
+            <value>
+              <string>never</string>
+            </value>
+          </item>
+          <item displayName="$(string.DisplayMenuBar_Default_On)">
+            <value>
+              <string>default-on</string>
+            </value>
+          </item>
+          <item displayName="$(string.DisplayMenuBar_Default_Off)">
+            <value>
+              <string>default-off</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
     </policy>
     <policy name="Extensions_Install" class="Both" displayName="$(string.Extensions_Install)"  key="Software\Policies\Mozilla\Firefox\Extensions\Install" explainText="$(string.Extensions_Install_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
