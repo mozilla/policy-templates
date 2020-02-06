@@ -75,6 +75,9 @@
     <category displayName="$(string.Preferences_group)" name="Preferences">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.SanitizeOnShutdown_group)" name="SanitizeOnShutdown">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
@@ -3080,6 +3083,86 @@
       <elements >
         <text id="Preferences_String" valueName="widget.content.gtk-theme-override" required="true" />
       </elements>
+    </policy>
+    <policy name="SanitizeOnShutdown_Cache" class="Both" displayName="$(string.SanitizeOnShutdown_Cache)" explainText="$(string.SanitizeOnShutdown_Cache_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Cache">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_Cookies" class="Both" displayName="$(string.SanitizeOnShutdown_Cookies)" explainText="$(string.SanitizeOnShutdown_Cookies_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Cookies">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_Downloads" class="Both" displayName="$(string.SanitizeOnShutdown_Downloads)" explainText="$(string.SanitizeOnShutdown_Downloads_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Downloads">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_FormData" class="Both" displayName="$(string.SanitizeOnShutdown_FormData)" explainText="$(string.SanitizeOnShutdown_FormData_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="FormData">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_History" class="Both" displayName="$(string.SanitizeOnShutdown_History)" explainText="$(string.SanitizeOnShutdown_History_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="History">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_Sessions" class="Both" displayName="$(string.SanitizeOnShutdown_Sessions)" explainText="$(string.SanitizeOnShutdown_Sessions_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Sessions">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_SiteSettings" class="Both" displayName="$(string.SanitizeOnShutdown_SiteSettings)" explainText="$(string.SanitizeOnShutdown_SiteSettings_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SiteSettings">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SanitizeOnShutdown_OfflineApps" class="Both" displayName="$(string.SanitizeOnShutdown_OfflineApps)" explainText="$(string.SanitizeOnShutdown_OfflineApps_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfflineApps">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>
