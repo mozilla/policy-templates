@@ -19,6 +19,7 @@
       <string id="SUPPORTED_FF70">Firefox 70 o posterior, Firefox 68.2 ESR o posterior</string>
       <string id="SUPPORTED_FF71">Firefox 71 o posterior, Firefox 68.3 ESR o posterior</string>
       <string id="SUPPORTED_FF72">Firefox 72 o posterior, Firefox 68.4 ESR o posterior</string>
+      <string id="SUPPORTED_FF73">Firefox 73 o posterior, Firefox 68.5 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
       <string id="Camera_group">Camera</string>
@@ -204,10 +205,18 @@ Mozilla recomienda que no deshabilite la telemetría. La información recopilada
       <string id="DisplayBookmarksToolbar_Explain">Si esta política está habilitada, la barra de herramientas de marcadores se mostrará de manera predeterminada. El usuario aún podrá ocultarlo.
 
 Si esta política está deshabilitada o no está configurada, la barra de herramientas de marcadores no se mostrará de manera predeterminada.</string>
-      <string id="DisplayMenuBar">Mostrar barra de menú</string>
+      <string id="DisplayMenuBar">Mostrar barra de menú (obsoleto)</string>
       <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menú se mostrará de manera predeterminada. El usuario aún puede ocultarlo.
 
 Si esta política está deshabilitada o no está configurada, la barra de menú no se mostrará de manera predeterminada.</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
       <string id="DontCheckDefaultBrowser">No verificar el navegador predeterminado</string>
       <string id="DontCheckDefaultBrowser_Explain">Si esta política está habilitada, Firefox no comprobará si es el navegador predeterminado al inicio.
 
@@ -856,6 +865,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>

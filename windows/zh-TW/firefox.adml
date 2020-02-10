@@ -19,6 +19,7 @@
       <string id="SUPPORTED_FF70">Firefox 70 或更新版本、Firefox 68.2 ESR 或更新版本</string>
       <string id="SUPPORTED_FF71">Firefox 71 或更新版本、Firefox 68.3 ESR 或更新版本</string>
       <string id="SUPPORTED_FF72">Firefox 72 或更新版本、Firefox 68.4 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF73">Firefox 73 或更新版本、Firefox 68.5 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -204,10 +205,18 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="DisplayBookmarksToolbar_Explain">若啟用此原則，預設將顯示書籤工具列。使用者還是可以將其隱藏。
 
 若停用或不設定此原則，則預設不會顯示書籤工具列。</string>
-      <string id="DisplayMenuBar">顯示選單列</string>
+      <string id="DisplayMenuBar">顯示選單列（已棄用）</string>
       <string id="DisplayMenuBar_Explain">若啟用此原則，預設將顯示選單列。使用者還是可以將其隱藏。
 
 若停用或不設定此原則，則預設不會顯示選單列。</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
       <string id="DontCheckDefaultBrowser">不要檢查是否為預設瀏覽器</string>
       <string id="DontCheckDefaultBrowser_Explain">若啟用此原則，Firefox 不會在啟動時檢查是否為預設瀏覽器。
 
@@ -854,6 +863,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>

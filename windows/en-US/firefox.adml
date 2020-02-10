@@ -19,6 +19,7 @@
       <string id="SUPPORTED_FF70">Firefox 70 or later, Firefox 68.2 ESR or later</string>
       <string id="SUPPORTED_FF71">Firefox 71 or later, Firefox 68.3 ESR or later</string>
       <string id="SUPPORTED_FF72">Firefox 72 or later, Firefox 68.4 ESR or later</string>
+      <string id="SUPPORTED_FF73">Firefox 73 or later, Firefox 68.5 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -204,10 +205,18 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
       <string id="DisplayBookmarksToolbar_Explain">If this policy is enabled, the bookmarks toolbar is displayed by default. The user can still hide it.
 
 If this policy is disabled or not configured, the bookmarks toolbar is not displayed by default.</string>
-      <string id="DisplayMenuBar">Display Menu Bar</string>
+      <string id="DisplayMenuBar">Display Menu Bar (Deprecated)</string>
       <string id="DisplayMenuBar_Explain">If this policy is enabled, the menu bar is displayed by default. The user can still hide it.
 
 If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
       <string id="DontCheckDefaultBrowser">Don't Check Default Browser</string>
       <string id="DontCheckDefaultBrowser_Explain">If this policy is enabled, Firefox does not check to see if it is the default browser at startup.
 
@@ -856,6 +865,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>

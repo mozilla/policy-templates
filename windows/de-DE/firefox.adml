@@ -19,6 +19,7 @@
       <string id="SUPPORTED_FF70">Firefox 70 oder höher, Firefox 68.2 ESR oder höher</string>
       <string id="SUPPORTED_FF71">Firefox 71 oder höher, Firefox 68.3 ESR oder höher</string>
       <string id="SUPPORTED_FF72">Firefox 72 oder höher, Firefox 68.4 ESR oder höher</string>
+      <string id="SUPPORTED_FF73">Firefox 73 oder höher, Firefox 68.5 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -204,10 +205,18 @@ Mozilla empfiehlt, die Telemetrie nicht zu deaktivieren. Durch Telemetrie gesamm
       <string id="DisplayBookmarksToolbar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Lesezeichenleiste standardmäßig in der Menüleiste angezeigt, der Benutzer kann diese wieder ausblenden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Lesezeichenleiste nicht in der Menüleiste angzeigt.</string>
-      <string id="DisplayMenuBar">Menüleiste anzeigen</string>
+      <string id="DisplayMenuBar">Menüleiste anzeigen (Veraltet)</string>
       <string id="DisplayMenuBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Menüleiste standardmäßig angezeigt, der Benutzer kann diese wieder ausblenden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Menüleiste standrdmäßig nicht angezeigt.</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
       <string id="DontCheckDefaultBrowser">Firefox Standardbrowser Überprüfung deaktivieren</string>
       <string id="DontCheckDefaultBrowser_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, überprüft Firefox nicht beim Starten ob er als Standardbrowser gesetzt ist.
 
@@ -857,6 +866,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>

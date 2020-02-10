@@ -19,6 +19,7 @@
       <string id="SUPPORTED_FF70">Firefox 70 o versione successiva, Firefox 68.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF71">Firefox 71 o versione successiva, Firefox 68.3 ESR o versione successiva</string>
       <string id="SUPPORTED_FF72">Firefox 72 o versione successiva, Firefox 68.4 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF73">Firefox 73 o versione successiva, Firefox 68.5 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
@@ -204,10 +205,18 @@ Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tr
       <string id="DisplayBookmarksToolbar_Explain">Se questo criterio è abilitato, la barra degli strumenti Segnalibri è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra degli strumenti Segnalibri non è visualizzata per impostazione predefinita.</string>
-      <string id="DisplayMenuBar">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar">Visualizza barra dei menù (deprecata)</string>
       <string id="DisplayMenuBar_Explain">Se questo criterio è abilitato, la barra dei menù è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra dei menù non viene visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
       <string id="DontCheckDefaultBrowser">Non controllare il browser predefinito</string>
       <string id="DontCheckDefaultBrowser_Explain">Se questo criterio è abilitato, Firefox all'avvio non controlla se è il browser predefinito.
 
@@ -856,6 +865,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>

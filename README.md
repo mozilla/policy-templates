@@ -38,7 +38,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar.
+| **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
+| **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
@@ -1112,7 +1113,7 @@ Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
   }
 }
 ```
-### DisplayMenuBar
+### DisplayMenuBar (Deprecated)
 Set the initial state of the menubar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
@@ -1135,6 +1136,40 @@ Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
 {
   "policies": {
     "DisplayMenuBar": true | false
+  }
+}
+```
+### DisplayMenuBar
+Set the state of the menubar.
+
+`always` means the menubar is shown and cannot be hidden.
+
+`never` means the menubar is hidden and cannot be shown.
+
+`default-on` means the menubar is on by default but can be hidden.
+
+`default-off` means the menubar is off by default but can be shown.
+
+**Compatibility:** Firefox 73, Firefox ESR 68.5 (Windows, some Linux)\
+**CCK2 Equivalent:** `displayMenuBar`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisplayMenuBar = "always", "never", "default-on", "default-off"
+```
+#### macOS
+```
+<dict>
+  <key>DisplayMenuBar</key>
+  <string>always | never | default-on | default-off</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisplayMenuBar": "always", "never", "default-on", "default-off"
   }
 }
 ```
@@ -2396,7 +2431,7 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
   <key>Proxy</key>
   <dict>
     <key>Mode</key>
-    <string>none | system | manual | autoDetect| autoConfig</string>
+    <string>none | system | manual | autoDetect | autoConfig</string>
     <key>Locked</key>
     <true> | </false>
     <key>HTTPProxy</key>
