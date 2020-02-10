@@ -2202,7 +2202,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
 | browser.bookmarks.file | string | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, the name of the file where bookmarks are exported and imported.
-| browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 68.2 | N/A
+| browser.bookmarks.restore_default_bookmarks | boolean | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
 | browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
