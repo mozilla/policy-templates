@@ -1337,8 +1337,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1= "https://example.com"
-
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 ```
 #### macOS
 ```
