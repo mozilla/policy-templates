@@ -1140,7 +1140,7 @@ Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
 }
 ```
 ### DisplayMenuBar
-Set the state initial state of the menubar.
+Set the state of the menubar.
 
 `always` means the menubar is shown and cannot be hidden.
 
