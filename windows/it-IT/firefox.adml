@@ -699,6 +699,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento.</checkBox>
         <checkBox refId="Cryptomining">Blocca script cryptominer.</checkBox>
         <checkBox refId="Fingerprinting">Blocca script fingerprinter.</checkBox>
+        <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">

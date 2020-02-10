@@ -2388,6 +2388,7 @@
             <decimal value="0"/>
           </falseValue>
         </boolean>
+        <list id="TrackingProtection_Exceptions" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions" valuePrefix=""/>
       </elements>
     </policy>
     <!-- Alphabetization is based on name, so had to add B -->

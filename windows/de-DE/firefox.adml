@@ -700,6 +700,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <checkBox refId="TrackingProtectionLocked">Änderungen am Schutz vor Aktivitäten Verfolgung nicht erlauben</checkBox>
         <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
         <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
+        <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
