@@ -1325,8 +1325,10 @@ If `Cryptomining` is set to true, cryptomining scripts on websites are blocked.
 
 If `Fingerprinting` is set to true, fingerprinting scripts on websites are blocked.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2)\
-**CCK2 Equivalent:** `dontCheckDefaultBrowser`\
+`Exceptions` are origins for which tracking protection is not enabled.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
 
 #### Windows (GPO)
@@ -1335,6 +1337,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 ```
 #### macOS
 ```
@@ -1343,12 +1346,16 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
   <dict>
     <key>Value</key>
     <true/> | <false/>
-    <key><Locked/key>
+    <key><Locked</key>
     <true/> | <false/>
-    <key><Cryptomining/key>
+    <key><Cryptomining</key>
     <true/> | <false/>
-    <key><Fingerprinting/key>
+    <key><Fingerprinting</key>
     <true/> | <false/>
+    <key>Exceptions</key>
+    <array>
+      <string>https://example.com</string>
+    </array>
   </dict>
 </dict>
 ```
@@ -1360,7 +1367,8 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
       "Value": [true, false],
       "Locked": [true, false],
       "Cryptomining": [true, false],
-      "Fingerprinting": [true, false]
+      "Fingerprinting": [true, false],
+      "Exceptions": ["https://example.com"]
     }
 }
 ```

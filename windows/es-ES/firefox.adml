@@ -699,6 +699,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">No permitir que se cambien las preferencias de protección contra rastreo.</checkBox>
         <checkBox refId="Cryptomining">Bloquear scripts de minado de criptomonedas.</checkBox>
         <checkBox refId="Fingerprinting">Bloquear scripts de huellas digitales.</checkBox>
+        <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
