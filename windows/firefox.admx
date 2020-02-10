@@ -22,6 +22,7 @@
       <definition name="SUPPORTED_FF71" displayName="$(string.SUPPORTED_FF71)"/>
       <definition name="SUPPORTED_FF72" displayName="$(string.SUPPORTED_FF72)"/>
       <definition name="SUPPORTED_FF73" displayName="$(string.SUPPORTED_FF73)"/>
+      <definition name="SUPPORTED_FF68ESR" displayName="$(string.SUPPORTED_FF68ESR)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -2867,6 +2868,26 @@
     <policy name="dom_event_contextmenu_enabled" class="Both" displayName="$(string.dom_event_contextmenu_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.event.contextmenu.enabled">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="dom_xmldocument_load_enabled" class="Both" displayName="$(string.dom_xmldocument_load_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.xmldocument.load.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68ESR"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="dom_xmldocument_async_enabled" class="Both" displayName="$(string.dom_xmldocument_async_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="dom.xmldocument.async.enabled">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68ESR"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

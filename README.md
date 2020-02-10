@@ -2289,6 +2289,10 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
 | dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
+| dom.xmldocument.load.enabled | boolean | Firefox ESR 68.5 | true.
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.load is not available
+| dom.xmldocument.async.enabled | boolean | Firefox ESR 68.5 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.async is not available.
 | extensions.blocklist.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
 | extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A
