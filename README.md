@@ -1328,7 +1328,7 @@ If `Fingerprinting` is set to true, fingerprinting scripts on websites are block
 `Exceptions` are origins for which tracking protection is not enabled.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\
-**CCK2 Equivalent:** `dontCheckDefaultBrowser`\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
 
 #### Windows (GPO)
