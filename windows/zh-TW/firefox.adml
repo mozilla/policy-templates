@@ -15,6 +15,7 @@
       <string id="SUPPORTED_FF68">Firefox 68 或更新版本、Firefox 68 ESR 或更新版本</string>
       <string id="SUPPORTED_FF6801">Firefox 68.0.1 或更新版本、Firefox 68.0.1 ESR 或更新版本</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR 或更新版本</string>
       <string id="SUPPORTED_FF69">Firefox 69 或更新版本、Firefox 68.1 ESR 或更新版本</string>
       <string id="SUPPORTED_FF70">Firefox 70 或更新版本、Firefox 68.2 ESR 或更新版本</string>
       <string id="SUPPORTED_FF71">Firefox 71 或更新版本、Firefox 68.3 ESR 或更新版本</string>
@@ -630,6 +631,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
       <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
       <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+      <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
       <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
