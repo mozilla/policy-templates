@@ -210,14 +210,14 @@ Se questo criterio è disabilitato o non configurato, la barra degli strumenti S
       <string id="DisplayMenuBar_Explain">Se questo criterio è abilitato, la barra dei menù è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra dei menù non viene visualizzata per impostazione predefinita.</string>
-      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
-      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+      <string id="DisplayMenuBar_Enum">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar_Enum_Explain">Se questo criterio è abilitato, è possibile scegliere se la barra dei menù sarà visualizzata o meno e se l'utente può visualizzare e nascondere la barra dei menù.
 
-If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
-      <string id="DisplayMenuBar_Always">Always</string>
-      <string id="DisplayMenuBar_Never">Never</string>
-      <string id="DisplayMenuBar_Default_On">On by default</string>
-      <string id="DisplayMenuBar_Default_Off">Off by default</string>
+Se questo criterio è disabilitato o non configurato, la barra dei menù non è visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar_Always">Sempre</string>
+      <string id="DisplayMenuBar_Never">Mai</string>
+      <string id="DisplayMenuBar_Default_On">Sì per impostazione predefinita</string>
+      <string id="DisplayMenuBar_Default_Off">No per impostazione predefinita</string>
       <string id="DontCheckDefaultBrowser">Non controllare il browser predefinito</string>
       <string id="DontCheckDefaultBrowser_Explain">Se questo criterio è abilitato, Firefox all'avvio non controlla se è il browser predefinito.
 
@@ -702,7 +702,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento.</checkBox>
         <checkBox refId="Cryptomining">Blocca script cryptominer.</checkBox>
         <checkBox refId="Fingerprinting">Blocca script fingerprinter.</checkBox>
-        <text>Exceptions:</text>
+        <text>Eccezioni:</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
