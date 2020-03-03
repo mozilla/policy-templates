@@ -3216,7 +3216,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="H_SanitizeOnShutdown_Locked" class="Both" displayName="$(string.SanitizeOnShutdown_Locked)" explainText="$(string.SanitizeOnShutdown_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Locked">
+    <policy name="I_SanitizeOnShutdown_Locked" class="Both" displayName="$(string.SanitizeOnShutdown_Locked)" explainText="$(string.SanitizeOnShutdown_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Locked">
       <parentCategory ref="SanitizeOnShutdown"/>
       <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
