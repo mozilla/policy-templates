@@ -21,6 +21,7 @@
       <string id="SUPPORTED_FF71">Firefox 71 或更新版本、Firefox 68.3 ESR 或更新版本</string>
       <string id="SUPPORTED_FF72">Firefox 72 或更新版本、Firefox 68.4 ESR 或更新版本</string>
       <string id="SUPPORTED_FF73">Firefox 73 或更新版本、Firefox 68.5 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF74">Firefox 74 或更新版本、Firefox 68.6 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -409,6 +410,46 @@ If this policy is disabled or not configured, the menu bar is not displayed by d
       <string id="SanitizeOnShutdown_Explain">若啟用此原則，將可以選擇要在關閉 Firefox 時清理哪些資料。
 
 若停用或不設定此原則，則不會在關閉 Firefox 時清理任何資料。</string>
+      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+
+      <string id="SanitizeOnShutdown_Cache">Cache</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+
+If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+
+If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Downloads">Download History</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+
+If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_History">Browsing History</string>
+      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+
+If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+
+If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+
+If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Locked">Locked</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+
+If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+
+If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
       <string id="WebsiteFilter_Block">要封鎖的網站</string>
       <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
 

@@ -2544,7 +2544,9 @@ or
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
 
-**Compatibility:** Firefox 68, Firefox ESR 68\
+Previously, these values were always locked. Starting with Firefox 74 and Firefox ESR 68.6, you can use the `Locked` option to either keep the values unlocked (set it to false), or lock only the values you set (set it to true). If you want the old behavior of locking everything, do not set `Locked` at all.
+
+**Compatibility:** Firefox 68, Firefox ESR 68 (Locked added in 74/68.6)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
 #### Windows (GPO)
@@ -2557,6 +2559,7 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Locked = 0x1 | 0x0
 ```
 #### macOS
 ```
@@ -2579,6 +2582,8 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
     <true/> | <false/>
     <key>OfflineApps</key>
     <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -2594,7 +2599,8 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
-      "OfflineApps": true | false
+      "OfflineApps": true | false,
+      "Locked": true | false
     }
   }
 }

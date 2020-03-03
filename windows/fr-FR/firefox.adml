@@ -21,6 +21,7 @@
       <string id="SUPPORTED_FF71">Firefox 71 ou supérieur, Firefox 68.3 ESR ou supérieur</string>
       <string id="SUPPORTED_FF72">Firefox 72 ou supérieur, Firefox 68.4 ESR ou supérieur</string>
       <string id="SUPPORTED_FF73">Firefox 73 ou supérieur, Firefox 68.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF74">Firefox 74 ou supérieur, Firefox 68.6 ESR ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -411,6 +412,46 @@ Si cette stratégie est désactivée ou non configurée, la mise à niveau est a
       <string id="SanitizeOnShutdown_Explain">Si cette stratégie est activée, toutes les données sont effacées à la fermeture de Firefox. Cela inclut la navigation, Historique de téléchargement, cookies, connexions actives, cache, formulaire et Historique de recherche, préférences de site et données de site Web hors ligne.
 
 Si cette stratégie est désactivée ou non configurée, les données ne sont pas effacées à la fermeture du navigateur.</string>
+      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+
+      <string id="SanitizeOnShutdown_Cache">Cache</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+
+If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+
+If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Downloads">Download History</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+
+If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_History">Browsing History</string>
+      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+
+If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+
+If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+
+If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Locked">Locked</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+
+If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+
+If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
       <string id="WebsiteFilter_Block">Sites Web bloqués</string>
       <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez spécifier des modèles de correspondance indiquant que les sites doivent être bloqués. Les modèles de correspondance sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Seules les adresses http / https sont prises en charge pour le moment. Il y a une limite de 1000 entrées.
 
