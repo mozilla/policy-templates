@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.12" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.13" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -15,10 +15,12 @@
       <string id="SUPPORTED_FF68">Firefox 68 o versione successiva, Firefox 68 ESR o versione successiva</string>
       <string id="SUPPORTED_FF6801">Firefox 68.0.1 o versione successiva, Firefox 68.0.1 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR o versione successiva</string>
       <string id="SUPPORTED_FF69">Firefox 69 o versione successiva, Firefox 68.1 ESR o versione successiva</string>
       <string id="SUPPORTED_FF70">Firefox 70 o versione successiva, Firefox 68.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF71">Firefox 71 o versione successiva, Firefox 68.3 ESR o versione successiva</string>
       <string id="SUPPORTED_FF72">Firefox 72 o versione successiva, Firefox 68.4 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF73">Firefox 73 o versione successiva, Firefox 68.5 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
@@ -204,10 +206,18 @@ Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tr
       <string id="DisplayBookmarksToolbar_Explain">Se questo criterio è abilitato, la barra degli strumenti Segnalibri è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra degli strumenti Segnalibri non è visualizzata per impostazione predefinita.</string>
-      <string id="DisplayMenuBar">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar">Visualizza barra dei menù (deprecata)</string>
       <string id="DisplayMenuBar_Explain">Se questo criterio è abilitato, la barra dei menù è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra dei menù non viene visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar_Enum">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar_Enum_Explain">Se questo criterio è abilitato, è possibile scegliere se la barra dei menù sarà visualizzata o meno e se l'utente può visualizzare e nascondere la barra dei menù.
+
+Se questo criterio è disabilitato o non configurato, la barra dei menù non è visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar_Always">Sempre</string>
+      <string id="DisplayMenuBar_Never">Mai</string>
+      <string id="DisplayMenuBar_Default_On">Sì per impostazione predefinita</string>
+      <string id="DisplayMenuBar_Default_Off">No per impostazione predefinita</string>
       <string id="DontCheckDefaultBrowser">Non controllare il browser predefinito</string>
       <string id="DontCheckDefaultBrowser_Explain">Se questo criterio è abilitato, Firefox all'avvio non controlla se è il browser predefinito.
 
@@ -623,6 +633,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
       <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
       <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+      <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
       <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
@@ -690,6 +702,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento.</checkBox>
         <checkBox refId="Cryptomining">Blocca script cryptominer.</checkBox>
         <checkBox refId="Fingerprinting">Blocca script fingerprinter.</checkBox>
+        <text>Eccezioni:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
@@ -856,6 +870,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>

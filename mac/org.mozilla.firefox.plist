@@ -180,6 +180,10 @@
 		<true/>
 		<key>Fingerprinting</key>
 		<true/>
+		<key>Exceptions</key>
+		<array>
+			<string>https://example.com</string>
+		</array>
 	</dict>
 	<key>Extensions</key>
 	<dict>

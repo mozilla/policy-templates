@@ -38,7 +38,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar.
+| **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
+| **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
@@ -1112,7 +1113,7 @@ Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
   }
 }
 ```
-### DisplayMenuBar
+### DisplayMenuBar (Deprecated)
 Set the initial state of the menubar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
@@ -1135,6 +1136,40 @@ Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
 {
   "policies": {
     "DisplayMenuBar": true | false
+  }
+}
+```
+### DisplayMenuBar
+Set the state of the menubar.
+
+`always` means the menubar is shown and cannot be hidden.
+
+`never` means the menubar is hidden and cannot be shown.
+
+`default-on` means the menubar is on by default but can be hidden.
+
+`default-off` means the menubar is off by default but can be shown.
+
+**Compatibility:** Firefox 73, Firefox ESR 68.5 (Windows, some Linux)\
+**CCK2 Equivalent:** `displayMenuBar`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisplayMenuBar = "always", "never", "default-on", "default-off"
+```
+#### macOS
+```
+<dict>
+  <key>DisplayMenuBar</key>
+  <string>always | never | default-on | default-off</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisplayMenuBar": "always", "never", "default-on", "default-off"
   }
 }
 ```
@@ -1290,8 +1325,10 @@ If `Cryptomining` is set to true, cryptomining scripts on websites are blocked.
 
 If `Fingerprinting` is set to true, fingerprinting scripts on websites are blocked.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2)\
-**CCK2 Equivalent:** `dontCheckDefaultBrowser`\
+`Exceptions` are origins for which tracking protection is not enabled.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
 
 #### Windows (GPO)
@@ -1300,6 +1337,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 ```
 #### macOS
 ```
@@ -1308,12 +1346,16 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
   <dict>
     <key>Value</key>
     <true/> | <false/>
-    <key><Locked/key>
+    <key><Locked</key>
     <true/> | <false/>
-    <key><Cryptomining/key>
+    <key><Cryptomining</key>
     <true/> | <false/>
-    <key><Fingerprinting/key>
+    <key><Fingerprinting</key>
     <true/> | <false/>
+    <key>Exceptions</key>
+    <array>
+      <string>https://example.com</string>
+    </array>
   </dict>
 </dict>
 ```
@@ -1325,7 +1367,8 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
       "Value": [true, false],
       "Locked": [true, false],
       "Cryptomining": [true, false],
-      "Fingerprinting": [true, false]
+      "Fingerprinting": [true, false],
+      "Exceptions": ["https://example.com"]
     }
 }
 ```
@@ -2202,7 +2245,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
 | browser.bookmarks.file | string | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, the name of the file where bookmarks are exported and imported.
-| browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 68.2 | N/A
+| browser.bookmarks.restore_default_bookmarks | boolean | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
 | browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
@@ -2212,19 +2255,19 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
 | browser.newtabpage.activity-stream.default.sites | string | Firefox 72, ESR 68.4 | Locale dependent
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of URLs to use as the default top sites on the new tab page.
-| browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 68.2
+| browser.places.importBookmarksHTML | boolean | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
-| browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| browser.safebrowsing.phishing.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, phishing protection is not enabled (Not recommended)
-| browser.safebrowsing.malware.enabled | string | Firefox 70, Firefox ESR 68.2 | true
-| &nbsp;&nbsp;&nbsp;&nbsp;IF false, malware protection is not enabled (Not recommended)
+| browser.safebrowsing.malware.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, malware protection is not enabled (Not recommended)
 | browser.search.update | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, updates for search engines are not checked.
-| browser.slowStartup.notificationDisabled | string | Firefox 70, Firefox ESR 68.2 | false
+| browser.slowStartup.notificationDisabled | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, a notification isn't shown if startup is slow.
 | browser.tabs.warnOnClose | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, there is no warning when the browser is closed.
-| browser.taskbar.previews.enable | string | Firefox 70, Firefox ESR 68.2 (Windows only) | false
+| browser.taskbar.previews.enable | boolean | Firefox 70, Firefox ESR 68.2 (Windows only) | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, tab previews are shown in the Windows taskbar.
 | browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, bookmarks aren't suggested when typing in the URL bar.
@@ -2234,7 +2277,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, open tabs aren't suggested when typing in the URL bar.
 | datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, don't show the privacy policy tab on first run.
-| dom.allow_scripts_to_close_windows | string | Firefox 70, Firefox ESR 68.2 | false
+| dom.allow_scripts_to_close_windows | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web page can close windows.
 | dom.disable_window_flip | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can focus and activate windows.
@@ -2246,13 +2289,17 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
 | dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| extensions.blocklist.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| dom.xmldocument.load.enabled | boolean | Firefox ESR 68.5 | true.
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.load is not available.
+| dom.xmldocument.async.enabled | boolean | Firefox ESR 68.5 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.async is not available.
+| extensions.blocklist.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
 | extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Recommendations tab is not displayed in the Add-ons Manager.
 | extensions.htmlaboutaddons.recommendations.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, recommendations are not shown on the Extensions tab in the Add-ons Manager.
-| geo.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| geo.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
 | intl.accept_languages | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
@@ -2273,11 +2320,11 @@ disabled
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names. 
 | places.history.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, history is not enabled.
-| print.save_print_settings | string | Firefox 70, Firefox ESR 68.2 | true
+| print.save_print_settings | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, print settings are not saved between jobs.
 | security.default_personal_cert | string | Firefox 68, Firefox ESR 68 | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
-| security.mixed_content.block_active_content | string | Firefox 70, Firefox ESR 68.2 | true
+| security.mixed_content.block_active_content | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
 | security.osclientcerts.autoload | boolean | Firefox 72, Firefox ESR 68.4 (Windows only) | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
@@ -2396,7 +2443,7 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
   <key>Proxy</key>
   <dict>
     <key>Mode</key>
-    <string>none | system | manual | autoDetect| autoConfig</string>
+    <string>none | system | manual | autoDetect | autoConfig</string>
     <key>Locked</key>
     <true> | </false>
     <key>HTTPProxy</key>

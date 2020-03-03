@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.12" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.13" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -15,10 +15,12 @@
       <string id="SUPPORTED_FF68">Firefox 68 ou supérieur, Firefox 68 ESR ou supérieur</string>
       <string id="SUPPORTED_FF6801">Firefox 68.0.1 ou supérieur, Firefox 68.0.1 ESR ou supérieur</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR ou supérieur</string>
       <string id="SUPPORTED_FF69">Firefox 69 ou supérieur, Firefox 68.1 ESR ou supérieur</string>
       <string id="SUPPORTED_FF70">Firefox 70 ou supérieur, Firefox 68.2 ESR ou supérieur</string>
       <string id="SUPPORTED_FF71">Firefox 71 ou supérieur, Firefox 68.3 ESR ou supérieur</string>
       <string id="SUPPORTED_FF72">Firefox 72 ou supérieur, Firefox 68.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF73">Firefox 73 ou supérieur, Firefox 68.5 ESR ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -204,10 +206,18 @@ Mozilla vous recommande de ne pas désactiver la télémétrie. Les informations
       <string id="DisplayBookmarksToolbar_Explain">Si cette stratégie est activée, la barre d'outils des signets est affichée par défaut. L'utilisateur peut toujours le cacher.
 
 Si cette stratégie est désactivée ou non configurée, la barre d’outils des signets ne s’affiche pas par défaut. </string>
-      <string id="DisplayMenuBar">Afficher la Barre de menus </string>
+      <string id="DisplayMenuBar">Afficher la Barre de menus (Deprecated)</string>
       <string id="DisplayMenuBar_Explain">Si cette stratégie est activée, la barre de menus est affichée par défaut. L'utilisateur peut toujours le cacher.
 
 Si cette stratégie est désactivée ou non configurée, la barre de menus ne s'affiche pas par défaut.</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
       <string id="DontCheckDefaultBrowser">Ne pas vérifier le navigateur par défaut</string>
       <string id="DontCheckDefaultBrowser_Explain">Si cette stratégie est activée, Firefox ne vérifie pas s'il s'agit du navigateur par défaut au démarrage.
 
@@ -623,6 +633,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
       <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
       <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+      <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
       <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
@@ -690,6 +702,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">Ne pas autoriser la modification des préférences de protection du suivi.</checkBox>
         <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
         <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
+        <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
@@ -856,6 +870,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
       </presentation>
     </presentationTable>
   </resources>
