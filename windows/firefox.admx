@@ -22,6 +22,7 @@
       <definition name="SUPPORTED_FF71" displayName="$(string.SUPPORTED_FF71)"/>
       <definition name="SUPPORTED_FF72" displayName="$(string.SUPPORTED_FF72)"/>
       <definition name="SUPPORTED_FF73" displayName="$(string.SUPPORTED_FF73)"/>
+      <definition name="SUPPORTED_FF74" displayName="$(string.SUPPORTED_FF74)"/>
       <definition name="SUPPORTED_FF68ESR" displayName="$(string.SUPPORTED_FF68ESR)"/>
     </definitions>
   </supportedOn>
@@ -3135,9 +3136,9 @@
         <text id="Preferences_String" valueName="widget.content.gtk-theme-override" required="true" />
       </elements>
     </policy>
-    <policy name="SanitizeOnShutdown_Cache" class="Both" displayName="$(string.SanitizeOnShutdown_Cache)" explainText="$(string.SanitizeOnShutdown_Cache_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Cache">
+    <policy name="A_SanitizeOnShutdown_Cache" class="Both" displayName="$(string.SanitizeOnShutdown_Cache)" explainText="$(string.SanitizeOnShutdown_Cache_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cache">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3145,9 +3146,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_Cookies" class="Both" displayName="$(string.SanitizeOnShutdown_Cookies)" explainText="$(string.SanitizeOnShutdown_Cookies_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Cookies">
+    <policy name="B_SanitizeOnShutdown_Cookies" class="Both" displayName="$(string.SanitizeOnShutdown_Cookies)" explainText="$(string.SanitizeOnShutdown_Cookies_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cookies">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3155,9 +3156,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_Downloads" class="Both" displayName="$(string.SanitizeOnShutdown_Downloads)" explainText="$(string.SanitizeOnShutdown_Downloads_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Downloads">
+    <policy name="C_SanitizeOnShutdown_Downloads" class="Both" displayName="$(string.SanitizeOnShutdown_Downloads)" explainText="$(string.SanitizeOnShutdown_Downloads_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Downloads">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3165,9 +3166,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_FormData" class="Both" displayName="$(string.SanitizeOnShutdown_FormData)" explainText="$(string.SanitizeOnShutdown_FormData_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="FormData">
+    <policy name="D_SanitizeOnShutdown_FormData" class="Both" displayName="$(string.SanitizeOnShutdown_FormData)" explainText="$(string.SanitizeOnShutdown_FormData_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="FormData">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3175,9 +3176,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_History" class="Both" displayName="$(string.SanitizeOnShutdown_History)" explainText="$(string.SanitizeOnShutdown_History_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="History">
+    <policy name="E_SanitizeOnShutdown_History" class="Both" displayName="$(string.SanitizeOnShutdown_History)" explainText="$(string.SanitizeOnShutdown_History_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="History">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3185,9 +3186,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_Sessions" class="Both" displayName="$(string.SanitizeOnShutdown_Sessions)" explainText="$(string.SanitizeOnShutdown_Sessions_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="Sessions">
+    <policy name="F_SanitizeOnShutdown_Sessions" class="Both" displayName="$(string.SanitizeOnShutdown_Sessions)" explainText="$(string.SanitizeOnShutdown_Sessions_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Sessions">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3195,9 +3196,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_SiteSettings" class="Both" displayName="$(string.SanitizeOnShutdown_SiteSettings)" explainText="$(string.SanitizeOnShutdown_SiteSettings_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SiteSettings">
+    <policy name="G_SanitizeOnShutdown_SiteSettings" class="Both" displayName="$(string.SanitizeOnShutdown_SiteSettings)" explainText="$(string.SanitizeOnShutdown_SiteSettings_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="SiteSettings">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3205,9 +3206,19 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SanitizeOnShutdown_OfflineApps" class="Both" displayName="$(string.SanitizeOnShutdown_OfflineApps)" explainText="$(string.SanitizeOnShutdown_OfflineApps_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="OfflineApps">
+    <policy name="H_SanitizeOnShutdown_OfflineApps" class="Both" displayName="$(string.SanitizeOnShutdown_OfflineApps)" explainText="$(string.SanitizeOnShutdown_OfflineApps_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="OfflineApps">
       <parentCategory ref="SanitizeOnShutdown"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="H_SanitizeOnShutdown_Locked" class="Both" displayName="$(string.SanitizeOnShutdown_Locked)" explainText="$(string.SanitizeOnShutdown_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Locked">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
