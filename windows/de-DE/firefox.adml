@@ -21,6 +21,7 @@
       <string id="SUPPORTED_FF71">Firefox 71 oder höher, Firefox 68.3 ESR oder höher</string>
       <string id="SUPPORTED_FF72">Firefox 72 oder höher, Firefox 68.4 ESR oder höher</string>
       <string id="SUPPORTED_FF73">Firefox 73 oder höher, Firefox 68.5 ESR oder höher</string>
+      <string id="SUPPORTED_FF74">Firefox 74 oder höher, Firefox 68.6 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -411,6 +412,46 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren wird e
       <string id="SanitizeOnShutdown_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden alle Daten der Chronik gelöscht, wenn Firefox geschlossen wird. Dies beinhaltet Browsing &amp; Download Verlauf, Cookies, Aktive Logins, Cache, Form &amp; Suchverlauf, Website-Einstellungen und Offline-Website-Daten.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die keine Daten der Chronik gelöscht.</string>
+      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+
+      <string id="SanitizeOnShutdown_Cache">Cache</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+
+If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+
+If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Downloads">Download History</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+
+If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_History">Browsing History</string>
+      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+
+If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+
+If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+
+If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Locked">Locked</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+
+If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+
+If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
       <string id="WebsiteFilter_Block">Gesperrte Webseites</string>
       <string id="WebsiteFilter_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Übereinstimmungsmuster für zu blockierende Webseiten angeben. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Derzeit werden nur http / https-Zugriffe unterstützt. Es gibt eine Beschränkung von 1000 Einträgen. 
 
