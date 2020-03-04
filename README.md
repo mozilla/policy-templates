@@ -762,7 +762,7 @@ Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts = 0x1 | 0x0
 Disable Firefox studies (Shield).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `disableForget`\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
