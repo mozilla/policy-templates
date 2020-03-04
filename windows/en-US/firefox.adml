@@ -564,12 +564,35 @@ If this policy is disabled or not configured, the default network settings are u
       <string id="ManualProxy">Manual proxy configuration</string>
       <string id="AutoDetectProxy">Auto-detect proxy settings</string>
       <string id="AutoConfigProxy">Automatic proxy configuration</string>
-      <string id="TrackingProtection">Tracking Protection</string>
+      <string id="TrackingProtection">Tracking Protection (Moved)</string>
       <string id="TrackingProtection_Explain">If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
 
 If this policy is disabled, tracking protection is disabled and locked in both the browser and private browsing.
 
 If this policy is enabled, private browsing is enabled by default in both the browser and private browsing and you can choose whether or not to prevent the user from changing it.</string>
+      <string id="TrackingProtection_group">Tracking Protection</string>
+      <string id="TrackingProtection_Value">Enabled</string>
+      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+
+If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+
+If this policy is not configured, standard tracking protection is used and the user can change it.</string>
+      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
+      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+
+If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
+      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+
+If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
+      <string id="TrackingProtection_Exceptions">Exceptions</string>
+      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+
+If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
+      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
+      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
       <string id="RequestedLocales">Requested locale</string>
       <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
@@ -744,6 +767,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
         <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
         <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="TrackingProtection_Exceptions">
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
