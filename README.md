@@ -2020,7 +2020,7 @@ Remove access to the password manager via preferences and blocks about:logins on
 
 **Compatibility:** Firefox 70, Firefox ESR 60.2\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `prefs.privacy.disable_button.view_passwords`
+**Preferences Affected:** `pref.privacy.disable_button.view_passwords`
 
 #### Windows (GPO)
 ```
@@ -2368,7 +2368,7 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 Ask where to save each file before downloading.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
-**CCK2 Equivalent:** N/A
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.download.useDownloadDir`
 
 #### Windows (GPO)
