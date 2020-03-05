@@ -81,6 +81,9 @@
     <category displayName="$(string.SanitizeOnShutdown_group)" name="SanitizeOnShutdown">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.TrackingProtection_group)" name="TrackingProtection">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
@@ -3218,6 +3221,53 @@
     </policy>
     <policy name="I_SanitizeOnShutdown_Locked" class="Both" displayName="$(string.SanitizeOnShutdown_Locked)" explainText="$(string.SanitizeOnShutdown_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Locked">
       <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="A_TrackingProtection_Value" class="Both" displayName="$(string.TrackingProtection_Value)" explainText="$(string.TrackingProtection_Value_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="B_TrackingProtection_Cryptomining" class="Both" displayName="$(string.TrackingProtection_Cryptomining)" explainText="$(string.TrackingProtection_Cryptomining_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Cryptomining">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="C_TrackingProtection_Fingerprinting" class="Both" displayName="$(string.TrackingProtection_Fingerprinting)" explainText="$(string.TrackingProtection_Fingerprinting_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Fingerprinting">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="D_TrackingProtection_Exceptions" class="Both" displayName="$(string.TrackingProtection_Exceptions)" explainText="$(string.TrackingProtection_Exceptions_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection"  presentation="$(presentation.TrackingProtection_Exceptions)">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <elements>
+        <list id="TrackingProtection_Exceptions" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="E_TrackingProtection_Locked" class="Both" displayName="$(string.TrackingProtection_Locked)" explainText="$(string.TrackingProtection_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
+      <parentCategory ref="TrackingProtection"/>
       <supportedOn ref="SUPPORTED_FF74"/>
       <enabledValue>
         <decimal value="1"/>

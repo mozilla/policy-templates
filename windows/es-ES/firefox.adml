@@ -570,6 +570,29 @@ Si esta política está deshabilitada o no está configurada, se usa la configur
 Si esta política está deshabilitada, la protección contra rastreo se deshabilitará y se bloquea tanto en el navegador como en la navegación privada.
 
 Si esta política está habilitada, la navegación privada está habilitada de forma predeterminada tanto en el navegador como en la navegación privada y podrá elegir si desea evitar que el usuario la cambie.</string>
+      <string id="TrackingProtection_group">Tracking Protection</string>
+      <string id="TrackingProtection_Value">Enabled</string>
+      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+
+If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+
+If this policy is not configured, standard tracking protection is used and the user can change it.</string>
+      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
+      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+
+If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
+      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+
+If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
+      <string id="TrackingProtection_Exceptions">Exceptions</string>
+      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+
+If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
+      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
+      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
       <string id="RequestedLocales">Solicitud de localización</string>
       <string id="RequestedLocalesString">Solicitud de localización (cadena)</string>
       <string id="RequestedLocales_Explain">Si esta política está habilitada, podrá especificar una lista de las localizaciones solicitadas para la aplicación en orden de preferencia. Esto hará que el paquete de idioma correspondiente se active.
@@ -744,6 +767,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="Cryptomining">Bloquear scripts de minado de criptomonedas.</checkBox>
         <checkBox refId="Fingerprinting">Bloquear scripts de huellas digitales.</checkBox>
         <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="TrackingProtection_Exceptions">
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
