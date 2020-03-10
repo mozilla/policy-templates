@@ -361,6 +361,17 @@
 			<key>Locked</key>
 			<true/>
 		</dict>
+		<key>Autoplay</key>
+		<dict>
+			<key>Allow</key>
+			<array>
+				<string>https://example.org</string>
+			</array>
+			<key>Block</key>
+			<array>
+				<string>https://example.edu</string>
+			</array>
+		</dict>
 	</dict>
 	<key>PopupBlocking</key>
 	<dict>

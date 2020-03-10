@@ -28,6 +28,7 @@
       <string id="Microphone_group">Microphone</string>
       <string id="Location_group">Localisation</string>
       <string id="Notifications_group">Notifications</string>
+      <string id="Autoplay_group">Autoplay</string>
       <string id="Authentication_group">Authentification</string>
       <string id="Bookmarks_group">Signets</string>
       <string id="Certificates_group">Certificats</string>
@@ -380,6 +381,12 @@ Si cette stratégie est désactivée ou non configurée, tout site ne figurant p
       <string id="Notifications_Locked_Explain">Si cette stratégie est activée, les préférences de notification ne peuvent pas être modifiées par l'utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de notification.</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
       <string id="FirefoxHome">Customize Firefox Home</string>
       <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
 
