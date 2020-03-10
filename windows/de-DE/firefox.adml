@@ -571,28 +571,28 @@ Wenn Sie die Richtlinieneinstellung deaktivieren, ist der Aktivitäten-Verfolgun
 
 Wenn Sie die Richtlinieneinstellung aktivieren, privates Surfen ist sowohl im Browser als auch im privaten Browser standardmäßig aktiviert, und Sie können festlegen, ob der Benutzer die Änderung ändern soll oder nicht</string>
       <string id="TrackingProtection_group">Tracking Protection</string>
-      <string id="TrackingProtection_Value">Enabled</string>
-      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+      <string id="TrackingProtection_Value">Aktiviert</string>
+      <string id="TrackingProtection_Value_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, ist der Schutz vor Aktivitätenverfolgung aktiviert.
 
-If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert ist, ist der Schutz vor Aktivitätenverfolgung deaktiviert und kann nicht vom Nutzer aktiviert werden.
 
-If this policy is not configured, standard tracking protection is used and the user can change it.</string>
+Wenn diese Gruppenrichtlinieneinstellung nicht konfiguriert ist, sind die Standardeinstellungen zum Schutz vor Aktivitätenverfolgung aktiviert und der Nutzer kann die Einstellungen ändern.</string>
       <string id="TrackingProtection_Cryptomining">Cryptomining</string>
-      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+      <string id="TrackingProtection_Cryptomining_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Cryptomining-Skripte blockiert.
 
-If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Cryptomining-Skripte nicht blockiert.</string>
       <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+      <string id="TrackingProtection_Fingerprinting_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Fingerprinting-Skripte blockiert.
 
-If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
-      <string id="TrackingProtection_Exceptions">Exceptions</string>
-      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Fingerprinting-Skripte nicht blockiert.</string>
+      <string id="TrackingProtection_Exceptions">Ausnahmen</string>
+      <string id="TrackingProtection_Exceptions_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Ausnahmen-Seiten definiert werden, bei denen der Schutz vor Aktivitätenverfolgung deaktiviert ist.
 
-If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
-      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
-      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, gelten die gesetzten Einstellungen für alle Webseiten.</string>
+      <string id="TrackingProtection_Locked">Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung verbieten</string>
+      <string id="TrackingProtection_Locked_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Nutzer keine Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung vornehmen.
 
-If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Nutzer Änderungen an den Einstellungen vornehmen.</string>
       <string id="RequestedLocales">Requested locale</string>
       <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
