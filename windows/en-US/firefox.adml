@@ -28,6 +28,7 @@
       <string id="Microphone_group">Microphone</string>
       <string id="Location_group">Location</string>
       <string id="Notifications_group">Notifications</string>
+      <string id="Autoplay_group">Autoplay</string>
       <string id="Authentication_group">Authentication</string>
       <string id="Bookmarks_group">Bookmarks</string>
       <string id="Certificates_group">Certificates</string>
@@ -380,6 +381,12 @@ If this policy is disabled or not configured, any site that is not in the Block 
       <string id="Notifications_Locked_Explain">If this policy is enabled, notification preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their notification preferences.</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
       <string id="FirefoxHome">Customize Firefox Home</string>
       <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
 

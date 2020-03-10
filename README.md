@@ -2042,7 +2042,7 @@ Software\Policies\Mozilla\Firefox\PasswordManagerEnabled = 0x1 | 0x0
 }
 ```
 ### Permissions
-Set permissions associated with camera, microphone, location, and notifications. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
+Set permissions associated with camera, microphone, location, notifications, and autoplay. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
 
 `Allow` is a list of origins where the feature is allowed.
 
@@ -2052,7 +2052,7 @@ Set permissions associated with camera, microphone, location, and notifications.
 
 `Locked` prevents the user from changing preferences for the feature.
 
-**Compatibility:** Firefox 62, Firefox ESR 60.2\
+**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`
 
@@ -2075,6 +2075,8 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow\1 = "https://e
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://example.edu"
 ```
 #### macOS
 ```
@@ -2142,6 +2144,17 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
       <key>Locked</key>
       <true/>
     </dict>
+    <key>Autoplay</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+    </dict>
   </dict>
 </dict>
 ```
@@ -2173,6 +2186,10 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
         "Block": ["https://example.edu"],
         "BlockNewRequests": true | false,
         "Locked": true | false
+      },
+      "Autoplay": {
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"]
       }
     }
   }

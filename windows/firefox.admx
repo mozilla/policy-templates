@@ -75,6 +75,9 @@
     <category displayName="$(string.Notifications_group)" name="Notifications">
       <parentCategory ref="Permissions"/>
     </category>
+    <category displayName="$(string.Autoplay_group)" name="Autoplay">
+      <parentCategory ref="Permissions"/>
+    </category>
     <category displayName="$(string.Preferences_group)" name="Preferences">
       <parentCategory ref="firefox"/>
     </category>
@@ -440,6 +443,20 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="Autoplay_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Autoplay_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Autoplay"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Autoplay_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Autoplay_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Autoplay"/>
+      <supportedOn ref="SUPPORTED_FF74"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block" valuePrefix=""/>
+      </elements>
     </policy>
     <policy name="DefaultDownloadDirectory" class="Both" displayName="$(string.DefaultDownloadDirectory)" explainText="$(string.DefaultDownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
       <parentCategory ref="firefox"/>

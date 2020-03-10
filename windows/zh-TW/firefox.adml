@@ -28,6 +28,7 @@
       <string id="Microphone_group">麥克風</string>
       <string id="Location_group">位置</string>
       <string id="Notifications_group">通知</string>
+      <string id="Autoplay_group">Autoplay</string>
       <string id="Authentication_group">驗證</string>
       <string id="Bookmarks_group">書籤</string>
       <string id="Certificates_group">憑證</string>
@@ -378,6 +379,12 @@ If this policy is disabled or not configured, the menu bar is not displayed by d
       <string id="Notifications_Locked_Explain">若啟用此原則，使用者將無法調整通知偏好設定。
 
 若停用或不設定此原則，則使用者能夠自行調整位置通知偏好設定。</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
       <string id="FirefoxHome">自訂 Firefox 首頁</string>
       <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
 

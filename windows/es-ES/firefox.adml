@@ -28,6 +28,7 @@
       <string id="Microphone_group">Micrófono</string>
       <string id="Location_group">Ubicación</string>
       <string id="Notifications_group">Notificaciones</string>
+      <string id="Autoplay_group">Autoplay</string>
       <string id="Authentication_group">Autenticación</string>
       <string id="Bookmarks_group">Marcadores</string>
       <string id="Certificates_group">Certificados</string>
@@ -380,6 +381,12 @@ Si esta política está deshabilitada o no está configurada, cualquier sitio qu
       <string id="Notifications_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de notificaciones.
 
 Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar sus preferencias de notificaciones.</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
       <string id="FirefoxHome">Personalizar inicio de Firefox</string>
       <string id="FirefoxHome_Explain">Si esta política está habilitada, podrá elegir las secciones que se muestran en la página de inicio de Firefox e impedir que el usuario las cambie.
 
