@@ -28,7 +28,7 @@
       <string id="Microphone_group">Microfono</string>
       <string id="Location_group">Posizione</string>
       <string id="Notifications_group">Notifiche</string>
-      <string id="Autoplay_group">Autoplay</string>
+      <string id="Autoplay_group">Riproduzione automatica</string>
       <string id="Authentication_group">Autenticazione</string>
       <string id="Bookmarks_group">Segnalibri</string>
       <string id="Certificates_group">Certificati</string>
@@ -381,12 +381,12 @@ Se questo criterio è disabilitato o non configurato, qualunque sito non nel cri
       <string id="Notifications_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle notifiche non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle notifiche.</string>
-      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+      <string id="Autoplay_Allow_Explain">Se questo criterio è abilitato, la riproduzione automatica sarà sempre consentita per le origini indicate.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
-      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+Se questo criterio è disabilitato o non configurato, viene seguito il criterio predefinito per la riproduzione automatica.</string>
+      <string id="Autoplay_Block_Explain">Se questo criterio è abilitato, la riproduzione automatica sarà sempre bloccata per le origini indicate.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+Se questo criterio è disabilitato o non configurato, viene seguito il criterio predefinito per la riproduzione automatica.</string>
       <string id="FirefoxHome">Personalizza pagina iniziale di Firefox</string>
       <string id="FirefoxHome_Explain">Se questo criterio è abilitato, è possibile scegliere le sezioni visualizzate nella pagina iniziale di Firefox e impedire all'utente di modificarle.
 
@@ -419,46 +419,46 @@ Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento ve
       <string id="SanitizeOnShutdown_Explain">Se questo criterio è abilitato, tutti i dati saranno cancellati alla chiusura di Firefox. Ciò include la cronologia di navigazione e dei download, i cookie, gli accessi effettuati, la cache, la cronologia dei moduli e di ricerca, le preferenze e i dati non in linea dei siti Web.
 
 Se questo criterio è disabilitato o non configurato, i dati non sono cancellati alla chiusura del browser.</string>
-      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+      <string id="SanitizeOnShutdown_group">Elimina i dati alla chiusura del browser</string>
 
       <string id="SanitizeOnShutdown_Cache">Cache</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cache_Explain">Se questo criterio è abilitato, la cache sarà cancellata alla chiusura del browser.
 
-If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
-      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, la cache non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookie</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">Se questo criterio è abilitato, i cookie saranno cancellati alla chiusura del browser.
 
-If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download History</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, i cookie non sono cancellati alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Downloads">Cronologia download</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Se questo criterio è abilitato, la cronologia dei download sarà cancellata alla chiusura del browser.
 
-If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, la cronologia dei download non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_FormData">Cronologia delle ricerche e dei moduli</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Se questo criterio è abilitato, i dati dei moduli saranno cancellati alla chiusura del browser.
 
-If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_History">Browsing History</string>
-      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, i dati dei moduli non sono cancellati alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_History">Cronologia di navigazione</string>
+      <string id="SanitizeOnShutdown_History_Explain">Se questo criterio è abilitato, la cronologia di navigazione sarà cancellata alla chiusura del browser.
 
-If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, la cronologia di navigazione non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Sessions">Accessi effettuati</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">Se questo criterio è abilitato, le sessioni saranno cancellate alla chiusura del browser.
 
-If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
-      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, le sessioni non saranno cancellate alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Preferenze dei siti web</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Se questo criterio è abilitato, le preferenze dei siti web saranno cancellate alla chiusura del browser.
 
-If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+Se questo criterio è disabilitato o non configurato, le preferenze dei siti web non sono cancellate alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Dati non in linea dei siti web</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Se questo criterio è abilitato, l'archiviazione non in linea delle applicazioni sarà cancellata alla chiusura del browser.
 
-If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Locked">Locked</string>
-      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+Se questo criterio è disabilitato o non configurato, l'archiviazione non in linea delle applicazioni non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Locked">Blocca preferenze</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">Se questo criterio è disabilitato, tutte le preferenze di eliminazione alla chiusura potranno essere modificate dall'utente.
 
-If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+Se questo criterio è abilitato, tutte le preferenze di eliminazione alla chiusura impostate tramite criteri non potranno essere modificate dall'utente
 
-If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+Se questo criterio non è configurato, nessuna preferenza di eliminazione alla chiusura può essere modificata dall'utente (comportamento precedente).</string>
       <string id="WebsiteFilter_Block">Siti Web bloccati</string>
       <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
 
@@ -577,29 +577,29 @@ Se questo criterio è disabilitato o non configurato, saranno utilizzate le impo
 Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e bloccata sia nel browser, sia in Navigazione anonima.
 
 Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
-      <string id="TrackingProtection_group">Tracking Protection</string>
-      <string id="TrackingProtection_Value">Enabled</string>
-      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+      <string id="TrackingProtection_group">Protezione antitracciamento</string>
+      <string id="TrackingProtection_Value">Abilitata</string>
+      <string id="TrackingProtection_Value_Explain">Se questo criterio è abilitato, la protezione antitracciamento è abilitata.
 
-If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e non può essere modificata dall'utente.
 
-If this policy is not configured, standard tracking protection is used and the user can change it.</string>
-      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
-      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+Se questo criterio non è configurato, viene utilizzata la protezione antitracciamento standard e l'utente può modificarla.</string>
+      <string id="TrackingProtection_Cryptomining">Cryptominer</string>
+      <string id="TrackingProtection_Cryptomining_Explain">Se questo criterio è abilitato, gli script che utilizzano dei cryptominer sono bloccati.
 
-If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
-      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+Se questo criterio è disabilitato o non configurato, gli script che utilizzano dei cryptominer non sono bloccati.</string>
+      <string id="TrackingProtection_Fingerprinting">Fingerprinter</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Se questo criterio è abilitato, gli script che utilizzano dei fingerprinter sono bloccati.
 
-If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
-      <string id="TrackingProtection_Exceptions">Exceptions</string>
-      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+Se questo criterio è disabilitato o non configurato, gli script che utilizzano dei fingerprinter non sono bloccati.</string>
+      <string id="TrackingProtection_Exceptions">Eccezioni</string>
+      <string id="TrackingProtection_Exceptions_Explain">Se questo criterio è abilitato, è possibile specificare delle origini per cui non è abilitata la protezione antitracciamento.
 
-If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
-      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
-      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+Se questo criterio è disabilitato o non configurato, la protezione antitracciamento è abilitata per tutti i siti Web.</string>
+      <string id="TrackingProtection_Locked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento</string>
+      <string id="TrackingProtection_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alla protezione antitracciamento non possono essere modificate dall'utente.
 
-If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alla protezione antitracciamento.</string>
       <string id="RequestedLocales">Lingua richiesta</string>
       <string id="RequestedLocalesString">Lingua richiesta (stringa)</string>
       <string id="RequestedLocales_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di lingue richieste per l'applicazione in ordine di preferenza. Il pacchetto lingue corrispondente sarà attivato.
