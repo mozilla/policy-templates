@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.13" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.14" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -28,6 +28,7 @@
       <string id="Microphone_group">Microfono</string>
       <string id="Location_group">Posizione</string>
       <string id="Notifications_group">Notifiche</string>
+      <string id="Autoplay_group">Autoplay</string>
       <string id="Authentication_group">Autenticazione</string>
       <string id="Bookmarks_group">Segnalibri</string>
       <string id="Certificates_group">Certificati</string>
@@ -380,6 +381,12 @@ Se questo criterio è disabilitato o non configurato, qualunque sito non nel cri
       <string id="Notifications_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle notifiche non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle notifiche.</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
       <string id="FirefoxHome">Personalizza pagina iniziale di Firefox</string>
       <string id="FirefoxHome_Explain">Se questo criterio è abilitato, è possibile scegliere le sezioni visualizzate nella pagina iniziale di Firefox e impedire all'utente di modificarle.
 

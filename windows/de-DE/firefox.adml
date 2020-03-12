@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.13" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.14" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -28,6 +28,7 @@
       <string id="Microphone_group">Mikrofon</string>
       <string id="Location_group">Standort</string>
       <string id="Notifications_group">Benachrichtigungen</string>
+      <string id="Autoplay_group">Autoplay</string>
       <string id="Authentication_group">Authentifizierung</string>
       <string id="Bookmarks_group">Lesezeichen</string>
       <string id="Certificates_group">Zertifikate</string>
@@ -380,6 +381,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann 
       <string id="Notifications_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zu Benachrichtigungen nicht vom Anwender geändert werden.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer seine Einstellungen zu Benachrichtigungen ändern.</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
       <string id="FirefoxHome">Firefox Home anpassen</string>
       <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 
