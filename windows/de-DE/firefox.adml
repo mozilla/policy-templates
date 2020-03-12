@@ -429,36 +429,34 @@ Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist
       <string id="SanitizeOnShutdown_Cookies_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Cookies gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Cookies nicht gelöscht wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download History</string>
+      <string id="SanitizeOnShutdown_Downloads">Download Historie</string>
       <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird die Download Historie gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, form data is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe &amp; Formulardaten</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Eingegebene Suchbegriffe &amp; Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_History">Browsing History</string>
-      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, browsing history is cleared when the browser is closed.
+If this policy is disabled or not configured, werden Eingegebene Suchbegriffe &amp; Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
+      <string id="SanitizeOnShutdown_History">Chronik</string>
+      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird die Chronik gelöscht wenn der Browser geschlossen wird.
 
-Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, browsing history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, sessions cleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Chronik nicht gelöscht wenn der Browser geschlossen wird.</string>
+      <string id="SanitizeOnShutdown_Sessions">Gespeicherte Logins</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht nachdem der Browser geschlossen wurde.
 
-If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
-      <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, sire preferences arecleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Website-Einstellungen nicht gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, site preferences not cleared when the browser is closed.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_OfflineApps">Offline Website Daten</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, offline application storage is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht wenn der Browser geschlossen wird.
 
-Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, offline application storage is not cleared when the browser is closed.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Locked">Locked</string>
-      <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Gruppenrichtlinieneinstellung deaktiviert ist, all shutdown preferences can be changed by the user.
+      <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert sind, können alle Einstellungen vom Nutzer geändert werden.
 
-If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
-
-Wenn diese Gruppenrichtlinieneinstellung nicht konfiguriert ist, no shutdown preferences can be changed by the user (previous behavior).</string>
+Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Einstellungen vom Nutzer nicht geändert werden.</string>
       <string id="WebsiteFilter_Block">Gesperrte Webseites</string>
       <string id="WebsiteFilter_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Übereinstimmungsmuster für zu blockierende Webseiten angeben. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Derzeit werden nur http / https-Zugriffe unterstützt. Es gibt eine Beschränkung von 1000 Einträgen. 
 
