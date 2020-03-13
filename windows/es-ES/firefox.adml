@@ -24,11 +24,11 @@
       <string id="SUPPORTED_FF74">Firefox 74 o posterior, Firefox 68.6 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
-      <string id="Camera_group">Camera</string>
+      <string id="Camera_group">Cámara</string>
       <string id="Microphone_group">Micrófono</string>
       <string id="Location_group">Ubicación</string>
       <string id="Notifications_group">Notificaciones</string>
-      <string id="Autoplay_group">Autoplay</string>
+      <string id="Autoplay_group">Reproducción automática</string>
       <string id="Authentication_group">Autenticación</string>
       <string id="Bookmarks_group">Marcadores</string>
       <string id="Certificates_group">Certificados</string>
@@ -43,7 +43,7 @@
       <string id="Allow">Sitios permitidos</string>
       <string id="Block">Sitios bloqueados</string>
       <string id="AppUpdateURL">URL de actualización personalizada</string>
-      <string id="AppUpdateURL_Explain">Si esta política está habilitada, podrá establecer una URL para un servidor de actualización que no sea el predeterminado. Esto podría ser útil si ejecuta su propio servidor de actualización en su red.
+      <string id="AppUpdateURL_Explain">Si esta política está habilitada, podrá establecer una URL para un servidor de actualización que no sea el predeterminado. Esto podría ser útil si ejecuta tu propio servidor de actualización en tu red.
 
 Si esta política está deshabilitada o no está configurada, se utilizará la URL de actualización predeterminada.</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
@@ -207,19 +207,19 @@ Mozilla recomienda que no deshabilite la telemetría. La información recopilada
       <string id="DisplayBookmarksToolbar">Mostrar barra de herramientas de marcadores</string>
       <string id="DisplayBookmarksToolbar_Explain">Si esta política está habilitada, la barra de herramientas de marcadores se mostrará de manera predeterminada. El usuario aún podrá ocultarlo.
 
-Si esta política está deshabilitada o no está configurada, la barra de herramientas de marcadores no se mostrará de manera predeterminada.</string>
+Si esta política está deshabilitada o no está configurada, la barra de herramientas de marcadores no se mostrará de forma predeterminada.</string>
       <string id="DisplayMenuBar">Mostrar barra de menú (obsoleto)</string>
-      <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menú se mostrará de manera predeterminada. El usuario aún puede ocultarlo.
+      <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menú se mostrará de forma predeterminada. El usuario aún puede ocultarlo.
 
-Si esta política está deshabilitada o no está configurada, la barra de menú no se mostrará de manera predeterminada.</string>
-      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
-      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+Si esta política está deshabilitada o no está configurada, la barra de menú no se mostrará de forma predeterminada.</string>
+      <string id="DisplayMenuBar_Enum">Mostrar barra de menú</string>
+      <string id="DisplayMenuBar_Enum_Explain">Si esta política está habilitada, podrá elegir si se muestra o no la barra de menú, y si el usuario podrá mostrar u ocultar la barra de menú.
 
-If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
-      <string id="DisplayMenuBar_Always">Always</string>
-      <string id="DisplayMenuBar_Never">Never</string>
-      <string id="DisplayMenuBar_Default_On">On by default</string>
-      <string id="DisplayMenuBar_Default_Off">Off by default</string>
+Si esta política está deshabilitada o no está configurada, la barra de menú no se muestrará de forma predeterminada.</string>
+      <string id="DisplayMenuBar_Always">Siempre</string>
+      <string id="DisplayMenuBar_Never">Nunca</string>
+      <string id="DisplayMenuBar_Default_On">Encendido de forma predeterminada</string>
+      <string id="DisplayMenuBar_Default_Off">Apagado de forma predeterminada</string>
       <string id="DontCheckDefaultBrowser">No verificar el navegador predeterminado</string>
       <string id="DontCheckDefaultBrowser_Explain">Si esta política está habilitada, Firefox no comprobará si es el navegador predeterminado al inicio.
 
@@ -288,7 +288,7 @@ Si esta política no está configurada o habilitada, las ventanas emergentes no 
       <string id="PopupBlocking_Locked">No permita que se cambien las preferencias</string>
       <string id="PopupBlocking_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar las preferencias de ventanas emergentes.
 
-Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar sus preferencias de ventanas emergentes.</string>
+Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar tus preferencias de ventanas emergentes.</string>
       <string id="InstallAddonsPermission_Allow_Explain">Si esta política está habilitada, los complementos siempre estarán permitidos para los orígenes indicados a menos que la instalación de complementos esté deshabilitada. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permiten complementos para todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política de complementos predeterminada.</string>
@@ -324,7 +324,7 @@ Esta configuración se ignora si esta política está deshabilitada o no está c
       <string id="Cookies_Locked">No permitir que se cambien las preferencias</string>
       <string id="Cookies_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar las preferencias de cookies.
 
-Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar sus preferencias de cookies.</string>
+Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar tus preferencias de cookies.</string>
       <string id="Camera_Allow_Explain">Si esta política está habilitada, el acceso a la cámara siempre estará permitido para los orígenes indicados.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política de cámara predeterminada.</string>
@@ -381,12 +381,12 @@ Si esta política está deshabilitada o no está configurada, cualquier sitio qu
       <string id="Notifications_Locked_Explain">Si esta política está habilitada, el usuario no puede cambiar las preferencias de notificaciones.
 
 Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar sus preferencias de notificaciones.</string>
-      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+      <string id="Autoplay_Allow_Explain">Si esta política está habilitada, la reproducción automática siempre estará habilitada para los orígenes indicados.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
-      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+Si esta política está deshabilitada o no está configurada, se seguirá la política predeterminada de reproducción automática.</string>
+      <string id="Autoplay_Block_Explain">Si esta política está habilitada, la reproducción automática siempre se bloqueará para los orígenes indicados.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+Si esta política está deshabilitada o no está configurada, se seguirá la política predeterminada de reproducción automática.</string>
       <string id="FirefoxHome">Personalizar inicio de Firefox</string>
       <string id="FirefoxHome_Explain">Si esta política está habilitada, podrá elegir las secciones que se muestran en la página de inicio de Firefox e impedir que el usuario las cambie.
 
@@ -418,49 +418,49 @@ Si esta política está deshabilitada o no está configurada, se mostrará la ac
       <string id="SanitizeOnShutdown">Borrar datos cuando el navegador esté cerrado</string>
       <string id="SanitizeOnShutdown_Explain">Si esta política está habilitada, podrá elegir que los datos se borren cuando Firefox esté cerrado.
 
-Si esta política está deshabilitada o no está configurada, los datos no se borrarán cuando se cierra el navegador.</string>
-      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+Si esta política está deshabilitada o no está configurada, los datos no se borrarán cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_group">Borrar datos cuando el navegador esté cerrado</string>
 
-      <string id="SanitizeOnShutdown_Cache">Cache</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cache">Caché</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">Si la política está habilitada, el caché se borrará cuando se cierre el navegador.
 
-If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+Si esta política está deshabilitada o no está configurada, el caché no se borrará cuando se cierre el navegador.</string>
       <string id="SanitizeOnShutdown_Cookies">Cookies</string>
-      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cookies_Explain">Si esta política está habilitada, las cookies se borrarán cuando se cierre el navegador.
 
-If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download History</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+Si esta política está deshabilitada o no está configurada, las cookies no se borrarán cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_Downloads">Historial de descargas</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Si esta política está habilitada, el historial de descargas se borrará cuando se cierre el navegador.
 
-If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+Si esta política está deshabilitada o no está configurada, el historial de descargas no se borrará cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_FormData">Historial de búsqueda y formularios</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Si esta política está habilitada, los datos de formularios se borrarán cuando se cierre el navegador.
 
-If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_History">Browsing History</string>
-      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+Si esta política está deshabilitada o no está configurada, los datos de formularios no se borrarán cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_History">Historial de navegación</string>
+      <string id="SanitizeOnShutdown_History_Explain">Si esta política está habilitada, el historial de navegación se borrará cuando se cierre el navegador.
 
-If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+Si esta política está deshabilitada o no está configurada, el historial de navegación no se borrará cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_Sessions">Sesiones activas</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">Si esta política está habilitada, las sesiones se borrarán cuando se cierre el navegador.
 
-If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
-      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+Si esta política está deshabilitada o no está configurada, las sesiones no se borrarán cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Preferencias de sitios</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Si esta política está habilitada, las preferencias de sitios se borrarán cuando se cierre el navegador.
 
-If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+Si esta política está deshabilitada o no está configurada, las preferencias de sitios no se borrarán cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Datos del sitios web sin conexión</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Si esta política está habilitada, el almacenamiento de la aplicación sin conexión se borrará cuando se cierre el navegador.
 
-If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Locked">Locked</string>
-      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+Si esta política está deshabilitada o no está configurada, el almacenamiento de la aplicación sin conexión no se borrará cuando se cierre el navegador.</string>
+      <string id="SanitizeOnShutdown_Locked">Bloqueado</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">Si esta política está deshabilitada, el usuario podrá cambiar todas las preferencias de apagado.
 
-If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+Si esta política está habilitada, el usuario no podrá cambiar las preferencias de apagado establecidas explícitamente a través de la política.
 
-If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+Si esta política no está configurada, el usuario no podrá cambiar las preferencias de apagado (comportamiento anterior).</string>
       <string id="WebsiteFilter_Block">Sitios web bloqueados</string>
-      <string id="WebsiteFilter_Block_Explain">Si esta política está habilitada, puede especificar patrones de coincidencia que indiquen que sitios se bloquearán. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
+      <string id="WebsiteFilter_Block_Explain">Si esta política está habilitada, podrá especificar patrones de coincidencia que indiquen que sitios se bloquearán. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
 
 Si esta política está deshabilitada o no está configurada, no se bloquearán los sitios web.</string>
       <string id="WebsiteFilter_Exceptions">Excepciones a sitios web bloqueados</string>
@@ -577,29 +577,29 @@ Si esta política está deshabilitada o no está configurada, se usa la configur
 Si esta política está deshabilitada, la protección contra rastreo se deshabilitará y se bloquea tanto en el navegador como en la navegación privada.
 
 Si esta política está habilitada, la navegación privada está habilitada de forma predeterminada tanto en el navegador como en la navegación privada y podrá elegir si desea evitar que el usuario la cambie.</string>
-      <string id="TrackingProtection_group">Tracking Protection</string>
-      <string id="TrackingProtection_Value">Enabled</string>
-      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+      <string id="TrackingProtection_group">Protección contra rastreo</string>
+      <string id="TrackingProtection_Value">Habilitado</string>
+      <string id="TrackingProtection_Value_Explain">Si esta política está habilitada, la protección contra rastreo estará habilitada.
 
-If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+Si esta política está deshabilitada, la protección contra rastreo estará deshabilitada y el usuario no podrá cambiarla.
 
-If this policy is not configured, standard tracking protection is used and the user can change it.</string>
-      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
-      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+Si esta política no está configurada, se utilizará la protección contra rastreo estándar y el usuario podrá cambiarla.</string>
+      <string id="TrackingProtection_Cryptomining">Minado de criptomonedas</string>
+      <string id="TrackingProtection_Cryptomining_Explain">Si esta política está habilitada, los scripts que utilizan minado de criptomonedas se bloquearán.
 
-If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
-      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+Si esta política está deshabilitada o no está configurada, los scripts que utilizan minado de criptomonedas no se bloquearán.</string>
+      <string id="TrackingProtection_Fingerprinting">Huellas digitales</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Si esta política está habilitada, los scripts que utilizan huellas digitales se bloquearán.
 
-If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
-      <string id="TrackingProtection_Exceptions">Exceptions</string>
-      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+Si esta política está deshabilitada o no está configurada, los scripts que utilizan huellas digitales no se bloquearán.</string>
+      <string id="TrackingProtection_Exceptions">Excepciones</string>
+      <string id="TrackingProtection_Exceptions_Explain">Si esta política está habilitada, podrá especificar los orígenes donde la protección contra rastreo no está habilitada.
 
-If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
-      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
-      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+Si esta política está deshabilitada o no está configurada, la protección contra rastreo estará habilitada para todos los sitios web.</string>
+      <string id="TrackingProtection_Locked">No permitir que se cambien las preferencias de protección contra rastreo</string>
+      <string id="TrackingProtection_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar las preferencias de protección contra rastreo.
 
-If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar las preferencias de protección contra rastreo.</string>
       <string id="RequestedLocales">Solicitud de localización</string>
       <string id="RequestedLocalesString">Solicitud de localización (cadena)</string>
       <string id="RequestedLocales_Explain">Si esta política está habilitada, podrá especificar una lista de las localizaciones solicitadas para la aplicación en orden de preferencia. Esto hará que el paquete de idioma correspondiente se active.
@@ -773,7 +773,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">No permitir que se cambien las preferencias de protección contra rastreo.</checkBox>
         <checkBox refId="Cryptomining">Bloquear scripts de minado de criptomonedas.</checkBox>
         <checkBox refId="Fingerprinting">Bloquear scripts de huellas digitales.</checkBox>
-        <text>Exceptions:</text>
+        <text>Excepciones:</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="TrackingProtection_Exceptions">
