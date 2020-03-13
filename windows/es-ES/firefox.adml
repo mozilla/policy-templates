@@ -422,9 +422,9 @@ Si esta política está deshabilitada o no está configurada, los datos no se bo
       <string id="SanitizeOnShutdown_group">Borrar datos cuando el navegador esté cerrado</string>
 
       <string id="SanitizeOnShutdown_Cache">Caché</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">Si la política está habilitada, el caché se borrará cuando se cierre el navegador.
+      <string id="SanitizeOnShutdown_Cache_Explain">Si la política está habilitada, la caché se borrará cuando se cierre el navegador.
 
-Si esta política está deshabilitada o no está configurada, el caché no se borrará cuando se cierre el navegador.</string>
+Si esta política está deshabilitada o no está configurada, la caché no se borrará cuando se cierre el navegador.</string>
       <string id="SanitizeOnShutdown_Cookies">Cookies</string>
       <string id="SanitizeOnShutdown_Cookies_Explain">Si esta política está habilitada, las cookies se borrarán cuando se cierre el navegador.
 
