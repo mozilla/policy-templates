@@ -585,13 +585,13 @@ Si esta política está deshabilitada, la protección contra rastreo estará des
 
 Si esta política no está configurada, se utilizará la protección contra rastreo estándar y el usuario podrá cambiarla.</string>
       <string id="TrackingProtection_Cryptomining">Minado de criptomonedas</string>
-      <string id="TrackingProtection_Cryptomining_Explain">Si esta política está habilitada, los scripts que utilizan minado de criptomonedas se bloquearán.
+      <string id="TrackingProtection_Cryptomining_Explain">Si esta política está habilitada, los scripts que utilizan minado de criptomonedas serán bloqueados.
 
-Si esta política está deshabilitada o no está configurada, los scripts que utilizan minado de criptomonedas no se bloquearán.</string>
+Si esta política está deshabilitada o no está configurada, los scripts que utilizan minado de criptomonedas no serán bloqueados.</string>
       <string id="TrackingProtection_Fingerprinting">Huellas digitales</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">Si esta política está habilitada, los scripts que utilizan huellas digitales se bloquearán.
+      <string id="TrackingProtection_Fingerprinting_Explain">Si esta política está habilitada, los scripts que utilizan huellas digitales serán bloqueados.
 
-Si esta política está deshabilitada o no está configurada, los scripts que utilizan huellas digitales no se bloquearán.</string>
+Si esta política está deshabilitada o no está configurada, los scripts que utilizan huellas digitales no serán bloqueados.</string>
       <string id="TrackingProtection_Exceptions">Excepciones</string>
       <string id="TrackingProtection_Exceptions_Explain">Si esta política está habilitada, podrá especificar los orígenes donde la protección contra rastreo no está habilitada.
 
