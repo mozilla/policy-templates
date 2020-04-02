@@ -23,6 +23,7 @@
       <definition name="SUPPORTED_FF72" displayName="$(string.SUPPORTED_FF72)"/>
       <definition name="SUPPORTED_FF73" displayName="$(string.SUPPORTED_FF73)"/>
       <definition name="SUPPORTED_FF74" displayName="$(string.SUPPORTED_FF74)"/>
+      <definition name="SUPPORTED_FF75" displayName="$(string.SUPPORTED_FF75)"/>
       <definition name="SUPPORTED_FF68ESR" displayName="$(string.SUPPORTED_FF68ESR)"/>
     </definitions>
   </supportedOn>
@@ -85,6 +86,9 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.TrackingProtection_group)" name="TrackingProtection">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.DNSOverHTTPS_group)" name="DNSOverHTTPS">
       <parentCategory ref="firefox"/>
     </category>
   </categories>
@@ -470,6 +474,40 @@
       <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
         <text id="Preferences_String" valueName="DownloadDirectory" expandable="true"/>
+      </elements>
+    </policy>
+    <policy name="DNSOverHTTPS_Enabled" class="Both" displayName="$(string.DNSOverHTTPS_Enabled)" explainText="$(string.DNSOverHTTPS_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Enabled">
+      <parentCategory ref="DNSOverHTTPS"/>
+      <supportedOn ref="SUPPORTED_FF63ESR"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DNSOverHTTPS_ProviderURL" class="Both" displayName="$(string.DNSOverHTTPS_ProviderURL)" explainText="$(string.DNSOverHTTPS_ProviderURL_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.String)">
+      <parentCategory ref="DNSOverHTTPS"/>
+      <supportedOn ref="SUPPORTED_FF63ESR"/>
+      <elements>
+        <text id="String" valueName="ProviderURL"/>
+      </elements>
+    </policy>
+    <policy name="DNSOverHTTPS_Locked" class="Both" displayName="$(string.DNSOverHTTPS_Locked)" explainText="$(string.DNSOverHTTPS_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Locked">
+      <parentCategory ref="DNSOverHTTPS"/>
+      <supportedOn ref="SUPPORTED_FF63ESR"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DNSOverHTTPS_ExcludedDomains" class="Both" displayName="$(string.DNSOverHTTPS_ExcludedDomains)" explainText="$(string.DNSOverHTTPS_ExcludedDomains_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.List)">
+      <parentCategory ref="DNSOverHTTPS"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <elements>
+        <list id="List" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ExcludedDomains" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="DNSOverHTTPS" class="Both" displayName="$(string.DNSOverHTTPS)" explainText="$(string.DNSOverHTTPS_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.DNSOverHTTPS)" >

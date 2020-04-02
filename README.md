@@ -1182,7 +1182,9 @@ Configure DNS over HTTPS.
 
 `Locked` prevents the user from changing DNS over HTTPS preferences.
 
-**Compatibility:** Firefox 63, Firefox ESR 68\
+`ExcludedDomains` excludes domains from DNS over HTTPS.
+
+**Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.trr.mode`,`network.trr.uri`
 
@@ -1191,6 +1193,7 @@ Configure DNS over HTTPS.
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ExcludedDomains\1 = "example.com"
 ```
 #### macOS
 ```
@@ -1203,6 +1206,10 @@ Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
     <string>URL_TO_ALTERNATE_PROVIDER</string>
     <key>Locked</key>
     <true/> | <false/>
+    <key>ExcludedDomains</key>
+    <array>
+      <string>example.com</string>
+    </array>
   </dict>
 </dict>
 ```
@@ -1213,7 +1220,8 @@ Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
     "DNSOverHTTPS": {
       "Enabled":  true | false,
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
-      "Locked": true | false
+      "Locked": true | false,
+      "ExcludedDomains": ["example.com"]
     }
   }
 }

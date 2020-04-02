@@ -22,6 +22,7 @@
       <string id="SUPPORTED_FF72">Firefox 72 或更新版本、Firefox 68.4 ESR 或更新版本</string>
       <string id="SUPPORTED_FF73">Firefox 73 或更新版本、Firefox 68.5 ESR 或更新版本</string>
       <string id="SUPPORTED_FF74">Firefox 74 或更新版本、Firefox 68.6 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF75">Firefox 75 或更新版本、Firefox 68.7 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -116,7 +117,25 @@ If this policy is enabled or not configured, authentication preferences cannot b
       <string id="DownloadDirectory_Explain">若啟用此原則，可設定並固定下載項目的預設儲存資料夾。可使用 ${home} 來指定家目錄。
 
 若停用或不設定此原則，將使用 Firefox 的預設下載資料夾，且可由使用者變更。</string>
-      <string id="DNSOverHTTPS">設定 DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Enabled</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+
+If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
+      <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+
+If this policy is disabled or not configured, the default provider is used.</string>
+
+      <string id="DNSOverHTTPS_Locked">Locked</string>
+      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+
+If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+
+If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
+      <string id="DNSOverHTTPS">設定 DNS Over HTTPS (Moved)</string>
       <string id="DNSOverHTTPS_Explain">若啟用此原則，可變更預設 DNS over HTTPS 設定。
 
 若停用或不設定此原則，將使用預設 DNS Over HTTPS 設定。</string>
@@ -945,6 +964,14 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="String">
+        <textBox refId="String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="List">
+        <listBox refId="List"/>
       </presentation>
     </presentationTable>
   </resources>
