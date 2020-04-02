@@ -28,7 +28,7 @@
       <string id="Microphone_group">Mikrofon</string>
       <string id="Location_group">Standort</string>
       <string id="Notifications_group">Benachrichtigungen</string>
-      <string id="Autoplay_group">Autoplay</string>
+      <string id="Autoplay_group">Automatische Wiedergabe</string>
       <string id="Authentication_group">Authentifizierung</string>
       <string id="Bookmarks_group">Lesezeichen</string>
       <string id="Certificates_group">Zertifikate</string>
@@ -242,12 +242,12 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="ExtensionUpdate_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Add-ons nicht automatisch aktualisiert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden Add-ons automatisch aktualisiert.</string>
-      <string id="ExtensionSettings">Extension Management</string>
-      <string id="ExtensionSettings_Explain">If this policy is enabled, you can use JSON to describe the extension management policy.
+      <string id="ExtensionSettings">Erweiterungen mit JSON verwalten</string>
+      <string id="ExtensionSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die Einstellungen zu Erweiterungen mit einer JSON Datei verwaltet.
 
-If this policy is disabled or not configured, extensions will not be managed.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Erweiterungen nicht mit einer Richtlinie verwaltet.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Für detalierte Informationen bitte die Dokumentation (in Englischer Sprache) lesen: https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
@@ -381,12 +381,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann 
       <string id="Notifications_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zu Benachrichtigungen nicht vom Anwender geändert werden.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer seine Einstellungen zu Benachrichtigungen ändern.</string>
-      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+      <string id="Autoplay_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Automatische Wiedergabe von Medien für die angegebenen Quellen immer aktiviert.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
-      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung zur Automatischen Wiedergabe von Medien befolgt.</string>
+      <string id="Autoplay_Block_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Automatische Wiedergabe für die genannten Quellen immer deaktiviert.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert, wird die Standardeinstellung zur Automatischen Wiedergabe von Medien befolgt.</string>
       <string id="FirefoxHome">Firefox Home anpassen</string>
       <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 
@@ -419,46 +419,44 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren wird e
       <string id="SanitizeOnShutdown_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden alle Daten der Chronik gelöscht, wenn Firefox geschlossen wird. Dies beinhaltet Browsing &amp; Download Verlauf, Cookies, Aktive Logins, Cache, Form &amp; Suchverlauf, Website-Einstellungen und Offline-Website-Daten.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die keine Daten der Chronik gelöscht.</string>
-      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+      <string id="SanitizeOnShutdown_group">Browserdaten löschen, wenn der Browser geschlossen wird</string>
 
       <string id="SanitizeOnShutdown_Cache">Cache</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cache_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird der Cache gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Cache nicht gelöscht wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Cookies">Cookies</string>
-      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cookies_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Cookies gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download History</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Cookies nicht gelöscht wenn der Browser geschlossen wird.</string>
+      <string id="SanitizeOnShutdown_Downloads">Download Historie</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird die Download Historie gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
+      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe &amp; Formulardaten</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Eingegebene Suchbegriffe &amp; Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_History">Browsing History</string>
-      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+If this policy is disabled or not configured, werden Eingegebene Suchbegriffe &amp; Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
+      <string id="SanitizeOnShutdown_History">Chronik</string>
+      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird die Chronik gelöscht wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Chronik nicht gelöscht wenn der Browser geschlossen wird.</string>
+      <string id="SanitizeOnShutdown_Sessions">Gespeicherte Logins</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht nachdem der Browser geschlossen wurde.
 
-If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
-      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Website-Einstellungen nicht gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Daten</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Locked">Locked</string>
-      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+      <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert sind, können alle Einstellungen vom Nutzer geändert werden.
 
-If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
-
-If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Einstellungen vom Nutzer nicht geändert werden.</string>
       <string id="WebsiteFilter_Block">Gesperrte Webseites</string>
       <string id="WebsiteFilter_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Übereinstimmungsmuster für zu blockierende Webseiten angeben. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Derzeit werden nur http / https-Zugriffe unterstützt. Es gibt eine Beschränkung von 1000 Einträgen. 
 
@@ -578,28 +576,28 @@ Wenn Sie die Richtlinieneinstellung deaktivieren, ist der Aktivitäten-Verfolgun
 
 Wenn Sie die Richtlinieneinstellung aktivieren, privates Surfen ist sowohl im Browser als auch im privaten Browser standardmäßig aktiviert, und Sie können festlegen, ob der Benutzer die Änderung ändern soll oder nicht</string>
       <string id="TrackingProtection_group">Tracking Protection</string>
-      <string id="TrackingProtection_Value">Enabled</string>
-      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+      <string id="TrackingProtection_Value">Aktiviert</string>
+      <string id="TrackingProtection_Value_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, ist der Schutz vor Aktivitätenverfolgung aktiviert.
 
-If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert ist, ist der Schutz vor Aktivitätenverfolgung deaktiviert und kann nicht vom Nutzer aktiviert werden.
 
-If this policy is not configured, standard tracking protection is used and the user can change it.</string>
+Wenn diese Gruppenrichtlinieneinstellung nicht konfiguriert ist, sind die Standardeinstellungen zum Schutz vor Aktivitätenverfolgung aktiviert und der Nutzer kann die Einstellungen ändern.</string>
       <string id="TrackingProtection_Cryptomining">Cryptomining</string>
-      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+      <string id="TrackingProtection_Cryptomining_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Cryptomining-Skripte blockiert.
 
-If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Cryptomining-Skripte nicht blockiert.</string>
       <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+      <string id="TrackingProtection_Fingerprinting_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Fingerprinting-Skripte blockiert.
 
-If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
-      <string id="TrackingProtection_Exceptions">Exceptions</string>
-      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Fingerprinting-Skripte nicht blockiert.</string>
+      <string id="TrackingProtection_Exceptions">Ausnahmen</string>
+      <string id="TrackingProtection_Exceptions_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Ausnahmen-Seiten definiert werden, bei denen der Schutz vor Aktivitätenverfolgung deaktiviert ist.
 
-If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
-      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
-      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, gelten die gesetzten Einstellungen für alle Webseiten.</string>
+      <string id="TrackingProtection_Locked">Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung verbieten</string>
+      <string id="TrackingProtection_Locked_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, können Nutzer keine Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung vornehmen.
 
-If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Nutzer Änderungen an den Einstellungen vornehmen.</string>
       <string id="RequestedLocales">Requested locale</string>
       <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
