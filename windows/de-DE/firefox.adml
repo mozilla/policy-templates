@@ -22,6 +22,9 @@
       <string id="SUPPORTED_FF72">Firefox 72 oder höher, Firefox 68.4 ESR oder höher</string>
       <string id="SUPPORTED_FF73">Firefox 73 oder höher, Firefox 68.5 ESR oder höher</string>
       <string id="SUPPORTED_FF74">Firefox 74 oder höher, Firefox 68.6 ESR oder höher</string>
+      <string id="SUPPORTED_FF75">Firefox 75 oder höher, Firefox 68.7 ESR oder höher</string>
+      <string id="SUPPORTED_FF76">Firefox 76 oder höher, Firefox 68.8 ESR oder höher</string>
+      <string id="SUPPORTED_FF77">Firefox 77 oder höher, Firefox 68.9 ESR oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
