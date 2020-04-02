@@ -135,6 +135,12 @@ Se questo criterio è disabilitato o non configurato, il browser riceverà aggio
       <string id="DisableBuiltinPDFViewer_Explain">Se questo criterio è abilitato, i file PDF non sono visualizzati all'interno di Firefox.
 
 Se questo criterio è disabilitato o non configurato, i file PDF sono visualizzati all'interno di Firefox.</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+
+If this policy is disabled or not configured, the default browser agent is enabled.
+
+For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Disabilita Strumenti Sviluppo web</string>
       <string id="DisableDeveloperTools_Explain">Se questo criterio è abilitato, gli Strumenti Sviluppo web non sono disponibili all'interno di Firefox.
 

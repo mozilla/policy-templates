@@ -135,6 +135,12 @@ If this policy is enabled or not configured, authentication preferences cannot b
       <string id="DisableBuiltinPDFViewer_Explain">若啟用此原則，將不會使用 Firefox 內建檢視器開啟 PDF 檔案。
 
 若停用或不設定此原則，則會使用 Firefox 內建檢視器開啟 PDF 檔案。</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+
+If this policy is disabled or not configured, the default browser agent is enabled.
+
+For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">停用開發者工具</string>
       <string id="DisableDeveloperTools_Explain">若啟用此原則，將關閉 Firefox 當中的網頁開發者工具功能。
 
