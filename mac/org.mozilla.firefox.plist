@@ -4,6 +4,8 @@
 <dict>
 	<key>EnterprisePoliciesEnabled</key>
 	<false/>
+	<key>AppAutoUpdate</key>
+	<true/>
 	<key>AppUpdateURL</key>
 	<string>https://www.example.com/update.xml</string>
 	<key>Authentication</key>

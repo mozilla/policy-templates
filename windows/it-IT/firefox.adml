@@ -45,6 +45,12 @@
       <string id="Preferences_group">Preferenze</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated.
+
+If this policy is disabled Firefox is not updated automatically.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">URL aggiornamento personalizzato</string>
       <string id="AppUpdateURL_Explain">Se questo criterio è abilitato, è possibile impostare un URL diverso da quello predefinito per il server di aggiornamento. Ciò potrebbe essere utile se si dispone di un server di aggiornamento sulla propria rete.
 

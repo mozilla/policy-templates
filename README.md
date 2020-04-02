@@ -6,6 +6,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 | Policy Name | Description
 | --- | --- |
+| **[`AppAutoUpdate`](#AppAutoUpdate)** |  Enable or disable automatic application update.
 | **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update.
 | **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
@@ -85,6 +86,33 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 
+### AppAutoUpdate
+
+Enable or disable automatic application update.
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** app.update.auto
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AppAutoUpdate = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>AppAutoUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AppAutoUpdate": true | false
+  }
+}
+```
 ### AppUpdateURL
 
 Change the URL for application update.
