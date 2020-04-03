@@ -3029,8 +3029,8 @@ Block websites from being visited. The parameters take an array of Match Pattern
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
+Software\Policies\Mozilla\Firefox\WebsiteFilter\Block\1 = "<all_urls>"
+Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions\1 = "http://example.org/*"
 ```
 #### macOS
 ```
