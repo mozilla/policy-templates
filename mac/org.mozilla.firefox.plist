@@ -412,6 +412,17 @@
 	<true/>
 	<key>SearchBar</key>
 	<string>separate</string>
+	<key>UserMessaging</key>
+	<dict>
+		<key>WhatsNew</key>
+		<false/>
+		<key>ExtensionRecommendations</key>
+		<false/>
+		<key>FeatureRecommendations</key>
+		<false/>
+		<key>UrlbarInterventions</key>
+		<false/>
+	</dict>
 	<key>WebsiteFilter</key>
 	<dict>
 		<key>Block</key>

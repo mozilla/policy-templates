@@ -25,6 +25,7 @@
       <definition name="SUPPORTED_FF73" displayName="$(string.SUPPORTED_FF73)"/>
       <definition name="SUPPORTED_FF74" displayName="$(string.SUPPORTED_FF74)"/>
       <definition name="SUPPORTED_FF75" displayName="$(string.SUPPORTED_FF75)"/>
+      <definition name="SUPPORTED_FF75_ONLY" displayName="$(string.SUPPORTED_FF75_ONLY)"/>
       <definition name="SUPPORTED_FF76" displayName="$(string.SUPPORTED_FF76)"/>
       <definition name="SUPPORTED_FF77" displayName="$(string.SUPPORTED_FF77)"/>
     </definitions>
@@ -88,6 +89,9 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.TrackingProtection_group)" name="TrackingProtection">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.UserMessaging_group)" name="UserMessaging">
       <parentCategory ref="firefox"/>
     </category>
   </categories>
@@ -3289,6 +3293,46 @@
     <policy name="E_TrackingProtection_Locked" class="Both" displayName="$(string.TrackingProtection_Locked)" explainText="$(string.TrackingProtection_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
       <parentCategory ref="TrackingProtection"/>
       <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_WhatsNew" class="Both" displayName="$(string.UserMessaging_WhatsNew)" explainText="$(string.UserMessaging_WhatsNew_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="WhatsNew">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_ExtensionRecommendations" class="Both" displayName="$(string.UserMessaging_ExtensionRecommendations)" explainText="$(string.UserMessaging_ExtensionRecommendations_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="ExtensionRecommendations">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_FeatureRecommendations" class="Both" displayName="$(string.UserMessaging_FeatureRecommendations)" explainText="$(string.UserMessaging_FeatureRecommendations_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="FeatureRecommendations">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_UrlbarInterventions" class="Both" displayName="$(string.UserMessaging_UrlbarInterventions)" explainText="$(string.UserMessaging_UrlbarInterventions_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="UrlbarInterventions">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

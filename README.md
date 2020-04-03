@@ -83,6 +83,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
+| **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 
 ### AppUpdateURL
@@ -3016,6 +3017,58 @@ Software\Policies\Mozilla\Firefox\SupportMenu\AccessKey = "S"
       "Title": "Support Menu",
       "URL": "http://example.com/support",
       "AccessKey": "S"
+    }
+  }
+}
+```
+### UserMessaging
+
+Prevent installing search engines from webpages.
+
+`WhatsNew` Remove the "What's New" icon and menuitem. (Firefox 75 only)
+
+`ExtensionRecommendations` Don't recommend extensions.
+
+`FeatureRecommendations` Don't recommend browser features.
+
+`UrlbarInterventions` Don't offer Firefox specific suggestions in the URL bar. (Firefox 75 only)
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\UserMessaging\WhatsNew = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>UserMessaging</key>
+  <dict>
+    <key>WhatsNew</key>
+    <true/> | <false/>
+    <key>ExtensionRecommendations</key>
+    <true/> | <false/>
+    <key>FeatureRecommendations</key>
+    <true/> | <false/>
+    <key>UrlbarInterventions</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "UserMessaging": {
+      "WhatsNew": true | false,
+      "ExtensionRecommendations": true | false,
+      "FeatureRecommendations": true | false,
+      "UrlbarInterventions": true | false
     }
   }
 }

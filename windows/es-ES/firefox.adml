@@ -23,6 +23,7 @@
       <string id="SUPPORTED_FF73">Firefox 73 o posterior, Firefox 68.5 ESR o posterior</string>
       <string id="SUPPORTED_FF74">Firefox 74 o posterior, Firefox 68.6 ESR o posterior</string>
       <string id="SUPPORTED_FF75">Firefox 75 o posterior, Firefox 68.7 ESR o posterior</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 o posterior</string>
       <string id="SUPPORTED_FF76">Firefox 76 o posterior, Firefox 68.8 ESR o posterior</string>
       <string id="SUPPORTED_FF77">Firefox 77 o posterior, Firefox 68.9 ESR o posterior</string>
       <string id="firefox">Firefox</string>
@@ -43,6 +44,7 @@
       <string id="Homepage_group">Página de inicio</string>
       <string id="Search_group">Búsqueda</string>
       <string id="Preferences_group">Preferencias</string>
+      <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Sitios permitidos</string>
       <string id="Block">Sitios bloqueados</string>
       <string id="AppUpdateURL">URL de actualización personalizada</string>
@@ -662,6 +664,22 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
       <string id="SupportMenu_Explain">Si esta política está habilitada, se añadirá un elemento nuevo al menú de ayuda con información de soporte.
 
 Si esta política está deshabilitada o no está configurada, no se añadirá ningún elemento al menú.</string>
+      <string id="UserMessaging_WhatsNew">What's New</string>
+      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+
+If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+
+If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
+      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+
+If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+
+If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.
 
 Para una descripción de la preferencia, visite:
