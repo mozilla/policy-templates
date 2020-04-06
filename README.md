@@ -6,6 +6,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 | Policy Name | Description
 | --- | --- |
+| **[`AppAutoUpdate`](#AppAutoUpdate)** |  Enable or disable automatic application update.
 | **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update.
 | **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
@@ -22,6 +23,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
+| **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
 | **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
@@ -31,6 +33,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableFormHistory`](#disableformhistory)** | Turn off saving information on web forms and the search bar.
 | **[`DisablePocket`](#disablepocket)** | Remove Pocket in the Firefox UI.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
+| **[`DisablePasswordReveal`](#disablepasswordreveal)** | Do not allow passwords to be revealed in saved logins.
 | **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
 | **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
@@ -83,8 +86,42 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
+| **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 
+### AppAutoUpdate
+
+Enable or disable **automatic** application update.
+
+If set to true, application updates are installed without user approval.
+
+If set to false, application updates are downloaded but the user can choose when to install the update.
+
+If you have disabled updates via DisableAppUpdate, this policy has no effect.
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** app.update.auto
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AppAutoUpdate = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>AppAutoUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AppAutoUpdate": true | false
+  }
+}
+```
 ### AppUpdateURL
 
 Change the URL for application update.
@@ -650,6 +687,26 @@ Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
 {
   "policies": {
     "DisableBuiltinPDFViewer": true | false
+  }
+}
+```
+### DisableDefaultBrowserAgent
+Prevent the default browser agent from taking any actions. Only applicable to Windows; other platforms don’t have the agent.
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7 (Windows only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableDefaultBrowserAgent = 0x1 | 0x0
+```
+
+#### policies.json
+```
+{
+  "policies": {
+    "DisableDefaultBrowserAgent": true | false
   }
 }
 ```
@@ -2264,7 +2321,7 @@ Set and lock certain preferences.
 | --- | --- | --- | ---
 | accessibility.force_disabled | integer | Firefox 70, Firefox ESR 68.2 | 0
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
-| app.update.auto | boolean | Firefox 68, Firefox ESR 68 | true
+| app.update.auto (Deprecated - Switch to AppAutoUpdate policy) | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Firefox doesn't automatically install update.
 | browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
@@ -3028,6 +3085,58 @@ Software\Policies\Mozilla\Firefox\SupportMenu\AccessKey = "S"
   }
 }
 ```
+### UserMessaging
+
+Prevent installing search engines from webpages.
+
+`WhatsNew` Remove the "What's New" icon and menuitem. (Firefox 75 only)
+
+`ExtensionRecommendations` Don't recommend extensions.
+
+`FeatureRecommendations` Don't recommend browser features.
+
+`UrlbarInterventions` Don't offer Firefox specific suggestions in the URL bar. (Firefox 75 only)
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\UserMessaging\WhatsNew = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>UserMessaging</key>
+  <dict>
+    <key>WhatsNew</key>
+    <true/> | <false/>
+    <key>ExtensionRecommendations</key>
+    <true/> | <false/>
+    <key>FeatureRecommendations</key>
+    <true/> | <false/>
+    <key>UrlbarInterventions</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "UserMessaging": {
+      "WhatsNew": true | false,
+      "ExtensionRecommendations": true | false,
+      "FeatureRecommendations": true | false,
+      "UrlbarInterventions": true | false
+    }
+  }
+}
+```
 ### WebsiteFilter
 Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 
@@ -3037,8 +3146,8 @@ Block websites from being visited. The parameters take an array of Match Pattern
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
+Software\Policies\Mozilla\Firefox\WebsiteFilter\Block\1 = "<all_urls>"
+Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions\1 = "http://example.org/*"
 ```
 #### macOS
 ```

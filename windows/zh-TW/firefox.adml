@@ -22,6 +22,10 @@
       <string id="SUPPORTED_FF72">Firefox 72 或更新版本、Firefox 68.4 ESR 或更新版本</string>
       <string id="SUPPORTED_FF73">Firefox 73 或更新版本、Firefox 68.5 ESR 或更新版本</string>
       <string id="SUPPORTED_FF74">Firefox 74 或更新版本、Firefox 68.6 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF75">Firefox 75 或更新版本、Firefox 68.7 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 或更新版本</string>
+      <string id="SUPPORTED_FF76">Firefox 76 或更新版本、Firefox 68.8 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF77">Firefox 77 或更新版本、Firefox 68.9 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -40,8 +44,15 @@
       <string id="Homepage_group">首頁</string>
       <string id="Search_group">搜尋</string>
       <string id="Preferences_group">偏好設定</string>
+      <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">自訂更新網址</string>
       <string id="AppUpdateURL_Explain">若啟用此原則，可指定用來檢查更新的伺服器網址。當您在內部網路自行架設更新伺服器時會有幫助。
 
@@ -150,6 +161,12 @@ If this policy is disabled or not configured, no domains are excluded from DNS o
       <string id="DisableBuiltinPDFViewer_Explain">若啟用此原則，將不會使用 Firefox 內建檢視器開啟 PDF 檔案。
 
 若停用或不設定此原則，則會使用 Firefox 內建檢視器開啟 PDF 檔案。</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+
+If this policy is disabled or not configured, the default browser agent is enabled.
+
+For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">停用開發者工具</string>
       <string id="DisableDeveloperTools_Explain">若啟用此原則，將關閉 Firefox 當中的網頁開發者工具功能。
 
@@ -675,6 +692,22 @@ If this policy is disabled or not configured, the user can change tracking prote
       <string id="SupportMenu_Explain">若啟用此原則，將在說明選單中加入技術支援資訊項目。
 
 若停用或不設定此原則，則不會加入選單項目。</string>
+      <string id="UserMessaging_WhatsNew">What's New</string>
+      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+
+If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+
+If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
+      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+
+If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+
+If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：

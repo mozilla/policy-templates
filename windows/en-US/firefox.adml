@@ -22,6 +22,10 @@
       <string id="SUPPORTED_FF72">Firefox 72 or later, Firefox 68.4 ESR or later</string>
       <string id="SUPPORTED_FF73">Firefox 73 or later, Firefox 68.5 ESR or later</string>
       <string id="SUPPORTED_FF74">Firefox 74 or later, Firefox 68.6 ESR or later</string>
+      <string id="SUPPORTED_FF75">Firefox 75 or later, Firefox 68.7 ESR or later</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 or later</string>
+      <string id="SUPPORTED_FF76">Firefox 76 or later, Firefox 68.8 ESR or later</string>
+      <string id="SUPPORTED_FF77">Firefox 77 or later, Firefox 68.9 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -40,8 +44,15 @@
       <string id="Homepage_group">Home page</string>
       <string id="Search_group">Search</string>
       <string id="Preferences_group">Preferences</string>
+      <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Allowed Sites</string>
       <string id="Block">Blocked Sites</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled Firefox updates are downloaded, but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">Custom Update URL</string>
       <string id="AppUpdateURL_Explain">If this policy is enabled, you can set a URL to an update server other than the default. This could be helpful if you run your own update server on your network.
 
@@ -150,6 +161,12 @@ If this policy is disabled or not configured, the browser receives updates.</str
       <string id="DisableBuiltinPDFViewer_Explain">If this policy is enabled, PDF files are not viewed within Firefox.
 
 If this policy is disabled or not configured, PDF files are viewed within Firefox.</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+
+If this policy is disabled or not configured, the default browser agent is enabled.
+
+For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Disable Developer Tools</string>
       <string id="DisableDeveloperTools_Explain">If this policy is enabled, web developer tools are not available within Firefox.
 
@@ -677,6 +694,22 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
 
 If this policy is disabled or not configured, no menuitem is added.</string>
+      <string id="UserMessaging_WhatsNew">What's New</string>
+      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+
+If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+
+If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
+      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+
+If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+
+If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:

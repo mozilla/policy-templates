@@ -18,12 +18,16 @@
       <definition name="SUPPORTED_FF67" displayName="$(string.SUPPORTED_FF67)"/>
       <definition name="SUPPORTED_FF68" displayName="$(string.SUPPORTED_FF68)"/>
       <definition name="SUPPORTED_FF6801" displayName="$(string.SUPPORTED_FF6801)"/>
+      <definition name="SUPPORTED_FF68ESR" displayName="$(string.SUPPORTED_FF68ESR)"/>
       <definition name="SUPPORTED_FF70" displayName="$(string.SUPPORTED_FF70)"/>
       <definition name="SUPPORTED_FF71" displayName="$(string.SUPPORTED_FF71)"/>
       <definition name="SUPPORTED_FF72" displayName="$(string.SUPPORTED_FF72)"/>
       <definition name="SUPPORTED_FF73" displayName="$(string.SUPPORTED_FF73)"/>
       <definition name="SUPPORTED_FF74" displayName="$(string.SUPPORTED_FF74)"/>
-      <definition name="SUPPORTED_FF68ESR" displayName="$(string.SUPPORTED_FF68ESR)"/>
+      <definition name="SUPPORTED_FF75" displayName="$(string.SUPPORTED_FF75)"/>
+      <definition name="SUPPORTED_FF75_ONLY" displayName="$(string.SUPPORTED_FF75_ONLY)"/>
+      <definition name="SUPPORTED_FF76" displayName="$(string.SUPPORTED_FF76)"/>
+      <definition name="SUPPORTED_FF77" displayName="$(string.SUPPORTED_FF77)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -90,8 +94,21 @@
     <category displayName="$(string.DNSOverHTTPS_group)" name="DNSOverHTTPS">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.UserMessaging_group)" name="UserMessaging">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
+    <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
@@ -545,6 +562,16 @@
     <policy name="DisableBuiltinPDFViewer" class="Both" displayName="$(string.DisableBuiltinPDFViewer)" explainText="$(string.DisableBuiltinPDFViewer_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableBuiltinPDFViewer">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisableDefaultBrowserAgent" class="Both" displayName="$(string.DisableDefaultBrowserAgent)" explainText="$(string.DisableDefaultBrowserAgent_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableDefaultBrowserAgent">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3323,6 +3350,46 @@
     <policy name="E_TrackingProtection_Locked" class="Both" displayName="$(string.TrackingProtection_Locked)" explainText="$(string.TrackingProtection_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
       <parentCategory ref="TrackingProtection"/>
       <supportedOn ref="SUPPORTED_FF74"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_WhatsNew" class="Both" displayName="$(string.UserMessaging_WhatsNew)" explainText="$(string.UserMessaging_WhatsNew_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="WhatsNew">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_ExtensionRecommendations" class="Both" displayName="$(string.UserMessaging_ExtensionRecommendations)" explainText="$(string.UserMessaging_ExtensionRecommendations_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="ExtensionRecommendations">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_FeatureRecommendations" class="Both" displayName="$(string.UserMessaging_FeatureRecommendations)" explainText="$(string.UserMessaging_FeatureRecommendations_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="FeatureRecommendations">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_UrlbarInterventions" class="Both" displayName="$(string.UserMessaging_UrlbarInterventions)" explainText="$(string.UserMessaging_UrlbarInterventions_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="UrlbarInterventions">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

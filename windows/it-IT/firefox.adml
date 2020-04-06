@@ -22,6 +22,10 @@
       <string id="SUPPORTED_FF72">Firefox 72 o versione successiva, Firefox 68.4 ESR o versione successiva</string>
       <string id="SUPPORTED_FF73">Firefox 73 o versione successiva, Firefox 68.5 ESR o versione successiva</string>
       <string id="SUPPORTED_FF74">Firefox 74 o versione successiva, Firefox 68.6 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF75">Firefox 75 o versione successiva, Firefox 68.7 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 o versione successiva</string>
+      <string id="SUPPORTED_FF76">Firefox 76 o versione successiva, Firefox 68.8 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF77">Firefox 77 o versione successiva, Firefox 68.9 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
@@ -40,8 +44,15 @@
       <string id="Homepage_group">Pagina iniziale</string>
       <string id="Search_group">Ricerca</string>
       <string id="Preferences_group">Preferenze</string>
+      <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">URL aggiornamento personalizzato</string>
       <string id="AppUpdateURL_Explain">Se questo criterio è abilitato, è possibile impostare un URL diverso da quello predefinito per il server di aggiornamento. Ciò potrebbe essere utile se si dispone di un server di aggiornamento sulla propria rete.
 
@@ -150,6 +161,12 @@ Se questo criterio è disabilitato o non configurato, il browser riceverà aggio
       <string id="DisableBuiltinPDFViewer_Explain">Se questo criterio è abilitato, i file PDF non sono visualizzati all'interno di Firefox.
 
 Se questo criterio è disabilitato o non configurato, i file PDF sono visualizzati all'interno di Firefox.</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+
+If this policy is disabled or not configured, the default browser agent is enabled.
+
+For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Disabilita Strumenti Sviluppo web</string>
       <string id="DisableDeveloperTools_Explain">Se questo criterio è abilitato, gli Strumenti Sviluppo web non sono disponibili all'interno di Firefox.
 
@@ -677,6 +694,22 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="SupportMenu_Explain">Se questo criterio è abilitato, al menù Aiuto sarà aggiunta una nuova voce di menù per richiamare le informazioni di supporto.
 
 Se questo criterio è disabilitato o non configurato, non sarà aggiunta nessuna voce.</string>
+      <string id="UserMessaging_WhatsNew">What's New</string>
+      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+
+If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+
+If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
+      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+
+If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+
+If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
