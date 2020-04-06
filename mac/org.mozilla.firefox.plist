@@ -122,6 +122,10 @@
 		<string>URL_TO_ALTERNATE_PROVIDER</string>
 		<key>Locked</key>
 		<true/>
+		<key>ExcludedDomains</key>
+		<array>
+			<string>example.com</string>
+		</array>
 	</dict>
 	<key>DisableAppUpdate</key>
 	<true/>

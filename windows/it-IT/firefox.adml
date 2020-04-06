@@ -127,7 +127,25 @@ Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la dir
       <string id="DownloadDirectory_Explain">Se questo criterio è abilitato, è possibile impostare e rendere non modificabile la directory per i download. È possibile usare ${home} per specificare il percorso nativo della directory utente.
 
 Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la directory di download predefinita e l'utente sarà in grado di modificarla.</string>
-      <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
+      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Enabled</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+
+If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
+      <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+
+If this policy is disabled or not configured, the default provider is used.</string>
+
+      <string id="DNSOverHTTPS_Locked">Locked</string>
+      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+
+If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+
+If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
+      <string id="DNSOverHTTPS">Configura DNS su HTTPS (Moved)</string>
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
 Se questo criterio è disabilitato o non configurato, DNS su HTTPS utilizza la configurazione predefinita di Firefox.</string>
@@ -980,6 +998,14 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="String">
+        <textBox refId="String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="List">
+        <listBox refId="List"/>
       </presentation>
     </presentationTable>
   </resources>

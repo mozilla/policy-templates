@@ -127,7 +127,25 @@ Si cette stratégie est désactivée ou non configurée, le répertoire de tél�
       <string id="DownloadDirectory_Explain">Si cette stratégie est activée, vous pouvez définir et verrouiller le répertoire de téléchargement. ${home} peut être utilisé comme chemin de base.
 
 Si cette stratégie est désactivée ou non configurée, le répertoire de téléchargement par défaut de Firefox est utilisé et l'uilisateur peut le modifier.</string>
-      <string id="DNSOverHTTPS">Configurer DNS sur HTTPS</string>
+      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Enabled</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+
+If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
+      <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+
+If this policy is disabled or not configured, the default provider is used.</string>
+
+      <string id="DNSOverHTTPS_Locked">Locked</string>
+      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+
+If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+
+If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
+      <string id="DNSOverHTTPS">Configurer DNS sur HTTPS (Moved)</string>
       <string id="DNSOverHTTPS_Explain">Si cette stratégie est activée, la configuration par défaut de DNS sur HTTPS peut être modifiée.
 
 Si cette stratégie est désactivée ou non configurée, DNS Over HTTPS utilise la configuration par défaut de Firefox.</string>
@@ -980,6 +998,14 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="String">
+        <textBox refId="String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="List">
+        <listBox refId="List"/>
       </presentation>
     </presentationTable>
   </resources>
