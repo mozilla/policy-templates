@@ -47,6 +47,12 @@
       <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
       <string id="AppUpdateURL_Explain">Wenn diese Policy aktiviert ist, dann können Sie eine URL zu einem Update-Server setzen, die eine andere ist, als die standardmäßige. Dies kann hilfreich sein, in dem Fall, wenn Sie einen eigenen Update-Server in Ihrem Netzwerk betreiben.
 

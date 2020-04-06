@@ -47,6 +47,12 @@
       <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">自訂更新網址</string>
       <string id="AppUpdateURL_Explain">若啟用此原則，可指定用來檢查更新的伺服器網址。當您在內部網路自行架設更新伺服器時會有幫助。
 

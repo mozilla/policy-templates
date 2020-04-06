@@ -47,6 +47,12 @@
       <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Sites autorisés</string>
       <string id="Block">Sites bloqués</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">URL de mise à jour personnalisée</string>
       <string id="AppUpdateURL_Explain">Si cette stratégie est activée, vous pouvez définir une URL vers un serveur de mise à jour autre que celui par défaut. Cela pourrait être utile si vous exécutez votre propre serveur de mise à jour sur votre réseau.
 
