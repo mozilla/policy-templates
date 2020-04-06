@@ -88,7 +88,9 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 ### AppAutoUpdate
 
-Enable or disable automatic application update.
+Enable or disable **automatic** application update. Set this to true to install application updates without user approval.
+
+If you have disabled updates via DisableAppUpdate, this policy has no effect.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
@@ -2284,7 +2286,7 @@ Set and lock certain preferences.
 | --- | --- | --- | ---
 | accessibility.force_disabled | integer | Firefox 70, Firefox ESR 68.2 | 0
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
-| app.update.auto | boolean | Firefox 68, Firefox ESR 68 | true
+| app.update.auto (Deprecated - Switch to AppAutoUpdate policy) | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Firefox doesn't automatically install update.
 | browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
