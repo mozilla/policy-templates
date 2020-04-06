@@ -46,9 +46,9 @@
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
       <string id="AppAutoUpdate">Application Autoupdate</string>
-      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated.
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
 
-If this policy is disabled Firefox is not updated automatically.
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
 
 If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
       <string id="AppUpdateURL">自訂更新網址</string>

@@ -88,7 +88,11 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 ### AppAutoUpdate
 
-Enable or disable **automatic** application update. Set this to true to install application updates without user approval.
+Enable or disable **automatic** application update.
+
+If set to true, application updates are installed without user approval.
+
+If set to false, application updates are downloaded but the user can choose when to install the update.
 
 If you have disabled updates via DisableAppUpdate, this policy has no effect.
 
