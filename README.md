@@ -23,6 +23,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
+| **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
 | **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
@@ -686,6 +687,26 @@ Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
 {
   "policies": {
     "DisableBuiltinPDFViewer": true | false
+  }
+}
+```
+### DisableDefaultBrowserAgent
+Prevent the default browser agent from taking any actions. Only applicable to Windows; other platforms don’t have the agent.
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7 (Windows only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableDefaultBrowserAgent = 0x1 | 0x0
+```
+
+#### policies.json
+```
+{
+  "policies": {
+    "DisableDefaultBrowserAgent": true | false
   }
 }
 ```

@@ -532,6 +532,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableDefaultBrowserAgent" class="Both" displayName="$(string.DisableDefaultBrowserAgent)" explainText="$(string.DisableDefaultBrowserAgent_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableDefaultBrowserAgent">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableDeveloperTools" class="Both" displayName="$(string.DisableDeveloperTools)" explainText="$(string.DisableDeveloperTools_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableDeveloperTools">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
