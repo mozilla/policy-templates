@@ -6,9 +6,9 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 | Policy Name | Description
 | --- | --- |
-| **[`AppAutoUpdate`](#AppAutoUpdate)** |  Enable or disable automatic application update.
-| **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update.
-| **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication.
+| **[`AppAutoUpdate`](#appautoupdate)** |  Enable or disable automatic application update.
+| **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
+| **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
@@ -2624,6 +2624,7 @@ or
 }
 ```
 ### SanitizeOnShutdown (Selective)
+<a name="SanitizeOnShutdown">
 Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
 
 Previously, these values were always locked. Starting with Firefox 74 and Firefox ESR 68.6, you can use the `Locked` option to either keep the values unlocked (set it to false), or lock only the values you set (set it to true). If you want the old behavior of locking everything, do not set `Locked` at all.
@@ -2739,12 +2740,8 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
   }
 }
 ```
-
-
-
-
-
 ### SearchEngines (This policy is only available on the ESR.)
+<a name="SearchEngines">
 
 ### SearchEngines | Default
 
