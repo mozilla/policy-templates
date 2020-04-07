@@ -47,7 +47,7 @@
       <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
-      <string id="AppAutoUpdate">Autoupdate der Anwendung</string>
+      <string id="AppAutoUpdate">Automatisches Update</string>
       <string id="AppAutoUpdate_Explain">Wenn diese Richtlinie aktiviert ist, wird Firefox automatisch ohne Zustimmung des Benutzers aktualisiert.
 
 Wenn diese Richtlinie deaktiviert ist, werden Firefox-Updates heruntergeladen, aber der Benutzer kann wählen, wann das Update installiert werden soll.
