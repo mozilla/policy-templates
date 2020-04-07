@@ -2623,7 +2623,7 @@ or
   }
 }
 ```
-<a name="SanitizeOnShutdown">
+<a name="SanitizeOnShutdown"></a>
 
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
@@ -2741,7 +2741,7 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
   }
 }
 ```
-<a name="SearchEngines">
+<a name="SearchEngines"></a>
 
 ### SearchEngines (This policy is only available on the ESR.)
 
