@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.14" schemaVersion="1.0" >
+  <displayName/>
+  <description/>
+  <resources >
+    <stringTable >
+      <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 或更新版本</string>
+      <string id="UNSUPPORTED">不再支援。</string>
+      <string id="SUPPORTED_FF60">Firefox 60 或更新版本、Firefox 60 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF62">Firefox 62 或更新版本、Firefox 60.2 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF63">Firefox 63 或更新版本</string>
+      <string id="SUPPORTED_FF64">Firefox 64 或更新版本、Firefox 60.4 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF66">Firefox 66 或更新版本、Firefox 60.6 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF67">Firefox 67 或更新版本、Firefox 60.7 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF68">Firefox 68 或更新版本、Firefox 68 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF6801">Firefox 68.0.1 或更新版本、Firefox 68.0.1 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF60ESR">Firefox 60 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF69">Firefox 69 或更新版本、Firefox 68.1 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF70">Firefox 70 或更新版本、Firefox 68.2 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF71">Firefox 71 或更新版本、Firefox 68.3 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF72">Firefox 72 或更新版本、Firefox 68.4 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF73">Firefox 73 或更新版本、Firefox 68.5 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF74">Firefox 74 或更新版本、Firefox 68.6 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF75">Firefox 75 或更新版本、Firefox 68.7 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 或更新版本</string>
+      <string id="SUPPORTED_FF76">Firefox 76 或更新版本、Firefox 68.8 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF77">Firefox 77 或更新版本、Firefox 68.9 ESR 或更新版本</string>
+      <string id="firefox">Firefox</string>
+      <string id="Permissions_group">權限</string>
+      <string id="Camera_group">攝影機</string>
+      <string id="Microphone_group">麥克風</string>
+      <string id="Location_group">位置</string>
+      <string id="Notifications_group">通知</string>
+      <string id="Autoplay_group">Autoplay</string>
+      <string id="Authentication_group">驗證</string>
+      <string id="Bookmarks_group">書籤</string>
+      <string id="Certificates_group">憑證</string>
+      <string id="Popups_group">彈出視窗</string>
+      <string id="Cookies_group">Cookie</string>
+      <string id="Addons_group">附加元件</string>
+      <string id="Extensions_group">擴充套件</string>
+      <string id="Flash_group">Flash</string>
+      <string id="Homepage_group">首頁</string>
+      <string id="Search_group">搜尋</string>
+      <string id="Preferences_group">偏好設定</string>
+      <string id="UserMessaging_group">User Messaging</string>
+      <string id="Allow">允許的網站</string>
+      <string id="Block">封鎖的網站</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+
+If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+
+If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
+      <string id="AppUpdateURL">自訂更新網址</string>
+      <string id="AppUpdateURL_Explain">若啟用此原則，可指定用來檢查更新的伺服器網址。當您在內部網路自行架設更新伺服器時會有幫助。
+
+若停用或不設定此原則，將使用預設更新網址。</string>
+      <string id="Authentication_SPNEGO">SPNEGO</string>
+      <string id="Authentication_SPNEGO_Explain">若啟用此原則，將允許指定的網站於瀏覽器中進行 SPNEGO 驗證。清單中的項目格式為 mydomain.com 或 https://myotherdomain.com。
+
+若停用或不設定此原則，將不允許任何網站於瀏覽器中進行 SPNEGO 驗證。
+
+若需更多資訊，請參考 https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication。</string>
+      <string id="Authentication_Delegated">指派</string>
+      <string id="Authentication_Delegated_Explain">若啟用此原則，瀏覽器可針對指定的網站指派使用者驗證資訊給伺服器。清單中的項目格式為 mydomain.com 或 https://myotherdomain.com。
+
+若停用或不設定此原則，瀏覽器將不會指派使用者驗證資訊到任何網站的伺服器。
+
+若需更多資訊，請參考 https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication。</string>
+      <string id="Authentication_NTLM">NTLM</string>
+      <string id="Authentication_NTLM_Explain">若啟用此原則，將信任指定的網站進行 NTLM 驗證。清單中的項目格式為 mydomain.com 或 https://myotherdomain.com。
+
+若停用或不設定此原則，將不信任任何網站進行 NTLM 驗證。
+
+若需更多資訊，請參考 https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication。</string>
+      <string id="Authentication_AllowNonFQDN">允許非 FQDN</string>
+      <string id="Authentication_AllowNonFQDN_Explain">若啟用此原則（並勾選選取盒），可隨時允許於非 FQDN（完整網域名稱）網址進行 SPNEGO 或 NTLM 身分驗證。
+
+若停用或不設定此原則，則不會對非 FQDN 網址進行 NTLM 或 SPNEGO 身分驗證。</string>
+      <string id="Authentication_AllowProxies">允許代理伺服器</string>
+      <string id="Authentication_AllowProxies_Explain">若停用此原則，則不會對代理伺服器進行 SPNEGO 或 NTLM 身分驗證。
+
+若啟用（並勾選選取盒）或不設定此原則，則總是會對代理伺服器進行 SPNEGO 或 NTLM 身分驗證。</string>
+      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
+      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+
+If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+      <string id="BlockAboutAddons">封鎖附加元件管理員</string>
+      <string id="BlockAboutAddons_Explain" >若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
+
+若停用或不設定此原則，使用者則可以開啟附加元件管理員或 about:addons。</string>
+      <string id="BlockAboutConfig">封鎖 about:config</string>
+      <string id="BlockAboutConfig_Explain">若啟用此原則，使用者將無法開啟 about:config。
+
+若停用或不設定此原則，則可以開啟 about:config。</string>
+      <string id="BlockAboutProfiles">封鎖 about:profiles</string>
+      <string id="BlockAboutProfiles_Explain">若啟用此原則，使用者將無法開啟 about:profiles。
+
+若停用或不設定此原則，則可以開啟 about:profiles。</string>
+      <string id="BlockAboutSupport">封鎖疑難排解資訊</string>
+      <string id="BlockAboutSupport_Explain">若啟用此原則，使用者將無法開啟疑難排解資訊或 about:support。
+
+若停用或不設定此原則，則可以開啟疑難排解資訊或 about:support。</string>
+      <string id="DisableSetDesktopBackground">停用設為桌布</string>
+      <string id="DisableSetDesktopBackground_Explain">若啟用此原則，使用者將無法把圖片設定為系統桌布。
+
+若停用或不設定此原則，則可以把圖片設定為系統桌布。</string>
+      <string id="CaptivePortal">Captive Portal</string>
+      <string id="CaptivePortal_Explain">若停用此原則，將停用 Captive Portal 支援。
+
+若啟用或不設定此原則，則啟用 Captive Portal 支援。</string>
+      <string id="Certificates_ImportEnterpriseRoots">匯入企業根憑證</string>
+      <string id="Certificates_ImportEnterpriseRoots_Explain">若啟用此原則，Firefox 將從 Windows 憑證儲存區讀取憑證。
+
+若停用或不設定此原則，Firefox 則不會從 Windows 憑證儲存區讀取憑證。</string>
+      <string id="Certificates_Install">安裝憑證</string>
+      <string id="Certificates_Install_Explain">若啟用此原則，Firefox 將自行安裝列出的憑證。將在 %USERPROFILE%\AppData\Local\Mozilla\Certificates 及 %USERPROFILE%\AppData\Roaming\Mozilla\Certificates 當中尋找憑證檔案。
+
+若停用或不設定此原則，Firefox 將不會安裝額外憑證。</string>
+      <string id="DefaultDownloadDirectory">預設下載資料夾</string>
+      <string id="DefaultDownloadDirectory_Explain">若啟用此原則，可設定下載項目的預設儲存資料夾。可使用 ${home} 來指定家目錄。
+
+若停用或不設定此原則，將使用 Firefox 的預設下載資料夾。</string>
+      <string id="DownloadDirectory">指定下載資料夾</string>
+      <string id="DownloadDirectory_Explain">若啟用此原則，可設定並固定下載項目的預設儲存資料夾。可使用 ${home} 來指定家目錄。
+
+若停用或不設定此原則，將使用 Firefox 的預設下載資料夾，且可由使用者變更。</string>
+      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Enabled</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+
+If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
+      <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+
+If this policy is disabled or not configured, the default provider is used.</string>
+
+      <string id="DNSOverHTTPS_Locked">Locked</string>
+      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+
+If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+
+If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
+      <string id="DNSOverHTTPS">設定 DNS Over HTTPS (Moved)</string>
+      <string id="DNSOverHTTPS_Explain">若啟用此原則，可變更預設 DNS over HTTPS 設定。
+
+若停用或不設定此原則，將使用預設 DNS Over HTTPS 設定。</string>
+      <string id="DisableMasterPasswordCreation">停用設定主控密碼</string>
+      <string id="DisableMasterPasswordCreation_Explain">若啟用此原則，將無法設定主控密碼。
+
+若停用或不設定此原則，則可設定主控密碼。</string>
+      <string id="DisableAppUpdate">停用更新</string>
+      <string id="DisableAppUpdate_Explain">若啟用此原則，瀏覽器將不會接收更新。
+
+若停用或不設定此原則，則會接收更新。</string>
+      <string id="DisableBuiltinPDFViewer">停用內建 PDF 檢視器（PDF.js）</string>
+      <string id="DisableBuiltinPDFViewer_Explain">若啟用此原則，將不會使用 Firefox 內建檢視器開啟 PDF 檔案。
+
+若停用或不設定此原則，則會使用 Firefox 內建檢視器開啟 PDF 檔案。</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+
+If this policy is disabled or not configured, the default browser agent is enabled.
+
+For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+      <string id="DisableDeveloperTools">停用開發者工具</string>
+      <string id="DisableDeveloperTools_Explain">若啟用此原則，將關閉 Firefox 當中的網頁開發者工具功能。
+
+若停用或不設定此原則，則可使用 Firefox 網頁開發者工具。</string>
+      <string id="DisableFeedbackCommands">停用意見回饋相關功能</string>
+      <string id="DisableFeedbackCommands_Explain">若啟用此原則，將不會顯示說明選單中的「送出意見回饋」及「回報詐騙網站」項目。
+
+若停用或不設定此原則，將會顯示說明選單中的「送出意見回饋」及「回報詐騙網站」項目。</string>
+      <string id="DisableFirefoxAccounts">停用 Firefox Accounts</string>
+      <string id="DisableFirefoxAccounts_Explain">若啟用此原則，將停用 Firefox Accounts 相關功能，包含 Sync。
+
+若停用或不設定此原則，則可以使用 Firefox Accounts 及 Sync 相關功能。</string>
+      <string id="DisableFirefoxScreenshots">停用 Firefox Screenshots</string>
+      <string id="DisableFirefoxScreenshots_Explain">若啟用此原則，將無法使用 Firefox Screenshots。
+
+若停用或不設定此原則，則可以使用 Firefox Screenshots。</string>
+      <string id="DisableFirefoxStudies">停用 Firefox Studies</string>
+      <string id="DisableFirefoxStudies_Explain">若啟用此原則，Firefox 將不會執行 SHIELD 研究或進行 Heartbeat 調查。
+
+若停用或不設定此原則，則使用者可以自行選擇是否接受 SHIELD 研究或進行 Heartbeat 調查。
+
+若需更多資訊，請參考 https://support.mozilla.org/en-US/kb/shield 及 https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
+      <string id="DisableForgetButton">停用「忘記」按鈕</string>
+      <string id="DisableForgetButton_Explain">若啟用此原則，將無法使用「忘記」按鈕。
+
+若停用或不設定此原則，則可以使用「忘記」按鈕。</string>
+      <string id="DisableFormHistory">停用表單填寫紀錄</string>
+      <string id="DisableFormHistory_Explain">若啟用此原則，Firefox 將不會保留表單填寫或搜尋紀錄。
+
+若停用或不設定此原則，Firefox 則會保留表單填寫及搜尋紀錄。</string>
+      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
+      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+
+If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+      <string id="DisablePocket">停用 Pocket</string>
+      <string id="DisablePocket_Explain">若啟用此原則，將無法使用 Pocket。
+
+若停用或不設定此原則，則可以使用 Pocket。</string>
+      <string id="DisablePrivateBrowsing">停用隱私瀏覽功能</string>
+      <string id="DisablePrivateBrowsing_Explain">若啟用此原則，將不允許使用隱私瀏覽功能。
+
+若停用或不設定此原則，則可以使用隱私瀏覽功能。</string>
+      <string id="DisableProfileImport">停用匯入設定檔</string>
+      <string id="DisableProfileImport_Explain">若啟用此原則，將停用書籤視窗中的「自其他瀏覽器匯入資料」選項。
+
+若停用或不設定此原則，則可以使用「自其他瀏覽器匯入資料」選項。</string>
+      <string id="DisableProfileRefresh">停用重新整理設定檔</string>
+      <string id="DisableProfileRefresh_Explain">若啟用此原則，在 about:support 頁面或 support.mozilla.org 就不會提供「重新整理 Firefox」功能。
+
+若停用或不設定此原則，則會提供「重新整理 Firefox」功能。</string>
+      <string id="DisableSafeMode">停用安全模式</string>
+      <string id="DisableSafeMode_Explain">若啟用此原則，無法重新啟動瀏覽器進入安全模式。
+
+若停用或不設定此原則，則允許進入安全模式。</string>
+      <string id="DisableSecurityBypass_InvalidCertificate">防止忽略憑證錯誤</string>
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">若啟用此原則，連線憑證無效時，將不會顯示「新增例外網站」按鈕，可防止使用者忽略憑證錯誤。
+
+若停用或不設定此原則，則可以忽略憑證錯誤。</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">防止忽略安全瀏覽錯誤</string>
+      <string id="DisableSecurityBypass_SafeBrowsing_Explain">若啟用此原則，使用者將無法忽略警告並造訪有害網站。
+
+若停用或不設定此原則，則使用者可自行決定是否造訪有害網站。</string>
+      <string id="DisableSystemAddonUpdate">停用系統附加元件更新</string>
+      <string id="DisableSystemAddonUpdate_Explain">若啟用此原則，將不會安裝新的系統附加元件，也不會更新已安裝的系統附加元件。
+
+若停用或不設定此原則，則會安裝或更新系統附加元件。</string>
+      <string id="DisableTelemetry">停用 Telemetry</string>
+      <string id="DisableTelemetry_Explain">若啟用此原則，將不會上傳 Telemetry 資料。
+
+若停用或不設定此原則，則會收集並上傳 Telemetry 資料。
+
+Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可幫助為企業使用者打造更好的產品。</string>
+      <string id="DisplayBookmarksToolbar">顯示書籤工具列</string>
+      <string id="DisplayBookmarksToolbar_Explain">若啟用此原則，預設將顯示書籤工具列。使用者還是可以將其隱藏。
+
+若停用或不設定此原則，則預設不會顯示書籤工具列。</string>
+      <string id="DisplayMenuBar">顯示選單列（已棄用）</string>
+      <string id="DisplayMenuBar_Explain">若啟用此原則，預設將顯示選單列。使用者還是可以將其隱藏。
+
+若停用或不設定此原則，則預設不會顯示選單列。</string>
+      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
+      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+
+If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
+      <string id="DisplayMenuBar_Always">Always</string>
+      <string id="DisplayMenuBar_Never">Never</string>
+      <string id="DisplayMenuBar_Default_On">On by default</string>
+      <string id="DisplayMenuBar_Default_Off">Off by default</string>
+      <string id="DontCheckDefaultBrowser">不要檢查是否為預設瀏覽器</string>
+      <string id="DontCheckDefaultBrowser_Explain">若啟用此原則，Firefox 不會在啟動時檢查是否為預設瀏覽器。
+
+若停用或不設定此原則，Firefox 則會在啟動時檢查是否為預設瀏覽器。</string>
+      <string id="Extensions_Install">要安裝的擴充套件</string>
+      <string id="Extensions_Install_Explain">若啟用此原則，您可以指定一組擴充套件網址或路徑的清單，將在 Firefox 啟動時安裝。
+只要變更此清單，就會重新安裝擴充套件。
+
+若停用或不設定此原則，則不會安裝任何擴充套件。</string>
+      <string id="Extensions_Uninstall">要移除的擴充套件</string>
+      <string id="Extensions_Uninstall_Explain">若啟用此原則，將可以指定一組要移除的擴充套件 ID 清單。
+只要變更此清單，就會移除擴充套件。
+
+若停用或不設定此原則，則不會移除任何擴充套件。</string>
+      <string id="Extensions_Locked">防止停用或移除擴充套件</string>
+      <string id="Extensions_Locked_Explain">若啟用此原則，將可以指定一組不讓使用者移除或停用的的擴充套件。
+
+若停用或不設定此原則，則不會鎖定任何擴充套件。</string>
+      <string id="ExtensionUpdate">擴充套件更新</string>
+      <string id="ExtensionUpdate_Explain">若停用此原則，將不會自動更新擴充套件。
+
+若啟用或不設定此原則，將自動更新擴充套件。</string>
+      <string id="ExtensionSettings">擴充套件管理</string>
+      <string id="ExtensionSettings_Explain">若啟用此原則，您可以用 JSON 來描述擴充套件管理原則。
+
+若停用或不設定此原則，將不會管理擴充套件。
+
+若需關於建立原則的更多資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings。</string>
+      <string id="HardwareAcceleration">硬體加速</string>
+      <string id="HardwareAcceleration_Explain">若停用此原則，將停用硬體加速功能且無法啟用。
+
+若啟用或不設定此原則，則會啟用硬體加速功能。</string>
+      <string id="LegacyProfiles">傳統設定檔</string>
+      <string id="LegacyProfiles_Explain">若啟用此原則，Firefox 將不會嘗試對本機電腦中不同套的 Firefox 建立不同的設定檔資料夾。也等於設定 MOZ_LEGACY_PROFILES 。
+
+若停用或不設定此原則，Firefox 則會對每一套 Firefox 建立不同的設定檔。</string>
+      <string id="LocalFileLinks">本機檔案鏈結</string>
+      <string id="LocalFileLinks_Explain">若啟用此原則，將可以指定網站內容是否允許鏈結到本機檔案。
+
+若停用或不設定此原則，網站則不能鏈結到本機檔案。</string>
+      <string id="NetworkPrediction">網路預測</string>
+      <string id="NetworkPrediction_Explain">若停用此原則，將停用網路預測（DNS 預讀）功能。
+
+若啟用或不設定此原則，則啟用網路預測（DNS 預讀）功能。</string>
+      <string id="NewTabPage">新分頁頁面</string>
+      <string id="NewTabPage_Explain">若停用此原則，將使用空白頁作為新分頁頁面。
+
+若啟用或不設定此原則，新分頁頁面將使用預設值。</string>
+      <string id="OfferToSaveLogins">提供儲存登入資訊</string>
+      <string id="OfferToSaveLogins_Explain">若啟用或不設定此原則，Firefox 將提示儲存網站登入資訊與密碼。
+
+若停用此原則，Firefox 則不會提供儲存登入資訊與密碼。</string>
+      <string id="OfferToSaveLoginsDefault">提供儲存登入資訊（預設）</string>
+      <string id="OfferToSaveLoginsDefault_Explain">若啟用或不設定此原則，Firefox 將提示儲存網站登入資訊與密碼，且無法關閉。
+
+若停用此原則，Firefox 將提示儲存網站登入資訊與密碼，且無法開啟。</string>
+      <string id="PopupBlocking_Allow_Explain">若啟用此原則，將允許來自指定來源網址的彈出視窗。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的彈出視窗。
+
+若停用或不設定此原則，則遵循預設的彈出視窗原則。</string>
+      <string id="PopupBlocking_Default">允許網站顯示彈出視窗</string>
+      <string id="PopupBlocking_Default_Explain">若停用此原則，預設將允許來自所有網站的彈出視窗。
+
+若未啟用或設定此原則，將封鎖來自所有網站的彈出視窗。。</string>
+      <string id="PopupBlocking_Locked">不允許更改允許偏好設定</string>
+      <string id="PopupBlocking_Locked_Explain">若啟用此原則，使用者將無法調整彈出視窗偏好設定。
+
+若停用或不設定此原則，則使用者能夠自行調整彈出視窗偏好設定。</string>
+      <string id="InstallAddonsPermission_Allow_Explain">若啟用此原則，除非停用安裝附加元件，否則將允許安裝來自指定來源網址的附加元件。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的附加元件。
+
+若停用或不設定此原則，則遵循預設的附加元件原則。</string>
+      <string id="InstallAddonsPermission_Default">允許安裝來自網站的附加元件</string>
+      <string id="InstallAddonsPermission_Default_Explain">若停用此原則，將無法安裝附加元件。
+
+若未啟用或設定此原則，則可安裝附加元件。</string>
+      <string id="Cookies_Allow_Explain">若啟用此原則，將允許來自指定來源網址的 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的 Cookie。
+
+若停用或不設定此原則，則遵循預設的 Cookie 原則。</string>
+      <string id="Cookies_Block_Explain">若啟用此原則，將封鎖來自指定來源網址的 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將封鎖所有來自子網域的 Cookie。
+
+若停用或不設定此原則，則預設不封鎖 Cookie。</string>
+      <string id="Cookies_Default">接受來自網站的 Cookie</string>
+      <string id="Cookies_Default_Explain">若停用此原則，將預設不接受來自網站的 Cookie。
+
+若未啟用或設定此原則，則接受來自網站的 Cookie。</string>
+      <string id="Cookies_AcceptThirdParty">允許第三方 Cookie</string>
+      <string id="Cookies_AcceptThirdParty_Explain">若接受 Cookie 並啟用了此原則，將可以設定是否要接受第三方 Cookie。
+
+若停用或未設定此原則，或是不允許 Cookie，則忽略此設定。</string>
+      <string id="Cookies_AcceptThirdParty_All">總是接受</string>
+      <string id="Cookies_AcceptThirdParty_None">永不接受</string>
+      <string id="Cookies_AcceptThirdParty_FromVisited">只接受來自造訪過網站的 Cookie visited</string>
+      <string id="Cookies_ExpireAtSessionEnd">保留 Cookie 直到 Firefox 關閉</string>
+      <string id="Cookies_ExpireAtSessionEnd_Explain">若啟用此原則並允許 Cookie，Cookie 將在 Firefox 時失效。
+
+若停用或未設定此原則，或是不允許 Cookie，則忽略此設定。</string>
+      <string id="Cookies_RejectTracker">拒絕追蹤器</string>
+      <string id="Cookies_RejectTracker_Explain">若啟用此原則並允許 Cookie，Firefox 將預設拒絕追蹤器 Cookie。
+
+若停用或未設定此原則，或是不允許 Cookie，則忽略此設定。</string>
+      <string id="Cookies_Locked">不允許調整偏好設定</string>
+      <string id="Cookies_Locked_Explain">若啟用此原則，使用者將無法調整 Cookie 偏好設定。
+
+若停用或不設定此原則，則使用者能夠自行調整 Cookie 偏好設定。</string>
+      <string id="Camera_Allow_Explain">若啟用此原則，將允許指定來源網址存取攝影機。
+
+若停用或不設定此原則，則依循預設攝影機存取原則。</string>
+      <string id="Camera_Block_Explain">若啟用此原則，將封鎖指定來源網址存取攝影機。
+
+若停用或不設定此原則，則預設不會封鎖存取攝影機。</string>
+      <string id="Camera_BlockNewRequests">封鎖存取攝影機的新請求</string>
+      <string id="Camera_BlockNewRequests_Explain">若啟用此原則，將拒絕不在允許原則清單中的網站存取攝影機的權限請求。
+
+若停用或不設定此原則，任何不在封鎖原則清單中的網站都可以請求存取攝影機。</string>
+      <string id="Camera_Locked">不允許調整偏好設定</string>
+      <string id="Camera_Locked_Explain">若啟用此原則，使用者將無法調整攝影機偏好設定。
+
+若停用或不設定此原則，則使用者能夠自行調整攝影機偏好設定。</string>
+      <string id="Microphone_Allow_Explain">若啟用此原則，將總是允許來自清單中的網站存取麥克風的權限請求。
+
+若停用或不設定此原則，則依循預設麥克風存取原則。</string>
+      <string id="Microphone_Block_Explain">若啟用此原則，將拒絕清單中的網站存取麥克風的權限請求。
+
+若停用或不設定此原則，則預設不會封鎖存取麥克風。</string>
+      <string id="Microphone_BlockNewRequests">封鎖存取麥克風的新請求</string>
+      <string id="Microphone_BlockNewRequests_Explain">若啟用此原則，將拒絕不在允許原則清單中的網站存取麥克風的權限請求。
+
+若停用或不設定此原則，任何不在封鎖原則清單中的網站都可以請求存取麥克風。</string>
+      <string id="Microphone_Locked">不允許調整偏好設定</string>
+      <string id="Microphone_Locked_Explain">若啟用此原則，使用者將無法調整麥克風偏好設定。
+
+若停用或不設定此原則，則使用者能夠自行調整麥克風偏好設定。</string>
+      <string id="Location_Allow_Explain">若啟用此原則，將總是允許來自清單中的網站存取所在位置的權限請求。
+
+若停用或不設定此原則，則依循預設位置存取原則。</string>
+      <string id="Location_Block_Explain">若啟用此原則，將拒絕清單中的網站存取所在位置的權限請求。
+
+若停用或不設定此原則，則預設不會封鎖存取所在位置。</string>
+      <string id="Location_BlockNewRequests">封鎖存取所在位置的新請求</string>
+      <string id="Location_BlockNewRequests_Explain">若啟用此原則，將拒絕不在允許原則清單中的網站存取所在位置的權限請求。
+
+若停用或不設定此原則，任何不在封鎖原則清單中的網站都可以請求存取所在位置。</string>
+      <string id="Location_Locked">不允許調整偏好設定</string>
+      <string id="Location_Locked_Explain">若啟用此原則，使用者將無法調整位置偏好設定。
+
+若停用或不設定此原則，則使用者能夠自行調整位置分享偏好設定。</string>
+      <string id="Notifications_Allow_Explain">若啟用此原則，將總是允許來自清單中的網站傳送通知。
+
+若停用或不設定此原則，則依循預設通知原則。</string>
+      <string id="Notifications_Block_Explain">若啟用此原則，將拒絕清單中的網站傳送通知。
+
+若停用或不設定此原則，則預設不會封鎖傳送通知。</string>
+      <string id="Notifications_BlockNewRequests">封鎖傳送通知的新請求</string>
+      <string id="Notifications_BlockNewRequests_Explain">若啟用此原則，將拒絕不在允許原則清單中的網站傳送通知的請求。
+
+若停用或不設定此原則，任何不在封鎖原則清單中的網站都可以請求傳送通知。</string>
+      <string id="Notifications_Locked">不允許調整偏好設定</string>
+      <string id="Notifications_Locked_Explain">若啟用此原則，使用者將無法調整通知偏好設定。
+
+若停用或不設定此原則，則使用者能夠自行調整位置通知偏好設定。</string>
+      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+
+If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+      <string id="FirefoxHome">自訂 Firefox 首頁</string>
+      <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
+
+若停用或不設定此原則，則顯示預設段落，使用者也可以更改設定。</string>
+      <string id="FlashPlugin_Allow_Explain">若啟用此原則，除非完全停用 Flash，否則將允許指定來源網址使用。若指定了頂級網域名稱（例如 http://example.org），也將允許所有子網域使用 Flash。
+
+若停用或不設定此原則，則依循預設 Flash 啟用原則。</string>
+      <string id="FlashPlugin_Block_Explain">若啟用此原則，將封鎖指定來源網址的 Flash 內容。若指定了頂級網域名稱（例如 http://example.org），也將封鎖所有子網域使用 Flash。
+
+若停用或不設定此原則，則依循預設 Flash 內容原則。</string>
+      <string id="FlashPlugin_Default">啟用網站上的 Flash 內容</string>
+      <string id="FlashPlugin_Default_Explain">若啟用此原則，將總是啟用網站上的 Flash 內容。
+
+若停用此原則，將不會啟用任何網站中的 Flash 內容，就算列於允許清單也會封鎖。
+
+若不設定此原則，則於點擊後播放 Flash 內容。</string>
+      <string id="FlashPlugin_Locked">不允許調整偏好設定</string>
+      <string id="FlashPlugin_Locked_Explain">若啟用此原則，使用者將無法調整 Flash 偏好設定。
+
+若停用或不設定此原則則使用者能夠自行調整 Flash 偏好設定。</string>
+      <string id="OverrideFirstRunPage">覆蓋首次執行頁面</string>
+      <string id="OverrideFirstRunPage_Explain">若啟用此原則，將可以指定要開啟的 Firefox 首次執行（firstrun）頁面。若保留空白，則不會開啟頁面。
+
+若停用或不設定此原則，則顯示預設首次執行頁面。</string>
+      <string id="OverridePostUpdatePage">覆蓋升級頁面</string>
+      <string id="OverridePostUpdatePage_Explain">若啟用此原則，將可以指定 Firefox 更新後要開啟的頁面。若保留空白，則不會開啟頁面。
+
+若停用或不設定此原則，則顯示預設升級頁面。</string>
+      <string id="SanitizeOnShutdown">關閉瀏覽器時清理資料</string>
+      <string id="SanitizeOnShutdown_Explain">若啟用此原則，將可以選擇要在關閉 Firefox 時清理哪些資料。
+
+若停用或不設定此原則，則不會在關閉 Firefox 時清理任何資料。</string>
+      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+
+      <string id="SanitizeOnShutdown_Cache">Cache</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+
+If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+
+If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Downloads">Download History</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+
+If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_History">Browsing History</string>
+      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+
+If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+
+If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+
+If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+
+If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Locked">Locked</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+
+If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+
+If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+      <string id="WebsiteFilter_Block">要封鎖的網站</string>
+      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
+
+若停用或不設定此原則，則不會封鎖任何網站。</string>
+      <string id="WebsiteFilter_Exceptions">要封鎖的網站的例外規則</string>
+      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
+
+若停用或不設定此原則，則不會放行任何例外網站。</string>
+      <string id="Bookmark01">書籤 01</string>
+      <string id="Bookmark02">書籤 02</string>
+      <string id="Bookmark03">書籤 03</string>
+      <string id="Bookmark04">書籤 04</string>
+      <string id="Bookmark05">書籤 05</string>
+      <string id="Bookmark06">書籤 06</string>
+      <string id="Bookmark07">書籤 07</string>
+      <string id="Bookmark08">書籤 08</string>
+      <string id="Bookmark09">書籤 09</string>
+      <string id="Bookmark10">書籤 10</string>
+      <string id="Bookmark11">書籤 11</string>
+      <string id="Bookmark12">書籤 12</string>
+      <string id="Bookmark13">書籤 13</string>
+      <string id="Bookmark14">書籤 14</string>
+      <string id="Bookmark15">書籤 15</string>
+      <string id="Bookmark16">書籤 16</string>
+      <string id="Bookmark17">書籤 17</string>
+      <string id="Bookmark18">書籤 18</string>
+      <string id="Bookmark19">書籤 19</string>
+      <string id="Bookmark20">書籤 20</string>
+      <string id="Bookmark21">書籤 21</string>
+      <string id="Bookmark22">書籤 22</string>
+      <string id="Bookmark23">書籤 23</string>
+      <string id="Bookmark24">書籤 24</string>
+      <string id="Bookmark25">書籤 25</string>
+      <string id="Bookmark26">書籤 26</string>
+      <string id="Bookmark27">書籤 27</string>
+      <string id="Bookmark28">書籤 28</string>
+      <string id="Bookmark29">書籤 29</string>
+      <string id="Bookmark30">書籤 30</string>
+      <string id="Bookmark31">書籤 31</string>
+      <string id="Bookmark32">書籤 32</string>
+      <string id="Bookmark33">書籤 33</string>
+      <string id="Bookmark34">書籤 34</string>
+      <string id="Bookmark35">書籤 35</string>
+      <string id="Bookmark36">書籤 36</string>
+      <string id="Bookmark37">書籤 37</string>
+      <string id="Bookmark38">書籤 38</string>
+      <string id="Bookmark39">書籤 39</string>
+      <string id="Bookmark40">書籤 40</string>
+      <string id="Bookmark41">書籤 41</string>
+      <string id="Bookmark42">書籤 42</string>
+      <string id="Bookmark43">書籤 43</string>
+      <string id="Bookmark44">書籤 44</string>
+      <string id="Bookmark45">書籤 45</string>
+      <string id="Bookmark46">書籤 46</string>
+      <string id="Bookmark47">書籤 47</string>
+      <string id="Bookmark48">書籤 48</string>
+      <string id="Bookmark49">書籤 49</string>
+      <string id="Bookmark50">書籤 50</string>
+      <string id="Bookmark_Explain">若啟用此原則，將可以指定要加入到 Firefox 的書籤。由於有 Bug 存在的關係，您必須設定書籤位置。請注意必須照順序設定書籤。
+
+若停用或不設定此原則，則不會加入新書籤。</string>
+      <string id="BookmarkPlacementToolbar">工具列</string>
+      <string id="BookmarkPlacementMenu">選單</string>
+      <string id="NoDefaultBookmarks">不建立預設書籤</string>
+      <string id="NoDefaultBookmarks_Explain">若啟用此原則，將不會建立預設書籤與智慧書籤（最常瀏覽、最近新增的標籤）。
+
+若停用或不設定此原則，則會建立預設書籤與智慧書籤（最常瀏覽、最近新增的標籤）。
+
+註：此原則僅在設定檔首次執行前設定才有效。</string>
+      <string id="HomepageURL">首頁網址</string>
+      <string id="HomepageURL_Explain">若啟用此原則，您可以設定首頁網址，還可以固定該網址。
+
+若停用或不設定此原則，使用者則可以自行更改首頁設定。</string>
+      <string id="HomepageAdditional">其他首頁</string>
+      <string id="HomepageAdditional_Explain">若啟用此原則，將可設定其他首頁，將以多個分頁的方式開啟。
+
+若停用或不設定此原則，則僅有一頁首頁。</string>
+      <string id="HomepageStartPage">開始頁面</string>
+      <string id="HomepageStartPage_Explain">若啟用此原則，將可以更改 Firefox 啟動時要顯示的內容。可以是首頁、先前的瀏覽狀態，或空白頁。
+
+若停用或不設定此原則，則預設使用先前的瀏覽狀態。</string>
+      <string id="None">無</string>
+      <string id="Homepage">首頁</string>
+      <string id="PreviousSession">先前的瀏覽狀態</string>
+      <string id="PasswordManagerEnabled">密碼管理員</string>
+      <string id="PasswordManagerEnabled_Explain">若停用此原則，將無法於偏好設定中使用密碼管理員。
+
+若啟用或不設定此原則，則可於偏好設定中使用密碼管理員。</string>
+      <string id="PromptForDownloadLocation">提示下載位置</string>
+      <string id="PromptForDownloadLocation_Explain">若停用此原則，將不會向使用者詢問檔案下載位置。
+
+若啟用此原則，則總是會向使用者詢問檔案下載位置。
+
+若不設定此原則，則會向使用者詢問檔案下載位置，但使用者也可以自行更改預設行為。</string>
+      <string id="Proxy">代理伺服器設定</string>
+      <string id="Proxy_Explain">若啟用此原則，將可以調整並鎖定網路設定。
+
+請選擇連線類型，然後填寫對應的段落。由於有 Bug 存在的關係，您必須選擇 SOCKS 代理伺服器的版本。
+
+若停用或不設定此原則，則使用預設網路設定，且使用者可自行調整。</string>
+      <string id="SOCKSVersion4">SOCKS v4</string>
+      <string id="SOCKSVersion5">SOCKS v5</string>
+      <string id="AutoConfigURL">代理伺服器自動設定網址</string>
+      <string id="AutoConfigURL_Explain">僅應於選擇自動設定代理伺服器時，設定這些項目</string>
+      <string id="Passthrough">不經由代理伺服器開啟下列網址</string>
+      <string id="Passthrough_Explain">僅應於選擇手動指定代理伺服器時，設定這些項目</string>
+      <string id="Connection">連線類型</string>
+      <string id="NoProxy">不使用代理伺服器</string>
+      <string id="SystemProxy">使用系統代理伺服器設定</string>
+      <string id="ManualProxy">手動設定代理伺服器</string>
+      <string id="AutoDetectProxy">自動偵測代理伺服器設定</string>
+      <string id="AutoConfigProxy">代理伺服器自動設定網址</string>
+      <string id="TrackingProtection">追蹤保護</string>
+      <string id="TrackingProtection_Explain">若不設定此原則，在一般瀏覽模式將不會預設開啟追蹤保護，而在隱私瀏覽模式中將會開啟，使用者可自行調整設定。
+
+若停用此原則，則會在一般與隱私瀏覽模式中都停用追蹤保護功能，且使用者無法開啟。
+
+若啟用此原則，則會在一般與隱私瀏覽模式中都啟用追蹤保護功能，且您可以決定是否要允許讓使用者自行更改設定。</string>
+      <string id="TrackingProtection_group">Tracking Protection</string>
+      <string id="TrackingProtection_Value">Enabled</string>
+      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+
+If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+
+If this policy is not configured, standard tracking protection is used and the user can change it.</string>
+      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
+      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+
+If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
+      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+
+If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
+      <string id="TrackingProtection_Exceptions">Exceptions</string>
+      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+
+If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
+      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
+      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+      <string id="RequestedLocales">請求語系</string>
+      <string id="RequestedLocalesString">請求語系（字串）</string>
+      <string id="RequestedLocales_Explain">若啟用此原則，您可以指定要由應用程式顯示的語系順序清單。將使得對應的語言套件生效。
+
+若停用或不設定此原則，應用程式將使用預設語系。</string>
+      <string id="SecurityDevices">安全性裝置</string>
+      <string id="SecurityDevices_Explain">若啟用此原則，將可以指定要安裝的 PKCS #11 模組清單。需於設定中指定模組名稱及完整路徑。
+
+若停用或不設定此原則，則不會安裝其他的 PKCS #11 模組。</string>
+      <string id="SearchBar">搜尋列位置</string>
+      <string id="SearchBar_Explain">若啟用此原則，將可以設定搜尋列是否要自網址列分離。
+
+若停用或不設定此原則，新使用者的搜尋列將合併於網址列內；從 Firefox 56 或之前版本升級上來的使用者，則會獨立於工具列中。</string>
+      <string id="SearchEngines_1">搜尋引擎 1</string>
+      <string id="SearchEngines_2">搜尋引擎 2</string>
+      <string id="SearchEngines_3">搜尋引擎 3</string>
+      <string id="SearchEngines_4">搜尋引擎 4</string>
+      <string id="SearchEngines_5">搜尋引擎 5</string>
+      <string id="SearchEngines_Explain">若啟用此原則，將可以指定要加入 Firefox 的搜尋引擎。請使用 {searchTerms} 來指定要取代於網址中的搜尋詞。由於有 Bug 存在的關係，您必須指定查詢方法（通常是 GET）。請注意必須照順序設定搜尋引擎。
+
+若停用或不設定此原則，則不會加入搜尋引擎。</string>
+      <string id="SearchBar_Unified">合併於網址列內</string>
+      <string id="SearchBar_Separate">獨立於工具列中</string>
+      <string id="SearchEngine_Method_GET">GET</string>
+      <string id="SearchEngine_Method_POST">POST</string>
+      <string id="SearchEngines_Default">預設搜尋引擎</string>
+      <string id="SearchEngines_Default_Explain">若啟用此原則，將可以設定預設要使用的搜尋引擎名稱。
+
+若停用或不設定此原則，則使用 Firefox 搜尋引擎。</string>
+      <string id="SearchEngines_PreventInstalls">防止安裝搜尋引擎</string>
+      <string id="SearchEngines_PreventInstalls_Explain">若啟用此原則，使用者將無法從網頁安裝搜尋引擎。
+
+若停用或不設定此原則，則可以從網頁安裝搜尋引擎。</string>
+      <string id="SearchEngines_Remove">移除搜尋引擎</string>
+      <string id="SearchEngines_Remove_Explain">若啟用此原則，將可以指定要移除或隱藏的搜尋引擎。
+
+若停用或不設定此原則，則不會移除或隱藏搜尋引擎。</string>
+      <string id="SearchSuggestEnabled">搜尋建議</string>
+      <string id="SearchSuggestEnabled_Explain">若停用此原則，將停用搜尋建議功能。
+
+若啟用此原則，將啟用搜尋建議功能。
+
+若不設定此原則，則會啟用搜尋建議功能，且使用者可自行關閉此功能。</string>
+      <string id="SSLVersionMin">啟用的最低 SSL 版本</string>
+      <string id="SSLVersionMin_Explain">若啟用此原則，Firefox 將不會使用低於指定版本的 SSL/TLS 版本進行連線。
+
+若停用或不設定此原則，Firefox 的預設最低版本為 TLS 1.0。</string>
+      <string id="SSLVersionMax">啟用的最高 SSL 版本</string>
+      <string id="SSLVersionMax_Explain">若啟用此原則，將不會使用高於指定版本的 SSL/TLS 版本進行連線。
+
+若停用或不設定此原則，Firefox 的預設最高版本為 TLS 1.3。</string>
+      <string id="TLS1">TLS 1.0</string>
+      <string id="TLS1_1">TLS 1.1</string>
+      <string id="TLS1_2">TLS 1.2</string>
+      <string id="TLS1_3">TLS 1.3</string>
+      <string id="SupportMenu">技術支援選單</string>
+      <string id="SupportMenu_Explain">若啟用此原則，將在說明選單中加入技術支援資訊項目。
+
+若停用或不設定此原則，則不會加入選單項目。</string>
+      <string id="UserMessaging_WhatsNew">What's New</string>
+      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+
+If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+
+If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
+      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+
+If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+
+If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
+      <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
+
+若需要偏好設定的詳細說明，請參考：
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_String_Explain">若啟用此原則，偏好設定將鎖定為輸入的字串。若停用此原則，則不會生效。
+
+若需要偏好設定的詳細說明，請參考：
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_Enum_Explain">若啟用此原則，偏好設定將鎖定為輸入的值。若停用此原則，則不會生效。
+
+若需要偏好設定的詳細說明，請參考：
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。</string>
+      <string id="Preferences_Unsupported_Explain">已不再於 Windows 平台支援此偏好設定。我們還在評估是否要建立原則。</string>
+      <string id="Preferences_accessibility_force_disabled_auto">自動（0）</string>
+      <string id="Preferences_accessibility_force_disabled_off">總是關閉（1）</string>
+      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">每次詢問</string>
+      <string id="Preferences_security_default_personal_cert_Select_Automatically">自動選擇</string>
+      <string id="accessibility_force_disabled">accessibility.force_disabled</string>
+      <string id="app_update_auto">app.update.auto（已棄用）</string>
+      <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
+      <string id="browser_bookmarks_file">browser.bookmarks.file</string>
+      <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
+      <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
+      <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
+      <string id="browser_places_importBookmarksHTML">browser.places.importBookmarksHTML</string>
+      <string id="browser_safebrowsing_phishing_enabled">browser.safebrowsing.phishing.enabled</string>
+      <string id="browser_safebrowsing_malware_enabled">browser.safebrowsing.malware.enabled</string>
+      <string id="browser_search_update">browser.search.update</string>
+      <string id="browser_tabs_warnOnClose">browser.tabs.warnOnClose</string>
+      <string id="browser_cache_disk_parent_directory">browser.cache.disk.parent_directory</string>
+      <string id="browser_slowStartup_notificationDisabled">browser.slowStartup.notificationDisabled</string>
+      <string id="browser_taskbar_previews_enable">browser.taskbar.previews.enable</string>
+      <string id="browser_urlbar_suggest_bookmark">browser.urlbar.suggest.bookmark</string>
+      <string id="browser_urlbar_suggest_history">browser.urlbar.suggest.history</string>
+      <string id="browser_urlbar_suggest_openpage">browser.urlbar.suggest.openpage</string>
+      <string id="datareporting_policy_dataSubmissionPolicyBypassNotification">datareporting.policy.dataSubmissionPolicyBypassNotification</string>
+      <string id="dom_allow_scripts_to_close_windows">dom.allow_scripts_to_close_windows</string>
+      <string id="dom_disable_window_flip">dom.disable_window_flip</string>
+      <string id="dom_disable_window_move_resize">dom.disable_window_move_resize</string>
+      <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
+      <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
+      <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+      <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
+      <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
+      <string id="geo_enabled">geo.enabled</string>
+      <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
+      <string id="intl_accept_languages">intl.accept_languages</string>
+      <string id="media_eme_enabled">media.eme.enabled</string>
+      <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
+      <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
+      <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
+      <string id="network_IDN_show_punycode">network.IDN_show_punycode</string>
+      <string id="places_history_enabled">places.history.enabled</string>
+      <string id="print_save_print_settings">print.save_print_settings</string>
+      <string id="security_default_personal_cert">security.default_personal_cert</string>
+      <string id="security_ssl_errorReporting_enabled">security.ssl.errorReporting.enabled</string>
+      <string id="security_mixed_content_block_active_content">security.mixed_content.block_active_content</string>
+      <string id="ui_key_menuAccessKeyFocuses">ui.key.menuAccessKeyFocuses</string>
+      <string id="browser_newtabpage_activity-stream_default_sites">browser.newtabpage.activity-stream.default.sites</string>
+      <string id="extensions_htmlaboutaddons_recommendations_enabled">extensions.htmlaboutaddons.recommendations.enabled</string>
+      <string id="media_peerconnection_enabled">media.peerconnection.enabled</string>
+      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist</string>
+      <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
+      <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
+      <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="AppUpdateURL">
+        <textBox refId="AppUpdateURL">
+          <label>網址：</label>
+        </textBox>
+      </presentation>
+      <presentation id="Authentication">
+        <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Authentication_AllowNonFQDN">
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">總是允許於非 FQDN 網址進行 NTLM 驗證</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">總是允許於非 FQDN 網址進行 SPNEGO 驗證</checkBox>
+      </presentation>
+      <presentation id="Authentication_AllowProxies">
+        <checkBox refId="Authentication_AllowProxies_NTLM">自動允許對代理伺服器進行 NTLM 驗證</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">自動允許對代理伺服器進行 SPNEGO 驗證</checkBox>
+      </presentation>
+      <presentation id="Certificates_Install">
+        <listBox refId="Certificates_Install"/>
+      </presentation>
+      <presentation id="RequestedLocales">
+        <listBox refId="RequestedLocales"/>
+      </presentation>
+      <presentation id="SecurityDevices">
+        <listBox refId="SecurityDevices"/>
+      </presentation>
+      <presentation id="Extensions">
+        <listBox refId="Extensions"/>
+      </presentation>
+      <presentation id="WebsiteFilter">
+        <listBox refId="WebsiteFilter"/>
+      </presentation>
+      <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
+      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">允許網站彈出視窗</listBox></presentation>
+      <presentation id="Cookies_AcceptThirdParty">
+        <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="SearchBar">
+        <dropdownList refId="SearchBar"/>
+      </presentation>
+      <presentation id="TrackingProtection">
+        <checkBox refId="TrackingProtectionLocked">不允許調整追蹤保護偏好設定。</checkBox>
+        <checkBox refId="Cryptomining">封鎖加密貨幣採礦程式。</checkBox>
+        <checkBox refId="Fingerprinting">封鎖數位指紋追蹤程式。</checkBox>
+        <text>Exceptions:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="TrackingProtection_Exceptions">
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="OverridePage">
+        <textBox refId="OverridePage">
+          <label>網址：</label>
+        </textBox>
+      </presentation>
+      <presentation id="HomepageURL">
+        <text>網址：</text>
+        <textBox refId="HomepageURL">
+          <label/>
+        </textBox>
+        <checkBox refId="HomepageLocked">不允許變更首頁。</checkBox>
+      </presentation>
+      <presentation id="HomepageAdditional">
+        <listBox refId="HomepageAdditional">其他首頁</listBox>
+      </presentation>
+      <presentation id="StartPage">
+        <dropdownList refId="StartPage"/>
+      </presentation>
+      <presentation id="Bookmark">
+        <text>標題：</text>
+        <textBox refId="BookmarkTitle">
+          <label/>
+        </textBox>
+        <text>網址：</text>
+        <textBox refId="BookmarkURL">
+          <label/>
+        </textBox>
+        <text>Favicon 網址：</text>
+        <textBox refId="BookmarkFavicon">
+          <label/>
+        </textBox>
+        <text>置於：</text>
+        <dropdownList refId="BookmarkPlacement"/>
+        <text>資料夾名稱：</text>
+        <textBox refId="BookmarkFolder">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngine">
+        <textBox refId="SearchEngine_Name">
+          <label>名稱：</label>
+        </textBox>
+        <textBox refId="SearchEngine_URLTemplate">
+          <label>網址範本：</label>
+        </textBox>
+        <text>Method:</text>
+        <dropdownList refId="SearchEngine_Method"/>
+        <textBox refId="SearchEngine_IconURL">
+          <label>圖示網址：</label>
+        </textBox>
+        <textBox refId="SearchEngine_Alias">
+          <label>暱稱：</label>
+        </textBox>
+        <textBox refId="SearchEngine_Description">
+          <label>描述：</label>
+        </textBox>
+        <textBox refId="SearchEngine_SuggestURLTemplate">
+          <label>搜尋建議網址範本：</label>
+        </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>POST 資料：</label>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Default">
+        <textBox refId="SearchEngines_Default">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Remove">
+        <listBox refId="SearchEngines_Remove"/>
+      </presentation>
+      <presentation id="Proxy">
+        <checkBox refId="ProxyLocked">不允許變更代理伺服器設定。</checkBox>
+        <text>連線類型：</text>
+        <dropdownList refId="ConnectionType"/>
+        <text>HTTP 代理伺服器：</text>
+        <textBox refId="HTTPProxy">
+          <label/>
+        </textBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">所有通訊協定都使用此代理伺服器。</checkBox>
+        <text>SSL 代理伺服器：</text>
+        <textBox refId="SSLProxy">
+          <label/>
+        </textBox>
+        <text>FTP 代理伺服器：</text>
+        <textBox refId="FTPProxy">
+          <label/>
+        </textBox>
+        <text>SOCKS 主機：</text>
+        <textBox refId="SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>SOCKS 版本：</text>
+        <dropdownList refId="SOCKSVersion"/>
+        <text>No proxy for</text>
+        <textBox refId="Passthrough">
+          <label/>
+        </textBox>
+        <text>範例: .mozilla.org, .net.tw, 192.168.1.0/24</text>
+        <text>Proxy 自動設定網址：</text>
+        <textBox refId="AutoConfigURL">
+          <label/>
+        </textBox>
+        <checkBox refId="AutoLogin">若已儲存密碼則不要提示驗證。</checkBox>
+        <checkBox refId="UseProxyForDNS">使用 SOCKS v5 時也代理 DNS 查詢。</checkBox>
+      </presentation>
+      <presentation id="DNSOverHTTPS">
+        <text>提供者網址：</text>
+        <textBox refId="ProviderURL">
+          <label/>
+        </textBox>
+        <checkBox refId="DNSOverHTTPSEnabled">啟用 DNS over HTTPS。</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">不允許變更 DNS over HTTPS 偏好設定。</checkBox>
+      </presentation>
+      <presentation id="SSLVersion">
+        <dropdownList refId="SSLVersion"/>
+      </presentation>
+      <presentation id="SupportMenu">
+        <text>標題：</text>
+        <textBox refId="SupportMenuTitle">
+          <label/>
+        </textBox>
+        <text>網址：</text>
+        <textBox refId="SupportMenuURL">
+          <label/>
+        </textBox>
+        <text>快速鍵：</text>
+        <textBox refId="SupportMenuAccessKey">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Preferences_String">
+        <textBox refId="Preferences_String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Preferences_accessibility_force_disabled">
+        <dropdownList refId="Preferences_accessibility_force_disabled"/>
+      </presentation>
+      <presentation id="Preferences_security_default_personal_cert">
+        <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
+      </presentation>
+      <presentation id="SanitizeOnShutdown">
+        <checkBox refId="SanitizeOnShutdown_Cache">快取</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Cookies">Cookie</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">下載紀錄</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">表單與搜尋紀錄</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">上網紀錄</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">已登入的連線</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">網站偏好設定</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">網站離線資料</checkBox>
+      </presentation>
+      <presentation id="FirefoxHome">
+        <checkBox refId="FirefoxHome_Search">搜尋</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">熱門網站</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">下載紀錄</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Pocket 推薦項目</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">隻字片語</checkBox>
+        <checkBox refId="FirefoxHome_Locked">不允許變更設定</checkBox>
+      </presentation>
+      <presentation id="ExtensionSettings">
+        <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="String">
+        <textBox refId="String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="List">
+        <listBox refId="List"/>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
