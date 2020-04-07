@@ -2623,8 +2623,8 @@ or
   }
 }
 ```
-### SanitizeOnShutdown (Selective)
 <a name="SanitizeOnShutdown">
+### SanitizeOnShutdown (Selective)
 Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
 
 Previously, these values were always locked. Starting with Firefox 74 and Firefox ESR 68.6, you can use the `Locked` option to either keep the values unlocked (set it to false), or lock only the values you set (set it to true). If you want the old behavior of locking everything, do not set `Locked` at all.
@@ -2740,8 +2740,8 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
   }
 }
 ```
-### SearchEngines (This policy is only available on the ESR.)
 <a name="SearchEngines">
+### SearchEngines (This policy is only available on the ESR.)
 
 ### SearchEngines | Default
 
