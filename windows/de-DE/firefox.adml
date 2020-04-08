@@ -47,16 +47,16 @@
       <string id="UserMessaging_group">User Messaging</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
-      <string id="AppAutoUpdate">Application Autoupdate</string>
-      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+      <string id="AppAutoUpdate">Automatisches Update</string>
+      <string id="AppAutoUpdate_Explain">Wenn diese Richtlinie aktiviert ist, wird Firefox automatisch ohne Zustimmung des Benutzers aktualisiert.
 
-If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+Wenn diese Richtlinie deaktiviert ist, werden Firefox-Updates heruntergeladen, aber der Benutzer kann wählen, wann das Update installiert werden soll.
 
-If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
+Wenn diese Richtlinie nicht konfiguriert ist, kann der Benutzer wählen, ob Firefox automatisch aktualisiert wird oder nicht.</string>
       <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
-      <string id="AppUpdateURL_Explain">Wenn diese Policy aktiviert ist, dann können Sie eine URL zu einem Update-Server setzen, die eine andere ist, als die standardmäßige. Dies kann hilfreich sein, in dem Fall, wenn Sie einen eigenen Update-Server in Ihrem Netzwerk betreiben.
+      <string id="AppUpdateURL_Explain">Wenn diese Richtlinie aktiviert ist, dann können Sie eine URL zu einem Update-Server setzen, die von der Standard-URL abweicht. Dies kann hilfreich sein, falls Sie einen eigenen Update-Server in Ihrem Netzwerk betreiben.
 
-Wenn diese Policy deaktiviert oder nicht konfiguriert ist, dann wird die Standard-URL verwendet.</string>
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, dann wird die Standard-URL verwendet.</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, dürfen Webseiten die SPNEGO-Authentifizierung verwenden. Erlaubte Formate für die Einträge in der Liste sind mydomain.com oder https://myotherdomain.com.
 

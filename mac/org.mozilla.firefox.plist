@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>EnterprisePoliciesEnabled</key>
-	<false/>
+	<true/>
 	<key>AppAutoUpdate</key>
 	<true/>
 	<key>AppUpdateURL</key>

@@ -6,9 +6,9 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 | Policy Name | Description
 | --- | --- |
-| **[`AppAutoUpdate`](#AppAutoUpdate)** |  Enable or disable automatic application update.
-| **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update.
-| **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication.
+| **[`AppAutoUpdate`](#appautoupdate)** |  Enable or disable automatic application update.
+| **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
+| **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
@@ -2623,6 +2623,8 @@ or
   }
 }
 ```
+<a name="SanitizeOnShutdown"></a>
+
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
 
@@ -2739,10 +2741,7 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
   }
 }
 ```
-
-
-
-
+<a name="SearchEngines"></a>
 
 ### SearchEngines (This policy is only available on the ESR.)
 
