@@ -107,6 +107,15 @@ If you have disabled updates via DisableAppUpdate, this policy has no effect.
 ```
 Software\Policies\Mozilla\Firefox\AppAutoUpdate = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AppAutoUpdate
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -133,6 +142,16 @@ Change the URL for application update.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\AppUpdateURL = "https://yoursite.com"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AppUpdateURL
+```
+Value (string):
+```
+<enabled/>
+<data id="AppUpdateURL" value="https://yoursite.com"/>
 ```
 #### macOS
 ```
@@ -204,7 +223,7 @@ Value (string):
 
 <data id="Authentication" value="1&#xF000;mydomain&#xF000;2&#xF000;https://myotherdomain.com"/>
 ```
-```OMA-URI:
+OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_AllowNonFQDN
 ```
@@ -304,7 +323,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -340,7 +359,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -376,7 +395,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -412,7 +431,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -444,6 +463,20 @@ Software\Policies\Mozilla\Firefox\Bookmarks\1\URL = "https://example.com"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Favicon = "https://example.com/favicon.ico"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Placement = "toolbar" | "menu"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Folder = "FolderName"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Bookmarks/Bookmark01
+```
+Value (string):
+```
+<enabled/>
+<data id="BookmarkTitle" value="Example"/>
+<data id="BookmarkURL" value="https://example.com"/>
+<data id="BookmarkFavicon" value="https://example.com/favicon.ico"/>
+<data id="BookmarkPlacement" value="toolbar | menu"/>
+<data id="BookmarkFolder" value="FolderName"/>
 ```
 #### macOS
 ```
@@ -492,6 +525,15 @@ Enable or disable the detection of captive portals.
 ```
 Software\Policies\Mozilla\Firefox\CaptivePortal = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/CaptivePortal
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -522,6 +564,15 @@ See https://support.mozilla.org/kb/setting-certificate-authorities-firefox for m
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Certificates\ImportEnterpriseRoots = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Certificates/Certificates_ImportEnterpriseRoots
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -575,6 +626,16 @@ Binary (DER) and ASCII (PEM) certificates are both supported.
 Software\Policies\Mozilla\Firefox\Certificates\Install\1 = "cert1.der"
 Software\Policies\Mozilla\Firefox\Certificates\Install\2 = "C:\Users\username\cert2.pem"
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Certificates/Certificates_Install
+```
+Value (string):
+```
+<enabled/>
+<data id="Certificates_Install" value="1&#xF000;cert1.der&#xF000;2&#xF000;C:\Users\username\cert2.pem"/>
+```
 #### macOS
 ```
 <dict>
@@ -624,10 +685,70 @@ Configure cookie preferences.
 Software\Policies\Mozilla\Firefox\Cookies\Allow\1 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Cookies\Block\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Cookies\Default = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty = "always" | "never" |"from-visited"
+Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty = "always" | "never" | "from-visited"
 Software\Policies\Mozilla\Firefox\Cookies\ExpireAtSessionEnd = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Cookies\RejectTracker = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_Allow
+```
+Value (string):
+```
+<enabled/>
+<data id="Cookies_Allow" value="1&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_Block
+```
+Value (string):
+```
+<enabled/>
+<data id="Cookies_Block" value="1&#xF000;https://example.org"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_Default
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_AcceptThirdParty
+```
+Value (string):
+```
+<enabled/>
+<data id="Cookies_AcceptThirdParty" value="always | never | from-visited"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_ExpireAtSessionEnd
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_RejectTracker
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -682,7 +803,15 @@ Remove the "Set As Desktop Background..." menuitem when right clicking on an ima
 ```
 Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground = 0x1 | 0x0
 ```
-
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableSetDesktopBackground
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -709,7 +838,15 @@ Remove the master password functionality.
 ```
 Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation = 0x1 | 0x0
 ```
-
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableMasterPasswordCreation
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -735,6 +872,15 @@ Turn off application updates.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableAppUpdate = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableAppUpdate
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -762,7 +908,15 @@ Disable the built in PDF viewer. PDF files are downloaded and sent externally.
 ```
 Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
 ```
-
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableBuiltinPDFViewer
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -789,7 +943,15 @@ Prevent the default browser agent from taking any actions. Only applicable to Wi
 ```
 Software\Policies\Mozilla\Firefox\DisableDefaultBrowserAgent = 0x1 | 0x0
 ```
-
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableDefaultBrowserAgent
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### policies.json
 ```
 {
@@ -809,7 +971,15 @@ Remove access to all developer tools.
 ```
 Software\Policies\Mozilla\Firefox\DisableDeveloperTools = 0x1 | 0x0`
 ```
-
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableDeveloperTools
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -835,6 +1005,15 @@ Disable the menus for reporting sites (Submit Feedback, Report Deceptive Site).
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFeedbackCommands = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFeedbackCommands
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -862,6 +1041,15 @@ Remove access to Firefox Screenshots.
 ```
 Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFirefoxScreenshots
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -887,6 +1075,15 @@ Disable Firefox Accounts integration (Sync).
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFirefoxAccounts
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -914,6 +1111,15 @@ Disable Firefox studies (Shield).
 ```
 Software\Policies\Mozilla\Firefox\DisableFirefoxStudies = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFirefoxStudies
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -939,6 +1145,15 @@ Disable the "Forget" button.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableForgetButton = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableForgetButton
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -966,6 +1181,15 @@ Turn off saving information on web forms and the search bar.
 ```
 Software\Policies\Mozilla\Firefox\DisableFormHistory = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFormHistory
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -992,7 +1216,15 @@ Do not allow passwords to be shown in saved logins
 ```
 Software\Policies\Mozilla\Firefox\DisablePasswordReveal = 0x1 | 0x0
 ```
-
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisablePasswordReveal
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -1018,6 +1250,15 @@ Remove Pocket in the Firefox UI. It does not remove it from the new tab page.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisablePocket = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisablePocket
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -1045,6 +1286,15 @@ Remove access to private browsing.
 ```
 Software\Policies\Mozilla\Firefox\DisablePrivateBrowsing = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisablePrivateBrowsing
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -1071,6 +1321,15 @@ Disables the "Import data from another browser" option in the bookmarks window.
 ```
 Software\Policies\Mozilla\Firefox\DisableProfileImport = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableProfileImport
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -1096,6 +1355,15 @@ Disable the Refresh Firefox button on about:support and support.mozilla.org, as 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableProfileRefresh = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableProfileRefresh
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -1124,6 +1392,15 @@ On Windows, this disables safe mode via the command line as well.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisableSafeMode = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableSafeMode
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -1156,6 +1433,24 @@ Prevent the user from bypassing security in certain cases.
 Software\Policies\Mozilla\Firefox\DisableSecurityBypass\InvalidCertificate = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DisableSecurityBypass\SafeBrowsing = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/P_DisableSecurityBypass_InvalidCertificate
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/P_DisableSecurityBypass_SafeBrowsing
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+
 #### macOS
 ```
 <dict>
@@ -1187,7 +1482,17 @@ Prevent system add-ons from being installed or update.
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
-```Software\Policies\Mozilla\Firefox\DisableSystemAddonUpdate = 0x1 | 0x0
+```
+Software\Policies\Mozilla\Firefox\DisableSystemAddonUpdate = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableSystemAddonUpdate
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -1217,6 +1522,15 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 ```
 Software\Policies\Mozilla\Firefox\DisableTelemetry = 0x1 | 0x0
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableTelemetry
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -1242,6 +1556,15 @@ Set the initial state of the bookmarks toolbar. A user can still hide it and it 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisplayBookmarksToolbar
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -1302,6 +1625,16 @@ Set the state of the menubar.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\DisplayMenuBar = "always", "never", "default-on", "default-off"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisplayMenuBar_Enum
+```
+Value (string):
+```
+<enabled/>
+<data id="DisplayMenuBar" value="always | never | default-on | default-off"/>
 ```
 #### macOS
 ```
