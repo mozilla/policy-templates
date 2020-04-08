@@ -48,15 +48,15 @@
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
       <string id="AppAutoUpdate">Automatisches Update</string>
-      <string id="AppAutoUpdate_Explain">Wenn diese Richtlinie aktiviert ist, wird Firefox automatisch ohne Zustimmung des Benutzers aktualisiert.
+      <string id="AppAutoUpdate_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox automatisch ohne Zustimmung des Benutzers aktualisiert.
 
-Wenn diese Richtlinie deaktiviert ist, werden Firefox-Updates heruntergeladen, aber der Benutzer kann wählen, wann das Update installiert werden soll.
+Wenn diese Richtlinieneinstellung deaktiviert ist, werden Firefox-Updates heruntergeladen, aber der Benutzer kann wählen, wann das Update installiert werden soll.
 
-Wenn diese Richtlinie nicht konfiguriert ist, kann der Benutzer wählen, ob Firefox automatisch aktualisiert wird oder nicht.</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, kann der Benutzer wählen, ob Firefox automatisch aktualisiert wird oder nicht.</string>
       <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
-      <string id="AppUpdateURL_Explain">Wenn diese Richtlinie aktiviert ist, dann können Sie eine URL zu einem Update-Server setzen, die von der Standard-URL abweicht. Dies kann hilfreich sein, falls Sie einen eigenen Update-Server in Ihrem Netzwerk betreiben.
+      <string id="AppUpdateURL_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine URL zu einem Update-Server setzen, die von der Standard-URL abweicht. Dies kann hilfreich sein, falls Sie einen eigenen Update-Server in Ihrem Netzwerk betreiben.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, dann wird die Standard-URL verwendet.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standard-URL verwendet.</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, dürfen Webseiten die SPNEGO-Authentifizierung verwenden. Erlaubte Formate für die Einträge in der Liste sind mydomain.com oder https://myotherdomain.com.
 
@@ -127,28 +127,28 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="DownloadDirectory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie das Standard Verzeichnis für Downloads definieren und sperren. ${home} kann für den nativen Profilpfad verwendet werden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das Standard Firefox Download Verzeichnis benutzt und der Benutzer kann dies ändern.</string>
-      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Enabled">Enabled</string>
-      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+      <string id="DNSOverHTTPS_group">DNS über HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Aktiviert</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist DNS über HTTPS deaktiviert.
 
-If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist DNS über HTTPS aktiviert.</string>
       <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
-      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+      <string id="DNSOverHTTPS_ProviderURL_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die angegebene URL als Provider-URL verwendet.
 
-If this policy is disabled or not configured, the default provider is used.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Standardanbieter verwendet.</string>
 
-      <string id="DNSOverHTTPS_Locked">Locked</string>
-      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+      <string id="DNSOverHTTPS_Locked">Gesperrt</string>
+      <string id="DNSOverHTTPS_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die DNS über HTTPS-Einstellungen vom Benutzer nicht geändert werden.
 
-If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
-      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
-      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die DNS über HTTPS-Einstellungen vom Benutzer geändert werden.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Ausgeschlossene Domains</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die angegebenen Domains von DNS über HTTPS ausgeschlossen.
 
-If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
-      <string id="DNSOverHTTPS">DNS Over HTTPS konfigurieren (Moved)</string>
-      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS over HTTPS geändert werden.
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Domains vom DNS über HTTPS ausgeschlossen.</string>
+      <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Moved)</string>
+      <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS über HTTPS geändert werden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS Over HTTPS benutzt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS über HTTPS benutzt.</string>
       <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
@@ -161,12 +161,12 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="DisableBuiltinPDFViewer_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden PDF-Dateien nicht in Firefox angezeigt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden PDF-Dateien in Firefox angezeigt.</string>
-      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
-      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+      <string id="DisableDefaultBrowserAgent">Deaktivieren Sie den Standard-Browser-Agent.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Standard-Browser-Agent deaktiviert.
 
-If this policy is disabled or not configured, the default browser agent is enabled.
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, ist der Standard-Browser-Agent aktiviert.
 
-For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+Weitere Informationen über den Standard-Browser-Agent finden Sie unter https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Werkzeuge für Webentwickler deaktivieren</string>
       <string id="DisableDeveloperTools_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Werkzeuge für Webentwickler in Firefox nicht benutzt werden.
 
@@ -247,14 +247,14 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="DisplayMenuBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Menüleiste standardmäßig angezeigt, der Benutzer kann diese wieder ausblenden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Menüleiste standrdmäßig nicht angezeigt.</string>
-      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
-      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+      <string id="DisplayMenuBar_Enum">Menüleiste anzeigen</string>
+      <string id="DisplayMenuBar_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie wählen, ob die Menüleiste angezeigt wird oder nicht und ob der Benutzer die Menüleiste ein- und ausblenden kann oder nicht.
 
-If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
-      <string id="DisplayMenuBar_Always">Always</string>
-      <string id="DisplayMenuBar_Never">Never</string>
-      <string id="DisplayMenuBar_Default_On">On by default</string>
-      <string id="DisplayMenuBar_Default_Off">Off by default</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Menüleiste standardmäßig nicht angezeigt.</string>
+      <string id="DisplayMenuBar_Always">Immer</string>
+      <string id="DisplayMenuBar_Never">Niemals</string>
+      <string id="DisplayMenuBar_Default_On">Standardmäßig eingeschaltet</string>
+      <string id="DisplayMenuBar_Default_Off">Standardmäßig ausgeschaltet</string>
       <string id="DontCheckDefaultBrowser">Firefox Standardbrowser Überprüfung deaktivieren</string>
       <string id="DontCheckDefaultBrowser_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, überprüft Firefox nicht beim Starten ob er als Standardbrowser gesetzt ist.
 
@@ -468,10 +468,10 @@ Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist
       <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird die Download Historie gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Gruppenrichtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe &amp; Formulardaten</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Eingegebene Suchbegriffe &amp; Formulardaten gelöscht, wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe und Formulardaten</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden eingegebene Suchbegriffe und Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
-If this policy is disabled or not configured, werden Eingegebene Suchbegriffe &amp; Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden eingegebene Suchbegriffe und Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_History">Chronik</string>
       <string id="SanitizeOnShutdown_History_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, wird die Chronik gelöscht wenn der Browser geschlossen wird.
 
@@ -692,18 +692,18 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="SupportMenu_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird ein Menüeintrag mit spezifizierten Supportinformationen zum "Hilfe"-Menü hinzugefügt.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird kein Menüeintrag hinzugefügt.</string>
-      <string id="UserMessaging_WhatsNew">What's New</string>
-      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+      <string id="UserMessaging_WhatsNew">Neue Funktionen und Änderungen</string>
+      <string id="UserMessaging_WhatsNew_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden das Symbol und der Menüpunkt "Neue Funktionen und Änderungen" nicht angezeigt.
 
-If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
-      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
-      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden das Symbol und der Menüpunkt "Neue Funktionen und Änderungen" angezeigt.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Empfehlungen zur Erweiterung</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Erweiterungen nicht empfohlen, wenn der Benutzer Webseiten besucht.
 
-If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
-      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
-      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Erweiterungen empfohlen, wenn der Benutzer Webseiten besucht.</string>
+      <string id="UserMessaging_FeatureRecommendations">Feature-Empfehlungen</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden die Funktionen von Firefox nicht empfohlen, wenn der Benutzer Firefox verwendet.
 
-If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
       <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
       <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
 
