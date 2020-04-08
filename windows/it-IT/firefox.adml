@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.10" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.15" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -15,15 +15,24 @@
       <string id="SUPPORTED_FF68">Firefox 68 o versione successiva, Firefox 68 ESR o versione successiva</string>
       <string id="SUPPORTED_FF6801">Firefox 68.0.1 o versione successiva, Firefox 68.0.1 ESR o versione successiva</string>
       <string id="SUPPORTED_FF60ESR">Firefox 60 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR o versione successiva</string>
       <string id="SUPPORTED_FF69">Firefox 69 o versione successiva, Firefox 68.1 ESR o versione successiva</string>
       <string id="SUPPORTED_FF70">Firefox 70 o versione successiva, Firefox 68.2 ESR o versione successiva</string>
       <string id="SUPPORTED_FF71">Firefox 71 o versione successiva, Firefox 68.3 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF72">Firefox 72 o versione successiva, Firefox 68.4 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF73">Firefox 73 o versione successiva, Firefox 68.5 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF74">Firefox 74 o versione successiva, Firefox 68.6 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF75">Firefox 75 o versione successiva, Firefox 68.7 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 o versione successiva</string>
+      <string id="SUPPORTED_FF76">Firefox 76 o versione successiva, Firefox 68.8 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF77">Firefox 77 o versione successiva, Firefox 68.9 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
       <string id="Microphone_group">Microfono</string>
       <string id="Location_group">Posizione</string>
       <string id="Notifications_group">Notifiche</string>
+      <string id="Autoplay_group">Riproduzione automatica</string>
       <string id="Authentication_group">Autenticazione</string>
       <string id="Bookmarks_group">Segnalibri</string>
       <string id="Certificates_group">Certificati</string>
@@ -35,8 +44,15 @@
       <string id="Homepage_group">Pagina iniziale</string>
       <string id="Search_group">Ricerca</string>
       <string id="Preferences_group">Preferenze</string>
+      <string id="UserMessaging_group">Messaggi utente</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
+      <string id="AppAutoUpdate">Aggiornamento automatico applicazione</string>
+      <string id="AppAutoUpdate_Explain">Se questo criterio è abilitato, Firefox è aggiornato automaticamente senza l'approvazione dell'utente.
+
+Se questo criterio è disabilitato, gli aggiornamenti di Firefox sono scaricati ma l'utente può scegliere quando installare l'aggiornamento.
+
+Se questo criterio non è configurato, l'utente può scegliere se Firefox verrà aggiornato automaticamente o meno.</string>
       <string id="AppUpdateURL">URL aggiornamento personalizzato</string>
       <string id="AppUpdateURL_Explain">Se questo criterio è abilitato, è possibile impostare un URL diverso da quello predefinito per il server di aggiornamento. Ciò potrebbe essere utile se si dispone di un server di aggiornamento sulla propria rete.
 
@@ -67,10 +83,10 @@ Se questo criterio è disabilitato o non configurato, NTLM e SPNEGO non sono abi
       <string id="Authentication_AllowProxies_Explain">Se questo criterio è disabilitato, SPNEGO e NTLM non eseguiranno l'autenticazione con i server proxy.
 
 Se questo criterio è abilitato (e le caselle di controllo sono selezionate) o non configurato, NTLM e SPNEGO eseguiranno sempre l'autenticazione con i proxy.</string>
-      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
-      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+      <string id="Authentication_Locked">Non consentire la modifica delle preferenze di autenticazione</string>
+      <string id="Authentication_Locked_Explain">Se questo criterio è disabilitato, le preferenze di autenticazione possono essere modificate dall'utente.
 
-If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+Se questo criterio è abilitato o non configurato, le preferenze di autenticazione non possono essere modificate dall'utente.</string>
       <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
       <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
 
@@ -111,7 +127,25 @@ Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la dir
       <string id="DownloadDirectory_Explain">Se questo criterio è abilitato, è possibile impostare e rendere non modificabile la directory per i download. È possibile usare ${home} per specificare il percorso nativo della directory utente.
 
 Se questo criterio è disabilitato o non configurato, Firefox utilizzerà la directory di download predefinita e l'utente sarà in grado di modificarla.</string>
-      <string id="DNSOverHTTPS">Configura DNS su HTTPS</string>
+      <string id="DNSOverHTTPS_group">DNS su HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Abilitato</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">Se questo criterio è disabilitato, DNS su HTTPS è disabilitato.
+
+Se questo criterio è abilitato o non configurato, DNS su HTTPS è abilitato.</string>
+      <string id="DNSOverHTTPS_ProviderURL">URL provider</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">Se questo criterio è abilitato, l'URL specificato sarà utilizzato come URL provider.
+
+Se questo criterio è disabilitato o non configurato, sarà utilizzato il provider predefinito.</string>
+
+      <string id="DNSOverHTTPS_Locked">Bloccato</string>
+      <string id="DNSOverHTTPS_Locked_Explain">Se questo criterio è abilitato, le impostazioni DNS su HTTPS non possono essere modificate dall'utente.
+
+Se questo criterio è disabilitato o non configurato, le impostazioni DNS su HTTPS possono essere modificate dall'utente.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Domini esclusi</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">Se questo criterio è abilitato, i domini specificati sono esclusi da DNS su HTTPS.
+
+Se questo criterio è disabilitato o non configurato, nessun dominio è escluso da DNS su HTTPS.</string>
+      <string id="DNSOverHTTPS">Configura DNS su HTTPS (spostato)</string>
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
 Se questo criterio è disabilitato o non configurato, DNS su HTTPS utilizza la configurazione predefinita di Firefox.</string>
@@ -127,6 +161,12 @@ Se questo criterio è disabilitato o non configurato, il browser riceverà aggio
       <string id="DisableBuiltinPDFViewer_Explain">Se questo criterio è abilitato, i file PDF non sono visualizzati all'interno di Firefox.
 
 Se questo criterio è disabilitato o non configurato, i file PDF sono visualizzati all'interno di Firefox.</string>
+      <string id="DisableDefaultBrowserAgent">Disabilita l'agente browser predefinito</string>
+      <string id="DisableDefaultBrowserAgent_Explain">Se questo criterio è abilitato, l'agente browser predefinito è disabilitato.
+
+Se questo criterio è disabilitato o non configurato, l'agente browser predefinito è abilitato.
+
+Per ulteriori informazioni sull'agente browser predefinito, si veda https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Disabilita Strumenti Sviluppo web</string>
       <string id="DisableDeveloperTools_Explain">Se questo criterio è abilitato, gli Strumenti Sviluppo web non sono disponibili all'interno di Firefox.
 
@@ -157,10 +197,10 @@ Se questo criterio è disabilitato o non configurato, il pulsante &quot;Dimentic
       <string id="DisableFormHistory_Explain">Se questo criterio è abilitato, Firefox non ricorderà la cronologia dei moduli o di ricerca.
 
 Se questo criterio è disabilitato o non configurato, Firefox ricorderà la cronologia dei moduli e di ricerca.</string>
-      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
-      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+      <string id="DisablePasswordReveal">Non consentire la visualizzazione delle password nelle Credenziali salvate</string>
+      <string id="DisablePasswordReveal_Explain">Se questo criterio è abilitato, gli utenti non possono visualizzare le password nelle Credenziali salvate.
 
-If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+Se questo criterio è disabilitato o non configurato, gli utenti possono visualizzare le password nelle Credenziali salvate.</string>
       <string id="DisablePocket">Disabilita Pocket</string>
       <string id="DisablePocket_Explain">Se questo criterio è abilitato, Pocket non è disponibile.
 
@@ -203,10 +243,18 @@ Mozilla consiglia di non disabilitare la telemetria. Le informazioni raccolte tr
       <string id="DisplayBookmarksToolbar_Explain">Se questo criterio è abilitato, la barra degli strumenti Segnalibri è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra degli strumenti Segnalibri non è visualizzata per impostazione predefinita.</string>
-      <string id="DisplayMenuBar">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar">Visualizza barra dei menù (deprecata)</string>
       <string id="DisplayMenuBar_Explain">Se questo criterio è abilitato, la barra dei menù è visualizzata per impostazione predefinita. L'utente può sempre nasconderla.
 
 Se questo criterio è disabilitato o non configurato, la barra dei menù non viene visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar_Enum">Visualizza barra dei menù</string>
+      <string id="DisplayMenuBar_Enum_Explain">Se questo criterio è abilitato, è possibile scegliere se la barra dei menù sarà visualizzata o meno e se l'utente può visualizzare e nascondere la barra dei menù.
+
+Se questo criterio è disabilitato o non configurato, la barra dei menù non è visualizzata per impostazione predefinita.</string>
+      <string id="DisplayMenuBar_Always">Sempre</string>
+      <string id="DisplayMenuBar_Never">Mai</string>
+      <string id="DisplayMenuBar_Default_On">Sì per impostazione predefinita</string>
+      <string id="DisplayMenuBar_Default_Off">No per impostazione predefinita</string>
       <string id="DontCheckDefaultBrowser">Non controllare il browser predefinito</string>
       <string id="DontCheckDefaultBrowser_Explain">Se questo criterio è abilitato, Firefox all'avvio non controlla se è il browser predefinito.
 
@@ -368,6 +416,12 @@ Se questo criterio è disabilitato o non configurato, qualunque sito non nel cri
       <string id="Notifications_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alle notifiche non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alle notifiche.</string>
+      <string id="Autoplay_Allow_Explain">Se questo criterio è abilitato, la riproduzione automatica sarà sempre consentita per le origini indicate.
+
+Se questo criterio è disabilitato o non configurato, viene seguito il criterio predefinito per la riproduzione automatica.</string>
+      <string id="Autoplay_Block_Explain">Se questo criterio è abilitato, la riproduzione automatica sarà sempre bloccata per le origini indicate.
+
+Se questo criterio è disabilitato o non configurato, viene seguito il criterio predefinito per la riproduzione automatica.</string>
       <string id="FirefoxHome">Personalizza pagina iniziale di Firefox</string>
       <string id="FirefoxHome_Explain">Se questo criterio è abilitato, è possibile scegliere le sezioni visualizzate nella pagina iniziale di Firefox e impedire all'utente di modificarle.
 
@@ -400,6 +454,46 @@ Se questo criterio è disabilitato o non configurato, dopo ogni aggiornamento ve
       <string id="SanitizeOnShutdown_Explain">Se questo criterio è abilitato, tutti i dati saranno cancellati alla chiusura di Firefox. Ciò include la cronologia di navigazione e dei download, i cookie, gli accessi effettuati, la cache, la cronologia dei moduli e di ricerca, le preferenze e i dati non in linea dei siti Web.
 
 Se questo criterio è disabilitato o non configurato, i dati non sono cancellati alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_group">Elimina i dati alla chiusura del browser</string>
+
+      <string id="SanitizeOnShutdown_Cache">Cache</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">Se questo criterio è abilitato, la cache sarà cancellata alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, la cache non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookie</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">Se questo criterio è abilitato, i cookie saranno cancellati alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, i cookie non sono cancellati alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Downloads">Cronologia download</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Se questo criterio è abilitato, la cronologia dei download sarà cancellata alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, la cronologia dei download non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_FormData">Cronologia delle ricerche e dei moduli</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Se questo criterio è abilitato, i dati dei moduli saranno cancellati alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, i dati dei moduli non sono cancellati alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_History">Cronologia di navigazione</string>
+      <string id="SanitizeOnShutdown_History_Explain">Se questo criterio è abilitato, la cronologia di navigazione sarà cancellata alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, la cronologia di navigazione non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Sessions">Accessi effettuati</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">Se questo criterio è abilitato, le sessioni saranno cancellate alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, le sessioni non saranno cancellate alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Preferenze dei siti web</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Se questo criterio è abilitato, le preferenze dei siti web saranno cancellate alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, le preferenze dei siti web non sono cancellate alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Dati non in linea dei siti web</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Se questo criterio è abilitato, l'archiviazione non in linea delle applicazioni sarà cancellata alla chiusura del browser.
+
+Se questo criterio è disabilitato o non configurato, l'archiviazione non in linea delle applicazioni non è cancellata alla chiusura del browser.</string>
+      <string id="SanitizeOnShutdown_Locked">Blocca preferenze</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">Se questo criterio è disabilitato, tutte le preferenze di eliminazione alla chiusura potranno essere modificate dall'utente.
+
+Se questo criterio è abilitato, tutte le preferenze di eliminazione alla chiusura impostate tramite criteri non potranno essere modificate dall'utente
+
+Se questo criterio non è configurato, nessuna preferenza di eliminazione alla chiusura può essere modificata dall'utente (comportamento precedente).</string>
       <string id="WebsiteFilter_Block">Siti Web bloccati</string>
       <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
 
@@ -518,6 +612,29 @@ Se questo criterio è disabilitato o non configurato, saranno utilizzate le impo
 Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e bloccata sia nel browser, sia in Navigazione anonima.
 
 Se questo criterio è abilitato, la protezione antitracciamento è abilitata per impostazione predefinita sia nel browser, sia in Navigazione anonima ed è possibile scegliere se l'utente sarà in grado di modificare tale impostazione o meno.</string>
+      <string id="TrackingProtection_group">Protezione antitracciamento</string>
+      <string id="TrackingProtection_Value">Abilitata</string>
+      <string id="TrackingProtection_Value_Explain">Se questo criterio è abilitato, la protezione antitracciamento è abilitata.
+
+Se questo criterio è disabilitato, la protezione antitracciamento è disabilitata e non può essere modificata dall'utente.
+
+Se questo criterio non è configurato, viene utilizzata la protezione antitracciamento standard e l'utente può modificarla.</string>
+      <string id="TrackingProtection_Cryptomining">Cryptominer</string>
+      <string id="TrackingProtection_Cryptomining_Explain">Se questo criterio è abilitato, gli script che utilizzano dei cryptominer sono bloccati.
+
+Se questo criterio è disabilitato o non configurato, gli script che utilizzano dei cryptominer non sono bloccati.</string>
+      <string id="TrackingProtection_Fingerprinting">Fingerprinter</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Se questo criterio è abilitato, gli script che utilizzano dei fingerprinter sono bloccati.
+
+Se questo criterio è disabilitato o non configurato, gli script che utilizzano dei fingerprinter non sono bloccati.</string>
+      <string id="TrackingProtection_Exceptions">Eccezioni</string>
+      <string id="TrackingProtection_Exceptions_Explain">Se questo criterio è abilitato, è possibile specificare delle origini per cui non è abilitata la protezione antitracciamento.
+
+Se questo criterio è disabilitato o non configurato, la protezione antitracciamento è abilitata per tutti i siti Web.</string>
+      <string id="TrackingProtection_Locked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento</string>
+      <string id="TrackingProtection_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alla protezione antitracciamento non possono essere modificate dall'utente.
+
+Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alla protezione antitracciamento.</string>
       <string id="RequestedLocales">Lingua richiesta</string>
       <string id="RequestedLocalesString">Lingua richiesta (stringa)</string>
       <string id="RequestedLocales_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di lingue richieste per l'applicazione in ordine di preferenza. Il pacchetto lingue corrispondente sarà attivato.
@@ -577,6 +694,22 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="SupportMenu_Explain">Se questo criterio è abilitato, al menù Aiuto sarà aggiunta una nuova voce di menù per richiamare le informazioni di supporto.
 
 Se questo criterio è disabilitato o non configurato, non sarà aggiunta nessuna voce.</string>
+      <string id="UserMessaging_WhatsNew">Novità</string>
+      <string id="UserMessaging_WhatsNew_Explain">Se questo criterio è disabilitato, l'icona e la voce di menù Novità non saranno visualizzate.
+
+Se questo criterio è abilitato o non configurato, l'icona e la voce di menù Novità saranno visualizzate.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Consigli estensioni</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">Se questo criterio è disabilitato, non saranno consigliate estensioni durante la navigazione dell'utente.
+
+Se questo criterio è abilitato o non configurato, saranno consigliate delle estensioni durante la navigazione dell'utente.</string>
+      <string id="UserMessaging_FeatureRecommendations">Consigli funzionalità</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Se questo criterio è disabilitato, non saranno consigliate funzionalità di Firefox durante l'utilizzo di Firefox da parte dell'utente.
+
+Se questo criterio è abilitato o non configurato, saranno consigliate funzionalità di Firefox durante l'utilizzo di Firefox da parte dell'utente.</string>
+      <string id="UserMessaging_UrlbarInterventions">Intervento barra degli indirizzi</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">Se questo criterio è disabilitato, non saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.
+
+Se questo criterio è abilitato o non configurato, saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
@@ -622,6 +755,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
       <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
       <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+      <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
       <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
@@ -637,6 +772,13 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <string id="security_ssl_errorReporting_enabled">security.ssl.errorReporting.enabled</string>
       <string id="security_mixed_content_block_active_content">security.mixed_content.block_active_content</string>
       <string id="ui_key_menuAccessKeyFocuses">ui.key.menuAccessKeyFocuses</string>
+      <string id="browser_newtabpage_activity-stream_default_sites">browser.newtabpage.activity-stream.default.sites</string>
+      <string id="extensions_htmlaboutaddons_recommendations_enabled">extensions.htmlaboutaddons.recommendations.enabled</string>
+      <string id="media_peerconnection_enabled">media.peerconnection.enabled</string>
+      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist</string>
+      <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
+      <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
+      <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -682,6 +824,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="TrackingProtectionLocked">Non consentire la modifica delle preferenze relative alla protezione antitracciamento.</checkBox>
         <checkBox refId="Cryptomining">Blocca script cryptominer.</checkBox>
         <checkBox refId="Fingerprinting">Blocca script fingerprinter.</checkBox>
+        <text>Eccezioni:</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="TrackingProtection_Exceptions">
+        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="OverridePage">
         <textBox refId="OverridePage">
@@ -848,6 +995,17 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="String">
+        <textBox refId="String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="List">
+        <listBox refId="List"/>
       </presentation>
     </presentationTable>
   </resources>

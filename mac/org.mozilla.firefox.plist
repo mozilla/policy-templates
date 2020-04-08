@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>EnterprisePoliciesEnabled</key>
-	<false/>
+	<true/>
+	<key>AppAutoUpdate</key>
+	<true/>
 	<key>AppUpdateURL</key>
 	<string>https://www.example.com/update.xml</string>
 	<key>Authentication</key>
@@ -120,6 +122,10 @@
 		<string>URL_TO_ALTERNATE_PROVIDER</string>
 		<key>Locked</key>
 		<true/>
+		<key>ExcludedDomains</key>
+		<array>
+			<string>example.com</string>
+		</array>
 	</dict>
 	<key>DisableAppUpdate</key>
 	<true/>
@@ -180,6 +186,10 @@
 		<true/>
 		<key>Fingerprinting</key>
 		<true/>
+		<key>Exceptions</key>
+		<array>
+			<string>https://example.com</string>
+		</array>
 	</dict>
 	<key>Extensions</key>
 	<dict>
@@ -357,6 +367,17 @@
 			<key>Locked</key>
 			<true/>
 		</dict>
+		<key>Autoplay</key>
+		<dict>
+			<key>Allow</key>
+			<array>
+				<string>https://example.org</string>
+			</array>
+			<key>Block</key>
+			<array>
+				<string>https://example.edu</string>
+			</array>
+		</dict>
 	</dict>
 	<key>PopupBlocking</key>
 	<dict>
@@ -397,6 +418,17 @@
 	<true/>
 	<key>SearchBar</key>
 	<string>separate</string>
+	<key>UserMessaging</key>
+	<dict>
+		<key>WhatsNew</key>
+		<false/>
+		<key>ExtensionRecommendations</key>
+		<false/>
+		<key>FeatureRecommendations</key>
+		<false/>
+		<key>UrlbarInterventions</key>
+		<false/>
+	</dict>
 	<key>WebsiteFilter</key>
 	<dict>
 		<key>Block</key>

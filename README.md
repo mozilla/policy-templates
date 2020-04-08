@@ -6,8 +6,9 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 
 | Policy Name | Description
 | --- | --- |
-| **[`AppUpdateURL`](#AppUpdateURL)** | Change the URL for application update.
-| **[`Authentication`](#Authentication)** | Configure sites that support integrated authentication.
+| **[`AppAutoUpdate`](#appautoupdate)** |  Enable or disable automatic application update.
+| **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
+| **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
@@ -22,6 +23,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
+| **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
 | **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
@@ -31,6 +33,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableFormHistory`](#disableformhistory)** | Turn off saving information on web forms and the search bar.
 | **[`DisablePocket`](#disablepocket)** | Remove Pocket in the Firefox UI.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
+| **[`DisablePasswordReveal`](#disablepasswordreveal)** | Do not allow passwords to be revealed in saved logins.
 | **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
 | **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
@@ -38,7 +41,8 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar`](#displaymenubar)** | Set the initial state of the menubar.
+| **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
+| **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
@@ -82,8 +86,42 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
+| **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 
+### AppAutoUpdate
+
+Enable or disable **automatic** application update.
+
+If set to true, application updates are installed without user approval.
+
+If set to false, application updates are downloaded but the user can choose when to install the update.
+
+If you have disabled updates via DisableAppUpdate, this policy has no effect.
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** app.update.auto
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AppAutoUpdate = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>AppAutoUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AppAutoUpdate": true | false
+  }
+}
+```
 ### AppUpdateURL
 
 Change the URL for application update.
@@ -625,7 +663,7 @@ Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
       "Allow": ["http://example.org/"],
       "Block": ["http://example.edu/"],
       "Default": true | false,
-      "AcceptThirdParty": "always" | "never" | "from-visited"],
+      "AcceptThirdParty": "always" | "never" | "from-visited",
       "ExpireAtSessionEnd": true | false,
       "RejectTracker": true | false,
       "Locked": true | false
@@ -740,6 +778,26 @@ Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
   }
 }
 ```
+### DisableDefaultBrowserAgent
+Prevent the default browser agent from taking any actions. Only applicable to Windows; other platforms don’t have the agent.
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7 (Windows only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableDefaultBrowserAgent = 0x1 | 0x0
+```
+
+#### policies.json
+```
+{
+  "policies": {
+    "DisableDefaultBrowserAgent": true | false
+  }
+}
+```
 ### DisableDeveloperTools
 Remove access to all developer tools.
 
@@ -849,7 +907,7 @@ Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts = 0x1 | 0x0
 Disable Firefox studies (Shield).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `disableForget`\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
@@ -1200,7 +1258,7 @@ Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
   }
 }
 ```
-### DisplayMenuBar
+### DisplayMenuBar (Deprecated)
 Set the initial state of the menubar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
@@ -1226,6 +1284,40 @@ Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
   }
 }
 ```
+### DisplayMenuBar
+Set the state of the menubar.
+
+`always` means the menubar is shown and cannot be hidden.
+
+`never` means the menubar is hidden and cannot be shown.
+
+`default-on` means the menubar is on by default but can be hidden.
+
+`default-off` means the menubar is off by default but can be shown.
+
+**Compatibility:** Firefox 73, Firefox ESR 68.5 (Windows, some Linux)\
+**CCK2 Equivalent:** `displayMenuBar`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisplayMenuBar = "always", "never", "default-on", "default-off"
+```
+#### macOS
+```
+<dict>
+  <key>DisplayMenuBar</key>
+  <string>always | never | default-on | default-off</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisplayMenuBar": "always", "never", "default-on", "default-off"
+  }
+}
+```
 ### DNSOverHTTPS
 Configure DNS over HTTPS.
 
@@ -1235,7 +1327,9 @@ Configure DNS over HTTPS.
 
 `Locked` prevents the user from changing DNS over HTTPS preferences.
 
-**Compatibility:** Firefox 63, Firefox ESR 68\
+`ExcludedDomains` excludes domains from DNS over HTTPS.
+
+**Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.trr.mode`,`network.trr.uri`
 
@@ -1244,6 +1338,7 @@ Configure DNS over HTTPS.
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ExcludedDomains\1 = "example.com"
 ```
 #### macOS
 ```
@@ -1256,6 +1351,10 @@ Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
     <string>URL_TO_ALTERNATE_PROVIDER</string>
     <key>Locked</key>
     <true/> | <false/>
+    <key>ExcludedDomains</key>
+    <array>
+      <string>example.com</string>
+    </array>
   </dict>
 </dict>
 ```
@@ -1266,7 +1365,8 @@ Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
     "DNSOverHTTPS": {
       "Enabled":  true | false,
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
-      "Locked": true | false
+      "Locked": true | false,
+      "ExcludedDomains": ["example.com"]
     }
   }
 }
@@ -1378,8 +1478,10 @@ If `Cryptomining` is set to true, cryptomining scripts on websites are blocked.
 
 If `Fingerprinting` is set to true, fingerprinting scripts on websites are blocked.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2)\
-**CCK2 Equivalent:** `dontCheckDefaultBrowser`\
+`Exceptions` are origins for which tracking protection is not enabled.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
 
 #### Windows (GPO)
@@ -1388,6 +1490,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 ```
 #### macOS
 ```
@@ -1396,12 +1499,16 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
   <dict>
     <key>Value</key>
     <true/> | <false/>
-    <key><Locked/key>
+    <key><Locked</key>
     <true/> | <false/>
-    <key><Cryptomining/key>
+    <key><Cryptomining</key>
     <true/> | <false/>
-    <key><Fingerprinting/key>
+    <key><Fingerprinting</key>
     <true/> | <false/>
+    <key>Exceptions</key>
+    <array>
+      <string>https://example.com</string>
+    </array>
   </dict>
 </dict>
 ```
@@ -1413,7 +1520,8 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 
       "Value": [true, false],
       "Locked": [true, false],
       "Cryptomining": [true, false],
-      "Fingerprinting": [true, false]
+      "Fingerprinting": [true, false],
+      "Exceptions": ["https://example.com"]
     }
 }
 ```
@@ -1516,7 +1624,8 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
   "*": {
     "blocked_install_message": "Custom error message.",
     "install_sources": ["https://addons.mozilla.org/"],
-    "installation_mode": "blocked"
+    "installation_mode": "blocked",
+    "allowed_types": ["extension"]
   },
   "uBlock0@raymondhill.net": {
     "installation_mode": "force_installed",
@@ -1539,6 +1648,10 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
       </array>
       <key>installation_mode</key>
       <string>blocked</string>
+      <key>allowed_types</key>
+      <array>
+        <string>extension</string>
+      </array>
     </dict>
     <key>uBlock0@raymondhill.net</key>
     <dict>
@@ -1558,7 +1671,8 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
       "*": {
         "blocked_install_message": "Custom error message.",
         "install_sources": ["https://addons.mozilla.org/"],
-        "installation_mode": "blocked"
+        "installation_mode": "blocked",
+        "allowed_types": ["extension"]
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
@@ -2091,7 +2205,7 @@ Remove access to the password manager via preferences and blocks about:logins on
 
 **Compatibility:** Firefox 70, Firefox ESR 60.2\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `prefs.privacy.disable_button.view_passwords`
+**Preferences Affected:** `pref.privacy.disable_button.view_passwords`
 
 #### Windows (GPO)
 ```
@@ -2113,7 +2227,7 @@ Software\Policies\Mozilla\Firefox\PasswordManagerEnabled = 0x1 | 0x0
 }
 ```
 ### Permissions
-Set permissions associated with camera, microphone, location, and notifications
+Set permissions associated with camera, microphone, location, notifications, and autoplay. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
 
 `Allow` is a list of origins where the feature is allowed.
 
@@ -2123,13 +2237,14 @@ Set permissions associated with camera, microphone, location, and notifications
 
 `Locked` prevents the user from changing preferences for the feature.
 
-**Compatibility:** Firefox 62, Firefox ESR 60.2\
+**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`
 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\2 = "https://example.org:1234"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Locked = 0x1 | 0x0
@@ -2145,6 +2260,8 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow\1 = "https://e
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://example.edu"
 ```
 #### macOS
 ```
@@ -2156,6 +2273,7 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
       <key>Allow</key>
       <array>
         <string>https://example.org</string>
+        <string>https://example.org:1234</string>
       </array>
       <key>Block</key>
       <array>
@@ -2211,6 +2329,17 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
       <key>Locked</key>
       <true/>
     </dict>
+    <key>Autoplay</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+    </dict>
   </dict>
 </dict>
 ```
@@ -2220,7 +2349,7 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
   "policies": {
     "Permissions": {
       "Camera": {
-        "Allow": ["https://example.org"],
+        "Allow": ["https://example.org","https://example.org:1234"],
         "Block": ["https://example.edu"],
         "BlockNewRequests": true | false,
         "Locked": true | false
@@ -2242,6 +2371,10 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
         "Block": ["https://example.edu"],
         "BlockNewRequests": true | false,
         "Locked": true | false
+      },
+      "Autoplay": {
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"]
       }
     }
   }
@@ -2308,33 +2441,35 @@ Set and lock certain preferences.
 | --- | --- | --- | ---
 | accessibility.force_disabled | integer | Firefox 70, Firefox ESR 68.2 | 0
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
-| app.update.auto | boolean | Firefox 68, Firefox ESR 68 | true
+| app.update.auto (Deprecated - Switch to AppAutoUpdate policy) | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Firefox doesn't automatically install update.
 | browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
 | browser.bookmarks.file | string | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, the name of the file where bookmarks are exported and imported.
-| browser.bookmarks.restore_default_bookmarks | string | Firefox 70, Firefox ESR 68.2 | N/A
+| browser.bookmarks.restore_default_bookmarks | boolean | Firefox 70, Firefox ESR 68.2 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
 | browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
-| browser.cache.disk.parent_directory | string | Firefox 68, Firefox ESR 68 | Profile temporary directory
-| &nbsp;&nbsp;&nbsp;&nbsp;If set, changes the location of the disk cache.
+| ~browser.cache.disk.parent_directory~ | string | Firefox 68, Firefox ESR 68 | Profile temporary directory
+| &nbsp;&nbsp;&nbsp;&nbsp;~If set, changes the location of the disk cache.~ This policy doesn't work. It's being worked on.
 | browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
-| browser.places.importBookmarksHTML | string | Firefox 70, Firefox ESR 68.2
+| browser.newtabpage.activity-stream.default.sites | string | Firefox 72, ESR 68.4 | Locale dependent
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of URLs to use as the default top sites on the new tab page.
+| browser.places.importBookmarksHTML | boolean | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
-| browser.safebrowsing.phishing.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| browser.safebrowsing.phishing.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, phishing protection is not enabled (Not recommended)
-| browser.safebrowsing.malware.enabled | string | Firefox 70, Firefox ESR 68.2 | true
-| &nbsp;&nbsp;&nbsp;&nbsp;IF false, malware protection is not enabled (Not recommended)
+| browser.safebrowsing.malware.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, malware protection is not enabled (Not recommended)
 | browser.search.update | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, updates for search engines are not checked.
-| browser.slowStartup.notificationDisabled | string | Firefox 70, Firefox ESR 68.2 | false
+| browser.slowStartup.notificationDisabled | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, a notification isn't shown if startup is slow.
 | browser.tabs.warnOnClose | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, there is no warning when the browser is closed.
-| browser.taskbar.previews.enable | string | Firefox 70, Firefox ESR 68.2 (Windows only) | false
+| browser.taskbar.previews.enable | boolean | Firefox 70, Firefox ESR 68.2 (Windows only) | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, tab previews are shown in the Windows taskbar.
 | browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, bookmarks aren't suggested when typing in the URL bar.
@@ -2344,7 +2479,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, open tabs aren't suggested when typing in the URL bar.
 | datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, don't show the privacy policy tab on first run.
-| dom.allow_scripts_to_close_windows | string | Firefox 70, Firefox ESR 68.2 | false
+| dom.allow_scripts_to_close_windows | boolean | Firefox 70, Firefox ESR 68.2 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web page can close windows.
 | dom.disable_window_flip | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can focus and activate windows.
@@ -2356,36 +2491,53 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
 | dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| extensions.blocklist.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| dom.xmldocument.load.enabled | boolean | Firefox ESR 68.5 | true.
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.load is not available.
+| dom.xmldocument.async.enabled | boolean | Firefox ESR 68.5 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.async is not available.
+| extensions.blocklist.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
 | extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Recommendations tab is not displayed in the Add-ons Manager.
-| geo.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| extensions.htmlaboutaddons.recommendations.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, recommendations are not shown on the Extensions tab in the Add-ons Manager.
+| geo.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
 | intl.accept_languages | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
-| media.eme.enabled | string | Firefox 70, Firefox ESR 68.2 | true
+| media.eme.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Encrypted Media Extensions are not enabled.
 | media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
 | media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Widevine plugin is not downloaded.
+| media.peerconnection.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, WebRTC is disabled
+| media.peerconnection.ice.obfuscate_host_addresses.whitelist | string | Firefox 72, Firefox ESR 68.4 | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of domains for which mDNS hostname obfuscation is
+disabled
 | network.dns.disableIPv6 | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, IPv6 DNS lokoups are disabled.
 | network.IDN_show_punycode | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names. 
 | places.history.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, history is not enabled.
-| print.save_print_settings | string | Firefox 70, Firefox ESR 68.2 | true
+| print.save_print_settings | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, print settings are not saved between jobs.
 | security.default_personal_cert | string | Firefox 68, Firefox ESR 68 | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
-| security.mixed_content.block_active_content | string | Firefox 70, Firefox ESR 68.2 | true
+| security.mixed_content.block_active_content | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
+| security.osclientcerts.autoload | boolean | Firefox 72, Firefox ESR 68.4 (Windows only) | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
+| security.tls.hello_downgrade_check | boolean | Firefox 72, Firefox ESR 68.4 | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
 | ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Alt key doesn't show the menubar on Windows.
+| widget.content.gtk-theme-override | string | Firefox 72, Firefox ESR 68.4 (Linux only) | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, overrides the GTK theme for widgets.
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
@@ -2418,7 +2570,7 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 Ask where to save each file before downloading.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
-**CCK2 Equivalent:** N/A
+**CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.download.useDownloadDir`
 
 #### Windows (GPO)
@@ -2493,7 +2645,7 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
   <key>Proxy</key>
   <dict>
     <key>Mode</key>
-    <string>none | system | manual | autoDetect| autoConfig</string>
+    <string>none | system | manual | autoDetect | autoConfig</string>
     <key>Locked</key>
     <true> | </false>
     <key>HTTPProxy</key>
@@ -2591,10 +2743,14 @@ or
   }
 }
 ```
+<a name="SanitizeOnShutdown"></a>
+
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
 
-**Compatibility:** Firefox 68, Firefox ESR 68\
+Previously, these values were always locked. Starting with Firefox 74 and Firefox ESR 68.6, you can use the `Locked` option to either keep the values unlocked (set it to false), or lock only the values you set (set it to true). If you want the old behavior of locking everything, do not set `Locked` at all.
+
+**Compatibility:** Firefox 68, Firefox ESR 68 (Locked added in 74/68.6)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
 #### Windows (GPO)
@@ -2607,6 +2763,7 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Locked = 0x1 | 0x0
 ```
 #### macOS
 ```
@@ -2629,6 +2786,8 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
     <true/> | <false/>
     <key>OfflineApps</key>
     <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -2644,7 +2803,8 @@ Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
-      "OfflineApps": true | false
+      "OfflineApps": true | false,
+      "Locked": true | false
     }
   }
 }
@@ -2701,10 +2861,7 @@ Software\Policies\Mozilla\Firefox\SearchBar = "unified" | "separate"
   }
 }
 ```
-
-
-
-
+<a name="SearchEngines"></a>
 
 ### SearchEngines (This policy is only available on the ESR.)
 
@@ -3047,6 +3204,58 @@ Software\Policies\Mozilla\Firefox\SupportMenu\AccessKey = "S"
   }
 }
 ```
+### UserMessaging
+
+Prevent installing search engines from webpages.
+
+`WhatsNew` Remove the "What's New" icon and menuitem. (Firefox 75 only)
+
+`ExtensionRecommendations` Don't recommend extensions.
+
+`FeatureRecommendations` Don't recommend browser features.
+
+`UrlbarInterventions` Don't offer Firefox specific suggestions in the URL bar. (Firefox 75 only)
+
+**Compatibility:** Firefox 75, Firefox ESR 68.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\UserMessaging\WhatsNew = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>UserMessaging</key>
+  <dict>
+    <key>WhatsNew</key>
+    <true/> | <false/>
+    <key>ExtensionRecommendations</key>
+    <true/> | <false/>
+    <key>FeatureRecommendations</key>
+    <true/> | <false/>
+    <key>UrlbarInterventions</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "UserMessaging": {
+      "WhatsNew": true | false,
+      "ExtensionRecommendations": true | false,
+      "FeatureRecommendations": true | false,
+      "UrlbarInterventions": true | false
+    }
+  }
+}
+```
 ### WebsiteFilter
 Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
 
@@ -3056,8 +3265,8 @@ Block websites from being visited. The parameters take an array of Match Pattern
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Block\1 = "<all_urls>"
-Software\Policies\Mozilla\Firefox\WebsiteFilters\Exceptions\1 = "http://example.org/*"
+Software\Policies\Mozilla\Firefox\WebsiteFilter\Block\1 = "<all_urls>"
+Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions\1 = "http://example.org/*"
 ```
 #### macOS
 ```
