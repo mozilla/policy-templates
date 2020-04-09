@@ -940,8 +940,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <textBox refId="ProviderURL">
           <label/>
         </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">DNS over HTTPS aktivieren.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS over HTTPS Einstellungen nicht erlauben.</checkBox>
+        <checkBox refId="DNSOverHTTPSEnabled">DNS über HTTPS aktivieren.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS über HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
