@@ -821,8 +821,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Änderungen am Schutz vor Aktivitäten Verfolgung nicht erlauben</checkBox>
-        <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
-        <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
+        <checkBox refId="Cryptomining">Cryptomining-Skripte blockieren.</checkBox>
+        <checkBox refId="Fingerprinting">Fingerprinting-Skripte blockieren.</checkBox>
         <text>Exceptions:</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
