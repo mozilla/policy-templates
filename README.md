@@ -2408,7 +2408,7 @@ disabled
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
 | security.mixed_content.block_active_content | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
-| security.osclientcerts.autoload | boolean | Firefox 72, Firefox ESR 68.4 (Windows only) | false
+| security.osclientcerts.autoload | boolean | Firefox 72 (Windows), Firefox 75 (macOS)  | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
