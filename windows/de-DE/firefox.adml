@@ -44,7 +44,7 @@
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
       <string id="Preferences_group">Einstellungen</string>
-      <string id="UserMessaging_group">User Messaging</string>
+      <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
       <string id="AppAutoUpdate">Automatisches Update</string>
@@ -287,14 +287,14 @@ Für detalierte Informationen bitte die Dokumentation (in Englischer Sprache) le
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Hardware-Beschleunigung aktiviert.</string>
-      <string id="LegacyProfiles">Legacy Profile</string>
-      <string id="LegacyProfiles_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox keine seperaten Profile bei mehreren parallelen Installationen anlegen. Diese Einstellung equivalent zu der Umgebungsvariable MOZ_LEGACY_PROFILES.
+      <string id="LegacyProfiles">Separate Profile</string>
+      <string id="LegacyProfiles_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox keine seperaten Profile bei mehreren parallelen Installationen anlegen. Diese Einstellung ist equivalent zu der Umgebungsvariable MOZ_LEGACY_PROFILES.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Firefox seperate Profile für jede Installation anlegen.</string>
-      <string id="LocalFileLinks">Local File Links</string>
-      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+      <string id="LocalFileLinks">Links zu lokalen Dateien</string>
+      <string id="LocalFileLinks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Quellen angeben, von denen Links auf lokale Dateien erlaubt sind.
 
-If this policy is disabled or not configured, websites can't link to local files.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Websites nicht auf lokale Dateien verlinken.</string>
       <string id="NetworkPrediction">Network Prediction</string>
       <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
 
@@ -312,7 +312,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren, fordert Firefox nicht zum Spei
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, fordert Firefox nicht zum Speichern von Logindaten und Passwörtern auf.
 
-In either case, the user will be able to change the value (it is not locked).</string>
+In beiden Fällen kann der Benutzer den Wert ändern (er ist nicht gesperrt).</string>
       <string id="PopupBlocking_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Popup-Fenster für die angegebenen URLs immer erlaubt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), sind Popup-Fenster für alle Subdomains ebenfalls zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Popup-Fenster Richtlinie angewendet.</string>
@@ -576,10 +576,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="None">Leere Seite</string>
       <string id="Homepage">Startseite</string>
       <string id="PreviousSession">Letzte Sitzung</string>
-      <string id="PasswordManagerEnabled">Password Manager</string>
-      <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
+      <string id="PasswordManagerEnabled">Passwort-Manager</string>
+      <string id="PasswordManagerEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der Passwort-Manager nicht über die Einstellungen verfügbar.
 
-If this policy is enabled or not configured, the password manager is available via preferences.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist der Passwort-Manager über die Einstellungen verfügbar.</string>
       <string id="PromptForDownloadLocation">Abfrage des Download Verzeichnisses</string>
       <string id="PromptForDownloadLocation_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Nutzer nicht nach einem Verzeichnis für den Download gefragt.
 
@@ -634,10 +634,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, gelte
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Nutzer Änderungen an den Einstellungen vornehmen.</string>
       <string id="RequestedLocales">Requested locale</string>
-      <string id="RequestedLocalesString">Requested locale (string)</string>
-      <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+      <string id="RequestedLocalesString">Angefordertes Gebietsschema (Zeichenfolge)</string>
+      <string id="RequestedLocales_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste der angeforderten Gebietsschemata für die Anwendung in der Reihenfolge ihrer Präferenz angeben. Dadurch wird das entsprechende Sprachpaket aktiv.
 
-If this policy is disabled or not configured, the application will use the default locale.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet die Anwendung das Standardgebietsschema.</string>
       <string id="SecurityDevices">Sicherheitsgeräte</string>
       <string id="SecurityDevices_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste mit PKCS #11 Modulen definieren. Module werden mit einem Namen und einem qualifizierten Pfad benannt.
 
@@ -704,10 +704,10 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden die Funktionen von Firefox nicht empfohlen, wenn der Benutzer Firefox verwendet.
 
 Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
-      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
-      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+      <string id="UserMessaging_UrlbarInterventions">Adressleisten-Empfehlungen</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden  basierend darauf, was der Benutzer in die Adressleiste eingibt, keine Aktionen empfohlen.
 
-If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Aktionen empfohlen, die darauf basieren, was der Benutzer in die Adressleiste eingibt.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
@@ -789,12 +789,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <listBox refId="Authentication"/>
       </presentation>
       <presentation id="Authentication_AllowNonFQDN">
-        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Always allow NTLM on non FQDNs</checkBox>
-        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Always allow SPNEGO on non FQDNs</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">NTLM immer auf Nicht-FQDNs zulassen</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">SPNEGO immer auf Nicht-FQDNs zulassen</checkBox>
       </presentation>
       <presentation id="Authentication_AllowProxies">
-        <checkBox refId="Authentication_AllowProxies_NTLM">Allow NTLM to automatically authenticate with proxy servers</checkBox>
-        <checkBox refId="Authentication_AllowProxies_SPNEGO">Allow SPNEGO to automatically authenticate with proxy servers</checkBox>
+        <checkBox refId="Authentication_AllowProxies_NTLM">Erlauben Sie NTLM, sich automatisch bei Proxy-Servern zu authentifizieren</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">Erlauben Sie SPNEGO, sich automatisch bei Proxy-Servern zu authentifizieren</checkBox>
       </presentation>
       <presentation id="Certificates_Install">
         <listBox refId="Certificates_Install"/>
@@ -856,7 +856,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <textBox refId="BookmarkURL">
           <label/>
         </textBox>
-        <text>Favicon Adesse:</text>
+        <text>Favicon Adresse:</text>
         <textBox refId="BookmarkFavicon">
           <label/>
         </textBox>
