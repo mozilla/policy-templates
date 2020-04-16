@@ -113,21 +113,21 @@
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" valuePrefix=""/>
+        <list id="Authentication_SPNEGO" key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Authentication_Delegated" class="Both" displayName="$(string.Authentication_Delegated)"  key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" explainText="$(string.Authentication_Delegated_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" valuePrefix=""/>
+        <list id="Authentication_Delegated" key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Authentication_NTLM" class="Both" displayName="$(string.Authentication_NTLM)"  key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" explainText="$(string.Authentication_NTLM_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
+        <list id="Authentication_NTLM" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Authentication_AllowNonFQDN" class="Both" displayName="$(string.Authentication_AllowNonFQDN)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowNonFQDN_Explain)" presentation="$(presentation.Authentication_AllowNonFQDN)">
@@ -255,14 +255,14 @@
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Cookies\Allow" valuePrefix=""/>
+        <list id="Cookies_Allow" key="Software\Policies\Mozilla\Firefox\Cookies\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Cookies_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Cookies_Block_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Cookies\Block" valuePrefix=""/>
+        <list id="Cookies_Block" key="Software\Policies\Mozilla\Firefox\Cookies\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Cookies_Default" class="Both" displayName="$(string.Cookies_Default)" explainText="$(string.Cookies_Default_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" valueName="Default">
@@ -332,14 +332,14 @@
       <parentCategory ref="Camera"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow" valuePrefix=""/>
+        <list id="Camera_Allow" key="Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Camera_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Camera_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
       <parentCategory ref="Camera"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Camera\Permissions\Block" valuePrefix=""/>
+        <list id="Camera_Block" key="Software\Policies\Mozilla\Firefox\Camera\Permissions\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Camera_BlockNewRequests" class="Both" displayName="$(string.Camera_BlockNewRequests)" explainText="$(string.Camera_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Camera" valueName="BlockNewRequests">
@@ -366,14 +366,14 @@
       <parentCategory ref="Microphone"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone\Allow" valuePrefix=""/>
+        <list id="Microphone_Allow" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Microphone_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Microphone_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
       <parentCategory ref="Microphone"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone\Block" valuePrefix=""/>
+        <list id="Microphone_Block" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Microphone_BlockNewRequests" class="Both" displayName="$(string.Microphone_BlockNewRequests)" explainText="$(string.Microphone_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Microphone" valueName="BlockNewRequests">
@@ -400,14 +400,14 @@
       <parentCategory ref="Location"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Location\Allow" valuePrefix=""/>
+        <list id="Location_Allow" key="Software\Policies\Mozilla\Firefox\Permissions\Location\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Location_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Location_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
       <parentCategory ref="Location"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Location\Block" valuePrefix=""/>
+        <list id="Location_Block" key="Software\Policies\Mozilla\Firefox\Permissions\Location\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Location_BlockNewRequests" class="Both" displayName="$(string.Location_BlockNewRequests)" explainText="$(string.Location_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Location" valueName="BlockNewRequests">
@@ -434,14 +434,14 @@
       <parentCategory ref="Notifications"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow" valuePrefix=""/>
+        <list id="Notifications_Allow" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Notifications_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Notifications_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
       <parentCategory ref="Notifications"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block" valuePrefix=""/>
+        <list id="Notifications_Block" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Notifications_BlockNewRequests" class="Both" displayName="$(string.Notifications_BlockNewRequests)" explainText="$(string.Notifications_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Notifications" valueName="BlockNewRequests">
@@ -468,14 +468,14 @@
       <parentCategory ref="Autoplay"/>
       <supportedOn ref="SUPPORTED_FF74"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow" valuePrefix=""/>
+        <list id="Autoplay_Allow" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Autoplay_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Autoplay_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
       <parentCategory ref="Autoplay"/>
       <supportedOn ref="SUPPORTED_FF74"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block" valuePrefix=""/>
+        <list id="Autoplay_Block" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="DefaultDownloadDirectory" class="Both" displayName="$(string.DefaultDownloadDirectory)" explainText="$(string.DefaultDownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
@@ -811,21 +811,21 @@
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix="" expandable="true"/>
+        <list id="Extensions_Install" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix="" expandable="true"/>
       </elements>
     </policy>
     <policy name="Extensions_Uninstall" class="Both" displayName="$(string.Extensions_Uninstall)"  key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" explainText="$(string.Extensions_Uninstall_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" valuePrefix=""/>
+        <list id="Extensions_Uninstall" key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Extensions_Locked" class="Both" displayName="$(string.Extensions_Locked)"  key="Software\Policies\Mozilla\Firefox\Extensions\Locked" explainText="$(string.Extensions_Locked_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
+        <list id="Extensions_Locked" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="ExtensionSettings" class="Both" displayName="$(string.ExtensionSettings)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)"  presentation="$(presentation.ExtensionSettings)">">
@@ -926,7 +926,7 @@
       <parentCategory ref="Popups"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\PopupBlocking\Allow" valuePrefix=""/>
+        <list id="PopupBlocking_Allow" key="Software\Policies\Mozilla\Firefox\PopupBlocking\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="PopupBlocking_Default" class="Both" displayName="$(string.PopupBlocking_Default)" explainText="$(string.PopupBlocking_Default_Explain)" key="Software\Policies\Mozilla\Firefox\PopupBlocking" valueName="Default">
@@ -953,7 +953,7 @@
       <parentCategory ref="Addons"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow" valuePrefix=""/>
+        <list id="InstallAddonsPermission_Allow" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="InstallAddonsPermission_Default" class="Both" displayName="$(string.InstallAddonsPermission_Default)" explainText="$(string.InstallAddonsPermission_Default_Explain)" key="Software\Policies\Mozilla\Firefox\InstallAddonsPermission" valueName="Default">
@@ -1024,14 +1024,14 @@
       <parentCategory ref="Flash"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Allow" valuePrefix=""/>
+        <list id="FlashPlugin_Allow" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Allow" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="FlashPlugin_Block" class="Both" displayName="$(string.Block)" explainText="$(string.FlashPlugin_Block_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Flash"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Block" valuePrefix=""/>
+        <list id="FlashPlugin_Block" key="Software\Policies\Mozilla\Firefox\FlashPlugin\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="FlashPlugin_Default" class="Both" displayName="$(string.FlashPlugin_Default)" explainText="$(string.FlashPlugin_Default_Explain)" key="Software\Policies\Mozilla\Firefox\FlashPlugin" valueName="Default">
@@ -2485,7 +2485,7 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Block" valuePrefix=""/>
+        <list id="B_WebsiteFilter_Block" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Block" valuePrefix=""/>
       </elements>
     </policy>
     <!-- Alphabetization is based on name, so had to add B -->
@@ -2493,7 +2493,7 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
+        <list id="B_WebsiteFilter_Exceptions" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="SearchEngines_1" class="Both" displayName="$(string.SearchEngines_1)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\1" presentation="$(presentation.SearchEngine)" >
