@@ -50,7 +50,7 @@
       <string id="AppAutoUpdate">Automatisches Update</string>
       <string id="AppAutoUpdate_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox automatisch ohne Zustimmung des Benutzers aktualisiert.
 
-Wenn diese Richtlinieneinstellung deaktiviert ist, werden Firefox-Updates heruntergeladen, aber der Benutzer startet das Update manuell. Die Schaltfläche zur Installation erscheint bei Verfügbarkeit des Updates.
+Wenn diese Richtlinieneinstellung deaktiviert ist, werden Firefox-Updates heruntergeladen, aber der Benutzer startet die Update-Installation manuell. Die Schaltfläche zur Installation erscheint bei Verfügbarkeit des Updates.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, kann der Benutzer wählen, ob Firefox automatisch aktualisiert wird oder nicht.</string>
       <string id="AppUpdateURL">Benutzerdefinierte Update-URL</string>
