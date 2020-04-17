@@ -23,6 +23,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
+| **[`DisabledCiphers`](#disabledciphers)** | Disable ciphers.
 | **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
@@ -687,6 +688,69 @@ Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
 {
   "policies": {
     "DisableBuiltinPDFViewer": true | false
+  }
+}
+```
+### DisabledCiphers
+Disable specific cryptographic ciphers.
+
+**Compatibility:** Firefox 68.8, Firefox ESR 76\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_DHE_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_DHE_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_3DES_EDE_CBC_SHA = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>DisabledCiphers</key>
+    <dict>
+      <key>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_AES_128_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_AES_256_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
+      <true/> | <false/>
+    </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisabledCiphers" {
+      "TLS_DHE_RSA_WITH_AES_128_CBC_SHA": true | false,
+      "TLS_DHE_RSA_WITH_AES_256_CBC_SHA": true | false,
+      "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA": true | false,
+      "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA": true | false,
+      "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256": true | false,
+      "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256": true | false,
+      "TLS_RSA_WITH_AES_128_CBC_SHA": true | false,
+      "TLS_RSA_WITH_AES_256_CBC_SHA": true | false,
+      "TLS_RSA_WITH_3DES_EDE_CBC_SHA": true | false
+    }
   }
 }
 ```

@@ -45,6 +45,7 @@
       <string id="Search_group">搜尋</string>
       <string id="Preferences_group">偏好設定</string>
       <string id="UserMessaging_group">顯示給使用者的訊息</string>
+      <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
       <string id="AppAutoUpdate">應用程式自動更新</string>
@@ -708,6 +709,42 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="UserMessaging_UrlbarInterventions_Explain">若停用此原則，將不會在使用者在網址列輸入時推薦操作行為。
 
 若啟用或不設定此原則，則會根據使用者在網址列輸入的內容推薦操作行為。</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：

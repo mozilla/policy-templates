@@ -45,6 +45,7 @@
       <string id="Search_group">Ricerca</string>
       <string id="Preferences_group">Preferenze</string>
       <string id="UserMessaging_group">Messaggi utente</string>
+      <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
       <string id="AppAutoUpdate">Aggiornamento automatico applicazione</string>
@@ -710,6 +711,42 @@ Se questo criterio è abilitato o non configurato, saranno consigliate funzional
       <string id="UserMessaging_UrlbarInterventions_Explain">Se questo criterio è disabilitato, non saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.
 
 Se questo criterio è abilitato o non configurato, saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
