@@ -2117,9 +2117,11 @@ Set permissions associated with camera, microphone, location, notifications, and
 
 `Locked` prevents the user from changing preferences for the feature.
 
-**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6\
+`Default` specifies the default value for Autoplay. block-audio-video is not supported on Firefox ESR 68.
+
+**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`
+**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`,`media.autoplay.default`
 
 #### Windows (GPO)
 ```
@@ -2142,6 +2144,8 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\BlockNewRequests = 0
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Default = "allow-audio-video" | "block-audio" | "block-audio-video"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Locked = 0x1 | 0x0
 ```
 #### macOS
 ```
@@ -2160,9 +2164,9 @@ Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://exampl
         <string>https://example.edu</string>
       </array>
       <key>BlockNewRequests</key>
-      <true/>
+      <true/> | <false/>
       <key>Locked</key>
-      <true/>
+      <true/> | <false/>
     </dict>
     <key>Microphone</key>
     <dict>
@@ -2175,9 +2179,9 @@ Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://exampl
         <string>https://example.edu</string>
       </array>
       <key>BlockNewRequests</key>
-      <true/>
+      <true/> | <false/>
       <key>Locked</key>
-      <true/>
+      <true/> | <false/>
     </dict>
     <key>Location</key>
     <dict>
@@ -2190,9 +2194,9 @@ Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://exampl
         <string>https://example.edu</string>
       </array>
       <key>BlockNewRequests</key>
-      <true/>
+      <true/> | <false/>
       <key>Locked</key>
-      <true/>
+      <true/> | <false/>
     </dict>
     <key>Notifications</key>
     <dict>
@@ -2219,6 +2223,10 @@ Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://exampl
       <array>
         <string>https://example.edu</string>
       </array>
+      <key>Default</key>
+      <string>allow-audio-video | block-audio | block-audio-video</string>
+      <key>Locked</key>
+      <true/> | <false/>
     </dict>
   </dict>
 </dict>
@@ -2254,7 +2262,9 @@ Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://exampl
       },
       "Autoplay": {
         "Allow": ["https://example.org"],
-        "Block": ["https://example.edu"]
+        "Block": ["https://example.edu"],
+        "Default": "allow-audio-video" | "block-audio" | "block-audio-video",
+        "Locked": true | false
       }
     }
   }
