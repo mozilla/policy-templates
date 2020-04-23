@@ -377,6 +377,10 @@
 			<array>
 				<string>https://example.edu</string>
 			</array>
+			<key>Default</key>
+				<string>block-audio</string>
+			<key>Locked</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>PopupBlocking</key>

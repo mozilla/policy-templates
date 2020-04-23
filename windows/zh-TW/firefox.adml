@@ -420,6 +420,19 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="Autoplay_Block_Explain">若啟用此原則，將永遠針對指定的來源封鎖自動播放。
 
 若停用或不設定此原則，將遵循預設自動播放原則。</string>
+      <string id="Autoplay_Default">Default autoplay level</string>
+      <string id="Autoplay_Default_Explain">If this policy is enabled, you can choose the default autoplay level.
+
+If this policy is disabled or not configured, audio is blocked by default.
+
+Note: Blocking audio and video does not work on the ESR.</string>
+      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
+      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change autoplay preferences.</string>
+      <string id="AllowAudioVideo">Allow Audio and Video</string>
+      <string id="BlockAudio">Block Audio</string>
+      <string id="BlockAudioVideo">Block Audio and Video</string>
       <string id="FirefoxHome">自訂 Firefox 首頁</string>
       <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
 
@@ -1004,6 +1017,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       </presentation>
       <presentation id="List">
         <listBox refId="List"/>
+      </presentation>
+      <presentation id="Autoplay_Default">
+        <dropdownList refId="Autoplay_Default"/>
       </presentation>
     </presentationTable>
   </resources>

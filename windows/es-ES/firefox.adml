@@ -422,6 +422,19 @@ Si esta política está deshabilitada o no está configurada, se seguirá la pol
       <string id="Autoplay_Block_Explain">Si esta política está habilitada, la reproducción automática siempre se bloqueará para los orígenes indicados.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política predeterminada de reproducción automática.</string>
+      <string id="Autoplay_Default">Default autoplay level</string>
+      <string id="Autoplay_Default_Explain">If this policy is enabled, you can choose the default autoplay level.
+
+If this policy is disabled or not configured, audio is blocked by default.
+
+Note: Blocking audio and video does not work on the ESR.</string>
+      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
+      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change autoplay preferences.</string>
+      <string id="AllowAudioVideo">Allow Audio and Video</string>
+      <string id="BlockAudio">Block Audio</string>
+      <string id="BlockAudioVideo">Block Audio and Video</string>
       <string id="FirefoxHome">Personalizar inicio de Firefox</string>
       <string id="FirefoxHome_Explain">Si esta política está habilitada, podrá elegir las secciones que se muestran en la página de inicio de Firefox e impedir que el usuario las cambie.
 
@@ -1006,6 +1019,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="List">
         <listBox refId="List"/>
+      </presentation>
+      <presentation id="Autoplay_Default">
+        <dropdownList refId="Autoplay_Default"/>
       </presentation>
     </presentationTable>
   </resources>

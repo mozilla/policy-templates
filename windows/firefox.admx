@@ -478,6 +478,39 @@
         <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="Autoplay_Locked" class="Both" displayName="$(string.Autoplay_Locked)" explainText="$(string.Autoplay_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay" valueName="Locked">
+      <parentCategory ref="Autoplay"/>
+      <supportedOn ref="SUPPORTED_FF76"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Autoplay_Default" class="Both" displayName="$(string.Autoplay_Default)" explainText="$(string.Autoplay_Default_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay"  presentation="$(presentation.Autoplay_Default)">
+      <parentCategory ref="Autoplay"/>
+      <supportedOn ref="SUPPORTED_FF76"/>
+      <elements>
+        <enum id="Autoplay_Default" valueName="Default">
+          <item displayName="$(string.AllowAudioVideo)">
+            <value>
+              <string>allow-audio-video</string>
+            </value>
+          </item>
+          <item displayName="$(string.BlockAudio)">
+            <value>
+              <string>block-audio</string>
+            </value>
+          </item>
+          <item displayName="$(string.BlockAudioVideo)">
+            <value>
+              <string>block-audio-video</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy name="DefaultDownloadDirectory" class="Both" displayName="$(string.DefaultDownloadDirectory)" explainText="$(string.DefaultDownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF68"/>
