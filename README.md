@@ -694,7 +694,7 @@ Software\Policies\Mozilla\Firefox\DisableBuiltinPDFViewer = 0x1 | 0x0
 ### DisabledCiphers
 Disable specific cryptographic ciphers.
 
-**Compatibility:** Firefox 68.8, Firefox ESR 76\
+**Compatibility:** Firefox 76, Firefox ESR 68.8\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
