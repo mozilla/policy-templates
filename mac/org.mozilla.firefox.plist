@@ -151,7 +151,7 @@
 		<true/>
 		<key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
 		<true/>
-    </dict>
+	</dict>
 	<key>DisableDeveloperTools</key>
 	<true/>
 	<key>DisableFeedbackCommands</key>
