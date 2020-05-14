@@ -49,7 +49,7 @@
       <string id="Allow">Sites autorisés</string>
       <string id="Block">Sites bloqués</string>
       <string id="AppAutoUpdate">Application Autoupdate</string>
-      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+      <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis a jour sans aprobation de l'utilisateur.
 
 If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
 
