@@ -482,38 +482,37 @@ Si cette politique est désactivée ou non configurée, les cookies ne sont pas 
       <string id="SanitizeOnShutdown_Downloads_Explain">Si la stratégie est activée, l'historique des téléchargements est effacé à la fermeture du navigateur.
 
 Si cette stratégie est désactivée ou n'est pas configurée, l'historique des téléchargements n'est pas effacé lors de la fermeture du navigateur.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_FormData">Liste &amp; Historique des recherches</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Si la stratégie est activée, les données de la liste sont effacées à la fermeture du navigateur.
 
-If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_History">Browsing History</string>
-      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+Si cette stratégie est désactivée ou n'est pas configurée, les données de la liste ne sont pas effacées lors de la fermeture du navigateur.</string>
+      <string id="SanitizeOnShutdown_History">Historique de navigation</string>
+      <string id="SanitizeOnShutdown_History_Explain">Si la stratégie est activée, l'historique de navigation est effacé lors de la fermeture du navigateur.
 
-If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, l'historique de navigation n'est pas effacé lors de la fermeture du navigateur.</string>
       <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Sessions_Explain">Si la stratégie est activée, les sessions sont effacées à la fermeture du navigateur.
 
-If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
-      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+Si cette stratégie est désactivée ou non configurée, les sessions ne sont pas effacées à la fermeture du navigateur.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Préférences de site</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Si la stratégie est activée, les préférences du site sont effacées lors de la fermeture du navigateur.
+Si cette stratégie est désactivée ou n'est pas configurée, les préférences du site ne sont pas effacées lors de la fermeture du navigateur.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Données de site Web hors ligne</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Si la stratégie est activée, le stockage des applications hors ligne est effacé lors de la fermeture du navigateur.
 
-If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+Si cette stratégie est désactivée ou n'est pas configurée, le stockage d'applications hors ligne n'est pas effacé lors de la fermeture du navigateur.</string>
+      <string id="SanitizeOnShutdown_Locked">Verrouillé</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">Si cette stratégie est désactivée, toutes les préférences d'arrêt peuvent être modifiées par l'utilisateur.
 
-If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Locked">Locked</string>
-      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+Si cette stratégie est activée, les préférences d'arrêt définies explicitement via la stratégie ne peuvent pas être modifiées par l'utilisateur.
 
-If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
-
-If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+Si cette stratégie n'est pas configurée, aucune préférence d'arrêt ne peut être modifiée par l'utilisateur (comportement précédent).</string>
       <string id="WebsiteFilter_Block">Sites Web bloqués</string>
-      <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez spécifier des modèles de correspondance indiquant que les sites doivent être bloqués. Les modèles de correspondance sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Seules les adresses http / https sont prises en charge pour le moment. Il y a une limite de 1000 entrées.
+      <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez définir des listes indiquant que les sites doivent être bloqués. Les modèles de listes sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Seules les adresses http / https sont prises en charge pour le moment. Il y a une limite de 1000 entrées.
 
 Si cette stratégie est désactivée ou non configurée, aucun site Web n'est bloqué.</string>
       <string id="WebsiteFilter_Exceptions">Exceptions aux sites Web bloqués</string>
-      <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. There is a 1000 entry limit.
+      <string id="WebsiteFilter_Exceptions_Explain">Si cette stratégie est activée et que le filtre de site Web est activé, vous pouvez spécifier des modèles de correspondance pour les sites que vous ne souhaitez pas bloquer. Les modèles de correspondance sont documentés sur https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Seules les adresses http / https sont prises en charge pour le moment. Il y a une limite de 1000 entrées.
 
 Si cette stratégie est désactivée ou non configurée, il n'y a pas d'exception au filtre de site Web..</string>
       <string id="Bookmark01">Signet 01</string>
