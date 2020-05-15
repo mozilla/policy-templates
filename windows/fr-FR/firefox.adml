@@ -51,9 +51,9 @@
       <string id="AppAutoUpdate">Application Autoupdate</string>
       <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis a jour sans aprobation de l'utilisateur.
 
-If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+Si cette politique est désactivée, les mises à jour de Firefox sont téléchargées mais l'utilisateur peut choisir quand installer la mise à jour.
 
-If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
+Si cette politique n'est pas configurée, l'utilisateur peut choisir de ne pas automatiquement mettre à jour Firefox.</string>
       <string id="AppUpdateURL">URL de mise à jour personnalisée</string>
       <string id="AppUpdateURL_Explain">Si cette stratégie est activée, vous pouvez définir une URL vers un serveur de mise à jour autre que celui par défaut. Cela pourrait être utile si vous exécutez votre propre serveur de mise à jour sur votre réseau.
 
@@ -80,14 +80,14 @@ Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/
       <string id="Authentication_AllowNonFQDN_Explain">Si cette stratégie est activée, vous pouvez toujours autoriser SPNEGO ou NTLM sur des noms de domaine autres que FQDN.
 
 Si cette stratégie est désactivée ou non configurée, NTLM et SPNEGO ne sont pas activés sur des noms de domaine autres que le nom de domaine complet.</string>
-      <string id="Authentication_AllowProxies">Allow Proxies</string>
-      <string id="Authentication_AllowProxies_Explain">If this disabled, SPNEGO and NTLM will not authenticate with proxy servers.
+      <string id="Authentication_AllowProxies">Autoriser les proxys</string>
+      <string id="Authentication_AllowProxies_Explain">Si cette option est désactivée, SPNEGO et NTLM ne s'authentifieront pas auprès des serveurs proxy.
 
-If this policy is enabled (and the checkboxes are checked) or not configured, NTLM and SPNEGO will always authenticate with proxies.</string>
-      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
-      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+If this policy is activé (et les cases à cocher sont cochées) ou non configuré, NTLM et SPNEGO s'authentifieront toujours avec des proxys.</string>
+      <string id="Authentication_Locked">Ne pas autoriser la modification des préférences d'authentification</string>
+      <string id="Authentication_Locked_Explain">Si cette stratégie est désactivée, les préférences d'authentification peuvent être modifiées par l'utilisateur.
 
-If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+Si cette stratégie est activée ou non configurée, les préférences d'authentification ne peuvent pas être modifiées par l'utilisateur.</string>
       <string id="BlockAboutAddons">Gestion de modules Add-ons </string>
       <string id="BlockAboutAddons_Explain" >Si cette stratégie est activée, l'utilisateur ne peut pas accéder au gestionnaire de modules complémentaires ou aux modules add:.
 
@@ -104,7 +104,7 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut acc�
       <string id="BlockAboutSupport_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder aux informations de dépannage ou à about:support.
 
 Si cette stratégie est désactivée ou non configurée, l'utilisateur peut accéder aux informations de dépannage et à about:support.</string>
-      <string id="DisableSetDesktopBackground">​​Désactiver la définition de l'arrière-plan du bureau</string>
+      <string id="DisableSetDesktopBackground">Désactiver la définition de l'arrière-plan du bureau</string>
       <string id="DisableSetDesktopBackground_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas définir une image comme arrière-plan de leur bureau.
 
 Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent définir des images comme arrière-plan de leur bureau.</string>
@@ -128,24 +128,24 @@ Si cette stratégie est désactivée ou non configurée, le répertoire de tél�
       <string id="DownloadDirectory_Explain">Si cette stratégie est activée, vous pouvez définir et verrouiller le répertoire de téléchargement. ${home} peut être utilisé comme chemin de base.
 
 Si cette stratégie est désactivée ou non configurée, le répertoire de téléchargement par défaut de Firefox est utilisé et l'uilisateur peut le modifier.</string>
-      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Enabled">Enabled</string>
-      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+      <string id="DNSOverHTTPS_group">DNS sur HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Activé</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">Si cette stratégie est désactivée, DNS sur HTTPS est désactivé.
 
-If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
+Si cette stratégie est activée ou non configurée, DNS sur HTTPS est activé.</string>
       <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
-      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+      <string id="DNSOverHTTPS_ProviderURL_Explain">Si cette stratégie est activée, l'URL spécifiée est utilisée comme URL du fournisseur.
 
-If this policy is disabled or not configured, the default provider is used.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, le fournisseur par défaut est utilisé.</string>
 
-      <string id="DNSOverHTTPS_Locked">Locked</string>
-      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+      <string id="DNSOverHTTPS_Locked">Bloqué</string>
+      <string id="DNSOverHTTPS_Locked_Explain">Si cette stratégie est activée, les paramètres DNS sur HTTPS ne peuvent pas être modifiés par l'utilisateur.
 
-If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
-      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
-      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+Si cette stratégie est désactivée ou non configurée, les paramètres DNS sur HTTPS peuvent être modifiés par l'utilisateur.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Domaines exclus</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">Si cette stratégie est activée, les domaines spécifiés sont exclus de DNS sur HTTPS.
 
-If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, aucun domaine n'est exclu de DNS via HTTPS.</string>
       <string id="DNSOverHTTPS">Configurer DNS sur HTTPS (Moved)</string>
       <string id="DNSOverHTTPS_Explain">Si cette stratégie est activée, la configuration par défaut de DNS sur HTTPS peut être modifiée.
 
@@ -162,12 +162,12 @@ Si cette stratégie est désactivée ou non configurée, le navigateur reçoit l
       <string id="DisableBuiltinPDFViewer_Explain">Si cette stratégie est activée, les fichiers PDF ne sont pas visualisés dans Firefox.
 
 Si cette stratégie est désactivée ou non configurée, les fichiers PDF sont visualisés dans Firefox.</string>
-      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
-      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+      <string id="DisableDefaultBrowserAgent">Désactivez l'agent de navigateur par défaut.</string>
+      <string id="DisableDefaultBrowserAgent_Explain">Si cette stratégie est activée, l'agent de navigateur par défaut est désactivé.
 
-If this policy is disabled or not configured, the default browser agent is enabled.
+Si cette stratégie est désactivée ou n'est pas configurée, l'agent de navigateur par défaut est activé.
 
-For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+Pour plus d'informations sur l'agent de navigateur par défaut, consultez https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Désactiver les outils de développement</string>
       <string id="DisableDeveloperTools_Explain">Si cette stratégie est activée, les outils de développement Web ne sont pas disponibles dans Firefox.
 
@@ -198,10 +198,10 @@ Si cette stratégie est désactivée ou non configurée, le bouton "Forget" est 
       <string id="DisableFormHistory_Explain">Si cette stratégie est activée, Firefox ne conservera pas l'historique du formulaire ou de la recherche.
 
 Si cette stratégie est désactivée ou non configurée, Firefox conservera l'historique des formulaires et des recherches.</string>
-      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
-      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+      <string id="DisablePasswordReveal">Ne pas autoriser la révélation des mots de passe dans les connexions enregistrées</string>
+      <string id="DisablePasswordReveal_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas afficher les mots de passe dans les connexions enregistrées.
 
-If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent afficher les mots de passe dans les connexions enregistrées.</string>
       <string id="DisablePocket">Désactiver Pocket</string>
       <string id="DisablePocket_Explain">Si cette stratégie est activée, Pocket n'est pas disponible.
 
