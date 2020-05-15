@@ -248,14 +248,14 @@ Si cette stratégie est désactivée ou non configurée, la barre d’outils des
       <string id="DisplayMenuBar_Explain">Si cette stratégie est activée, la barre de menus est affichée par défaut. L'utilisateur peut toujours le cacher.
 
 Si cette stratégie est désactivée ou non configurée, la barre de menus ne s'affiche pas par défaut.</string>
-      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
-      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+      <string id="DisplayMenuBar_Enum">Afficher la barre de menus</string>
+      <string id="DisplayMenuBar_Enum_Explain">Si cette stratégie est activée, vous pouvez choisir d'afficher ou non la barre de menus et l'utilisateur peut afficher et masquer la barre de menus.
 
-If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
-      <string id="DisplayMenuBar_Always">Always</string>
-      <string id="DisplayMenuBar_Never">Never</string>
-      <string id="DisplayMenuBar_Default_On">On by default</string>
-      <string id="DisplayMenuBar_Default_Off">Off by default</string>
+Si cette stratégie est désactivée ou n'est pas configurée, la barre de menus ne s'affiche pas par défaut.</string>
+      <string id="DisplayMenuBar_Always">Toujours</string>
+      <string id="DisplayMenuBar_Never">Jamais</string>
+      <string id="DisplayMenuBar_Default_On">Affichée par défaut</string>
+      <string id="DisplayMenuBar_Default_Off">Masquée par défaut</string>
       <string id="DontCheckDefaultBrowser">Ne pas vérifier le navigateur par défaut</string>
       <string id="DontCheckDefaultBrowser_Explain">Si cette stratégie est activée, Firefox ne vérifie pas s'il s'agit du navigateur par défaut au démarrage.
 
@@ -288,14 +288,14 @@ Pour plus d'informations sur la création d'une stratégie, voir https://github.
       <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle ne peut pas être activée.
 
 Si cette stratégie est activée ou non configurée, l'accélération matérielle est activée.</string>
-      <string id="LegacyProfiles">Legacy Profiles</string>
-      <string id="LegacyProfiles_Explain">If this policy is enabled, Firefox will not try to create different profiles for installations of Firefox in different directories. This is the equivalent of the MOZ_LEGACY_PROFILES environment variable.
+      <string id="LegacyProfiles">Profils hérités</string>
+      <string id="LegacyProfiles_Explain">Si cette stratégie est activée, Firefox n'essaiera pas de créer des profils différents pour les installations de Firefox dans différents répertoires. C'est l'équivalent de la variable d'environnement MOZ_LEGACY_PROFILES.
 
-If this policy is disabled or not configured, Firefox will create a new profile for each unique installation of Firefox.</string>
-      <string id="LocalFileLinks">Local File Links</string>
-      <string id="LocalFileLinks_Explain">If this policy is enabled, you can specify origins where linking to local files is allowed.
+Si cette stratégie est désactivée ou non configurée, Firefox créera un nouveau profil pour chaque installation unique de Firefox.</string>
+      <string id="LocalFileLinks">Liens de fichiers locaux</string>
+      <string id="LocalFileLinks_Explain">Si cette stratégie est activée, vous pouvez spécifier les origines où la liaison à des fichiers locaux est autorisée.
 
-If this policy is disabled or not configured, websites can't link to local files.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, les sites Web ne peuvent pas créer de lien vers des fichiers locaux.</string>
       <string id="NetworkPrediction">Découverte réseau</string>
       <string id="NetworkPrediction_Explain">Si cette stratégie est désactivée, la découverte réseau (préférence DNS) sera désactivée.
 
@@ -313,7 +313,7 @@ Si cette stratégie est désactivée, Firefox ne proposera pas de sauvegarder le
 
 Si cette stratégie est désactivée, Firefox ne proposera pas de sauvegarder les noms de connexion et les mots de passe des sites Web.
 
-In either case, the user will be able to change the value (it is not locked).</string>
+Dans les deux cas, l'utilisateur pourra modifier la valeur (elle n'est pas verrouillée).</string>
       <string id="PopupBlocking_Allow_Explain">Si cette stratégie est activée, les fenêtres contextuelles sont toujours autorisées pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les fenêtres contextuelles sont également autorisées pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut des fenêtres contextuelles est suivie.</string>
@@ -417,29 +417,29 @@ Si cette stratégie est désactivée ou non configurée, tout site ne figurant p
       <string id="Notifications_Locked_Explain">Si cette stratégie est activée, les préférences de notification ne peuvent pas être modifiées par l'utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de notification.</string>
-      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+      <string id="Autoplay_Allow_Explain">Si cette stratégie est activée, la lecture automatique est toujours activée pour les origines indiquées.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
-      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+Si cette stratégie est désactivée ou n'est pas configurée, la stratégie de lecture automatique par défaut est appliquée.</string>
+      <string id="Autoplay_Block_Explain">Si cette stratégie est activée, la lecture automatique est toujours bloquée pour les origines indiquées.
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
-      <string id="Autoplay_Default">Default autoplay level</string>
-      <string id="Autoplay_Default_Explain">If this policy is enabled, you can choose the default autoplay level.
+Si cette stratégie est désactivée ou n'est pas configurée, la stratégie de lecture automatique par défaut est appliquée.</string>
+      <string id="Autoplay_Default">Niveau de lecture automatique par défaut</string>
+      <string id="Autoplay_Default_Explain">Si cette stratégie est activée, vous pouvez choisir le niveau de lecture automatique par défaut.
 
-If this policy is disabled or not configured, audio is blocked by default.
+Si cette stratégie est désactivée ou n'est pas configurée, l'audio est bloqué par défaut.
 
-Note: Blocking audio and video does not work on the ESR.</string>
-      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
-      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+Remarque: le blocage de l'audio et de la vidéo ne fonctionne pas sur l'ESR.</string>
+      <string id="Autoplay_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Autoplay_Locked_Explain">Si cette stratégie est activée, les préférences de lecture automatique ne peuvent pas être modifiées par l'utilisateur.
 
-If this policy is disabled or not configured, the user can change autoplay preferences.</string>
-      <string id="AllowAudioVideo">Allow Audio and Video</string>
-      <string id="BlockAudio">Block Audio</string>
-      <string id="BlockAudioVideo">Block Audio and Video</string>
-      <string id="FirefoxHome">Customize Firefox Home</string>
-      <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
+Si cette stratégie est désactivée ou n'est pas configurée, l'utilisateur peut modifier les préférences de lecture automatique.</string>
+      <string id="AllowAudioVideo">Autoriser l'audio et la vidéo</string>
+      <string id="BlockAudio">Bloquer l'audio</string>
+      <string id="BlockAudioVideo">Bloquer l'audio et la vidéo</string>
+      <string id="FirefoxHome">Personnaliser Firefox Home</string>
+      <string id="FirefoxHome_Explain">Si cette politique est activée, vous pouvez choisir les sections affichées sur Firefox Home et empêcher l'utilisateur de les modifier.
 
-If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, les sections par défaut sont affichées et l'utilisateur peut les modifier.</string>
       <string id="FlashPlugin_Allow_Explain">Si cette stratégie est activée, Flash est activé par défaut pour les origines indiquées, à moins que Flash ne soit complètement désactivé. Si un domaine de premier niveau est spécifié (http://example.org), Flash est également autorisé pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie Flash par défaut est appliquée.</string>
@@ -468,20 +468,20 @@ Si cette stratégie est désactivée ou non configurée, la mise à niveau est a
       <string id="SanitizeOnShutdown_Explain">Si cette stratégie est activée, toutes les données sont effacées à la fermeture de Firefox. Cela inclut la navigation, Historique de téléchargement, cookies, connexions actives, cache, formulaire et Historique de recherche, préférences de site et données de site Web hors ligne.
 
 Si cette stratégie est désactivée ou non configurée, les données ne sont pas effacées à la fermeture du navigateur.</string>
-      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+      <string id="SanitizeOnShutdown_group">Effacer les données à la fermeture du navigateur.</string>
 
       <string id="SanitizeOnShutdown_Cache">Cache</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cache_Explain">Si la stratégie est activée, le cache est effacé à la fermeture du navigateur.
 
-If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, le cache n'est pas effacé lors de la fermeture du navigateur.</string>
       <string id="SanitizeOnShutdown_Cookies">Cookies</string>
-      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cookies_Explain">Si la politique est activée, les cookies sont effacés à la fermeture du navigateur.
 
-If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download History</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+Si cette politique est désactivée ou non configurée, les cookies ne sont pas effacés lors de la fermeture du navigateur.</string>
+      <string id="SanitizeOnShutdown_Downloads">Historique de téléchargement</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Si la stratégie est activée, l'historique des téléchargements est effacé à la fermeture du navigateur.
 
-If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, l'historique des téléchargements n'est pas effacé lors de la fermeture du navigateur.</string>
       <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
       <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
 
