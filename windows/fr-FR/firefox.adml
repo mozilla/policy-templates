@@ -764,23 +764,23 @@ Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH
 Pour une description de la préférence, voir:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-      <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.
+      <string id="Preferences_String_Explain">Si cette stratégie est activée, la préférence est verrouillée sur la chaîne entrée. Si cette stratégie est désactivée, elle n'a aucun effet.
 
-For a description of the preference, see:
-
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-      <string id="Preferences_Enum_Explain">If this policy is enabled, the preference is locked to the value selected. If this policy is disabled, it has no effect.
-
-For a description of the preference, see:
+Pour une description de la préférence, voir:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-      <string id="Preferences_Unsupported_Explain">This preference is no longer support on Windows. We are investigating creating a policy.</string>
+      <string id="Preferences_Enum_Explain">Si cette stratégie est activée, la préférence est verrouillée sur la valeur sélectionnée. Si cette stratégie est désactivée, elle n'a aucun effet.
+
+Pour une description de la préférence, voir:
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_Unsupported_Explain">Cette préférence n'est plus prise en charge sous Windows. Nous étudions la possibilité de créer une politique.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
-      <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
-      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Ask Every Time</string>
-      <string id="Preferences_security_default_personal_cert_Select_Automatically">Select Automatically</string>
+      <string id="Preferences_accessibility_force_disabled_off">Toujours désactivé (1)</string>
+      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Demandez à chaque fois</string>
+      <string id="Preferences_security_default_personal_cert_Select_Automatically">Sélectionnez automatiquement</string>
       <string id="accessibility_force_disabled">accessibility.force_disabled</string>
-      <string id="app_update_auto">app.update.auto (Deprecated)</string>
+      <string id="app_update_auto">app.update.auto (obsolète)</string>
       <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
       <string id="browser_bookmarks_file">browser.bookmarks.file</string>
       <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
@@ -843,8 +843,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Toujours autoriser SPNEGO sur des noms de domaine autres que FQDN</checkBox>
       </presentation>
       <presentation id="Authentication_AllowProxies">
-        <checkBox refId="Authentication_AllowProxies_NTLM">Allow NTLM to automatically authenticate with proxy servers</checkBox>
-        <checkBox refId="Authentication_AllowProxies_SPNEGO">Allow SPNEGO to automatically authenticate with proxy servers</checkBox>
+        <checkBox refId="Authentication_AllowProxies_NTLM">Autoriser NTLM à s'authentifier automatiquement auprès des serveurs proxy</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">Autoriser SPNEGO à s'authentifier automatiquement auprès des serveurs proxy</checkBox>
       </presentation>
       <presentation id="Certificates_Install">
         <listBox refId="Certificates_Install"/>
@@ -871,8 +871,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Ne pas autoriser la modification des préférences de protection du suivi.</checkBox>
-        <checkBox refId="Cryptomining">Block cryptomining scripts.</checkBox>
-        <checkBox refId="Fingerprinting">Block fingerprinting scripts.</checkBox>
+        <checkBox refId="Cryptomining">Bloquer les scripts de minage cryptomonnaie.</checkBox>
+        <checkBox refId="Fingerprinting">Bloquer les scripts d'empreintes digitales.</checkBox>
         <text>Exceptions:</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
