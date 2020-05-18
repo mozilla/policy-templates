@@ -703,65 +703,65 @@ Si cette stratégie est désactivée ou non configurée, Firefox utilise par dé
       <string id="TLS1_1">TLS 1.1</string>
       <string id="TLS1_2">TLS 1.2</string>
       <string id="TLS1_3">TLS 1.3</string>
-      <string id="SupportMenu">Support Menu</string>
-      <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
+      <string id="SupportMenu">Menu Support</string>
+      <string id="SupportMenu_Explain">Si cette stratégie est activée, un nouveau menu est ajouté au menu d'aide avec des informations du support.
 
-If this policy is disabled or not configured, no menuitem is added.</string>
-      <string id="UserMessaging_WhatsNew">What's New</string>
-      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+Si cette stratégie est désactivée ou n'est pas configurée, aucun item n'est ajouté au menu d'aide.</string>
+      <string id="UserMessaging_WhatsNew">Quoi de neuf</string>
+      <string id="UserMessaging_WhatsNew_Explain">Si cette stratégie est désactivée, l'icône Quoi de neuf et l'élément de menu ne seront pas affichés.
+        
+Si cette stratégie est activée ou non configurée, l'icône Quoi de neuf et l'élément de menu s'affichent.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Proposition d'Extension </string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">Si cette politique est désactivée, les extensions ne seront pas proposées lorsque l'utilisateur visite des sites Web.
 
-If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
-      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
-      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+Si cette politique est activée ou non configurée, des extensions seront proposées lorsque l'utilisateur visitera des sites Web.</string>
+      <string id="UserMessaging_FeatureRecommendations">Suggestions relatives aux fonctionnalités</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Si cette politique est désactivée, les fonctionnalités de Firefox ne seront pas recommandées car l'utilisateur utilise Firefox.
 
-If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
-      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
-      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+Si cette politique est activée ou non configurée, les fonctionnalités de Firefox seront recommandées car l'utilisateur utilise Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Suggestion saisie URL </string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">Si cette stratégie est désactivée, aucune action ne sera recommandée en fonction de ce que l'utilisateur tape dans la barre d'URL.
 
-If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
-      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
-      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
-
-If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
+Si cette stratégie est activée ou non configurée, des actions seront recommandées en fonction de ce que l'utilisateur tape dans la barre d'URL.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_DHE_RSA_WITH_AES_128_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_DHE_RSA_WITH_AES_128_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_DHE_RSA_WITH_AES_256_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_DHE_RSA_WITH_AES_256_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 est désactivé.
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 est désactivé.
 
-If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 est activé.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_RSA_WITH_AES_128_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH_AES_128_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_RSA_WITH_AES_256_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH_AES_256_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_RSA_WITH_3DES_EDE_CBC_SHA est désactivé.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
-      <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
+Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH_3DES_EDE_CBC_SHA est activé.</string>
+      <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur true. Si cette stratégie est désactivée, la préférence est verrouillée sur false.
 
-For a description of the preference, see:
+Pour une description de la préférence, voir:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_String_Explain">If this policy is enabled, the preference is locked to the string entered. If this policy is disabled, it has no effect.
