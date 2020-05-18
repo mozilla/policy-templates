@@ -1027,20 +1027,20 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <presentation id="SanitizeOnShutdown">
         <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
         <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Downloads">Download History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Form &amp; Search History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_History">Browsing History</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Sessions">Active Logins</checkBox>
-        <checkBox refId="SanitizeOnShutdown_SiteSettings">Site Preferences</checkBox>
-        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline Website Data</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Historique de téléchargement</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Historique de recherche </checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Historique de navigation</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Sessions Actives</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Préférences de site</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Données de site Web hors ligne</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
-        <checkBox refId="FirefoxHome_Search">Search</checkBox>
-        <checkBox refId="FirefoxHome_TopSites">Top Sites</checkBox>
-        <checkBox refId="FirefoxHome_Highlights">Download History</checkBox>
-        <checkBox refId="FirefoxHome_Pocket">Recommended by Pocket</checkBox>
-        <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
-        <checkBox refId="FirefoxHome_Locked">Don't allow settings to be changed</checkBox>
+        <checkBox refId="FirefoxHome_Search">Rechercher</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Meilleurs sites</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Historique de téléchargement</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Enregistré dans Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Brèves</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Ne pas autoriser la modification des paramètres</checkBox>
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
