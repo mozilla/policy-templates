@@ -591,16 +591,16 @@ Si cette stratégie est désactivée ou non configurée, la page de démarrage a
       <string id="None">Page vierge</string>
       <string id="Homepage">Page d'accueil</string>
       <string id="PreviousSession">Session précédente</string>
-      <string id="PasswordManagerEnabled">Password Manager</string>
-      <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
+      <string id="PasswordManagerEnabled">Gestionnaire de mots de passe</string>
+      <string id="PasswordManagerEnabled_Explain">Si cette stratégie est désactivée, le gestionnaire de mots de passe n'est pas disponible via les préférences.
 
-If this policy is enabled or not configured, the password manager is available via preferences.</string>
-      <string id="PromptForDownloadLocation">Prompt for download location</string>
-      <string id="PromptForDownloadLocation_Explain">If this policy is disabled, the user is not prompted for a download location.
+Si cette stratégie est activée ou non configurée, le gestionnaire de mots de passe est disponible via les préférences.</string>
+      <string id="PromptForDownloadLocation">Demander l'emplacement de téléchargement</string>
+      <string id="PromptForDownloadLocation_Explain">Si cette stratégie est désactivée, l'utilisateur n'est pas invité à indiquer un emplacement de téléchargement.
 
-If this policy is enabled, the user is always prompted for a download location.
+Si cette stratégie est activée, l'utilisateur est toujours invité à indiquer un emplacement de téléchargement.
 
-If this policy is not configured, the user is prompted for a download location, but can change the default.</string>
+Si cette stratégie n'est pas configurée, l'utilisateur est invité à indiquer un emplacement de téléchargement, mais peut modifier la valeur par défaut.</string>
       <string id="Proxy">Paramètres du proxy</string>
       <string id="Proxy_Explain">Si cette stratégie est activée, vous pouvez configurer et verrouiller les paramètres réseau.
 
@@ -625,29 +625,29 @@ Si cette stratégie est désactivée ou non configurée, les paramètres réseau
 Si cette stratégie est désactivée, la protection de suivi est désactivée et verrouillée à la fois dans le navigateur et dans la navigation privée.
 
 Si cette stratégie est activée, la navigation privée est activée par défaut à la fois dans le navigateur et dans la navigation privée et vous pouvez choisir d’empêcher ou non l’utilisateur de la modifier.</string>
-      <string id="TrackingProtection_group">Tracking Protection</string>
-      <string id="TrackingProtection_Value">Enabled</string>
-      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+      <string id="TrackingProtection_group">Protection contre le suivi</string>
+      <string id="TrackingProtection_Value">Activée</string>
+      <string id="TrackingProtection_Value_Explain">Si cette stratégie est activée, la protection contre le suivi est activée.
 
-If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+Si cette stratégie est désactivée, la protection contre le suivi est désactivée et ne peut pas être modifiée par l'utilisateur.
 
-If this policy is not configured, standard tracking protection is used and the user can change it.</string>
-      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
-      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+Si cette stratégie n'est pas configurée, une protection de suivi standard est utilisée et l'utilisateur peut la modifier.</string>
+      <string id="TrackingProtection_Cryptomining">minage de cryptomonnaie</string>
+      <string id="TrackingProtection_Cryptomining_Explain">Si cette stratégie est activée, les scripts qui utilisent le minage cryptographique sont bloqués.
+        
+Si cette stratégie est désactivée ou n'est pas configurée, les scripts qui utilisent le minage cryptographique ne sont pas bloqués.</string>
+      <string id="TrackingProtection_Fingerprinting">Empreinte digitale</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Si cette stratégie est activée, les scripts qui utilisent l'empreinte digitale sont bloqués.
 
-If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
-      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
-
-If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, les scripts qui utilisent l'empreinte digitale ne sont pas bloqués.</string>
       <string id="TrackingProtection_Exceptions">Exceptions</string>
-      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+      <string id="TrackingProtection_Exceptions_Explain">Si cette stratégie est activée, vous pouvez spécifier des origines où la protection de suivi n'est pas activée.
 
-If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
-      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
-      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+Si cette stratégie est désactivée ou n'est pas configurée, la protection contre le suivi est activée pour tous les sites Web.</string>
+      <string id="TrackingProtection_Locked">Ne pas autoriser la modification des préférences de protection contre le suivi</string>
+      <string id="TrackingProtection_Locked_Explain">Si cette politique est activée, les préférences de protection du suivi ne peuvent pas être modifiées par l'utilisateur.
 
-If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+Si cette stratégie est désactivée ou n'est pas configurée, l'utilisateur peut modifier les préférences de protection du suivi.</string>
       <string id="RequestedLocales">liste des paramètres régionaux</string>
       <string id="RequestedLocalesString">liste des paramètres régionaux (string)</string>
       <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste des paramètres régionaux demandés pour l'application par ordre de préférence. Le module linguistique correspondant deviendra actif.
@@ -669,8 +669,8 @@ Si cette stratégie est désactivée ou non configurée, les nouveaux utilisateu
       <string id="SearchEngines_Explain">Si cette stratégie est activée, vous pouvez configurer un moteur de recherche pour l'ajouter à Firefox. Utilisez {searchTerms} pour indiquer où le terme de recherche est placé. En raison d'un bogue, vous devez sélectionner la méthode (généralement GET). Notez que vous devez spécifier les moteurs de recherche dans l'ordre.
 
 Si cette stratégie est désactivée ou non configurée, aucun nouveau moteur de recherche n'est ajouté.</string>
-      <string id="SearchBar_Unified">Unified</string>
-      <string id="SearchBar_Separate">Separate</string>
+      <string id="SearchBar_Unified">Regroupé</string>
+      <string id="SearchBar_Separate">Séparé</string>
       <string id="SearchEngine_Method_GET">GET</string>
       <string id="SearchEngine_Method_POST">POST</string>
       <string id="SearchEngines_Default">Moteur de recherche par défaut</string>
@@ -685,12 +685,12 @@ Si cette stratégie est désactivée ou non configurée, les moteurs de recherch
       <string id="SearchEngines_Remove_Explain">Si cette stratégie est activée, vous pouvez spécifier les noms des moteurs à supprimer ou à masquer.
 
 Si cette stratégie est désactivée ou non configurée, les moteurs de recherche ne seront ni supprimés ni masqués.</string>
-      <string id="SearchSuggestEnabled">Search Suggestions</string>
-      <string id="SearchSuggestEnabled_Explain">If this policy is disabled, search suggestions will be disabled.
+      <string id="SearchSuggestEnabled">Suggestions de recherche</string>
+      <string id="SearchSuggestEnabled_Explain">Si cette stratégie est désactivée, les suggestions de recherche seront désactivées.
 
-If this policy is enabled, search suggestions will be enabled.
+Si cette stratégie est activée, les suggestions de recherche seront activées.
 
-If this policy is not configured, search suggestions will be enabled, but the user can turn them off.</string>
+Si cette stratégie n'est pas configurée, les suggestions de recherche seront activées, mais l'utilisateur peut les désactiver.</string>
       <string id="SSLVersionMin">Version SSL minimum utilisée</string>
       <string id="SSLVersionMin_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL / TLS inférieures à la valeur spécifiée.
 
