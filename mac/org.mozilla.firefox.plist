@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>EnterprisePoliciesEnabled</key>
-	<false/>
+	<true/>
+	<key>AppAutoUpdate</key>
+	<true/>
 	<key>AppUpdateURL</key>
 	<string>https://www.example.com/update.xml</string>
 	<key>Authentication</key>
@@ -30,6 +32,15 @@
 			<key>NTLM</key>
 			<true/>
 		</dict>
+		<key>AllowProxies</key>
+		<dict>
+			<key>SPNEGO</key>
+			<true/>
+			<key>NTLM</key>
+			<true/>
+		</dict>
+		<key>Locked</key>
+		<true/>
 	</dict>
 	<key>BlockAboutAddons</key>
 	<true/>
@@ -66,6 +77,8 @@
 			<string>Example2Folder</string>
 		</dict>
 	</array>
+	<key>CaptivePortal</key>
+	<false/>
 	<key>Certificates</key>
 	<dict>
 		<key>ImportEnterpriseRoots</key>
@@ -92,9 +105,15 @@
 		<string>never</string>
 		<key>ExpireAtSessionEnd</key>
 		<true/>
+		<key>RejectTracker</key>
+		<true/>		
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>DefaultDownloadDirectory</key>
+	<string>${home}/Downloads</string>
+	<key>DownloadDirectory</key>
+	<string>${home}/Downloads</string>
 	<key>DNSOverHTTPS</key>
 	<dict>
 		<key>Enabled</key>
@@ -103,11 +122,36 @@
 		<string>URL_TO_ALTERNATE_PROVIDER</string>
 		<key>Locked</key>
 		<true/>
+		<key>ExcludedDomains</key>
+		<array>
+			<string>example.com</string>
+		</array>
 	</dict>
 	<key>DisableAppUpdate</key>
 	<true/>
 	<key>DisableBuiltinPDFViewer</key>
 	<true/>
+	<key>DisabledCiphers</key>
+	<dict>
+		<key>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</key>
+		<true/>
+		<key>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</key>
+		<true/>
+		<key>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</key>
+		<true/>
+		<key>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</key>
+		<true/>
+		<key>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</key>
+		<true/>
+		<key>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</key>
+		<true/>
+		<key>TLS_RSA_WITH_AES_128_CBC_SHA</key>
+		<true/>
+		<key>TLS_RSA_WITH_AES_256_CBC_SHA</key>
+		<true/>
+		<key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
+		<true/>
+	</dict>
 	<key>DisableDeveloperTools</key>
 	<true/>
 	<key>DisableFeedbackCommands</key>
@@ -123,6 +167,8 @@
 	<key>DisableFormHistory</key>
 	<true/>
 	<key>DisableMasterPasswordCreation</key>
+	<true/>
+	<key>DisablePasswordReveal</key>
 	<true/>
 	<key>DisablePocket</key>
 	<true/>
@@ -157,6 +203,14 @@
 		<true/>
 		<key>Locked</key>
 		<true/>
+		<key>Cryptomining</key>
+		<true/>
+		<key>Fingerprinting</key>
+		<true/>
+		<key>Exceptions</key>
+		<array>
+			<string>https://example.com</string>
+		</array>
 	</dict>
 	<key>Extensions</key>
 	<dict>
@@ -171,6 +225,44 @@
 			<string>firefox@ghostery.com</string>
 		</array>
 	</dict>
+	<key>ExtensionSettings</key>
+	<dict>
+		<key>*</key>
+		<dict>
+			<key>blocked_install_message</key>
+			<string>Custom error message.</string>
+			<key>install_sources</key>
+			<array>
+				<string>https://addons.mozilla.org/</string>
+			</array>
+			<key>installation_mode</key>
+			<string>blocked</string>
+		</dict>
+		<key>uBlock0@raymondhill.net</key>
+		<dict>
+			<key>installation_mode</key>
+			 <string>force_installed</string>
+			<key>install_url</key>
+			<string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
+		</dict>
+	</dict>
+	<key>ExtensionUpdate</key>
+	<false/>
+	<key>FirefoxHome</key>
+	<dict>
+		<key>Search</key>
+		<true/>
+		<key>TopSites</key>
+		<true/>
+		<key>Highlights</key>
+		<true/>
+		<key>Pocket</key>
+		<false/>
+		<key>Snippets</key>
+		<false/>
+		<key>Locked</key>
+		<true/>
+	</dict>
 	<key>FlashPlugin</key>
 	<dict>
 		<key>Allow</key>
@@ -181,6 +273,10 @@
 		<array>
 			<string>https://www.example.org</string>
 		</array>
+		<key>Default</key>
+		<true/>
+		<key>Locked</key>
+		<true/>
 	</dict>
 	<key>HardwareAcceleration</key>
 	<false/>
@@ -209,14 +305,27 @@
 		<key>Default</key>
 		<false/>
 	</dict>
+	<key>LocalFileLinks</key>
+	<array>
+		<string>http://example.org</string>
+		<string>http://example.edu</string>
+	</array>
+	<key>NetworkPrediction</key>
+	<false/>
+	<key>NewTabPage</key>
+	<false/>
 	<key>NoDefaultBookmarks</key>
 	<true/>
 	<key>OfferToSaveLogins</key>
 	<false/>
+	<key>OfferToSaveLoginsDefault</key>
+	<true/>
 	<key>OverrideFirstRunPage</key>
 	<string>https://www.example.com</string>
 	<key>OverridePostUpdatePage</key>
 	<string></string>
+	<key>PasswordManagerEnabled</key>
+	<false/>
 	<key>Permissions</key>
 	<dict>
 		<key>Camera</key>
@@ -279,6 +388,21 @@
 			<key>Locked</key>
 			<true/>
 		</dict>
+		<key>Autoplay</key>
+		<dict>
+			<key>Allow</key>
+			<array>
+				<string>https://example.org</string>
+			</array>
+			<key>Block</key>
+			<array>
+				<string>https://example.edu</string>
+			</array>
+			<key>Default</key>
+				<string>block-audio</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>PopupBlocking</key>
 	<dict>
@@ -291,6 +415,13 @@
 		<true/>
 		<key>Locked</key>
 		<true/>
+	</dict>
+	<key>Preferences</key>
+	<dict>
+		<key>app.update.auto</key>
+		<true/>
+		<key>security.default_personal_cert</key>
+		<string>Ask Every Time</string>
 	</dict>
 	<key>Proxy</key>
 	<dict>
@@ -312,6 +443,17 @@
 	<true/>
 	<key>SearchBar</key>
 	<string>separate</string>
+	<key>UserMessaging</key>
+	<dict>
+		<key>WhatsNew</key>
+		<false/>
+		<key>ExtensionRecommendations</key>
+		<false/>
+		<key>FeatureRecommendations</key>
+		<false/>
+		<key>UrlbarInterventions</key>
+		<false/>
+	</dict>
 	<key>WebsiteFilter</key>
 	<dict>
 		<key>Block</key>
@@ -328,6 +470,19 @@
 	<dict>
 		<key>NAME_OF_DEVICE</key>
 		<string>PATH_TO_LIBRARY_FOR_DEVICE</string>
+	</dict>
+	<key>SSLVersionMin</key>
+	<string>tls1.2</string>
+	<key>SSLVersionMax</key>
+	<string>tls1.3</string>
+	<key>SupportMenu</key>
+	<dict>
+		<key>Title</key>
+		<string>Click here for help</string>
+		<key>URL</key>
+		<string>http://example.edu/</string>
+		<key>AccessKey</key>
+		<string>C</string>
 	</dict>
 </dict>
 </plist>
