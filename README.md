@@ -4014,7 +4014,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="SecurityDevices" name="NAME_OF_DEVICE" value="PATH_TO_LIBRARY_FOR_DEVICE"/>
+<data id="SecurityDevices" value="NAME_OF_DEVICE&#xF000;PATH_TO_LIBRARY_FOR_DEVICE"/>
 ```
 #### macOS
 ```
