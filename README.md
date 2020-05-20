@@ -23,6 +23,7 @@ Policies can be specified using the Group Policy templates on Windows (https://g
 | **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
+| **[`DisabledCiphers`](#disabledciphers)** | Disable ciphers.
 | **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
@@ -929,6 +930,69 @@ Value (string):
 {
   "policies": {
     "DisableBuiltinPDFViewer": true | false
+  }
+}
+```
+### DisabledCiphers
+Disable specific cryptographic ciphers.
+
+**Compatibility:** Firefox 76, Firefox ESR 68.8\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_DHE_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_DHE_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_3DES_EDE_CBC_SHA = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>DisabledCiphers</key>
+    <dict>
+      <key>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</key>
+      <true/> | <false/>
+      <key>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_AES_128_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_AES_256_CBC_SHA</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
+      <true/> | <false/>
+    </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisabledCiphers" {
+      "TLS_DHE_RSA_WITH_AES_128_CBC_SHA": true | false,
+      "TLS_DHE_RSA_WITH_AES_256_CBC_SHA": true | false,
+      "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA": true | false,
+      "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA": true | false,
+      "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256": true | false,
+      "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256": true | false,
+      "TLS_RSA_WITH_AES_128_CBC_SHA": true | false,
+      "TLS_RSA_WITH_AES_256_CBC_SHA": true | false,
+      "TLS_RSA_WITH_3DES_EDE_CBC_SHA": true | false
+    }
   }
 }
 ```
@@ -2676,9 +2740,11 @@ Set permissions associated with camera, microphone, location, notifications, and
 
 `Locked` prevents the user from changing preferences for the feature.
 
-**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6\
+`Default` specifies the default value for Autoplay. block-audio-video is not supported on Firefox ESR 68.
+
+**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`
+**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`,`media.autoplay.default`
 
 #### Windows (GPO)
 ```
@@ -2701,6 +2767,8 @@ Software\Policies\Mozilla\Firefox\Permissions\Notifications\BlockNewRequests = 0
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Default = "allow-audio-video" | "block-audio" | "block-audio-video"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -2770,9 +2838,9 @@ Value (string):
         <string>https://example.edu</string>
       </array>
       <key>BlockNewRequests</key>
-      <true/>
+      <true/> | <false/>
       <key>Locked</key>
-      <true/>
+      <true/> | <false/>
     </dict>
     <key>Microphone</key>
     <dict>
@@ -2785,9 +2853,9 @@ Value (string):
         <string>https://example.edu</string>
       </array>
       <key>BlockNewRequests</key>
-      <true/>
+      <true/> | <false/>
       <key>Locked</key>
-      <true/>
+      <true/> | <false/>
     </dict>
     <key>Location</key>
     <dict>
@@ -2800,9 +2868,9 @@ Value (string):
         <string>https://example.edu</string>
       </array>
       <key>BlockNewRequests</key>
-      <true/>
+      <true/> | <false/>
       <key>Locked</key>
-      <true/>
+      <true/> | <false/>
     </dict>
     <key>Notifications</key>
     <dict>
@@ -2829,6 +2897,10 @@ Value (string):
       <array>
         <string>https://example.edu</string>
       </array>
+      <key>Default</key>
+      <string>allow-audio-video | block-audio | block-audio-video</string>
+      <key>Locked</key>
+      <true/> | <false/>
     </dict>
   </dict>
 </dict>
@@ -2864,7 +2936,9 @@ Value (string):
       },
       "Autoplay": {
         "Allow": ["https://example.org"],
-        "Block": ["https://example.edu"]
+        "Block": ["https://example.edu"],
+        "Default": "allow-audio-video" | "block-audio" | "block-audio-video",
+        "Locked": true | false
       }
     }
   }
@@ -3018,7 +3092,7 @@ disabled
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
 | security.mixed_content.block_active_content | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
-| security.osclientcerts.autoload | boolean | Firefox 72, Firefox ESR 68.4 (Windows only) | false
+| security.osclientcerts.autoload | boolean | Firefox 72 (Windows), Firefox 75 (macOS)  | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.

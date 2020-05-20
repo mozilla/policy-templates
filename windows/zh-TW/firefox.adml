@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.15" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.16" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -26,6 +26,7 @@
       <string id="SUPPORTED_FF75_ONLY">Firefox 75 或更新版本</string>
       <string id="SUPPORTED_FF76">Firefox 76 或更新版本、Firefox 68.8 ESR 或更新版本</string>
       <string id="SUPPORTED_FF77">Firefox 77 或更新版本、Firefox 68.9 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF78">Firefox 78 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -44,15 +45,16 @@
       <string id="Homepage_group">首頁</string>
       <string id="Search_group">搜尋</string>
       <string id="Preferences_group">偏好設定</string>
-      <string id="UserMessaging_group">User Messaging</string>
+      <string id="UserMessaging_group">顯示給使用者的訊息</string>
+      <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
-      <string id="AppAutoUpdate">Application Autoupdate</string>
-      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+      <string id="AppAutoUpdate">應用程式自動更新</string>
+      <string id="AppAutoUpdate_Explain">若啟用此原則，Firefox 會不經使用者同意自動更新。
 
-If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+若停用此原則，會自動下載 Firefox 更新，但可由使用者自行選擇何時安裝。
 
-If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
+若不設定此原則，使用者可自行決定是否要自動更新 Firefox。</string>
       <string id="AppUpdateURL">自訂更新網址</string>
       <string id="AppUpdateURL_Explain">若啟用此原則，可指定用來檢查更新的伺服器網址。當您在內部網路自行架設更新伺服器時會有幫助。
 
@@ -83,10 +85,10 @@ If this policy is not configured, the user can choose whether not Firefox is aut
       <string id="Authentication_AllowProxies_Explain">若停用此原則，則不會對代理伺服器進行 SPNEGO 或 NTLM 身分驗證。
 
 若啟用（並勾選選取盒）或不設定此原則，則總是會對代理伺服器進行 SPNEGO 或 NTLM 身分驗證。</string>
-      <string id="Authentication_Locked">Do not allow authentication preferences to be changed</string>
-      <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
+      <string id="Authentication_Locked">不允許更改驗證偏好設定</string>
+      <string id="Authentication_Locked_Explain">若停用此原則，可由使用者自行更改驗證偏好設定。
 
-If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+若啟用或不設定此原則，則不允許使用者更改驗證偏好設定。</string>
       <string id="BlockAboutAddons">封鎖附加元件管理員</string>
       <string id="BlockAboutAddons_Explain" >若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
 
@@ -128,23 +130,23 @@ If this policy is enabled or not configured, authentication preferences cannot b
 
 若停用或不設定此原則，將使用 Firefox 的預設下載資料夾，且可由使用者變更。</string>
       <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Enabled">Enabled</string>
-      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+      <string id="DNSOverHTTPS_Enabled">啟用</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">若停用此原則，將停用 DNS over HTTPS。
 
-If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
-      <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
-      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+若啟用或不設定此原則，則啟用 DNS Over HTTPS。</string>
+      <string id="DNSOverHTTPS_ProviderURL">供應商網址</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">若啟用此原則，將使用指定的網址作為供應商網址。
 
-If this policy is disabled or not configured, the default provider is used.</string>
+若停用或不設定此原則，則使用預設供應商。</string>
 
-      <string id="DNSOverHTTPS_Locked">Locked</string>
-      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+      <string id="DNSOverHTTPS_Locked">鎖定</string>
+      <string id="DNSOverHTTPS_Locked_Explain">若啟用此原則，使用者將無法更改 DNS over HTTPS 設定。
 
-If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
-      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
-      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+若停用或不設定此原則，則允許使用者更改 DNS over HTTPS 設定。</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">要排除的網域</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">若啟用此原則，將排除指定的網域使用 DNS over HTTPS。
 
-If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
+若停用或不設定此原則，則不會排除任何網域使用 DNS over HTTPS。</string>
       <string id="DNSOverHTTPS">設定 DNS Over HTTPS (Moved)</string>
       <string id="DNSOverHTTPS_Explain">若啟用此原則，可變更預設 DNS over HTTPS 設定。
 
@@ -161,12 +163,12 @@ If this policy is disabled or not configured, no domains are excluded from DNS o
       <string id="DisableBuiltinPDFViewer_Explain">若啟用此原則，將不會使用 Firefox 內建檢視器開啟 PDF 檔案。
 
 若停用或不設定此原則，則會使用 Firefox 內建檢視器開啟 PDF 檔案。</string>
-      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
-      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+      <string id="DisableDefaultBrowserAgent">停用預設瀏覽器代理工具。</string>
+      <string id="DisableDefaultBrowserAgent_Explain">若啟用此原則，將停用預設瀏覽器代理工具。
 
-If this policy is disabled or not configured, the default browser agent is enabled.
+若停用或不設定此原則，則啟用預設瀏覽器代理工具。
 
-For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+若需關於預設瀏覽器代理工具的更多資訊，請參考 https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">停用開發者工具</string>
       <string id="DisableDeveloperTools_Explain">若啟用此原則，將關閉 Firefox 當中的網頁開發者工具功能。
 
@@ -197,10 +199,10 @@ For more information about the default browser agent, see https://firefox-source
       <string id="DisableFormHistory_Explain">若啟用此原則，Firefox 將不會保留表單填寫或搜尋紀錄。
 
 若停用或不設定此原則，Firefox 則會保留表單填寫及搜尋紀錄。</string>
-      <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
-      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+      <string id="DisablePasswordReveal">不允許在「儲存的登入資訊」頁面顯示密碼</string>
+      <string id="DisablePasswordReveal_Explain">若啟用此原則，使用者將無法在「儲存的登入資訊」頁面顯示密碼。
 
-If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+若停用或不設定此原則，使用者則可以在「儲存的登入資訊」頁面顯示密碼。</string>
       <string id="DisablePocket">停用 Pocket</string>
       <string id="DisablePocket_Explain">若啟用此原則，將無法使用 Pocket。
 
@@ -247,14 +249,14 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="DisplayMenuBar_Explain">若啟用此原則，預設將顯示選單列。使用者還是可以將其隱藏。
 
 若停用或不設定此原則，則預設不會顯示選單列。</string>
-      <string id="DisplayMenuBar_Enum">Display Menu Bar</string>
-      <string id="DisplayMenuBar_Enum_Explain">If this policy is enabled, you can choose whether or not the menu bar is displayed and whether or not the user can show and hide the menu bar.
+      <string id="DisplayMenuBar_Enum">顯示選單列</string>
+      <string id="DisplayMenuBar_Enum_Explain">若啟用此原則，您可以決定是否顯示選單列，以及是否允許使用者自行顯示或隱藏選單列。
 
-If this policy is disabled or not configured, the menu bar is not displayed by default.</string>
-      <string id="DisplayMenuBar_Always">Always</string>
-      <string id="DisplayMenuBar_Never">Never</string>
-      <string id="DisplayMenuBar_Default_On">On by default</string>
-      <string id="DisplayMenuBar_Default_Off">Off by default</string>
+若停用或不設定此原則，預設將不顯示選單列。</string>
+      <string id="DisplayMenuBar_Always">總是顯示</string>
+      <string id="DisplayMenuBar_Never">永不顯示</string>
+      <string id="DisplayMenuBar_Default_On">預設顯示</string>
+      <string id="DisplayMenuBar_Default_Off">預設不顯示</string>
       <string id="DontCheckDefaultBrowser">不要檢查是否為預設瀏覽器</string>
       <string id="DontCheckDefaultBrowser_Explain">若啟用此原則，Firefox 不會在啟動時檢查是否為預設瀏覽器。
 
@@ -317,7 +319,7 @@ If this policy is disabled or not configured, the menu bar is not displayed by d
       <string id="PopupBlocking_Default">允許網站顯示彈出視窗</string>
       <string id="PopupBlocking_Default_Explain">若停用此原則，預設將允許來自所有網站的彈出視窗。
 
-若未啟用或設定此原則，將封鎖來自所有網站的彈出視窗。。</string>
+若未啟用或設定此原則，將封鎖來自所有網站的彈出視窗。</string>
       <string id="PopupBlocking_Locked">不允許更改允許偏好設定</string>
       <string id="PopupBlocking_Locked_Explain">若啟用此原則，使用者將無法調整彈出視窗偏好設定。
 
@@ -414,12 +416,25 @@ If this policy is disabled or not configured, the menu bar is not displayed by d
       <string id="Notifications_Locked_Explain">若啟用此原則，使用者將無法調整通知偏好設定。
 
 若停用或不設定此原則，則使用者能夠自行調整位置通知偏好設定。</string>
-      <string id="Autoplay_Allow_Explain">If this policy is enabled, autoplay is always enabled for the origins indicated.
+      <string id="Autoplay_Allow_Explain">若啟用此原則，將永遠針對指定的來源允許自動播放。
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
-      <string id="Autoplay_Block_Explain">If this policy is enabled, autoplay is always blocked for the origins indicated.
+若停用或不設定此原則，將遵循預設自動播放原則。</string>
+      <string id="Autoplay_Block_Explain">若啟用此原則，將永遠針對指定的來源封鎖自動播放。
 
-If this policy is disabled or not configured, the default autoplay policy is followed.</string>
+若停用或不設定此原則，將遵循預設自動播放原則。</string>
+      <string id="Autoplay_Default">Default autoplay level</string>
+      <string id="Autoplay_Default_Explain">If this policy is enabled, you can choose the default autoplay level.
+
+If this policy is disabled or not configured, audio is blocked by default.
+
+Note: Blocking audio and video does not work on the ESR.</string>
+      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
+      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change autoplay preferences.</string>
+      <string id="AllowAudioVideo">Allow Audio and Video</string>
+      <string id="BlockAudio">Block Audio</string>
+      <string id="BlockAudioVideo">Block Audio and Video</string>
       <string id="FirefoxHome">自訂 Firefox 首頁</string>
       <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
 
@@ -452,46 +467,46 @@ If this policy is disabled or not configured, the default autoplay policy is fol
       <string id="SanitizeOnShutdown_Explain">若啟用此原則，將可以選擇要在關閉 Firefox 時清理哪些資料。
 
 若停用或不設定此原則，則不會在關閉 Firefox 時清理任何資料。</string>
-      <string id="SanitizeOnShutdown_group">Clear data when browser is closed</string>
+      <string id="SanitizeOnShutdown_group">在關閉瀏覽器時清理資料。</string>
 
-      <string id="SanitizeOnShutdown_Cache">Cache</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">If the policy is enabled, the cache is cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_Cache">快取</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">若啟用此原則，將在瀏覽器關閉時清除快取。
 
-If this policy is disabled or not configured, the cache is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
-      <string id="SanitizeOnShutdown_Cookies_Explain">If the policy is enabled, cookies are cleared when the browser is closed.
+若停用或不設定此原則，the cache is not cleared when the browser is closed.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookie</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">若啟用此原則，將在瀏覽器關閉時清除 Cookie。
 
-If this policy is disabled or not configured, cookies are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download History</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除 Cookie。</string>
+      <string id="SanitizeOnShutdown_Downloads">下載紀錄</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">若啟用此原則，將在瀏覽器關閉時清除下載紀錄。
 
-If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除下載紀錄。</string>
+      <string id="SanitizeOnShutdown_FormData">表單與搜尋紀錄</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">若啟用此原則，將在瀏覽器關閉時清除表單資料。
 
-If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_History">Browsing History</string>
-      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history is cleared when the browser is closed.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除表單資料。</string>
+      <string id="SanitizeOnShutdown_History">上網紀錄</string>
+      <string id="SanitizeOnShutdown_History_Explain">若啟用此原則，將在瀏覽器關閉時清除上網紀錄。
 
-If this policy is disabled or not configured, browsing history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions cleared when the browser is closed.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除瀏覽紀錄。</string>
+      <string id="SanitizeOnShutdown_Sessions">已登入的連線</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">若啟用此原則，將在瀏覽器關閉時清除 Session 紀錄。
 
-If this policy is disabled or not configured, sessions not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_SiteSettings">Site Preferences</string>
-      <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, sire preferences arecleared when the browser is closed.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除 Session 紀錄。</string>
+      <string id="SanitizeOnShutdown_SiteSettings">網站偏好設定</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">若啟用此原則，將在瀏覽器關閉時清除網站設定。
 
-If this policy is disabled or not configured, site preferences not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除網站設定。</string>
+      <string id="SanitizeOnShutdown_OfflineApps">離線網站資料</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">若啟用此原則，將在瀏覽器關閉時清除網站離線資料儲存空間。
 
-If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_Locked">Locked</string>
-      <string id="SanitizeOnShutdown_Locked_Explain">If this policy is disabled, all shutdown preferences can be changed by the user.
+若停用或不設定此原則，則不會在瀏覽器關閉時清除網站離線資料儲存空間。</string>
+      <string id="SanitizeOnShutdown_Locked">鎖定</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">若停用此原則，使用者可自行調整任何「關閉瀏覽器時清理資料」設定。
 
-If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
+若啟用此原則，使用者將無法變更任何透過企業原則指定的「關閉瀏覽器時清理資料」設定（其餘可變更）。
 
-If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+若不設定此原則，使用者將無法變更所有「關閉瀏覽器時清理資料」設定（先前的行為）。</string>
       <string id="WebsiteFilter_Block">要封鎖的網站</string>
       <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
 
@@ -610,29 +625,29 @@ If this policy is not configured, no shutdown preferences can be changed by the 
 若停用此原則，則會在一般與隱私瀏覽模式中都停用追蹤保護功能，且使用者無法開啟。
 
 若啟用此原則，則會在一般與隱私瀏覽模式中都啟用追蹤保護功能，且您可以決定是否要允許讓使用者自行更改設定。</string>
-      <string id="TrackingProtection_group">Tracking Protection</string>
-      <string id="TrackingProtection_Value">Enabled</string>
-      <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
+      <string id="TrackingProtection_group">追蹤保護</string>
+      <string id="TrackingProtection_Value">啟用</string>
+      <string id="TrackingProtection_Value_Explain">若啟用此原則，將開啟追蹤保護功能。
 
-If this policy is disabled, tracking protection is disabled and cannot be changed by the user.
+若停用此原則，將關閉追蹤保護功能，且不允許使用者開啟。
 
-If this policy is not configured, standard tracking protection is used and the user can change it.</string>
-      <string id="TrackingProtection_Cryptomining">Cryptomining</string>
-      <string id="TrackingProtection_Cryptomining_Explain">If this policy is enabled, scripts that use cryptomining are blocked.
+若不設定此原則，將使用預設追蹤保護設定，且允許使用者自行調整。</string>
+      <string id="TrackingProtection_Cryptomining">加密貨幣採礦程式</string>
+      <string id="TrackingProtection_Cryptomining_Explain">若啟用此原則，將封鎖使用加密貨幣採礦程式的指令碼。
 
-If this policy is disabled or not configured, scripts that use cryptomining are not blocked.</string>
-      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">If this policy is enabled, scripts that use fingerprinting are blocked.
+若停用或不設定此原則，則不會封鎖使用加密貨幣採礦程式的指令碼。</string>
+      <string id="TrackingProtection_Fingerprinting">數位指紋追蹤程式</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">若啟用此原則，將封鎖使用數位指紋追蹤程式的指令碼。
 
-If this policy is disabled or not configured, scripts that use fingerprinting are not blocked.</string>
-      <string id="TrackingProtection_Exceptions">Exceptions</string>
-      <string id="TrackingProtection_Exceptions_Explain">If this policy is enabled, you can specify origins where tracking protection is not enabled.
+若停用或不設定此原則，則不會封鎖使用數位指紋追蹤程式的指令碼。</string>
+      <string id="TrackingProtection_Exceptions">例外網址</string>
+      <string id="TrackingProtection_Exceptions_Explain">若啟用此原則，可針對指定的來源不開啟追蹤保護功能。
 
-If this policy is disabled or not configured, tracking protection is enabled for all websites.</string>
-      <string id="TrackingProtection_Locked">Do not allow tracking protection preferences to be changed</string>
-      <string id="TrackingProtection_Locked_Explain">If this policy is enabled, tracking protection preferences cannot be changed by the user.
+若停用或不設定此原則，則對所有網站開啟追蹤保護功能。</string>
+      <string id="TrackingProtection_Locked">不允許調整追蹤保護功能偏好設定</string>
+      <string id="TrackingProtection_Locked_Explain">若啟用此原則，使用者將無法調整追蹤保護功能偏好設定。
 
-If this policy is disabled or not configured, the user can change tracking protection preferences.</string>
+若停用或不設定此原則，使用者則可以調整追蹤保護功能偏好設定。</string>
       <string id="RequestedLocales">請求語系</string>
       <string id="RequestedLocalesString">請求語系（字串）</string>
       <string id="RequestedLocales_Explain">若啟用此原則，您可以指定要由應用程式顯示的語系順序清單。將使得對應的語言套件生效。
@@ -692,22 +707,58 @@ If this policy is disabled or not configured, the user can change tracking prote
       <string id="SupportMenu_Explain">若啟用此原則，將在說明選單中加入技術支援資訊項目。
 
 若停用或不設定此原則，則不會加入選單項目。</string>
-      <string id="UserMessaging_WhatsNew">What's New</string>
-      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+      <string id="UserMessaging_WhatsNew">有什麼新鮮事</string>
+      <string id="UserMessaging_WhatsNew_Explain">若停用此原則，將不會顯示「有什麼新鮮事」的圖示與選單項目。
 
-If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
-      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
-      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+若啟用或不設定此原則，則會顯示「有什麼新鮮事」的圖示與選單項目。</string>
+      <string id="UserMessaging_ExtensionRecommendations">推薦的擴充套件</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">若停用此原則，將不會在使用者瀏覽網站時推薦擴充套件。
 
-If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
-      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
-      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+若啟用或不設定此原則，則會在使用者瀏覽網站時推薦擴充套件。</string>
+      <string id="UserMessaging_FeatureRecommendations">功能推薦</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">若停用此原則，將不會在使用者操作 Firefox 時推薦 Firefox 功能。
 
-If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
-      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
-      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+若啟用或不設定此原則，則會在使用者操作 Firefox 時推薦 Firefox 功能。</string>
+      <string id="UserMessaging_UrlbarInterventions">介入網址列</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">若停用此原則，將不會在使用者在網址列輸入時推薦操作行為。
 
-If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
+若啟用或不設定此原則，則會根據使用者在網址列輸入的內容推薦操作行為。</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
+
+If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
@@ -1004,6 +1055,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       </presentation>
       <presentation id="List">
         <listBox refId="List"/>
+      </presentation>
+      <presentation id="Autoplay_Default">
+        <dropdownList refId="Autoplay_Default"/>
       </presentation>
     </presentationTable>
   </resources>

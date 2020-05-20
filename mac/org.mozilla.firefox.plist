@@ -131,6 +131,27 @@
 	<true/>
 	<key>DisableBuiltinPDFViewer</key>
 	<true/>
+	<key>DisabledCiphers</key>
+	<dict>
+		<key>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</key>
+		<true/>
+		<key>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</key>
+		<true/>
+		<key>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</key>
+		<true/>
+		<key>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</key>
+		<true/>
+		<key>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</key>
+		<true/>
+		<key>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</key>
+		<true/>
+		<key>TLS_RSA_WITH_AES_128_CBC_SHA</key>
+		<true/>
+		<key>TLS_RSA_WITH_AES_256_CBC_SHA</key>
+		<true/>
+		<key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
+		<true/>
+	</dict>
 	<key>DisableDeveloperTools</key>
 	<true/>
 	<key>DisableFeedbackCommands</key>
@@ -377,6 +398,10 @@
 			<array>
 				<string>https://example.edu</string>
 			</array>
+			<key>Default</key>
+				<string>block-audio</string>
+			<key>Locked</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>PopupBlocking</key>

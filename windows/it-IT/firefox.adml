@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="1.15" schemaVersion="1.0" >
+<policyDefinitionResources revision="1.16" schemaVersion="1.0" >
   <displayName/>
   <description/>
   <resources >
@@ -26,6 +26,7 @@
       <string id="SUPPORTED_FF75_ONLY">Firefox 75 o versione successiva</string>
       <string id="SUPPORTED_FF76">Firefox 76 o versione successiva, Firefox 68.8 ESR o versione successiva</string>
       <string id="SUPPORTED_FF77">Firefox 77 o versione successiva, Firefox 68.9 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF78">Firefox 78 o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
@@ -45,6 +46,7 @@
       <string id="Search_group">Ricerca</string>
       <string id="Preferences_group">Preferenze</string>
       <string id="UserMessaging_group">Messaggi utente</string>
+      <string id="DisabledCiphers_group">Cifrari disabilitati</string>
       <string id="Allow">Siti consentiti</string>
       <string id="Block">Siti bloccati</string>
       <string id="AppAutoUpdate">Aggiornamento automatico applicazione</string>
@@ -422,6 +424,19 @@ Se questo criterio è disabilitato o non configurato, viene seguito il criterio 
       <string id="Autoplay_Block_Explain">Se questo criterio è abilitato, la riproduzione automatica sarà sempre bloccata per le origini indicate.
 
 Se questo criterio è disabilitato o non configurato, viene seguito il criterio predefinito per la riproduzione automatica.</string>
+      <string id="Autoplay_Default">Livello predefinito riproduzione automatica</string>
+      <string id="Autoplay_Default_Explain">Se questo criterio è abilitato, è possibile scegliere il livello predefinito per la riproduzione automatica.
+
+Se questo criterio è disabilitato o non configurato, l'audio è bloccato per impostazione predefinita.
+
+Nota: il blocco dell'audio e del video non funziona nella versione ESR.</string>
+      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
+      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change autoplay preferences.</string>
+      <string id="AllowAudioVideo">Allow Audio and Video</string>
+      <string id="BlockAudio">Block Audio</string>
+      <string id="BlockAudioVideo">Block Audio and Video</string>
       <string id="FirefoxHome">Personalizza pagina iniziale di Firefox</string>
       <string id="FirefoxHome_Explain">Se questo criterio è abilitato, è possibile scegliere le sezioni visualizzate nella pagina iniziale di Firefox e impedire all'utente di modificarle.
 
@@ -710,6 +725,42 @@ Se questo criterio è abilitato o non configurato, saranno consigliate funzional
       <string id="UserMessaging_UrlbarInterventions_Explain">Se questo criterio è disabilitato, non saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.
 
 Se questo criterio è abilitato o non configurato, saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_DHE_RSA_WITH_AES_128_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_DHE_RSA_WITH_AES_128_CBC_SHA è abilitato.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_DHE_RSA_WITH_AES_256_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_DHE_RSA_WITH_AES_256_CBC_SHA è abilitato.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA è abilitato.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA è abilitato.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 è abilitato.</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 è abilitato.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_AES_128_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_AES_128_CBC_SHA è abilitato.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_AES_256_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_AES_256_CBC_SHA è abilitato.</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_3DES_EDE_CBC_SHA è disabilitato.
+
+Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_3DES_EDE_CBC_SHA è abilitato.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
@@ -1006,6 +1057,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="List">
         <listBox refId="List"/>
+      </presentation>
+      <presentation id="Autoplay_Default">
+        <dropdownList refId="Autoplay_Default"/>
       </presentation>
     </presentationTable>
   </resources>

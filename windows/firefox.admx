@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="1.15" schemaVersion="1.0">
+<policyDefinitions revision="1.16" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="1.15"/>
+  <resources minRequiredRevision="1.16"/>
   <supportedOn>
     <definitions>
       <definition name="UNSUPPORTED" displayName="$(string.UNSUPPORTED)"/>
@@ -28,6 +28,7 @@
       <definition name="SUPPORTED_FF75_ONLY" displayName="$(string.SUPPORTED_FF75_ONLY)"/>
       <definition name="SUPPORTED_FF76" displayName="$(string.SUPPORTED_FF76)"/>
       <definition name="SUPPORTED_FF77" displayName="$(string.SUPPORTED_FF77)"/>
+      <definition name="SUPPORTED_FF78" displayName="$(string.SUPPORTED_FF78)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -95,6 +96,9 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.UserMessaging_group)" name="UserMessaging">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.DisabledCiphers_group)" name="DisabledCiphers">
       <parentCategory ref="firefox"/>
     </category>
   </categories>
@@ -476,6 +480,39 @@
       <supportedOn ref="SUPPORTED_FF74"/>
       <elements>
         <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="Autoplay_Locked" class="Both" displayName="$(string.Autoplay_Locked)" explainText="$(string.Autoplay_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay" valueName="Locked">
+      <parentCategory ref="Autoplay"/>
+      <supportedOn ref="SUPPORTED_FF76"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Autoplay_Default" class="Both" displayName="$(string.Autoplay_Default)" explainText="$(string.Autoplay_Default_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay"  presentation="$(presentation.Autoplay_Default)">
+      <parentCategory ref="Autoplay"/>
+      <supportedOn ref="SUPPORTED_FF76"/>
+      <elements>
+        <enum id="Autoplay_Default" valueName="Default">
+          <item displayName="$(string.AllowAudioVideo)">
+            <value>
+              <string>allow-audio-video</string>
+            </value>
+          </item>
+          <item displayName="$(string.BlockAudio)">
+            <value>
+              <string>block-audio</string>
+            </value>
+          </item>
+          <item displayName="$(string.BlockAudioVideo)">
+            <value>
+              <string>block-audio-video</string>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
     <policy name="DefaultDownloadDirectory" class="Both" displayName="$(string.DefaultDownloadDirectory)" explainText="$(string.DefaultDownloadDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
@@ -3390,6 +3427,96 @@
     <policy name="UserMessaging_UrlbarInterventions" class="Both" displayName="$(string.UserMessaging_UrlbarInterventions)" explainText="$(string.UserMessaging_UrlbarInterventions_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="UrlbarInterventions">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF75_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_DHE_RSA_WITH_AES_128_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_DHE_RSA_WITH_AES_256_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256)" explainText="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256)" explainText="$(string.DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_RSA_WITH_AES_128_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_RSA_WITH_AES_256_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_RSA_WITH_3DES_EDE_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF76_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
