@@ -3019,6 +3019,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
