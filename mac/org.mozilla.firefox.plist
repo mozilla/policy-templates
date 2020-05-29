@@ -214,6 +214,13 @@
 			<string>https://example.com</string>
 		</array>
 	</dict>
+	<key>EncryptedMediaExtensions</key>
+		<dict>
+		<key>Enabled</key>
+		<false/>
+		<key><Locked</key>
+		<false/>
+	</dict>
 	<key>Extensions</key>
 	<dict>
 		<key>Install</key>

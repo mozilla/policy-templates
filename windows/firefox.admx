@@ -27,7 +27,9 @@
       <definition name="SUPPORTED_FF75" displayName="$(string.SUPPORTED_FF75)"/>
       <definition name="SUPPORTED_FF75_ONLY" displayName="$(string.SUPPORTED_FF75_ONLY)"/>
       <definition name="SUPPORTED_FF76" displayName="$(string.SUPPORTED_FF76)"/>
+      <definition name="SUPPORTED_FF76_ONLY" displayName="$(string.SUPPORTED_FF76_ONLY)"/>
       <definition name="SUPPORTED_FF77" displayName="$(string.SUPPORTED_FF77)"/>
+      <definition name="SUPPORTED_FF77_ONLY" displayName="$(string.SUPPORTED_FF77_ONLY)"/>
       <definition name="SUPPORTED_FF78" displayName="$(string.SUPPORTED_FF78)"/>
     </definitions>
   </supportedOn>
@@ -99,6 +101,9 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.DisabledCiphers_group)" name="DisabledCiphers">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.EncryptedMediaExtensions_group)" name="EncryptedMediaExtensions">
       <parentCategory ref="firefox"/>
     </category>
   </categories>
@@ -3527,6 +3532,26 @@
     <policy name="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA)" explainText="$(string.DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_RSA_WITH_3DES_EDE_CBC_SHA">
       <parentCategory ref="DisabledCiphers"/>
       <supportedOn ref="SUPPORTED_FF76_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="EncryptedMediaExtensions_Enabled" class="Both" displayName="$(string.EncryptedMediaExtensions_Enabled)" explainText="$(string.EncryptedMediaExtensions_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions" valueName="Enabled">
+      <parentCategory ref="EncryptedMediaExtensions"/>
+      <supportedOn ref="SUPPORTED_FF77"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="EncryptedMediaExtensions_Locked" class="Both" displayName="$(string.EncryptedMediaExtensions_Locked)" explainText="$(string.EncryptedMediaExtensions_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions" valueName="Locked">
+      <parentCategory ref="EncryptedMediaExtensions"/>
+      <supportedOn ref="SUPPORTED_FF77"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

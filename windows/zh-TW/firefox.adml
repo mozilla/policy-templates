@@ -25,7 +25,9 @@
       <string id="SUPPORTED_FF75">Firefox 75 或更新版本、Firefox 68.7 ESR 或更新版本</string>
       <string id="SUPPORTED_FF75_ONLY">Firefox 75 或更新版本</string>
       <string id="SUPPORTED_FF76">Firefox 76 或更新版本、Firefox 68.8 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF76_ONLY">Firefox 76 或更新版本</string>
       <string id="SUPPORTED_FF77">Firefox 77 或更新版本、Firefox 68.9 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF77_ONLY">Firefox 77 或更新版本</string>
       <string id="SUPPORTED_FF78">Firefox 78 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
@@ -47,6 +49,7 @@
       <string id="Preferences_group">偏好設定</string>
       <string id="UserMessaging_group">顯示給使用者的訊息</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
+      <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
       <string id="AppAutoUpdate">應用程式自動更新</string>
@@ -763,6 +766,14 @@ If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA ci
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
 
 If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
+      <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+
+If this policy is enabled or not configured, encrypted media extensions (like Widevine) are downloaded automatically and used by Firefox.</string>
+      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+
+If this policy is not disabled or not configured, it has no effect.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
@@ -814,7 +825,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
       <string id="intl_accept_languages">intl.accept_languages</string>
-      <string id="media_eme_enabled">media.eme.enabled</string>
+      <string id="media_eme_enabled">media.eme.enabled（已棄用）</string>
       <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
       <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
       <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>

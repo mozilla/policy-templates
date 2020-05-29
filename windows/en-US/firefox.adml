@@ -25,7 +25,9 @@
       <string id="SUPPORTED_FF75">Firefox 75 or later, Firefox 68.7 ESR or later</string>
       <string id="SUPPORTED_FF75_ONLY">Firefox 75 or later</string>
       <string id="SUPPORTED_FF76">Firefox 76 or later, Firefox 68.8 ESR or later</string>
+      <string id="SUPPORTED_FF76_ONLY">Firefox 76 or later</string>
       <string id="SUPPORTED_FF77">Firefox 77 or later, Firefox 68.9 ESR or later</string>
+      <string id="SUPPORTED_FF77_ONLY">Firefox 77 or later</string>
       <string id="SUPPORTED_FF78">Firefox 78 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -47,6 +49,7 @@
       <string id="Preferences_group">Preferences</string>
       <string id="UserMessaging_group">User Messaging</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
+      <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
       <string id="Allow">Allowed Sites</string>
       <string id="Block">Blocked Sites</string>
       <string id="AppAutoUpdate">Application Autoupdate</string>
@@ -765,6 +768,14 @@ If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA ci
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
 
 If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
+      <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+
+If this policy is enabled or not configured, encrypted media extensions (like Widevine) are downloaded automatically and used by Firefox.</string>
+      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+
+If this policy is not disabled or not configured, it has no effect.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
@@ -816,7 +827,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
       <string id="intl_accept_languages">intl.accept_languages</string>
-      <string id="media_eme_enabled">media.eme.enabled</string>
+      <string id="media_eme_enabled">media.eme.enabled (Deprecated)</string>
       <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
       <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
       <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
