@@ -89,6 +89,10 @@ Si esta política está habilitada (y las casillas de verificación están marca
       <string id="Authentication_Locked_Explain">Si esta política está deshabilitada, el usuario podrá cambiar las preferencias de autenticación.
 
 Si esta política está habilitada o no está configurada, el usuario no podrá cambiar las preferencias de autenticación.</string>
+      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
+      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+
+If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
       <string id="BlockAboutAddons">Bloquear el administrador de complementos</string>
       <string id="BlockAboutAddons_Explain">Si esta política está habilitada, el usuario no podrá acceder al administrador de complementos o en about:addons.
 

@@ -39,6 +39,8 @@
 			<key>NTLM</key>
 			<true/>
 		</dict>
+		<key>PrivateBrowsing</key>
+		<true/>
 		<key>Locked</key>
 		<true/>
 	</dict>

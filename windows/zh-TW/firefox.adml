@@ -89,6 +89,10 @@
       <string id="Authentication_Locked_Explain">若停用此原則，可由使用者自行更改驗證偏好設定。
 
 若啟用或不設定此原則，則不允許使用者更改驗證偏好設定。</string>
+      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
+      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+
+If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
       <string id="BlockAboutAddons">封鎖附加元件管理員</string>
       <string id="BlockAboutAddons_Explain" >若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
 

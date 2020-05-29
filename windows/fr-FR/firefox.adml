@@ -89,6 +89,10 @@ If this policy is activé (et les cases à cocher sont cochées) ou non configur
       <string id="Authentication_Locked_Explain">Si cette stratégie est désactivée, les préférences d'authentification peuvent être modifiées par l'utilisateur.
 
 Si cette stratégie est activée ou non configurée, les préférences d'authentification ne peuvent pas être modifiées par l'utilisateur.</string>
+      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
+      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+
+If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
       <string id="BlockAboutAddons">Gestion de modules Add-ons </string>
       <string id="BlockAboutAddons_Explain" >Si cette stratégie est activée, l'utilisateur ne peut pas accéder au gestionnaire de modules complémentaires ou aux modules add:.
 

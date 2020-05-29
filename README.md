@@ -175,9 +175,11 @@ Configure sites that support integrated authentication.
 
 See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2, AllowProxies added in 70/68.2, Locked added in 71/68.3)\
+`PrivateBrowsing` enables integrated authentication in prviate browsing.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2, AllowProxies added in 70/68.2, Locked added in 71/68.3, PrivateBrowsing added in 77/68.9)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.negotiate-auth.trusted-uris`,`network.negotiate-auth.delegation-uris`,`network.automatic-ntlm-auth.trusted-uris`,`network.automatic-ntlm-auth.allow-non-fqdn`,`network.negotiate-auth.allow-non-fqdn`,`network.automatic-ntlm-auth.allow-proxies`,`network.negotiate-auth.allow-proxies`
+**Preferences Affected:** `network.negotiate-auth.trusted-uris`,`network.negotiate-auth.delegation-uris`,`network.automatic-ntlm-auth.trusted-uris`,`network.automatic-ntlm-auth.allow-non-fqdn`,`network.negotiate-auth.allow-non-fqdn`,`network.automatic-ntlm-auth.allow-proxies`,`network.negotiate-auth.allow-proxies`,`network.auth.private-browsing-sso`
 
 #### Windows (GPO)
 ```
@@ -192,6 +194,7 @@ Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN\NTLM = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\SPNEGO = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\AllowProxies\NTLM = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Authentication\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Authentication\PrivateBrowsing = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -233,12 +236,19 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/HomepageStartPage
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_Locked
 ```
 Value (string):
 ```
-<enabled/>
-<data id="StartPage" value="none | homepage | previous-session"/>
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Authentication/Authentication_PrivateBrowsing
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
@@ -276,6 +286,8 @@ Value (string):
     </dict>
     <key>Locked</key>
     <true/> | <false/>
+    <key>PrivateBrowsing</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -295,7 +307,8 @@ Value (string):
         "SPNEGO": true | false,
         "NTLM": true | false
       },
-      "Locked": true | false
+      "Locked": true | false,
+      "PrivateBrowsing": true | false
     }
   }
 }

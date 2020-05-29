@@ -188,6 +188,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Authentication_PrivateBrowsing" class="Both" displayName="$(string.Authentication_PrivateBrowsing)" explainText="$(string.Authentication_PrivateBrowsing_Explain)" key="Software\Policies\Mozilla\Firefox\Authentication" valueName="PrivateBrowsing">
+      <parentCategory ref="Authentication"/>
+      <supportedOn ref="SUPPORTED_FF77"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="BlockAboutAddons" class="Both" displayName="$(string.BlockAboutAddons)" explainText="$(string.BlockAboutAddons_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BlockAboutAddons">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
