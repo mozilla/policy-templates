@@ -89,6 +89,10 @@ If this policy is enabled (and the checkboxes are checked) or not configured, NT
       <string id="Authentication_Locked_Explain">If this policy is disabled, authentication preferences can be changed by the user.
 
 If this policy is enabled or not configured, authentication preferences cannot be changed by the user.</string>
+      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
+      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+
+If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
       <string id="BlockAboutAddons">Block Add-ons Manager</string>
       <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
 
