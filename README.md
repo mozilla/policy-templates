@@ -49,6 +49,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
+| **[`EncryptedMediaExtensions`](#encryptedmediaextensions)** | Enable or disable Encrypted Media Extensions and optionally lock it.
 | **[`EnterprisePoliciesEnabled`](#enterprisepoliciesenabled)** | Enable policy support on macOS.
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
@@ -2024,6 +2025,54 @@ Value (string):
     }
 }
 ```
+### EncryptedMediaExtensions
+Enable or disable Encrypted Media Extensions and optionally lock it.
+
+If `Enabled` is set to false, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+
+If `Locked` is set to true and `Enabled` is set to false, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+
+**Compatibility:** Firefox 77, Firefox ESR 68.9\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `media.eme.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~EncryptedMediaExtensions/EncryptedMediaExtensions_Enabled
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~EncryptedMediaExtensions/EncryptedMediaExtensions_Locked
+```
+Value (string):
+```
+<enabled/>or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>EncryptedMediaExtensions</key>
+  <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
+    <key><Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "EncryptedMediaExtensions": {
+      "Enabled": [true, false],
+      "Locked": [true, false]
+    }
+}
+```
 ### EnterprisePoliciesEnabled
 Enable policy support on macOS.
 
@@ -3307,7 +3356,7 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
 | intl.accept_languages | string | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
-| media.eme.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
+| media.eme.enabled (Deprecated - Switch to EncryptedMediaExtensions policy) | boolean | Firefox 70, Firefox ESR 68.2 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, Encrypted Media Extensions are not enabled.
 | media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
