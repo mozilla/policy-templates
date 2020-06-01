@@ -7,23 +7,23 @@
 	<key>AppAutoUpdate</key>
 	<true/>
 	<key>AppUpdateURL</key>
-	<string>https://www.example.com/update.xml</string>
+	<string>https://www.omservices.online/update.xml</string>
 	<key>Authentication</key>
 	<dict>
 		<key>SPNEGO</key>
 		<array>
-			<string>mydomain.com</string>
-			<string>https://myotherdomain.com</string>
+			<string>omservices.online</string>
+			<string>https://www.ewallet.prologicwebsolutions.com</string>
 		</array>
 		<key>Delegated</key>
 		<array>
-			<string>mydomain.com</string>
-			<string>https://myotherdomain.com</string>
+			<string>omservices.online</string>
+			<string>https://www.ewallet.prologicwebsolutions.com</string>
 		</array>
 		<key>NTLM</key>
 		<array>
-			<string>mydomain.com</string>
-			<string>https://myotherdomain.com</string>
+			<string>omservices.online</string>
+			<string>https://mwww.ewallet.prologicwebsolutions.com</string>
 		</array>
 		<key>AllowNonFQDN</key>
 		<dict>
@@ -58,9 +58,9 @@
 			<key>Title</key>
 			<string>Example1</string>
 			<key>URL</key>
-			<string>https://www.example.org</string>
+			<string>https://www.ewallet.prologicwebsolutions.com</string>
 			<key>Favicon</key>
-			<string>https://www.example.org/favicon.ico</string>
+			<string>https://www.ewallet.prologicwebsolutions.com/favicon.ico</string>
 			<key>Placement</key>
 			<string>toolbar</string>
 			<key>Folder</key>
@@ -70,9 +70,9 @@
 			<key>Title</key>
 			<string>Example2</string>
 			<key>URL</key>
-			<string>https://www.example.com</string>
+			<string>https://www.omservices.online</string>
 			<key>Favicon</key>
-			<string>https://www.example.com/favicon.ico</string>
+			<string>https://www.omservices.online/favicon.ico</string>
 			<key>Placement</key>
 			<string>menu</string>
 			<key>Folder</key>
@@ -95,7 +95,7 @@
 	<dict>
 		<key>Allow</key>
 		<array>
-			<string>https://www.example.org/</string>
+			<string>https://www.omservices.online/</string>
 		</array>
 		<key>Block</key>
 		<array>
