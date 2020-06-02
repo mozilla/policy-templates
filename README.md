@@ -2017,10 +2017,10 @@ Value (string):
 {
   "policies": {
     "EnableTrackingProtection": {
-      "Value": [true, false],
-      "Locked": [true, false],
-      "Cryptomining": [true, false],
-      "Fingerprinting": [true, false],
+      "Value": true | false,
+      "Locked": true | false,
+      "Cryptomining": true | false,
+      "Fingerprinting": true | false,
       "Exceptions": ["https://example.com"]
     }
 }
@@ -2068,8 +2068,8 @@ Value (string):
 {
   "policies": {
     "EncryptedMediaExtensions": {
-      "Enabled": [true, false],
-      "Locked": [true, false]
+      "Enabled": true | false,
+      "Locked": true false
     }
 }
 ```
@@ -3567,17 +3567,17 @@ Value (string):
   "policies": {
     "Proxy": {
       "Mode": "none", "system", "manual", "autoDetect", "autoConfig",
-      "Locked": [true, false],
+      "Locked": true | false,
       "HTTPProxy": "hostname",
-      "UseHTTPProxyForAllProtocols": [true, false],
+      "UseHTTPProxyForAllProtocols": true | false,
       "SSLProxy": "hostname",
       "FTPProxy": "hostname",
       "SOCKSProxy": "hostname",
       "SOCKSVersion": 4 | 5
       "Passthrough": "<local>",
       "AutoConfigURL": "URL_TO_AUTOCONFIG",
-      "AutoLogin":  [true, false],
-      "UseProxyForDNS": [true, false]
+      "AutoLogin": true | false,
+      "UseProxyForDNS": true | false
     }
   }
 }
