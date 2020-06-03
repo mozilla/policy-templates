@@ -50,6 +50,7 @@
       <string id="UserMessaging_group">User Messaging</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
+      <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Sites autorisés</string>
       <string id="Block">Sites bloqués</string>
       <string id="AppAutoUpdate">Application Autoupdate</string>
@@ -775,6 +776,14 @@ If this policy is enabled or not configured, encrypted media extensions (like Wi
       <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
 
 If this policy is not disabled or not configured, it has no effect.</string>
+      <string id="PDFjs_Enabled">Enable PDFjs</string>
+      <string id="PDFjs_Enabled_Explain">If this policy is disabled, the built-in PDF viewer is not used.
+
+If this policy is enabled or not configured, the built-in PDF viewer is used.</string>
+      <string id="PDFjs_EnablePermissions">Enable Permissions</string>
+      <string id="PDFjs_EnablePermissions_Explain">If this policy is enabled, the built-in PDF viewer will honor document permissions like preventing the copying of text.
+
+If this policy is not disabled or not configured, document permissions are ignored.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur true. Si cette stratégie est désactivée, la préférence est verrouillée sur false.
 
 Pour une description de la préférence, voir:

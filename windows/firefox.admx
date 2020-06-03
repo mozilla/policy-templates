@@ -106,6 +106,9 @@
     <category displayName="$(string.EncryptedMediaExtensions_group)" name="EncryptedMediaExtensions">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.PDFjs_group)" name="PDFjs">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -3552,6 +3555,26 @@
     <policy name="EncryptedMediaExtensions_Locked" class="Both" displayName="$(string.EncryptedMediaExtensions_Locked)" explainText="$(string.EncryptedMediaExtensions_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions" valueName="Locked">
       <parentCategory ref="EncryptedMediaExtensions"/>
       <supportedOn ref="SUPPORTED_FF77"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="PDFjs_Enabled" class="Both" displayName="$(string.PDFjs_Enabled)" explainText="$(string.PDFjs_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\PDFjs" valueName="Enabled">
+      <parentCategory ref="PDFjs"/>
+      <supportedOn ref="SUPPORTED_FF77_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="PDFjs_EnablePermissions" class="Both" displayName="$(string.PDFjs_EnablePermissions)" explainText="$(string.PDFjs_EnablePermissions_Explain)" key="Software\Policies\Mozilla\Firefox\PDFjs" valueName="EnablePermissions">
+      <parentCategory ref="PDFjs"/>
+      <supportedOn ref="SUPPORTED_FF77_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
