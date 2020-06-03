@@ -218,7 +218,7 @@
 		<dict>
 		<key>Enabled</key>
 		<false/>
-		<key><Locked</key>
+		<key>Locked</key>
 		<false/>
 	</dict>
 	<key>Extensions</key>
@@ -335,6 +335,13 @@
 	<string></string>
 	<key>PasswordManagerEnabled</key>
 	<false/>
+	<key>PDFjs</key>
+		<dict>
+		<key>Enabled</key>
+		<false/>
+		<key>EnablePermissions</key>
+		<false/>
+	</dict>
 	<key>Permissions</key>
 	<dict>
 		<key>Camera</key>

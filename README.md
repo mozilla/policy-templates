@@ -69,6 +69,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
 | **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
 | **[`PasswordManagerEnabled`](#passwordmanagerenabled)** | Remove (some) access to the password manager.
+| **[`PDFjs`](#pdfjs)** | Disable or configure PDF.js, the built-in PDF viewer.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
@@ -2962,6 +2963,54 @@ Value (string):
   "policies": {
     "PasswordManagerEnabled": true | false
   }
+}
+```
+### PDFjs
+Disable or configure PDF.js, the built-in PDF viewer.
+
+If `Enabled` is set to false, the built-in PDF viewer is disabled.
+
+If `EnablePermissions` is set to true, the built-in PDF viewer will honor document permissions like preventing the copying of text.
+
+**Compatibility:** Firefox 77, Firefox ESR 68.9\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `pdfjs.diabled`,`pdfjs.enablePermissions`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PDFjs\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\PDFjs\EnablePermissions = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~PDFjs/PDFjs_Enabled
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~PDFjs/PDFjs_EnablePermissions
+```
+Value (string):
+```
+<enabled/>or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>PDFjs</key>
+  <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
+    <key><EnablePermissions</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PSFjs": {
+      "Enabled": true | false,
+      "EnablePermissions": true | false
+    }
 }
 ```
 ### Permissions
