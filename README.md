@@ -1558,8 +1558,8 @@ Value (string):
 {
   "policies": {
     "DisableSecurityBypass": {
-      "InvalidCertificate": true false,
-      "SafeBrowsing": true false
+      "InvalidCertificate": true | false,
+      "SafeBrowsing": true | false
     }
   }
 }
@@ -2069,7 +2069,7 @@ Value (string):
   "policies": {
     "EncryptedMediaExtensions": {
       "Enabled": true | false,
-      "Locked": true false
+      "Locked": true | false
     }
 }
 ```
