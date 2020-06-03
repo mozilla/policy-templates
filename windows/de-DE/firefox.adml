@@ -49,7 +49,7 @@
       <string id="Preferences_group">Einstellungen</string>
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
-      <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -93,10 +93,10 @@ Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert
       <string id="Authentication_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an den Einstellungen zur Authentifizierung vornehmen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer  Einstellungen zur Authentifizierung nicht ändern.</string>
-      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
-      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+      <string id="Authentication_PrivateBrowsing">Authentifizierung in Privaten Fenstern</string>
+      <string id="Authentication_PrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Interne Authentifizierung (via SPEGNO oder NTLM) auch in privaten Fenstern benutzt.
 
-If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die interne Authentifizierung in privaten Fenstern nicht benutzt.</string>
       <string id="BlockAboutAddons">Zugriff auf Add-ons Manager verhindern</string>
       <string id="BlockAboutAddons_Explain" >Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
 
@@ -767,14 +767,14 @@ If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA Ci
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_RSA_WITH_3DES_EDE_CBC_SHA Cipher deaktiviert.
 
 If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA Cipher aktiviert.</string>
-      <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+      <string id="EncryptedMediaExtensions_Enabled">DRM-Medien Erweiterungen</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen außer der Nutzer stimmt dem Download explizit zu.
 
-If this policy is enabled or not configured, encrypted media extensions (like Widevine) are downloaded automatically and used by Firefox.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen und benutzt.</string>
       <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+      <string id="EncryptedMediaExtensions_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an der Einstellung zu DRM-Medien Erweiterungen vornehmen.
 
-If this policy is not disabled or not configured, it has no effect.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer die Einstellung zu DRM-Medien Erweiterungen nicht ändern.</string>
       <string id="PDFjs_Enabled">Enable PDFjs</string>
       <string id="PDFjs_Enabled_Explain">If this policy is disabled, the built-in PDF viewer is not used.
 
