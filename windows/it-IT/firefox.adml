@@ -93,10 +93,10 @@ Se questo criterio è abilitato (e le caselle di controllo sono selezionate) o n
       <string id="Authentication_Locked_Explain">Se questo criterio è disabilitato, le preferenze di autenticazione possono essere modificate dall'utente.
 
 Se questo criterio è abilitato o non configurato, le preferenze di autenticazione non possono essere modificate dall'utente.</string>
-      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
-      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+      <string id="Authentication_PrivateBrowsing">Consenti l'autenticazione in modalità Navigazione anonima</string>
+      <string id="Authentication_PrivateBrowsing_Explain">Se questo criterio è abilitato, in modalità Navigazione anonima verrà utilizzata l'autenticazione integrata.
 
-If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
+Se questo criterio è disabilitato o non configurato, in modalità Navigazione anonima non verrà utilizzata l'autenticazione integrata.</string>
       <string id="BlockAboutAddons">Blocca Gestore componenti aggiuntivi</string>
       <string id="BlockAboutAddons_Explain">Se questo criterio è abilitato, l'utente non può accedere al Gestore componenti aggiuntivi o ad about:addons.
 
@@ -769,22 +769,22 @@ Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_AES_
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_3DES_EDE_CBC_SHA è disabilitato.
 
 Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_3DES_EDE_CBC_SHA è abilitato.</string>
-      <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+      <string id="EncryptedMediaExtensions_Enabled">Abilita Encrypted Media Extension</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">Se questo criterio è disabilitato, le Encrypted Media Extension (come Widevine) non sono scaricate da Firefox a meno che l'utente non acconsenta ad installarle.
 
-If this policy is enabled or not configured, encrypted media extensions (like Widevine) are downloaded automatically and used by Firefox.</string>
-      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+Se questo criterio è abilitato o non configurato, le Encrypted Media Extension (come Widevine) sono scaricate automaticamente e utilizzate da Firefox.</string>
+      <string id="EncryptedMediaExtensions_Locked">Blocca Encrypted Media Extension</string>
+      <string id="EncryptedMediaExtensions_Locked_Explain">Se questo criterio è abilitato e le Encrypted Media Extension sono disabilitate, Firefox non scaricherà le Encrypted Media Extension (come Widevine) né chiederà all'utente di installarle.
 
-If this policy is not disabled or not configured, it has no effect.</string>
-      <string id="PDFjs_Enabled">Enable PDFjs</string>
-      <string id="PDFjs_Enabled_Explain">If this policy is disabled, the built-in PDF viewer is not used.
+Se questo criterio è disabilitato o non configurato, l'impostazione non ha effetto.</string>
+      <string id="PDFjs_Enabled">Abilita PDFjs</string>
+      <string id="PDFjs_Enabled_Explain">Se questo criterio è disabilitato, il visualizzatore PDF integrato non è utilizzato.
 
-If this policy is enabled or not configured, the built-in PDF viewer is used.</string>
-      <string id="PDFjs_EnablePermissions">Enable Permissions</string>
-      <string id="PDFjs_EnablePermissions_Explain">If this policy is enabled, the built-in PDF viewer will honor document permissions like preventing the copying of text.
+Se questo criterio è abilitato o non configurato, viene utilizzato il visualizzatore PDF integrato.</string>
+      <string id="PDFjs_EnablePermissions">Abilita permessi</string>
+      <string id="PDFjs_EnablePermissions_Explain">Se questo criterio è abilitato, il visualizzatore PDF integrato rispetterà i permessi del documento (ad esempio, l'impedire la copia del testo).
 
-If this policy is not disabled or not configured, document permissions are ignored.</string>
+Se questo criterio è disabilitato o non configurato, i permessi del documento sono ignorati.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
