@@ -2972,6 +2972,8 @@ If `Enabled` is set to false, the built-in PDF viewer is disabled.
 
 If `EnablePermissions` is set to true, the built-in PDF viewer will honor document permissions like preventing the copying of text.
 
+Note: DisableBuiltinPDFViewer has not been deprecated. You can either continue to use it, or switch to using PDFjs->Enabled to disable the built-in PDF viewer. This new permission was added because we needed a place for PDFjs->EnabledPermissions.
+
 **Compatibility:** Firefox 77, Firefox ESR 68.9\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `pdfjs.diabled`,`pdfjs.enablePermissions`
