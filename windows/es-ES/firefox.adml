@@ -795,9 +795,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
 Para una descripción de la preferencia, visita:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-      <string id="Preferences_Enum_Explain">Si esta política está habilitada, la preferencias se bloquea al valor seleccionado. Si esta política está deshabilitada, no tiene ningún efecto.
+      <string id="Preferences_Enum_Explain">Si esta política está habilitada, la preferencia se bloquea al valor seleccionado. Si esta política está deshabilitada, no tiene ningún efecto.
 
-Para una descripción de la preferencias, visita:
+Para una descripción de la preferencia, visita:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_Unsupported_Explain">Esta preferencia ya no tiene soporte para Windows. Estamos investigando la creación de una política.</string>
