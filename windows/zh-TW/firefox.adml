@@ -599,6 +599,7 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="None">無</string>
       <string id="Homepage">首頁</string>
       <string id="PreviousSession">先前的瀏覽狀態</string>
+      <string id="HomepageLocked">Homepage (Locked)</string>
       <string id="PasswordManagerEnabled">密碼管理員</string>
       <string id="PasswordManagerEnabled_Explain">若停用此原則，將無法於偏好設定中使用密碼管理員。
 

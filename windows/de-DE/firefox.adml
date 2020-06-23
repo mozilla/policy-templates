@@ -599,6 +599,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="None">Leere Seite</string>
       <string id="Homepage">Startseite</string>
       <string id="PreviousSession">Letzte Sitzung</string>
+      <string id="HomepageLocked">Homepage (Locked)</string>
       <string id="PasswordManagerEnabled">Passwort-Manager</string>
       <string id="PasswordManagerEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der Passwort-Manager nicht über die Einstellungen verfügbar.
 

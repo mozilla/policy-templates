@@ -600,6 +600,7 @@ Si cette stratégie est désactivée ou non configurée, la page de démarrage a
       <string id="None">Page vierge</string>
       <string id="Homepage">Page d'accueil</string>
       <string id="PreviousSession">Session précédente</string>
+      <string id="HomepageLocked">Homepage (Locked)</string>
       <string id="PasswordManagerEnabled">Gestionnaire de mots de passe</string>
       <string id="PasswordManagerEnabled_Explain">Si cette stratégie est désactivée, le gestionnaire de mots de passe n'est pas disponible via les préférences.
 

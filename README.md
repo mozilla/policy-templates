@@ -2479,7 +2479,9 @@ Configure the default homepage and how Firefox starts.
 
 `StartPage` is how Firefox starts. The choices are no homepage, the default homepage or the previous session.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (StartPage was added in Firefox 60, Firefox ESR 60.4)\
+With Firefox 78, an additional option as added for `Startpage`, `homepage-locked`. This allows for locking the homepage, but still allowing the user to choose whether or not they want to restore their session.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (StartPage was added in Firefox 60, Firefox ESR 60.4, homepage-locked added in Firefox 78)\
 **CCK2 Equivalent:** `homePage`,`lockHomePage`\
 **Preferences Affected:** `browser.startup.homepage`,`browser.startup.page`
 
@@ -2489,7 +2491,7 @@ Software\Policies\Mozilla\Firefox\Homepage\URL = "https://example.com"
 Software\Policies\Mozilla\Firefox\Homepage\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Homepage\Additional\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Homepage\Additional\2 = "https://example.edu"
-Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" |  "previous-session"
+Software\Policies\Mozilla\Firefox\Homepage\StartPage = "none" | "homepage" | "previous-session" | "homepage-locked"
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -2538,7 +2540,7 @@ Value (string):
       <string>http://example.edu</string>
     </array>
     <key>StartPage</key>
-    <string>none | homepage | previous-session</string>
+    <string>none | homepage | previous-session | homepage-locked</string>
   </dict>
 </dict>
 ```
@@ -2551,7 +2553,7 @@ Value (string):
       "Locked": true | false,
       "Additional": ["http://example.org/",
                      "http://example.edu/"],
-      "StartPage": "none" | "homepage" | "previous-session"
+      "StartPage": "none" | "homepage" | "previous-session" | "homepage-locked"
     }
   }
 }
