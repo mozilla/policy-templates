@@ -61,6 +61,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
+| **[`MasterPassword`](#masterpassword)** | Require or prevent using a master password.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -2685,6 +2686,43 @@ Value (string):
   "policies": {
     "LocalFileLinks": ["http://example.org/",
                        "http://example.edu/"]
+  }
+}
+```
+### MasterPassword
+Require or prevent using a master password.
+
+If this value is true, a master password is required. If this values is false, it works the same as `DisableMasterPasswordCreation` and removes the master password functionality.
+
+**Compatibility:** Firefox 78, Firefox ESR 78\
+**CCK2 Equivalent:** `noMasterPassword`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\MasterPassword = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/MasterPassword
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>MasterPassword</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "MasterPassword": true | false
   }
 }
 ```

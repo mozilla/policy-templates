@@ -789,6 +789,12 @@ If this policy is not disabled or not configured, document permissions are ignor
       <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
 
 If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
+      <string id="MasterPassword">Master Password</string>
+      <string id="MasterPassword_Explain">If this policy is enabled, a master password is required.
+
+If this policy is disabled, users cannot create a master password.
+
+If this policy is not configured, users can choose to create a master password.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur true. Si cette stratégie est désactivée, la préférence est verrouillée sur false.
 
 Pour une description de la préférence, voir:

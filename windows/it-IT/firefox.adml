@@ -790,6 +790,12 @@ Se questo criterio è disabilitato o non configurato, i permessi del documento s
       <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
 
 If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
+      <string id="MasterPassword">Master Password</string>
+      <string id="MasterPassword_Explain">If this policy is enabled, a master password is required.
+
+If this policy is disabled, users cannot create a master password.
+
+If this policy is not configured, users can choose to create a master password.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
