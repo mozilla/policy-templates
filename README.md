@@ -71,6 +71,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`PasswordManagerEnabled`](#passwordmanagerenabled)** | Remove (some) access to the password manager.
 | **[`PDFjs`](#pdfjs)** | Disable or configure PDF.js, the built-in PDF viewer.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
+| **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
