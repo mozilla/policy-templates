@@ -47,18 +47,18 @@
       <string id="Homepage_group">Página de inicio</string>
       <string id="Search_group">Búsqueda</string>
       <string id="Preferences_group">Preferencias</string>
-      <string id="UserMessaging_group">User Messaging</string>
-      <string id="DisabledCiphers_group">Disabled Ciphers</string>
-      <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
+      <string id="UserMessaging_group">Mensajería del usuario</string>
+      <string id="DisabledCiphers_group">Cifrados deshabilitados</string>
+      <string id="EncryptedMediaExtensions_group">Extensiones de medios cifrados</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Sitios permitidos</string>
       <string id="Block">Sitios bloqueados</string>
-      <string id="AppAutoUpdate">Application Autoupdate</string>
-      <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
+      <string id="AppAutoUpdate">Actualización automática de aplicación</string>
+      <string id="AppAutoUpdate_Explain">Si esta política está habilitada, Firefox se actualizará automáticamente sin la aprobación del usuario.
 
-If this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.
+Si esta política está deshabilitada, las actualizaciones de Firefox se descargarán pero el usuario podrá elegir cuándo instalar la actualización.
 
-If this policy is not configured, the user can choose whether not Firefox is automatically updated.</string>
+Si esta política no está configurada, el usuario podrá elegir si Firefox no se actualiza automáticamente.</string>
       <string id="AppUpdateURL">URL de actualización personalizada</string>
       <string id="AppUpdateURL_Explain">Si esta política está habilitada, podrá establecer una URL para un servidor de actualización que no sea el predeterminado. Esto podría ser útil si ejecuta tu propio servidor de actualización en tu red.
 
@@ -68,19 +68,19 @@ Si esta política está deshabilitada o no está configurada, se utilizará la U
 
 Si esta política está deshabilitada o no está configurada, no se permitirá que ningún sitio web participe en la autenticación SPNEGO con el navegador.
 
-Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+Para más información, visita https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_Delegated">Delegar</string>
       <string id="Authentication_Delegated_Explain">Si esta política está habilitada, el navegador podrá delegar la autorización del usuario al servidor para los sitios web especificados. Las entradas en la lista tienen el formato de midominio.com o https://miotrodominio.com.
 
 Si esta política está deshabilitada o no está configurada, el navegador no delegará la autorización del usuario al servidor para ningún sitio web.
 
-Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+Para más información, visita https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_NTLM">NTLM</string>
       <string id="Authentication_NTLM_Explain">Si esta política está habilitada, se confía en que los sitios web especificados que utilicen la autenticación NTLM. Las entradas en la lista tienen el formato de midominio.com o https://miotrodominio.com.
 
 Si esta política está deshabilitada o no está configurada, no se confía en que los sitios web utilicen la autenticación NTLM.
 
-Para más información, visite https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+Para más información, visita https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Permitir que no sean FQDN</string>
       <string id="Authentication_AllowNonFQDN_Explain">Si esta política está habilitada (y las casillas de verificación están marcadas), siempre podrá permitir SPNEGO o NTLM que no sean FQDN (nombres de dominio totalmente calificados).
 
@@ -93,10 +93,10 @@ Si esta política está habilitada (y las casillas de verificación están marca
       <string id="Authentication_Locked_Explain">Si esta política está deshabilitada, el usuario podrá cambiar las preferencias de autenticación.
 
 Si esta política está habilitada o no está configurada, el usuario no podrá cambiar las preferencias de autenticación.</string>
-      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
-      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+      <string id="Authentication_PrivateBrowsing">Permitir autenticación en navegación privada</string>
+      <string id="Authentication_PrivateBrowsing_Explain">Si esta política está habilitada, la autenticación integrada se utilizará en la navegación privada.
 
-If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
+Si esta política está deshabilitada o no está configurada, la autenticación integrada no se utilizará en la navegación privada.</string>
       <string id="BlockAboutAddons">Bloquear el administrador de complementos</string>
       <string id="BlockAboutAddons_Explain">Si esta política está habilitada, el usuario no podrá acceder al administrador de complementos o en about:addons.
 
@@ -137,25 +137,25 @@ Si esta política está deshabilitada o no está configurada, se utilizará el d
       <string id="DownloadDirectory_Explain">Si esta política está habilitada, podrá configurar y bloquear el directorio para las descargas. ${home} se puede utilizar para la ruta de inicio nativa.
 
 Si esta política está deshabilitada o no está configurada, se utilizará el directorio de descarga predeterminado de Firefox y el usuario puede cambiarlo.</string>
-      <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
-      <string id="DNSOverHTTPS_Enabled">Enabled</string>
-      <string id="DNSOverHTTPS_Enabled_Explain">If this policy is disabled, DNS over HTTPS is disabled.
+      <string id="DNSOverHTTPS_group">DNS mediante HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Habilitado</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">Si esta política está deshabilitada, DNS mediante HTTPS estará deshabilitado.
 
-If this policy is enabled or not configured, DNS Over HTTPS is enabled.</string>
-      <string id="DNSOverHTTPS_ProviderURL">Provider URL</string>
-      <string id="DNSOverHTTPS_ProviderURL_Explain">If this policy is enabled, the URL specified is used as the provider URL.
+Si esta política está habilitada o no está configurada, DNS mediante HTTPS estará habilitado.</string>
+      <string id="DNSOverHTTPS_ProviderURL">URL del proveedor</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">Si esta política está habilitada, la URL especificada se utilizará como la URL del proveedor.
 
-If this policy is disabled or not configured, the default provider is used.</string>
+Si esta política está deshabilitada o no está configurada, se utilizará el proveedor predeterminado.</string>
 
-      <string id="DNSOverHTTPS_Locked">Locked</string>
-      <string id="DNSOverHTTPS_Locked_Explain">If this policy is enabled, DNS over HTTPS settings cannot be changed by the user.
+      <string id="DNSOverHTTPS_Locked">Bloqueado</string>
+      <string id="DNSOverHTTPS_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar la configuración de DNS mediante HTTPS.
 
-If this policy is disabled or not configured, DNS over HTTPS settings can be changed by the user.</string>
-      <string id="DNSOverHTTPS_ExcludedDomains">Excluded Domains</string>
-      <string id="DNSOverHTTPS_ExcludedDomains_Explain">If this policy is enabled, the specified domains are excluded from DNS over HTTPS.
+Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar la configuración de DNS mediante HTTPS.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Dominios excluidos</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">Si esta política está habilitada, los dominios especificados se excluirán de DNS mediante HTTPS.
 
-If this policy is disabled or not configured, no domains are excluded from DNS over HTTPS.</string>
-      <string id="DNSOverHTTPS">Configurar DNS mediante HTTPS (Moved)</string>
+Si esta política está deshabilitada o no está configurada, no se excluirán dominios de DNS mediante HTTPS.</string>
+      <string id="DNSOverHTTPS">Configurar DNS mediante HTTPS (movido)</string>
       <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se podrá cambiar la configuración predeterminada de DNS mediante HTTPS.
 
 Si esta política está deshabilitada o no está configurada, DNS mediante HTTPS usa la configuración predeterminada de Firefox.</string>
@@ -168,15 +168,15 @@ Si esta política está deshabilitada o no está configurada, los usuarios podr�
 
 Si esta política está deshabilitada o no está configurada, el navegador recibirá actualizaciones.</string>
       <string id="DisableBuiltinPDFViewer">Deshabilitar el visor de PDF incorporado (PDF.js)</string>
-      <string id="DisableBuiltinPDFViewer_Explain">Si esta política está habilitada, los archivos PDF no se visualizan dentro de Firefox.
+      <string id="DisableBuiltinPDFViewer_Explain">Si esta política está habilitada, los archivos PDF no se visualizarán dentro de Firefox.
 
-Si esta política está deshabilitada o no está configurada, los archivos PDF se visualizan dentro de Firefox.</string>
-      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
-      <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
+Si esta política está deshabilitada o no está configurada, los archivos PDF se visualizarán dentro de Firefox.</string>
+      <string id="DisableDefaultBrowserAgent">Deshabilitar agente de navegador predeterminado</string>
+      <string id="DisableDefaultBrowserAgent_Explain">Si esta política está habilitada, el agente de navegador predeterminado está deshabilitado.
 
-If this policy is disabled or not configured, the default browser agent is enabled.
+Si esta política está deshabilitada o no está configurada, el agente de navegador predeterminado está habilitado.
 
-For more information about the default browser agent, see https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+Para obtener más información sobre el agente de navegador predeterminado, visita https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Deshabilitar herramientas para desarrolladores</string>
       <string id="DisableDeveloperTools_Explain">Si esta política está habilitada, las herramientas para desarrolladores web no están disponibles dentro de Firefox.
 
@@ -198,7 +198,7 @@ Si esta política está deshabilitada o no está configurada, capturar de pantal
 
 Si esta política está deshabilitada o no está configurada, el usuario podrá elegir habilitar los estudios SHIELD o las encuestas Heartbeat.
 
-Para más información, visite https://support.mozilla.org/en-US/kb/shield y https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
+Para más información, visita https://support.mozilla.org/en-US/kb/shield y https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Deshabilitar el botón olvidar</string>
       <string id="DisableForgetButton_Explain">Si esta política está habilitada, el botón &quot;Olvidar&quot; no estará disponible.
 
@@ -292,7 +292,7 @@ Si esta política está habilitada o no está configurada, las extensiones se ac
 
 Si esta política está deshabilitada o no está configurada, las extensiones no se gestionarán.
 
-Para obtener información detallada sobre la creación de la política, visite https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Para obtener información detallada sobre la creación de la política, visita https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Aceleración por hardware</string>
       <string id="HardwareAcceleration_Explain">Si esta política está deshabilitada, la aceleración por hardware no se puede habilitar.
 
@@ -432,19 +432,19 @@ Si esta política está deshabilitada o no está configurada, se seguirá la pol
       <string id="Autoplay_Block_Explain">Si esta política está habilitada, la reproducción automática siempre se bloqueará para los orígenes indicados.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política predeterminada de reproducción automática.</string>
-      <string id="Autoplay_Default">Default autoplay level</string>
-      <string id="Autoplay_Default_Explain">If this policy is enabled, you can choose the default autoplay level.
+      <string id="Autoplay_Default">Nivel predeterminado de reproducción automática</string>
+      <string id="Autoplay_Default_Explain">Si esta política está habilitada, podrá elegir el nivel predeterminado de reproducción automática.
 
-If this policy is disabled or not configured, audio is blocked by default.
+Si esta política está deshabilitada o no está configurada, el audio se bloquea de forma predeterminada.
 
-Note: Blocking audio and video does not work on the ESR.</string>
-      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
-      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+Nota: Bloquear audio y vídeo no funciona en ESR.</string>
+      <string id="Autoplay_Locked">No permitir que se cambien las preferencias</string>
+      <string id="Autoplay_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar las preferencias de reproducción automática.
 
-If this policy is disabled or not configured, the user can change autoplay preferences.</string>
-      <string id="AllowAudioVideo">Allow Audio and Video</string>
-      <string id="BlockAudio">Block Audio</string>
-      <string id="BlockAudioVideo">Block Audio and Video</string>
+Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar las preferencias de reproducción automática.</string>
+      <string id="AllowAudioVideo">Permitir audio y vídeo</string>
+      <string id="BlockAudio">Bloquear audio</string>
+      <string id="BlockAudioVideo">Bloquear audio y vídeo</string>
       <string id="FirefoxHome">Personalizar inicio de Firefox</string>
       <string id="FirefoxHome_Explain">Si esta política está habilitada, podrá elegir las secciones que se muestran en la página de inicio de Firefox e impedir que el usuario las cambie.
 
@@ -717,87 +717,87 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
       <string id="SupportMenu_Explain">Si esta política está habilitada, se añadirá un elemento nuevo al menú de ayuda con información de soporte.
 
 Si esta política está deshabilitada o no está configurada, no se añadirá ningún elemento al menú.</string>
-      <string id="UserMessaging_WhatsNew">What's New</string>
-      <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
+      <string id="UserMessaging_WhatsNew">Novedades</string>
+      <string id="UserMessaging_WhatsNew_Explain">Si esta política está deshabilitada, no se mostrarán el icono de novedades y el menú de elementos.
 
-If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
-      <string id="UserMessaging_ExtensionRecommendations">Extension Recommendations</string>
-      <string id="UserMessaging_ExtensionRecommendations_Explain">If this policy is disabled, extensions will not be recommended as the user visits websites.
+Si esta política está habilitada o no está configurada, se mostrará el icono de novedades y el menú de elementos.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Recomendaciones de extensiones</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">Si esta política está deshabilitada, no se recomendarán extensiones ya que el usuario visita los sitios web.
 
-If this policy is enabled or not configured, extensions will be recommended as the user visits websites.</string>
-      <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
-      <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
+Si esta política está habilitada o no está configurada, se recomendarán extensiones a medida que el usuario visite los sitios web.</string>
+      <string id="UserMessaging_FeatureRecommendations">Recomendaciones de funciones</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Si esta política está deshabilitada, no se recomendarán las funciones de Firefox ya que el usuario utiliza Firefox.
 
-If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
-      <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
-      <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
+Si esta política está habilitada o no está configurada, se recomendarán las funciones de Firefox ya que el usuario utiliza Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Intervenciones de la barra de URL</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">Si esta política está deshabilitada, no se recomendarán acciones en función de lo que el usuario escriba en la barra de URL.
 
-If this policy is enabled or not configured, actions will be recommended based on what the user types in the URL bar.</string>
+Si esta política está habilitada o no está configurada, se recomendarán acciones en función de lo que el usuario escriba en la barra de URL.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_DHE_RSA_WITH_AES_128_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_DHE_RSA_WITH_AES_128_CBC_SHA está habilitado.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_DHE_RSA_WITH_AES_256_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_DHE_RSA_WITH_AES_256_CBC_SHA está habilitado.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA está habilitado.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA está habilitado.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">Si esta política está deshabilitada, el cifrado TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 está habilitado.</string>
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">Si esta política está deshabilitada, el cifrado TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 está habilitado.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_RSA_WITH_AES_128_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_RSA_WITH_AES_128_CBC_SHA está habilitado.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_RSA_WITH_AES_256_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+Si esta política está habilitada o no está configurada, el cifrado TLS_RSA_WITH_AES_256_CBC_SHA está habilitado.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Si esta política está deshabilitada, el cifrado TLS_RSA_WITH_3DES_EDE_CBC_SHA está deshabilitado.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
-      <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+Si esta política está habilitada o no está configurada, el cifrado TLS_RSA_WITH_3DES_EDE_CBC_SHA está habilitado.</string>
+      <string id="EncryptedMediaExtensions_Enabled">Habilitar extensiones de medios cifrados</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">Si esta política está deshabilitada, Firefox no descargará las extensiones de medios cifrados (como Widevine) a menos que el usuario consienta en instalarlas.
 
-If this policy is enabled or not configured, encrypted media extensions (like Widevine) are downloaded automatically and used by Firefox.</string>
-      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+Si esta política está habilitada o no está configurada, Firefox descargará y utilizará automáticamente las extensiones de medios cifrados (como Widevine).</string>
+      <string id="EncryptedMediaExtensions_Locked">Bloquear extensiones de medios cifrados</string>
+      <string id="EncryptedMediaExtensions_Locked_Explain">Si esta política está habilitada y las extensiones de medios cifrados está deshabilitada, Firefox no descargará extensiones de medios cifrados (como Widevine) ni le pedirá al usuario que los instale.
 
-If this policy is not disabled or not configured, it has no effect.</string>
-      <string id="PDFjs_Enabled">Enable PDFjs</string>
-      <string id="PDFjs_Enabled_Explain">If this policy is disabled, the built-in PDF viewer is not used.
+Si esta política no está deshabilitada o no está configurada, no tiene ningún efecto.</string>
+      <string id="PDFjs_Enabled">Habilitar PDFjs</string>
+      <string id="PDFjs_Enabled_Explain">Si esta política está deshabilitada, no se utilizará el visor de PDF incorporado.
 
-If this policy is enabled or not configured, the built-in PDF viewer is used.</string>
-      <string id="PDFjs_EnablePermissions">Enable Permissions</string>
-      <string id="PDFjs_EnablePermissions_Explain">If this policy is enabled, the built-in PDF viewer will honor document permissions like preventing the copying of text.
+Si esta política está habilitada o no configurada, se utilizará el visor de PDF incorporado.</string>
+      <string id="PDFjs_EnablePermissions">Habilitar permisos</string>
+      <string id="PDFjs_EnablePermissions_Explain">Si esta política está habilitada, el visor de PDF incorporado respetará los permisos del documento, como evitar la copia de texto.
 
-If this policy is not disabled or not configured, document permissions are ignored.</string>
+Si esta política no está deshabilitada o no está configurada, se ignorarán los permisos del documento.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.
 
-Para una descripción de la preferencia, visite:
+Para una descripción de la preferencia, visita:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_String_Explain">Si esta política está habilitada, la preferencia se bloquea en la cadena ingresada. Si esta política está deshabilitada, no tiene ningún efecto.
 
-Para una descripción de la preferencia, visite:
+Para una descripción de la preferencia, visita:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_Enum_Explain">Si esta política está habilitada, la preferencia se bloquea al valor seleccionado. Si esta política está deshabilitada, no tiene ningún efecto.
 
-Para una descripción de la preferencia, visite:
+Para una descripción de la preferencia, visita:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
       <string id="Preferences_Unsupported_Explain">Esta preferencia ya no tiene soporte para Windows. Estamos investigando la creación de una política.</string>
