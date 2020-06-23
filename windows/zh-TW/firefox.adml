@@ -788,6 +788,12 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
 
 If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
+      <string id="MasterPassword">Master Password</string>
+      <string id="MasterPassword_Explain">If this policy is enabled, a master password is required.
+
+If this policy is disabled, users cannot create a master password.
+
+If this policy is not configured, users can choose to create a master password.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
