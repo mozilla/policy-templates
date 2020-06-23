@@ -3256,6 +3256,42 @@ Value (string):
   }
 }
 ```
+### PictureInPicture
+
+Enable or disable Picture-in-Picture.
+
+**Compatibility:** Firefox 78, Firefox ESR 78\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `media.videocontrols.picture-in-picture.video-toggle.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PictureInPicture = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PictureInPicture
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>PictureInPicture</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PictureInPicture": true | false
+  }
+}
+```
 ### PopupBlocking
 Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 

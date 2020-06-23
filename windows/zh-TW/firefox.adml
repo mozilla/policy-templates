@@ -783,6 +783,10 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="PDFjs_EnablePermissions_Explain">若啟用此原則，將會遵循文件權限設定（例如防止文字複製）。
 
 若停用或不設定此原則，就會忽略文件權限。</string>
+      <string id="PictureInPicture">Picture-in-Picture</string>
+      <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
+
+If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：

@@ -784,6 +784,10 @@ If this policy is enabled or not configured, the built-in PDF viewer is used.</s
       <string id="PDFjs_EnablePermissions_Explain">If this policy is enabled, the built-in PDF viewer will honor document permissions like preventing the copying of text.
 
 If this policy is not disabled or not configured, document permissions are ignored.</string>
+      <string id="PictureInPicture">Picture-in-Picture</string>
+      <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
+
+If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur true. Si cette stratégie est désactivée, la préférence est verrouillée sur false.
 
 Pour une description de la préférence, voir:

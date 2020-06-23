@@ -3582,5 +3582,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="PictureInPicture" class="Both" displayName="$(string.PictureInPicture)" explainText="$(string.PictureInPicture_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="PictureInPicture">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF78"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
