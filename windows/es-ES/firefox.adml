@@ -786,6 +786,10 @@ Si esta política está habilitada o no configurada, se utilizará el visor de P
       <string id="PDFjs_EnablePermissions_Explain">Si esta política está habilitada, el visor de PDF incorporado respetará los permisos del documento, como evitar la copia de texto.
 
 Si esta política no está deshabilitada o no está configurada, se ignorarán los permisos del documento.</string>
+      <string id="PictureInPicture">Picture-in-Picture</string>
+      <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
+
+If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.
 
 Para una descripción de la preferencia, visita:

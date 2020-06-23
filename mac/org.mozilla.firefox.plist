@@ -420,6 +420,8 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>PictureInPicture</key>
+	<true/> | <false/>
 	<key>PopupBlocking</key>
 	<dict>
 		<key>Allow</key>
