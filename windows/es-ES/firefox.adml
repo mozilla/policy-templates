@@ -601,6 +601,7 @@ Si esta política está deshabilitada o no está configurada, la página de inic
       <string id="None">Ninguno</string>
       <string id="Homepage">Página de inicio</string>
       <string id="PreviousSession">Sesión anterior</string>
+      <string id="HomepageLocked">Homepage (Locked)</string>
       <string id="PasswordManagerEnabled">Administrador de contraseñas</string>
       <string id="PasswordManagerEnabled_Explain">Si esta política está deshabilitada, el administrador de contraseñas no estará disponible a través de las preferencias.
 

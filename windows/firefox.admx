@@ -1274,6 +1274,11 @@
               <string>previous-session</string>
             </value>
           </item>
+          <item displayName="$(string.HomepageLocked)">
+            <value>
+              <string>homepage-locked</string>
+            </value>
+          </item>
         </enum>
       </elements>
     </policy>

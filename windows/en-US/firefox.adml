@@ -601,6 +601,7 @@ If this policy is disabled or not configured, the start page defaults to the pre
       <string id="None">None</string>
       <string id="Homepage">Homepage</string>
       <string id="PreviousSession">Previous Session</string>
+      <string id="HomepageLocked">Homepage (Locked)</string>
       <string id="PasswordManagerEnabled">Password Manager</string>
       <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
 
