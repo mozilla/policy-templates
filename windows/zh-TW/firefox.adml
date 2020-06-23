@@ -35,7 +35,7 @@
       <string id="Microphone_group">麥克風</string>
       <string id="Location_group">位置</string>
       <string id="Notifications_group">通知</string>
-      <string id="Autoplay_group">Autoplay</string>
+      <string id="Autoplay_group">自動播放</string>
       <string id="Authentication_group">驗證</string>
       <string id="Bookmarks_group">書籤</string>
       <string id="Certificates_group">憑證</string>
@@ -48,8 +48,8 @@
       <string id="Search_group">搜尋</string>
       <string id="Preferences_group">偏好設定</string>
       <string id="UserMessaging_group">顯示給使用者的訊息</string>
-      <string id="DisabledCiphers_group">Disabled Ciphers</string>
-      <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
+      <string id="DisabledCiphers_group">停用加密演算法</string>
+      <string id="EncryptedMediaExtensions_group">加密媒體擴充功能</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">允許的網站</string>
       <string id="Block">封鎖的網站</string>
@@ -93,10 +93,10 @@
       <string id="Authentication_Locked_Explain">若停用此原則，可由使用者自行更改驗證偏好設定。
 
 若啟用或不設定此原則，則不允許使用者更改驗證偏好設定。</string>
-      <string id="Authentication_PrivateBrowsing">Allow authentication in private browsing</string>
-      <string id="Authentication_PrivateBrowsing_Explain">If this policy is enabled, integrated authentication is used in private browsing.
+      <string id="Authentication_PrivateBrowsing">允許在隱私瀏覽模式進行身分驗證</string>
+      <string id="Authentication_PrivateBrowsing_Explain">若啟用此原則，將可以在隱私瀏覽模式進行整合身分驗證。
 
-If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
+若停用或不設定此原則，就不會在隱私瀏覽模式進行整合身分驗證。</string>
       <string id="BlockAboutAddons">封鎖附加元件管理員</string>
       <string id="BlockAboutAddons_Explain" >若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
 
@@ -298,7 +298,7 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若啟用或不設定此原則，則會啟用硬體加速功能。</string>
       <string id="LegacyProfiles">傳統設定檔</string>
-      <string id="LegacyProfiles_Explain">若啟用此原則，Firefox 將不會嘗試對本機電腦中不同套的 Firefox 建立不同的設定檔資料夾。也等於設定 MOZ_LEGACY_PROFILES 。
+      <string id="LegacyProfiles_Explain">若啟用此原則，Firefox 將不會嘗試對本機電腦中不同套的 Firefox 建立不同的設定檔資料夾。也等於設定 MOZ_LEGACY_PROFILES。
 
 若停用或不設定此原則，Firefox 則會對每一套 Firefox 建立不同的設定檔。</string>
       <string id="LocalFileLinks">本機檔案鏈結</string>
@@ -423,26 +423,26 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="Notifications_Locked">不允許調整偏好設定</string>
       <string id="Notifications_Locked_Explain">若啟用此原則，使用者將無法調整通知偏好設定。
 
-若停用或不設定此原則，則使用者能夠自行調整位置通知偏好設定。</string>
+若停用或不設定此原則，則使用者能夠自行調整通知偏好設定。</string>
       <string id="Autoplay_Allow_Explain">若啟用此原則，將永遠針對指定的來源允許自動播放。
 
 若停用或不設定此原則，將遵循預設自動播放原則。</string>
       <string id="Autoplay_Block_Explain">若啟用此原則，將永遠針對指定的來源封鎖自動播放。
 
 若停用或不設定此原則，將遵循預設自動播放原則。</string>
-      <string id="Autoplay_Default">Default autoplay level</string>
-      <string id="Autoplay_Default_Explain">If this policy is enabled, you can choose the default autoplay level.
+      <string id="Autoplay_Default">預設自動播放等級</string>
+      <string id="Autoplay_Default_Explain">若啟用此原則，您可以自行指定預設自動播放等級。
 
-If this policy is disabled or not configured, audio is blocked by default.
+若停用或不設定此原則，預設會封鎖音訊自動播放。
 
-Note: Blocking audio and video does not work on the ESR.</string>
-      <string id="Autoplay_Locked">Do not allow preferences to be changed</string>
-      <string id="Autoplay_Locked_Explain">If this policy is enabled, autoplay preferences cannot be changed by the user.
+註：ESR 版當中無法封鎖影音播放。</string>
+      <string id="Autoplay_Locked">不允許調整偏好設定</string>
+      <string id="Autoplay_Locked_Explain">若啟用此原則，使用者將無法調整自動播放偏好設定。
 
-If this policy is disabled or not configured, the user can change autoplay preferences.</string>
-      <string id="AllowAudioVideo">Allow Audio and Video</string>
-      <string id="BlockAudio">Block Audio</string>
-      <string id="BlockAudioVideo">Block Audio and Video</string>
+若停用或不設定此原則，則使用者能夠自行調整自動播放偏好設定。</string>
+      <string id="AllowAudioVideo">允許影音自動播放</string>
+      <string id="BlockAudio">封鎖音訊自動播放</string>
+      <string id="BlockAudioVideo">封鎖影音自動播放</string>
       <string id="FirefoxHome">自訂 Firefox 首頁</string>
       <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
 
@@ -480,7 +480,7 @@ If this policy is disabled or not configured, the user can change autoplay prefe
       <string id="SanitizeOnShutdown_Cache">快取</string>
       <string id="SanitizeOnShutdown_Cache_Explain">若啟用此原則，將在瀏覽器關閉時清除快取。
 
-若停用或不設定此原則，the cache is not cleared when the browser is closed.</string>
+若停用或不設定此原則，關閉瀏覽器時就不會清除快取。</string>
       <string id="SanitizeOnShutdown_Cookies">Cookie</string>
       <string id="SanitizeOnShutdown_Cookies_Explain">若啟用此原則，將在瀏覽器關閉時清除 Cookie。
 
@@ -732,57 +732,57 @@ If this policy is disabled or not configured, the user can change autoplay prefe
 
 若啟用或不設定此原則，則會根據使用者在網址列輸入的內容推薦操作行為。</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">若停用此原則，將停用 TLS_DHE_RSA_WITH_AES_128_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_DHE_RSA_WITH_AES_128_CBC_SHA 加密演算法。</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">若停用此原則，將停用 TLS_DHE_RSA_WITH_AES_256_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_DHE_RSA_WITH_AES_256_CBC_SHA 加密演算法。</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">若停用此原則，將停用 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA 加密演算法。</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">若停用此原則，將停用 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA 加密演算法。</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">若停用此原則，將停用 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 加密演算法。
 
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 加密演算法。</string>
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">If this policy is disabled, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is disabled.
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">若停用此原則，將停用 TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 加密演算法。
 
-If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 加密演算法。</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">若停用此原則，將停用 TLS_RSA_WITH_AES_128_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_RSA_WITH_AES_128_CBC_SHA 加密演算法。</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">若停用此原則，將停用 TLS_RSA_WITH_AES_256_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA cipher is enabled.</string>
+若啟用或不設定此原則，則啟用 TLS_RSA_WITH_AES_256_CBC_SHA 加密演算法。</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">If this policy is disabled, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is disabled.
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">若停用此原則，將停用 TLS_RSA_WITH_3DES_EDE_CBC_SHA 加密演算法。
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher is enabled.</string>
-      <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
+若啟用或不設定此原則，則啟用 TLS_RSA_WITH_3DES_EDE_CBC_SHA 加密演算法。</string>
+      <string id="EncryptedMediaExtensions_Enabled">開啟加密媒體擴充功能</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">若停用此原則，需經使用者明確同意才會下載加密媒體擴充功能（例如 Widevine），Firefox 不會主動下載。
 
-If this policy is enabled or not configured, encrypted media extensions (like Widevine) are downloaded automatically and used by Firefox.</string>
-      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
-      <string id="EncryptedMediaExtensions_Locked_Explain">If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.
+若啟用或不設定此原則，Firefox 將自動下載並使用加密媒體擴充功能（例如 Widevine）。</string>
+      <string id="EncryptedMediaExtensions_Locked">鎖定加密媒體擴充功能</string>
+      <string id="EncryptedMediaExtensions_Locked_Explain">若啟用此原則且停用了 EncryptedMediaExtensions，Firefox 將不會下載加密媒體擴充功能（例如 Widevine），也不會詢問使用者是否要安裝。
 
-If this policy is not disabled or not configured, it has no effect.</string>
-      <string id="PDFjs_Enabled">Enable PDFjs</string>
-      <string id="PDFjs_Enabled_Explain">If this policy is disabled, the built-in PDF viewer is not used.
+若停用或不設定此原則，此原則就不會生效。</string>
+      <string id="PDFjs_Enabled">啟用 PDFjs</string>
+      <string id="PDFjs_Enabled_Explain">若停用此原則，將不會使用內建的 PDF 檢視器。
 
-If this policy is enabled or not configured, the built-in PDF viewer is used.</string>
-      <string id="PDFjs_EnablePermissions">Enable Permissions</string>
-      <string id="PDFjs_EnablePermissions_Explain">If this policy is enabled, the built-in PDF viewer will honor document permissions like preventing the copying of text.
+若啟用或不設定此原則，就會使用內建的 PDF 檢視器。</string>
+      <string id="PDFjs_EnablePermissions">啟用權限</string>
+      <string id="PDFjs_EnablePermissions_Explain">若啟用此原則，將會遵循文件權限設定（例如防止文字複製）。
 
-If this policy is not disabled or not configured, document permissions are ignored.</string>
+若停用或不設定此原則，就會忽略文件權限。</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
@@ -997,7 +997,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
         </textBox>
         <text>SOCKS 版本：</text>
         <dropdownList refId="SOCKSVersion"/>
-        <text>No proxy for</text>
+        <text>直接連線</text>
         <textBox refId="Passthrough">
           <label/>
         </textBox>
