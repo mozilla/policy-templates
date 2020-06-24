@@ -733,41 +733,21 @@ Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funk
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Aktionen empfohlen, die darauf basieren, was der Benutzer in die Adressleiste eingibt.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_DHE_RSA_WITH_AES_128_CBC_SHA Cipher deaktiviert.
-
-Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist der TLS_DHE_RSA_WITH_AES_128_CBC_SHA Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_DHE_RSA_WITH_AES_256_CBC_SHA Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_DHE_RSA_WITH_AES_256_CBC_SHA Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_RSA_WITH_AES_128_CBC_SHA Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_128_CBC_SHA Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_RSA_WITH_AES_256_CBC_SHA Cipher deaktiviert.
-
-If this policy is enabled or not configured, the TLS_RSA_WITH_AES_256_CBC_SHA Cipher aktiviert.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der TLS_RSA_WITH_3DES_EDE_CBC_SHA Cipher deaktiviert.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_Explain">If this policy is enabled, the corresponding cipher is disabled.
 
-If this policy is enabled or not configured, the TLS_RSA_WITH_3DES_EDE_CBC_SHA Cipher aktiviert.</string>
+If this policy is disabled, the corresponding cipher is enabled.
+
+If this policy is not configured, the corresponding cipher is enabled or disabled based on the default in Firefox.</string>
       <string id="EncryptedMediaExtensions_Enabled">DRM-Medien Erweiterungen</string>
       <string id="EncryptedMediaExtensions_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen außer der Nutzer stimmt dem Download explizit zu.
 
