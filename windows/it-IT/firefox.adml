@@ -735,41 +735,21 @@ Se questo criterio è abilitato o non configurato, saranno consigliate funzional
 
 Se questo criterio è abilitato o non configurato, saranno consigliate azioni basate su quanto l'utente ha digitato nella barra degli indirizzi.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_DHE_RSA_WITH_AES_128_CBC_SHA è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_DHE_RSA_WITH_AES_128_CBC_SHA è abilitato.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_DHE_RSA_WITH_AES_256_CBC_SHA è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_DHE_RSA_WITH_AES_256_CBC_SHA è abilitato.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA è abilitato.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA è abilitato.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 è abilitato.</string>
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">Se questo criterio è disabilitato, il cifrario TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 è abilitato.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_AES_128_CBC_SHA è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_AES_128_CBC_SHA è abilitato.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_AES_256_CBC_SHA è disabilitato.
-
-Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_AES_256_CBC_SHA è abilitato.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Se questo criterio è disabilitato, il cifrario TLS_RSA_WITH_3DES_EDE_CBC_SHA è disabilitato.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_Explain">If this policy is enabled, the corresponding cipher is disabled.
 
-Se questo criterio è abilitato o non configurato, il cifrario TLS_RSA_WITH_3DES_EDE_CBC_SHA è abilitato.</string>
+If this policy is disabled, the corresponding cipher is enabled.
+
+If this policy is not configured, the corresponding cipher is enabled or disabled based on the default in Firefox.</string>
       <string id="EncryptedMediaExtensions_Enabled">Abilita Encrypted Media Extension</string>
       <string id="EncryptedMediaExtensions_Enabled_Explain">Se questo criterio è disabilitato, le Encrypted Media Extension (come Widevine) non sono scaricate da Firefox a meno che l'utente non acconsenta ad installarle.
 

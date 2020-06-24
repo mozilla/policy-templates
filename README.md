@@ -948,7 +948,13 @@ Value (string):
 ### DisabledCiphers
 Disable specific cryptographic ciphers.
 
-**Compatibility:** Firefox 76, Firefox ESR 68.8\
+---
+**Note:**
+
+This policy was updated in Firefox 78 to allow enabling ciphers as well. Setting the value to true disables the cipher, setting the value to false enables the cipher. Previously setting the value to true or false disabled the cipher.
+
+---
+**Compatibility:** Firefox 76, Firefox ESR 68.8 (TLS_RSA_WITH_AES_128_GCM_SHA256 and TLS_RSA_WITH_AES_256_GCM_SHA384 were added in Firefox 78)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
@@ -963,6 +969,8 @@ Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_ECDSA_WITH_AES_128_G
 Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_3DES_EDE_CBC_SHA = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_256_GCM_SHA384 = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -976,6 +984,8 @@ OMA-URI:
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384
 ```
 Value (string):
 ```
@@ -1004,6 +1014,10 @@ Value (string):
       <true/> | <false/>
       <key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
       <true/> | <false/>
+      <key>TLS_RSA_WITH_AES_128_GCM_SHA256</key>
+      <true/> | <false/>
+      <key>TLS_RSA_WITH_AES_256_GCM_SHA384</key>
+      <true/> | <false/>
     </dict>
 </dict>
 ```
@@ -1021,6 +1035,8 @@ Value (string):
       "TLS_RSA_WITH_AES_128_CBC_SHA": true | false,
       "TLS_RSA_WITH_AES_256_CBC_SHA": true | false,
       "TLS_RSA_WITH_3DES_EDE_CBC_SHA": true | false
+      "TLS_RSA_WITH_AES_128_GCM_SHA256": true | false
+      "TLS_RSA_WITH_AES_256_GCM_SHA384": true | false
     }
   }
 }

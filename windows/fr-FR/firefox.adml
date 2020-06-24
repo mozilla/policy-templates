@@ -734,41 +734,21 @@ Si cette politique est activée ou non configurée, les fonctionnalités de Fire
 
 Si cette stratégie est activée ou non configurée, des actions seront recommandées en fonction de ce que l'utilisateur tape dans la barre d'URL.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_DHE_RSA_WITH_AES_128_CBC_SHA est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_DHE_RSA_WITH_AES_128_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_DHE_RSA_WITH_AES_256_CBC_SHA est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_DHE_RSA_WITH_AES_256_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 est activé.</string>
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
-      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_Explain">Si cette stratégie est désactivée, le chiffrement TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 est activé.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_RSA_WITH_AES_128_CBC_SHA est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH_AES_128_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_RSA_WITH_AES_256_CBC_SHA est désactivé.
-
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH_AES_256_CBC_SHA est activé.</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
-      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA_Explain">Si cette stratégie est désactivée, le chiffrement TLS_RSA_WITH_3DES_EDE_CBC_SHA est désactivé.
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_Explain">If this policy is enabled, the corresponding cipher is disabled.
 
-Si cette stratégie est activée ou non configurée, le chiffrement TLS_RSA_WITH_3DES_EDE_CBC_SHA est activé.</string>
+If this policy is disabled, the corresponding cipher is enabled.
+
+If this policy is not configured, the corresponding cipher is enabled or disabled based on the default in Firefox.</string>
       <string id="EncryptedMediaExtensions_Enabled">Enable Encrypted Media Extensions</string>
       <string id="EncryptedMediaExtensions_Enabled_Explain">If this policy is disabled, encrypted media extensions (like Widevine) are not downloaded by Firefox unless the user consents to installing them.
 
