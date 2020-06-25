@@ -776,6 +776,12 @@ If this policy is enabled or not configured, the Picture-in-Picture toggle is av
 If this policy is disabled, users cannot create a master password.
 
 If this policy is not configured, users can choose to create a master password.</string>
+      <string id="Handlers">Handlers</string>
+      <string id="Handlers_Explain">If this policy is enabled, you can use JSON to configure default application handlers.
+
+If this policy is disabled or not configured, Firefox defaults are used.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
@@ -1061,6 +1067,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="Handlers">
+        <multiTextBox refId="Handlers"/>
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>

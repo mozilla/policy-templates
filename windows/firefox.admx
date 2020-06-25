@@ -3627,5 +3627,12 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Handlers" class="Both" displayName="$(string.Handlers)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)"  presentation="$(presentation.Handlers)">">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF78"/>
+      <elements>
+        <multiText id="Handlers" valueName="Handlers"  maxLength="2048"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

@@ -291,6 +291,57 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>Handlers</key>
+	<dict>
+		<key>mimeTypes</key>
+		<dict>
+			<key>application/msword</key>
+			<dict>
+				<key>action</key>
+				<string>useSystemDefault</string>
+				<key>ask</key>
+				<true/> | <false/>
+			</dict>
+		</dict>
+		<key>schemes</key>
+		<dict>
+			<key>mailto</key>
+			<dict>
+				<key>action</key>
+				<string>useHelperApp</string>
+				<key>ask</key>
+				<true/> | <false/>
+				<key>handlers</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Gmail</string>
+						<key>uriTemplate</key>
+						<string>https://mail.google.com/mail/?extsrc=mailto&url=%s</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<key>extensions</key>
+		<dict>
+			<key>pdf</key>
+			<dict>
+				<key>action</key>
+				<string>useHelperApp</string>
+				<key>ask</key>
+				<true/> | <false/>
+				<key>handlers</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Adobe Acrobat</string>
+						<key>path</key>
+						<string>/System/Applications/Preview.app</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</dict>
 	<key>HardwareAcceleration</key>
 	<false/>
 	<key>Homepage</key>

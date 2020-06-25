@@ -57,6 +57,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
+| **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
@@ -2381,6 +2382,187 @@ Value (string):
       "Block": ["http://example.edu/"],
       "Default": true | false,
       "Locked": true | false
+    }
+  }
+}
+```
+
+
+
+### Handlers
+Configure default application handlers. This policy is based on the internal format of `handlers.json`.
+
+You can configure handlers based on a mime type (`mimeTypes`), a file's extension (`extensions`), or a protocol (`schemes`).
+
+Within each handler type, you specify the given mimeType/extension/scheme as a key and use the following subkeys to describe how it is handled.
+
+| Name | Description |
+| --- | --- |
+| `action`| Can be either `saveToDisk`, `useHelperApp`, `useSystemDefault`.
+| `ask` | If `true`, the user is asked if what they want to do with the file. If `false`, the action is taken without user intervention.
+| `handlers` | An array of handlers with the first one being the default. If you don't want to have a default handler, use an empty object for the first handler. Choose between path or uriTemplate.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`name` | The display name of the handler (might not be used).
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`path`| The native path to the executable to be used.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`uriTemplate`| A url to a web based application handler. The URL must be https and contain a %s to be used for substitution.
+
+**Compatibility:** Firefox 78, Firefox ESR 78\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
+{
+  "mimeTypes": {
+    "application/msword": {
+      "action": "useSystemDefault",
+      "ask": true | false
+    }
+  },
+  "schemes": {
+    "mailto": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Gmail",
+        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+      }]
+    }
+  },
+  "extensions": {
+    "pdf": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Adobe Acrobat",
+        "path": "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe"
+      }]
+    }
+  }
+}
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/Handlers
+```
+Value (string):
+```
+<enabled/>
+<data id="Handlers" value='
+{
+  "mimeTypes": {
+    "application/msword": {
+      "action": "useSystemDefault",
+      "ask": true | false
+    }
+  },
+  "schemes": {
+    "mailto": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Gmail",
+        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+      }]
+    }
+  },
+  "extensions": {
+    "pdf": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Adobe Acrobat",
+        "path": "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe"
+      }]
+    }
+  }
+}
+'/>
+```
+#### macOS
+```
+<dict>
+  <key>Handlers</key>
+  <dict>
+    <key>mimeTypes</key>
+    <dict>
+      <key>application/msword</key>
+      <dict>
+        <key>action</key>
+        <string>useSystemDefault</string>
+        <key>ask</key>
+        <true/> | <false/>
+      </dict>
+    </dict>
+    <key>schemes</key>
+    <dict>
+      <key>mailto</key>
+      <dict>
+        <key>action</key>
+        <string>useHelperApp</string>
+        <key>ask</key>
+        <true/> | <false/>
+        <key>handlers</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>Gmail</string>
+            <key>uriTemplate</key>
+            <string>https://mail.google.com/mail/?extsrc=mailto&url=%s</string>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+    <key>extensions</key>
+    <dict>
+      <key>pdf</key>
+      <dict>
+        <key>action</key>
+        <string>useHelperApp</string>
+        <key>ask</key>
+        <true/> | <false/>
+        <key>handlers</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>Adobe Acrobat</string>
+            <key>path</key>
+            <string>/System/Applications/Preview.app</string>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "mimeTypes": {
+    "application/msword": {
+      "action": "useSystemDefault",
+      "ask": false
+    }
+  },
+  "schemes": {
+    "mailto": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Gmail",
+        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+      }]
+    }
+  },
+  "extensions": {
+    "pdf": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Adobe Acrobat",
+        "path": "/usr/bin/acroread"
+      }]
     }
   }
 }
