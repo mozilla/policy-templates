@@ -2176,9 +2176,10 @@ The configuration for each extension is another dictionary that can contain the 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
 | `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension. If installing from the addons.mozilla.org, use the following URL (substituting SHORT_NAME from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/SHORT_NAME/latest.xpi. If installing from the local file system, use a file:/// URL. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi.
-| `install_sources` | Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
+| `install_sources` | A list of sources from which installing extensions is allowed. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration. If you want to allow the install of extensions from the recommended add-ons page, you must add `about:addons` to this list.
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "langpack" This setting can be used only for the default configuration.
-| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else.
+| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
+| `restricted_domains` | An array of domains on which content scripts can't be run. This setting can be used only for the default configuration.
 
 **Compatibility:** Firefox 69, Firefox ESR 68.1\
 **CCK2 Equivalent:** N/A\
@@ -2190,7 +2191,7 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
 {
   "*": {
     "blocked_install_message": "Custom error message.",
-    "install_sources": ["https://addons.mozilla.org/"],
+    "install_sources": ["about:addons","https://addons.mozilla.org/"],
     "installation_mode": "blocked",
     "allowed_types": ["extension"]
   },
@@ -2211,7 +2212,7 @@ Value (string):
 <data id="ExtensionSettings" value='
   "*": {
       "blocked_install_message": "Custom error message.",
-      "install_sources": ["https://addons.mozilla.org/"],
+      "install_sources": ["about:addons","https://addons.mozilla.org/"],
       "installation_mode": "blocked",
       "allowed_types": ["extension"]
     },
@@ -2231,6 +2232,7 @@ Value (string):
       <string>Custom error message.</string>
       <key>install_sources</key>
       <array>
+        <string>about:addons</string>
         <string>https://addons.mozilla.org/</string>
       </array>
       <key>installation_mode</key>
@@ -2257,7 +2259,7 @@ Value (string):
     "ExtensionSettings": {
       "*": {
         "blocked_install_message": "Custom error message.",
-        "install_sources": ["https://addons.mozilla.org/"],
+        "install_sources": ["about:addons","https://addons.mozilla.org/"],
         "installation_mode": "blocked",
         "allowed_types": ["extension"]
       },
