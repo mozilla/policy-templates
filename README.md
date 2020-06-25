@@ -3917,6 +3917,7 @@ Value (string):
 ```
 <enabled/>
 <data id="Permissions" value="unified | separate"/>
+```
 #### macOS
 ```
 <dict>
