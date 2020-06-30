@@ -569,6 +569,8 @@ Value (string):
 
 Trust certificates that have been added to the operating system certificate store by a user or administrator.
 
+Note: This policy only works on Windows and macOS. For Linux discussion, see [bug 1600509](https://bugzilla.mozilla.org/show_bug.cgi?id=1600509).
+
 See https://support.mozilla.org/kb/setting-certificate-authorities-firefox for more detail.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (macOS support in Firefox 63, Firefox ESR 68)\
