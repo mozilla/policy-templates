@@ -1067,6 +1067,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
       </presentation>
+      <presentation id="Handlers">
+        <multiTextBox refId="Handlers"/>
+      </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
       </presentation>
