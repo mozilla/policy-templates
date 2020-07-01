@@ -3704,10 +3704,16 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 OMA-URI: (periods are replaced by underscores)
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/boolean_preference_name
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/string_preference_name
 ```
 Value (string):
 ```
 <enabled/> or <disabled/>
+
+<enabled/>
+<enabled/>
+<data id="Preferences_String" value="string_value"/>
+
 ```
 #### macOS
 ```
