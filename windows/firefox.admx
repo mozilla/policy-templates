@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="2.0" schemaVersion="1.0">
+<policyDefinitions revision="2.01" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="2.0"/>
+  <resources minRequiredRevision="2.01"/>
   <supportedOn>
     <definitions>
       <definition name="UNSUPPORTED" displayName="$(string.UNSUPPORTED)"/>
@@ -3617,7 +3617,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="MasterPassword" class="Both" displayName="$(string.MasterPassword)" explainText="$(string.MasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="MasterPassword">
+<!--    <policy name="MasterPassword" class="Both" displayName="$(string.MasterPassword)" explainText="$(string.MasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="MasterPassword">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF78"/>
       <enabledValue>
@@ -3626,7 +3626,7 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-    </policy>
+    </policy> -->
     <policy name="Handlers" class="Both" displayName="$(string.Handlers)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)"  presentation="$(presentation.Handlers)">">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF78"/>
