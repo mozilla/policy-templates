@@ -2128,6 +2128,34 @@ Software\Policies\Mozilla\Firefox\Extensions\Install\2 = "//path/to/xpi"
 Software\Policies\Mozilla\Firefox\Extensions\Uninstall\1 = "bad_addon_id@mozilla.org"
 Software\Policies\Mozilla\Firefox\Extensions\Locked\1 = "addon_id@mozilla.org"
 ```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/Extensions_Install
+```
+Value (string):
+```
+<enabled/>
+<data id="Extensions" value="1&#xF000;https://addons.mozilla.org/firefox/downloads/somefile.xpi&#xF000;2&#xF000;//path/to/xpi"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/Extensions_Uninstall
+```
+Value (string):
+```
+<enabled/>
+<data id="Extensions" value="1&#xF000;bad_addon_id@mozilla.org"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/Extensions_Locked
+```
+Value (string):
+```
+<enabled/>
+<data id="Extensions" value="1&#xF000;addon_id@mozilla.org"/>
+```
 #### macOS
 ```
 <dict>
@@ -3704,16 +3732,19 @@ Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_v
 OMA-URI: (periods are replaced by underscores)
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/boolean_preference_name
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/string_preference_name
 ```
 Value (string):
 ```
 <enabled/> or <disabled/>
-
-<enabled/>
+```
+OMA-URI: (periods are replaced by underscores)
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/string_preference_name
+```
+Value (string):
+```
 <enabled/>
 <data id="Preferences_String" value="string_value"/>
-
 ```
 #### macOS
 ```
