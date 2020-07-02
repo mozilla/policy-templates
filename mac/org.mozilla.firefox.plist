@@ -300,7 +300,7 @@
 				<key>action</key>
 				<string>useSystemDefault</string>
 				<key>ask</key>
-				<true/> | <false/>
+				<false/>
 			</dict>
 		</dict>
 		<key>schemes</key>
@@ -310,7 +310,7 @@
 				<key>action</key>
 				<string>useHelperApp</string>
 				<key>ask</key>
-				<true/> | <false/>
+				<false/>
 				<key>handlers</key>
 				<array>
 					<dict>
@@ -329,7 +329,7 @@
 				<key>action</key>
 				<string>useHelperApp</string>
 				<key>ask</key>
-				<true/> | <false/>
+				<false/>
 				<key>handlers</key>
 				<array>
 					<dict>
@@ -476,7 +476,7 @@
 		</dict>
 	</dict>
 	<key>PictureInPicture</key>
-	<true/> | <false/>
+	<false/>
 	<key>PopupBlocking</key>
 	<dict>
 		<key>Allow</key>
