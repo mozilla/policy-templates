@@ -317,7 +317,7 @@
 						<key>name</key>
 						<string>Gmail</string>
 						<key>uriTemplate</key>
-						<string>https://mail.google.com/mail/?extsrc=mailto&url=%s</string>
+						<string>https://mail.google.com/mail/?extsrc=mailto&amp;url=%s</string>
 					</dict>
 				</array>
 			</dict>

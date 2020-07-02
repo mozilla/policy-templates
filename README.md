@@ -2508,7 +2508,7 @@ Value (string):
       "ask": true | false,
       "handlers": [{
         "name": "Gmail",
-        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&amp;url=%s"
       }]
     }
   },
