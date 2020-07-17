@@ -729,7 +729,7 @@ If this policy is enabled or not configured, extensions will be recommended as t
       <string id="UserMessaging_FeatureRecommendations">Feature Recommendations</string>
       <string id="UserMessaging_FeatureRecommendations_Explain">If this policy is disabled, Firefox features will not be recommended as the user uses Firefox.
 
-If this policy is enabled or not configured, Firefox features wil be recommended as the user uses Firefox.</string>
+If this policy is enabled or not configured, Firefox features will be recommended as the user uses Firefox.</string>
       <string id="UserMessaging_UrlbarInterventions">Urlbar Interventions</string>
       <string id="UserMessaging_UrlbarInterventions_Explain">If this policy is disabled, actions will not be recommended based on what the user types in the URL bar.
 
