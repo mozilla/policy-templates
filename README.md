@@ -2584,30 +2584,34 @@ Value (string):
 #### policies.json
 ```
 {
-  "mimeTypes": {
-    "application/msword": {
-      "action": "useSystemDefault",
-      "ask": false
-    }
-  },
-  "schemes": {
-    "mailto": {
-      "action": "useHelperApp",
-      "ask": true | false,
-      "handlers": [{
-        "name": "Gmail",
-        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
-      }]
-    }
-  },
-  "extensions": {
-    "pdf": {
-      "action": "useHelperApp",
-      "ask": true | false,
-      "handlers": [{
-        "name": "Adobe Acrobat",
-        "path": "/usr/bin/acroread"
-      }]
+  "policies": {
+    "Handlers": {
+      "mimeTypes": {
+        "application/msword": {
+          "action": "useSystemDefault",
+          "ask": false
+        }
+      },
+      "schemes": {
+        "mailto": {
+          "action": "useHelperApp",
+          "ask": true | false,
+          "handlers": [{
+            "name": "Gmail",
+            "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+          }]
+        }
+      },
+      "extensions": {
+        "pdf": {
+          "action": "useHelperApp",
+          "ask": true | false,
+          "handlers": [{
+            "name": "Adobe Acrobat",
+            "path": "/usr/bin/acroread"
+          }]
+        }
+      }
     }
   }
 }
