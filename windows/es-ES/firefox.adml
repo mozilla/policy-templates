@@ -29,6 +29,9 @@
       <string id="SUPPORTED_FF77">Firefox 77 o posterior, Firefox 68.9 ESR o posterior</string>
       <string id="SUPPORTED_FF77_ONLY">Firefox 77 o posterior</string>
       <string id="SUPPORTED_FF78">Firefox 78 o posterior</string>
+      <string id="SUPPORTED_FF79">Firefox 79 o posterior, Firefox 78.1 ESR o posterior</string>
+      <string id="SUPPORTED_FF80">Firefox 80 o posterior, Firefox 78.2 ESR o posterior</string>
+      <string id="SUPPORTED_FF81">Firefox 81 o posterior, Firefox 78.3 ESR o posterior</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permisos</string>
       <string id="Camera_group">Cámara</string>

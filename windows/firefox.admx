@@ -31,6 +31,9 @@
       <definition name="SUPPORTED_FF77" displayName="$(string.SUPPORTED_FF77)"/>
       <definition name="SUPPORTED_FF77_ONLY" displayName="$(string.SUPPORTED_FF77_ONLY)"/>
       <definition name="SUPPORTED_FF78" displayName="$(string.SUPPORTED_FF78)"/>
+      <definition name="SUPPORTED_FF79" displayName="$(string.SUPPORTED_FF79)"/>
+      <definition name="SUPPORTED_FF80" displayName="$(string.SUPPORTED_FF80)"/>
+      <definition name="SUPPORTED_FF81" displayName="$(string.SUPPORTED_FF81)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -3255,7 +3258,7 @@
     </policy>
     <policy name="media_peerconnection_ice_obfuscate_host_addresses_blocklist" class="Both" displayName="$(string.media_peerconnection_ice_obfuscate_host_addresses_blocklist)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
       <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF68" />
+      <supportedOn ref="SUPPORTED_FF79" />
       <elements >
         <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.blocklist" required="true" />
       </elements>
