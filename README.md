@@ -3702,7 +3702,10 @@ Set and lock certain preferences.
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Widevine plugin is not downloaded.
 | media.peerconnection.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, WebRTC is disabled
-| media.peerconnection.ice.obfuscate_host_addresses.whitelist | string | Firefox 72, Firefox ESR 68.4 | N/A
+| media.peerconnection.ice.obfuscate_host_addresses.whitelist (Deprecated) | string | Firefox 72, Firefox ESR 68.4 | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of domains for which mDNS hostname obfuscation is
+disabled
+| media.peerconnection.ice.obfuscate_host_addresses.blocklist | string | Firefox 79, Firefox ESR 78.1 | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of domains for which mDNS hostname obfuscation is
 disabled
 | network.dns.disableIPv6 | boolean | Firefox 68, Firefox ESR 68 | false
