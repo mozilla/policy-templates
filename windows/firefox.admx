@@ -3253,6 +3253,13 @@
         <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.whitelist" required="true" />
       </elements>
     </policy>
+    <policy name="media_peerconnection_ice_obfuscate_host_addresses_blocklist" class="Both" displayName="$(string.media_peerconnection_ice_obfuscate_host_addresses_blocklist)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
+      <parentCategory ref="Preferences" />
+      <supportedOn ref="SUPPORTED_FF68" />
+      <elements >
+        <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.blocklist" required="true" />
+      </elements>
+    </policy>
     <policy name="security_osclientcerts_autoload" class="Both" displayName="$(string.security_osclientcerts_autoload)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.osclientcerts.autoload">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF72"/>
