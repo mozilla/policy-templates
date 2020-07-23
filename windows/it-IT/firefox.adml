@@ -773,8 +773,8 @@ Se questo criterio è disabilitato o non configurato, i permessi del documento s
       <string id="PictureInPicture_Explain">Se questo criterio è disabilitato, l'interruttore Picture-in-Picture non appare nei video.
 
 Se questo criterio è abilitato o non configurato, l'interruttore Picture-in-Picture è disponibile per i video.</string>
-      <string id="MasterPassword">Password principale</string>
-      <string id="MasterPassword_Explain">Se questo criterio è abilitato, è richiesto impostare una password principale.
+      <string id="PrimaryPassword">Password principale</string>
+      <string id="PrimaryPassword_Explain">Se questo criterio è abilitato, è richiesto impostare una password principale.
 
 Se questo criterio è disabilitato, gli utenti non possono creare una password principale.
 

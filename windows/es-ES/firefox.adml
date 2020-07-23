@@ -773,12 +773,12 @@ Si esta política no está deshabilitada o no está configurada, se ignorarán l
       <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
 
 If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
-      <string id="MasterPassword">Master Password</string>
-      <string id="MasterPassword_Explain">If this policy is enabled, a master password is required.
+      <string id="PrimaryPassword">Primary (Master) Password</string>
+      <string id="PrimaryPassword_Explain">If this policy is enabled, a primary password is required.
 
-If this policy is disabled, users cannot create a master password.
+If this policy is disabled, users cannot create a primary password.
 
-If this policy is not configured, users can choose to create a master password.</string>
+If this policy is not configured, users can choose to create a primary password.</string>
       <string id="Handlers">Handlers</string>
       <string id="Handlers_Explain">If this policy is enabled, you can use JSON to configure default application handlers.
 

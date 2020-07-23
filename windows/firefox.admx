@@ -3627,16 +3627,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-<!--    <policy name="MasterPassword" class="Both" displayName="$(string.MasterPassword)" explainText="$(string.MasterPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="MasterPassword">
+    <policy name="PrimaryPassword" class="Both" displayName="$(string.PrimaryPassword)" explainText="$(string.PrimaryPassword_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="PrimaryPassword">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF78"/>
+      <supportedOn ref="SUPPORTED_FF79"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-    </policy> -->
+    </policy>
     <policy name="Handlers" class="Both" displayName="$(string.Handlers)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)"  presentation="$(presentation.Handlers)">">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF78"/>

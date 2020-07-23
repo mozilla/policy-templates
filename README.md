@@ -62,6 +62,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
+| **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -2933,6 +2934,43 @@ Value (string):
   "policies": {
     "LocalFileLinks": ["http://example.org/",
                        "http://example.edu/"]
+  }
+}
+```
+### PrimaryPassword
+Require or prevent using a primary (formerly master) password.
+
+If this value is true, a primary password is required. If this value is false, it works the same as `DisableMasterPasswordCreation` and removes the primary password functionality.
+
+**Compatibility:** Firefox 79, Firefox ESR 78.1\
+**CCK2 Equivalent:** `noMasterPassword`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PrimaryPassword = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PrimaryPassword
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>PrimaryPassword</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PrimaryPassword": true | false
   }
 }
 ```

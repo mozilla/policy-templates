@@ -771,8 +771,8 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
       <string id="PictureInPicture_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Bild-in-Bild Funktion deaktiviert.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist die Bild-in-Bild Funktion verfügbar.</string>
-      <string id="MasterPassword">Masterpasswort</string>
-      <string id="MasterPassword_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist das Setzen eines Masterpasswortes erforderlich.
+      <string id="PrimaryPassword">Masterpasswort</string>
+      <string id="PrimaryPassword_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist das Setzen eines Masterpasswortes erforderlich.
 
 Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Setzen eines Masterpasswortes nicht möglich.
 
