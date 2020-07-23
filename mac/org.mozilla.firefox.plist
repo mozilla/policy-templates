@@ -374,6 +374,8 @@
 		<string>http://example.org</string>
 		<string>http://example.edu</string>
 	</array>
+	<key>PrimaryPassword</key>
+	<true/>
 	<key>NetworkPrediction</key>
 	<false/>
 	<key>NewTabPage</key>
