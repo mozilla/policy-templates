@@ -55,6 +55,7 @@
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Siti consentiti</string>
+      <string id="AllowSession">Siti consentiti (Session Only)</string>
       <string id="Block">Siti bloccati</string>
       <string id="AppAutoUpdate">Aggiornamento automatico applicazione</string>
       <string id="AppAutoUpdate_Explain">Se questo criterio è abilitato, Firefox è aggiornato automaticamente senza l'approvazione dell'utente.
@@ -347,6 +348,9 @@ Se questo criterio non è configurato o è abilitato, è possibile installare co
       <string id="Cookies_Allow_Explain">Se questo criterio è abilitato, i cookie dai siti indicati sono sempre consentiti. Se è specificato un dominio di primo livello (http://example.org), i cookie sono consentiti anche da tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, viene seguita la politica predefinita per i cookie.</string>
+      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">Se questo criterio è abilitato, i cookie dai siti indicati sono bloccati. Se è specificato un dominio di primo livello (http://example.org), i cookie sono bloccati anche da tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, i cookie non sono bloccati per impostazione predefinita.</string>

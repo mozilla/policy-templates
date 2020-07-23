@@ -55,6 +55,7 @@
       <string id="EncryptedMediaExtensions_group">加密媒體擴充功能</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">允許的網站</string>
+      <string id="AllowSession">允許的網站 (Session Only)</string>
       <string id="Block">封鎖的網站</string>
       <string id="AppAutoUpdate">應用程式自動更新</string>
       <string id="AppAutoUpdate_Explain">若啟用此原則，Firefox 會不經使用者同意自動更新。
@@ -345,6 +346,9 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="Cookies_Allow_Explain">若啟用此原則，將允許來自指定來源網址的 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的 Cookie。
 
 若停用或不設定此原則，則遵循預設的 Cookie 原則。</string>
+      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">若啟用此原則，將封鎖來自指定來源網址的 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將封鎖所有來自子網域的 Cookie。
 
 若停用或不設定此原則，則預設不封鎖 Cookie。</string>

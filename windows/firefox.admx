@@ -283,6 +283,13 @@
         <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Cookies\Allow" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="Cookies_AllowSession" class="Both" displayName="$(string.AllowSession)" explainText="$(string.Cookies_AllowSession_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_FF79"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Cookies\AllowSession" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="Cookies_Block" class="Both" displayName="$(string.Block)" explainText="$(string.Cookies_Block_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF60"/>

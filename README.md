@@ -680,6 +680,8 @@ Configure cookie preferences.
 
 `Allow` is a list of origins (not domains) where cookies are always allowed. You must include http or https.
 
+`AllowSession` is a list of origins (not domains) where cookies are only allowed for the current session. You must include http or https.
+
 `Block` is a list of origins (not domains) where cookies are always blocked. You must include http or https.
 
 `Default` determines whether cookies are accepted at all.
@@ -692,13 +694,14 @@ Configure cookie preferences.
 
 `Locked` prevents the user from changing cookie preferences.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker was added in Firefox 63)\
+**Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker added in Firefox 63, AllowSession added in Firefox 79/78.1)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.cookie.cookieBehavior`,`network.cookie.lifetimePolicy`
 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Cookies\Allow\1 = "https://example.com"
+Software\Policies\Mozilla\Firefox\Cookies\AllowSession\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Cookies\Block\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Cookies\Default = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty = "always" | "never" | "from-visited"
@@ -715,6 +718,15 @@ Value (string):
 ```
 <enabled/>
 <data id="Cookies_Allow" value="1&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_AllowSession
+```
+Value (string):
+```
+<enabled/>
+<data id="Cookies_Allow" value="1&#xF000;https://example.edu"/>
 ```
 OMA-URI:
 ```
@@ -775,6 +787,10 @@ Value (string):
     <array>
       <string>http://example.com</string>
     </array>
+    <key>AllowSession</key>
+    <array>
+      <string>http://example.edu</string>
+    </array>
     <key>Block</key>
     <array>
       <string>http://example.org</string>
@@ -798,6 +814,7 @@ Value (string):
   "policies": {
     "Cookies": {
       "Allow": ["http://example.org/"],
+      "AllowSession": ["http://example.edu/"],
       "Block": ["http://example.edu/"],
       "Default": true | false,
       "AcceptThirdParty": "always" | "never" | "from-visited",

@@ -55,6 +55,7 @@
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Erlaubte Seiten</string>
+      <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
       <string id="AppAutoUpdate">Automatisches Update</string>
       <string id="AppAutoUpdate_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox automatisch ohne Zustimmung des Benutzers aktualisiert.
@@ -347,6 +348,9 @@ Wenn Sie die Richtlinieneinstellungen nicht konfigurieren oder aktivieren, könn
       <string id="Cookies_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Cookies immer für die angegebenen URLs erlaubt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), sind Cookies auch für alle Sub-Domains zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Cookie Richtlinie verwendet.</string>
+      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Cookies für die angegebenen URLs gesperrt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), werden Cookies von allen Sub-Domains ebenfalls blockiert.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind Cookies standardmäßig nicht blockiert.</string>

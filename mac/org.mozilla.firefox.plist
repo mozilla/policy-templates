@@ -97,6 +97,10 @@
 		<array>
 			<string>https://www.example.org/</string>
 		</array>
+		<key>Allowsession</key>
+		<array>
+			<string>https://www.example.edu/</string>
+		</array>
 		<key>Block</key>
 		<array>
 			<string>https://www.example.edu/</string>

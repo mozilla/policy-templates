@@ -55,6 +55,7 @@
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Allowed Sites</string>
+      <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
       <string id="AppAutoUpdate">Application Autoupdate</string>
       <string id="AppAutoUpdate_Explain">If this policy is enabled, Firefox is automatically updated without user approval.
@@ -345,6 +346,9 @@ If this policy is disabled or not configured, the default add-on policy is follo
 
 If this policy is not configured or enabled, add-ons can be installed.</string>
       <string id="Cookies_Allow_Explain">If this policy is enabled, cookies are always allowed for the origins indicated. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
+      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the origins indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
