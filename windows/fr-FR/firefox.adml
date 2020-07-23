@@ -55,6 +55,7 @@
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Sites autorisés</string>
+      <string id="AllowSession">Sites autorisés (Session Only)</string>
       <string id="Block">Sites bloqués</string>
       <string id="AppAutoUpdate">Application Autoupdate</string>
       <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis a jour sans aprobation de l'utilisateur.
@@ -347,6 +348,9 @@ Si cette stratégie n'est ni configurée ni activée, des modules complémentair
       <string id="Cookies_Allow_Explain">Si cette stratégie est activée, les cookies sont toujours autorisés pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les cookies sont également autorisés pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie de cookie par défaut est appliquée.</string>
+      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">Si cette stratégie est activée, les cookies sont bloqués pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les cookies sont également bloqués pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, les cookies ne sont pas bloqués par défaut.</string>

@@ -55,6 +55,7 @@
       <string id="EncryptedMediaExtensions_group">Extensiones de medios cifrados</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">Sitios permitidos</string>
+      <string id="AllowSession">Sitios permitidos (Session Only)</string>
       <string id="Block">Sitios bloqueados</string>
       <string id="AppAutoUpdate">Actualización automática de aplicación</string>
       <string id="AppAutoUpdate_Explain">Si esta política está habilitada, Firefox se actualizará automáticamente sin la aprobación del usuario.
@@ -347,6 +348,9 @@ Si esta política no está configurada o habilitada, se podrán instalar complem
       <string id="Cookies_Allow_Explain">Si esta política está habilitada, las cookies siempre estarán permitidas para los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se permitirán cookies para todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política de cookies predeterminada.</string>
+      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+
+If this policy is disabled or not configured, the default cookie policy is followed.</string>
       <string id="Cookies_Block_Explain">Si esta política está habilitada, las cookies estarán bloqueadas por los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se bloquearán las cookies de todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, las cookies no estarán bloqueadas de manera predeterminada.</string>
