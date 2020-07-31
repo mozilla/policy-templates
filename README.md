@@ -19,8 +19,6 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
 | **[`Certificates -> Install`](#certificates--install)** | Install certificates into the Firefox certificate store.
 | **[`Cookies`](#cookies)** | Configure cookie preferences.
-| **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** | Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
-| **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
 | **[`DisabledCiphers`](#disabledciphers)** | Disable ciphers.
@@ -32,6 +30,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`DisableFirefoxStudies`](#disablefirefoxstudies)** | Disable Firefox studies (Shield).
 | **[`DisableForgetButton`](#disableforgetbutton)** | Disable the "Forget" button.
 | **[`DisableFormHistory`](#disableformhistory)** | Turn off saving information on web forms and the search bar.
+| **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisablePasswordReveal`](#disablepasswordreveal)** | Do not allow passwords to be revealed in saved logins.
 | **[`DisablePocket`](#disablepocket)** | Remove Pocket in the Firefox UI.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
@@ -39,6 +38,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
 | **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
 | **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
+| **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** | Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
@@ -862,6 +862,10 @@ Value (string):
 ```
 ### DisableMasterPasswordCreation
 Remove the master password functionality.
+
+If this value is true, it works the same as setting [`PrimaryPassword`](#primarypassword) to false and removes the primary password functionality.
+
+If both DisableMasterPasswordCreation and PrimaryPassword are used, DisableMasterPasswordCreation takes precedent.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `noMasterPassword`\
@@ -2957,7 +2961,9 @@ Value (string):
 ### PrimaryPassword
 Require or prevent using a primary (formerly master) password.
 
-If this value is true, a primary password is required. If this value is false, it works the same as `DisableMasterPasswordCreation` and removes the primary password functionality.
+If this value is true, a primary password is required. If this value is false, it works the same as if [`DisableMasterPasswordCreation`](#disablemasterpasswordcreation) was true and removes the primary password functionality.
+
+If both DisableMasterPasswordCreation and PrimaryPassword are used, DisableMasterPasswordCreation takes precedent.
 
 **Compatibility:** Firefox 79, Firefox ESR 78.1\
 **CCK2 Equivalent:** `noMasterPassword`\
