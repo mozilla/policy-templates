@@ -4641,11 +4641,11 @@ Value (string):
 ```
 ### UserMessaging
 
-Prevent installing search engines from webpages.
+Prevent Firefox from messaging the user in certain situations.
 
 `WhatsNew` Remove the "What's New" icon and menuitem. (Firefox 75 only)
 
-`ExtensionRecommendations` Don't recommend extensions.
+`ExtensionRecommendations` Don't recommend extensions while the user is visiting web pages.
 
 `FeatureRecommendations` Don't recommend browser features.
 
