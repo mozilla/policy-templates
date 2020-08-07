@@ -330,7 +330,7 @@ In either case, the user will be able to change the value (it is not locked).</s
       <string id="PopupBlocking_Allow_Explain">If this policy is enabled, pop-up windows are always allowed for the origins indicated. If a top level domain is specified (http://example.org), pop-up windows are allowed for all subdomains as well.
 
 If this policy is disabled or not configured, the default pop-up policy is followed.</string>
-      <string id="PopupBlocking_Default">Allow pop-ups from websites</string>
+      <string id="PopupBlocking_Default">Block pop-ups from websites</string>
       <string id="PopupBlocking_Default_Explain">If this policy is disabled, pop-up windows are allowed from websites by default.
 
 If this policy is not configured or enabled, popups are not allowed from websites.</string>
