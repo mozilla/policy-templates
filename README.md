@@ -3906,7 +3906,7 @@ To specify ports, append them to the hostnames with a colon (:).
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\Proxy\Mode = "none", "system", "manual", "autoDetect", "autoConfig"
+Software\Policies\Mozilla\Firefox\Proxy\Mode = "none" | "system" | "manual" | "autoDetect" | "autoConfig"
 Software\Policies\Mozilla\Firefox\Proxy\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\=Proxy\HTTPProxy = https://httpproxy.example.com
 Software\Policies\Mozilla\Firefox\Proxy\UseHTTPProxyForAllProtocols = 0x1 | 0x0
@@ -3977,7 +3977,7 @@ Value (string):
 {
   "policies": {
     "Proxy": {
-      "Mode": "none", "system", "manual", "autoDetect", "autoConfig",
+      "Mode": "none" | "system" | "manual" | "autoDetect" | "autoConfig",
       "Locked": true | false,
       "HTTPProxy": "hostname",
       "UseHTTPProxyForAllProtocols": true | false,
