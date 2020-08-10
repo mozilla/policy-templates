@@ -2478,7 +2478,7 @@ Within each handler type, you specify the given mimeType/extension/scheme as a k
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
+Software\Policies\Mozilla\Firefox\Handlers (REG_MULTI_SZ) =
 {
   "mimeTypes": {
     "application/msword": {
