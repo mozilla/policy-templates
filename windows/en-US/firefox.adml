@@ -39,6 +39,7 @@
       <string id="Location_group">Location</string>
       <string id="Notifications_group">Notifications</string>
       <string id="Autoplay_group">Autoplay</string>
+      <string id="VirtualReality_group">Virtual Reality</string>
       <string id="Authentication_group">Authentication</string>
       <string id="Bookmarks_group">Bookmarks</string>
       <string id="Certificates_group">Certificates</string>
@@ -452,6 +453,20 @@ If this policy is disabled or not configured, the user can change autoplay prefe
       <string id="AllowAudioVideo">Allow Audio and Video</string>
       <string id="BlockAudio">Block Audio</string>
       <string id="BlockAudioVideo">Block Audio and Video</string>
+      <string id="VirtualReality_Allow_Explain">If this policy is enabled, access to virtual reality devices is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default virtual reality policy is followed.</string>
+      <string id="VirtualReality_Block_Explain">If this policy is enabled, access to virtual reality devices is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to virtual reality devices is not blocked by default.</string>
+      <string id="VirtualReality_BlockNewRequests">Block new requests asking to access virtual reality devices.</string>
+      <string id="VirtualReality_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access virtual reality devices.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to virtual reality devices.</string>
+      <string id="VirtualReality_Locked">Do not allow preferences to be changed</string>
+      <string id="VirtualReality_Locked_Explain">If this policy is enabled, virtual reality preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their virtual reality preferences.</string>
       <string id="FirefoxHome">Customize Firefox Home</string>
       <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
 

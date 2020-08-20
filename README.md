@@ -3328,7 +3328,7 @@ Value (string):
 }
 ```
 ### Permissions
-Set permissions associated with camera, microphone, location, notifications, and autoplay. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
+Set permissions associated with camera, microphone, location, notifications, autoplay, and virtual reality. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
 
 `Allow` is a list of origins where the feature is allowed.
 
@@ -3340,9 +3340,9 @@ Set permissions associated with camera, microphone, location, notifications, and
 
 `Default` specifies the default value for Autoplay. block-audio-video is not supported on Firefox ESR 68.
 
-**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8)\
+**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8, VirtualReality added in Firefox 80, Firefox ESR 78.2)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`,`media.autoplay.default`
+**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`,`media.autoplay.default`.`permissions.default.xr`
 
 #### Windows (GPO)
 ```
@@ -3367,6 +3367,10 @@ Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\1 = "https://exampl
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Default = "allow-audio-video" | "block-audio" | "block-audio-video"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -3440,6 +3444,40 @@ Value (string):
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Autoplay/Autoplay_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_Allow
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.org"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_Block
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.edu"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_BlockNewRequests
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_Locked
 ```
 Value (string):
 ```
