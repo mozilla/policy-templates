@@ -39,6 +39,7 @@
       <string id="Location_group">Standort</string>
       <string id="Notifications_group">Benachrichtigungen</string>
       <string id="Autoplay_group">Automatische Wiedergabe</string>
+      <string id="VirtualReality_group">Virtual Reality</string>
       <string id="Authentication_group">Authentifizierung</string>
       <string id="Bookmarks_group">Lesezeichen</string>
       <string id="Certificates_group">Zertifikate</string>
@@ -452,6 +453,20 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="AllowAudioVideo">Automatische Audio- und Videowiedergabe erlauben</string>
       <string id="BlockAudio">Automatische Audiowiedergabe blockieren</string>
       <string id="BlockAudioVideo">Automatische Audio- und Videowiedergabe blockieren</string>
+      <string id="VirtualReality_Allow_Explain">If this policy is enabled, access to virtual reality devices is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default virtual reality policy is followed.</string>
+      <string id="VirtualReality_Block_Explain">If this policy is enabled, access to virtual reality devices is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to virtual reality devices is not blocked by default.</string>
+      <string id="VirtualReality_BlockNewRequests">Block new requests asking to access virtual reality devices.</string>
+      <string id="VirtualReality_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access virtual reality devices.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to virtual reality devices.</string>
+      <string id="VirtualReality_Locked">Do not allow preferences to be changed</string>
+      <string id="VirtualReality_Locked_Explain">If this policy is enabled, virtual reality preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their virtual reality preferences.</string>
       <string id="FirefoxHome">Firefox Home anpassen</string>
       <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 

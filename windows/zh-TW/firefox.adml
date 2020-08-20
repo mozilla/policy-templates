@@ -39,6 +39,7 @@
       <string id="Location_group">位置</string>
       <string id="Notifications_group">通知</string>
       <string id="Autoplay_group">自動播放</string>
+      <string id="VirtualReality_group">Virtual Reality</string>
       <string id="Authentication_group">驗證</string>
       <string id="Bookmarks_group">書籤</string>
       <string id="Certificates_group">憑證</string>
@@ -450,6 +451,20 @@ If this policy is disabled or not configured, the default cookie policy is follo
       <string id="AllowAudioVideo">允許影音自動播放</string>
       <string id="BlockAudio">封鎖音訊自動播放</string>
       <string id="BlockAudioVideo">封鎖影音自動播放</string>
+      <string id="VirtualReality_Allow_Explain">If this policy is enabled, access to virtual reality devices is always allowed for the origins indicated.
+
+If this policy is disabled or not configured, the default virtual reality policy is followed.</string>
+      <string id="VirtualReality_Block_Explain">If this policy is enabled, access to virtual reality devices is blocked for the origins indicated.
+
+If this policy is disabled or not configured, access to virtual reality devices is not blocked by default.</string>
+      <string id="VirtualReality_BlockNewRequests">Block new requests asking to access virtual reality devices.</string>
+      <string id="VirtualReality_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access virtual reality devices.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to virtual reality devices.</string>
+      <string id="VirtualReality_Locked">Do not allow preferences to be changed</string>
+      <string id="VirtualReality_Locked_Explain">If this policy is enabled, virtual reality preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their virtual reality preferences.</string>
       <string id="FirefoxHome">自訂 Firefox 首頁</string>
       <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
 
