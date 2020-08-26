@@ -2351,7 +2351,7 @@ Software\Policies\Mozilla\Firefox\ExtensionUpdate = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ExtensionUpdate
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ExtensionUpdate
 ```
 Value (string):
 ```
@@ -4486,7 +4486,7 @@ Software\Policies\Mozilla\Firefox\SearchSuggestEnabled = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/SearchSuggestEnabled
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Search/SearchSuggestEnabled
 ```
 Value (string):
 ```
