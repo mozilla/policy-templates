@@ -2025,15 +2025,43 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/TrackingProtection
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/A_TrackingProtection_Value
 ```
 Value (string):
 ```
-<enabled/>
-<data id="TrackingProtectionLocked" value="true | false"/>
-<data id="Cryptomining" value="true | false"/>
-<data id="Fingerprinting" value="true | false"/>
-<data id=TrackingProtection_Exceptions" value="1&#xF000;https://example.com"/>
+<enabled/>or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/B_TrackingProtection_Cryptomining
+```
+Value (string):
+```
+<enabled/>or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/C_TrackingProtection_Fingerprinting
+```
+Value (string):
+```
+<enabled/>or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/D_TrackingProtection_Exceptions
+```
+Value (string):
+```
+<data id="TrackingProtection_Exceptions" value="1&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/E_TrackingProtection_Locked
+```
+Value (string):
+```
+<enabled/>or <disabled/>
 ```
 #### macOS
 ```
