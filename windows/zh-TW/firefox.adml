@@ -39,7 +39,7 @@
       <string id="Location_group">位置</string>
       <string id="Notifications_group">通知</string>
       <string id="Autoplay_group">自動播放</string>
-      <string id="VirtualReality_group">Virtual Reality</string>
+      <string id="VirtualReality_group">虛擬實境</string>
       <string id="Authentication_group">驗證</string>
       <string id="Bookmarks_group">書籤</string>
       <string id="Certificates_group">憑證</string>
@@ -56,7 +56,7 @@
       <string id="EncryptedMediaExtensions_group">加密媒體擴充功能</string>
       <string id="PDFjs_group">PDFjs</string>
       <string id="Allow">允許的網站</string>
-      <string id="AllowSession">允許的網站 (Session Only)</string>
+      <string id="AllowSession">允許的網站（僅當次瀏覽階段）</string>
       <string id="Block">封鎖的網站</string>
       <string id="AppAutoUpdate">應用程式自動更新</string>
       <string id="AppAutoUpdate_Explain">若啟用此原則，Firefox 會不經使用者同意自動更新。
@@ -293,7 +293,7 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若啟用或不設定此原則，將自動更新擴充套件。</string>
       <string id="ExtensionSettings">擴充套件管理</string>
-      <string id="ExtensionSettings_Explain">若啟用此原則，您可以用 JSON 來描述擴充套件管理原則。
+      <string id="ExtensionSettings_Explain">若啟用此原則，您可以用 JSON 檔案來描述擴充套件管理原則。
 
 若停用或不設定此原則，將不會管理擴充套件。
 
@@ -347,9 +347,9 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="Cookies_Allow_Explain">若啟用此原則，將允許來自指定來源網址的 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的 Cookie。
 
 若停用或不設定此原則，則遵循預設的 Cookie 原則。</string>
-      <string id="Cookies_AllowSession_Explain">If this policy is enabled, cookies are allowed for the origins indicated, but removed at the end of the session. If a top level domain is specified (http://example.org), cookies are allowed for all subdomains as well.
+      <string id="Cookies_AllowSession_Explain">若啟用此原則，將允許來自指定來源網址的 Cookie，但在關閉瀏覽器時清除這些 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的 Cookie。
 
-If this policy is disabled or not configured, the default cookie policy is followed.</string>
+若停用或不設定此原則，則遵循預設的 Cookie 原則。</string>
       <string id="Cookies_Block_Explain">若啟用此原則，將封鎖來自指定來源網址的 Cookie。若指定了頂級網域名稱（例如 http://example.org），也將封鎖所有來自子網域的 Cookie。
 
 若停用或不設定此原則，則預設不封鎖 Cookie。</string>
@@ -363,7 +363,7 @@ If this policy is disabled or not configured, the default cookie policy is follo
 若停用或未設定此原則，或是不允許 Cookie，則忽略此設定。</string>
       <string id="Cookies_AcceptThirdParty_All">總是接受</string>
       <string id="Cookies_AcceptThirdParty_None">永不接受</string>
-      <string id="Cookies_AcceptThirdParty_FromVisited">只接受來自造訪過網站的 Cookie visited</string>
+      <string id="Cookies_AcceptThirdParty_FromVisited">只接受來自造訪過網站的 Cookie</string>
       <string id="Cookies_ExpireAtSessionEnd">保留 Cookie 直到 Firefox 關閉</string>
       <string id="Cookies_ExpireAtSessionEnd_Explain">若啟用此原則並允許 Cookie，Cookie 將在 Firefox 時失效。
 
@@ -451,20 +451,20 @@ If this policy is disabled or not configured, the default cookie policy is follo
       <string id="AllowAudioVideo">允許影音自動播放</string>
       <string id="BlockAudio">封鎖音訊自動播放</string>
       <string id="BlockAudioVideo">封鎖影音自動播放</string>
-      <string id="VirtualReality_Allow_Explain">If this policy is enabled, access to virtual reality devices is always allowed for the origins indicated.
+      <string id="VirtualReality_Allow_Explain">若啟用此原則，將總是允許指定來源網址存取虛擬實境裝置。
 
-If this policy is disabled or not configured, the default virtual reality policy is followed.</string>
-      <string id="VirtualReality_Block_Explain">If this policy is enabled, access to virtual reality devices is blocked for the origins indicated.
+若停用或不設定此原則，則遵循預設的虛擬實境裝置存取原則。</string>
+      <string id="VirtualReality_Block_Explain">若啟用此原則，將封鎖指定來源網址存取虛擬實境裝置。
 
-If this policy is disabled or not configured, access to virtual reality devices is not blocked by default.</string>
-      <string id="VirtualReality_BlockNewRequests">Block new requests asking to access virtual reality devices.</string>
-      <string id="VirtualReality_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access virtual reality devices.
+若停用或不設定此原則，則預設不封鎖存取虛擬實境裝置。</string>
+      <string id="VirtualReality_BlockNewRequests">封鎖存取虛擬實境裝置的新請求。</string>
+      <string id="VirtualReality_BlockNewRequests_Explain">若啟用此原則，不在允許原則當中列出的網站，就無法要求使用者授權存取虛擬實境裝置。
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to virtual reality devices.</string>
-      <string id="VirtualReality_Locked">Do not allow preferences to be changed</string>
-      <string id="VirtualReality_Locked_Explain">If this policy is enabled, virtual reality preferences cannot be changed by the user.
+若停用或不設定此原則，則只要不在封鎖原則當中的網站，皆可要求使用者授權存取虛擬實境裝置。</string>
+      <string id="VirtualReality_Locked">不允許調整偏好設定</string>
+      <string id="VirtualReality_Locked_Explain">若啟用此原則，使用者將無法調整虛擬實境偏好設定。
 
-If this policy is disabled or not configured, the user can change their virtual reality preferences.</string>
+若停用或不設定此原則，則使用者能夠自行調整虛擬實境偏好設定。</string>
       <string id="FirefoxHome">自訂 Firefox 首頁</string>
       <string id="FirefoxHome_Explain">若啟用此原則，將可以設定要在 Firefox 首頁顯示哪些段落，並防止使用者更改設定。
 
@@ -621,7 +621,7 @@ If this policy is disabled or not configured, the user can change their virtual 
       <string id="None">無</string>
       <string id="Homepage">首頁</string>
       <string id="PreviousSession">先前的瀏覽狀態</string>
-      <string id="HomepageLocked">Homepage (Locked)</string>
+      <string id="HomepageLocked">首頁（鎖定）</string>
       <string id="PasswordManagerEnabled">密碼管理員</string>
       <string id="PasswordManagerEnabled_Explain">若停用此原則，將無法於偏好設定中使用密碼管理員。
 
@@ -765,11 +765,11 @@ If this policy is disabled or not configured, the user can change their virtual 
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
-      <string id="DisabledCiphers_Explain">If this policy is enabled, the corresponding cipher is disabled.
+      <string id="DisabledCiphers_Explain">若啟用此原則，將停用指定的加密套件組。
 
-If this policy is disabled, the corresponding cipher is enabled.
+若停用此原則，將只會開啟指定的加密套件組。
 
-If this policy is not configured, the corresponding cipher is enabled or disabled based on the default in Firefox.</string>
+若不設定此原則，則會根據 Firefox 當中的預設值來啟用或停用加密套件組。</string>
       <string id="EncryptedMediaExtensions_Enabled">開啟加密媒體擴充功能</string>
       <string id="EncryptedMediaExtensions_Enabled_Explain">若停用此原則，需經使用者明確同意才會下載加密媒體擴充功能（例如 Widevine），Firefox 不會主動下載。
 
@@ -786,22 +786,22 @@ If this policy is not configured, the corresponding cipher is enabled or disable
       <string id="PDFjs_EnablePermissions_Explain">若啟用此原則，將會遵循文件權限設定（例如防止文字複製）。
 
 若停用或不設定此原則，就會忽略文件權限。</string>
-      <string id="PictureInPicture">Picture-in-Picture</string>
-      <string id="PictureInPicture_Explain">If this policy is disabled, the Picture-in-Picture toggle does not appear on videos.
+      <string id="PictureInPicture">子母畫面</string>
+      <string id="PictureInPicture_Explain">若停用此原則，將不會在影片上顯示切換進入子母畫面的按鈕。
 
-If this policy is enabled or not configured, the Picture-in-Picture toggle is available on videos.</string>
-      <string id="PrimaryPassword">Primary (Master) Password</string>
-      <string id="PrimaryPassword_Explain">If this policy is enabled, a primary password is required.
+若啟用或不設定此原則，則會在影片上顯示子母畫面按鈕。</string>
+      <string id="PrimaryPassword">主控密碼</string>
+      <string id="PrimaryPassword_Explain">若啟用此原則，將必須輸入主控密碼。
 
-If this policy is disabled, users cannot create a primary password.
+若停用此原則，使用者將無法建立主控密碼。
 
-If this policy is not configured, users can choose to create a primary password.</string>
-      <string id="Handlers">Handlers</string>
-      <string id="Handlers_Explain">If this policy is enabled, you can use JSON to configure default application handlers.
+若不設定此原則，則使用者可自行決定是否要使用主控密碼功能。</string>
+      <string id="Handlers">應用程式處理方式</string>
+      <string id="Handlers_Explain">若啟用此原則，您可以使用 JSON 檔案來設定預設應用程式處理方式。
 
-If this policy is disabled or not configured, Firefox defaults are used.
+若停用或不設定此原則，則使用 Firefox 預設設定。
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
@@ -867,7 +867,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       <string id="browser_newtabpage_activity-stream_default_sites">browser.newtabpage.activity-stream.default.sites</string>
       <string id="extensions_htmlaboutaddons_recommendations_enabled">extensions.htmlaboutaddons.recommendations.enabled</string>
       <string id="media_peerconnection_enabled">media.peerconnection.enabled</string>
-      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist (已棄用)</string>
+      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist（已棄用）</string>
       <string id="media_peerconnection_ice_obfuscate_host_addresses_blocklist">media.peerconnection.ice.obfuscate_host_addresses.blocklist</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
