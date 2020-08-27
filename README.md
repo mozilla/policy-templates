@@ -2029,7 +2029,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>or <disabled/>
+<enabled/> or <disabled/>
 ```
 OMA-URI:
 ```
@@ -2037,7 +2037,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>or <disabled/>
+<enabled/> or <disabled/>
 ```
 OMA-URI:
 ```
@@ -2045,7 +2045,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>or <disabled/>
+<enabled/> or <disabled/>
 ```
 OMA-URI:
 ```
@@ -2061,7 +2061,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>or <disabled/>
+<enabled/> or <disabled/>
 ```
 #### macOS
 ```
