@@ -180,7 +180,7 @@ Configure sites that support integrated authentication.
 
 See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
 
-`PrivateBrowsing` enables integrated authentication in prviate browsing.
+`PrivateBrowsing` enables integrated authentication in private browsing.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (AllowNonFQDN added in 62/60.2, AllowProxies added in 70/68.2, Locked added in 71/68.3, PrivateBrowsing added in 77/68.9)\
 **CCK2 Equivalent:** N/A\
