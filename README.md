@@ -2293,6 +2293,7 @@ Value (string):
 ```
 <enabled/>
 <data id="ExtensionSettings" value='
+{
   "*": {
     "blocked_install_message": "Custom error message.",
     "install_sources": ["about:addons","https://addons.mozilla.org/"],
@@ -2305,7 +2306,8 @@ Value (string):
   },
     "https-everywhere@eff.org": {
     "installation_mode": "allowed",
-  }'/>
+  }
+}'/>
 ```
 #### macOS
 ```
