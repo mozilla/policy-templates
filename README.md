@@ -3774,7 +3774,7 @@ Set and lock certain preferences.
 | browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
 | browser.newtabpage.activity-stream.default.sites | string | Firefox 72, ESR 68.4 | Locale dependent
-| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of URLs to use as the default top sites on the new tab page.
+| &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of URLs to use as the default top sites on the new tab page. Due to Firefox limitations, search sites can't be added. In addition, sites with the same name but different TLDs (example.org/example.com) will not display properly.
 | browser.places.importBookmarksHTML | boolean | Firefox 70, Firefox ESR 68.2
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
 | browser.safebrowsing.phishing.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true
