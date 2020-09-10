@@ -76,6 +76,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock some preferences.
+| **[`Preferences (deprecated)`](#preferences--deprecated)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -3749,6 +3750,145 @@ Value (string):
 }
 ```
 ### Preferences
+Set the default and user values of certain preferences, as well as lock and clear them.
+
+IMPORTANT: If you set a preference using this mechanism that has be set by a different policy, the behavior is undefined. You should only use one method for setting preferences.
+
+Preferences that start with the following prefixes are supported:
+```
+accessibility.
+browser.
+datareporting.policy.
+dom.
+extensions.
+geo.
+intl.
+layout.
+media.
+network.
+places.
+print.
+ui.
+widget.
+```
+as well as the following security preferences:
+```
+security.default_personal_cert
+security.insecure_connection_text.enabled
+security.insecure_connection_text.pbmode.enabled
+security.insecure_field_warning.contextual.enabled
+security.mixed_content.block_active_content
+security.osclientcerts.autoload
+security.ssl.errorReporting.enabled
+security.tls.hello_downgrade_check
+security.warn_submit_secure_to_insecure
+```
+For a given preferences, set the `Value` to the corresponding preference value.
+
+`Status` can be "default", "locked", "user" or "clear"
+
+If a value is locked, it is also set as the default.
+
+User preferences persist across invocations of Firefox.
+
+Status
+**Compatibility:** Firefox 81, Firefox ESR 78.3\
+**CCK2 Equivalent:** `preferences`\
+**Preferences Affected:** See below
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\Preferences (REG_MULTI_SZ) =
+{
+  "accessibility.force_disabled": {
+    "Value": 1
+    "Status": "default",
+  },
+  "browser.cache.disk.parent_directory": {
+    "Value": "SOME_NATIVE_PATH",
+    "Status": "user"
+  },
+  "browser.tabs.warnOnClose": {
+    "Value": false,
+    "Status": "locked"
+  }
+}
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/Preferences
+```
+Value (string):
+```
+<enabled/>
+<data id="Preferences" value='
+{
+  "accessibility.force_disabled": {
+    "Value": 1
+    "Status": "default",
+  },
+  "browser.cache.disk.parent_directory": {
+    "Value": "SOME_NATIVE_PATH",
+    "Status": "user"
+  },
+  "browser.tabs.warnOnClose": {
+    "Value": false,
+    "Status": "locked"
+  }
+}'/>
+```
+#### macOS
+```
+<dict>
+  <key>Preferences</key>
+  <dict>
+    <key>accessibility.force_disabled</key>
+    <dict>
+      <key>Value</key>
+      <integer>1</integer>
+      <key>Status</key>
+      <string>default</string>
+    </dict>
+    <key>browser.cache.disk.parent_directory</key>
+    <dict>
+      <key>Value</key>
+      <string>SOME_NATIVE_PATH</string>
+      <key>Status</key>
+      <string>user</string>
+    </dict>
+    <key>browser.tabs.warnOnClose</key>
+    <dict>
+      <key>Value</key>
+      <false/>
+      <key>Status</key>
+      <string>locked</string>
+    </dict>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "Preferences": {
+      "accessibility.force_disabled": {
+        "Value": 1
+        "Status": "default",
+      },
+      "browser.cache.disk.parent_directory": {
+        "Value": "SOME_NATIVE_PATH",
+        "Status": "user"
+      },
+      "browser.tabs.warnOnClose": {
+        "Value": false,
+        "Status": "locked"
+      }
+    }
+  }
+}
+```
+### Preferences (deprecated)
 Set and lock certain preferences.
 
 **Compatibility:** See below\
