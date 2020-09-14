@@ -75,7 +75,8 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
-| **[`Preferences`](#preferences)** | Set and lock some preferences.
+| **[`Preferences`](#preferences)** | Set and lock preferences.
+| **[`Preferences (Deprecated)`](#preferences--deprecated)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -3749,6 +3750,149 @@ Value (string):
 }
 ```
 ### Preferences
+Set and lock preferences.
+
+Previously you could only set and lock a subset of preferences. Starting with Firefox 81 and Firefox ESR 78.3 you can set many more preferences. You can also set default preferences, user preferences and you can clear preferences.
+
+Preferences that start with the following prefixes are supported:
+```
+accessibility.
+browser.
+datareporting.policy.
+dom.
+extensions.
+geo.
+intl.
+layout.
+media.
+network.
+places.
+print.
+ui.
+widget.
+```
+as well as the following security preferences:
+```
+security.default_personal_cert
+security.insecure_connection_text.enabled
+security.insecure_connection_text.pbmode.enabled
+security.insecure_field_warning.contextual.enabled
+security.mixed_content.block_active_content
+security.osclientcerts.autoload
+security.ssl.errorReporting.enabled
+security.tls.hello_downgrade_check
+security.warn_submit_secure_to_insecure
+```
+Using the preference as the key, set the `Value` to the corresponding preference value.
+
+`Status` can be "default", "locked", "user" or "clear"
+
+If a value is locked, it is also set as the default.
+
+User preferences persist across invocations of Firefox.
+
+See the examples below for more detail.
+
+IMPORTANT: Make sure you're only setting a particular preference using this mechanism and not some other way.
+
+Status
+**Compatibility:** Firefox 81, Firefox ESR 78.3\
+**CCK2 Equivalent:** `preferences`\
+**Preferences Affected:** Many
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\Preferences (REG_MULTI_SZ) =
+{
+  "accessibility.force_disabled": {
+    "Value": 1,
+    "Status": "default"
+  },
+  "browser.cache.disk.parent_directory": {
+    "Value": "SOME_NATIVE_PATH",
+    "Status": "user"
+  },
+  "browser.tabs.warnOnClose": {
+    "Value": false,
+    "Status": "locked"
+  }
+}
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/Preferences
+```
+Value (string):
+```
+<enabled/>
+<data id="Preferences" value='
+{
+  "accessibility.force_disabled": {
+    "Value": 1,
+    "Status": "default"
+  },
+  "browser.cache.disk.parent_directory": {
+    "Value": "SOME_NATIVE_PATH",
+    "Status": "user"
+  },
+  "browser.tabs.warnOnClose": {
+    "Value": false,
+    "Status": "locked"
+  }
+}'/>
+```
+#### macOS
+```
+<dict>
+  <key>Preferences</key>
+  <dict>
+    <key>accessibility.force_disabled</key>
+    <dict>
+      <key>Value</key>
+      <integer>1</integer>
+      <key>Status</key>
+      <string>default</string>
+    </dict>
+    <key>browser.cache.disk.parent_directory</key>
+    <dict>
+      <key>Value</key>
+      <string>SOME_NATIVE_PATH</string>
+      <key>Status</key>
+      <string>user</string>
+    </dict>
+    <key>browser.tabs.warnOnClose</key>
+    <dict>
+      <key>Value</key>
+      <false/>
+      <key>Status</key>
+      <string>locked</string>
+    </dict>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "Preferences": {
+      "accessibility.force_disabled": {
+        "Value": 1,
+        "Status": "default"
+      },
+      "browser.cache.disk.parent_directory": {
+        "Value": "SOME_NATIVE_PATH",
+        "Status": "user"
+      },
+      "browser.tabs.warnOnClose": {
+        "Value": false,
+        "Status": "locked"
+      }
+    }
+  }
+}
+```
+### Preferences (Deprecated)
 Set and lock certain preferences.
 
 **Compatibility:** See below\

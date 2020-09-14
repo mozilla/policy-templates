@@ -512,10 +512,27 @@
 	</dict>
 	<key>Preferences</key>
 	<dict>
-		<key>app.update.auto</key>
-		<true/>
-		<key>security.default_personal_cert</key>
-		<string>Ask Every Time</string>
+		<key>accessibility.force_disabled</key>
+		<dict>
+			<key>Value</key>
+			<integer>1</integer>
+			<key>Status</key>
+			<string>default</string>
+			</dict>
+		<key>browser.cache.disk.parent_directory</key>
+		<dict>
+			<key>Value</key>
+			<string>SOME_NATIVE_PATH</string>
+			<key>Status</key>
+			<string>user</string>
+		</dict>
+		<key>browser.tabs.warnOnClose</key>
+		<dict>
+			<key>Value</key>
+			<false/>
+			<key>Status</key>
+			<string>locked</string>
+		</dict>
 	</dict>
 	<key>Proxy</key>
 	<dict>

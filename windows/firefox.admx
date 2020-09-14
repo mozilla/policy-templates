@@ -3688,5 +3688,12 @@
         <multiText id="Handlers" valueName="Handlers"  maxLength="2048"/>
       </elements>
     </policy>
+    <policy name="Preferences" class="Both" displayName="$(string.Preferences)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)"  presentation="$(presentation.JSON)">">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF81"/>
+      <elements>
+        <multiText id="JSON" valueName="Preferences"  maxLength="2048"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

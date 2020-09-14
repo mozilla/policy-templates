@@ -50,7 +50,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
-      <string id="Preferences_group">Einstellungen</string>
+      <string id="Preferences_group">Einstellungen (Veraltet)</string>
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
@@ -803,6 +803,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
+      <string id="Preferences">Einstellungen</string>
+      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+
+If this policy is disabled or not configured, preferences are not modified.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
@@ -1107,6 +1113,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="Autoplay_Default">
         <dropdownList refId="Autoplay_Default"/>
+      </presentation>
+      <presentation id="JSON">
+        <multiTextBox refId="JSON"/>
       </presentation>
     </presentationTable>
   </resources>
