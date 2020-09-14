@@ -50,7 +50,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Pagina iniziale</string>
       <string id="Search_group">Ricerca</string>
-      <string id="Preferences_group">Preferenze</string>
+      <string id="Preferences_group">Preferenze (deprecata)</string>
       <string id="UserMessaging_group">Messaggi utente</string>
       <string id="DisabledCiphers_group">Cifrari disabilitati</string>
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
@@ -804,6 +804,12 @@ Se questo criterio è non configurato, gli utenti possono scegliere di creare un
 Se questo criterio è disabilitato o non configurato, vengono utilizzati i criteri predefiniti di Firefox.
 
 Per informazioni dettagliate sulla creazione del criterio, si veda https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+      <string id="Preferences">Preferenze</string>
+      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+
+If this policy is disabled or not configured, preferences are not modified.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:
@@ -1107,6 +1113,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="Autoplay_Default">
         <dropdownList refId="Autoplay_Default"/>
+      </presentation>
+      <presentation id="JSON">
+        <multiTextBox refId="JSON"/>
       </presentation>
     </presentationTable>
   </resources>

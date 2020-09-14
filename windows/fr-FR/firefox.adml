@@ -50,7 +50,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Page d'accueil</string>
       <string id="Search_group">Recherche</string>
-      <string id="Preferences_group">Préférences</string>
+      <string id="Preferences_group">Préférences (Deprecated)</string>
       <string id="UserMessaging_group">User Messaging</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
@@ -803,6 +803,12 @@ If this policy is not configured, users can choose to create a primary password.
 If this policy is disabled or not configured, Firefox defaults are used.
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+      <string id="Preferences">Préférences</string>
+      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+
+If this policy is disabled or not configured, preferences are not modified.
+
+For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur true. Si cette stratégie est désactivée, la préférence est verrouillée sur false.
 
 Pour une description de la préférence, voir:
@@ -1106,6 +1112,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="Autoplay_Default">
         <dropdownList refId="Autoplay_Default"/>
+      </presentation>
+      <presentation id="JSON">
+        <multiTextBox refId="JSON"/>
       </presentation>
     </presentationTable>
   </resources>

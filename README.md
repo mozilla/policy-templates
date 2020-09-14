@@ -75,8 +75,8 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
-| **[`Preferences`](#preferences)** | Set and lock some preferences.
-| **[`Preferences (deprecated)`](#preferences--deprecated)** | Set and lock some preferences.
+| **[`Preferences`](#preferences)** | Set and lock preferences.
+| **[`Preferences (Deprecated)`](#preferences--deprecated)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -3750,9 +3750,9 @@ Value (string):
 }
 ```
 ### Preferences
-Set the default and user values of certain preferences, as well as lock and clear them.
+Set and lock preferences.
 
-IMPORTANT: If you set a preference using this mechanism that has be set by a different policy, the behavior is undefined. You should only use one method for setting preferences.
+Previously you could only set and lock a subset of preferences. Starting with Firefox 81 and Firefox ESR 78.3 you can set many more preferences. You can also set default preferences, user preferences and you can clear preferences.
 
 Preferences that start with the following prefixes are supported:
 ```
@@ -3783,7 +3783,7 @@ security.ssl.errorReporting.enabled
 security.tls.hello_downgrade_check
 security.warn_submit_secure_to_insecure
 ```
-For a given preferences, set the `Value` to the corresponding preference value.
+Using the preference as the key, set the `Value` to the corresponding preference value.
 
 `Status` can be "default", "locked", "user" or "clear"
 
@@ -3791,18 +3791,22 @@ If a value is locked, it is also set as the default.
 
 User preferences persist across invocations of Firefox.
 
+See the examples below for more detail.
+
+IMPORTANT: Make sure you're only setting a particular preference using this mechanism and not some other way.
+
 Status
 **Compatibility:** Firefox 81, Firefox ESR 78.3\
 **CCK2 Equivalent:** `preferences`\
-**Preferences Affected:** See below
+**Preferences Affected:** Many
 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Preferences (REG_MULTI_SZ) =
 {
   "accessibility.force_disabled": {
-    "Value": 1
-    "Status": "default",
+    "Value": 1,
+    "Status": "default"
   },
   "browser.cache.disk.parent_directory": {
     "Value": "SOME_NATIVE_PATH",
@@ -3825,8 +3829,8 @@ Value (string):
 <data id="Preferences" value='
 {
   "accessibility.force_disabled": {
-    "Value": 1
-    "Status": "default",
+    "Value": 1,
+    "Status": "default"
   },
   "browser.cache.disk.parent_directory": {
     "Value": "SOME_NATIVE_PATH",
@@ -3873,8 +3877,8 @@ Value (string):
   "policies": {
     "Preferences": {
       "accessibility.force_disabled": {
-        "Value": 1
-        "Status": "default",
+        "Value": 1,
+        "Status": "default"
       },
       "browser.cache.disk.parent_directory": {
         "Value": "SOME_NATIVE_PATH",
@@ -3888,7 +3892,7 @@ Value (string):
   }
 }
 ```
-### Preferences (deprecated)
+### Preferences (Deprecated)
 Set and lock certain preferences.
 
 **Compatibility:** See below\
