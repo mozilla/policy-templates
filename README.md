@@ -3791,7 +3791,9 @@ Default preferences can be modified by the user.
 
 If a value is locked, it is also set as the default.
 
-User preferences persist across invocations of Firefox. It is the equivalent of a user setting the preference. They are most useful when a preference is needed very early in startup so it can't be set as a default by policy.
+User preferences persist across invocations of Firefox. It is the equivalent of a user setting the preference. They are most useful when a preference is needed very early in startup so it can't be set as default by policy.
+
+User preferences persist even if the policy is removed, so if you need to remove them, you should use the clear policy.
 
 See the examples below for more detail.
 
