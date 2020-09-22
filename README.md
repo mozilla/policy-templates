@@ -3787,9 +3787,11 @@ Using the preference as the key, set the `Value` to the corresponding preference
 
 `Status` can be "default", "locked", "user" or "clear"
 
+Default preferences can be modified by the user.
+
 If a value is locked, it is also set as the default.
 
-User preferences persist across invocations of Firefox.
+User preferences persist across invocations of Firefox. It is the equivalent of a user setting the preference. They are most useful when a preference is needed very early in startup so it can't be set as a default by policy.
 
 See the examples below for more detail.
 
