@@ -76,7 +76,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
-| **[`Preferences (Deprecated)`](#preferences--deprecated)** | Set and lock some preferences.
+| **[`Preferences (Deprecated)`](#preferences-deprecated)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
