@@ -1592,7 +1592,7 @@ Value (string):
   <dict>
     <key>InvalidCertificate</key>
     <true/> | <false/>
-    <key><SafeBrowsing/key>
+    <key>SafeBrowsing</key>
     <true/> | <false/>
   </dict>
 </dict>
@@ -2071,11 +2071,11 @@ Value (string):
   <dict>
     <key>Value</key>
     <true/> | <false/>
-    <key><Locked</key>
+    <key>Locked</key>
     <true/> | <false/>
-    <key><Cryptomining</key>
+    <key>Cryptomining</key>
     <true/> | <false/>
-    <key><Fingerprinting</key>
+    <key>Fingerprinting</key>
     <true/> | <false/>
     <key>Exceptions</key>
     <array>
@@ -2130,7 +2130,7 @@ Value (string):
   <dict>
     <key>Enabled</key>
     <true/> | <false/>
-    <key><Locked</key>
+    <key>Locked</key>
     <true/> | <false/>
   </dict>
 </dict>
@@ -3343,7 +3343,7 @@ Value (string):
   <dict>
     <key>Enabled</key>
     <true/> | <false/>
-    <key><EnablePermissions</key>
+    <key>EnablePermissions</key>
     <true/> | <false/>
   </dict>
 </dict>
