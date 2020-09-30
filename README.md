@@ -3359,7 +3359,7 @@ Value (string):
 }
 ```
 ### Permissions
-Set permissions associated with camera, microphone, location, notifications, autoplay, and virtual reality. Because these are origins, not domains, entries with unique ports must be specified separately. See examples below.
+Set permissions associated with camera, microphone, location, notifications, autoplay, and virtual reality. Because these are origins, not domains, entries with unique ports must be specified separately. This explicitly means that it is not possible to add wildcards. See examples below.
 
 `Allow` is a list of origins where the feature is allowed.
 
