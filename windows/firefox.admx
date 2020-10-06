@@ -34,6 +34,11 @@
       <definition name="SUPPORTED_FF79" displayName="$(string.SUPPORTED_FF79)"/>
       <definition name="SUPPORTED_FF80" displayName="$(string.SUPPORTED_FF80)"/>
       <definition name="SUPPORTED_FF81" displayName="$(string.SUPPORTED_FF81)"/>
+      <definition name="SUPPORTED_FF82" displayName="$(string.SUPPORTED_FF82)"/>
+      <definition name="SUPPORTED_FF83" displayName="$(string.SUPPORTED_FF83)"/>
+      <definition name="SUPPORTED_FF84" displayName="$(string.SUPPORTED_FF84)"/>
+      <definition name="SUPPORTED_FF85" displayName="$(string.SUPPORTED_FF85)"/>
+      <definition name="SUPPORTED_FF86" displayName="$(string.SUPPORTED_FF86)"/>
     </definitions>
   </supportedOn>
   <categories>
