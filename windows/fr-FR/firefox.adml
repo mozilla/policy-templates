@@ -181,7 +181,7 @@ Si cette stratégie est désactivée ou non configurée, le navigateur reçoit l
       <string id="DisableBuiltinPDFViewer_Explain">Si cette stratégie est activée, les fichiers PDF ne sont pas visualisés dans Firefox.
 
 Si cette stratégie est désactivée ou non configurée, les fichiers PDF sont visualisés dans Firefox.</string>
-      <string id="DisableDefaultBrowserAgent">Désactivez l'agent de navigateur par défaut.</string>
+      <string id="DisableDefaultBrowserAgent">Désactivez l'agent de navigateur par défaut</string>
       <string id="DisableDefaultBrowserAgent_Explain">Si cette stratégie est activée, l'agent de navigateur par défaut est désactivé.
 
 Si cette stratégie est désactivée ou n'est pas configurée, l'agent de navigateur par défaut est activé.

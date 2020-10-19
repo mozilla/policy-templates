@@ -181,7 +181,7 @@
       <string id="DisableBuiltinPDFViewer_Explain">若啟用此原則，將不會使用 Firefox 內建檢視器開啟 PDF 檔案。
 
 若停用或不設定此原則，則會使用 Firefox 內建檢視器開啟 PDF 檔案。</string>
-      <string id="DisableDefaultBrowserAgent">停用預設瀏覽器代理工具。</string>
+      <string id="DisableDefaultBrowserAgent">停用預設瀏覽器代理工具</string>
       <string id="DisableDefaultBrowserAgent_Explain">若啟用此原則，將停用預設瀏覽器代理工具。
 
 若停用或不設定此原則，則啟用預設瀏覽器代理工具。
