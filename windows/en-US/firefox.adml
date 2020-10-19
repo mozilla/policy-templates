@@ -181,7 +181,7 @@ If this policy is disabled or not configured, the browser receives updates.</str
       <string id="DisableBuiltinPDFViewer_Explain">If this policy is enabled, PDF files are not viewed within Firefox.
 
 If this policy is disabled or not configured, PDF files are viewed within Firefox.</string>
-      <string id="DisableDefaultBrowserAgent">Disable the default browser agent.</string>
+      <string id="DisableDefaultBrowserAgent">Disable the default browser agent</string>
       <string id="DisableDefaultBrowserAgent_Explain">If this policy is enabled, the default browser agent is disabled.
 
 If this policy is disabled or not configured, the default browser agent is enabled.
