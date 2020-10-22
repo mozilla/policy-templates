@@ -3700,5 +3700,12 @@
         <multiText id="JSON" valueName="Preferences"  maxLength="2048"/>
       </elements>
     </policy>
+    <policy name="ManagedBookmarks" class="Both" displayName="$(string.ManagedBookmarks)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ManagedBookmarks_Explain)"  presentation="$(presentation.JSON)">">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF83"/>
+      <elements>
+        <multiText id="JSON" valueName="ManagedBookmarks"  maxLength="2048"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
