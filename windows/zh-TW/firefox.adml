@@ -334,7 +334,7 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="PopupBlocking_Allow_Explain">若啟用此原則，將允許來自指定來源網址的彈出視窗。若指定了頂級網域名稱（例如 http://example.org），也將允許所有來自子網域的彈出視窗。
 
 若停用或不設定此原則，則遵循預設的彈出視窗原則。</string>
-      <string id="PopupBlocking_Default">允許網站顯示彈出視窗</string>
+      <string id="PopupBlocking_Default">封鎖網站顯示彈出視窗</string>
       <string id="PopupBlocking_Default_Explain">若停用此原則，預設將允許來自所有網站的彈出視窗。
 
 若未啟用或設定此原則，將封鎖來自所有網站的彈出視窗。</string>
@@ -808,11 +808,11 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。</string>
       <string id="Preferences">偏好設定</string>
-      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+      <string id="Preferences_Explain">若啟用此原則，您可以使用 JSON 檔案來預先指定偏好設定。
 
-If this policy is disabled or not configured, preferences are not modified.
+若停用或不設定此原則，則不修改偏好設定。
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
