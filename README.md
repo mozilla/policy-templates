@@ -75,7 +75,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
-| **[`Preferences`](#preferences)** | Set and lock preferences.
+| **[`Preferences`](#preferences)** | Set and lock preferences. (NOTE: in order to use this, settings in the **[`Preferences (Deprecated)`](#preferences-deprecated)** section must be cleared.
 | **[`Preferences (Deprecated)`](#preferences-deprecated)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
@@ -3751,6 +3751,8 @@ Value (string):
 ```
 ### Preferences
 Set and lock preferences.
+
+**NOTE** In order to use this policy, you must clear all settings in the old **Preferences (Deprecated)** section.
 
 Previously you could only set and lock a subset of preferences. Starting with Firefox 81 and Firefox ESR 78.3 you can set many more preferences. You can also set default preferences, user preferences and you can clear preferences.
 
