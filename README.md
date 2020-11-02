@@ -3772,17 +3772,27 @@ ui.
 widget.
 ```
 as well as the following security preferences:
-```
-security.default_personal_cert
-security.insecure_connection_text.enabled
-security.insecure_connection_text.pbmode.enabled
-security.insecure_field_warning.contextual.enabled
-security.mixed_content.block_active_content
-security.osclientcerts.autoload
-security.ssl.errorReporting.enabled
-security.tls.hello_downgrade_check
-security.warn_submit_secure_to_insecure
-```
+| Preference | Type | Default
+| --- | --- | ---
+| security.default_personal_cert | string | Ask Every Time
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
+| security.insecure_connection_text.enabled | bool | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites.
+| security.insecure_connection_text.pbmode.enabled | bool | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites in private browsing.
+| security.insecure_field_warning.contextual.enabled | bool | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to false, remove the warning for inscure login fields.
+| security.mixed_content.block_active_content | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
+| security.osclientcerts.autoload | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
+| security.ssl.errorReporting.enabled | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
+| security.tls.hello_downgrade_check | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
+| security.warn_submit_secure_to_insecure | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting s form from https to http.
+
 Using the preference as the key, set the `Value` to the corresponding preference value.
 
 `Status` can be "default", "locked", "user" or "clear"
