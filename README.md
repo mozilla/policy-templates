@@ -3752,7 +3752,7 @@ Value (string):
 ### Preferences
 Set and lock preferences.
 
-**NOTE** In order to use this policy, you must clear all settings in the old **Preferences (Deprecated)** section.
+**NOTE** On Windows, in order to use this policy, you must clear all settings in the old **Preferences (Deprecated)** section.
 
 Previously you could only set and lock a subset of preferences. Starting with Firefox 81 and Firefox ESR 78.3 you can set many more preferences. You can also set default preferences, user preferences and you can clear preferences.
 
