@@ -75,7 +75,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
-| **[`Preferences`](#preferences)** | Set and lock preferences. (NOTE: in order to use this, settings in the **[`Preferences (Deprecated)`](#preferences-deprecated)** section must be cleared.
+| **[`Preferences`](#preferences)** | Set and lock preferences.
 | **[`Preferences (Deprecated)`](#preferences-deprecated)** | Set and lock some preferences.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
