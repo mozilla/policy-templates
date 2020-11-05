@@ -808,7 +808,9 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。</string>
       <string id="Preferences">偏好設定</string>
-      <string id="Preferences_Explain">若啟用此原則，您可以使用 JSON 檔案來預先指定偏好設定。
+      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+
+若啟用此原則，您可以使用 JSON 檔案來預先指定偏好設定。
 
 若停用或不設定此原則，則不修改偏好設定。
 

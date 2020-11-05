@@ -810,7 +810,9 @@ If this policy is disabled or not configured, Firefox defaults are used.
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
       <string id="Preferences">Preferences</string>
-      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+
+If this policy is enabled, you can use JSON to configure preferences.
 
 If this policy is disabled or not configured, preferences are not modified.
 
