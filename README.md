@@ -3204,7 +3204,7 @@ Value (string):
 }
 ```
 ### OverrideFirstRunPage
-Override the first run page. If the value is blank, no first run page is displayed.
+Override the first run page. If the value is an empty string (""), the first run page is not displayed.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `welcomePage`,`noWelcomePage`\
@@ -3239,7 +3239,7 @@ Value (string):
 }
 ```
 ### OverridePostUpdatePage
-Override the upgrade page. If the value is blank, no upgrade page is displayed.
+Override the upgrade page. If the value is an empty string (""), no extra pages are displayed when Firefox is upgraded.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `upgradePage`,`noUpgradePage`\
