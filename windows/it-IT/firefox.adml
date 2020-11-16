@@ -495,6 +495,8 @@ Se questo criterio è disabilitato o non configurato, l'utente può modificare l
       <string id="OverrideFirstRunPage">Esegui l'override della pagina visualizzata al primo avvio</string>
       <string id="OverrideFirstRunPage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare al primo avvio del browser. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina al primo avvio.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.</string>
       <string id="OverridePostUpdatePage">Esegui l'override della pagina visualizzata dopo un aggiornamento</string>
       <string id="OverridePostUpdatePage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare dopo l'aggiornamento di Firefox. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina dopo l'aggiornamento.

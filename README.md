@@ -3208,6 +3208,8 @@ Value (string):
 ### OverrideFirstRunPage
 Override the first run page. If the value is an empty string (""), the first run page is not displayed.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `welcomePage`,`noWelcomePage`\
 **Preferences Affected:** `startup.homepage_welcome_url`

@@ -495,6 +495,8 @@ Si esta política está deshabilitada o no está configurada, el usuario podrá 
       <string id="OverrideFirstRunPage">Bloquear la primera página de ejecución</string>
       <string id="OverrideFirstRunPage_Explain">Si esta política está habilitada, podrá especificar una URL para ser utilizada como la primera página de ejecución. Si deja la URL en blanco, no se mostrará la primera página de ejecución.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 Si esta política está deshabilitada o no está configurada, se mostrará la primera página de ejecución.</string>
       <string id="OverridePostUpdatePage">Bloquear la página de actualización</string>
       <string id="OverridePostUpdatePage_Explain">Si esta política está habilitada, podrá especificar que se muestre una URL después de actualizar Firefox. Si deja la URL en blanco, no se mostrará ninguna página de actualización.

@@ -495,6 +495,8 @@ If this policy is disabled or not configured, the user can change their Flash pr
       <string id="OverrideFirstRunPage">Override the first run page</string>
       <string id="OverrideFirstRunPage_Explain">If this policy is enabled, you can specify a URL to be used as the first run page. If you leave the URL blank, no first run page will be shown.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 If this policy is disabled or not configured, the first run page is displayed.</string>
       <string id="OverridePostUpdatePage">Override the upgrade page</string>
       <string id="OverridePostUpdatePage_Explain">If this policy is enabled, you can specify a URL to be displayed after Firefox is updated. If you leave the URL blank, no upgrade page will be shown.

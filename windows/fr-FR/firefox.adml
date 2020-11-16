@@ -495,6 +495,8 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modi
       <string id="OverrideFirstRunPage">Remplacer la première page d'exécution</string>
       <string id="OverrideFirstRunPage_Explain">Si cette stratégie est activée, vous pouvez spécifier une URL à utiliser comme première page d'exécution. Si vous laissez l'URL vide, aucune page de première exécution ne sera affichée.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 Si cette stratégie est désactivée ou non configurée, la première page d'exécution est affichée.</string>
       <string id="OverridePostUpdatePage">Remplacer la page de mise à jour</string>
       <string id="OverridePostUpdatePage_Explain">Si cette stratégie est activée, vous pouvez spécifier une URL à afficher après la mise à jour de Firefox. Si vous laissez l'URL vide, aucune page de mise à niveau ne sera affichée.

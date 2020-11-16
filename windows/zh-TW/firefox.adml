@@ -493,6 +493,8 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="OverrideFirstRunPage">覆蓋首次執行頁面</string>
       <string id="OverrideFirstRunPage_Explain">若啟用此原則，將可以指定要開啟的 Firefox 首次執行（firstrun）頁面。若保留空白，則不會開啟頁面。
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 若停用或不設定此原則，則顯示預設首次執行頁面。</string>
       <string id="OverridePostUpdatePage">覆蓋升級頁面</string>
       <string id="OverridePostUpdatePage_Explain">若啟用此原則，將可以指定 Firefox 更新後要開啟的頁面。若保留空白，則不會開啟頁面。
