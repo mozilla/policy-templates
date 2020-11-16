@@ -3765,6 +3765,8 @@ browser.
 datareporting.policy.
 dom.
 extensions.
+general.autoScroll (Firefox 83, Firefox ESR 78.5)
+general.smoothScroll (Firefox 83, Firefox ESR 78.5)
 geo.
 intl.
 layout.
@@ -3772,6 +3774,7 @@ media.
 network.
 places.
 print.
+signon. (Firefox 83, Firefox ESR 78.5)
 ui.
 widget.
 ```
