@@ -62,6 +62,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
+| **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
@@ -2988,6 +2989,136 @@ Value (string):
   "policies": {
     "LocalFileLinks": ["http://example.org/",
                        "http://example.edu/"]
+  }
+}
+```
+### ManagedBookmarks
+Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
+
+**Compatibility:** Firefox 83, Firefox ESR 78.5\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\ManagedBookmarks (REG_MULTI_SZ) =
+[
+  {
+    "toplevel_name": "My managed bookmarks folder"
+  },
+  {
+    "url": "example.com",
+    "name": "Example"
+  },
+  {
+    "name": "Mozilla links",
+    "children": [
+      {
+        "url": "https://mozilla.org",
+        "name": "Mozilla.org"
+      },
+      {
+        "url": "https://support.mozilla.org/",
+        "name": "SUMO"
+      }
+    ]
+  }
+]
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ManagedBookmarks
+```
+Value (string):
+```
+<enabled/>
+<data id="ManagedBookmarks" value='
+[
+  {
+    "toplevel_name": "My managed bookmarks folder"
+  },
+  {
+    "url": "example.com",
+    "name": "Example"
+  },
+  {
+    "name": "Mozilla links",
+    "children": [
+      {
+        "url": "https://mozilla.org",
+        "name": "Mozilla.org"
+      },
+      {
+        "url": "https://support.mozilla.org/",
+        "name": "SUMO"
+      }
+    ]
+  }
+]'/>
+```
+#### macOS
+```
+<dict>
+  <key>ManagedBookmarks</key>
+  <array>
+    <dict>
+      <key>toplevel_name</key>
+      <string>My managed bookmarks folder</string></dict>
+      <dict>
+        <key>url</key>
+        <string>example.com</string>
+        <key>name</key>
+        <string>Example</string>
+      </dict>
+      <dict>
+      <key>name</key>
+      <string>Mozilla links</string>
+      <key>children</key>
+      <array>
+        <dict>
+          <key>url</key>
+          <string>https://mozilla.org</string>
+          <key>name</key>
+          <string>Mozilla</string>
+        </dict>
+        <dict>
+          <key>url</key>
+          <string>https://support.mozilla.org/</string>
+          <key>name</key>
+          <string>SUMO</string>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "ManagedBookmarks": [
+      {
+        "toplevel_name": "My managed bookmarks folder"
+      },
+      {
+        "url": "example.com",
+        "name": "Example"
+      },
+      {
+        "name": "Mozilla links",
+        "children": [
+          {
+            "url": "https://mozilla.org",
+            "name": "Mozilla.org"
+          },
+          {
+            "url": "https://support.mozilla.org/",
+            "name": "SUMO"
+          }
+        ]
+      }
+    ]
   }
 }
 ```
