@@ -545,11 +545,11 @@ Si esta política está habilitada, el usuario no podrá cambiar las preferencia
 
 Si esta política no está configurada, el usuario no podrá cambiar las preferencias de apagado (comportamiento anterior).</string>
       <string id="WebsiteFilter_Block">Sitios web bloqueados</string>
-      <string id="WebsiteFilter_Block_Explain">Si esta política está habilitada, podrá especificar patrones de coincidencia que indiquen que sitios se bloquearán. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
+      <string id="WebsiteFilter_Block_Explain">Si esta política está habilitada, podrá especificar patrones de coincidencia que indiquen que sitios se bloquearán. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Hay un límite de 1000 entradas.
 
 Si esta política está deshabilitada o no está configurada, no se bloquearán los sitios web.</string>
       <string id="WebsiteFilter_Exceptions">Excepciones a sitios web bloqueados</string>
-      <string id="WebsiteFilter_Exceptions_Explain">Si esta política está habilitada y el filtro del sitio web está habilitado, podrá especificar patrones de coincidencia para los sitios que no desea bloquear. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Solo las direcciones http/https son compatibles en este momento. Hay un límite de 1000 entradas.
+      <string id="WebsiteFilter_Exceptions_Explain">Si esta política está habilitada y el filtro del sitio web está habilitado, podrá especificar patrones de coincidencia para los sitios que no desea bloquear. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Hay un límite de 1000 entradas.
 
 Si esta política está deshabilitada o no está configurada, no hay excepciones para el filtro de sitios web.</string>
       <string id="Bookmark01">Marcador 1</string>

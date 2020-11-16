@@ -4933,7 +4933,10 @@ Value (string):
 }
 ```
 ### WebsiteFilter
-Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
+Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns.
+The arrays are limited to 1000 entries each.
+
+As of Firefox 83 and Firefox ESR 78.5, file URLs are supported.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\

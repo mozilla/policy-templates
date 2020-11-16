@@ -543,11 +543,11 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若不設定此原則，使用者將無法變更所有「關閉瀏覽器時清理資料」設定（先前的行為）。</string>
       <string id="WebsiteFilter_Block">要封鎖的網站</string>
-      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
+      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 最多 1000 筆項目。
 
 若停用或不設定此原則，則不會封鎖任何網站。</string>
       <string id="WebsiteFilter_Exceptions">要封鎖的網站的例外規則</string>
-      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
+      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 最多 1000 筆項目。
 
 若停用或不設定此原則，則不會放行任何例外網站。</string>
       <string id="Bookmark01">書籤 01</string>
