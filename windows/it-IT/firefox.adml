@@ -495,6 +495,8 @@ Se questo criterio è disabilitato o non configurato, l'utente può modificare l
       <string id="OverrideFirstRunPage">Esegui l'override della pagina visualizzata al primo avvio</string>
       <string id="OverrideFirstRunPage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare al primo avvio del browser. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina al primo avvio.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 Se questo criterio è disabilitato o non configurato, al primo avvio verrà visualizzata la pagina predefinita.</string>
       <string id="OverridePostUpdatePage">Esegui l'override della pagina visualizzata dopo un aggiornamento</string>
       <string id="OverridePostUpdatePage_Explain">Se questo criterio è abilitato, è possibile specificare l'indirizzo di una pagina da visualizzare dopo l'aggiornamento di Firefox. Se il campo è lasciato vuoto, non verrà visualizzata alcuna pagina dopo l'aggiornamento.
@@ -545,11 +547,11 @@ Se questo criterio è abilitato, tutte le preferenze di eliminazione alla chiusu
 
 Se questo criterio non è configurato, nessuna preferenza di eliminazione alla chiusura può essere modificata dall'utente (comportamento precedente).</string>
       <string id="WebsiteFilter_Block">Siti Web bloccati</string>
-      <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
+      <string id="WebsiteFilter_Block_Explain">Se questo criterio è abilitato, è possibile utilizzare dei pattern per specificare i siti da bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. C'è un limite di 1000 voci.
 
 Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun sito.</string>
       <string id="WebsiteFilter_Exceptions">Eccezioni ai siti Web bloccati</string>
-      <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Attualmente sono supportati solo i protocolli HTTP e HTTPS. C'è un limite di 1000 voci.
+      <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. C'è un limite di 1000 voci.
 
 Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.</string>
       <string id="Bookmark01">Segnalibro 01</string>
@@ -810,7 +812,9 @@ Se questo criterio è disabilitato o non configurato, vengono utilizzati i crite
 
 Per informazioni dettagliate sulla creazione del criterio, si veda https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
       <string id="Preferences">Preferenze</string>
-      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+
+If this policy is enabled, you can use JSON to configure preferences.
 
 If this policy is disabled or not configured, preferences are not modified.
 

@@ -1646,11 +1646,13 @@ Value (string):
 ### DisableTelemetry
 Prevent the upload of telemetry data.
 
+As of Firefox 83 and Firefox ESR 78.5, local storage of telemetry data is disabled as well.
+
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableTelemetry`\
-**Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled`
+**Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled,toolkit.telemetry.archive.enabled`
 
 #### Windows (GPO)
 ```
@@ -2257,7 +2259,7 @@ The configuration for each extension is another dictionary that can contain the 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
 | `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension. If installing from the addons.mozilla.org, use the following URL (substituting SHORT_NAME from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/SHORT_NAME/latest.xpi. If installing from the local file system, use a file:/// URL. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
-| `install_sources` | A list of sources from which installing extensions is allowed. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration. If you want to allow the install of extensions from the recommended add-ons page, you must add `about:addons` to this list.
+| `install_sources` | A list of sources from which installing extensions is allowed. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "locale" This setting can be used only for the default configuration.
 | `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
 | `restricted_domains` | An array of domains on which content scripts can't be run. This setting can be used only for the default configuration.
@@ -3204,7 +3206,9 @@ Value (string):
 }
 ```
 ### OverrideFirstRunPage
-Override the first run page. If the value is blank, no first run page is displayed.
+Override the first run page. If the value is an empty string (""), the first run page is not displayed.
+
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `welcomePage`,`noWelcomePage`\
@@ -3239,7 +3243,7 @@ Value (string):
 }
 ```
 ### OverridePostUpdatePage
-Override the upgrade page. If the value is blank, no upgrade page is displayed.
+Override the upgrade page. If the value is an empty string (""), no extra pages are displayed when Firefox is upgraded.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `upgradePage`,`noUpgradePage`\
@@ -3752,6 +3756,8 @@ Value (string):
 ### Preferences
 Set and lock preferences.
 
+**NOTE** On Windows, in order to use this policy, you must clear all settings in the old **Preferences (Deprecated)** section.
+
 Previously you could only set and lock a subset of preferences. Starting with Firefox 81 and Firefox ESR 78.3 you can set many more preferences. You can also set default preferences, user preferences and you can clear preferences.
 
 Preferences that start with the following prefixes are supported:
@@ -3761,6 +3767,8 @@ browser.
 datareporting.policy.
 dom.
 extensions.
+general.autoScroll (Firefox 83, Firefox ESR 78.5)
+general.smoothScroll (Firefox 83, Firefox ESR 78.5)
 geo.
 intl.
 layout.
@@ -3768,21 +3776,33 @@ media.
 network.
 places.
 print.
+signon. (Firefox 83, Firefox ESR 78.5)
 ui.
 widget.
 ```
 as well as the following security preferences:
-```
-security.default_personal_cert
-security.insecure_connection_text.enabled
-security.insecure_connection_text.pbmode.enabled
-security.insecure_field_warning.contextual.enabled
-security.mixed_content.block_active_content
-security.osclientcerts.autoload
-security.ssl.errorReporting.enabled
-security.tls.hello_downgrade_check
-security.warn_submit_secure_to_insecure
-```
+| Preference | Type | Default
+| --- | --- | ---
+| security.default_personal_cert | string | Ask Every Time
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
+| security.insecure_connection_text.enabled | bool | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites.
+| security.insecure_connection_text.pbmode.enabled | bool | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites in private browsing.
+| security.insecure_field_warning.contextual.enabled | bool | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to false, remove the warning for inscure login fields.
+| security.mixed_content.block_active_content | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
+| security.osclientcerts.autoload | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
+| security.ssl.errorReporting.enabled | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
+| security.tls.hello_downgrade_check | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
+| security.warn_submit_secure_to_insecure | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting s form from https to http.
+&nbsp;
+
 Using the preference as the key, set the `Value` to the corresponding preference value.
 
 `Status` can be "default", "locked", "user" or "clear"
@@ -4920,7 +4940,10 @@ Value (string):
 }
 ```
 ### WebsiteFilter
-Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Only http/https addresses are supported at the moment. The arrays are limited to 1000 entries each.
+Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns.
+The arrays are limited to 1000 entries each.
+
+As of Firefox 83 and Firefox ESR 78.5, file URLs are supported.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\

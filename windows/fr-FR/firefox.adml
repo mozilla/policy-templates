@@ -495,6 +495,8 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modi
       <string id="OverrideFirstRunPage">Remplacer la première page d'exécution</string>
       <string id="OverrideFirstRunPage_Explain">Si cette stratégie est activée, vous pouvez spécifier une URL à utiliser comme première page d'exécution. Si vous laissez l'URL vide, aucune page de première exécution ne sera affichée.
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 Si cette stratégie est désactivée ou non configurée, la première page d'exécution est affichée.</string>
       <string id="OverridePostUpdatePage">Remplacer la page de mise à jour</string>
       <string id="OverridePostUpdatePage_Explain">Si cette stratégie est activée, vous pouvez spécifier une URL à afficher après la mise à jour de Firefox. Si vous laissez l'URL vide, aucune page de mise à niveau ne sera affichée.
@@ -544,11 +546,11 @@ Si cette stratégie est activée, les préférences d'arrêt définies explicite
 
 Si cette stratégie n'est pas configurée, aucune préférence d'arrêt ne peut être modifiée par l'utilisateur (comportement précédent).</string>
       <string id="WebsiteFilter_Block">Sites Web bloqués</string>
-      <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez définir des listes indiquant que les sites doivent être bloqués. Les modèles de listes sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Seules les adresses http / https sont prises en charge pour le moment. Il y a une limite de 1000 entrées.
+      <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez définir des listes indiquant que les sites doivent être bloqués. Les modèles de listes sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Il y a une limite de 1000 entrées.
 
 Si cette stratégie est désactivée ou non configurée, aucun site Web n'est bloqué.</string>
       <string id="WebsiteFilter_Exceptions">Exceptions aux sites Web bloqués</string>
-      <string id="WebsiteFilter_Exceptions_Explain">Si cette stratégie est activée et que le filtre de site Web est activé, vous pouvez spécifier des modèles de correspondance pour les sites que vous ne souhaitez pas bloquer. Les modèles de correspondance sont documentés sur https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Seules les adresses http / https sont prises en charge pour le moment. Il y a une limite de 1000 entrées.
+      <string id="WebsiteFilter_Exceptions_Explain">Si cette stratégie est activée et que le filtre de site Web est activé, vous pouvez spécifier des modèles de correspondance pour les sites que vous ne souhaitez pas bloquer. Les modèles de correspondance sont documentés sur https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Il y a une limite de 1000 entrées.
 
 Si cette stratégie est désactivée ou non configurée, il n'y a pas d'exception au filtre de site Web..</string>
       <string id="Bookmark01">Signet 01</string>
@@ -809,7 +811,9 @@ If this policy is disabled or not configured, Firefox defaults are used.
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
       <string id="Preferences">Préférences</string>
-      <string id="Preferences_Explain">If this policy is enabled, you can use JSON to configure preferences.
+      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+
+If this policy is enabled, you can use JSON to configure preferences.
 
 If this policy is disabled or not configured, preferences are not modified.
 

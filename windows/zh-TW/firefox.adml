@@ -493,6 +493,8 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="OverrideFirstRunPage">覆蓋首次執行頁面</string>
       <string id="OverrideFirstRunPage_Explain">若啟用此原則，將可以指定要開啟的 Firefox 首次執行（firstrun）頁面。若保留空白，則不會開啟頁面。
 
+Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+
 若停用或不設定此原則，則顯示預設首次執行頁面。</string>
       <string id="OverridePostUpdatePage">覆蓋升級頁面</string>
       <string id="OverridePostUpdatePage_Explain">若啟用此原則，將可以指定 Firefox 更新後要開啟的頁面。若保留空白，則不會開啟頁面。
@@ -543,11 +545,11 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若不設定此原則，使用者將無法變更所有「關閉瀏覽器時清理資料」設定（先前的行為）。</string>
       <string id="WebsiteFilter_Block">要封鎖的網站</string>
-      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
+      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 最多 1000 筆項目。
 
 若停用或不設定此原則，則不會封鎖任何網站。</string>
       <string id="WebsiteFilter_Exceptions">要封鎖的網站的例外規則</string>
-      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 http/https 網址，最多 1000 筆項目。
+      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 最多 1000 筆項目。
 
 若停用或不設定此原則，則不會放行任何例外網站。</string>
       <string id="Bookmark01">書籤 01</string>
@@ -808,7 +810,9 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。</string>
       <string id="Preferences">偏好設定</string>
-      <string id="Preferences_Explain">若啟用此原則，您可以使用 JSON 檔案來預先指定偏好設定。
+      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+
+若啟用此原則，您可以使用 JSON 檔案來預先指定偏好設定。
 
 若停用或不設定此原則，則不修改偏好設定。
 
