@@ -1646,11 +1646,13 @@ Value (string):
 ### DisableTelemetry
 Prevent the upload of telemetry data.
 
+As of Firefox 83 and Firefox ESR 78.5, local storage of telemetry data is disabled as well.
+
 Mozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableTelemetry`\
-**Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled`
+**Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled,toolkit.telemetry.archive.enabled`
 
 #### Windows (GPO)
 ```
