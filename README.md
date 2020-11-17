@@ -2995,6 +2995,35 @@ Value (string):
 ### ManagedBookmarks
 Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 
+The bookmarks are only added as a button on the personal toolbar. They are not in the bookmarks folder.
+
+The syntax of this policy is exactly the same as the [Chrome ManagedBookmarks policy](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ManagedBookmarks). The schema is:
+```
+{
+ "items": {
+  "id": "BookmarkType",
+  "properties": {
+   "children": {
+    "items": {
+     "$ref": "BookmarkType"
+    },
+    "type": "array"
+   },
+   "name": {
+    "type": "string"
+   },
+   "toplevel_name": {
+    "type": "string"
+   },
+   "url": {
+    "type": "string"
+   }
+  },
+  "type": "object"
+ },
+ "type": "array"
+}
+```
 **Compatibility:** Firefox 83, Firefox ESR 78.5\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A

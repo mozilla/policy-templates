@@ -3704,7 +3704,7 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF83"/>
       <elements>
-        <multiText id="JSON" valueName="ManagedBookmarks"  maxLength="2048"/>
+        <multiText id="JSON" valueName="ManagedBookmarks"  maxLength="16384"/>
       </elements>
     </policy>
   </policies>
