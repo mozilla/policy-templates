@@ -60,6 +60,7 @@
       <string id="DisabledCiphers_group">停用加密演算法</string>
       <string id="EncryptedMediaExtensions_group">加密媒體擴充功能</string>
       <string id="PDFjs_group">PDFjs</string>
+      <string id="PictureInPicture_group">子母畫面</string>
       <string id="Allow">允許的網站</string>
       <string id="AllowSession">允許的網站（僅當次瀏覽階段）</string>
       <string id="Block">封鎖的網站</string>
@@ -793,10 +794,14 @@ Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS s
       <string id="PDFjs_EnablePermissions_Explain">若啟用此原則，將會遵循文件權限設定（例如防止文字複製）。
 
 若停用或不設定此原則，就會忽略文件權限。</string>
-      <string id="PictureInPicture">子母畫面</string>
-      <string id="PictureInPicture_Explain">若停用此原則，將不會在影片上顯示切換進入子母畫面的按鈕。
+      <string id="PictureInPicture_Enabled">啟用</string>
+      <string id="PictureInPicture_Enabled_Explain">若停用此原則，將不會在影片上顯示切換進入子母畫面的按鈕。
 
 若啟用或不設定此原則，則會在影片上顯示子母畫面按鈕。</string>
+      <string id="PictureInPicture_Locked">鎖定</string>
+      <string id="PictureInPicture_Locked_Explain">若啟用此原則，使用者將無法更改 子母畫面 設定。
+
+若停用或不設定此原則，則允許使用者更改 子母畫面 設定。</string>
       <string id="PrimaryPassword">主控密碼</string>
       <string id="PrimaryPassword_Explain">若啟用此原則，將必須輸入主控密碼。
 

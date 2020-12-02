@@ -60,6 +60,7 @@
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
       <string id="PDFjs_group">PDFjs</string>
+      <string id="PictureInPicture_group">Bild in Bild</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -793,10 +794,14 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird de
       <string id="PDFjs_EnablePermissions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Berechtigungen des PDF-Dokuments (wie z.B. Markieren und Kopieren von Text verhindern) angewendet.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Berechtigungen im PDF-Dokument ignoriert.</string>
-      <string id="PictureInPicture">Bild in Bild</string>
-      <string id="PictureInPicture_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Bild-in-Bild Funktion deaktiviert.
+      <string id="PictureInPicture_Enabled">Aktiviert</string>
+      <string id="PictureInPicture_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Bild-in-Bild Funktion deaktiviert.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist die Bild-in-Bild Funktion verfügbar.</string>
+      <string id="PictureInPicture_Locked">Gesperrt</string>
+      <string id="PictureInPicture_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Bild-in-Bild-Einstellungen vom Benutzer nicht geändert werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die Bild-in-Bild-Einstellungen vom Benutzer geändert werden.</string>
       <string id="PrimaryPassword">Masterpasswort</string>
       <string id="PrimaryPassword_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist das Setzen eines Masterpasswortes erforderlich.
 
