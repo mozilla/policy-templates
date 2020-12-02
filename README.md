@@ -3062,7 +3062,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="ManagedBookmarks" value='
+<data id="JSON" value='
 [
   {
     "toplevel_name": "My managed bookmarks folder"
