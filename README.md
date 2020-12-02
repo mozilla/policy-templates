@@ -3803,7 +3803,7 @@ Value (string):
 ```
 ### PictureInPicture
 
-Enable or disable Picture-in-Picture.
+Enable or disable Picture-in-Picture as well as lock it.
 
 **Compatibility:** Firefox 78, Firefox ESR 78\
 **CCK2 Equivalent:** N/A\
@@ -3811,12 +3811,15 @@ Enable or disable Picture-in-Picture.
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\PictureInPicture = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\PictureInPicture\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\PictureInPicture\Locked = 0x1 | 0x0
+
 ```
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PictureInPicture
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~PictureInPicture/PictureInPicture_Enabled
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~PictureInPicture/PictureInPicture_Locked
 ```
 Value (string):
 ```
@@ -3826,14 +3829,22 @@ Value (string):
 ```
 <dict>
   <key>PictureInPicture</key>
-  <true/> | <false/>
+  <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
 </dict>
 ```
 #### policies.json
 ```
 {
   "policies": {
-    "PictureInPicture": true | false
+    "PictureInPicture": {
+      "Enabled": true | false,
+      "Locked": true, false
+    }
   }
 }
 ```

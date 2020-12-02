@@ -60,6 +60,7 @@
       <string id="DisabledCiphers_group">Cifrari disabilitati</string>
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
       <string id="PDFjs_group">PDFjs</string>
+      <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="Allow">Siti consentiti</string>
       <string id="AllowSession">Siti consentiti (solo sessione)</string>
       <string id="Block">Siti bloccati</string>
@@ -795,10 +796,15 @@ Se questo criterio è abilitato o non configurato, viene utilizzato il visualizz
       <string id="PDFjs_EnablePermissions_Explain">Se questo criterio è abilitato, il visualizzatore PDF integrato rispetterà i permessi del documento (ad esempio, l'impedire la copia del testo).
 
 Se questo criterio è disabilitato o non configurato, i permessi del documento sono ignorati.</string>
-      <string id="PictureInPicture">Picture-in-Picture</string>
-      <string id="PictureInPicture_Explain">Se questo criterio è disabilitato, l'interruttore Picture-in-Picture non appare nei video.
+      <string id="PictureInPicture_Enabled">Abilitato</string>
+      <string id="PictureInPicture_Enabled_Explain">Se questo criterio è disabilitato, l'interruttore Picture-in-Picture non appare nei video.
 
 Se questo criterio è abilitato o non configurato, l'interruttore Picture-in-Picture è disponibile per i video.</string>
+      <string id="PictureInPicture_Locked">Bloccato</string>
+      <string id="PictureInPicture_Locked_Explain">Se questo criterio è abilitato, le impostazioni Picture-in-Picture non possono essere modificate dall'utente.
+
+Se questo criterio è disabilitato o non configurato, le impostazioni Picture-in-Picture possono essere modificate dall'utente.</string>
+
       <string id="PrimaryPassword">Password principale</string>
       <string id="PrimaryPassword_Explain">Se questo criterio è abilitato, è richiesto impostare una password principale.
 
