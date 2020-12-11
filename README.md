@@ -3945,9 +3945,11 @@ intl.
 layout.
 media.
 network.
+pdfjs. (Firefox 84, Firefox ESR 78.6)
 places.
 print.
 signon. (Firefox 83, Firefox ESR 78.5)
+spellchecker. (Firefox 84, Firefox ESR 78.6)
 ui.
 widget.
 ```
