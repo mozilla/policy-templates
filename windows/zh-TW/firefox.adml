@@ -494,7 +494,7 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="OverrideFirstRunPage">覆蓋首次執行頁面</string>
       <string id="OverrideFirstRunPage_Explain">若啟用此原則，將可以指定要開啟的 Firefox 首次執行（firstrun）頁面。若保留空白，則不會開啟頁面。
 
-Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+自 Firefox 83、Firefox ESR 78.5 起，您也可以用半形垂直線（|）來隔開要指定的多個網址。
 
 若停用或不設定此原則，則顯示預設首次執行頁面。</string>
       <string id="OverridePostUpdatePage">覆蓋升級頁面</string>
@@ -546,11 +546,11 @@ Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS s
 
 若不設定此原則，使用者將無法變更所有「關閉瀏覽器時清理資料」設定（先前的行為）。</string>
       <string id="WebsiteFilter_Block">要封鎖的網站</string>
-      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 最多 1000 筆項目。
+      <string id="WebsiteFilter_Block_Explain">若啟用此原則，將可以指定要封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。僅支援最多 1000 筆項目。
 
 若停用或不設定此原則，則不會封鎖任何網站。</string>
       <string id="WebsiteFilter_Exceptions">要封鎖的網站的例外規則</string>
-      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。目前僅支援 最多 1000 筆項目。
+      <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。僅支援最多 1000 筆項目。
 
 若停用或不設定此原則，則不會放行任何例外網站。</string>
       <string id="Bookmark01">書籤 01</string>
@@ -799,9 +799,9 @@ Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS s
 
 若啟用或不設定此原則，則會在影片上顯示子母畫面按鈕。</string>
       <string id="PictureInPicture_Locked">鎖定</string>
-      <string id="PictureInPicture_Locked_Explain">若啟用此原則，使用者將無法更改 子母畫面 設定。
+      <string id="PictureInPicture_Locked_Explain">若啟用此原則，使用者將無法更改子母畫面設定。
 
-若停用或不設定此原則，則允許使用者更改 子母畫面 設定。</string>
+若停用或不設定此原則，則允許使用者更改子母畫面設定。</string>
       <string id="PrimaryPassword">主控密碼</string>
       <string id="PrimaryPassword_Explain">若啟用此原則，將必須輸入主控密碼。
 
@@ -815,19 +815,19 @@ Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS s
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。</string>
       <string id="Preferences">偏好設定</string>
-      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+      <string id="Preferences_Explain">註：若要使用此原則，您必須先清除「偏好設定（已棄用）」區段當中的舊設定。
 
 若啟用此原則，您可以使用 JSON 檔案來預先指定偏好設定。
 
 若停用或不設定此原則，則不修改偏好設定。
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。</string>
-      <string id="ManagedBookmarks">Managed Bookmarks</string>
-      <string id="ManagedBookmarks_Explain">If this policy is enabled, you can use JSON to configure managed bookmarks.
+      <string id="ManagedBookmarks">受管理的書籤</string>
+      <string id="ManagedBookmarks_Explain">若啟用此原則，您可以使用 JSON 檔案來指定受管理的書籤。
 
-If this policy is disabled or not configured, managed bookmarks are not added.
+若停用或不設定此原則，則不會加入受管理的書籤。
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks.</string>
+若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks。</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
