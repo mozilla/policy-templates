@@ -4023,7 +4023,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Preferences" value='
+<data id="JSON" value='
 {
   "accessibility.force_disabled": {
     "Value": 1,
