@@ -101,7 +101,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 
 Enable or disable **automatic** application update.
 
-If set to true, application updates are installed without user approval.
+If set to true, application updates are installed without user approval within Firefox. The operating system might still require approval.
 
 If set to false, application updates are downloaded but the user can choose when to install the update.
 
@@ -141,7 +141,7 @@ Value (string):
 ```
 ### AppUpdateURL
 
-Change the URL for application update.
+Change the URL for application update if you are providing Firefox updates from a custom update server.
 
 **Compatibility:** Firefox 62, Firefox ESR 60.2\
 **CCK2 Equivalent:** N/A\
@@ -465,6 +465,8 @@ Value (string):
 }
 ```
 ### Bookmarks
+
+Note: [`ManagedBookmarks`](#managedbookmarks) is the new recommended way to add bookmarks. This policy will continue to be supported.
 
 Add bookmarks in either the bookmarks toolbar or menu. Only `Title` and `URL` are required. If `Placement` is not specified, the bookmark will be placed on the toolbar. If `Folder` is specified, it is automatically created and bookmarks with the same folder name are grouped together.
 
@@ -902,7 +904,7 @@ Value (string):
 }
 ```
 ### DisableAppUpdate
-Turn off application updates.
+Turn off application updates within Firefox.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableFirefoxUpdates`\
@@ -1069,6 +1071,8 @@ Value (string):
 ```
 ### DisableDefaultBrowserAgent
 Prevent the default browser agent from taking any actions. Only applicable to Windows; other platforms don’t have the agent.
+
+The browser agent is a Windows-only scheduled task which runs in the background to collect and submit data about the browser that the user has set as their OS default. More information is available [here](https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html).
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7 (Windows only)\
 **CCK2 Equivalent:** N/A\
@@ -3803,7 +3807,7 @@ Value (string):
 ```
 ### PictureInPicture
 
-Enable or disable Picture-in-Picture as well as lock it.
+Enable or disable Picture-in-Picture as well as prevent the user from enabling or disabling it (Locked).
 
 **Compatibility:** Firefox 78, Firefox ESR 78\
 **CCK2 Equivalent:** N/A\
