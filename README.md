@@ -2274,8 +2274,8 @@ The configuration for each extension is another dictionary that can contain the 
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
-```
 Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
+```
 {
   "*": {
     "blocked_install_message": "Custom error message.",
@@ -2515,8 +2515,8 @@ Within each handler type, you specify the given mimeType/extension/scheme as a k
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
-```
 Software\Policies\Mozilla\Firefox\Handlers (REG_MULTI_SZ) =
+```
 {
   "mimeTypes": {
     "application/msword": {
@@ -3033,8 +3033,8 @@ The syntax of this policy is exactly the same as the [Chrome ManagedBookmarks po
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
-```
 Software\Policies\Mozilla\Firefox\ManagedBookmarks (REG_MULTI_SZ) =
+```
 [
   {
     "toplevel_name": "My managed bookmarks folder"
@@ -4002,8 +4002,8 @@ Status
 **Preferences Affected:** Many
 
 #### Windows (GPO)
-```
 Software\Policies\Mozilla\Firefox\Preferences (REG_MULTI_SZ) =
+```
 {
   "accessibility.force_disabled": {
     "Value": 1,
