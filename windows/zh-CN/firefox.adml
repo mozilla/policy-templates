@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="2.7" schemaVersion="1.0">
+ <displayName/>
+ <description/>
+ <resources>
+<stringTable>
+   <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 或更新版本</string>
+   <string id="UNSUPPORTED">不再支持。 </string>
+   <string id="SUPPORTED_FF60">Firefox 60 或更新版本、Firefox 60 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF62">Firefox 62 或更新版本、Firefox 60.2 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF63">Firefox 63 或更新版本</string>
+   <string id="SUPPORTED_FF64">Firefox 64 或更新版本、Firefox 60.4 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF66">Firefox 66 或更新版本、Firefox 60.6 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF67">Firefox 67 或更新版本、Firefox 60.7 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF68">Firefox 68 或更新版本、Firefox 68 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF6801">Firefox 68.0.1 或更新版本、Firefox 68.0.1 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF60ESR">Firefox 60 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF69">Firefox 69 或更新版本、Firefox 68.1 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF70">Firefox 70 或更新版本、Firefox 68.2 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF71">Firefox 71 或更新版本、Firefox 68.3 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF72">Firefox 72 或更新版本、Firefox 68.4 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF73">Firefox 73 或更新版本、Firefox 68.5 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF74">Firefox 74 或更新版本、Firefox 68.6 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF75">Firefox 75 或更新版本、Firefox 68.7 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF75_ONLY">Firefox 75 或更新版本</string>
+   <string id="SUPPORTED_FF76">Firefox 76 或更新版本、Firefox 68.8 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF76_ONLY">Firefox 76 或更新版本</string>
+   <string id="SUPPORTED_FF77">Firefox 77 或更新版本、Firefox 68.9 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF77_ONLY">Firefox 77 或更新版本</string>
+   <string id="SUPPORTED_FF78">Firefox 78 或更新版本</string>
+   <string id="SUPPORTED_FF79">Firefox 79 或更新版本、Firefox 78.1 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF80">Firefox 80 或更新版本、Firefox 78.2 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF81">Firefox 81 或更新版本、Firefox 78.3 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF82">Firefox 82 或更新版本、Firefox 78.4 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF83">Firefox 83 或更新版本、Firefox 78.5 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF84">Firefox 84 或更新版本、Firefox 78.6 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF85">Firefox 85 或更新版本、Firefox 78.7 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF86">Firefox 86 或更新版本、Firefox 78.8 ESR 或更新版本</string>
+   <string id="firefox">Firefox</string>
+<string id="Permissions_group">权限</string>
+   <string id="Camera_group">摄像头</string>
+   <string id="Microphone_group">麦克风</string>
+   <string id="Location_group">位置</string>
+   <string id="Notifications_group">通知</string>
+   <string id="Autoplay_group">自动播放</string>
+   <string id="VirtualReality_group">虚拟现实</string>
+   <string id="Authentication_group">验证</string>
+   <string id="Bookmarks_group">书签</string>
+   <string id="Certificates_group">证书</string>
+   <string id="Popups_group">弹出视窗</string>
+   <string id="Cookies_group">Cookie</string>
+   <string id="Addons_group">附加组件</string>
+   <string id="Extensions_group">扩展套件</string>
+   <string id="Flash_group">Flash</string>
+   <string id="Homepage_group">首页</string>
+   <string id="Search_group">搜索</string>
+   <string id="Preferences_group">偏好设定（已弃用）</string>
+   <string id="UserMessaging_group">显示给用户的消息</string>
+   <string id="DisabledCiphers_group">禁用加密算法</string>
+   <string id="EncryptedMediaExtensions_group">加密媒体扩充功能</string>
+   <string id="PDFjs_group">PDFjs</string>
+   <string id="PictureInPicture_group">子母画面</string>
+   <string id="Allow">允许的网站</string>
+   <string id="AllowSession">允许的网站（仅当次浏览阶段）</string>
+   <string id="Block">封锁的网站</string>
+   <string id="AppAutoUpdate">应用程序自动更新</string>
+   <string id="AppAutoUpdate_Explain">若启用此原则，Firefox 会不经用户同意自动更新。 
+
+若禁用此原则，会自动下载 Firefox 更新，但可由用户自行选择何时安装。 
+
+若不设定此原则，用户可自行决定是否要自动更新 Firefox。 </string>
+   <string id="AppUpdateURL">自订更新网址</string>
+   <string id="AppUpdateURL_Explain">若启用此原则，可指定用来检查更新的服务器网址。 当您在内部网络自行架设更新服务器时会有帮助。 
+
+若禁用或不设定此原则，将使用预设更新网址。 </string>
+   <string id="Authentication_SPNEGO">SPNEGO</string>
+   <string id="Authentication_SPNEGO_Explain">若启用此原则，将允许指定的网站于浏览器中进行 SPNEGO 验证。 清单中的项目格式为 mydomain.com或https://myotherdomain.com。 
+
+若禁用或不设置此原则，将不允许任何网站于浏览器中进行 SPNEGO 验证。 
+
+若需更多信息，请参考 https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication。 </string>
+   <string id="Authentication_Delegated">指派</string>
+   <string id="Authentication_Delegated_Explain">若启用此原则，浏览器可针对指定的网站指派用户验证信息给服务器。 列表中的项目格式为 mydomain.com或https://myotherdomain.com。 
+
+若禁用或不设定此原则，浏览器将不会指派用户验证信息到任何网站的服务器。 
+
+若需更多信息，请参考 https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication。 </string>
+   <string id="Authentication_NTLM">NTLM</string>
+   <string id="Authentication_NTLM_Explain">若启用此原则，将信任指定的网站进行 NTLM 验证。 列表中的项目格式为 mydomain.com或https://myotherdomain.com。 
+
+若禁用或不设定此原则，将不信任任何网站进行 NTLM 验证。 
+
+若需更多信息，请参考 https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication。 </string>
+   <string id="Authentication_AllowNonFQDN">允许非 FQDN</string>
+   <string id="Authentication_AllowNonFQDN_Explain">若启用此原则（并勾选选取盒），可随时允许于非 FQDN（完整域名）网址进行 SPNEGO 或 NTLM 身份验证。 
+
+若禁用或不设定此原则，则不会对非 FQDN 网址进行 NTLM 或 SPNEGO 身份验证。 </string>
+   <string id="Authentication_AllowProxies">允许代理服务器</string>
+   <string id="Authentication_AllowProxies_Explain">若禁用此原则，则不会对代理服务器进行 SPNEGO 或 NTLM 身份验证。 
+
+若启用（并勾选选取盒）或不设定此原则，则总是会对代理服务器进行 SPNEGO或NTLM身份验证。 </string>
+   <string id="Authentication_Locked">不允许更改验证偏好设定</string>
+   <string id="Authentication_Locked_Explain">若禁用此原则，可由用户自行更改验证偏好设定。 
+
+若启用或不设定此原则，则不允许用户更改验证偏好设定。 </string>
+   <string id="Authentication_PrivateBrowsing">允许在隐私浏览模式进行身份验证</string>
+   <string id="Authentication_PrivateBrowsing_Explain">若启用此原则，将可以在隐私浏览模式进行整合身份验证。 
+
+若禁用或不设定此原则，就不会在隐私浏览模式进行整合身份验证。 </string>
+   <string id="BlockAboutAddons">封锁附加元件管理员</string>
+<string id="BlockAboutAddons_Explain">若启用此原则，用户将无法打开附加组件管理员或 about：addons。 
+
+如果禁用或不设置此原则，用户则可以开启附加组件管理员或 about：addons。 </string>
+<string id="BlockAboutConfig">封锁 about：config</string>
+   <string id="BlockAboutConfig_Explain">若启用此原则，用户将无法开启 about：config。 
+
+如果禁用或不设定此原则，则可以开启 about：config。 </string>
+<string id="BlockAboutProfiles">封锁 about：profiles</string>
+   <string id="BlockAboutProfiles_Explain">若启用此原则，用户将无法开启 about：profiles。 
+
+如果禁用或不设定此原则，则可以开启 about：profiles。 </string>
+   <string id="BlockAboutSupport">封锁疑难解答信息</string>
+<string id="BlockAboutSupport_Explain">若启用此原则，用户将无法开启疑难排解信息或 about：support。 
+
+若禁用或不设定此原则，则可以开启疑难排解信息或 about：support。 </string>
+   <string id="DisableSetDesktopBackground">禁用设为桌布</string>
+   <string id="DisableSetDesktopBackground_Explain">若启用此原则，用户将无法把图片设置为系统桌布。 
+
+若禁用或不设定此原则，则可以把图片设定为系统桌布。 </string>
+   <string id="CaptivePortal">Captive Portal</string>
+   <string id="CaptivePortal_Explain">若禁用此策略，将禁用 Captive Portal 支持。 
+
+若启用或不设定此原则，则启用 Captive Portal支持。 </string>
+   <string id="Certificates_ImportEnterpriseRoots">汇入企业根凭证</string>
+   <string id="Certificates_ImportEnterpriseRoots_Explain">若启用此原则，Firefox 将从 Windows 证书储存区读取凭证。 
+
+若禁用或不设定此原则，Firefox 则不会从 Windows 证书储存区读取凭证。 </string>
+   <string id="Certificates_Install">安装证书</string>
+   <string id="Certificates_Install_Explain">若启用此原则，Firefox 将自行安装列出的凭证。 将在 %USERPROFILE%\AppData\Local\Mozilla\Certificates 及 %USERPROFILE%\AppData\Roaming\Mozilla\Certificates 当中寻找凭证档案。 
+
+若禁用或不设定此原则，Firefox 将不会安装额外凭证。 </string>
+   <string id="DefaultDownloadDirectory">默认下载文件夹</string>
+   <string id="DefaultDownloadDirectory_Explain">若启用此原则，可设定下载项目的默认保存文件夹。 可使用 ${home} 来指定家目录。 
+
+若禁用或不设定此原则，将使用 Firefox 的默认下载文件夹。 </string>
+   <string id="DownloadDirectory">指定下载文件夹</string>
+   <string id="DownloadDirectory_Explain">若启用此原则，可设定并固定下载项目的默认保存文件夹。 可使用 ${home} 来指定家目录。 
+
+若禁用或不设定此原则，将使用 Firefox 的默认下载文件夹，且可由用户变更。 </string>
+   <string id="DNSOverHTTPS_group">DNS Over HTTPS</string>
+   <string id="DNSOverHTTPS_Enabled">启用</string>
+   <string id="DNSOverHTTPS_Enabled_Explain">若禁用此原则，将禁用 DNS over httpS。 
+
+若启用或不设定此原则，则启用 DNS Over httpS。 </string>
+   <string id="DNSOverHTTPS_ProviderURL">供应商网址</string>
+   <string id="DNSOverHTTPS_ProviderURL_Explain">若启用此策略，将使用指定的网址作为供应商网址。 
+
+若禁用或不设定此原则，则使用默认供应商。 </string>
+
+   <string id="DNSOverHTTPS_Locked">锁定</string>
+   <string id="DNSOverHTTPS_Locked_Explain">若启用此原则，用户将无法更改 DNS over httpS 设置。 
+
+若禁用或不设定此原则，则允许用户更改 DNS over httpS 设置。 </string>
+   <string id="DNSOverHTTPS_ExcludedDomains">要排除的域</string>
+   <string id="DNSOverHTTPS_ExcludedDomains_Explain">若启用此原则，将排除指定的网域使用 DNS over httpS。 
+
+若禁用或不设定此原则，则不会排除任何网域使用 DNS over HTTPS。 </string>
+   <string id="DNSOverhttpS">设置 DNS Over httpS （Moved）</string>
+   <string id="DNSOverHTTPS_Explain">若启用此原则，可变更默认 DNS over httpS 设置。 
+
+若禁用或不设定此原则，将使用默认 DNS Over httpS 设置。 </string>
+   <string id="DisableMasterPasswordCreation">禁用设定控制密码</string>
+   <string id="DisableMasterPasswordCreation_Explain">若启用此原则，将无法设置控制密码。 
+
+若禁用或不设定此原则，则可设定主控密码。 </string>
+   <string id="DisableAppUpdate">禁用更新</string>
+   <string id="DisableAppUpdate_Explain">若启用此原则，浏览器将不会接收更新。 
+
+若禁用或不设定此原则，则会接收更新。 </string>
+   <string id="DisableBuiltinPDFViewer">禁用内置PDF 查看器（PDF.js）</string>
+<string id="DisableBuiltinPDFViewer_Explain">若启用此原则，将不会使用 Firefox 内置 PDF 文件。 
+
+若禁用或不设定此原则，则会使用 Firefox 内置查看器开启 PDF 文件。 </string>
+   <string id="DisableDefaultBrowserAgent">禁用默认浏览器代理工具</string>
+   <string id="DisableDefaultBrowserAgent_Explain">若启用此原则，将禁用默认浏览器代理工具。 
+
+若禁用或不设定此原则，则启用默认浏览器代理工具。 
+
+如果需关于默认浏览器代理工具的更多信息，请参考 https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+   <string id="DisableDeveloperTools">禁用开发者工具</string>
+   <string id="DisableDeveloperTools_Explain">若启用此原则，将关闭 Firefox 当中的网页开发者工具功能。 
+
+若禁用或不设定此原则，则可使用 Firefox 网页开发者工具。 </string>
+   <string id="DisableFeedbackCommands">禁用意见反馈相关功能</string>
+   <string id="DisableFeedbackCommands_Explain">若启用此原则，将不会显示说明菜单中的「送出意见回馈」及「回报诈骗网站」项目。 
+
+若禁用或不设定此原则，将会显示说明菜单中的「送出意见回馈」及「回报诈骗网站」项目。 </string>
+   <string id="DisableFirefoxAccounts">禁用 Firefox Accounts</string>
+   <string id="DisableFirefoxAccounts_Explain">若启用此原则，将禁用 Firefox Accounts 相关功能，包含 Sync。 
+
+若禁用或不设定此原则，则可以使用 Firefox Accounts 及 Sync 相关功能。 </string>
+   <string id="DisableFirefoxScreenshots">禁用 Firefox Screenshots</string>
+   <string id="DisableFirefoxScreenshots_Explain">若启用此策略，将无法使用 Firefox Screenshots。 
+
+若禁用或不设定此原则，则可以使用 Firefox Screenshots。 </string>
+   <string id="DisableFirefoxStudies">禁用 Firefox Studies</string>
+<string id="DisableFirefoxStudies_Explain">若启用此原则，Firefox 将不会执行SHIELD 研究或进行 Heartbeat 调查。 
+
+若禁用或不设定此原则，则使用者可以自行选择是否接受 SHIELD 研究或进行 Heartbeat 调查。 
+
+若需更多信息，请参考 https://support.mozilla.org/en-US/kb/shield及https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
+   <string id="DisableForgetButton">禁用「忘记」按钮</string>
+   <string id="DisableForgetButton_Explain">若启用此原则，将无法使用「忘记」按钮。 
+
+若禁用或不设定此原则，则可以使用「忘记」按钮。 </string>
+   <string id="DisableFormHistory">禁用表单填写纪录</string>
+   <string id="DisableFormHistory_Explain">若启用此原则，Firefox 将不会保留表单填写或搜索纪录。 
+
+若禁用或不设定此原则，Firefox 则会保留表单填写及搜索纪录。 </string>
+   <string id="DisablePasswordReveal">不允许在「存储的登录信息」页面显示密码</string>
+   <string id="DisablePasswordReveal_Explain">若启用此原则，用户将无法在「存储的登录信息」页面显示密码。
+
+若禁用或不设定此原则，用户则可以在「存储的登录信息」页面显示密码。 </string>
+   <string id="DisablePocket">禁用 Pocket</string>
+   <string id="DisablePocket_Explain">若启用此策略，将无法使用 Pocket。 
+
+若禁用或不设定此原则，则可以使用 Pocket。 </string>
+   <string id="DisablePrivateBrowsing">禁用隐私浏览功能</string>
+   <string id="DisablePrivateBrowsing_Explain">若启用此原则，将不允许使用隐私浏览功能。 
+
+若禁用或不设定此原则，则可以使用隐私浏览功能。 </string>
+   <string id="DisableProfileImport">禁用导入配置文件</string>
+   <string id="DisableProfileImport_Explain">若启用此原则，将禁用书签窗口中的「自其他浏览器导入数据」选项。 
+
+若禁用或不设定此原则，则可以使用「自其他浏览器导入数据」选项。 </string>
+   <string id="DisableProfileRefresh">禁用重新整理配置文件</string>
+<string id="DisableProfileRefresh_Explain">若启用此原则，在 about：support 页面或 support.mozilla.org 就不会提供「重新整理 Firefox」功能。 
+
+若禁用或不设定此原则，则会提供「重新整理 Firefox」功能。 </string>
+   <string id="DisableSafeMode">禁用安全模式</string>
+   <string id="DisableSafeMode_Explain">若启用此原则，无法重新启动浏览器进入安全模式。 
+
+若禁用或不设定此原则，则允许进入安全模式。 </string>
+   <string id="DisableSecurityBypass_InvalidCertificate">防止忽略证书错误</string>
+   <string id="DisableSecurityBypass_InvalidCertificate_Explain">若启用此原则，连接证书无效时，将不会显示「新增例外网站」按钮，可防止用户忽略证书错误。 
+
+若禁用或不设定此原则，则可以忽略凭证错误。 </string>
+   <string id="DisableSecurityBypass_SafeBrowsing">防止忽略安全浏览错误</string>
+   <string id="DisableSecurityBypass_SafeBrowsing_Explain">若启用此原则，用户将无法忽略警告并访问有害网站。 
+
+若禁用或不设定此原则，则使用者可自行决定是否访问有害网站。 </string>
+   <string id="DisableSystemAddonUpdate">禁用系统附加组件更新</string>
+   <string id="DisableSystemAddonUpdate_Explain">若启用此原则，将不会安装新的系统附加组件，也不会更新已安装的系统附加组件。 
+
+若禁用或不设定此原则，则会安装或更新系统附加组件。 </string>
+   <string id="DisableTelemetry">禁用 Telemetry</string>
+   <string id="DisableTelemetry_Explain">若启用此原则，将不会上传 Telemetry 资料。 
+
+若禁用或不设定此原则，则会收集并上传 Telemetry 资料。 
+
+Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息可帮助为企业用户打造更好的产品。 </string>
+   <string id="DisplayBookmarksToolbar">显示书签工具栏</string>
+   <string id="DisplayBookmarksToolbar_Explain">若启用此原则，默认将显示书签工具栏。 用户还是可以将其隐藏。 
+
+若禁用或不设定此原则，则默认不会显示书签工具栏。 </string>
+   <string id="DisplayMenuBar">显示菜单列（已弃用）</string>
+   <string id="DisplayMenuBar_Explain">若启用此原则，默认将显示菜单列。 用户还是可以将其隐藏。 
+
+若禁用或不设定此原则，则默认不会显示菜单列。 </string>
+   <string id="DisplayMenuBar_Enum">显示菜单列</string>
+   <string id="DisplayMenuBar_Enum_Explain">若启用此原则，您可以决定是否显示菜单列，以及是否允许用户自行显示或隐藏菜单栏。 
+
+若禁用或不设定此原则，默认将不显示菜单列。 </string>
+   <string id="DisplayMenuBar_Always">总是显示</string>
+   <string id="DisplayMenuBar_Never">永不显示</string>
+   <string id="DisplayMenuBar_Default_On">默认显示</string>
+   <string id="DisplayMenuBar_Default_Off">默认不显示</string>
+   <string id="DontCheckDefaultBrowser">不要检查是否为默认浏览器</string>
+   <string id="DontCheckDefaultBrowser_Explain">若启用此原则，Firefox 不会在启动时检查是否为默认浏览器。 
+
+如果禁用或不设定此策略，Firefox 则会在启动时检查是否为默认浏览器。 </string>
+   <string id="Extensions_Install">要安装的扩充套件</string>
+   <string id="Extensions_Install_Explain">若启用此原则，您可以指定一组扩展套件网址或路径的列表，将在 Firefox 启动时安装。 
+只要变更此清单，就会重新安装扩充套件。
+
+若禁用或不设定此原则，则不会安装任何扩充套件。 </string>
+   <string id="Extensions_Uninstall">要移除的扩充套件</string>
+   <string id="Extensions_Uninstall_Explain">若启用此原则，将可以指定一组要移除的扩展套件 ID 列表。 
+只要变更此清单，就会移除扩充套件。
+
+若禁用或不设定此原则，则不会移除任何扩充套件。 </string>
+   <string id="Extensions_Locked">防止禁用或移除扩充套件</string>
+   <string id="Extensions_Locked_Explain">若启用此原则，将可以指定一组不让用户移除或禁用的的扩充套件。 
+
+若禁用或不设定此原则，则不会锁定任何扩充套件。 </string>
+   <string id="ExtensionUpdate">扩展套件更新</string>
+   <string id="ExtensionUpdate_Explain">若禁用此原则，将不会自动更新扩充套件。 
+
+若启用或不设定此原则，将自动更新扩充套件。 </string>
+   <string id="ExtensionSettings">扩展套件管理</string>
+   <string id="ExtensionSettings_Explain">若启用此原则，您可以用 JSON 文件来描述扩展套件管理策略。 
+
+若禁用或不设定此原则，将不会管理扩充套件。 
+
+若需关于建立原则的更多信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings。 </string>
+   <string id="HardwareAcceleration">硬件加速</string>
+   <string id="HardwareAcceleration_Explain">若禁用此原则，将禁用硬件加速功能且无法启用。 
+
+若启用或不设定此原则，则会启用硬件加速功能。 </string>
+   <string id="LegacyProfiles">传统配置文件</string>
+   <string id="LegacyProfiles_Explain">若启用此原则，Firefox 将不会尝试对本地电脑中不同套的 Firefox 创建不同的配置文件文件夹。 也等于设定MOZ_LEGACY_PROFILES。 
+
+若禁用或不设定此原则，Firefox 则会对每一套 Firefox 创建不同的配置文件。 </string>
+   <string id="LocalFileLinks">本地文件链接</string>
+   <string id="LocalFileLinks_Explain">若启用此原则，将可以指定网站内容是否允许链接到本地文件。 
+
+若禁用或不设定此原则，网站则不能链接到本地文件。 </string>
+   <string id="NetworkPrediction">网络预测</string>
+   <string id="NetworkPrediction_Explain">若禁用此原则，将禁用网络预测（DNS 预读）功能。 
+
+若启用或不设定此原则，则启用网络预测（DNS 预读）功能。 </string>
+   <string id="NewTabPage">新标签页面</string>
+   <string id="NewTabPage_Explain">若禁用此原则，将使用空白页作为新标签页面。 
+
+如果启用或不设置此原则，新标签页面将使用默认值。 </string>
+   <string id="OfferToSaveLogins">提供存储登录信息</string>
+   <string id="OfferToSaveLogins_Explain">若启用或不设置此原则，Firefox 将提示保存网站登录信息与密码。 
+
+若禁用此原则，Firefox 则不会提供存储登录信息与密码。 </string>
+   <string id="OfferToSaveLoginsDefault">提供存储登录信息（默认）</string>
+   <string id="OfferToSaveLoginsDefault_Explain">若启用或不设置此原则，Firefox 将提示保存网站登录信息与密码，且无法关闭。 
+
+若禁用此原则，Firefox 将提示存储网站登入信息与密码，且无法开启。 </string>
+<string id="PopupBlocking_Allow_Explain">若启用此原则，将允许来自指定来源网址的弹出窗口。 若指定了顶级域名（例如http://example.org），也将允许所有来自子域的弹出窗口。 
+
+若禁用或不设定此原则，则遵循预设的弹出窗口原则。 </string>
+   <string id="PopupBlocking_Default">封锁网站显示弹出窗口</string>
+   <string id="PopupBlocking_Default_Explain">若禁用此原则，默认将允许来自所有网站的弹出窗口。 
+
+若未启用或设定此原则，将封锁来自所有网站的弹出窗口。 </string>
+   <string id="PopupBlocking_Locked">不允许更改允许偏好设定</string>
+   <string id="PopupBlocking_Locked_Explain">若启用此原则，用户将无法调整弹出窗口偏好设定。 
+
+若禁用或不设定此原则，则用户能够自行调整弹出窗口偏好设定。 </string>
+<string id="InstallAddonsPermission_Allow_Explain">若启用此原则，除非禁用安装附加组件，否则将允许安装来自指定来源网址的附加组件。 若指定了顶级域名（例如 http://example.org），也将允许所有来自子域的附加元件。 
+
+若禁用或不设定此原则，则遵循预设的附加元件原则。 </string>
+   <string id="InstallAddonsPermission_Default">允许安装来自网站的附加组件</string>
+   <string id="InstallAddonsPermission_Default_Explain">若禁用此原则，将无法安装附加组件。 
+
+若未启用或设定此原则，则可安装附加组件。 </string>
+<string id="Cookies_Allow_Explain">若启用此原则，将允许来自指定来源网址的 Cookie。 若指定了顶级域名（例如 http://example.org），也将允许所有来自子域的 Cookie。 
+
+若禁用或不设定此原则，则遵循预设的 Cookie 原则。 </string>
+<string id="Cookies_AllowSession_Explain">若启用此原则，将允许来自指定来源网址的 Cookie，但在关闭浏览器时清除这些 Cookie。 若指定了顶级域名（例如 http://example.org），也将允许所有来自子域的 Cookie。 
+
+若禁用或不设定此原则，则遵循预设的 Cookie 原则。 </string>
+<string id="Cookies_Block_Explain">若启用此原则，将封锁来自指定来源网址的 Cookie。 若指定了顶级域名（例如 http://example.org），也将封锁所有来自子域的 Cookie。 
+
+若禁用或不设定此原则，则默认不封锁 Cookie。 </string>
+   <string id="Cookies_Default">接受来自网站的 Cookie</string>
+   <string id="Cookies_Default_Explain">若禁用此原则，将默认不接受来自网站的 Cookie。 
+
+若未启用或设定此原则，则接受来自网站的 Cookie。 </string>
+   <string id="Cookies_AcceptThirdParty">允许第三方 Cookie</string>
+   <string id="Cookies_AcceptThirdParty_Explain">若接受 Cookie 并启用了此原则，将可以设置是否要接受第三方 Cookie。 
+
+若禁用或未设定此原则，或是不允许 Cookie，则忽略此设定。 </string>
+   <string id="Cookies_AcceptThirdParty_All">总是接受</string>
+   <string id="Cookies_AcceptThirdParty_None">永不接受</string>
+   <string id="Cookies_AcceptThirdParty_FromVisited">只接受来自访问过网站的 Cookie</string>
+   <string id="Cookies_ExpireAtSessionEnd">保留 Cookie 直到 Firefox 关闭</string>
+<string id="Cookies_ExpireAtSessionEnd_Explain">若启用此原则并允许 Cookie，Cookie 将在Firefox 时失效。 
+
+若禁用或未设定此原则，或是不允许 Cookie，则忽略此设定。 </string>
+   <string id="Cookies_RejectTracker">拒绝跟踪器</string>
+   <string id="Cookies_RejectTracker_Explain">若启用此原则并允许 Cookie，Firefox 将默认拒绝跟踪器 Cookie。 
+
+若禁用或未设定此原则，或是不允许 Cookie，则忽略此设定。 </string>
+   <string id="Cookies_Locked">不允许调整偏好设定</string>
+   <string id="Cookies_Locked_Explain">若启用此原则，用户将无法调整 Cookie 偏好设置。 
+
+若禁用或不设定此原则，则使用者能够自行调整 Cookie 偏好设定。 </string>
+   <string id="Camera_Allow_Explain">若启用此原则，将允许指定来源网址访问摄像头。 
+
+若禁用或不设定此原则，则依循预设摄影机存取原则。 </string>
+   <string id="Camera_Block_Explain">若启用此原则，将封锁指定来源网址访问摄像头。 
+
+若禁用或不设定此原则，则默认不会封锁访问摄影机。 </string>
+   <string id="Camera_BlockNewRequests">封锁存取摄影机的新请求</string>
+   <string id="Camera_BlockNewRequests_Explain">若启用此原则，将拒绝不在允许原则列表中的网站访问摄像头的权限请求。 
+
+若禁用或不设定此原则，任何不在封锁原则清单中的网站都可以请求访问摄影机。 </string>
+   <string id="Camera_Locked">不允许调整偏好设定</string>
+   <string id="Camera_Locked_Explain">若启用此原则，用户将无法调整摄影机偏好设定。 
+
+若禁用或不设定此原则，则使用者能够自行调整摄影机偏好设定。 </string>
+   <string id="Microphone_Allow_Explain">若启用此原则，将总是允许来自列表中的网站访问麦克风的权限请求。 
+
+若禁用或不设定此原则，则依循预设麦克风存取原则。 </string>
+   <string id="Microphone_Block_Explain">若启用此原则，将拒绝列表中的网站访问麦克风的权限请求。 
+
+若禁用或不设定此原则，则默认不会封锁访问麦克风。 </string>
+   <string id="Microphone_BlockNewRequests">封锁访问麦克风的新请求</string>
+   <string id="Microphone_BlockNewRequests_Explain">若启用此原则，将拒绝不在允许原则列表中的网站访问麦克风的权限请求。 
+
+若禁用或不设定此原则，任何不在封锁原则清单中的网站都可以请求访问麦克风。 </string>
+   <string id="Microphone_Locked">不允许调整偏好设定</string>
+   <string id="Microphone_Locked_Explain">若启用此原则，用户将无法调整麦克风偏好设定。 
+
+若禁用或不设定此原则，则用户能够自行调整麦克风偏好设定。 </string>
+   <string id="Location_Allow_Explain">若启用此原则，将总是允许来自列表中的网站访问所在位置的权限请求。 
+
+若禁用或不设定此原则，则依循预设位置存取原则。 </string>
+   <string id="Location_Block_Explain">若启用此原则，将拒绝列表中的网站访问所在位置的权限请求。 
+
+若禁用或不设定此原则，则默认不会封锁存取所在位置。 </string>
+   <string id="Location_BlockNewRequests">封锁访问所在位置的新请求</string>
+   <string id="Location_BlockNewRequests_Explain">若启用此原则，将拒绝不在允许原则列表中的网站访问所在位置的权限请求。 
+
+若禁用或不设定此原则，任何不在封锁原则清单中的网站都可以请求访问所在位置。 </string>
+   <string id="Location_Locked">不允许调整偏好设定</string>
+   <string id="Location_Locked_Explain">若启用此原则，用户将无法调整位置偏好设定。 
+
+若禁用或不设定此原则，则使用者能够自行调整位置分享偏好设定。 </string>
+   <string id="Notifications_Allow_Explain">若启用此原则，将总是允许来自列表中的网站发送通知。 
+
+若禁用或不设定此原则，则依循预设通知原则。 </string>
+   <string id="Notifications_Block_Explain">若启用此原则，将拒绝列表中的网站发送通知。 
+
+若禁用或不设定此原则，则默认不会封锁传送通知。 </string>
+   <string id="Notifications_BlockNewRequests">封锁传送通知的新请求</string>
+   <string id="Notifications_BlockNewRequests_Explain">若启用此原则，将拒绝不在允许原则列表中的网站发送通知的请求。 
+
+若禁用或不设定此原则，任何不在封锁原则清单中的网站都可以请求传送通知。 </string>
+   <string id="Notifications_Locked">不允许调整偏好设定</string>
+   <string id="Notifications_Locked_Explain">若启用此原则，用户将无法调整通知偏好设定。 
+
+若禁用或不设定此原则，则使用者能够自行调整通知偏好设定。 </string>
+   <string id="Autoplay_Allow_Explain">若启用此原则，将永远针对指定的来源允许自动播放。 
+
+若禁用或不设定此原则，将遵循预设自动播放原则。 </string>
+   <string id="Autoplay_Block_Explain">若启用此原则，将永远针对指定的来源封锁自动播放。 
+
+若禁用或不设定此原则，将遵循预设自动播放原则。 </string>
+   <string id="Autoplay_Default">默认自动播放等级</string>
+   <string id="Autoplay_Default_Explain">若启用此原则，您可以自行指定默认自动播放等级。 
+
+若禁用或不设定此原则，默认会封锁音频自动播放。 
+
+注：ESR 版当中无法封锁视频播放。 </string>
+   <string id="Autoplay_Locked">不允许调整偏好设定</string>
+   <string id="Autoplay_Locked_Explain">若启用此原则，用户将无法调整自动播放偏好设定。 
+
+若禁用或不设定此原则，则使用者能够自行调整自动播放偏好设定。 </string>
+   <string id="AllowAudioVideo">允许视频自动播放</string>
+   <string id="BlockAudio">封锁音频自动播放</string>
+   <string id="BlockAudioVideo">封锁影音自动播放</string>
+   <string id="VirtualReality_Allow_Explain">若启用此策略，将总是允许指定来源网址访问虚拟现实设备。 
+
+若禁用或不设定此原则，则遵循预设的虚拟实境装置存取原则。 </string>
+   <string id="VirtualReality_Block_Explain">若启用此原则，将封锁指定来源网址访问虚拟现实设备。 
+
+若禁用或不设定此原则，则预设不封锁存取虚拟实境装置。 </string>
+   <string id="VirtualReality_BlockNewRequests">封锁访问虚拟现实设备的新请求。 </string>
+   <string id="VirtualReality_BlockNewRequests_Explain">若启用此原则，不在允许原则当中列出的网站，就无法要求用户授权访问虚拟现实设备。
+
+若禁用或不设定此原则，则只要不在封锁原则当中的网站，皆可要求使用者授权访问虚拟现实装置。 </string>
+   <string id="VirtualReality_Locked">不允许调整偏好设定</string>
+   <string id="VirtualReality_Locked_Explain">若启用此原则，用户将无法调整虚拟现实偏好设置。 
+
+若禁用或不设定此原则，则使用者能够自行调整虚拟实境偏好设定。 </string>
+   <string id="FirefoxHome">自订 Firefox 首页</string>
+   <string id="FirefoxHome_Explain">若启用此原则，将可以设定要在 Firefox 首页显示哪些段落，并防止用户更改设置。 
+
+若禁用或不设定此原则，则显示默认段落，用户也可以更改设定。 </string>
+<string id="FlashPlugin_Allow_Explain">若启用此原则，除非完全禁用 Flash，否则将允许指定来源网址使用。 若指定了顶级域名（例如 http://example.org），也将允许所有子域使用 Flash。 
+
+若禁用或不设定此原则，则依循预设 Flash 启用原则。 </string>
+<string id="FlashPlugin_Block_Explain">若启用此原则，将封锁指定来源网址的 Flash 内容。 若指定了顶级域名（例如 http://example.org），也将封锁所有子域使用 Flash。 
+
+若禁用或不设定此原则，则依循预设 Flash 内容原则。 </string>
+   <string id="FlashPlugin_Default">活动和您启用的 Flash 内容</string>
+   <string id="FlashPlugin_Default_Explain">若启用此原则，将总是启用网站上的 Flash 内容。 
+
+若禁用此原则，将不会启用任何网站中的 Flash 内容，就算列于允许清单也会封锁。 
+
+若不设定此原则，则于点击后播放 Flash 内容。 </string>
+   <string id="FlashPlugin_Locked">不允许调整偏好设定</string>
+   <string id="FlashPlugin_Locked_Explain">若启用此原则，用户将无法调整 Flash 偏好设定。 
+
+若禁用或不设定此原则则用户能够自行调整Flash偏好设定。 </string>
+   <string id="OverrideFirstRunPage">覆盖首次执行页面</string>
+   <string id="OverrideFirstRunPage_Explain">若启用此原则，将可以指定要打开的 Firefox 首次执行（firstrun）页面。 若保留空白，则不会开启页面。 
+
+自 Firefox 83、Firefox ESR 78.5 起，您也可以用半形垂直线（|）来隔开要指定的多个网址。 
+
+若禁用或不设定此原则，则显示默认首次执行页面。 </string>
+   <string id="OverridePostUpdatePage">覆盖升级页面</string>
+   <string id="OverridePostUpdatePage_Explain">若启用此原则，将可以指定 Firefox 更新后要开启的页面。 若保留空白，则不会开启页面。 
+
+若禁用或不设定此原则，则显示默认升级页面。 </string>
+   <string id="SanitizeOnShutdown">关闭浏览器时清理资料</string>
+   <string id="SanitizeOnShutdown_Explain">若启用此原则，将可以选择要在关闭 Firefox 时清理哪些资料。 
+
+若禁用或不设定此原则，则不会在关闭 Firefox 时清理任何资料。 </string>
+   <string id="SanitizeOnShutdown_group">在关闭浏览器时清理数据。 </string>
+
+   <string id="SanitizeOnShutdown_Cache">快取</string>
+   <string id="SanitizeOnShutdown_Cache_Explain">若启用此原则，将在浏览器关闭时清除快取。 
+
+若禁用或不设定此原则，关闭浏览器时就不会清除快取。 </string>
+   <string id="SanitizeOnShutdown_Cookies">Cookie</string>
+   <string id="SanitizeOnShutdown_Cookies_Explain">若启用此原则，将在浏览器关闭时清除 Cookie。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除 Cookie。 </string>
+   <string id="SanitizeOnShutdown_Downloads">下载日志</string>
+   <string id="SanitizeOnShutdown_Downloads_Explain">若启用此原则，将在浏览器关闭时清除下载记录。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除下载记录。 </string>
+   <string id="SanitizeOnShutdown_FormData">表单与搜索纪录</string>
+   <string id="SanitizeOnShutdown_FormData_Explain">若启用此原则，将在浏览器关闭时清除表单数据。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除表单数据。 </string>
+   <string id="SanitizeOnShutdown_History">上网记录</string>
+   <string id="SanitizeOnShutdown_History_Explain">若启用此原则，将在浏览器关闭时清除上网记录。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除浏览记录。 </string>
+   <string id="SanitizeOnShutdown_Sessions">已登录的连接</string>
+   <string id="SanitizeOnShutdown_Sessions_Explain">若启用此原则，将在浏览器关闭时清除 Session 记录。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除 Session 纪录。 </string>
+   <string id="SanitizeOnShutdown_SiteSettings">网站偏好设定</string>
+   <string id="SanitizeOnShutdown_SiteSettings_Explain">若启用此原则，将在浏览器关闭时清除网站设定。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除网站设定。 </string>
+   <string id="SanitizeOnShutdown_OfflineApps">脱线网站数据</string>
+   <string id="SanitizeOnShutdown_OfflineApps_Explain">若启用此原则，将在浏览器关闭时清除站点离线数据存储空间。 
+
+若禁用或不设定此原则，则不会在浏览器关闭时清除站点离线数据储存空间。 </string>
+   <string id="SanitizeOnShutdown_Locked">锁定</string>
+   <string id="SanitizeOnShutdown_Locked_Explain">若禁用此原则，用户可自行调整任何「关闭浏览器时清理数据」设置。 
+
+若启用此原则，用户将无法变更任何通过企业原则指定的「关闭浏览器时清理数据」设置（其余可变更）。
+
+若不设定此原则，用户将无法变更所有「关闭浏览器时清理数据」设定（先前的行为）。 </string>
+   <string id="WebsiteFilter_Block">要封锁的网站</string>
+   <string id="WebsiteFilter_Block_Explain">若启用此原则，将可以指定要封锁的网站网址规则。 规则格式文件位于https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。 仅支持最多1000笔项目。 
+
+若禁用或不设定此原则，则不会封锁任何网站。 </string>
+   <string id="WebsiteFilter_Exceptions">要封锁的网站的例外规则</string>
+   <string id="WebsiteFilter_Exceptions_Explain">若启用此原则，且启用了网站封锁规则，将可以指定要排除封锁的网站网址规则。 规则格式文件位于https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。 仅支持最多1000笔项目。 
+
+若禁用或不设定此原则，则不会放行任何例外网站。 </string>
+   <string id="Bookmark01">书签 01</string>
+   <string id="Bookmark02">书签 02</string>
+   <string id="Bookmark03">书签 03</string>
+   <string id="Bookmark04">书签 04</string>
+   <string id="Bookmark05">书签 05</string>
+   <string id="Bookmark06">书签 06</string>
+   <string id="Bookmark07">书签 07</string>
+   <string id="Bookmark08">书签 08</string>
+   <string id="Bookmark09">书签 09</string>
+   <string id="Bookmark10">书签 10</string>
+   <string id="Bookmark11">书签 11</string>
+   <string id="Bookmark12">书签 12</string>
+   <string id="Bookmark13">书签 13</string>
+   <string id="Bookmark14">书签 14</string>
+   <string id="Bookmark15">书签 15</string>
+   <string id="Bookmark16">书签 16</string>
+   <string id="Bookmark17">书签 17</string>
+   <string id="Bookmark18">书签 18</string>
+   <string id="Bookmark19">书签 19</string>
+   <string id="Bookmark20">书签 20</string>
+   <string id="Bookmark21">书签 21</string>
+   <string id="Bookmark22">书签 22</string>
+   <string id="Bookmark23">书签 23</string>
+   <string id="Bookmark24">书签 24</string>
+   <string id="Bookmark25">书签 25</string>
+   <string id="Bookmark26">书签 26</string>
+   <string id="Bookmark27">书签 27</string>
+   <string id="Bookmark28">书签 28</string>
+   <string id="Bookmark29">书签 29</string>
+   <string id="Bookmark30">书签 30</string>
+   <string id="Bookmark31">书签 31</string>
+   <string id="Bookmark32">书签 32</string>
+   <string id="Bookmark33">书签 33</string>
+   <string id="Bookmark34">书签 34</string>
+   <string id="Bookmark35">书签 35</string>
+   <string id="Bookmark36">书签 36</string>
+   <string id="Bookmark37">书签 37</string>
+   <string id="Bookmark38">书签 38</string>
+   <string id="Bookmark39">书签 39</string>
+   <string id="Bookmark40">书签 40</string>
+   <string id="Bookmark41">书签 41</string>
+   <string id="Bookmark42">书签 42</string>
+   <string id="Bookmark43">书签 43</string>
+   <string id="Bookmark44">书签 44</string>
+   <string id="Bookmark45">书签 45</string>
+   <string id="Bookmark46">书签 46</string>
+   <string id="Bookmark47">书签 47</string>
+   <string id="Bookmark48">书签 48</string>
+   <string id="Bookmark49">书签 49</string>
+   <string id="Bookmark50">书签 50</string>
+   <string id="Bookmark_Explain">若启用此策略，将可以指定要加入到 Firefox 的书签。 由于有 Bug 存在的关系，您必须设置书签位置。 请注意必须照顺序设定书签。 
+
+若禁用或不设定此原则，则不会加入新书签。 </string>
+   <string id="BookmarkPlacementToolbar">工具栏</string>
+   <string id="BookmarkPlacementMenu">菜单</string>
+   <string id="NoDefaultBookmarks">不建立默认书签</string>
+   <string id="NoDefaultBookmarks_Explain">若启用此策略，将不会创建默认书签与智能书签（最常浏览、最近新增的标签）。 
+
+若禁用或不设定此原则，则会建立预设书签与智慧书签（最常浏览、最近新增的标签）。
+
+注：此原则仅在设定文件首次执行前设定才有效。 </string>
+   <string id="HomepageURL">首页网址</string>
+   <string id="HomepageURL_Explain">若启用此原则，您可以设定首页网址，还可以固定该网址。
+
+若禁用或不设定此原则，用户则可以自行更改首页设定。 </string>
+   <string id="HomepageAdditional">其他首页</string>
+   <string id="HomepageAdditional_Explain">若启用此原则，将可设定其他首页，将以多个标签的方式开启。
+
+若禁用或不设定此原则，则仅有一页首页。 </string>
+   <string id="HomepageStartPage">开始页面</string>
+   <string id="HomepageStartPage_Explain">若启用此原则，将可以更改 Firefox 启动时要显示的内容。 可以是首页、先前的浏览状态，或空白页。
+
+若禁用或不设定此原则，则默认使用先前的浏览状态。 </string>
+   <string id="None">无</string>
+   <string id="Homepage">首页</string>
+   <string id="PreviousSession">先前的浏览状态</string>
+   <string id="HomepageLocked">首页（锁定）</string>
+   <string id="PasswordManagerEnabled">密码管理员</string>
+   <string id="PasswordManagerEnabled_Explain">若禁用此策略，将无法于偏好设定中使用密码管理员。 
+
+若启用或不设定此原则，则可于偏好设定中使用密码管理员。 </string>
+   <string id="PromptForDownloadLocation">提示下载位置</string>
+   <string id="PromptForDownloadLocation_Explain">若禁用此原则，将不会向用户询问文件下载位置。
+
+若启用此原则，则总是会向用户询问档案下载位置。
+
+若不设定此原则，则会向用户询问档案下载位置，但用户也可以自行更改预设行为。 </string>
+   <string id="Proxy">代理服务器配置</string>
+   <string id="Proxy_Explain">若启用此原则，将可以调整并锁定网络设定。
+
+请选择连线类型，然后填写对应的段落。 由于有 Bug 存在的关系，您必须选择 SOCKS 代理服务器的版本。 
+
+若禁用或不设定此原则，则使用预设网络设定，且使用者可自行调整。 </string>
+   <string id="SOCKSVersion4">SOCKS v4</string>
+   <string id="SOCKSVersion5">SOCKS v5</string>
+   <string id="AutoConfigURL">代理服务器自动设置网址</string>
+   <string id="AutoConfigURL_Explain">仅应于选择自动设置代理服务器时，设置这些项目</string>
+   <string id="Passthrough">不经由代理服务器开启下列网址</string>
+   <string id="Passthrough_Explain">仅应于选择手动指定代理服务器时，设置这些项目</string>
+   <string id="Connection">连接类型</string>
+   <string id="NoProxy">不使用代理服务器</string>
+   <string id="SystemProxy">使用系统代理服务器设置</string>
+   <string id="ManualProxy">手动设置代理服务器</string>
+   <string id="AutoDetectProxy">自动侦测代理服务器设定</string>
+   <string id="AutoConfigProxy">代理服务器自动设置网址</string>
+   <string id="TrackingProtection">追踪保护</string>
+   <string id="TrackingProtection_Explain">若不设置此原则，在一般浏览模式将不会默认开启追踪保护，而在隐私浏览模式中将会开启，用户可自行调整设定。 
+
+若禁用此原则，则会在一般与隐私浏览模式中都禁用追踪保护功能，且使用者无法开启。
+
+若启用此原则，则会在一般与隐私浏览模式中都启用追踪保护功能，且您可以决定是否要允许让用户自行更改设定。 </string>
+   <string id="TrackingProtection_group">追踪保护</string>
+   <string id="TrackingProtection_Value">启用</string>
+   <string id="TrackingProtection_Value_Explain">若启用此原则，将开启追踪保护功能。
+
+若禁用此原则，将关闭追踪保护功能，且不允许用户开启。
+
+若不设定此原则，将使用预设追踪保护设定，且允许用户自行调整。 </string>
+   <string id="TrackingProtection_Cryptomining">加密货币采矿器</string>
+   <string id="TrackingProtection_Cryptomining_Explain">若启用此原则，将封锁使用加密货币采矿程序的指令码。
+
+若禁用或不设定此原则，则不会封锁使用加密货币采矿程序的指令码。 </string>
+   <string id="TrackingProtection_Fingerprinting">数字指纹追踪程序</string>
+   <string id="TrackingProtection_Fingerprinting_Explain">若启用此原则，将封锁使用数字指纹追踪程序的指令码。
+
+若禁用或不设定此原则，则不会封锁使用数字指纹追踪程序的指令码。 </string>
+   <string id="TrackingProtection_Exceptions">例外网址</string>
+   <string id="TrackingProtection_Exceptions_Explain">若启用此原则，可针对指定的来源不开启追踪保护功能。
+
+若禁用或不设定此原则，则对所有网站开启追踪保护功能。 </string>
+   <string id="TrackingProtection_Locked">不允许调整追踪保护功能偏好设定</string>
+   <string id="TrackingProtection_Locked_Explain">若启用此原则，用户将无法调整追踪保护功能偏好设定。
+
+若禁用或不设定此原则，用户则可以调整追踪保护功能偏好设定。 </string>
+   <string id="RequestedLocales">请求语系</string>
+   <string id="RequestedLocalesString">请求语系（字串）</string>
+   <string id="RequestedLocales_Explain">若启用此原则，您可以指定要由应用程序显示的语系顺序清单。 将使得对应的语言套件生效。 
+
+若禁用或不设定此原则，应用程序将使用预设语系。 </string>
+   <string id="SecurityDevices">安全性设备</string>
+   <string id="SecurityDevices_Explain">若启用此原则，将可以指定要安装的 PKCS #11 模块列表。 需于设定中指定模块名称及完整路径。 
+
+若禁用或不设定此原则，则不会安装其他的 PKCS #11 模块。 </string>
+   <string id="SearchBar">搜索行位置</string>
+   <string id="SearchBar_Explain">若启用此原则，将可以设定搜索列是否要自网址列分离。
+
+若禁用或不设定此原则，新用户的搜索列将合并于网址列内;从 Firefox 56 或之前版本升级上来的用户，则会独立于工具栏中。 </string>
+   <string id="SearchEngines_1">搜索引擎 1</string>
+   <string id="SearchEngines_2">搜索引擎 2</string>
+   <string id="SearchEngines_3">搜索引擎 3</string>
+   <string id="SearchEngines_4">搜索引擎 4</string>
+   <string id="SearchEngines_5">搜索引擎 5</string>
+   <string id="SearchEngines_Explain">若启用此原则，将可以指定要加入 Firefox 的搜索引擎。 请使用 {searchTerms} 指定要替换于 URL 中的搜索词。 由于有 Bug 存在的关系，您必须指定查询方法（通常是 GET）。 请注意必须照顺序设定搜索引擎。 
+
+若禁用或不设定此原则，则不会加入搜索引擎。 </string>
+   <string id="SearchBar_Unified">合并于网址行内</string>
+   <string id="SearchBar_Separate">独立于工具栏中</string>
+   <string id="SearchEngine_Method_GET">GET</string>
+   <string id="SearchEngine_Method_POST">POST</string>
+   <string id="SearchEngines_Default">默认搜索引擎</string>
+   <string id="SearchEngines_Default_Explain">若启用此原则，将可以设定默认要使用的搜索引擎名称。 
+
+若禁用或不设定此原则，则使用 Firefox 搜索引擎。 </string>
+   <string id="SearchEngines_PreventInstalls">防止安装搜索引擎</string>
+   <string id="SearchEngines_PreventInstalls_Explain">若启用此原则，用户将无法从网页安装搜索引擎。 
+
+若禁用或不设定此原则，则可以从网页安装搜索引擎。 </string>
+   <string id="SearchEngines_Remove">移除搜索引擎</string>
+   <string id="SearchEngines_Remove_Explain">若启用此原则，将可以指定要移除或隐藏的搜索引擎。
+
+若禁用或不设定此原则，则不会移除或隐藏搜索引擎。 </string>
+   <string id="SearchSuggestEnabled">搜索建议</string>
+   <string id="SearchSuggestEnabled_Explain">若禁用此原则，将禁用搜索建议功能。
+
+若启用此原则，将启用搜索建议功能。
+
+若不设定此原则，则会启用搜索建议功能，且使用者可自行关闭此功能。 </string>
+   <string id="SSLVersionMin">启用的最低 SSL 版本</string>
+   <string id="SSLVersionMin_Explain">若启用此原则，Firefox 将不会使用低于指定版本的 SSL/TLS 版本进行连接。
+
+若禁用或不设定此原则，Firefox 的默认最低版本为 TLS 1.0。 </string>
+   <string id="SSLVersionMax">启用的最高 SSL 版本</string>
+   <string id="SSLVersionMax_Explain">若启用此原则，将不会使用高于指定版本的 SSL/TLS 版本进行连接。
+
+若禁用或不设定此原则，Firefox 的默认最高版本为 TLS 1.3。 </string>
+   <string id="TLS1">TLS 1.0</string>
+   <string id="TLS1_1">TLS 1.1</string>
+   <string id="TLS1_2">TLS 1.2</string>
+   <string id="TLS1_3">TLS 1.3</string>
+   <string id="SupportMenu">技术支持菜单</string>
+   <string id="SupportMenu_Explain">若启用此策略，将在说明菜单中加入技术支持信息项目。 
+
+若禁用或不设定此原则，则不会加入菜单项目。 </string>
+   <string id="UserMessaging_WhatsNew">有什么新鲜事</string>
+   <string id="UserMessaging_WhatsNew_Explain">若禁用此原则，将不会显示「有什么新鲜事」的图标与选单项目。
+
+若启用或不设定此原则，则会显示「有什么新鲜事」的图示与菜单项目。 </string>
+   <string id="UserMessaging_ExtensionRecommendations">推荐的扩充套件</string>
+   <string id="UserMessaging_ExtensionRecommendations_Explain">若禁用此原则，将不会在用户浏览网站时推荐扩充套件。
+
+若启用或不设定此原则，则会在用户浏览网站时推荐扩充套件。 </string>
+   <string id="UserMessaging_FeatureRecommendations">功能推荐</string>
+   <string id="UserMessaging_FeatureRecommendations_Explain">若禁用此原则，将不会在用户操作 Firefox 时推荐 Firefox 功能。
+
+若启用或不设定此原则，则会在用户操作 Firefox 时推荐 Firefox 功能。 </string>
+   <string id="UserMessaging_UrlbarInterventions">介入网址行</string>
+   <string id="UserMessaging_UrlbarInterventions_Explain">若禁用此策略，将不将在 URL 栏输入时推荐操作行为。 
+
+若启用或不设定此原则，则会根据用户在网址栏输入的内容推荐操作行为。 </string>
+   <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
+   <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
+   <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
+   <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
+   <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
+   <string id="DisabledCiphers_Explain">若启用此原则，将禁用指定的加密套件组。 
+
+若禁用此原则，将只会开启指定的加密套件组。 
+
+若不设定此原则，则会根据 Firefox 当中的默认值来启用或禁用加密套件组。 </string>
+   <string id="EncryptedMediaExtensions_Enabled">开启加密媒体扩充功能</string>
+   <string id="EncryptedMediaExtensions_Enabled_Explain">若禁用此原则，需经用户明确同意才会下载加密媒体扩充功能（例如 Widevine），Firefox 不会主动下载。
+
+如果启用或不设置此策略，Firefox 将自动下载并使用加密媒体扩充功能（例如 Widevine）。 </string>
+   <string id="EncryptedMediaExtensions_Locked">锁定加密媒体扩充功能</string>
+   <string id="EncryptedMediaExtensions_Locked_Explain">若启用此原则且禁用了 EncryptedMediaExtensions，Firefox 将不会下载加密媒体扩充功能（例如 Widevine），也不会询问用户是否要安装。
+
+若禁用或不设定此原则，此原则就不会生效。 </string>
+   <string id="PDFjs_Enabled">启用 PDFjs</string>
+   <string id="PDFjs_Enabled_Explain">若禁用此原则，将不会使用内置的 PDF 查看器。
+
+若启用或不设定此原则，就会使用内置的 PDF 查看器。 </string>
+   <string id="PDFjs_EnablePermissions">启用权限</string>
+   <string id="PDFjs_EnablePermissions_Explain">若启用此原则，将会遵循文件权限设定（例如防止文字复制）。
+
+若禁用或不设定此原则，就会忽略文件权限。 </string>
+   <string id="PictureInPicture_Enabled">启用</string>
+   <string id="PictureInPicture_Enabled_Explain">若禁用此原则，将不会在影片上显示切换进入子母画面的按钮。
+
+若启用或不设定此原则，则会在影片上显示子母画面按钮。 </string>
+   <string id="PictureInPicture_Locked">锁定</string>
+   <string id="PictureInPicture_Locked_Explain">若启用此原则，用户将无法更改子母画面设定。
+
+若禁用或不设定此原则，则允许用户更改子母画面设定。 </string>
+   <string id="PrimaryPassword">主控密码</string>
+   <string id="PrimaryPassword_Explain">若启用此原则，将必须输入主控密码。
+
+若禁用此原则，用户将无法建立主控密码。
+
+若不设定此原则，则使用者可自行决定是否要使用主控密码功能。 </string>
+   <string id="Handlers">应用程序处理方式</string>
+   <string id="Handlers_Explain">若启用此原则，您可以使用 JSON 文件来设定默认应用程序处理方式。
+
+若禁用或不设定此原则，则使用 Firefox 默认设置。 
+
+若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。 </string>
+   <string id="Preferences">偏好设定</string>
+   <string id="Preferences_Explain">注：若要使用此原则，您必须先清除「偏好设定（已弃用）」区段当中的旧设定。
+
+若启用此原则，您可以使用 JSON 文件来预先指定偏好设定。 
+
+若禁用或不设定此原则，则不修改偏好设定。
+
+若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。 </string>
+   <string id="ManagedBookmarks">受管理的书签</string>
+   <string id="ManagedBookmarks_Explain">若启用此原则，您可以使用 JSON 文件来指定受管理的书签。
+
+若禁用或不设定此原则，则不会加入受管理的书签。
+
+若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks。 </string>
+   <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
+
+若需要偏好设置的详细说明，请参考：
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+   <string id="Preferences_String_Explain">若启用此原则，偏好设定将锁定为输入的字串。 若禁用此原则，则不会生效。 
+
+若需要偏好设置的详细说明，请参考：
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+   <string id="Preferences_Enum_Explain">若启用此原则，偏好设定将锁定为输入的值。 若禁用此原则，则不会生效。 
+
+若需要偏好设置的详细说明，请参考：
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。 </string>
+   <string id="Preferences_Unsupported_Explain">已不再于 Windows 平台支持此偏好设定。 我们还在评估是否要建立原则。 </string>
+   <string id="Preferences_accessibility_force_disabled_auto">自动（0）</string>
+   <string id="Preferences_accessibility_force_disabled_off">总是关闭（1）</string>
+   <string id="Preferences_security_default_personal_cert_Ask_Every_Time">每次询问</string>
+   <string id="Preferences_security_default_personal_cert_Select_Automatically">自动选择</string>
+   <string id="accessibility_force_disabled">accessibility.force_disabled</string>
+   <string id="app_update_auto">app.update.auto（已弃用）</string>
+   <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
+   <string id="browser_bookmarks_file">browser.bookmarks.file</string>
+   <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
+   <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
+   <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
+   <string id="browser_places_importBookmarksHTML">browser.places.importBookmarksHTML</string>
+   <string id="browser_safebrowsing_phishing_enabled">browser.safebrowsing.phishing.enabled</string>
+   <string id="browser_safebrowsing_malware_enabled">browser.safebrowsing.malware.enabled</string>
+   <string id="browser_search_update">browser.search.update</string>
+   <string id="browser_tabs_warnOnClose">browser.tabs.warnOnClose</string>
+   <string id="browser_cache_disk_parent_directory">browser.cache.disk.parent_directory</string>
+   <string id="browser_slowStartup_notificationDisabled">browser.slowStartup.notificationDisabled</string>
+   <string id="browser_taskbar_previews_enable">browser.taskbar.previews.enable</string>
+   <string id="browser_urlbar_suggest_bookmark">browser.urlbar.suggest.bookmark</string>
+   <string id="browser_urlbar_suggest_history">browser.urlbar.suggest.history</string>
+   <string id="browser_urlbar_suggest_openpage">browser.urlbar.suggest.openpage</string>
+   <string id="datareporting_policy_dataSubmissionPolicyBypassNotification">datareporting.policy.dataSubmissionPolicyBypassNotification</string>
+   <string id="dom_allow_scripts_to_close_windows">dom.allow_scripts_to_close_windows</string>
+   <string id="dom_disable_window_flip">dom.disable_window_flip</string>
+   <string id="dom_disable_window_move_resize">dom.disable_window_move_resize</string>
+   <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
+   <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
+   <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+   <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+   <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
+   <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
+   <string id="geo_enabled">geo.enabled</string>
+   <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
+   <string id="intl_accept_languages">intl.accept_languages</string>
+   <string id="media_eme_enabled">media.eme.enabled（已弃用）</string>
+   <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
+   <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
+   <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
+   <string id="network_IDN_show_punycode">network. IDN_show_punycode</string>
+   <string id="places_history_enabled">places.history.enabled</string>
+   <string id="print_save_print_settings">print.save_print_settings</string>
+   <string id="security_default_personal_cert">security.default_personal_cert</string>
+   <string id="security_ssl_errorReporting_enabled">security.ssl.errorReporting.enabled</string>
+   <string id="security_mixed_content_block_active_content">security.mixed_content.block_active_content</string>
+   <string id="ui_key_menuAccessKeyFocuses">ui.key.menuAccessKeyFocuses</string>
+   <string id="browser_newtabpage_activity-stream_default_sites">browser.newtabpage.activity-stream.default.sites</string>
+   <string id="extensions_htmlaboutaddons_recommendations_enabled">extensions.htmlaboutaddons.recommendations.enabled</string>
+   <string id="media_peerconnection_enabled">media.peerconnection.enabled</string>
+   <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist（已弃用）</string>
+   <string id="media_peerconnection_ice_obfuscate_host_addresses_blocklist">media.peerconnection.ice.obfuscate_host_addresses.blocklist</string>
+   <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
+   <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
+   <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+  </stringTable>
+  <presentationTable>
+   <presentation id="AppUpdateURL">
+<textBox refId="AppUpdateURL">
+     <label>网址：</label>
+    </textBox>
+   </presentation>
+   <presentation id="Authentication">
+<listBox refId="Authentication"/>
+   </presentation>
+   <presentation id="Authentication_AllowNonFQDN">
+<checkBox refId="Authentication_AllowNonFQDN_NTLM">总是允许于非FQDN 网址进行 NTLM 验证</checkBox>
+<checkBox refId="Authentication_AllowNonFQDN_SPNEGO">总是允许于非FQDN 网址进行 SPNEGO 验证</checkBox>
+   </presentation>
+   <presentation id="Authentication_AllowProxies">
+<checkBox refId="Authentication_AllowProxies_NTLM">自动允许对代理服务器进行 NTLM 验证</checkBox>
+<checkBox refId="Authentication_AllowProxies_SPNEGO">自动允许对代理服务器进行 SPNEGO 验证</checkBox>
+   </presentation>
+   <presentation id="Certificates_Install">
+<listBox refId="Certificates_Install"/>
+   </presentation>
+   <presentation id="RequestedLocales">
+<listBox refId="RequestedLocales"/>
+   </presentation>
+   <presentation id="SecurityDevices">
+<listBox refId="SecurityDevices"/>
+   </presentation>
+   <presentation id="Extensions">
+<listBox refId="Extensions"/>
+   </presentation>
+   <presentation id="WebsiteFilter">
+<listBox refId="WebsiteFilter"/>
+   </presentation>
+<presentation id="Permissions"><listBox refId="Permissions"/></presentation>
+<presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">允许网站弹出窗口</listBox></presentation>
+   <presentation id="Cookies_AcceptThirdParty">
+<dropdownList refId="Cookies_AcceptThirdParty"/>
+   </presentation>
+   <presentation id="SearchBar">
+<dropdownList refId="SearchBar"/>
+   </presentation>
+   <presentation id="TrackingProtection">
+<checkBox refId="TrackingProtectionLocked">不允许调整追踪保护偏好设置。 </checkBox>
+<checkBox refId="Cryptomining">封锁加密货币采矿程序。 </checkBox>
+<checkBox refId="Fingerprinting">封锁数位指纹追踪程序。 </checkBox>
+    <text>Exceptions:</text>
+<listBox refId="TrackingProtection_Exceptions"/>
+   </presentation>
+   <presentation id="TrackingProtection_Exceptions">
+<listBox refId="TrackingProtection_Exceptions"/>
+   </presentation>
+   <presentation id="OverridePage">
+<textBox refId="OverridePage">
+     <label>网址：</label>
+    </textBox>
+   </presentation>
+   <presentation id="HomepageURL">
+    <text>网址：</text>
+<textBox refId="HomepageURL">
+     <label/>
+    </textBox>
+<checkBox refId="HomepageLocked">不允许变更首页。 </checkBox>
+   </presentation>
+   <presentation id="HomepageAdditional">
+<listBox refId="HomepageAdditional">其他首页</listBox>
+   </presentation>
+   <presentation id="StartPage">
+<dropdownList refId="StartPage"/>
+   </presentation>
+   <presentation id="Bookmark">
+    <text>标题：</text>
+<textBox refId="BookmarkTitle">
+     <label/>
+    </textBox>
+    <text>网址：</text>
+<textBox refId="BookmarkURL">
+     <label/>
+    </textBox>
+    <text>Favicon 网址：</text>
+<textBox refId="BookmarkFavicon">
+     <label/>
+    </textBox>
+    <text>置于：</text>
+<dropdownList refId="BookmarkPlacement"/>
+    <text>文件夹名称：</text>
+<textBox refId="BookmarkFolder">
+     <label/>
+    </textBox>
+   </presentation>
+   <presentation id="SearchEngine">
+<textBox refId="SearchEngine_Name">
+     <label>名称：</label>
+    </textBox>
+<textBox refId="SearchEngine_URLTemplate">
+     <label>网址模板：</label>
+    </textBox>
+    <text>Method:</text>
+<dropdownList refId="SearchEngine_Method"/>
+<textBox refId="SearchEngine_IconURL">
+     <label>图标网址：</label>
+    </textBox>
+<textBox refId="SearchEngine_Alias">
+<label>昵称：</label>
+    </textBox>
+<textBox refId="SearchEngine_Description">
+     <label>描述：</label>
+    </textBox>
+<textBox refId="SearchEngine_SuggestURLTemplate">
+     <label>搜索建议网址模板：</label>
+    </textBox>
+<textBox refId="SearchEngine_PostData">
+     <label>POST 数据：</label>
+    </textBox>
+   </presentation>
+   <presentation id="SearchEngines_Default">
+<textBox refId="SearchEngines_Default">
+     <label/>
+    </textBox>
+   </presentation>
+   <presentation id="SearchEngines_Remove">
+<listBox refId="SearchEngines_Remove"/>
+   </presentation>
+   <presentation id="Proxy">
+<checkBox refId="ProxyLocked">不允许更改代理服务器设置。 </checkBox>
+    <text>连接类型：</text>
+<dropdownList refId="ConnectionType"/>
+    <text>http 代理服务器：</text>
+<textBox refId="HTTPProxy">
+     <label/>
+    </textBox>
+<checkBox refId="UsehttpProxyForAllProtocols">所有通讯协议都使用此代理服务器。 </checkBox>
+    <text>SSL 代理服务器：</text>
+<textBox refId="SSLProxy">
+     <label/>
+    </textBox>
+    <text>FTP 代理服务器：</text>
+<textBox refId="FTPProxy">
+     <label/>
+    </textBox>
+    <text>SOCKS 主机：</text>
+<textBox refId="SOCKSProxy">
+     <label/>
+    </textBox>
+    <text>SOCKS 版本：</text>
+<dropdownList refId="SOCKSVersion"/>
+    <text>直接连接</text>
+<textBox refId="Passthrough">
+     <label/>
+    </textBox>
+    <text>示例： .mozilla.org， .net.tw， 192.168.1.0/24</text>
+    <text>Proxy 自动设置网址：</text>
+<textBox refId="AutoConfigURL">
+     <label/>
+    </textBox>
+<checkBox refId="AutoLogin">若已储存密码则不要提示验证。 </checkBox>
+<checkBox refId="UseProxyForDNS">使用 SOCKS v5 时也代理 DNS 查询。 </checkBox>
+   </presentation>
+   <presentation id="DNSOverHTTPS">
+    <text>提供者网址：</text>
+<textBox refId="ProviderURL">
+     <label/>
+    </textBox>
+<checkBox refId="DNSOverhttpSEnabled">启用DNS over httpS。 </checkBox>
+<checkBox refId="DNSOverhttpSLocked">不允许变更 DNS over httpS 偏好设置。 </checkBox>
+   </presentation>
+   <presentation id="SSLVersion">
+<dropdownList refId="SSLVersion"/>
+   </presentation>
+   <presentation id="SupportMenu">
+    <text>标题：</text>
+<textBox refId="SupportMenuTitle">
+     <label/>
+    </textBox>
+    <text>网址：</text>
+<textBox refId="SupportMenuURL">
+     <label/>
+    </textBox>
+    <text>快捷键：</text>
+<textBox refId="SupportMenuAccessKey">
+     <label/>
+    </textBox>
+   </presentation>
+   <presentation id="Preferences_String">
+<textBox refId="Preferences_String">
+     <label/>
+    </textBox>
+   </presentation>
+   <presentation id="Preferences_accessibility_force_disabled">
+<dropdownList refId="Preferences_accessibility_force_disabled"/>
+   </presentation>
+   <presentation id="Preferences_security_default_personal_cert">
+<dropdownList refId="Preferences_security_default_personal_cert"/>
+   </presentation>
+   <presentation id="LocalFileLinks">
+<listBox refId="LocalFileLinks"/>
+   </presentation>
+   <presentation id="SanitizeOnShutdown">
+<checkBox refId="SanitizeOnShutdown_Cache">快取</checkBox>
+<checkBox refId="SanitizeOnShutdown_Cookies">Cookie</checkBox>
+<checkBox refId="SanitizeOnShutdown_Downloads">下载记录</checkBox>
+<checkBox refId="SanitizeOnShutdown_FormData">表单与搜索纪录</checkBox>
+<checkBox refId="SanitizeOnShutdown_History">上网记录</checkBox>
+<checkBox refId="SanitizeOnShutdown_Sessions">已登录的连接</checkBox>
+<checkBox refId="SanitizeOnShutdown_SiteSettings">网站偏好设置</checkBox>
+<checkBox refId="SanitizeOnShutdown_OfflineApps">网站离线数据</checkBox>
+   </presentation>
+   <presentation id="FirefoxHome">
+<checkBox refId="FirefoxHome_Search">搜索</checkBox>
+<checkBox refId="FirefoxHome_TopSites">热门网站</checkBox>
+<checkBox refId="FirefoxHome_Highlights">下载记录</checkBox>
+<checkBox refId="FirefoxHome_Pocket">Pocket 推荐项</checkBox>
+<checkBox refId="FirefoxHome_Snippets">只字片语</checkBox>
+<checkBox refId="FirefoxHome_Locked">不允许变更设置</checkBox>
+   </presentation>
+   <presentation id="ExtensionSettings">
+<multiTextBox refId="ExtensionSettings"/>
+   </presentation>
+   <presentation id="Handlers">
+<multiTextBox refId="Handlers"/>
+   </presentation>
+   <presentation id="DisplayMenuBar">
+<dropdownList refId="DisplayMenuBar"/>
+   </presentation>
+   <presentation id="String">
+<textBox refId="String">
+     <label/>
+    </textBox>
+   </presentation>
+   <presentation id="List">
+<listBox refId="List"/>
+   </presentation>
+   <presentation id="Autoplay_Default">
+<dropdownList refId="Autoplay_Default"/>
+   </presentation>
+   <presentation id="JSON">
+<multiTextBox refId="JSON"/>
+   </presentation>
+  </presentationTable>
+ </resources>
+</policyDefinitionResources>
