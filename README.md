@@ -6,7 +6,8 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 
 | Policy Name | Description
 | --- | --- |
-| **[`AppAutoUpdate`](#appautoupdate)** |  Enable or disable automatic application update.
+| **[`3rdparty`](#3rdparty)** | Set policies that WebExtensions can access via chrome.storage.managed.
+| **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
 | **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
@@ -96,6 +97,10 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
+
+### 3rdparty
+
+Allow WebExtensions to configure policy. For more information, see [Adding policy support to your extension](https://extensionworkshop.com/documentation/enterprise/adding-policy-support-to-your-extension/).
 
 ### AppAutoUpdate
 
