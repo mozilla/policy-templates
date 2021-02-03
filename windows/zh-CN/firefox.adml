@@ -166,7 +166,7 @@
    <string id="DNSOverHTTPS_ExcludedDomains_Explain">若启用此原则，将排除指定的网域使用 DNS over httpS。 
 
 若禁用或不设定此原则，则不会排除任何网域使用 DNS over HTTPS。 </string>
-   <string id="DNSOverhttpS">设置 DNS Over httpS （Moved）</string>
+   <string id="DNSOverHTTPS">设置 DNS Over httpS （Moved）</string>
    <string id="DNSOverHTTPS_Explain">若启用此原则，可变更默认 DNS over httpS 设置。 
 
 若禁用或不设定此原则，将使用默认 DNS Over httpS 设置。 </string>
@@ -1028,7 +1028,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
 <textBox refId="HTTPProxy">
      <label/>
     </textBox>
-<checkBox refId="UsehttpProxyForAllProtocols">所有通讯协议都使用此代理服务器。 </checkBox>
+<checkBox refId="UseHTTPProxyForAllProtocols">所有通讯协议都使用此代理服务器。 </checkBox>
     <text>SSL 代理服务器：</text>
 <textBox refId="SSLProxy">
      <label/>
@@ -1060,8 +1060,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
 <textBox refId="ProviderURL">
      <label/>
     </textBox>
-<checkBox refId="DNSOverhttpSEnabled">启用DNS over httpS。 </checkBox>
-<checkBox refId="DNSOverhttpSLocked">不允许变更 DNS over httpS 偏好设置。 </checkBox>
+<checkBox refId="DNSOverHTTPSEnabled">启用DNS over httpS。 </checkBox>
+<checkBox refId="DNSOverHTTPSLocked">不允许变更 DNS over httpS 偏好设置。 </checkBox>
    </presentation>
    <presentation id="SSLVersion">
 <dropdownList refId="SSLVersion"/>
