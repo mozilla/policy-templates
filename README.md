@@ -3945,6 +3945,7 @@ Previously you could only set and lock a subset of preferences. Starting with Fi
 Preferences that start with the following prefixes are supported:
 ```
 accessibility.
+app.update.* (Firefox 86, Firefox 78.8)
 browser.
 datareporting.policy.
 dom.
@@ -3983,6 +3984,8 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
 | security.tls.hello_downgrade_check | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
+| security.tls.version.enable-deprecated | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, browser will accept TLS 1.0. and TLS 1.1 (Firefox 86, Firefox 78.8)
 | security.warn_submit_secure_to_insecure | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting s form from https to http.
 &nbsp;
