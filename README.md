@@ -2176,7 +2176,7 @@ Control the installation, uninstallation and locking of extensions.
 
 While this policy is not technically deprecated, it is recommended that you use the **[`ExtensionSettings`](#extensionsettings)** policy. It has the same functionality and adds more. It does not support native paths, though, so you'll have to use file:/// URLs.
 
-`Install` is a list of URLs or native paths for extensions to be installed. 
+`Install` is a list of URLs or native paths for extensions to be installed.
 
 `Uninstall` is a list of extension IDs that should be uninstalled if found.
 
@@ -2295,7 +2295,7 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
   "https-everywhere@eff.org": {
-    "installation_mode": "allowed",
+    "installation_mode": "allowed"
   }
 }
 ```
@@ -2320,7 +2320,7 @@ Value (string):
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
     "https-everywhere@eff.org": {
-    "installation_mode": "allowed",
+    "installation_mode": "allowed"
   }
 }'/>
 ```
@@ -4195,7 +4195,7 @@ disabled
 | network.dns.disableIPv6 | boolean | Firefox 68, Firefox ESR 68 | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, IPv6 DNS lokoups are disabled.
 | network.IDN_show_punycode | boolean | Firefox 68, Firefox ESR 68 | false
-| &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names. 
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names.
 | places.history.enabled | boolean | Firefox 68, Firefox ESR 68 | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, history is not enabled.
 | print.save_print_settings | boolean | Firefox 70, Firefox ESR 68.2 | true
