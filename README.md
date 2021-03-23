@@ -64,6 +64,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
+| **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates..
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
@@ -3159,6 +3160,29 @@ Value (string):
         ]
       }
     ]
+  }
+}
+```
+### ManualAppUpdateOnly
+
+Switch to manual updates only.
+
+If this policy is enabled:
+ 1. The user will never be prompted to install updates
+ 2. Firefox will not check for updates in the background, though it will check automatically when an update UI is displayed (such as the one in the About dialog). This check will be used to show "Update to version X" in the UI, but will not automatically download the update or prompt the user to update in any other way.
+ 3. The update UI will work as expected, unlike when using DisableAppUpdate.
+
+This policy is primarily intended for advanced end users, not for enterprises.
+
+**Compatibility:** Firefox 87\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### policies.json
+```
+{
+  "policies": {
+    "AppAutoUpdate": true | false
   }
 }
 ```
