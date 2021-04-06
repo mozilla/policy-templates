@@ -3182,7 +3182,7 @@ This policy is primarily intended for advanced end users, not for enterprises.
 ```
 {
   "policies": {
-    "AppAutoUpdate": true | false
+    "ManualAppUpdateOnly": true | false
   }
 }
 ```
