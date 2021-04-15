@@ -766,6 +766,10 @@ Si cette politique est activée ou non configurée, les fonctionnalités de Fire
       <string id="UserMessaging_UrlbarInterventions_Explain">Si cette stratégie est désactivée, aucune action ne sera recommandée en fonction de ce que l'utilisateur tape dans la barre d'URL.
 
 Si cette stratégie est activée ou non configurée, des actions seront recommandées en fonction de ce que l'utilisateur tape dans la barre d'URL.</string>
+      <string id="UserMessaging_SkipOnboarding">Skip Onboarding</string>
+      <string id="UserMessaging_SkipOnboarding_Explain">If this policy is enabled, onboarding messages will not be shown on the new tab page.
+
+If this policy is disabled or not configured, onboarding messages will be shown on the new tab page.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>

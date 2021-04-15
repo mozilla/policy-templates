@@ -765,6 +765,10 @@ Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息�
    <string id="UserMessaging_UrlbarInterventions_Explain">若禁用此策略，将不将在 URL 栏输入时推荐操作行为。 
 
 若启用或不设定此原则，则会根据用户在网址栏输入的内容推荐操作行为。 </string>
+      <string id="UserMessaging_SkipOnboarding">Skip Onboarding</string>
+      <string id="UserMessaging_SkipOnboarding_Explain">If this policy is enabled, onboarding messages will not be shown on the new tab page.
+
+If this policy is disabled or not configured, onboarding messages will be shown on the new tab page.</string>
    <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
    <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
    <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>

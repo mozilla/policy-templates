@@ -5154,17 +5154,19 @@ Value (string):
 
 Prevent Firefox from messaging the user in certain situations.
 
-`WhatsNew` Remove the "What's New" icon and menuitem. (Firefox 75 only)
+`WhatsNew` Remove the "What's New" icon and menuitem.
 
-`ExtensionRecommendations` Don't recommend extensions while the user is visiting web pages.
+`ExtensionRecommendations` If false, don't recommend extensions while the user is visiting web pages.
 
-`FeatureRecommendations` Don't recommend browser features.
+`FeatureRecommendations` IF false, don't recommend browser features.
 
-`UrlbarInterventions` Don't offer Firefox specific suggestions in the URL bar. (Firefox 75 only)
+`UrlbarInterventions` If false, Don't offer Firefox specific suggestions in the URL bar.
+
+`SkipOnboarding` If true, don't show onboarding messages on the new tab page.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`
+**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features,browser.aboutwelcome.enabled`
 
 #### Windows (GPO)
 ```
@@ -5172,6 +5174,7 @@ Software\Policies\Mozilla\Firefox\UserMessaging\WhatsNew = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\SkipOnboarding = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -5180,6 +5183,7 @@ OMA-URI:
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_ExtensionRecommendations
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_FeatureRecommendations
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_UrlbarInterventions
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_SkipOnboarding
 ```
 Value (string):
 ```
@@ -5198,6 +5202,8 @@ Value (string):
     <true/> | <false/>
     <key>UrlbarInterventions</key>
     <true/> | <false/>
+    <key>SkipOnboarding</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -5210,6 +5216,7 @@ Value (string):
       "ExtensionRecommendations": true | false,
       "FeatureRecommendations": true | false,
       "UrlbarInterventions": true | false
+      "SkipOnboarding": true | false
     }
   }
 }
