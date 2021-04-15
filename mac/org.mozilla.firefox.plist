@@ -569,6 +569,8 @@
 		<false/>
 		<key>UrlbarInterventions</key>
 		<false/>
+		<key>SkipOnboarding</key>
+		<true/>
 	</dict>
 	<key>WebsiteFilter</key>
 	<dict>
