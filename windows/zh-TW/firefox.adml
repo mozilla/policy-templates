@@ -37,6 +37,9 @@
       <string id="SUPPORTED_FF84">Firefox 84 或更新版本、Firefox 78.6 ESR 或更新版本</string>
       <string id="SUPPORTED_FF85">Firefox 85 或更新版本、Firefox 78.7 ESR 或更新版本</string>
       <string id="SUPPORTED_FF86">Firefox 86 或更新版本、Firefox 78.8 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF88">Firefox 88 或更新版本、Firefox 78.10 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF89">Firefox 89 或更新版本、Firefox 78.11 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF90">Firefox 90 或更新版本、Firefox 78.12 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>

@@ -37,6 +37,9 @@
       <string id="SUPPORTED_FF84">Firefox 84 или более поздние версии, Firefox 78.6 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF85">Firefox 85 или более поздние версии, Firefox 78.7 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF86">Firefox 86 или более поздние версии, Firefox 78.8 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF88">Firefox 88 или более поздние версии, Firefox 78.10 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF89">Firefox 89 или более поздние версии, Firefox 78.11 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF90">Firefox 90 или более поздние версии, Firefox 78.12 ESR или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
