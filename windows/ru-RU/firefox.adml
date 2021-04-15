@@ -196,9 +196,9 @@
 
 Если эта политика отключена или не настроена, инструменты веб-разработчика доступны в Firefox.</string>
       <string id="DisableFeedbackCommands">Отключить команды обратной связи</string>
-      <string id="DisableFeedbackCommands_Explain">Если эта политика включена, кнопка & quot; Отправить отзыв & quot; и & quot; Сообщить о мошенническом сайте & quot;  - пункты меню недоступны из меню справки.
+      <string id="DisableFeedbackCommands_Explain">Если эта политика включена, кнопка &quot; Отправить отзыв &quot; и &quot; Сообщить о мошенническом сайте &quot;  - пункты меню недоступны из меню справки.
 
-Если эта политика отключена или не настроена, & quot; Отправить отзыв & quot; и & quot; Сообщить о мошенническом сайте & quot; элементы меню доступны из меню справки.</string>
+Если эта политика отключена или не настроена, &quot; Отправить отзыв &quot; и &quot; Сообщить о мошенническом сайте &quot; элементы меню доступны из меню справки.</string>
       <string id="DisableFirefoxAccounts">Отключить учетные записи Firefox</string>
       <string id="DisableFirefoxAccounts_Explain">Если эта политика включена, учетные записи Firefox отключены, в том числе отключена синхронизация.
 
@@ -1103,7 +1103,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences. <
         <checkBox refId="SanitizeOnShutdown_Cache">Кэш </checkBox>
         <checkBox refId = "SanitizeOnShutdown_Cookies"> Файлы cookie </checkBox>
         <checkBox refId = "SanitizeOnShutdown_Downloads"> История загрузок </checkBox>
-        <checkBox refId = "SanitizeOnShutdown_FormData"> Форма & amp; История поиска & amp; </checkBox>
+        <checkBox refId = "SanitizeOnShutdown_FormData"> Форма &amp; История поиска &amp; </checkBox>
         <checkBox refId = "SanitizeOnShutdown_History"> История просмотров </checkBox>
         <checkBox refId = "SanitizeOnShutdown_Sessions"> Активные логины </checkBox>
         <checkBox refId = "SanitizeOnShutdown_SiteSettings"> Настройки сайта </checkBox>
