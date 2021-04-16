@@ -589,6 +589,8 @@
 		<key>NAME_OF_DEVICE</key>
 		<string>PATH_TO_LIBRARY_FOR_DEVICE</string>
 	</dict>
+	<key>ShowHomeButton</key>
+	<true/>
 	<key>SSLVersionMin</key>
 	<string>tls1.2</string>
 	<key>SSLVersionMax</key>
