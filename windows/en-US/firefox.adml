@@ -635,6 +635,12 @@ If this policy is disabled or not configured, the start page defaults to the pre
       <string id="Homepage">Homepage</string>
       <string id="PreviousSession">Previous Session</string>
       <string id="HomepageLocked">Homepage (Locked)</string>
+      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
+      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+
+If this policy is disabled, the home button will not appear on the toolbar by default.
+
+If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
       <string id="PasswordManagerEnabled">Password Manager</string>
       <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
 

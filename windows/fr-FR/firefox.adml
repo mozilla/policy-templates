@@ -634,6 +634,12 @@ Si cette stratégie est désactivée ou non configurée, la page de démarrage a
       <string id="Homepage">Page d'accueil</string>
       <string id="PreviousSession">Session précédente</string>
       <string id="HomepageLocked">Homepage (Locked)</string>
+      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
+      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+
+If this policy is disabled, the home button will not appear on the toolbar by default.
+
+If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
       <string id="PasswordManagerEnabled">Gestionnaire de mots de passe</string>
       <string id="PasswordManagerEnabled_Explain">Si cette stratégie est désactivée, le gestionnaire de mots de passe n'est pas disponible via les préférences.
 

@@ -1340,6 +1340,16 @@
         </enum>
       </elements>
     </policy>
+    <policy name="Homepage_ShowHomeButton" class="Both" displayName="$(string.Homepage_ShowHomeButton)" explainText="$(string.Homepage_ShowHomeButton_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="ShowHomeButton">
+      <parentCategory ref="Homepage"/>
+      <supportedOn ref="SUPPORTED_FF88"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="Bookmark01" class="Both" displayName="$(string.Bookmark01)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />

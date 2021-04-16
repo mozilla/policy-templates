@@ -633,6 +633,12 @@ Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息�
    <string id="Homepage">首页</string>
    <string id="PreviousSession">先前的浏览状态</string>
    <string id="HomepageLocked">首页（锁定）</string>
+   <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
+   <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+
+If this policy is disabled, the home button will not appear on the toolbar by default.
+
+If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
    <string id="PasswordManagerEnabled">密码管理员</string>
    <string id="PasswordManagerEnabled_Explain">若禁用此策略，将无法于偏好设定中使用密码管理员。 
 

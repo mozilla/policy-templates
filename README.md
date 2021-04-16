@@ -93,6 +93,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
 | **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
+| **[`ShowHomeButton`](#showhomebutton)** | Show the home button on the toolbar.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
@@ -5020,6 +5021,43 @@ Value (string):
     "SecurityDevices": {
       "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
     }
+  }
+}
+```
+### ShowHomeButton
+Show the home button on the toolbar.
+
+Future versions of Firefox will not show the home button by default.
+
+**Compatibility:** Firefox 88, Firefox ESR 78.10\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\ShowHomeButton = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ShowHomeButton
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>ShowHomeButton</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "ShowHomeButton": true | false
   }
 }
 ```

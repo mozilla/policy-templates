@@ -635,6 +635,12 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="Homepage"> Домашняя страница </string>
       <string id="PreviousSession"> Предыдущий сеанс </string>
       <string id="HomepageLocked"> Домашняя страница (заблокирована) </string>
+      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
+      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+
+If this policy is disabled, the home button will not appear on the toolbar by default.
+
+If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
       <string id="PasswordManagerEnabled"> Менеджер паролей </string>
       <string id="PasswordManagerEnabled_Explain"> Если эта политика отключена, менеджер паролей недоступен в настройках.
 
