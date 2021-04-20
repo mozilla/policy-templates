@@ -5204,7 +5204,7 @@ Prevent Firefox from messaging the user in certain situations.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features,browser.aboutwelcome.enabled`
+**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`,`browser.aboutwelcome.enabled`
 
 #### Windows (GPO)
 ```
