@@ -10,6 +10,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
 | **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
+| **[`BackgroundAppUpdate`](#backgroundappupdate)** | Enable or disable automatic application update in the background, when the application is not running.
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
@@ -324,6 +325,48 @@ Value (string):
       "Locked": true | false,
       "PrivateBrowsing": true | false
     }
+  }
+}
+```
+### BackgroundAppUpdate
+
+Enable or disable **automatic** application update **in the background**, when the application is not running.
+
+If set to true, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.
+
+If set to false, the application will not try to install updates when the application is not running.
+
+If you have disabled updates via `DisableAppUpdate` or disabled automatic updates via `AppUpdateAuto`, this policy has no effect.
+
+**Compatibility:** Firefox 89\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `app.update.background.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\BackgroundAppUpdate = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BackgroundAppUpdate
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>BackgroundAppUpdate</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "BackgroundAppUpdate": true | false
   }
 }
 ```
