@@ -2154,6 +2154,7 @@ Value (string):
       "Fingerprinting": true | false,
       "Exceptions": ["https://example.com"]
     }
+  }
 }
 ```
 ### EncryptedMediaExtensions
@@ -2202,6 +2203,7 @@ Value (string):
       "Enabled": true | false,
       "Locked": true | false
     }
+  }
 }
 ```
 ### EnterprisePoliciesEnabled
@@ -3601,6 +3603,7 @@ Value (string):
       "Enabled": true | false,
       "EnablePermissions": true | false
     }
+  }
 }
 ```
 ### Permissions
@@ -3924,7 +3927,7 @@ Value (string):
   "policies": {
     "PictureInPicture": {
       "Enabled": true | false,
-      "Locked": true, false
+      "Locked": true | false
     }
   }
 }
@@ -4477,7 +4480,7 @@ Value (string):
       "SSLProxy": "hostname",
       "FTPProxy": "hostname",
       "SOCKSProxy": "hostname",
-      "SOCKSVersion": 4 | 5
+      "SOCKSVersion": 4 | 5,
       "Passthrough": "<local>",
       "AutoConfigURL": "URL_TO_AUTOCONFIG",
       "AutoLogin": true | false,
