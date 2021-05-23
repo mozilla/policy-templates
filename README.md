@@ -3483,6 +3483,7 @@ Value (string):
 {
   "policies": {
     "OverrideFirstRunPage": "http://example.org"
+  }
 }
 ```
 ### OverridePostUpdatePage
@@ -3518,6 +3519,7 @@ Value (string):
 {
   "policies": {
     "OverridePostUpdatePage": "http://example.org"
+  }
 }
 ```
 ### PasswordManagerEnabled
