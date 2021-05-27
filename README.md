@@ -2324,7 +2324,7 @@ The configuration for each extension is another dictionary that can contain the 
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "locale" This setting can be used only for the default configuration.
 | `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
 | `restricted_domains` | An array of domains on which content scripts can't be run. This setting can be used only for the default configuration.
-| `updates_disabled` | (Firefox 88, Firefox ESR 78.11) Disable automatic updates for an individual extension.
+| `updates_disabled` | (Firefox 89, Firefox ESR 78.11) Disable automatic updates for an individual extension.
 
 **Compatibility:** Firefox 69, Firefox ESR 68.1 (As of Firefox 85, Firefox ESR 78.7, installing a theme makes it the default.)\
 **CCK2 Equivalent:** N/A\
