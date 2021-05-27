@@ -338,7 +338,7 @@ If set to false, the application will not try to install updates when the applic
 
 If you have disabled updates via `DisableAppUpdate` or disabled automatic updates via `AppUpdateAuto`, this policy has no effect.
 
-**Compatibility:** Firefox 89\
+**Compatibility:** Firefox 90\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `app.update.background.enabled`
 
