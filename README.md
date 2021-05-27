@@ -4028,7 +4028,9 @@ extensions.
 general.autoScroll (Firefox 83, Firefox ESR 78.5)
 general.smoothScroll (Firefox 83, Firefox ESR 78.5)
 geo.
+gfx.
 intl.
+layers.
 layout.
 media.
 network.
