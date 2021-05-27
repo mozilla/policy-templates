@@ -3722,25 +3722,32 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="Handlers" class="Both" displayName="$(string.Handlers)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)"  presentation="$(presentation.Handlers)">">
+    <policy name="Handlers" class="Both" displayName="$(string.Handlers)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)" presentation="$(presentation.Handlers)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF78"/>
       <elements>
         <multiText id="Handlers" valueName="Handlers"  maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="Preferences" class="Both" displayName="$(string.Preferences)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)"  presentation="$(presentation.JSON)">">
+    <policy name="Preferences" class="Both" displayName="$(string.Preferences)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF81"/>
       <elements>
         <multiText id="JSON" valueName="Preferences"  maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="ManagedBookmarks" class="Both" displayName="$(string.ManagedBookmarks)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ManagedBookmarks_Explain)"  presentation="$(presentation.JSON)">">
+    <policy name="ManagedBookmarks" class="Both" displayName="$(string.ManagedBookmarks)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ManagedBookmarks_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF83"/>
       <elements>
         <multiText id="JSON" valueName="ManagedBookmarks"  maxLength="16384"/>
+      </elements>
+    </policy>
+    <policy name="AllowedDomainsForApps" class="Both" displayName="$(string.AllowedDomainsForApps)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.AllowedDomainsForApps_Explain)" presentation="$(presentation.String)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF89"/>
+      <elements>
+        <text id="String" valueName="AllowedDomainsForApps"/>
       </elements>
     </policy>
   </policies>
