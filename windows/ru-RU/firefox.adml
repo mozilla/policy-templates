@@ -843,6 +843,10 @@ If this policy is disabled or not configured, onboarding messages will be shown 
 Если эта политика отключена или не настроена, управляемые закладки не добавляются.
 
 Для получения подробной информации о создании политики см. Https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks. </string>
+      <string id="AllowedDomainsForApps">Define domains allowed to access Google Workspace</string>
+      <string id="AllowedDomainsForApps_Explain">If this policy is enabled, users can only access Google Workspace for the specified domains (separated by a comma). To allow access to Gmail, you can add consumer_accounts.
+
+If this policy is disabled or not configured, users can access any account on Google Workspace as well as Gmail.</string>
       <string id="Preferences_Boolean_Explain"> Если эта политика включена, предпочтение заблокировано на true. Если эта политика отключена, предпочтение заблокировано на false.
 
 Описание предпочтения см .:

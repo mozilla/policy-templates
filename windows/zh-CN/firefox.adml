@@ -841,6 +841,10 @@ If this policy is disabled or not configured, onboarding messages will be shown 
 若禁用或不设定此原则，则不会加入受管理的书签。
 
 若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks。 </string>
+      <string id="AllowedDomainsForApps">Define domains allowed to access Google Workspace</string>
+      <string id="AllowedDomainsForApps_Explain">If this policy is enabled, users can only access Google Workspace for the specified domains (separated by a comma). To allow access to Gmail, you can add consumer_accounts.
+
+If this policy is disabled or not configured, users can access any account on Google Workspace as well as Gmail.</string>
    <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
 
 若需要偏好设置的详细说明，请参考：
