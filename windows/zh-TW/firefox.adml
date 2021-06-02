@@ -633,12 +633,12 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="Homepage">首頁</string>
       <string id="PreviousSession">先前的瀏覽狀態</string>
       <string id="HomepageLocked">首頁（鎖定）</string>
-      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
-      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+      <string id="Homepage_ShowHomeButton">在工具列顯示首頁按鈕</string>
+      <string id="Homepage_ShowHomeButton_Explain">若啟用此原則，將預設在工具列顯示首頁按鈕。
 
-If this policy is disabled, the home button will not appear on the toolbar by default.
+若停用此原則，將預設不在工具列顯示首頁按鈕。
 
-If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
+若不設定此原則，則預設由 Firefox 自行決定是否要在工具列顯示首頁按鈕。</string>
       <string id="PasswordManagerEnabled">密碼管理員</string>
       <string id="PasswordManagerEnabled_Explain">若停用此原則，將無法於偏好設定中使用密碼管理員。
 
@@ -771,10 +771,10 @@ If this policy is not configured, Firefox will determine whether or not the home
       <string id="UserMessaging_UrlbarInterventions_Explain">若停用此原則，將不會在使用者在網址列輸入時推薦操作行為。
 
 若啟用或不設定此原則，則會根據使用者在網址列輸入的內容推薦操作行為。</string>
-      <string id="UserMessaging_SkipOnboarding">Skip Onboarding</string>
-      <string id="UserMessaging_SkipOnboarding_Explain">If this policy is enabled, onboarding messages will not be shown on the new tab page.
+      <string id="UserMessaging_SkipOnboarding">跳過新功能說明訊息</string>
+      <string id="UserMessaging_SkipOnboarding_Explain">若啟用此原則，將不會在「新分頁」頁面顯示新功能說明訊息。
 
-If this policy is disabled or not configured, onboarding messages will be shown on the new tab page.</string>
+若停用或不設定此原則，則會在「新分頁」頁面顯示新功能說明訊息。</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
@@ -841,10 +841,10 @@ If this policy is disabled or not configured, onboarding messages will be shown 
 若停用或不設定此原則，則不會加入受管理的書籤。
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks。</string>
-      <string id="AllowedDomainsForApps">Define domains allowed to access Google Workspace</string>
-      <string id="AllowedDomainsForApps_Explain">If this policy is enabled, users can only access Google Workspace for the specified domains (separated by a comma). To allow access to Gmail, you can add consumer_accounts.
+      <string id="AllowedDomainsForApps">指定允許存取的 Google Workspace 網域</string>
+      <string id="AllowedDomainsForApps_Explain">若啟用此原則，使用者將只能存取指定的 Google Workspace 網域（以半形逗號分隔）。若要允許存取，可新增 consumer_accounts。
 
-If this policy is disabled or not configured, users can access any account on Google Workspace as well as Gmail.</string>
+若停用或不設定此原則，使用者則可存取任何 Google Workspace 帳號以及 Gmail。</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
