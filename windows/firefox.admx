@@ -3702,7 +3702,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="PictureInPicture_Locked" class="Both" displayName="$(string.PictureInPicture_Locked)" explainText="$(string.PictureInPicture_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\PictureInPicture" valueName="Locked">
+    <policy name="PictureInPicture_Locked" class="Both" displayName="$(string.PictureInPicture_Locked)" explainText="$(string.PictureInPicture_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\PictureInPicture" valueName="Locked">
       <parentCategory ref="PictureInPicture"/>
       <supportedOn ref="SUPPORTED_FF78"/>
       <enabledValue>
