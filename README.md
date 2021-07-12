@@ -11,6 +11,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
 | **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
+| **[`AutoLaunchProtocolsFromOrigins`](#autolaunchprotocolsfromorigins)** | Define a list of external protocols that can be used from listed origins without prompting the user.
 | **[`BackgroundAppUpdate`](#backgroundappupdate)** | Enable or disable the background updater (Windows only).
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
@@ -367,6 +368,98 @@ Value (string):
       "Locked": true | false,
       "PrivateBrowsing": true | false
     }
+  }
+}
+```
+### AutoLaunchProtocolsFromOrigins
+Define a list of external protocols that can be used from listed origins without prompting the user.
+
+The syntax of this policy is exactly the same as the [Chrome AutoLaunchProtocolsFromOrigins policy](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=AutoLaunchProtocolsFromOrigins) except that you can only use valid origins (not just hostnames). This also means that you cannot specify an asterisk for all origins.
+
+The schema is:
+```
+{
+ "items": {
+  "properties": {
+   "allowed_origins": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "protocol": {
+    "type": "string"
+   }
+  },
+  "required": [
+   "protocol",
+   "allowed_origins"
+  ],
+  "type": "object"
+ },
+ "type": "array"
+}
+```
+**Compatibility:** Firefox 90, Firefox ESR 78.12\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+Software\Policies\Mozilla\Firefox\AutoLaunchProtocolsFromOrigins (REG_MULTI_SZ) =
+```
+[
+  {
+    "protocol": "zoommtg",
+    "allowed_origins": [
+      "https://somesite.zoom.us"
+    ]
+  }
+]
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AutoLaunchProtocolsFromOrigins
+```
+Value (string):
+```
+<enabled/>
+<data id="JSON" value='
+[
+  {
+    "protocol": "zoommtg",
+    "allowed_origins": [
+      "https://somesite.zoom.us"
+    ]
+  }
+]'/>
+```
+#### macOS
+```
+<dict>
+  <key>AutoLaunchProtocolsFromOrigins</key>
+  <array>
+    <dict>
+      <key>protocol</key>
+      <string>zoommtg</string>
+      <key>allowed_origins</key>
+      <array>
+        <string>https://somesite.zoom.us</string>
+      </array>
+    </dict>
+  </array>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AutoLaunchProtocolsFromOrigins": [{
+      "protocol": "zoommtg",
+      "allowed_origins": [
+        "https://somesite.zoom.us"
+      ]
+    }]
   }
 }
 ```
@@ -3196,7 +3289,7 @@ Value (string):
   <array>
     <dict>
       <key>toplevel_name</key>
-      <string>My managed bookmarks folder</string></dict>
+      <string>My managed bookmarks folder</string>
       <dict>
         <key>url</key>
         <string>example.com</string>

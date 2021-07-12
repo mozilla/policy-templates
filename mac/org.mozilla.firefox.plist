@@ -46,6 +46,17 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>AutoLaunchProtocolsFromOrigins</key>
+	<array>
+		<dict>
+			<key>protocol</key>
+			<string>zoommtg</string>
+			<key>allowed_origins</key>
+			<array>
+				<string>https://somesite.zoom.us</string>
+			</array>
+		</dict>
+	</array>
 	<key>BlockAboutAddons</key>
 	<true/>
 	<key>BlockAboutConfig</key>
