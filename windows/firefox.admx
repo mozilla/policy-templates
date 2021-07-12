@@ -3760,5 +3760,12 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="AutoLaunchProtocolsFromOrigins" class="Both" displayName="$(string.AutoLaunchProtocolsFromOrigins)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSON)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF81"/>
+      <elements>
+        <multiText id="JSON" valueName="AutoLaunchProtocolsFromOrigins"  maxLength="16384"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
