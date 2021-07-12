@@ -441,7 +441,7 @@ Value (string):
   <array>
     <dict>
       <key>protocol</key>
-      <string>zoommtg</string></dict>
+      <string>zoommtg</string>
       <key>allowed_origins</key>
       <array>
         <string>https://somesite.zoom.us</string>
