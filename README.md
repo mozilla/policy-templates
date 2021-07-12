@@ -11,7 +11,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
 | **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
-| **[`BackgroundAppUpdate`](#backgroundappupdate)** | Enable or disable automatic application update in the background, when the application is not running.
+| **[`BackgroundAppUpdate`](#backgroundappupdate)** | Enable or disable the background updater (Windows only).
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
@@ -380,7 +380,7 @@ If set to false, the application will not try to install updates when the applic
 
 If you have disabled updates via `DisableAppUpdate` or disabled automatic updates via `AppUpdateAuto`, this policy has no effect.
 
-**Compatibility:** Firefox 90\
+**Compatibility:** Firefox 90 (Windows only)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `app.update.background.enabled`
 

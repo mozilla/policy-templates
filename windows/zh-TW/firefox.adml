@@ -845,6 +845,10 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="AllowedDomainsForApps_Explain">若啟用此原則，使用者將只能存取指定的 Google Workspace 網域（以半形逗號分隔）。若要允許存取 Gmail，可新增 consumer_accounts。
 
 若停用或不設定此原則，使用者則可存取任何 Google Workspace 帳號以及 Gmail。</string>
+      <string id="BackgroundAppUpdate">Background updater</string>
+      <string id="BackgroundAppUpdate_Explain">If this policy disabled, the application will not try to install updates when the application is not running.
+
+If this policy is enabled or not configured, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：

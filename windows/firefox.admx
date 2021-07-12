@@ -3750,5 +3750,15 @@
         <text id="String" valueName="AllowedDomainsForApps"/>
       </elements>
     </policy>
+    <policy name="BackgroundAppUpdate" class="Both" displayName="$(string.BackgroundAppUpdate)" explainText="$(string.BackgroundAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="BackgroundAppUpdate">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF90"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

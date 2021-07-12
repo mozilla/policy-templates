@@ -851,6 +851,10 @@ If this policy is disabled or not configured, users can access any account on Go
 Für eine Beschreibung der Einstellung, siehe:
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
+      <string id="BackgroundAppUpdate">Background updater</string>
+      <string id="BackgroundAppUpdate_Explain">If this policy disabled, the application will not try to install updates when the application is not running.
+
+If this policy is enabled or not configured, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.</string>
       <string id="Preferences_String_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf den spezifizierten String-Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.
 
 Für eine Beschreibung der Einstellung, siehe:
