@@ -471,7 +471,7 @@ If set to true, application updates may be installed (without user approval) in 
 
 If set to false, the application will not try to install updates when the application is not running.
 
-If you have disabled updates via `DisableAppUpdate` or disabled automatic updates via `AppUpdateAuto`, this policy has no effect.
+If you have disabled updates via `DisableAppUpdate` or disabled automatic updates via `AppAutoUpdate`, this policy has no effect.
 
 **Compatibility:** Firefox 90 (Windows only)\
 **CCK2 Equivalent:** N/A\
