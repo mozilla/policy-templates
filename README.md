@@ -5405,11 +5405,11 @@ Software\Policies\Mozilla\Firefox\UserMessaging\SkipOnboarding = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_WhatsNew
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_ExtensionRecommendations
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_FeatureRecommendations
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_UrlbarInterventions
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UserMessaging_SkipOnboarding
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_WhatsNew
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_ExtensionRecommendations
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FeatureRecommendations
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_UrlbarInterventions
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipOnboarding
 ```
 Value (string):
 ```
