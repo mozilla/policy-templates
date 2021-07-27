@@ -4883,7 +4883,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Permissions" value="unified | separate"/>
+<data id="SearchBar" value="unified | separate"/>
 ```
 #### macOS
 ```
