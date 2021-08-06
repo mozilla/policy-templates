@@ -5473,8 +5473,7 @@ OMA-URI:
 ```
 Value (string):
 ```
-<enabled/>
-<data id="WebsiteFilter" value="1&#xF000;<all_urls>"/>
+<enabled/> <data id="WebsiteFilter" value="1&#xF000;&#60;all_urls&#62;"/>
 ```
 OMA-URI:
 ```
