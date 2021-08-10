@@ -102,6 +102,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
+| **[`WindowsSSO`](#windowssso)** | Allow Windows single sign-on for Microsoft, work, and school accounts.
 
 ### 3rdparty
 
@@ -5511,6 +5512,36 @@ Value (string):
       "Block": ["<all_urls>"],
       "Exceptions": ["http://example.org/*"]
     }
+  }
+}
+```
+### WindowsSSO
+Allow Windows single sign-on for Microsoft, work, and school accounts.
+
+If this policy is set to true, Firefox will use credentials stored in Windows to sign in to Microsoft, work, and school accounts.
+
+**Compatibility:** Firefox 91\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** network.http.windows-sso.enabled
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\WindowsSSO = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/WindowsSSO
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "WindowsSSO": true | false
   }
 }
 ```
