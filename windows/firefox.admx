@@ -3773,5 +3773,15 @@
         <multiText id="JSON" valueName="AutoLaunchProtocolsFromOrigins"  maxLength="16384"/>
       </elements>
     </policy>
+    <policy name="WindowsSSO" class="Both" displayName="$(string.WindowsSSO)" explainText="$(string.WindowsSSO_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="WindowsSSO">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF91"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
