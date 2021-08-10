@@ -42,7 +42,7 @@
       <definition name="SUPPORTED_FF88" displayName="$(string.SUPPORTED_FF88)"/>
       <definition name="SUPPORTED_FF89" displayName="$(string.SUPPORTED_FF89)"/>
       <definition name="SUPPORTED_FF90" displayName="$(string.SUPPORTED_FF90)"/>
-    </<definition name="SUPPORTED_FF91" displayName="$(string.SUPPORTED_FF91)"/>
+      <definition name="SUPPORTED_FF91" displayName="$(string.SUPPORTED_FF91)"/>
     </definitions>
   </supportedOn>
   <categories>
