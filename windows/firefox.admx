@@ -2648,6 +2648,7 @@
         <text id="SearchEngine_Description" valueName="Description"/>
         <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
         <text id="SearchEngine_PostData" valueName="PostData"/>
+        <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
     <policy name="SearchEngines_2" class="Both" displayName="$(string.SearchEngines_2)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\2" presentation="$(presentation.SearchEngine)" >
@@ -2673,6 +2674,7 @@
         <text id="SearchEngine_Description" valueName="Description"/>
         <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
         <text id="SearchEngine_PostData" valueName="PostData"/>
+        <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
     <policy name="SearchEngines_3" class="Both" displayName="$(string.SearchEngines_3)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\3" presentation="$(presentation.SearchEngine)" >
@@ -2698,6 +2700,7 @@
         <text id="SearchEngine_Description" valueName="Description"/>
         <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
         <text id="SearchEngine_PostData" valueName="PostData"/>
+        <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
     <policy name="SearchEngines_4" class="Both" displayName="$(string.SearchEngines_4)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\4" presentation="$(presentation.SearchEngine)" >
@@ -2723,6 +2726,7 @@
         <text id="SearchEngine_Description" valueName="Description"/>
         <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
         <text id="SearchEngine_PostData" valueName="PostData"/>
+        <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
     <policy name="SearchEngines_5" class="Both" displayName="$(string.SearchEngines_5)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\5" presentation="$(presentation.SearchEngine)" >
@@ -2748,6 +2752,7 @@
         <text id="SearchEngine_Description" valueName="Description"/>
         <text id="SearchEngine_SuggestURLTemplate" valueName="SuggestURLTemplate"/>
         <text id="SearchEngine_PostData" valueName="PostData"/>
+        <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
     <policy name="SearchEngines_Default" class="Both" displayName="$(string.SearchEngines_Default)" explainText="$(string.SearchEngines_Default_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" presentation="$(presentation.SearchEngines_Default)" >

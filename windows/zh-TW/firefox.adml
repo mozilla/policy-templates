@@ -1039,6 +1039,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
         <textBox refId="SearchEngine_PostData">
           <label>POST 資料：</label>
         </textBox>
+        <textBox refId="SearchEngine_Encoding">
+          <label>Encoding:</label>
+        </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
         <textBox refId="SearchEngines_Default">

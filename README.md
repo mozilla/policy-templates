@@ -5051,7 +5051,9 @@ Add new search engines (up to five). This policy is only available on the ESR. `
 
 `SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
 
-**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68)\
+`Encoding` is the query charset for the engine. It defaults to UTF-8.
+
+**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68, Encoding support in Firefox 91)\
 **CCK2 Equivalent:** `searchplugins`\
 **Preferences Affected:** N/A
 
