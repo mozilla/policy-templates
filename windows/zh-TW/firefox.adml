@@ -846,20 +846,20 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="AllowedDomainsForApps_Explain">若啟用此原則，使用者將只能存取指定的 Google Workspace 網域（以半形逗號分隔）。若要允許存取 Gmail，可新增 consumer_accounts。
 
 若停用或不設定此原則，使用者則可存取任何 Google Workspace 帳號以及 Gmail。</string>
-      <string id="BackgroundAppUpdate">Background updater</string>
-      <string id="BackgroundAppUpdate_Explain">If this policy disabled, the application will not try to install updates when the application is not running.
+      <string id="BackgroundAppUpdate">背景更新程式</string>
+      <string id="BackgroundAppUpdate_Explain">若停用此原則，應用程式將不會在未執行時嘗試安裝更新。
 
-If this policy is enabled or not configured, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.</string>
-      <string id="AutoLaunchProtocolsFromOrigins">Auto Launch Protocols From Origins</string>
-      <string id="AutoLaunchProtocolsFromOrigins_Explain">If this policy is enabled, you can define a list of external protocols that can be used from listed origins without prompting the user.
+若啟用或不設定此原則，應用程式就算未執行，也將不經過使用者同意，就在背景安裝更新。作業系統仍可能要求使用者同意此動作。</string>
+      <string id="AutoLaunchProtocolsFromOrigins">於指定來源網址自動啟動外部應用程式</string>
+      <string id="AutoLaunchProtocolsFromOrigins_Explain">若啟用此原則，可列舉一組外部通訊協定的清單與來源網址，可不提示使用者就自動啟動外部通訊協定。
 
-If this policy is disabled or not configured, any site that invokes an external protocol will ask the user for permission.
+若停用或不設定此原則，任何網站要觸發外部通訊協定前都會先詢問使用者是否同意。
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins.</string>
-      <string id="WindowsSSO">Windows SSO</string>
-      <string id="WindowsSSO_Explain">If this policy is enabled, Firefox will use credentials stored in Windows to sign in to Microsoft, work, and school accounts.
+若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins。</string>
+      <string id="WindowsSSO">Windows SSO 單一登入</string>
+      <string id="WindowsSSO_Explain">若啟用此原則，Firefox 將使用儲存於 Windows 的帳號密碼來登入微軟、工作單位、學校提供的帳號。
 
-If this policy is disabled or not configured, credentials must be entered manually.</string>
+若停用或不設定此原則，則必須手動輸入帳號密碼。</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
@@ -1044,7 +1044,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
           <label>POST 資料：</label>
         </textBox>
         <textBox refId="SearchEngine_Encoding">
-          <label>Encoding:</label>
+          <label>字元編碼：</label>
         </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
