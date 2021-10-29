@@ -120,7 +120,7 @@ If you have disabled updates via DisableAppUpdate, this policy has no effect.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** app.update.auto
+**Preferences Affected:** `app.update.auto`
 
 #### Windows (GPO)
 ```
@@ -886,7 +886,7 @@ Configure cookie preferences.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker added in Firefox 63, AllowSession added in Firefox 79/78.1)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.cookie.cookieBehavior`,`network.cookie.lifetimePolicy`
+**Preferences Affected:** `network.cookie.cookieBehavior`, `network.cookie.lifetimePolicy`
 
 #### Windows (GPO)
 ```
@@ -1502,7 +1502,7 @@ Turn off saving information on web forms and the search bar.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableFormFill`\
-**Preferences Affected:** ` browser.formfill.enable`
+**Preferences Affected:** `browser.formfill.enable`
 
 #### Windows (GPO)
 ```
@@ -1753,7 +1753,7 @@ Prevent the user from bypassing security in certain cases.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `security.certerror.hideAddException`,`browser.safebrowsing.allowOverride`
+**Preferences Affected:** `security.certerror.hideAddException`, `browser.safebrowsing.allowOverride`
 
 #### Windows (GPO)
 ```
@@ -1845,7 +1845,7 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableTelemetry`\
-**Preferences Affected:** `datareporting.healthreport.uploadEnabled,datareporting.policy.dataSubmissionEnabled,toolkit.telemetry.archive.enabled`
+**Preferences Affected:** `datareporting.healthreport.uploadEnabled`, `datareporting.policy.dataSubmissionEnabled`, `toolkit.telemetry.archive.enabled`
 
 #### Windows (GPO)
 ```
@@ -1993,7 +1993,7 @@ Configure DNS over HTTPS.
 
 **Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.trr.mode`,`network.trr.uri`
+**Preferences Affected:** `network.trr.mode`, `network.trr.uri`
 
 #### Windows (GPO)
 ```
@@ -2110,7 +2110,7 @@ You can use ${home} for the native home directory.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.download.dir`,`browser.download.folderList`
+**Preferences Affected:** `browser.download.dir`, `browser.download.folderList`
 
 #### Windows (GPO)
 ```
@@ -2154,7 +2154,7 @@ You can use ${home} for the native home directory.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.download.dir`,`browser.download.folderList`,`browser.download.useDownloadDir`
+**Preferences Affected:** `browser.download.dir`, `browser.download.folderList`, `browser.download.useDownloadDir`
 
 #### Windows (GPO)
 ```
@@ -2208,7 +2208,7 @@ If `Fingerprinting` is set to true, fingerprinting scripts on websites are block
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.trackingprotection.enabled`,`privacy.trackingprotection.pbmode.enabled`,`privacy.trackingprotection.cryptomining.enabled`,`privacy.trackingprotection.fingerprinting.enabled`
+**Preferences Affected:** `privacy.trackingprotection.enabled`, `privacy.trackingprotection.pbmode.enabled`, `privacy.trackingprotection.cryptomining.enabled`, `privacy.trackingprotection.fingerprinting.enabled`
 
 #### Windows (GPO)
 ```
@@ -2874,7 +2874,7 @@ Customize the Firefox Home page.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`,`browser.newtabpage.activity-stream.feeds.topsites`,`browser.newtabpage.activity-stream.feeds.section.highlights`,`browser.newtabpage.activity-stream.feeds.section.topstories`,`browser.newtabpage.activity-stream.feeds.snippets`
+**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`
 
 #### Windows (GPO)
 ```
@@ -2985,7 +2985,7 @@ With Firefox 78, an additional option as added for `Startpage`, `homepage-locked
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (StartPage was added in Firefox 60, Firefox ESR 60.4, homepage-locked added in Firefox 78)\
 **CCK2 Equivalent:** `homePage`,`lockHomePage`\
-**Preferences Affected:** `browser.startup.homepage`,`browser.startup.page`
+**Preferences Affected:** `browser.startup.homepage`, `browser.startup.page`
 
 #### Windows (GPO)
 ```
@@ -3415,7 +3415,7 @@ Enable or disable network prediction (DNS prefetching).
 
 **Compatibility:** Firefox 67, Firefox ESR 60.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.dns.disablePrefetch`,`network.dns.disablePrefetchFromHTTPS`
+**Preferences Affected:** `network.dns.disablePrefetch`, `network.dns.disablePrefetchFromHTTPS`
 
 #### Windows (GPO)
 ```
@@ -3705,7 +3705,7 @@ Note: DisableBuiltinPDFViewer has not been deprecated. You can either continue t
 
 **Compatibility:** Firefox 77, Firefox ESR 68.9\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `pdfjs.diabled`,`pdfjs.enablePermissions`
+**Preferences Affected:** `pdfjs.diabled`, `pdfjs.enablePermissions`
 
 #### Windows (GPO)
 ```
@@ -3760,7 +3760,7 @@ Set permissions associated with camera, microphone, location, notifications, aut
 
 **Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8, VirtualReality added in Firefox 80, Firefox ESR 78.2)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `permissions.default.camera`,`permissions.default.microphone`,`permissions.default.geo`,`permissions.default.desktop-notification`,`media.autoplay.default`.`permissions.default.xr`
+**Preferences Affected:** `permissions.default.camera`, `permissions.default.microphone`, `permissions.default.geo`, `permissions.default.desktop-notification`, `media.autoplay.default`, `permissions.default.xr`
 
 #### Windows (GPO)
 ```
@@ -4541,7 +4541,7 @@ To specify ports, append them to the hostnames with a colon (:).
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `networkProxy*`\
-**Preferences Affected:** `network.proxy.type`,`network.proxy.autoconfig_url`,`network.proxy.socks_remote_dns`,`signon.autologin.proxy`,`network.proxy.socks_version`,`network.proxy.no_proxies_on`,`network.proxy.share_proxy_settings`,`network.proxy.http`,`network.proxy.http_port`,`network.proxy.ftp`,`network.proxy.ftp_port`,`network.proxy.ssl`,`network.proxy.ssl_port`,`network.proxy.socks`,`network.proxy.socks_port`
+**Preferences Affected:** `network.proxy.type`, `network.proxy.autoconfig_url`, `network.proxy.socks_remote_dns`, `signon.autologin.proxy`, `network.proxy.socks_version`, `network.proxy.no_proxies_on`, `network.proxy.share_proxy_settings`, `network.proxy.http`, `network.proxy.http_port`, `network.proxy.ftp`, `network.proxy.ftp_port`, `network.proxy.ssl`, `network.proxy.ssl_port`, `network.proxy.socks`, `network.proxy.socks_port`
 
 #### Windows (GPO)
 ```
@@ -4702,7 +4702,7 @@ Previously, these values were always locked. Starting with Firefox 74 and Firefo
 
 **Compatibility:** Firefox 68, Firefox ESR 68 (Locked added in 74/68.6)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`, `privacy.clearOnShutdown.cache`, `privacy.clearOnShutdown.cookies`, `privacy.clearOnShutdown.downloads`, `privacy.clearOnShutdown.formdata`, `privacy.clearOnShutdown.history`, `privacy.clearOnShutdown.sessions`, `privacy.clearOnShutdown.siteSettings`, `privacy.clearOnShutdown.offlineApps`
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
@@ -4837,7 +4837,7 @@ Clear all data on shutdown, including Browsing & Download History, Cookies, Acti
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`,`privacy.clearOnShutdown.cache`,`privacy.clearOnShutdown.cookies`,`privacy.clearOnShutdown.downloads`,`privacy.clearOnShutdown.formdata`,`privacy.clearOnShutdown.history`,`privacy.clearOnShutdown.sessions`,`privacy.clearOnShutdown.siteSettings`,`privacy.clearOnShutdown.offlineApps`
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`, `privacy.clearOnShutdown.cache`, `privacy.clearOnShutdown.cookies`, `privacy.clearOnShutdown.downloads`, `privacy.clearOnShutdown.formdata`, `privacy.clearOnShutdown.history`, `privacy.clearOnShutdown.sessions`, `privacy.clearOnShutdown.siteSettings`, `privacy.clearOnShutdown.offlineApps`
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown = 0x1 | 0x0
@@ -5144,7 +5144,7 @@ Enable search suggestions.
 
 **Compatibility:** Firefox 68, Firefox ESR 68\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.urlbar.suggest.searches`,`browser.search.suggest.enabled`
+**Preferences Affected:** `browser.urlbar.suggest.searches`, `browser.search.suggest.enabled`
 
 #### Windows (GPO)
 ```
@@ -5397,7 +5397,7 @@ Prevent Firefox from messaging the user in certain situations.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`,`browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`,`browser.aboutwelcome.enabled`
+**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`, `browser.aboutwelcome.enabled`
 
 #### Windows (GPO)
 ```
@@ -5524,7 +5524,7 @@ If this policy is set to true, Firefox will use credentials stored in Windows to
 
 **Compatibility:** Firefox 91\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** network.http.windows-sso.enabled
+**Preferences Affected:** `network.http.windows-sso.enabled`
 
 #### Windows (GPO)
 ```
