@@ -124,7 +124,7 @@ If you have disabled updates via DisableAppUpdate, this policy has no effect.
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\AppAutoUpdate = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AppAutoUpdate = 0x0 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
