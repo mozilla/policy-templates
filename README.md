@@ -232,7 +232,7 @@ Value (string):
 
 Configure sites that support integrated authentication.
 
-See https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication for more information.
+See [Integrated authentication](https://htmlpreview.github.io/?https://github.com/mdn/archived-content/blob/main/files/en-us/mozilla/integrated_authentication/raw.html) for more information.
 
 `PrivateBrowsing` enables integrated authentication in private browsing.
 
