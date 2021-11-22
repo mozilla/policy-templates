@@ -59,7 +59,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
-      <string id="Preferences_group">Einstellungen (Veraltet)</string>
+      <string id="Preferences_group">Einstellungen (veraltet)</string>
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
@@ -463,20 +463,20 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="AllowAudioVideo">Automatische Audio- und Videowiedergabe erlauben</string>
       <string id="BlockAudio">Automatische Audiowiedergabe blockieren</string>
       <string id="BlockAudioVideo">Automatische Audio- und Videowiedergabe blockieren</string>
-      <string id="VirtualReality_Allow_Explain">If this policy is enabled, access to virtual reality devices is always allowed for the origins indicated.
+      <string id="VirtualReality_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Zugriff auf Virtual-Reality-Geräte für die angegebenen Quellen immer aktiviert.
 
-If this policy is disabled or not configured, the default virtual reality policy is followed.</string>
-      <string id="VirtualReality_Block_Explain">If this policy is enabled, access to virtual reality devices is blocked for the origins indicated.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standard-Richtlinie für Virtual Reality verwendet.</string>
+      <string id="VirtualReality_Block_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Zugriff auf Virtual-Reality-Geräte für die angegebenen Quellen immer deaktiviert.
 
-If this policy is disabled or not configured, access to virtual reality devices is not blocked by default.</string>
-      <string id="VirtualReality_BlockNewRequests">Block new requests asking to access virtual reality devices.</string>
-      <string id="VirtualReality_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access virtual reality devices.
+Wenn diese Richtlinieneinstellung deaktiviert, wird der Zugriff auf Virtual-Reality-Geräte nicht deaktiviert.</string>
+      <string id="VirtualReality_BlockNewRequests">Neue Anfragen für den Zugriff auf Virtual-Reality-Geräte blockieren</string>
+      <string id="VirtualReality_BlockNewRequests_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Seiten, denen es nicht explizit erlaubt ist, nicht mehr um Erlaubnis bitten, auf Virtual-Reality-Geräte zugreifen zu dürfen.
 
-If this policy is disabled or not configured, any site that is not in the Block policy can ask permission to virtual reality devices.</string>
-      <string id="VirtualReality_Locked">Do not allow preferences to be changed</string>
-      <string id="VirtualReality_Locked_Explain">If this policy is enabled, virtual reality preferences cannot be changed by the user.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann jede Seite, der es nicht verboten ist, nach der Erlaubnis fragen, auf Virtual-Reality-Geräte zuzugreifen.</string>
+      <string id="VirtualReality_Locked">Änderung der Einstellungen verbieten</string>
+      <string id="VirtualReality_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zu Virtual Reality nicht vom Anwender geändert werden.
 
-If this policy is disabled or not configured, the user can change their virtual reality preferences.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer ihre Einstellungen zu Virtual Reality ändern.</string>
       <string id="FirefoxHome">Firefox Home anpassen</string>
       <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 
@@ -830,7 +830,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
       <string id="Preferences">Einstellungen</string>
-      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im veralteten Einstellungsabschnitt löschen.
+      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (veraltet) löschen.
 
 Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Einstellungen mit Hilfe einer JSON-Datei konfigurieren.
 
