@@ -650,7 +650,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist der
 Wenn diese Richtlinieneinstellung aktiviert ist, wird der Nutzer immer nach einem Verzeichnis für den Download gefragt.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, wird der Nutzer nach einem Verzeichnis für den Download gefragt aber kann die Einstellung ändern.</string>
-      <string id="Proxy">Proxy Einstellungen</string>
+      <string id="Proxy">Proxy-Einstellungen</string>
       <string id="Proxy_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Netzwerkeinstellungen ändern und sperren.
 
 Wählen Sie den Verbindungstyp und füllen Sie die entsprechenden Abschnitte aus. Aufgrund eines Fehlers müssen Sie einen Wert für die SOCKS-Proxy-Version auswählen.
@@ -740,12 +740,12 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 Wenn Sie die Richtlinieneinstellung aktivieren, werden Suchvorschläge aktiviert.
 
 Wenn Sie die Richtlinieneinstellung nicht konfigurieren, werden Suchvorschläge aktiviert, aber der Benutzer kann diese abschalten.</string>
-      <string id="SSLVersionMin">Minimum SSL Version</string>
-      <string id="SSLVersionMin_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine SSL/TLS Version unter der angegebenen Version verwenden.
+      <string id="SSLVersionMin">Minimale SSL-Version</string>
+      <string id="SSLVersionMin_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine SSL/TLS-Version unter der angegebenen Version verwenden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.0.</string>
-      <string id="SSLVersionMax">Maximum SSL Version</string>
-      <string id="SSLVersionMax_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine höhere SSL/TLS Version als der angegebenen Version verwenden.
+      <string id="SSLVersionMax">Maximale SSL-Version</string>
+      <string id="SSLVersionMax_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine höhere SSL/TLS-Version als der angegebenen Version verwenden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.3.</string>
       <string id="TLS1">TLS 1.0</string>
@@ -823,20 +823,21 @@ Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Setzen eines Masterpa
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, können Nutzer ein Masterpasswort setzen, dies ist aber nicht erforderlich.</string>
       <string id="Handlers">Handlers</string>
-      <string id="Handlers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Anwendungsverhalten (beim Anklicken eines Links oder beim Download) mittels JSON beschtreiben.
+      <string id="Handlers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Anwendungsverhalten (beim Anklicken eines Links oder beim Download) mittels JSON beschreiben.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Standardeinstellungen verwendet und können vom Nutzer modifiziert werden.
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
       <string id="Preferences">Einstellungen</string>
-      <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
+      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im veralteten Einstellungsabschnitt löschen.
 
-If this policy is enabled, you can use JSON to configure preferences.
+Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Einstellungen mit Hilfe einer JSON-Datei konfigurieren.
 
-If this policy is disabled or not configured, preferences are not modified.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Einstellungen nicht verändert.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+Für eine Beschreibung der Einstellung, siehe:
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="ManagedBookmarks">Verwaltete Lesezeichen</string>
       <string id="ManagedBookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie verwaltete Lesezeichen mit Hilfe einer JSON-Datei konfigurieren.
 
