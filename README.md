@@ -656,6 +656,8 @@ Note: [`ManagedBookmarks`](#managedbookmarks) is the new recommended way to add 
 
 Add bookmarks in either the bookmarks toolbar or menu. Only `Title` and `URL` are required. If `Placement` is not specified, the bookmark will be placed on the toolbar. If `Folder` is specified, it is automatically created and bookmarks with the same folder name are grouped together.
 
+If you want to clear all bookmarks set with this policy, you can set the value to an empty array (```[]```). This can be on Windows via GPO or Intune with the new Bookmarks (JSON) policy.
+
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `bookmarks.toolbar`,`bookmarks.menu`\
 **Preferences Affected:** N/A
@@ -667,6 +669,12 @@ Software\Policies\Mozilla\Firefox\Bookmarks\1\URL = "https://example.com"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Favicon = "https://example.com/favicon.ico"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Placement = "toolbar" | "menu"
 Software\Policies\Mozilla\Firefox\Bookmarks\1\Folder = "FolderName"
+
+Software\Policies\Mozilla\Firefox\Bookmarks (REG_MULTI_SZ) =
+```
+[]
+```
+
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -681,6 +689,15 @@ Value (string):
 <data id="BookmarkFavicon" value="https://example.com/favicon.ico"/>
 <data id="BookmarkPlacement" value="toolbar | menu"/>
 <data id="BookmarkFolder" value="FolderName"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/Bookmarks
+```
+Value (string):
+```
+<enabled/>
+<data id="JSON" value='[]'/>
 ```
 #### macOS
 ```
