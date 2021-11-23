@@ -69,7 +69,7 @@
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
-      <string id="PDFjs_group">PDFjs</string>
+      <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Bild in Bild</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
@@ -806,7 +806,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="EncryptedMediaExtensions_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an der Einstellung zu DRM-Medien Erweiterungen vornehmen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer die Einstellung zu DRM-Medien Erweiterungen nicht ändern.</string>
-      <string id="PDFjs_Enabled">PDFjs (integrierter PDF-Betrachter) aktivieren</string>
+      <string id="PDFjs_Enabled">PDF.js (integrierter PDF-Betrachter) aktivieren</string>
       <string id="PDFjs_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der integrierte PDF-Betrachter nicht verwendet.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der integrierte PDF-Betrachter verwendet.</string>

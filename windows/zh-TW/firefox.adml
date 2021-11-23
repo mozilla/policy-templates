@@ -69,7 +69,7 @@
       <string id="UserMessaging_group">顯示給使用者的訊息</string>
       <string id="DisabledCiphers_group">停用加密演算法</string>
       <string id="EncryptedMediaExtensions_group">加密媒體擴充功能</string>
-      <string id="PDFjs_group">PDFjs</string>
+      <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">子母畫面</string>
       <string id="Allow">允許的網站</string>
       <string id="AllowSession">允許的網站（僅當次瀏覽階段）</string>
@@ -806,7 +806,7 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="EncryptedMediaExtensions_Locked_Explain">若啟用此原則且停用了 EncryptedMediaExtensions，Firefox 將不會下載加密媒體擴充功能（例如 Widevine），也不會詢問使用者是否要安裝。
 
 若停用或不設定此原則，此原則就不會生效。</string>
-      <string id="PDFjs_Enabled">啟用 PDFjs</string>
+      <string id="PDFjs_Enabled">啟用 PDF.js</string>
       <string id="PDFjs_Enabled_Explain">若停用此原則，將不會使用內建的 PDF 檢視器。
 
 若啟用或不設定此原則，就會使用內建的 PDF 檢視器。</string>
