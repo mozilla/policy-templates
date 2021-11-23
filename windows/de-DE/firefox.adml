@@ -313,7 +313,7 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden 
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Erweiterungen nicht mit einer Richtlinie verwaltet.
 
-Für detalierte Informationen bitte die Dokumentation (in Englischer Sprache) lesen: https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Für detalierte Informationen bitte die Dokumentation (in englischer Sprache) lesen: https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
@@ -527,30 +527,30 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="SanitizeOnShutdown_Cookies_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Cookies gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Cookies nicht gelöscht wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download Historie</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Download Historie gelöscht, wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_Downloads">Download-Historie</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Download-Historie gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download-Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe und Formulardaten</string>
       <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden eingegebene Suchbegriffe und Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden eingegebene Suchbegriffe und Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_History">Chronik</string>
-      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Chronik gelöscht wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Chronik gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Chronik nicht gelöscht wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Chronik nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Sessions">Gespeicherte Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht nachdem der Browser geschlossen wurde.
+      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht, nachdem der Browser geschlossen wurde.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</string>
       <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Website-Einstellungen gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_OfflineApps">Offline Website Daten</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Locked">Locked</string>
       <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert sind, können alle Einstellungen vom Nutzer geändert werden.
 
@@ -613,7 +613,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt 
       <string id="Bookmark48">Lesezeichen 48</string>
       <string id="Bookmark49">Lesezeichen 49</string>
       <string id="Bookmark50">Lesezeichen 50</string>
-      <string id="Bookmark_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie ein Lesezeichen konfigurieren, können Sie ein Lesezeichen konfigurieren, das zu Firefox hinzugefügt wird. Aufgrund eines Fehlers müssen Sie den Speicherort auswählen. Beachten Sie, dass Sie die Lesezeichen in der Reihenfolge angeben müssen.
+      <string id="Bookmark_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie ein Lesezeichen konfigurieren, das zu Firefox hinzugefügt wird. Aufgrund eines Fehlers müssen Sie den Speicherort auswählen. Beachten Sie, dass Sie die Lesezeichen in der Reihenfolge angeben müssen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Lesezeichen zu Firefox hinzugefügt.</string>
       <string id="BookmarkPlacementToolbar">Werkzeugleiste</string>
