@@ -41,6 +41,12 @@
       <string id="SUPPORTED_FF89">Firefox 89 ou supérieur, Firefox 78.11 ESR ou supérieur</string>
       <string id="SUPPORTED_FF90">Firefox 90 ou supérieur, Firefox 78.12 ESR ou supérieur</string>
       <string id="SUPPORTED_FF91">Firefox 91 ou supérieur</string>
+      <string id="SUPPORTED_FF95">Firefox 95 ou supérieur, Firefox 91.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF96">Firefox 96 ou supérieur, Firefox 91.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF97">Firefox 97 ou supérieur, Firefox 91.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF98">Firefox 98 ou supérieur, Firefox 91.7 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF99">Firefox 99 ou supérieur, Firefox 91.8 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF100">Firefox 100 ou supérieur, Firefox 91.9 ESR ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
