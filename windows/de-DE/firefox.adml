@@ -640,12 +640,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="Homepage">Startseite</string>
       <string id="PreviousSession">Letzte Sitzung</string>
       <string id="HomepageLocked">Homepage (Locked)</string>
-      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
-      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+      <string id="Homepage_ShowHomeButton">Home-Button zur Symbolleiste hinzufügen</string>
+      <string id="Homepage_ShowHomeButton_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, erscheint der Home-Button standardmäßig in der Symbolleiste.
 
-If this policy is disabled, the home button will not appear on the toolbar by default.
+Wenn diese Richtlinieneinstellung deaktiviert ist, erscheint der Home-Button standardmäßig nicht in der Symbolleiste.
 
-If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, entscheidet Firefox selbst, ob der Home-Button standardmäßig in der Symbolleiste erscheint oder nicht.</string>
       <string id="PasswordManagerEnabled">Passwort-Manager</string>
       <string id="PasswordManagerEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der Passwort-Manager nicht über die Einstellungen verfügbar.
 
