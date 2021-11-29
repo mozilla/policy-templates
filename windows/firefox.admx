@@ -1357,6 +1357,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="A_Bookmarks" class="Both" displayName="$(string.Bookmarks)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSON)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF95"/>
+      <elements>
+        <multiText id="JSON" valueName="Bookmarks"  maxLength="16384"/>
+      </elements>
+    </policy>
     <policy name="Bookmark01" class="Both" displayName="$(string.Bookmark01)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
       <parentCategory ref="Bookmarks" />
       <supportedOn ref="SUPPORTED_FF60" />

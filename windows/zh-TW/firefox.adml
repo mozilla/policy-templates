@@ -842,6 +842,16 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
 若停用或不設定此原則，則不修改偏好設定。
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。</string>
+      <string id="Bookmarks">Bookmarks (JSON)</string>
+      <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
+
+If this policy is disabled or not configured, the individual bookmark policies are used.
+
+If this policy is enabled along with individual bookmarks, those bookmarks will not be added.
+
+This policy has no effect on Managed Bookmarks.
+
+For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
       <string id="ManagedBookmarks">受管理的書籤</string>
       <string id="ManagedBookmarks_Explain">若啟用此原則，您可以使用 JSON 檔案來指定受管理的書籤。
 

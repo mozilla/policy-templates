@@ -842,6 +842,16 @@ If this policy is disabled or not configured, onboarding messages will be shown 
 若禁用或不设定此原则，则不修改偏好设定。
 
 若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。 </string>
+      <string id="Bookmarks">Bookmarks (JSON)</string>
+      <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
+
+If this policy is disabled or not configured, the individual bookmark policies are used.
+
+If this policy is enabled along with individual bookmarks, those bookmarks will not be added.
+
+This policy has no effect on Managed Bookmarks.
+
+For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
    <string id="ManagedBookmarks">受管理的书签</string>
    <string id="ManagedBookmarks_Explain">若启用此原则，您可以使用 JSON 文件来指定受管理的书签。
 

@@ -844,6 +844,16 @@ If this policy is disabled or not configured, onboarding messages will be shown 
 Если эта политика отключена или не настроена, предпочтения не изменяются.
 
 Для получения подробной информации о создании политики см. Https://github.com/mozilla/policy-templates/blob/master/README.md#preferences. </string>
+      <string id="Bookmarks">Bookmarks (JSON)</string>
+      <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
+
+If this policy is disabled or not configured, the individual bookmark policies are used.
+
+If this policy is enabled along with individual bookmarks, those bookmarks will not be added.
+
+This policy has no effect on Managed Bookmarks.
+
+For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
       <string id="ManagedBookmarks"> Управляемые закладки </string>
       <string id="ManagedBookmarks_Explain"> Если эта политика включена, вы можете использовать JSON для настройки управляемых закладок.
 
