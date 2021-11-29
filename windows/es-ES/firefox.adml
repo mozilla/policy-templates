@@ -69,7 +69,7 @@
       <string id="UserMessaging_group">Mensajería del usuario</string>
       <string id="DisabledCiphers_group">Cifrados deshabilitados</string>
       <string id="EncryptedMediaExtensions_group">Extensiones de medios cifrados</string>
-      <string id="PDFjs_group">PDFjs</string>
+      <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="Allow">Sitios permitidos</string>
       <string id="AllowSession">Sitios permitidos (Session Only)</string>
@@ -808,7 +808,7 @@ Si esta política está habilitada o no está configurada, Firefox descargará y
       <string id="EncryptedMediaExtensions_Locked_Explain">Si esta política está habilitada y las extensiones de medios cifrados está deshabilitada, Firefox no descargará extensiones de medios cifrados (como Widevine) ni le pedirá al usuario que los instale.
 
 Si esta política no está deshabilitada o no está configurada, no tiene ningún efecto.</string>
-      <string id="PDFjs_Enabled">Habilitar PDFjs</string>
+      <string id="PDFjs_Enabled">Habilitar PDF.js</string>
       <string id="PDFjs_Enabled_Explain">Si esta política está deshabilitada, no se utilizará el visor de PDF incorporado.
 
 Si esta política está habilitada o no configurada, se utilizará el visor de PDF incorporado.</string>

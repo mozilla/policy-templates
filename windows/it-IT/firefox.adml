@@ -69,7 +69,7 @@
       <string id="UserMessaging_group">Messaggi utente</string>
       <string id="DisabledCiphers_group">Cifrari disabilitati</string>
       <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
-      <string id="PDFjs_group">PDFjs</string>
+      <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="Allow">Siti consentiti</string>
       <string id="AllowSession">Siti consentiti (solo sessione)</string>
@@ -808,7 +808,7 @@ Se questo criterio è abilitato o non configurato, le Encrypted Media Extension 
       <string id="EncryptedMediaExtensions_Locked_Explain">Se questo criterio è abilitato e le Encrypted Media Extension sono disabilitate, Firefox non scaricherà le Encrypted Media Extension (come Widevine) né chiederà all'utente di installarle.
 
 Se questo criterio è disabilitato o non configurato, l'impostazione non ha effetto.</string>
-      <string id="PDFjs_Enabled">Abilita PDFjs</string>
+      <string id="PDFjs_Enabled">Abilita PDF.js</string>
       <string id="PDFjs_Enabled_Explain">Se questo criterio è disabilitato, il visualizzatore PDF integrato non è utilizzato.
 
 Se questo criterio è abilitato o non configurato, viene utilizzato il visualizzatore PDF integrato.</string>

@@ -69,7 +69,7 @@
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="DisabledCiphers_group">Disabled Ciphers</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
-      <string id="PDFjs_group">PDFjs</string>
+      <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Bild in Bild</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
@@ -313,7 +313,7 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden 
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Erweiterungen nicht mit einer Richtlinie verwaltet.
 
-Für detalierte Informationen bitte die Dokumentation (in Englischer Sprache) lesen: https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Für detaillierte Informationen bitte die Dokumentation (in englischer Sprache) lesen: https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
@@ -503,10 +503,10 @@ Wenn Sie die Richtlinieneinstellung nicht konfigurieren, ist Flash ausführbar.<
       <string id="FlashPlugin_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Flash-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Flash-Einstellungen ändern.</string>
-      <string id="OverrideFirstRunPage">Willkommen Seite ändern</string>
+      <string id="OverrideFirstRunPage">Willkommensseite ändern</string>
       <string id="OverrideFirstRunPage_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine URL angeben, die als Willkommensseite beim ersten Start von Firefox verwendet werden soll. Wenn Sie die URL leer lassen, wird keine Willkommensseite angezeigt.
 
-Starting with Firefox 83, Firefox ESR 78.5, you can also specify multiple URLS separated by a vertical bar (|).
+Ab Firefox 83 oder Firefox ESR 78.5 lassen sich mehrere Willkommensseiten festlegen. Diese müssen durch das Zeichen | getrennt sein.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Willkommensseite angezeigt.</string>
       <string id="OverridePostUpdatePage">Upgrade Seite ändern</string>
@@ -527,35 +527,35 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="SanitizeOnShutdown_Cookies_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Cookies gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Cookies nicht gelöscht wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download Historie</string>
-      <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Download Historie gelöscht, wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_Downloads">Download-Historie</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Download-Historie gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download-Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe und Formulardaten</string>
       <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden eingegebene Suchbegriffe und Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden eingegebene Suchbegriffe und Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_History">Chronik</string>
-      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Chronik gelöscht wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_History_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Chronik gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Chronik nicht gelöscht wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Chronik nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Sessions">Gespeicherte Logins</string>
-      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht nachdem der Browser geschlossen wurde.
+      <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht, nachdem der Browser geschlossen wurde.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</string>
       <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Website-Einstellungen gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht nachdem der Browser geschlossen wurde.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_OfflineApps">Offline Website Daten</string>
-      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_Locked">Locked</string>
       <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert sind, können alle Einstellungen vom Nutzer geändert werden.
 
 Wenn diese Richtlinieneinstellung aktiviert ist, können Einstellungen vom Nutzer nicht geändert werden.</string>
-      <string id="WebsiteFilter_Block">Gesperrte Webseites</string>
+      <string id="WebsiteFilter_Block">Gesperrte Webseiten</string>
       <string id="WebsiteFilter_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie die Übereinstimmungsmuster für zu blockierende Webseiten angeben. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Es gibt eine Beschränkung von 1000 Einträgen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Webseiten gesperrt.</string>
@@ -613,7 +613,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt 
       <string id="Bookmark48">Lesezeichen 48</string>
       <string id="Bookmark49">Lesezeichen 49</string>
       <string id="Bookmark50">Lesezeichen 50</string>
-      <string id="Bookmark_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie ein Lesezeichen konfigurieren, können Sie ein Lesezeichen konfigurieren, das zu Firefox hinzugefügt wird. Aufgrund eines Fehlers müssen Sie den Speicherort auswählen. Beachten Sie, dass Sie die Lesezeichen in der Reihenfolge angeben müssen.
+      <string id="Bookmark_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie ein Lesezeichen konfigurieren, das zu Firefox hinzugefügt wird. Aufgrund eines Fehlers müssen Sie den Speicherort auswählen. Beachten Sie, dass Sie die Lesezeichen in der Reihenfolge angeben müssen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden keine Lesezeichen zu Firefox hinzugefügt.</string>
       <string id="BookmarkPlacementToolbar">Werkzeugleiste</string>
@@ -640,12 +640,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="Homepage">Startseite</string>
       <string id="PreviousSession">Letzte Sitzung</string>
       <string id="HomepageLocked">Homepage (Locked)</string>
-      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
-      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+      <string id="Homepage_ShowHomeButton">Home-Button zur Symbolleiste hinzufügen</string>
+      <string id="Homepage_ShowHomeButton_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, erscheint der Home-Button standardmäßig in der Symbolleiste.
 
-If this policy is disabled, the home button will not appear on the toolbar by default.
+Wenn diese Richtlinieneinstellung deaktiviert ist, erscheint der Home-Button standardmäßig nicht in der Symbolleiste.
 
-If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, entscheidet Firefox selbst, ob der Home-Button standardmäßig in der Symbolleiste erscheint oder nicht.</string>
       <string id="PasswordManagerEnabled">Passwort-Manager</string>
       <string id="PasswordManagerEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der Passwort-Manager nicht über die Einstellungen verfügbar.
 
@@ -806,7 +806,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="EncryptedMediaExtensions_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an der Einstellung zu DRM-Medien Erweiterungen vornehmen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer die Einstellung zu DRM-Medien Erweiterungen nicht ändern.</string>
-      <string id="PDFjs_Enabled">PDFjs (integrierter PDF-Betrachter) aktivieren</string>
+      <string id="PDFjs_Enabled">PDF.js (integrierter PDF-Betrachter) aktivieren</string>
       <string id="PDFjs_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der integrierte PDF-Betrachter nicht verwendet.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der integrierte PDF-Betrachter verwendet.</string>
@@ -866,9 +866,9 @@ If this policy is disabled or not configured, any site that invokes an external 
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins.</string>
       <string id="WindowsSSO">Windows SSO</string>
-      <string id="WindowsSSO_Explain">If this policy is enabled, Firefox will use credentials stored in Windows to sign in to Microsoft, work, and school accounts.
+      <string id="WindowsSSO_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, verwendet Firefox in Windows gespeicherte Zugangsdaten, um Sie auf Webseiten von Microsoft anzumelden, einschließlich Outlook, Office 365 sowie allen anderen Geschäfts- oder Schulkonten, die Microsofts Authentifizierung verwenden.
 
-If this policy is disabled or not configured, credentials must be entered manually.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, müssen die Zugangsdaten manuell eingegeben werden.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:

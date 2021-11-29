@@ -69,7 +69,7 @@
       <string id="UserMessaging_group">Обмен сообщений пользователей</string>
       <string id="DisabledCiphers_group">Отключенные шифры</string>
       <string id="EncryptedMediaExtensions_group">Зашифрованные медиа-сообщения</string>
-      <string id="PDFjs_group">PDFjs</string>
+      <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Картинка в картинке</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
@@ -808,7 +808,7 @@ If this policy is disabled or not configured, onboarding messages will be shown 
       <string id="EncryptedMediaExtensions_Locked_Explain"> Если эта политика включена, а EncryptedMediaExtensions отключены, Firefox не будет загружать зашифрованные расширения мультимедиа (например, Widevine) и не будет просить пользователя установить их.
 
 Если эта политика не отключена или не настроена, она не действует. </string>
-      <string id="PDFjs_Enabled"> Включить PDFjs </string>
+      <string id="PDFjs_Enabled"> Включить PDF.js </string>
       <string id="PDFjs_Enabled_Explain"> Если эта политика отключена, встроенная программа просмотра PDF не используется.
 
 Если эта политика включена или не настроена, используется встроенная программа просмотра PDF. </string>

@@ -69,7 +69,7 @@
    <string id="UserMessaging_group">显示给用户的消息</string>
    <string id="DisabledCiphers_group">禁用加密算法</string>
    <string id="EncryptedMediaExtensions_group">加密媒体扩充功能</string>
-   <string id="PDFjs_group">PDFjs</string>
+   <string id="PDFjs_group">PDF.js</string>
    <string id="PictureInPicture_group">子母画面</string>
    <string id="Allow">允许的网站</string>
    <string id="AllowSession">允许的网站（仅当次浏览阶段）</string>
@@ -806,7 +806,7 @@ If this policy is disabled or not configured, onboarding messages will be shown 
    <string id="EncryptedMediaExtensions_Locked_Explain">若启用此原则且禁用了 EncryptedMediaExtensions，Firefox 将不会下载加密媒体扩充功能（例如 Widevine），也不会询问用户是否要安装。
 
 若禁用或不设定此原则，此原则就不会生效。 </string>
-   <string id="PDFjs_Enabled">启用 PDFjs</string>
+   <string id="PDFjs_Enabled">启用 PDF.js</string>
    <string id="PDFjs_Enabled_Explain">若禁用此原则，将不会使用内置的 PDF 查看器。
 
 若启用或不设定此原则，就会使用内置的 PDF 查看器。 </string>
