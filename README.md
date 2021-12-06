@@ -4184,6 +4184,7 @@ general.smoothScroll (Firefox 83, Firefox ESR 78.5)
 geo.
 gfx.
 intl.
+keyword.enabled (Firefox 95, Firefox ESR 91.4)
 layers.
 layout.
 media.
@@ -4193,6 +4194,7 @@ places.
 print.
 signon. (Firefox 83, Firefox ESR 78.5)
 spellchecker. (Firefox 84, Firefox ESR 78.6)
+toolkit.legacyUserProfileCustomizations.stylesheets (Firefox 95, Firefox ESR 91.4)
 ui.
 widget.
 ```
