@@ -371,11 +371,11 @@ If this policy is disabled or not configured, the default cookie policy is follo
       <string id="Cookies_Block_Explain">Si cette stratégie est activée, les cookies sont bloqués pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les cookies sont également bloqués pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, les cookies ne sont pas bloqués par défaut.</string>
-      <string id="Cookies_Default">Accepter les cookies des sites Web</string>
+      <string id="Cookies_Default">Accepter les cookies des sites Web (Deprecated)</string>
       <string id="Cookies_Default_Explain">Si cette stratégie est désactivée, les cookies des sites Web ne sont pas acceptés par défaut.
 
 Si cette stratégie n'est ni configurée ni activée, les cookies des sites Web sont acceptés.</string>
-      <string id="Cookies_AcceptThirdParty">Accepter les cookies tiers</string>
+      <string id="Cookies_AcceptThirdParty">Accepter les cookies tiers (Deprecated)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Si cette stratégie est activée et que les cookies sont autorisés, vous pouvez définir quand accepter les cookies tiers.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés.</string>
@@ -386,7 +386,7 @@ Ce paramètre est ignoré si cette stratégie est désactivée ou non configuré
       <string id="Cookies_ExpireAtSessionEnd_Explain">Si cette stratégie est activée et que les cookies sont autorisés, ils expireront à la fermeture de Firefox.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés.</string>
-      <string id="Cookies_RejectTracker">Rejet des cookies de suivi</string>
+      <string id="Cookies_RejectTracker">Rejet des cookies de suivi (Deprecated)</string>
       <string id="Cookies_RejectTracker_Explain">Si cette stratégie est activée et que les cookies sont autorisés, Firefox rejettera les cookies de suivi par défaut.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés..</string>

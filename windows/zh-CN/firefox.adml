@@ -369,11 +369,11 @@ Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息�
 <string id="Cookies_Block_Explain">若启用此原则，将封锁来自指定来源网址的 Cookie。 若指定了顶级域名（例如 http://example.org），也将封锁所有来自子域的 Cookie。 
 
 若禁用或不设定此原则，则默认不封锁 Cookie。 </string>
-   <string id="Cookies_Default">接受来自网站的 Cookie</string>
+   <string id="Cookies_Default">接受来自网站的 Cookie（已弃用）</string>
    <string id="Cookies_Default_Explain">若禁用此原则，将默认不接受来自网站的 Cookie。 
 
 若未启用或设定此原则，则接受来自网站的 Cookie。 </string>
-   <string id="Cookies_AcceptThirdParty">允许第三方 Cookie</string>
+   <string id="Cookies_AcceptThirdParty">允许第三方 Cookie（已弃用）</string>
    <string id="Cookies_AcceptThirdParty_Explain">若接受 Cookie 并启用了此原则，将可以设置是否要接受第三方 Cookie。 
 
 若禁用或未设定此原则，或是不允许 Cookie，则忽略此设定。 </string>
@@ -384,7 +384,7 @@ Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息�
 <string id="Cookies_ExpireAtSessionEnd_Explain">若启用此原则并允许 Cookie，Cookie 将在Firefox 时失效。 
 
 若禁用或未设定此原则，或是不允许 Cookie，则忽略此设定。 </string>
-   <string id="Cookies_RejectTracker">拒绝跟踪器</string>
+   <string id="Cookies_RejectTracker">拒绝跟踪器（已弃用）</string>
    <string id="Cookies_RejectTracker_Explain">若启用此原则并允许 Cookie，Firefox 将默认拒绝跟踪器 Cookie。 
 
 若禁用或未设定此原则，或是不允许 Cookie，则忽略此设定。 </string>

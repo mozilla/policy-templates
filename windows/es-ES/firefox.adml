@@ -371,11 +371,11 @@ If this policy is disabled or not configured, the default cookie policy is follo
       <string id="Cookies_Block_Explain">Si esta política está habilitada, las cookies estarán bloqueadas por los orígenes indicados. Si se especifica un dominio de nivel superior (http://ejemplo.org), también se bloquearán las cookies de todos los subdominios.
 
 Si esta política está deshabilitada o no está configurada, las cookies no estarán bloqueadas de manera predeterminada.</string>
-      <string id="Cookies_Default">Aceptar cookies de sitios web</string>
+      <string id="Cookies_Default">Aceptar cookies de sitios web (obsoleto)</string>
       <string id="Cookies_Default_Explain">Si esta política está deshabilitada, las cookies no son aceptadas por los sitios web de forma predeterminada.
 
 Si esta política no está configurada o habilitada, se aceptarán cookies de los sitios web.</string>
-      <string id="Cookies_AcceptThirdParty">Aceptar cookies de terceros</string>
+      <string id="Cookies_AcceptThirdParty">Aceptar cookies de terceros (obsoleto)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Si esta política está habilitada y se permiten las cookies, podrá establecer cuándo aceptar las cookies de terceros.
 
 Esta configuración se ignora si esta política está deshabilitada o no está configurada o si las cookies no están permitidas.</string>
@@ -386,7 +386,7 @@ Esta configuración se ignora si esta política está deshabilitada o no está c
       <string id="Cookies_ExpireAtSessionEnd_Explain">Si esta política está habilitada y las cookies estarán permitidas, caducarán cuando se cierre Firefox.
 
 Esta configuración se ignora si esta política está deshabilitada o no está configurada, o si las cookies no estarán permitidas.</string>
-      <string id="Cookies_RejectTracker">Bloquear rastreadores</string>
+      <string id="Cookies_RejectTracker">Bloquear rastreadores (obsoleto)</string>
       <string id="Cookies_RejectTracker_Explain">Si esta política está habilitada y las cookies estarán permitidas, Firefox bloqueará las cookies de rastreo de manera predeterminada.
 
 Esta configuración se ignora si esta política está deshabilitada o no está configurada, o si las cookies no estarán permitidas.</string>

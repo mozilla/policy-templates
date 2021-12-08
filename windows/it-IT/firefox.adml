@@ -371,11 +371,11 @@ Se questo criterio è disabilitato o non configurato, viene seguita la politica 
       <string id="Cookies_Block_Explain">Se questo criterio è abilitato, i cookie dai siti indicati sono bloccati. Se è specificato un dominio di primo livello (http://example.org), i cookie sono bloccati anche da tutti i sottodomini.
 
 Se questo criterio è disabilitato o non configurato, i cookie non sono bloccati per impostazione predefinita.</string>
-      <string id="Cookies_Default">Accetta i cookie dai siti Web</string>
+      <string id="Cookies_Default">Accetta i cookie dai siti Web (deprecata)</string>
       <string id="Cookies_Default_Explain">Se questo criterio è disabilitato, i cookie dai siti Web non sono accettati per impostazione predefinita.
 
 Se questo criterio non è configurato o è abilitato, i cookie dai siti Web sono accettati.</string>
-      <string id="Cookies_AcceptThirdParty">Accetta cookie di terze parti</string>
+      <string id="Cookies_AcceptThirdParty">Accetta cookie di terze parti (deprecata)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Se questo criterio è abilitato e i cookie sono consentiti, è possibile impostare quando accettare i cookie di terze parti.
 
 Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
@@ -386,7 +386,7 @@ Quest'impostazione è ignorata se questo criterio è disabilitato o non configur
       <string id="Cookies_ExpireAtSessionEnd_Explain">Se questo criterio è abilitato e i cookie sono consentiti, questi scadranno alla chiusura di Firefox.
 
 Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
-      <string id="Cookies_RejectTracker">Rifiuta elementi traccianti</string>
+      <string id="Cookies_RejectTracker">Rifiuta elementi traccianti (deprecata)</string>
       <string id="Cookies_RejectTracker_Explain">Se questo criterio è abilitato e i cookie sono consentiti, Firefox rifiuterà gli elementi traccianti per impostazione predefinita.
 
 Quest'impostazione è ignorata se questo criterio è disabilitato o non configurato o se i cookie non sono consentiti.</string>
