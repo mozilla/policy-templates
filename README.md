@@ -23,14 +23,15 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
 | **[`Certificates -> Install`](#certificates--install)** | Install certificates into the Firefox certificate store.
 | **[`Cookies`](#cookies)** | Configure cookie preferences.
+| **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
 | **[`DisabledCiphers`](#disabledciphers)** | Disable ciphers.
 | **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
-| **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
 | **[`DisableFirefoxAccounts`](#disablefirefoxaccounts)** | Disable Firefox Accounts integration (Sync).
+| **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
 | **[`DisableFirefoxStudies`](#disablefirefoxstudies)** | Disable Firefox studies (Shield).
 | **[`DisableForgetButton`](#disableforgetbutton)** | Disable the "Forget" button.
 | **[`DisableFormHistory`](#disableformhistory)** | Turn off saving information on web forms and the search bar.
@@ -46,11 +47,10 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or update.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
 | **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
+| **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
-| **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
 | **[`EncryptedMediaExtensions`](#encryptedmediaextensions)** | Enable or disable Encrypted Media Extensions and optionally lock it.
@@ -58,17 +58,16 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
-| **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
-| **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
+| **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 | **[`Handlers`](#handlers)** | Configure default application handlers.
+| **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 | **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates..
-| **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -83,6 +82,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
 | **[`Preferences (Deprecated)`](#preferences-deprecated)** | Set and lock some preferences.
+| **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -116,7 +116,7 @@ If set to true, application updates are installed without user approval within F
 
 If set to false, application updates are downloaded but the user can choose when to install the update.
 
-If you have disabled updates via DisableAppUpdate, this policy has no effect.
+If you have disabled updates via `DisableAppUpdate`, this policy has no effect.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
@@ -1072,7 +1072,7 @@ Remove the master password functionality.
 
 If this value is true, it works the same as setting [`PrimaryPassword`](#primarypassword) to false and removes the primary password functionality.
 
-If both DisableMasterPasswordCreation and PrimaryPassword are used, DisableMasterPasswordCreation takes precedent.
+If both `DisableMasterPasswordCreation` and `PrimaryPassword` are used, `DisableMasterPasswordCreation` takes precedent.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `noMasterPassword`\
@@ -1104,6 +1104,50 @@ Value (string):
   "policies": {
     "DisableMasterPasswordCreation": true | false
   }
+}
+```
+### DefaultDownloadDirectory
+Set the default download directory.
+
+You can use ${home} for the native home directory.
+
+**Compatibility:** Firefox 68, Firefox ESR 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.download.dir`, `browser.download.folderList`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DefaultDownloadDirectory
+```
+Value (string):
+```
+<enabled/>
+<data id="Preferences_String" value="${home}\Downloads"/>
+```
+#### macOS
+```
+<dict>
+  <key>DefaultDownloadDirectory</key>
+  <string>${home}/Downloads</string>
+</dict>
+```
+#### policies.json (macOS and Linux)
+```
+{
+  "policies": {
+    "DefaultDownloadDirectory": "${home}/Downloads"
+}
+```
+#### policies.json (Windows)
+```
+{
+  "policies": {
+    "DefaultDownloadDirectory": "${home}\\Downloads"
 }
 ```
 ### DisableAppUpdate
@@ -1374,41 +1418,6 @@ Value (string):
   }
 }
 ```
-### DisableFirefoxScreenshots
-Remove access to Firefox Screenshots.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** `extensions.screenshots.disabled`
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFirefoxScreenshots
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>DisableFirefoxScreenshots</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisableFirefoxScreenshots": true | false
-  }
-}
-```
 ### DisableFirefoxAccounts
 Disable Firefox Accounts integration (Sync).
 
@@ -1441,6 +1450,41 @@ Value (string):
 {
   "policies": {
     "DisableFirefoxAccounts": true | false
+  }
+}
+```
+### DisableFirefoxScreenshots
+Remove access to Firefox Screenshots.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `extensions.screenshots.disabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableFirefoxScreenshots = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableFirefoxScreenshots
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>DisableFirefoxScreenshots</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisableFirefoxScreenshots": true | false
   }
 }
 ```
@@ -1927,32 +1971,6 @@ Value (string):
   }
 }
 ```
-### DisplayMenuBar (Deprecated)
-Set the initial state of the menubar. A user can still hide it and it will stay hidden.
-
-**Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
-**CCK2 Equivalent:** `displayMenuBar`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
-```
-#### macOS
-```
-<dict>
-  <key>DisplayMenuBar</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisplayMenuBar": true | false
-  }
-}
-```
 ### DisplayMenuBar
 Set the state of the menubar.
 
@@ -1994,6 +2012,32 @@ Value (string):
 {
   "policies": {
     "DisplayMenuBar": "always", "never", "default-on", "default-off"
+  }
+}
+```
+### DisplayMenuBar (Deprecated)
+Set the initial state of the menubar. A user can still hide it and it will stay hidden.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
+**CCK2 Equivalent:** `displayMenuBar`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
+```
+#### macOS
+```
+<dict>
+  <key>DisplayMenuBar</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisplayMenuBar": true | false
   }
 }
 ```
@@ -2118,50 +2162,6 @@ Value (string):
   "policies": {
     "DontCheckDefaultBrowser": true | false
   }
-}
-```
-### DefaultDownloadDirectory
-Set the default download directory.
-
-You can use ${home} for the native home directory.
-
-**Compatibility:** Firefox 68, Firefox ESR 68\
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.download.dir`, `browser.download.folderList`
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DefaultDownloadDirectory = "${home}\Downloads"
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DefaultDownloadDirectory
-```
-Value (string):
-```
-<enabled/>
-<data id="Preferences_String" value="${home}\Downloads"/>
-```
-#### macOS
-```
-<dict>
-  <key>DefaultDownloadDirectory</key>
-  <string>${home}/Downloads</string>
-</dict>
-```
-#### policies.json (macOS and Linux)
-```
-{
-  "policies": {
-    "DefaultDownloadDirectory": "${home}/Downloads"
-}
-```
-#### policies.json (Windows)
-```
-{
-  "policies": {
-    "DefaultDownloadDirectory": "${home}\\Downloads"
 }
 ```
 ### DownloadDirectory
@@ -2620,7 +2620,83 @@ Value (string):
   }
 }
 ```
-### FlashPlugin
+### FirefoxHome
+Customize the Firefox Home page.
+
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4)
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\FirefoxHome\Search = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredTopSites = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Highlights = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Pocket = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredPocket = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Snippets = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/CustomizeFirefoxHome
+```
+Value (string):
+```
+<enabled/>
+<data id="FirefoxHome_Search"  value="true | false"/>
+<data id="FirefoxHome_TopSites"  value="true | false"/>
+<data id="FirefoxHome_SponsoredTopSites"  value="true | false"/>
+<data id="FirefoxHome_Highlights"  value="true | false"/>
+<data id="FirefoxHome_Pocket"  value="true | false"/>
+<data id="FirefoxHome_SponsoredPocket"  value="true | false"/>
+<data id="FirefoxHome_Snippets"  value="true | false"/>
+<data id="FirefoxHome_Locked"  value="true | false"/>
+```
+#### macOS
+```
+<dict>
+  <key>FirefoxHome</key>
+  <dict>
+    <key>Search</key>
+    <true/> | <false/>
+    <key>TopSites</key>
+    <true/> | <false/>
+    <key>SponsoredTopSites</key>
+    <true/> | <false/>
+    <key>Highlights</key>
+    <true/> | <false/>
+    <key>Pocket</key>
+    <true/> | <false/>
+    <key>SponsoredPocket</key>
+    <true/> | <false/>
+    <key>Snippets</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "FirefoxHome": {
+      "Search": true | false,
+      "TopSites": true | false,
+      "SponsoredTopSites": true | false,
+      "Highlights": true | false,
+      "Pocket": true | false,
+      "SponsoredPocket": true | false,
+      "Snippets": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
+### FlashPlugin (Deprecated)
 Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 
 `Allow` is a list of origins where Flash are allowed.
@@ -2701,9 +2777,6 @@ Value (string):
   }
 }
 ```
-
-
-
 ### Handlers
 Configure default application handlers. This policy is based on the internal format of `handlers.json`.
 
@@ -2882,82 +2955,6 @@ Value (string):
           }]
         }
       }
-    }
-  }
-}
-```
-### FirefoxHome
-Customize the Firefox Home page.
-
-**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4)
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\FirefoxHome\Search = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredTopSites = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\Highlights = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\Pocket = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredPocket = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\Snippets = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/CustomizeFirefoxHome
-```
-Value (string):
-```
-<enabled/>
-<data id="FirefoxHome_Search"  value="true | false"/>
-<data id="FirefoxHome_TopSites"  value="true | false"/>
-<data id="FirefoxHome_SponsoredTopSites"  value="true | false"/>
-<data id="FirefoxHome_Highlights"  value="true | false"/>
-<data id="FirefoxHome_Pocket"  value="true | false"/>
-<data id="FirefoxHome_SponsoredPocket"  value="true | false"/>
-<data id="FirefoxHome_Snippets"  value="true | false"/>
-<data id="FirefoxHome_Locked"  value="true | false"/>
-```
-#### macOS
-```
-<dict>
-  <key>FirefoxHome</key>
-  <dict>
-    <key>Search</key>
-    <true/> | <false/>
-    <key>TopSites</key>
-    <true/> | <false/>
-    <key>SponsoredTopSites</key>
-    <true/> | <false/>
-    <key>Highlights</key>
-    <true/> | <false/>
-    <key>Pocket</key>
-    <true/> | <false/>
-    <key>SponsoredPocket</key>
-    <true/> | <false/>
-    <key>Snippets</key>
-    <true/> | <false/>
-    <key>Locked</key>
-    <true/> | <false/>
-  </dict>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "FirefoxHome": {
-      "Search": true | false,
-      "TopSites": true | false,
-      "SponsoredTopSites": true | false,
-      "Highlights": true | false,
-      "Pocket": true | false,
-      "SponsoredPocket": true | false,
-      "Snippets": true | false,
-      "Locked": true | false
     }
   }
 }
@@ -3395,45 +3392,6 @@ This policy is primarily intended for advanced end users, not for enterprises.
 {
   "policies": {
     "ManualAppUpdateOnly": true | false
-  }
-}
-```
-### PrimaryPassword
-Require or prevent using a primary (formerly master) password.
-
-If this value is true, a primary password is required. If this value is false, it works the same as if [`DisableMasterPasswordCreation`](#disablemasterpasswordcreation) was true and removes the primary password functionality.
-
-If both DisableMasterPasswordCreation and PrimaryPassword are used, DisableMasterPasswordCreation takes precedent.
-
-**Compatibility:** Firefox 79, Firefox ESR 78.1\
-**CCK2 Equivalent:** `noMasterPassword`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\PrimaryPassword = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PrimaryPassword
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>PrimaryPassword</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "PrimaryPassword": true | false
   }
 }
 ```
@@ -4505,6 +4463,45 @@ Value (string):
   }
 }
 ```
+### PrimaryPassword
+Require or prevent using a primary (formerly master) password.
+
+If this value is true, a primary password is required. If this value is false, it works the same as if [`DisableMasterPasswordCreation`](#disablemasterpasswordcreation) was true and removes the primary password functionality.
+
+If both DisableMasterPasswordCreation and PrimaryPassword are used, DisableMasterPasswordCreation takes precedent.
+
+**Compatibility:** Firefox 79, Firefox ESR 78.1\
+**CCK2 Equivalent:** `noMasterPassword`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PrimaryPassword = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PrimaryPassword
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>PrimaryPassword</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PrimaryPassword": true | false
+  }
+}
+```
 ### PromptForDownloadLocation
 Ask where to save each file before downloading.
 
@@ -4936,6 +4933,110 @@ Value (string):
 
 ### SearchEngines (This policy is only available on the ESR.)
 
+### SearchEngines | Add
+
+Add new search engines (up to five). This policy is only available on the ESR. `Name` and `URLTemplate` are required.
+
+`Name` is the name of the search engine.
+
+`URLTemplate` is the search URL with {searchTerms} to substitute for the search term.
+
+`Method` is either GET or POST
+
+`IconURL` is a URL for the icon to use.
+
+`Alias` is a keyword to use for the engine.
+
+`Description` is a description of the search engine.
+
+`PostData` is the POST data as name value pairs separated by &.
+
+`SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
+
+`Encoding` is the query charset for the engine. It defaults to UTF-8.
+
+**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68, Encoding support in Firefox 91)\
+**CCK2 Equivalent:** `searchplugins`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name = "Example1"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate = "https://www.example.org/q={searchTerms}"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method = "GET" | "POST"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL = "https://www.example.org/favicon.ico"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias = "example"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description = "Example Description"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "https://www.example.org/suggestions/q={searchTerms}"
+Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={searchTerms}"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Search/SearchEngines_1
+```
+Value (string):
+```
+<enabled/>
+<data id="SearchEngine_Name" value="Example1"/>
+<data id="SearchEngine_URLTemplate" value="https://www.example.org/q={searchTerms"/>
+<data id="SearchEngine_Method" value="GET | POST"/>
+<data id="SearchEngine_IconURL" value="https://www.example.org/favicon.ico"/>
+<data id="SearchEngine_Alias" value="example"/>
+<data id="SearchEngine_Description" value="Example Description"/>
+<data id="SearchEngine_SuggestURLTemplate" value="https://www.example.org/suggestions/q={searchTerms}"/>
+<data id="SearchEngine_PostData" value="name=value&amp;q={searchTerms}"/>
+```
+#### macOS
+```
+<dict>
+  <key>SearchEngines</key>
+  <dict>
+    <key>Add</key>
+    <array>
+      <dict>
+        <key>Name</key>
+        <string>Example1</string>
+        <key>URLTemplate</key>
+        <string>https://www.example.org/q={searchTerms}</string>
+        <key>Method</key>
+        <string>GET | POST </string>
+        <key>IconURL</key>
+        <string>https://www.example.org/favicon.ico</string>
+        <key>Alias</key>
+        <string>example</string>
+        <key>Description</key>
+        <string>Example Description</string>
+        <key>SuggestURLTemplate</key>
+        <string>https://www.example.org/suggestions/q={searchTerms}</string>
+        <key>PostData</key>
+        <string>name=value&q={searchTerms}</string>
+      </dict>
+    <array>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "Example1",
+          "URLTemplate": "https://www.example.org/q={searchTerms}",
+          "Method": "GET" | "POST",
+          "IconURL": "https://www.example.org/favicon.ico",
+          "Alias": "example",
+          "Description": "Description",
+          "PostData": "name=value&q={searchTerms}",
+          "SuggestURLTemplate": "https://www.example.org/suggestions/q={searchTerms}"
+        }
+      ]
+    }
+  }
+}
+```
 ### SearchEngines | Default
 
 Set the default search engine. This policy is only available on the ESR.
@@ -5059,110 +5160,6 @@ Value (string):
   "policies": {
     "SearchEngines": {
       "Remove": ["NAME_OF_SEARCH_ENGINE"]
-    }
-  }
-}
-```
-### SearchEngines | Add
-
-Add new search engines (up to five). This policy is only available on the ESR. `Name` and `URLTemplate` are required.
-
-`Name` is the name of the search engine.
-
-`URLTemplate` is the search URL with {searchTerms} to substitute for the search term.
-
-`Method` is either GET or POST
-
-`IconURL` is a URL for the icon to use.
-
-`Alias` is a keyword to use for the engine.
-
-`Description` is a description of the search engine.
-
-`PostData` is the POST data as name value pairs separated by &.
-
-`SuggestURLTemplate` is a search suggestions URL with {searchTerms} to substitute for the search term.
-
-`Encoding` is the query charset for the engine. It defaults to UTF-8.
-
-**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68, Encoding support in Firefox 91)\
-**CCK2 Equivalent:** `searchplugins`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Name = "Example1"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\URLTemplate = "https://www.example.org/q={searchTerms}"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Method = "GET" | "POST"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\IconURL = "https://www.example.org/favicon.ico"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Alias = "example"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\Description = "Example Description"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\SuggestURLTemplate = "https://www.example.org/suggestions/q={searchTerms}"
-Software\Policies\Mozilla\Firefox\SearchEngines\Add\1\PostData = "name=value&q={searchTerms}"
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Search/SearchEngines_1
-```
-Value (string):
-```
-<enabled/>
-<data id="SearchEngine_Name" value="Example1"/>
-<data id="SearchEngine_URLTemplate" value="https://www.example.org/q={searchTerms"/>
-<data id="SearchEngine_Method" value="GET | POST"/>
-<data id="SearchEngine_IconURL" value="https://www.example.org/favicon.ico"/>
-<data id="SearchEngine_Alias" value="example"/>
-<data id="SearchEngine_Description" value="Example Description"/>
-<data id="SearchEngine_SuggestURLTemplate" value="https://www.example.org/suggestions/q={searchTerms}"/>
-<data id="SearchEngine_PostData" value="name=value&amp;q={searchTerms}"/>
-```
-#### macOS
-```
-<dict>
-  <key>SearchEngines</key>
-  <dict>
-    <key>Add</key>
-    <array>
-      <dict>
-        <key>Name</key>
-        <string>Example1</string>
-        <key>URLTemplate</key>
-        <string>https://www.example.org/q={searchTerms}</string>
-        <key>Method</key>
-        <string>GET | POST </string>
-        <key>IconURL</key>
-        <string>https://www.example.org/favicon.ico</string>
-        <key>Alias</key>
-        <string>example</string>
-        <key>Description</key>
-        <string>Example Description</string>
-        <key>SuggestURLTemplate</key>
-        <string>https://www.example.org/suggestions/q={searchTerms}</string>
-        <key>PostData</key>
-        <string>name=value&q={searchTerms}</string>
-      </dict>
-    <array>
-  </dict>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "SearchEngines": {
-      "Add": [
-        {
-          "Name": "Example1",
-          "URLTemplate": "https://www.example.org/q={searchTerms}",
-          "Method": "GET" | "POST",
-          "IconURL": "https://www.example.org/favicon.ico",
-          "Alias": "example",
-          "Description": "Description",
-          "PostData": "name=value&q={searchTerms}",
-          "SuggestURLTemplate": "https://www.example.org/suggestions/q={searchTerms}"
-        }
-      ]
     }
   }
 }
