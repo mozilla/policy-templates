@@ -394,6 +394,20 @@ Esta configuración se ignora si esta política está deshabilitada o no está c
       <string id="Cookies_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar las preferencias de cookies.
 
 Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar tus preferencias de cookies.</string>
+      <string id="Cookies_Behavior">Cookie Behavior</string>
+      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
+
+If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+
+If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
+      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
+      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
+      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
+      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
+      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
       <string id="Camera_Allow_Explain">Si esta política está habilitada, el acceso a la cámara siempre estará permitido para los orígenes indicados.
 
 Si esta política está deshabilitada o no está configurada, se seguirá la política de cámara predeterminada.</string>
@@ -985,6 +999,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Permitir ventanas emergentes para sitios web</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="Cookies_Behavior">
+        <dropdownList refId="Cookies_Behavior"/>
+      </presentation>
+      <presentation id="Cookies_BehaviorPrivateBrowsing">
+        <dropdownList refId="Cookies_BehaviorPrivateBrowsing"/>
       </presentation>
       <presentation id="SearchBar">
         <dropdownList refId="SearchBar"/>

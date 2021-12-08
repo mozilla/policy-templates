@@ -118,14 +118,8 @@
 		<array>
 			<string>https://www.example.edu/</string>
 		</array>
-		<key>Default</key>
-		<false/>
-		<key>AcceptThirdParty</key>
-		<string>never</string>
-		<key>ExpireAtSessionEnd</key>
-		<true/>
-		<key>RejectTracker</key>
-		<true/>		
+		<key>Behavior</key>
+		<string>limit-foreign</string>
 		<key>Locked</key>
 		<true/>
 	</dict>

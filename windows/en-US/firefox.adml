@@ -371,11 +371,11 @@ If this policy is disabled or not configured, the default cookie policy is follo
       <string id="Cookies_Block_Explain">If this policy is enabled, cookies are blocked for the origins indicated. If a top level domain is specified (http://example.org), cookies are blocked from all subdomains as well.
 
 If this policy is disabled or not configured, cookies are not blocked by default.</string>
-      <string id="Cookies_Default">Accept cookies from websites</string>
+      <string id="Cookies_Default">Accept cookies from websites (Deprecated)</string>
       <string id="Cookies_Default_Explain">If this policy is disabled, cookies are not accepted from websites by default.
 
 If this policy is not configured or enabled, cookies are accepted from websites.</string>
-      <string id="Cookies_AcceptThirdParty">Accept third-party cookies</string>
+      <string id="Cookies_AcceptThirdParty">Accept third-party cookies (Deprecated)</string>
       <string id="Cookies_AcceptThirdParty_Explain">If this policy is enabled and cookies are allowed, you can set when to accept third-party cookies.
 
 This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
@@ -386,14 +386,26 @@ This setting is ignored if this policy is disabled or not configured or if cooki
       <string id="Cookies_ExpireAtSessionEnd_Explain">If this policy is enabled and cookies are allowed, they will expire when Firefox is closed.
 
 This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
-      <string id="Cookies_RejectTracker">Reject trackers</string>
+      <string id="Cookies_RejectTracker">Reject trackers (Deprecated)</string>
       <string id="Cookies_RejectTracker_Explain">If this policy is enabled and cookies are allowed, Firefox will reject tracker cookies by default.
 
 This setting is ignored if this policy is disabled or not configured or if cookies are not allowed.</string>
       <string id="Cookies_Locked">Do not allow preferences to be changed</string>
-      <string id="Cookies_Locked_Explain">If this policy is enabled, cookie preferences cannot be changed by the user.
+      <string id="Cookies_Locked_Explain">If this policy is enabled, cookie preferences cannot be changed by the user.</string>
+      <string id="Cookies_Behavior">Cookie Behavior</string>
+      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
 
-If this policy is disabled or not configured, the user can change their cookie preferences.</string>
+If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+
+If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
+      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
+      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
+      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
+      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
+      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
       <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
 
 If this policy is disabled or not configured, the default camera policy is followed.</string>
@@ -985,6 +997,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Allow popups for websites</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="Cookies_Behavior">
+        <dropdownList refId="Cookies_Behavior"/>
+      </presentation>
+      <presentation id="Cookies_BehaviorPrivateBrowsing">
+        <dropdownList refId="Cookies_BehaviorPrivateBrowsing"/>
       </presentation>
       <presentation id="SearchBar">
         <dropdownList refId="SearchBar"/>

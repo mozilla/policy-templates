@@ -891,19 +891,32 @@ Configure cookie preferences.
 
 `Block` is a list of origins (not domains) where cookies are always blocked. You must include http or https.
 
-`Default` determines whether cookies are accepted at all.
+`Behavior` sets the default behavior for cookies based on the values below.
 
-`AcceptThirdParty` determines how third-party cookies are handled.
+`BehaviorPrivateBrowsing` sets the default behavior for cookies in private browsing based on the values below.
+
+| Value | Description
+| --- | ---
+| accept | Accept all cookies
+| reject-foreign | Reject third party cookies
+| reject | Reject all cookies
+| limit-foreign | Reject third party cookies for sites you haven't visited
+| reject-tracker | Reject cookies for known trackers (default)
+| reject-tracker-and-partition-foreign | Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection) (default for private browsing)
+
+`Default` (Deprecated) determines whether cookies are accepted at all.
+
+`AcceptThirdParty` (Deprecated) determines how third-party cookies are handled.
 
 `ExpireAtSessionEnd` determines when cookies expire.
 
-`RejectTracker` only rejects cookies for trackers.
+`RejectTracker` (Deprecated) only rejects cookies for trackers.
 
 `Locked` prevents the user from changing cookie preferences.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker added in Firefox 63, AllowSession added in Firefox 79/78.1)\
+**Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker added in Firefox 63, AllowSession added in Firefox 79/78.1, Behavior added in Firefox 95/91.4)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `network.cookie.cookieBehavior`, `network.cookie.lifetimePolicy`
+**Preferences Affected:** `network.cookie.cookieBehavior`, `network.cookie.cookieBehavior.pbmode`, `network.cookie.lifetimePolicy`
 
 #### Windows (GPO)
 ```
@@ -914,6 +927,8 @@ Software\Policies\Mozilla\Firefox\Cookies\Default = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty = "always" | "never" | "from-visited"
 Software\Policies\Mozilla\Firefox\Cookies\ExpireAtSessionEnd = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Cookies\RejectTracker = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Cookies\Behavior = "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
+Software\Policies\Mozilla\Firefox\Cookies\BehaviorPrivateBrowsing = "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
 Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
@@ -985,6 +1000,24 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_Behavior
+```
+Value (string):
+```
+<enabled/>
+<data id="Cookies_Behavior" value="accept | reject-foreign | reject | limit-foreign | reject-tracker | reject-tracker-and-partition-foreign"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_BehaviorPrivateBrowsing
+```
+Value (string):
+```
+<enabled/>
+<data id="Cookies_BehaviorPrivateBrowsing" value="accept | reject-foreign | reject | limit-foreign | reject-tracker | reject-tracker-and-partition-foreign"/>
+```
 #### macOS
 ```
 <dict>
@@ -1012,6 +1045,10 @@ Value (string):
     <true/> | <false/>
     <key>Locked</key>
     <true/> | <false/>
+    <key>Behavior</key>
+    <string>accept | reject-foreign | reject | limit-foreign | reject-tracker | reject-tracker-and-partition-foreign</string>
+    <key>BehaviorPrivateBrowsing</key>
+    <string>accept | reject-foreign | reject | limit-foreign | reject-tracker | reject-tracker-and-partition-foreign</string>
   </dict>
 </dict>
 ```
@@ -1027,7 +1064,9 @@ Value (string):
       "AcceptThirdParty": "always" | "never" | "from-visited",
       "ExpireAtSessionEnd": true | false,
       "RejectTracker": true | false,
-      "Locked": true | false
+      "Locked": true | false,
+      "Behavior": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
+      "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
     }
   }
 }
