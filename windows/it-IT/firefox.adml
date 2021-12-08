@@ -1161,8 +1161,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">Ricerca sul Web</checkBox>
         <checkBox refId="FirefoxHome_TopSites">Siti principali</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredTopSites">Sponsored Top Sites</checkBox>
         <checkBox refId="FirefoxHome_Highlights">Cronologia dei download</checkBox>
         <checkBox refId="FirefoxHome_Pocket">Raccomandati da Pocket</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredPocket">Sponsored Pocket Stories</checkBox>
         <checkBox refId="FirefoxHome_Snippets">Snippet</checkBox>
         <checkBox refId="FirefoxHome_Locked">Non consentire la modifica delle preferenze</checkBox>
       </presentation>

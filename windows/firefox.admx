@@ -1106,6 +1106,14 @@
             <decimal value="0"/>
           </falseValue>
         </boolean>
+        <boolean id="FirefoxHome_SponsoredTopSites" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="SponsoredTopSites">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
         <boolean id="FirefoxHome_Highlights" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Highlights">
           <trueValue>
             <decimal value="1"/>
@@ -1115,6 +1123,14 @@
           </falseValue>
         </boolean>
         <boolean id="FirefoxHome_Pocket" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Pocket">
+          <trueValue>
+            <decimal value="1"/>
+          </trueValue>
+          <falseValue>
+            <decimal value="0"/>
+          </falseValue>
+        </boolean>
+        <boolean id="FirefoxHome_SponsoredPocket" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="SponsoredPocket">
           <trueValue>
             <decimal value="1"/>
           </trueValue>

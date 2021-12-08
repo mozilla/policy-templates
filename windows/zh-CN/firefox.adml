@@ -1158,8 +1158,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
    <presentation id="FirefoxHome">
 <checkBox refId="FirefoxHome_Search">搜索</checkBox>
 <checkBox refId="FirefoxHome_TopSites">热门网站</checkBox>
+<checkBox refId="FirefoxHome_SponsoredTopSites">Sponsored Top Sites</checkBox>
 <checkBox refId="FirefoxHome_Highlights">下载记录</checkBox>
 <checkBox refId="FirefoxHome_Pocket">Pocket 推荐项</checkBox>
+<checkBox refId="FirefoxHome_SponsoredPocket">Sponsored Pocket Stories</checkBox>
 <checkBox refId="FirefoxHome_Snippets">只字片语</checkBox>
 <checkBox refId="FirefoxHome_Locked">不允许变更设置</checkBox>
    </presentation>

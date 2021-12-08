@@ -284,9 +284,13 @@
 		<true/>
 		<key>TopSites</key>
 		<true/>
+		<key>SponsoredTopSites</key>
+		<false/>
 		<key>Highlights</key>
 		<true/>
 		<key>Pocket</key>
+		<false/>
+		<key>SponsoredPocket</key>
 		<false/>
 		<key>Snippets</key>
 		<false/>
