@@ -371,11 +371,11 @@ If this policy is disabled or not configured, the default cookie policy is follo
       <string id="Cookies_Block_Explain">Si cette stratégie est activée, les cookies sont bloqués pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les cookies sont également bloqués pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, les cookies ne sont pas bloqués par défaut.</string>
-      <string id="Cookies_Default">Accepter les cookies des sites Web</string>
+      <string id="Cookies_Default">Accepter les cookies des sites Web (Deprecated)</string>
       <string id="Cookies_Default_Explain">Si cette stratégie est désactivée, les cookies des sites Web ne sont pas acceptés par défaut.
 
 Si cette stratégie n'est ni configurée ni activée, les cookies des sites Web sont acceptés.</string>
-      <string id="Cookies_AcceptThirdParty">Accepter les cookies tiers</string>
+      <string id="Cookies_AcceptThirdParty">Accepter les cookies tiers (Deprecated)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Si cette stratégie est activée et que les cookies sont autorisés, vous pouvez définir quand accepter les cookies tiers.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés.</string>
@@ -386,7 +386,7 @@ Ce paramètre est ignoré si cette stratégie est désactivée ou non configuré
       <string id="Cookies_ExpireAtSessionEnd_Explain">Si cette stratégie est activée et que les cookies sont autorisés, ils expireront à la fermeture de Firefox.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés.</string>
-      <string id="Cookies_RejectTracker">Rejet des cookies de suivi</string>
+      <string id="Cookies_RejectTracker">Rejet des cookies de suivi (Deprecated)</string>
       <string id="Cookies_RejectTracker_Explain">Si cette stratégie est activée et que les cookies sont autorisés, Firefox rejettera les cookies de suivi par défaut.
 
 Ce paramètre est ignoré si cette stratégie est désactivée ou non configurée ou si les cookies ne sont pas autorisés..</string>
@@ -394,6 +394,20 @@ Ce paramètre est ignoré si cette stratégie est désactivée ou non configuré
       <string id="Cookies_Locked_Explain">Si cette stratégie est activée, les préférences en matière de cookies ne peuvent pas être modifiées par l'utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences en matière de cookies.</string>
+      <string id="Cookies_Behavior">Cookie Behavior</string>
+      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
+
+If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+
+If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
+      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
+      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
+      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
+      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
+      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
       <string id="Camera_Allow_Explain">Si cette stratégie est activée, l'accès à la caméra est toujours autorisé pour les origines indiquées.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut de la caméra est appliquée.</string>
@@ -984,6 +998,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Autoriser les fenêtres contextuelles pour les sites Web</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="Cookies_Behavior">
+        <dropdownList refId="Cookies_Behavior"/>
+      </presentation>
+      <presentation id="Cookies_BehaviorPrivateBrowsing">
+        <dropdownList refId="Cookies_BehaviorPrivateBrowsing"/>
       </presentation>
       <presentation id="SearchBar">
         <dropdownList refId="SearchBar"/>

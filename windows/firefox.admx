@@ -381,6 +381,82 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Cookies_Behavior" class="Both" displayName="$(string.Cookies_Behavior)" explainText="$(string.Cookies_Behavior_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies"  presentation="$(presentation.Cookies_Behavior)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_FF95"/>
+      <elements>
+        <enum id="Cookies_Behavior" valueName="Behavior">
+          <item displayName="$(string.Cookies_Behavior_Accept)">
+            <value>
+              <string>accept</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_RejectForeign)">
+            <value>
+              <string>reject-foreign</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_Reject)">
+            <value>
+              <string>reject</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_LimitForeign)">
+            <value>
+              <string>limit-foreign</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_RejectTracker)">
+            <value>
+              <string>reject-tracker</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_RejectTrackerAndPartitionForeign)">
+            <value>
+              <string>reject-tracker-and-partition-foreign</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="Cookies_BehaviorPrivateBrowsing" class="Both" displayName="$(string.Cookies_BehaviorPrivateBrowsing)" explainText="$(string.Cookies_BehaviorPrivateBrowsing_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies"  presentation="$(presentation.Cookies_BehaviorPrivateBrowsing)">
+      <parentCategory ref="Cookies"/>
+      <supportedOn ref="SUPPORTED_FF95"/>
+      <elements>
+        <enum id="Cookies_BehaviorPrivateBrowsing" valueName="BehaviorPrivateBrowsing">
+          <item displayName="$(string.Cookies_Behavior_Accept)">
+            <value>
+              <string>accept</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_RejectForeign)">
+            <value>
+              <string>reject-foreign</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_Reject)">
+            <value>
+              <string>reject</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_LimitForeign)">
+            <value>
+              <string>limit-foreign</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_RejectTracker)">
+            <value>
+              <string>reject-tracker</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_RejectTrackerAndPartitionForeign)">
+            <value>
+              <string>reject-tracker-and-partition-foreign</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy name="Camera_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.Camera_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
       <parentCategory ref="Camera"/>
       <supportedOn ref="SUPPORTED_FF62"/>

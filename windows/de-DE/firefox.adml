@@ -371,11 +371,11 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="Cookies_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Cookies für die angegebenen URLs gesperrt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), werden Cookies von allen Sub-Domains ebenfalls blockiert.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind Cookies standardmäßig nicht blockiert.</string>
-      <string id="Cookies_Default">Cookies und Website-Daten annehmen</string>
+      <string id="Cookies_Default">Cookies und Website-Daten annehmen (veraltet)</string>
       <string id="Cookies_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Cookies standardmäßig nicht von Webseiten akzeptiert.
 
 Wenn Sie die Richtlinieneinstellung nicht konfigurieren oder aktivieren, werden Cookies von Websiten akzeptiert.</string>
-      <string id="Cookies_AcceptThirdParty">Cookies und Website-Daten von Drittanbietern akzeptieren</string>
+      <string id="Cookies_AcceptThirdParty">Cookies und Website-Daten von Drittanbietern akzeptieren (veraltet)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlauben, können Sie einstellen wie Sie Cookies von Drittanbietern akzeptieren.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn Cookies nicht erlaubt sind.</string>
@@ -386,7 +386,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder w
       <string id="Cookies_ExpireAtSessionEnd_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlaubt sind, werden diese gelöscht sobald Firefox geschlossen wird.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn &quot;Cookies und Website-Daten annehmen&quot; deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
-      <string id="Cookies_RejectTracker">Tracker ablehnen</string>
+      <string id="Cookies_RejectTracker">Tracker ablehnen (veraltet)</string>
       <string id="Cookies_RejectTracker_Explain">Wenn diese Richtlinieneinstellung aktiviert ist und Cookies aktiviert sind, werden Tracker-Cookies standardmäßig abgewiesen.
 
 Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist oder Cookies durch eine andere Richtlinie oder Einstellung nicht erlaubt sind.</string>
@@ -394,6 +394,20 @@ Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert o
       <string id="Cookies_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren können Benutzer die Cookie-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Cookie-Einstellungen ändern.</string>
+      <string id="Cookies_Behavior">Cookie Behavior</string>
+      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
+
+If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+
+If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
+      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
+      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
+      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
+      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
+      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
       <string id="Camera_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Kamera für die genannten Quellen automatisch freigegeben.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
@@ -986,6 +1000,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Pop-up-Blocker deaktivieren</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="Cookies_Behavior">
+        <dropdownList refId="Cookies_Behavior"/>
+      </presentation>
+      <presentation id="Cookies_BehaviorPrivateBrowsing">
+        <dropdownList refId="Cookies_BehaviorPrivateBrowsing"/>
       </presentation>
       <presentation id="SearchBar">
         <dropdownList refId="SearchBar"/>
