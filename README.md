@@ -2889,16 +2889,18 @@ Value (string):
 ### FirefoxHome
 Customize the Firefox Home page.
 
-**Compatibility:** Firefox 68, Firefox ESR 68\
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4)
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`
+**Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\FirefoxHome\Search = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredTopSites = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Highlights = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Pocket = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredPocket = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Snippets = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
 ```
@@ -2912,8 +2914,10 @@ Value (string):
 <enabled/>
 <data id="FirefoxHome_Search"  value="true | false"/>
 <data id="FirefoxHome_TopSites"  value="true | false"/>
+<data id="FirefoxHome_SponsoredTopSites"  value="true | false"/>
 <data id="FirefoxHome_Highlights"  value="true | false"/>
 <data id="FirefoxHome_Pocket"  value="true | false"/>
+<data id="FirefoxHome_SponsoredPocket"  value="true | false"/>
 <data id="FirefoxHome_Snippets"  value="true | false"/>
 <data id="FirefoxHome_Locked"  value="true | false"/>
 ```
@@ -2926,9 +2930,13 @@ Value (string):
     <true/> | <false/>
     <key>TopSites</key>
     <true/> | <false/>
+    <key>SponsoredTopSites</key>
+    <true/> | <false/>
     <key>Highlights</key>
     <true/> | <false/>
     <key>Pocket</key>
+    <true/> | <false/>
+    <key>SponsoredPocket</key>
     <true/> | <false/>
     <key>Snippets</key>
     <true/> | <false/>
@@ -2944,8 +2952,10 @@ Value (string):
     "FirefoxHome": {
       "Search": true | false,
       "TopSites": true | false,
+      "SponsoredTopSites": true | false,
       "Highlights": true | false,
       "Pocket": true | false,
+      "SponsoredPocket": true | false,
       "Snippets": true | false,
       "Locked": true | false
     }
