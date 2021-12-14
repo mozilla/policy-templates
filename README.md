@@ -1,7 +1,3 @@
-**These policies are in active development and so might contain changes that do not work with current versions of Firefox.**
-
-**You should use the [officially released versions](https://github.com/mozilla/policy-templates/releases) if you are deploying changes.**
-
 Policies can be specified using the [Group Policy templates on Windows](https://github.com/mozilla/policy-templates/tree/master/windows), [Intune on Windows](https://support.mozilla.org/kb/managing-firefox-intune), [configuration profiles on macOS](https://github.com/mozilla/policy-templates/tree/master/mac), or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution or you can specify system-wide policy by placing the file in `/etc/firefox/policies`.
 
 | Policy Name | Description
@@ -90,10 +86,10 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`SanitizeOnShutdown` (Selective)](#sanitizeonshutdown-selective)** | Clear data on shutdown.
 | **[`SearchBar`](#searchbar)** | Set whether or not search bar is displayed.
 | **[`SearchEngines`](#searchengines-this-policy-is-only-available-on-the-esr)** |
+| **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
 | **[`SearchEngines -> Default`](#searchengines--default)** | Set the default search engine.
 | **[`SearchEngines -> PreventInstalls`](#searchengines--preventinstalls)** | Prevent installing search engines from webpages.
 | **[`SearchEngines -> Remove`](#searchengines--remove)** | Hide built-in search engines.
-| **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
 | **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
 | **[`ShowHomeButton`](#showhomebutton)** | Show the home button on the toolbar.
@@ -4229,7 +4225,7 @@ as well as the following security preferences:
 | security.tls.version.enable-deprecated | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, browser will accept TLS 1.0. and TLS 1.1 (Firefox 86, Firefox 78.8).
 | security.warn_submit_secure_to_insecure | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting s form from https to http.
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting a form from https to http.
 &nbsp;
 
 Using the preference as the key, set the `Value` to the corresponding preference value.
@@ -5454,7 +5450,7 @@ Prevent Firefox from messaging the user in certain situations.
 
 `ExtensionRecommendations` If false, don't recommend extensions while the user is visiting web pages.
 
-`FeatureRecommendations` IF false, don't recommend browser features.
+`FeatureRecommendations` If false, don't recommend browser features.
 
 `UrlbarInterventions` If false, Don't offer Firefox specific suggestions in the URL bar.
 
