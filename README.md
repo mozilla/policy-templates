@@ -104,6 +104,47 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 
 Allow WebExtensions to configure policy. For more information, see [Adding policy support to your extension](https://extensionworkshop.com/documentation/enterprise/adding-policy-support-to-your-extension/).
 
+### AllowedDomainsForApps
+
+Define domains allowed to access Google Workspace.
+
+This policy is based on the [Chrome policy](https://chromeenterprise.google/policies/#AllowedDomainsForApps) of the same name.
+
+If this policy is enabled, users can only access Google Workspace using accounts from the specified domains. If you want to allow Gmail, you can add ```consumer_accounts``` to the list.
+
+**Compatibility:** Firefox 89, Firefox ESR 78.11\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AllowedDomainsForApps = "managedfirefox.com,example.com"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AllowedDomainsForApps
+```
+Value (string):
+```
+<enabled/>
+<data id="AllowedDomainsForApps" value="managedfirefox.com,example.com"/>
+```
+#### macOS
+```
+<dict>
+  <key>AllowedDomainsForApps</key>
+  <string>managedfirefox.com,example.com</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AllowedDomainsForApps": "managedfirefox.com,example.com"
+  }
+}
+```
 ### AppAutoUpdate
 
 Enable or disable **automatic** application update.
@@ -143,47 +184,6 @@ Value (string):
 {
   "policies": {
     "AppAutoUpdate": true | false
-  }
-}
-```
-### AllowedDomainsForApps
-
-Define domains allowed to access Google Workspace.
-
-This policy is based on the [Chrome policy](https://chromeenterprise.google/policies/#AllowedDomainsForApps) of the same name.
-
-If this policy is enabled, users can only access Google Workspace using accounts from the specified domains. If you want to allow Gmail, you can add ```consumer_accounts``` to the list.
-
-**Compatibility:** Firefox 89, Firefox ESR 78.11\
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\AllowedDomainsForApps = "managedfirefox.com,example.com"
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AllowedDomainsForApps
-```
-Value (string):
-```
-<enabled/>
-<data id="AllowedDomainsForApps" value="managedfirefox.com,example.com"/>
-```
-#### macOS
-```
-<dict>
-  <key>AllowedDomainsForApps</key>
-  <string>managedfirefox.com,example.com</string>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "AllowedDomainsForApps": "managedfirefox.com,example.com"
   }
 }
 ```
