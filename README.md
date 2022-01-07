@@ -3216,7 +3216,7 @@ If this policy is set to true, it to revert all cookies to legacy SameSite behav
 
 **Compatibility:** Firefox 96\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** N/A
+**Preferences Affected:** `network.cookie.sameSite.laxByDefault`
 
 #### Windows (GPO)
 ```
@@ -3252,7 +3252,7 @@ If this policy is set to true, cookies set for domains in this list will revert 
 
 **Compatibility:** Firefox 96\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** N/A
+**Preferences Affected:** `network.cookie.sameSite.laxByDefault.disabledHosts`
 
 #### Windows (GPO)
 ```
