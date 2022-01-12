@@ -43,6 +43,7 @@
       <string id="SUPPORTED_FF91">Firefox 91 или более поздние версии</string>
       <string id="SUPPORTED_FF95">Firefox 95 или более поздние версии, Firefox 91.4 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF96">Firefox 96 или более поздние версии, Firefox 91.5 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF96_ONLY">Firefox 96 или более поздние версии</string>
       <string id="SUPPORTED_FF97">Firefox 97 или более поздние версии, Firefox 91.6 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF98">Firefox 98 или более поздние версии, Firefox 91.7 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF99">Firefox 99 или более поздние версии, Firefox 91.8 ESR или более поздние версии</string>
@@ -322,6 +323,14 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="LegacyProfiles_Explain"> Если эта политика включена, Firefox не будет пытаться создавать разные профили для установок Firefox в разных каталогах. Это эквивалент переменной среды MOZ_LEGACY_PROFILES.
 
 Если эта политика отключена или не настроена, Firefox будет создавать новый профиль для каждой уникальной установки Firefox. </string>
+      <string id="LegacySameSiteCookieBehaviorEnabled">Revert to legacy SameSite behavior</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+
+If this policy is disabled or not configured, Firefox will enforce SameSite=lax.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revert to legacy SameSite behavior on specific domains</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite for the specified domains. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+
+If this policy is disabled or not configured, Firefox will enforce SameSite=lax for all domains.</string>
       <string id="LocalFileLinks"> Ссылки на локальные файлы </string>
       <string id="LocalFileLinks_Explain"> Если эта политика включена, вы можете указать источники, в которых разрешено связывание с локальными файлами.
 
@@ -1163,6 +1172,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences. <
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LegacySameSiteCookieBehaviorEnabledForDomainList">
+        <listBox refId="LegacySameSiteCookieBehaviorEnabledForDomainList"/>
       </presentation>
       <presentation id="LocalFileLinks">
         <listBox refId="LocalFileLinks"/>

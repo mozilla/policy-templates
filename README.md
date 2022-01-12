@@ -3212,7 +3212,7 @@ Value (string):
 ### LegacySameSiteCookieBehaviorEnabled
 Enable default legacy SameSite cookie behavior setting.
 
-If this policy is set to true, it revers all cookies to legacy SameSite behavior which means that cookies that don't explicitly specify a ```SameSite``` attribute are treated as if they were ```SameSite=None```.
+If this policy is set to true, it reverts all cookies to legacy SameSite behavior which means that cookies that don't explicitly specify a ```SameSite``` attribute are treated as if they were ```SameSite=None```.
 
 **Compatibility:** Firefox 96\
 **CCK2 Equivalent:** N/A\

@@ -42,6 +42,7 @@
    <string id="SUPPORTED_FF90">Firefox 90 或更新版本、Firefox 78.12 ESR 或更新版本</string>
    <string id="SUPPORTED_FF91">Firefox 91 或更新版本</string>
    <string id="SUPPORTED_FF95">Firefox 95 或更新版本、Firefox 91.4 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF96_ONLY">Firefox 96 或更新版本</string>
    <string id="SUPPORTED_FF96">Firefox 96 或更新版本、Firefox 91.5 ESR 或更新版本</string>
    <string id="SUPPORTED_FF97">Firefox 97 或更新版本、Firefox 91.6 ESR 或更新版本</string>
    <string id="SUPPORTED_FF98">Firefox 98 或更新版本、Firefox 91.7 ESR 或更新版本</string>
@@ -322,6 +323,14 @@ Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息�
    <string id="LegacyProfiles_Explain">若启用此原则，Firefox 将不会尝试对本地电脑中不同套的 Firefox 创建不同的配置文件文件夹。 也等于设定MOZ_LEGACY_PROFILES。 
 
 若禁用或不设定此原则，Firefox 则会对每一套 Firefox 创建不同的配置文件。 </string>
+   <string id="LegacySameSiteCookieBehaviorEnabled">Revert to legacy SameSite behavior</string>
+   <string id="LegacySameSiteCookieBehaviorEnabled_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+
+If this policy is disabled or not configured, Firefox will enforce SameSite=lax.</string>
+   <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revert to legacy SameSite behavior on specific domains</string>
+   <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite for the specified domains. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+
+If this policy is disabled or not configured, Firefox will enforce SameSite=lax for all domains.</string>
    <string id="LocalFileLinks">本地文件链接</string>
    <string id="LocalFileLinks_Explain">若启用此原则，将可以指定网站内容是否允许链接到本地文件。 
 
@@ -1162,6 +1171,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
    <presentation id="Preferences_security_default_personal_cert">
 <dropdownList refId="Preferences_security_default_personal_cert"/>
    </presentation>
+      <presentation id="LegacySameSiteCookieBehaviorEnabledForDomainList">
+        <listBox refId="LegacySameSiteCookieBehaviorEnabledForDomainList"/>
+      </presentation>
    <presentation id="LocalFileLinks">
 <listBox refId="LocalFileLinks"/>
    </presentation>
