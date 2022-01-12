@@ -45,6 +45,7 @@
       <definition name="SUPPORTED_FF91" displayName="$(string.SUPPORTED_FF91)"/>
       <definition name="SUPPORTED_FF95" displayName="$(string.SUPPORTED_FF95)"/>
       <definition name="SUPPORTED_FF96" displayName="$(string.SUPPORTED_FF96)"/>
+      <definition name="SUPPORTED_FF96_ONLY" displayName="$(string.SUPPORTED_FF96_ONLY)"/>
       <definition name="SUPPORTED_FF97" displayName="$(string.SUPPORTED_FF97)"/>
       <definition name="SUPPORTED_FF98" displayName="$(string.SUPPORTED_FF98)"/>
       <definition name="SUPPORTED_FF99" displayName="$(string.SUPPORTED_FF99)"/>
@@ -1070,6 +1071,23 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="LegacySameSiteCookieBehaviorEnabled" class="Both" displayName="$(string.LegacySameSiteCookieBehaviorEnabled)" explainText="$(string.LegacySameSiteCookieBehaviorEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="LegacySameSiteCookieBehaviorEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF96_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LegacySameSiteCookieBehaviorEnabledForDomainList" class="Both" displayName="$(string.LegacySameSiteCookieBehaviorEnabledForDomainList)" explainText="$(string.LegacySameSiteCookieBehaviorEnabledForDomainList_Explain)" key="Software\Policies\Mozilla\Firefox\LegacySameSiteCookieBehaviorEnabledForDomainList" presentation="$(presentation.LegacySameSiteCookieBehaviorEnabledForDomainList)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF96_ONLY"/>
+      <elements >
+        <list id="LegacySameSiteCookieBehaviorEnabledForDomainList" key="Software\Policies\Mozilla\Firefox\LegacySameSiteCookieBehaviorEnabledForDomainList" valuePrefix=""/>
+      </elements>
     </policy>
     <policy name="LocalFileLinks" class="Both" displayName="$(string.LocalFileLinks)" explainText="$(string.LocalFileLinks_Explain)" key="Software\Policies\Mozilla\Firefox\LocalFileLinks" presentation="$(presentation.LocalFileLinks)" >
       <parentCategory ref="firefox" />

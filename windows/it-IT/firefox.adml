@@ -43,6 +43,7 @@
       <string id="SUPPORTED_FF91">Firefox 91 o versione successiva</string>
       <string id="SUPPORTED_FF95">Firefox 95 o versione successiva, Firefox 91.4 ESR o versione successiva</string>
       <string id="SUPPORTED_FF96">Firefox 96 o versione successiva, Firefox 91.5 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF96_ONLY">Firefox 96 o versione successiva</string>
       <string id="SUPPORTED_FF97">Firefox 97 o versione successiva, Firefox 91.6 ESR o versione successiva</string>
       <string id="SUPPORTED_FF98">Firefox 98 o versione successiva, Firefox 91.7 ESR o versione successiva</string>
       <string id="SUPPORTED_FF99">Firefox 99 o versione successiva, Firefox 91.8 ESR o versione successiva</string>
@@ -322,6 +323,14 @@ Se questo criterio è abilitato o non configurato, l'accelerazione hardware è a
       <string id="LegacyProfiles_Explain">Se questo criterio è abilitato, Firefox non tenterà di creare profili differenti per le installazioni di Firefox eseguite in directory differenti. Questo criterio è l'equivalente della variabile d'ambiente MOZ_LEGACY_PROFILES.
 
 Se questo criterio è disabilitato o non configurato, Firefox creerà un nuovo profilo per ogni singola installazione di Firefox.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled">Revert to legacy SameSite behavior</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+
+If this policy is disabled or not configured, Firefox will enforce SameSite=lax.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revert to legacy SameSite behavior on specific domains</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite for the specified domains. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+
+If this policy is disabled or not configured, Firefox will enforce SameSite=lax for all domains.</string>
       <string id="LocalFileLinks">Collegamenti file locali</string>
       <string id="LocalFileLinks_Explain">Se questo criterio è abilitato, è possibile specificare le origini da cui sono consentiti i collegamenti ai file locali.
 
@@ -1164,6 +1173,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="Preferences_security_default_personal_cert">
         <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LegacySameSiteCookieBehaviorEnabledForDomainList">
+        <listBox refId="LegacySameSiteCookieBehaviorEnabledForDomainList"/>
       </presentation>
       <presentation id="LocalFileLinks">
         <listBox refId="LocalFileLinks"/>

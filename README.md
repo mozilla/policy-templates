@@ -61,6 +61,8 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
+| **[`LegacySameSiteCookieBehaviorEnabled`](#legacysamesitecookiebehaviorenabled)** | Enable default legacy SameSite cookie behavior setting.
+| **[`LegacySameSiteCookieBehaviorEnabledForDomainList`](#legacysamesitecookiebehaviorenabledfordomainlist)** | Revert to legacy SameSite behavior for cookies on specified sites.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 | **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates..
@@ -3206,6 +3208,85 @@ OMA-URI:
 Value (string):
 ```
 <enabled/> or <disabled/>
+```
+### LegacySameSiteCookieBehaviorEnabled
+Enable default legacy SameSite cookie behavior setting.
+
+If this policy is set to true, it reverts all cookies to legacy SameSite behavior which means that cookies that don't explicitly specify a ```SameSite``` attribute are treated as if they were ```SameSite=None```.
+
+**Compatibility:** Firefox 96\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.cookie.sameSite.laxByDefault`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\LegacySameSiteCookieBehaviorEnabled = = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LegacySameSiteCookieBehaviorEnabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>LegacySameSiteCookieBehaviorEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "LegacySameSiteCookieBehaviorEnabled": true | false
+}
+```
+### LegacySameSiteCookieBehaviorEnabledForDomainList
+Revert to legacy SameSite behavior for cookies on specified sites.
+
+If this policy is set to true, cookies set for domains in this list will revert to legacy SameSite behavior which means that cookies that don't explicitly specify a ```SameSite``` attribute are treated as if they were ```SameSite=None```.
+
+**Compatibility:** Firefox 96\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.cookie.sameSite.laxByDefault.disabledHosts`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\LegacySameSiteCookieBehaviorEnabledForDomainList\1 = "example.org"
+Software\Policies\Mozilla\Firefox\LegacySameSiteCookieBehaviorEnabledForDomainList\2 = "example.edu"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LegacySameSiteCookieBehaviorEnabledForDomainList
+```
+Value (string):
+```
+<enabled/>
+<data id="LegacySameSiteCookieBehaviorEnabledForDomainList" value="1&#xF000;example.org&#xF000;2&#xF000;example.edu"/>
+```
+#### macOS
+```
+<dict>
+  <key>LegacySameSiteCookieBehaviorEnabledForDomainList</key>
+  <array>
+    <string>example.org</string>
+    <string>example.edu</string>
+  </array>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "LegacySameSiteCookieBehaviorEnabledForDomainList": ["example.org",
+                                                         "example.edu"]
+  }
+}
 ```
 ### LocalFileLinks
 Enable linking to local files by origin.
