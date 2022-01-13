@@ -5379,7 +5379,7 @@ Software\Policies\Mozilla\Firefox\ShowHomeButton = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ShowHomeButton
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/Homepage_ShowHomeButton
 ```
 Value (string):
 ```
