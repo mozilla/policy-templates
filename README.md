@@ -5055,7 +5055,9 @@ Value (string):
 
 ### SearchEngines | Add
 
-Add new search engines (up to five). This policy is only available on the ESR. `Name` and `URLTemplate` are required.
+Add new search engines. Although there are only five engines available in the ADMX template, there is no limit. To add more in the ADMX template, you can duplicate the XML.
+
+This policy is only available on the ESR. `Name` and `URLTemplate` are required.
 
 `Name` is the name of the search engine.
 
