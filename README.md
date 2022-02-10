@@ -1316,6 +1316,7 @@ Value (string):
   <key>DisabledCiphers</key>
     <dict>
       <key>CIPHER_NAME</key>
+      <true/> | <false/>
     </dict>
 </dict>
 ```
