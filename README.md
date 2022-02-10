@@ -1303,7 +1303,7 @@ Software\Policies\Mozilla\Firefox\DisabledCiphers\CIPHER_NAME = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_CIPHER_BANE
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_CIPHER_NAME
 
 ```
 Value (string):
