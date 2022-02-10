@@ -3781,6 +3781,66 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF97"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF97"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF97"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF97"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF97"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF97"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="EncryptedMediaExtensions_Enabled" class="Both" displayName="$(string.EncryptedMediaExtensions_Enabled)" explainText="$(string.EncryptedMediaExtensions_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions" valueName="Enabled">
       <parentCategory ref="EncryptedMediaExtensions"/>
       <supportedOn ref="SUPPORTED_FF77"/>

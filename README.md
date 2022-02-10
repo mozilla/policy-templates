@@ -1262,9 +1262,29 @@ Value (string):
 }
 ```
 ### DisabledCiphers
-Disable specific cryptographic ciphers.
+Disable specific cryptographic ciphers, listed below.
 
-**Preferences Affected:** `security.ssl3.dhe_rsa_aes_128_sha`, `security.ssl3.dhe_rsa_aes_256_sha`, `security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_rsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_rsa_aes_128_sha`, `security.ssl3.ecdhe_rsa_aes_256_sha`, `security.ssl3.rsa_aes_128_gcm_sha256`, `security.ssl3.rsa_aes_128_sha`, `security.ssl3.rsa_aes_256_gcm_sha384`, `security.ssl3.rsa_aes_256_sha`, `security.ssl3.rsa_des_ede3_sha`
+```
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+```
+
+**Preferences Affected:** `security.ssl3.ecdhe_rsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_128_sha`, `security.ssl3.ecdhe_ecdsa_aes_128_sha`, `security.ssl3.ecdhe_rsa_aes_256_sha`, `security.ssl3.ecdhe_ecdsa_aes_256_sha`, `security.ssl3.dhe_rsa_aes_128_sha`, `security.ssl3.dhe_rsa_aes_256_sha`, `security.ssl3.rsa_aes_128_gcm_sha256`, `security.ssl3.rsa_aes_256_gcm_sha384`, `security.ssl3.rsa_aes_128_sha`, `security.ssl3.rsa_aes_256_sha`, `security.ssl3.deprecated.rsa_des_ede3_sha`
 
 ---
 **Note:**
@@ -1272,38 +1292,19 @@ Disable specific cryptographic ciphers.
 This policy was updated in Firefox 78 to allow enabling ciphers as well. Setting the value to true disables the cipher, setting the value to false enables the cipher. Previously setting the value to true or false disabled the cipher.
 
 ---
-**Compatibility:** Firefox 76, Firefox ESR 68.8 (TLS_RSA_WITH_AES_128_GCM_SHA256 and TLS_RSA_WITH_AES_256_GCM_SHA384 were added in Firefox 78)\
+**Compatibility:** Firefox 76, Firefox ESR 68.8 (TLS_RSA_WITH_AES_128_GCM_SHA256 and TLS_RSA_WITH_AES_256_GCM_SHA384 were added in Firefox 78, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA38, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, and TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 were added in Firefox 97 and Firefox 91.6)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_DHE_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_DHE_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_128_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_256_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_3DES_EDE_CBC_SHA = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_128_GCM_SHA256 = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_AES_256_GCM_SHA384 = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\DisabledCiphers\CIPHER_NAME = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DisabledCiphers/DisabledCiphers_CIPHER_BANE
+
 ```
 Value (string):
 ```
@@ -1314,28 +1315,7 @@ Value (string):
 <dict>
   <key>DisabledCiphers</key>
     <dict>
-      <key>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</key>
-      <true/> | <false/>
-      <key>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</key>
-      <true/> | <false/>
-      <key>TLS_RSA_WITH_AES_128_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_RSA_WITH_AES_256_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
-      <true/> | <false/>
-      <key>TLS_RSA_WITH_AES_128_GCM_SHA256</key>
-      <true/> | <false/>
-      <key>TLS_RSA_WITH_AES_256_GCM_SHA384</key>
-      <true/> | <false/>
+      <key>CIPHER_NAME</key>
     </dict>
 </dict>
 ```
@@ -1344,17 +1324,7 @@ Value (string):
 {
   "policies": {
     "DisabledCiphers": {
-      "TLS_DHE_RSA_WITH_AES_128_CBC_SHA": true | false,
-      "TLS_DHE_RSA_WITH_AES_256_CBC_SHA": true | false,
-      "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA": true | false,
-      "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA": true | false,
-      "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256": true | false,
-      "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256": true | false,
-      "TLS_RSA_WITH_AES_128_CBC_SHA": true | false,
-      "TLS_RSA_WITH_AES_256_CBC_SHA": true | false,
-      "TLS_RSA_WITH_3DES_EDE_CBC_SHA": true | false,
-      "TLS_RSA_WITH_AES_128_GCM_SHA256": true | false,
-      "TLS_RSA_WITH_AES_256_GCM_SHA384": true | false
+      "CIPHER_NAME": true | false,
     }
   }
 }
