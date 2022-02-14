@@ -1073,80 +1073,6 @@ Value (string):
   }
 }
 ```
-### DisableSetDesktopBackground
-Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `removeSetDesktopBackground`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableSetDesktopBackground
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>DisableSetDesktopBackground</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisableSetDesktopBackground": true | false
-  }
-}
-```
-### DisableMasterPasswordCreation
-Remove the master password functionality.
-
-If this value is true, it works the same as setting [`PrimaryPassword`](#primarypassword) to false and removes the primary password functionality.
-
-If both `DisableMasterPasswordCreation` and `PrimaryPassword` are used, `DisableMasterPasswordCreation` takes precedent.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `noMasterPassword`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableMasterPasswordCreation
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>DisableMasterPasswordCreation</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisableMasterPasswordCreation": true | false
-  }
-}
-```
 ### DefaultDownloadDirectory
 Set the default download directory.
 
@@ -1605,6 +1531,45 @@ Value (string):
   }
 }
 ```
+### DisableMasterPasswordCreation
+Remove the master password functionality.
+
+If this value is true, it works the same as setting [`PrimaryPassword`](#primarypassword) to false and removes the primary password functionality.
+
+If both `DisableMasterPasswordCreation` and `PrimaryPassword` are used, `DisableMasterPasswordCreation` takes precedent.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `noMasterPassword`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableMasterPasswordCreation = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableMasterPasswordCreation
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>DisableMasterPasswordCreation</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisableMasterPasswordCreation": true | false
+  }
+}
+```
 ### DisablePasswordReveal
 Do not allow passwords to be shown in saved logins
 
@@ -1871,6 +1836,41 @@ Value (string):
       "InvalidCertificate": true | false,
       "SafeBrowsing": true | false
     }
+  }
+}
+```
+### DisableSetDesktopBackground
+Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `removeSetDesktopBackground`\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableSetDesktopBackground = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableSetDesktopBackground
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>DisableSetDesktopBackground</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisableSetDesktopBackground": true | false
   }
 }
 ```
