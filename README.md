@@ -110,6 +110,52 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 
 Allow WebExtensions to configure policy. For more information, see [Adding policy support to your extension](https://extensionworkshop.com/documentation/enterprise/adding-policy-support-to-your-extension/).
 
+#### macOS
+```
+<dict>
+  <key>3rdparty</key>
+  <dict>
+    <key>Extensions</key>
+    <dict>
+      <key>uBlock0@raymondhill.net</key>
+      <dict>
+        <key>adminSettings</key>
+        <dict>
+          <key>selectedFilterLists</key>
+          <array>
+            <string>ublock-privacy</string>
+            <string>ublock-badware</string>
+            <string>ublock-filters</string>
+            <string>user-filters</string>
+          </array>
+        </dict>
+      </dict>
+    </dict>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "3rdparty": {
+      "Extensions": {
+        "uBlock0@raymondhill.net": {
+          "adminSettings": {
+            "selectedFilterLists": [
+              "ublock-privacy",
+              "ublock-badware",
+              "ublock-filters",
+              "user-filters"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ### AllowedDomainsForApps
 
 Define domains allowed to access Google Workspace.
