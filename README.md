@@ -4334,10 +4334,10 @@ Using the preference as the key, set the `Value` to the corresponding preference
 
 `Status` can be "default", "locked", "user" or "clear"
 
-* `"default"`: Read/Write: Setting appear as default even if factory default differs.
-* `"locked"`: Read-Only: Setting appear as default even if factory default differs.
-* `"user"`: Read/Write: Setting appear as changed if it differ from factory default.
-* `"clear"`: Read/Write: `Value` has no effect. Resets to factory default on each startup.
+* `"default"`: Read/Write: Settings appear as default even if factory default differs.
+* `"locked"`: Read-Only: Settings appear as default even if factory default differs.
+* `"user"`: Read/Write: Settings appear as changed if it differs from factory default.
+* `"clear"`: Read/Write: `Value` has no effect. Resets to factory defaults on each startup.
 
 `"user"` preferences persist across invocations of Firefox. It is the equivalent of a user setting the preference. They are most useful when a preference is needed very early in startup so it can't be set as default by policy. An example of this is ```toolkit.legacyUserProfileCustomizations.stylesheets```.
 
