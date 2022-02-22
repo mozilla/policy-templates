@@ -114,7 +114,7 @@ Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert
       <string id="Authentication_Locked">Änderungen an Authentifizierungseinstellungen verbieten</string>
       <string id="Authentication_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an den Einstellungen zur Authentifizierung vornehmen.
 
-Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer  Einstellungen zur Authentifizierung nicht ändern.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer Einstellungen zur Authentifizierung nicht ändern.</string>
       <string id="Authentication_PrivateBrowsing">Authentifizierung in Privaten Fenstern</string>
       <string id="Authentication_PrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Interne Authentifizierung (via SPNEGO oder NTLM) auch in privaten Fenstern benutzt.
 
@@ -565,7 +565,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="SanitizeOnShutdown_Sessions">Gespeicherte Logins</string>
       <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht, nachdem der Browser geschlossen wurde.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden gespeicherte Logins nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</string>
       <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Website-Einstellungen gelöscht, wenn der Browser geschlossen wird.
 
@@ -798,7 +798,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
 
 Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
       <string id="UserMessaging_UrlbarInterventions">Adressleisten-Empfehlungen</string>
-      <string id="UserMessaging_UrlbarInterventions_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden  basierend darauf, was der Benutzer in die Adressleiste eingibt, keine Aktionen empfohlen.
+      <string id="UserMessaging_UrlbarInterventions_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden basierend darauf, was der Benutzer in die Adressleiste eingibt, keine Aktionen empfohlen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Aktionen empfohlen, die darauf basieren, was der Benutzer in die Adressleiste eingibt.</string>
       <string id="UserMessaging_SkipOnboarding">Skip Onboarding</string>
