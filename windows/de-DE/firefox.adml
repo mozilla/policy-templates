@@ -98,9 +98,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 
 Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_NTLM">NTLM</string>
-      <string id="Authentication_NTLM_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwenden die angegebenen Webseiten NTLM Authentifizierung. Erlaubte Formate für die Einträge in der Liste sind mydomain.com oder https://myotherdomain.com.
+      <string id="Authentication_NTLM_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwenden die angegebenen Webseiten NTLM-Authentifizierung. Erlaubte Formate für die Einträge in der Liste sind mydomain.com oder https://myotherdomain.com.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwenden Webseiten die NTLM Authentifizierung nicht.
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwenden Webseiten die NTLM-Authentifizierung nicht.
 
 Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Authentifiziert auch auf Nicht-FQDN</string>
@@ -108,15 +108,15 @@ Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/doc
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, sind NTLM und SPNEGO auf Nicht-FQDN Adressen nicht aktiviert.</string>
       <string id="Authentication_AllowProxies">Authentifiziert auch auf Proxies</string>
-      <string id="Authentication_AllowProxies_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, findet keine SPNEGO oder NTLM Authentifizierung gegenüber einem Proxy statt.
+      <string id="Authentication_AllowProxies_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, findet keine SPNEGO- oder NTLM-Authentifizierung gegenüber einem Proxy statt.
 
-Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert) oder nicht konfiguriert ist, findet SPNEGO und NTLM Authentifizierung gegenüber einem Proxy statt.</string>
+Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert) oder nicht konfiguriert ist, findet SPNEGO- und NTLM-Authentifizierung gegenüber einem Proxy statt.</string>
       <string id="Authentication_Locked">Änderungen an Authentifizierungseinstellungen verbieten</string>
       <string id="Authentication_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an den Einstellungen zur Authentifizierung vornehmen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer  Einstellungen zur Authentifizierung nicht ändern.</string>
       <string id="Authentication_PrivateBrowsing">Authentifizierung in Privaten Fenstern</string>
-      <string id="Authentication_PrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Interne Authentifizierung (via SPEGNO oder NTLM) auch in privaten Fenstern benutzt.
+      <string id="Authentication_PrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Interne Authentifizierung (via SPNEGO oder NTLM) auch in privaten Fenstern benutzt.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die interne Authentifizierung in privaten Fenstern nicht benutzt.</string>
       <string id="BlockAboutAddons">Zugriff auf Add-ons Manager verhindern</string>
@@ -143,8 +143,8 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="CaptivePortal_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Unterstützung für Captive Portals deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Unterstützung für Captive Portals aktiviert.</string>
-      <string id="Certificates_ImportEnterpriseRoots">Windows Zertifikatsspeicher benutzen</string>
-      <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows Zertifikatsspeicher.
+      <string id="Certificates_ImportEnterpriseRoots">Windows-Zertifikatsspeicher benutzen</string>
+      <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows-Zertifikatsspeicher.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox den eigenen Zertifikatsspeicher.</string>
       <string id="Certificates_Install">Zertifikate installieren</string>
@@ -170,13 +170,13 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist DNS
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Standardanbieter verwendet.</string>
 
       <string id="DNSOverHTTPS_Locked">Gesperrt</string>
-      <string id="DNSOverHTTPS_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die DNS über HTTPS-Einstellungen vom Benutzer nicht geändert werden.
+      <string id="DNSOverHTTPS_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die DNS-über-HTTPS-Einstellungen vom Benutzer nicht geändert werden.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die DNS über HTTPS-Einstellungen vom Benutzer geändert werden.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die DNS-über-HTTPS-Einstellungen vom Benutzer geändert werden.</string>
       <string id="DNSOverHTTPS_ExcludedDomains">Ausgeschlossene Domains</string>
       <string id="DNSOverHTTPS_ExcludedDomains_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die angegebenen Domains von DNS über HTTPS ausgeschlossen.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Domains vom DNS über HTTPS ausgeschlossen.</string>
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Domains von DNS über HTTPS ausgeschlossen.</string>
       <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Moved)</string>
       <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS über HTTPS geändert werden.
 
@@ -241,7 +241,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht
       <string id="DisablePrivateBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, ist privates Surfen nicht erlaubt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, ist privates Surfen erlaubt.</string>
-      <string id="DisableProfileImport">Profil Import deaktivieren</string>
+      <string id="DisableProfileImport">Profil-Import deaktivieren</string>
       <string id="DisableProfileImport_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht die Option &quot;Daten von einen anderen Browser importieren..&quot; in der Bibliothek nicht zur Verfügung.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option &quot;Daten von einen anderen Browser importieren..&quot; in der Bibliothek zur Verfügung.</string>
@@ -522,7 +522,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
 Wenn Sie die Richtlinieneinstellung deaktivieren, wird Flash niemals auf Webseiten aktiviert, selbst wenn sie in der Zulassen-Liste aufgeführt sind.
 
 Wenn Sie die Richtlinieneinstellung nicht konfigurieren, ist Flash ausführbar.</string>
-      <string id="FlashPlugin_Locked">Flash Einstellungen sperren</string>
+      <string id="FlashPlugin_Locked">Flash-Einstellungen sperren</string>
       <string id="FlashPlugin_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Flash-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Flash-Einstellungen ändern.</string>
@@ -1150,7 +1150,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
           <label/>
         </textBox>
         <checkBox refId="DNSOverHTTPSEnabled">DNS über HTTPS aktivieren.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS über HTTPS Einstellungen nicht erlauben.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS-über-HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
       <presentation id="SSLVersion">
         <dropdownList refId="SSLVersion"/>
