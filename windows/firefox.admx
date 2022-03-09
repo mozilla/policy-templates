@@ -47,7 +47,7 @@
       <definition name="SUPPORTED_FF96" displayName="$(string.SUPPORTED_FF96)"/>
       <definition name="SUPPORTED_FF96_ONLY" displayName="$(string.SUPPORTED_FF96_ONLY)"/>
       <definition name="SUPPORTED_FF97" displayName="$(string.SUPPORTED_FF97)"/>
-      <definition name="SUPPORTED_FF98" displayName="$(string.SUPPORTED_FF98)"/>
+      <definition name="SUPPORTED_FF98_ONLY" displayName="$(string.SUPPORTED_FF98_ONLY)"/>
       <definition name="SUPPORTED_FF99" displayName="$(string.SUPPORTED_FF99)"/>
       <definition name="SUPPORTED_FF100" displayName="$(string.SUPPORTED_FF100)"/>
     </definitions>
@@ -3664,6 +3664,16 @@
     <policy name="UserMessaging_SkipOnboarding" class="Both" displayName="$(string.UserMessaging_SkipOnboarding)" explainText="$(string.UserMessaging_SkipOnboarding_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="SkipOnboarding">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF88"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_MoreFromMozilla" class="Both" displayName="$(string.UserMessaging_MoreFromMozilla)" explainText="$(string.UserMessaging_MoreFromMozilla_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="MoreFromMozilla">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF98_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
