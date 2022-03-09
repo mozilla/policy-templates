@@ -45,7 +45,7 @@
       <string id="SUPPORTED_FF96">Firefox 96 или более поздние версии, Firefox 91.5 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF96_ONLY">Firefox 96 или более поздние версии</string>
       <string id="SUPPORTED_FF97">Firefox 97 или более поздние версии, Firefox 91.6 ESR или более поздние версии</string>
-      <string id="SUPPORTED_FF98">Firefox 98 или более поздние версии, Firefox 91.7 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF98_ONLY">Firefox 98 или более поздние версии</string>
       <string id="SUPPORTED_FF99">Firefox 99 или более поздние версии, Firefox 91.8 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF100">Firefox 100 или более поздние версии, Firefox 91.9 ESR или более поздние версии</string>
       <string id="firefox">Firefox</string>
@@ -807,6 +807,10 @@ If this policy is not configured, Firefox will determine whether or not the home
       <string id="UserMessaging_SkipOnboarding_Explain">If this policy is enabled, onboarding messages will not be shown on the new tab page.
 
 If this policy is disabled or not configured, onboarding messages will be shown on the new tab page.</string>
+      <string id="UserMessaging_MoreFromMozilla">More from Mozilla</string>
+      <string id="UserMessaging_MoreFromMozilla_Explain">If this policy is disabled, the More from Mozilla section will not be shown in preferences.
+
+If this policy is enabled or not configured, the More from Mozilla section will be shown in preferences.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
