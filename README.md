@@ -110,6 +110,12 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 
 Allow WebExtensions to configure policy. For more information, see [Adding policy support to your extension](https://extensionworkshop.com/documentation/enterprise/adding-policy-support-to-your-extension/).
 
+For GPO and Intune, the extension developer should provide an ADMX file.
+
+**Compatibility:** Firefox 68\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
 #### macOS
 ```
 <dict>
