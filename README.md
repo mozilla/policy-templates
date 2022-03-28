@@ -59,7 +59,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
-| **[`FlashPlugin`](#flashplugin)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+| **[`FlashPlugin (Deprecated)`](#flashplugin-deprecated)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 | **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
