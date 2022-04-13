@@ -68,7 +68,7 @@
       <string id="Search_group">Suche</string>
       <string id="Preferences_group">Einstellungen (veraltet)</string>
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
-      <string id="DisabledCiphers_group">Disabled Ciphers</string>
+      <string id="DisabledCiphers_group">Deaktivierte Verschlüsselungsverfahren</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Bild in Bild</string>
@@ -323,14 +323,14 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird di
       <string id="LegacyProfiles_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox keine separaten Profile bei mehreren parallelen Installationen anlegen. Diese Einstellung ist equivalent zu der Umgebungsvariable MOZ_LEGACY_PROFILES.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Firefox separate Profile für jede Installation anlegen.</string>
-      <string id="LegacySameSiteCookieBehaviorEnabled">Revert to legacy SameSite behavior</string>
-      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+      <string id="LegacySameSiteCookieBehaviorEnabled">Wiederherstellung des alten SameSite-Verhaltens</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kehrt Firefox zum alten Verhalten von SameSite zurück. Das bedeutet, dass Cookies, die nicht explizit ein SameSite-Attribut angeben, so behandelt werden, als ob sie SameSite=None wären.
 
-If this policy is disabled or not configured, Firefox will enforce SameSite=lax.</string>
-      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revert to legacy SameSite behavior on specific domains</string>
-      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite for the specified domains. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erzwingt Firefox SameSite=lax.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Wiederherstellung des alten SameSite-Verhaltens für bestimmte Domains</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kehrt Firefox für die angegebenen Domains zum alten SameSite-Verhalten zurück. Das bedeutet, dass Cookies, die nicht explizit ein SameSite-Attribut angeben, so behandelt werden, als ob sie SameSite=None wären.
 
-If this policy is disabled or not configured, Firefox will enforce SameSite=lax for all domains.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erzwingt Firefox für alle Domains SameSite=lax.</string>
       <string id="LocalFileLinks">Links zu lokalen Dateien</string>
       <string id="LocalFileLinks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Quellen angeben, von denen Links auf lokale Dateien erlaubt sind.
 
@@ -407,16 +407,16 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
 
 If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
-      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
-      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+      <string id="Cookies_BehaviorPrivateBrowsing">Cookie-Verhalten beim privaten Surfen</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Cookie-Verhalten beim privaten Surfen konfigurieren.
 
-If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
-      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
-      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
-      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
-      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
-      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert ist, werden beim privaten Surfen Cookies für bekannte Tracker abgelehnt und Cookies von Drittanbietern werden aufgeteilt.</string>
+      <string id="Cookies_Behavior_Accept">Alle Cookies akzeptieren</string>
+      <string id="Cookies_Behavior_RejectForeign">Cookies von Drittanbietern ablehnen</string>
+      <string id="Cookies_Behavior_Reject">Alle Cookies ablehnen</string>
+      <string id="Cookies_Behavior_LimitForeign">Cookies von Drittanbietern für Websites, die Sie nicht besucht haben, ablehnen</string>
+      <string id="Cookies_Behavior_RejectTracker">Cookies für bekannte Tracker ablehnen</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Ablehnung von Cookies für bekannte Tracker und Partitionierung von Drittanbieter-Cookies (Total Cookie Protection)</string>
       <string id="Camera_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Kamera für die genannten Quellen automatisch freigegeben.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
@@ -574,7 +574,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
       <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht, wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_Locked">Locked</string>
+      <string id="SanitizeOnShutdown_Locked">Gesperrt</string>
       <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert sind, können alle Einstellungen vom Nutzer geändert werden.
 
 Wenn diese Richtlinieneinstellung aktiviert ist, können Einstellungen vom Nutzer nicht geändert werden.</string>
@@ -703,7 +703,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 Wenn Sie die Richtlinieneinstellung deaktivieren, ist der Aktivitäten-Verfolgungsschutz sowohl im Browser als auch im privaten Browser deaktiviert und gesperrt.
 
 Wenn Sie die Richtlinieneinstellung aktivieren, privates Surfen ist sowohl im Browser als auch im privaten Browser standardmäßig aktiviert, und Sie können festlegen, ob der Benutzer die Änderung ändern soll oder nicht</string>
-      <string id="TrackingProtection_group">Tracking Protection</string>
+      <string id="TrackingProtection_group">Tracking-Schutz</string>
       <string id="TrackingProtection_Value">Aktiviert</string>
       <string id="TrackingProtection_Value_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Schutz vor Aktivitätenverfolgung aktiviert.
 
@@ -835,7 +835,7 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert ist, werden die Standardein
       <string id="EncryptedMediaExtensions_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen außer der Nutzer stimmt dem Download explizit zu.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen und benutzt.</string>
-      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_Locked">Einstellung zu DRM-Medien Erweiterungen sperren</string>
       <string id="EncryptedMediaExtensions_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an der Einstellung zu DRM-Medien Erweiterungen vornehmen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer die Einstellung zu DRM-Medien Erweiterungen nicht ändern.</string>
