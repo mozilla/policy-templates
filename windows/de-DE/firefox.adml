@@ -403,10 +403,10 @@ Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert o
       <string id="Cookies_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren können Benutzer die Cookie-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Cookie-Einstellungen ändern.</string>
-      <string id="Cookies_Behavior">Cookie Behavior</string>
-      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
+      <string id="Cookies_Behavior">Cookie-Verhalten</string>
+      <string id="Cookies_Behavior_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Cookie-Verhalten konfigurieren.
 
-If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert ist, werden Cookies für bekannte Tracker abgelehnt.</string>
       <string id="Cookies_BehaviorPrivateBrowsing">Cookie-Verhalten beim privaten Surfen</string>
       <string id="Cookies_BehaviorPrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Cookie-Verhalten beim privaten Surfen konfigurieren.
 
@@ -1202,10 +1202,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">Suche</checkBox>
         <checkBox refId="FirefoxHome_TopSites">Top Seiten</checkBox>
-        <checkBox refId="FirefoxHome_SponsoredTopSites">Sponsored Top Sites</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredTopSites">Gesponserte Top-Seiten</checkBox>
         <checkBox refId="FirefoxHome_Highlights">Download Verlauf</checkBox>
         <checkBox refId="FirefoxHome_Pocket">Von Pocket empfohlen</checkBox>
-        <checkBox refId="FirefoxHome_SponsoredPocket">Sponsored Pocket Stories</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredPocket">Gesponserte Pocket Stories</checkBox>
         <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
         <checkBox refId="FirefoxHome_Locked">Es ist nicht erlaubt, dass Einstellungen geändert werden.</checkBox>
       </presentation>
