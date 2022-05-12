@@ -993,7 +993,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Cookies_Allow" value="1&#xF000;https://example.com"/>
+<data id="Permissions" value="1&#xF000;https://example.com"/>
 ```
 OMA-URI:
 ```
@@ -1002,7 +1002,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Cookies_Allow" value="1&#xF000;https://example.edu"/>
+<data id="Permissions" value="1&#xF000;https://example.edu"/>
 ```
 OMA-URI:
 ```
@@ -1011,7 +1011,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Cookies_Block" value="1&#xF000;https://example.org"/>
+<data id="Permissions" value="1&#xF000;https://example.org"/>
 ```
 OMA-URI:
 ```
