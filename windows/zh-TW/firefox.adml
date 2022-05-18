@@ -323,14 +323,14 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="LegacyProfiles_Explain">若啟用此原則，Firefox 將不會嘗試對本機電腦中不同套的 Firefox 建立不同的設定檔資料夾。也等於設定 MOZ_LEGACY_PROFILES。
 
 若停用或不設定此原則，Firefox 則會對每一套 Firefox 建立不同的設定檔。</string>
-      <string id="LegacySameSiteCookieBehaviorEnabled">Revert to legacy SameSite behavior</string>
-      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+      <string id="LegacySameSiteCookieBehaviorEnabled">退回舊版 SameSite 行為</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">若啟用此原則，Firefox 將退回舊版的 SameSite 行為。代表未明確指定 SameSite 屬性的 Cookie 將被視為 SameSite=None。
 
-If this policy is disabled or not configured, Firefox will enforce SameSite=lax.</string>
-      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revert to legacy SameSite behavior on specific domains</string>
-      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite for the specified domains. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+若停用或不設定此原則，Firefox 則會強制視為 SameSite=lax。</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">對特定網域退回舊版 SameSite 行為</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">若啟用此原則，Firefox 將對特定網域退回舊版的 SameSite 行為。代表未明確指定 SameSite 屬性的 Cookie 將被視為 SameSite=None。
 
-If this policy is disabled or not configured, Firefox will enforce SameSite=lax for all domains.</string>
+若停用或不設定此原則，Firefox 則會強制對所有網域都視為 SameSite=lax。</string>
       <string id="LocalFileLinks">本機檔案鏈結</string>
       <string id="LocalFileLinks_Explain">若啟用此原則，將可以指定網站內容是否允許鏈結到本機檔案。
 
@@ -401,20 +401,20 @@ If this policy is disabled or not configured, Firefox will enforce SameSite=lax 
       <string id="Cookies_Locked_Explain">若啟用此原則，使用者將無法調整 Cookie 偏好設定。
 
 若停用或不設定此原則，則使用者能夠自行調整 Cookie 偏好設定。</string>
-      <string id="Cookies_Behavior">Cookie Behavior</string>
-      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
+      <string id="Cookies_Behavior">Cookie 行為</string>
+      <string id="Cookies_Behavior_Explain">若啟用此原則，可調整 Cookie 接受行為。
 
-If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
-      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
-      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+若停用或不設定此原則，將拒絕來自已知追蹤器的 Cookie。</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">隱私瀏覽模式中的 Cookie 行為</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">若啟用此原則，可調整隱私瀏覽模式中的 Cookie 接受行為。
 
-If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
-      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
-      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
-      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
-      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
-      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
+若停用或不設定此原則，將在隱私瀏覽模式中拒絕來自已知追蹤器的 Cookie，並隔離所有第三方 cookie。</string>
+      <string id="Cookies_Behavior_Accept">接受所有 Cookie</string>
+      <string id="Cookies_Behavior_RejectForeign">拒絕第三方 Cookie</string>
+      <string id="Cookies_Behavior_Reject">拒絕所有 Cookie</string>
+      <string id="Cookies_Behavior_LimitForeign">拒絕來自您未造訪過的第三方 Cookie</string>
+      <string id="Cookies_Behavior_RejectTracker">拒絕來自已知追蹤器的 Cookie</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">拒絕來自已知追蹤器的 Cookie，並隔離第三方網站的 Cookie（全方位 Cookie 保護功能）</string>
       <string id="Camera_Allow_Explain">若啟用此原則，將允許指定來源網址存取攝影機。
 
 若停用或不設定此原則，則依循預設攝影機存取原則。</string>
@@ -805,10 +805,10 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="UserMessaging_SkipOnboarding_Explain">若啟用此原則，將不會在「新分頁」頁面顯示新功能說明訊息。
 
 若停用或不設定此原則，則會在「新分頁」頁面顯示新功能說明訊息。</string>
-      <string id="UserMessaging_MoreFromMozilla">More from Mozilla</string>
-      <string id="UserMessaging_MoreFromMozilla_Explain">If this policy is disabled, the More from Mozilla section will not be shown in preferences.
+      <string id="UserMessaging_MoreFromMozilla">「Mozilla 的更多產品」頁面</string>
+      <string id="UserMessaging_MoreFromMozilla_Explain">若停用此原則，偏好設定中將不會顯示「Mozilla 的更多產品」頁面。
 
-If this policy is enabled or not configured, the More from Mozilla section will be shown in preferences.</string>
+若啟用或不設定此原則，將會在偏好設定中顯示「Mozilla 的更多產品」頁面。</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
@@ -875,16 +875,16 @@ If this policy is enabled or not configured, the More from Mozilla section will 
 若停用或不設定此原則，則不修改偏好設定。
 
 若需要建立原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。</string>
-      <string id="Bookmarks">Bookmarks (JSON)</string>
-      <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
+      <string id="Bookmarks">書籤（JSON）</string>
+      <string id="Bookmarks_Explain">若啟用此原則，您可以使用 JSON 字串來設定書籤，也可以使用 [] 來清除所有書籤。
 
-If this policy is disabled or not configured, the individual bookmark policies are used.
+若停用或不設定此原則，則不會指定書籤原則。
 
-If this policy is enabled along with individual bookmarks, those bookmarks will not be added.
+若此原則與單一書籤一同啟用，則不會新增書籤。
 
-This policy has no effect on Managed Bookmarks.
+此原則不會影響「受管理的書籤」原則內容。
 
-For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+若需要 JSON 書籤原則的詳細資訊，請參考 https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks。</string>
       <string id="ManagedBookmarks">受管理的書籤</string>
       <string id="ManagedBookmarks_Explain">若啟用此原則，您可以使用 JSON 檔案來指定受管理的書籤。
 
@@ -1030,7 +1030,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
         <checkBox refId="TrackingProtectionLocked">不允許調整追蹤保護偏好設定。</checkBox>
         <checkBox refId="Cryptomining">封鎖加密貨幣採礦程式。</checkBox>
         <checkBox refId="Fingerprinting">封鎖數位指紋追蹤程式。</checkBox>
-        <text>Exceptions:</text>
+        <text>例外：</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="TrackingProtection_Exceptions">
@@ -1200,10 +1200,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">搜尋</checkBox>
         <checkBox refId="FirefoxHome_TopSites">熱門網站</checkBox>
-        <checkBox refId="FirefoxHome_SponsoredTopSites">Sponsored Top Sites</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredTopSites">贊助的熱門網站</checkBox>
         <checkBox refId="FirefoxHome_Highlights">下載紀錄</checkBox>
         <checkBox refId="FirefoxHome_Pocket">Pocket 推薦項目</checkBox>
-        <checkBox refId="FirefoxHome_SponsoredPocket">Sponsored Pocket Stories</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredPocket">Pocket 贊助內容</checkBox>
         <checkBox refId="FirefoxHome_Snippets">隻字片語</checkBox>
         <checkBox refId="FirefoxHome_Locked">不允許變更設定</checkBox>
       </presentation>
