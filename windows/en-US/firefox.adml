@@ -316,7 +316,7 @@ If this policy is disabled or not configured, extensions will not be managed.
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
       <string id="HardwareAcceleration">Hardware Acceleration</string>
-      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration and cannot be enabled.
+      <string id="HardwareAcceleration_Explain">If this policy is disabled, hardware acceleration is disabled and cannot be enabled.
 
 If this policy is enabled or not configured, hardware acceleration is enabled.</string>
       <string id="LegacyProfiles">Legacy Profiles</string>
