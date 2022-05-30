@@ -257,7 +257,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSecurityBypass_InvalidCertificate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht &quot;Ausnahme hinzufügen&quot; nicht zur Verfügung, wenn ein Zertifikat ungültig ist. Dies verhindert, dass ein Benutzer Zertifikatsfehler überschreibt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht &quot;Ausnahme hinzufügen&quot; zur Verfügung, wenn ein Zertifikat ungültig ist.</string>
-      <string id="DisableSecurityBypass_SafeBrowsing">Betrugsversuch- und Schadprogrammschutz ändern</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Ausnahme hinzufügen verhindern bei betrügerischen oder schädlichen Weseiten</string>
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz nicht umgehen um eine schädliche Webseite zu besuchen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz umgehen um eine schädliche Webseite zu besuchen.</string>
