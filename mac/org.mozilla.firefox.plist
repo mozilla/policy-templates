@@ -414,6 +414,11 @@
 		<key>EnablePermissions</key>
 		<false/>
 	</dict>
+	<key>PasswordManagerExceptions</key>
+	<array>
+		<string>https://example.org</string>
+		<string>https://example.edu</string>
+	</array>
 	<key>Permissions</key>
 	<dict>
 		<key>Camera</key>
