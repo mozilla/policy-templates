@@ -676,6 +676,10 @@ If this policy is not configured, Firefox will determine whether or not the home
       <string id="PasswordManagerEnabled_Explain">Si cette stratégie est désactivée, le gestionnaire de mots de passe n'est pas disponible via les préférences.
 
 Si cette stratégie est activée ou non configurée, le gestionnaire de mots de passe est disponible via les préférences.</string>
+      <string id="PasswordManagerExceptions">Password Manager Exceptions</string>
+      <string id="PasswordManagerExceptions_Explain">If this policy is enabled, you can specify sites where Firefox won't offer to save passwords.
+
+If this policy is disabled or not configured, Firefox will offer to save passwords on all sites.</string>
       <string id="PromptForDownloadLocation">Demander l'emplacement de téléchargement</string>
       <string id="PromptForDownloadLocation_Explain">Si cette stratégie est désactivée, l'utilisateur n'est pas invité à indiquer un emplacement de téléchargement.
 
