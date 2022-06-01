@@ -66,7 +66,7 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
-      <string id="Preferences_group">Einstellungen (veraltet)</string>
+      <string id="Preferences_group">Einstellungen (Veraltet)</string>
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
       <string id="DisabledCiphers_group">Deaktivierte Verschlüsselungsverfahren</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
@@ -177,7 +177,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="DNSOverHTTPS_ExcludedDomains_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die angegebenen Domains von DNS über HTTPS ausgeschlossen.
 
 Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Domains von DNS über HTTPS ausgeschlossen.</string>
-      <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Moved)</string>
+      <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Verschoben)</string>
       <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS über HTTPS geändert werden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS über HTTPS benutzt.</string>
@@ -257,7 +257,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="DisableSecurityBypass_InvalidCertificate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht &quot;Ausnahme hinzufügen&quot; nicht zur Verfügung, wenn ein Zertifikat ungültig ist. Dies verhindert, dass ein Benutzer Zertifikatsfehler überschreibt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht &quot;Ausnahme hinzufügen&quot; zur Verfügung, wenn ein Zertifikat ungültig ist.</string>
-      <string id="DisableSecurityBypass_SafeBrowsing">Betrugsversuch- und Schadprogrammschutz ändern</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Ausnahme hinzufügen verhindern bei betrügerischen oder schädlichen Weseiten</string>
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz nicht umgehen um eine schädliche Webseite zu besuchen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz umgehen um eine schädliche Webseite zu besuchen.</string>
@@ -335,10 +335,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erzwi
       <string id="LocalFileLinks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Quellen angeben, von denen Links auf lokale Dateien erlaubt sind.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Websites nicht auf lokale Dateien verlinken.</string>
-      <string id="NetworkPrediction">Network Prediction</string>
-      <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
+      <string id="NetworkPrediction">Netzwerkvorhersage</string>
+      <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Netzwerkvorhersage (DNS-Prefetching) deaktiviert.
 
-Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird Network Prediction (DNS prefetching) aktiviert.</string>
+Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Netzwerkvorhersage (DNS-Prefetching) aktiviert.</string>
       <string id="NewTabPage">Neuer Tab Seite</string>
       <string id="NewTabPage_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die Neuer Tab Seite leer sein.
 
@@ -347,7 +347,7 @@ Wenn die Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die 
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, fordert Firefox nicht zum Speichern von Logindaten und Passwörtern auf.</string>
-      <string id="OfferToSaveLoginsDefault">Zugangsdaten und Passwörter für Webseiten speichen (default)</string>
+      <string id="OfferToSaveLoginsDefault">Zugangsdaten und Passwörter für Webseiten speichen (Standard)</string>
       <string id="OfferToSaveLoginsDefault_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, fordert Firefox nicht zum Speichern von Logindaten und Passwörtern auf.
@@ -356,7 +356,7 @@ In beiden Fällen kann der Benutzer den Wert ändern (er ist nicht gesperrt).</s
       <string id="PopupBlocking_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Popup-Fenster für die angegebenen URLs immer erlaubt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), sind Popup-Fenster für alle Subdomains ebenfalls zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Popup-Fenster Richtlinie angewendet.</string>
-      <string id="PopupBlocking_Default">Pop-up-Blocker deaktivieren</string>
+      <string id="PopupBlocking_Default">Pop-ups von Webseiten blockieren</string>
       <string id="PopupBlocking_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, sind Popup-Fenster standardmäßig von Webseiten zugelassen.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, sind Popup-Fenster standardmäßig von Webseiten nicht erlaubt.</string>
@@ -380,11 +380,11 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="Cookies_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Cookies für die angegebenen URLs gesperrt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), werden Cookies von allen Sub-Domains ebenfalls blockiert.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind Cookies standardmäßig nicht blockiert.</string>
-      <string id="Cookies_Default">Cookies und Website-Daten annehmen (veraltet)</string>
+      <string id="Cookies_Default">Cookies und Website-Daten annehmen (Veraltet)</string>
       <string id="Cookies_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Cookies standardmäßig nicht von Webseiten akzeptiert.
 
 Wenn Sie die Richtlinieneinstellung nicht konfigurieren oder aktivieren, werden Cookies von Websiten akzeptiert.</string>
-      <string id="Cookies_AcceptThirdParty">Cookies und Website-Daten von Drittanbietern akzeptieren (veraltet)</string>
+      <string id="Cookies_AcceptThirdParty">Cookies und Website-Daten von Drittanbietern akzeptieren (Veraltet)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlauben, können Sie einstellen wie Sie Cookies von Drittanbietern akzeptieren.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn Cookies nicht erlaubt sind.</string>
@@ -395,7 +395,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder w
       <string id="Cookies_ExpireAtSessionEnd_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlaubt sind, werden diese gelöscht sobald Firefox geschlossen wird.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn &quot;Cookies und Website-Daten annehmen&quot; deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
-      <string id="Cookies_RejectTracker">Tracker ablehnen (veraltet)</string>
+      <string id="Cookies_RejectTracker">Tracker ablehnen (Veraltet)</string>
       <string id="Cookies_RejectTracker_Explain">Wenn diese Richtlinieneinstellung aktiviert ist und Cookies aktiviert sind, werden Tracker-Cookies standardmäßig abgewiesen.
 
 Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist oder Cookies durch eine andere Richtlinie oder Einstellung nicht erlaubt sind.</string>
@@ -416,7 +416,7 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert ist, werde
       <string id="Cookies_Behavior_Reject">Alle Cookies ablehnen</string>
       <string id="Cookies_Behavior_LimitForeign">Cookies von Drittanbietern für Websites, die Sie nicht besucht haben, ablehnen</string>
       <string id="Cookies_Behavior_RejectTracker">Cookies für bekannte Tracker ablehnen</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Ablehnung von Cookies für bekannte Tracker und Partitionierung von Drittanbieter-Cookies (Total Cookie Protection)</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Ablehnung von Cookies für bekannte Tracker und Partitionierung von Drittanbieter-Cookies (Vollständiger Cookie-Schutz)</string>
       <string id="Camera_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Kamera für die genannten Quellen automatisch freigegeben.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
@@ -536,7 +536,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="OverridePostUpdatePage_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine URL angeben, die nach der Aktualisierung von Firefox angezeigt wird. Wenn Sie die URL leer lassen, wird keine Upgrade-Seite angezeigt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren wird eine Upgrade Seite angezeigt.</string>
-      <string id="SanitizeOnShutdown">Die Chronik löschen, wenn Firefox geschlossen wird</string>
+      <string id="SanitizeOnShutdown">Die Chronik löschen, wenn Firefox geschlossen wird (Verschoben)</string>
       <string id="SanitizeOnShutdown_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden alle Daten der Chronik gelöscht, wenn Firefox geschlossen wird. Dies beinhaltet Browsing &amp; Download Verlauf, Cookies, Aktive Logins, Cache, Form &amp; Suchverlauf, Website-Einstellungen und Offline-Website-Daten.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die keine Daten der Chronik gelöscht.</string>
@@ -662,7 +662,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="None">Leere Seite</string>
       <string id="Homepage">Startseite</string>
       <string id="PreviousSession">Letzte Sitzung</string>
-      <string id="HomepageLocked">Homepage (Locked)</string>
+      <string id="HomepageLocked">Homepage (Gesperrt)</string>
       <string id="Homepage_ShowHomeButton">Home-Button zur Symbolleiste hinzufügen</string>
       <string id="Homepage_ShowHomeButton_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, erscheint der Home-Button standardmäßig in der Symbolleiste.
 
@@ -689,7 +689,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Automatische Proxy-Konfigurations-Adresse</string>
       <string id="AutoConfigURL_Explain">Dies sollten Sie nur einstellen, wenn Sie autoConfig ausgewählt haben</string>
-      <string id="Passthrough">Proxy Ausnahmen</string>
+      <string id="Passthrough">Proxy-Ausnahmen</string>
       <string id="Passthrough_Explain">Dies sollten Sie nur einstellen, wenn Sie manuelle Proxy-Konfiguration ausgewählt haben</string>
       <string id="Connection">Verbindungs-Einstellungen</string>
       <string id="NoProxy">Kein Proxy</string>
@@ -697,7 +697,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="ManualProxy">Manuelle Proxy-Konfiguration</string>
       <string id="AutoDetectProxy">Die Proxy-Einstellungen für dieses Netzwek automatisch erkennen</string>
       <string id="AutoConfigProxy">Automatische Proxy-Konfiguration</string>
-      <string id="TrackingProtection">Schutz vor Aktivitätenverfolgung</string>
+      <string id="TrackingProtection">Schutz vor Aktivitätenverfolgung (Verschoben)</string>
       <string id="TrackingProtection_Explain">Wenn Sie die Richtlinieneinstellung nicht konfigurieren, ist der Aktivitäten-Verfolgungsschutz im Browser standardmäßig nicht aktiviert, im privaten Browser ist er jedoch standardmäßig aktiviert und kann vom Benutzer geändert werden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, ist der Aktivitäten-Verfolgungsschutz sowohl im Browser als auch im privaten Browser deaktiviert und gesperrt.
@@ -714,10 +714,10 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert ist, sind die Standardeinst
       <string id="TrackingProtection_Cryptomining_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Cryptomining-Skripte blockiert.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Cryptomining-Skripte nicht blockiert.</string>
-      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Fingerprinting-Skripte blockiert.
+      <string id="TrackingProtection_Fingerprinting">Identifizierer (Fingerprinter)</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Identifizierer-Skripte blockiert.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Fingerprinting-Skripte nicht blockiert.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Identifizierer-Skripte nicht blockiert.</string>
       <string id="TrackingProtection_Exceptions">Ausnahmen</string>
       <string id="TrackingProtection_Exceptions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Ausnahmen-Seiten definiert werden, bei denen der Schutz vor Aktivitätenverfolgung deaktiviert ist.
 
@@ -793,8 +793,8 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="UserMessaging_ExtensionRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Erweiterungen nicht empfohlen, wenn der Benutzer Webseiten besucht.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Erweiterungen empfohlen, wenn der Benutzer Webseiten besucht.</string>
-      <string id="UserMessaging_FeatureRecommendations">Feature-Empfehlungen</string>
-      <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden die Funktionen von Firefox nicht empfohlen, wenn der Benutzer Firefox verwendet.
+      <string id="UserMessaging_FeatureRecommendations">Funktions-Empfehlungen</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden keine Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.
 
 Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
       <string id="UserMessaging_UrlbarInterventions">Adressleisten-Empfehlungen</string>
@@ -826,9 +826,9 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird de
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</string>
-      <string id="DisabledCiphers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der ausgewählte Cipher deaktiviert.
+      <string id="DisabledCiphers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die ausgewählte Verschlüsselung deaktiviert.
 
-Wenn diese Richtlinieneinstellung deaktiviert ist, ist der ausgewählte Cipher aktiviert.
+Wenn diese Richtlinieneinstellung deaktiviert ist, ist der ausgewählte Verschlüsselung aktiviert.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, werden die Standardeinstellungen in Firefox verwendet.</string>
       <string id="EncryptedMediaExtensions_Enabled">DRM-Medien Erweiterungen</string>
@@ -869,7 +869,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
       <string id="Preferences">Einstellungen</string>
-      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (veraltet) löschen.
+      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (Veraltet) löschen.
 
 Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Einstellungen mit Hilfe einer JSON-Datei konfigurieren.
 
@@ -927,8 +927,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="Preferences_Unsupported_Explain">Diese Richtlinieneinstellung ist nicht mehr unterstützt. Wir arbeiten an einer Lösung.</string>
-      <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
-      <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
+      <string id="Preferences_accessibility_force_disabled_auto">Automatisch (0)</string>
+      <string id="Preferences_accessibility_force_disabled_off">Immer Aus (1)</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Jedes Mal nachfragen</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Automatisch auswählen</string>
       <string id="accessibility_force_disabled">accessibility.force_disabled</string>
@@ -1031,8 +1031,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Änderungen am Schutz vor Aktivitätenverfolgung nicht erlauben</checkBox>
         <checkBox refId="Cryptomining">Cryptomining-Skripte blockieren.</checkBox>
-        <checkBox refId="Fingerprinting">Fingerprinting-Skripte blockieren.</checkBox>
-        <text>Exceptions:</text>
+        <checkBox refId="Fingerprinting">Identifizierer-Skripte (Fingerprinter) blockieren.</checkBox>
+        <text>Ausnahmen:</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="TrackingProtection_Exceptions">
@@ -1167,7 +1167,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <textBox refId="SupportMenuURL">
           <label/>
         </textBox>
-        <text>Access key:</text>
+        <text>Taste:</text>
         <textBox refId="SupportMenuAccessKey">
           <label/>
         </textBox>
