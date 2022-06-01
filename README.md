@@ -69,7 +69,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`LegacySameSiteCookieBehaviorEnabledForDomainList`](#legacysamesitecookiebehaviorenabledfordomainlist)** | Revert to legacy SameSite behavior for cookies on specified sites.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
-| **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates..
+| **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -3826,7 +3826,7 @@ Value (string):
 ### PasswordManagerExceptions
 Prevent Firefox from saving passwords for specific sites.
 
-The sites are specified as a list of origins..
+The sites are specified as a list of origins.
 
 **Compatibility:** Firefox 101\
 **CCK2 Equivalent:** N/A\
@@ -3845,7 +3845,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="PasswordManagerExceptions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.edu"/>
+<data id="List" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.edu"/>
 ```
 #### macOS
 ```
