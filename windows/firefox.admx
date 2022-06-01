@@ -50,6 +50,8 @@
       <definition name="SUPPORTED_FF98_ONLY" displayName="$(string.SUPPORTED_FF98_ONLY)"/>
       <definition name="SUPPORTED_FF99" displayName="$(string.SUPPORTED_FF99)"/>
       <definition name="SUPPORTED_FF100" displayName="$(string.SUPPORTED_FF100)"/>
+      <definition name="SUPPORTED_FF101" displayName="$(string.SUPPORTED_FF101)"/>
+      <definition name="SUPPORTED_FF102" displayName="$(string.SUPPORTED_FF102)"/>
     </definitions>
   </supportedOn>
   <categories>

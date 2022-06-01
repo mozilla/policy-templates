@@ -48,6 +48,8 @@
    <string id="SUPPORTED_FF98_ONLY">Firefox 98 或更新版本</string>
    <string id="SUPPORTED_FF99">Firefox 99 或更新版本、Firefox 91.8 ESR 或更新版本</string>
    <string id="SUPPORTED_FF100">Firefox 100 或更新版本、Firefox 91.9 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF100">Firefox 101 或更新版本、Firefox 91.10 ESR 或更新版本</string>
+   <string id="SUPPORTED_FF100">Firefox 102 或更新版本、Firefox 91.11 ESR 或更新版本</string>
    <string id="firefox">Firefox</string>
 <string id="Permissions_group">权限</string>
    <string id="Camera_group">摄像头</string>
