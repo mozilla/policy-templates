@@ -78,6 +78,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`OverrideFirstRunPage`](#overridefirstrunpage)** | Override the first run page.
 | **[`OverridePostUpdatePage`](#overridepostupdatepage)** | Override the upgrade page.
 | **[`PasswordManagerEnabled`](#passwordmanagerenabled)** | Remove (some) access to the password manager.
+| **[`PasswordManagerExceptions`](#passwordmanagerexceptions)** | Prevent Firefox from saving passwords for specific sites.
 | **[`PDFjs`](#pdfjs)** | Disable or configure PDF.js, the built-in PDF viewer.
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
@@ -3822,6 +3823,50 @@ Value (string):
   }
 }
 ```
+### PasswordManagerExceptions
+Prevent Firefox from saving passwords for specific sites.
+
+The sites are specified as a list of origins..
+
+**Compatibility:** Firefox 101\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PasswordManagerExceptions\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\PasswordManagerExceptions\2 = "https://example.edu"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PasswordManagerExceptions
+```
+Value (string):
+```
+<enabled/>
+<data id="PasswordManagerExceptions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.edu"/>
+```
+#### macOS
+```
+<dict>
+  <key>PasswordManagerExceptions</key>
+  <array>
+    <string>https://example.org</string>
+    <string>https://example.edu</string>
+  </array>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PasswordManagerExceptions": ["https://example.org",
+                                  "https://example.edu"]
+  }
+}
+```
+
 ### PDFjs
 Disable or configure PDF.js, the built-in PDF viewer.
 
