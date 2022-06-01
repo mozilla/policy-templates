@@ -723,29 +723,6 @@
         <list id="List" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ExcludedDomains" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="DNSOverHTTPS" class="Both" displayName="$(string.DNSOverHTTPS)" explainText="$(string.DNSOverHTTPS_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.DNSOverHTTPS)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF63ESR" />
-      <elements>
-        <text id="ProviderURL" valueName="ProviderURL" />
-        <boolean id="DNSOverHTTPSEnabled" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Enabled">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="DNSOverHTTPSLocked" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Locked">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
     <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
@@ -1329,83 +1306,6 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-    </policy>
-    <!-- Alphabetization is based on name, so had to add C -->
-    <policy name="C_SanitizeOnShutdown" class="Both" displayName="$(string.SanitizeOnShutdown)" explainText="$(string.SanitizeOnShutdown_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SanitizeOnShutdown" presentation="$(presentation.SanitizeOnShutdown)" >
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-      <elements>
-        <boolean id="SanitizeOnShutdown_Cache" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cache">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_Cookies" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cookies">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_Downloads" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Downloads">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_FormData" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="FormData">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_History" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="History">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_Sessions" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Sessions">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_SiteSettings" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="SiteSettings">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="SanitizeOnShutdown_OfflineApps" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="OfflineApps">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-      </elements>
     </policy>
     <policy name="HomepageURL" class="Both" displayName="$(string.HomepageURL)" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
       <parentCategory ref="Homepage" />
@@ -2694,43 +2594,6 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-    </policy>
-    <policy name="TrackingProtection" class="Both" displayName="$(string.TrackingProtection)" explainText="$(string.TrackingProtection_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value" presentation="$(presentation.TrackingProtection)">
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF60"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-      <elements>
-        <boolean id="TrackingProtectionLocked" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Locked">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="Cryptomining" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Cryptomining">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <boolean id="Fingerprinting" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Fingerprinting">
-          <trueValue>
-            <decimal value="1"/>
-          </trueValue>
-          <falseValue>
-            <decimal value="0"/>
-          </falseValue>
-        </boolean>
-        <list id="TrackingProtection_Exceptions" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions" valuePrefix=""/>
-      </elements>
     </policy>
     <!-- Alphabetization is based on name, so had to add B -->
     <policy name="B_WebsiteFilter_Block" class="Both" displayName="$(string.WebsiteFilter_Block)" explainText="$(string.WebsiteFilter_Block_Explain)" key="Software\Policies\Mozilla\WebsiteFilter\Block" presentation="$(presentation.WebsiteFilter)">
