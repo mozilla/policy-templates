@@ -677,6 +677,10 @@ If this policy is not configured, Firefox will determine whether or not the home
       <string id="PasswordManagerEnabled_Explain">Si esta política está deshabilitada, el administrador de contraseñas no estará disponible a través de las preferencias.
 
 Si esta política está habilitada o no está configurada, el administrador de contraseñas estará disponible a través de preferencias.</string>
+      <string id="PasswordManagerExceptions">Password Manager Exceptions</string>
+      <string id="PasswordManagerExceptions_Explain">If this policy is enabled, you can specify sites where Firefox won't offer to save passwords.
+
+If this policy is disabled or not configured, Firefox will offer to save passwords on all sites.</string>
       <string id="PromptForDownloadLocation">Solicitar ubicación de descarga</string>
       <string id="PromptForDownloadLocation_Explain">Si esta política está deshabilitada, no se solicitará al usuario una ubicación de descarga.
 

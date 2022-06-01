@@ -677,6 +677,10 @@ If this policy is not configured, Firefox will determine whether or not the home
       <string id="PasswordManagerEnabled_Explain"> Если эта политика отключена, менеджер паролей недоступен в настройках.
 
 Если эта политика включена или не настроена, менеджер паролей доступен в настройках. </string>
+      <string id="PasswordManagerExceptions">Password Manager Exceptions</string>
+      <string id="PasswordManagerExceptions_Explain">If this policy is enabled, you can specify sites where Firefox won't offer to save passwords.
+
+If this policy is disabled or not configured, Firefox will offer to save passwords on all sites.</string>
       <string id="PromptForDownloadLocation"> Запрос места загрузки </string>
       <string id="PromptForDownloadLocation_Explain"> Если эта политика отключена, пользователю не предлагается указать расположение для загрузки.
 

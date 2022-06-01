@@ -2486,6 +2486,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="PasswordManagerExceptions" class="Both" displayName="$(string.PasswordManagerExceptions)" explainText="$(string.PasswordManagerExceptions_Explain)" key="Software\Policies\Mozilla\Firefox\PasswordManagerExceptions" presentation="$(presentation.List)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF101"/>
+      <elements>
+        <list id="List" key="Software\Policies\Mozilla\Firefox\PasswordManagerExceptions" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="Proxy" class="Both" displayName="$(string.Proxy)" explainText="$(string.Proxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF60" />

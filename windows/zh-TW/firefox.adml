@@ -48,8 +48,8 @@
       <string id="SUPPORTED_FF98_ONLY">Firefox 98 或更新版本</string>
       <string id="SUPPORTED_FF99">Firefox 99 或更新版本、Firefox 91.8 ESR 或更新版本</string>
       <string id="SUPPORTED_FF100">Firefox 100 或更新版本、Firefox 91.9 ESR 或更新版本</string>
-      <string id="SUPPORTED_FF100">Firefox 101 或更新版本、Firefox 91.10 ESR 或更新版本</string>
-      <string id="SUPPORTED_FF100">Firefox 102 或更新版本、Firefox 91.11 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF101">Firefox 101 或更新版本、Firefox 91.10 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF102">Firefox 102 或更新版本、Firefox 91.11 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
@@ -675,6 +675,10 @@ Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可
       <string id="PasswordManagerEnabled_Explain">若停用此原則，將無法於偏好設定中使用密碼管理員。
 
 若啟用或不設定此原則，則可於偏好設定中使用密碼管理員。</string>
+      <string id="PasswordManagerExceptions">Password Manager Exceptions</string>
+      <string id="PasswordManagerExceptions_Explain">If this policy is enabled, you can specify sites where Firefox won't offer to save passwords.
+
+If this policy is disabled or not configured, Firefox will offer to save passwords on all sites.</string>
       <string id="PromptForDownloadLocation">提示下載位置</string>
       <string id="PromptForDownloadLocation_Explain">若停用此原則，將不會向使用者詢問檔案下載位置。
 
