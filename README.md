@@ -5669,7 +5669,7 @@ Value (string):
       "WhatsNew": true | false,
       "ExtensionRecommendations": true | false,
       "FeatureRecommendations": true | false,
-      "UrlbarInterventions": true | false
+      "UrlbarInterventions": true | false,
       "SkipOnboarding": true | false,
       "MoreFromMozilla": true | false
     }
