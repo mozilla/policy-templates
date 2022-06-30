@@ -104,7 +104,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
-| **[`UseSystemPrintDialog`](#usesystemprintdialog)** | Print using the system print dialog.
+| **[`UseSystemPrintDialog`](#usesystemprintdialog)** | Print using the system print dialog instead of print preview.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 | **[`WindowsSSO`](#windowssso)** | Allow Windows single sign-on for Microsoft, work, and school accounts.
 
