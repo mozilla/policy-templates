@@ -49,7 +49,7 @@
       <string id="SUPPORTED_FF99">Firefox 99 o versione successiva, Firefox 91.8 ESR o versione successiva</string>
       <string id="SUPPORTED_FF100">Firefox 100 o versione successiva, Firefox 91.9 ESR o versione successiva</string>
       <string id="SUPPORTED_FF101">Firefox 101 o versione successiva, Firefox 91.10 ESR o versione successiva</string>
-      <string id="SUPPORTED_FF102">Firefox 102 o versione successiva, Firefox 91.11 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF102">Firefox 102 o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
@@ -922,7 +922,6 @@ If this policy is disabled or not configured, credentials must be entered manual
       <string id="UseSystemPrintDialog_Explain">If this policy is enabled, Firefox will use the system print dialog instead of showing print preview before printing.
 
 If this policy is disabled or not configured, Firefox will show print preview before printing.</string>
-
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:

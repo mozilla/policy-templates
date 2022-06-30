@@ -49,7 +49,7 @@
       <string id="SUPPORTED_FF99">Firefox 99 ou supérieur, Firefox 91.8 ESR ou supérieur</string>
       <string id="SUPPORTED_FF100">Firefox 100 ou supérieur, Firefox 91.9 ESR ou supérieur</string>
       <string id="SUPPORTED_FF101">Firefox 101 ou supérieur, Firefox 91.10 ESR ou supérieur</string>
-      <string id="SUPPORTED_FF102">Firefox 102 ou supérieur, Firefox 91.11 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF102">Firefox 102 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
