@@ -104,6 +104,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
+| **[`UseSystemPrintDialog`](#usesystemprintdialog)** | Print using the system print dialog instead of print preview.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 | **[`WindowsSSO`](#windowssso)** | Allow Windows single sign-on for Microsoft, work, and school accounts.
 
@@ -5673,6 +5674,41 @@ Value (string):
       "SkipOnboarding": true | false,
       "MoreFromMozilla": true | false
     }
+  }
+}
+```
+### UseSystemPrintDialog
+Use the system print dialog instead of the print preview window.
+
+**Compatibility:** Firefox 102\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `print.prefer_system_dialog`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\UseSystemPrintDialog = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/UseSystemPrintDialog
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>UseSystemPrintDialog</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "UseSystemPrintDialog": true | false
   }
 }
 ```

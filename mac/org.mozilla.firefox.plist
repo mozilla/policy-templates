@@ -588,6 +588,8 @@
 		<key>SkipOnboarding</key>
 		<true/>
 	</dict>
+	<key>UseSystemPrintDialog</key>
+	<true/>
 	<key>WebsiteFilter</key>
 	<dict>
 		<key>Block</key>

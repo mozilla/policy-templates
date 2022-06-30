@@ -3848,5 +3848,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="UseSystemPrintDialog" class="Both" displayName="$(string.UseSystemPrintDialog)" explainText="$(string.UseSystemPrintDialog_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="UseSystemPrintDialog">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF102"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
