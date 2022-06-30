@@ -915,6 +915,10 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
       <string id="WindowsSSO_Explain">若啟用此原則，Firefox 將使用儲存於 Windows 的帳號密碼來登入微軟、工作單位、學校提供的帳號。
 
 若停用或不設定此原則，則必須手動輸入帳號密碼。</string>
+      <string id="UseSystemPrintDialog">Use System Print Dialog</string>
+      <string id="UseSystemPrintDialog_Explain">If this policy is enabled, Firefox will use the system print dialog instead of showing print preview before printing.
+
+If this policy is disabled or not configured, Firefox will show print preview before printing.</string>
       <string id="Preferences_Boolean_Explain">若啟用此原則，偏好設定將鎖定為 true。若停用此原則，偏好設定則鎖定為 false。
 
 若需要偏好設定的詳細說明，請參考：
