@@ -924,12 +924,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, müss
       <string id="UseSystemPrintDialog_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, verwendet Firefox den Druckdialog des Betriebssystems, anstatt vorher eine Druckvorschau anzuzeigen.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, zeigt Firefox vor dem Drucken eine Druckvorschau an.</string>
-      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Disable warnings based on file extension for specific file types on domains</string>
-      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">If this policy is enabled, you can define a list of domains and file type extensions that will be exempt from executable warnings.
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Deaktivieren von Warnungen auf der Grundlage von Dateierweiterungen für bestimmte Dateitypen in Domänen</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste von Domänen und Dateierweiterungen definieren, die von Warnungen ausgenommen sind.
 
-If this policy is disabled or not configured, warnings are shown for all executable file types.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Warnungen für alle ausführbaren Dateitypen angezeigt.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
