@@ -2453,7 +2453,7 @@ Important: The documentation for the policy for both Edge and Chrome is incorrec
 **Preferences Affected:** N/A
 
 #### Windows (GPO)
-Software\Policies\Mozilla\Firefox\Handlers (REG_MULTI_SZ) =
+Software\Policies\Mozilla\Firefox\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings (REG_MULTI_SZ) =
 ```
 [
   {
