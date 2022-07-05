@@ -236,6 +236,17 @@
 		<key>Locked</key>
 		<false/>
 	</dict>
+	<key>ExemptDomainFileTypePairsFromFileTypeDownloadWarnings</key>
+	<array>
+		<dict>
+			<key>file_extension</key>
+			<string>jnlp</string>
+			<key>domains</key>
+			<array>
+				<string>example.com</string>
+			</array>
+		</dict>
+	</array>
 	<key>Extensions</key>
 	<dict>
 		<key>Install</key>
