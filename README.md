@@ -55,6 +55,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`EnableTrackingProtection`](#enabletrackingprotection)** | Configure tracking protection.
 | **[`EncryptedMediaExtensions`](#encryptedmediaextensions)** | Enable or disable Encrypted Media Extensions and optionally lock it.
 | **[`EnterprisePoliciesEnabled`](#enterprisepoliciesenabled)** | Enable policy support on macOS.
+| **[`ExemptDomainFileTypePairsFromFileTypeDownloadWarnings`](#exemptdomainfiletypepairsfromfiletypedownloadwarnings)** | Disable warnings based on file extension for specific file types on domains.
 | **[`Extensions`](#extensions)** | Control the installation, uninstallation and locking of extensions.
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
@@ -2438,6 +2439,72 @@ Enable policy support on macOS.
   <key>EnterprisePoliciesEnabled</key>
   <true/>
 </dict>
+```
+### ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
+
+Disable warnings based on file extension for specific file types on domains.
+
+This policy is based on the [Chrome policy](https://chromeenterprise.google/policies/#ExemptDomainFileTypePairsFromFileTypeDownloadWarnings) of the same name.
+
+Important: The documentation for the policy for both Edge and Chrome is incorrect. The ```domains``` value must be a domain, not a URL pattern. Also, we do not support using ```*``` to mean all domains.
+
+**Compatibility:** Firefox 102\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+Software\Policies\Mozilla\Firefox\Handlers (REG_MULTI_SZ) =
+```
+[
+  {
+     "file_extension": "jnlp",
+     "domains": ["example.com"]
+  }
+]
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
+```
+Value (string):
+```
+<enabled/>
+<data id="JSON" value='
+[
+  {
+     "file_extension": "jnlp",
+     "domains": ["example.com"]
+  }
+]
+'/>
+```
+#### macOS
+```
+<dict>
+  <key>ExemptDomainFileTypePairsFromFileTypeDownloadWarnings</key>
+  <array>
+    <dict>
+      <key>file_extension</key>
+      <string>jnlp</string>
+      <key>domains</key>
+      <array>
+        <string>example.com</string>
+      </array>
+    </dict>
+  </array>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "ExemptDomainFileTypePairsFromFileTypeDownloadWarnings": [{
+      "file_extension": "jnlp",
+      "domains": ["example.com"]
+    }]
+  }
+}
 ```
 ### Extensions
 Control the installation, uninstallation and locking of extensions.
