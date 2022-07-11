@@ -103,6 +103,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`ShowHomeButton`](#showhomebutton)** | Show the home button on the toolbar.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
+| **[`StartDownloadsInTempDirectory`](#startdownloadsintempdirectory)** | Force downloads to start off in a local, temporary location rather than the default download directory.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`UseSystemPrintDialog`](#usesystemprintdialog)** | Print using the system print dialog instead of print preview.
@@ -5664,6 +5665,40 @@ Value (string):
       "AccessKey": "S"
     }
   }
+}
+```
+### StartDownloadsInTempDirectory
+Force downloads to start off in a local, temporary location rather than the default download directory.
+
+**Compatibility:** Firefox 102\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.downloads.start_downloads_in_tmp_dir`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\StartDownloadsInTempDirectory = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/StartDownloadsInTempDirectory
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>StartDownloadsInTempDirectory</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "StartDownloadsInTempDirectory": true | false
 }
 ```
 ### UserMessaging

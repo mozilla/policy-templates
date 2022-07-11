@@ -3865,5 +3865,15 @@
         <multiText id="JSON" valueName="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings"  maxLength="16384"/>
       </elements>
     </policy>
+    <policy name="StartDownloadsInTempDirectory" class="Both" displayName="$(string.StartDownloadsInTempDirectory)" explainText="$(string.StartDownloadsInTempDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="StartDownloadsInTempDirectory">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF102"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
