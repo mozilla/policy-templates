@@ -930,7 +930,7 @@ For detailed information on creating the policy, see https://github.com/mozilla/
       <string id="StartDownloadsInTempDirectory">Start Downloads in Temporary Directory</string>
       <string id="StartDownloadsInTempDirectory_Explain">If this policy is enabled, Firefox will start downloads in a temporary directory and automatically deleted when you close the browser.
 
-If this policy is disabled or not configured, Firefox will to the download folder and will not be automaticall deleted when you close the browser.</string>
+If this policy is disabled or not configured, Firefox will to the download folder and will not be automatically deleted when you close the browser.</string>
       <string id="Preferences_Boolean_Explain"> Если эта политика включена, предпочтение заблокировано на true. Если эта политика отключена, предпочтение заблокировано на false.
 
 Описание предпочтения см .:
