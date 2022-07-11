@@ -624,6 +624,8 @@
 	<string>tls1.2</string>
 	<key>SSLVersionMax</key>
 	<string>tls1.3</string>
+	<string>StartDownloadsInTempDirectory</string>
+	<true/>
 	<key>SupportMenu</key>
 	<dict>
 		<key>Title</key>
