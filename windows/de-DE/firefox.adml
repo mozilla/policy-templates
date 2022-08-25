@@ -940,6 +940,10 @@ Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https
       <string id="StartDownloadsInTempDirectory_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, startet Firefox Downloads in einem temporären Verzeichnis und löscht sie automatisch, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, startet Firefox Downloads im Download-Ordner und sie werden nicht automatisch gelöscht, wenn der Browser geschlossen wird.</string>
+      <string id="GoToIntranetSiteForSingleWordEntryInAddressBar">Force direct intranet site navigation on single word entries in the address bar</string>
+      <string id="GoToIntranetSiteForSingleWordEntryInAddressBar_Explain">If this policy is enabled, typing single word entries in the address bar will attempt to navigate to intranet sites first, falling back to search if the DNS request fails.
+
+If this policy is disabled or not configured, typing single word entries in the address bar will search.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:

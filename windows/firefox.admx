@@ -3873,7 +3873,17 @@
     </policy>
     <policy name="StartDownloadsInTempDirectory" class="Both" displayName="$(string.StartDownloadsInTempDirectory)" explainText="$(string.StartDownloadsInTempDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="StartDownloadsInTempDirectory">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF102"/>
+      <supportedOn ref="SUPPORTED_FF104"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="GoToIntranetSiteForSingleWordEntryInAddressBar" class="Both" displayName="$(string.GoToIntranetSiteForSingleWordEntryInAddressBar)" explainText="$(string.GoToIntranetSiteForSingleWordEntryInAddressBar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="GoToIntranetSiteForSingleWordEntryInAddressBar">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF104"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
