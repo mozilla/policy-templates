@@ -52,6 +52,12 @@
       <definition name="SUPPORTED_FF100" displayName="$(string.SUPPORTED_FF100)"/>
       <definition name="SUPPORTED_FF101" displayName="$(string.SUPPORTED_FF101)"/>
       <definition name="SUPPORTED_FF102" displayName="$(string.SUPPORTED_FF102)"/>
+      <definition name="SUPPORTED_FF104" displayName="$(string.SUPPORTED_FF104)"/>
+      <definition name="SUPPORTED_FF105" displayName="$(string.SUPPORTED_FF105)"/>
+      <definition name="SUPPORTED_FF106" displayName="$(string.SUPPORTED_FF106)"/>
+      <definition name="SUPPORTED_FF107" displayName="$(string.SUPPORTED_FF107)"/>
+      <definition name="SUPPORTED_FF108" displayName="$(string.SUPPORTED_FF108)"/>
+      <definition name="SUPPORTED_FF109" displayName="$(string.SUPPORTED_FF109)"/>
     </definitions>
   </supportedOn>
   <categories>
