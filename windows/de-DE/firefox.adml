@@ -375,7 +375,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="InstallAddonsPermission_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Add-Ons immer für die angegebenen URLs zulässig, sofern die Add-On-Installation nicht deaktiviert ist. Wenn eine Top-Level-Domain angegeben ist (http://example.org), sind Add-Ons für alle Subdomains ebenfalls zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Add-On Richtlinie verwendet.</string>
-      <string id="InstallAddonsPermission_Default">Add-On Installation deaktivieren</string>
+      <string id="InstallAddonsPermission_Default">Add-On Installation aktivieren</string>
       <string id="InstallAddonsPermission_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, können keine Add-ons installiert werden.
 
 Wenn Sie die Richtlinieneinstellungen nicht konfigurieren oder aktivieren, können Add-ons installiert werden.</string>
