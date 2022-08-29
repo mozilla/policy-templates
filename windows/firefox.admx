@@ -3873,7 +3873,7 @@
     </policy>
     <policy name="StartDownloadsInTempDirectory" class="Both" displayName="$(string.StartDownloadsInTempDirectory)" explainText="$(string.StartDownloadsInTempDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="StartDownloadsInTempDirectory">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF104"/>
+      <supportedOn ref="SUPPORTED_FF102"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
