@@ -61,6 +61,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
 | **[`FlashPlugin (Deprecated)`](#flashplugin-deprecated)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
+| **[`GoToIntranetSiteForSingleWordEntryInAddressBar`](#gotointranetsiteforsinglewordentryinaddressbar)** | Force direct intranet site navigation instead of searching when typing single word entries in the address bar.
 | **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
@@ -2908,6 +2909,51 @@ Value (string):
       "Default": true | false,
       "Locked": true | false
     }
+  }
+}
+```
+### GoToIntranetSiteForSingleWordEntryInAddressBar
+Whether to always go through the DNS server before sending a single word search string to a search engine.
+
+If the site exists, it will navigate to the website. If the intranet responds with a 404, the page will show a 404. If the intranet does not respond, the browser will attempt a search.
+
+The second result in the URL bar will be a search result to allow users to conduct a web search exactly as it was entered.
+
+If instead you would like to enable the ability to have your domain appear as a valid URL and to disallow the browser from ever searching that term using the first result that matches it, add the pref `browser.fixup.domainwhitelist.YOUR_DOMAIN` (where `YOUR_DOMAIN` is the name of the domain you'd like to add), and set the pref to `true`. The URL bar will then suggest `YOUR_DOMAIN` when the user fully types `YOUR_DOMAIN`. If the user attempts to load that domain and it fails to load, it will show an "Unable to connect" error page.
+
+You can also whitelist a domain suffix that is not part of the [Public Suffix List](https://publicsuffix.org/) by adding the pref `browser.fixup.domainsuffixwhitelist.YOUR_DOMAIN_SUFFIX` with a value of `true`.
+
+Additionally, if you want users to see a "Did you mean to go to 'YOUR_DOMAIN'" prompt below the URL bar if they land on a search results page instead of an intranet domain that provides a response, set the pref `browser.urlbar.dnsResolveSingleWordsAfterSearch` to `1`. Enabling this will cause the browser to commit a DNS check after every single word search. If the browser receives a response from the intranet, a prompt will ask the user if they'd like to instead navigate to `YOUR_DOMAIN`. If the user presses the **yes** button, `browser.fixup.domainwhitelist.YOUR_DOMAIN` will be set to `true`.
+
+**Compatibility:** Firefox 104, Firefox ESR 102.2\
+**CCK2 Equivalent:** `N/A`\
+**Preferences Affected:** `browser.fixup.dns_first_for_single_words`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\GoToIntranetSiteForSingleWordEntryInAddressBar = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/GoToIntranetSiteForSingleWordEntryInAddressBar
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>GoToIntranetSiteForSingleWordEntryInAddressBar</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "GoToIntranetSiteForSingleWordEntryInAddressBar": true | false
   }
 }
 ```

@@ -317,6 +317,8 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>GoToIntranetSiteForSingleWordEntryInAddressBar</key>
+	<true/>
 	<key>Handlers</key>
 	<dict>
 		<key>mimeTypes</key>

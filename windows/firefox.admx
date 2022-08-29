@@ -3881,5 +3881,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="GoToIntranetSiteForSingleWordEntryInAddressBar" class="Both" displayName="$(string.GoToIntranetSiteForSingleWordEntryInAddressBar)" explainText="$(string.GoToIntranetSiteForSingleWordEntryInAddressBar_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="GoToIntranetSiteForSingleWordEntryInAddressBar">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF104"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
