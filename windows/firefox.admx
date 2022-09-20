@@ -3891,5 +3891,12 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="AppUpdatePin" class="Both" displayName="$(string.AppUpdatePin)" explainText="$(string.AppUpdatePin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.String)">
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF102" />
+      <elements>
+        <text id="String" valueName="AppUpdatePin" required="true" />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
