@@ -8,6 +8,8 @@
 	<string>managedfirefox.com,example.com</string>
 	<key>AppAutoUpdate</key>
 	<true/>
+	<key>AppUpdatePin</key>
+	<string>106.</string>
 	<key>AppUpdateURL</key>
 	<string>https://www.example.com/update.xml</string>
 	<key>Authentication</key>

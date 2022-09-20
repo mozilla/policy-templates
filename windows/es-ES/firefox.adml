@@ -941,6 +941,10 @@ If this policy is disabled or not configured, Firefox will to the download folde
       <string id="GoToIntranetSiteForSingleWordEntryInAddressBar_Explain">If this policy is enabled, typing single word entries in the address bar will attempt to navigate to intranet sites first, falling back to search if the DNS request fails.
 
 If this policy is disabled or not configured, typing single word entries in the address bar will search.</string>
+      <string id="AppUpdatePin">Pin updates to a specific version</string>
+      <string id="AppUpdatePin_Explain">If this policy is enabled, you can specify a Firefox version as xx. or xx.xx. and Firefox will not be updated beyond that major or minor version.
+
+If this policy is disabled or not configured, Firefox will update normally.</string>
       <string id="Preferences_Boolean_Explain">Si esta política está habilitada, la preferencia se bloquea en true. Si esta política está deshabilitada, la preferencia está bloqueada en false.
 
 Para una descripción de la preferencia, visita:

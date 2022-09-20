@@ -9,6 +9,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`3rdparty`](#3rdparty)** | Set policies that WebExtensions can access via chrome.storage.managed.
 | **[`AllowedDomainsForApps`](#alloweddomainsforapps)** | Define domains allowed to access Google Workspace.
 | **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
+| **[`AppUpdatePin`](#appupdatepin)** | Prevent Firefox from being updated beyond the specified version.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
 | **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
 | **[`AutoLaunchProtocolsFromOrigins`](#autolaunchprotocolsfromorigins)** | Define a list of external protocols that can be used from listed origins without prompting the user.
@@ -247,6 +248,49 @@ Value (string):
 {
   "policies": {
     "AppAutoUpdate": true | false
+  }
+}
+```
+### AppUpdatePin
+
+Prevent Firefox from being updated beyond the specified version.
+
+You can specify the any version as ```xx.``` and Firefox will be updated with all minor versions, but will not be updated beyond the major version.
+
+You can also specify the version as ```xx.xx``` and Firefox will be updated with all patch versions, but will not be updated beyond the minor version.
+
+You should specify a version that exists or is guaranteed to exist. If you specify a version that doesn't end up existing, Firefox will update beyond that version.
+
+**Compatibility:** Firefox 102,\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AppUpdatePin = "106."
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AppUpdatePin
+```
+Value (string):
+```
+<enabled/>
+<data id="AppUpdatePin" value="106."/>
+```
+#### macOS
+```
+<dict>
+  <key>AppUpdatePin</key>
+  <string>106.</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AppUpdatePin": "106."
   }
 }
 ```
