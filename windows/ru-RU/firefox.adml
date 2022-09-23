@@ -70,7 +70,7 @@
       <string id="Popups_group">Всплывающие окна</string>
       <string id="Cookies_group">Cookies</string>
       <string id="Addons_group">Дополнения</string>
-      <string id="Extensions_group">Расшишрения</string>
+      <string id="Extensions_group">Расширения</string>
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Домашняя страница</string>
       <string id="Search_group">Поиск</string>
@@ -111,10 +111,10 @@
 Если эта политика отключена или не настроена, никакие веб-сайты не могут использовать аутентификацию NTLM.
 
 Для получения дополнительной информации см. https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
-      <string id="Authentication_AllowNonFQDN">Разрешить не полное доменное имя (Non FQDN)</string>
-      <string id="Authentication_AllowNonFQDN_Explain">Если эта политика включена (и флажки отмечены), вы всегда можете разрешить SPNEGO или NTLM для не полных доменных имен (Non FQDN).
+      <string id="Authentication_AllowNonFQDN">Разрешить неполное доменное имя (Non FQDN)</string>
+      <string id="Authentication_AllowNonFQDN_Explain">Если эта политика включена (и флажки отмечены), вы всегда можете разрешить SPNEGO или NTLM для неполных доменных имен (Non FQDN).
 
-Если эта политика отключена или не настроена, NTLM и SPNEGO не будут включены для не полных доменных имен.</string>
+Если эта политика отключена или не настроена, NTLM и SPNEGO не будут включены для неполных доменных имен.</string>
       <string id="Authentication_AllowProxies">Разрешить прокси</string>
       <string id="Authentication_AllowProxies_Explain">Если эта политика отключена, SPNEGO и NTLM не будут аутентифицироваться с прокси-серверами.
 
@@ -128,21 +128,21 @@
 
 Если эта политика отключена или не настроена, встроенная проверка подлинности не используется в режиме приватного просмотра.</string>
       <string id="BlockAboutAddons">Блокировка менеджера дополнений (about:addons)</string>
-      <string id="BlockAboutAddons_Explain">Если эта политика включена, пользователь не может получить доступ к диспетчеру надстроек или к сведениям о надстройках.
+      <string id="BlockAboutAddons_Explain">Если эта политика включена, пользователь не может получить доступ к менеджеру дополнений или к about:addons.
 
-Если эта политика отключена или не настроена, пользователь может получить доступ к диспетчеру надстроек и о надстройках.</string>
+Если эта политика отключена или не настроена, пользователь может получить доступ к менеджеру дополнений и к about:addons.</string>
       <string id="BlockAboutConfig">Блокировка редактора настроек (about:config)</string>
       <string id="BlockAboutConfig_Explain">Если эта политика включена, пользователь не может получить доступ к about:config.
 
 Если эта политика отключена или не настроена, пользователь может получить доступ к about:config.</string>
-      <string id="BlockAboutProfiles">Блокировка about:profiles</string>
-      <string id="BlockAboutProfiles_Explain">Если эта политика включена, пользователь не может получить доступ к профилям about:profiles.
+      <string id="BlockAboutProfiles">Блокировка страницы управления профилями (about:profiles)</string>
+      <string id="BlockAboutProfiles_Explain">Если эта политика включена, пользователь не может получить доступ к about:profiles.
 
-Если эта политика отключена или не настроена, пользователь может получить доступ к профилям about:profiles.</string>
+Если эта политика отключена или не настроена, пользователь может получить доступ к about:profiles.</string>
       <string id="BlockAboutSupport">Блокировка информации об устранении неполадок</string>
-      <string id="BlockAboutSupport_Explain">Если эта политика включена, пользователь не может получить доступ к информации для устранения неполадок или about:support.
+      <string id="BlockAboutSupport_Explain">Если эта политика включена, пользователь не может получить доступ к технической информации для решения проблем или к about:support.
 
-Если эта политика отключена или не настроена, пользователь может получить доступ к информации по устранению неполадок и about:support.</string>
+Если эта политика отключена или не настроена, пользователь может получить доступ к технической информации для решения проблем и к about:support.</string>
       <string id="DisableSetDesktopBackground">Отключить установку фона рабочего стола</string>
       <string id="DisableSetDesktopBackground_Explain">Если эта политика включена, пользователь не может установить изображение в качестве фона рабочего стола.
 
@@ -160,11 +160,11 @@
 
 Если эта политика отключена или не настроена, Firefox не будет устанавливать дополнительные сертификаты.</string>
       <string id="DefaultDownloadDirectory">Каталог загрузки по умолчанию</string>
-      <string id="DefaultDownloadDirectory_Explain">Если эта политика включена, вы можете установить каталог по умолчанию для загрузок. ${home} можно использовать в качестве собственного домашнего пути.
+      <string id="DefaultDownloadDirectory_Explain">Если эта политика включена, вы можете установить каталог по умолчанию для загрузок. ${home} можно использовать для указания собственного домашнего каталога.
 
 Если эта политика отключена или не настроена, используется каталог загрузки Firefox по умолчанию.</string>
       <string id="DownloadDirectory">Каталог загрузок</string>
-      <string id="DownloadDirectory_Explain">Если эта политика включена, вы можете установить и заблокировать каталог для загрузок. ${home} можно использовать в качестве собственного домашнего пути.
+      <string id="DownloadDirectory_Explain">Если эта политика включена, вы можете установить и заблокировать каталог для загрузок. ${home} можно использовать для указания собственного домашнего каталога.
 
 Если эта политика отключена или не настроена, используется каталог загрузки Firefox по умолчанию, и пользователь может его изменить.</string>
       <string id="DNSOverHTTPS_group">DNS через HTTPS</string>
@@ -188,7 +188,7 @@
       <string id="DNSOverHTTPS">Настройка DNS через HTTPS (перемещено)</string>
       <string id="DNSOverHTTPS_Explain">Если эта политика включена, можно изменить конфигурацию по умолчанию для DNS через HTTPS.
 
-Если эта политика отключена или не настроена, DNS Over HTTPS использует конфигурацию Firefox по умолчанию.</string>
+Если эта политика отключена или не настроена, DNS через HTTPS использует конфигурацию Firefox по умолчанию.</string>
       <string id="DisableMasterPasswordCreation">Отключить создание мастер-пароля</string>
       <string id="DisableMasterPasswordCreation_Explain">Если эта политика включена, пользователи не могут создать мастер-пароль.
 
@@ -212,27 +212,27 @@
 
 Если эта политика отключена или не настроена, инструменты веб-разработчика доступны в Firefox.</string>
       <string id="DisableFeedbackCommands">Отключить команды обратной связи</string>
-      <string id="DisableFeedbackCommands_Explain">Если эта политика включена, кнопка &quot; Отправить отзыв &quot; и &quot; Сообщить о мошенническом сайте &quot;  - пункты меню недоступны из меню справки.
+      <string id="DisableFeedbackCommands_Explain">Если эта политика включена,пункты меню «Отправить отзыв…» и «Сообщить о поддельном сайте…» недоступны из меню «Справка».
 
-Если эта политика отключена или не настроена, &quot; Отправить отзыв &quot; и &quot; Сообщить о мошенническом сайте &quot; элементы меню доступны из меню справки.</string>
+Если эта политика отключена или не настроена, пункты меню «Отправить отзыв…» и «Сообщить о поддельном сайте…» доступны из меню «Справка».</string>
       <string id="DisableFirefoxAccounts">Отключить учетные записи Firefox</string>
       <string id="DisableFirefoxAccounts_Explain">Если эта политика включена, учетные записи Firefox отключены, в том числе отключена синхронизация.
 
 Если эта политика отключена или не настроена, доступны Аккаунты Firefox и Синхронизация.</string>
-      <string id="DisableFirefoxScreenshots">Отключить скриншоты Firefox</string>
+      <string id="DisableFirefoxScreenshots">Отключить снимки экрана Firefox</string>
       <string id="DisableFirefoxScreenshots_Explain">Если эта политика включена, снимки экрана Firefox недоступны.
 
-Если эта политика отключена или не настроена, доступны скриншоты Firefox.</string>
+Если эта политика отключена или не настроена, доступны снимки экрана Firefox.</string>
       <string id="DisableFirefoxStudies">Отключить исследования Firefox</string>
       <string id="DisableFirefoxStudies_Explain">Если эта политика включена, Firefox никогда не будет проводить исследования SHIELD или опросы Heartbeat.
 
 Если эта политика отключена или не настроена, пользователь может включить исследования SHIELD или опросы Heartbeat.
 
 Для получения дополнительной информации см. https://support.mozilla.org/en-US/kb/shield and https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
-<string id="DisableForgetButton">Отключить кнопку "Забыть"</string>
-      <string id="DisableForgetButton_Explain">Если эта политика включена, кнопка «Забыть» кнопка недоступна.
+<string id="DisableForgetButton">Отключить кнопку «Забыть»</string>
+      <string id="DisableForgetButton_Explain">Если эта политика включена, кнопка «Забыть» недоступна.
 
-Если эта политика отключена или не настроена, кнопка «Забыть» кнопка доступна.</string>
+Если эта политика отключена или не настроена, кнопка «Забыть» доступна.</string>
       <string id="DisableFormHistory">Отключить историю форм</string>
       <string id="DisableFormHistory_Explain">Если эта политика включена, Firefox не запомнит историю форм или поиска.
 
@@ -250,63 +250,63 @@
 
 Если эта политика отключена или не настроена, приватный просмотр разрешен.</string>
       <string id="DisableProfileImport">Отключить импорт профиля</string>
-      <string id="DisableProfileImport_Explain">Если эта политика включена, "Импортировать данные из другого браузера" опция недоступна в окне закладок.
+      <string id="DisableProfileImport_Explain">Если эта политика включена, опция «Импортировать данные из другого браузера…» в окне закладок недоступна.
 
-Если эта политика отключена или не настроена, "Импортировать данные из другого браузера" вариант доступен.</string>
+Если эта политика отключена или не настроена, в окне закладок доступна опция «Импортировать данные из другого браузера…».</string>
       <string id="DisableProfileRefresh">Отключить обновление профиля</string>
-      <string id="DisableProfileRefresh_Explain">Если эта политика включена, кнопка «Обновить Firefox» кнопка недоступна на странице about:support или на сайте support.mozilla.org.
+      <string id="DisableProfileRefresh_Explain">Если эта политика включена, кнопка «Обновить Firefox» недоступна на странице about:support или на сайте support.mozilla.org.
 
-Если эта политика отключена или не настроена, кнопка «Обновить Firefox» кнопка доступна.</string>
+Если эта политика отключена или не настроена, кнопка «Обновить Firefox» доступна.</string>
       <string id="DisableSafeMode">Отключить безопасный режим</string>
       <string id="DisableSafeMode_Explain">Если эта политика включена, пользователь не может перезапустить браузер в безопасном режиме.
 
 Если эта политика отключена или не настроена, безопасный режим разрешен.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Предотвращение переопределения ошибок сертификата</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Если эта политика включена, параметр «Добавить исключение» кнопка недоступна, если сертификат недействителен. Это не позволяет пользователю переопределить ошибку сертификата.
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Если эта политика включена, кнопка «Добавить исключение» недоступна, если сертификат недействителен. Это не позволяет пользователю переопределить ошибку сертификата.
 
 Если эта политика отключена или не настроена, ошибки сертификата можно игнорировать.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Запретить переопределение ошибок безопасного просмотра</string>
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">Если эта политика включена, пользователь не может обойти предупреждение и посетить вредоносный сайт.
 
 Если эта политика отключена или не настроена, пользователь может выбрать посещение вредоносного сайта.</string>
-      <string id="DisableSystemAddonUpdate">Отключить обновления системных надстроек</string>
-      <string id="DisableSystemAddonUpdate_Explain">Если эта политика включена, новые системные надстройки не будут установлены, а существующие системные надстройки не будут обновлены.
+      <string id="DisableSystemAddonUpdate">Отключить обновления системных дополнений</string>
+      <string id="DisableSystemAddonUpdate_Explain">Если эта политика включена, новые системные дополнения не будут устанавливаться, а существующие системные дополнения не будут обновляться.
 
-Если эта политика отключена или не настроена, системные надстройки устанавливаются и обновляются.</string>
+Если эта политика отключена или не настроена, можно устанавливать и обновлять системные дополнения.</string>
       <string id="DisableTelemetry">Отключить телеметрию</string>
       <string id="DisableTelemetry_Explain">Если эта политика включена, телеметрия не выгружается.
 
 Если эта политика отключена или не настроена, данные телеметрии собираются и выгружаются.
 
-Mozilla рекомендует не отключать телеметрию. Информация, собранная с помощью телеметрии, помогает нам создавать лучший продукт для таких предприятий, как ваша.</string>
-      <string id="DisplayBookmarksToolbar">Показать панель закладок</string>
-      <string id="DisplayBookmarksToolbar_Explain">Если эта политика включена, панель закладок отображается по умолчанию. Пользователь по-прежнему может это скрыть.
+Mozilla рекомендует не отключать телеметрию. Информация, собранная с помощью телеметрии, помогает нам создавать лучший продукт для таких компаний, как ваша.</string>
+      <string id="DisplayBookmarksToolbar">Показывать панель закладок</string>
+      <string id="DisplayBookmarksToolbar_Explain">Если эта политика включена, панель закладок по умолчанию отображается. Пользователь может её скрыть.
 
 Если эта политика отключена или не настроена, панель закладок по умолчанию не отображается.</string>
-      <string id="DisplayMenuBar">Показать строку меню (устарело)</string>
-      <string id="DisplayMenuBar_Explain">Если эта политика включена, строка меню отображается по умолчанию. Пользователь по-прежнему может это скрыть.
+      <string id="DisplayMenuBar">Показывать строку меню (устарело)</string>
+      <string id="DisplayMenuBar_Explain">Если эта политика включена, строка меню по умолчанию отображается. Пользователь может её скрыть.
 
-Если эта политика отключена или не настроена, строка меню не отображается по умолчанию.</string>
-      <string id="DisplayMenuBar_Enum">Показать строку меню</string>
-      <string id="DisplayMenuBar_Enum_Explain">Если эта политика включена, вы можете выбрать, будет ли отображаться строка меню и может ли пользователь отображать и скрывать строку меню.
+Если эта политика отключена или не настроена, строка меню по умолчанию не отображается.</string>
+      <string id="DisplayMenuBar_Enum">Показывать строку меню</string>
+      <string id="DisplayMenuBar_Enum_Explain">Если эта политика включена, вы можете выбрать, будет ли отображаться строка меню и может ли пользователь её отображать и скрывать.
 
-Если эта политика отключена или не настроена, строка меню не отображается по умолчанию.</string>
+Если эта политика отключена или не настроена, строка меню по умолчанию не отображается.</string>
       <string id="DisplayMenuBar_Always">Всегда</string>
       <string id="DisplayMenuBar_Never">Никогда</string>
       <string id="DisplayMenuBar_Default_On">По умолчанию включено</string>
       <string id="DisplayMenuBar_Default_Off">По умолчанию выключено</string>
       <string id="DontCheckDefaultBrowser">Не проверять браузер по умолчанию</string>
-      <string id="DontCheckDefaultBrowser_Explain">Если эта политика включена, Firefox не проверяет, является ли он браузером по умолчанию при запуске.
+      <string id="DontCheckDefaultBrowser_Explain">Если эта политика включена, Firefox при запуске проверяет не проверяет, является ли он браузером по умолчанию.
 
 Если эта политика отключена или не настроена, Firefox при запуске проверяет, является ли он браузером по умолчанию.</string>
       <string id="Extensions_Install">Расширения для установки</string>
-      <string id="Extensions_Install_Explain">Если эта политика включена, вы можете указать список URL-адресов расширений или путей, которые будут установлены при запуске Firefox.
-Каждый раз, когда этот список изменяется, расширения будут переустанавливаться.
+      <string id="Extensions_Install_Explain">Если эта политика включена, вы можете указать список URL-адресов или путей расширений, которые будут установлены при запуске Firefox.
+При каждом изменении этого списка расширения будут переустанавливаться.
 
 Если эта политика отключена или не настроена, расширения не устанавливаются.</string>
       <string id="Extensions_Uninstall">Расширения для удаления</string>
       <string id="Extensions_Uninstall_Explain">Если эта политика включена, вы можете указать список идентификаторов расширений, которые будут удалены.
-Каждый раз при изменении этого списка расширения будут удалены.
+При каждом изменении этого списка расширения будут удаляться.
 
 Если эта политика отключена или не настроена, никакие расширения не удаляются.</string>
       <string id="Extensions_Locked">Запретить отключение или удаление расширений</string>
@@ -348,14 +348,14 @@ If this policy is disabled or not configured, Firefox will enforce SameSite=lax 
 
 Если эта политика включена или не настроена, будет включено прогнозирование сети (предварительная выборка DNS).</string>
       <string id="NewTabPage">Новая вкладка</string>
-      <string id="NewTabPage_Explain">Если эта политика отключена, новая вкладка откроется пустой.
+      <string id="NewTabPage_Explain">Если эта политика отключена, в новой вкладке будет открыта пустая страница.
 
-Если эта политика включена или не настроена, в новой вкладке прогрузится страница по умолчанию.</string>
-      <string id="OfferToSaveLogins">Предлагаем сохранить логины</string>
+Если эта политика включена или не настроена, в новой вкладке будет загружена страница по умолчанию.</string>
+      <string id="OfferToSaveLogins">Предлагать сохранить логины</string>
       <string id="OfferToSaveLogins_Explain">Если эта политика включена или не настроена, Firefox предложит сохранить логины и пароли веб-сайтов.
 
 Если эта политика отключена, Firefox не будет предлагать сохранять логины и пароли веб-сайтов.</string>
-      <string id="OfferToSaveLoginsDefault">Предложить сохранить логины (по умолчанию)</string>
+      <string id="OfferToSaveLoginsDefault">Предлагать сохранить логины (по умолчанию)</string>
       <string id="OfferToSaveLoginsDefault_Explain">Если эта политика включена или не настроена, Firefox предложит сохранить логины и пароли веб-сайтов.
 
 Если эта политика отключена, Firefox не будет предлагать сохранять логины и пароли веб-сайтов.
@@ -371,14 +371,14 @@ If this policy is disabled or not configured, Firefox will enforce SameSite=lax 
       <string id="PopupBlocking_Locked">Запретить изменение настроек</string>
       <string id="PopupBlocking_Locked_Explain">Если эта политика включена, пользователь не может изменить настройки всплывающих окон.
 
-Если эта политика отключена или не настроена, пользователь может изменить свои настройки всплывающих окон.</string>
-      <string id="InstallAddonsPermission_Allow_Explain">Если эта политика включена, надстройки всегда разрешены для указанных источников, если только установка надстроек не отключена. Если указан домен верхнего уровня (http://example.org), надстройки также разрешены для всех поддоменов.
+Если эта политика отключена или не настроена, пользователь может изменить настройки всплывающих окон.</string>
+      <string id="InstallAddonsPermission_Allow_Explain">Если эта политика включена, дополнения всегда разрешены для указанных источников, если только установка дополнений не отключена. Если указан домен верхнего уровня (http://example.org), дополнения также разрешены для всех поддоменов.
 
-Если эта политика отключена или не настроена, применяется политика надстроек по умолчанию.</string>
-      <string id="InstallAddonsPermission_Default">Разрешить установку надстроек с веб-сайтов</string>
-      <string id="InstallAddonsPermission_Default_Explain">Если эта политика отключена, надстройки не могут быть установлены.
+Если эта политика отключена или не настроена, применяется политика дополнений по умолчанию.</string>
+      <string id="InstallAddonsPermission_Default">Разрешить установку дополнений с веб-сайтов</string>
+      <string id="InstallAddonsPermission_Default_Explain">Если эта политика отключена, дополнения не могут быть установлены.
 
-Если эта политика не настроена или не включена, можно установить надстройки.</string>
+Если эта политика не настроена или не включена, можно установить дополнения.</string>
       <string id="Cookies_Allow_Explain">Если эта политика включена, файлы cookie всегда разрешены для указанных источников. Если указан домен верхнего уровня (http://example.org), файлы cookie также разрешены для всех поддоменов.
 
 Если эта политика отключена или не настроена, применяется политика файлов cookie по умолчанию.</string>
@@ -551,9 +551,9 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="SanitizeOnShutdown_group">Удалять данные при закрытии браузера</string>
 
       <string id="SanitizeOnShutdown_Cache">Кэш</string>
-      <string id="SanitizeOnShutdown_Cache_Explain">Если политика включена, кеш очищается при закрытии браузера.
+      <string id="SanitizeOnShutdown_Cache_Explain">Если политика включена, кэш очищается при закрытии браузера.
 
-Если эта политика отключена или не настроена, кеш не очищается при закрытии браузера.</string>
+Если эта политика отключена или не настроена, кэш не очищается при закрытии браузера.</string>
       <string id="SanitizeOnShutdown_Cookies">Файлы cookie</string>
       <string id="SanitizeOnShutdown_Cookies_Explain">Если политика включена, файлы cookie очищаются при закрытии браузера.
 
@@ -562,10 +562,10 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="SanitizeOnShutdown_Downloads_Explain">Если политика включена, история загрузок очищается при закрытии браузера.
 
 Если эта политика отключена или не настроена, история загрузок не очищается при закрытии браузера.</string>
-      <string id="SanitizeOnShutdown_FormData">Форма &amp; История поиска &amp;</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">Если политика включена, данные формы очищаются при закрытии браузера.
+      <string id="SanitizeOnShutdown_FormData">Данные форм&amp;История поиска</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Если политика включена, данные форм очищаются при закрытии браузера.
 
-Если эта политика отключена или не настроена, данные формы не очищаются при закрытии браузера.</string>
+Если эта политика отключена или не настроена, данные форм не очищаются при закрытии браузера.</string>
       <string id="SanitizeOnShutdown_History">История просмотров</string>
       <string id="SanitizeOnShutdown_History_Explain">Если политика включена, история просмотра очищается при закрытии браузера.
 
@@ -589,11 +589,11 @@ If this policy is not configured or disabled, in private browsing, cookies are r
 
 Если эта политика не настроена, пользователь не может изменить настройки завершения работы (предыдущее поведение).</string>
       <string id="WebsiteFilter_Block">Заблокированные веб-сайты</string>
-      <string id="WebsiteFilter_Block_Explain">Если эта политика включена, вы можете указать шаблоны соответствия, указывающие на то, что сайты должны быть заблокированы. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на вход - 1000.
+      <string id="WebsiteFilter_Block_Explain">Если эта политика включена, вы можете указать шаблоны соответствия, указывающие на сайты, которые должны быть заблокированы. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
 
 Если эта политика отключена или не настроена, никакие веб-сайты не блокируются.</string>
        <string id="WebsiteFilter_Exceptions">Исключения для заблокированных веб-сайтов</string>
-       <string id="WebsiteFilter_Exceptions_Explain">Если эта политика включена и фильтр веб-сайтов включен, вы можете указать шаблоны соответствия для сайтов, которые не хотите блокировать. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на вход - 1000.
+       <string id="WebsiteFilter_Exceptions_Explain">Если эта политика включена и фильтр веб-сайтов включен, вы можете указать шаблоны соответствия для сайтов, которые не хотите блокировать. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
 
 Если эта политика отключена или не настроена, для фильтра веб-сайтов нет исключений.</string>
       <string id="Bookmark01">Закладка 01</string>
@@ -652,13 +652,13 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="BookmarkPlacementToolbar">Панель инструментов</string>
       <string id="BookmarkPlacementMenu">Меню</string>
       <string id="NoDefaultBookmarks">Нет закладок по умолчанию</string>
-      <string id="NoDefaultBookmarks_Explain">Если эта политика включена, закладки по умолчанию и смарт-закладки (наиболее посещаемые, недавние теги) не создаются.
+      <string id="NoDefaultBookmarks_Explain">Если эта политика включена, закладки по умолчанию и смарт-закладки (часто посещаемые, недавние) не создаются.
 
-Если эта политика отключена или не настроена, создаются закладки по умолчанию и смарт-закладки (наиболее посещаемые, последние теги).
+Если эта политика отключена или не настроена, создаются закладки по умолчанию и смарт-закладки (часто посещаемые, недавние).
 
 Примечание: эта политика эффективна только в том случае, если она используется до первого запуска профиля.</string>
       <string id="HomepageURL">URL для домашней страницы</string>
-      <string id="HomepageURL_Explain">Если эта политика включена, вы можете установить домашнюю страницу по умолчанию. Вы также можете заблокировать домашнюю страницу.
+      <string id="HomepageURL_Explain">Если эта политика включена, вы можете установить домашнюю страницу по умолчанию. Вы также можете заблокировать изменение домашней страницы.
 
 Если эта политика отключена или не настроена, пользователь может установить и изменить домашнюю страницу.</string>
       <string id="HomepageAdditional">Дополнительные домашние страницы</string>
@@ -673,12 +673,12 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="Homepage">Домашняя страница</string>
       <string id="PreviousSession">Предыдущий сеанс</string>
       <string id="HomepageLocked">Домашняя страница (заблокирована)</string>
-      <string id="Homepage_ShowHomeButton">Show Home button on toolbar</string>
-      <string id="Homepage_ShowHomeButton_Explain">If this policy is enabled, the home button will appear on the toolbar by default.
+      <string id="Homepage_ShowHomeButton">Показывать кнопку «Домашняя страница» на панели инструментов</string>
+      <string id="Homepage_ShowHomeButton_Explain">Если эта политика включена, кнопка «Домашняя страница» по умолчанию отображается на панели инструментов.
 
-If this policy is disabled, the home button will not appear on the toolbar by default.
+Если эта политика отключена, кнопка «Домашняя страница» по умолчанию не отображается на панели инструментов.
 
-If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
+Если эта политика не настроена, Firefox определит, отображается ли кнопка «Домашняя страница» на панели инструментов по умолчанию.</string>
       <string id="PasswordManagerEnabled">Менеджер паролей</string>
       <string id="PasswordManagerEnabled_Explain">Если эта политика отключена, менеджер паролей недоступен в настройках.
 
@@ -746,9 +746,9 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
 
 Если эта политика отключена или не настроена, приложение будет использовать языковой стандарт по умолчанию.</string>
       <string id="SecurityDevices">Устройства безопасности</string>
-      <string id="SecurityDevices_Explain">Если эта политика включена, вы можете указать список модулей PKCS#11 для установки. Модули указываются в виде имени и полного пути.
+      <string id="SecurityDevices_Explain">Если эта политика включена, вы можете указать список модулей PKCS # 11 для установки. Модули указываются в виде имени и полного пути.
 
-Если эта политика отключена или не настроена, дополнительные модули PKCS#11 не будут установлены.</string>
+Если эта политика отключена или не настроена, дополнительные модули PKCS # 11 не будут установлены.</string>
       <string id="SearchBar">Расположение панели поиска</string>
       <string id="SearchBar_Explain">Если эта политика включена, вы можете указать, будет ли панель поиска отделена от строки URL.
 
@@ -761,33 +761,33 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
       <string id="SearchEngines_Explain">Если эта политика включена, вы можете настроить поисковую систему для добавления в Firefox. Используйте {searchTerms}, чтобы указать, где находится поисковый запрос. Из-за ошибки вы должны выбрать метод (обычно GET). Обратите внимание, что вы должны указывать поисковые системы по порядку.
 
 Если эта политика отключена или не настроена, новая поисковая система не добавляется.</string>
-      <string id="SearchBar_Unified">Унифицированный</string>
-      <string id="SearchBar_Separate">Отдельно</string>
+      <string id="SearchBar_Unified">Единая</string>
+      <string id="SearchBar_Separate">Отдельная</string>
       <string id="SearchEngine_Method_GET">GET</string>
       <string id="SearchEngine_Method_POST">POST</string>
       <string id="SearchEngines_Default">Поисковая система по умолчанию</string>
-      <string id="SearchEngines_Default_Explain">Если эта политика включена, вы можете установить имя поисковой системы, которое будет использоваться по умолчанию.
+      <string id="SearchEngines_Default_Explain">Если эта политика включена, вы можете установить поисковую систему, которая будет использоваться по умолчанию.
 
-Если эта политика отключена или не настроена, используется движок по умолчанию Firefox.</string>
+Если эта политика отключена или не настроена, по умолчанию используется механизм Firefox.</string>
       <string id="SearchEngines_PreventInstalls">Запретить установку поисковых систем</string>
       <string id="SearchEngines_PreventInstalls_Explain">Если эта политика включена, пользователь не может устанавливать поисковые системы с веб-страницы.
 
 Если эта политика отключена или не настроена, поисковые системы могут быть установлены с веб-страниц.</string>
       <string id="SearchEngines_Remove">Удалить поисковые системы</string>
-      <string id="SearchEngines_Remove_Explain">Если эта политика включена, вы можете указать имена движков, которые нужно удалить или скрыть.
+      <string id="SearchEngines_Remove_Explain">Если эта политика включена, вы можете указать поисковые системы, которые нужно удалить или скрыть.
 
 Если эта политика отключена или не настроена, поисковые системы не будут удалены или скрыты.</string>
       <string id="SearchSuggestEnabled">Подсказки по поиску</string>
-      <string id="SearchSuggestEnabled_Explain">Если эта политика отключена, подсказки поиска будут отключены.
+      <string id="SearchSuggestEnabled_Explain">Если эта политика отключена, поисковые подсказки будут отключены.
 
 Если эта политика включена, будут включены поисковые подсказки.
 
 Если эта политика не настроена, поисковые подсказки будут включены, но пользователь может отключить их.</string>
-      <string id="SSLVersionMin">Минимальная версия SSL включена</string>
+      <string id="SSLVersionMin">Включить минимальную версию SSL</string>
       <string id="SSLVersionMin_Explain">Если эта политика включена, Firefox не будет использовать версии SSL/TLS меньше указанного значения.
 
 Если эта политика отключена или не настроена, Firefox по умолчанию использует как минимум TLS 1.0.</string>
-       <string id="SSLVersionMax">Включена максимальная версия SSL</string>
+       <string id="SSLVersionMax">Включить максимальную версию SSL</string>
        <string id="SSLVersionMax_Explain">Если эта политика включена, Firefox не будет использовать версии SSL/TLS, превышающие указанное значение.
 
 Если эта политика отключена или не настроена, Firefox по умолчанию использует максимум TLS 1.3.</string>
@@ -800,9 +800,9 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
 
 Если эта политика отключена или не настроена, пункт меню не добавляется.</string>
       <string id="UserMessaging_WhatsNew">Что нового</string>
-      <string id="UserMessaging_WhatsNew_Explain">Если эта политика отключена, значок и элемент меню Что нового отображаться не будут.
+      <string id="UserMessaging_WhatsNew_Explain">Если эта политика отключена, значок и элемент меню «Что нового» отображаться не будут.
 
-Если эта политика включена или не настроена, будут отображаться значок «Что нового» и элемент меню.</string>
+Если эта политика включена или не настроена, будут отображаться значок и элемент меню «Что нового».</string>
       <string id="UserMessaging_ExtensionRecommendations">Рекомендации по расширению</string>
       <string id="UserMessaging_ExtensionRecommendations_Explain">Если эта политика отключена, расширения не будут рекомендоваться при посещении пользователем веб-сайтов.
 
@@ -1026,8 +1026,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <listBox refId="Authentication"/>
       </presentation>
       <presentation id="Authentication_AllowNonFQDN">
-        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Всегда разрешать NTLM для не полных доменных имен</checkBox>
-         <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Всегда разрешать SPNEGO для не полных доменных имен</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Всегда разрешать NTLM для неполных доменных имен</checkBox>
+         <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Всегда разрешать SPNEGO для неполных доменных имен</checkBox>
        </presentation>
        <presentation id="Authentication_AllowProxies">
          <checkBox refId="Authentication_AllowProxies_NTLM">Разрешить NTLM автоматически аутентифицироваться на прокси-серверах</checkBox>
@@ -1063,7 +1063,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <dropdownList refId="SearchBar" />
       </presentation>
       <presentation id="TrackingProtection">
-        <checkBox refId="TrackingProtectionLocked">Не разрешать изменять настройки защиты от отслеживания.</checkBox>
+        <checkBox refId="TrackingProtectionLocked">Не разрешать изменение настройки защиты от отслеживания.</checkBox>
         <checkBox refId="Cryptomining">Блокировать скрипты майнинга.</checkBox>
         <checkBox refId="Fingerprinting">Блокировать скрипты снятия отпечатков пальцев.</checkBox>
         <text>Исключения:</text>
@@ -1082,7 +1082,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <textBox refId="HomepageURL">
           <label/>
         </textBox>
-        <checkBox refId="HomepageLocked">Не позволяйте изменять домашнюю страницу.</checkBox>
+        <checkBox refId="HomepageLocked">Не позволять изменять домашнюю страницу.</checkBox>
        </presentation>
        <presentation id="HomepageAdditional">
          <listBox refId="HomepageAdditional">Дополнительные домашние страницы</listBox>
@@ -1147,14 +1147,14 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <listBox refId="SearchEngines_Remove"/>
       </presentation>
       <presentation id="Proxy">
-        <checkBox refId="ProxyLocked">Не разрешайте изменять настройки прокси.</checkBox>
+        <checkBox refId="ProxyLocked">Не разрешать изменение настроек прокси.</checkBox>
          <text>Тип подключения:</text>
          <dropdownList refId="ConnectionType" />
          <text>HTTP-прокси:</text>
         <textBox refId="HTTPProxy">
           <label/>
         </textBox>
-        <checkBox refId="UseHTTPProxyForAllProtocols">Используйте этот прокси-сервер для всех протоколов.</checkBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">Использовать этот прокси-сервер для всех протоколов.</checkBox>
         <text>SSL прокси:</text>
         <textBox refId="SSLProxy">
           <label/>
@@ -1187,7 +1187,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
            <label />
          </textBox>
          <checkBox refId="DNSOverHTTPSEnabled">Включить DNS через HTTPS.</checkBox>
-         <checkBox refId="DNSOverHTTPSLocked">Запрещать изменять настройки DNS поверх HTTPS.</checkBox>
+         <checkBox refId="DNSOverHTTPSLocked">Запретить изенение настроек DNS поверх HTTPS.</checkBox>
        </presentation>
        <presentation id="SSLVersion">
          <dropdownList refId="SSLVersion" />
@@ -1227,11 +1227,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <checkBox refId="SanitizeOnShutdown_Cache">Кэш</checkBox>
         <checkBox refId="SanitizeOnShutdown_Cookies">Файлы cookie</checkBox>
         <checkBox refId="SanitizeOnShutdown_Downloads">История загрузок</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Форма &amp; История поиска &amp;</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Данные форм&amp;История поиска</checkBox>
         <checkBox refId="SanitizeOnShutdown_History">История просмотров</checkBox>
         <checkBox refId="SanitizeOnShutdown_Sessions">Активные логины</checkBox>
         <checkBox refId="SanitizeOnShutdown_SiteSettings">Настройки сайта</checkBox>
-        <checkBox refId="SanitizeOnShutdown_OfflineApps">автономные данные веб-сайта</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Данные автономного веб-сайта</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">Поиск</checkBox>
