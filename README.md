@@ -5761,7 +5761,7 @@ Force downloads to start off in a local, temporary location rather than the defa
 
 **Compatibility:** Firefox 102\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.downloads.start_downloads_in_tmp_dir`
+**Preferences Affected:** `browser.download.start_downloads_in_tmp_dir`
 
 #### Windows (GPO)
 ```
