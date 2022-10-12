@@ -2379,6 +2379,7 @@ OMA-URI:
 ```
 Value (string):
 ```
+<enabled/>
 <data id="TrackingProtection_Exceptions" value="1&#xF000;https://example.com"/>
 ```
 OMA-URI:
