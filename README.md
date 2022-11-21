@@ -4889,6 +4889,8 @@ Value (string):
 Configure proxy settings. These settings correspond to the connection settings in Firefox preferences.
 To specify ports, append them to the hostnames with a colon (:).
 
+Unless you lock this policy, changes the user already has in place will take effect.
+
 `Mode` is the proxy method being used.
 
 `Locked` is whether or not proxy settings can be changed.
