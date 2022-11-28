@@ -5731,7 +5731,7 @@ Value (string):
 <enabled/>
 <data id="SupportMenuTitle" value="Support Menu"/>
 <data id="SupportMenuURL" value="http://example.com/support"/>
-<data id="SupportMenuAccessKey" value="S">
+<data id="SupportMenuAccessKey" value="S"/>
 ```
 #### macOS
 ```
