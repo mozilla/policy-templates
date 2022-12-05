@@ -364,10 +364,10 @@ Dans les deux cas, l'utilisateur pourra modifier la valeur (elle n'est pas verro
       <string id="PopupBlocking_Allow_Explain">Si cette stratégie est activée, les fenêtres contextuelles sont toujours autorisées pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les fenêtres contextuelles sont également autorisées pour tous les sous-domaines.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut des fenêtres contextuelles est suivie.</string>
-      <string id="PopupBlocking_Default">Autoriser les fenêtres publicitaires intempestives à partir de sites Web</string>
-      <string id="PopupBlocking_Default_Explain">Si cette stratégie est désactivée, les fenêtres contextuelles sont autorisées à partir des sites Web par défaut.
+      <string id="PopupBlocking_Default">Bloquer les pop-ups des sites Web</string>
+      <string id="PopupBlocking_Default_Explain">Si cette stratégie est désactivée, les pop-ups sont autorisées à partir des sites Web.
 
-Si cette stratégie n'est ni configurée ni activée, les fenêtres contextuelles ne sont pas autorisées à partir de sites Web.</string>
+Si cette stratégie est non configurée ou activée, les pop-ups ne sont pas autorisées à partir de sites Web.</string>
       <string id="PopupBlocking_Locked">Ne pas autoriser la modification des préférences</string>
       <string id="PopupBlocking_Locked_Explain">Si cette stratégie est activée, les préférences en incrustation ne peuvent pas être modifiées par l'utilisateur.
 
