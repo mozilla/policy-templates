@@ -279,10 +279,17 @@ Si esta política está deshabilitada o no está configurada, los complementos d
 Si esta política está deshabilitada o no está configurada, la telemetría se recopila y carga.
 
 Mozilla recomienda que no deshabilite la telemetría. La información recopilada a través de la telemetría nos ayuda a construir un mejor producto para empresas como la suya.</string>
-      <string id="DisplayBookmarksToolbar">Mostrar barra de herramientas de marcadores</string>
+      <string id="DisplayBookmarksToolbar">Mostrar barra de herramientas de marcadores (deprecata)</string>
       <string id="DisplayBookmarksToolbar_Explain">Si esta política está habilitada, la barra de herramientas de marcadores se mostrará de manera predeterminada. El usuario aún podrá ocultarlo.
 
 Si esta política está deshabilitada o no está configurada, la barra de herramientas de marcadores no se mostrará de forma predeterminada.</string>
+      <string id="DisplayBookmarksToolbar_Enum">Display Bookmarks Toolbar</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">If this policy is enabled, the default bokmarks toolbar display can be configured.
+
+If this policy is disabled or not configured, the bookmarks toolbar is displayed on the new tab page by default.</string>
+      <string id="DisplayBookmarksToolbar_Always">Always</string>
+      <string id="DisplayBookmarksToolbar_Never">Never</string>
+      <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
       <string id="DisplayMenuBar">Mostrar barra de menú (obsoleto)</string>
       <string id="DisplayMenuBar_Explain">Si esta política está habilitada, la barra de menú se mostrará de forma predeterminada. El usuario aún puede ocultarlo.
 
@@ -1251,6 +1258,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
       </presentation>
       <presentation id="String">
         <textBox refId="String">
