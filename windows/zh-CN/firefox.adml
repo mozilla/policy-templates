@@ -279,10 +279,17 @@
 若禁用或不设定此原则，则会收集并上传 Telemetry 资料。 
 
 Mozilla 建议您不要禁用 Telemetry。 透过 Telemetry 收集到的信息可帮助为企业用户打造更好的产品。 </string>
-   <string id="DisplayBookmarksToolbar">显示书签工具栏</string>
+   <string id="DisplayBookmarksToolbar">显示书签工具栏（已弃用）</string>
    <string id="DisplayBookmarksToolbar_Explain">若启用此原则，默认将显示书签工具栏。 用户还是可以将其隐藏。 
 
 若禁用或不设定此原则，则默认不会显示书签工具栏。 </string>
+   <string id="DisplayBookmarksToolbar_Enum">Display Bookmarks Toolbar</string>
+   <string id="DisplayBookmarksToolbar_Enum_Explain">If this policy is enabled, the default bokmarks toolbar display can be configured.
+
+If this policy is disabled or not configured, the bookmarks toolbar is displayed on the new tab page by default.</string>
+   <string id="DisplayBookmarksToolbar_Always">Always</string>
+   <string id="DisplayBookmarksToolbar_Never">Never</string>
+   <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
    <string id="DisplayMenuBar">显示菜单列（已弃用）</string>
    <string id="DisplayMenuBar_Explain">若启用此原则，默认将显示菜单列。 用户还是可以将其隐藏。 
 
@@ -1249,7 +1256,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
    </presentation>
    <presentation id="DisplayMenuBar">
 <dropdownList refId="DisplayMenuBar"/>
-   </presentation>
+   </presentation>\
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
+      </presentation>
    <presentation id="String">
 <textBox refId="String">
      <label/>

@@ -48,6 +48,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or updated.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
+| **[`DisplayBookmarksToolbar (Deprecated)`](#displaybookmarkstoolbar-deprecated)** | Set the initial state of the bookmarks toolbar.
 | **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
 | **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
@@ -2050,6 +2051,48 @@ Value (string):
 }
 ```
 ### DisplayBookmarksToolbar
+Set the initial state of the bookmarks toolbar. A user can still change how it is displayed.
+
+`always` means the bookmarks toolbar is always shown.
+
+`never` means the bookmarks toolbar is not shown.
+
+`newtab` means the bookmarks toolbar is only shown on the new tab page.
+
+**Compatibility:** Firefox 109, Firefox ESR 102.7\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = "always", "never", "newtab"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisplayBookmarksToolbar_Enum
+```
+Value (string):
+```
+<enabled/>
+<data id="DisplayBookmarksToolbar" value="always | never | newtab"/>
+```
+#### macOS
+```
+<dict>
+  <key>DisplayBookmarksToolbar</key>
+  <string>always | never | newtab</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisplayBookmarksToolbar": always | never | newtab
+  }
+}
+```
+### DisplayBookmarksToolbar (Deprecated)
 Set the initial state of the bookmarks toolbar. A user can still hide it and it will stay hidden.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\

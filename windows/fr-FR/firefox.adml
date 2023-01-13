@@ -279,10 +279,17 @@ Si cette stratégie est désactivée ou non configurée, les modules complément
 Si cette stratégie est désactivée ou non configurée, la télémétrie est collectée et téléchargée.
 
 Mozilla vous recommande de ne pas désactiver la télémétrie. Les informations recueillies par télémétrie nous aident à créer un meilleur produit pour des entreprises comme la vôtre.</string>
-      <string id="DisplayBookmarksToolbar">Afficher la Barre d'outils des signets</string>
+      <string id="DisplayBookmarksToolbar">Afficher la Barre d'outils des signets (Deprecated)</string>
       <string id="DisplayBookmarksToolbar_Explain">Si cette stratégie est activée, la barre d'outils des signets est affichée par défaut. L'utilisateur peut toujours le cacher.
 
 Si cette stratégie est désactivée ou non configurée, la barre d’outils des signets ne s’affiche pas par défaut. </string>
+      <string id="DisplayBookmarksToolbar_Enum">Display Bookmarks Toolbar</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">If this policy is enabled, the default bokmarks toolbar display can be configured.
+
+If this policy is disabled or not configured, the bookmarks toolbar is displayed on the new tab page by default.</string>
+      <string id="DisplayBookmarksToolbar_Always">Always</string>
+      <string id="DisplayBookmarksToolbar_Never">Never</string>
+      <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
       <string id="DisplayMenuBar">Afficher la Barre de menus (Deprecated)</string>
       <string id="DisplayMenuBar_Explain">Si cette stratégie est activée, la barre de menus est affichée par défaut. L'utilisateur peut toujours le cacher.
 
@@ -1250,6 +1257,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
       </presentation>
       <presentation id="String">
         <textBox refId="String">

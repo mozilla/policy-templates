@@ -279,10 +279,17 @@
 若停用或不設定此原則，則會收集並上傳 Telemetry 資料。
 
 Mozilla 建議您不要停用 Telemetry。透過 Telemetry 收集到的資訊可幫助為企業使用者打造更好的產品。</string>
-      <string id="DisplayBookmarksToolbar">顯示書籤工具列</string>
+      <string id="DisplayBookmarksToolbar">顯示書籤工具列（已棄用）</string>
       <string id="DisplayBookmarksToolbar_Explain">若啟用此原則，預設將顯示書籤工具列。使用者還是可以將其隱藏。
 
 若停用或不設定此原則，則預設不會顯示書籤工具列。</string>
+      <string id="DisplayBookmarksToolbar_Enum">Display Bookmarks Toolbar</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">If this policy is enabled, the default bokmarks toolbar display can be configured.
+
+If this policy is disabled or not configured, the bookmarks toolbar is displayed on the new tab page by default.</string>
+      <string id="DisplayBookmarksToolbar_Always">Always</string>
+      <string id="DisplayBookmarksToolbar_Never">Never</string>
+      <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
       <string id="DisplayMenuBar">顯示選單列（已棄用）</string>
       <string id="DisplayMenuBar_Explain">若啟用此原則，預設將顯示選單列。使用者還是可以將其隱藏。
 
@@ -1249,6 +1256,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
       </presentation>
       <presentation id="String">
         <textBox refId="String">

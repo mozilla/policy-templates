@@ -279,10 +279,17 @@
 Если эта политика отключена или не настроена, данные телеметрии собираются и выгружаются.
 
 Mozilla рекомендует не отключать телеметрию. Информация, собранная с помощью телеметрии, помогает нам создавать лучший продукт для таких компаний, как ваша.</string>
-      <string id="DisplayBookmarksToolbar">Показывать панель закладок</string>
+      <string id="DisplayBookmarksToolbar">Показывать панель закладок (устарело)</string>
       <string id="DisplayBookmarksToolbar_Explain">Если эта политика включена, панель закладок по умолчанию отображается. Пользователь может её скрыть.
 
 Если эта политика отключена или не настроена, панель закладок по умолчанию не отображается.</string>
+      <string id="DisplayBookmarksToolbar_Enum">Display Bookmarks Toolbar</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">If this policy is enabled, the default bokmarks toolbar display can be configured.
+
+If this policy is disabled or not configured, the bookmarks toolbar is displayed on the new tab page by default.</string>
+      <string id="DisplayBookmarksToolbar_Always">Always</string>
+      <string id="DisplayBookmarksToolbar_Never">Never</string>
+      <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
       <string id="DisplayMenuBar">Показывать строку меню (устарело)</string>
       <string id="DisplayMenuBar_Explain">Если эта политика включена, строка меню по умолчанию отображается. Пользователь может её скрыть.
 
@@ -1251,6 +1258,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
       </presentation>
       <presentation id="String">
         <textBox refId="String">
