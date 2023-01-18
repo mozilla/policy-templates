@@ -2088,7 +2088,7 @@ Value (string):
 ```
 {
   "policies": {
-    "DisplayBookmarksToolbar": always | never | newtab
+    "DisplayBookmarksToolbar": "always" | "never" | "newtab"
   }
 }
 ```
