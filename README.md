@@ -1210,6 +1210,7 @@ Value (string):
 {
   "policies": {
     "DefaultDownloadDirectory": "${home}/Downloads"
+  }
 }
 ```
 #### policies.json (Windows)
@@ -1217,6 +1218,7 @@ Value (string):
 {
   "policies": {
     "DefaultDownloadDirectory": "${home}\\Downloads"
+  }
 }
 ```
 ### DisableAppUpdate
