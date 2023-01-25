@@ -34,3 +34,8 @@ Before any command line policies will work, you need to enable policies like thi
 ```bash
 sudo defaults write /Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
 ```
+If you want to set user specific policies, use ~/Library without sudo:
+```bash
+defaults write ~/Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
+defaults write ~/Library/Preferences/org.mozilla.firefox Homepage__URL -string "http://example.com"
+```
