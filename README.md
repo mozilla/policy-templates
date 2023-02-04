@@ -47,6 +47,7 @@ Policies can be specified using the [Group Policy templates on Windows](https://
 | **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** | Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
 | **[`DisableSystemAddonUpdate`](#disablesystemaddonupdate)** | Prevent system add-ons from being installed or updated.
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
+| **[`DisableThirdPartyModuleBlocking`](#disablethirdpartymoduleblocking)** | Do not allow blocking third-party modules.
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
 | **[`DisplayBookmarksToolbar (Deprecated)`](#displaybookmarkstoolbar-deprecated)** | Set the initial state of the bookmarks toolbar.
 | **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
@@ -2051,6 +2052,28 @@ Value (string):
     "DisableTelemetry": true | false
   }
 }
+```
+### DisableThirdPartyModuleBlocking
+Do not allow blocking third-party modules from the `about:third-party` page.
+
+This policy only works on Windows through GPO (not policies.json).
+
+**Compatibility:** Firefox 110 (Windows only, GPO only)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableThirdPartyModuleBlocking = = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableThirdPartyModuleBlocking
+```
+Value (string):
+```
+<enabled/> or <disabled/>
 ```
 ### DisplayBookmarksToolbar
 Set the initial state of the bookmarks toolbar. A user can still change how it is displayed.
