@@ -80,6 +80,7 @@
    <string id="EncryptedMediaExtensions_group">加密媒体扩充功能</string>
    <string id="PDFjs_group">PDF.js</string>
    <string id="PictureInPicture_group">子母画面</string>
+   <string id="ProxySettings_group">Proxy Settings</string>
    <string id="Allow">允许的网站</string>
    <string id="AllowSession">允许的网站（仅当次浏览阶段）</string>
    <string id="Block">封锁的网站</string>
@@ -950,6 +951,46 @@ If this policy is disabled or not configured, typing single word entries in the 
       <string id="AppUpdatePin_Explain">If this policy is enabled, you can specify a Firefox version as xx. or xx.xx. and Firefox will not be updated beyond that major or minor version.
 
 If this policy is disabled or not configured, Firefox will update normally.</string>
+      <string id="Proxy_Locked">Do not allow proxy settings to be changed</string>
+      <string id="Proxy_Locked_Explain">If this policy is enabled, proxy settings cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their proxy settings.</string>
+      <string id="Proxy_ConnectionType">Connection Type</string>
+      <string id="Proxy_ConnectionType_Explain">If this policy is enabled, you can set the connection type.
+
+If this policy is disabled or not configured, Firefox defaults to using the system proxy.</string>
+      <string id="Proxy_HTTPProxy">HTTP Proxy</string>
+      <string id="Proxy_HTTPProxy_Explain">If this policy is enabled, you can set the HTTP Proxy used when manual proxy configuration is specified.
+
+If this policy is disabled or not configured, Firefox does not use an HTTP Proxy.</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols">Use HTTP proxy for HTTPS</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols_Explain">If this policy is enabled, the HTTP Proxy is used for HTTPS when manual proxy configuration is specified.
+
+If this policy is disabled or not configured, Firefox does not use an HTTPS Proxy unless specified.</string>
+      <string id="Proxy_SSLProxy">HTTPS Proxy</string>
+      <string id="Proxy_SSLProxy_Explain">If this policy is enabled, you can set the HTTPS Proxy used when manual proxy configuration is specified.
+
+If this policy is disabled or not configured, Firefox does not use an HTTPS Proxy.</string>
+      <string id="Proxy_SOCKSProxy">SOCKS Host</string>
+      <string id="Proxy_SOCKSProxy_Explain">If this policy is enabled, you can set the SOCKS Host and version used when manual proxy configuration is specified.
+
+If this policy is disabled or not configured, Firefox does not use a SOCKS Host.</string>
+      <string id="Proxy_AutoConfigURL">Automatic proxy configuration URL</string>
+      <string id="Proxy_AutoConfigURL_Explain">If this policy is enabled, you can set the automatic proxy configuration URL.
+
+If this policy is disabled or not configured, Firefox does not use an automatic proxy configuration URL.</string>
+      <string id="Proxy_Passthrough">Proxy Passthrough</string>
+      <string id="Proxy_Passthrough_Explain">If this policy is enabled, the proxy settings are bypassed for the locations specified.
+
+If this policy is disabled or not configured, Firefox does not bypass the proxy.</string>
+      <string id="Proxy_AutoLogin">Do not prompt for authentication if password is saved</string>
+      <string id="Proxy_AutoLogin_Explain">If this policy is enabled, Firefox will not prompt for proxy authentication when a password is saved.
+
+If this policy is disabled or not configured, Firefox will always prompt for proxy authentication.</string>
+      <string id="Proxy_UseProxyForDNS">Proxy DNS when using SOCKS v5</string>
+      <string id="Proxy_UseProxyForDNS_Explain">If this policy is enabled, DNS is proxied when using SOCKS v5.
+
+If this policy is disabled or not configured, DNS is not proxied when using SOCKS v5.</string>
    <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
 
 若需要偏好设置的详细说明，请参考：
@@ -1274,6 +1315,40 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
    <presentation id="JSON">
 <multiTextBox refId="JSON"/>
    </presentation>
+      <presentation id="Proxy_ConnectionType">
+        <dropdownList refId="Proxy_ConnectionType"/>
+      </presentation>
+      <presentation id="Proxy_HTTPProxy">
+        <textBox refId="Proxy_HTTPProxy">
+          <label>Host including port:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_SSLProxy">
+        <textBox refId="Proxy_SSLProxy">
+          <label>Host including port:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_SOCKSProxy">
+        <text>Host including port:</text>
+        <textBox refId="Proxy_SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>SOCKS Version:</text>
+        <dropdownList refId="Proxy_SOCKSVersion"/>
+      </presentation>
+      <presentation id="Proxy_AutoConfigURL">
+        <textBox refId="Proxy_AutoConfigURL">
+          <label>URL:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_Passthrough">
+        <text>No proxy for</text>
+        <textBox refId="Proxy_Passthrough">
+          <label/>
+        </textBox>
+        <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Connections to localhost, 127.0.0.1/8, and ::1 are never proxied.</text>
+      </presentation>
   </presentationTable>
  </resources>
 </policyDefinitionResources>

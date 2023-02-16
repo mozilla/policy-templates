@@ -5003,7 +5003,105 @@ Software\Policies\Mozilla\Firefox\Proxy\AutoLogin = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
 ```
 #### Windows (Intune)
+**Note**
+These setttings were moved to a category to make them easier to configure via Intune.
+
 OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_ConnectionType
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_ConnectionType" value="none | system | manual | autoDetect | autoConfig"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_HTTPProxy
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_HTTPProxy" value="httpproxy.example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_UseHTTPProxyForAllProtocols
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_SSLProxy
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_SSLProxy" value="sslproxy.example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_SOCKSProxy
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_SOCKSProxy" value="socksproxy.example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_SOCKSVersion
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_SOCKSVersion" value="4 | 5"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_AutoConfigURL
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_AutoConfigURL" value="URL_TO_AUTOCONFIG"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_Passthrough
+```
+Value (string):
+```
+<enabled/>
+<data id="Proxy_Passthrough" value="<local>"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_AutoLogin
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_UseProxyForDNS
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI (Old way):
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/Proxy
 ```
@@ -5012,11 +5110,11 @@ Value (string):
 <enabled/>
 <data id="ProxyLocked" value="true | false"/>
 <data id="ConnectionType" value="none | system | manual | autoDetect | autoConfig"/>
-<data id="HTTPProxy" value="https://httpproxy.example.com"/>
+<data id="HTTPProxy" value="httpproxy.example.com"/>
 <data id="UseHTTPProxyForAllProtocols" value="true | false"/>
-<data id="SSLProxy" value="https://sslproxy.example.com"/>
-<data id="FTPProxy" value="https://ftpproxy.example.com"/>
-<data id="SOCKSProxy" value="https://socksproxy.example.com"/>
+<data id="SSLProxy" value="sslproxy.example.com"/>
+<data id="FTPProxy" value="ftpproxy.example.com"/>
+<data id="SOCKSProxy" value="socksproxy.example.com"/>
 <data id="SOCKSVersion" value="4 | 5"/>
 <data id="AutoConfigURL" value="URL_TO_AUTOCONFIG"/>
 <data id="Passthrough" value="<local>"/>
