@@ -4045,5 +4045,15 @@
         <text id="String" valueName="AppUpdatePin" required="true" />
       </elements>
     </policy>
+    <policy name="DisableThirdPartyModuleBlocking" class="Both" displayName="$(string.DisableThirdPartyModuleBlocking)" explainText="$(string.DisableThirdPartyModuleBlocking_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableThirdPartyModuleBlocking">
+      <parentCategory ref="firefox" />
+      <supportedOn ref="SUPPORTED_FF110"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
