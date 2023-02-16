@@ -142,6 +142,9 @@
     <category displayName="$(string.PictureInPicture_group)" name="PictureInPicture">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.ProxySettings_group)" name="ProxySettings">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -2604,6 +2607,126 @@
           </falseValue>
         </boolean>
       </elements>
+    </policy>
+    <policy name="Proxy_Locked" class="Both" displayName="$(string.Proxy_Locked)" explainText="$(string.Proxy_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" valueName="Locked">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Proxy_ConnectionType" class="Both" displayName="$(string.Proxy_ConnectionType)" explainText="$(string.Proxy_ConnectionType_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy_ConnectionType)">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <elements>
+        <enum id="Proxy_ConnectionType" valueName="Mode">
+          <item displayName="$(string.NoProxy)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.SystemProxy)">
+            <value>
+              <string>system</string>
+            </value>
+          </item>
+          <item displayName="$(string.ManualProxy)">
+            <value>
+              <string>manual</string>
+            </value>
+          </item>
+          <item displayName="$(string.AutoDetectProxy)">
+            <value>
+              <string>autoDetect</string>
+            </value>
+          </item>
+          <item displayName="$(string.AutoConfigProxy)">
+            <value>
+              <string>autoConfig</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="Proxy_HTTPProxy" class="Both" displayName="$(string.Proxy_HTTPProxy)" explainText="$(string.Proxy_HTTPProxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy_HTTPProxy)">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <elements>
+        <text id="Proxy_HTTPProxy" valueName="HTTPProxy"/>
+      </elements>
+    </policy>
+    <policy name="Proxy_UseHTTPProxyForAllProtocols" class="Both" displayName="$(string.Proxy_UseHTTPProxyForAllProtocols)" explainText="$(string.Proxy_UseHTTPProxyForAllProtocols_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" valueName="UseHTTPProxyForAllProtocols">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Proxy_SSLProxy" class="Both" displayName="$(string.Proxy_SSLProxy)" explainText="$(string.Proxy_SSLProxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy_SSLProxy)">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <elements>
+        <text id="Proxy_SSLProxy" valueName="SSLProxy"/>
+      </elements>
+    </policy>
+    <policy name="Proxy_SOCKSProxy" class="Both" displayName="$(string.Proxy_SOCKSProxy)" explainText="$(string.Proxy_SOCKSProxy_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy_SOCKSProxy)">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <elements>
+        <text id="Proxy_SOCKSProxy" valueName="SOCKSProxy"/>
+        <enum id="Proxy_SOCKSVersion" valueName="SOCKSVersion">
+          <item displayName="$(string.SOCKSVersion4)">
+            <value>
+              <decimal value="4"/>
+            </value>
+          </item>
+          <item displayName="$(string.SOCKSVersion5)">
+            <value>
+              <decimal value="5"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="Proxy_AutoConfigURL" class="Both" displayName="$(string.Proxy_AutoConfigURL)" explainText="$(string.Proxy_AutoConfigURL_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy_AutoConfigURL)">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <elements>
+        <text id="Proxy_AutoConfigURL" valueName="AutoConfigURL"/>
+      </elements>
+    </policy>
+    <policy name="Proxy_Passthrough" class="Both" displayName="$(string.Proxy_Passthrough)" explainText="$(string.Proxy_Passthrough_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" presentation="$(presentation.Proxy_Passthrough)">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <elements>
+        <text id="Proxy_Passthrough" valueName="Passthrough"/>
+      </elements>
+    </policy>
+    <policy name="Proxy_AutoLogin" class="Both" displayName="$(string.Proxy_AutoLogin)" explainText="$(string.Proxy_AutoLogin_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" valueName="AutoLogin">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Proxy_UseProxyForDNS" class="Both" displayName="$(string.Proxy_UseProxyForDNS)" explainText="$(string.Proxy_UseProxyForDNS_Explain)" key="Software\Policies\Mozilla\Firefox\Proxy" valueName="UseProxyForDNS">
+      <parentCategory ref="ProxySettings"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
     <policy name="SearchBar" class="Both" displayName="$(string.SearchBar)" explainText="$(string.SearchBar_Explain)" key="Software\Policies\Mozilla\Firefox"  presentation="$(presentation.SearchBar)">
       <parentCategory ref="firefox"/>
