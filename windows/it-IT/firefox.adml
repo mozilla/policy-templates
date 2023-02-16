@@ -56,6 +56,7 @@
       <string id="SUPPORTED_FF107">Firefox 107 o versione successiva, Firefox 102.5 ESR o versione successiva</string>
       <string id="SUPPORTED_FF108">Firefox 108 o versione successiva, Firefox 102.6 ESR o versione successiva</string>
       <string id="SUPPORTED_FF109">Firefox 109 o versione successiva, Firefox 102.7 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF110">Firefox 110 o versione successiva, Firefox 102.8 ESR o versione successiva</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permessi</string>
       <string id="Camera_group">Fotocamera</string>
