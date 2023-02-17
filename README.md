@@ -5057,14 +5057,6 @@ Value (string):
 ```
 <enabled/>
 <data id="Proxy_SOCKSProxy" value="socksproxy.example.com"/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ProxySettings/Proxy_SOCKSVersion
-```
-Value (string):
-```
-<enabled/>
 <data id="Proxy_SOCKSVersion" value="4 | 5"/>
 ```
 OMA-URI:
