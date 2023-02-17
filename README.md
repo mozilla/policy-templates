@@ -5075,7 +5075,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Proxy_Passthrough" value="<local>"/>
+<data id="Proxy_Passthrough" value="&lt;local&gt;"/>
 ```
 OMA-URI:
 ```
