@@ -4593,6 +4593,7 @@ spellchecker. (Firefox 84, Firefox ESR 78.6)
 toolkit.legacyUserProfileCustomizations.stylesheets (Firefox 95, Firefox ESR 91.4)
 ui.
 widget.
+xpinstall.signatures.required (Firefox ESR 102.10, Firefox ESR only)
 ```
 as well as the following security preferences:
 | Preference | Type | Default
