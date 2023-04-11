@@ -748,6 +748,10 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
       <string id="TrackingProtection_Locked_Explain">若啟用此原則，使用者將無法調整追蹤保護功能偏好設定。
 
 若停用或不設定此原則，使用者則可以調整追蹤保護功能偏好設定。</string>
+      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
+      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+
+If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
       <string id="RequestedLocales">請求語系</string>
       <string id="RequestedLocalesString">請求語系（字串）</string>
       <string id="RequestedLocales_Explain">若啟用此原則，您可以指定要由應用程式顯示的語系順序清單。將使得對應的語言套件生效。

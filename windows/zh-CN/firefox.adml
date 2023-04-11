@@ -736,10 +736,6 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
    <string id="TrackingProtection_Cryptomining_Explain">若启用此原则，将封锁使用加密货币采矿程序的指令码。
 
 若禁用或不设定此原则，则不会封锁使用加密货币采矿程序的指令码。 </string>
-   <string id="TrackingProtection_Fingerprinting">数字指纹追踪程序</string>
-   <string id="TrackingProtection_Fingerprinting_Explain">若启用此原则，将封锁使用数字指纹追踪程序的指令码。
-
-若禁用或不设定此原则，则不会封锁使用数字指纹追踪程序的指令码。 </string>
    <string id="TrackingProtection_Exceptions">例外网址</string>
    <string id="TrackingProtection_Exceptions_Explain">若启用此原则，可针对指定的来源不开启追踪保护功能。
 
@@ -748,6 +744,14 @@ If this policy is disabled or not configured, Firefox will offer to save passwor
    <string id="TrackingProtection_Locked_Explain">若启用此原则，用户将无法调整追踪保护功能偏好设定。
 
 若禁用或不设定此原则，用户则可以调整追踪保护功能偏好设定。 </string>
+   <string id="TrackingProtection_Fingerprinting">数字指纹追踪程序</string>
+   <string id="TrackingProtection_Fingerprinting_Explain">若启用此原则，将封锁使用数字指纹追踪程序的指令码。
+
+若禁用或不设定此原则，则不会封锁使用数字指纹追踪程序的指令码。 </string>
+   <string id="TrackingProtection_EmailTracking">Email Tracking</string>
+   <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+
+If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
    <string id="RequestedLocales">请求语系</string>
    <string id="RequestedLocalesString">请求语系（字串）</string>
    <string id="RequestedLocales_Explain">若启用此原则，您可以指定要由应用程序显示的语系顺序清单。 将使得对应的语言套件生效。 

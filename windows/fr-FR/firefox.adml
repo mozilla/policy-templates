@@ -749,6 +749,10 @@ Si cette stratégie est désactivée ou n'est pas configurée, la protection con
       <string id="TrackingProtection_Locked_Explain">Si cette politique est activée, les préférences de protection du suivi ne peuvent pas être modifiées par l'utilisateur.
 
 Si cette stratégie est désactivée ou n'est pas configurée, l'utilisateur peut modifier les préférences de protection du suivi.</string>
+      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
+      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+
+If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
       <string id="RequestedLocales">liste des paramètres régionaux</string>
       <string id="RequestedLocalesString">liste des paramètres régionaux (string)</string>
       <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste des paramètres régionaux demandés pour l'application par ordre de préférence. Le module linguistique correspondant deviendra actif.

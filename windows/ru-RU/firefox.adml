@@ -750,6 +750,10 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="TrackingProtection_Locked_Explain">Если эта политика включена, пользователь не может изменить настройки защиты от отслеживания.
 
 Если эта политика отключена или не настроена, пользователь может изменить настройки защиты от отслеживания.</string>
+      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
+      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+
+If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
       <string id="RequestedLocales">Запрошенный языковой стандарт</string>
       <string id="RequestedLocalesString">Запрошенный языковой стандарт (строка)</string>
       <string id="RequestedLocales_Explain">Если эта политика включена, вы можете указать список запрошенных локалей для приложения в порядке предпочтения. Это приведет к активации соответствующего языкового пакета.

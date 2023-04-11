@@ -2415,6 +2415,8 @@ If `Cryptomining` is set to true, cryptomining scripts on websites are blocked.
 
 If `Fingerprinting` is set to true, fingerprinting scripts on websites are blocked.
 
+If `EmailTracking` is set to true, hidden email tracking pixels and scripts on websites are blocked. (Firefox 112)
+
 `Exceptions` are origins for which tracking protection is not enabled.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\

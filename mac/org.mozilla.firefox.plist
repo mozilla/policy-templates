@@ -226,6 +226,8 @@
 		<true/>
 		<key>Fingerprinting</key>
 		<true/>
+		<key>EmailTracking</key>
+		<true/>
 		<key>Exceptions</key>
 		<array>
 			<string>https://example.com</string>
