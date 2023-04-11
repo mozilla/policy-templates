@@ -750,6 +750,10 @@ Si esta política está deshabilitada o no está configurada, la protección con
       <string id="TrackingProtection_Locked_Explain">Si esta política está habilitada, el usuario no podrá cambiar las preferencias de protección contra rastreo.
 
 Si esta política está deshabilitada o no está configurada, el usuario podrá cambiar las preferencias de protección contra rastreo.</string>
+      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
+      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+
+If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
       <string id="RequestedLocales">Solicitud de localización</string>
       <string id="RequestedLocalesString">Solicitud de localización (cadena)</string>
       <string id="RequestedLocales_Explain">Si esta política está habilitada, podrá especificar una lista de las localizaciones solicitadas para la aplicación en orden de preferencia. Esto hará que el paquete de idioma correspondiente se active.

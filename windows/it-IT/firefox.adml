@@ -750,6 +750,10 @@ Se questo criterio è disabilitato o non configurato, la protezione antitracciam
       <string id="TrackingProtection_Locked_Explain">Se questo criterio è abilitato, le preferenze relative alla protezione antitracciamento non possono essere modificate dall'utente.
 
 Se questo criterio è disabilitato o non configurato, l'utente può modificare le preferenze relative alla protezione antitracciamento.</string>
+      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
+      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+
+If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
       <string id="RequestedLocales">Lingua richiesta</string>
       <string id="RequestedLocalesString">Lingua richiesta (stringa)</string>
       <string id="RequestedLocales_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di lingue richieste per l'applicazione in ordine di preferenza. Il pacchetto lingue corrispondente sarà attivato.

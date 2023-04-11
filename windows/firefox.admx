@@ -3647,6 +3647,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="F_TrackingProtection_EmailTracking" class="Both" displayName="$(string.TrackingProtection_EmailTracking)" explainText="$(string.TrackingProtection_EmailTracking_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="EmailTracking">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF112"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="UserMessaging_WhatsNew" class="Both" displayName="$(string.UserMessaging_WhatsNew)" explainText="$(string.UserMessaging_WhatsNew_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="WhatsNew">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF75_ONLY"/>

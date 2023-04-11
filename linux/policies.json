@@ -96,6 +96,7 @@
       "Locked": true | false,
       "Cryptomining": true | false,
       "Fingerprinting": true | false,
+      "EmailTracking": true | false,
       "Exceptions": ["https://example.com"]
     },
     "EncryptedMediaExtensions": {
