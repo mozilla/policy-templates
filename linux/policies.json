@@ -43,6 +43,15 @@
     "Certificates": {
       "Install": ["cert1.der", "/home/username/cert2.pem"],
     },
+    "Containers": {
+      "Default": [
+        {
+          "name": "My container",
+          "icon": "pet",
+          "color": "turquoise"
+        }
+      ]
+    },
     "Cookies": {
       "Allow": ["http://example.org/"],
       "AllowSession": ["http://example.edu/"],

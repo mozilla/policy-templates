@@ -4067,5 +4067,12 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Containers" class="Both" displayName="$(string.Containers)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Containers_Explain)" presentation="$(presentation.JSON)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF113"/>
+      <elements>
+        <multiText id="JSON" valueName="Containers"  maxLength="16384"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
