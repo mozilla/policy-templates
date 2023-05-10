@@ -4606,12 +4606,16 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites.
 | security.insecure_connection_text.pbmode.enabled | bool | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites in private browsing.
-| security.insecure_field_warning.contextual.enabled | bool | true
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to false, remove the warning for inscure login fields.
 | security.mixed_content.block_active_content | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
 | security.osclientcerts.autoload | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
+| security.OCSP.enabled | integer | 1
+| &nbsp;&nbsp;&nbsp;&nbsp;If 0, do not fetch OCSP. If 1, fetch OCSP for DV and EV certificates. If 2, fetch OCSP only for EV certificates
+| security.OCSP.require | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp; If true, if an OCSP request times out, the connection fails.
+| security.ssl.enable_ocsp_stapling | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp; If false, OCSP stapling is not enabled.
 | security.ssl.errorReporting.enabled | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
 | security.tls.enable_0rtt_data | boolean | true
