@@ -106,6 +106,20 @@
 			<string>cert2.pem</string>
 		</array>
 	</dict>
+	<key>Default</key>
+	<dict>
+		<key>Containers</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>My container</string>
+				<key>icon</key>
+				<string>pet</string>
+				<key>color</key>
+				<string>turquoise</string>
+			</dict>
+		</array>
+	</dict>
 	<key>Cookies</key>
 	<dict>
 		<key>Allow</key>

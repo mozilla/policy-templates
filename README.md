@@ -36,6 +36,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`Certificates`](#certificates)** |
 | **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
 | **[`Certificates -> Install`](#certificates--install)** | Install certificates into the Firefox certificate store.
+| **[`Containers`](#containers)** | Set policies related to [containers](https://addons.mozilla.org/firefox/addon/multi-account-containers/).
 | **[`Cookies`](#cookies)** | Configure cookie preferences.
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
@@ -996,6 +997,91 @@ Value (string):
   "policies": {
     "Certificates": {
       "Install": ["cert1.der", "/home/username/cert2.pem"]
+    }
+  }
+}
+```
+### Containers
+Set policies related to [containers](https://addons.mozilla.org/firefox/addon/multi-account-containers/).
+
+Currently you can set the initial set of containers.
+
+For each container, you can specify the name, icon, and color.
+
+| Name | Description |
+| --- | --- |
+| `name`| Name of container
+| `icon` | Can be `fingerprint`, `briefcase`, `dollar`, `cart`, `vacation`, `gift`, `food`, `fruit`, `pet`, `tree`, `chill`, `circle`, `fence`
+| `color` | Can be `blue`, `turquoise`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `toolbar`
+
+**Compatibility:** Firefox 113\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+Software\Policies\Mozilla\Firefox\Containers (REG_MULTI_SZ) =
+```
+{
+  "Default": [
+    {
+      "name": "My container",
+      "icon": "pet",
+      "color": "turquoise"
+    }
+  ]
+}
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/Containers
+```
+Value (string):
+```
+<enabled/>
+<data id="JSON" value='
+{
+  "Default": [
+    {
+      "name": "My container",
+      "icon": "pet",
+      "color": "turquoise"
+    }
+  ]
+}
+'/>
+```
+#### macOS
+```
+<dict>
+  <key>Default</key>
+  <dict>
+    <key>Containers</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>My container</string>
+        <key>icon</key>
+        <string>pet</string>
+        <key>color</key>
+        <string>turquoise</string>
+      </dict>
+    </array>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "Containers": {
+      "Default": [
+        {
+          "name": "My container",
+          "icon": "pet",
+          "color": "turquoise"
+        }
+      ]
     }
   }
 }
