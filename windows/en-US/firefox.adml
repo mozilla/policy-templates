@@ -606,6 +606,10 @@ If this policy is disabled or not configured, no websites are blocked.</string>
       <string id="WebsiteFilter_Exceptions_Explain">If this policy is enabled, and the website filter is enabled, you can specify match patterns for sites you do not want to block. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. There is a 1000 entry limit.
 
 If this policy is disabled or not configured, there are no exceptions to the website filter.</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
+      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+
+If this policy is disabled or not configured, websites are not filtered.</string>
       <string id="Bookmark01">Bookmark 01</string>
       <string id="Bookmark02">Bookmark 02</string>
       <string id="Bookmark03">Bookmark 03</string>

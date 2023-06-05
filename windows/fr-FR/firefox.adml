@@ -607,6 +607,10 @@ Si cette stratégie est désactivée ou non configurée, aucun site Web n'est bl
       <string id="WebsiteFilter_Exceptions_Explain">Si cette stratégie est activée et que le filtre de site Web est activé, vous pouvez spécifier des modèles de correspondance pour les sites que vous ne souhaitez pas bloquer. Les modèles de correspondance sont documentés sur https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Il y a une limite de 1000 entrées.
 
 Si cette stratégie est désactivée ou non configurée, il n'y a pas d'exception au filtre de site Web..</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
+      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+
+If this policy is disabled or not configured, websites are not filtered.</string>
       <string id="Bookmark01">Signet 01</string>
       <string id="Bookmark02">Signet 02</string>
       <string id="Bookmark03">Signet 03</string>

@@ -608,6 +608,10 @@ Si esta política está deshabilitada o no está configurada, no se bloquearán 
       <string id="WebsiteFilter_Exceptions_Explain">Si esta política está habilitada y el filtro del sitio web está habilitado, podrá especificar patrones de coincidencia para los sitios que no desea bloquear. Los patrones de coincidencia están documentados en https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Hay un límite de 1000 entradas.
 
 Si esta política está deshabilitada o no está configurada, no hay excepciones para el filtro de sitios web.</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
+      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+
+If this policy is disabled or not configured, websites are not filtered.</string>
       <string id="Bookmark01">Marcador 1</string>
       <string id="Bookmark02">Marcador 2</string>
       <string id="Bookmark03">Marcador 3</string>

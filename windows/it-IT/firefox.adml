@@ -608,6 +608,9 @@ Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun 
       <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. C'è un limite di 1000 voci.
 
 Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.</string>
+      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+
+If this policy is disabled or not configured, websites are not filtered.</string>
       <string id="Bookmark01">Segnalibro 01</string>
       <string id="Bookmark02">Segnalibro 02</string>
       <string id="Bookmark03">Segnalibro 03</string>

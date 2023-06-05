@@ -606,6 +606,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="WebsiteFilter_Exceptions_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und der Webseiten-Filter aktiviert ist, können Sie Übereinstimmungsmuster für Webseiten angeben, die nicht blockiert werden sollen. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Es gibt eine Beschränkung von 1000 Einträgen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
+      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+
+If this policy is disabled or not configured, websites are not filtered.</string>
       <string id="Bookmark01">Lesezeichen 01</string>
       <string id="Bookmark02">Lesezeichen 02</string>
       <string id="Bookmark03">Lesezeichen 03</string>

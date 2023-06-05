@@ -2776,6 +2776,13 @@
         <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="WebsiteFilter" class="Both" displayName="$(string.WebsiteFilter)" explainText="$(string.WebsiteFilter_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.JSON)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF114"/>
+      <elements>
+        <multiText id="JSON" valueName="WebsiteFilter"  maxLength="16384"/>
+      </elements>
+    </policy>
     <policy name="SearchEngines_1" class="Both" displayName="$(string.SearchEngines_1)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\1" presentation="$(presentation.SearchEngine)" >
       <parentCategory ref="Search" />
       <supportedOn ref="SUPPORTED_FF60ESR" />

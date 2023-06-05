@@ -608,6 +608,9 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="WebsiteFilter_Exceptions_Explain">若启用此原则，且启用了网站封锁规则，将可以指定要排除封锁的网站网址规则。 规则格式文件位于https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。 仅支持最多1000笔项目。
 
 若禁用或不设定此原则，则不会放行任何例外网站。</string>
+      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+
+If this policy is disabled or not configured, websites are not filtered.</string>
       <string id="Bookmark01">书签 01</string>
       <string id="Bookmark02">书签 02</string>
       <string id="Bookmark03">书签 03</string>
