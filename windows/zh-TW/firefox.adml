@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">子母畫面</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">允許的網站</string>
       <string id="AllowSession">允許的網站（僅當次瀏覽階段）</string>
       <string id="Block">封鎖的網站</string>
@@ -767,6 +768,11 @@ If this policy is disabled or not configured, hidden email tracking pixels and s
       <string id="SecurityDevices_Explain">若啟用此原則，將可以指定要安裝的 PKCS #11 模組清單。需於設定中指定模組名稱及完整路徑。
 
 若停用或不設定此原則，則不會安裝其他的 PKCS #11 模組。</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">搜尋列位置</string>
       <string id="SearchBar_Explain">若啟用此原則，將可以設定搜尋列是否要自網址列分離。
 

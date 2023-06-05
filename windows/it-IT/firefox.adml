@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">Siti consentiti</string>
       <string id="AllowSession">Siti consentiti (solo sessione)</string>
       <string id="Block">Siti bloccati</string>
@@ -769,6 +770,11 @@ Se questo criterio è disabilitato o non configurato, l'applicazione utilizzerà
       <string id="SecurityDevices_Explain">Se questo criterio è abilitato, è possibile specificare un elenco di moduli PKCS #11 da installare. I moduli devono essere specificati come nome e percorso completo.
 
 Se questo criterio è disabilitato o non configurato, non sarà installato alcun modulo PKCS #11 aggiuntivo.</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">Posizione barra di ricerca</string>
       <string id="SearchBar_Explain">Se questo criterio è abilitato, è possibile impostare se la barra di ricerca sarà separata dalla barra degli indirizzi.
 

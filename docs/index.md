@@ -5816,6 +5816,68 @@ Value (string):
 ```
 ### SecurityDevices
 
+Add or delete PKCS #11 modules.
+
+**Compatibility:** Firefox 114, Firefox ESR 112.12\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\SecurityDevices\Add\NAME_OF_DEVICE_TO_ADD = PATH_TO_LIBRARY_FOR_DEVICE
+Software\Policies\Mozilla\Firefox\SecurityDevices\Remove\1 = NAME_OF_DEVICE_TO_REMOVE
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/SecurityDevices/SecurityDevices_Add
+```
+Value (string):
+```
+<enabled/>
+<data id="SecurityDevices" value="NAME_OF_DEVICE_TO_ADD&#xF000;PATH_TO_LIBRARY_FOR_DEVICE"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/SecurityDevices/SecurityDevices_Delete
+```
+Value (string):
+```
+<enabled/>
+<data id="SecurityDevices" value="1&#xF000;NAME_OF_DEVICE_TO_REMOVE"/>
+```
+#### macOS
+```
+<dict>
+  <key>SecurityDevices</key>
+  <dict>
+    <key>Add<key>
+    <dict>
+      <key>NAME_OF_DEVICE_TO_ADD</key>
+      <string>PATH_TO_LIBRARY_FOR_DEVICE</string>
+    </dict>
+    <key>Delete</add>
+    <array>
+      <string>NAME_OF_DEVICE_TO_DELETE</string>
+    </array>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "SecurityDevices": {
+      "Add": {
+        "NAME_OF_DEVICE_TO_ADD": "PATH_TO_LIBRARY_FOR_DEVICE"
+      },
+      "Delete": ["NAME_OF_DEVICE_TO_DELETE"]
+    }
+  }
+}
+```
+### SecurityDevices (Deprecated)
+
 Install PKCS #11 modules.
 
 **Compatibility:** Firefox 64, Firefox ESR 60.4\
@@ -5846,7 +5908,6 @@ Value (string):
   </dict>
 </dict>
 ```
-
 #### policies.json
 ```
 {

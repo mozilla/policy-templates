@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">子母画面</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">允许的网站</string>
       <string id="AllowSession">允许的网站（仅当次浏览阶段）</string>
       <string id="Block">封锁的网站</string>
@@ -769,6 +770,11 @@ If this policy is disabled or not configured, hidden email tracking pixels and s
       <string id="SecurityDevices_Explain">若启用此原则，将可以指定要安装的 PKCS #11 模块列表。 需于设定中指定模块名称及完整路径。
 
 若禁用或不设定此原则，则不会安装其他的 PKCS #11 模块。</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">搜索行位置</string>
       <string id="SearchBar_Explain">若启用此原则，将可以设定搜索列是否要自网址列分离。
 

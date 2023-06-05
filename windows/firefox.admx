@@ -149,6 +149,9 @@
     <category displayName="$(string.ProxySettings_group)" name="ProxySettings">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.SecurityDevices_group)" name="SecurityDevices">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -4080,6 +4083,20 @@
       <supportedOn ref="SUPPORTED_FF113"/>
       <elements>
         <multiText id="JSON" valueName="Containers"  maxLength="16384"/>
+      </elements>
+    </policy>
+    <policy name="SecurityDevices_Add" class="Both" displayName="$(string.SecurityDevices_Add)" explainText="$(string.SecurityDevices_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)" >
+      <parentCategory ref="SecurityDevices"/>
+      <supportedOn ref="SUPPORTED_FF114"/>
+      <elements>
+        <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices\Add" valuePrefix="" explicitValue="true" expandable="true"/>
+      </elements>
+    </policy>
+    <policy name="SecurityDevices_Delete" class="Both" displayName="$(string.SecurityDevices_Delete)" explainText="$(string.SecurityDevices_Delete_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)" >
+      <parentCategory ref="SecurityDevices"/>
+      <supportedOn ref="SUPPORTED_FF114"/>
+      <elements>
+        <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices\Delete" valuePrefix=""/>
       </elements>
     </policy>
   </policies>

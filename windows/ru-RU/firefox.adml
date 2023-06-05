@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Картинка в картинке</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
       <string id="Block">Заблокированные сайты</string>
@@ -769,6 +770,11 @@ If this policy is disabled or not configured, hidden email tracking pixels and s
       <string id="SecurityDevices_Explain">Если эта политика включена, вы можете указать список модулей PKCS # 11 для установки. Модули указываются в виде имени и полного пути.
 
 Если эта политика отключена или не настроена, дополнительные модули PKCS # 11 не будут установлены.</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">Расположение панели поиска</string>
       <string id="SearchBar_Explain">Если эта политика включена, вы можете указать, будет ли панель поиска отделена от строки URL.
 
