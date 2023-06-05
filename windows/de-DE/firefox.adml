@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="4.11" schemaVersion="1.0" >
+<policyDefinitionResources revision="4.11" schemaVersion="1.0">
   <displayName/>
   <description/>
-  <resources >
-    <stringTable >
+  <resources>
+    <stringTable>
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 oder höher</string>
       <string id="UNSUPPORTED">Nicht mehr unterstützt.</string>
       <string id="SUPPORTED_FF60">Firefox 60 oder höher, Firefox 60 ESR oder höher</string>
@@ -133,7 +133,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die interne Authentifizierung in privaten Fenstern nicht benutzt.</string>
       <string id="BlockAboutAddons">Zugriff auf Add-ons Manager verhindern</string>
-      <string id="BlockAboutAddons_Explain" >Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
+      <string id="BlockAboutAddons_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer auf den Add-ons Manager und about:addons zugreifen.</string>
       <string id="BlockAboutConfig">Zugriff auf about:config verhindern</string>

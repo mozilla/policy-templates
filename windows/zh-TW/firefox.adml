@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="4.11" schemaVersion="1.0" >
+<policyDefinitionResources revision="4.11" schemaVersion="1.0">
   <displayName/>
   <description/>
-  <resources >
-    <stringTable >
+  <resources>
+    <stringTable>
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 或更新版本</string>
       <string id="UNSUPPORTED">不再支援。</string>
       <string id="SUPPORTED_FF60">Firefox 60 或更新版本、Firefox 60 ESR 或更新版本</string>
@@ -133,7 +133,7 @@
 
 若停用或不設定此原則，就不會在隱私瀏覽模式進行整合身分驗證。</string>
       <string id="BlockAboutAddons">封鎖附加元件管理員</string>
-      <string id="BlockAboutAddons_Explain" >若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
+      <string id="BlockAboutAddons_Explain">若啟用此原則，使用者將無法開啟附加元件管理員或 about:addons。
 
 若停用或不設定此原則，使用者則可以開啟附加元件管理員或 about:addons。</string>
       <string id="BlockAboutConfig">封鎖 about:config</string>

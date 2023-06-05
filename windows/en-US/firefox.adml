@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="4.11" schemaVersion="1.0" >
+<policyDefinitionResources revision="4.11" schemaVersion="1.0">
   <displayName/>
   <description/>
-  <resources >
-    <stringTable >
+  <resources>
+    <stringTable>
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 or later</string>
       <string id="UNSUPPORTED">No longer supported.</string>
       <string id="SUPPORTED_FF60">Firefox 60 or later, Firefox 60 ESR or later</string>
@@ -133,7 +133,7 @@ If this policy is enabled or not configured, authentication preferences cannot b
 
 If this policy is disabled or not configured, integrated authentication is not used in private browsing.</string>
       <string id="BlockAboutAddons">Block Add-ons Manager</string>
-      <string id="BlockAboutAddons_Explain" >If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
+      <string id="BlockAboutAddons_Explain">If this policy is enabled, the user cannot access the Add-ons Manager or about:addons.
 
 If this policy is disabled or not configured, the user can access the Add-ons Manager and about:addons.</string>
       <string id="BlockAboutConfig">Block about:config</string>
