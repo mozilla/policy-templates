@@ -737,7 +737,7 @@ Si cette stratégie est désactivée, la protection contre le suivi est désacti
 Si cette stratégie n'est pas configurée, une protection de suivi standard est utilisée et l'utilisateur peut la modifier.</string>
       <string id="TrackingProtection_Cryptomining">minage de cryptomonnaie</string>
       <string id="TrackingProtection_Cryptomining_Explain">Si cette stratégie est activée, les scripts qui utilisent le minage cryptographique sont bloqués.
-        
+
 Si cette stratégie est désactivée ou n'est pas configurée, les scripts qui utilisent le minage cryptographique ne sont pas bloqués.</string>
       <string id="TrackingProtection_Fingerprinting">Empreinte digitale</string>
       <string id="TrackingProtection_Fingerprinting_Explain">Si cette stratégie est activée, les scripts qui utilisent l'empreinte digitale sont bloqués.
@@ -816,7 +816,7 @@ Si cette stratégie est désactivée ou non configurée, Firefox utilise par dé
 Si cette stratégie est désactivée ou n'est pas configurée, aucun item n'est ajouté au menu d'aide.</string>
       <string id="UserMessaging_WhatsNew">Quoi de neuf</string>
       <string id="UserMessaging_WhatsNew_Explain">Si cette stratégie est désactivée, l'icône Quoi de neuf et l'élément de menu ne seront pas affichés.
-        
+
 Si cette stratégie est activée ou non configurée, l'icône Quoi de neuf et l'élément de menu s'affichent.</string>
       <string id="UserMessaging_ExtensionRecommendations">Proposition d'Extension </string>
       <string id="UserMessaging_ExtensionRecommendations_Explain">Si cette politique est désactivée, les extensions ne seront pas proposées lorsque l'utilisateur visite des sites Web.
@@ -946,7 +946,7 @@ If this policy is disabled or not configured, Firefox will show print preview be
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">If this policy is enabled, you can define a list of domains and file type extensions that will be exempt from executable warnings.
 
 If this policy is disabled or not configured, warnings are shown for all executable file types.
-      
+
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
       <string id="StartDownloadsInTempDirectory">Start Downloads in Temporary Directory</string>
       <string id="StartDownloadsInTempDirectory_Explain">If this policy is enabled, Firefox will start downloads in a temporary directory and automatically deleted when you close the browser.
