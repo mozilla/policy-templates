@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session Only)</string>
       <string id="Block">Sites bloqués</string>
@@ -768,6 +769,11 @@ Si cette stratégie est désactivée ou non configurée, l'application utilisera
       <string id="SecurityDevices_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de modules PKCS#11 à installer. Les modules sont spécifiés sous la forme d'un nom et d'un chemin complet.
 
 Si cette stratégie est désactivée ou non configurée, aucun module PKCS#11 supplémentaire ne sera installé..</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">Emplacement de la barre de recherche</string>
       <string id="SearchBar_Explain">Si cette stratégie est activée, vous pouvez définir si la barre de recherche est distincte de la barre d'URL.
 

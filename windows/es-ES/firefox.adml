@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">Sitios permitidos</string>
       <string id="AllowSession">Sitios permitidos (Session Only)</string>
       <string id="Block">Sitios bloqueados</string>
@@ -769,6 +770,11 @@ Si esta política está deshabilitada o no está configurada, la aplicación uti
       <string id="SecurityDevices_Explain">Si esta política está habilitada, podrá especificar una lista de los módulos PKCS #11 que se instalarán. Los módulos se especifican como un nombre y una ruta de acceso completa.
 
 Si esta política está deshabilitada o no está configurada, no se instalarán módulos adicionales de PKCS #11.</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">Ubicación de la barra de búsqueda</string>
       <string id="SearchBar_Explain">Si esta política está habilitada, podrá establecer si la barra de búsqueda está separada de la barra de URL.
 

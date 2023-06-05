@@ -85,6 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="ProxySettings_group">Proxy Settings</string>
+      <string id="SecurityDevices_group">Security Devices</string>
       <string id="Allow">Allowed Sites</string>
       <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
@@ -767,6 +768,11 @@ If this policy is disabled or not configured, the application will use the defau
       <string id="SecurityDevices_Explain">If this policy is enabled, you can specify a list of PKCS #11 modules to be installed. Modules are specified as a name and a fully qualified path.
 
 If this policy is disabled or not configured, no additional PKCS #11 modules will be installed.</string>
+      <string id="SecurityDevices_Add">Add</string>
+      <string id="SecurityDevices_Delete">Delete</string>
+      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+
+If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
       <string id="SearchBar">Search bar location</string>
       <string id="SearchBar_Explain">If this policy is enabled, you can set whether the search bar is separate from the URL bar.
 
