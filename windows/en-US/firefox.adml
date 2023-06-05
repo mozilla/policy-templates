@@ -59,6 +59,7 @@
       <string id="SUPPORTED_FF110">Firefox 110 or later, Firefox 102.8 ESR or later</string>
       <string id="SUPPORTED_FF112_ONLY">Firefox 112 or later</string>
       <string id="SUPPORTED_FF113_ONLY">Firefox 113 or later</string>
+      <string id="SUPPORTED_FF114">Firefox 114 or later, Firefox 102.12 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
