@@ -3,7 +3,7 @@
   <displayName/>
   <description/>
   <resources>
-    <stringTables>
+    <stringTable>
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 o versione successiva</string>
       <string id="UNSUPPORTED">Non più supportato.</string>
       <string id="SUPPORTED_FF60">Firefox 60 o versione successiva, Firefox 60 ESR o versione successiva</string>
@@ -608,6 +608,7 @@ Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun 
       <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. C'è un limite di 1000 voci.
 
 Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
 
 If this policy is disabled or not configured, websites are not filtered.</string>
