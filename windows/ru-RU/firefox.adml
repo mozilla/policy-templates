@@ -608,6 +608,7 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
        <string id="WebsiteFilter_Exceptions_Explain">Если эта политика включена и фильтр веб-сайтов включен, вы можете указать шаблоны соответствия для сайтов, которые не хотите блокировать. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
 
 Если эта политика отключена или не настроена, для фильтра веб-сайтов нет исключений.</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
 
 If this policy is disabled or not configured, websites are not filtered.</string>

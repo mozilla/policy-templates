@@ -606,6 +606,7 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="WebsiteFilter_Exceptions_Explain">若啟用此原則，且啟用了網站封鎖規則，將可以指定要排除封鎖的網站網址規則。規則格式文件位於 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。僅支援最多 1000 筆項目。
 
 若停用或不設定此原則，則不會放行任何例外網站。</string>
+      <string id="WebsiteFilter">Website Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
 
 If this policy is disabled or not configured, websites are not filtered.</string>
