@@ -1096,7 +1096,7 @@ Configure cookie preferences.
 `BehaviorPrivateBrowsing` sets the default behavior for cookies in private browsing based on the values below.
 
 | Value | Description
-| --- | ---
+| --- | --- |
 | accept | Accept all cookies
 | reject-foreign | Reject third party cookies
 | reject | Reject all cookies
@@ -4834,7 +4834,7 @@ Set and lock certain preferences.
 **Preferences Affected:** See below
 
 | Preference | Type | Compatibility | Default
-| --- | --- | --- | ---
+| --- | --- | --- | --- |
 | accessibility.force_disabled | integer | Firefox 70, Firefox ESR 68.2 | 0
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
 | app.update.auto (Deprecated - Switch to AppAutoUpdate policy) | boolean | Firefox 68, Firefox ESR 68 | true
