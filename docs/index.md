@@ -4682,7 +4682,7 @@ xpinstall.signatures.required (Firefox ESR 102.10, Firefox ESR only)
 as well as the following security preferences:
 
 | Preference | Type | Default
-| --- | --- | ---
+| --- | --- | --- |
 | security.default_personal_cert | string | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
 | security.insecure_connection_text.enabled | bool | false
