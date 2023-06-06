@@ -4697,7 +4697,7 @@ as well as the following security preferences:
 | security.OCSP.require | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp; If true, if an OCSP request times out, the connection fails.
 | security.osclientcerts.assume_rsa_pss_support | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS.
+| &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS (Firefox 114, Firefox ESR 102.12).
 | security.ssl.enable_ocsp_stapling | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, OCSP stapling is not enabled.
 | security.ssl.errorReporting.enabled | boolean | true
