@@ -4680,6 +4680,7 @@ widget.
 xpinstall.signatures.required (Firefox ESR 102.10, Firefox ESR only)
 ```
 as well as the following security preferences:
+
 | Preference | Type | Default
 | --- | --- | ---
 | security.default_personal_cert | string | Ask Every Time
@@ -4710,7 +4711,6 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, browser will accept TLS 1.0. and TLS 1.1 (Firefox 86, Firefox 78.8).
 | security.warn_submit_secure_to_insecure | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting a form from https to http.
-&nbsp;
 
 Using the preference as the key, set the `Value` to the corresponding preference value.
 
