@@ -4937,6 +4937,7 @@ disabled
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Alt key doesn't show the menubar on Windows.
 | widget.content.gtk-theme-override | string | Firefox 72, Firefox ESR 68.4 (Linux only) | N/A
 | &nbsp;&nbsp;&nbsp;&nbsp;If set, overrides the GTK theme for widgets.
+
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
