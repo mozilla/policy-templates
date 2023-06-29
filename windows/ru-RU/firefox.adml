@@ -849,6 +849,10 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="UserMessaging_MoreFromMozilla_Explain">Если эта политика отключена, раздел «Дополнительно от Mozilla» не будет отображаться в настройках.
 
 Если эта политика включена или не настроена, раздел «Дополнительно от Mozilla» будет отображаться в настройках.</string>
+      <string id="UserMessaging_Locked">Do not allow user messaging preferences to be changed</string>
+      <string id="UserMessaging_Locked_Explain">If this policy is disabled, user messaging preferences can be changed by the user.
+
+If this policy is enabled or not configured, user messaging preferences cannot be changed by the user.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
