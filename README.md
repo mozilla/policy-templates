@@ -6189,7 +6189,7 @@ Value (string):
     <true/> | <false/>
     <key>MoreFromMozilla</key>
     <true/> | <false/>
-  </<key>Locked</key>
+    <key>Locked</key>
     <true/> | <false/>
   </dict>
 </dict>
