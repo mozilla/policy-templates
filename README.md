@@ -6059,6 +6059,8 @@ Prevent Firefox from messaging the user in certain situations.
 
 `MoreFromMozilla` If false, don't show the "More from Mozilla" section in Preferences. (Firefox 98)
 
+`Locked` prevents the user from changing user messaging preferences.
+
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`, `browser.aboutwelcome.enabled`, `browser.preferences.moreFromMozilla`
@@ -6071,6 +6073,7 @@ Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0
 Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\SkipOnboarding = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\MoreFromMozilla = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -6081,6 +6084,7 @@ OMA-URI:
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_UrlbarInterventions
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipOnboarding
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_MoreFromMozilla
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_Locked
 ```
 Value (string):
 ```
@@ -6103,6 +6107,8 @@ Value (string):
     <true/> | <false/>
     <key>MoreFromMozilla</key>
     <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -6116,7 +6122,8 @@ Value (string):
       "FeatureRecommendations": true | false,
       "UrlbarInterventions": true | false,
       "SkipOnboarding": true | false,
-      "MoreFromMozilla": true | false
+      "MoreFromMozilla": true | false,
+      "Locked": true | false
     }
   }
 }

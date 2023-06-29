@@ -85,7 +85,7 @@
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Bild in Bild</string>
       <string id="ProxySettings_group">Proxy</string>
-      <string id="SecurityDevices_group">Security Devices</string>
+      <string id="SecurityDevices_group">Sicherheitsmodule</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -607,10 +607,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="WebsiteFilter_Exceptions_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und der Webseiten-Filter aktiviert ist, können Sie Übereinstimmungsmuster für Webseiten angeben, die nicht blockiert werden sollen. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Es gibt eine Beschränkung von 1000 Einträgen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.</string>
-      <string id="WebsiteFilter">Website Filter (JSON)</string>
-      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+      <string id="WebsiteFilter">Webseiten-Filter (JSON)</string>
+      <string id="WebsiteFilter_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie blockierte Webseiten und Ausnahmen über JSON angeben.
 
-If this policy is disabled or not configured, websites are not filtered.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Webseiten nicht gefiltert.</string>
       <string id="Bookmark01">Lesezeichen 01</string>
       <string id="Bookmark02">Lesezeichen 02</string>
       <string id="Bookmark03">Lesezeichen 03</string>
@@ -755,10 +755,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, gelte
       <string id="TrackingProtection_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Nutzer keine Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung vornehmen.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Nutzer Änderungen an den Einstellungen vornehmen.</string>
-      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
-      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+      <string id="TrackingProtection_EmailTracking">E-Mail-Verfolgung</string>
+      <string id="TrackingProtection_EmailTracking_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden versteckte E-Mail-Pixel und Skripte auf Websites blockiert.
 
-If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden versteckte E-Mail-Pixel und Skripte auf Websites nicht blockiert.</string>
       <string id="RequestedLocales">Angefordertes Gebietsschema</string>
       <string id="RequestedLocalesString">Angefordertes Gebietsschema (Zeichenfolge)</string>
       <string id="RequestedLocales_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste der angeforderten Gebietsschemata für die Anwendung in der Reihenfolge ihrer Präferenz angeben. Dadurch wird das entsprechende Sprachpaket aktiv.
@@ -768,11 +768,11 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwe
       <string id="SecurityDevices_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste mit PKCS #11 Modulen definieren. Module werden mit einem Namen und einem qualifizierten Pfad benannt.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine weiteren PKCS #11 Module installiert.</string>
-      <string id="SecurityDevices_Add">Add</string>
-      <string id="SecurityDevices_Delete">Delete</string>
-      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+      <string id="SecurityDevices_Add">Hinzufügen</string>
+      <string id="SecurityDevices_Delete">Entfernen</string>
+      <string id="SecurityDevices_Delete_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Namen der zu entfernenden PKCS #11-Module angeben.
 
-If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine PKCS #11-Module entfernt.</string>
       <string id="SearchBar">Position der Suchleiste</string>
       <string id="SearchBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie festlegen, ob die Suchleiste von der Adressleiste getrennt ist.
 
@@ -847,6 +847,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
       <string id="UserMessaging_MoreFromMozilla_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Abschnitt "Mehr von Mozilla" in den Einstellungen nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der Abschnitt "Mehr von Mozilla" in den Einstellungen angezeigt.</string>
+      <string id="UserMessaging_Locked">Do not allow user messaging preferences to be changed</string>
+      <string id="UserMessaging_Locked_Explain">If this policy is disabled, user messaging preferences can be changed by the user.
+
+If this policy is enabled or not configured, user messaging preferences cannot be changed by the user.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
@@ -1018,12 +1022,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="DisableThirdPartyModuleBlocking_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, dürfen Benutzer keine Module von Drittanbietern auf der Seite about:third-party blockieren.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, dürfen Benutzer Module von Drittanbietern auf der Seite about:third-party blockieren.</string>
-      <string id="Containers">Containers</string>
-      <string id="Containers_Explain">If this policy is enabled, you can use JSON to configure the default containers.
+      <string id="Containers">Container</string>
+      <string id="Containers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie JSON verwenden, um die Standardcontainer zu konfigurieren.
 
-If this policy is disabled or not configured, the built-in defaults are used.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die integrierten Standardwerte verwendet.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
