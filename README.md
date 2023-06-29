@@ -81,7 +81,6 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
-| **[`FlashPlugin (Deprecated)`](#flashplugin-deprecated)** | Configure the default Flash plugin policy as well as origins for which Flash is allowed.
 | **[`GoToIntranetSiteForSingleWordEntryInAddressBar`](#gotointranetsiteforsinglewordentryinaddressbar)** | Force direct intranet site navigation instead of searching when typing single word entries in the address bar.
 | **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
@@ -3043,87 +3042,6 @@ Value (string):
       "Pocket": true | false,
       "SponsoredPocket": true | false,
       "Snippets": true | false,
-      "Locked": true | false
-    }
-  }
-}
-```
-### FlashPlugin (Deprecated)
-Configure the default Flash plugin policy as well as origins for which Flash is allowed.
-
-`Allow` is a list of origins where Flash are allowed.
-
-`Block` is a list of origins where Flash is not allowed.
-
-`Default` determines whether or not Flash is allowed by default.
-
-`Locked` prevents the user from changing Flash preferences.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `permissions.plugin`\
-**Preferences Affected:** `plugin.state.flash`
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\FlashPlugin\Allow\1 = "https://example.org"
-Software\Policies\Mozilla\Firefox\FlashPlugin\Block\1 = "https://example.edu"
-Software\Policies\Mozilla\Firefox\FlashPlugin\Default = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FlashPlugin\Locked = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Flash/FlashPlugin_Allow
-```
-Value (string):
-```
-<enabled/>
-<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.edu"/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Flash/FlashPlugin_Locked
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Flash/FlashPlugin_Default
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>FlashPlugin</key>
-  <dict>
-    <key>Allow</key>
-    <array>
-      <string>http://example.org</string>
-    </array>
-    <key>Block</key>
-    <array>
-      <string>http://example.edu</string>
-    </array>
-    <key>Default</key>
-    <true/> | <false/>
-    <key>Locked</key>
-    <true/> | <false/>
-  </dict>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "FlashPlugin": {
-      "Allow": ["http://example.org/"],
-      "Block": ["http://example.edu/"],
-      "Default": true | false,
       "Locked": true | false
     }
   }

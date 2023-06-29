@@ -320,21 +320,6 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
-	<key>FlashPlugin</key>
-	<dict>
-		<key>Allow</key>
-		<array>
-			<string>https://www.example.com</string>
-		</array>
-		<key>Block</key>
-		<array>
-			<string>https://www.example.org</string>
-		</array>
-		<key>Default</key>
-		<true/>
-		<key>Locked</key>
-		<true/>
-	</dict>
 	<key>GoToIntranetSiteForSingleWordEntryInAddressBar</key>
 	<true/>
 	<key>Handlers</key>
