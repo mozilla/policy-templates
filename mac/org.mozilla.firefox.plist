@@ -618,6 +618,10 @@
 		<false/>
 		<key>SkipOnboarding</key>
 		<true/>
+		<key>MoreFromMozilla</key>
+		<true/>
+		<key>Locked</key>
+		<true/>
 	</dict>
 	<key>UseSystemPrintDialog</key>
 	<true/>

@@ -3729,6 +3729,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="UserMessaging_Locked" class="Both" displayName="$(string.UserMessaging_Locked)" explainText="$(string.UserMessaging_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="Locked">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF75"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA" class="Both" displayName="$(string.DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_DHE_RSA_WITH_AES_128_CBC_SHA">
       <parentCategory ref="DisabledCiphers"/>
       <supportedOn ref="SUPPORTED_FF76_ONLY"/>
