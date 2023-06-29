@@ -59,9 +59,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`DisableTelemetry`](#disabletelemetry)** | DisableTelemetry
 | **[`DisableThirdPartyModuleBlocking`](#disablethirdpartymoduleblocking)** | Do not allow blocking third-party modules.
 | **[`DisplayBookmarksToolbar`](#displaybookmarkstoolbar)** | Set the initial state of the bookmarks toolbar.
-| **[`DisplayBookmarksToolbar (Deprecated)`](#displaybookmarkstoolbar-deprecated)** | Set the initial state of the bookmarks toolbar.
 | **[`DisplayMenuBar`](#displaymenubar)** | Set the state of the menubar.
-| **[`DisplayMenuBar (Deprecated)`](#displaymenubar-deprecated)** | Set the initial state of the menubar.
 | **[`DNSOverHTTPS`](#dnsoverhttps)** | Configure DNS over HTTPS.
 | **[`DontCheckDefaultBrowser`](#dontcheckdefaultbrowser)** | Don't check if Firefox is the default browser at startup.
 | **[`DownloadDirectory`](#downloaddirectory)** | Set and lock the download directory.
@@ -98,7 +96,6 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
-| **[`Preferences (Deprecated)`](#preferences-deprecated)** | Set and lock some preferences.
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
@@ -1102,14 +1099,6 @@ Configure cookie preferences.
 | limit-foreign | Reject third party cookies for sites you haven't visited
 | reject-tracker | Reject cookies for known trackers (default)
 | reject-tracker-and-partition-foreign | Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection) (default for private browsing)
-
-`Default` (Deprecated) determines whether cookies are accepted at all.
-
-`AcceptThirdParty` (Deprecated) determines how third-party cookies are handled.
-
-`ExpireAtSessionEnd` determines when cookies expire.
-
-`RejectTracker` (Deprecated) only rejects cookies for trackers.
 
 `Locked` prevents the user from changing cookie preferences.
 
@@ -2211,41 +2200,6 @@ Value (string):
   }
 }
 ```
-### DisplayBookmarksToolbar (Deprecated)
-Set the initial state of the bookmarks toolbar. A user can still hide it and it will stay hidden.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `displayBookmarksToolbar`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisplayBookmarksToolbar = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisplayBookmarksToolbar
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>DisplayBookmarksToolbar</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisplayBookmarksToolbar": true | false
-  }
-}
-```
 ### DisplayMenuBar
 Set the state of the menubar.
 
@@ -2287,32 +2241,6 @@ Value (string):
 {
   "policies": {
     "DisplayMenuBar": "always", "never", "default-on", "default-off"
-  }
-}
-```
-### DisplayMenuBar (Deprecated)
-Set the initial state of the menubar. A user can still hide it and it will stay hidden.
-
-**Compatibility:** Firefox 60, Firefox ESR 60 (Windows, some Linux)\
-**CCK2 Equivalent:** `displayMenuBar`\
-**Preferences Affected:** N/A
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisplayMenuBar = 0x1 | 0x0
-```
-#### macOS
-```
-<dict>
-  <key>DisplayMenuBar</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisplayMenuBar": true | false
   }
 }
 ```
@@ -4565,7 +4493,7 @@ Value (string):
 ### Preferences
 Set and lock preferences.
 
-**NOTE** On Windows, in order to use this policy, you must clear all settings in the old **Preferences (Deprecated)** section.
+**NOTE** On Windows, in order to use this policy, you must clear all settings in the old **Preferences (Deprecated)** section in group policy.
 
 Previously you could only set and lock a subset of preferences. Starting with Firefox 81 and Firefox ESR 78.3 you can set many more preferences. You can also set default preferences, user preferences and you can clear preferences.
 
@@ -4740,114 +4668,6 @@ Value (string):
         "Value": false,
         "Status": "locked"
       }
-    }
-  }
-}
-```
-### Preferences (Deprecated)
-Set and lock certain preferences.
-
-**Compatibility:** See below\
-**CCK2 Equivalent:** `preferences`\
-**Preferences Affected:** See below
-
-| Preference | Type | Compatibility | Default
-| --- | --- | --- | --- |
-| accessibility.force_disabled | integer | Firefox 70, Firefox ESR 68.2 | 0 | &nbsp;&nbsp;&nbsp;&nbsp;If set to 1, platform accessibility is disabled.
-| app.update.auto (Deprecated - Switch to AppAutoUpdate policy) | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, Firefox doesn't automatically install update.
-| browser.bookmarks.autoExportHTML | boolean | Firefox 70, Firefox ESR 68.2 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are exported on shutdown.
-| browser.bookmarks.file | string | Firefox 70, Firefox ESR 68.2 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;If set, the name of the file where bookmarks are exported and imported.
-| browser.bookmarks.restore_default_bookmarks | boolean | Firefox 70, Firefox ESR 68.2 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are restored to their defaults.
-| browser.cache.disk.enable | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, don't store cache on the hard drive.
-| ~browser.cache.disk.parent_directory~ | string | Firefox 68, Firefox ESR 68 | Profile temporary directory | &nbsp;&nbsp;&nbsp;&nbsp;~If set, changes the location of the disk cache.~ This policy doesn't work. It's being worked on.
-| browser.fixup.dns_first_for_single_words | boolean | Firefox 68, Firefox ESR 68 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, single words are sent to DNS, not directly to search.
-| browser.newtabpage.activity-stream.default.sites | string | Firefox 72, ESR 68.4 | Locale dependent | &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of URLs to use as the default top sites on the new tab page. Due to Firefox limitations, search sites can't be added. In addition, sites with the same name but different TLDs (example.org/example.com) will not display properly.
-| browser.places.importBookmarksHTML | boolean | Firefox 70, Firefox ESR 68.2 | &nbsp;&nbsp;&nbsp;&nbsp;If true, bookmarks are always imported on startup.
-| browser.safebrowsing.phishing.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, phishing protection is not enabled (Not recommended)
-| browser.safebrowsing.malware.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, malware protection is not enabled (Not recommended)
-| browser.search.update | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, updates for search engines are not checked.
-| browser.slowStartup.notificationDisabled | boolean | Firefox 70, Firefox ESR 68.2 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, a notification isn't shown if startup is slow.
-| browser.tabs.warnOnClose | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, there is no warning when the browser is closed.
-| browser.taskbar.previews.enable | boolean | Firefox 70, Firefox ESR 68.2 (Windows only) | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, tab previews are shown in the Windows taskbar.
-| browser.urlbar.suggest.bookmark | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, bookmarks aren't suggested when typing in the URL bar.
-| browser.urlbar.suggest.history | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, history isn't suggested when typing in the URL bar.
-| browser.urlbar.suggest.openpage | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, open tabs aren't suggested when typing in the URL bar.
-| datareporting.policy.dataSubmissionPolicyBypassNotification | boolean | Firefox 68, Firefox ESR 68 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, don't show the privacy policy tab on first run.
-| dom.allow_scripts_to_close_windows | boolean | Firefox 70, Firefox ESR 68.2 | false | &nbsp;&nbsp;&nbsp;&nbsp;If false, web page can close windows.
-| dom.disable_window_flip | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can focus and activate windows.
-| dom.disable_window_move_resize | boolean | Firefox 68, Firefox ESR 68 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, web pages can't move or resize windows.
-| dom.event.contextmenu.enabled | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, web pages can't override context menus.
-| dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl | string | Firefox 68, Firefox ESR 68 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl | string | Firefox 68, Firefox ESR 68 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;See https://support.mozilla.org/en-US/kb/dom-events-changes-introduced-firefox-66
-| dom.xmldocument.load.enabled | boolean | Firefox ESR 68.5 | true. | &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.load is not available.
-| dom.xmldocument.async.enabled | boolean | Firefox ESR 68.5 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, XMLDocument.async is not available.
-| extensions.blocklist.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, the extensions blocklist is not used (Not recommended)
-| extensions.getAddons.showPane | boolean | Firefox 68, Firefox ESR 68 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Recommendations tab is not displayed in the Add-ons Manager.
-| extensions.htmlaboutaddons.recommendations.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, recommendations are not shown on the Extensions tab in the Add-ons Manager.
-| geo.enabled | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, the geolocation API is disabled. | Language dependent
-| intl.accept_languages | string | Firefox 70, Firefox ESR 68.2 | &nbsp;&nbsp;&nbsp;&nbsp;If set, preferred language for web pages.
-| media.eme.enabled (Deprecated - Switch to EncryptedMediaExtensions policy) | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, Encrypted Media Extensions are not enabled.
-| media.gmp-gmpopenh264.enabled | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, the OpenH264  plugin is not downloaded.
-| media.gmp-widevinecdm.enabled | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Widevine plugin is not downloaded.
-| media.peerconnection.enabled | boolean | Firefox 72, Firefox ESR 68.4 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, WebRTC is disabled
-| media.peerconnection.ice.obfuscate_host_addresses.whitelist (Deprecated) | string | Firefox 72, Firefox ESR 68.4 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of domains for which mDNS hostname obfuscation is
-disabled
-| media.peerconnection.ice.obfuscate_host_addresses.blocklist | string | Firefox 79, Firefox ESR 78.1 | N/A | &nbsp;&nbsp;&nbsp;&nbsp;If set, a list of domains for which mDNS hostname obfuscation is
-disabled
-| network.dns.disableIPv6 | boolean | Firefox 68, Firefox ESR 68 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, IPv6 DNS lokoups are disabled.
-| network.IDN_show_punycode | boolean | Firefox 68, Firefox ESR 68 | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, display the punycode version of internationalized domain names.
-| places.history.enabled | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, history is not enabled.
-| print.save_print_settings | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, print settings are not saved between jobs.
-| security.default_personal_cert | string | Firefox 68, Firefox ESR 68 | Ask Every Time | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
-| security.mixed_content.block_active_content | boolean | Firefox 70, Firefox ESR 68.2 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
-| security.osclientcerts.autoload | boolean | Firefox 72 (Windows), Firefox 75 (macOS)  | false | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
-| security.ssl.errorReporting.enabled | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
-| security.tls.hello_downgrade_check | boolean | Firefox 72, Firefox ESR 68.4 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
-| ui.key.menuAccessKeyFocuses | boolean | Firefox 68, Firefox ESR 68 | true | &nbsp;&nbsp;&nbsp;&nbsp;If false, the Alt key doesn't show the menubar on Windows.
-| widget.content.gtk-theme-override | string | Firefox 72, Firefox ESR 68.4 (Linux only) | N/A | &nbsp;&nbsp;&nbsp;&nbsp;If set, overrides the GTK theme for widgets.
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\Preferences\boolean_preference_name = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\Preferences\string_preference_name = "string_value"
-```
-#### Windows (Intune)
-OMA-URI: (periods are replaced by underscores)
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/boolean_preference_name
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI: (periods are replaced by underscores)
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Preferences/string_preference_name
-```
-Value (string):
-```
-<enabled/>
-<data id="Preferences_String" value="string_value"/>
-```
-#### macOS
-```
-<dict>
-  <key>Preferences</key>
-  <dict>
-    <key>boolean_preference_name</key>
-    <true/> | <false/>
-    <key>string_preference_name</key>
-    <string>string_value</string>
-  </dict>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "Preferences": {
-      "boolean_preference_name": true | false,
-      "string_preference_name": "string_value"
     }
   }
 }
