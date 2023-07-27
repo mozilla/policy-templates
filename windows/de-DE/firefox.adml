@@ -239,10 +239,10 @@ Für weitere Informationen, besuchen Sie https://support.mozilla.org/en-US/kb/sh
       <string id="DisableForgetButton_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der &quot;Vergessen&quot; Button nicht zur Verfügung.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der &quot;Vergessen&quot; Button zur Verfügung.</string>
-      <string id="DisableFormHistory">Chronik deaktivieren</string>
-      <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox dieselben Einstellungen wie im Privaten Modus verwenden und keinerlei Chronik anlegen.
+      <string id="DisableFormHistory">Formular- und Suchverlaufthistorie deaktivieren</string>
+      <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox keine Formular- oder Suchverläufe speichern.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, Firefox wird eine Chronik anlegen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird Firefox Formular- und Suchverläufe speichern.</string>
       <string id="DisablePasswordReveal">Verbieten, dass Nutzer Passwörter in Gespeicherte Zugangsdaten anzeigen können</string>
       <string id="DisablePasswordReveal_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Nutzer Gespeicherte Zugangsdaten nicht anzeigen lassen.
 
