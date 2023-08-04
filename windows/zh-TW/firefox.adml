@@ -1267,8 +1267,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
         <checkBox refId="DNSOverHTTPSEnabled">啟用 DNS over HTTPS。</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">不允許變更 DNS over HTTPS 偏好設定。</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>標題：</text>

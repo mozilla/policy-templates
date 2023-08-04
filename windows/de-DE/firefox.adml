@@ -1269,8 +1269,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <checkBox refId="DNSOverHTTPSEnabled">DNS über HTTPS aktivieren.</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS-über-HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>Title:</text>

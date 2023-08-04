@@ -1270,7 +1270,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <presentation id="SSLVersionMin">
         <dropdownList refId="SSLVersion" defaultItem="2"/>
       </presentation>
-	  <presentation id="SSLVersionMax">
+      <presentation id="SSLVersionMax">
         <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
