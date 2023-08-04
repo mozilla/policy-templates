@@ -5646,7 +5646,7 @@ Value (string):
 ```
 ### SSLVersionMax
 
-Set and lock the maximum version of TLS.
+Set and lock the maximum version of TLS. (Firefox defaults to a maximum of TLS 1.3.)
 
 **Compatibility:** Firefox 66, Firefox ESR 60.6\
 **CCK2 Equivalent:** N/A\
@@ -5684,7 +5684,7 @@ Value (string):
 ```
 ### SSLVersionMin
 
-Set and lock the minimum version of TLS.
+Set and lock the minimum version of TLS. (Firefox defaults to a minimum of TLS 1.2.)
 
 **Compatibility:** Firefox 66, Firefox ESR 60.6\
 **CCK2 Equivalent:** N/A\

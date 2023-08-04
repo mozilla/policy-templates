@@ -812,7 +812,7 @@ Si esta política no está configurada, las sugerencias de búsqueda se habilita
       <string id="SSLVersionMin">Versión mínima de SSL habilitada</string>
       <string id="SSLVersionMin_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS inferiores al valor especificado.
 
-Si esta política está deshabilitada o no está configurada, Firefox establecerá de manera predeterminada un mínimo de TLS 1.0.</string>
+Si esta política está deshabilitada o no está configurada, Firefox establecerá de manera predeterminada un mínimo de TLS 1.2.</string>
       <string id="SSLVersionMax">Versión máxima de SSL habilitada</string>
       <string id="SSLVersionMax_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS superiores al valor especificado.
 

@@ -812,7 +812,7 @@ Se questo criterio non è configurato, i suggerimenti di ricerca saranno abilita
       <string id="SSLVersionMin">Abilita versione minima SSL</string>
       <string id="SSLVersionMin_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS minori del valore specificato.
 
-Se questo criterio è disabilitato o non configurato, per impostazione predefinita Firefox utilizzerà TLS 1.0 come versione minima.</string>
+Se questo criterio è disabilitato o non configurato, per impostazione predefinita Firefox utilizzerà TLS 1.2 come versione minima.</string>
       <string id="SSLVersionMax">Abilita versione massima SSL</string>
       <string id="SSLVersionMax_Explain">Se questo criterio è abilitato, Firefox non utilizzerà versioni di SSL/TLS maggiori del valore specificato.
 

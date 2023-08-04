@@ -812,7 +812,7 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="SSLVersionMin">启用的最低 SSL 版本</string>
       <string id="SSLVersionMin_Explain">若启用此原则，Firefox 将不会使用低于指定版本的 SSL/TLS 版本进行连接。
 
-若禁用或不设定此原则，Firefox 的默认最低版本为 TLS 1.0。</string>
+若禁用或不设定此原则，Firefox 的默认最低版本为 TLS 1.2。</string>
       <string id="SSLVersionMax">启用的最高 SSL 版本</string>
       <string id="SSLVersionMax_Explain">若启用此原则，将不会使用高于指定版本的 SSL/TLS 版本进行连接。
 
