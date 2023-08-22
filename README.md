@@ -2780,6 +2780,11 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
     "installation_mode": "force_installed",
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
+  "@testpilot-containers": {
+    "installation_mode": "normal_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi",
+    "default_area": "navbar"
+  },
   "https-everywhere@eff.org": {
     "installation_mode": "allowed"
   }
@@ -2805,7 +2810,12 @@ Value (string):
     "installation_mode": "force_installed",
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
-    "https-everywhere@eff.org": {
+  "@testpilot-containers": {
+    "installation_mode": "normal_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi",
+    "default_area": "navbar"
+  },
+  "https-everywhere@eff.org": {
     "installation_mode": "allowed"
   }
 }'/>
@@ -2837,6 +2847,15 @@ Value (string):
       <key>install_url</key>
       <string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
     </dict>
+    <key>@testpilot-containers</key>
+    <dict>
+      <key>installation_mode</key>
+      <string>normal_installed</string>
+      <key>install_url</key>
+      <string>https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi</string>
+      <key>default_area</key>
+      <string>navbar</string>
+    </dict>
     <key>https-everywhere@eff.org</key>
     <dict>
       <key>installation_mode</key>
@@ -2859,6 +2878,11 @@ Value (string):
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      },
+      "@testpilot-containers": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi",
+        "default_area": "navbar"
       },
       "https-everywhere@eff.org": {
         "installation_mode": "allowed"
