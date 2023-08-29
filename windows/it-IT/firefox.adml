@@ -330,6 +330,7 @@ Se questo criterio è disabilitato o non configurato, non sarà bloccata nessuna
       <string id="ExtensionUpdate_Explain">Se questo criterio è disabilitato, le estensioni non saranno aggiornate automaticamente.
 
 Se questo criterio è abilitato o non configurato, le estensioni saranno aggiornate automaticamente.</string>
+      <string id="ExtensionSettingsOneLine">Gestione estensioni (JSON on one line)</string>
       <string id="ExtensionSettings">Gestione estensioni</string>
       <string id="ExtensionSettings_Explain">Se questo criterio è abilitato, è possibile utilizzare JSON per descrivere la politica di gestione delle estensioni.
 
@@ -609,6 +610,7 @@ Se questo criterio è disabilitato o non configurato, non sarà bloccato nessun 
       <string id="WebsiteFilter_Exceptions_Explain">Se questo criterio è abilitato e il sito filtri Web è abilitato, è possibile utilizzare dei pattern per specificare i siti da non bloccare. I pattern sono documentati alla pagina https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. C'è un limite di 1000 voci.
 
 Se questo criterio è disabilitato o non configurato, non ci sono eccezioni al sito filtri Web.</string>
+      <string id="WebsiteFilterOneLine">Website Filter (JSON on one line)</string>
       <string id="WebsiteFilter">Website Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
 
@@ -906,12 +908,14 @@ Se questo criterio è disabilitato o non configurato, le impostazioni Picture-in
 Se questo criterio è disabilitato, gli utenti non possono creare una password principale.
 
 Se questo criterio è non configurato, gli utenti possono scegliere di creare una password principale.</string>
+      <string id="HandlersOneLine">Gestori (JSON on one line)</string>
       <string id="Handlers">Gestori</string>
       <string id="Handlers_Explain">Se questo criterio è abilitato, è possibile utilizzare JSON per configurare i gestori applicazione predefiniti.
 
 Se questo criterio è disabilitato o non configurato, vengono utilizzati i criteri predefiniti di Firefox.
 
 Per informazioni dettagliate sulla creazione del criterio, si veda https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+      <string id="PreferencesOneLine">Preferenze (JSON on one line)</string>
       <string id="Preferences">Preferenze</string>
       <string id="Preferences_Explain">Note: In order to use this policy, you must clear all settings in the old Preferences (Deprecated) section.
 
@@ -920,6 +924,7 @@ If this policy is enabled, you can use JSON to configure preferences.
 If this policy is disabled or not configured, preferences are not modified.
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+      <string id="BookmarksOneLine">Bookmarks (JSON on one line)</string>
       <string id="Bookmarks">Bookmarks (JSON)</string>
       <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
 
@@ -930,6 +935,7 @@ If this policy is enabled along with individual bookmarks, those bookmarks will 
 This policy has no effect on Managed Bookmarks.
 
 For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+      <string id="ManagedBookmarksOneLine">Managed Bookmarks (JSON on one line)</string>
       <string id="ManagedBookmarks">Managed Bookmarks</string>
       <string id="ManagedBookmarks_Explain">If this policy is enabled, you can use JSON to configure managed bookmarks.
 
@@ -944,6 +950,7 @@ If this policy is disabled or not configured, users can access any account on Go
       <string id="BackgroundAppUpdate_Explain">If this policy disabled, the application will not try to install updates when the application is not running.
 
 If this policy is enabled or not configured, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.</string>
+      <string id="AutoLaunchProtocolsFromOriginsOneLine">Auto Launch Protocols From Origins (JSON on one line)</string>
       <string id="AutoLaunchProtocolsFromOrigins">Auto Launch Protocols From Origins</string>
       <string id="AutoLaunchProtocolsFromOrigins_Explain">If this policy is enabled, you can define a list of external protocols that can be used from listed origins without prompting the user.
 
@@ -958,6 +965,7 @@ If this policy is disabled or not configured, credentials must be entered manual
       <string id="UseSystemPrintDialog_Explain">If this policy is enabled, Firefox will use the system print dialog instead of showing print preview before printing.
 
 If this policy is disabled or not configured, Firefox will show print preview before printing.</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine">Disable warnings based on file extension for specific file types on domains (JSON on one line)</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Disable warnings based on file extension for specific file types on domains</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">If this policy is enabled, you can define a list of domains and file type extensions that will be exempt from executable warnings.
 
@@ -1020,6 +1028,7 @@ If this policy is disabled or not configured, DNS is not proxied when using SOCK
       <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, users are not allowed to block third-party modules from the about:third-party page.
 
 If this policy is disabled or not configured, users users are allowed to block third-party modules from the about:third-party page.</string>
+      <string id="ContainersOneLine">Containers (JSON on one line)</string>
       <string id="Containers">Containers</string>
       <string id="Containers_Explain">If this policy is enabled, you can use JSON to configure the default containers.
 
@@ -1352,6 +1361,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
       </presentation>
       <presentation id="JSON">
         <multiTextBox refId="JSON"/>
+      </presentation>
+      <presentation id="JSONOneLine">
+        <textBox refId="JSONOneLine">
+          <label/>
+        </textBox>
       </presentation>
       <presentation id="Proxy_ConnectionType">
         <dropdownList refId="Proxy_ConnectionType"/>

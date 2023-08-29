@@ -330,6 +330,7 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="ExtensionUpdate_Explain">若禁用此原则，将不会自动更新扩充套件。
 
 若启用或不设定此原则，将自动更新扩充套件。 </string>
+      <string id="ExtensionSettingsOneLine">扩展套件管理 (JSON on one line)</string>
       <string id="ExtensionSettings">扩展套件管理</string>
       <string id="ExtensionSettings_Explain">若启用此原则，您可以用 JSON 文件来描述扩展套件管理策略。
 
@@ -609,6 +610,7 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="WebsiteFilter_Exceptions_Explain">若启用此原则，且启用了网站封锁规则，将可以指定要排除封锁的网站网址规则。 规则格式文件位于https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns。 仅支持最多1000笔项目。
 
 若禁用或不设定此原则，则不会放行任何例外网站。</string>
+      <string id="WebsiteFilterOneLine">Website Filter (JSON on one line)</string>
       <string id="WebsiteFilter">Website Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
 
@@ -905,12 +907,14 @@ If this policy is enabled or not configured, user messaging preferences cannot b
 若禁用此原则，用户将无法建立主控密码。
 
 若不设定此原则，则使用者可自行决定是否要使用主控密码功能。</string>
+      <string id="HandlersOneLine">应用程序处理方式 (JSON on one line)</string>
       <string id="Handlers">应用程序处理方式</string>
       <string id="Handlers_Explain">若启用此原则，您可以使用 JSON 文件来设定默认应用程序处理方式。
 
 若禁用或不设定此原则，则使用 Firefox 默认设置。
 
 若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers。</string>
+      <string id="PreferencesOneLine">偏好设定 (JSON on one line)</string>
       <string id="Preferences">偏好设定</string>
       <string id="Preferences_Explain">注：若要使用此原则，您必须先清除「偏好设定（已弃用）」区段当中的旧设定。
 
@@ -919,6 +923,7 @@ If this policy is enabled or not configured, user messaging preferences cannot b
 若禁用或不设定此原则，则不修改偏好设定。
 
 若需要建立原则的详细信息，请参考 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。</string>
+      <string id="BookmarksOneLine">Bookmarks (JSON on one line)</string>
       <string id="Bookmarks">Bookmarks (JSON)</string>
       <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
 
@@ -929,6 +934,7 @@ If this policy is enabled along with individual bookmarks, those bookmarks will 
 This policy has no effect on Managed Bookmarks.
 
 For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+      <string id="ManagedBookmarksOneLine">受管理的书签 (JSON on one line)</string>
       <string id="ManagedBookmarks">受管理的书签</string>
       <string id="ManagedBookmarks_Explain">若启用此原则，您可以使用 JSON 文件来指定受管理的书签。
 
@@ -943,6 +949,7 @@ If this policy is disabled or not configured, users can access any account on Go
       <string id="BackgroundAppUpdate_Explain">If this policy disabled, the application will not try to install updates when the application is not running.
 
 If this policy is enabled or not configured, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.</string>
+      <string id="AutoLaunchProtocolsFromOriginsOneLine">Auto Launch Protocols From Origins (JSON on one line)</string>
       <string id="AutoLaunchProtocolsFromOrigins">Auto Launch Protocols From Origins</string>
       <string id="AutoLaunchProtocolsFromOrigins_Explain">If this policy is enabled, you can define a list of external protocols that can be used from listed origins without prompting the user.
 
@@ -957,6 +964,7 @@ If this policy is disabled or not configured, credentials must be entered manual
       <string id="UseSystemPrintDialog_Explain">If this policy is enabled, Firefox will use the system print dialog instead of showing print preview before printing.
 
 If this policy is disabled or not configured, Firefox will show print preview before printing.</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine">Disable warnings based on file extension for specific file types on domains (JSON on one line)</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Disable warnings based on file extension for specific file types on domains</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">If this policy is enabled, you can define a list of domains and file type extensions that will be exempt from executable warnings.
 
@@ -1019,6 +1027,7 @@ If this policy is disabled or not configured, DNS is not proxied when using SOCK
       <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, users are not allowed to block third-party modules from the about:third-party page.
 
 If this policy is disabled or not configured, users users are allowed to block third-party modules from the about:third-party page.</string>
+      <string id="ContainersOneLine">Containers (JSON on one line)</string>
       <string id="Containers">Containers</string>
       <string id="Containers_Explain">If this policy is enabled, you can use JSON to configure the default containers.
 
@@ -1351,6 +1360,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
       </presentation>
       <presentation id="JSON">
         <multiTextBox refId="JSON"/>
+      </presentation>
+      <presentation id="JSONOneLine">
+        <textBox refId="JSONOneLine">
+          <label/>
+        </textBox>
       </presentation>
       <presentation id="Proxy_ConnectionType">
         <dropdownList refId="Proxy_ConnectionType"/>

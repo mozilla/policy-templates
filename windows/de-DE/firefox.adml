@@ -330,6 +330,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="ExtensionUpdate_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Add-ons nicht automatisch aktualisiert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden Add-ons automatisch aktualisiert.</string>
+      <string id="ExtensionSettingsOneLine">Erweiterungen mit JSON verwalten (JSON on one line)</string>
       <string id="ExtensionSettings">Erweiterungen mit JSON verwalten</string>
       <string id="ExtensionSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die Einstellungen zu Erweiterungen mit einer JSON-Datei verwaltet.
 
@@ -607,6 +608,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="WebsiteFilter_Exceptions_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und der Webseiten-Filter aktiviert ist, können Sie Übereinstimmungsmuster für Webseiten angeben, die nicht blockiert werden sollen. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Es gibt eine Beschränkung von 1000 Einträgen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.</string>
+      <string id="WebsiteFilterOneLine">Webseiten-Filter (JSON on one line)</string>
       <string id="WebsiteFilter">Webseiten-Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie blockierte Webseiten und Ausnahmen über JSON angeben.
 
@@ -903,6 +905,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
 Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Setzen eines Masterpasswortes nicht möglich.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, können Nutzer ein Masterpasswort setzen, dies ist aber nicht erforderlich.</string>
+      <string id="HandlersOneLine">Handlers (JSON on one line)</string>
       <string id="Handlers">Handlers</string>
       <string id="Handlers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Anwendungsverhalten (beim Anklicken eines Links oder beim Download) mittels JSON beschreiben.
 
@@ -910,6 +913,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
+      <string id="PreferencesOneLine">Einstellungen (JSON on one line)</string>
       <string id="Preferences">Einstellungen</string>
       <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (Veraltet) löschen.
 
@@ -919,6 +923,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
+      <string id="BookmarksOneLine">Lesezeichen (JSON on one line)</string>
       <string id="Bookmarks">Lesezeichen (JSON)</string>
       <string id="Bookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Lesezeichen mit JSON konfigurieren. Mit [] können Sie alle Lesezeichen löschen.
 
@@ -930,6 +935,7 @@ Diese Richtlinieneinstellung wirkt sich nicht auf verwaltete Lesezeichen aus.
 
 Für Informationen über die JSON-Struktur, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks (Englisch)</string>
+      <string id="ManagedBookmarksOneLine">Verwaltete Lesezeichen (JSON on one line)</string>
       <string id="ManagedBookmarks">Verwaltete Lesezeichen</string>
       <string id="ManagedBookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie verwaltete Lesezeichen mit Hilfe einer JSON-Datei konfigurieren.
 
@@ -945,6 +951,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="BackgroundAppUpdate_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die Anwendung keine Updates im Hintergrund installieren, wenn sie geschlossen ist.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Updates ohne Genehmigung durch den Anwender im Hintergrund installiert werden, selbst wenn die Anwendung nicht gestartet ist. Das Betriebssystem kann jedoch den Anwender um Genehmigung fragen.</string>
+      <string id="AutoLaunchProtocolsFromOriginsOneLine">Externe Protokolle automatisch ausführen (JSON on one line)</string>
       <string id="AutoLaunchProtocolsFromOrigins">Externe Protokolle automatisch ausführen</string>
       <string id="AutoLaunchProtocolsFromOrigins_Explain">Wenn diese Richtlinieneinstellung aktiviert, können Sie eine Liste von externen Protokollen definieren, die bei bestimmten URLs ohne Nachfrage beim Benutzer automatisch ausgeführt werden.
 
@@ -960,6 +967,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, müss
       <string id="UseSystemPrintDialog_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, verwendet Firefox den Druckdialog des Betriebssystems, anstatt vorher eine Druckvorschau anzuzeigen.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, zeigt Firefox vor dem Drucken eine Druckvorschau an.</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine">Deaktivieren von Warnungen auf der Grundlage von Dateierweiterungen für bestimmte Dateitypen in Domänen (JSON on one line)</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Deaktivieren von Warnungen auf der Grundlage von Dateierweiterungen für bestimmte Dateitypen in Domänen</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste von Domänen und Dateierweiterungen definieren, die von Warnungen ausgenommen sind.
 
@@ -1022,6 +1030,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="DisableThirdPartyModuleBlocking_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, dürfen Benutzer keine Module von Drittanbietern auf der Seite about:third-party blockieren.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, dürfen Benutzer Module von Drittanbietern auf der Seite about:third-party blockieren.</string>
+      <string id="ContainersOneLine">Container (JSON on one line)</string>
       <string id="Containers">Container</string>
       <string id="Containers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie JSON verwenden, um die Standardcontainer zu konfigurieren.
 
@@ -1351,6 +1360,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="JSON">
         <multiTextBox refId="JSON"/>
+      </presentation>
+      <presentation id="JSONOneLine">
+        <textBox refId="JSONOneLine">
+          <label/>
+        </textBox>
       </presentation>
       <presentation id="Proxy_ConnectionType">
         <dropdownList refId="Proxy_ConnectionType"/>

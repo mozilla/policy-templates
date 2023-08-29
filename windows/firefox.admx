@@ -1050,6 +1050,13 @@
         <multiText id="ExtensionSettings" valueName="ExtensionSettings"  maxLength="16384"/>
       </elements>
     </policy>
+    <policy name="ExtensionSettingsOneLine" class="Both" displayName="$(string.ExtensionSettingsOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="Extensions"/>
+      <supportedOn ref="SUPPORTED_FF69"/>
+      <elements>
+        <text id="JSONOneLine" valueName="ExtensionSettings" maxLength="16384"/>
+      </elements>
+    </policy>
     <policy name="NoDefaultBookmarks" class="Both" displayName="$(string.NoDefaultBookmarks)" explainText="$(string.NoDefaultBookmarks_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="NoDefaultBookmarks">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
@@ -1407,6 +1414,13 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="A_BookmarksOneLine" class="Both" displayName="$(string.BookmarksOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF95"/>
+      <elements>
+        <text id="JSONOneLine" valueName="Bookmarks" maxLength="16384"/>
+      </elements>
     </policy>
     <policy name="A_Bookmarks" class="Both" displayName="$(string.Bookmarks)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="Bookmarks"/>
@@ -2696,6 +2710,13 @@
         <list id="WebsiteFilter" key="Software\Policies\Mozilla\Firefox\WebsiteFilter\Exceptions" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="WebsiteFilterOneLine" class="Both" displayName="$(string.WebsiteFilterOneLine)" explainText="$(string.WebsiteFilter_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF114"/>
+      <elements>
+        <text id="JSONOneLine" valueName="WebsiteFilter" maxLength="16384"/>
+      </elements>
+    </policy>
     <policy name="WebsiteFilter" class="Both" displayName="$(string.WebsiteFilter)" explainText="$(string.WebsiteFilter_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF114"/>
@@ -3896,6 +3917,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="HandlersOneLine" class="Both" displayName="$(string.HandlersOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF78"/>
+      <elements>
+        <text id="JSONOneLine" valueName="Handlers" maxLength="16384"/>
+      </elements>
+    </policy>
     <policy name="Handlers" class="Both" displayName="$(string.Handlers)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Handlers_Explain)" presentation="$(presentation.Handlers)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF78"/>
@@ -3903,11 +3931,25 @@
         <multiText id="Handlers" valueName="Handlers"  maxLength="16384"/>
       </elements>
     </policy>
+    <policy name="PreferencesOneLine" class="Both" displayName="$(string.PreferencesOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF81"/>
+      <elements>
+        <text id="JSONOneLine" valueName="Preferences" maxLength="16384"/>
+      </elements>
+    </policy>
     <policy name="Preferences" class="Both" displayName="$(string.Preferences)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF81"/>
       <elements>
         <multiText id="JSON" valueName="Preferences"  maxLength="16384"/>
+      </elements>
+    </policy>
+    <policy name="ManagedBookmarksOneLine" class="Both" displayName="$(string.ManagedBookmarksOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ManagedBookmarks_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF83"/>
+      <elements>
+        <text id="JSONOneLine" valueName="ManagedBookmarks" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="ManagedBookmarks" class="Both" displayName="$(string.ManagedBookmarks)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ManagedBookmarks_Explain)" presentation="$(presentation.JSON)">
@@ -3933,6 +3975,13 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="AutoLaunchProtocolsFromOriginsOneLine" class="Both" displayName="$(string.AutoLaunchProtocolsFromOriginsOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF81"/>
+      <elements>
+        <text id="JSONOneLine" valueName="AutoLaunchProtocolsFromOrigins" maxLength="16384"/>
+      </elements>
     </policy>
     <policy name="AutoLaunchProtocolsFromOrigins" class="Both" displayName="$(string.AutoLaunchProtocolsFromOrigins)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
@@ -3960,6 +4009,13 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine" class="Both" displayName="$(string.ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF102"/>
+      <elements>
+        <text id="JSONOneLine" valueName="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings" maxLength="16384"/>
+      </elements>
     </policy>
     <policy name="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings" class="Both" displayName="$(string.ExemptDomainFileTypePairsFromFileTypeDownloadWarnings)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
@@ -4004,6 +4060,13 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
+    </policy>
+    <policy name="ContainersOneLine" class="Both" displayName="$(string.ContainersOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Containers_Explain)" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF113"/>
+      <elements>
+        <text id="JSONOneLine" valueName="Containers" maxLength="16384"/>
+      </elements>
     </policy>
     <policy name="Containers" class="Both" displayName="$(string.Containers)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Containers_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>

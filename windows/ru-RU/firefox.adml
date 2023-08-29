@@ -330,6 +330,7 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="ExtensionUpdate_Explain">Если эта политика отключена, расширения не будут обновляться автоматически.
 
 Если эта политика включена или не настроена, расширения будут обновляться автоматически.</string>
+      <string id="ExtensionSettingsOneLine">Управление расширениями (JSON on one line)</string>
       <string id="ExtensionSettings">Управление расширениями</string>
       <string id="ExtensionSettings_Explain">Если эта политика включена, вы можете использовать JSON для описания политики управления расширениями.
 
@@ -609,6 +610,7 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
        <string id="WebsiteFilter_Exceptions_Explain">Если эта политика включена и фильтр веб-сайтов включен, вы можете указать шаблоны соответствия для сайтов, которые не хотите блокировать. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
 
 Если эта политика отключена или не настроена, для фильтра веб-сайтов нет исключений.</string>
+      <string id="WebsiteFilterOneLine">Website Filter (JSON on one line)</string>
       <string id="WebsiteFilter">Website Filter (JSON)</string>
       <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
 
@@ -905,12 +907,14 @@ If this policy is enabled or not configured, user messaging preferences cannot b
 Если эта политика отключена, пользователи не могут создать основной пароль.
 
 Если эта политика не настроена, пользователи могут создать основной пароль.</string>
+      <string id="HandlersOneLine">Обработчики (JSON on one line)</string>
       <string id="Handlers">Обработчики</string>
       <string id="Handlers_Explain">Если эта политика включена, вы можете использовать JSON для настройки обработчиков приложений по умолчанию.
 
 Если эта политика отключена или не настроена, используются настройки Firefox по умолчанию.
 
 Для получения подробной информации о создании политики см. https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+      <string id="PreferencesOneLine">Настройки (JSON on one line)</string>
       <string id="Preferences">Настройки</string>
       <string id="Preferences_Explain">Примечание. Чтобы использовать эту политику, необходимо очистить все настройки в старом разделе настроек (устарело).
 
@@ -919,6 +923,7 @@ If this policy is enabled or not configured, user messaging preferences cannot b
 Если эта политика отключена или не настроена, предпочтения не изменяются.
 
 Для получения подробной информации о создании политики см. Https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+      <string id="BookmarksOneLine">Закладки (JSON on one line)</string>
       <string id="Bookmarks">Закладки (JSON)</string>
       <string id="Bookmarks_Explain">Если эта политика включена, вы можете использовать JSON для настройки закладок, в том числе [] для удаления всех закладок.
 
@@ -929,6 +934,7 @@ If this policy is enabled or not configured, user messaging preferences cannot b
 Эта политика не влияет на управляемые закладки.
 
 Для получения подробной информации о JSON см. https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+      <string id="ManagedBookmarksOneLine">Управляемые закладки (JSON on one line)</string>
       <string id="ManagedBookmarks">Управляемые закладки</string>
       <string id="ManagedBookmarks_Explain">Если эта политика включена, вы можете использовать JSON для настройки управляемых закладок.
 
@@ -943,6 +949,7 @@ If this policy is enabled or not configured, user messaging preferences cannot b
       <string id="BackgroundAppUpdate_Explain">Если эта политика отключена, приложение не будет пытаться установить обновления, когда приложение не запущено.
 
 Если эта политика включена или не настроена, обновления приложения могут быть установлены (без одобрения пользователя) в фоновом режиме, даже если приложение не запущено. Операционная система может по-прежнему требовать одобрения.</string>
+      <string id="AutoLaunchProtocolsFromOriginsOneLine">Протоколы автозапуска от Origins (JSON on one line)</string>
       <string id="AutoLaunchProtocolsFromOrigins">Протоколы автозапуска от Origins</string>
       <string id="AutoLaunchProtocolsFromOrigins_Explain">Если эта политика включена, вы можете определить список внешних протоколов, которые можно использовать из перечисленных источников без запроса пользователя.
 
@@ -957,6 +964,7 @@ If this policy is enabled or not configured, user messaging preferences cannot b
       <string id="UseSystemPrintDialog_Explain">Если эта политика включена, Firefox будет использовать системный диалог печати вместо предварительного просмотра перед печатью.
 
 Если эта политика отключена или не настроена, Firefox будет отображать предварительный просмотр перед печатью.</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine">Отключить предупреждения на основе расширения файла для определенных типов файлов в доменах (JSON on one line)</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Отключить предупреждения на основе расширения файла для определенных типов файлов в доменах</string>
       <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">Если эта политика включена, вы можете определить список доменов и расширений типов файлов, на которые не будут распространяться предупреждения об исполняемых файлах.
 
@@ -1019,6 +1027,7 @@ If this policy is disabled or not configured, DNS is not proxied when using SOCK
       <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, users are not allowed to block third-party modules from the about:third-party page.
 
 If this policy is disabled or not configured, users users are allowed to block third-party modules from the about:third-party page.</string>
+      <string id="ContainersOneLine">Containers (JSON on one line)</string>
       <string id="Containers">Containers</string>
       <string id="Containers_Explain">If this policy is enabled, you can use JSON to configure the default containers.
 
@@ -1351,6 +1360,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="JSON">
         <multiTextBox refId="JSON"/>
+      </presentation>
+      <presentation id="JSONOneLine">
+        <textBox refId="JSONOneLine">
+          <label/>
+        </textBox>
       </presentation>
       <presentation id="Proxy_ConnectionType">
         <dropdownList refId="Proxy_ConnectionType"/>
