@@ -811,7 +811,7 @@ Si cette stratégie n'est pas configurée, les suggestions de recherche seront a
       <string id="SSLVersionMin">Version SSL minimum utilisée</string>
       <string id="SSLVersionMin_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL / TLS inférieures à la valeur spécifiée.
 
-Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut TLS 1.0.</string>
+Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut TLS 1.2.</string>
       <string id="SSLVersionMax">Version SSL maximum utilisée</string>
       <string id="SSLVersionMax_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL / TLS supérieures à la valeur spécifiée.
 
@@ -1268,8 +1268,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="DNSOverHTTPSEnabled">Activer DNS sur HTTPS.</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">Ne pas autoriser la modification des préférences DNS sur HTTPS.</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>Title:</text>

@@ -812,7 +812,7 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="SSLVersionMin">Включить минимальную версию SSL</string>
       <string id="SSLVersionMin_Explain">Если эта политика включена, Firefox не будет использовать версии SSL/TLS меньше указанного значения.
 
-Если эта политика отключена или не настроена, Firefox по умолчанию использует как минимум TLS 1.0.</string>
+Если эта политика отключена или не настроена, Firefox по умолчанию использует как минимум TLS 1.2.</string>
        <string id="SSLVersionMax">Включить максимальную версию SSL</string>
        <string id="SSLVersionMax_Explain">Если эта политика включена, Firefox не будет использовать версии SSL/TLS, превышающие указанное значение.
 
@@ -1269,9 +1269,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
          <checkBox refId="DNSOverHTTPSEnabled">Включить DNS через HTTPS.</checkBox>
          <checkBox refId="DNSOverHTTPSLocked">Запретить изенение настроек DNS через HTTPS.</checkBox>
        </presentation>
-       <presentation id="SSLVersion">
-         <dropdownList refId="SSLVersion" />
-       </presentation>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
+      </presentation>
        <presentation id="SupportMenu">
          <text>Заголовок:</text>
          <textBox refId="SupportMenuTitle">

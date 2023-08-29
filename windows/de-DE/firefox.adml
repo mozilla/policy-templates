@@ -810,7 +810,7 @@ Wenn Sie die Richtlinieneinstellung nicht konfigurieren, werden Suchvorschläge 
       <string id="SSLVersionMin">Minimale SSL-Version</string>
       <string id="SSLVersionMin_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine SSL/TLS-Version unter der angegebenen Version verwenden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.0.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.2.</string>
       <string id="SSLVersionMax">Maximale SSL-Version</string>
       <string id="SSLVersionMax_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine höhere SSL/TLS-Version als der angegebenen Version verwenden.
 
@@ -1269,8 +1269,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <checkBox refId="DNSOverHTTPSEnabled">DNS über HTTPS aktivieren.</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS-über-HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>Title:</text>

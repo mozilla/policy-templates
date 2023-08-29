@@ -812,7 +812,7 @@ Si esta política no está configurada, las sugerencias de búsqueda se habilita
       <string id="SSLVersionMin">Versión mínima de SSL habilitada</string>
       <string id="SSLVersionMin_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS inferiores al valor especificado.
 
-Si esta política está deshabilitada o no está configurada, Firefox establecerá de manera predeterminada un mínimo de TLS 1.0.</string>
+Si esta política está deshabilitada o no está configurada, Firefox establecerá de manera predeterminada un mínimo de TLS 1.2.</string>
       <string id="SSLVersionMax">Versión máxima de SSL habilitada</string>
       <string id="SSLVersionMax_Explain">Si esta política está habilitada, Firefox no utilizará versiones SSL/TLS superiores al valor especificado.
 
@@ -1269,8 +1269,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</s
         <checkBox refId="DNSOverHTTPSEnabled">Habilitar DNS mediante HTTPS.</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">No permitir que se cambien las preferencias de DNS mediante HTTPS.</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>Título:</text>

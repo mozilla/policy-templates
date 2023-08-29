@@ -2885,7 +2885,7 @@
         <text id="Preferences_String" valueName="RequestedLocales"/>
       </elements>
     </policy>
-    <policy name="SSLVersionMin" class="Both" displayName="$(string.SSLVersionMin)" explainText="$(string.SSLVersionMin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersion)" >
+    <policy name="SSLVersionMin" class="Both" displayName="$(string.SSLVersionMin)" explainText="$(string.SSLVersionMin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersionMin)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF66" />
       <elements>
@@ -2913,7 +2913,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="SSLVersionMax" class="Both" displayName="$(string.SSLVersionMax)" explainText="$(string.SSLVersionMax_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersion)" >
+    <policy name="SSLVersionMax" class="Both" displayName="$(string.SSLVersionMax)" explainText="$(string.SSLVersionMax_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersionMax)" >
       <parentCategory ref="firefox" />
       <supportedOn ref="SUPPORTED_FF66" />
       <elements>

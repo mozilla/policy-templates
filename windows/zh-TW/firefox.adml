@@ -810,7 +810,7 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="SSLVersionMin">啟用的最低 SSL 版本</string>
       <string id="SSLVersionMin_Explain">若啟用此原則，Firefox 將不會使用低於指定版本的 SSL/TLS 版本進行連線。
 
-若停用或不設定此原則，Firefox 的預設最低版本為 TLS 1.0。</string>
+若停用或不設定此原則，Firefox 的預設最低版本為 TLS 1.2。</string>
       <string id="SSLVersionMax">啟用的最高 SSL 版本</string>
       <string id="SSLVersionMax_Explain">若啟用此原則，將不會使用高於指定版本的 SSL/TLS 版本進行連線。
 
@@ -1267,8 +1267,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences。
         <checkBox refId="DNSOverHTTPSEnabled">啟用 DNS over HTTPS。</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">不允許變更 DNS over HTTPS 偏好設定。</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>標題：</text>

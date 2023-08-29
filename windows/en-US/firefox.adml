@@ -810,7 +810,7 @@ If this policy is not configured, search suggestions will be enabled, but the us
       <string id="SSLVersionMin">Minimum SSL version enabled</string>
       <string id="SSLVersionMin_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.
 
-If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.0.</string>
+If this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.2.</string>
       <string id="SSLVersionMax">Maximum SSL version enabled</string>
       <string id="SSLVersionMax_Explain">If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.
 
@@ -1267,8 +1267,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <checkBox refId="DNSOverHTTPSEnabled">Enable DNS over HTTPS.</checkBox>
         <checkBox refId="DNSOverHTTPSLocked">Don't allow DNS over HTTPS preferences to be changed.</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>Title:</text>
