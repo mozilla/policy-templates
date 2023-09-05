@@ -4525,6 +4525,7 @@ toolkit.legacyUserProfileCustomizations.stylesheets (Firefox 95, Firefox ESR 91.
 ui.
 widget.
 xpinstall.signatures.required (Firefox ESR 102.10, Firefox ESR only)
+xpinstall.whitelist.required (Firefox 118, Firefox ESR 115.3)
 ```
 as well as the following security preferences:
 
