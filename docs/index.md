@@ -4541,21 +4541,23 @@ as well as the following security preferences:
 | security.osclientcerts.autoload | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.OCSP.enabled | integer | 1
-| &nbsp;&nbsp;&nbsp;&nbsp;If 0, do not fetch OCSP. If 1, fetch OCSP for DV and EV certificates. If 2, fetch OCSP only for EV certificates
+| &nbsp;&nbsp;&nbsp;&nbsp;If 0, do not fetch OCSP. If 1, fetch OCSP for DV and EV certificates. If 2, fetch OCSP only for EV certificates.
 | security.OCSP.require | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp; If true, if an OCSP request times out, the connection fails.
 | security.osclientcerts.assume_rsa_pss_support | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS (Firefox 114, Firefox ESR 102.12).
+| &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS. (Firefox 114, Firefox ESR 102.12)
 | security.ssl.enable_ocsp_stapling | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, OCSP stapling is not enabled.
 | security.ssl.errorReporting.enabled | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, SSL errors cannot be sent to Mozilla.
+| security.ssl.require_safe_negotiation | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, Firefox will only negotiate TLS connections with servers that indicate they support secure renegotiation. (Firefox 118, Firefox ESR 115.3)
 | security.tls.enable_0rtt_data | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp;If false, TLS early data is turned off (Firefox 93, Firefox 91.2, Firefox 78.15).
+| &nbsp;&nbsp;&nbsp;&nbsp;If false, TLS early data is turned off. (Firefox 93, Firefox 91.2, Firefox 78.15)
 | security.tls.hello_downgrade_check | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, the TLS 1.3 downgrade check is disabled.
 | security.tls.version.enable-deprecated | boolean | false
-| &nbsp;&nbsp;&nbsp;&nbsp;If true, browser will accept TLS 1.0. and TLS 1.1 (Firefox 86, Firefox 78.8).
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, browser will accept TLS 1.0. and TLS 1.1. (Firefox 86, Firefox 78.8)
 | security.warn_submit_secure_to_insecure | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting a form from https to http.
 
