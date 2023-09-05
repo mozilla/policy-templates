@@ -62,6 +62,7 @@
       <definition name="SUPPORTED_FF112_ONLY" displayName="$(string.SUPPORTED_FF112_ONLY)"/>
       <definition name="SUPPORTED_FF113_ONLY" displayName="$(string.SUPPORTED_FF113_ONLY)"/>
       <definition name="SUPPORTED_FF114" displayName="$(string.SUPPORTED_FF114)"/>
+      <definition name="SUPPORTED_FF118" displayName="$(string.SUPPORTED_FF118)"/>
     </definitions>
   </supportedOn>
   <categories>

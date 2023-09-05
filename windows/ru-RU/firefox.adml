@@ -60,6 +60,7 @@
       <string id="SUPPORTED_FF112_ONLY">Firefox 112 или более поздние версии</string>
       <string id="SUPPORTED_FF113_ONLY">Firefox 113 или более поздние версии</string>
       <string id="SUPPORTED_FF114">Firefox 114 или более поздние версии, Firefox 102.12 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF118">Firefox 118 или более поздние версии, Firefox 105.3 ESR или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
