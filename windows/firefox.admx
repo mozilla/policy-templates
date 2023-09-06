@@ -153,6 +153,9 @@
     <category displayName="$(string.SecurityDevices_group)" name="SecurityDevices">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.FirefoxSuggest_group)" name="FirefoxSuggest">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -4089,6 +4092,46 @@
       <elements>
         <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices\Delete" valuePrefix=""/>
       </elements>
+    </policy>
+    <policy name="FirefoxSuggest_WebSuggestions" class="Both" displayName="$(string.FirefoxSuggest_WebSuggestions)" explainText="$(string.FirefoxSuggest_WebSuggestions_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxSuggest" valueName="WebSuggestions">
+      <parentCategory ref="FirefoxSuggest"/>
+      <supportedOn ref="SUPPORTED_FF118"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="FirefoxSuggest_SponsoredSuggestions" class="Both" displayName="$(string.FirefoxSuggest_SponsoredSuggestions)" explainText="$(string.FirefoxSuggest_SponsoredSuggestions_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxSuggest" valueName="SponsoredSuggestions">
+      <parentCategory ref="FirefoxSuggest"/>
+      <supportedOn ref="SUPPORTED_FF118"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="FirefoxSuggest_ImproveSuggest" class="Both" displayName="$(string.FirefoxSuggest_ImproveSuggest)" explainText="$(string.FirefoxSuggest_ImproveSuggest_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxSuggest" valueName="ImproveSuggest">
+      <parentCategory ref="FirefoxSuggest"/>
+      <supportedOn ref="SUPPORTED_FF118"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="FirefoxSuggest_Locked" class="Both" displayName="$(string.FirefoxSuggest_Locked)" explainText="$(string.FirefoxSuggest_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxSuggest" valueName="Locked">
+      <parentCategory ref="FirefoxSuggest"/>
+      <supportedOn ref="SUPPORTED_FF118"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>

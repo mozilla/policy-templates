@@ -320,6 +320,17 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>FirefoxHome</key>
+	<dict>
+		<key>WebSuggestions</key>
+		<true/>
+		<key>SponsoredSuggestions</key>
+		<false/>
+		<key>ImproveSuggest</key>
+		<false/>
+		<key>Locked</key>
+		<true/>
+	</dict>
 	<key>GoToIntranetSiteForSingleWordEntryInAddressBar</key>
 	<true/>
 	<key>Handlers</key>

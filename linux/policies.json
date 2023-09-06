@@ -147,6 +147,12 @@
       "Snippets": true | false,
       "Locked": true | false
     },
+    "FirefoxSuggest": {
+      "WebSuggestions": true | false,
+      "SponsoredSuggestions": true | false,
+      "ImproveSuggest": true | false,
+      "Locked": true | false
+    },
     "GoToIntranetSiteForSingleWordEntryInAddressBar": true | false,
     "Handlers": {
       "mimeTypes": {

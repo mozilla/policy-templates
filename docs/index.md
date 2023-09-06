@@ -71,6 +71,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`ExtensionSettings`](#extensionsettings)** | Manage all aspects of extensions.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
+| **[`FirefoxSuggest`](#firefoxsuggest)** | Customize Firefox Suggest.
 | **[`GoToIntranetSiteForSingleWordEntryInAddressBar`](#gotointranetsiteforsinglewordentryinaddressbar)** | Force direct intranet site navigation instead of searching when typing single word entries in the address bar.
 | **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
@@ -2968,6 +2969,82 @@ Value (string):
   }
 }
 ```
+### FirefoxSuggest
+Customize Firefox Suggest (US only).
+
+**Compatibility:** Firefox 118, Firefox ESR 115.3.
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.urlbar.suggest.quicksuggest.nonsponsored`, `browser.urlbar.suggest.quicksuggest.sponsored`, `browser.urlbar.quicksuggest.dataCollection.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\FirefoxHome\WebSuggestions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredSuggestions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\ImproveSuggest = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/WebSuggestions
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/SponsoredSuggestions
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/ImproveSuggest
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>FirefoxHome</key>
+  <dict>
+    <key>WebSuggestions</key>
+    <true/> | <false/>
+    <key>SponsoredSuggestions</key>
+    <true/> | <false/>
+    <key>ImproveSuggest</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "FirefoxHome": {
+      "WebSuggestions": true | false,
+      "SponsoredSuggestions": true | false,
+      "ImproveSuggest": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
 ### GoToIntranetSiteForSingleWordEntryInAddressBar
 Whether to always go through the DNS server before sending a single word search string to a search engine.
 
@@ -4788,7 +4865,7 @@ Unless you lock this policy, changes the user already has in place will take eff
 ```
 Software\Policies\Mozilla\Firefox\Proxy\Mode = "none" | "system" | "manual" | "autoDetect" | "autoConfig"
 Software\Policies\Mozilla\Firefox\Proxy\Locked = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\=Proxy\HTTPProxy = https://httpproxy.example.com
+Software\Policies\Mozilla\Firefox\Proxy\HTTPProxy = https://httpproxy.example.com
 Software\Policies\Mozilla\Firefox\Proxy\UseHTTPProxyForAllProtocols = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Proxy\SSLProxy = https://sslproxy.example.com
 Software\Policies\Mozilla\Firefox\Proxy\FTPProxy = https://ftpproxy.example.com
