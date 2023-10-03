@@ -2978,10 +2978,10 @@ Customize Firefox Suggest (US only).
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\FirefoxHome\WebSuggestions = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredSuggestions = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\ImproveSuggest = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxSuggest\WebSuggestions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxSuggest\SponsoredSuggestions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxSuggest\ImproveSuggest = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxSuggest\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -3019,7 +3019,7 @@ Value (string):
 #### macOS
 ```
 <dict>
-  <key>FirefoxHome</key>
+  <key>FirefoxSuggest</key>
   <dict>
     <key>WebSuggestions</key>
     <true/> | <false/>
@@ -3036,7 +3036,7 @@ Value (string):
 ```
 {
   "policies": {
-    "FirefoxHome": {
+    "FirefoxSuggest": {
       "WebSuggestions": true | false,
       "SponsoredSuggestions": true | false,
       "ImproveSuggest": true | false,
