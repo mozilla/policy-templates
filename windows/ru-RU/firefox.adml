@@ -61,6 +61,17 @@
       <string id="SUPPORTED_FF113_ONLY">Firefox 113 или более поздние версии</string>
       <string id="SUPPORTED_FF114">Firefox 114 или более поздние версии, Firefox 102.12 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF118">Firefox 118 или более поздние версии, Firefox 105.3 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF120">Firefox 120 или более поздние версии, Firefox 105.5 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF121">Firefox 121 или более поздние версии, Firefox 105.6 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF122">Firefox 122 или более поздние версии, Firefox 105.7 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF123">Firefox 123 или более поздние версии, Firefox 105.8 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF124">Firefox 124 или более поздние версии, Firefox 105.9 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF125">Firefox 125 или более поздние версии, Firefox 105.10 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF126">Firefox 126 или более поздние версии, Firefox 105.11 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF127">Firefox 127 или более поздние версии, Firefox 105.12 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF128">Firefox 128 или более поздние версии, Firefox 105.13 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF129">Firefox 129 или более поздние версии, Firefox 105.14 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF130">Firefox 130 или более поздние версии, Firefox 105.15 ESR или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>

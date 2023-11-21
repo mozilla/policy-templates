@@ -61,6 +61,17 @@
       <string id="SUPPORTED_FF113_ONLY">Firefox 113 或更新版本</string>
       <string id="SUPPORTED_FF114">Firefox 114 或更新版本、Firefox 102.12 ESR 或更新版本</string>
       <string id="SUPPORTED_FF118">Firefox 118 或更新版本、Firefox 105.3 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF120">Firefox 120 或更新版本、Firefox 105.5 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF121">Firefox 121 或更新版本、Firefox 105.6 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF122">Firefox 122 或更新版本、Firefox 105.7 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF123">Firefox 123 或更新版本、Firefox 105.8 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF124">Firefox 124 或更新版本、Firefox 105.9 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF125">Firefox 125 或更新版本、Firefox 105.10 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF126">Firefox 126 或更新版本、Firefox 105.11 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF127">Firefox 127 或更新版本、Firefox 105.12 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF128">Firefox 128 或更新版本、Firefox 105.13 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF129">Firefox 129 或更新版本、Firefox 105.14 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF130">Firefox 130 或更新版本、Firefox 105.15 ESR 或更新版本</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">權限</string>
       <string id="Camera_group">攝影機</string>
