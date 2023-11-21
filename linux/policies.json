@@ -290,6 +290,7 @@
       }
     },
     "PrimaryPassword": true | false,
+    "PrintingEnabled": true | false,
     "PromptForDownloadLocation": true | false,
     "Proxy": {
       "Mode": "none" | "system" | "manual" | "autoDetect" | "autoConfig",

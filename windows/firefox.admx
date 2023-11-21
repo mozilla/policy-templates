@@ -4144,5 +4144,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="PrintingEnabled" class="Both" displayName="$(string.PrintingEnabled)" explainText="$(string.PrintingEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="PrintingEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF120"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

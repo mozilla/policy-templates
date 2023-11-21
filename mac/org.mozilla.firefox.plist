@@ -582,6 +582,8 @@
 			<string>locked</string>
 		</dict>
 	</dict>
+	<key>PrintingEnabled</key>
+	<false/>
 	<key>Proxy</key>
 	<dict>
 		<key>SocksVersion</key>

@@ -1067,17 +1067,21 @@ If this policy is disabled or not configured, you do not allow Mozilla to proces
       <string id="FirefoxSuggest_Locked_Explain">If this policy is enabled, Firefox Suggest preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their Firefox Suggest preferences.</string>
-  <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
+      <string id="PrintingEnabled">Printing</string>
+      <string id="PrintingEnabled_Explain">If this policy is disabled, printing is disabled.
+
+If this policy is enabled or not configured, printing is enabled.</string>
+      <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
 
 若需要偏好设置的详细说明，请参考：
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-  <string id="Preferences_String_Explain">若启用此原则，偏好设定将锁定为输入的字串。 若禁用此原则，则不会生效。
+      <string id="Preferences_String_Explain">若启用此原则，偏好设定将锁定为输入的字串。 若禁用此原则，则不会生效。
 
 若需要偏好设置的详细说明，请参考：
 
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
-  <string id="Preferences_Enum_Explain">若启用此原则，偏好设定将锁定为输入的值。 若禁用此原则，则不会生效。
+      <string id="Preferences_Enum_Explain">若启用此原则，偏好设定将锁定为输入的值。 若禁用此原则，则不会生效。
 
 若需要偏好设置的详细说明，请参考：
 
