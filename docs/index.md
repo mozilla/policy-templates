@@ -98,6 +98,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
+| **[`PrintingEnabled`](#printingenabled)** | Enable or disable printing.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -4789,6 +4790,41 @@ Value (string):
 {
   "policies": {
     "PrimaryPassword": true | false
+  }
+}
+```
+### PrintingEnabled
+Enable or disable printing.
+
+**Compatibility:** Firefox 120, Firefox ESR 115.5\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `print.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PrintingEnabled = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PrintingEnabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>PrintingEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PrintingEnabled": true | false
   }
 }
 ```
