@@ -1979,6 +1979,8 @@ Prevent the user from bypassing security in certain cases.
 
 `SafeBrowsing` prevents selecting "ignore the risk" and visiting a harmful site anyway.
 
+These policies only affect what happens when an error is shown, they do not affect any settings in preferences.
+
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `security.certerror.hideAddException`, `browser.safebrowsing.allowOverride`
