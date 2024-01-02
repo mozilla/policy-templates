@@ -231,9 +231,9 @@ Per ulteriori informazioni sull'agente browser predefinito, si veda https://fire
 
 Se questo criterio è disabilitato o non configurato, gli Strumenti Sviluppo web sono disponibili all'interno di Firefox.</string>
       <string id="DisableFeedbackCommands">Disabilita comandi feedback</string>
-      <string id="DisableFeedbackCommands_Explain">Se questo criterio è abilitato, le voci di menù &quot;Invia feedback&quot; e &quot;Segnala un sito ingannevole&quot; non sono disponibili nel menù Aiuto.
+      <string id="DisableFeedbackCommands_Explain">Se questo criterio è abilitato, le voci di menù "Invia feedback" e "Segnala un sito ingannevole" non sono disponibili nel menù Aiuto.
 
-Se questo criterio è disabilitato o non configurato, le voci di menù &quot;Invia feedback&quot; e &quot;Segnala un sito ingannevole&quot; sono disponibili nel menù Aiuto.</string>
+Se questo criterio è disabilitato o non configurato, le voci di menù "Invia feedback" e "Segnala un sito ingannevole" sono disponibili nel menù Aiuto.</string>
       <string id="DisableFirefoxAccounts">Disabilita Account Firefox</string>
       <string id="DisableFirefoxAccounts_Explain">Se questo criterio è abilitato, la funzionalità Account Firefox è disabilitata (ciò include la disabilitazione di Sync).
 
@@ -249,9 +249,9 @@ Se questo criterio è disabilitato o non configurato, l'utente può scegliere di
 
 Per ulteriori informazioni, vedi https://support.mozilla.org/en-US/kb/shield e https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Disabilita pulsante Dimentica</string>
-      <string id="DisableForgetButton_Explain">Se questo criterio è abilitato, il pulsante &quot;Dimentica&quot; non è disponibile.
+      <string id="DisableForgetButton_Explain">Se questo criterio è abilitato, il pulsante "Dimentica" non è disponibile.
 
-Se questo criterio è disabilitato o non configurato, il pulsante &quot;Dimentica&quot; è disponibile.</string>
+Se questo criterio è disabilitato o non configurato, il pulsante "Dimentica" è disponibile.</string>
       <string id="DisableFormHistory">Disabilita Cronologia moduli</string>
       <string id="DisableFormHistory_Explain">Se questo criterio è abilitato, Firefox non ricorderà la cronologia dei moduli o di ricerca.
 
@@ -269,19 +269,19 @@ Se questo criterio è disabilitato o non configurato, Pocket è disponibile.</st
 
 Se questo criterio è disabilitato o non configurato, la navigazione anonima è consentita.</string>
       <string id="DisableProfileImport">Disabilita importazione profilo</string>
-      <string id="DisableProfileImport_Explain">Se questo criterio è abilitato, l'opzione &quot;Importa dati da un altro browser&quot; non è disponibile nella finestra Segnalibri.
+      <string id="DisableProfileImport_Explain">Se questo criterio è abilitato, l'opzione "Importa dati da un altro browser" non è disponibile nella finestra Segnalibri.
 
-Se questo criterio è disabilitato o non configurato, l'opzione &quot;Importa dati da un altro browser&quot; è disponibile.</string>
+Se questo criterio è disabilitato o non configurato, l'opzione "Importa dati da un altro browser" è disponibile.</string>
       <string id="DisableProfileRefresh">Disabilita Ripristino profilo</string>
-      <string id="DisableProfileRefresh_Explain">Se questo criterio è abilitato, il pulsante &quot;Ripristina Firefox&quot; non è disponibile nella pagina about:support o su support.mozilla.org.
+      <string id="DisableProfileRefresh_Explain">Se questo criterio è abilitato, il pulsante "Ripristina Firefox" non è disponibile nella pagina about:support o su support.mozilla.org.
 
-Se questo criterio è disabilitato o non configurato, il pulsante &quot;Ripristina Firefox&quot; è disponibile.</string>
+Se questo criterio è disabilitato o non configurato, il pulsante "Ripristina Firefox" è disponibile.</string>
       <string id="DisableSafeMode">Disabilita Modalità provvisoria</string>
       <string id="DisableSafeMode_Explain">Se questo criterio è abilitato, l'utente non può riavviare il browser in Modalità provvisoria.
 
 Se questo criterio è disabilitato o non configurato, la Modalità provvisoria è consentita.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Impedisci l'override degli errori certificato</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Se questo criterio è abilitato, il pulsante &quot;Aggiungi eccezione&quot; non è disponibile se un certificato non è valido. Ciò impedisce all'utente di eseguire l'override dell'errore del certificato.
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Se questo criterio è abilitato, il pulsante "Aggiungi eccezione" non è disponibile se un certificato non è valido. Ciò impedisce all'utente di eseguire l'override dell'errore del certificato.
 
 Se questo criterio è disabilitato o non configurato, è possibile eseguire l'override degli errori certificato.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Impedisci l'override degli errori Protezione phishing e malware</string>
@@ -556,7 +556,7 @@ Se questo criterio è disabilitato o non configurato, viene seguita la politica 
 
 Se questo criterio è disabilitato, Flash non è mai attivato sui siti Web, anche nel caso in cui questi siano specificati nella lista Consenti.
 
-Se questo criterio non è configurato, Flash viene eseguito in modalità &quot;Chiedi prima di attivare&quot;.</string>
+Se questo criterio non è configurato, Flash viene eseguito in modalità "Chiedi prima di attivare".</string>
       <string id="FlashPlugin_Locked">Non consentire la modifica delle preferenze</string>
       <string id="FlashPlugin_Locked_Explain">Se questo criterio è abilitato, le preferenze relative a Flash non possono essere modificate dall'utente.
 

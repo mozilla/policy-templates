@@ -231,9 +231,9 @@ For more information about the default browser agent, see https://firefox-source
 
 If this policy is disabled or not configured, web developer tools are available within Firefox.</string>
       <string id="DisableFeedbackCommands">Disable Feedback Commands</string>
-      <string id="DisableFeedbackCommands_Explain">If this policy is enabled, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are not available from the help menu.
+      <string id="DisableFeedbackCommands_Explain">If this policy is enabled, the "Submit Feedback" and "Report Deceptive Site" menuitems are not available from the help menu.
 
-If this policy is disabled or not configured, the &quot;Submit Feedback&quot; and &quot;Report Deceptive Site&quot; menuitems are available from the help menu.</string>
+If this policy is disabled or not configured, the "Submit Feedback" and "Report Deceptive Site" menuitems are available from the help menu.</string>
       <string id="DisableFirefoxAccounts">Disable Firefox Accounts</string>
       <string id="DisableFirefoxAccounts_Explain">If this policy is enabled, Firefox Accounts is disabled which includes disabling Sync.
 
@@ -249,9 +249,9 @@ If this policy is disabled or not configured, the user can choose to enable SHIE
 
 For more information, see https://support.mozilla.org/en-US/kb/shield and https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Disable Forget Button</string>
-      <string id="DisableForgetButton_Explain">If this policy is enabled, the &quot;Forget&quot; button is not available.
+      <string id="DisableForgetButton_Explain">If this policy is enabled, the "Forget" button is not available.
 
-If this policy is disabled or not configured, the &quot;Forget&quot; button is available.</string>
+If this policy is disabled or not configured, the "Forget" button is available.</string>
       <string id="DisableFormHistory">Disable Form History</string>
       <string id="DisableFormHistory_Explain">If this policy is enabled, Firefox will not remember form or search history.
 
@@ -269,19 +269,19 @@ If this policy is disabled or not configured, Pocket is available.</string>
 
 If this policy is disabled or not configured, private browsing is allowed.</string>
       <string id="DisableProfileImport">Disable Profile Import</string>
-      <string id="DisableProfileImport_Explain">If this policy is enabled, the &quot;Import data from another browser&quot; option is not available in the bookmarks window.
+      <string id="DisableProfileImport_Explain">If this policy is enabled, the "Import data from another browser" option is not available in the bookmarks window.
 
-If this policy is disabled or not configured, the &quot;Import data from another browser&quot; option is available.</string>
+If this policy is disabled or not configured, the "Import data from another browser" option is available.</string>
       <string id="DisableProfileRefresh">Disable Profile Refresh</string>
-      <string id="DisableProfileRefresh_Explain">If this policy is enabled, the &quot;Refresh Firefox&quot; button is not available on the about:support page or on support.mozilla.org.
+      <string id="DisableProfileRefresh_Explain">If this policy is enabled, the "Refresh Firefox" button is not available on the about:support page or on support.mozilla.org.
 
-If this policy is disabled or not configured, the &quot;Refresh Firefox&quot; button is available.</string>
+If this policy is disabled or not configured, the "Refresh Firefox" button is available.</string>
       <string id="DisableSafeMode">Disable Safe Mode</string>
       <string id="DisableSafeMode_Explain">If this policy is enabled, the user cannot restart the browser into safe mode.
 
 If this policy is disabled or not configured, safe mode is allowed.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Prevent overriding certificate errors</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">If this policy is enabled, the &quot;Add Exception&quot; button is not available when a certificate is invalid. This prevents the user from overriding the certificate error.
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">If this policy is enabled, the "Add Exception" button is not available when a certificate is invalid. This prevents the user from overriding the certificate error.
 
 If this policy is disabled or not configured, certificate errors can be overridden.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Prevent overriding safe browsing errors</string>

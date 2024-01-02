@@ -179,28 +179,28 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)"  key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
+    <policy name="Authentication_SPNEGO" class="Both" displayName="$(string.Authentication_SPNEGO)" key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" explainText="$(string.Authentication_SPNEGO_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\SPNEGO" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="Authentication_Delegated" class="Both" displayName="$(string.Authentication_Delegated)"  key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" explainText="$(string.Authentication_Delegated_Explain)" presentation="$(presentation.Authentication)">
+    <policy name="Authentication_Delegated" class="Both" displayName="$(string.Authentication_Delegated)" key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" explainText="$(string.Authentication_Delegated_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\Delegated" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="Authentication_NTLM" class="Both" displayName="$(string.Authentication_NTLM)"  key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" explainText="$(string.Authentication_NTLM_Explain)" presentation="$(presentation.Authentication)">
+    <policy name="Authentication_NTLM" class="Both" displayName="$(string.Authentication_NTLM)" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" explainText="$(string.Authentication_NTLM_Explain)" presentation="$(presentation.Authentication)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Authentication" key="Software\Policies\Mozilla\Firefox\Authentication\NTLM" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="Authentication_AllowNonFQDN" class="Both" displayName="$(string.Authentication_AllowNonFQDN)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowNonFQDN_Explain)" presentation="$(presentation.Authentication_AllowNonFQDN)">
+    <policy name="Authentication_AllowNonFQDN" class="Both" displayName="$(string.Authentication_AllowNonFQDN)" key="Software\Policies\Mozilla\Firefox\Authentication\AllowNonFQDN" explainText="$(string.Authentication_AllowNonFQDN_Explain)" presentation="$(presentation.Authentication_AllowNonFQDN)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
@@ -222,7 +222,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="Authentication_AllowProxies" class="Both" displayName="$(string.Authentication_AllowProxies)"  key="Software\Policies\Mozilla\Firefox\Authentication\AllowProxies" explainText="$(string.Authentication_AllowProxies_Explain)" presentation="$(presentation.Authentication_AllowProxies)">
+    <policy name="Authentication_AllowProxies" class="Both" displayName="$(string.Authentication_AllowProxies)" key="Software\Policies\Mozilla\Firefox\Authentication\AllowProxies" explainText="$(string.Authentication_AllowProxies_Explain)" presentation="$(presentation.Authentication_AllowProxies)">
       <parentCategory ref="Authentication"/>
       <supportedOn ref="SUPPORTED_FF70"/>
       <elements>
@@ -324,9 +324,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="Certificates_Install" class="Both" displayName="$(string.Certificates_Install)" explainText="$(string.Certificates_Install_Explain)" key="Software\Policies\Mozilla\Certificates" presentation="$(presentation.Certificates_Install)" >
-      <parentCategory ref="Certificates" />
-      <supportedOn ref="SUPPORTED_FF64" />
+    <policy name="Certificates_Install" class="Both" displayName="$(string.Certificates_Install)" explainText="$(string.Certificates_Install_Explain)" key="Software\Policies\Mozilla\Certificates" presentation="$(presentation.Certificates_Install)">
+      <parentCategory ref="Certificates"/>
+      <supportedOn ref="SUPPORTED_FF64"/>
       <elements>
         <list id="Certificates_Install" key="Software\Policies\Mozilla\Firefox\Certificates\Install" valuePrefix="" expandable="true"/>
       </elements>
@@ -362,7 +362,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="Cookies_AcceptThirdParty" class="Both" displayName="$(string.Cookies_AcceptThirdParty)" explainText="$(string.Cookies_AcceptThirdParty_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies"  presentation="$(presentation.Cookies_AcceptThirdParty)">
+    <policy name="Cookies_AcceptThirdParty" class="Both" displayName="$(string.Cookies_AcceptThirdParty)" explainText="$(string.Cookies_AcceptThirdParty_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" presentation="$(presentation.Cookies_AcceptThirdParty)">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
@@ -415,7 +415,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="Cookies_Behavior" class="Both" displayName="$(string.Cookies_Behavior)" explainText="$(string.Cookies_Behavior_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies"  presentation="$(presentation.Cookies_Behavior)">
+    <policy name="Cookies_Behavior" class="Both" displayName="$(string.Cookies_Behavior)" explainText="$(string.Cookies_Behavior_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" presentation="$(presentation.Cookies_Behavior)">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF95"/>
       <elements>
@@ -453,7 +453,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Cookies_BehaviorPrivateBrowsing" class="Both" displayName="$(string.Cookies_BehaviorPrivateBrowsing)" explainText="$(string.Cookies_BehaviorPrivateBrowsing_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies"  presentation="$(presentation.Cookies_BehaviorPrivateBrowsing)">
+    <policy name="Cookies_BehaviorPrivateBrowsing" class="Both" displayName="$(string.Cookies_BehaviorPrivateBrowsing)" explainText="$(string.Cookies_BehaviorPrivateBrowsing_Explain)" key="Software\Policies\Mozilla\Firefox\Cookies" presentation="$(presentation.Cookies_BehaviorPrivateBrowsing)">
       <parentCategory ref="Cookies"/>
       <supportedOn ref="SUPPORTED_FF95"/>
       <elements>
@@ -651,7 +651,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="Autoplay_Default" class="Both" displayName="$(string.Autoplay_Default)" explainText="$(string.Autoplay_Default_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay"  presentation="$(presentation.Autoplay_Default)">
+    <policy name="Autoplay_Default" class="Both" displayName="$(string.Autoplay_Default)" explainText="$(string.Autoplay_Default_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Autoplay" presentation="$(presentation.Autoplay_Default)">
       <parentCategory ref="Autoplay"/>
       <supportedOn ref="SUPPORTED_FF76"/>
       <elements>
@@ -1037,35 +1037,35 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Extensions_Install" class="Both" displayName="$(string.Extensions_Install)"  key="Software\Policies\Mozilla\Firefox\Extensions\Install" explainText="$(string.Extensions_Install_Explain)" presentation="$(presentation.Extensions)">
+    <policy name="Extensions_Install" class="Both" displayName="$(string.Extensions_Install)" key="Software\Policies\Mozilla\Firefox\Extensions\Install" explainText="$(string.Extensions_Install_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Install" valuePrefix="" expandable="true"/>
       </elements>
     </policy>
-    <policy name="Extensions_Uninstall" class="Both" displayName="$(string.Extensions_Uninstall)"  key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" explainText="$(string.Extensions_Uninstall_Explain)" presentation="$(presentation.Extensions)">
+    <policy name="Extensions_Uninstall" class="Both" displayName="$(string.Extensions_Uninstall)" key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" explainText="$(string.Extensions_Uninstall_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Uninstall" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="Extensions_Locked" class="Both" displayName="$(string.Extensions_Locked)"  key="Software\Policies\Mozilla\Firefox\Extensions\Locked" explainText="$(string.Extensions_Locked_Explain)" presentation="$(presentation.Extensions)">
+    <policy name="Extensions_Locked" class="Both" displayName="$(string.Extensions_Locked)" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" explainText="$(string.Extensions_Locked_Explain)" presentation="$(presentation.Extensions)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="Extensions" key="Software\Policies\Mozilla\Firefox\Extensions\Locked" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="ExtensionSettings" class="Both" displayName="$(string.ExtensionSettings)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)" presentation="$(presentation.ExtensionSettings)">
+    <policy name="ExtensionSettings" class="Both" displayName="$(string.ExtensionSettings)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)" presentation="$(presentation.ExtensionSettings)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF69"/>
       <elements>
-        <multiText id="ExtensionSettings" valueName="ExtensionSettings"  maxLength="16384"/>
+        <multiText id="ExtensionSettings" valueName="ExtensionSettings" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="ExtensionSettingsOneLine" class="Both" displayName="$(string.ExtensionSettingsOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)" presentation="$(presentation.JSONOneLine)">
+    <policy name="ExtensionSettingsOneLine" class="Both" displayName="$(string.ExtensionSettingsOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ExtensionSettings_Explain)" presentation="$(presentation.JSONOneLine)">
       <parentCategory ref="Extensions"/>
       <supportedOn ref="SUPPORTED_FF69"/>
       <elements>
@@ -1103,7 +1103,7 @@
       </disabledValue>
     </policy>
     <policy name="LegacyProfiles" class="Both" displayName="$(string.LegacyProfiles)" explainText="$(string.LegacyProfiles_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="LegacyProfiles">
-      <parentCategory ref="firefox" />
+      <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF70"/>
       <enabledValue>
         <decimal value="1"/>
@@ -1129,9 +1129,9 @@
         <list id="LegacySameSiteCookieBehaviorEnabledForDomainList" key="Software\Policies\Mozilla\Firefox\LegacySameSiteCookieBehaviorEnabledForDomainList" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="LocalFileLinks" class="Both" displayName="$(string.LocalFileLinks)" explainText="$(string.LocalFileLinks_Explain)" key="Software\Policies\Mozilla\Firefox\LocalFileLinks" presentation="$(presentation.LocalFileLinks)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF68ESR" />
+    <policy name="LocalFileLinks" class="Both" displayName="$(string.LocalFileLinks)" explainText="$(string.LocalFileLinks_Explain)" key="Software\Policies\Mozilla\Firefox\LocalFileLinks" presentation="$(presentation.LocalFileLinks)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68ESR"/>
       <elements>
         <list id="LocalFileLinks" key="Software\Policies\Mozilla\Firefox\LocalFileLinks" valuePrefix=""/>
       </elements>
@@ -1220,7 +1220,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="CustomizeFirefoxHome" class="Both" displayName="$(string.FirefoxHome)" explainText="$(string.FirefoxHome_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.FirefoxHome)" >
+    <policy name="CustomizeFirefoxHome" class="Both" displayName="$(string.FirefoxHome)" explainText="$(string.FirefoxHome_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.FirefoxHome)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
@@ -1324,16 +1324,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="OverrideFirstRunPage" class="Both" displayName="$(string.OverrideFirstRunPage)" explainText="$(string.OverrideFirstRunPage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverridePage)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="OverrideFirstRunPage" class="Both" displayName="$(string.OverrideFirstRunPage)" explainText="$(string.OverrideFirstRunPage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverridePage)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <text id="OverridePage" valueName="OverrideFirstRunPage"/>
       </elements>
     </policy>
-    <policy name="OverridePostUpdatePage" class="Both" displayName="$(string.OverridePostUpdatePage)" explainText="$(string.OverridePostUpdatePage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverridePage)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="OverridePostUpdatePage" class="Both" displayName="$(string.OverridePostUpdatePage)" explainText="$(string.OverridePostUpdatePage_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.OverridePage)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <text id="OverridePage" valueName="OverridePostUpdatePage"/>
       </elements>
@@ -1370,11 +1370,11 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="HomepageURL" class="Both" displayName="$(string.HomepageURL)" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)" >
-      <parentCategory ref="Homepage" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="HomepageURL" class="Both" displayName="$(string.HomepageURL)" explainText="$(string.HomepageURL_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageURL)">
+      <parentCategory ref="Homepage"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="HomepageURL" valueName="URL" required="true" />
+        <text id="HomepageURL" valueName="URL" required="true"/>
         <boolean id="HomepageLocked" key="Software\Policies\Mozilla\Firefox\Homepage" valueName="Locked">
           <trueValue>
             <decimal value="1"/>
@@ -1385,16 +1385,16 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="HomepageAdditional" class="Both" displayName="$(string.HomepageAdditional)" explainText="$(string.HomepageAdditional_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageAdditional)" >
-      <parentCategory ref="Homepage" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="HomepageAdditional" class="Both" displayName="$(string.HomepageAdditional)" explainText="$(string.HomepageAdditional_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.HomepageAdditional)">
+      <parentCategory ref="Homepage"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
         <list id="HomepageAdditional" key="Software\Policies\Mozilla\Firefox\Homepage\Additional" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="HomepageStartPage" class="Both" displayName="$(string.HomepageStartPage)" explainText="$(string.HomepageStartPage_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.StartPage)" >
-      <parentCategory ref="Homepage" />
-      <supportedOn ref="SUPPORTED_FF64" />
+    <policy name="HomepageStartPage" class="Both" displayName="$(string.HomepageStartPage)" explainText="$(string.HomepageStartPage_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" presentation="$(presentation.StartPage)">
+      <parentCategory ref="Homepage"/>
+      <supportedOn ref="SUPPORTED_FF64"/>
       <elements>
         <enum id="StartPage" valueName="StartPage">
           <item displayName="$(string.None)">
@@ -1430,28 +1430,28 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="A_BookmarksOneLine" class="Both" displayName="$(string.BookmarksOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSONOneLine)">
+    <policy name="A_BookmarksOneLine" class="Both" displayName="$(string.BookmarksOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSONOneLine)">
       <parentCategory ref="Bookmarks"/>
       <supportedOn ref="SUPPORTED_FF95"/>
       <elements>
         <text id="JSONOneLine" valueName="Bookmarks" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="A_Bookmarks" class="Both" displayName="$(string.Bookmarks)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSON)">
+    <policy name="A_Bookmarks" class="Both" displayName="$(string.Bookmarks)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="Bookmarks"/>
       <supportedOn ref="SUPPORTED_FF95"/>
       <elements>
-        <multiText id="JSON" valueName="Bookmarks"  maxLength="16384"/>
+        <multiText id="JSON" valueName="Bookmarks" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="Bookmark01" class="Both" displayName="$(string.Bookmark01)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="Bookmark01" class="Both" displayName="$(string.Bookmark01)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\1" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1466,14 +1466,14 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark02" class="Both" displayName="$(string.Bookmark02)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\10" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="Bookmark02" class="Both" displayName="$(string.Bookmark02)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\10" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1488,14 +1488,14 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark03" class="Both" displayName="$(string.Bookmark03)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\11" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="Bookmark03" class="Both" displayName="$(string.Bookmark03)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\11" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1510,14 +1510,14 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark04" class="Both" displayName="$(string.Bookmark04)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\12" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="Bookmark04" class="Both" displayName="$(string.Bookmark04)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\12" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1532,14 +1532,14 @@
         </enum>
       </elements>
     </policy>
-    <policy name="Bookmark05" class="Both" displayName="$(string.Bookmark05)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\13" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+    <policy name="Bookmark05" class="Both" displayName="$(string.Bookmark05)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\13" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1554,14 +1554,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark06" class="Both" displayName="$(string.Bookmark06)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\14" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark06" class="Both" displayName="$(string.Bookmark06)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\14" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1576,14 +1576,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark07" class="Both" displayName="$(string.Bookmark07)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\15" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark07" class="Both" displayName="$(string.Bookmark07)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\15" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1598,14 +1598,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark08" class="Both" displayName="$(string.Bookmark08)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\16" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark08" class="Both" displayName="$(string.Bookmark08)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\16" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1620,14 +1620,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark09" class="Both" displayName="$(string.Bookmark09)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\17" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark09" class="Both" displayName="$(string.Bookmark09)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\17" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1642,14 +1642,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark10" class="Both" displayName="$(string.Bookmark10)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\18" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark10" class="Both" displayName="$(string.Bookmark10)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\18" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1664,14 +1664,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark11" class="Both" displayName="$(string.Bookmark11)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\19" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark11" class="Both" displayName="$(string.Bookmark11)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\19" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1686,14 +1686,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark12" class="Both" displayName="$(string.Bookmark12)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark12" class="Both" displayName="$(string.Bookmark12)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\2" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1708,14 +1708,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark13" class="Both" displayName="$(string.Bookmark13)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\20" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark13" class="Both" displayName="$(string.Bookmark13)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\20" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1730,14 +1730,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark14" class="Both" displayName="$(string.Bookmark14)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\21" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark14" class="Both" displayName="$(string.Bookmark14)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\21" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1752,14 +1752,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark15" class="Both" displayName="$(string.Bookmark15)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\22" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark15" class="Both" displayName="$(string.Bookmark15)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\22" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1774,14 +1774,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark16" class="Both" displayName="$(string.Bookmark16)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\23" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark16" class="Both" displayName="$(string.Bookmark16)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\23" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1796,14 +1796,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark17" class="Both" displayName="$(string.Bookmark17)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\24" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark17" class="Both" displayName="$(string.Bookmark17)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\24" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1818,14 +1818,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark18" class="Both" displayName="$(string.Bookmark18)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\25" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark18" class="Both" displayName="$(string.Bookmark18)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\25" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1840,14 +1840,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark19" class="Both" displayName="$(string.Bookmark19)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\26" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark19" class="Both" displayName="$(string.Bookmark19)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\26" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1862,14 +1862,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark20" class="Both" displayName="$(string.Bookmark20)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\27" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark20" class="Both" displayName="$(string.Bookmark20)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\27" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1884,14 +1884,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark21" class="Both" displayName="$(string.Bookmark21)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\28" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark21" class="Both" displayName="$(string.Bookmark21)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\28" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1906,14 +1906,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark22" class="Both" displayName="$(string.Bookmark22)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\29" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark22" class="Both" displayName="$(string.Bookmark22)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\29" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1928,14 +1928,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark23" class="Both" displayName="$(string.Bookmark23)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark23" class="Both" displayName="$(string.Bookmark23)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\3" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1950,14 +1950,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark24" class="Both" displayName="$(string.Bookmark24)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\30" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark24" class="Both" displayName="$(string.Bookmark24)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\30" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1972,14 +1972,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark25" class="Both" displayName="$(string.Bookmark25)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\31" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark25" class="Both" displayName="$(string.Bookmark25)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\31" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -1994,14 +1994,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark26" class="Both" displayName="$(string.Bookmark26)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\32" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark26" class="Both" displayName="$(string.Bookmark26)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\32" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2016,14 +2016,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark27" class="Both" displayName="$(string.Bookmark27)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\33" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark27" class="Both" displayName="$(string.Bookmark27)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\33" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2038,14 +2038,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark28" class="Both" displayName="$(string.Bookmark28)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\34" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark28" class="Both" displayName="$(string.Bookmark28)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\34" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2060,14 +2060,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark29" class="Both" displayName="$(string.Bookmark29)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\35" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark29" class="Both" displayName="$(string.Bookmark29)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\35" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2082,14 +2082,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark30" class="Both" displayName="$(string.Bookmark30)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\36" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark30" class="Both" displayName="$(string.Bookmark30)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\36" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2104,14 +2104,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark31" class="Both" displayName="$(string.Bookmark31)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\37" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark31" class="Both" displayName="$(string.Bookmark31)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\37" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2126,14 +2126,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark32" class="Both" displayName="$(string.Bookmark32)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\38" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark32" class="Both" displayName="$(string.Bookmark32)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\38" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2148,14 +2148,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark33" class="Both" displayName="$(string.Bookmark33)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\39" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark33" class="Both" displayName="$(string.Bookmark33)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\39" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2170,14 +2170,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark34" class="Both" displayName="$(string.Bookmark34)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark34" class="Both" displayName="$(string.Bookmark34)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\4" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2192,14 +2192,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark35" class="Both" displayName="$(string.Bookmark35)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\40" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark35" class="Both" displayName="$(string.Bookmark35)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\40" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2214,14 +2214,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark36" class="Both" displayName="$(string.Bookmark36)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\41" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark36" class="Both" displayName="$(string.Bookmark36)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\41" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2236,14 +2236,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark37" class="Both" displayName="$(string.Bookmark37)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\42" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark37" class="Both" displayName="$(string.Bookmark37)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\42" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2258,14 +2258,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark38" class="Both" displayName="$(string.Bookmark38)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\43" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark38" class="Both" displayName="$(string.Bookmark38)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\43" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2280,14 +2280,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark39" class="Both" displayName="$(string.Bookmark39)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\44" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark39" class="Both" displayName="$(string.Bookmark39)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\44" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2302,14 +2302,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark40" class="Both" displayName="$(string.Bookmark40)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\45" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark40" class="Both" displayName="$(string.Bookmark40)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\45" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2324,14 +2324,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark41" class="Both" displayName="$(string.Bookmark41)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\46" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark41" class="Both" displayName="$(string.Bookmark41)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\46" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2346,14 +2346,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark42" class="Both" displayName="$(string.Bookmark42)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\47" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark42" class="Both" displayName="$(string.Bookmark42)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\47" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2368,14 +2368,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark43" class="Both" displayName="$(string.Bookmark43)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\48" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark43" class="Both" displayName="$(string.Bookmark43)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\48" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2390,14 +2390,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark44" class="Both" displayName="$(string.Bookmark44)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\49" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark44" class="Both" displayName="$(string.Bookmark44)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\49" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2412,14 +2412,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark45" class="Both" displayName="$(string.Bookmark45)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark45" class="Both" displayName="$(string.Bookmark45)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\5" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2434,14 +2434,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark46" class="Both" displayName="$(string.Bookmark46)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\50" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark46" class="Both" displayName="$(string.Bookmark46)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\50" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2456,14 +2456,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark47" class="Both" displayName="$(string.Bookmark47)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\6" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark47" class="Both" displayName="$(string.Bookmark47)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\6" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2478,14 +2478,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark48" class="Both" displayName="$(string.Bookmark48)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\7" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark48" class="Both" displayName="$(string.Bookmark48)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\7" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2500,14 +2500,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark49" class="Both" displayName="$(string.Bookmark49)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\8" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark49" class="Both" displayName="$(string.Bookmark49)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\8" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2522,14 +2522,14 @@
         </enum>
       </elements>
     </policy>
-	<policy name="Bookmark50" class="Both" displayName="$(string.Bookmark50)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\9" presentation="$(presentation.Bookmark)" >
-      <parentCategory ref="Bookmarks" />
-      <supportedOn ref="SUPPORTED_FF60" />
+	<policy name="Bookmark50" class="Both" displayName="$(string.Bookmark50)" explainText="$(string.Bookmark_Explain)" key="Software\Policies\Mozilla\Firefox\Bookmarks\9" presentation="$(presentation.Bookmark)">
+      <parentCategory ref="Bookmarks"/>
+      <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
-        <text id="BookmarkTitle" valueName="Title" required="true" />
-        <text id="BookmarkURL" valueName="URL" required="true" />
-        <text id="BookmarkFolder" valueName="Folder" />
-        <text id="BookmarkFavicon" valueName="Favicon" />
+        <text id="BookmarkTitle" valueName="Title" required="true"/>
+        <text id="BookmarkURL" valueName="URL" required="true"/>
+        <text id="BookmarkFolder" valueName="Folder"/>
+        <text id="BookmarkFavicon" valueName="Favicon"/>
         <enum id="BookmarkPlacement" valueName="Placement">
           <item displayName="$(string.BookmarkPlacementToolbar)">
             <value>
@@ -2681,7 +2681,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SearchBar" class="Both" displayName="$(string.SearchBar)" explainText="$(string.SearchBar_Explain)" key="Software\Policies\Mozilla\Firefox"  presentation="$(presentation.SearchBar)">
+    <policy name="SearchBar" class="Both" displayName="$(string.SearchBar)" explainText="$(string.SearchBar_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SearchBar)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
       <elements>
@@ -2736,15 +2736,15 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF114"/>
       <elements>
-        <multiText id="JSON" valueName="WebsiteFilter"  maxLength="16384"/>
+        <multiText id="JSON" valueName="WebsiteFilter" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="SearchEngines_1" class="Both" displayName="$(string.SearchEngines_1)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\1" presentation="$(presentation.SearchEngine)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_1" class="Both" displayName="$(string.SearchEngines_1)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\1" presentation="$(presentation.SearchEngine)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
-        <text id="SearchEngine_Name" valueName="Name" required="true" />
-        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <text id="SearchEngine_Name" valueName="Name" required="true"/>
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true"/>
         <enum id="SearchEngine_Method" valueName="Method">
           <item displayName="$(string.SearchEngine_Method_GET)">
             <value>
@@ -2765,12 +2765,12 @@
         <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
-    <policy name="SearchEngines_2" class="Both" displayName="$(string.SearchEngines_2)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\2" presentation="$(presentation.SearchEngine)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_2" class="Both" displayName="$(string.SearchEngines_2)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\2" presentation="$(presentation.SearchEngine)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
-        <text id="SearchEngine_Name" valueName="Name" required="true" />
-        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <text id="SearchEngine_Name" valueName="Name" required="true"/>
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true"/>
         <enum id="SearchEngine_Method" valueName="Method">
           <item displayName="$(string.SearchEngine_Method_GET)">
             <value>
@@ -2791,12 +2791,12 @@
         <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
-    <policy name="SearchEngines_3" class="Both" displayName="$(string.SearchEngines_3)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\3" presentation="$(presentation.SearchEngine)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_3" class="Both" displayName="$(string.SearchEngines_3)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\3" presentation="$(presentation.SearchEngine)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
-        <text id="SearchEngine_Name" valueName="Name" required="true" />
-        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <text id="SearchEngine_Name" valueName="Name" required="true"/>
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true"/>
         <enum id="SearchEngine_Method" valueName="Method">
           <item displayName="$(string.SearchEngine_Method_GET)">
             <value>
@@ -2817,12 +2817,12 @@
         <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
-    <policy name="SearchEngines_4" class="Both" displayName="$(string.SearchEngines_4)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\4" presentation="$(presentation.SearchEngine)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_4" class="Both" displayName="$(string.SearchEngines_4)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\4" presentation="$(presentation.SearchEngine)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
-        <text id="SearchEngine_Name" valueName="Name" required="true" />
-        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <text id="SearchEngine_Name" valueName="Name" required="true"/>
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true"/>
         <enum id="SearchEngine_Method" valueName="Method">
           <item displayName="$(string.SearchEngine_Method_GET)">
             <value>
@@ -2843,12 +2843,12 @@
         <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
-    <policy name="SearchEngines_5" class="Both" displayName="$(string.SearchEngines_5)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\5" presentation="$(presentation.SearchEngine)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_5" class="Both" displayName="$(string.SearchEngines_5)" explainText="$(string.SearchEngines_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Add\5" presentation="$(presentation.SearchEngine)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
-        <text id="SearchEngine_Name" valueName="Name" required="true" />
-        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true" />
+        <text id="SearchEngine_Name" valueName="Name" required="true"/>
+        <text id="SearchEngine_URLTemplate" valueName="URLTemplate" required="true"/>
         <enum id="SearchEngine_Method" valueName="Method">
           <item displayName="$(string.SearchEngine_Method_GET)">
             <value>
@@ -2869,16 +2869,16 @@
         <text id="SearchEngine_Encoding" valueName="Encoding"/>
       </elements>
     </policy>
-    <policy name="SearchEngines_Default" class="Both" displayName="$(string.SearchEngines_Default)" explainText="$(string.SearchEngines_Default_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" presentation="$(presentation.SearchEngines_Default)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_Default" class="Both" displayName="$(string.SearchEngines_Default)" explainText="$(string.SearchEngines_Default_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" presentation="$(presentation.SearchEngines_Default)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
-        <text id="SearchEngines_Default" valueName="Default" required="true" />
+        <text id="SearchEngines_Default" valueName="Default" required="true"/>
       </elements>
     </policy>
     <policy name="SearchEngines_PreventInstalls" class="Both" displayName="$(string.SearchEngines_PreventInstalls)" explainText="$(string.SearchEngines_PreventInstalls_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" valueName="PreventInstalls">
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -2886,44 +2886,44 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="SearchEngines_Remove" class="Both" displayName="$(string.SearchEngines_Remove)" explainText="$(string.SearchEngines_Remove_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" presentation="$(presentation.SearchEngines_Remove)" >
-      <parentCategory ref="Search" />
-      <supportedOn ref="SUPPORTED_FF60ESR" />
+    <policy name="SearchEngines_Remove" class="Both" displayName="$(string.SearchEngines_Remove)" explainText="$(string.SearchEngines_Remove_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" presentation="$(presentation.SearchEngines_Remove)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
         <list id="SearchEngines_Remove" key="Software\Policies\Mozilla\Firefox\SearchEngines\Remove" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="AppUpdateURL" class="Both" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF62" />
+    <policy name="AppUpdateURL" class="Both" displayName="$(string.AppUpdateURL)" explainText="$(string.AppUpdateURL_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.AppUpdateURL)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <text id="AppUpdateURL" valueName="AppUpdateURL" required="true" />
+        <text id="AppUpdateURL" valueName="AppUpdateURL" required="true"/>
       </elements>
     </policy>
-    <policy name="SecurityDevices" class="Both" displayName="$(string.SecurityDevices)" explainText="$(string.SecurityDevices_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF64" />
+    <policy name="SecurityDevices" class="Both" displayName="$(string.SecurityDevices)" explainText="$(string.SecurityDevices_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF64"/>
       <elements>
         <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices" valuePrefix="" explicitValue="true" expandable="true"/>
       </elements>
     </policy>
-    <policy name="RequestedLocales" class="Both" displayName="$(string.RequestedLocales)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.RequestedLocales)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF64" />
+    <policy name="RequestedLocales" class="Both" displayName="$(string.RequestedLocales)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.RequestedLocales)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF64"/>
       <elements>
         <list id="RequestedLocales" key="Software\Policies\Mozilla\Firefox\RequestedLocales" valuePrefix=""/>
       </elements>
     </policy>
-    <policy name="RequestedLocalesString" class="Both" displayName="$(string.RequestedLocalesString)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF68" />
+    <policy name="RequestedLocalesString" class="Both" displayName="$(string.RequestedLocalesString)" explainText="$(string.RequestedLocales_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
         <text id="Preferences_String" valueName="RequestedLocales"/>
       </elements>
     </policy>
-    <policy name="SSLVersionMin" class="Both" displayName="$(string.SSLVersionMin)" explainText="$(string.SSLVersionMin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersionMin)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF66" />
+    <policy name="SSLVersionMin" class="Both" displayName="$(string.SSLVersionMin)" explainText="$(string.SSLVersionMin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersionMin)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF66"/>
       <elements>
         <enum id="SSLVersion" valueName="SSLVersionMin">
           <item displayName="$(string.TLS1)">
@@ -2949,9 +2949,9 @@
         </enum>
       </elements>
     </policy>
-    <policy name="SSLVersionMax" class="Both" displayName="$(string.SSLVersionMax)" explainText="$(string.SSLVersionMax_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersionMax)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF66" />
+    <policy name="SSLVersionMax" class="Both" displayName="$(string.SSLVersionMax)" explainText="$(string.SSLVersionMax_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SSLVersionMax)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF66"/>
       <elements>
         <enum id="SSLVersion" valueName="SSLVersionMax">
           <item displayName="$(string.TLS1)">
@@ -2977,16 +2977,16 @@
         </enum>
       </elements>
     </policy>
-    <policy name="SupportMenu" class="Both" displayName="$(string.SupportMenu)" explainText="$(string.SupportMenu_Explain)" key="Software\Policies\Mozilla\Firefox\SupportMenu" presentation="$(presentation.SupportMenu)" >
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF6801" />
+    <policy name="SupportMenu" class="Both" displayName="$(string.SupportMenu)" explainText="$(string.SupportMenu_Explain)" key="Software\Policies\Mozilla\Firefox\SupportMenu" presentation="$(presentation.SupportMenu)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF6801"/>
       <elements>
-        <text id="SupportMenuTitle" valueName="Title" required="true" />
-        <text id="SupportMenuURL" valueName="URL" required="true" />
-        <text id="SupportMenuAccessKey" valueName="AccessKey" />
+        <text id="SupportMenuTitle" valueName="Title" required="true"/>
+        <text id="SupportMenuURL" valueName="URL" required="true"/>
+        <text id="SupportMenuAccessKey" valueName="AccessKey"/>
       </elements>
     </policy>
-    <policy name="accessibility_force_disabled" class="Both" displayName="$(string.accessibility_force_disabled)" explainText="$(string.Preferences_Enum_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_accessibility_force_disabled)" >
+    <policy name="accessibility_force_disabled" class="Both" displayName="$(string.accessibility_force_disabled)" explainText="$(string.Preferences_Enum_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_accessibility_force_disabled)">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF70"/>
       <elements>
@@ -3024,9 +3024,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="browser_bookmarks_file" class="Both" displayName="$(string.browser_bookmarks_file)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF70" />
+    <policy name="browser_bookmarks_file" class="Both" displayName="$(string.browser_bookmarks_file)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
       <elements>
         <text id="Preferences_String" valueName="browser.bookmarks.file" required="true" expandable="true"/>
       </elements>
@@ -3261,9 +3261,9 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="intl_accept_languages" class="Both" displayName="$(string.intl_accept_languages)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF70" />
+    <policy name="intl_accept_languages" class="Both" displayName="$(string.intl_accept_languages)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF70"/>
       <elements>
         <text id="Preferences_String" valueName="intl.accept_languages" required="true" expandable="true"/>
       </elements>
@@ -3368,28 +3368,28 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="browser_cache_disk_parent_directory" class="Both" displayName="$(string.browser_cache_disk_parent_directory)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF68" />
+    <policy name="browser_cache_disk_parent_directory" class="Both" displayName="$(string.browser_cache_disk_parent_directory)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
         <text id="Preferences_String" valueName="browser.cache.disk.parent_directory" required="true" expandable="true"/>
       </elements>
     </policy>
-    <policy name="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF68" />
+    <policy name="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
-        <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl" required="true" />
+        <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl" required="true"/>
       </elements>
     </policy>
-    <policy name="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF68" />
+    <policy name="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl" class="Both" displayName="$(string.dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
-        <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl" required="true" />
+        <text id="Preferences_String" valueName="dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl" required="true"/>
       </elements>
     </policy>
-    <policy name="security_default_personal_cert" class="Both" displayName="$(string.security_default_personal_cert)" explainText="$(string.Preferences_Enum_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_security_default_personal_cert)" >
+    <policy name="security_default_personal_cert" class="Both" displayName="$(string.security_default_personal_cert)" explainText="$(string.Preferences_Enum_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_security_default_personal_cert)">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
@@ -3407,11 +3407,11 @@
         </enum>
       </elements>
     </policy>
-    <policy name="browser_newtabpage_activity-stream_default_sites" class="Both" displayName="$(string.browser_newtabpage_activity-stream_default_sites)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF72" />
+    <policy name="browser_newtabpage_activity-stream_default_sites" class="Both" displayName="$(string.browser_newtabpage_activity-stream_default_sites)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF72"/>
       <elements>
-        <text id="Preferences_String" valueName="browser.newtabpage.activity-stream.default.sites" required="true" />
+        <text id="Preferences_String" valueName="browser.newtabpage.activity-stream.default.sites" required="true"/>
       </elements>
     </policy>
     <policy name="extensions_htmlaboutaddons_recommendations_enabled" class="Both" displayName="$(string.extensions_htmlaboutaddons_recommendations_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="extensions.htmlaboutaddons.recommendations.enabled">
@@ -3434,18 +3434,18 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="media_peerconnection_ice_obfuscate_host_addresses_whitelist" class="Both" displayName="$(string.media_peerconnection_ice_obfuscate_host_addresses_whitelist)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF68" />
+    <policy name="media_peerconnection_ice_obfuscate_host_addresses_whitelist" class="Both" displayName="$(string.media_peerconnection_ice_obfuscate_host_addresses_whitelist)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
-        <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.whitelist" required="true" />
+        <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.whitelist" required="true"/>
       </elements>
     </policy>
-    <policy name="media_peerconnection_ice_obfuscate_host_addresses_blocklist" class="Both" displayName="$(string.media_peerconnection_ice_obfuscate_host_addresses_blocklist)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF79" />
+    <policy name="media_peerconnection_ice_obfuscate_host_addresses_blocklist" class="Both" displayName="$(string.media_peerconnection_ice_obfuscate_host_addresses_blocklist)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF79"/>
       <elements>
-        <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.blocklist" required="true" />
+        <text id="Preferences_String" valueName="media.peerconnection.ice.obfuscate_host_addresses.blocklist" required="true"/>
       </elements>
     </policy>
     <policy name="security_osclientcerts_autoload" class="Both" displayName="$(string.security_osclientcerts_autoload)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.osclientcerts.autoload">
@@ -3468,11 +3468,11 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="widget_content_gtk-theme-override" class="Both" displayName="$(string.widget_content_gtk-theme-override)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)" >
-      <parentCategory ref="Preferences" />
-      <supportedOn ref="SUPPORTED_FF68" />
+    <policy name="widget_content_gtk-theme-override" class="Both" displayName="$(string.widget_content_gtk-theme-override)" explainText="$(string.Preferences_String_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" presentation="$(presentation.Preferences_String)">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF68"/>
       <elements>
-        <text id="Preferences_String" valueName="widget.content.gtk-theme-override" required="true" />
+        <text id="Preferences_String" valueName="widget.content.gtk-theme-override" required="true"/>
       </elements>
     </policy>
     <policy name="A_SanitizeOnShutdown_Cache" class="Both" displayName="$(string.SanitizeOnShutdown_Cache)" explainText="$(string.SanitizeOnShutdown_Cache_Explain)" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown" valueName="Cache">
@@ -3595,7 +3595,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="D_TrackingProtection_Exceptions" class="Both" displayName="$(string.TrackingProtection_Exceptions)" explainText="$(string.TrackingProtection_Exceptions_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection"  presentation="$(presentation.TrackingProtection_Exceptions)">
+    <policy name="D_TrackingProtection_Exceptions" class="Both" displayName="$(string.TrackingProtection_Exceptions)" explainText="$(string.TrackingProtection_Exceptions_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" presentation="$(presentation.TrackingProtection_Exceptions)">
       <parentCategory ref="TrackingProtection"/>
       <supportedOn ref="SUPPORTED_FF74"/>
       <elements>
@@ -3943,21 +3943,21 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF78"/>
       <elements>
-        <multiText id="Handlers" valueName="Handlers"  maxLength="16384"/>
+        <multiText id="Handlers" valueName="Handlers" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="PreferencesOneLine" class="Both" displayName="$(string.PreferencesOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSONOneLine)">
+    <policy name="PreferencesOneLine" class="Both" displayName="$(string.PreferencesOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSONOneLine)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF81"/>
       <elements>
         <text id="JSONOneLine" valueName="Preferences" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="Preferences" class="Both" displayName="$(string.Preferences)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSON)">
+    <policy name="Preferences" class="Both" displayName="$(string.Preferences)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Preferences_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF81"/>
       <elements>
-        <multiText id="JSON" valueName="Preferences"  maxLength="16384"/>
+        <multiText id="JSON" valueName="Preferences" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="ManagedBookmarksOneLine" class="Both" displayName="$(string.ManagedBookmarksOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.ManagedBookmarks_Explain)" presentation="$(presentation.JSONOneLine)">
@@ -3971,7 +3971,7 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF83"/>
       <elements>
-        <multiText id="JSON" valueName="ManagedBookmarks"  maxLength="16384"/>
+        <multiText id="JSON" valueName="ManagedBookmarks" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="AllowedDomainsForApps" class="Both" displayName="$(string.AllowedDomainsForApps)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.AllowedDomainsForApps_Explain)" presentation="$(presentation.String)">
@@ -3991,18 +3991,18 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="AutoLaunchProtocolsFromOriginsOneLine" class="Both" displayName="$(string.AutoLaunchProtocolsFromOriginsOneLine)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSONOneLine)">
+    <policy name="AutoLaunchProtocolsFromOriginsOneLine" class="Both" displayName="$(string.AutoLaunchProtocolsFromOriginsOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSONOneLine)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF81"/>
       <elements>
         <text id="JSONOneLine" valueName="AutoLaunchProtocolsFromOrigins" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="AutoLaunchProtocolsFromOrigins" class="Both" displayName="$(string.AutoLaunchProtocolsFromOrigins)"  key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSON)">
+    <policy name="AutoLaunchProtocolsFromOrigins" class="Both" displayName="$(string.AutoLaunchProtocolsFromOrigins)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.AutoLaunchProtocolsFromOrigins_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF81"/>
       <elements>
-        <multiText id="JSON" valueName="AutoLaunchProtocolsFromOrigins"  maxLength="16384"/>
+        <multiText id="JSON" valueName="AutoLaunchProtocolsFromOrigins" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="WindowsSSO" class="Both" displayName="$(string.WindowsSSO)" explainText="$(string.WindowsSSO_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="WindowsSSO">
@@ -4036,7 +4036,7 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF102"/>
       <elements>
-        <multiText id="JSON" valueName="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings"  maxLength="16384"/>
+        <multiText id="JSON" valueName="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="StartDownloadsInTempDirectory" class="Both" displayName="$(string.StartDownloadsInTempDirectory)" explainText="$(string.StartDownloadsInTempDirectory_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="StartDownloadsInTempDirectory">
@@ -4060,14 +4060,14 @@
       </disabledValue>
     </policy>
     <policy name="AppUpdatePin" class="Both" displayName="$(string.AppUpdatePin)" explainText="$(string.AppUpdatePin_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.String)">
-      <parentCategory ref="firefox" />
-      <supportedOn ref="SUPPORTED_FF102" />
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF102"/>
       <elements>
-        <text id="String" valueName="AppUpdatePin" required="true" />
+        <text id="String" valueName="AppUpdatePin" required="true"/>
       </elements>
     </policy>
     <policy name="DisableThirdPartyModuleBlocking" class="Both" displayName="$(string.DisableThirdPartyModuleBlocking)" explainText="$(string.DisableThirdPartyModuleBlocking_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableThirdPartyModuleBlocking">
-      <parentCategory ref="firefox" />
+      <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF110"/>
       <enabledValue>
         <decimal value="1"/>
@@ -4087,17 +4087,17 @@
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF113"/>
       <elements>
-        <multiText id="JSON" valueName="Containers"  maxLength="16384"/>
+        <multiText id="JSON" valueName="Containers" maxLength="16384"/>
       </elements>
     </policy>
-    <policy name="SecurityDevices_Add" class="Both" displayName="$(string.SecurityDevices_Add)" explainText="$(string.SecurityDevices_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)" >
+    <policy name="SecurityDevices_Add" class="Both" displayName="$(string.SecurityDevices_Add)" explainText="$(string.SecurityDevices_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)">
       <parentCategory ref="SecurityDevices"/>
       <supportedOn ref="SUPPORTED_FF114"/>
       <elements>
         <list id="SecurityDevices" key="Software\Policies\Mozilla\Firefox\SecurityDevices\Add" valuePrefix="" explicitValue="true" expandable="true"/>
       </elements>
     </policy>
-    <policy name="SecurityDevices_Delete" class="Both" displayName="$(string.SecurityDevices_Delete)" explainText="$(string.SecurityDevices_Delete_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)" >
+    <policy name="SecurityDevices_Delete" class="Both" displayName="$(string.SecurityDevices_Delete)" explainText="$(string.SecurityDevices_Delete_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.SecurityDevices)">
       <parentCategory ref="SecurityDevices"/>
       <supportedOn ref="SUPPORTED_FF114"/>
       <elements>

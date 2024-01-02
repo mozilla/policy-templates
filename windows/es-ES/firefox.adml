@@ -231,9 +231,9 @@ Para obtener más información sobre el agente de navegador predeterminado, visi
 
 Si esta política está deshabilitada o no está configurada, las herramientas para desarrolladores web estarán disponibles dentro de Firefox.</string>
       <string id="DisableFeedbackCommands">Deshabilitar comandos de comentarios</string>
-      <string id="DisableFeedbackCommands_Explain">Si esta política está habilitada, los menús &quot;Enviar comentario&quot; y &quot;Reportar sitio engañoso&quot; no estarán disponibles en el menú de ayuda.
+      <string id="DisableFeedbackCommands_Explain">Si esta política está habilitada, los menús "Enviar comentario" y "Reportar sitio engañoso" no estarán disponibles en el menú de ayuda.
 
-Si esta política está deshabilitada o no está configurada, los menús &quot;Enviar comentario&quot; y &quot;Reportar sitio engañoso&quot; estarán disponibles en el menú de ayuda.</string>
+Si esta política está deshabilitada o no está configurada, los menús "Enviar comentario" y "Reportar sitio engañoso" estarán disponibles en el menú de ayuda.</string>
       <string id="DisableFirefoxAccounts">Deshabilitar cuentas de Firefox</string>
       <string id="DisableFirefoxAccounts_Explain">Si esta política está habilitada, las cuentas de Firefox estarán deshabilitadas, lo que incluye deshabilitar Sync.
 
@@ -249,9 +249,9 @@ Si esta política está deshabilitada o no está configurada, el usuario podrá 
 
 Para más información, visita https://support.mozilla.org/en-US/kb/shield y https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Deshabilitar el botón olvidar</string>
-      <string id="DisableForgetButton_Explain">Si esta política está habilitada, el botón &quot;Olvidar&quot; no estará disponible.
+      <string id="DisableForgetButton_Explain">Si esta política está habilitada, el botón "Olvidar" no estará disponible.
 
-Si esta política está deshabilitada o no está configurada, el botón &quot;Olvidar&quot; estará disponible.</string>
+Si esta política está deshabilitada o no está configurada, el botón "Olvidar" estará disponible.</string>
       <string id="DisableFormHistory">Deshabilitar historial de formulario</string>
       <string id="DisableFormHistory_Explain">Si esta política está habilitada, Firefox no recordará el formulario ni el historial de búsqueda.
 
@@ -269,19 +269,19 @@ Si esta política está deshabilitada o no está configurada, Pocket está dispo
 
 Si esta política está deshabilitada o no está configurada, se permitirá la navegación privada.</string>
       <string id="DisableProfileImport">Deshabilitar importación de perfil</string>
-      <string id="DisableProfileImport_Explain">Si esta política está habilitada, la opción &quot;Importar datos desde otro navegador&quot; no estará disponible en la ventana de marcadores.
+      <string id="DisableProfileImport_Explain">Si esta política está habilitada, la opción "Importar datos desde otro navegador" no estará disponible en la ventana de marcadores.
 
-Si esta política está ddeshabilitada o no está configurada, la opción &quot;Importar datos desde otro navegador&quot; estará disponible.</string>
+Si esta política está ddeshabilitada o no está configurada, la opción "Importar datos desde otro navegador" estará disponible.</string>
       <string id="DisableProfileRefresh">Deshabilitar actualización de perfil</string>
-      <string id="DisableProfileRefresh_Explain">Si esta política está habilitada, el botón &quot;Actualizar Firefox&quot; no estará disponible en la página about:support o en support.mozilla.org.
+      <string id="DisableProfileRefresh_Explain">Si esta política está habilitada, el botón "Actualizar Firefox" no estará disponible en la página about:support o en support.mozilla.org.
 
-Si esta política está deshabilitada o no está configurada, el botón &quot;Actualizar Firefox&quot; estará disponible.</string>
+Si esta política está deshabilitada o no está configurada, el botón "Actualizar Firefox" estará disponible.</string>
       <string id="DisableSafeMode">Deshabilitar modo seguro</string>
       <string id="DisableSafeMode_Explain">Si esta política está habilitada, el usuario no podrá reiniciar el navegador en modo seguro.
 
 Si esta política está deshabilitada o no está configurada, se permitirá el modo seguro.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Evitar anular los errores de certificado</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Si esta política está habilitada, el botón &quot;Añadir excepción&quot; no estará disponible cuando un certificado no es válido. Esto evita que el usuario anule el error de certificado.
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Si esta política está habilitada, el botón "Añadir excepción" no estará disponible cuando un certificado no es válido. Esto evita que el usuario anule el error de certificado.
 
 Si esta política está deshabilitada o no está configurada, los errores de certificado pueden anularse.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Evitar anular los errores de navegación segura</string>

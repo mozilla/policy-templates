@@ -1177,7 +1177,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
       <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Разрешить всплывающие окна для веб-сайтов</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
-        <dropdownList refId="Cookies_AcceptThirdParty" />
+        <dropdownList refId="Cookies_AcceptThirdParty"/>
       </presentation>
       <presentation id="Cookies_Behavior">
         <dropdownList refId="Cookies_Behavior"/>
@@ -1186,7 +1186,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <dropdownList refId="Cookies_BehaviorPrivateBrowsing"/>
       </presentation>
       <presentation id="SearchBar">
-        <dropdownList refId="SearchBar" />
+        <dropdownList refId="SearchBar"/>
       </presentation>
       <presentation id="TrackingProtection">
         <checkBox refId="TrackingProtectionLocked">Не разрешать изменение настройки защиты от отслеживания.</checkBox>
@@ -1275,7 +1275,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <presentation id="Proxy">
         <checkBox refId="ProxyLocked">Не разрешать изменение настроек прокси.</checkBox>
          <text>Тип подключения:</text>
-         <dropdownList refId="ConnectionType" />
+         <dropdownList refId="ConnectionType"/>
          <text>HTTP-прокси:</text>
         <textBox refId="HTTPProxy">
           <label/>
@@ -1310,7 +1310,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
        <presentation id="DNSOverHTTPS">
          <text>URL-адрес поставщика:</text>
          <textBox refId="ProviderURL">
-           <label />
+           <label/>
          </textBox>
          <checkBox refId="DNSOverHTTPSEnabled">Включить DNS через HTTPS.</checkBox>
          <checkBox refId="DNSOverHTTPSLocked">Запретить изенение настроек DNS через HTTPS.</checkBox>
@@ -1324,11 +1324,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
        <presentation id="SupportMenu">
          <text>Заголовок:</text>
          <textBox refId="SupportMenuTitle">
-           <label />
+           <label/>
          </textBox>
          <text>URL:</text>
          <textBox refId="SupportMenuURL">
-           <label />
+           <label/>
          </textBox>
          <text>Ключ доступа:</text>
         <textBox refId="SupportMenuAccessKey">

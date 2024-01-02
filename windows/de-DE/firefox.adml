@@ -231,9 +231,9 @@ Weitere Informationen über den Standard-Browser-Agent finden Sie unter https://
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können die Werkzeuge für Webentwickler in Firefox benutzt werden.</string>
       <string id="DisableFeedbackCommands">Feedback Commands deaktivieren</string>
-      <string id="DisableFeedbackCommands_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind &quot;Feedback senden...&quot; und &quot;Betrügerische Website melden…&quot; im Hilfemenü nicht verfügbar.
+      <string id="DisableFeedbackCommands_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind "Feedback senden..." und "Betrügerische Website melden…" im Hilfemenü nicht verfügbar.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind &quot;Feedback senden...&quot; und &quot;Betrügerische Website melden..&quot; im Hilfemenü verfügbar.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind "Feedback senden..." und "Betrügerische Website melden.." im Hilfemenü verfügbar.</string>
       <string id="DisableFirefoxAccounts">Firefox-Konto deaktivieren</string>
       <string id="DisableFirefoxAccounts_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht Firefox-Konto nicht zur Verfügung, dies beinhaltet auch die Synchronisierung.
 
@@ -249,9 +249,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
 
 Für weitere Informationen, besuchen Sie https://support.mozilla.org/en-US/kb/shield und https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Vergessen Button deaktivieren</string>
-      <string id="DisableForgetButton_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der &quot;Vergessen&quot; Button nicht zur Verfügung.
+      <string id="DisableForgetButton_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der "Vergessen" Button nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der &quot;Vergessen&quot; Button zur Verfügung.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der "Vergessen" Button zur Verfügung.</string>
       <string id="DisableFormHistory">Formular- und Suchverlaufhistorie deaktivieren</string>
       <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox keine Formular- oder Suchverläufe speichern.
 
@@ -269,21 +269,21 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, ist privates Surfen erlaubt.</string>
       <string id="DisableProfileImport">Profil-Import deaktivieren</string>
-      <string id="DisableProfileImport_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht die Option &quot;Daten von einen anderen Browser importieren..&quot; in der Bibliothek nicht zur Verfügung.
+      <string id="DisableProfileImport_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht die Option "Daten von einen anderen Browser importieren.." in der Bibliothek nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option &quot;Daten von einen anderen Browser importieren..&quot; in der Bibliothek zur Verfügung.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option "Daten von einen anderen Browser importieren.." in der Bibliothek zur Verfügung.</string>
       <string id="DisableProfileRefresh">Firefox bereinigen deaktivieren</string>
-      <string id="DisableProfileRefresh_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der &quot;Firefox bereinigen...&quot; Button auf der about:support Seite oder auf support.mozilla.org nicht zur Verfügung.
+      <string id="DisableProfileRefresh_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der "Firefox bereinigen..." Button auf der about:support Seite oder auf support.mozilla.org nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der &quot;Firefox bereinigen...&quot; Button auf der about:support Seite oder auf support.mozilla.org zur Verfügung.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der "Firefox bereinigen..." Button auf der about:support Seite oder auf support.mozilla.org zur Verfügung.</string>
       <string id="DisableSafeMode">Abgesicherten Modus deaktivieren</string>
-      <string id="DisableSafeMode_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Option &quot;Mit deaktivierten Add-ons neu starten...&quot; (Abgesicherter Modus) im Hilfemenü nicht auswählen.
+      <string id="DisableSafeMode_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Option "Mit deaktivierten Add-ons neu starten..." (Abgesicherter Modus) im Hilfemenü nicht auswählen.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Option &quot;Mit deaktivierten Add-ons neu starten...&quot; (Abgesicherter Modus) im Hilfemenü auswählen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Option "Mit deaktivierten Add-ons neu starten..." (Abgesicherter Modus) im Hilfemenü auswählen.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Ausnahme hinzufügen verhindern bei unsicheren Zertifikaten</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht &quot;Ausnahme hinzufügen&quot; nicht zur Verfügung, wenn ein Zertifikat ungültig ist. Dies verhindert, dass ein Benutzer Zertifikatsfehler überschreibt.
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht "Ausnahme hinzufügen" nicht zur Verfügung, wenn ein Zertifikat ungültig ist. Dies verhindert, dass ein Benutzer Zertifikatsfehler überschreibt.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht &quot;Ausnahme hinzufügen&quot; zur Verfügung, wenn ein Zertifikat ungültig ist.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht "Ausnahme hinzufügen" zur Verfügung, wenn ein Zertifikat ungültig ist.</string>
       <string id="DisableSecurityBypass_SafeBrowsing">Ausnahme hinzufügen verhindern bei betrügerischen oder schädlichen Weseiten</string>
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz nicht umgehen um eine schädliche Webseite zu besuchen.
 
@@ -429,7 +429,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder w
       <string id="Cookies_ExpireAtSessionEnd">Cookies behalten, bis Firefox geschlossen ist</string>
       <string id="Cookies_ExpireAtSessionEnd_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlaubt sind, werden diese gelöscht sobald Firefox geschlossen wird.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn &quot;Cookies und Website-Daten annehmen&quot; deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn "Cookies und Website-Daten annehmen" deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
       <string id="Cookies_RejectTracker">Tracker ablehnen (Veraltet)</string>
       <string id="Cookies_RejectTracker_Explain">Wenn diese Richtlinieneinstellung aktiviert ist und Cookies aktiviert sind, werden Tracker-Cookies standardmäßig abgewiesen.
 
