@@ -4614,6 +4614,10 @@ as well as the following security preferences:
 | --- | --- | --- |
 | security.default_personal_cert | string | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
+| security.disable_button.openCertManager | string | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true and locked, the View Certificates button in preferences is disabled (Firefox 121, Firefox ESR 115.6)
+| security.disable_button.openDeviceManager | string | N/A
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true and locked, the Security Devices button in preferences is disabled (Firefox 121, Firefox ESR 115.6)
 | security.insecure_connection_text.enabled | bool | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites.
 | security.insecure_connection_text.pbmode.enabled | bool | false
