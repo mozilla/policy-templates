@@ -586,12 +586,28 @@
 	<false/>
 	<key>Proxy</key>
 	<dict>
-		<key>SocksVersion</key>
-		<string>4</string>
 		<key>Mode</key>
 		<string>manual</string>
 		<key>HTTPProxy</key>
 		<string>proxy.example.com:80</string>
+		<key>UseHTTPProxyForAllProtocols</key>
+		<true/>
+		<key>SSLProxy</key>
+		<string>proxy.example.com:80</string>
+		<key>FTPProxy</key>
+		<string>proxy.example.com:80</string>
+		<key>SOCKSProxy</key>
+		<string>proxy.example.com:80</string>
+		<key>SocksVersion</key>
+		<string>4</string>
+		<key>Passthrough</key>
+		<string>&lt;local&rt;</string>
+		<key>AutoConfigURL</key>
+		<string>URL_TO_AUTOCONFIG</string>
+		<key>AutoLogin</key>
+		<true/>
+		<key>UseProxyForDNS</key>
+		<true/>
 		<key>Locked</key>
 		<true/>
 	</dict>
