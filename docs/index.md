@@ -2899,7 +2899,7 @@ Value (string):
 ### FirefoxHome
 Customize the Firefox Home page.
 
-**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4)
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122)
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
 
@@ -4581,7 +4581,8 @@ Previously you could only set and lock a subset of preferences. Starting with Fi
 Preferences that start with the following prefixes are supported:
 ```
 accessibility.
-app.update.* (Firefox 86, Firefox 78.8)
+alerts.* (Firefox 122, Firefox ESR 115.7)
+app.update.* (Firefox 86, Firefox ESR 78.8)
 browser.
 datareporting.policy.
 dom.
