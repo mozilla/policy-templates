@@ -4129,7 +4129,7 @@ Note: DisableBuiltinPDFViewer has not been deprecated. You can either continue t
 
 **Compatibility:** Firefox 77, Firefox ESR 68.9\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `pdfjs.diabled`, `pdfjs.enablePermissions`
+**Preferences Affected:** `pdfjs.disabled`, `pdfjs.enablePermissions`
 
 #### Windows (GPO)
 ```
