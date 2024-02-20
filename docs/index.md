@@ -587,6 +587,8 @@ If set to false, the application will not try to install updates when the applic
 
 If you have disabled updates via `DisableAppUpdate` or disabled automatic updates via `AppAutoUpdate`, this policy has no effect.
 
+If you are having trouble getting the background task to run, verify your configuration with the ["Requirements to run" section in this support document](https://support.mozilla.org/en-US/kb/enable-background-updates-firefox-windows).
+
 **Compatibility:** Firefox 90 (Windows only)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `app.update.background.enabled`
@@ -2652,7 +2654,9 @@ Value (string):
 ### Extensions
 Control the installation, uninstallation and locking of extensions.
 
-While this policy is not technically deprecated, it is recommended that you use the **[`ExtensionSettings`](#extensionsettings)** policy. It has the same functionality and adds more. It does not support native paths, though, so you'll have to use file:/// URLs.
+We strongly recommend that you use the **[`ExtensionSettings`](#extensionsettings)** policy. It has the same functionality and adds more. It does not support native paths, though, so you'll have to use file:/// URLs.
+
+This method will be deprecated in the near future.
 
 `Install` is a list of URLs or native paths for extensions to be installed.
 
@@ -4661,6 +4665,8 @@ Using the preference as the key, set the `Value` to the corresponding preference
 
 `"user"` preferences persist even if the policy is removed, so if you need to remove them, you should use the clear policy.
 
+You can also set the `Type` starting in Firefox 123 and Firefox ESR 115.8. It can be `number`, `boolean` or `string`. This is especially useful if you are seeing 0 or 1 values being converted to booleans when set as user preferences.
+
 See the examples below for more detail.
 
 IMPORTANT: Make sure you're only setting a particular preference using this mechanism and not some other way.
@@ -4676,7 +4682,9 @@ Software\Policies\Mozilla\Firefox\Preferences (REG_MULTI_SZ) =
 {
   "accessibility.force_disabled": {
     "Value": 1,
-    "Status": "default"
+    "Status": "default",
+    "Type": "number"
+
   },
   "browser.cache.disk.parent_directory": {
     "Value": "SOME_NATIVE_PATH",
@@ -4700,7 +4708,8 @@ Value (string):
 {
   "accessibility.force_disabled": {
     "Value": 1,
-    "Status": "default"
+    "Status": "default",
+    "Type": "number"
   },
   "browser.cache.disk.parent_directory": {
     "Value": "SOME_NATIVE_PATH",
@@ -4723,6 +4732,8 @@ Value (string):
       <integer>1</integer>
       <key>Status</key>
       <string>default</string>
+      <key>Type</key>
+      <string>number</string>
     </dict>
     <key>browser.cache.disk.parent_directory</key>
     <dict>
@@ -4749,6 +4760,7 @@ Value (string):
       "accessibility.force_disabled": {
         "Value": 1,
         "Status": "default"
+        "Type": "number"
       },
       "browser.cache.disk.parent_directory": {
         "Value": "SOME_NATIVE_PATH",
