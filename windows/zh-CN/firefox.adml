@@ -66,6 +66,7 @@
       <string id="SUPPORTED_FF122">Firefox 122 或更新版本、Firefox 105.7 ESR 或更新版本</string>
       <string id="SUPPORTED_FF123">Firefox 123 或更新版本、Firefox 105.8 ESR 或更新版本</string>
       <string id="SUPPORTED_FF124">Firefox 124 或更新版本、Firefox 105.9 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF124_ONLY">Firefox 124 或更新版本</string>
       <string id="SUPPORTED_FF125">Firefox 125 或更新版本、Firefox 105.10 ESR 或更新版本</string>
       <string id="SUPPORTED_FF126">Firefox 126 或更新版本、Firefox 105.11 ESR 或更新版本</string>
       <string id="SUPPORTED_FF127">Firefox 127 或更新版本、Firefox 105.12 ESR 或更新版本</string>
