@@ -2793,7 +2793,8 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
   "https-everywhere@eff.org": {
-    "installation_mode": "allowed"
+    "installation_mode": "allowed",
+    "updates_disabled": false
   }
 }
 ```
@@ -2818,7 +2819,8 @@ Value (string):
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
     "https-everywhere@eff.org": {
-    "installation_mode": "allowed"
+    "installation_mode": "allowed",
+    "updates_disabled": false
   }
 }'/>
 ```
@@ -2845,14 +2847,16 @@ Value (string):
     <key>uBlock0@raymondhill.net</key>
     <dict>
       <key>installation_mode</key>
-       <string>force_installed</string>
+      <string>force_installed</string>
       <key>install_url</key>
       <string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
     </dict>
     <key>https-everywhere@eff.org</key>
     <dict>
       <key>installation_mode</key>
-       <string>allowed</string>
+      <string>allowed</string>
+      <key>updates_disabled</key>
+      <true/> | <false/>
     </dict>
   </dict>
 </dict>
@@ -2873,7 +2877,8 @@ Value (string):
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
       },
       "https-everywhere@eff.org": {
-        "installation_mode": "allowed"
+        "installation_mode": "allowed",
+        "updates_disabled": false
       }
     }
   }
