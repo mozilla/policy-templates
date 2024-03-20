@@ -4175,5 +4175,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="AllowFileSelectionDialogs" class="Both" displayName="$(string.AllowFileSelectionDialogs)" explainText="$(string.AllowFileSelectionDialogs_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AllowFileSelectionDialogs">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF124_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

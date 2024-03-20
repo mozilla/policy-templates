@@ -17,6 +17,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | --- | --- |
 | **[`3rdparty`](#3rdparty)** | Set policies that WebExtensions can access via chrome.storage.managed.
 | **[`AllowedDomainsForApps`](#alloweddomainsforapps)** | Define domains allowed to access Google Workspace.
+| **[`AllowFileSelectionDialogs`](#allowfileselectiondialogs)** | Allow file selection dialogs.
 | **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
 | **[`AppUpdatePin`](#appupdatepin)** | Prevent Firefox from being updated beyond the specified version.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
@@ -216,6 +217,42 @@ Value (string):
 {
   "policies": {
     "AllowedDomainsForApps": "managedfirefox.com,example.com"
+  }
+}
+```
+### AllowFileSelectionDialogs
+
+Enable or disable file selection dialogs.
+
+**Compatibility:** Firefox 124\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `widget.disable_file_pickers`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AllowFileSelectionDialogs = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AppAutoAllowFileSelectionDialogsUpdate
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>AllowFileSelectionDialogs</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AllowFileSelectionDialogs": true | false
   }
 }
 ```
