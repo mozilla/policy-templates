@@ -2261,7 +2261,9 @@ Configure DNS over HTTPS.
 
 `ExcludedDomains` excludes domains from DNS over HTTPS.
 
-**Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7)\
+`Fallback` determines whether or not Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.
+
+**Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7) (Fallback added in 124)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.trr.mode`, `network.trr.uri`
 
@@ -2271,6 +2273,7 @@ Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ProviderURL = "URL_TO_ALTERNATE_PROVIDER"
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ExcludedDomains\1 = "example.com"
+Software\Policies\Mozilla\Firefox\DNSOverHTTPS\Fallback = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -2307,6 +2310,14 @@ Value (string):
 <enabled/>
 <data id="List" value="1&#xF000;example.com"/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~DNSOverHTTPS/DNSOverHTTPS_Fallback
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -2322,6 +2333,8 @@ Value (string):
     <array>
       <string>example.com</string>
     </array>
+    <key>Fallback</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -2333,7 +2346,8 @@ Value (string):
       "Enabled":  true | false,
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
       "Locked": true | false,
-      "ExcludedDomains": ["example.com"]
+      "ExcludedDomains": ["example.com"],
+      "Fallback": true | false,
     }
   }
 }
