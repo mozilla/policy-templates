@@ -209,6 +209,10 @@ Se questo criterio è disabilitato o non configurato, nessun dominio è escluso 
       <string id="DNSOverHTTPS_Explain">Se questo criterio è abilitato, la configurazione predefinita per DNS su HTTPS può essere modificata.
 
 Se questo criterio è disabilitato o non configurato, DNS su HTTPS utilizza la configurazione predefinita di Firefox.</string>
+      <string id="DNSOverHTTPS_Fallback">Fallback</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+
+If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
       <string id="DisableMasterPasswordCreation">Disabilita creazione password principale</string>
       <string id="DisableMasterPasswordCreation_Explain">Se questo criterio è abilitato, gli utenti non possono creare una password principale.
 

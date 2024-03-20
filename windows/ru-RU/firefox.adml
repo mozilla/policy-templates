@@ -209,6 +209,10 @@
       <string id="DNSOverHTTPS_Explain">Если эта политика включена, можно изменить конфигурацию по умолчанию для DNS через HTTPS.
 
 Если эта политика отключена или не настроена, DNS через HTTPS использует конфигурацию Firefox по умолчанию.</string>
+      <string id="DNSOverHTTPS_Fallback">Fallback</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+
+If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
       <string id="DisableMasterPasswordCreation">Отключить создание мастер-пароля</string>
       <string id="DisableMasterPasswordCreation_Explain">Если эта политика включена, пользователи не могут создать мастер-пароль.
 

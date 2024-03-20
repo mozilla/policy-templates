@@ -209,6 +209,10 @@ Si esta política está deshabilitada o no está configurada, no se excluirán d
       <string id="DNSOverHTTPS_Explain">Si esta política está habilitada, se podrá cambiar la configuración predeterminada de DNS mediante HTTPS.
 
 Si esta política está deshabilitada o no está configurada, DNS mediante HTTPS usa la configuración predeterminada de Firefox.</string>
+      <string id="DNSOverHTTPS_Fallback">Fallback</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+
+If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
       <string id="DisableMasterPasswordCreation">Deshabilitar la creación de contraseña maestra</string>
       <string id="DisableMasterPasswordCreation_Explain">Si esta política está habilitada, los usuarios no podrán crear una contraseña maestra.
 

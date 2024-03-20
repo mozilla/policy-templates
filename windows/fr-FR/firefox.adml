@@ -209,6 +209,10 @@ Si cette stratégie est désactivée ou n'est pas configurée, aucun domaine n'e
       <string id="DNSOverHTTPS_Explain">Si cette stratégie est activée, la configuration par défaut de DNS sur HTTPS peut être modifiée.
 
 Si cette stratégie est désactivée ou non configurée, DNS Over HTTPS utilise la configuration par défaut de Firefox.</string>
+      <string id="DNSOverHTTPS_Fallback">Fallback</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+
+If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
       <string id="DisableMasterPasswordCreation">Désactiver la création du mot de passe principal</string>
       <string id="DisableMasterPasswordCreation_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas créer de mot de passe principal.
 

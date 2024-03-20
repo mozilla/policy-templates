@@ -209,6 +209,10 @@
       <string id="DNSOverHTTPS_Explain">若启用此原则，可变更默认 DNS over httpS 设置。
 
 若禁用或不设定此原则，将使用默认 DNS Over httpS 设置。</string>
+      <string id="DNSOverHTTPS_Fallback">Fallback</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+
+If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
       <string id="DisableMasterPasswordCreation">禁用设定控制密码</string>
       <string id="DisableMasterPasswordCreation_Explain">若启用此原则，将无法设置控制密码。
 
