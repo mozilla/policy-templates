@@ -2263,7 +2263,7 @@ Configure DNS over HTTPS.
 
 `Fallback` determines whether or not Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.
 
-**Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7) (Fallback added in 124)\@MAKJ
+**Compatibility:** Firefox 63, Firefox ESR 68 (ExcludedDomains added in 75/68.7) (Fallback added in 124)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.trr.mode`, `network.trr.uri`
 
