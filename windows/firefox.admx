@@ -757,6 +757,16 @@
         <list id="List" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS\ExcludedDomains" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="DNSOverHTTPS_Fallback" class="Both" displayName="$(string.DNSOverHTTPS_Fallback)" explainText="$(string.DNSOverHTTPS_Fallback_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Fallback">
+      <parentCategory ref="DNSOverHTTPS"/>
+      <supportedOn ref="SUPPORTED_FF124"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="DisableAppUpdate" class="Both" displayName="$(string.DisableAppUpdate)" explainText="$(string.DisableAppUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableAppUpdate">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF60"/>
