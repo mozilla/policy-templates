@@ -3799,12 +3799,32 @@ If this policy is enabled:
  2. Firefox will not check for updates in the background, though it will check automatically when an update UI is displayed (such as the one in the About dialog). This check will be used to show "Update to version X" in the UI, but will not automatically download the update or prompt the user to update in any other way.
  3. The update UI will work as expected, unlike when using DisableAppUpdate.
 
-This policy is primarily intended for advanced end users, not for enterprises.
+This policy is primarily intended for advanced end users, not for enterprises, but it is available via GPO.
 
 **Compatibility:** Firefox 87\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\ManualAppUpdateOnly = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ManualAppUpdateOnly
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>ManualAppUpdateOnly</key>
+  <true/> | <false/>
+</dict>
+```
 #### policies.json
 ```
 {

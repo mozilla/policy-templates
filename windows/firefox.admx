@@ -4165,5 +4165,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="ManualAppUpdateOnly" class="Both" displayName="$(string.ManualAppUpdateOnly)" explainText="$(string.ManualAppUpdateOnly_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="ManualAppUpdateOnly">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF88"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
