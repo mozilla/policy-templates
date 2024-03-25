@@ -210,9 +210,9 @@ Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Doma
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS über HTTPS benutzt.</string>
       <string id="DNSOverHTTPS_Fallback">Fallback</string>
-      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+      <string id="DNSOverHTTPS_Fallback_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, greift Firefox nicht auf Ihren Standard-DNS-Server zurück, wenn ein Problem mit dem sicheren DNS-Anbieter auftritt.
 
-If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, verwendet Firefox Ihren Standard-DNS-Server, wenn ein Problem mit dem sicheren DNS-Anbieter auftritt.</string>
       <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
@@ -1079,16 +1079,16 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann 
       <string id="PrintingEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Drucken deaktiviert.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist das Drucken aktiviert.</string>
-      <string id="ManualAppUpdateOnly">Manual Update Only</string>
-      <string id="ManualAppUpdateOnly_Explain">If this policy is enabled, users will not be prompted to install updates and Firefox will not check for updates in the background. The user must manually check and install updates from the About dialog.
+      <string id="ManualAppUpdateOnly">Nur manuelle Updates</string>
+      <string id="ManualAppUpdateOnly_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die Benutzer nicht aufgefordert, Updates zu installieren, und Firefox sucht nicht im Hintergrund nach Updates. Der Benutzer muss Updates manuell über das Dialogfeld "Info" überprüfen und installieren.
 
-If this policy is disabled or not configured, the browser receives updates.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erhält der Browser Updates.
 
-This policy is not recommended for most users.</string>
-      <string id="AllowFileSelectionDialogs">Allow File Selection Dialogs</string>
-      <string id="AllowFileSelectionDialogs_Explain">If this policy is disabled, users will not be able to open file selection dialogs. In most cases, Firefox will act as if the user clicked the cancel button.
+Diese Richtlinie wird für die meisten Benutzer nicht empfohlen.</string>
+      <string id="AllowFileSelectionDialogs">Dateiauswahldialoge zulassen</string>
+      <string id="AllowFileSelectionDialogs_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Benutzer keine Dateiauswahldialoge öffnen. In den meisten Fällen verhält sich Firefox so, als ob der Benutzer auf die Schaltfläche Abbrechen geklickt hätte.
 
-If this policy is enabled or not configured, users can open file selection dialogs.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Benutzer Dateiauswahldialoge öffnen.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
