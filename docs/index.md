@@ -1145,7 +1145,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
 
-**Compatibility:** Firefox 126\
+**Compatibility:** Firefox 127\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_allow`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
 
