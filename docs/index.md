@@ -41,6 +41,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`DisabledCiphers`](#disabledciphers)** | Disable ciphers.
 | **[`DisableDefaultBrowserAgent`](#disabledefaultbrowseragent)** | Prevent the default browser agent from taking any actions (Windows only).
 | **[`DisableDeveloperTools`](#disabledevelopertools)** | Remove access to all developer tools.
+| **[`DisableEncryptedClientHello`](#disableencryptedclienthello)** | Disable the TLS Feature Encrypted Client Hello (ECH).
 | **[`DisableFeedbackCommands`](#disablefeedbackcommands)** | Disable the menus for reporting sites.
 | **[`DisableFirefoxAccounts`](#disablefirefoxaccounts)** | Disable Firefox Accounts integration (Sync).
 | **[`DisableFirefoxScreenshots`](#disablefirefoxscreenshots)** | Remove access to Firefox Screenshots.
@@ -1582,6 +1583,76 @@ Value (string):
 {
   "policies": {
     "DisableFeedbackCommands": true | false
+  }
+}
+```
+### DisableDeveloperTools
+Remove access to all developer tools.
+
+**Compatibility:** Firefox 60, Firefox ESR 60\
+**CCK2 Equivalent:** `removeDeveloperTools`\
+**Preferences Affected:** `devtools.policy.disabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableDeveloperTools = 0x1 | 0x0`
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableDeveloperTools
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>DisableDeveloperTools</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisableDeveloperTools": true | false
+  }
+}
+```
+### DisableEncryptedClientHello
+Disable the TLS Feature for Encrypted Client Hello. Note that TLS Client Hellos will still contain an ECH extension, but this extension will not be used by Firefox during the TLS handshake. 
+
+**Compatibility:** Firefox 127, Firefox ESR 128\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.dns.echconfig.enabled`, `network.dns.http3_echconfig.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableEncryptedClientHello = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableEncryptedClientHello
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>DisableEncryptedClientHello</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisableEncryptedClientHello": true | false
   }
 }
 ```
