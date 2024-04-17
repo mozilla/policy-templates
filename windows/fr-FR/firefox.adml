@@ -1085,6 +1085,14 @@ This policy is not recommended for most users.</string>
       <string id="AllowFileSelectionDialogs_Explain">If this policy is disabled, users will not be able to open file selection dialogs. In most cases, Firefox will act as if the user clicked the cancel button.
 
 If this policy is enabled or not configured, users can open file selection dialogs.</string>
+      <string id="AutofillAddressEnabled">Enable autofill for addresses</string>
+      <string id="AutofillAddressEnabled_Explain">If this policy is disabled, addresses will not be autofilled for Firefox versions and regions that support it.
+
+If this policy is enabled or not configured, addresses will be autofilled for Firefox versions and regions that support it.</string>
+      <string id="AutofillCreditCardEnabled">Enable autofill for payment methods</string>
+      <string id="AutofillCreditCardEnabled_Explain">If this policy is disabled, payment methods will not be autofilled for Firefox versions and regions that support it.
+
+If this policy is enabled or not configured, payment methods will be autofilled for Firefox versions and regions that support it.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur true. Si cette stratégie est désactivée, la préférence est verrouillée sur false.
 
 Pour une description de la préférence, voir:
