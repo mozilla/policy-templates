@@ -22,6 +22,8 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`AppUpdatePin`](#appupdatepin)** | Prevent Firefox from being updated beyond the specified version.
 | **[`AppUpdateURL`](#appupdateurl)** | Change the URL for application update.
 | **[`Authentication`](#authentication)** | Configure sites that support integrated authentication.
+| **[`AutofillAddressEnabled`](#autofilladdressenabled)** | Enable autofill for addresses.
+| **[`AutofillCreditCardEnabled`](#autofillcreditcardenabled)** | Enable autofill for payment methods.
 | **[`AutoLaunchProtocolsFromOrigins`](#autolaunchprotocolsfromorigins)** | Define a list of external protocols that can be used from listed origins without prompting the user.
 | **[`BackgroundAppUpdate`](#backgroundappupdate)** | Enable or disable the background updater (Windows only).
 | **[`BlockAboutAddons`](#blockaboutaddons)** | Block access to the Add-ons Manager (about:addons).
@@ -519,6 +521,82 @@ Value (string):
       "Locked": true | false,
       "PrivateBrowsing": true | false
     }
+  }
+}
+```
+### AutofillAddressEnabled
+
+Enables or disables autofill for addresses.
+
+This only applies when address autofill is enabled for a particular Firefox version or region. See [this page](https://support.mozilla.org/kb/automatically-fill-your-address-web-forms) for more information.
+
+**Compatibility:** Firefox 125, Firefox ESR 115.10\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `extensions.formautofill.addresses.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AutofillAddressEnabled = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AutofillAddressEnabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>AutofillAddressEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AutofillAddressEnabled": true | false
+  }
+}
+```
+### AutofillCreditCardEnabled
+
+Enables or disables autofill for payment methods.
+
+This only applies when payment method autofill is enabled for a particular Firefox version or region. See [this page](https://support.mozilla.org/kb/credit-card-autofill) for more information.
+
+**Compatibility:** Firefox 125, Firefox ESR 115.10\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `extensions.formautofill.creditCards.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AutofillCreditCardEnabled = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AutofillCreditCardEnabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>AutofillCreditCardEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AutofillCreditCardEnabled": true | false
   }
 }
 ```
