@@ -1089,14 +1089,14 @@ Diese Richtlinie wird für die meisten Benutzer nicht empfohlen.</string>
       <string id="AllowFileSelectionDialogs_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Benutzer keine Dateiauswahldialoge öffnen. In den meisten Fällen verhält sich Firefox so, als ob der Benutzer auf die Schaltfläche Abbrechen geklickt hätte.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Benutzer Dateiauswahldialoge öffnen.</string>
-      <string id="AutofillAddressEnabled">Enable autofill for addresses</string>
-      <string id="AutofillAddressEnabled_Explain">If this policy is disabled, addresses will not be autofilled for Firefox versions and regions that support it.
+      <string id="AutofillAddressEnabled">Autovervollständigung für Adressen aktivieren</string>
+      <string id="AutofillAddressEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Adressen für Firefox-Versionen und Regionen, die dies unterstützen, nicht automatisch ausgefüllt.
 
-If this policy is enabled or not configured, addresses will be autofilled for Firefox versions and regions that support it.</string>
-      <string id="AutofillCreditCardEnabled">Enable autofill for payment methods</string>
-      <string id="AutofillCreditCardEnabled_Explain">If this policy is disabled, payment methods will not be autofilled for Firefox versions and regions that support it.
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Adressen für Firefox-Versionen und -Regionen, die dies unterstützen, automatisch ausgefüllt.</string>
+      <string id="AutofillCreditCardEnabled">Autovervollständigung für Zahlungsarten aktivieren</string>
+      <string id="AutofillCreditCardEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Zahlungsmethoden für Firefox-Versionen und Regionen, die dies unterstützen, nicht automatisch ausgefüllt.
 
-If this policy is enabled or not configured, payment methods will be autofilled for Firefox versions and regions that support it.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Zahlungsmethoden für Firefox-Versionen und -Regionen, die dies unterstützen, automatisch ausgefüllt.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
