@@ -1125,7 +1125,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `AgentName` is the name of the DLP agent. This is used in dialogs and notifications about DLP operations. The default is "A DLP Agent".
 
-`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultAllow` is set to true. The default is 30.
+`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultResult` is set to 1 or 2. The default is 30.
 
 `AllowUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is the empty string.
 
@@ -1133,11 +1133,17 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `ClientSignature` indicates the required signature of the DLP agent connected to the pipe. If this is a non-empty string and the DLP agent does not have a signature matching this value, Firefox will not connect to the pipe. The default is the empty string.
 
-`DefaultAllow` indicates whether DLP requests should be allowed if there is a problem connecting to the DLP agent. The default is false.
+`DefaultResult` indicates the desired behavior for DLP requests if there is a problem connecting to the DLP agent. The default is 0.
+
+| Value | Description
+| --- | --- |
+| 0 | Deny the request (default)
+| 1 | Warn the user and allow them to choose whether to allow or deny
+| 2 | Allow the request
 
 `DenyUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be denied without consulting the agent. The default is the empty string.
 
-`Enabled` indicates whether Firefox should use DLP. Note that if this value is true and no DLP agent is running, all DLP requests will be denied unless `DefaultAllow` is set to true.
+`Enabled` indicates whether Firefox should use DLP. Note that if this value is true and no DLP agent is running, all DLP requests will be denied unless `DefaultResult` is set to 1 or 2.
 
 `IsPerUser` indicates whether the pipe the DLP agent has created is per-user or per-system. The default is true, meaning per-user.
 
@@ -1147,7 +1153,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 **Compatibility:** Firefox 127\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_allow`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
 
 #### Windows (GPO)
 ```
@@ -1156,7 +1162,7 @@ Software\Policies\Mozilla\Firefox\ContentAnalysis\AgentTimeout = 60
 Software\Policies\Mozilla\Firefox\ContentAnalysis\AllowUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\BypassForSameTabOperations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\ClientSignature = "My DLP Company"
-Software\Policies\Mozilla\Firefox\ContentAnalysis\DefaultAllow = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\DefaultResult = 0x0 | 0x1 | 0x2
 Software\Policies\Mozilla\Firefox\ContentAnalysis\DenyUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\IsPerUser = 0x1 | 0x0
@@ -1211,11 +1217,12 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_DefaultAllow
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_DefaultResult
 ```
 Value (string):
 ```
-<enabled/> or <disabled/>
+<enabled/>
+<data id="ContentAnalysis_DefaultResult" value="1"/>
 ```
 OMA-URI:
 ```
@@ -1270,7 +1277,7 @@ Value (string):
       "AllowUrlRegexList": "https://example\.com/.* https://subdomain\.example\.com/.*",
       "BypassForSameTabOperations": true | false,
       "ClientSignature": "My DLP Company",
-      "DefaultAllow": true | false,
+      "DefaultResult": 0 | 1 | 2,
       "DenyUrlRegexList": "https://example\.com/.* https://subdomain\.example\.com/.*",
       "Enabled": true | false,
       "IsPerUser": true | false,
