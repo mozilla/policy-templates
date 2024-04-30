@@ -4759,6 +4759,8 @@ pdfjs. (Firefox 84, Firefox ESR 78.6)
 places.
 pref.
 print.
+privacy.userContext.enabled (Firefox 126, Firefox ESR 115.11)
+privacy.userContext.ui.enabled (Firefox 126, Firefox ESR 115.11)
 signon. (Firefox 83, Firefox ESR 78.5)
 spellchecker. (Firefox 84, Firefox ESR 78.6)
 toolkit.legacyUserProfileCustomizations.stylesheets (Firefox 95, Firefox ESR 91.4)
