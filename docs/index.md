@@ -3547,7 +3547,7 @@ Configure the default extension install policy as well as origins for extension 
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `permissions.install`\
-**Preferences Affected:** `xpinstall.enabled`
+**Preferences Affected:** `xpinstall.enabled`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`
 
 #### Windows (GPO)
 ```
