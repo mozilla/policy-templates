@@ -1221,6 +1221,14 @@ Configure cookie preferences.
 
 `Locked` prevents the user from changing cookie preferences.
 
+`Default` (Deprecated) determines whether cookies are accepted at all.
+
+`AcceptThirdParty` (Deprecated) determines how third-party cookies are handled.
+
+`ExpireAtSessionEnd` determines when cookies expire.
+
+`RejectTracker` (Deprecated) only rejects cookies for trackers.
+
 **Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker added in Firefox 63, AllowSession added in Firefox 79/78.1, Behavior added in Firefox 95/91.4)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `network.cookie.cookieBehavior`, `network.cookie.cookieBehavior.pbmode`, `network.cookie.lifetimePolicy`
@@ -1230,10 +1238,6 @@ Configure cookie preferences.
 Software\Policies\Mozilla\Firefox\Cookies\Allow\1 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Cookies\AllowSession\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Cookies\Block\1 = "https://example.org"
-Software\Policies\Mozilla\Firefox\Cookies\Default = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\Cookies\AcceptThirdParty = "always" | "never" | "from-visited"
-Software\Policies\Mozilla\Firefox\Cookies\ExpireAtSessionEnd = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\Cookies\RejectTracker = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Cookies\Behavior = "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
 Software\Policies\Mozilla\Firefox\Cookies\BehaviorPrivateBrowsing = "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
 Software\Policies\Mozilla\Firefox\Cookies\Locked = 0x1 | 0x0
@@ -1265,39 +1269,6 @@ Value (string):
 ```
 <enabled/>
 <data id="Permissions" value="1&#xF000;https://example.org"/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_Default
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_AcceptThirdParty
-```
-Value (string):
-```
-<enabled/>
-<data id="Cookies_AcceptThirdParty" value="always | never | from-visited"/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_ExpireAtSessionEnd
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Cookies/Cookies_RejectTracker
-```
-Value (string):
-```
-<enabled/> or <disabled/>
 ```
 OMA-URI:
 ```
@@ -1342,14 +1313,6 @@ Value (string):
     <array>
       <string>http://example.org</string>
     </array>
-    <key>Default</key>
-    <true/> | <false/>
-    <key>AcceptThirdParty</key>
-    <string>always | never | from-visited</string>
-    <key>ExpireAtSessionEnd</key>
-    <true/> | <false/>
-    <key>RejectTracker</key>
-    <true/> | <false/>
     <key>Locked</key>
     <true/> | <false/>
     <key>Behavior</key>
@@ -1367,10 +1330,6 @@ Value (string):
       "Allow": ["http://example.org/"],
       "AllowSession": ["http://example.edu/"],
       "Block": ["http://example.edu/"],
-      "Default": true | false,
-      "AcceptThirdParty": "always" | "never" | "from-visited",
-      "ExpireAtSessionEnd": true | false,
-      "RejectTracker": true | false,
       "Locked": true | false,
       "Behavior": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
       "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
