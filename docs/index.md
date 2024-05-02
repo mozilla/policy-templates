@@ -1221,13 +1221,13 @@ Configure cookie preferences.
 
 `Locked` prevents the user from changing cookie preferences.
 
-`Default` (Deprecated) determines whether cookies are accepted at all.
+`Default` determines whether cookies are accepted at all. (*Deprecated*. Use `Behavior` instead)
 
-`AcceptThirdParty` (Deprecated) determines how third-party cookies are handled.
+`AcceptThirdParty` determines how third-party cookies are handled. (*Deprecated*. Use `Behavior` instead)
 
-`ExpireAtSessionEnd` determines when cookies expire.
+`RejectTracker` only rejects cookies for trackers. (*Deprecated*. Use `Behavior` instead)
 
-`RejectTracker` (Deprecated) only rejects cookies for trackers.
+`ExpireAtSessionEnd` determines when cookies expire. (*Deprecated*. Use [`SanitizeOnShutdown`](#sanitizeonshutdown-selective) instead)
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (RejectTracker added in Firefox 63, AllowSession added in Firefox 79/78.1, Behavior added in Firefox 95/91.4)\
 **CCK2 Equivalent:** N/A\
