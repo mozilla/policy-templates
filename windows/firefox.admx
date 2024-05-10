@@ -70,7 +70,7 @@
       <definition name="SUPPORTED_FF124" displayName="$(string.SUPPORTED_FF124)"/>
       <definition name="SUPPORTED_FF124_ONLY" displayName="$(string.SUPPORTED_FF124_ONLY)"/>
       <definition name="SUPPORTED_FF125" displayName="$(string.SUPPORTED_FF125)"/>
-      <definition name="SUPPORTED_FF126" displayName="$(string.SUPPORTED_FF126)"/>
+      <definition name="SUPPORTED_FF126_ONLY" displayName="$(string.SUPPORTED_FF126_ONLY)"/>
       <definition name="SUPPORTED_FF127" displayName="$(string.SUPPORTED_FF127)"/>
       <definition name="SUPPORTED_FF128" displayName="$(string.SUPPORTED_FF128)"/>
       <definition name="SUPPORTED_FF129" displayName="$(string.SUPPORTED_FF129)"/>
@@ -4198,6 +4198,16 @@
     <policy name="AutofillCreditCardEnabled" class="Both" displayName="$(string.AutofillCreditCardEnabled)" explainText="$(string.AutofillCreditCardEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AutofillCreditCardEnabled">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF125"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="TranslateEnabled" class="Both" displayName="$(string.TranslateEnabled)" explainText="$(string.TranslateEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="TranslateEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF126_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

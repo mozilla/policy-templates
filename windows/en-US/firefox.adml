@@ -68,7 +68,7 @@
       <string id="SUPPORTED_FF124">Firefox 124 or later, Firefox 115.9 ESR or later</string>
       <string id="SUPPORTED_FF124_ONLY">Firefox 124 or later</string>
       <string id="SUPPORTED_FF125">Firefox 125 or later, Firefox 115.10 ESR or later</string>
-      <string id="SUPPORTED_FF126">Firefox 126 or later, Firefox 115.11 ESR or later</string>
+      <string id="SUPPORTED_FF126_ONLY">Firefox 126 or later</string>
       <string id="SUPPORTED_FF127">Firefox 127 or later, Firefox 115.12 ESR or later</string>
       <string id="SUPPORTED_FF128">Firefox 128 or later, Firefox 115.13 ESR or later</string>
       <string id="SUPPORTED_FF129">Firefox 129 or later, Firefox 115.14 ESR or later</string>
@@ -1092,6 +1092,12 @@ If this policy is enabled or not configured, addresses will be autofilled for Fi
       <string id="AutofillCreditCardEnabled_Explain">If this policy is disabled, payment methods will not be autofilled for Firefox versions and regions that support it.
 
 If this policy is enabled or not configured, payment methods will be autofilled for Firefox versions and regions that support it.</string>
+      <string id="TranslateEnabled">Enable webpage translation</string>
+      <string id="TranslateEnabled_Explain">If this policy is disabled, web page translation will not be available.
+
+If this policy is enabled or not configured, web page translation will be available.
+
+Note: Web page translation is done completely on the client, so there is no data or privacy risk.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
