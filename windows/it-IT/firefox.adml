@@ -68,7 +68,7 @@
       <string id="SUPPORTED_FF124">Firefox 124 o versione successiva, Firefox 105.9 ESR o versione successiva</string>
       <string id="SUPPORTED_FF124_ONLY">Firefox 124 o versione successiva</string>
       <string id="SUPPORTED_FF125">Firefox 125 o versione successiva, Firefox 105.10 ESR o versione successiva</string>
-      <string id="SUPPORTED_FF126">Firefox 126 o versione successiva, Firefox 105.11 ESR o versione successiva</string>
+      <string id="SUPPORTED_FF126_ONLY">Firefox 126 o versione successiva</string>
       <string id="SUPPORTED_FF127">Firefox 127 o versione successiva, Firefox 105.12 ESR o versione successiva</string>
       <string id="SUPPORTED_FF128">Firefox 128 o versione successiva, Firefox 105.13 ESR o versione successiva</string>
       <string id="SUPPORTED_FF129">Firefox 129 o versione successiva, Firefox 105.14 ESR o versione successiva</string>
@@ -1095,6 +1095,12 @@ If this policy is enabled or not configured, addresses will be autofilled for Fi
       <string id="AutofillCreditCardEnabled_Explain">If this policy is disabled, payment methods will not be autofilled for Firefox versions and regions that support it.
 
 If this policy is enabled or not configured, payment methods will be autofilled for Firefox versions and regions that support it.</string>
+      <string id="TranslateEnabled">Enable webpage translation</string>
+      <string id="TranslateEnabled_Explain">If this policy is disabled, web page translation will not be available.
+
+If this policy is enabled or not configured, web page translation will be available.
+
+Note: Web page translation is done completely on the client, so there is no data or privacy risk.</string>
       <string id="Preferences_Boolean_Explain">Se questo criterio è abilitato, la preferenza è impostata a Vero e resa non modificabile. Se questo criterio è disabilitato, la preferenza è impostata a Falso e resa non modificabile.
 
 Per una descrizione della preferenza, si veda:

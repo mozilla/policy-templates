@@ -120,6 +120,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`StartDownloadsInTempDirectory`](#startdownloadsintempdirectory)** | Force downloads to start off in a local, temporary location rather than the default download directory.
 | **[`SupportMenu`](#supportmenu)** | Add a menuitem to the help menu for specifying support information.
+| **[`TranslateEnabled`](#translateenabled)** | Enable or disable webpage translation.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`UseSystemPrintDialog`](#usesystemprintdialog)** | Print using the system print dialog instead of print preview.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
@@ -5972,6 +5973,40 @@ Value (string):
   }
 }
 ```
+### StartDownloadsInTempDirectory
+Force downloads to start off in a local, temporary location rather than the default download directory.
+
+**Compatibility:** Firefox 102\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.download.start_downloads_in_tmp_dir`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\StartDownloadsInTempDirectory = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/StartDownloadsInTempDirectory
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>StartDownloadsInTempDirectory</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "StartDownloadsInTempDirectory": true | false
+}
+```
 ### SupportMenu
 Add a menuitem to the help menu for specifying support information.
 
@@ -6023,21 +6058,25 @@ Value (string):
   }
 }
 ```
-### StartDownloadsInTempDirectory
-Force downloads to start off in a local, temporary location rather than the default download directory.
+### TranslateEnabled
+Enable or disable webpage translation.
 
-**Compatibility:** Firefox 102\
+Note: Web page translation is done completely on the client, so there is no data or privacy risk.
+
+If you only want to disable the popup, you can set the pref `browser.translations.automaticallyPopup` to false using the [Preferences](#preferences) policy.
+
+**Compatibility:** Firefox 126\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.download.start_downloads_in_tmp_dir`
+**Preferences Affected:** `browser.translations.enable`
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\StartDownloadsInTempDirectory = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\TranslateEnabled = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/StartDownloadsInTempDirectory
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/TranslateEnabled
 ```
 Value (string):
 ```
@@ -6046,7 +6085,7 @@ Value (string):
 #### macOS
 ```
 <dict>
-  <key>StartDownloadsInTempDirectory</key>
+  <key>TranslateEnabled</key>
   <true/> | <false/>
 </dict>
 ```
@@ -6054,7 +6093,8 @@ Value (string):
 ```
 {
   "policies": {
-    "StartDownloadsInTempDirectory": true | false
+    "TranslateEnabled": true | false
+  }
 }
 ```
 ### UserMessaging

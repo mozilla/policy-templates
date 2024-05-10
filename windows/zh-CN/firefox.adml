@@ -68,7 +68,7 @@
       <string id="SUPPORTED_FF124">Firefox 124 或更新版本、Firefox 105.9 ESR 或更新版本</string>
       <string id="SUPPORTED_FF124_ONLY">Firefox 124 或更新版本</string>
       <string id="SUPPORTED_FF125">Firefox 125 或更新版本、Firefox 105.10 ESR 或更新版本</string>
-      <string id="SUPPORTED_FF126">Firefox 126 或更新版本、Firefox 105.11 ESR 或更新版本</string>
+      <string id="SUPPORTED_FF126_ONLY">Firefox 126 或更新版本</string>
       <string id="SUPPORTED_FF127">Firefox 127 或更新版本、Firefox 105.12 ESR 或更新版本</string>
       <string id="SUPPORTED_FF128">Firefox 128 或更新版本、Firefox 105.13 ESR 或更新版本</string>
       <string id="SUPPORTED_FF129">Firefox 129 或更新版本、Firefox 105.14 ESR 或更新版本</string>
@@ -1094,6 +1094,12 @@ If this policy is enabled or not configured, addresses will be autofilled for Fi
       <string id="AutofillCreditCardEnabled_Explain">If this policy is disabled, payment methods will not be autofilled for Firefox versions and regions that support it.
 
 If this policy is enabled or not configured, payment methods will be autofilled for Firefox versions and regions that support it.</string>
+      <string id="TranslateEnabled">Enable webpage translation</string>
+      <string id="TranslateEnabled_Explain">If this policy is disabled, web page translation will not be available.
+
+If this policy is enabled or not configured, web page translation will be available.
+
+Note: Web page translation is done completely on the client, so there is no data or privacy risk.</string>
       <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
 
 若需要偏好设置的详细说明，请参考：
