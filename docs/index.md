@@ -127,7 +127,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 
 ### 3rdparty
 
-Allow WebExtensions to configure policy. For more information, see [Adding policy support to your extension](https://extensionworkshop.com/documentation/enterprise/adding-policy-support-to-your-extension/).
+Allow WebExtensions to configure policy. For more information, see [Adding policy support to your extension](https://extensionworkshop.com/documentation/enterprise/enterprise-development/#how-to-add-policy).
 
 For GPO and Intune, the extension developer should provide an ADMX file.
 
