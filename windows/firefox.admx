@@ -3359,6 +3359,26 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="security_mixed_content_block_display_content" class="Both" displayName="$(string.security_mixed_content_block_display_content)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.mixed_content.block_display_content">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF127"/>
+      <enabledValue>
+        <decimal value="0"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="1"/>
+      </disabledValue>
+    </policy>
+    <policy name="security_mixed_content_upgrade_display_content" class="Both" displayName="$(string.security_mixed_content_upgrade_display_content)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.mixed_content.upgrade_display_content">
+      <parentCategory ref="Preferences"/>
+      <supportedOn ref="SUPPORTED_FF127"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="security_ssl_errorReporting_enabled" class="Both" displayName="$(string.security_ssl_errorReporting_enabled)" explainText="$(string.Preferences_Boolean_Explain)" key="Software\Policies\Mozilla\Firefox\Preferences" valueName="security.ssl.errorReporting.enabled">
       <parentCategory ref="Preferences"/>
       <supportedOn ref="SUPPORTED_FF68"/>

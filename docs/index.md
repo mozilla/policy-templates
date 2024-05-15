@@ -4719,6 +4719,7 @@ pdfjs. (Firefox 84, Firefox ESR 78.6)
 places.
 pref.
 print.
+privacy.globalprivacycontrol.enabled (Firefox 127, Firefox ESR 128.0)
 privacy.userContext.enabled (Firefox 126, Firefox ESR 115.11)
 privacy.userContext.ui.enabled (Firefox 126, Firefox ESR 115.11)
 signon. (Firefox 83, Firefox ESR 78.5)
@@ -4744,7 +4745,11 @@ as well as the following security preferences:
 | security.insecure_connection_text.pbmode.enabled | bool | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites in private browsing.
 | security.mixed_content.block_active_content | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp;If false, mixed active content (HTTP and HTTPS) is not blocked.
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed active content (HTTP subresources such as scripts, fetch requests, etc. on a HTTPS page) will be blocked.
+| security.mixed_content.block_display_content | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be blocked. (Firefox 127, Firefox ESR 128.0)
+| security.mixed_content.upgrade_display_content | boolean | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be upgraded to HTTPS. (Firefox 127, Firefox ESR 128.0)
 | security.osclientcerts.autoload | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.OCSP.enabled | integer | 1
