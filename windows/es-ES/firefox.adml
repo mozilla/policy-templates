@@ -845,7 +845,7 @@ Si esta política está deshabilitada o no está configurada, Firefox establecer
       <string id="SupportMenu_Explain">Si esta política está habilitada, se añadirá un elemento nuevo al menú de ayuda con información de soporte.
 
 Si esta política está deshabilitada o no está configurada, no se añadirá ningún elemento al menú.</string>
-      <string id="UserMessaging_WhatsNew">Novedades</string>
+      <string id="UserMessaging_WhatsNew">Novedades (obsoleto)</string>
       <string id="UserMessaging_WhatsNew_Explain">Si esta política está deshabilitada, no se mostrarán el icono de novedades y el menú de elementos.
 
 Si esta política está habilitada o no está configurada, se mostrará el icono de novedades y el menú de elementos.</string>

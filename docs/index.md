@@ -6143,7 +6143,7 @@ Value (string):
 
 Prevent Firefox from messaging the user in certain situations.
 
-`WhatsNew` Remove the "What's New" icon and menuitem.
+`WhatsNew` Remove the "What's New" icon and menuitem. (*Deprecated*)
 
 `ExtensionRecommendations` If false, don't recommend extensions while the user is visiting web pages.
 
@@ -6159,11 +6159,10 @@ Prevent Firefox from messaging the user in certain situations.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.messaging-system.whatsNewPanel.enabled`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`, `browser.aboutwelcome.enabled`, `browser.preferences.moreFromMozilla`
+**Preferences Affected:** `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`, `browser.aboutwelcome.enabled`, `browser.preferences.moreFromMozilla`
 
 #### Windows (GPO)
 ```
-Software\Policies\Mozilla\Firefox\UserMessaging\WhatsNew = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
@@ -6174,7 +6173,6 @@ Software\Policies\Mozilla\Firefox\UserMessaging\Locked = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_WhatsNew
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_ExtensionRecommendations
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FeatureRecommendations
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_UrlbarInterventions
@@ -6191,8 +6189,6 @@ Value (string):
 <dict>
   <key>UserMessaging</key>
   <dict>
-    <key>WhatsNew</key>
-    <true/> | <false/>
     <key>ExtensionRecommendations</key>
     <true/> | <false/>
     <key>FeatureRecommendations</key>
@@ -6213,7 +6209,6 @@ Value (string):
 {
   "policies": {
     "UserMessaging": {
-      "WhatsNew": true | false,
       "ExtensionRecommendations": true | false,
       "FeatureRecommendations": true | false,
       "UrlbarInterventions": true | false,

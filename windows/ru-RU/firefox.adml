@@ -845,7 +845,7 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="SupportMenu_Explain">Если эта политика включена, в меню справки добавляется новый элемент с информацией о поддержке.
 
 Если эта политика отключена или не настроена, пункт меню не добавляется.</string>
-      <string id="UserMessaging_WhatsNew">Что нового</string>
+      <string id="UserMessaging_WhatsNew">Что нового (устарело)</string>
       <string id="UserMessaging_WhatsNew_Explain">Если эта политика отключена, значок и элемент меню «Что нового» отображаться не будут.
 
 Если эта политика включена или не настроена, будут отображаться значок и элемент меню «Что нового».</string>

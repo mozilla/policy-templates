@@ -845,7 +845,7 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="SupportMenu_Explain">若启用此策略，将在说明菜单中加入技术支持信息项目。
 
 若禁用或不设定此原则，则不会加入菜单项目。</string>
-      <string id="UserMessaging_WhatsNew">有什么新鲜事</string>
+      <string id="UserMessaging_WhatsNew">有什么新鲜事（已弃用）</string>
       <string id="UserMessaging_WhatsNew_Explain">若禁用此原则，将不会显示「有什么新鲜事」的图标与选单项目。
 
 若启用或不设定此原则，则会显示「有什么新鲜事」的图示与菜单项目。</string>
