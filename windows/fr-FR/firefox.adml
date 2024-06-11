@@ -844,7 +844,7 @@ Si cette stratégie est désactivée ou non configurée, Firefox utilise par dé
       <string id="SupportMenu_Explain">Si cette stratégie est activée, un nouveau menu est ajouté au menu d'aide avec des informations du support.
 
 Si cette stratégie est désactivée ou n'est pas configurée, aucun item n'est ajouté au menu d'aide.</string>
-      <string id="UserMessaging_WhatsNew">Quoi de neuf</string>
+      <string id="UserMessaging_WhatsNew">Quoi de neuf (Deprecated)</string>
       <string id="UserMessaging_WhatsNew_Explain">Si cette stratégie est désactivée, l'icône Quoi de neuf et l'élément de menu ne seront pas affichés.
 
 Si cette stratégie est activée ou non configurée, l'icône Quoi de neuf et l'élément de menu s'affichent.</string>

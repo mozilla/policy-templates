@@ -843,7 +843,7 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="SupportMenu_Explain">若啟用此原則，將在說明選單中加入技術支援資訊項目。
 
 若停用或不設定此原則，則不會加入選單項目。</string>
-      <string id="UserMessaging_WhatsNew">有什麼新鮮事</string>
+      <string id="UserMessaging_WhatsNew">有什麼新鮮事（已棄用）</string>
       <string id="UserMessaging_WhatsNew_Explain">若停用此原則，將不會顯示「有什麼新鮮事」的圖示與選單項目。
 
 若啟用或不設定此原則，則會顯示「有什麼新鮮事」的圖示與選單項目。</string>

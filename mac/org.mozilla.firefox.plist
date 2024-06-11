@@ -646,8 +646,6 @@
 	<true/>
 	<key>UserMessaging</key>
 	<dict>
-		<key>WhatsNew</key>
-		<false/>
 		<key>ExtensionRecommendations</key>
 		<false/>
 		<key>FeatureRecommendations</key>

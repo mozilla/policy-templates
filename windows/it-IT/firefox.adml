@@ -845,7 +845,7 @@ Se questo criterio è disabilitato o non configurato, per impostazione predefini
       <string id="SupportMenu_Explain">Se questo criterio è abilitato, al menù Aiuto sarà aggiunta una nuova voce di menù per richiamare le informazioni di supporto.
 
 Se questo criterio è disabilitato o non configurato, non sarà aggiunta nessuna voce.</string>
-      <string id="UserMessaging_WhatsNew">Novità</string>
+      <string id="UserMessaging_WhatsNew">Novità (deprecata)</string>
       <string id="UserMessaging_WhatsNew_Explain">Se questo criterio è disabilitato, l'icona e la voce di menù Novità non saranno visualizzate.
 
 Se questo criterio è abilitato o non configurato, l'icona e la voce di menù Novità saranno visualizzate.</string>

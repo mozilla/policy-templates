@@ -346,7 +346,6 @@
     "StartDownloadsInTempDirectory": true | false,
     "TranslateEnabled": true | false,
     "UserMessaging": {
-      "WhatsNew": true | false,
       "ExtensionRecommendations": true | false,
       "FeatureRecommendations": true | false,
       "UrlbarInterventions": true | false,

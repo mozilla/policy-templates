@@ -843,7 +843,7 @@ If this policy is disabled or not configured, Firefox defaults to a maximum of T
       <string id="SupportMenu_Explain">If this policy is enabled, a new menuitem is added to the help menu with support information.
 
 If this policy is disabled or not configured, no menuitem is added.</string>
-      <string id="UserMessaging_WhatsNew">What's New</string>
+      <string id="UserMessaging_WhatsNew">What's New (Deprecated)</string>
       <string id="UserMessaging_WhatsNew_Explain">If this policy is disabled, the What's new icon and menuitem will not be displayed.
 
 If this policy is enabled or not configured, the What's New icon and menuitem will be displayed.</string>
