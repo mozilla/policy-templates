@@ -1586,41 +1586,6 @@ Value (string):
   }
 }
 ```
-### DisableDeveloperTools
-Remove access to all developer tools.
-
-**Compatibility:** Firefox 60, Firefox ESR 60\
-**CCK2 Equivalent:** `removeDeveloperTools`\
-**Preferences Affected:** `devtools.policy.disabled`
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\DisableDeveloperTools = 0x1 | 0x0`
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableDeveloperTools
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>DisableDeveloperTools</key>
-  <true/> | <false/>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "DisableDeveloperTools": true | false
-  }
-}
-```
 ### DisableEncryptedClientHello
 Disable the TLS Feature for Encrypted Client Hello. Note that TLS Client Hellos will still contain an ECH extension, but this extension will not be used by Firefox during the TLS handshake. 
 
