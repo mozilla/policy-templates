@@ -100,6 +100,7 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`Permissions`](#permissions)** | Set permissions associated with camera, microphone, location, and notifications.
 | **[`PictureInPicture`](#pictureinpicture)** | Enable or disable Picture-in-Picture.
 | **[`PopupBlocking`](#popupblocking)** | Configure the default pop-up window policy as well as origins for which pop-up windows are allowed.
+| **[`PostQuantumKeyAgreementEnabled`](#postquantumkeyagreementenabled)** | Enable post-quantum key agreement for TLS.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`PrintingEnabled`](#printingenabled)** | Enable or disable printing.
@@ -4723,6 +4724,41 @@ Value (string):
       "Default": true | false,
       "Locked": true | false
     }
+  }
+}
+```
+### PostQuantumKeyAgreementEnabled
+Enable post-quantum key agreement for TLS.
+
+**Compatibility:** Firefox 127\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `security.tls.enable_kyber`, `network.http.http3.enable_kyber` (Firefox 128)
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PostQuantumKeyAgreementEnabled = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PostQuantumKeyAgreementEnabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>PostQuantumKeyAgreementEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PostQuantumKeyAgreementEnabled": true | false
   }
 }
 ```
