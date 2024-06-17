@@ -3539,7 +3539,7 @@ Value (string):
 }
 ```
 ### HttpAllowlist
-Configure site that will not be upgraded to HTTPS.
+Configure sites that will not be upgraded to HTTPS.
 
 The sites are specified as a list of origins.
 
