@@ -80,6 +80,8 @@ Unfortunately, JSON files do not support comments, but you can add extra entries
 | **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
 | **[`Homepage`](#homepage)** | Configure the default homepage and how Firefox starts.
+| **[`HttpAllowlist`](#httpallowlist)** | Configure origins that will not be upgraded to HTTPS.
+| **[`HttpsOnlyMode`](#httpsonlymode)** | Configure HTTPS-Only Mode.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LegacySameSiteCookieBehaviorEnabled`](#legacysamesitecookiebehaviorenabled)** | Enable default legacy SameSite cookie behavior setting.
@@ -3536,6 +3538,92 @@ Value (string):
   }
 }
 ```
+### HttpAllowlist
+Configure site that will not be upgraded to HTTPS.
+
+The sites are specified as a list of origins.
+
+**Compatibility:** Firefox 127\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\HttpAllowlist\1 = "http://example.org"
+Software\Policies\Mozilla\Firefox\HttpAllowlist\2 = "http://example.edu"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist 
+```
+Value (string):
+```
+<enabled/>
+<data id="List" value="1&#xF000;http://example.org&#xF000;2&#xF000;http://example.edu"/>
+```
+#### macOS
+```
+<dict>
+  <key>HttpAllowlist </key>
+  <array>
+    <string>http://example.org</string>
+    <string>http://example.edu</string>
+  </array>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "HttpAllowlist ": ["http://example.org",
+                       "http://example.edu"]
+  }
+}
+```
+### HttpsOnlyMode
+Configure HTTPS-Only Mode.
+
+| Value | Description
+| --- | --- |
+| allowed | HTTPS-Only Mode is off by default, but the user can turn it on.
+| disallowed | HTTPS-Only Mode is off and the user can't turn it on.
+| enabled | HTTPS-Only Mode is on by default, but the user can turn it off.
+| force_enabled | HTTPS-Only Mode is on and the user can't turn it off.
+
+**Compatibility:** Firefox 127\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `dom.security.https_only_mode`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\HttpsOnlyMode = "allowed", "disallowed", "enabled", "force_enabled"
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpsOnlyMode
+```
+Value (string):
+```
+<enabled/>
+<data id="HttpsOnlyMode" value="allowed | disallowed | enabled | force_enabled"/>
+```
+#### macOS
+```
+<dict>
+  <key>HttpsOnlyMode</key>
+  <string>allowed | disallowed | enabled| force_enabled</string>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "HttpsOnlyMode": "allowed" | "disallowed" | "enabled" | "force_enabled"
+  }
+}
+```
 ### InstallAddonsPermission
 Configure the default extension install policy as well as origins for extension installs are allowed. This policy does not override turning off all extension installs.
 
@@ -4273,7 +4361,6 @@ Value (string):
   }
 }
 ```
-
 ### PDFjs
 Disable or configure PDF.js, the built-in PDF viewer.
 
