@@ -69,7 +69,7 @@
       <string id="SUPPORTED_FF124_ONLY">Firefox 124 or later</string>
       <string id="SUPPORTED_FF125">Firefox 125 or later, Firefox 115.10 ESR or later</string>
       <string id="SUPPORTED_FF126_ONLY">Firefox 126 or later</string>
-      <string id="SUPPORTED_FF127">Firefox 127 or later, Firefox 115.12 ESR or later</string>
+      <string id="SUPPORTED_FF127_ONLY">Firefox 127 or later</string>
       <string id="SUPPORTED_FF128">Firefox 128 or later, Firefox 115.13 ESR or later</string>
       <string id="SUPPORTED_FF129">Firefox 129 or later, Firefox 115.14 ESR or later</string>
       <string id="SUPPORTED_FF130">Firefox 130 or later, Firefox 115.15 ESR or later</string>
