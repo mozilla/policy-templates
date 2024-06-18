@@ -1100,6 +1100,14 @@ If this policy is enabled or not configured, payment methods will be autofilled 
 If this policy is enabled or not configured, web page translation will be available.
 
 Note: Web page translation is done completely on the client, so there is no data or privacy risk.</string>
+      <string id="DisableEncryptedClientHello">Disable Encrypted Client Hello</string>
+      <string id="DisableEncryptedClientHello_Explain">If this policy is enabled, the TLS feature Encrypted Client Hello (ECH) will be disabled.
+
+If this policy is disabled or not configured, the TLS feature Encrypted Client Hello (ECH) will be enabled.</string>
+      <string id="PostQuantumKeyAgreementEnabled">Enable post-quantum key agreement</string>
+      <string id="PostQuantumKeyAgreementEnabled_Explain">If this policy is enabled, post-quantum key agreement for TLS will be enabled.
+
+If this policy is disabled or not configured, post-quantum key agreement for TLS will be disabled.</string>
       <string id="Preferences_Boolean_Explain">若启用此原则，偏好设定将锁定为 true。 若禁用此原则，偏好设定则锁定为false。
 
 若需要偏好设置的详细说明，请参考：

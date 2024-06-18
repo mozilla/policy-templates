@@ -4215,5 +4215,25 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableEncryptedClientHello" class="Both" displayName="$(string.DisableEncryptedClientHello)" explainText="$(string.DisableEncryptedClientHello_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableEncryptedClientHello">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF127_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="PostQuantumKeyAgreementEnabled" class="Both" displayName="$(string.PostQuantumKeyAgreementEnabled)" explainText="$(string.PostQuantumKeyAgreementEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="PostQuantumKeyAgreementEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF127_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
