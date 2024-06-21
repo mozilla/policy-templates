@@ -3613,7 +3613,7 @@ Value (string):
 ```
 <dict>
   <key>HttpsOnlyMode</key>
-  <string>allowed | disallowed | enabled| force_enabled</string>
+  <string>allowed | disallowed | enabled | force_enabled</string>
 </dict>
 ```
 #### policies.json

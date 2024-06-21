@@ -187,6 +187,8 @@
 	</dict>
 	<key>DisableDeveloperTools</key>
 	<true/>
+	<key>DisableEncryptedClientHello</key>
+	<true/>
 	<key>DisableFeedbackCommands</key>
 	<true/>
 	<key>DisableFirefoxAccounts</key>
@@ -401,6 +403,13 @@
 		<key>StartPage</key>
 		<string>homepage</string>
 	</dict>
+	<key>HttpAllowlist </key>
+	<array>
+		<string>http://example.org</string>
+		<string>http://example.edu</string>
+	</array>
+	<key>HttpsOnlyMode</key>
+	<string>disallowed</string>
 	<key>InstallAddonsPermission</key>
 	<dict>
 		<key>Allow</key>
@@ -558,6 +567,8 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>PostQuantumKeyAgreementEnabled</key>
+	</false>
 	<key>Preferences</key>
 	<dict>
 		<key>accessibility.force_disabled</key>

@@ -66,6 +66,7 @@
       "CIPHER_NAME": true | false,
     },
     "DisableDeveloperTools": true | false,
+    "DisableEncryptedClientHello": true | false,
     "DisableFeedbackCommands": true | false,
     "DisableFirefoxAccounts": true | false,
     "DisableFirefoxScreenshots": true | false,
@@ -186,6 +187,9 @@
                     "http://example.edu/"],
       "StartPage": "none" | "homepage" | "previous-session" | "homepage-locked"
     },
+    "HttpAllowlist ": ["http://example.org",
+                       "http://example.edu"],
+    "HttpsOnlyMode": "allowed" | "disallowed" | "enabled" | "force_enabled",
     "InstallAddonsPermission": {
       "Allow": ["http://example.org/",
                 "http://example.edu/"],
@@ -271,6 +275,7 @@
       "Default": true | false,
       "Locked": true | false
     },
+    "PostQuantumKeyAgreementEnabled": true | false,
     "Preferences": {
       "accessibility.force_disabled": {
         "Value": 1,
