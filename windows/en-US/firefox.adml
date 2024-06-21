@@ -1106,6 +1106,18 @@ If this policy is disabled or not configured, the TLS feature Encrypted Client H
       <string id="PostQuantumKeyAgreementEnabled_Explain">If this policy is enabled, post-quantum key agreement for TLS will be enabled.
 
 If this policy is disabled or not configured, post-quantum key agreement for TLS will be disabled.</string>
+      <string id="HttpsOnlyMode">HTTPS-Only Mode</string>
+      <string id="HttpsOnlyMode_Explain">If this policy is enabled, you can set the default behavior for HTTPS-Only Mode.
+
+If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</string>
+      <string id="HttpsOnlyMode_Allowed">Off by default</string>
+      <string id="HttpsOnlyMode_Disallowed">Off and locked</string>
+      <string id="HttpsOnlyMode_Enabled">On by default</string>
+      <string id="HttpsOnlyMode_ForceEnabled">On and locked</string>
+      <string id="HttpAllowlist">HTTP Allowlist </string>
+      <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
+
+If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
@@ -1471,6 +1483,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         </textBox>
         <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>Connections to localhost, 127.0.0.1/8, and ::1 are never proxied.</text>
+      </presentation>
+      <presentation id="HttpsOnlyMode">
+        <dropdownList refId="HttpsOnlyMode"/>
       </presentation>
     </presentationTable>
   </resources>

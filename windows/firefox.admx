@@ -4235,5 +4235,40 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="HttpsOnlyMode" class="Both" displayName="$(string.HttpsOnlyMode)" explainText="$(string.HttpsOnlyMode_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.HttpsOnlyMode)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF127_ONLY"/>
+      <elements>
+        <enum id="HttpsOnlyMode" valueName="HttpsOnlyMode">
+          <item displayName="$(string.HttpsOnlyMode_Allowed)">
+            <value>
+              <string>allowed</string>
+            </value>
+          </item>
+          <item displayName="$(string.HttpsOnlyMode_Disallowed)">
+            <value>
+              <string>disallowed</string>
+            </value>
+          </item>
+          <item displayName="$(string.HttpsOnlyMode_Enabled)">
+            <value>
+              <string>enabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.HttpsOnlyMode_ForceEnabled)">
+            <value>
+              <string>force_enabled</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="HttpAllowlist" class="Both" displayName="$(string.HttpAllowlist)" explainText="$(string.HttpAllowlist_Explain)" key="Software\Policies\Mozilla\Firefox\HttpAllowlist" presentation="$(presentation.List)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF127_ONLY"/>
+      <elements>
+        <list id="List" key="Software\Policies\Mozilla\Firefox\HttpAllowlist" valuePrefix=""/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
