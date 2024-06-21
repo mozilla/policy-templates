@@ -1111,6 +1111,18 @@ Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, wird die TLS-Funk
       <string id="PostQuantumKeyAgreementEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Post-Quantum Key Agreement für TLS aktiviert.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Post-Quantum Key Agreement für TLS deaktiviert.</string>
+      <string id="HttpsOnlyMode">HTTPS-Only Mode</string>
+      <string id="HttpsOnlyMode_Explain">If this policy is enabled, you can set the default behavior for HTTPS-Only Mode.
+
+If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</string>
+      <string id="HttpsOnlyMode_Allowed">Off by default</string>
+      <string id="HttpsOnlyMode_Disallowed">Off and locked</string>
+      <string id="HttpsOnlyMode_Enabled">On by default</string>
+      <string id="HttpsOnlyMode_ForceEnabled">On and locked</string>
+      <string id="HttpAllowlist">HTTP Allowlist </string>
+      <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
+
+If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
@@ -1473,6 +1485,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         </textBox>
         <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>Connections to localhost, 127.0.0.1/8, and ::1 are never proxied.</text>
+      </presentation>
+      <presentation id="HttpsOnlyMode">
+        <dropdownList refId="HttpsOnlyMode"/>
       </presentation>
     </presentationTable>
   </resources>
