@@ -1116,7 +1116,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, ist der HTTPS-Only Modus nicht aktiviert.</string>
       <string id="HttpsOnlyMode_Allowed">Standardmäßig ausgeschaltet</string>
-      <string id="HttpsOnlyMode_Disallowed">Ausgeschaltet und gesperrtd</string>
+      <string id="HttpsOnlyMode_Disallowed">Ausgeschaltet und gesperrt</string>
       <string id="HttpsOnlyMode_Enabled">Standardmäßig eingeschaltet</string>
       <string id="HttpsOnlyMode_ForceEnabled">Eingeschaltet und gesperrt</string>
       <string id="HttpAllowlist">HTTP Erlaubnisliste</string>
