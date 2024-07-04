@@ -668,6 +668,18 @@ Value (string):
   }
 ]'/>
 ```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/AutoLaunchProtocolsFromOriginsOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='[]'/>
+```
 #### macOS
 ```
 <dict>
@@ -934,6 +946,18 @@ Value (string):
 <enabled/>
 <data id="JSON" value='[]'/>
 ```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/BookmarksOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='[]'/>
+```
 #### macOS
 ```
 <dict>
@@ -1166,6 +1190,18 @@ Value (string):
   ]
 }
 '/>
+```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ContainersOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='{}'/>
 ```
 #### macOS
 ```
@@ -2752,6 +2788,18 @@ Value (string):
 ]
 '/>
 ```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='[]'/>
+```
 #### macOS
 ```
 <dict>
@@ -2938,6 +2986,18 @@ Value (string):
     "updates_disabled": false
   }
 }'/>
+```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ExtensionSettingsOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='{}'/>
 ```
 #### macOS
 ```
@@ -3321,6 +3381,18 @@ Value (string):
   }
 }
 '/>
+```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/HandlersOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='{}'/>
 ```
 #### macOS
 ```
@@ -3925,6 +3997,18 @@ Value (string):
     ]
   }
 ]'/>
+```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ManagedBoomarksOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='[]'/>
 ```
 #### macOS
 ```
@@ -5001,6 +5085,18 @@ Value (string):
     "Status": "locked"
   }
 }'/>
+```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/PreferencesOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='{}'/>
 ```
 #### macOS
 ```
@@ -6413,6 +6509,18 @@ Value (string):
 ```
 <enabled/>
 <data id="WebsiteFilter" value="1&#xF000;http://example.org/*"/>
+```
+If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
+to workaround the limit on the length of strings. Put all of your JSON on one line.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/WebsiteFilterOneLine
+```
+Value (string):
+```
+<enabled/>
+<data id="JSONOneLine" value='{"Block": ["<all_urls>"],"Exceptions": ["http://example.org/*"]}'/>
 ```
 #### macOS
 ```
