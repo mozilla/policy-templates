@@ -5537,13 +5537,32 @@ or
 <a name="SanitizeOnShutdown"></a>
 
 ### SanitizeOnShutdown (Selective)
-Clear data on shutdown. Choose from Cache, Cookies, Download History, Form & Search History, Browsing History, Active Logins, Site Preferences and Offline Website Data.
+Clear data on shutdown.
 
-Previously, these values were always locked. Starting with Firefox 74 and Firefox ESR 68.6, you can use the `Locked` option to either keep the values unlocked (set it to false), or lock only the values you set (set it to true). If you want the old behavior of locking everything, do not set `Locked` at all.
+Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 
-**Compatibility:** Firefox 68, Firefox ESR 68 (Locked added in 74/68.6)\
+`Cache`
+
+`Cookies`
+
+`Downloads` Download History (*Deprecated*)
+
+`FormData` Form & Search History (*Deprecated*)
+
+`History` Browsing History, Download History, Form & Search History.
+
+`Sessions` Active Logins
+
+`SiteSettings` Site Preferences
+
+`OfflineApps` Offline Website Data.
+
+`Locked` prevents the user from changing these preferences.
+
+**Compatibility:** Firefox 68, Firefox ESR 68 (Locked added in 74/68.6, History update in Firefox 128)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`, `privacy.clearOnShutdown.cache`, `privacy.clearOnShutdown.cookies`, `privacy.clearOnShutdown.downloads`, `privacy.clearOnShutdown.formdata`, `privacy.clearOnShutdown.history`, `privacy.clearOnShutdown.sessions`, `privacy.clearOnShutdown.siteSettings`, `privacy.clearOnShutdown.offlineApps`
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`, `privacy.clearOnShutdown.cache`, `privacy.clearOnShutdown.cookies`, `privacy.clearOnShutdown.downloads`, `privacy.clearOnShutdown.formdata`, `privacy.clearOnShutdown.history`, `privacy.clearOnShutdown.sessions`, `privacy.clearOnShutdown.siteSettings`, `privacy.clearOnShutdown.offlineApps`, `privacy.clearOnShutdown_v2.historyFormDataAndDownloads` (Firefox 128), `privacy.clearOnShutdown_v2.cookiesAndStorage` (Firefox 128), `privacy.clearOnShutdown_v2.cache` (Firefox 128), `privacy.clearOnShutdown_v2.siteSettings` (Firefox 128)
+
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
