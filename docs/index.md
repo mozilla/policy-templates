@@ -4372,7 +4372,7 @@ Remove access to the password manager via preferences and blocks about:logins on
 
 **Compatibility:** Firefox 70, Firefox ESR 60.2\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `pref.privacy.disable_button.view_passwords`
+**Preferences Affected:** `pref.privacy.disable_button.view_passwords`, `signon.rememberSignons`
 
 #### Windows (GPO)
 ```
