@@ -4516,32 +4516,123 @@ Set permissions associated with camera, microphone, location, notifications, aut
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\1 = "https://example.org"
-Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\2 = "https://example.org:1234"
+Software\Policies\Mozilla\Firefox\Permissions\Camera\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Camera\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Camera\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Microphone\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Microphone\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\Microphone\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Microphone\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Microphone\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Location\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Location\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\Location\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Location\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Location\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Notifications\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Notifications\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Default = "allow-audio-video" | "block-audio" | "block-audio-video"
 Software\Policies\Mozilla\Firefox\Permissions\Autoplay\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Camera/Camera_Allow
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Camera/Camera_Block
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.edu"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Camera/Camera_BlockNewRequests
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Camera/Camera_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Microphone/Microphone_Allow
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Microphone/Microphone_Block
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.edu"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Microphone/Microphone_BlockNewRequests
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Microphone/Microphone_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Location/Location_Allow
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Location/Location_Block
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.edu"/>
+```
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Location/Location_BlockNewRequests
@@ -4565,7 +4656,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Permissions" value="1&#xF000;https://example.org"/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
 ```
 OMA-URI:
 ```
@@ -4590,7 +4681,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="Permissions" value="1&#xF000;https://example.org"/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
 ```
 OMA-URI:
 ```
@@ -4620,16 +4711,16 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_Allow
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~VirtualReality/VirtualReality_Allow
 ```
 Value (string):
 ```
 <enabled/>
-<data id="Permissions" value="1&#xF000;https://example.org"/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_Block
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~VirtualReality/VirtualReality_Block
 ```
 Value (string):
 ```
@@ -4638,7 +4729,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_BlockNewRequests
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~VirtualReality/VirtualReality_BlockNewRequests
 ```
 Value (string):
 ```
