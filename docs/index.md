@@ -36,6 +36,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
 | **[`Certificates -> Install`](#certificates--install)** | Install certificates into the Firefox certificate store.
 | **[`Containers`](#containers)** | Set policies related to [containers](https://addons.mozilla.org/firefox/addon/multi-account-containers/).
+| **[`ContentAnalysis`](#contentanalysis)** | Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compatible with the [Google Chrome Content Analysis Connector Agent SDK](https://github.com/chromium/content_analysis_sdk).
 | **[`Cookies`](#cookies)** | Configure cookie preferences.
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
@@ -1238,6 +1239,174 @@ Value (string):
   }
 }
 ```
+### ContentAnalysis
+Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compatible with the [Google Chrome Content Analysis Connector Agent SDK](https://github.com/chromium/content_analysis_sdk).
+
+`AgentName` is the name of the DLP agent. This is used in dialogs and notifications about DLP operations. The default is "A DLP Agent".
+
+`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultResult` is set to 1 or 2. The default is 30.
+
+`AllowUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
+
+`BypassForSameTabOperations` indicates whether Firefox will automatically allow DLP requests whose data comes from the same tab and frame - for example, if data is copied to the clipboard and then pasted on the same page. The default is false.
+
+`ClientSignature` indicates the required signature of the DLP agent connected to the pipe. If this is a non-empty string and the DLP agent does not have a signature with a Subject Name that exactly matches this value, Firefox will not connect to the pipe. The default is the empty string.
+
+`DefaultResult` indicates the desired behavior for DLP requests if there is a problem connecting to the DLP agent. The default is 0.
+
+| Value | Description
+| --- | --- |
+| 0 | Deny the request (default)
+| 1 | Warn the user and allow them to choose whether to allow or deny
+| 2 | Allow the request
+
+`DenyUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be denied without consulting the agent. The default is the empty string.
+
+`Enabled` indicates whether Firefox should use DLP. Note that if this value is true and no DLP agent is running, all DLP requests will be denied unless `DefaultResult` is set to 1 or 2.
+
+`IsPerUser` indicates whether the pipe the DLP agent has created is per-user or per-system. The default is true, meaning per-user.
+
+`PipePathName` is the name of the pipe the DLP agent has created and Firefox will connect to. The default is "path_user".
+
+`ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
+
+**Compatibility:** Firefox 127\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\ContentAnalysis\AgentName = "My DLP Product"
+Software\Policies\Mozilla\Firefox\ContentAnalysis\AgentTimeout = 60
+Software\Policies\Mozilla\Firefox\ContentAnalysis\AllowUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
+Software\Policies\Mozilla\Firefox\ContentAnalysis\BypassForSameTabOperations = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\ClientSignature = "My DLP Company"
+Software\Policies\Mozilla\Firefox\ContentAnalysis\DefaultResult = 0x0 | 0x1 | 0x2
+Software\Policies\Mozilla\Firefox\ContentAnalysis\DenyUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
+Software\Policies\Mozilla\Firefox\ContentAnalysis\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\IsPerUser = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\PipePathName = "pipe_custom_name"
+Software\Policies\Mozilla\Firefox\ContentAnalysis\ShowBlockedResult = 0x1 | 0x0
+```
+
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_AgentName
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_AgentName" value="My DLP Product"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_AgentTimeout
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_AgentTimeout" value="60"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_AllowUrlRegexList
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_AllowUrlRegexList" value="https://example\.com/.* https://subdomain\.example\.com/.*"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_BypassForSameTabOperations
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_ClientSignature
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_ClientSignature" value="My DLP Company"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_DefaultResult
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_DefaultResult" value="1"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_DenyUrlRegexList
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_DenyUrlRegexList" value="https://example\.com/.* https://subdomain\.example\.com/.*"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_IsPerUser
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_PipePathName
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_PipePathName" value="pipe_custom_name"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_ShowBlockedResult
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+
+#### policies.json
+```
+{
+  "policies": {
+    "ContentAnalysis": {
+      "AgentName": "My DLP Product",
+      "AgentTimeout": 60,
+      "AllowUrlRegexList": "https://example\.com/.* https://subdomain\.example\.com/.*",
+      "BypassForSameTabOperations": true | false,
+      "ClientSignature": "My DLP Company",
+      "DefaultResult": 0 | 1 | 2,
+      "DenyUrlRegexList": "https://example\.com/.* https://subdomain\.example\.com/.*",
+      "Enabled": true | false,
+      "IsPerUser": true | false,
+      "PipePathName": "pipe_custom_name",
+      "ShowBlockedResult": true | false,
+    }
+  }
+}
+```
+
 ### Cookies
 Configure cookie preferences.
 
