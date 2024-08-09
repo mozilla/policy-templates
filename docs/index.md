@@ -3356,7 +3356,7 @@ Software\Policies\Mozilla\Firefox\FirefoxSuggest\Locked = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/WebSuggestions
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_WebSuggestions
 ```
 Value (string):
 ```
@@ -3364,7 +3364,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/SponsoredSuggestions
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_SponsoredSuggestions
 ```
 Value (string):
 ```
@@ -3372,7 +3372,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/ImproveSuggest
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_ImproveSuggest
 ```
 Value (string):
 ```
@@ -3380,7 +3380,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/Locked
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_Locked
 ```
 Value (string):
 ```
