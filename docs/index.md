@@ -3806,7 +3806,7 @@ Value (string):
 #### macOS
 ```
 <dict>
-  <key>HttpAllowlist </key>
+  <key>HttpAllowlist</key>
   <array>
     <string>http://example.org</string>
     <string>http://example.edu</string>
@@ -3817,7 +3817,7 @@ Value (string):
 ```
 {
   "policies": {
-    "HttpAllowlist ": ["http://example.org",
+    "HttpAllowlist": ["http://example.org",
                        "http://example.edu"]
   }
 }
