@@ -3796,7 +3796,7 @@ Software\Policies\Mozilla\Firefox\HttpAllowlist\2 = "http://example.edu"
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist 
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist
 ```
 Value (string):
 ```
