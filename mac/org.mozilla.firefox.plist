@@ -403,7 +403,7 @@
 		<key>StartPage</key>
 		<string>homepage</string>
 	</dict>
-	<key>HttpAllowlist </key>
+	<key>HttpAllowlist</key>
 	<array>
 		<string>http://example.org</string>
 		<string>http://example.edu</string>

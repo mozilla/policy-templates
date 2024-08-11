@@ -187,7 +187,7 @@
                     "http://example.edu/"],
       "StartPage": "none" | "homepage" | "previous-session" | "homepage-locked"
     },
-    "HttpAllowlist ": ["http://example.org",
+    "HttpAllowlist": ["http://example.org",
                        "http://example.edu"],
     "HttpsOnlyMode": "allowed" | "disallowed" | "enabled" | "force_enabled",
     "InstallAddonsPermission": {

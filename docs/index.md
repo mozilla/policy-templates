@@ -3796,7 +3796,7 @@ Software\Policies\Mozilla\Firefox\HttpAllowlist\2 = "http://example.edu"
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist 
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist
 ```
 Value (string):
 ```
@@ -3806,7 +3806,7 @@ Value (string):
 #### macOS
 ```
 <dict>
-  <key>HttpAllowlist </key>
+  <key>HttpAllowlist</key>
   <array>
     <string>http://example.org</string>
     <string>http://example.edu</string>
@@ -3817,7 +3817,7 @@ Value (string):
 ```
 {
   "policies": {
-    "HttpAllowlist ": ["http://example.org",
+    "HttpAllowlist": ["http://example.org",
                        "http://example.edu"]
   }
 }
