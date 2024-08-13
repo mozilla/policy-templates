@@ -1119,10 +1119,14 @@ If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</s
       <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
 
 If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>
-      <string id="ContentAnalysis_AgentTimeout">Agent Timeout</string>
-      <string id="ContentAnalysis_AgentTimeout_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
+      <string id="ContentAnalysis_AgentName">Agent Name</string>
+      <string id="ContentAnalysis_AgentName_Explain">If this policy is enabled, you can specify the name of the DLP agent, used in dialogs and notifications about DLP operations.
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
+If this policy is disabled or not configured, the agent name "A DLP Agent" is used.</string>
+      <string id="ContentAnalysis_AgentTimeout">Agent Timeout</string>
+      <string id="ContentAnalysis_AgentTimeout_Explain">If this policy is enabled, you can specify the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultResult` is set to 1 or 2.
+
+If this policy is disabled or not configured, the timeout is 30 seconds.</string>
       <string id="ContentAnalysis_AllowUrlRegexList">Allow Url Regex List</string>
       <string id="ContentAnalysis_AllowUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
 

@@ -4273,6 +4273,13 @@
         <list id="List" key="Software\Policies\Mozilla\Firefox\HttpAllowlist" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="ContentAnalysis_AgentName" class="Both" displayName="$(string.ContentAnalysis_AgentName)" explainText="$(string.ContentAnalysis_AgentName_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
+      <parentCategory ref="ContentAnalysis"/>
+      <supportedOn ref="SUPPORTED_FF130"/>
+      <elements>
+        <text id="String" valueName="AgentName"/>
+      </elements>
+    </policy>
     <policy name="ContentAnalysis_AgentTimeout" class="Both" displayName="$(string.ContentAnalysis_AgentTimeout)" explainText="$(string.ContentAnalysis_AgentTimeout_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.Number)">
       <parentCategory ref="ContentAnalysis"/>
       <supportedOn ref="SUPPORTED_FF130"/>
