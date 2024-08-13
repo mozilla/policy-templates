@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="6.0" schemaVersion="1.0">
+<policyDefinitionResources revision="6.1" schemaVersion="1.0">
   <displayName/>
   <description/>
   <resources>
@@ -1115,7 +1115,7 @@ If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</s
       <string id="HttpsOnlyMode_Disallowed">Off and locked</string>
       <string id="HttpsOnlyMode_Enabled">On by default</string>
       <string id="HttpsOnlyMode_ForceEnabled">On and locked</string>
-      <string id="HttpAllowlist">HTTP Allowlist </string>
+      <string id="HttpAllowlist">HTTP Allowlist</string>
       <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
 
 If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>

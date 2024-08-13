@@ -1270,7 +1270,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
 
-**Compatibility:** Firefox 127\
+**Compatibility:** Firefox 130\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
 
@@ -3356,7 +3356,7 @@ Software\Policies\Mozilla\Firefox\FirefoxSuggest\Locked = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/WebSuggestions
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_WebSuggestions
 ```
 Value (string):
 ```
@@ -3364,7 +3364,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/SponsoredSuggestions
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_SponsoredSuggestions
 ```
 Value (string):
 ```
@@ -3372,7 +3372,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/ImproveSuggest
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_ImproveSuggest
 ```
 Value (string):
 ```
@@ -3380,7 +3380,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/Locked
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_Locked
 ```
 Value (string):
 ```
@@ -3796,7 +3796,7 @@ Software\Policies\Mozilla\Firefox\HttpAllowlist\2 = "http://example.edu"
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist 
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HttpAllowlist
 ```
 Value (string):
 ```
@@ -3806,7 +3806,7 @@ Value (string):
 #### macOS
 ```
 <dict>
-  <key>HttpAllowlist </key>
+  <key>HttpAllowlist</key>
   <array>
     <string>http://example.org</string>
     <string>http://example.edu</string>
@@ -3817,7 +3817,7 @@ Value (string):
 ```
 {
   "policies": {
-    "HttpAllowlist ": ["http://example.org",
+    "HttpAllowlist": ["http://example.org",
                        "http://example.edu"]
   }
 }
