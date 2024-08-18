@@ -3087,6 +3087,7 @@ Manage all aspects of extensions. This policy is based heavily on the [Chrome po
 This policy maps an extension ID to its configuration. With an extension ID, the configuration will be applied to the specified extension only. A default configuration can be set for the special ID "*", which will apply to all extensions that don't have a custom configuration set in this policy.
 
 To obtain an extension ID, install the extension and go to about:support. You will see the ID in the Extensions section. I've also created an extension that makes it easy to find the ID of extensions on AMO. You can download it [here](https://github.com/mkaply/queryamoid/releases/tag/v0.1).
+Or you can ask the Mozilla Addons API, see [docs](https://mozilla.github.io/addons-server/topics/api/addons.html#detail), which returns the ID as `guid`: https://addons.mozilla.org/api/v5/addons/addon/ublock-origin/
 
 The configuration for each extension is another dictionary that can contain the fields documented below.
 
@@ -3097,7 +3098,7 @@ The configuration for each extension is another dictionary that can contain the 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blocked`| Blocks installation of the extension and removes it from the device if already installed.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
-| `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension.  If installing from the local file system, use a [```file:///``` URL](https://en.wikipedia.org/wiki/File_URI_scheme). If installing from the addons.mozilla.org, use the following URL (substituting SHORT_NAME from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/SHORT_NAME/latest.xpi. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
+| `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension.  If installing from the local file system, use a [```file:///``` URL](https://en.wikipedia.org/wiki/File_URI_scheme). If installing from the addons.mozilla.org, use the following URL (substituting ID with the extension ID or with the short name from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/ID/latest.xpi. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
 | `install_sources` | A list of sources from which installing extensions is allowed using URL match patterns. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "locale" This setting can be used only for the default configuration.
 | `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
@@ -3122,7 +3123,11 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
   },
   "uBlock0@raymondhill.net": {
     "installation_mode": "force_installed",
-    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"  # using slug / short name
+  },
+  "adguardadblocker@adguard.com": {
+    "installation_mode": "force_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"  # using extension ID
   },
   "https-everywhere@eff.org": {
     "installation_mode": "allowed",
@@ -3150,6 +3155,11 @@ Value (string):
     "installation_mode": "force_installed",
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
+  "adguardadblocker@adguard.com": {
+    "installation_mode": "force_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"
+  },
+  {
     "https-everywhere@eff.org": {
     "installation_mode": "allowed",
     "updates_disabled": false
@@ -3195,6 +3205,13 @@ Value (string):
       <key>install_url</key>
       <string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
     </dict>
+    <key>adguardadblocker@adguard.com</key>
+    <dict>
+      <key>installation_mode</key>
+      <string>force_installed</string>
+      <key>install_url</key>
+      <string>https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi</string>
+    </dict>
     <key>https-everywhere@eff.org</key>
     <dict>
       <key>installation_mode</key>
@@ -3219,6 +3236,10 @@ Value (string):
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      },
+      "adguardadblocker@adguard.com": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"
       },
       "https-everywhere@eff.org": {
         "installation_mode": "allowed",
