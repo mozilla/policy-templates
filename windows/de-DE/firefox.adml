@@ -73,6 +73,7 @@
       <string id="SUPPORTED_FF128">Firefox 128 oder höher, Firefox 115.13 ESR oder höher</string>
       <string id="SUPPORTED_FF129">Firefox 129 oder höher, Firefox 115.14 ESR oder höher</string>
       <string id="SUPPORTED_FF130">Firefox 130 oder höher, Firefox 115.15 ESR oder höher</string>
+      <string id="SUPPORTED_FF130_ONLY">Firefox 130 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -867,6 +868,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
       <string id="UserMessaging_MoreFromMozilla_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Abschnitt "Mehr von Mozilla" in den Einstellungen nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der Abschnitt "Mehr von Mozilla" in den Einstellungen angezeigt.</string>
+      <string id="UserMessaging_FirefoxLabs">Firefox Labs</string>
+      <string id="UserMessaging_FirefoxLabs_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Abschnitt "Firefox Labs" in den Einstellungen nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der Abschnitt "Firefox Labs" in den Einstellungen angezeigt.</string>
       <string id="UserMessaging_Locked">Keine Änderung der Einstellungen für die Nachrichtenübermittlung zulassen</string>
       <string id="UserMessaging_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können die Einstellungen für die Nachrichtenübermittlung vom Benutzer geändert werden.
 

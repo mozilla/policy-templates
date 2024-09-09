@@ -357,6 +357,7 @@
       "UrlbarInterventions": true | false,
       "SkipOnboarding": true | false,
       "MoreFromMozilla": true | false,
+      "FirefoxLabs": true | false,
       "Locked": true | false
     },
     "UseSystemPrintDialog": true | false.,

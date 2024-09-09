@@ -75,6 +75,7 @@
       <definition name="SUPPORTED_FF128" displayName="$(string.SUPPORTED_FF128)"/>
       <definition name="SUPPORTED_FF129" displayName="$(string.SUPPORTED_FF129)"/>
       <definition name="SUPPORTED_FF130" displayName="$(string.SUPPORTED_FF130)"/>
+      <definition name="SUPPORTED_FF130_ONLY" displayName="$(string.SUPPORTED_FF130_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -3686,6 +3687,16 @@
     <policy name="UserMessaging_MoreFromMozilla" class="Both" displayName="$(string.UserMessaging_MoreFromMozilla)" explainText="$(string.UserMessaging_MoreFromMozilla_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="MoreFromMozilla">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF98_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="UserMessaging_FirefoxLabs" class="Both" displayName="$(string.UserMessaging_FirefoxLabs)" explainText="$(string.UserMessaging_FirefoxLabs)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="FirefoxLabs">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF130_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
