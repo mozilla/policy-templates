@@ -595,6 +595,8 @@
 	</dict>
 	<key>PrintingEnabled</key>
 	<false/>
+	<key>PrivateBrowsingModeAvailability</key>
+	<integer>1</integer>
 	<key>Proxy</key>
 	<dict>
 		<key>Mode</key>

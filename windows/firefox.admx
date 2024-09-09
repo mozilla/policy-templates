@@ -4270,5 +4270,28 @@
         <list id="List" key="Software\Policies\Mozilla\Firefox\HttpAllowlist" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="PrivateBrowsingModeAvailability" class="Both" displayName="$(string.PrivateBrowsingModeAvailability)" explainText="$(string.PrivateBrowsingModeAvailability_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.PrivateBrowsingModeAvailability)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF130"/>
+      <elements>
+        <enum id="PrivateBrowsingModeAvailability" valueName="PrivateBrowsingModeAvailability">
+          <item displayName="$(string.PrivateBrowsingModeAvailability_0)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.PrivateBrowsingModeAvailability_1)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.PrivateBrowsingModeAvailability_2)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
