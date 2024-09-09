@@ -1118,6 +1118,13 @@ If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</s
       <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
 
 If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>
+      <string id="PrivateBrowsingModeAvailability">Private Browsing Mode Availability</string>
+      <string id="PrivateBrowsingModeAvailability_Explain">If this policy is enabled, you can set the availability of Private Browsing Mode.
+
+If this policy is disabled or not configured, Private Browsing Mode is available.</string>
+      <string id="PrivateBrowsingModeAvailability_0">Allow Private Browsing Mode</string>
+      <string id="PrivateBrowsingModeAvailability_1">Disable Private Browsing Mode</string>
+      <string id="PrivateBrowsingModeAvailability_2">Force Private Browsing Mode</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
@@ -1486,6 +1493,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="HttpsOnlyMode">
         <dropdownList refId="HttpsOnlyMode"/>
+      </presentation>
+      <presentation id="PrivateBrowsingModeAvailability">
+        <dropdownList refId="PrivateBrowsingModeAvailability"/>
       </presentation>
     </presentationTable>
   </resources>

@@ -107,6 +107,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`PrintingEnabled`](#printingenabled)** | Enable or disable printing.
+| **[`PrivateBrowsingModeAvailability`](#privatebrowsingmodeavailability)** | Set availability of private browsing mode.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -2153,6 +2154,8 @@ Value (string):
 ```
 ### DisablePrivateBrowsing
 Remove access to private browsing.
+
+This policy is superseded by [`PrivateBrowsingModeAvailability`](#privatebrowsingmodeavailability)
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePrivateBrowsing`\
@@ -5503,6 +5506,46 @@ Value (string):
 {
   "policies": {
     "PrintingEnabled": true | false
+  }
+}
+```
+### PrivateBrowsingModeAvailability
+Set availability of private browsing mode.
+
+Possible values are `0` (Private Browsing mode is available), `1` (Private Browsing mode not available), and `2`(Private Browsing mode is forced).
+
+This policy supersedes [`DisablePrivateBrowsing`](#disableprivatebrowsing)
+
+**Compatibility:** Firefox 130\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PrivateBrowsingModeAvailability = 0x0 | 0x1 | 0x2
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PrivateBrowsingModeAvailability
+```
+Value (string):
+```
+<enabled/>
+<data id="PrivateBrowsingModeAvailability" value="0 | 1 | 2"/>
+```
+#### macOS
+```
+<dict>
+  <key>PrivateBrowsingModeAvailability</key>
+  <integer>0 | 1 | 2</integer>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PrivateBrowsingModeAvailability": 0 | 1 | 2
   }
 }
 ```

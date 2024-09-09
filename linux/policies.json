@@ -225,7 +225,7 @@
     "NoDefaultBookmarks": true | false,
     "OfferToSaveLogins": true | false,
     "OfferToSaveLoginsDefault": true | false,
-    "OverrideFirstRunPage": "http://example.org".
+    "OverrideFirstRunPage": "http://example.org",
     "OverridePostUpdatePage": "http://example.org",
     "PasswordManagerEnabled": true | false,
     "PasswordManagerExceptions": ["https://example.org", "https://example.edu"],
@@ -292,6 +292,7 @@
     },
     "PrimaryPassword": true | false,
     "PrintingEnabled": true | false,
+    "PrivateBrowsingModeAvailability": 0 | 1 | 2,
     "PromptForDownloadLocation": true | false,
     "Proxy": {
       "Mode": "none" | "system" | "manual" | "autoDetect" | "autoConfig",
