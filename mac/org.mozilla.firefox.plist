@@ -669,6 +669,8 @@
 		<true/>
 		<key>MoreFromMozilla</key>
 		<true/>
+		<key>FirefoxLabs</key>
+		<true/>
 		<key>Locked</key>
 		<true/>
 	</dict>
