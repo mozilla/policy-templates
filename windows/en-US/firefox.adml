@@ -73,6 +73,7 @@
       <string id="SUPPORTED_FF128">Firefox 128 or later, Firefox 115.13 ESR or later</string>
       <string id="SUPPORTED_FF129">Firefox 129 or later, Firefox 115.14 ESR or later</string>
       <string id="SUPPORTED_FF130">Firefox 130 or later, Firefox 115.15 ESR or later</string>
+      <string id="SUPPORTED_FF130_ONLY">Firefox 130 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -867,6 +868,10 @@ If this policy is disabled or not configured, onboarding messages will be shown 
       <string id="UserMessaging_MoreFromMozilla_Explain">If this policy is disabled, the More from Mozilla section will not be shown in preferences.
 
 If this policy is enabled or not configured, the More from Mozilla section will be shown in preferences.</string>
+      <string id="UserMessaging_FirefoxLabs">Firefox Labs</string>
+      <string id="UserMessaging_FirefoxLabs_Explain">If this policy is disabled, the Firefox Labs section will not be shown in preferences.
+
+If this policy is enabled or not configured, the Firefox Labs section will be shown in preferences.</string>
       <string id="UserMessaging_Locked">Do not allow user messaging preferences to be changed</string>
       <string id="UserMessaging_Locked_Explain">If this policy is disabled, user messaging preferences can be changed by the user.
 
