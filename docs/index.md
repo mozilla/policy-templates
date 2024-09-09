@@ -5516,7 +5516,9 @@ Possible values are `0` (Private Browsing mode is available), `1` (Private Brows
 
 This policy supersedes [`DisablePrivateBrowsing`](#disableprivatebrowsing)
 
-**Compatibility:** Firefox 130\
+Note: This policy missed Firefox ESR 128.2, but it will be in Firefox ESR 128.3.
+
+**Compatibility:** Firefox 130, Firefox ESR 128.3\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
