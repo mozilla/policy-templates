@@ -5881,7 +5881,7 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 
 `SiteSettings` Site Preferences
 
-`OfflineApps` Offline Website Data.
+`OfflineApps` Offline Website Data (*Deprecated - part of Cookies*)
 
 `Locked` prevents the user from changing these preferences.
 
