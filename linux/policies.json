@@ -312,12 +312,9 @@
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
-      "Downloads": true | false,
-      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
-      "OfflineApps": true | false,
       "Locked": true | false
     },
     "SearchEngines": {

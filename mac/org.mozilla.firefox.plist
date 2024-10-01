@@ -630,7 +630,20 @@
 		<string>en-US</string>
 	</array>
 	<key>SanitizeOnShutdown</key>
-	<true/>
+	<dict>
+		<key>Cache</key>
+		<true/>
+		<key>Cookies</key>
+		<true/>
+		<key>History</key>
+		<true/>
+		<key>Sessions</key>
+		<true/>
+		<key>SiteSettings</key>
+		<true/>
+		<key>Locked</key>
+		<true/>
+	</dict>
 	<key>SearchBar</key>
 	<string>separate</string>
 	<key>SecurityDevices</key>

@@ -5893,12 +5893,9 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Downloads = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
@@ -5913,22 +5910,6 @@ Value (string):
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/B_SanitizeOnShutdown_Cookies
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/C_SanitizeOnShutdown_Downloads
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/D_SanitizeOnShutdown_FormData
 ```
 Value (string):
 ```
@@ -5960,14 +5941,6 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/H_SanitizeOnShutdown_OfflineApps
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/I_SanitizeOnShutdown_Locked
 ```
 Value (string):
@@ -5983,17 +5956,11 @@ Value (string):
     <true/> | <false/>
     <key>Cookies</key>
     <true/> | <false/>
-    <key>Downloads</key>
-    <true/> | <false/>
-    <key>FormData</key>
-    <true/> | <false/>
     <key>History</key>
     <true/> | <false/>
     <key>Sessions</key>
     <true/> | <false/>
     <key>SiteSettings</key>
-    <true/> | <false/>
-    <key>OfflineApps</key>
     <true/> | <false/>
     <key>Locked</key>
     <true/> | <false/>
@@ -6007,12 +5974,9 @@ Value (string):
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
-      "Downloads": true | false,
-      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
-      "OfflineApps": true | false,
       "Locked": true | false
     }
   }
