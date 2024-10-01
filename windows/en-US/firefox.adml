@@ -609,7 +609,7 @@ If this policy is disabled or not configured, sessions not cleared when the brow
       <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, site preferences are cleared when the browser is closed.
 
 If this policy is disabled or not configured, site preferences are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data (Deprecated)</string>
       <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
 
 If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
