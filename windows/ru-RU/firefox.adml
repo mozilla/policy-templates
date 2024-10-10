@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="5.12" schemaVersion="1.0">
+<policyDefinitionResources revision="6.4" schemaVersion="1.0">
   <displayName/>
   <description/>
   <resources>
@@ -591,18 +591,18 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="SanitizeOnShutdown_Cookies_Explain">Если политика включена, файлы cookie очищаются при закрытии браузера.
 
 Если эта политика отключена или не настроена, файлы cookie не удаляются при закрытии браузера.</string>
-      <string id="SanitizeOnShutdown_Downloads">История загрузок</string>
+      <string id="SanitizeOnShutdown_Downloads">История загрузок (устарело)</string>
       <string id="SanitizeOnShutdown_Downloads_Explain">Если политика включена, история загрузок очищается при закрытии браузера.
 
 Если эта политика отключена или не настроена, история загрузок не очищается при закрытии браузера.</string>
-      <string id="SanitizeOnShutdown_FormData">Данные форм&amp;История поиска</string>
+      <string id="SanitizeOnShutdown_FormData">Данные форм&amp;История поиска (устарело)</string>
       <string id="SanitizeOnShutdown_FormData_Explain">Если политика включена, данные форм очищаются при закрытии браузера.
 
 Если эта политика отключена или не настроена, данные форм не очищаются при закрытии браузера.</string>
-      <string id="SanitizeOnShutdown_History">История просмотров</string>
-      <string id="SanitizeOnShutdown_History_Explain">Если политика включена, история просмотра очищается при закрытии браузера.
+      <string id="SanitizeOnShutdown_History">История</string>
+      <string id="SanitizeOnShutdown_History_Explain">Если политика включена, история просмотров, история загрузок, история поиска и данные форм очищаются при закрытии браузера.
 
-Если эта политика отключена или не настроена, история просмотров не очищается при закрытии браузера.</string>
+Если эта политика отключена или не настроена, история просмотров, история загрузок, история поиска и данные форм не очищаются при закрытии браузера.</string>
       <string id="SanitizeOnShutdown_Sessions">Активные логины</string>
       <string id="SanitizeOnShutdown_Sessions_Explain">Если политика включена, сеансы очищаются при закрытии браузера.
 
@@ -611,7 +611,7 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="SanitizeOnShutdown_SiteSettings_Explain">Если политика включена, настройки сайта очищаются при закрытии браузера.
 
 Если эта политика отключена или не настроена, настройки сайта не очищаются при закрытии браузера.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Данные автономного веб-сайта</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Данные автономного веб-сайта (устарело)</string>
       <string id="SanitizeOnShutdown_OfflineApps_Explain">Если политика включена, автономное хранилище приложений очищается при закрытии браузера.
 
 Если эта политика отключена или не настроена, хранилище автономных приложений не очищается при закрытии браузера.</string>
@@ -866,14 +866,18 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="UserMessaging_SkipOnboarding_Explain">Если эта политика включена, сообщения тура не будут отображаться в новой вкладке.
 
 Если эта политика отключена или не настроена, сообщения тура будут отображаться в новой вкладке.</string>
+      <string id="UserMessaging_FirefoxLabs">Firefox Labs</string>
+      <string id="UserMessaging_FirefoxLabs_Explain">Если эта политика отключена, раздел Firefox Labs не будет отображаться в настройках.
+
+Если эта политика включена или не настроена, раздел Firefox Labs будет отображаться в настройках.</string>
       <string id="UserMessaging_MoreFromMozilla">Дополнительно о Mozilla</string>
       <string id="UserMessaging_MoreFromMozilla_Explain">Если эта политика отключена, раздел «Дополнительно от Mozilla» не будет отображаться в настройках.
 
 Если эта политика включена или не настроена, раздел «Дополнительно от Mozilla» будет отображаться в настройках.</string>
-      <string id="UserMessaging_Locked">Do not allow user messaging preferences to be changed</string>
-      <string id="UserMessaging_Locked_Explain">If this policy is disabled, user messaging preferences can be changed by the user.
+      <string id="UserMessaging_Locked">Не разрешать изменять настройки сообщений пользователя</string>
+      <string id="UserMessaging_Locked_Explain">Если эта политика отключена, настройки сообщений пользователя могут быть изменены пользователем.
 
-If this policy is enabled or not configured, user messaging preferences cannot be changed by the user.</string>
+Если эта политика включена или не настроена, настройки сообщений пользователя не могут быть изменены пользователем.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
@@ -927,7 +931,7 @@ If this policy is enabled or not configured, user messaging preferences cannot b
 
 Если эта политика не настроена, пользователи могут создать основной пароль.</string>
       <string id="HandlersOneLine">Обработчики (JSON on one line)</string>
-      <string id="Handlers">Обработчики</string>
+      <string id="Handlers">Обработчики</string>HTTP Allow
       <string id="Handlers_Explain">Если эта политика включена, вы можете использовать JSON для настройки обработчиков приложений по умолчанию.
 
 Если эта политика отключена или не настроена, используются настройки Firefox по умолчанию.
@@ -1002,125 +1006,132 @@ If this policy is enabled or not configured, user messaging preferences cannot b
       <string id="AppUpdatePin_Explain">Если эта политика включена, вы можете указать версию Firefox как xx. или хх.хх. и Firefox не будет обновляться после этой основной или дополнительной версии.
 
 Если эта политика отключена или не настроена, Firefox будет обновляться в обычном режиме.</string>
-      <string id="Proxy_Locked">Do not allow proxy settings to be changed</string>
-      <string id="Proxy_Locked_Explain">If this policy is enabled, proxy settings cannot be changed by the user.
+      <string id="Proxy_Locked">Не разрешать изменять настройки прокси</string>
+      <string id="Proxy_Locked_Explain">Если эта политика включена, настройки прокси не могут быть изменены пользователем.
 
-If this policy is disabled or not configured, the user can change their proxy settings.</string>
-      <string id="Proxy_ConnectionType">Connection Type</string>
-      <string id="Proxy_ConnectionType_Explain">If this policy is enabled, you can set the connection type.
+Если эта политика отключена или не настроена, пользователь может изменить свои настройки прокси.</string>
+      <string id="Proxy_ConnectionType">Тип подключения</string>
+      <string id="Proxy_ConnectionType_Explain">Если эта политика включена, вы можете задать тип подключения.
 
-If this policy is disabled or not configured, Firefox defaults to using the system proxy.</string>
-      <string id="Proxy_HTTPProxy">HTTP Proxy</string>
-      <string id="Proxy_HTTPProxy_Explain">If this policy is enabled, you can set the HTTP Proxy used when manual proxy configuration is specified.
+Если эта политика отключена или не настроена, Firefox по умолчанию использует системный прокси.</string>
+      <string id="Proxy_HTTPProxy">HTTP-прокси</string>
+      <string id="Proxy_HTTPProxy_Explain">Если эта политика включена, вы можете задать HTTP-прокси, используемый при указании ручной настройки прокси.
 
-If this policy is disabled or not configured, Firefox does not use an HTTP Proxy.</string>
-      <string id="Proxy_UseHTTPProxyForAllProtocols">Use HTTP proxy for HTTPS</string>
-      <string id="Proxy_UseHTTPProxyForAllProtocols_Explain">If this policy is enabled, the HTTP Proxy is used for HTTPS when manual proxy configuration is specified.
+Если эта политика отключена или не настроена, Firefox не использует HTTP-прокси.</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols">Использовать HTTP-прокси для HTTPS</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols_Explain">Если эта политика включена, HTTP-прокси используется для HTTPS при указании ручной настройки прокси.
 
-If this policy is disabled or not configured, Firefox does not use an HTTPS Proxy unless specified.</string>
-      <string id="Proxy_SSLProxy">HTTPS Proxy</string>
-      <string id="Proxy_SSLProxy_Explain">If this policy is enabled, you can set the HTTPS Proxy used when manual proxy configuration is specified.
+Если эта политика отключена или не настроена, Firefox не использует HTTPS-прокси, если не указано иное.</string>
+      <string id="Proxy_SSLProxy">HTTPS-прокси</string>
+      <string id="Proxy_SSLProxy_Explain">Если эта политика включена, вы можете задать HTTPS-прокси, используемый при указании ручной настройки прокси.
 
-If this policy is disabled or not configured, Firefox does not use an HTTPS Proxy.</string>
-      <string id="Proxy_SOCKSProxy">SOCKS Host</string>
-      <string id="Proxy_SOCKSProxy_Explain">If this policy is enabled, you can set the SOCKS Host and version used when manual proxy configuration is specified.
+Если эта политика отключена или не настроена, Firefox не использует HTTPS-прокси.</string>
+      <string id="Proxy_SOCKSProxy">Хост SOCKS</string>
+      <string id="Proxy_SOCKSProxy_Explain">Если эта политика включена, вы можете задать хост SOCKS и версию, используемую при указании ручной настройки прокси.
 
-If this policy is disabled or not configured, Firefox does not use a SOCKS Host.</string>
-      <string id="Proxy_AutoConfigURL">Automatic proxy configuration URL</string>
-      <string id="Proxy_AutoConfigURL_Explain">If this policy is enabled, you can set the automatic proxy configuration URL.
+Если эта политика отключена или не настроена, Firefox не использует хост SOCKS.</string>
+      <string id="Proxy_AutoConfigURL">URL автоматической настройки прокси</string>
+      <string id="Proxy_AutoConfigURL_Explain">Если эта политика включена, вы можете задать URL автоматической настройки прокси.
 
-If this policy is disabled or not configured, Firefox does not use an automatic proxy configuration URL.</string>
-      <string id="Proxy_Passthrough">Proxy Passthrough</string>
-      <string id="Proxy_Passthrough_Explain">If this policy is enabled, the proxy settings are bypassed for the locations specified.
+Если эта политика отключена или не настроена, Firefox не использует URL автоматической настройки прокси.</string>
+      <string id="Proxy_Passthrough">Проброс прокси</string>
+      <string id="Proxy_Passthrough_Explain">Если эта политика включена, настройки прокси игнорируются для указанных расположений.
 
-If this policy is disabled or not configured, Firefox does not bypass the proxy.</string>
-      <string id="Proxy_AutoLogin">Do not prompt for authentication if password is saved</string>
-      <string id="Proxy_AutoLogin_Explain">If this policy is enabled, Firefox will not prompt for proxy authentication when a password is saved.
+Если эта политика отключена или не настроена, Firefox не обходит прокси.</string>
+      <string id="Proxy_AutoLogin">Не запрашивать аутентификацию, если пароль сохранен</string>
+      <string id="Proxy_AutoLogin_Explain">Если эта политика включена, Firefox не будет запрашивать аутентификацию прокси при сохранении пароля.
 
-If this policy is disabled or not configured, Firefox will always prompt for proxy authentication.</string>
-      <string id="Proxy_UseProxyForDNS">Proxy DNS when using SOCKS v5</string>
-      <string id="Proxy_UseProxyForDNS_Explain">If this policy is enabled, DNS is proxied when using SOCKS v5.
+Если эта политика отключена или не настроена, Firefox всегда будет запрашивать аутентификацию прокси.</string>
+      <string id="Proxy_UseProxyForDNS">Прокси-DNS при использовании SOCKS v5</string>
+      <string id="Proxy_UseProxyForDNS_Explain">Если эта политика включена, DNS будет проксироваться при использовании SOCKS v5.
 
-If this policy is disabled or not configured, DNS is not proxied when using SOCKS v5.</string>
-      <string id="DisableThirdPartyModuleBlocking">Disable Third Party Module Blocking</string>
-      <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, users are not allowed to block third-party modules from the about:third-party page.
+Если эта политика отключена или не настроена, DNS не проксируется при использовании SOCKS v5.</string>
+      <string id="DisableThirdPartyModuleBlocking">Отключить блокировку сторонних модулей</string>
+      <string id="DisableThirdPartyModuleBlocking_Explain">Если эта политика включена, пользователям не разрешено блокировать сторонние модули со страницы about:third-party.
 
-If this policy is disabled or not configured, users users are allowed to block third-party modules from the about:third-party page.</string>
-      <string id="ContainersOneLine">Containers (JSON on one line)</string>
-      <string id="Containers">Containers</string>
-      <string id="Containers_Explain">If this policy is enabled, you can use JSON to configure the default containers.
+Если эта политика отключена или не настроена, пользователям разрешено блокировать сторонние модули со страницы about:third-party.</string>
+      <string id="ContainersOneLine">Контейнеры (JSON в одной строке)</string>
+      <string id="Containers">Контейнеры</string>
+      <string id="Containers_Explain">Если эта политика включена, вы можете использовать JSON для настройки контейнеров по умолчанию.
 
-If this policy is disabled or not configured, the built-in defaults are used.
+Если эта политика отключена или не настроена, используются встроенные значения по умолчанию.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
-      <string id="FirefoxSuggest_WebSuggestions">Suggestions from the web</string>
-      <string id="FirefoxSuggest_WebSuggestions_Explain">If this policy is enabled, you will get suggestions from Firefox related to your search.
+Подробную информацию о создании политики см. на странице https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+      <string id="FirefoxSuggest_WebSuggestions">Предложения из Интернета</string>
+      <string id="FirefoxSuggest_WebSuggestions_Explain">Если эта политика включена, вы будете получать предложения от Firefox, связанные с вашим поиском.
 
-If this policy is disabled, you will not get these suggestions.
+Если эта политика отключена, вы не будете получать эти предложения.
 
-If this policy is not configured, , you will get suggestions from Firefox related to your search.</string>
-      <string id="FirefoxSuggest_SponsoredSuggestions">Suggestions from sponsors</string>
-      <string id="FirefoxSuggest_SponsoredSuggestions_Explain">If this policy is enabled, you will support the development of Firefox with occasional sponsored suggestions.
+Если эта политика не настроена, вы будете получать предложения от Firefox, связанные с вашим поиском.</string>
+      <string id="FirefoxSuggest_SponsoredSuggestions">Предложения от спонсоров</string>
+      <string id="FirefoxSuggest_SponsoredSuggestions_Explain">Если эта политика включена, вы поддержите разработку Firefox периодическими спонсируемыми предложениями.
 
-If this policy is disabled, you will not get these suggestions.
+Если эта политика отключена, вы не будете получать эти предложения.
 
-If this policy is not configured, you will get occasional sponsored suggestions.</string>
-      <string id="FirefoxSuggest_ImproveSuggest">Improve the Firefox Suggest experience</string>
-      <string id="FirefoxSuggest_ImproveSuggest_Explain">If this policy is enabled, you will help create a richer search experience by allowing Mozilla to process your search queries.
+Если эта политика не настроена, вы будете получать периодические спонсируемые предложения.</string>
+      <string id="FirefoxSuggest_ImproveSuggest">Улучшение работы Firefox Suggest</string>
+      <string id="FirefoxSuggest_ImproveSuggest_Explain">Если эта политика включена, вы поможете создать более богатый опыт поиска, разрешив Mozilla обрабатывать ваши поисковые запросы.
 
-If this policy is disabled or not configured, you do not allow Mozilla to process your search queries.</string>
-      <string id="FirefoxSuggest_Locked">Do not allow preferences to be changed</string>
-      <string id="FirefoxSuggest_Locked_Explain">If this policy is enabled, Firefox Suggest preferences cannot be changed by the user.
+Если эта политика отключена или не настроена, вы не позволяете Mozilla обрабатывать ваши поисковые запросы.</string>
+      <string id="FirefoxSuggest_Locked">Не разрешать изменять настройки</string>
+      <string id="FirefoxSuggest_Locked_Explain">Если эта политика включена, настройки Firefox Suggest не могут быть изменены пользователем.
 
-If this policy is disabled or not configured, the user can change their Firefox Suggest preferences.</string>
-      <string id="PrintingEnabled">Printing</string>
-      <string id="PrintingEnabled_Explain">If this policy is disabled, printing is disabled.
+Если эта политика отключена или не настроена, пользователь может изменить свои настройки Firefox Suggest.</string>
+      <string id="PrintingEnabled">Печать</string>
+      <string id="PrintingEnabled_Explain">Если эта политика отключена, печать отключена.
 
-If this policy is enabled or not configured, printing is enabled.</string>
-      <string id="ManualAppUpdateOnly">Manual Update Only</string>
-      <string id="ManualAppUpdateOnly_Explain">If this policy is enabled, users will not be prompted to install updates and Firefox will not check for updates in the background. The user must manually check and install updates from the About dialog.
+Если эта политика включена или не настроена, печать включена.</string>
+      <string id="ManualAppUpdateOnly">Только ручное обновление</string>
+      <string id="ManualAppUpdateOnly_Explain">Если эта политика включена, пользователям не будет предложено установить обновления, и Firefox не будет проверять наличие обновлений в фоновом режиме. Пользователь должен вручную проверять и устанавливать обновления из диалогового окна «О программе».
 
-If this policy is disabled or not configured, the browser receives updates.
+Если эта политика отключена или не настроена, браузер получает обновления.
 
-This policy is not recommended for most users.</string>
-      <string id="AllowFileSelectionDialogs">Allow File Selection Dialogs</string>
-      <string id="AllowFileSelectionDialogs_Explain">If this policy is disabled, users will not be able to open file selection dialogs. In most cases, Firefox will act as if the user clicked the cancel button.
+Эта политика не рекомендуется для большинства пользователей.</string>
+      <string id="AllowFileSelectionDialogs">Разрешить диалоги выбора файлов</string>
+      <string id="AllowFileSelectionDialogs_Explain">Если эта политика отключена, пользователи не смогут открывать диалоги выбора файлов. В большинстве случаев Firefox будет действовать так, как будто пользователь нажал кнопку отмены.
 
-If this policy is enabled or not configured, users can open file selection dialogs.</string>
-      <string id="AutofillAddressEnabled">Enable autofill for addresses</string>
-      <string id="AutofillAddressEnabled_Explain">If this policy is disabled, addresses will not be autofilled for Firefox versions and regions that support it.
+Если эта политика включена или не настроена, пользователи могут открывать диалоги выбора файлов.</string>
+      <string id="AutofillAddressEnabled">Включить автозаполнение адресов</string>
+      <string id="AutofillAddressEnabled_Explain">Если эта политика отключена, адреса не будут автоматически заполняться для версий Firefox и регионов, которые ее поддерживают.
 
-If this policy is enabled or not configured, addresses will be autofilled for Firefox versions and regions that support it.</string>
-      <string id="AutofillCreditCardEnabled">Enable autofill for payment methods</string>
-      <string id="AutofillCreditCardEnabled_Explain">If this policy is disabled, payment methods will not be autofilled for Firefox versions and regions that support it.
+Если эта политика включена или не настроена, адреса будут автоматически заполняться для версий Firefox и регионов, которые ее поддерживают.</string>
+      <string id="AutofillCreditCardEnabled">Включить автозаполнение для способов оплаты</string>
+      <string id="AutofillCreditCardEnabled_Explain">Если эта политика отключена, способы оплаты не будут автоматически заполняться для версий Firefox и регионов, которые ее поддерживают.
 
-If this policy is enabled or not configured, payment methods will be autofilled for Firefox versions and regions that support it.</string>
-      <string id="TranslateEnabled">Enable webpage translation</string>
-      <string id="TranslateEnabled_Explain">If this policy is disabled, web page translation will not be available.
+Если эта политика включена или не настроена, способы оплаты будут автоматически заполняться для версий Firefox и регионов, которые ее поддерживают.</string>
+      <string id="TranslateEnabled">Включить перевод веб-страниц</string>
+      <string id="TranslateEnabled_Explain">Если эта политика отключена, перевод веб-страниц не будет доступен.
 
-If this policy is enabled or not configured, web page translation will be available.
+Если эта политика включена или не настроена, перевод веб-страниц будет доступен.
 
-Note: Web page translation is done completely on the client, so there is no data or privacy risk.</string>
-      <string id="DisableEncryptedClientHello">Disable Encrypted Client Hello</string>
-      <string id="DisableEncryptedClientHello_Explain">If this policy is enabled, the TLS feature Encrypted Client Hello (ECH) will be disabled.
+Примечание: перевод веб-страниц выполняется полностью на клиенте, поэтому нет риска для данных или конфиденциальности.</string>
+      <string id="DisableEncryptedClientHello">Отключить зашифрованное приветствие клиента</string>
+      <string id="DisableEncryptedClientHello_Explain">Если эта политика включена, функция TLS «Зашифрованное приветствие клиента» (ECH) будет отключена.
 
-If this policy is disabled or not configured, the TLS feature Encrypted Client Hello (ECH) will be enabled.</string>
-      <string id="PostQuantumKeyAgreementEnabled">Enable post-quantum key agreement</string>
-      <string id="PostQuantumKeyAgreementEnabled_Explain">If this policy is enabled, post-quantum key agreement for TLS will be enabled.
+Если эта политика отключена или не настроена, функция TLS Encrypted Client Hello (ECH) будет включена.</string>
+      <string id="PostQuantumKeyAgreementEnabled">Включить постквантовое согласование ключей</string>
+      <string id="PostQuantumKeyAgreementEnabled_Explain">Если эта политика включена, постквантовое согласование ключей для TLS будет включено.
 
-If this policy is disabled or not configured, post-quantum key agreement for TLS will be disabled.</string>
-      <string id="HttpsOnlyMode">HTTPS-Only Mode</string>
-      <string id="HttpsOnlyMode_Explain">If this policy is enabled, you can set the default behavior for HTTPS-Only Mode.
+Если эта политика отключена или не настроена, постквантовое согласование ключей для TLS будет отключено.</string>
+      <string id="HttpsOnlyMode">Режим только HTTPS</string>
+      <string id="HttpsOnlyMode_Explain">Если эта политика включена, вы можете задать поведение по умолчанию для режима только HTTPS.
 
-If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</string>
-      <string id="HttpsOnlyMode_Allowed">Off by default</string>
-      <string id="HttpsOnlyMode_Disallowed">Off and locked</string>
-      <string id="HttpsOnlyMode_Enabled">On by default</string>
-      <string id="HttpsOnlyMode_ForceEnabled">On and locked</string>
-      <string id="HttpAllowlist">HTTP Allowlist </string>
-      <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
+Если эта политика отключена или не настроена, режим только HTTPS не включен.</string>
+      <string id="HttpsOnlyMode_Allowed">Выключено по умолчанию</string>
+      <string id="HttpsOnlyMode_Disallowed">Выключено и заблокировано</string>
+      <string id="HttpsOnlyMode_Enabled">Включено по умолчанию</string>
+      <string id="HttpsOnlyMode_ForceEnabled">Включено и заблокировано</string>
+      <string id="HttpAllowlist">Список разрешенных HTTP</string>
+      <string id="HttpAllowlist_Explain">Если эта политика включена, вы можете указать список источников, которые не будут обновлены до HTTPS.
 
-If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>
+Если эта политика отключена или не настроена, все источники обновляются до HTTPS, если включен режим «Только HTTPS».</string>
+      <string id="PrivateBrowsingModeAvailability">Доступность режима приватного просмотра</string>
+      <string id="PrivateBrowsingModeAvailability_Explain">Если эта политика включена, вы можете настроить доступность режима приватного просмотра.
+
+Если эта политика отключена или не настроена, доступен режим приватного просмотра.</string>
+      <string id="PrivateBrowsingModeAvailability_0">Разрешить режим приватного просмотра</string>
+      <string id="PrivateBrowsingModeAvailability_1">Отключить режим приватного просмотра</string>
+      <string id="PrivateBrowsingModeAvailability_2">Принудительно включить режим приватного просмотра</string>
       <string id="Preferences_Boolean_Explain">Если эта политика включена, предпочтение заблокировано на true. Если эта политика отключена, предпочтение заблокировано на false.
 
 Описание предпочтения см.:
@@ -1489,6 +1500,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="HttpsOnlyMode">
         <dropdownList refId="HttpsOnlyMode"/>
+      </presentation>
+      <presentation id="PrivateBrowsingModeAvailability">
+        <dropdownList refId="PrivateBrowsingModeAvailability"/>
       </presentation>
     </presentationTable>
   </resources>
