@@ -568,7 +568,7 @@
 		<true/>
 	</dict>
 	<key>PostQuantumKeyAgreementEnabled</key>
-	</false>
+	<false/>
 	<key>Preferences</key>
 	<dict>
 		<key>accessibility.force_disabled</key>
