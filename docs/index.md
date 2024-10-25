@@ -333,7 +333,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="AppUpdatePin" value="106."/>
+<data id="String" value="106."/>
 ```
 #### macOS
 ```
