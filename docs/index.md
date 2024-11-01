@@ -5275,9 +5275,9 @@ as well as the following security preferences:
 | security.mixed_content.block_active_content | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed active content (HTTP subresources such as scripts, fetch requests, etc. on a HTTPS page) will be blocked.
 | security.mixed_content.block_display_content | boolean | false
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be blocked. (Firefox 127, Firefox ESR 128.0)
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be blocked and ```security.mixed_content.upgrade_display_content``` will be ignored. (Firefox 127, Firefox ESR 128.0)
 | security.mixed_content.upgrade_display_content | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be upgraded to HTTPS. (Firefox 127, Firefox ESR 128.0)
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to false, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will NOT be upgraded to HTTPS. (Firefox 127, Firefox ESR 128.0)
 | security.osclientcerts.autoload | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.OCSP.enabled | integer | 1
