@@ -90,6 +90,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 | **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates.
+| **[`MicrosoftEntraSSO`](#microsoftentrasso)** | Allow single sign-on for Microsoft Entra accounts on macOS.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -4308,6 +4309,30 @@ Value (string):
 {
   "policies": {
     "ManualAppUpdateOnly": true | false
+  }
+}
+```
+### MicrosoftEntraSSO
+Allow single sign-on for Microsoft Entra accounts on macOS.
+
+If this policy is set to true, Firefox will use credentials stored in the Company Portal to sign in to Microsoft Entra accounts.
+
+**Compatibility:** Firefox 132.0.1, Firefox ESR 128.5\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.http.microsoft-entra-sso.enabled`
+
+#### macOS
+```
+<dict>
+  <key>MicrosoftEntraSSO</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "MicrosoftEntraSSO": true | false
   }
 }
 ```

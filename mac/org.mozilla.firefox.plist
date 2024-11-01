@@ -427,6 +427,8 @@
 	</array>
 	<key>PrimaryPassword</key>
 	<true/>
+	<key>MicrosoftEntraSSO</key>
+	<true/>
 	<key>NetworkPrediction</key>
 	<false/>
 	<key>NewTabPage</key>
