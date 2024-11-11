@@ -3093,6 +3093,9 @@ This policy maps an extension ID to its configuration. With an extension ID, the
 To obtain an extension ID, install the extension and go to about:support. You will see the ID in the Extensions section. I've also created an extension that makes it easy to find the ID of extensions on AMO. You can download it [here](https://github.com/mkaply/queryamoid/releases/tag/v0.1).
 Or you can ask the Mozilla Addons API, see [docs](https://mozilla.github.io/addons-server/topics/api/addons.html#detail), which returns the ID as `guid`: https://addons.mozilla.org/api/v5/addons/addon/ublock-origin/
 
+**Note:**
+If the extension ID is a UUID ({12345678-1234-1234-1234-1234567890ab}), you must include the curly braces around the ID.
+
 The configuration for each extension is another dictionary that can contain the fields documented below.
 
 | Name | Description |
