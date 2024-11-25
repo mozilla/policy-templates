@@ -98,8 +98,8 @@
       <string id="EncryptedMediaExtensions_group">Зашифрованные медиа-сообщения</string>
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Картинка в картинке</string>
-      <string id="ProxySettings_group">Proxy Settings</string>
-      <string id="SecurityDevices_group">Security Devices</string>
+      <string id="ProxySettings_group">Настройки прокси</string>
+      <string id="SecurityDevices_group">Устройства безопасности</string>
       <string id="FirefoxSuggest_group">Firefox Suggest (US only)</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
@@ -211,9 +211,9 @@
 
 Если эта политика отключена или не настроена, DNS через HTTPS использует конфигурацию Firefox по умолчанию.</string>
       <string id="DNSOverHTTPS_Fallback">Fallback</string>
-      <string id="DNSOverHTTPS_Fallback_Explain">If this policy is disabled, Firefox will not fallback to your default DNS resolver if there is a problem with the secure DNS provider.
+      <string id="DNSOverHTTPS_Fallback_Explain">Если эта политика отключена, Firefox не будет использовать ваш DNS-резолвер по умолчанию, если возникнут проблемы с поставщиком защищенного DNS.
 
-If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
+Если эта политика включена или не настроена, Firefox будет использовать ваш DNS-резолвер по умолчанию, если возникнут проблемы с поставщиком защищенного DNS.</string>
       <string id="DisableMasterPasswordCreation">Отключить создание мастер-пароля</string>
       <string id="DisableMasterPasswordCreation_Explain">Если эта политика включена, пользователи не могут создать мастер-пароль.
 
@@ -308,10 +308,10 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="DisplayBookmarksToolbar_Explain">Если эта политика включена, панель закладок по умолчанию отображается. Пользователь может её скрыть.
 
 Если эта политика отключена или не настроена, панель закладок по умолчанию не отображается.</string>
-      <string id="DisplayBookmarksToolbar_Enum">Display Bookmarks Toolbar</string>
-      <string id="DisplayBookmarksToolbar_Enum_Explain">If this policy is enabled, the default bokmarks toolbar display can be configured.
+      <string id="DisplayBookmarksToolbar_Enum">Отображение панели закладок</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">Если эта политика включена, можно настроить отображение панели закладок по умолчанию.
 
-If this policy is disabled or not configured, the bookmarks toolbar is displayed on the new tab page by default.</string>
+Если эта политика отключена или не настроена, панель закладок отображается на новой вкладке по умолчанию.</string>
       <string id="DisplayBookmarksToolbar_Always">Always</string>
       <string id="DisplayBookmarksToolbar_Never">Never</string>
       <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
@@ -625,15 +625,15 @@ If this policy is disabled or not configured, the bookmarks toolbar is displayed
       <string id="WebsiteFilter_Block_Explain">Если эта политика включена, вы можете указать шаблоны соответствия, указывающие на сайты, которые должны быть заблокированы. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
 
 Если эта политика отключена или не настроена, никакие веб-сайты не блокируются.</string>
-       <string id="WebsiteFilter_Exceptions">Исключения для заблокированных веб-сайтов</string>
-       <string id="WebsiteFilter_Exceptions_Explain">Если эта политика включена и фильтр веб-сайтов включен, вы можете указать шаблоны соответствия для сайтов, которые не хотите блокировать. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
+      <string id="WebsiteFilter_Exceptions">Исключения для заблокированных веб-сайтов</string>
+      <string id="WebsiteFilter_Exceptions_Explain">Если эта политика включена и фильтр веб-сайтов включен, вы можете указать шаблоны соответствия для сайтов, которые не хотите блокировать. Шаблоны соответствия задокументированы на https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Ограничение на ввод — 1000.
 
 Если эта политика отключена или не настроена, для фильтра веб-сайтов нет исключений.</string>
-      <string id="WebsiteFilterOneLine">Website Filter (JSON on one line)</string>
-      <string id="WebsiteFilter">Website Filter (JSON)</string>
-      <string id="WebsiteFilter_Explain">If this policy is enabled, you can specify blocked sites and exceptions via JSON.
+      <string id="WebsiteFilterOneLine">Фильтр веб-сайтов (JSON в одной строке)</string>
+      <string id="WebsiteFilter">Фильтр веб-сайтов (JSON)</string>
+      <string id="WebsiteFilter_Explain">Если эта политика включена, вы можете указать заблокированные сайты и исключения через JSON.
 
-If this policy is disabled or not configured, websites are not filtered.</string>
+Если эта политика отключена или не настроена, веб-сайты не фильтруются.</string>
       <string id="Bookmark01">Закладка 01</string>
       <string id="Bookmark02">Закладка 02</string>
       <string id="Bookmark03">Закладка 03</string>
@@ -778,10 +778,10 @@ If this policy is disabled or not configured, websites are not filtered.</string
       <string id="TrackingProtection_Locked_Explain">Если эта политика включена, пользователь не может изменить настройки защиты от отслеживания.
 
 Если эта политика отключена или не настроена, пользователь может изменить настройки защиты от отслеживания.</string>
-      <string id="TrackingProtection_EmailTracking">Email Tracking</string>
-      <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
+      <string id="TrackingProtection_EmailTracking">Отслеживание электронной почты</string>
+      <string id="TrackingProtection_EmailTracking_Explain">Если эта политика включена, скрытые пиксели отслеживания электронной почты и скрипты на веб-сайтах блокируются.
 
-If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
+Если эта политика отключена или не настроена, скрытые пиксели отслеживания электронной почты и скрипты на веб-сайтах не блокируются.</string>
       <string id="RequestedLocales">Запрошенный языковой стандарт</string>
       <string id="RequestedLocalesString">Запрошенный языковой стандарт (строка)</string>
       <string id="RequestedLocales_Explain">Если эта политика включена, вы можете указать список запрошенных локалей для приложения в порядке предпочтения. Это приведет к активации соответствующего языкового пакета.
@@ -791,11 +791,11 @@ If this policy is disabled or not configured, hidden email tracking pixels and s
       <string id="SecurityDevices_Explain">Если эта политика включена, вы можете указать список модулей PKCS # 11 для установки. Модули указываются в виде имени и полного пути.
 
 Если эта политика отключена или не настроена, дополнительные модули PKCS # 11 не будут установлены.</string>
-      <string id="SecurityDevices_Add">Add</string>
-      <string id="SecurityDevices_Delete">Delete</string>
-      <string id="SecurityDevices_Delete_Explain">If this policy is enabled, you can specify the names of PKCS #11 modules to be deleted.
+      <string id="SecurityDevices_Add">Добавить</string>
+      <string id="SecurityDevices_Delete">Удалить</string>
+      <string id="SecurityDevices_Delete_Explain">Если эта политика включена, вы можете указать имена модулей PKCS #11, которые нужно удалить.
 
-If this policy is disabled or not configured, no PKCS #11 modules will be deleted.</string>
+Если эта политика отключена или не настроена, модули PKCS #11 не будут удалены.</string>
       <string id="SearchBar">Расположение панели поиска</string>
       <string id="SearchBar_Explain">Если эта политика включена, вы можете указать, будет ли панель поиска отделена от строки URL.
 
@@ -1042,10 +1042,12 @@ If this policy is disabled or not configured, no PKCS #11 modules will be delete
       <string id="Proxy_AutoLogin_Explain">Если эта политика включена, Firefox не будет запрашивать аутентификацию прокси при сохранении пароля.
 
 Если эта политика отключена или не настроена, Firefox всегда будет запрашивать аутентификацию прокси.</string>
-      <string id="Proxy_UseProxyForDNS">Прокси-DNS при использовании SOCKS v5</string>
-      <string id="Proxy_UseProxyForDNS_Explain">Если эта политика включена, DNS будет проксироваться при использовании SOCKS v5.
+      <string id="Proxy_UseProxyForDNS">Прокси DNS при использовании SOCKS</string>
+      <string id="Proxy_UseProxyForDNS_Explain">Если эта политика включена, DNS проксируется при использовании SOCKS.
 
-Если эта политика отключена или не настроена, DNS не проксируется при использовании SOCKS v5.</string>
+Если эта политика отключена, DNS не проксируется при использовании SOCKS.
+
+Если эта политика не настроена, DNS не проксируется при использовании SOCKS v4, но проксируется при использовании SOCKS v5.</string>
       <string id="DisableThirdPartyModuleBlocking">Отключить блокировку сторонних модулей</string>
       <string id="DisableThirdPartyModuleBlocking_Explain">Если эта политика включена, пользователям не разрешено блокировать сторонние модули со страницы about:third-party.
 
@@ -1469,20 +1471,20 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="Proxy_HTTPProxy">
         <textBox refId="Proxy_HTTPProxy">
-          <label>Host including port:</label>
+          <label>SOCKS хост:</label>
         </textBox>
       </presentation>
       <presentation id="Proxy_SSLProxy">
         <textBox refId="Proxy_SSLProxy">
-          <label>Host including port:</label>
+          <label>SOCKS хост:</label>
         </textBox>
       </presentation>
       <presentation id="Proxy_SOCKSProxy">
-        <text>Host including port:</text>
+        <text>SOCKS хост:</text>
         <textBox refId="Proxy_SOCKSProxy">
           <label/>
         </textBox>
-        <text>SOCKS Version:</text>
+        <text>Версия SOCKS:</text>
         <dropdownList refId="Proxy_SOCKSVersion"/>
       </presentation>
       <presentation id="Proxy_AutoConfigURL">
@@ -1491,12 +1493,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         </textBox>
       </presentation>
       <presentation id="Proxy_Passthrough">
-        <text>No proxy for</text>
+        <text>Нет прокси для</text>
         <textBox refId="Proxy_Passthrough">
           <label/>
         </textBox>
-        <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
-        <text>Connections to localhost, 127.0.0.1/8, and ::1 are never proxied.</text>
+        <text>Пример: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Подключения к localhost, 127.0.0.1/8 и ::1 никогда не проксируются.</text>
       </presentation>
       <presentation id="HttpsOnlyMode">
         <dropdownList refId="HttpsOnlyMode"/>
