@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="6.4" schemaVersion="1.0">
+<policyDefinitionResources revision="6.5" schemaVersion="1.0">
   <displayName/>
   <description/>
   <resources>
@@ -74,6 +74,7 @@
       <string id="SUPPORTED_FF128">Firefox 128 или более поздние версии, Firefox 105.13 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF129">Firefox 129 или более поздние версии, Firefox 105.14 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF130">Firefox 130 или более поздние версии, Firefox 105.15 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF130_ONLY">Firefox 130 или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
