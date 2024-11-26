@@ -5265,6 +5265,7 @@ general.autoScroll (Firefox 83, Firefox ESR 78.5)
 general.smoothScroll (Firefox 83, Firefox ESR 78.5)
 geo.
 gfx.
+identity.fxaccounts.toolbar (Firefox 133)
 intl.
 keyword.enabled (Firefox 95, Firefox ESR 91.4)
 layers.
@@ -5314,6 +5315,8 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp; If true, if an OCSP request times out, the connection fails.
 | security.osclientcerts.assume_rsa_pss_support | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS. (Firefox 114, Firefox ESR 102.12)
+| security.pki.certificate_transparency.mode | integer | 0
+| &nbsp;&nbsp;&nbsp;&nbsp; Configures Certificate Transparency support mode (Firefox 133)
 | security.ssl.enable_ocsp_stapling | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, OCSP stapling is not enabled.
 | security.ssl.errorReporting.enabled | boolean | true
