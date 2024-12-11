@@ -1385,7 +1385,6 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
-```
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_InterceptionPoints_DragAndDrop_Enabled
@@ -1394,7 +1393,6 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
-```
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_InterceptionPoints_FileUpload_Enabled
@@ -1402,7 +1400,6 @@ OMA-URI:
 Value (string):
 ```
 <enabled/> or <disabled/>
-```
 ```
 OMA-URI:
 ```
