@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="6.1" schemaVersion="1.0">
+<policyDefinitionResources revision="6.5" schemaVersion="1.0">
   <displayName/>
   <description/>
   <resources>
@@ -73,6 +73,7 @@
       <string id="SUPPORTED_FF128">Firefox 128 or later, Firefox 115.13 ESR or later</string>
       <string id="SUPPORTED_FF129">Firefox 129 or later, Firefox 115.14 ESR or later</string>
       <string id="SUPPORTED_FF130">Firefox 130 or later, Firefox 115.15 ESR or later</string>
+      <string id="SUPPORTED_FF130_ONLY">Firefox 130 or later</string>
       <string id="SUPPORTED_FF131">Firefox 131 or later, Firefox 115.16 ESR or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -610,7 +611,7 @@ If this policy is disabled or not configured, sessions not cleared when the brow
       <string id="SanitizeOnShutdown_SiteSettings_Explain">If the policy is enabled, site preferences are cleared when the browser is closed.
 
 If this policy is disabled or not configured, site preferences are not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Data (Deprecated)</string>
       <string id="SanitizeOnShutdown_OfflineApps_Explain">If the policy is enabled, offline application storage is cleared when the browser is closed.
 
 If this policy is disabled or not configured, offline application storage is not cleared when the browser is closed.</string>
@@ -869,6 +870,10 @@ If this policy is disabled or not configured, onboarding messages will be shown 
       <string id="UserMessaging_MoreFromMozilla_Explain">If this policy is disabled, the More from Mozilla section will not be shown in preferences.
 
 If this policy is enabled or not configured, the More from Mozilla section will be shown in preferences.</string>
+      <string id="UserMessaging_FirefoxLabs">Firefox Labs</string>
+      <string id="UserMessaging_FirefoxLabs_Explain">If this policy is disabled, the Firefox Labs section will not be shown in preferences.
+
+If this policy is enabled or not configured, the Firefox Labs section will be shown in preferences.</string>
       <string id="UserMessaging_Locked">Do not allow user messaging preferences to be changed</string>
       <string id="UserMessaging_Locked_Explain">If this policy is disabled, user messaging preferences can be changed by the user.
 
@@ -1037,10 +1042,12 @@ If this policy is disabled or not configured, Firefox does not bypass the proxy.
       <string id="Proxy_AutoLogin_Explain">If this policy is enabled, Firefox will not prompt for proxy authentication when a password is saved.
 
 If this policy is disabled or not configured, Firefox will always prompt for proxy authentication.</string>
-      <string id="Proxy_UseProxyForDNS">Proxy DNS when using SOCKS v5</string>
-      <string id="Proxy_UseProxyForDNS_Explain">If this policy is enabled, DNS is proxied when using SOCKS v5.
+      <string id="Proxy_UseProxyForDNS">Proxy DNS when using SOCKS</string>
+      <string id="Proxy_UseProxyForDNS_Explain">If this policy is enabled, DNS is proxied when using SOCKS.
 
-If this policy is disabled or not configured, DNS is not proxied when using SOCKS v5.</string>
+If this policy is disabled, DNS is not proxied when using SOCKS.
+
+If this policy not configured, DNS is not proxied when using SOCKS v4, but proxied when using SOCKS v5.</string>
       <string id="DisableThirdPartyModuleBlocking">Disable Third Party Module Blocking</string>
       <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, users are not allowed to block third-party modules from the about:third-party page.
 
@@ -1120,6 +1127,13 @@ If this policy is disabled or not configured, HTTPS-Only Mode is not enabled.</s
       <string id="HttpAllowlist_Explain">If this policy is enabled, you can specify a list origins that will not be upgraded to HTTPS.
 
 If this policy is disabled or not configured, all origins are upgraded to HTTPS if HTTPS-Only Mode is enabled.</string>
+      <string id="PrivateBrowsingModeAvailability">Private Browsing Mode Availability</string>
+      <string id="PrivateBrowsingModeAvailability_Explain">If this policy is enabled, you can set the availability of Private Browsing Mode.
+
+If this policy is disabled or not configured, Private Browsing Mode is available.</string>
+      <string id="PrivateBrowsingModeAvailability_0">Allow Private Browsing Mode</string>
+      <string id="PrivateBrowsingModeAvailability_1">Disable Private Browsing Mode</string>
+      <string id="PrivateBrowsingModeAvailability_2">Force Private Browsing Mode</string>
       <string id="ContentAnalysis_AgentName">Agent Name</string>
       <string id="ContentAnalysis_AgentName_Explain">If this policy is enabled, you can specify the name of the DLP agent, used in dialogs and notifications about DLP operations.
 
@@ -1538,12 +1552,15 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <presentation id="HttpsOnlyMode">
         <dropdownList refId="HttpsOnlyMode"/>
       </presentation>
+      <presentation id="PrivateBrowsingModeAvailability">
+        <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
       <presentation id="ContentAnalysis_DefaultResult">
         <dropdownList refId="ContentAnalysis_DefaultResult"/>
       </presentation>
       <presentation id="Number">
         <decimalTextBox refId="Number"/>
       </presentation>
-    </presentationTable>
+   </presentationTable>
   </resources>
 </policyDefinitionResources>

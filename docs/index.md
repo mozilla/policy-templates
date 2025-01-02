@@ -90,6 +90,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 | **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates.
+| **[`MicrosoftEntraSSO`](#microsoftentrasso)** | Allow single sign-on for Microsoft Entra accounts on macOS.
 | **[`NetworkPrediction`](#networkprediction)** | Enable or disable network prediction (DNS prefetching).
 | **[`NewTabPage`](#newtabpage)** | Enable or disable the New Tab page.
 | **[`NoDefaultBookmarks`](#nodefaultbookmarks)** | Disable the creation of default bookmarks.
@@ -107,6 +108,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`Preferences`](#preferences)** | Set and lock preferences.
 | **[`PrimaryPassword`](#primarypassword)** | Require or prevent using a primary (formerly master) password.
 | **[`PrintingEnabled`](#printingenabled)** | Enable or disable printing.
+| **[`PrivateBrowsingModeAvailability`](#privatebrowsingmodeavailability)** | Set availability of private browsing mode.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
 | **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
@@ -332,7 +334,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="AppUpdatePin" value="106."/>
+<data id="String" value="106."/>
 ```
 #### macOS
 ```
@@ -1264,15 +1266,26 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `Enabled` indicates whether Firefox should use DLP. Note that if this value is true and no DLP agent is running, all DLP requests will be denied unless `DefaultResult` is set to 1 or 2.
 
+`InterceptionPoints` controls settings for specific interception points.
+
+* The `Clipboard` entry controls clipboard operations for files and text.
+  * `Enabled` indicates whether clipboard operations should use DLP. The default is true.
+* The `DragAndDrop` entry controls drag and drop operations for files and text.
+  * `Enabled` indicates whether drag and drop operations should use DLP. The default is true.
+* The `FileUpload` entry controls file upload operations for files chosen from the file picker.
+  * `Enabled` indicates whether file upload operations should use DLP. The default is true.
+* The `Print` entry controls print operation.
+  * `Enabled` indicates whether print operations should use DLP. The default is true.
+
 `IsPerUser` indicates whether the pipe the DLP agent has created is per-user or per-system. The default is true, meaning per-user.
 
 `PipePathName` is the name of the pipe the DLP agent has created and Firefox will connect to. The default is "path_user".
 
 `ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
 
-**Compatibility:** Firefox 130\
+**Compatibility:** Firefox 132\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
 
 #### Windows (GPO)
 ```
@@ -1284,6 +1297,10 @@ Software\Policies\Mozilla\Firefox\ContentAnalysis\ClientSignature = "My DLP Comp
 Software\Policies\Mozilla\Firefox\ContentAnalysis\DefaultResult = 0x0 | 0x1 | 0x2
 Software\Policies\Mozilla\Firefox\ContentAnalysis\DenyUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\FileUpload\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Print\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\IsPerUser = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\PipePathName = "pipe_custom_name"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\ShowBlockedResult = 0x1 | 0x0
@@ -1362,6 +1379,38 @@ Value (string):
 ```
 OMA-URI:
 ```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_InterceptionPoints_Clipboard_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_InterceptionPoints_DragAndDrop_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_InterceptionPoints_FileUpload_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_InterceptionPoints_Print_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_IsPerUser
 ```
 Value (string):
@@ -1399,6 +1448,20 @@ Value (string):
       "DefaultResult": 0 | 1 | 2,
       "DenyUrlRegexList": "https://example\.com/.* https://subdomain\.example\.com/.*",
       "Enabled": true | false,
+      "InterceptionPoints": {
+        "Clipboard": {
+          "Enabled": true | false
+        },
+        "DragAndDrop": {
+          "Enabled": true | false
+        },
+        "FileUpload": {
+          "Enabled": true | false
+        },
+        "Print": {
+          "Enabled": true | false
+        }
+      },
       "IsPerUser": true | false,
       "PipePathName": "pipe_custom_name",
       "ShowBlockedResult": true | false,
@@ -2153,6 +2216,8 @@ Value (string):
 ```
 ### DisablePrivateBrowsing
 Remove access to private browsing.
+
+This policy is superseded by [`PrivateBrowsingModeAvailability`](#privatebrowsingmodeavailability)
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePrivateBrowsing`\
@@ -3087,6 +3152,10 @@ Manage all aspects of extensions. This policy is based heavily on the [Chrome po
 This policy maps an extension ID to its configuration. With an extension ID, the configuration will be applied to the specified extension only. A default configuration can be set for the special ID "*", which will apply to all extensions that don't have a custom configuration set in this policy.
 
 To obtain an extension ID, install the extension and go to about:support. You will see the ID in the Extensions section. I've also created an extension that makes it easy to find the ID of extensions on AMO. You can download it [here](https://github.com/mkaply/queryamoid/releases/tag/v0.1).
+Or you can ask the Mozilla Addons API, see [docs](https://mozilla.github.io/addons-server/topics/api/addons.html#detail), which returns the ID as `guid`: https://addons.mozilla.org/api/v5/addons/addon/ublock-origin/
+
+**Note:**
+If the extension ID is a UUID ({12345678-1234-1234-1234-1234567890ab}), you must include the curly braces around the ID.
 
 The configuration for each extension is another dictionary that can contain the fields documented below.
 
@@ -3097,7 +3166,7 @@ The configuration for each extension is another dictionary that can contain the 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blocked`| Blocks installation of the extension and removes it from the device if already installed.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
-| `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension.  If installing from the local file system, use a [```file:///``` URL](https://en.wikipedia.org/wiki/File_URI_scheme). If installing from the addons.mozilla.org, use the following URL (substituting SHORT_NAME from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/SHORT_NAME/latest.xpi. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
+| `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension.  If installing from the local file system, use a [```file:///``` URL](https://en.wikipedia.org/wiki/File_URI_scheme). If installing from the addons.mozilla.org, use the following URL (substituting ID with the extension ID or with the short name from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/ID/latest.xpi. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
 | `install_sources` | A list of sources from which installing extensions is allowed using URL match patterns. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "locale" This setting can be used only for the default configuration.
 | `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
@@ -3122,7 +3191,11 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
   },
   "uBlock0@raymondhill.net": {
     "installation_mode": "force_installed",
-    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"  # using slug / short name
+  },
+  "adguardadblocker@adguard.com": {
+    "installation_mode": "force_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"  # using extension ID
   },
   "https-everywhere@eff.org": {
     "installation_mode": "allowed",
@@ -3150,6 +3223,11 @@ Value (string):
     "installation_mode": "force_installed",
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
   },
+  "adguardadblocker@adguard.com": {
+    "installation_mode": "force_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"
+  },
+  {
     "https-everywhere@eff.org": {
     "installation_mode": "allowed",
     "updates_disabled": false
@@ -3195,6 +3273,13 @@ Value (string):
       <key>install_url</key>
       <string>https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi</string>
     </dict>
+    <key>adguardadblocker@adguard.com</key>
+    <dict>
+      <key>installation_mode</key>
+      <string>force_installed</string>
+      <key>install_url</key>
+      <string>https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi</string>
+    </dict>
     <key>https-everywhere@eff.org</key>
     <dict>
       <key>installation_mode</key>
@@ -3219,6 +3304,10 @@ Value (string):
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      },
+      "adguardadblocker@adguard.com": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"
       },
       "https-everywhere@eff.org": {
         "installation_mode": "allowed",
@@ -4287,6 +4376,30 @@ Value (string):
   }
 }
 ```
+### MicrosoftEntraSSO
+Allow single sign-on for Microsoft Entra accounts on macOS.
+
+If this policy is set to true, Firefox will use credentials stored in the Company Portal to sign in to Microsoft Entra accounts.
+
+**Compatibility:** Firefox 132.0.1, Firefox ESR 128.5\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.http.microsoft-entra-sso.enabled`
+
+#### macOS
+```
+<dict>
+  <key>MicrosoftEntraSSO</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "MicrosoftEntraSSO": true | false
+  }
+}
+```
 ### NetworkPrediction
 Enable or disable network prediction (DNS prefetching).
 
@@ -5213,6 +5326,7 @@ general.autoScroll (Firefox 83, Firefox ESR 78.5)
 general.smoothScroll (Firefox 83, Firefox ESR 78.5)
 geo.
 gfx.
+identity.fxaccounts.toolbar (Firefox 133)
 intl.
 keyword.enabled (Firefox 95, Firefox ESR 91.4)
 layers.
@@ -5251,9 +5365,9 @@ as well as the following security preferences:
 | security.mixed_content.block_active_content | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed active content (HTTP subresources such as scripts, fetch requests, etc. on a HTTPS page) will be blocked.
 | security.mixed_content.block_display_content | boolean | false
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be blocked. (Firefox 127, Firefox ESR 128.0)
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be blocked and ```security.mixed_content.upgrade_display_content``` will be ignored. (Firefox 127, Firefox ESR 128.0)
 | security.mixed_content.upgrade_display_content | boolean | true
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to true, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will be upgraded to HTTPS. (Firefox 127, Firefox ESR 128.0)
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to false, mixed passive/display content (HTTP subresources such as images, videos, etc. on a HTTPS page) will NOT be upgraded to HTTPS. (Firefox 127, Firefox ESR 128.0)
 | security.osclientcerts.autoload | boolean | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, client certificates are loaded from the operating system certificate store.
 | security.OCSP.enabled | integer | 1
@@ -5262,6 +5376,8 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp; If true, if an OCSP request times out, the connection fails.
 | security.osclientcerts.assume_rsa_pss_support | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS. (Firefox 114, Firefox ESR 102.12)
+| security.pki.certificate_transparency.mode | integer | 0
+| &nbsp;&nbsp;&nbsp;&nbsp; Configures Certificate Transparency support mode (Firefox 133)
 | security.ssl.enable_ocsp_stapling | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, OCSP stapling is not enabled.
 | security.ssl.errorReporting.enabled | boolean | true
@@ -5482,6 +5598,48 @@ Value (string):
 {
   "policies": {
     "PrintingEnabled": true | false
+  }
+}
+```
+### PrivateBrowsingModeAvailability
+Set availability of private browsing mode.
+
+Possible values are `0` (Private Browsing mode is available), `1` (Private Browsing mode not available), and `2`(Private Browsing mode is forced).
+
+This policy supersedes [`DisablePrivateBrowsing`](#disableprivatebrowsing)
+
+Note: This policy missed Firefox ESR 128.2, but it will be in Firefox ESR 128.3.
+
+**Compatibility:** Firefox 130, Firefox ESR 128.3\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\PrivateBrowsingModeAvailability = 0x0 | 0x1 | 0x2
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PrivateBrowsingModeAvailability
+```
+Value (string):
+```
+<enabled/>
+<data id="PrivateBrowsingModeAvailability" value="0 | 1 | 2"/>
+```
+#### macOS
+```
+<dict>
+  <key>PrivateBrowsingModeAvailability</key>
+  <integer>0 | 1 | 2</integer>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "PrivateBrowsingModeAvailability": 0 | 1 | 2
   }
 }
 ```
@@ -5815,7 +5973,7 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 
 `SiteSettings` Site Preferences
 
-`OfflineApps` Offline Website Data.
+`OfflineApps` Offline Website Data (*Deprecated - part of Cookies*)
 
 `Locked` prevents the user from changing these preferences.
 
@@ -5827,12 +5985,9 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Downloads = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
@@ -5847,22 +6002,6 @@ Value (string):
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/B_SanitizeOnShutdown_Cookies
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/C_SanitizeOnShutdown_Downloads
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/D_SanitizeOnShutdown_FormData
 ```
 Value (string):
 ```
@@ -5894,14 +6033,6 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/H_SanitizeOnShutdown_OfflineApps
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/I_SanitizeOnShutdown_Locked
 ```
 Value (string):
@@ -5917,17 +6048,11 @@ Value (string):
     <true/> | <false/>
     <key>Cookies</key>
     <true/> | <false/>
-    <key>Downloads</key>
-    <true/> | <false/>
-    <key>FormData</key>
-    <true/> | <false/>
     <key>History</key>
     <true/> | <false/>
     <key>Sessions</key>
     <true/> | <false/>
     <key>SiteSettings</key>
-    <true/> | <false/>
-    <key>OfflineApps</key>
     <true/> | <false/>
     <key>Locked</key>
     <true/> | <false/>
@@ -5941,12 +6066,9 @@ Value (string):
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
-      "Downloads": true | false,
-      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
-      "OfflineApps": true | false,
       "Locked": true | false
     }
   }
@@ -6653,11 +6775,13 @@ Prevent Firefox from messaging the user in certain situations.
 
 `MoreFromMozilla` If false, don't show the "More from Mozilla" section in Preferences. (Firefox 98)
 
+`FirefoxLabs` If false, don't show the "Firefox Labs" section in Preferences. (Firefox 130.0.1)
+
 `Locked` prevents the user from changing user messaging preferences.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`, `browser.aboutwelcome.enabled`, `browser.preferences.moreFromMozilla`
+**Preferences Affected:** `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons`, `browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features`, `browser.aboutwelcome.enabled`, `browser.preferences.moreFromMozilla`, `browser.preferences.experimental`
 
 #### Windows (GPO)
 ```
@@ -6666,6 +6790,7 @@ Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0
 Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\SkipOnboarding = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\MoreFromMozilla = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\FirefoxLabs = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
@@ -6676,6 +6801,7 @@ OMA-URI:
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_UrlbarInterventions
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipOnboarding
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_MoreFromMozilla
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FirefoxLabs
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_Locked
 ```
 Value (string):
@@ -6697,6 +6823,8 @@ Value (string):
     <true/> | <false/>
     <key>MoreFromMozilla</key>
     <true/> | <false/>
+    <key>FirefoxLabs</key>
+    <true/> | <false/>
     <key>Locked</key>
     <true/> | <false/>
   </dict>
@@ -6712,6 +6840,7 @@ Value (string):
       "UrlbarInterventions": true | false,
       "SkipOnboarding": true | false,
       "MoreFromMozilla": true | false,
+      "FirefoxLabs": true | false,
       "Locked": true | false
     }
   }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="6.1" schemaVersion="1.0">
+<policyDefinitions revision="6.5" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="6.1"/>
+  <resources minRequiredRevision="6.5"/>
   <supportedOn>
     <definitions>
       <definition name="UNSUPPORTED" displayName="$(string.UNSUPPORTED)"/>
@@ -75,8 +75,9 @@
       <definition name="SUPPORTED_FF128" displayName="$(string.SUPPORTED_FF128)"/>
       <definition name="SUPPORTED_FF129" displayName="$(string.SUPPORTED_FF129)"/>
       <definition name="SUPPORTED_FF130" displayName="$(string.SUPPORTED_FF130)"/>
+      <definition name="SUPPORTED_FF130_ONLY" displayName="$(string.SUPPORTED_FF130_ONLY)"/>
       <definition name="SUPPORTED_FF131" displayName="$(string.SUPPORTED_FF131)"/>
-    </definitions>
+   </definitions>
   </supportedOn>
   <categories>
     <category displayName="$(string.firefox)" name="firefox">
@@ -3697,6 +3698,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="UserMessaging_FirefoxLabs" class="Both" displayName="$(string.UserMessaging_FirefoxLabs)" explainText="$(string.UserMessaging_FirefoxLabs)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="FirefoxLabs">
+      <parentCategory ref="UserMessaging"/>
+      <supportedOn ref="SUPPORTED_FF130_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="UserMessaging_Locked" class="Both" displayName="$(string.UserMessaging_Locked)" explainText="$(string.UserMessaging_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="Locked">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF75"/>
@@ -4272,6 +4283,29 @@
       <supportedOn ref="SUPPORTED_FF127_ONLY"/>
       <elements>
         <list id="List" key="Software\Policies\Mozilla\Firefox\HttpAllowlist" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="PrivateBrowsingModeAvailability" class="Both" displayName="$(string.PrivateBrowsingModeAvailability)" explainText="$(string.PrivateBrowsingModeAvailability_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.PrivateBrowsingModeAvailability)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF130"/>
+      <elements>
+        <enum id="PrivateBrowsingModeAvailability" valueName="PrivateBrowsingModeAvailability">
+          <item displayName="$(string.PrivateBrowsingModeAvailability_0)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.PrivateBrowsingModeAvailability_1)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.PrivateBrowsingModeAvailability_2)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
     <policy name="ContentAnalysis_AgentName" class="Both" displayName="$(string.ContentAnalysis_AgentName)" explainText="$(string.ContentAnalysis_AgentName_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
