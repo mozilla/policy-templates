@@ -78,7 +78,7 @@
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
       <string id="Microphone_group">Microphone</string>
-      <string id="Location_group">Location</string>
+      <string id="Location_group">Localisation</string>
       <string id="Notifications_group">Notifications</string>
       <string id="Autoplay_group">Autoplay</string>
       <string id="VirtualReality_group">Réalité Virtuelle</string>
@@ -95,7 +95,7 @@
       <string id="Preferences_group">Préférences (Obsolète)</string>
       <string id="UserMessaging_group">Messagerie utilisateur</string>
       <string id="DisabledCiphers_group">Chiffrements désactivés</string>
-      <string id="EncryptedMediaExtensions_group">Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_group">Extensions de médias cryptés</string>
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Picture-in-Picture</string>
       <string id="ProxySettings_group">Paramètres Proxy</string>
@@ -1183,7 +1183,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
       <string id="intl_accept_languages">intl.accept_languages</string>
-      <string id="media_eme_enabled">media.eme.enabled (Deprecated)</string>
+      <string id="media_eme_enabled">media.eme.enabled (Obsolète)</string>
       <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
       <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
       <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
@@ -1197,7 +1197,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <string id="browser_newtabpage_activity-stream_default_sites">browser.newtabpage.activity-stream.default.sites</string>
       <string id="extensions_htmlaboutaddons_recommendations_enabled">extensions.htmlaboutaddons.recommendations.enabled</string>
       <string id="media_peerconnection_enabled">media.peerconnection.enabled</string>
-      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist (Deprecated)</string>
+      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist (Obsolète)</string>
       <string id="media_peerconnection_ice_obfuscate_host_addresses_blocklist">media.peerconnection.ice.obfuscate_host_addresses.blocklist</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
@@ -1360,7 +1360,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <textBox refId="Passthrough">
           <label/>
         </textBox>
-        <text>Exemple: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Exemple : .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>URL de configuration automatique du Proxy :</text>
         <textBox refId="AutoConfigURL">
           <label/>
@@ -1495,7 +1495,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <textBox refId="Proxy_Passthrough">
           <label/>
         </textBox>
-        <text>Exemple: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Exemple : .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>Les connexions vers localhost, 127.0.0.1/8 et ::1 ne sont jamais proxyfiées.</text>
       </presentation>
       <presentation id="HttpsOnlyMode">
