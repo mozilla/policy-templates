@@ -159,7 +159,7 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut acc�
       <string id="BlockAboutProfiles">Bloquer about:profiles</string>
       <string id="BlockAboutProfiles_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder à about:profiles.
 
-Si cette stratégie est activée, l'utilisateur ne peut pas accéder à about:profiles.</string>
+Si cette stratégie est désactivée ou non configurée, l'utilisateur ne peut pas accéder à about:profiles.</string>
       <string id="BlockAboutSupport">Bloquer les informations de dépannage</string>
       <string id="BlockAboutSupport_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder aux informations de dépannage ni à about:support.
 
@@ -169,9 +169,9 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut acc�
 
 Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent définir des images comme fond d'écran du bureau.</string>
       <string id="CaptivePortal">Portail Captif</string>
-      <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
+      <string id="CaptivePortal_Explain">Si cette stratégie est désactivée, la prise en charge du portail captif est désactivée.
 
-If this policy is enabled or not configured, captive portal support is enabled.</string>
+Si cette stratégie est activée ou non configurée, la prise en charge du portail captif est activée.</string>
       <string id="Certificates_ImportEnterpriseRoots">Importer des certificats racines d'entreprise</string>
       <string id="Certificates_ImportEnterpriseRoots_Explain">Si cette stratégie est activée, Firefox lira les certificats à partir du magasin de certificats Windows.
 
@@ -409,9 +409,9 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modi
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut concernant les extensions est appliquée.</string>
       <string id="InstallAddonsPermission_Default">Autoriser l'installation d'extensions depuis des sites web</string>
-      <string id="InstallAddonsPermission_Default_Explain">If this policy is disabled, add-ons cannot be installed.
+      <string id="InstallAddonsPermission_Default_Explain">Si cette stratégie est désactivée, les modules complémentaires ne peuvent pas être installés.
 
-If this policy is not configured or enabled, add-ons can be installed.</string>
+Si cette stratégie n'est pas configurée ou activée, les modules complémentaires peuvent être installés.</string>
       <string id="Cookies_Allow_Explain">Si cette stratégie est désactivée, les extensions ne peuvent pas être installées.
 
 Si cette stratégie n'est pas configurée ou est activée, les extensions peuvent être installées.</string>
