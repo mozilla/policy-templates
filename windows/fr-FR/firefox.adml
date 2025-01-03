@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="6.5" schemaVersion="1.0">
+  <displayName/>
+  <description/>
+  <resources>
+    <stringTable>
+      <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 ou supérieur</string>
+      <string id="UNSUPPORTED">Non pris en charge.</string>
+      <string id="SUPPORTED_FF60">Firefox 60 ou supérieur, Firefox 60 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF62">Firefox 62 ou supérieur, Firefox 60.2 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF63">Firefox 63 ou supérieur</string>
+      <string id="SUPPORTED_FF64">Firefox 64 ou supérieur, Firefox 60.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF66">Firefox 66 ou supérieur, Firefox 60.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF67">Firefox 67 ou supérieur, Firefox 60.7 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF68">Firefox 68 ou supérieur, Firefox 68 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF6801">Firefox 68.0.1 ou supérieur, Firefox 68.0.1 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF60ESR">Firefox 60 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF68ESR">Firefox 68.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF69">Firefox 69 ou supérieur, Firefox 68.1 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF70">Firefox 70 ou supérieur, Firefox 68.2 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF71">Firefox 71 ou supérieur, Firefox 68.3 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF72">Firefox 72 ou supérieur, Firefox 68.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF73">Firefox 73 ou supérieur, Firefox 68.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF74">Firefox 74 ou supérieur, Firefox 68.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF75">Firefox 75 ou supérieur, Firefox 68.7 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF75_ONLY">Firefox 75 ou supérieur</string>
+      <string id="SUPPORTED_FF76">Firefox 76 ou supérieur, Firefox 68.8 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF76_ONLY">Firefox 76 ou supérieur</string>
+      <string id="SUPPORTED_FF77">Firefox 77 ou supérieur, Firefox 68.9 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF77_ONLY">Firefox 77 ou supérieur</string>
+      <string id="SUPPORTED_FF78">Firefox 78 ou supérieur</string>
+      <string id="SUPPORTED_FF79">Firefox 79 ou supérieur, Firefox 78.1 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF80">Firefox 80 ou supérieur, Firefox 78.2 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF81">Firefox 81 ou supérieur, Firefox 78.3 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF82">Firefox 82 ou supérieur, Firefox 78.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF83">Firefox 83 ou supérieur, Firefox 78.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF84">Firefox 84 ou supérieur, Firefox 78.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF85">Firefox 85 ou supérieur, Firefox 78.7 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF86">Firefox 86 ou supérieur, Firefox 78.8 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF88">Firefox 88 ou supérieur, Firefox 78.10 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF89">Firefox 89 ou supérieur, Firefox 78.11 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF90">Firefox 90 ou supérieur, Firefox 78.12 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF91">Firefox 91 ou supérieur</string>
+      <string id="SUPPORTED_FF95">Firefox 95 ou supérieur, Firefox 91.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF96">Firefox 96 ou supérieur, Firefox 91.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF96_ONLY">Firefox 96 ou supérieur</string>
+      <string id="SUPPORTED_FF97">Firefox 97 ou supérieur, Firefox 91.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF98_ONLY">Firefox 98 ou supérieur</string>
+      <string id="SUPPORTED_FF99">Firefox 99 ou supérieur, Firefox 91.8 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF100">Firefox 100 ou supérieur, Firefox 91.9 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF101">Firefox 101 ou supérieur, Firefox 91.10 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF102">Firefox 102 ou supérieur</string>
+      <string id="SUPPORTED_FF104">Firefox 104 ou supérieur, Firefox 102.2 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF105">Firefox 105 ou supérieur, Firefox 102.3 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF106">Firefox 106 ou supérieur, Firefox 102.4 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF107">Firefox 107 ou supérieur, Firefox 102.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF108">Firefox 108 ou supérieur, Firefox 102.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF109">Firefox 109 ou supérieur, Firefox 102.7 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF110">Firefox 110 ou supérieur, Firefox 102.8 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF112_ONLY">Firefox 112 ou supérieur</string>
+      <string id="SUPPORTED_FF113_ONLY">Firefox 113 ou supérieur</string>
+      <string id="SUPPORTED_FF114">Firefox 114 ou supérieur, Firefox 102.12 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF118">Firefox 118 ou supérieur, Firefox 115.3 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF120">Firefox 120 ou supérieur, Firefox 115.5 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF121">Firefox 121 ou supérieur, Firefox 115.6 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF122">Firefox 122 ou supérieur, Firefox 115.7 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF123">Firefox 123 ou supérieur, Firefox 115.8 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF124">Firefox 124 ou supérieur, Firefox 115.9 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF124_ONLY">Firefox 124 ou supérieur</string>
+      <string id="SUPPORTED_FF125">Firefox 125 ou supérieur, Firefox 115.10 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF126_ONLY">Firefox 126 ou supérieur</string>
+      <string id="SUPPORTED_FF127_ONLY">Firefox 127 ou supérieur</string>
+      <string id="SUPPORTED_FF128">Firefox 128 ou supérieur, Firefox 115.13 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF129">Firefox 129 ou supérieur, Firefox 115.14 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF130">Firefox 130 ou supérieur, Firefox 115.15 ESR ou supérieur</string>
+      <string id="SUPPORTED_FF130_ONLY">Firefox 130 ou supérieur</string>
+      <string id="firefox">Firefox</string>
+      <string id="Permissions_group">Permissions</string>
+      <string id="Camera_group">Caméra</string>
+      <string id="Microphone_group">Microphone</string>
+      <string id="Location_group">Localisation</string>
+      <string id="Notifications_group">Notifications</string>
+      <string id="Autoplay_group">Autoplay</string>
+      <string id="VirtualReality_group">Réalité Virtuelle</string>
+      <string id="Authentication_group">Authentification</string>
+      <string id="Bookmarks_group">Favoris</string>
+      <string id="Certificates_group">Certificats</string>
+      <string id="Popups_group">Popups</string>
+      <string id="Cookies_group">Cookies</string>
+      <string id="Addons_group">Addons</string>
+      <string id="Extensions_group">Extensions</string>
+      <string id="Flash_group">Flash</string>
+      <string id="Homepage_group">Page d'accueil</string>
+      <string id="Search_group">Recherche</string>
+      <string id="Preferences_group">Préférences (Obsolète)</string>
+      <string id="UserMessaging_group">Messagerie utilisateur</string>
+      <string id="DisabledCiphers_group">Chiffrements désactivés</string>
+      <string id="EncryptedMediaExtensions_group">Extensions de médias cryptés</string>
+      <string id="PDFjs_group">PDF.js</string>
+      <string id="PictureInPicture_group">Picture-in-Picture</string>
+      <string id="ProxySettings_group">Paramètres Proxy</string>
+      <string id="SecurityDevices_group">Périphériques de sécurité</string>
+      <string id="FirefoxSuggest_group">Firefox Suggest (US seulement)</string>
+      <string id="Allow">Sites autorisés</string>
+      <string id="AllowSession">Sites autorisés (Session seulement)</string>
+      <string id="Block">Sites bloqués</string>
+      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis a jour sans aprobation de l'utilisateur.
+
+Si cette stratégie est désactivée, les mises à jour de Firefox sont téléchargées mais l'utilisateur peut choisir quand installer la mise à jour.
+
+Si cette stratégie n'est pas configurée, l'utilisateur peut choisir de ne pas automatiquement mettre à jour Firefox.</string>
+      <string id="AppUpdateURL">URL de mise à jour personnalisée</string>
+      <string id="AppUpdateURL_Explain">Si cette stratégie est activée, vous pouvez définir une URL vers un serveur de mise à jour autre que celui par défaut. Cela pourrait être utile si vous exécutez votre propre serveur de mise à jour sur votre réseau.
+
+Si cette stratégie est désactivée ou non configurée, l'URL de mise à jour par défaut est utilisée.</string>
+      <string id="Authentication_SPNEGO">SPNEGO</string>
+      <string id="Authentication_SPNEGO_Explain">Si cette stratégie est activée, les sites Web spécifiés sont autorisés à s’authentifier avec SPNEGO sur le navigateur. Les entrées de la liste sont au format mondomaine.com ou https://monautredomaine.com.
+
+Si cette stratégie est désactivée ou non configurée, aucun site Web n'est autorisé à effectuer l'authentification SPNEGO avec le navigateur..
+
+Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_Delegated">Délégué</string>
+      <string id="Authentication_Delegated_Explain">Si cette stratégie est activée, le navigateur peut déléguer l'autorisation de l'utilisateur au serveur pour les sites Web spécifiés. Les entrées de la liste sont au format mydomain.com ou https://myotherdomain.com.
+
+Si cette stratégie est désactivée ou non configurée, le navigateur ne déléguera pas l'autorisation de l'utilisateur au serveur pour aucun site Web.
+
+Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_NTLM">NTLM</string>
+      <string id="Authentication_NTLM_Explain">Si cette stratégie est activée, les sites Web spécifiés sont approuvés pour utiliser l'authentification NTLM. Les entrées de la liste sont au format mydomain.com ou https://myotherdomain.com.
+
+Si cette stratégie est désactivée ou non configurée, aucun site Web n'est approuvé pour utiliser l'authentification NTLM.
+
+Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+      <string id="Authentication_AllowNonFQDN">Autoriser les noms de domaine imcomplets</string>
+      <string id="Authentication_AllowNonFQDN_Explain">Si cette stratégie est activée, vous pouvez toujours autoriser SPNEGO ou NTLM sur des noms de domaine autres que FQDN.
+
+Si cette stratégie est désactivée ou non configurée, NTLM et SPNEGO ne sont pas activés sur des noms de domaine autres que le nom de domaine complet.</string>
+      <string id="Authentication_AllowProxies">Autoriser les Proxys</string>
+      <string id="Authentication_AllowProxies_Explain">Si cette option est désactivée, SPNEGO et NTLM ne s'authentifieront pas auprès des serveurs Proxy.
+
+Si cette stratégie est activée (et les cases à cocher sont cochées) ou non configurée, NTLM et SPNEGO s'authentifieront toujours avec des Proxys.</string>
+      <string id="Authentication_Locked">Ne pas autoriser la modification des préférences d'authentification</string>
+      <string id="Authentication_Locked_Explain">Si cette stratégie est désactivée, les préférences d'authentification peuvent être modifiées par l'utilisateur.
+
+Si cette stratégie est activée ou non configurée, les préférences d'authentification ne peuvent pas être modifiées par l'utilisateur.</string>
+      <string id="Authentication_PrivateBrowsing">Autoriser l'authentification en navigation privée</string>
+      <string id="Authentication_PrivateBrowsing_Explain">Si cette stratégie est activée, l'authentification intégrée est utilisée en mode de navigation privée.
+
+Si cette stratégie est désactivée ou non configurée, l'authentification intégrée n'est pas utilisée en mode de navigation privée.</string>
+      <string id="BlockAboutAddons">Bloquer le gestionnaire de modules complémentaires</string>
+      <string id="BlockAboutAddons_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder au gestionnaire de modules complémentaires ni à about:addons.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut accéder au gestionnaire de modules complémentaires et à about:addons.</string>
+      <string id="BlockAboutConfig">Bloquer about:config</string>
+      <string id="BlockAboutConfig_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder à about:config.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut accéder à about:config.</string>
+      <string id="BlockAboutProfiles">Bloquer about:profiles</string>
+      <string id="BlockAboutProfiles_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder à about:profiles.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur ne peut pas accéder à about:profiles.</string>
+      <string id="BlockAboutSupport">Bloquer les informations de dépannage</string>
+      <string id="BlockAboutSupport_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder aux informations de dépannage ni à about:support.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut accéder aux informations de dépannage et à about:support.</string>
+      <string id="DisableSetDesktopBackground">Désactiver la modification du fond d'écran du bureau</string>
+      <string id="DisableSetDesktopBackground_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas définir d'image comme fond d'écran du bureau.
+
+Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent définir des images comme fond d'écran du bureau.</string>
+      <string id="CaptivePortal">Portail Captif</string>
+      <string id="CaptivePortal_Explain">Si cette stratégie est désactivée, la prise en charge du portail captif est désactivée.
+
+Si cette stratégie est activée ou non configurée, la prise en charge du portail captif est activée.</string>
+      <string id="Certificates_ImportEnterpriseRoots">Importer des certificats racines d'entreprise</string>
+      <string id="Certificates_ImportEnterpriseRoots_Explain">Si cette stratégie est activée, Firefox lira les certificats à partir du magasin de certificats Windows.
+
+Si cette stratégie est désactivée ou non configurée, Firefox ne lira pas les certificats du magasin de certificats Windows.</string>
+      <string id="Certificates_Install">Installation des certificats</string>
+      <string id="Certificates_Install_Explain">Si cette stratégie est activée, Firefox installera les certificats répertoriés dans Firefox. Il recherchera dans %USERPROFILE%\AppData\Local\Mozilla\Certificates et %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n'installe pas de certificats supplémentaires.</string>
+      <string id="DefaultDownloadDirectory">Répertoire de téléchargement par défaut</string>
+      <string id="DefaultDownloadDirectory_Explain">Si cette stratégie est activée, vous pouvez définir le répertoire par défaut pour les téléchargements. ${home} peut être utilisé comme chemin de base.
+
+Si cette stratégie est désactivée ou non configurée, le répertoire de téléchargement par défaut de Firefox est utilisé.</string>
+      <string id="DownloadDirectory">Répertoire de téléchargement</string>
+      <string id="DownloadDirectory_Explain">Si cette stratégie est activée, vous pouvez définir et verrouiller le répertoire de téléchargement. ${home} peut être utilisé comme chemin de base.
+
+Si cette stratégie est désactivée ou non configurée, le répertoire de téléchargement par défaut de Firefox est utilisé et l'utilisateur peut le modifier.</string>
+      <string id="DNSOverHTTPS_group">DNS sur HTTPS</string>
+      <string id="DNSOverHTTPS_Enabled">Activé</string>
+      <string id="DNSOverHTTPS_Enabled_Explain">Si cette stratégie est désactivée, DNS sur HTTPS est désactivé.
+
+Si cette stratégie est activée ou non configurée, DNS sur HTTPS est activé.</string>
+      <string id="DNSOverHTTPS_ProviderURL">Fournisseur URL</string>
+      <string id="DNSOverHTTPS_ProviderURL_Explain">Si cette stratégie est activée, l'URL spécifiée est utilisée comme URL du fournisseur.
+
+Si cette stratégie est désactivée ou n'est pas configurée, le fournisseur par défaut est utilisé.</string>
+
+      <string id="DNSOverHTTPS_Locked">Bloqué</string>
+      <string id="DNSOverHTTPS_Locked_Explain">Si cette stratégie est activée, les paramètres DNS sur HTTPS ne peuvent pas être modifiés par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, les paramètres DNS sur HTTPS peuvent être modifiés par l'utilisateur.</string>
+      <string id="DNSOverHTTPS_ExcludedDomains">Domaines exclus</string>
+      <string id="DNSOverHTTPS_ExcludedDomains_Explain">Si cette stratégie est activée, les domaines spécifiés sont exclus de DNS sur HTTPS.
+
+Si cette stratégie est désactivée ou n'est pas configurée, aucun domaine n'est exclu de DNS sur HTTPS.</string>
+      <string id="DNSOverHTTPS">Configurer DNS sur HTTPS (Déplacé)</string>
+      <string id="DNSOverHTTPS_Explain">Si cette stratégie est activée, la configuration par défaut de DNS sur HTTPS peut être modifiée.
+
+Si cette stratégie est désactivée ou non configurée, DNS Over HTTPS utilise la configuration par défaut de Firefox.</string>
+      <string id="DNSOverHTTPS_Fallback">Secours</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">Si cette stratégie est désactivée, Firefox ne reviendra pas à votre résolveur DNS par défaut en cas de problème avec le fournisseur DNS sécurisé.
+
+Si cette stratégie est activée ou non configurée, Firefox utilisera votre résolveur DNS par défaut en cas de problème avec le fournisseur DNS sécurisé.</string>
+      <string id="DisableMasterPasswordCreation">Désactiver la création du mot de passe principal</string>
+      <string id="DisableMasterPasswordCreation_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas créer un mot de passe principal.
+
+Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent créer un mot de passe principal.</string>
+      <string id="DisableAppUpdate">Désactiver la mise à jour</string>
+      <string id="DisableAppUpdate_Explain">Si cette stratégie est activée, le navigateur ne reçoit pas les mises à jour.
+
+Si cette stratégie est désactivée ou non configurée, le navigateur reçoit les mises à jour.</string>
+      <string id="DisableBuiltinPDFViewer">Désactiver la visionneuse PDF intégrée (PDF.js)</string>
+      <string id="DisableBuiltinPDFViewer_Explain">Si cette stratégie est activée, les fichiers PDF ne sont pas visualisés à l'intérieur de Firefox.
+
+Si cette stratégie est désactivée ou non configurée, les fichiers PDF sont visualisés à l'intérieur de Firefox.</string>
+      <string id="DisableDefaultBrowserAgent">Désactivez l'agent de navigateur par défaut</string>
+      <string id="DisableDefaultBrowserAgent_Explain">Si cette stratégie est activée, l'agent de navigateur par défaut est désactivé.
+
+Si cette stratégie est désactivée ou n'est pas configurée, l'agent de navigateur par défaut est activé.
+
+Pour plus d'informations sur l'agent de navigateur par défaut, consultez https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
+      <string id="DisableDeveloperTools">Désactiver les outils de développement</string>
+      <string id="DisableDeveloperTools_Explain">Si cette stratégie est activée, les outils de développement Web ne sont pas disponibles dans Firefox.
+
+Si cette stratégie est désactivée ou non configurée, des outils de développement Web sont disponibles dans Firefox.</string>
+      <string id="DisableFeedbackCommands">Désactiver les commandes de retour d'information</string>
+      <string id="DisableFeedbackCommands_Explain">Si cette stratégie est activée, les menus "Envoyer des commentaires" et "Signaler un site trompeur" ne sont pas disponibles dans le menu d'aide.
+
+Si cette stratégie est désactivée ou non configurée, les menus "Envoyer un commentaire" et "Signaler un site trompeur" sont disponibles dans le menu d’aide.</string>
+      <string id="DisableFirefoxAccounts">Désactiver les comptes Firefox</string>
+      <string id="DisableFirefoxAccounts_Explain">Si cette stratégie est activée, les comptes Firefox sont désactivés, ce qui inclut la désactivation de la synchronisation.
+
+Si cette stratégie est désactivée ou non configurée, les comptes Firefox et la synchronisation sont disponibles.</string>
+      <string id="DisableFirefoxScreenshots">Désactiver les captures d’écran Firefox</string>
+      <string id="DisableFirefoxScreenshots_Explain">Si cette stratégie est activée, les captures d'écran Firefox ne sont pas disponibles.
+
+Si cette stratégie est désactivée ou non configurée, des captures d’écran Firefox sont disponibles.</string>
+      <string id="DisableFirefoxStudies">Désactiver les études Firefox</string>
+      <string id="DisableFirefoxStudies_Explain">Si cette stratégie est activée, Firefox n’exécutera jamais d’études SHIELD ni ne réalisera d’enquêtes Heartbeat.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut choisir d'activer les études SHIELD ou les enquêtes Heartbeat.
+
+Pour plus d'informations, voir https://support.mozilla.org/en-US/kb/shield et https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
+      <string id="DisableForgetButton">Désactiver le bouton Forget</string>
+      <string id="DisableForgetButton_Explain">Si cette stratégie est activée, le bouton "Forget" n'est pas disponible.
+
+Si cette stratégie est désactivée ou non configurée, le bouton "Forget" est disponible.</string>
+      <string id="DisableFormHistory">Désactiver l'historique des formulaires</string>
+      <string id="DisableFormHistory_Explain">Si cette stratégie est activée, Firefox ne conservera pas l'historique du formulaire ou de la recherche.
+
+Si cette stratégie est désactivée ou non configurée, Firefox conservera l'historique des formulaires et des recherches.</string>
+      <string id="DisablePasswordReveal">Ne pas autoriser la révélation des mots de passe dans les connexions enregistrées</string>
+      <string id="DisablePasswordReveal_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas afficher les mots de passe dans les connexions enregistrées.
+
+Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent afficher les mots de passe dans les connexions enregistrées.</string>
+      <string id="DisablePocket">Désactiver Pocket</string>
+      <string id="DisablePocket_Explain">Si cette stratégie est activée, Pocket n'est pas disponible.
+
+Si cette stratégie est désactivée ou non configurée, Pocket est disponible.</string>
+      <string id="DisablePrivateBrowsing">Désactiver la navigation privée</string>
+      <string id="DisablePrivateBrowsing_Explain">Si cette stratégie est activée, la navigation privée n'est pas autorisée.
+
+Si cette stratégie est désactivée ou non configurée, la navigation privée est autorisée.</string>
+      <string id="DisableProfileImport">Désactiver l'importation de profil</string>
+      <string id="DisableProfileImport_Explain">Si cette stratégie est activée, l'option "Importer des données depuis un autre navigateur" n’est pas disponible dans la fenêtre des favoris.
+
+Si cette stratégie est désactivée ou non configurée, l'option "Importer des données depuis un autre navigateur" est disponible.</string>
+      <string id="DisableProfileRefresh">Désactiver l'actualisation du profil</string>
+      <string id="DisableProfileRefresh_Explain">Si cette stratégie est activée, le bouton "Actualiser Firefox" n'est pas disponible sur la page about:support ou sur support.mozilla.org.
+
+Si cette stratégie est désactivée ou non configurée, le bouton "Actualiser Firefox" est disponible.</string>
+      <string id="DisableSafeMode">Désactiver le mode sans échec</string>
+      <string id="DisableSafeMode_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas redémarrer le navigateur en mode sans échec.
+
+Si cette stratégie est désactivée ou non configurée, le mode sans échec est autorisé.</string>
+      <string id="DisableSecurityBypass_InvalidCertificate">Empêcher le contournement des erreurs de certificat</string>
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Si cette stratégie est activée, le bouton "Ajouter une exception" n'est pas disponible lorsqu'un certificat est invalide. Cela empêche l'utilisateur d'ignorer l'erreur de certificat.
+
+Si cette stratégie est désactivée ou non configurée, les erreurs de certificat peuvent être ignorées.</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Empêcher le contournement des erreurs de navigation sécurisée</string>
+      <string id="DisableSecurityBypass_SafeBrowsing_Explain">Si cette stratégie est activée, un utilisateur ne peut pas ignorer l'avertissement et visiter un site dangereux.
+
+Si cette stratégie est désactivée ou non configurée, un utilisateur peut choisir de visiter un site dangereux.</string>
+      <string id="DisableSystemAddonUpdate">Désactiver les mises à jour des modules complémentaires système</string>
+      <string id="DisableSystemAddonUpdate_Explain">Si cette stratégie est activée, les nouveaux modules complémentaires système ne seront pas installés et les modules complémentaires système existants ne seront pas mis à jour.
+
+Si cette stratégie est désactivée ou non configurée, les modules complémentaires système sont installés et mis à jour.</string>
+      <string id="DisableTelemetry">Désactiver la télémétrie</string>
+      <string id="DisableTelemetry_Explain">Si cette stratégie est activée, la télémétrie n'est pas envoyée.
+
+Si cette stratégie est désactivée ou non configurée, la télémétrie est collectée et envoyée.
+
+Mozilla recommande de ne pas désactiver la télémétrie. Les informations collectées via la télémétrie nous aident à créer un meilleur produit pour des entreprises comme la vôtre.</string>
+      <string id="DisplayBookmarksToolbar">Afficher la barre d'outils des favoris (Obsolète)</string>
+      <string id="DisplayBookmarksToolbar_Explain">Si cette stratégie est activée, la barre d'outils des favoris est affichée par défaut. L'utilisateur peut toujours la masquer.
+
+Si cette stratégie est désactivée ou non configurée, la barre d’outils des favoris ne s’affiche pas par défaut.</string>
+      <string id="DisplayBookmarksToolbar_Enum">Afficher la barre d'outils des favoris</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">Si cette stratégie est activée, l'affichage par défaut de la barre d'outils des favoris peut être configuré.
+
+Si cette stratégie est désactivée ou non configurée, la barre d'outils des favoris est affichée par défaut sur la page nouvel onglet.</string>
+      <string id="DisplayBookmarksToolbar_Always">Toujours</string>
+      <string id="DisplayBookmarksToolbar_Never">Jamais</string>
+      <string id="DisplayBookmarksToolbar_NewTab">Nouvel onglet</string>
+      <string id="DisplayMenuBar">Afficher la barre de menus (Obsolète)</string>
+      <string id="DisplayMenuBar_Explain">Si cette stratégie est activée, la barre de menus est affichée par défaut. L'utilisateur peut toujours la masquer.
+
+Si cette stratégie est désactivée ou non configurée, la barre de menus n'est pas affichée par défaut.</string>
+      <string id="DisplayMenuBar_Enum">Afficher la barre de menus</string>
+      <string id="DisplayMenuBar_Enum_Explain">Si cette stratégie est activée, vous pouvez choisir si la barre de menus doit être affichée ou non, et si l'utilisateur peut ou non la montrer et la masquer.
+
+Si cette stratégie est désactivée ou non configurée, la barre de menus n'est pas affichée par défaut.</string>
+      <string id="DisplayMenuBar_Always">Toujours</string>
+      <string id="DisplayMenuBar_Never">Jamais</string>
+      <string id="DisplayMenuBar_Default_On">Affichée par défaut</string>
+      <string id="DisplayMenuBar_Default_Off">Masquée par défaut</string>
+      <string id="DontCheckDefaultBrowser">Ne pas vérifier le navigateur par défaut</string>
+      <string id="DontCheckDefaultBrowser_Explain">Si cette stratégie est activée, Firefox ne vérifie pas s'il est le navigateur par défaut au démarrage.
+
+Si cette stratégie est désactivée ou non configurée, Firefox vérifie s'il est le navigateur par défaut au démarrage.</string>
+      <string id="Extensions_Install">Extensions à installer</string>
+      <string id="Extensions_Install_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d'URL d'extensions ou de chemins qui seront installées au démarrage de Firefox.
+Chaque fois que cette liste est modifiée, les extensions seront réinstallées.
+
+Si cette stratégie est désactivée ou non configurée, aucune extension n'est installée.</string>
+      <string id="Extensions_Uninstall">Extensions à désinstaller</string>
+      <string id="Extensions_Uninstall_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d'ID de modules complémentaires qui seront désinstallés.
+Chaque fois que cette liste est modifiée, les extensions seront désinstallées.
+
+Si cette stratégie est désactivée ou non configurée, aucune extension n'est désinstallée.</string>
+      <string id="Extensions_Locked">Empêcher les extensions d'être désactivées ou supprimées</string>
+      <string id="Extensions_Locked_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d'ID d'extensions que l'utilisateur ne pourra pas désinstaller ni désactiver.
+
+Si cette stratégie est désactivée ou non configurée, aucune extension n'est verrouillée.</string>
+      <string id="ExtensionUpdate">Mise à jour des extensions</string>
+      <string id="ExtensionUpdate_Explain">Si cette stratégie est désactivée, les extensions ne seront pas mises à jour automatiquement.
+
+Si cette stratégie est activée ou non configurée, les extensions seront mises à jour automatiquement.</string>
+      <string id="ExtensionSettings">Gestion des extensions</string>
+      <string id="ExtensionSettings_Explain">Si cette stratégie est activée, vous pouvez utiliser le format JSON pour décrire la stratégie de gestion des extensions.
+
+Si cette stratégie est désactivée ou non configurée, les extensions ne seront pas gérées.
+
+Pour plus d'informations sur la création de la stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+      <string id="ExtensionSettingsOneLine">Gestion des extensions (JSON sur une seule ligne)</string>
+      <string id="HardwareAcceleration">Accélération matérielle</string>
+      <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle est désactivée et ne peut pas être activée.
+
+Si cette stratégie est activée ou non configurée, l'accélération matérielle est activée.</string>
+      <string id="LegacyProfiles">Profils hérités</string>
+      <string id="LegacyProfiles_Explain">Si cette stratégie est activée, Firefox ne tentera pas de créer des profils différents pour les installations de Firefox dans des répertoires différents. Cela équivaut à la variable d'environnement MOZ_LEGACY_PROFILES.
+
+Si cette stratégie est désactivée ou non configurée, Firefox créera un nouveau profil pour chaque installation unique de Firefox.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled">Revenir à l'ancien comportement de SameSite</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">Si cette stratégie est activée, Firefox reviendra à l'ancien comportement de SameSite. Cela signifie que les cookies qui ne spécifient pas explicitement un attribut SameSite seront traités comme s'ils étaient SameSite=None.
+
+Si cette stratégie est désactivée ou non configurée, Firefox appliquera SameSite=lax.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revenir au comportement ancien de SameSite sur des domaines spécifiques</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">Si cette stratégie est activée, Firefox reviendra à l'ancien comportement de SameSite pour les domaines spécifiés. Cela signifie que les cookies qui ne spécifient pas explicitement un attribut SameSite seront traités comme s'ils étaient SameSite=None.
+
+Si cette stratégie est désactivée ou non configurée, Firefox appliquera SameSite=lax pour tous les domaines.</string>
+      <string id="LocalFileLinks">Liens vers des fichiers locaux</string>
+      <string id="LocalFileLinks_Explain">Si cette stratégie est activée, vous pouvez spécifier des origines où les liens vers des fichiers locaux sont autorisés.
+
+Si cette stratégie est désactivée ou non configurée, les sites web ne peuvent pas créer de liens vers des fichiers locaux.</string>
+      <string id="NetworkPrediction">Prédiction du réseau</string>
+      <string id="NetworkPrediction_Explain">Si cette stratégie est désactivée, la prédiction du réseau (prédiction DNS) sera désactivée.
+
+Si cette stratégie est activée ou non configurée, la prédiction du réseau (prédiction DNS) sera activée.</string>
+      <string id="NewTabPage">Page Nouvel onglet</string>
+      <string id="NewTabPage_Explain">Si cette stratégie est désactivée, la page du nouvel onglet sera vide.
+
+Si cette stratégie est activée ou non configurée, la page du nouvel onglet sera celle par défaut.</string>
+      <string id="OfferToSaveLogins">Proposer d'enregistrer les identifiants</string>
+      <string id="OfferToSaveLogins_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera d'enregistrer les identifiants et mots de passe des sites web.
+
+Si cette stratégie est désactivée, Firefox ne proposera pas d'enregistrer les identifiants et mots de passe des sites web.</string>
+      <string id="OfferToSaveLoginsDefault">Proposer d'enregistrer les identifiants (par défaut)</string>
+      <string id="OfferToSaveLoginsDefault_Explain">Si cette stratégie est activée ou non configurée, Firefox proposera d'enregistrer les identifiants et mots de passe des sites web.
+
+Si cette stratégie est désactivée, Firefox ne proposera pas d'enregistrer les identifiants et mots de passe des sites web.
+
+Dans les deux cas, l'utilisateur pourra modifier la valeur (elle n'est pas verrouillée).</string>
+      <string id="PopupBlocking_Allow_Explain">Si cette stratégie est activée, les fenêtres pop-up sont toujours autorisées pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les fenêtres pop-up sont autorisées pour tous les sous-domaines également.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut concernant les pop-ups est appliquée.</string>
+      <string id="PopupBlocking_Default">Bloquer les fenêtres pop-up des sites web</string>
+      <string id="PopupBlocking_Default_Explain">Si cette stratégie est désactivée, les fenêtres pop-up sont autorisées par défaut sur les sites web.
+
+Si cette stratégie n'est pas configurée ou est activée, les fenêtres pop-up ne sont pas autorisées sur les sites web.</string>
+      <string id="PopupBlocking_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="PopupBlocking_Locked_Explain">Si cette stratégie est activée, les préférences des fenêtres pop-up ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences pour les fenêtres pop-up.</string>
+      <string id="InstallAddonsPermission_Allow_Explain">Si cette stratégie est activée, les extensions sont toujours autorisées pour les origines indiquées, à moins que l'installation d'extensions ne soit désactivée. Si un domaine de premier niveau est spécifié (http://example.org), les extensions sont autorisées pour tous les sous-domaines également.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut concernant les extensions est appliquée.</string>
+      <string id="InstallAddonsPermission_Default">Autoriser l'installation d'extensions depuis des sites web</string>
+      <string id="InstallAddonsPermission_Default_Explain">Si cette stratégie est désactivée, les modules complémentaires ne peuvent pas être installés.
+
+Si cette stratégie n'est pas configurée ou activée, les modules complémentaires peuvent être installés.</string>
+      <string id="Cookies_Allow_Explain">Si cette stratégie est désactivée, les extensions ne peuvent pas être installées.
+
+Si cette stratégie n'est pas configurée ou est activée, les extensions peuvent être installées.</string>
+      <string id="Cookies_AllowSession_Explain">Si cette stratégie est activée, les cookies sont autorisés pour les origines indiquées, mais sont supprimés à la fin de la session. Si un domaine de premier niveau est spécifié (http://example.org), les cookies sont autorisés pour tous les sous-domaines également.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut concernant les cookies est appliquée.</string>
+      <string id="Cookies_Block_Explain">Si cette stratégie est activée, les cookies sont bloqués pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), les cookies sont également bloqués pour tous les sous-domaines.
+
+Si cette stratégie est désactivée ou non configurée, les cookies ne sont pas bloqués par défaut.</string>
+      <string id="Cookies_Default">Accepter les cookies des sites web (Obsolète)</string>
+      <string id="Cookies_Default_Explain">Si cette stratégie est désactivée, les cookies des sites web ne sont pas acceptés par défaut.
+
+Si cette stratégie n'est pas configurée ou est activée, les cookies des sites web sont acceptés.</string>
+      <string id="Cookies_AcceptThirdParty">Accepter les cookies de tierces parties (Obsolète)</string>
+      <string id="Cookies_AcceptThirdParty_Explain">Si cette stratégie est activée et que les cookies sont autorisés, vous pouvez définir quand accepter les cookies de tierces parties.
+
+Cette configuration est ignorée si cette stratégie est désactivée, non configurée ou si les cookies ne sont pas autorisés.</string>
+      <string id="Cookies_AcceptThirdParty_All">Toujours</string>
+      <string id="Cookies_AcceptThirdParty_None">Jamais</string>
+      <string id="Cookies_AcceptThirdParty_FromVisited">Depuis les sites visités</string>
+      <string id="Cookies_ExpireAtSessionEnd">Conserver les cookies jusqu'à la fermeture de Firefox</string>
+      <string id="Cookies_ExpireAtSessionEnd_Explain">Si cette stratégie est activée et que les cookies sont autorisés, ceux-ci expireront à la fermeture de Firefox.
+
+Cette configuration est ignorée si cette stratégie est désactivée, non configurée ou si les cookies ne sont pas autorisés.</string>
+      <string id="Cookies_RejectTracker">Rejeter les traqueurs (Obsolète)</string>
+      <string id="Cookies_RejectTracker_Explain">Si cette stratégie est activée et que les cookies sont autorisés, Firefox rejettera par défaut les cookies de suivi.
+
+Cette configuration est ignorée si cette stratégie est désactivée, non configurée ou si les cookies ne sont pas autorisés.</string>
+      <string id="Cookies_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Cookies_Locked_Explain">Si cette stratégie est activée, les préférences relatives aux cookies ne peuvent pas être modifiées par l'utilisateur.</string>
+      <string id="Cookies_Behavior">Comportement des cookies</string>
+      <string id="Cookies_Behavior_Explain">Si cette stratégie est activée, vous pouvez configurer le comportement des cookies.
+
+Si cette stratégie n'est pas configurée ou est désactivée, les cookies sont rejetés pour les traqueurs connus.</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">Comportement des cookies en navigation privée</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">Si cette stratégie est activée, vous pouvez configurer le comportement des cookies en navigation privée.
+
+Si cette stratégie n'est pas configurée ou est désactivée, en navigation privée, les cookies sont rejetés pour les trackers connus et les cookies tiers sont partitionnés.</string>
+      <string id="Cookies_Behavior_Accept">Accepter tous les cookies</string>
+      <string id="Cookies_Behavior_RejectForeign">Rejeter les cookies tiers</string>
+      <string id="Cookies_Behavior_Reject">Rejeter tous les cookies</string>
+      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
+      <string id="Cookies_Behavior_RejectTracker">Rejeter les cookies tiers pour les sites que vous n'avez pas visités</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Rejeter les cookies pour les traceurs connus et partitionner les cookies tiers (Protection totale des cookies)</string>
+      <string id="Camera_Allow_Explain">Si cette stratégie est activée, l'accès à la caméra est toujours autorisé pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut pour la caméra est appliquée.</string>
+      <string id="Camera_Block_Explain">Si cette stratégie est activée, l'accès à la caméra est bloqué pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, l'accès à la caméra n'est pas bloqué par défaut.</string>
+      <string id="Camera_BlockNewRequests">Bloquer les nouvelles demandes d'accès à la caméra</string>
+      <string id="Camera_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne figurent pas dans la stratégie d'autorisation ne pourront pas demander l'accès à la caméra.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui ne figure pas dans la stratégie de blocage pourra demander l'accès à la caméra.</string>
+      <string id="Camera_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Camera_Locked_Explain">Si cette stratégie est activée, les préférences de la caméra ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de caméra.</string>
+      <string id="Microphone_Allow_Explain">Si cette stratégie est activée, l'accès au microphone est toujours autorisé pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut pour le microphone est appliquée.</string>
+      <string id="Microphone_Block_Explain">Si cette stratégie est activée, l'accès au microphone est bloqué pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, l'accès au microphone n'est pas bloqué par défaut.</string>
+      <string id="Microphone_BlockNewRequests">Bloquer les nouvelles demandes d'accès au microphone</string>
+      <string id="Microphone_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne sont pas dans la stratégie "Autoriser" ne pourront pas demander l'autorisation d'accéder au microphone.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui ne figure pas dans la stratégie "Bloquer" pourra demander l'autorisation d'accéder au microphone.</string>
+      <string id="Microphone_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Microphone_Locked_Explain">Si cette stratégie est activée, les préférences du microphone ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences du microphone.</string>
+      <string id="Location_Allow_Explain">Si cette stratégie est activée, l'accès à la localisation est toujours autorisé pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut concernant la localisation est suivie.</string>
+      <string id="Location_Block_Explain">Si cette stratégie est activée, l'accès à la localisation est bloqué pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, l'accès à la localisation n'est pas bloqué par défaut.</string>
+      <string id="Location_BlockNewRequests">Bloquer les nouvelles demandes d'accès à la localisation</string>
+      <string id="Location_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne sont pas dans la stratégie "Autoriser" ne pourront pas demander la permission d'accéder à la localisation.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui n'est pas dans la stratégie "Bloquer" peut demander la permission d'accéder à la localisation.</string>
+      <string id="Location_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Location_Locked_Explain">Si cette stratégie est activée, les préférences de localisation ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier les préférences de localisation.</string>
+      <string id="Notifications_Allow_Explain">Si cette stratégie est activée, les notifications peuvent toujours être envoyées pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut des notifications est appliquée.</string>
+      <string id="Notifications_Block_Explain">Si cette stratégie est activée, les notifications sont toujours bloquées pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, les notifications ne sont pas bloquées par défaut.</string>
+      <string id="Notifications_BlockNewRequests">Bloquer les nouvelles demandes de permission pour envoyer des notifications</string>
+      <string id="Notifications_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne figurent pas dans la stratégie "Autoriser" ne pourront pas demander l'autorisation d'envoyer des notifications.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui ne figure pas dans la stratégie "Bloquer" pourra demander l'autorisation d'envoyer des notifications.</string>
+      <string id="Notifications_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Notifications_Locked_Explain">Si cette stratégie est activée, les préférences de notification ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de notification.</string>
+      <string id="Autoplay_Allow_Explain">Si cette stratégie est activée, la lecture automatique est toujours activée pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie de lecture automatique par défaut est appliquée.</string>
+      <string id="Autoplay_Block_Explain">Si cette stratégie est activée, la lecture automatique est toujours bloquée pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie de lecture automatique par défaut est appliquée.</string>
+      <string id="Autoplay_Default">Niveau de lecture automatique par défaut</string>
+      <string id="Autoplay_Default_Explain">Si cette stratégie est activée, vous pouvez choisir le niveau de lecture automatique par défaut.
+
+Si cette stratégie est désactivée ou non configurée, l'audio est bloqué par défaut.
+
+Remarque : Le blocage de l'audio et de la vidéo ne fonctionne pas sur la version ESR.</string>
+      <string id="Autoplay_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="Autoplay_Locked_Explain">Si cette stratégie est activée, les préférences de lecture automatique ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de lecture automatique.</string>
+      <string id="AllowAudioVideo">Autoriser l'audio et la vidéo</string>
+      <string id="BlockAudio">Bloquer l'audio</string>
+      <string id="BlockAudioVideo">Bloquer l'audio et la vidéo</string>
+      <string id="VirtualReality_Allow_Explain">Si cette stratégie est activée, l'accès aux dispositifs de réalité virtuelle est toujours autorisé pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut de réalité virtuelle est appliquée.</string>
+      <string id="VirtualReality_Block_Explain">Si cette stratégie est activée, l'accès aux dispositifs de réalité virtuelle est bloqué pour les origines indiquées.
+
+Si cette stratégie est désactivée ou non configurée, l'accès aux dispositifs de réalité virtuelle n'est pas bloqué par défaut.</string>
+      <string id="VirtualReality_BlockNewRequests">Bloquer les nouvelles demandes d'accès aux dispositifs de réalité virtuelle.</string>
+      <string id="VirtualReality_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne figurent pas dans la stratégie "Autoriser" ne seront pas autorisés à demander la permission d'accéder aux dispositifs de réalité virtuelle.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui ne figure pas dans la stratégie "Bloquer" peut demander la permission d'accéder aux dispositifs de réalité virtuelle.</string>
+      <string id="VirtualReality_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="VirtualReality_Locked_Explain">Si cette stratégie est activée, les préférences de réalité virtuelle ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de réalité virtuelle.</string>
+      <string id="FirefoxHome">Personnaliser Firefox Home</string>
+      <string id="FirefoxHome_Explain">Si cette stratégie est activée, vous pouvez choisir les sections affichées sur la page d'accueil de Firefox et empêcher l'utilisateur de les modifier.
+
+Si cette stratégie est désactivée ou non configurée, les sections par défaut sont affichées et l'utilisateur peut les modifier.</string>
+      <string id="FlashPlugin_Allow_Explain">Si cette stratégie est activée, Flash est activé par défaut pour les origines indiquées, sauf si Flash est complètement désactivé. Si un domaine de premier niveau est spécifié (http://example.org), Flash est autorisé pour tous les sous-domaines également.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut de Flash est appliquée.</string>
+      <string id="FlashPlugin_Block_Explain">Si cette stratégie est activée, Flash est bloqué pour les origines indiquées. Si un domaine de premier niveau est spécifié (http://example.org), Flash est bloqué pour tous les sous-domaines également.
+
+Si cette stratégie est désactivée ou non configurée, la stratégie par défaut de Flash est appliquée.</string>
+      <string id="FlashPlugin_Default">Activer Flash sur les sites web</string>
+      <string id="FlashPlugin_Default_Explain">Si cette stratégie est activée, Flash est toujours activé sur les sites web.
+
+Si cette stratégie est désactivée, Flash n'est jamais activé sur les sites web, même s'ils figurent dans la liste autorisée.
+
+Si cette stratégie n'est pas configurée, Flash est activé sur clic.</string>
+      <string id="FlashPlugin_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="FlashPlugin_Locked_Explain">Si cette stratégie est activée, les préférences Flash ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences Flash.</string>
+      <string id="OverrideFirstRunPage">Remplacer la page de première utilisation</string>
+      <string id="OverrideFirstRunPage_Explain">Si cette stratégie est activée, vous pouvez spécifier une URL à utiliser comme page de première utilisation. Si vous laissez l'URL vide, aucune page de première utilisation ne sera affichée.
+
+À partir de Firefox 83 et Firefox ESR 78.5, vous pouvez également spécifier plusieurs URL séparées par une barre verticale (|).
+
+Si cette stratégie est désactivée ou non configurée, la page de première utilisation est affichée.</string>
+      <string id="OverridePostUpdatePage">Remplacer la page de mise à niveau</string>
+      <string id="OverridePostUpdatePage_Explain">Si cette stratégie est activée, vous pouvez spécifier une URL à afficher après la mise à jour de Firefox. Si vous laissez l'URL vide, aucune page de mise à niveau ne sera affichée.
+
+Si cette stratégie est désactivée ou non configurée, la page de mise à niveau est affichée.</string>
+      <string id="SanitizeOnShutdown">Effacer les données lorsque le navigateur est fermé (Déplacé)</string>
+      <string id="SanitizeOnShutdown_Explain">Si cette stratégie est activée, vous pouvez choisir les données à effacer lorsque Firefox est fermé.
+
+Si cette stratégie est désactivée ou non configurée, les données ne sont pas effacées lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_group">Effacer les données lorsque le navigateur est fermé</string>
+
+      <string id="SanitizeOnShutdown_Cache">Cache</string>
+      <string id="SanitizeOnShutdown_Cache_Explain">Si cette stratégie est activée, le cache est effacé lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, le cache n'est pas effacé lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_Cookies">Cookies</string>
+      <string id="SanitizeOnShutdown_Cookies_Explain">Si cette stratégie est activée, les cookies sont effacés lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, les cookies ne sont pas effacés lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_Downloads">Historique des téléchargements (Obsolète)</string>
+      <string id="SanitizeOnShutdown_Downloads_Explain">Si cette stratégie est activée, l'historique des téléchargements est effacé lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, l'historique des téléchargements n'est pas effacé lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_FormData">Historique des formulaires et des recherches (Obsolète)</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Si cette stratégie est activée, les données de formulaire sont effacées lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, les données de formulaire ne sont pas effacées lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_History">Historique</string>
+      <string id="SanitizeOnShutdown_History_Explain">Si cette stratégie est activée, l'historique de navigation, l'historique des téléchargements, l'historique des recherches et les données de formulaire sont effacés lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, l'historique de navigation, l'historique des téléchargements, l'historique des recherches et les données de formulaire ne sont pas effacés lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_Sessions">Connexions actives</string>
+      <string id="SanitizeOnShutdown_Sessions_Explain">Si cette stratégie est activée, les sessions sont effacées lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, les sessions ne sont pas effacées lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_SiteSettings">Préférences des sites</string>
+      <string id="SanitizeOnShutdown_SiteSettings_Explain">Si cette stratégie est activée, les préférences des sites sont effacées lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, les préférences des sites ne sont pas effacées lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Données de site Web hors ligne (Obsolète)</string>
+      <string id="SanitizeOnShutdown_OfflineApps_Explain">Si cette stratégie est activée, le stockage des applications hors ligne est effacé lorsque le navigateur est fermé.
+
+Si cette stratégie est désactivée ou non configurée, le stockage des applications hors ligne n'est pas effacé lorsque le navigateur est fermé.</string>
+      <string id="SanitizeOnShutdown_Locked">Verrouillé</string>
+      <string id="SanitizeOnShutdown_Locked_Explain">Si cette stratégie est désactivée, toutes les préférences de fermeture peuvent être modifiées par l'utilisateur.
+
+Si cette stratégie est activée, toutes les préférences de fermeture définies explicitement via la stratégie ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie n'est pas configurée, aucune préférence de fermeture ne peut être modifiée par l'utilisateur (comportement précédent).</string>
+      <string id="WebsiteFilter_Block">Sites web bloqués</string>
+      <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez spécifier des modèles de correspondance indiquant les sites à bloquer. Les modèles de correspondance sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Il y a une limite de 1000 entrées.
+
+Si cette stratégie est désactivée ou non configurée, aucun site web n'est bloqué.</string>
+      <string id="WebsiteFilter_Exceptions">Exceptions aux sites bloqués</string>
+      <string id="WebsiteFilter_Exceptions_Explain">Si cette stratégie est activée, et que le filtre de sites est activé, vous pouvez spécifier des modèles de correspondance pour les sites que vous ne souhaitez pas bloquer. Les modèles de correspondance sont documentés sur https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Il y a une limite de 1000 entrées.
+
+Si cette stratégie est désactivée ou non configurée, il n'y a pas d'exceptions au filtre de sites.</string>
+      <string id="WebsiteFilterOneLine">Filtre de sites web (JSON sur une seule ligne)</string>
+      <string id="WebsiteFilter">Filtre de sites web (JSON)</string>
+      <string id="WebsiteFilter_Explain">Si cette stratégie est activée, vous pouvez spécifier les sites bloqués et les exceptions au format JSON.
+
+Si cette stratégie est désactivée ou non configurée, les sites ne sont pas filtrés.</string>
+      <string id="Bookmark01">Favoris 01</string>
+      <string id="Bookmark02">Favoris 02</string>
+      <string id="Bookmark03">Favoris 03</string>
+      <string id="Bookmark04">Favoris 04</string>
+      <string id="Bookmark05">Favoris 05</string>
+      <string id="Bookmark06">Favoris 06</string>
+      <string id="Bookmark07">Favoris 07</string>
+      <string id="Bookmark08">Favoris 08</string>
+      <string id="Bookmark09">Favoris 09</string>
+      <string id="Bookmark10">Favoris 10</string>
+      <string id="Bookmark11">Favoris 11</string>
+      <string id="Bookmark12">Favoris 12</string>
+      <string id="Bookmark13">Favoris 13</string>
+      <string id="Bookmark14">Favoris 14</string>
+      <string id="Bookmark15">Favoris 15</string>
+      <string id="Bookmark16">Favoris 16</string>
+      <string id="Bookmark17">Favoris 17</string>
+      <string id="Bookmark18">Favoris 18</string>
+      <string id="Bookmark19">Favoris 19</string>
+      <string id="Bookmark20">Favoris 20</string>
+      <string id="Bookmark21">Favoris 21</string>
+      <string id="Bookmark22">Favoris 22</string>
+      <string id="Bookmark23">Favoris 23</string>
+      <string id="Bookmark24">Favoris 24</string>
+      <string id="Bookmark25">Favoris 25</string>
+      <string id="Bookmark26">Favoris 26</string>
+      <string id="Bookmark27">Favoris 27</string>
+      <string id="Bookmark28">Favoris 28</string>
+      <string id="Bookmark29">Favoris 29</string>
+      <string id="Bookmark30">Favoris 30</string>
+      <string id="Bookmark31">Favoris 31</string>
+      <string id="Bookmark32">Favoris 32</string>
+      <string id="Bookmark33">Favoris 33</string>
+      <string id="Bookmark34">Favoris 34</string>
+      <string id="Bookmark35">Favoris 35</string>
+      <string id="Bookmark36">Favoris 36</string>
+      <string id="Bookmark37">Favoris 37</string>
+      <string id="Bookmark38">Favoris 38</string>
+      <string id="Bookmark39">Favoris 39</string>
+      <string id="Bookmark40">Favoris 40</string>
+      <string id="Bookmark41">Favoris 41</string>
+      <string id="Bookmark42">Favoris 42</string>
+      <string id="Bookmark43">Favoris 43</string>
+      <string id="Bookmark44">Favoris 44</string>
+      <string id="Bookmark45">Favoris 45</string>
+      <string id="Bookmark46">Favoris 46</string>
+      <string id="Bookmark47">Favoris 47</string>
+      <string id="Bookmark48">Favoris 48</string>
+      <string id="Bookmark49">Favoris 49</string>
+      <string id="Bookmark50">Favoris 50</string>
+      <string id="Bookmark_Explain">Si cette stratégie est activée, vous pouvez configurer un favori à ajouter à Firefox. En raison d'un bug, vous devez sélectionner l'emplacement. Notez que vous devez spécifier les favoris dans l'ordre.
+
+Si cette stratégie est désactivée ou non configurée, aucun nouveau favori n'est ajouté.</string>
+      <string id="BookmarkPlacementToolbar">Barre d'outils</string>
+      <string id="BookmarkPlacementMenu">Menu</string>
+      <string id="NoDefaultBookmarks">Pas de favoris par défaut</string>
+      <string id="NoDefaultBookmarks_Explain">Si cette stratégie est activée, les favoris par défaut et les favoris intelligents (Les plus visités, Tags récents) ne sont pas créés.
+
+Si cette stratégie est désactivée ou non configurée, les favoris par défaut et les favoris intelligents (Les plus visités, Tags récents) sont créés.
+
+Note : cette stratégie n'est efficace que si elle est utilisée avant le premier lancement du profil.</string>
+      <string id="HomepageURL">URL pour la page d'accueil</string>
+      <string id="HomepageURL_Explain">Si cette stratégie est activée, vous pouvez définir une page d'accueil par défaut. Vous pouvez également verrouiller la page d'accueil.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut définir et changer la page d'accueil.</string>
+      <string id="HomepageAdditional">Pages d'accueil supplémentaires</string>
+      <string id="HomepageAdditional_Explain">Si cette stratégie est activée, vous pouvez avoir des pages d'accueil supplémentaires. Elles s'ouvrent dans plusieurs onglets.
+
+Si cette stratégie est désactivée ou non configurée, il n'y a qu'une seule page d'accueil.</string>
+      <string id="HomepageStartPage">Page de démarrage</string>
+      <string id="HomepageStartPage_Explain">Si cette stratégie est activée, vous pouvez modifier ce qui est affiché au démarrage de Firefox. Cela peut être la page d'accueil, la session précédente ou une page blanche.
+
+Si cette stratégie est désactivée ou non configurée, la page de démarrage sera définie sur la session précédente par défaut.</string>
+      <string id="None">Aucune</string>
+      <string id="Homepage">Page d'accueil</string>
+      <string id="PreviousSession">Sessions précédentes</string>
+      <string id="HomepageLocked">Page d'accueil (Verrouillé)</string>
+      <string id="Homepage_ShowHomeButton">Afficher le bouton Accueil sur la barre d'outils</string>
+      <string id="Homepage_ShowHomeButton_Explain">Si cette stratégie est activée, le bouton Accueil apparaîtra par défaut sur la barre d'outils.
+
+Si cette stratégie est désactivée, le bouton Accueil n'apparaîtra pas par défaut sur la barre d'outils.
+
+Si cette stratégie n'est pas configurée, Firefox déterminera si le bouton Accueil doit apparaître ou non sur la barre d'outils par défaut.</string>
+      <string id="PasswordManagerEnabled">Gestionnaire de mots de passe</string>
+      <string id="PasswordManagerEnabled_Explain">Si cette stratégie est désactivée, le gestionnaire de mots de passe n'est pas accessible via les préférences.
+
+Si cette stratégie est activée ou non configurée, le gestionnaire de mots de passe est accessible via les préférences.</string>
+      <string id="PasswordManagerExceptions">Exceptions du gestionnaire de mots de passe</string>
+      <string id="PasswordManagerExceptions_Explain">Si cette stratégie est activée, vous pouvez spécifier des sites où Firefox ne proposera pas d'enregistrer les mots de passe.
+
+Si cette stratégie est désactivée ou non configurée, Firefox proposera d'enregistrer les mots de passe sur tous les sites.</string>
+      <string id="PromptForDownloadLocation">Demander l'emplacement de téléchargement</string>
+      <string id="PromptForDownloadLocation_Explain">Si cette stratégie est désactivée, l'utilisateur n'est pas invité à choisir un emplacement de téléchargement.
+
+Si cette stratégie est activée, l'utilisateur est toujours invité à choisir un emplacement de téléchargement.
+
+Si cette stratégie n'est pas configurée, l'utilisateur est invité à choisir un emplacement de téléchargement, mais peut changer l'emplacement par défaut.</string>
+      <string id="Proxy">Paramètres de Proxy (Déplacé)</string>
+      <string id="Proxy_Explain">Si cette stratégie est activée, vous pouvez configurer et verrouiller les paramètres réseau.
+
+Sélectionnez le type de connexion, puis remplissez les sections appropriées. En raison d'un bug, vous devez sélectionner une valeur pour la version du proxy SOCKS.
+
+Si cette stratégie est désactivée ou non configurée, les paramètres réseau par défaut sont utilisés et l'utilisateur peut les modifier.</string>
+      <string id="SOCKSVersion4">SOCKS v4</string>
+      <string id="SOCKSVersion5">SOCKS v5</string>
+      <string id="AutoConfigURL">URL de configuration automatique du Proxy</string>
+      <string id="AutoConfigURL_Explain">Ces paramètres ne doivent être définis que si vous avez sélectionné autoConfig</string>
+      <string id="Passthrough">URLs de contournement du Proxy</string>
+      <string id="Passthrough_Explain">Ceci ne doit être configuré que si vous avez sélectionné le Proxy manuel</string>
+      <string id="Connection">Type de connexion</string>
+      <string id="NoProxy">Aucun Proxy</string>
+      <string id="SystemProxy">Utiliser les paramètres Proxy du système</string>
+      <string id="ManualProxy">Configuration manuelle du Proxy</string>
+      <string id="AutoDetectProxy">Détection automatique des paramètres Proxy</string>
+      <string id="AutoConfigProxy">Configuration automatique du Proxy </string>
+      <string id="TrackingProtection">Protection contre le suivi (Déplacé)</string>
+      <string id="TrackingProtection_Explain">Si cette stratégie n'est pas configurée, la protection contre le suivi n'est pas activée par défaut dans le navigateur, mais elle est activée par défaut dans la navigation privée, et l'utilisateur peut la modifier.
+
+Si cette stratégie est désactivée, la protection contre le suivi est désactivée et verrouillée à la fois dans le navigateur et dans la navigation privée.
+
+Si cette stratégie est activée, la navigation privée est activée par défaut dans le navigateur et dans la navigation privée, et vous pouvez choisir si vous souhaitez empêcher l'utilisateur de la modifier.</string>
+      <string id="TrackingProtection_group">Protection contre le suivi</string>
+      <string id="TrackingProtection_Value">Activé</string>
+      <string id="TrackingProtection_Value_Explain">Si cette stratégie est activée, la protection contre le suivi est activée.
+
+Si cette stratégie est désactivée, la protection contre le suivi est désactivée et ne peut pas être modifiée par l'utilisateur.
+
+Si cette stratégie n'est pas configurée, la protection contre le suivi standard est utilisée et l'utilisateur peut la modifier.</string>
+      <string id="TrackingProtection_Cryptomining">Minage de cryptomonnaie</string>
+      <string id="TrackingProtection_Cryptomining_Explain">Si cette stratégie est activée, les scripts utilisant le minage de cryptomonnaie sont bloqués.
+
+Si cette stratégie est désactivée ou non configurée, les scripts utilisant le minage de cryptomonnaie ne sont pas bloqués.</string>
+      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Si cette stratégie est activée, les scripts qui utilisent le fingerprinting sont bloqués.
+
+Si cette stratégie est désactivée ou non configurée, les scripts qui utilisent le fingerprinting ne sont pas bloqués.</string>
+      <string id="TrackingProtection_Exceptions">Exceptions</string>
+      <string id="TrackingProtection_Exceptions_Explain">Si cette stratégie est activée, vous pouvez spécifier les origines où la protection contre le suivi n'est pas activée.
+
+Si cette stratégie est désactivée ou non configurée, la protection contre le suivi est activée pour tous les sites web.</string>
+      <string id="TrackingProtection_Locked">Ne pas permettre de modifier les préférences de protection contre le suivi</string>
+      <string id="TrackingProtection_Locked_Explain">Si cette stratégie est activée, les préférences de protection contre le suivi ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier les préférences de protection contre le suivi.</string>
+      <string id="TrackingProtection_EmailTracking">Suivi des e-mails</string>
+      <string id="TrackingProtection_EmailTracking_Explain">Si cette stratégie est activée, les pixels et scripts de suivi des e-mails cachés sur les sites web sont bloqués.
+
+Si cette stratégie est désactivée ou non configurée, les pixels et scripts de suivi des e-mails cachés sur les sites web ne sont pas bloqués.</string>
+      <string id="RequestedLocales">Langue demandée</string>
+      <string id="RequestedLocalesString">Langue demandée (chaîne)</string>
+      <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de langues demandées pour l'application, par ordre de préférence. Cela activera le pack linguistique correspondant.
+
+Si cette stratégie est désactivée ou non configurée, l'application utilisera la langue par défaut.</string>
+      <string id="SecurityDevices">Dispositifs de sécurité</string>
+      <string id="SecurityDevices_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de modules PKCS #11 à installer. Les modules sont définis par un nom et un chemin d'accès complet.
+
+Si cette stratégie est désactivée ou non configurée, aucun module PKCS #11 supplémentaire ne sera installé.</string>
+      <string id="SecurityDevices_Add">Ajouter</string>
+      <string id="SecurityDevices_Delete">Supprimer</string>
+      <string id="SecurityDevices_Delete_Explain">Si cette stratégie est activée, vous pouvez spécifier les noms des modules PKCS #11 à supprimer.
+
+Si cette stratégie est désactivée ou non configurée, aucun module PKCS #11 ne sera supprimé.</string>
+      <string id="SearchBar">Emplacement de la barre de recherche</string>
+      <string id="SearchBar_Explain">Si cette stratégie est activée, vous pouvez définir si la barre de recherche est distincte de la barre d'URL.
+
+Si cette stratégie est désactivée ou non configurée, les nouveaux utilisateurs obtiennent une barre de recherche unifiée, tandis que les utilisateurs effectuant une mise à jour depuis Firefox 56 ou une version antérieure obtiennent une barre de recherche distincte.</string>
+      <string id="SearchEngines_1">Moteur de recherche 1</string>
+      <string id="SearchEngines_2">Moteur de recherche 2</string>
+      <string id="SearchEngines_3">Moteur de recherche 3</string>
+      <string id="SearchEngines_4">Moteur de recherche 4</string>
+      <string id="SearchEngines_5">Moteur de recherche 5</string>
+      <string id="SearchEngines_Explain">Si cette stratégie est activée, vous pouvez configurer un moteur de recherche à ajouter à Firefox. Utilisez {searchTerms} pour indiquer l'emplacement du terme de recherche. En raison d'un bug, vous devez sélectionner la méthode (généralement GET). Notez que vous devez spécifier les moteurs de recherche dans l'ordre.
+
+Si cette stratégie est désactivée ou non configurée, aucun nouveau moteur de recherche n'est ajouté.</string>
+      <string id="SearchBar_Unified">Unifiée</string>
+      <string id="SearchBar_Separate">Séparée</string>
+      <string id="SearchEngine_Method_GET">GET</string>
+      <string id="SearchEngine_Method_POST">POST</string>
+      <string id="SearchEngines_Default">Moteur de rechercher par défaut</string>
+      <string id="SearchEngines_Default_Explain">Si cette stratégie est activée, vous pouvez définir le nom d'un moteur de recherche à utiliser comme moteur par défaut.
+
+Si cette stratégie est désactivée ou non configurée, le moteur de recherche par défaut de Firefox est utilisé.</string>
+      <string id="SearchEngines_PreventInstalls">Empêcher l'installation de moteurs de recherche</string>
+      <string id="SearchEngines_PreventInstalls_Explain">Si cette stratégie est activée, l'utilisateur ne pourra pas installer de moteurs de recherche depuis des pages web.
+
+Si cette stratégie est désactivée ou non configurée, les moteurs de recherche peuvent être installés depuis des pages web.</string>
+      <string id="SearchEngines_Remove">Supprimer les moteurs de recherche</string>
+      <string id="SearchEngines_Remove_Explain">Si cette stratégie est activée, vous pouvez spécifier les noms des moteurs de recherche à supprimer ou à masquer.
+
+Si cette stratégie est désactivée ou non configurée, les moteurs de recherche ne seront pas supprimés ni masqués.</string>
+      <string id="SearchSuggestEnabled">Suggestions de recherche</string>
+      <string id="SearchSuggestEnabled_Explain">Si cette stratégie est désactivée, les suggestions de recherche seront désactivées.
+
+Si cette stratégie est activée, les suggestions de recherche seront activées.
+
+Si cette stratégie n'est pas configurée, les suggestions de recherche seront activées, mais l'utilisateur pourra les désactiver.</string>
+      <string id="SSLVersionMin">Version minimale de SSL activée</string>
+      <string id="SSLVersionMin_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL/TLS inférieures à la valeur spécifiée.
+
+Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut une version minimale de TLS 1.2.</string>
+      <string id="SSLVersionMax">Version maximale de SSL activée</string>
+      <string id="SSLVersionMax_Explain">Si cette stratégie est activée, Firefox n'utilisera pas les versions SSL/TLS supérieures à la valeur spécifiée.
+
+Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut une version maximale de TLS 1.3.</string>
+      <string id="TLS1">TLS 1.0</string>
+      <string id="TLS1_1">TLS 1.1</string>
+      <string id="TLS1_2">TLS 1.2</string>
+      <string id="TLS1_3">TLS 1.3</string>
+      <string id="SupportMenu">Menu d'assistance</string>
+      <string id="SupportMenu_Explain">Si cette stratégie est activée, un nouvel élément de menu est ajouté au menu d'aide avec des informations de support.
+
+Si cette stratégie est désactivée ou non configurée, aucun élément de menu n'est ajouté.</string>
+      <string id="UserMessaging_WhatsNew">Nouveautés (obsolète)</string>
+      <string id="UserMessaging_WhatsNew_Explain">Si cette stratégie est désactivée, l'icône et l'élément de menu "Nouveautés" ne seront pas affichés.
+
+Si cette stratégie est activée ou non configurée, l'icône et l'élément de menu "Nouveautés" seront affichés.</string>
+      <string id="UserMessaging_ExtensionRecommendations">Recommandations d'extensions</string>
+      <string id="UserMessaging_ExtensionRecommendations_Explain">Si cette stratégie est désactivée, les extensions ne seront pas recommandées lorsque l'utilisateur visite des sites web.
+
+Si cette stratégie est activée ou non configurée, des extensions seront recommandées lorsque l'utilisateur visite des sites web.</string>
+      <string id="UserMessaging_FeatureRecommendations">Recommandations de fonctionnalités</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Si cette stratégie est désactivée, les fonctionnalités de Firefox ne seront pas recommandées à l'utilisateur pendant qu'il utilise Firefox.
+
+Si cette stratégie est activée ou non configurée, les fonctionnalités de Firefox seront recommandées à l'utilisateur pendant qu'il utilise Firefox.</string>
+      <string id="UserMessaging_UrlbarInterventions">Interventions de la barre d'URL</string>
+      <string id="UserMessaging_UrlbarInterventions_Explain">Si cette stratégie est désactivée, aucune action ne sera recommandée en fonction de ce que l'utilisateur tape dans la barre d'URL.
+
+Si cette stratégie est activée ou non configurée, des actions seront recommandées en fonction de ce que l'utilisateur tape dans la barre d'URL.</string>
+      <string id="UserMessaging_SkipOnboarding">Passer l'introduction</string>
+      <string id="UserMessaging_SkipOnboarding_Explain">Si cette stratégie est activée, les messages d'introduction ne seront pas affichés sur la page du nouvel onglet.
+
+Si cette stratégie est désactivée ou non configurée, les messages d'introduction seront affichés sur la page du nouvel onglet.</string>
+      <string id="UserMessaging_MoreFromMozilla">Plus de Mozilla</string>
+      <string id="UserMessaging_MoreFromMozilla_Explain">Si cette stratégie est désactivée, la section "Plus de Mozilla" ne sera pas affichée dans les préférences.
+
+Si cette stratégie est activée ou non configurée, la section "Plus de Mozilla" sera affichée dans les préférences.</string>
+      <string id="UserMessaging_FirefoxLabs">Firefox Labs</string>
+      <string id="UserMessaging_FirefoxLabs_Explain">Si cette stratégie est désactivée, la section "Firefox Labs" ne sera pas affichée dans les préférences.
+
+Si cette stratégie est activée ou non configurée, la section "Firefox Labs" sera affichée dans les préférences.</string>
+      <string id="UserMessaging_Locked">Ne pas autoriser la modification des préférences de messagerie utilisateur</string>
+      <string id="UserMessaging_Locked_Explain">Si cette stratégie est désactivée, les préférences de messagerie utilisateur peuvent être modifiées par l'utilisateur.
+
+Si cette stratégie est activée ou non configurée, les préférences de messagerie utilisateur ne peuvent pas être modifiées par l'utilisateur.</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_CBC_SHA">TLS_RSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_CBC_SHA">TLS_RSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_Explain">Si cette stratégie est activée, le chiffrement correspondant est désactivé.
+
+Si cette stratégie est désactivée, le chiffrement correspondant est activé.
+
+Si cette stratégie n'est pas configurée, le chiffrement correspondant est activé ou désactivé en fonction des paramètres par défaut dans Firefox.</string>
+      <string id="EncryptedMediaExtensions_Enabled">Activer les extensions de médias cryptés</string>
+      <string id="EncryptedMediaExtensions_Enabled_Explain">Si cette stratégie est désactivée, les extensions de médias cryptés (comme Widevine) ne sont pas téléchargées par Firefox, sauf si l'utilisateur consent à les installer.
+
+Si cette stratégie est activée ou non configurée, les extensions de médias cryptés (comme Widevine) sont téléchargées automatiquement et utilisées par Firefox.</string>
+      <string id="EncryptedMediaExtensions_Locked">Verrouiller les extensions de médias cryptés</string>
+      <string id="EncryptedMediaExtensions_Locked_Explain">Si cette stratégie est activée et que les extensions de médias cryptés sont désactivées, Firefox ne téléchargera pas les extensions de médias cryptés (comme Widevine) et ne demandera pas à l'utilisateur de les installer.
+
+Si cette stratégie n'est pas activée ou non configurée, elle n'a aucun effet.</string>
+      <string id="PDFjs_Enabled">Activer PDF.js</string>
+      <string id="PDFjs_Enabled_Explain">Si cette stratégie est désactivée, le lecteur PDF intégré n'est pas utilisé.
+
+Si cette stratégie est activée ou non configurée, le lecteur PDF intégré est utilisé.</string>
+      <string id="PDFjs_EnablePermissions">Activer les autorisations</string>
+      <string id="PDFjs_EnablePermissions_Explain">Si cette stratégie est activée, le lecteur PDF intégré respectera les autorisations du document, comme l'interdiction de copier le texte.
+
+Si cette stratégie n'est pas activée ou non configurée, les autorisations du document seront ignorées.</string>
+      <string id="PictureInPicture_Enabled">Activé</string>
+      <string id="PictureInPicture_Enabled_Explain">Si cette stratégie est désactivée, l'option "Picture-in-Picture" (Image dans l'image) n'apparaît pas sur les vidéos.
+
+Si cette stratégie est activée ou non configurée, l'option "Picture-in-Picture" est disponible sur les vidéos.</string>
+      <string id="PictureInPicture_Locked">Verrouillé</string>
+      <string id="PictureInPicture_Locked_Explain">Si cette stratégie est activée, les paramètres de Picture-in-Picture ne peuvent pas être modifiés par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, les paramètres de Picture-in-Picture peuvent être modifiés par l'utilisateur.</string>
+      <string id="PrimaryPassword">Mot de passe principal</string>
+      <string id="PrimaryPassword_Explain">Si cette stratégie est activée, un mot de passe principal est requis.
+
+Si cette stratégie est désactivée, les utilisateurs ne peuvent pas créer de mot de passe principal.
+
+Si cette stratégie n'est pas configurée, les utilisateurs peuvent choisir de créer un mot de passe principal.</string>
+      <string id="HandlersOneLine">Gestionnaires (JSON sur une seule ligne)</string>
+      <string id="Handlers">Gestionnaires</string>
+      <string id="Handlers_Explain">Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les gestionnaires d'applications par défaut.
+
+Si cette stratégie est désactivée ou non configurée, les paramètres par défaut de Firefox sont utilisés.
+
+Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+      <string id="PreferencesOneLine">Préférences (JSON sur une seule ligne)</string>
+      <string id="Preferences">Préférences</string>
+      <string id="Preferences_Explain">Note : Pour utiliser cette stratégie, vous devez supprimer tous les paramètres dans l'ancienne section Préférences (Obsolète).
+
+Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les préférences.
+
+Si cette stratégie est désactivée ou non configurée, les préférences ne sont pas modifiées.
+
+Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+      <string id="BookmarksOneLine">Favoris (JSON sur une seule ligne)</string>
+      <string id="Bookmarks">Favoris (JSON)</string>
+      <string id="Bookmarks_Explain">Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les favoris, y compris [] pour effacer tous les favoris.
+
+Si cette stratégie est désactivée ou non configurée, les stratégies de favoris individuelles sont utilisées.
+
+Si cette stratégie est activée en même temps que des favoris individuels, ces favoris ne seront pas ajoutés.
+
+Cette stratégie n'a aucun effet sur les favoris gérés.
+
+Pour des informations détaillées sur le JSON, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+      <string id="ManagedBookmarksOneLine">Favoris gérés (JSON sur une seule ligne)</string>
+      <string id="ManagedBookmarks">Favoris gérés</string>
+      <string id="ManagedBookmarks_Explain">Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les favoris gérés.
+
+Si cette stratégie est désactivée ou non configurée, les favoris gérés ne sont pas ajoutés.
+
+Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks.</string>
+      <string id="AllowedDomainsForApps">Définir les domaines autorisés à accéder à Google Workspace</string>
+      <string id="AllowedDomainsForApps_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent accéder à Google Workspace que pour les domaines spécifiés (séparés par une virgule). Pour permettre l'accès à Gmail, vous pouvez ajouter consumer_accounts.
+
+Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent accéder à n'importe quel compte sur Google Workspace ainsi qu'à Gmail.</string>
+      <string id="BackgroundAppUpdate">Mise à jour en arrière-plan</string>
+      <string id="BackgroundAppUpdate_Explain">Si cette stratégie est désactivée, l'application ne tentera pas d'installer des mises à jour lorsque l'application n'est pas en cours d'exécution.
+
+Si cette stratégie est activée ou non configurée, les mises à jour de l'application peuvent être installées (sans l'approbation de l'utilisateur) en arrière-plan, même lorsque l'application n'est pas en cours d'exécution. Le système d'exploitation pourrait cependant toujours exiger une approbation.</string>
+      <string id="AutoLaunchProtocolsFromOriginsOneLine">Lancement automatique des protocoles depuis les origines (JSON sur une seule ligne)</string>
+      <string id="AutoLaunchProtocolsFromOrigins">Lancement automatique des protocoles depuis les origines</string>
+      <string id="AutoLaunchProtocolsFromOrigins_Explain">Si cette stratégie est activée, vous pouvez définir une liste de protocoles externes qui peuvent être utilisés depuis les origines listées sans demander l'autorisation de l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui invoque un protocole externe demandera l'autorisation de l'utilisateur.
+
+Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins.</string>
+      <string id="WindowsSSO">SSO Windows</string>
+      <string id="WindowsSSO_Explain">Si cette stratégie est activée, Firefox utilisera les identifiants stockés dans Windows pour se connecter aux comptes Microsoft, professionnels et scolaires.
+
+Si cette stratégie est désactivée ou non configurée, les identifiants doivent être saisis manuellement.</string>
+      <string id="UseSystemPrintDialog">Utiliser la boîte de dialogue d'impression du système</string>
+      <string id="UseSystemPrintDialog_Explain">Si cette stratégie est activée, Firefox utilisera la boîte de dialogue d'impression du système au lieu d'afficher l'aperçu avant impression.
+
+Si cette stratégie est désactivée ou non configurée, Firefox affichera l'aperçu avant impression.</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine">Désactiver les avertissements basés sur l'extension de fichier pour des types de fichiers spécifiques sur des domaines (JSON sur une seule ligne)</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Désactiver les avertissements basés sur l'extension de fichier pour des types de fichiers spécifiques sur des domaines</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">Si cette stratégie est activée, vous pouvez définir une liste de domaines et d'extensions de types de fichiers qui seront exemptés des avertissements pour les fichiers exécutables.
+
+Si cette stratégie est désactivée ou non configurée, des avertissements seront affichés pour tous les types de fichiers exécutables.
+
+Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+      <string id="StartDownloadsInTempDirectory">Démarrer les téléchargements dans un répertoire temporaire</string>
+      <string id="StartDownloadsInTempDirectory_Explain">Si cette stratégie est activée, Firefox commencera les téléchargements dans un répertoire temporaire et les supprimera automatiquement lorsque vous fermerez le navigateur.
+
+Si cette stratégie est désactivée ou non configurée, Firefox enregistrera les fichiers dans le dossier de téléchargement et ils ne seront pas supprimés automatiquement lorsque vous fermerez le navigateur.</string>
+      <string id="GoToIntranetSiteForSingleWordEntryInAddressBar">Forcer la navigation directe vers les sites intranet pour les entrées d'un seul mot dans la barre d'adresse</string>
+      <string id="GoToIntranetSiteForSingleWordEntryInAddressBar_Explain">Si cette stratégie est activée, la saisie d'un mot unique dans la barre d'adresse tentera d'abord de naviguer vers les sites intranet, en revenant à la recherche si la requête DNS échoue.
+
+Si cette stratégie est désactivée ou non configurée, la saisie d'un mot unique dans la barre d'adresse effectuera une recherche.</string>
+      <string id="AppUpdatePin">Épingler les mises à jour à une version spécifique</string>
+      <string id="AppUpdatePin_Explain">Si cette stratégie est activée, vous pouvez spécifier une version de Firefox sous la forme xx. ou xx.xx. et Firefox ne sera pas mis à jour au-delà de cette version majeure ou mineure.
+
+Si cette stratégie est désactivée ou non configurée, Firefox se mettra à jour normalement.</string>
+      <string id="Proxy_Locked">Ne pas autoriser la modification des paramètres de Proxy</string>
+      <string id="Proxy_Locked_Explain">Si cette stratégie est activée, les paramètres de Proxy ne peuvent pas être modifiés par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses paramètres de Proxy.</string>
+      <string id="Proxy_ConnectionType">Type de connexion</string>
+      <string id="Proxy_ConnectionType_Explain">Si cette stratégie est activée, vous pouvez définir le type de connexion.
+
+Si cette stratégie est désactivée ou non configurée, Firefox utilise par défaut le Proxy du système.</string>
+      <string id="Proxy_HTTPProxy">Proxy HTTP</string>
+      <string id="Proxy_HTTPProxy_Explain">Si cette stratégie est activée, vous pouvez définir le Proxy HTTP utilisé lorsque la configuration manuelle du Proxy est spécifiée.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n'utilise pas de Proxy HTTP.</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols">Utiliser le Proxy HTTP pour HTTPS</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols_Explain">Si cette stratégie est activée, le Proxy HTTP est utilisé pour HTTPS lorsque la configuration manuelle du Proxy est spécifiée.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n'utilise pas de Proxy HTTPS, sauf s'il est spécifié.</string>
+      <string id="Proxy_SSLProxy">Proxy HTTPS</string>
+      <string id="Proxy_SSLProxy_Explain">Si cette stratégie est activée, vous pouvez définir le Proxy HTTPS utilisé lorsque la configuration manuelle du Proxy est spécifiée.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n'utilise pas de Proxy HTTPS.</string>
+      <string id="Proxy_SOCKSProxy">Hôte SOCKS</string>
+      <string id="Proxy_SOCKSProxy_Explain">Si cette stratégie est activée, vous pouvez définir l'hôte SOCKS et la version utilisés lorsque la configuration manuelle du Proxy est spécifiée.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n'utilise pas d'hôte SOCKS.</string>
+      <string id="Proxy_AutoConfigURL">URL de configuration automatique du Proxy</string>
+      <string id="Proxy_AutoConfigURL_Explain">Si cette stratégie est activée, vous pouvez définir l'URL de configuration automatique du Proxy.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n'utilise pas d'URL de configuration automatique du Proxy.</string>
+      <string id="Proxy_Passthrough">Passage direct du Proxy</string>
+      <string id="Proxy_Passthrough_Explain">Si cette stratégie est activée, les paramètres du Proxy sont contournés pour les emplacements spécifiés.
+
+Si cette stratégie est désactivée ou non configurée, Firefox ne contourne pas le Proxy.</string>
+      <string id="Proxy_AutoLogin">Ne pas demander d'authentification si le mot de passe est enregistré</string>
+      <string id="Proxy_AutoLogin_Explain">Si cette stratégie est activée, Firefox ne demandera pas d'authentification Proxy lorsque le mot de passe est enregistré.
+
+Si cette stratégie est désactivée ou non configurée, Firefox demandera toujours une authentification Proxy.</string>
+      <string id="Proxy_UseProxyForDNS">Proxy DNS lors de l'utilisation de SOCKS</string>
+      <string id="Proxy_UseProxyForDNS_Explain">Si cette stratégie est activée, le DNS sera proxyfié lors de l'utilisation de SOCKS.
+
+Si cette stratégie est désactivée, le DNS ne sera pas proxyfié lors de l'utilisation de SOCKS.
+
+Si cette stratégie n'est pas configurée, le DNS ne sera pas proxyfié lors de l'utilisation de SOCKS v4, mais il sera proxyfié lors de l'utilisation de SOCKS v5.</string>
+      <string id="DisableThirdPartyModuleBlocking">Désactiver le blocage des modules tiers</string>
+      <string id="DisableThirdPartyModuleBlocking_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas bloquer les modules tiers depuis la page about:third-party.
+
+Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent bloquer les modules tiers depuis la page about:third-party.</string>
+      <string id="ContainersOneLine">Conteneurs (JSON sur une seule ligne)</string>
+      <string id="Containers">Conteneurs</string>
+      <string id="Containers_Explain">Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les conteneurs par défaut.
+
+Si cette stratégie est désactivée ou non configurée, les paramètres par défaut intégrés sont utilisés.
+
+Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+      <string id="FirefoxSuggest_WebSuggestions">Suggestions du web</string>
+      <string id="FirefoxSuggest_WebSuggestions_Explain">Si cette stratégie est activée, vous recevrez des suggestions de Firefox liées à votre recherche.
+
+Si cette stratégie est désactivée, vous ne recevrez pas ces suggestions.
+
+Si cette stratégie n'est pas configurée, vous recevrez des suggestions de Firefox liées à votre recherche.</string>
+      <string id="FirefoxSuggest_SponsoredSuggestions">Suggestions des sponsors</string>
+      <string id="FirefoxSuggest_SponsoredSuggestions_Explain">Si cette stratégie est activée, vous soutiendrez le développement de Firefox avec des suggestions sponsorisées occasionnelles.
+
+Si cette stratégie est désactivée, vous ne recevrez pas ces suggestions.
+
+Si cette stratégie n'est pas configurée, vous recevrez des suggestions sponsorisées occasionnelles.</string>
+      <string id="FirefoxSuggest_ImproveSuggest">Améliorer l'expérience Firefox Suggest</string>
+      <string id="FirefoxSuggest_ImproveSuggest_Explain">Si cette stratégie est activée, vous contribuerez à créer une expérience de recherche plus riche en permettant à Mozilla de traiter vos requêtes de recherche.
+
+Si cette stratégie est désactivée ou non configurée, vous n'autorisez pas Mozilla à traiter vos requêtes de recherche.</string>
+      <string id="FirefoxSuggest_Locked">Ne pas autoriser la modification des préférences</string>
+      <string id="FirefoxSuggest_Locked_Explain">Si cette stratégie est activée, les préférences de Firefox Suggest ne peuvent pas être modifiées par l'utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de Firefox Suggest.</string>
+      <string id="PrintingEnabled">Impression</string>
+      <string id="PrintingEnabled_Explain">Si cette stratégie est désactivée, l'impression est désactivée.
+
+Si cette stratégie est activée ou non configurée, l'impression est activée.</string>
+      <string id="ManualAppUpdateOnly">Mise à jour manuelle uniquement</string>
+      <string id="ManualAppUpdateOnly_Explain">Si cette stratégie est activée, les utilisateurs ne seront pas invités à installer des mises à jour et Firefox ne vérifiera pas les mises à jour en arrière-plan. L'utilisateur doit vérifier et installer manuellement les mises à jour depuis la boîte de dialogue "À propos".
+
+Si cette stratégie est désactivée ou non configurée, le navigateur recevra des mises à jour.
+
+Cette stratégie n'est pas recommandée pour la plupart des utilisateurs.</string>
+      <string id="AllowFileSelectionDialogs">Autoriser les boîtes de dialogue de sélection de fichiers</string>
+      <string id="AllowFileSelectionDialogs_Explain">Si cette stratégie est désactivée, les utilisateurs ne pourront pas ouvrir de boîtes de dialogue de sélection de fichiers. Dans la plupart des cas, Firefox agira comme si l'utilisateur avait cliqué sur le bouton "Annuler".
+
+Si cette stratégie est activée ou non configurée, les utilisateurs peuvent ouvrir des boîtes de dialogue de sélection de fichiers.</string>
+      <string id="AutofillAddressEnabled">Activer le remplissage automatique des adresses</string>
+      <string id="AutofillAddressEnabled_Explain">Si cette stratégie est désactivée, les adresses ne seront pas remplies automatiquement pour les versions de Firefox et les régions qui le prennent en charge.
+
+Si cette stratégie est activée ou non configurée, les adresses seront remplies automatiquement pour les versions de Firefox et les régions qui le prennent en charge.</string>
+      <string id="AutofillCreditCardEnabled">Activer le remplissage automatique des méthodes de paiement</string>
+      <string id="AutofillCreditCardEnabled_Explain">Si cette stratégie est désactivée, les méthodes de paiement ne seront pas remplies automatiquement pour les versions de Firefox et les régions qui le prennent en charge.
+
+Si cette stratégie est activée ou non configurée, les méthodes de paiement seront remplies automatiquement pour les versions de Firefox et les régions qui le prennent en charge.</string>
+      <string id="TranslateEnabled">Activer la traduction des pages web</string>
+      <string id="TranslateEnabled_Explain">Si cette stratégie est désactivée, la traduction des pages web ne sera pas disponible.
+
+Si cette stratégie est activée ou non configurée, la traduction des pages web sera disponible.
+
+Note : La traduction des pages web se fait entièrement sur le client, il n'y a donc aucun risque pour vos données ou la confidentialité.</string>
+      <string id="DisableEncryptedClientHello">Désactiver Encrypted Client Hello</string>
+      <string id="DisableEncryptedClientHello_Explain">Si cette stratégie est activée, la fonctionnalité TLS Encrypted Client Hello (ECH) sera désactivée.
+
+Si cette stratégie est désactivée ou non configurée, la fonctionnalité TLS Encrypted Client Hello (ECH) sera activée.</string>
+      <string id="PostQuantumKeyAgreementEnabled">Activer l'accord de clé post-quantique</string>
+      <string id="PostQuantumKeyAgreementEnabled_Explain">Si cette stratégie est activée, l'accord de clé post-quantique pour TLS sera activé.
+
+Si cette stratégie est désactivée ou non configurée, l'accord de clé post-quantique pour TLS sera désactivé.</string>
+      <string id="HttpsOnlyMode">Mode HTTPS-Only</string>
+      <string id="HttpsOnlyMode_Explain">Si cette stratégie est activée, vous pouvez définir le comportement par défaut pour le Mode HTTPS-Only.
+
+Si cette stratégie est désactivée ou non configurée, le mode HTTPS-Only est désactivé.</string>
+      <string id="HttpsOnlyMode_Allowed">Désactivé par défaut</string>
+      <string id="HttpsOnlyMode_Disallowed">Désactivé et verrouillé</string>
+      <string id="HttpsOnlyMode_Enabled">Activé par défaut</string>
+      <string id="HttpsOnlyMode_ForceEnabled">Activé et verrouillé</string>
+      <string id="HttpAllowlist">Liste blanche des sites HTTP</string>
+      <string id="HttpAllowlist_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d'origines qui ne seront pas mises à niveau vers HTTPS.
+
+Si cette stratégie est désactivée ou non configurée, toutes les origines seront mises à niveau vers HTTPS si le Mode HTTPS-Only est activé.</string>
+      <string id="PrivateBrowsingModeAvailability">Disponibilité du mode de navigation privée</string>
+      <string id="PrivateBrowsingModeAvailability_Explain">Si cette stratégie est activée, vous pouvez définir la disponibilité du mode de navigation privée.
+
+Si cette stratégie est désactivée ou non configurée, le mode de navigation privée est disponible.</string>
+      <string id="PrivateBrowsingModeAvailability_0">Autoriser le mode de navigation privée</string>
+      <string id="PrivateBrowsingModeAvailability_1">Désactiver le mode de navigation privée</string>
+      <string id="PrivateBrowsingModeAvailability_2">Forcer le mode de navigation privée</string>
+      <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
+
+Pour une description de la préférence, consultez :
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_String_Explain">Si cette stratégie est activée, la préférence est verrouillée sur la chaîne de caractères saisie. Si cette stratégie est désactivée, elle n'a aucun effet.
+
+Pour une description de la préférence, consultez :
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+      <string id="Preferences_Enum_Explain">Si cette stratégie est activée, la préférence est verrouillée sur la valeur sélectionnée. Si cette stratégie est désactivée, elle n'a aucun effet.
+
+Pour une description de la préférence, consultez :
+
+https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+      <string id="Preferences_Unsupported_Explain">Cette préférence n'est plus prise en charge sur Windows. Nous étudions la création d'une politique à ce sujet.</string>
+      <string id="Preferences_accessibility_force_disabled_auto">Automatique (0)</string>
+      <string id="Preferences_accessibility_force_disabled_off">Toujours désactivé (1)</string>
+      <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Demander à chaque fois</string>
+      <string id="Preferences_security_default_personal_cert_Select_Automatically">Sélectionner automatiquement</string>
+      <string id="accessibility_force_disabled">accessibility.force_disabled</string>
+      <string id="app_update_auto">app.update.auto (Obsolète)</string>
+      <string id="browser_bookmarks_autoExportHTML">browser.bookmarks.autoExportHTML</string>
+      <string id="browser_bookmarks_file">browser.bookmarks.file</string>
+      <string id="browser_bookmarks_restore_default_bookmarks">browser.bookmarks.restore_default_bookmarks</string>
+      <string id="browser_cache_disk_enable">browser.cache.disk.enable</string>
+      <string id="browser_fixup_dns_first_for_single_words">browser.fixup.dns_first_for_single_words</string>
+      <string id="browser_places_importBookmarksHTML">browser.places.importBookmarksHTML</string>
+      <string id="browser_safebrowsing_phishing_enabled">browser.safebrowsing.phishing.enabled</string>
+      <string id="browser_safebrowsing_malware_enabled">browser.safebrowsing.malware.enabled</string>
+      <string id="browser_search_update">browser.search.update</string>
+      <string id="browser_tabs_warnOnClose">browser.tabs.warnOnClose</string>
+      <string id="browser_cache_disk_parent_directory">browser.cache.disk.parent_directory</string>
+      <string id="browser_slowStartup_notificationDisabled">browser.slowStartup.notificationDisabled</string>
+      <string id="browser_taskbar_previews_enable">browser.taskbar.previews.enable</string>
+      <string id="browser_urlbar_suggest_bookmark">browser.urlbar.suggest.bookmark</string>
+      <string id="browser_urlbar_suggest_history">browser.urlbar.suggest.history</string>
+      <string id="browser_urlbar_suggest_openpage">browser.urlbar.suggest.openpage</string>
+      <string id="datareporting_policy_dataSubmissionPolicyBypassNotification">datareporting.policy.dataSubmissionPolicyBypassNotification</string>
+      <string id="dom_allow_scripts_to_close_windows">dom.allow_scripts_to_close_windows</string>
+      <string id="dom_disable_window_flip">dom.disable_window_flip</string>
+      <string id="dom_disable_window_move_resize">dom.disable_window_move_resize</string>
+      <string id="dom_event_contextmenu_enabled">dom.event.contextmenu.enabled</string>
+      <string id="dom_keyboardevent_keypress_hack_dispatch_non_printable_keys_addl">dom.keyboardevent.keypress.hack.dispatch_non_printable_keys.addl</string>
+      <string id="dom_keyboardevent_keypress_hack_use_legacy_keycode_and_charcode_addl">dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode.addl</string>
+      <string id="dom_xmldocument_load_enabled">dom.xmldocument.load.enabled</string>
+      <string id="dom_xmldocument_async_enabled">dom.xmldocument.async.enabled</string>
+      <string id="extensions_blocklist_enabled">extensions.blocklist.enabled</string>
+      <string id="geo_enabled">geo.enabled</string>
+      <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
+      <string id="intl_accept_languages">intl.accept_languages</string>
+      <string id="media_eme_enabled">media.eme.enabled (Obsolète)</string>
+      <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
+      <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
+      <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
+      <string id="network_IDN_show_punycode">network.IDN_show_punycode</string>
+      <string id="places_history_enabled">places.history.enabled</string>
+      <string id="print_save_print_settings">print.save_print_settings</string>
+      <string id="security_default_personal_cert">security.default_personal_cert</string>
+      <string id="security_ssl_errorReporting_enabled">security.ssl.errorReporting.enabled</string>
+      <string id="security_mixed_content_block_active_content">security.mixed_content.block_active_content</string>
+      <string id="ui_key_menuAccessKeyFocuses">ui.key.menuAccessKeyFocuses</string>
+      <string id="browser_newtabpage_activity-stream_default_sites">browser.newtabpage.activity-stream.default.sites</string>
+      <string id="extensions_htmlaboutaddons_recommendations_enabled">extensions.htmlaboutaddons.recommendations.enabled</string>
+      <string id="media_peerconnection_enabled">media.peerconnection.enabled</string>
+      <string id="media_peerconnection_ice_obfuscate_host_addresses_whitelist">media.peerconnection.ice.obfuscate_host_addresses.whitelist (Obsolète)</string>
+      <string id="media_peerconnection_ice_obfuscate_host_addresses_blocklist">media.peerconnection.ice.obfuscate_host_addresses.blocklist</string>
+      <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
+      <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
+      <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="AppUpdateURL">
+        <textBox refId="AppUpdateURL">
+          <label>URL :</label>
+        </textBox>
+      </presentation>
+      <presentation id="Authentication">
+        <listBox refId="Authentication"/>
+      </presentation>
+      <presentation id="Authentication_AllowNonFQDN">
+        <checkBox refId="Authentication_AllowNonFQDN_NTLM">Toujours autoriser NTLM sur les noms de domaine non qualifiés</checkBox>
+        <checkBox refId="Authentication_AllowNonFQDN_SPNEGO">Toujours autoriser SPNEGO sur les noms de domaine non qualifiés</checkBox>
+      </presentation>
+      <presentation id="Authentication_AllowProxies">
+        <checkBox refId="Authentication_AllowProxies_NTLM">Autoriser NTLM à s'authentifier automatiquement avec les serveurs proxy</checkBox>
+        <checkBox refId="Authentication_AllowProxies_SPNEGO">Autoriser SPNEGO à s'authentifier automatiquement avec les serveurs proxy</checkBox>
+      </presentation>
+      <presentation id="Certificates_Install">
+        <listBox refId="Certificates_Install"/>
+      </presentation>
+      <presentation id="RequestedLocales">
+        <listBox refId="RequestedLocales"/>
+      </presentation>
+      <presentation id="SecurityDevices">
+        <listBox refId="SecurityDevices"/>
+      </presentation>
+      <presentation id="Extensions">
+        <listBox refId="Extensions"/>
+      </presentation>
+      <presentation id="WebsiteFilter">
+        <listBox refId="WebsiteFilter"/>
+      </presentation>
+      <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
+      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Autoriser les fenêtres pop-up pour les sites web</listBox></presentation>
+      <presentation id="Cookies_AcceptThirdParty">
+        <dropdownList refId="Cookies_AcceptThirdParty"/>
+      </presentation>
+      <presentation id="Cookies_Behavior">
+        <dropdownList refId="Cookies_Behavior"/>
+      </presentation>
+      <presentation id="Cookies_BehaviorPrivateBrowsing">
+        <dropdownList refId="Cookies_BehaviorPrivateBrowsing"/>
+      </presentation>
+      <presentation id="SearchBar">
+        <dropdownList refId="SearchBar"/>
+      </presentation>
+      <presentation id="TrackingProtection">
+        <checkBox refId="TrackingProtectionLocked">Ne pas autoriser la modification des préférences de protection contre le suivi.</checkBox>
+        <checkBox refId="Cryptomining">Bloquer les scripts de cryptominage.</checkBox>
+        <checkBox refId="Fingerprinting">Bloquer les scripts de fingerprinting.</checkBox>
+        <text>Exceptions :</text>
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="TrackingProtection_Exceptions">
+        <listBox refId="TrackingProtection_Exceptions"/>
+      </presentation>
+      <presentation id="OverridePage">
+        <textBox refId="OverridePage">
+          <label>URL :</label>
+        </textBox>
+      </presentation>
+      <presentation id="HomepageURL">
+        <text>URL :</text>
+        <textBox refId="HomepageURL">
+          <label/>
+        </textBox>
+        <checkBox refId="HomepageLocked">Ne pas autoriser la modification de la page d'accueil.</checkBox>
+      </presentation>
+      <presentation id="HomepageAdditional">
+        <listBox refId="HomepageAdditional">Pages d'accueil supplémentaires</listBox>
+      </presentation>
+      <presentation id="StartPage">
+        <dropdownList refId="StartPage"/>
+      </presentation>
+      <presentation id="Bookmark">
+        <text>Titre :</text>
+        <textBox refId="BookmarkTitle">
+          <label/>
+        </textBox>
+        <text>URL :</text>
+        <textBox refId="BookmarkURL">
+          <label/>
+        </textBox>
+        <text>URL Favicon :</text>
+        <textBox refId="BookmarkFavicon">
+          <label/>
+        </textBox>
+        <text>Emplacement :</text>
+        <dropdownList refId="BookmarkPlacement"/>
+        <text>Nom du dossier :</text>
+        <textBox refId="BookmarkFolder">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngine">
+        <textBox refId="SearchEngine_Name">
+          <label>Nom :</label>
+        </textBox>
+        <textBox refId="SearchEngine_URLTemplate">
+          <label>Modèle d'URL :</label>
+        </textBox>
+        <text>Methode :</text>
+        <dropdownList refId="SearchEngine_Method"/>
+        <textBox refId="SearchEngine_IconURL">
+          <label>URL icône :</label>
+        </textBox>
+        <textBox refId="SearchEngine_Alias">
+          <label>Alias :</label>
+        </textBox>
+        <textBox refId="SearchEngine_Description">
+          <label>Description :</label>
+        </textBox>
+        <textBox refId="SearchEngine_SuggestURLTemplate">
+          <label>Suggérer le modèle d'URL avec encodage :</label>
+        </textBox>
+        <textBox refId="SearchEngine_PostData">
+          <label>Données POST :</label>
+        </textBox>
+        <textBox refId="SearchEngine_Encoding">
+          <label>Encodage :</label>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Default">
+        <textBox refId="SearchEngines_Default">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="SearchEngines_Remove">
+        <listBox refId="SearchEngines_Remove"/>
+      </presentation>
+      <presentation id="Proxy">
+        <checkBox refId="ProxyLocked">Ne pas autoriser la modification des paramètres du Proxy.</checkBox>
+        <text>Type de connexion :</text>
+        <dropdownList refId="ConnectionType"/>
+        <text>Proxy HTTP :</text>
+        <textBox refId="HTTPProxy">
+          <label/>
+        </textBox>
+        <checkBox refId="UseHTTPProxyForAllProtocols">Utiliser ce serveur Proxy pour tous les protocoles.</checkBox>
+        <text>Proxy SSL :</text>
+        <textBox refId="SSLProxy">
+          <label/>
+        </textBox>
+        <text>Proxy FTP :</text>
+        <textBox refId="FTPProxy">
+          <label/>
+        </textBox>
+        <text>Hôte SOCKS :</text>
+        <textBox refId="SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>Version de SOCKS :</text>
+        <dropdownList refId="SOCKSVersion"/>
+        <text>Pas de Proxy pour</text>
+        <textBox refId="Passthrough">
+          <label/>
+        </textBox>
+        <text>Exemple : .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>URL de configuration automatique du Proxy :</text>
+        <textBox refId="AutoConfigURL">
+          <label/>
+        </textBox>
+        <checkBox refId="AutoLogin">Ne pas demander d'authentification si le mot de passe est enregistré.</checkBox>
+        <checkBox refId="UseProxyForDNS">Proxy DNS lors de l'utilisation de SOCKS v5.</checkBox>
+      </presentation>
+      <presentation id="DNSOverHTTPS">
+        <text>URL du fournisseur :</text>
+        <textBox refId="ProviderURL">
+          <label/>
+        </textBox>
+        <checkBox refId="DNSOverHTTPSEnabled">Activer DNS sur HTTPS.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Ne pas autoriser la modification des préférences DNS sur HTTPS.</checkBox>
+      </presentation>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
+      </presentation>
+      <presentation id="SupportMenu">
+        <text>Titre :</text>
+        <textBox refId="SupportMenuTitle">
+          <label/>
+        </textBox>
+        <text>URL :</text>
+        <textBox refId="SupportMenuURL">
+          <label/>
+        </textBox>
+        <text>Clé d'accès :</text>
+        <textBox refId="SupportMenuAccessKey">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Preferences_String">
+        <textBox refId="Preferences_String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Preferences_accessibility_force_disabled">
+        <dropdownList refId="Preferences_accessibility_force_disabled"/>
+      </presentation>
+      <presentation id="Preferences_security_default_personal_cert">
+        <dropdownList refId="Preferences_security_default_personal_cert"/>
+      </presentation>
+      <presentation id="LegacySameSiteCookieBehaviorEnabledForDomainList">
+        <listBox refId="LegacySameSiteCookieBehaviorEnabledForDomainList"/>
+      </presentation>
+      <presentation id="LocalFileLinks">
+        <listBox refId="LocalFileLinks"/>
+      </presentation>
+      <presentation id="SanitizeOnShutdown">
+        <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Downloads">Historique des téléchargements</checkBox>
+        <checkBox refId="SanitizeOnShutdown_FormData">Historique des formulaires et des recherches</checkBox>
+        <checkBox refId="SanitizeOnShutdown_History">Historique de navigation</checkBox>
+        <checkBox refId="SanitizeOnShutdown_Sessions">Connexions actives</checkBox>
+        <checkBox refId="SanitizeOnShutdown_SiteSettings">Préférences du site</checkBox>
+        <checkBox refId="SanitizeOnShutdown_OfflineApps">Données de sites hors ligne</checkBox>
+      </presentation>
+      <presentation id="FirefoxHome">
+        <checkBox refId="FirefoxHome_Search">Recherche</checkBox>
+        <checkBox refId="FirefoxHome_TopSites">Sites populaires</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredTopSites">Sites populaires sponsorisés</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Historique des téléchargements</checkBox>
+        <checkBox refId="FirefoxHome_Pocket">Recommandé par Pocket</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredPocket">Histoires sponsorisées par Pocket</checkBox>
+        <checkBox refId="FirefoxHome_Snippets">Extraits</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Ne pas autoriser les modifications des paramètres</checkBox>
+      </presentation>
+      <presentation id="ExtensionSettings">
+        <multiTextBox refId="ExtensionSettings"/>
+      </presentation>
+      <presentation id="Handlers">
+        <multiTextBox refId="Handlers"/>
+      </presentation>
+      <presentation id="DisplayMenuBar">
+        <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
+      </presentation>
+      <presentation id="String">
+        <textBox refId="String">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="List">
+        <listBox refId="List"/>
+      </presentation>
+      <presentation id="Autoplay_Default">
+        <dropdownList refId="Autoplay_Default"/>
+      </presentation>
+      <presentation id="JSON">
+        <multiTextBox refId="JSON"/>
+      </presentation>
+      <presentation id="JSONOneLine">
+        <textBox refId="JSONOneLine">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_ConnectionType">
+        <dropdownList refId="Proxy_ConnectionType"/>
+      </presentation>
+      <presentation id="Proxy_HTTPProxy">
+        <textBox refId="Proxy_HTTPProxy">
+          <label>Hôte incluant le port :</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_SSLProxy">
+        <textBox refId="Proxy_SSLProxy">
+          <label>Hôte incluant le port :</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_SOCKSProxy">
+        <text>Hôte incluant le port :</text>
+        <textBox refId="Proxy_SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>Version de SOCKS :</text>
+        <dropdownList refId="Proxy_SOCKSVersion"/>
+      </presentation>
+      <presentation id="Proxy_AutoConfigURL">
+        <textBox refId="Proxy_AutoConfigURL">
+          <label>URL :</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_Passthrough">
+        <text>Pas de Proxy pour</text>
+        <textBox refId="Proxy_Passthrough">
+          <label/>
+        </textBox>
+        <text>Exemple : .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Les connexions vers localhost, 127.0.0.1/8 et ::1 ne sont jamais proxyfiées.</text>
+      </presentation>
+      <presentation id="HttpsOnlyMode">
+        <dropdownList refId="HttpsOnlyMode"/>
+      </presentation>
+      <presentation id="PrivateBrowsingModeAvailability">
+        <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
