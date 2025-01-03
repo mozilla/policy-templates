@@ -75,6 +75,7 @@
       <string id="SUPPORTED_FF130">Firefox 130 or later, Firefox 115.15 ESR or later</string>
       <string id="SUPPORTED_FF130_ONLY">Firefox 130 or later</string>
       <string id="SUPPORTED_FF131">Firefox 131 or later, Firefox 115.16 ESR or later</string>
+      <string id="SUPPORTED_FF136_ONLY">Firefox 136 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -1561,6 +1562,6 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       <presentation id="Number">
         <decimalTextBox refId="Number"/>
       </presentation>
-   </presentationTable>
+    </presentationTable>
   </resources>
 </policyDefinitionResources>
