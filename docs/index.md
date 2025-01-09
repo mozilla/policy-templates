@@ -3558,12 +3558,13 @@ Within each handler type, you specify the given mimeType/extension/scheme as a k
 
 | Name | Description |
 | --- | --- |
-| `action`| Can be either `saveToDisk`, `useHelperApp`, `useSystemDefault`.
+| `action`| Can be either `saveToDisk`, `useHelperApp`, `handleInternally`, `useSystemDefault`.
 | `ask` | If `true`, the user is asked if what they want to do with the file. If `false`, the action is taken without user intervention.
 | `handlers` | An array of handlers with the first one being the default. If you don't want to have a default handler, use an empty object for the first handler. Choose between path or uriTemplate.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`name` | The display name of the handler (might not be used).
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`path`| The native path to the executable to be used.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`uriTemplate`| A url to a web based application handler. The URL must be https and contain a %s to be used for substitution.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`extensions`| A list of extensions to forward to, i.e. ["pdf"]
 
 **Compatibility:** Firefox 78, Firefox ESR 78\
 **CCK2 Equivalent:** N/A\
