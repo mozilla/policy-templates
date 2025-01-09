@@ -75,6 +75,8 @@
       <string id="SUPPORTED_FF129">Firefox 129 или более поздние версии, Firefox 105.14 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF130">Firefox 130 или более поздние версии, Firefox 105.15 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF130_ONLY">Firefox 130 или более поздние версии</string>
+      <string id="SUPPORTED_FF131">Firefox 131 или более поздние версии, Firefox 115.16 ESR или более поздние версии</string>
+      <string id="SUPPORTED_FF136_ONLY">Firefox 136 или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
@@ -102,6 +104,7 @@
       <string id="ProxySettings_group">Настройки прокси</string>
       <string id="SecurityDevices_group">Устройства безопасности</string>
       <string id="FirefoxSuggest_group">Firefox Suggest (US only)</string>
+      <string id="ContentAnalysis_group">Content Analysis (DLP)</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
       <string id="Block">Заблокированные сайты</string>
@@ -1135,6 +1138,55 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="PrivateBrowsingModeAvailability_0">Разрешить режим приватного просмотра</string>
       <string id="PrivateBrowsingModeAvailability_1">Отключить режим приватного просмотра</string>
       <string id="PrivateBrowsingModeAvailability_2">Принудительно включить режим приватного просмотра</string>
+      <string id="ContentAnalysis_AgentName">Agent Name</string>
+      <string id="ContentAnalysis_AgentName_Explain">If this policy is enabled, you can specify the name of the DLP agent, used in dialogs and notifications about DLP operations.
+
+If this policy is disabled or not configured, the agent name "A DLP Agent" is used.</string>
+      <string id="ContentAnalysis_AgentTimeout">Agent Timeout</string>
+      <string id="ContentAnalysis_AgentTimeout_Explain">If this policy is enabled, you can specify the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless 'Default Result' is set to 1 or 2.
+
+If this policy is disabled or not configured, the timeout is 30 seconds.</string>
+      <string id="ContentAnalysis_AllowUrlRegexList">Allow Url Regex List</string>
+      <string id="ContentAnalysis_AllowUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
+
+If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations">Bypass For Same Tab Operations</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">If this policy is enabled, Firefox will automatically allow DLP requests whose data comes from the same tab and frame - for example, if data is copied to the clipboard and then pasted on the same page.
+
+If this policy is disabled or not configured, Firefox  Firefox will not pass DLP requests whose data comes from the same tab and frame to the DLP agent as normal.</string>
+      <string id="ContentAnalysis_ClientSignature">Client Signature</string>
+      <string id="ContentAnalysis_ClientSignature_Explain">If this policy is enabled, you can set the required signature of the DLP agent connected to the pipe. If this is a non-empty string and the DLP agent does not have a signature with a Subject Name that exactly matches this value, Firefox will not connect to the pipe.
+
+If this policy is disabled or not configured, the signature will not be verified.</string>
+      <string id="ContentAnalysis_DefaultResult">Default Result</string>
+      <string id="ContentAnalysis_DefaultResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if there is a problem connecting to the DLP agent.
+
+If this policy is disabled or not configured, the DLP request will be denied if there is a problem connecting to the agent.</string>
+      <string id="ContentAnalysis_DefaultResult_0">Deny the request</string>
+      <string id="ContentAnalysis_DefaultResult_1">Warn the user and allow them to choose whether to allow or deny</string>
+      <string id="ContentAnalysis_DefaultResult_2">Allow the request</string>
+      <string id="ContentAnalysis_DenyUrlRegexList">Deny Url Regex List</string>
+      <string id="ContentAnalysis_DenyUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be denied without consulting the agent.
+
+If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
+      <string id="ContentAnalysis_Enabled">Enabled</string>
+      <string id="ContentAnalysis_Enabled_Explain">If this policy is enabled, Firefox will use DLP.
+
+If this policy is disabled or not configured, Firefox will not use DLP.
+
+Note: If this policy is enabled and no DLP agent is running, all DLP requests will be denied unless Default Result is set to 1 or 2.</string>
+      <string id="ContentAnalysis_IsPerUser">Is Per User</string>
+      <string id="ContentAnalysis_IsPerUser_Explain">If this policy is disabled, the pipe the DLP agent creates is per-system.
+
+If this policy is enabled or not configured, the pipe the DLP agent creates is per-user.</string>
+      <string id="ContentAnalysis_PipePathName">Pipe Path Name</string>
+      <string id="ContentAnalysis_PipePathName_Explain">If this policy is enabled, you can change the name of the pipe for the DLP agent.
+
+If this policy is disabled or not configured, the default pipe name of 'path_user' is used.</string>
+      <string id="ContentAnalysis_ShowBlockedResult">Show Blocked Result</string>
+      <string id="ContentAnalysis_ShowBlockedResult_Explain">If this policy is disabled, Firefox will not show a notification when a DLP request is denied.
+
+If this policy is enabled or not configured, Firefox will show a notification when a DLP request is denied.</string>
       <string id="Preferences_Boolean_Explain">Если эта политика включена, предпочтение заблокировано на true. Если эта политика отключена, предпочтение заблокировано на false.
 
 Описание предпочтения см.:
@@ -1506,6 +1558,12 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="PrivateBrowsingModeAvailability">
         <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
+      <presentation id="ContentAnalysis_DefaultResult">
+        <dropdownList refId="ContentAnalysis_DefaultResult"/>
+      </presentation>
+      <presentation id="Number">
+        <decimalTextBox refId="Number"/>
       </presentation>
     </presentationTable>
   </resources>
