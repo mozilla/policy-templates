@@ -70,11 +70,11 @@
       <string id="SUPPORTED_FF125">Firefox 125 or later, Firefox 115.10 ESR or later</string>
       <string id="SUPPORTED_FF126_ONLY">Firefox 126 or later</string>
       <string id="SUPPORTED_FF127_ONLY">Firefox 127 or later</string>
-      <string id="SUPPORTED_FF128">Firefox 128 or later, Firefox 115.13 ESR or later</string>
-      <string id="SUPPORTED_FF129">Firefox 129 or later, Firefox 115.14 ESR or later</string>
-      <string id="SUPPORTED_FF130">Firefox 130 or later, Firefox 115.15 ESR or later</string>
+      <string id="SUPPORTED_FF128">Firefox 128 or later</string>
+      <string id="SUPPORTED_FF129">Firefox 129 or later, Firefox 128.1 ESR or later</string>
+      <string id="SUPPORTED_FF130">Firefox 130 or later, Firefox 128.2 ESR or later</string>
       <string id="SUPPORTED_FF130_ONLY">Firefox 130 or later</string>
-      <string id="SUPPORTED_FF131">Firefox 131 or later, Firefox 115.16 ESR or later</string>
+      <string id="SUPPORTED_FF131">Firefox 131 or later, Firefox 128.3 ESR or later</string>
       <string id="SUPPORTED_FF136_ONLY">Firefox 136 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
