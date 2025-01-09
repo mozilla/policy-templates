@@ -157,6 +157,11 @@
           "action": "useSystemDefault",
           "ask": false
         }
+        "application/pdf": {
+          "action": "handleInternally",
+          "ask": false,
+          "extensions": ["pdf"]
+        }
       },
       "schemes": {
         "mailto": {
