@@ -156,7 +156,7 @@
         "application/msword": {
           "action": "useSystemDefault",
           "ask": false
-        }
+        },
         "application/pdf": {
           "action": "handleInternally",
           "ask": false,
