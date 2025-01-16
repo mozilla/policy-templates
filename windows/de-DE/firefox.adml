@@ -102,8 +102,8 @@
       <string id="PictureInPicture_group">Bild in Bild</string>
       <string id="ProxySettings_group">Proxy</string>
       <string id="SecurityDevices_group">Sicherheitsmodule</string>
-      <string id="FirefoxSuggest_group">Firefox Suggest (US only)</string>
-      <string id="ContentAnalysis_group">Content Analysis (DLP)</string>
+      <string id="FirefoxSuggest_group">Firefox Suggest (nur USA)</string>
+      <string id="ContentAnalysis_group">Verhinderung von Datenverlust (DLP)</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -208,7 +208,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="DNSOverHTTPS_ExcludedDomains">Ausgeschlossene Domains</string>
       <string id="DNSOverHTTPS_ExcludedDomains_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die angegebenen Domains von DNS über HTTPS ausgeschlossen.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Domains von DNS über HTTPS ausgeschlossen.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine Domains von DNS über HTTPS ausgeschlossen.</string>
       <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Verschoben)</string>
       <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS über HTTPS geändert werden.
 
@@ -232,7 +232,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="DisableDefaultBrowserAgent">Deaktivieren Sie den Standard-Browser-Agent</string>
       <string id="DisableDefaultBrowserAgent_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Standard-Browser-Agent deaktiviert.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, ist der Standard-Browser-Agent aktiviert.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, ist der Standard-Browser-Agent aktiviert.
 
 Weitere Informationen über den Standard-Browser-Agent finden Sie unter https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Werkzeuge für Webentwickler deaktivieren</string>
@@ -695,7 +695,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden die Standardlesezeichen und Smart-Lesezeichen (meist besuchte, neueste Tags) erstellt.
 
-Hinweis: Diese Richtlinie ist nur wirksam, wenn Sie vor der ersten Ausführung von Firefox verwendet wurde.</string>
+Hinweis: Diese Richtlinieneinstellung ist nur wirksam, wenn Sie vor der ersten Ausführung von Firefox verwendet wurde.</string>
       <string id="HomepageURL">Startseite</string>
       <string id="HomepageURL_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Startseite festlegen. Sie können die Startseite auch sperren.
 
@@ -858,7 +858,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="UserMessaging_FeatureRecommendations">Funktions-Empfehlungen</string>
       <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden keine Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.
 
-Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
       <string id="UserMessaging_UrlbarInterventions">Adressleisten-Empfehlungen</string>
       <string id="UserMessaging_UrlbarInterventions_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden basierend darauf, was der Benutzer in die Adressleiste eingibt, keine Aktionen empfohlen.
 
@@ -1117,7 +1117,7 @@ Hinweis: Die Übersetzung von Webseiten erfolgt vollständig auf dem Client, um 
       <string id="DisableEncryptedClientHello">Encrypted Client Hello (ECH) deaktivieren</string>
       <string id="DisableEncryptedClientHello_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die TLS-Funktion Encrypted Client Hello (ECH) deaktiviert.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, wird die TLS-Funktion Encrypted Client Hello (ECH) aktiviert.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die TLS-Funktion Encrypted Client Hello (ECH) aktiviert.</string>
       <string id="PostQuantumKeyAgreementEnabled">Post-quantum Key Agreement aktivieren</string>
       <string id="PostQuantumKeyAgreementEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Post-Quantum Key Agreement für TLS aktiviert.
 
@@ -1141,55 +1141,55 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, ist d
       <string id="PrivateBrowsingModeAvailability_0">Privaten Browsing-Modus zulassen</string>
       <string id="PrivateBrowsingModeAvailability_1">Privaten Browsing-Modus deaktivieren</string>
       <string id="PrivateBrowsingModeAvailability_2">Privaten Browsing-Modus erzwingen</string>
-      <string id="ContentAnalysis_AgentName">Agent Name</string>
-      <string id="ContentAnalysis_AgentName_Explain">If this policy is enabled, you can specify the name of the DLP agent, used in dialogs and notifications about DLP operations.
+      <string id="ContentAnalysis_AgentName">Name des DLP-Agenten</string>
+      <string id="ContentAnalysis_AgentName_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den Namen des DLP-Agenten angeben, der in Dialogen und Benachrichtigungen über DLP-Vorgänge verwendet wird.
 
-If this policy is disabled or not configured, the agent name "A DLP Agent" is used.</string>
-      <string id="ContentAnalysis_AgentTimeout">Agent Timeout</string>
-      <string id="ContentAnalysis_AgentTimeout_Explain">If this policy is enabled, you can specify the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless 'Default Result' is set to 1 or 2.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Agentenname „A DLP Agent“ verwendet.</string>
+      <string id="ContentAnalysis_AgentTimeout">Zeitüberschreitung des DLP-Agenten</string>
+      <string id="ContentAnalysis_AgentTimeout_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Zeitüberschreitung in Sekunden angeben, nachdem eine DLP-Anfrage an den Agenten gesendet wurde. Nach Ablauf dieser Zeitspanne wird die Anfrage abgelehnt, es sei denn, „Standardergebnis“ ist auf 1 oder 2 eingestellt.
 
-If this policy is disabled or not configured, the timeout is 30 seconds.</string>
-      <string id="ContentAnalysis_AllowUrlRegexList">Allow Url Regex List</string>
-      <string id="ContentAnalysis_AllowUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, beträgt die Zeitüberschreitung 30 Sekunden.</string>
+      <string id="ContentAnalysis_AllowUrlRegexList">Url-Regex-Zulassungsliste</string>
+      <string id="ContentAnalysis_AllowUrlRegexList_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine durch Leerzeichen getrennte Liste regulärer Ausdrücke angeben, die URLs angibt, für die DLP-Vorgänge ohne Rücksprache mit dem Agenten immer zugelassen werden. Die Standardeinstellung ist „^about:(?!blank|srcdoc).*“, was bedeutet, dass alle Seiten, die mit „about:“ beginnen, von DLP ausgenommen sind, mit Ausnahme von „about:blank“ und „about:srcdoc“, da diese durch Webinhalte kontrolliert werden können.
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
-      <string id="ContentAnalysis_BypassForSameTabOperations">Bypass For Same Tab Operations</string>
-      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">If this policy is enabled, Firefox will automatically allow DLP requests whose data comes from the same tab and frame - for example, if data is copied to the clipboard and then pasted on the same page.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird immer der DLP-Agent konsultiert.</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations">DLP auf der selben Registerkarte</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, lässt Firefox automatisch DLP-Anfragen zu, deren Daten von derselben Registerkarte und demselben Frame stammen - zum Beispiel, wenn Daten in die Zwischenablage kopiert und dann auf derselben Seite eingefügt werden.
 
-If this policy is disabled or not configured, Firefox  Firefox will not pass DLP requests whose data comes from the same tab and frame to the DLP agent as normal.</string>
-      <string id="ContentAnalysis_ClientSignature">Client Signature</string>
-      <string id="ContentAnalysis_ClientSignature_Explain">If this policy is enabled, you can set the required signature of the DLP agent connected to the pipe. If this is a non-empty string and the DLP agent does not have a signature with a Subject Name that exactly matches this value, Firefox will not connect to the pipe.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, leitet Firefox DLP-Anfragen, deren Daten von der gleichen Registerkarte und dem gleichen Frame stammen, nicht wie üblich an den DLP-Agenten weiter.</string>
+      <string id="ContentAnalysis_ClientSignature">Signatur der Pipe</string>
+      <string id="ContentAnalysis_ClientSignature_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die erforderliche Signatur des mit der Pipe verbundenen DLP-Agenten festlegen. Wenn dies eine nicht leere Zeichenkette ist und der DLP-Agent keine Signatur mit einem Betreff-Namen hat, der genau mit diesem Wert übereinstimmt, wird Firefox keine Verbindung zur Pipe herstellen.
 
-If this policy is disabled or not configured, the signature will not be verified.</string>
-      <string id="ContentAnalysis_DefaultResult">Default Result</string>
-      <string id="ContentAnalysis_DefaultResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if there is a problem connecting to the DLP agent.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Signatur nicht überprüft.</string>
+      <string id="ContentAnalysis_DefaultResult">Standardergebnis</string>
+      <string id="ContentAnalysis_DefaultResult_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das gewünschte Verhalten für DLP-Anfragen angeben, wenn ein Problem bei der Verbindung mit dem DLP-Agenten auftritt.
 
-If this policy is disabled or not configured, the DLP request will be denied if there is a problem connecting to the agent.</string>
-      <string id="ContentAnalysis_DefaultResult_0">Deny the request</string>
-      <string id="ContentAnalysis_DefaultResult_1">Warn the user and allow them to choose whether to allow or deny</string>
-      <string id="ContentAnalysis_DefaultResult_2">Allow the request</string>
-      <string id="ContentAnalysis_DenyUrlRegexList">Deny Url Regex List</string>
-      <string id="ContentAnalysis_DenyUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be denied without consulting the agent.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden DLP-Anfragen abgelehnt, wenn ein Problem bei der Verbindung mit dem Agenten auftritt.</string>
+      <string id="ContentAnalysis_DefaultResult_0">Anfrage ablehnen</string>
+      <string id="ContentAnalysis_DefaultResult_1">Warnen Sie den Benutzer und lassen Sie ihm die Wahl, ob er zulassen oder verweigern möchte</string>
+      <string id="ContentAnalysis_DefaultResult_2">Anfrage zulassen</string>
+      <string id="ContentAnalysis_DenyUrlRegexList">Url-Regex-Verweigerungsliste</string>
+      <string id="ContentAnalysis_DenyUrlRegexList_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine durch Leerzeichen getrennte Liste mit regulären Ausdrücken angeben, die URLs angibt, für die DLP-Vorgänge immer verweigert werden, ohne den Agenten zu konsultieren.
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
-      <string id="ContentAnalysis_Enabled">Enabled</string>
-      <string id="ContentAnalysis_Enabled_Explain">If this policy is enabled, Firefox will use DLP.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der DLP-Agent immer konsultiert.</string>
+      <string id="ContentAnalysis_Enabled">DLP aktivieren</string>
+      <string id="ContentAnalysis_Enabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox DLP verwenden.
 
-If this policy is disabled or not configured, Firefox will not use DLP.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox kein DLP.
 
-Note: If this policy is enabled and no DLP agent is running, all DLP requests will be denied unless Default Result is set to 1 or 2.</string>
-      <string id="ContentAnalysis_IsPerUser">Is Per User</string>
-      <string id="ContentAnalysis_IsPerUser_Explain">If this policy is disabled, the pipe the DLP agent creates is per-system.
+Hinweis: Wenn diese Richtlinieneinstellung aktiviert ist und kein DLP-Agent ausgeführt wird, werden alle DLP-Anfragen abgelehnt, es sei denn, das Standardergebnis ist auf 1 oder 2 eingestellt.</string>
+      <string id="ContentAnalysis_IsPerUser">Pipe pro Benutzer</string>
+      <string id="ContentAnalysis_IsPerUser_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, erstellt der DLP-Agent die Pipe pro System.
 
-If this policy is enabled or not configured, the pipe the DLP agent creates is per-user.</string>
-      <string id="ContentAnalysis_PipePathName">Pipe Path Name</string>
-      <string id="ContentAnalysis_PipePathName_Explain">If this policy is enabled, you can change the name of the pipe for the DLP agent.
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die Pipe vom DLP-Agenten pro Benutzer erstellt.</string>
+      <string id="ContentAnalysis_PipePathName">Name der Pipe</string>
+      <string id="ContentAnalysis_PipePathName_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den Namen der Pipe für den DLP-Agenten ändern.
 
-If this policy is disabled or not configured, the default pipe name of 'path_user' is used.</string>
-      <string id="ContentAnalysis_ShowBlockedResult">Show Blocked Result</string>
-      <string id="ContentAnalysis_ShowBlockedResult_Explain">If this policy is disabled, Firefox will not show a notification when a DLP request is denied.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Standard-Pipe-Name „path_user“ verwendet.</string>
+      <string id="ContentAnalysis_ShowBlockedResult">Benachrichtigung bei Ablehnung einer DLP-Anfrage</string>
+      <string id="ContentAnalysis_ShowBlockedResult_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, zeigt Firefox keine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.
 
-If this policy is enabled or not configured, Firefox will show a notification when a DLP request is denied.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, zeigt Firefox eine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
