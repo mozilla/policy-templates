@@ -77,7 +77,7 @@
       <definition name="SUPPORTED_FF130" displayName="$(string.SUPPORTED_FF130)"/>
       <definition name="SUPPORTED_FF130_ONLY" displayName="$(string.SUPPORTED_FF130_ONLY)"/>
       <definition name="SUPPORTED_FF131" displayName="$(string.SUPPORTED_FF131)"/>
-      <definition name="SUPPORTED_FF136_ONLY" displayName="$(string.SUPPORTED_FF136_ONLY)"/>
+      <definition name="SUPPORTED_FF137_ONLY" displayName="$(string.SUPPORTED_FF137_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -173,6 +173,9 @@
     </category>
     <category displayName="$(string.ContentAnalysis_group)" name="ContentAnalysis">
       <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.InterceptionPoints_group)" name="InterceptionPoints">
+      <parentCategory ref="ContentAnalysis"/>
     </category>
   </categories>
   <policies>
@@ -4311,28 +4314,28 @@
     </policy>
     <policy name="ContentAnalysis_AgentName" class="Both" displayName="$(string.ContentAnalysis_AgentName)" explainText="$(string.ContentAnalysis_AgentName_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <text id="String" valueName="AgentName"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_AgentTimeout" class="Both" displayName="$(string.ContentAnalysis_AgentTimeout)" explainText="$(string.ContentAnalysis_AgentTimeout_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.Number)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <decimal id="Number" valueName="AgentTimeout"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_AllowUrlRegexList" class="Both" displayName="$(string.ContentAnalysis_AllowUrlRegexList)" explainText="$(string.ContentAnalysis_AllowUrlRegexList_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <text id="String" valueName="AllowUrlRegexList"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_BypassForSameTabOperations" class="Both" displayName="$(string.ContentAnalysis_BypassForSameTabOperations)" explainText="$(string.ContentAnalysis_BypassForSameTabOperations_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="BypassForSameTabOperations">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4342,14 +4345,14 @@
     </policy>
     <policy name="ContentAnalysis_ClientSignature" class="Both" displayName="$(string.ContentAnalysis_ClientSignature)" explainText="$(string.ContentAnalysis_ClientSignature_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <text id="String" valueName="ClientSignature"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_DefaultResult" class="Both" displayName="$(string.ContentAnalysis_DefaultResult)" explainText="$(string.ContentAnalysis_DefaultResult_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.ContentAnalysis_DefaultResult)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <enum id="ContentAnalysis_DefaultResult" valueName="DefaultResult">
           <item displayName="$(string.ContentAnalysis_DefaultResult_0)">
@@ -4372,14 +4375,14 @@
     </policy>
     <policy name="ContentAnalysis_DenyUrlRegexList" class="Both" displayName="$(string.ContentAnalysis_DenyUrlRegexList)" explainText="$(string.ContentAnalysis_DenyUrlRegexList_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <text id="String" valueName="DenyUrlRegexList"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_Enabled" class="Both" displayName="$(string.ContentAnalysis_Enabled)" explainText="$(string.ContentAnalysis_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="Enabled">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4389,7 +4392,7 @@
     </policy>
     <policy name="ContentAnalysis_IsPerUser" class="Both" displayName="$(string.ContentAnalysis_IsPerUser)" explainText="$(string.ContentAnalysis_IsPerUser_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="IsPerUser">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4399,14 +4402,54 @@
     </policy>
     <policy name="ContentAnalysis_PipePathName" class="Both" displayName="$(string.ContentAnalysis_PipePathName)" explainText="$(string.ContentAnalysis_PipePathName_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <elements>
         <text id="String" valueName="PipePathName"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_ShowBlockedResult" class="Both" displayName="$(string.ContentAnalysis_ShowBlockedResult)" explainText="$(string.ContentAnalysis_ShowBlockedResult_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="ShowBlockedResult">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF136_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_Clipboard" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Clipboard)" explainText="$(string.ContentAnalysis_InterceptionPoints_Clipboard_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard" valueName="Enabled">
+      <parentCategory ref="InterceptionPoints"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_DragAndDrop" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop)" explainText="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop" valueName="Enabled">
+      <parentCategory ref="InterceptionPoints"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_FileUpload" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_FileUpload)" explainText="$(string.ContentAnalysis_InterceptionPoints_FileUpload_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\FileUpload" valueName="Enabled">
+      <parentCategory ref="InterceptionPoints"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_Print" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Print)" explainText="$(string.ContentAnalysis_InterceptionPoints_Print_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Print" valueName="Enabled">
+      <parentCategory ref="InterceptionPoints"/>
+      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

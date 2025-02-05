@@ -76,7 +76,7 @@
       <string id="SUPPORTED_FF130">Firefox 130 или более поздние версии, Firefox 128.2 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF130_ONLY">Firefox 130 или более поздние версии</string>
       <string id="SUPPORTED_FF131">Firefox 131 или более поздние версии, Firefox 128.3 ESR или более поздние версии</string>
-      <string id="SUPPORTED_FF136_ONLY">Firefox 136 или более поздние версии</string>
+      <string id="SUPPORTED_FF137_ONLY">Firefox 137 или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
