@@ -1379,7 +1379,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Print
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard
 ```
 Value (string):
 ```
