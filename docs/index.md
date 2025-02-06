@@ -5378,8 +5378,10 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp; If true, if an OCSP request times out, the connection fails.
 | security.osclientcerts.assume_rsa_pss_support | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp; If false, we don't assume an RSA key can do RSA-PSS. (Firefox 114, Firefox ESR 102.12)
-| security.pki.certificate_transparency.disable_for_hosts
-| security.pki.certificate_transparency.disable_for_spki_hashes
+| security.pki.certificate_transparency.disable_for_hosts  | |
+| &nbsp;&nbsp;&nbsp;&nbsp; See [this page](https://searchfox.org/mozilla-central/rev/d1fbe983fb7720f0a4aca0e748817af11c1a374e/modules/libpref/init/StaticPrefList.yaml#16334) for more details.
+| security.pki.certificate_transparency.disable_for_spki_hashes | |
+| &nbsp;&nbsp;&nbsp;&nbsp; See [this page](https://searchfox.org/mozilla-central/rev/d1fbe983fb7720f0a4aca0e748817af11c1a374e/modules/libpref/init/StaticPrefList.yaml#16344) for more details.
 | security.pki.certificate_transparency.mode | integer | 0
 | &nbsp;&nbsp;&nbsp;&nbsp; Configures Certificate Transparency support mode (Firefox 133)
 | security.ssl.enable_ocsp_stapling | boolean | true
