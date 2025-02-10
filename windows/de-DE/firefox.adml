@@ -104,6 +104,7 @@
       <string id="SecurityDevices_group">Sicherheitsmodule</string>
       <string id="FirefoxSuggest_group">Firefox Suggest (nur USA)</string>
       <string id="ContentAnalysis_group">Verhinderung von Datenverlust (DLP)</string>
+      <string id="InterceptionPoints_group">Interception Points</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -1190,6 +1191,22 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="ContentAnalysis_ShowBlockedResult_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, zeigt Firefox keine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, zeigt Firefox eine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Clipboard</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">If this policy is disabled, clipboard operations will not use DLP.
+
+If this policy is enabled or not configured, clipboard operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Drag And Drop</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">If this policy is disabled, drag and drop operations will not use DLP.
+
+If this policy is enabled or not configured, drag and drop operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload">File Upload</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">If this policy is disabled, file upload operations will not use DLP.
+
+If this policy is enabled or not configured, file upload operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print">Print</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print_Explain">If this policy is disabled, print operations will not use DLP.
+
+If this policy is enabled or not configured, print operations will use DLP.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:

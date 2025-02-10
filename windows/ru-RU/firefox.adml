@@ -105,6 +105,7 @@
       <string id="SecurityDevices_group">Устройства безопасности</string>
       <string id="FirefoxSuggest_group">Firefox Suggest (US only)</string>
       <string id="ContentAnalysis_group">Content Analysis (DLP)</string>
+      <string id="InterceptionPoints_group">Interception Points</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
       <string id="Block">Заблокированные сайты</string>
@@ -1187,6 +1188,22 @@ If this policy is disabled or not configured, the default pipe name of 'path_use
       <string id="ContentAnalysis_ShowBlockedResult_Explain">If this policy is disabled, Firefox will not show a notification when a DLP request is denied.
 
 If this policy is enabled or not configured, Firefox will show a notification when a DLP request is denied.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Clipboard</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">If this policy is disabled, clipboard operations will not use DLP.
+
+If this policy is enabled or not configured, clipboard operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Drag And Drop</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">If this policy is disabled, drag and drop operations will not use DLP.
+
+If this policy is enabled or not configured, drag and drop operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload">File Upload</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">If this policy is disabled, file upload operations will not use DLP.
+
+If this policy is enabled or not configured, file upload operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print">Print</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print_Explain">If this policy is disabled, print operations will not use DLP.
+
+If this policy is enabled or not configured, print operations will use DLP.</string>
       <string id="Preferences_Boolean_Explain">Если эта политика включена, предпочтение заблокировано на true. Если эта политика отключена, предпочтение заблокировано на false.
 
 Описание предпочтения см.:
