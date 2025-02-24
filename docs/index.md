@@ -1246,7 +1246,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `AgentName` is the name of the DLP agent. This is used in dialogs and notifications about DLP operations. The default is "A DLP Agent".
 
-`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultResult` is set to 1 or 2. The default is 30.
+`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `TimeoutResult` is set to 1 or 2. The default is 30.
 
 `AllowUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank&#124;srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
 
@@ -1289,9 +1289,18 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
 
+`TimeoutResult` indicates the desired behavior for DLP requests if the DLP agent does not respond to a request in less than `AgentTimeout` seconds. The default is 0.
+
+| Value | Description
+| --- | --- |
+| 0 | Deny the request (default)
+| 1 | Warn the user and allow them to choose whether to allow or deny
+| 2 | Allow the request
+
+
 **Compatibility:** Firefox 136\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`, `browser.contentanalysis.timeout_result`
 
 #### Windows (GPO)
 ```
@@ -1312,6 +1321,7 @@ Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Print\Enabl
 Software\Policies\Mozilla\Firefox\ContentAnalysis\IsPerUser = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\PipePathName = "pipe_custom_name"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\ShowBlockedResult = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\TimeoutResult = 0x0 | 0x1 | 0x2
 ```
 
 #### Windows (Intune)
@@ -1458,6 +1468,15 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_TimeoutResult
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_TimeoutResult" value="1"/>
+```
 
 #### policies.json
 ```
@@ -1491,6 +1510,7 @@ Value (string):
       "IsPerUser": true | false,
       "PipePathName": "pipe_custom_name",
       "ShowBlockedResult": true | false,
+      "TimeoutResult": 0 | 1 | 2,
     }
   }
 }
