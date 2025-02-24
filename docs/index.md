@@ -1298,7 +1298,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 | 2 | Allow the request
 
 
-**Compatibility:** Firefox 136\
+**Compatibility:** Firefox 137\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`, `browser.contentanalysis.timeout_result`
 
