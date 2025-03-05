@@ -3174,6 +3174,7 @@ The configuration for each extension is another dictionary that can contain the 
 | `updates_disabled` | (Firefox 89, Firefox ESR 78.11) Boolean that indicates whether or not to disable automatic updates for an individual extension.
 | `default_area` | (Firefox 113) String that indicates where to place the extension icon by default. Possible values are `navbar` and `menupanel`.
 | `temporarily_allow_weak_signatures`| (Firefox 127) A boolean that indicates whether to allow installing extensions signed using deprecated signature algorithms.
+| `private_browsing`| (Firefox 136, Firefox ESR 128.8) A boolean that indicates whether or not this extension should be enabled in private browsing.
 
 **Compatibility:** Firefox 69, Firefox ESR 68.1 (As of Firefox 85, Firefox ESR 78.7, installing a theme makes it the default.)\
 **CCK2 Equivalent:** N/A\
