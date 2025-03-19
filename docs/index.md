@@ -676,7 +676,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/AutoLaunchProtocolsFromOriginsOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AutoLaunchProtocolsFromOriginsOneLine
 ```
 Value (string):
 ```
@@ -954,7 +954,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/BookmarksOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BookmarksOneLine
 ```
 Value (string):
 ```
@@ -1199,7 +1199,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ContainersOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ContainersOneLine
 ```
 Value (string):
 ```
@@ -3027,7 +3027,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine
 ```
 Value (string):
 ```
@@ -3228,8 +3228,7 @@ Value (string):
     "installation_mode": "force_installed",
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"
   },
-  {
-    "https-everywhere@eff.org": {
+  "https-everywhere@eff.org": {
     "installation_mode": "allowed",
     "updates_disabled": false
   }
@@ -3646,7 +3645,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/HandlersOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HandlersOneLine
 ```
 Value (string):
 ```
@@ -4262,7 +4261,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ManagedBoomarksOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ManagedBoomarksOneLine
 ```
 Value (string):
 ```
@@ -5474,7 +5473,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/PreferencesOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PreferencesOneLine
 ```
 Value (string):
 ```
@@ -6930,7 +6929,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/WebsiteFilterOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/WebsiteFilterOneLine
 ```
 Value (string):
 ```
