@@ -1246,7 +1246,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `AgentName` is the name of the DLP agent. This is used in dialogs and notifications about DLP operations. The default is "A DLP Agent".
 
-`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultResult` is set to 1 or 2. The default is 30.
+`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `TimeoutResult` is set to 1 or 2. The default is 300.
 
 `AllowUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank&#124;srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
 
@@ -1270,8 +1270,14 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 * The `Clipboard` entry controls clipboard operations for files and text.
   * `Enabled` indicates whether clipboard operations should use DLP. The default is true.
+  * `PlainTextOnly` indicates whether to only analyze the text/plain format on the clipboard. If this
+    value is false, all formats will be analyzed, which some DLP agents may not expect. Regardless of
+    this value, files will be analyzed as usual. The default is true.
 * The `DragAndDrop` entry controls drag and drop operations for files and text.
   * `Enabled` indicates whether drag and drop operations should use DLP. The default is true.
+  * `PlainTextOnly` indicates whether to only analyze the text/plain format in what is being dropped.
+    If this value is false, all formats will be analyzed, which some DLP agents may not expect.
+    Regardless of this value, files will be analyzed as usual. The default is true.
 * The `FileUpload` entry controls file upload operations for files chosen from the file picker.
   * `Enabled` indicates whether file upload operations should use DLP. The default is true.
 * The `Print` entry controls print operation.
@@ -1283,9 +1289,18 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
 
-**Compatibility:** Firefox 136\
+`TimeoutResult` indicates the desired behavior for DLP requests if the DLP agent does not respond to a request in less than `AgentTimeout` seconds. The default is 0.
+
+| Value | Description
+| --- | --- |
+| 0 | Deny the request (default)
+| 1 | Warn the user and allow them to choose whether to allow or deny
+| 2 | Allow the request
+
+
+**Compatibility:** Firefox 137\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`, `browser.contentanalysis.timeout_result`
 
 #### Windows (GPO)
 ```
@@ -1298,12 +1313,15 @@ Software\Policies\Mozilla\Firefox\ContentAnalysis\DefaultResult = 0x0 | 0x1 | 0x
 Software\Policies\Mozilla\Firefox\ContentAnalysis\DenyUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\PlainTextOnly = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\PlainTextOnly = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\FileUpload\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Print\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\IsPerUser = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\PipePathName = "pipe_custom_name"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\ShowBlockedResult = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\TimeoutResult = 0x0 | 0x1 | 0x2
 ```
 
 #### Windows (Intune)
@@ -1379,7 +1397,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard_Enabled
 ```
 Value (string):
 ```
@@ -1387,7 +1405,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_DragAndDrop
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly
 ```
 Value (string):
 ```
@@ -1395,7 +1413,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_FileUpload
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_DragAndDrop_Enabled
 ```
 Value (string):
 ```
@@ -1403,7 +1421,23 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Print
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_FileUpload_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Print_Enabled
 ```
 Value (string):
 ```
@@ -1434,6 +1468,15 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_TimeoutResult
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_TimeoutResult" value="1"/>
+```
 
 #### policies.json
 ```
@@ -1450,10 +1493,12 @@ Value (string):
       "Enabled": true | false,
       "InterceptionPoints": {
         "Clipboard": {
-          "Enabled": true | false
+          "Enabled": true | false,
+          "PlainTextOnly": true | false
         },
         "DragAndDrop": {
-          "Enabled": true | false
+          "Enabled": true | false,
+          "PlainTextOnly": true | false
         },
         "FileUpload": {
           "Enabled": true | false
@@ -1465,6 +1510,7 @@ Value (string):
       "IsPerUser": true | false,
       "PipePathName": "pipe_custom_name",
       "ShowBlockedResult": true | false,
+      "TimeoutResult": 0 | 1 | 2,
     }
   }
 }
