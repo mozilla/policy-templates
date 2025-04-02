@@ -1350,6 +1350,7 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
+```
 <data id="ContentAnalysis_AllowUrlRegexList" value="https://example\.com/.* https://subdomain\.example\.com/.*"/>
 ```
 OMA-URI:
