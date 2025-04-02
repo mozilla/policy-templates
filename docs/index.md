@@ -1350,7 +1350,6 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-```
 <data id="ContentAnalysis_AllowUrlRegexList" value="https://example\.com/.* https://subdomain\.example\.com/.*"/>
 ```
 OMA-URI:
@@ -1397,6 +1396,7 @@ Value (string):
 <enabled/> or <disabled/>
 ```
 OMA-URI:
+```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~Clipboard/ContentAnalysis_InterceptionPoints_Clipboard
 ```
 Value (string):
