@@ -1396,16 +1396,7 @@ Value (string):
 <enabled/> or <disabled/>
 ```
 OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard_Enabled
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~Clipboard/ContentAnalysis_InterceptionPoints_Clipboard
 ```
 Value (string):
 ```
@@ -1413,7 +1404,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_DragAndDrop_Enabled
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~Clipboard/ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly
 ```
 Value (string):
 ```
@@ -1421,7 +1412,15 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~DragAndDrop/ContentAnalysis_InterceptionPoints_DragAndDrop
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~DragAndDrop/ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly
 ```
 Value (string):
 ```

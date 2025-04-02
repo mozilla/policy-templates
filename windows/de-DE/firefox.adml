@@ -76,6 +76,7 @@
       <string id="SUPPORTED_FF130_ONLY">Firefox 130 oder höher</string>
       <string id="SUPPORTED_FF131">Firefox 131 oder höher, Firefox 128.3 ESR oder höhe</string>
       <string id="SUPPORTED_FF137_ONLY">Firefox 137 oder höher</string>
+      <string id="SUPPORTED_FF138_ONLY">Firefox 138 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -105,6 +106,8 @@
       <string id="FirefoxSuggest_group">Firefox Suggest (nur USA)</string>
       <string id="ContentAnalysis_group">Verhinderung von Datenverlust (DLP)</string>
       <string id="InterceptionPoints_group">Interception Points</string>
+      <string id="InterceptionPoints_Clipboard_group">Clipboard</string>
+      <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -1191,14 +1194,22 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="ContentAnalysis_ShowBlockedResult_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, zeigt Firefox keine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, zeigt Firefox eine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Clipboard</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Enabled</string>
       <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">If this policy is disabled, clipboard operations will not use DLP.
 
 If this policy is enabled or not configured, clipboard operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Drag And Drop</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly">Plain Text Only</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed on the clipboard, which some DLP agents may not expect.
+
+If this policy is enabled or not configured, only the text/plain format will be analyzed on the clipboard.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Enabled</string>
       <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">If this policy is disabled, drag and drop operations will not use DLP.
 
 If this policy is enabled or not configured, drag and drop operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly">Plain Text Only</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed in what is being dropped, which some DLP agents may not expect.
+
+If this policy is enabled or not configured, only the text/plain format will be analyzed in what is being dropped.</string>
       <string id="ContentAnalysis_InterceptionPoints_FileUpload">File Upload</string>
       <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">If this policy is disabled, file upload operations will not use DLP.
 
@@ -1207,6 +1218,10 @@ If this policy is enabled or not configured, file upload operations will use DLP
       <string id="ContentAnalysis_InterceptionPoints_Print_Explain">If this policy is disabled, print operations will not use DLP.
 
 If this policy is enabled or not configured, print operations will use DLP.</string>
+      <string id="ContentAnalysis_TimeoutResult">Timeout Result</string>
+      <string id="ContentAnalysis_TimeoutResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if the DLP agent does not respond to a request in less than AgentTimeout seconds. 
+
+If this policy is disabled or not configured, the request will be denied.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
@@ -1581,6 +1596,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="Number">
         <decimalTextBox refId="Number"/>
+      </presentation>
+      <presentation id="ContentAnalysis_TimeoutResult">
+        <dropdownList refId="ContentAnalysis_TimeoutResult"/>
       </presentation>
     </presentationTable>
   </resources>
