@@ -4307,7 +4307,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ManagedBoomarksOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ManagedBookmarksOneLine
 ```
 Value (string):
 ```
