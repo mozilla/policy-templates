@@ -6009,7 +6009,7 @@ or
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown.
 
-Note: Starting with Firefox 128, History clears FormData and Downloads as well.
+Note: Starting with Firefox 136, FormData and History have been separated again.
 
 `Cache`
 
@@ -6017,7 +6017,7 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 
 `Downloads` Download History (*Deprecated - part of History*)
 
-`FormData` Form & Search History
+`FormData` Form History
 
 `History` Browsing History, Download History
 
@@ -6037,6 +6037,7 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
@@ -6054,6 +6055,14 @@ Value (string):
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/B_SanitizeOnShutdown_Cookies
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/E_SanitizeOnShutdown_FormData
 ```
 Value (string):
 ```
@@ -6100,6 +6109,8 @@ Value (string):
     <true/> | <false/>
     <key>Cookies</key>
     <true/> | <false/>
+    <key>FormData</key>
+    <true/> | <false/>
     <key>History</key>
     <true/> | <false/>
     <key>Sessions</key>
@@ -6118,6 +6129,7 @@ Value (string):
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
+      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
@@ -6127,7 +6139,7 @@ Value (string):
 }
 ```
 ### SanitizeOnShutdown (All)
-Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
+Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form History, Site Preferences and Offline Website Data.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
