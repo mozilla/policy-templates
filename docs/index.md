@@ -6833,9 +6833,11 @@ Prevent Firefox from messaging the user in certain situations.
 
 `FeatureRecommendations` If false, don't recommend browser features.
 
-`UrlbarInterventions` If false, Don't offer Firefox specific suggestions in the URL bar.
+`UrlbarInterventions` If false,don't offer Firefox specific suggestions in the URL bar.
 
 `SkipOnboarding` If true, don't show onboarding messages on the new tab page.
+
+`SkipTermsOfUse` If true, don't display the Firefox [Terms of Use](https://www.mozilla.org/about/legal/terms/firefox/) and [Privacy Notice](https://www.mozilla.org/privacy/firefox/) upon startup. You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
 
 `MoreFromMozilla` If false, don't show the "More from Mozilla" section in Preferences. (Firefox 98)
 
@@ -6853,6 +6855,7 @@ Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 |
 Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\SkipOnboarding = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\UserMessaging\SkipTermsOfUse = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\MoreFromMozilla = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\FirefoxLabs = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\Locked = 0x1 | 0x0
@@ -6864,6 +6867,7 @@ OMA-URI:
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FeatureRecommendations
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_UrlbarInterventions
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipOnboarding
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipTermsOfUse
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_MoreFromMozilla
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FirefoxLabs
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_Locked
@@ -6885,6 +6889,8 @@ Value (string):
     <true/> | <false/>
     <key>SkipOnboarding</key>
     <true/> | <false/>
+    <key>SkipTermsOfUse</key>
+    <true/> | <false/>
     <key>MoreFromMozilla</key>
     <true/> | <false/>
     <key>FirefoxLabs</key>
@@ -6903,6 +6909,7 @@ Value (string):
       "FeatureRecommendations": true | false,
       "UrlbarInterventions": true | false,
       "SkipOnboarding": true | false,
+      "SkipTermsOfUse": true | false,
       "MoreFromMozilla": true | false,
       "FirefoxLabs": true | false,
       "Locked": true | false
