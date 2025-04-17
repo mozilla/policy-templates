@@ -123,6 +123,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
 | **[`ShowHomeButton`](#showhomebutton)** | Show the home button on the toolbar.
+| **[`SkipTermsOfUse`](#skiptermsofuse)** | Don't display the Firefox [Terms of Use](https://www.mozilla.org/about/legal/terms/firefox/) and [Privacy Notice](https://www.mozilla.org/privacy/firefox/) upon startup. You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`StartDownloadsInTempDirectory`](#startdownloadsintempdirectory)** | Force downloads to start off in a local, temporary location rather than the default download directory.
@@ -6623,6 +6624,41 @@ Value (string):
   }
 }
 ```
+### SkipTermsOfUse
+If true, don't display the Firefox [Terms of Use](https://www.mozilla.org/about/legal/terms/firefox/) and [Privacy Notice](https://www.mozilla.org/privacy/firefox/) upon startup. You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
+
+**Compatibility:** Firefox 138, Firefox ESR 140\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\SkipTermsOfUse = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+FIXME
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>SkipTermsOfUse</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "SkipTermsOfUse": true | false
+  }
+}
+```
 ### SSLVersionMax
 
 Set and lock the maximum version of TLS. (Firefox defaults to a maximum of TLS 1.3.)
@@ -6837,8 +6873,6 @@ Prevent Firefox from messaging the user in certain situations.
 
 `SkipOnboarding` If true, don't show onboarding messages on the new tab page.
 
-`SkipTermsOfUse` If true, don't display the Firefox [Terms of Use](https://www.mozilla.org/about/legal/terms/firefox/) and [Privacy Notice](https://www.mozilla.org/privacy/firefox/) upon startup. You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
-
 `MoreFromMozilla` If false, don't show the "More from Mozilla" section in Preferences. (Firefox 98)
 
 `FirefoxLabs` If false, don't show the "Firefox Labs" section in Preferences. (Firefox 130.0.1)
@@ -6855,7 +6889,6 @@ Software\Policies\Mozilla\Firefox\UserMessaging\ExtensionRecommendations = 0x1 |
 Software\Policies\Mozilla\Firefox\UserMessaging\FeatureRecommendations = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\UrlbarInterventions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\SkipOnboarding = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\UserMessaging\SkipTermsOfUse = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\MoreFromMozilla = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\FirefoxLabs = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\UserMessaging\Locked = 0x1 | 0x0
@@ -6867,7 +6900,6 @@ OMA-URI:
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FeatureRecommendations
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_UrlbarInterventions
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipOnboarding
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_SkipTermsOfUse
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_MoreFromMozilla
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_FirefoxLabs
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~UserMessaging/UserMessaging_Locked
@@ -6889,8 +6921,6 @@ Value (string):
     <true/> | <false/>
     <key>SkipOnboarding</key>
     <true/> | <false/>
-    <key>SkipTermsOfUse</key>
-    <true/> | <false/>
     <key>MoreFromMozilla</key>
     <true/> | <false/>
     <key>FirefoxLabs</key>
@@ -6909,7 +6939,6 @@ Value (string):
       "FeatureRecommendations": true | false,
       "UrlbarInterventions": true | false,
       "SkipOnboarding": true | false,
-      "SkipTermsOfUse": true | false,
       "MoreFromMozilla": true | false,
       "FirefoxLabs": true | false,
       "Locked": true | false
