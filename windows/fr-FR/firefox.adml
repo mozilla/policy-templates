@@ -1220,6 +1220,12 @@ If this policy is enabled or not configured, print operations will use DLP.</str
       <string id="ContentAnalysis_TimeoutResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if the DLP agent does not respond to a request in less than AgentTimeout seconds. 
 
 If this policy is disabled or not configured, the request will be denied.</string>
+      <string id="SkipTermsOfUse">Skip Terms of Use</string>
+      <string id="SkipTermsOfUse_Explain">If this policy is enabled, the Firefox Terms of Use (https://www.mozilla.org/about/legal/terms/firefox/) and Privacy Notice (https://www.mozilla.org/privacy/firefox/) do not display upon startup.
+
+You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
+
+If this policy is disabled or not configured, the Firefox Terms of Use and Privacy Notice do display upon startup.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

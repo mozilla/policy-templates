@@ -339,6 +339,7 @@
       "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
     },
     "ShowHomeButton": true | false,
+    "SkipTermsOfUse": true | false,
     "SSLVersionMax": "tls1" | "tls1.1" | "tls1.2" | "tls1.3",
     "SSLVersionMin": "tls1" | "tls1.1" | "tls1.2" | "tls1.3",
     "SupportMenu": {

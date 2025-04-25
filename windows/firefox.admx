@@ -4536,5 +4536,16 @@
           </item>
         </enum>
       </elements>
-    </policy>  </policies>
+    </policy>
+    <policy name="SkipTermsOfUse" class="Both" displayName="$(string.SkipTermsOfUse)" explainText="$(string.SkipTermsOfUse_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SkipTermsOfUse">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  </policies>
 </policyDefinitions>

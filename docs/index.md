@@ -6641,7 +6641,7 @@ Software\Policies\Mozilla\Firefox\SkipTermsOfUse = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-FIXME
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/SkipTermsOfUse
 ```
 Value (string):
 ```
@@ -6872,7 +6872,7 @@ Prevent Firefox from messaging the user in certain situations.
 
 `FeatureRecommendations` If false, don't recommend browser features.
 
-`UrlbarInterventions` If false,don't offer Firefox specific suggestions in the URL bar.
+`UrlbarInterventions` If false, don't offer Firefox specific suggestions in the URL bar.
 
 `SkipOnboarding` If true, don't show onboarding messages on the new tab page.
 
