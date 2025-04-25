@@ -123,6 +123,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`SearchSuggestEnabled`](#searchsuggestenabled)** | Enable search suggestions.
 | **[`SecurityDevices`](#securitydevices)** | Install PKCS #11 modules.
 | **[`ShowHomeButton`](#showhomebutton)** | Show the home button on the toolbar.
+| **[`SkipTermsOfUse`](#skiptermsofuse)** | Don't display the Firefox [Terms of Use](https://www.mozilla.org/about/legal/terms/firefox/) and [Privacy Notice](https://www.mozilla.org/privacy/firefox/) upon startup. You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
 | **[`SSLVersionMax`](#sslversionmax)** | Set and lock the maximum version of TLS.
 | **[`SSLVersionMin`](#sslversionmin)** | Set and lock the minimum version of TLS.
 | **[`StartDownloadsInTempDirectory`](#startdownloadsintempdirectory)** | Force downloads to start off in a local, temporary location rather than the default download directory.
@@ -6626,6 +6627,41 @@ Value (string):
   }
 }
 ```
+### SkipTermsOfUse
+If true, don't display the Firefox [Terms of Use](https://www.mozilla.org/about/legal/terms/firefox/) and [Privacy Notice](https://www.mozilla.org/privacy/firefox/) upon startup. You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
+
+**Compatibility:** Firefox 138, Firefox ESR 140\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\SkipTermsOfUse = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+FIXME
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>SkipTermsOfUse</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "SkipTermsOfUse": true | false
+  }
+}
+```
 ### SSLVersionMax
 
 Set and lock the maximum version of TLS. (Firefox defaults to a maximum of TLS 1.3.)
@@ -6836,7 +6872,7 @@ Prevent Firefox from messaging the user in certain situations.
 
 `FeatureRecommendations` If false, don't recommend browser features.
 
-`UrlbarInterventions` If false, Don't offer Firefox specific suggestions in the URL bar.
+`UrlbarInterventions` If false,don't offer Firefox specific suggestions in the URL bar.
 
 `SkipOnboarding` If true, don't show onboarding messages on the new tab page.
 
