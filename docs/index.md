@@ -2546,7 +2546,7 @@ Mozilla recommends that you do not disable telemetry. Information collected thro
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disableTelemetry`\
-**Preferences Affected:** `datareporting.healthreport.uploadEnabled`, `datareporting.policy.dataSubmissionEnabled`, `toolkit.telemetry.archive.enabled`
+**Preferences Affected:** `datareporting.healthreport.uploadEnabled`, `datareporting.policy.dataSubmissionEnabled`, `toolkit.telemetry.archive.enabled`, `datareporting.usage.uploadEnabled`
 
 #### Windows (GPO)
 ```
