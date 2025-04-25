@@ -1776,26 +1776,29 @@ Value (string):
 Disable specific cryptographic ciphers, listed below.
 
 ```
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
 TLS_DHE_RSA_WITH_AES_128_CBC_SHA
 TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-TLS_RSA_WITH_AES_128_GCM_SHA256
-TLS_RSA_WITH_AES_256_GCM_SHA384
 TLS_RSA_WITH_AES_128_CBC_SHA
 TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
 TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_GCM_SHA256 (Firefox 78)
+TLS_RSA_WITH_AES_256_GCM_SHA384 (Firefox 78)
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (Firefox 97 and Firefox ESR 91.6)
+TLS_CHACHA20_POLY1305_SHA256 (Firefox 138, Firefox ESR 128.10)
+TLS_AES_128_GCM_SHA256 (Firefox 138, Firefox ESR 128.10)
+TLS_AES_256_GCM_SHA384 (Firefox 138, Firefox ESR 128.10)
 ```
 
-**Preferences Affected:** `security.ssl3.ecdhe_rsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_128_sha`, `security.ssl3.ecdhe_ecdsa_aes_128_sha`, `security.ssl3.ecdhe_rsa_aes_256_sha`, `security.ssl3.ecdhe_ecdsa_aes_256_sha`, `security.ssl3.dhe_rsa_aes_128_sha`, `security.ssl3.dhe_rsa_aes_256_sha`, `security.ssl3.rsa_aes_128_gcm_sha256`, `security.ssl3.rsa_aes_256_gcm_sha384`, `security.ssl3.rsa_aes_128_sha`, `security.ssl3.rsa_aes_256_sha`, `security.ssl3.deprecated.rsa_des_ede3_sha`
+**Preferences Affected:** `security.ssl3.ecdhe_rsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_128_sha`, `security.ssl3.ecdhe_ecdsa_aes_128_sha`, `security.ssl3.ecdhe_rsa_aes_256_sha`, `security.ssl3.ecdhe_ecdsa_aes_256_sha`, `security.ssl3.dhe_rsa_aes_128_sha`, `security.ssl3.dhe_rsa_aes_256_sha`, `security.ssl3.rsa_aes_128_gcm_sha256`, `security.ssl3.rsa_aes_256_gcm_sha384`, `security.ssl3.rsa_aes_128_sha`, `security.ssl3.rsa_aes_256_sha`, `security.ssl3.deprecated.rsa_des_ede3_sha`, `security.tls13.chacha20_poly1305_sha256`, `security.tls13.aes_128_gcm_sha256`, `security.tls13.aes_256_gcm_sha384`
 
 ---
 **Note:**
@@ -1803,7 +1806,7 @@ TLS_RSA_WITH_3DES_EDE_CBC_SHA
 This policy was updated in Firefox 78 to allow enabling ciphers as well. Setting the value to true disables the cipher, setting the value to false enables the cipher. Previously setting the value to true or false disabled the cipher.
 
 ---
-**Compatibility:** Firefox 76, Firefox ESR 68.8 (TLS_RSA_WITH_AES_128_GCM_SHA256 and TLS_RSA_WITH_AES_256_GCM_SHA384 were added in Firefox 78, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA38, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, and TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 were added in Firefox 97 and Firefox 91.6)\
+**Compatibility:** Firefox 76, Firefox ESR 68.8\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
