@@ -3899,6 +3899,36 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_CHACHA20_POLY1305_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF138"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_AES_128_GCM_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_AES_128_GCM_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_AES_128_GCM_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF138"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_AES_256_GCM_SHA384" class="Both" displayName="$(string.DisabledCiphers_TLS_AES_256_GCM_SHA384)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_AES_256_GCM_SHA384">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF138"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="EncryptedMediaExtensions_Enabled" class="Both" displayName="$(string.EncryptedMediaExtensions_Enabled)" explainText="$(string.EncryptedMediaExtensions_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions" valueName="Enabled">
       <parentCategory ref="EncryptedMediaExtensions"/>
       <supportedOn ref="SUPPORTED_FF77"/>

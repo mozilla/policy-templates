@@ -78,6 +78,7 @@
       <string id="SUPPORTED_FF131">Firefox 131 или более поздние версии, Firefox 128.3 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF137_ONLY">Firefox 137 или более поздние версии</string>
       <string id="SUPPORTED_FF138_ONLY">Firefox 138 или более поздние версии</string>
+      <string id="SUPPORTED_FF138">Firefox 138 или более поздние версии, Firefox 128.10 ESR или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
@@ -903,6 +904,9 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256">TLS_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_TLS_AES_128_GCM_SHA256">TLS_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_AES_256_GCM_SHA384">TLS_AES_256_GCM_SHA384</string>
       <string id="DisabledCiphers_Explain">Если эта политика включена, соответствующий шифр отключен.
 
 Если эта политика отключена, соответствующий шифр включен.

@@ -77,6 +77,7 @@
       <string id="SUPPORTED_FF131">Firefox 131 oder höher, Firefox 128.3 ESR oder höhe</string>
       <string id="SUPPORTED_FF137_ONLY">Firefox 137 oder höher</string>
       <string id="SUPPORTED_FF138_ONLY">Firefox 138 oder höher</string>
+      <string id="SUPPORTED_FF138">Firefox 138 oder höher, Firefox 128.10 ESR oder höhe</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -900,6 +901,9 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können
       <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256">TLS_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_TLS_AES_128_GCM_SHA256">TLS_AES_128_GCM_SHA256</string>
+      <string id="DisabledCiphers_TLS_AES_256_GCM_SHA384">TLS_AES_256_GCM_SHA384</string>
       <string id="DisabledCiphers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die ausgewählte Verschlüsselung deaktiviert.
 
 Wenn diese Richtlinieneinstellung deaktiviert ist, ist der ausgewählte Verschlüsselung aktiviert.
