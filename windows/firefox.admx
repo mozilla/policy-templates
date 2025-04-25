@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="6.8" schemaVersion="1.0">
+<policyDefinitions revision="6.9" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
   </policyNamespaces>
-  <resources minRequiredRevision="6.8"/>
+  <resources minRequiredRevision="6.9"/>
   <supportedOn>
     <definitions>
       <definition name="UNSUPPORTED" displayName="$(string.UNSUPPORTED)"/>
@@ -78,6 +78,7 @@
       <definition name="SUPPORTED_FF130_ONLY" displayName="$(string.SUPPORTED_FF130_ONLY)"/>
       <definition name="SUPPORTED_FF131" displayName="$(string.SUPPORTED_FF131)"/>
       <definition name="SUPPORTED_FF137_ONLY" displayName="$(string.SUPPORTED_FF137_ONLY)"/>
+      <definition name="SUPPORTED_FF138_ONLY" displayName="$(string.SUPPORTED_FF138_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -176,6 +177,12 @@
     </category>
     <category displayName="$(string.InterceptionPoints_group)" name="InterceptionPoints">
       <parentCategory ref="ContentAnalysis"/>
+    </category>
+    <category displayName="$(string.InterceptionPoints_Clipboard_group)" name="InterceptionPoints_Clipboard">
+      <parentCategory ref="InterceptionPoints"/>
+    </category>
+    <category displayName="$(string.InterceptionPoints_DragAndDrop_group)" name="InterceptionPoints_DragAndDrop">
+      <parentCategory ref="InterceptionPoints"/>
     </category>
   </categories>
   <policies>
@@ -3892,6 +3899,36 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_CHACHA20_POLY1305_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF138"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_AES_128_GCM_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_AES_128_GCM_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_AES_128_GCM_SHA256">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF138"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisabledCiphers_TLS_AES_256_GCM_SHA384" class="Both" displayName="$(string.DisabledCiphers_TLS_AES_256_GCM_SHA384)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_AES_256_GCM_SHA384">
+      <parentCategory ref="DisabledCiphers"/>
+      <supportedOn ref="SUPPORTED_FF138"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="EncryptedMediaExtensions_Enabled" class="Both" displayName="$(string.EncryptedMediaExtensions_Enabled)" explainText="$(string.EncryptedMediaExtensions_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\EncryptedMediaExtensions" valueName="Enabled">
       <parentCategory ref="EncryptedMediaExtensions"/>
       <supportedOn ref="SUPPORTED_FF77"/>
@@ -4314,28 +4351,28 @@
     </policy>
     <policy name="ContentAnalysis_AgentName" class="Both" displayName="$(string.ContentAnalysis_AgentName)" explainText="$(string.ContentAnalysis_AgentName_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <text id="String" valueName="AgentName"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_AgentTimeout" class="Both" displayName="$(string.ContentAnalysis_AgentTimeout)" explainText="$(string.ContentAnalysis_AgentTimeout_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.Number)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <decimal id="Number" valueName="AgentTimeout"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_AllowUrlRegexList" class="Both" displayName="$(string.ContentAnalysis_AllowUrlRegexList)" explainText="$(string.ContentAnalysis_AllowUrlRegexList_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <text id="String" valueName="AllowUrlRegexList"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_BypassForSameTabOperations" class="Both" displayName="$(string.ContentAnalysis_BypassForSameTabOperations)" explainText="$(string.ContentAnalysis_BypassForSameTabOperations_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="BypassForSameTabOperations">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4345,14 +4382,14 @@
     </policy>
     <policy name="ContentAnalysis_ClientSignature" class="Both" displayName="$(string.ContentAnalysis_ClientSignature)" explainText="$(string.ContentAnalysis_ClientSignature_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <text id="String" valueName="ClientSignature"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_DefaultResult" class="Both" displayName="$(string.ContentAnalysis_DefaultResult)" explainText="$(string.ContentAnalysis_DefaultResult_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.ContentAnalysis_DefaultResult)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <enum id="ContentAnalysis_DefaultResult" valueName="DefaultResult">
           <item displayName="$(string.ContentAnalysis_DefaultResult_0)">
@@ -4375,14 +4412,14 @@
     </policy>
     <policy name="ContentAnalysis_DenyUrlRegexList" class="Both" displayName="$(string.ContentAnalysis_DenyUrlRegexList)" explainText="$(string.ContentAnalysis_DenyUrlRegexList_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <text id="String" valueName="DenyUrlRegexList"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_Enabled" class="Both" displayName="$(string.ContentAnalysis_Enabled)" explainText="$(string.ContentAnalysis_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="Enabled">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4392,7 +4429,7 @@
     </policy>
     <policy name="ContentAnalysis_IsPerUser" class="Both" displayName="$(string.ContentAnalysis_IsPerUser)" explainText="$(string.ContentAnalysis_IsPerUser_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="IsPerUser">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4402,14 +4439,14 @@
     </policy>
     <policy name="ContentAnalysis_PipePathName" class="Both" displayName="$(string.ContentAnalysis_PipePathName)" explainText="$(string.ContentAnalysis_PipePathName_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.String)">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
         <text id="String" valueName="PipePathName"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_ShowBlockedResult" class="Both" displayName="$(string.ContentAnalysis_ShowBlockedResult)" explainText="$(string.ContentAnalysis_ShowBlockedResult_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="ShowBlockedResult">
       <parentCategory ref="ContentAnalysis"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4418,8 +4455,18 @@
       </disabledValue>
     </policy>
     <policy name="ContentAnalysis_InterceptionPoints_Clipboard" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Clipboard)" explainText="$(string.ContentAnalysis_InterceptionPoints_Clipboard_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard" valueName="Enabled">
-      <parentCategory ref="InterceptionPoints"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <parentCategory ref="InterceptionPoints_Clipboard"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly)" explainText="$(string.ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard" valueName="PlainTextOnly">
+      <parentCategory ref="InterceptionPoints_Clipboard"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4428,8 +4475,18 @@
       </disabledValue>
     </policy>
     <policy name="ContentAnalysis_InterceptionPoints_DragAndDrop" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop)" explainText="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop" valueName="Enabled">
-      <parentCategory ref="InterceptionPoints"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <parentCategory ref="InterceptionPoints_DragAndDrop"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly)" explainText="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop" valueName="PlainTextEnabled">
+      <parentCategory ref="InterceptionPoints_DragAndDrop"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4439,7 +4496,7 @@
     </policy>
     <policy name="ContentAnalysis_InterceptionPoints_FileUpload" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_FileUpload)" explainText="$(string.ContentAnalysis_InterceptionPoints_FileUpload_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\FileUpload" valueName="Enabled">
       <parentCategory ref="InterceptionPoints"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4449,7 +4506,7 @@
     </policy>
     <policy name="ContentAnalysis_InterceptionPoints_Print" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Print)" explainText="$(string.ContentAnalysis_InterceptionPoints_Print_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Print" valueName="Enabled">
       <parentCategory ref="InterceptionPoints"/>
-      <supportedOn ref="SUPPORTED_FF137_ONLY"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4457,5 +4514,27 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-  </policies>
+    <policy name="ContentAnalysis_TimeoutResult" class="Both" displayName="$(string.ContentAnalysis_TimeoutResult)" explainText="$(string.ContentAnalysis_TimeoutResult_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.ContentAnalysis_TimeoutResult)">
+      <parentCategory ref="ContentAnalysis"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
+        <elements>
+        <enum id="ContentAnalysis_TimeoutResult" valueName="TimeoutResult">
+          <item displayName="$(string.ContentAnalysis_DefaultResult_0)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.ContentAnalysis_DefaultResult_1)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.ContentAnalysis_DefaultResult_2)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>  </policies>
 </policyDefinitions>

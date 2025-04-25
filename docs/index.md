@@ -676,7 +676,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/AutoLaunchProtocolsFromOriginsOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/AutoLaunchProtocolsFromOriginsOneLine
 ```
 Value (string):
 ```
@@ -954,7 +954,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/BookmarksOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/BookmarksOneLine
 ```
 Value (string):
 ```
@@ -1199,7 +1199,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ContainersOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ContainersOneLine
 ```
 Value (string):
 ```
@@ -1246,7 +1246,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `AgentName` is the name of the DLP agent. This is used in dialogs and notifications about DLP operations. The default is "A DLP Agent".
 
-`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `DefaultResult` is set to 1 or 2. The default is 30.
+`AgentTimeout` is the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless `TimeoutResult` is set to 1 or 2. The default is 300.
 
 `AllowUrlRegexList` is a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank&#124;srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
 
@@ -1270,8 +1270,14 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 * The `Clipboard` entry controls clipboard operations for files and text.
   * `Enabled` indicates whether clipboard operations should use DLP. The default is true.
+  * `PlainTextOnly` indicates whether to only analyze the text/plain format on the clipboard. If this
+    value is false, all formats will be analyzed, which some DLP agents may not expect. Regardless of
+    this value, files will be analyzed as usual. The default is true.
 * The `DragAndDrop` entry controls drag and drop operations for files and text.
   * `Enabled` indicates whether drag and drop operations should use DLP. The default is true.
+  * `PlainTextOnly` indicates whether to only analyze the text/plain format in what is being dropped.
+    If this value is false, all formats will be analyzed, which some DLP agents may not expect.
+    Regardless of this value, files will be analyzed as usual. The default is true.
 * The `FileUpload` entry controls file upload operations for files chosen from the file picker.
   * `Enabled` indicates whether file upload operations should use DLP. The default is true.
 * The `Print` entry controls print operation.
@@ -1283,9 +1289,18 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 `ShowBlockedResult` indicates whether Firefox should show a notification when a DLP request is denied. The default is true.
 
-**Compatibility:** Firefox 136\
+`TimeoutResult` indicates the desired behavior for DLP requests if the DLP agent does not respond to a request in less than `AgentTimeout` seconds. The default is 0.
+
+| Value | Description
+| --- | --- |
+| 0 | Deny the request (default)
+| 1 | Warn the user and allow them to choose whether to allow or deny
+| 2 | Allow the request
+
+
+**Compatibility:** Firefox 137\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`, `browser.contentanalysis.timeout_result`
 
 #### Windows (GPO)
 ```
@@ -1298,12 +1313,15 @@ Software\Policies\Mozilla\Firefox\ContentAnalysis\DefaultResult = 0x0 | 0x1 | 0x
 Software\Policies\Mozilla\Firefox\ContentAnalysis\DenyUrlRegexList = "https://example\.com/.* https://subdomain\.example\.com/.*"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\PlainTextOnly = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\PlainTextOnly = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\FileUpload\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Print\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\IsPerUser = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\PipePathName = "pipe_custom_name"
 Software\Policies\Mozilla\Firefox\ContentAnalysis\ShowBlockedResult = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\TimeoutResult = 0x0 | 0x1 | 0x2
 ```
 
 #### Windows (Intune)
@@ -1379,7 +1397,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Clipboard
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~Clipboard/ContentAnalysis_InterceptionPoints_Clipboard
 ```
 Value (string):
 ```
@@ -1387,7 +1405,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_DragAndDrop
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~Clipboard/ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly
 ```
 Value (string):
 ```
@@ -1395,7 +1413,7 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_FileUpload
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~DragAndDrop/ContentAnalysis_InterceptionPoints_DragAndDrop
 ```
 Value (string):
 ```
@@ -1403,7 +1421,23 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Print
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~DragAndDrop/ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_FileUpload_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Print_Enabled
 ```
 Value (string):
 ```
@@ -1434,6 +1468,15 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_TimeoutResult
+```
+Value (string):
+```
+<enabled/>
+<data id="ContentAnalysis_TimeoutResult" value="1"/>
+```
 
 #### policies.json
 ```
@@ -1450,10 +1493,12 @@ Value (string):
       "Enabled": true | false,
       "InterceptionPoints": {
         "Clipboard": {
-          "Enabled": true | false
+          "Enabled": true | false,
+          "PlainTextOnly": true | false
         },
         "DragAndDrop": {
-          "Enabled": true | false
+          "Enabled": true | false,
+          "PlainTextOnly": true | false
         },
         "FileUpload": {
           "Enabled": true | false
@@ -1465,6 +1510,7 @@ Value (string):
       "IsPerUser": true | false,
       "PipePathName": "pipe_custom_name",
       "ShowBlockedResult": true | false,
+      "TimeoutResult": 0 | 1 | 2,
     }
   }
 }
@@ -1730,26 +1776,29 @@ Value (string):
 Disable specific cryptographic ciphers, listed below.
 
 ```
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
 TLS_DHE_RSA_WITH_AES_128_CBC_SHA
 TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-TLS_RSA_WITH_AES_128_GCM_SHA256
-TLS_RSA_WITH_AES_256_GCM_SHA384
 TLS_RSA_WITH_AES_128_CBC_SHA
 TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
 TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_GCM_SHA256 (Firefox 78)
+TLS_RSA_WITH_AES_256_GCM_SHA384 (Firefox 78)
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (Firefox 97 and Firefox ESR 91.6)
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (Firefox 97 and Firefox ESR 91.6)
+TLS_CHACHA20_POLY1305_SHA256 (Firefox 138, Firefox ESR 128.10)
+TLS_AES_128_GCM_SHA256 (Firefox 138, Firefox ESR 128.10)
+TLS_AES_256_GCM_SHA384 (Firefox 138, Firefox ESR 128.10)
 ```
 
-**Preferences Affected:** `security.ssl3.ecdhe_rsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_128_sha`, `security.ssl3.ecdhe_ecdsa_aes_128_sha`, `security.ssl3.ecdhe_rsa_aes_256_sha`, `security.ssl3.ecdhe_ecdsa_aes_256_sha`, `security.ssl3.dhe_rsa_aes_128_sha`, `security.ssl3.dhe_rsa_aes_256_sha`, `security.ssl3.rsa_aes_128_gcm_sha256`, `security.ssl3.rsa_aes_256_gcm_sha384`, `security.ssl3.rsa_aes_128_sha`, `security.ssl3.rsa_aes_256_sha`, `security.ssl3.deprecated.rsa_des_ede3_sha`
+**Preferences Affected:** `security.ssl3.ecdhe_rsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256`, `security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256`, `security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_256_gcm_sha384`, `security.ssl3.ecdhe_rsa_aes_128_sha`, `security.ssl3.ecdhe_ecdsa_aes_128_sha`, `security.ssl3.ecdhe_rsa_aes_256_sha`, `security.ssl3.ecdhe_ecdsa_aes_256_sha`, `security.ssl3.dhe_rsa_aes_128_sha`, `security.ssl3.dhe_rsa_aes_256_sha`, `security.ssl3.rsa_aes_128_gcm_sha256`, `security.ssl3.rsa_aes_256_gcm_sha384`, `security.ssl3.rsa_aes_128_sha`, `security.ssl3.rsa_aes_256_sha`, `security.ssl3.deprecated.rsa_des_ede3_sha`, `security.tls13.chacha20_poly1305_sha256`, `security.tls13.aes_128_gcm_sha256`, `security.tls13.aes_256_gcm_sha384`
 
 ---
 **Note:**
@@ -1757,7 +1806,7 @@ TLS_RSA_WITH_3DES_EDE_CBC_SHA
 This policy was updated in Firefox 78 to allow enabling ciphers as well. Setting the value to true disables the cipher, setting the value to false enables the cipher. Previously setting the value to true or false disabled the cipher.
 
 ---
-**Compatibility:** Firefox 76, Firefox ESR 68.8 (TLS_RSA_WITH_AES_128_GCM_SHA256 and TLS_RSA_WITH_AES_256_GCM_SHA384 were added in Firefox 78, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA38, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, and TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 were added in Firefox 97 and Firefox 91.6)\
+**Compatibility:** Firefox 76, Firefox ESR 68.8\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** N/A
 
@@ -3027,7 +3076,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine
 ```
 Value (string):
 ```
@@ -3228,8 +3277,7 @@ Value (string):
     "installation_mode": "force_installed",
     "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adguardadblocker@adguard.com/latest.xpi"
   },
-  {
-    "https-everywhere@eff.org": {
+  "https-everywhere@eff.org": {
     "installation_mode": "allowed",
     "updates_disabled": false
   }
@@ -3646,7 +3694,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/HandlersOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/HandlersOneLine
 ```
 Value (string):
 ```
@@ -4262,7 +4310,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ManagedBoomarksOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/ManagedBookmarksOneLine
 ```
 Value (string):
 ```
@@ -5474,7 +5522,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/PreferencesOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/PreferencesOneLine
 ```
 Value (string):
 ```
@@ -5964,17 +6012,17 @@ or
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown.
 
-Note: Starting with Firefox 128, History clears FormData and Downloads as well.
+Note: Starting with Firefox 136, FormData and History have been separated again.
 
 `Cache`
 
 `Cookies`
 
-`Downloads` Download History (*Deprecated*)
+`Downloads` Download History (*Deprecated - part of History*)
 
-`FormData` Form & Search History (*Deprecated*)
+`FormData` Form History
 
-`History` Browsing History, Download History, Form & Search History.
+`History` Browsing History, Download History
 
 `Sessions` Active Logins
 
@@ -5986,12 +6034,13 @@ Note: Starting with Firefox 128, History clears FormData and Downloads as well.
 
 **Compatibility:** Firefox 68, Firefox ESR 68 (Locked added in 74/68.6, History update in Firefox 128)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`, `privacy.clearOnShutdown.cache`, `privacy.clearOnShutdown.cookies`, `privacy.clearOnShutdown.downloads`, `privacy.clearOnShutdown.formdata`, `privacy.clearOnShutdown.history`, `privacy.clearOnShutdown.sessions`, `privacy.clearOnShutdown.siteSettings`, `privacy.clearOnShutdown.offlineApps`, `privacy.clearOnShutdown_v2.historyFormDataAndDownloads` (Firefox 128), `privacy.clearOnShutdown_v2.cookiesAndStorage` (Firefox 128), `privacy.clearOnShutdown_v2.cache` (Firefox 128), `privacy.clearOnShutdown_v2.siteSettings` (Firefox 128)
+**Preferences Affected:** `privacy.sanitize.sanitizeOnShutdown`, `privacy.clearOnShutdown.cache`, `privacy.clearOnShutdown.cookies`, `privacy.clearOnShutdown.downloads`, `privacy.clearOnShutdown.formdata`, `privacy.clearOnShutdown.history`, `privacy.clearOnShutdown.sessions`, `privacy.clearOnShutdown.siteSettings`, `privacy.clearOnShutdown.offlineApps`, `privacy.clearOnShutdown_v2.historyFormDataAndDownloads` (Firefox 128), `privacy.clearOnShutdown_v2.cookiesAndStorage` (Firefox 128), `privacy.clearOnShutdown_v2.cache` (Firefox 128), `privacy.clearOnShutdown_v2.siteSettings` (Firefox 128), `privacy.clearOnShutdown_v2.formdata` (Firefox 128)
 
 #### Windows (GPO)
 ```
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\History = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings = 0x1 | 0x0
@@ -6009,6 +6058,14 @@ Value (string):
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/B_SanitizeOnShutdown_Cookies
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~SanitizeOnShutdown/E_SanitizeOnShutdown_FormData
 ```
 Value (string):
 ```
@@ -6055,6 +6112,8 @@ Value (string):
     <true/> | <false/>
     <key>Cookies</key>
     <true/> | <false/>
+    <key>FormData</key>
+    <true/> | <false/>
     <key>History</key>
     <true/> | <false/>
     <key>Sessions</key>
@@ -6073,6 +6132,7 @@ Value (string):
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
+      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
@@ -6082,7 +6142,7 @@ Value (string):
 }
 ```
 ### SanitizeOnShutdown (All)
-Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form & Search History, Site Preferences and Offline Website Data.
+Clear all data on shutdown, including Browsing & Download History, Cookies, Active Logins, Cache, Form History, Site Preferences and Offline Website Data.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
@@ -6784,6 +6844,8 @@ Prevent Firefox from messaging the user in certain situations.
 
 `FirefoxLabs` If false, don't show the "Firefox Labs" section in Preferences. (Firefox 130.0.1)
 
+Note: Firefox Labs is now controlled by Nimbus, our testing platform, so disabling telemetry also disables Firefox Labs.
+
 `Locked` prevents the user from changing user messaging preferences.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
@@ -6930,7 +6992,7 @@ to workaround the limit on the length of strings. Put all of your JSON on one li
 
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/WebsiteFilterOneLine
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/WebsiteFilterOneLine
 ```
 Value (string):
 ```
