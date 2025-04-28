@@ -19,6 +19,7 @@
       <definition name="SUPPORTED_FF68" displayName="$(string.SUPPORTED_FF68)"/>
       <definition name="SUPPORTED_FF6801" displayName="$(string.SUPPORTED_FF6801)"/>
       <definition name="SUPPORTED_FF68ESR" displayName="$(string.SUPPORTED_FF68ESR)"/>
+      <definition name="SUPPORTED_FF69" displayName="$(string.SUPPORTED_FF69)"/>
       <definition name="SUPPORTED_FF70" displayName="$(string.SUPPORTED_FF70)"/>
       <definition name="SUPPORTED_FF71" displayName="$(string.SUPPORTED_FF71)"/>
       <definition name="SUPPORTED_FF72" displayName="$(string.SUPPORTED_FF72)"/>
