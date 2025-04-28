@@ -106,9 +106,9 @@
       <string id="ProxySettings_group">Настройки прокси</string>
       <string id="SecurityDevices_group">Устройства безопасности</string>
       <string id="FirefoxSuggest_group">Firefox Suggest (US only)</string>
-      <string id="ContentAnalysis_group">Content Analysis (DLP)</string>
-      <string id="InterceptionPoints_group">Interception Points</string>
-      <string id="InterceptionPoints_Clipboard_group">Clipboard</string>
+      <string id="ContentAnalysis_group">Анализ контента (DLP)</string>
+      <string id="InterceptionPoints_group">Точки перехвата</string>
+      <string id="InterceptionPoints_Clipboard_group">Буфер обмена</string>
       <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
@@ -364,7 +364,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, расширения не будут управляться.
 
-Для получения подробной информации о создании политики см. Https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#extensions.</string>
       <string id="HardwareAcceleration">Аппаратное ускорение</string>
       <string id="HardwareAcceleration_Explain">Если эта политика отключена, аппаратное ускорение не может быть включено.
 
@@ -948,7 +948,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, используются настройки Firefox по умолчанию.
 
-Для получения подробной информации о создании политики см. https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#handlers.</string>
       <string id="PreferencesOneLine">Настройки (JSON on one line)</string>
       <string id="Preferences">Настройки</string>
       <string id="Preferences_Explain">Примечание. Чтобы использовать эту политику, необходимо очистить все настройки в старом разделе настроек (устарело).
@@ -957,7 +957,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, предпочтения не изменяются.
 
-Для получения подробной информации о создании политики см. Https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#preferences.</string>
       <string id="BookmarksOneLine">Закладки (JSON on one line)</string>
       <string id="Bookmarks">Закладки (JSON)</string>
       <string id="Bookmarks_Explain">Если эта политика включена, вы можете использовать JSON для настройки закладок, в том числе [] для удаления всех закладок.
@@ -968,14 +968,14 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Эта политика не влияет на управляемые закладки.
 
-Для получения подробной информации о JSON см. https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+Для получения подробной информации о JSON см. https://mozilla.github.io/policy-templates/#bookmarks.</string>
       <string id="ManagedBookmarksOneLine">Управляемые закладки (JSON on one line)</string>
       <string id="ManagedBookmarks">Управляемые закладки</string>
       <string id="ManagedBookmarks_Explain">Если эта политика включена, вы можете использовать JSON для настройки управляемых закладок.
 
 Если эта политика отключена или не настроена, управляемые закладки не добавляются.
 
-Для получения подробной информации о создании политики см. Https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks.</string>
+Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#managedbookmarks.</string>
       <string id="AllowedDomainsForApps">Определить домены, которым разрешен доступ к Google Workspace</string>
       <string id="AllowedDomainsForApps_Explain">Если эта политика включена, пользователи могут получить доступ к Google Workspace только для указанных доменов (разделенных запятой). Чтобы разрешить доступ к Gmail, вы можете добавить Consumer_accounts.
 
@@ -990,7 +990,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, любой сайт, который вызывает внешний протокол, будет запрашивать у пользователя разрешение.
 
-Для получения подробной информации о создании политики см. https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins.</string>
+Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#autolaunchprotocolsfromorigins.</string>
       <string id="WindowsSSO">Windows SSO</string>
       <string id="WindowsSSO_Explain">Если эта политика включена, Firefox будет использовать единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях.
 
@@ -1005,7 +1005,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, предупреждения отображаются для всех типов исполняемых файлов.
 
-Для получения подробной информации о создании политики см. https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
       <string id="StartDownloadsInTempDirectory">Начать загрузку во временном каталоге</string>
       <string id="StartDownloadsInTempDirectory_Explain">Если эта политика включена, Firefox начнет загрузку во временный каталог и автоматически удалит её при закрытии браузера.
 
@@ -1070,7 +1070,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, используются встроенные значения по умолчанию.
 
-Подробную информацию о создании политики см. на странице https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+Подробную информацию о создании политики см. на странице https://mozilla.github.io/policy-templates/#containers.</string>
       <string id="FirefoxSuggest_WebSuggestions">Предложения из Интернета</string>
       <string id="FirefoxSuggest_WebSuggestions_Explain">Если эта политика включена, вы будете получать предложения от Firefox, связанные с вашим поиском.
 
@@ -1146,104 +1146,103 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="PrivateBrowsingModeAvailability_0">Разрешить режим приватного просмотра</string>
       <string id="PrivateBrowsingModeAvailability_1">Отключить режим приватного просмотра</string>
       <string id="PrivateBrowsingModeAvailability_2">Принудительно включить режим приватного просмотра</string>
-      <string id="ContentAnalysis_AgentName">Agent Name</string>
-      <string id="ContentAnalysis_AgentName_Explain">If this policy is enabled, you can specify the name of the DLP agent, used in dialogs and notifications about DLP operations.
+      <string id="ContentAnalysis_AgentName">Имя агента</string>
+      <string id="ContentAnalysis_AgentName_Explain">Если эта политика включена, вы можете указать имя DLP-агента, используемое в диалоговых окнах и уведомлениях об операциях DLP.
 
-If this policy is disabled or not configured, the agent name "A DLP Agent" is used.</string>
-      <string id="ContentAnalysis_AgentTimeout">Agent Timeout</string>
-      <string id="ContentAnalysis_AgentTimeout_Explain">If this policy is enabled, you can specify the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless 'Default Result' is set to 1 or 2.
+Если эта политика отключена или не настроена, используется имя агента «A DLP Agent».</string>
+      <string id="ContentAnalysis_AgentTimeout">Тайм-аут агента</string>
+      <string id="ContentAnalysis_AgentTimeout_Explain">Если эта политика включена, вы можете указать тайм-аут в секундах после отправки DLP-запроса агенту. По истечении этого тайм-аута запрос будет отклонен, если только для параметра "Результат по умолчанию" не установлено значение 1 или 2.
 
-If this policy is disabled or not configured, the timeout is 30 seconds.</string>
-      <string id="ContentAnalysis_AllowUrlRegexList">Allow Url Regex List</string>
-      <string id="ContentAnalysis_AllowUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
+Если эта политика отключена или не настроена, тайм-аут составляет 30 секунд.</string>
+      <string id="ContentAnalysis_AllowUrlRegexList">Список разрешенных регулярных выражений для URL</string>
+      <string id="ContentAnalysis_AllowUrlRegexList_Explain">Если эта политика включена, вы можете указать разделенный пробелами список регулярных выражений, определяющих URL-адреса, для которых операции DLP всегда будут разрешены без обращения к агенту. По умолчанию используется «^about:(?!blank|srcdoc).*», что означает, что любые страницы, начинающиеся с "about:", будут исключены из DLP, за исключением "about:blank" и "about:srcdoc", поскольку они могут контролироваться веб-контентом.
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
-      <string id="ContentAnalysis_BypassForSameTabOperations">Bypass For Same Tab Operations</string>
-      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">If this policy is enabled, Firefox will automatically allow DLP requests whose data comes from the same tab and frame - for example, if data is copied to the clipboard and then pasted on the same page.
+Если эта политика отключена или не настроена, DLP-агент всегда будет запрашиваться.</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations">Пропускать для операций в той же вкладке</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">Если эта политика включена, Firefox будет автоматически разрешать DLP-запросы, данные которых поступают из той же вкладки и фрейма — например, если данные копируются в буфер обмена, а затем вставляются на той же странице.
 
-If this policy is disabled or not configured, Firefox  Firefox will not pass DLP requests whose data comes from the same tab and frame to the DLP agent as normal.</string>
-      <string id="ContentAnalysis_ClientSignature">Client Signature</string>
-      <string id="ContentAnalysis_ClientSignature_Explain">If this policy is enabled, you can set the required signature of the DLP agent connected to the pipe. If this is a non-empty string and the DLP agent does not have a signature with a Subject Name that exactly matches this value, Firefox will not connect to the pipe.
+Если эта политика отключена или не настроена, Firefox не будет передавать DLP-запросы, данные которых поступают из той же вкладки и фрейма, DLP-агенту как обычно.</string>
+      <string id="ContentAnalysis_ClientSignature">Подпись клиента</string>
+      <string id="ContentAnalysis_ClientSignature_Explain">Если эта политика включена, вы можете задать обязательную подпись DLP-агента, подключенного к каналу. Если это непустая строка и DLP-агент не имеет подписи с именем субъекта, точно совпадающим с этим значением, Firefox не подключится к каналу.
 
-If this policy is disabled or not configured, the signature will not be verified.</string>
-      <string id="ContentAnalysis_DefaultResult">Default Result</string>
-      <string id="ContentAnalysis_DefaultResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if there is a problem connecting to the DLP agent.
+Если эта политика отключена или не настроена, подпись не будет проверяться.</string>
+      <string id="ContentAnalysis_DefaultResult">Результат по умолчанию</string>
+      <string id="ContentAnalysis_DefaultResult_Explain">Если эта политика включена, вы можете указать желаемое поведение для DLP-запросов в случае возникновения проблем с подключением к DLP-агенту.
 
-If this policy is disabled or not configured, the DLP request will be denied if there is a problem connecting to the agent.</string>
-      <string id="ContentAnalysis_DefaultResult_0">Deny the request</string>
-      <string id="ContentAnalysis_DefaultResult_1">Warn the user and allow them to choose whether to allow or deny</string>
-      <string id="ContentAnalysis_DefaultResult_2">Allow the request</string>
-      <string id="ContentAnalysis_DenyUrlRegexList">Deny Url Regex List</string>
-      <string id="ContentAnalysis_DenyUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be denied without consulting the agent.
+Если эта политика отключена или не настроена, DLP-запрос будет отклонен при возникновении проблем с подключением к агенту.</string>
+      <string id="ContentAnalysis_DefaultResult_0">Отклонить запрос</string>
+      <string id="ContentAnalysis_DefaultResult_1">Предупредить пользователя и предоставить ему выбор: разрешить или отклонить запрос</string>
+      <string id="ContentAnalysis_DefaultResult_2">Разрешить запрос</string>
+      <string id="ContentAnalysis_DenyUrlRegexList">Список запрещенных регулярных выражений для URL</string>
+      <string id="ContentAnalysis_DenyUrlRegexList_Explain">Если эта политика включена, вы можете указать разделенный пробелами список регулярных выражений, определяющих URL-адреса, для которых операции DLP всегда будут запрещены без обращения к агенту.
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
-      <string id="ContentAnalysis_Enabled">Enabled</string>
-      <string id="ContentAnalysis_Enabled_Explain">If this policy is enabled, Firefox will use DLP.
+Если эта политика отключена или не настроена, DLP-агент всегда будет запрашиваться.</string>
+      <string id="ContentAnalysis_Enabled">Исполоьзование DLP</string>
+      <string id="ContentAnalysis_Enabled_Explain">Если эта политика включена, Firefox будет использовать DLP.
 
-If this policy is disabled or not configured, Firefox will not use DLP.
+Если эта политика отключена или не настроена, Firefox не будет использовать DLP.
 
-Note: If this policy is enabled and no DLP agent is running, all DLP requests will be denied unless Default Result is set to 1 or 2.</string>
-      <string id="ContentAnalysis_IsPerUser">Is Per User</string>
-      <string id="ContentAnalysis_IsPerUser_Explain">If this policy is disabled, the pipe the DLP agent creates is per-system.
+Примечание: Если эта политика включена и ни один DLP-агент не запущен, все DLP-запросы будут отклонены, если только для параметра "Результат по умолчанию" не установлено значение 1 или 2.</string>
+      <string id="ContentAnalysis_IsPerUser">DLP канал для каждого пользователя</string>
+      <string id="ContentAnalysis_IsPerUser_Explain">Если эта политика отключена, канал, создаваемый DLP-агентом, является системным.
 
-If this policy is enabled or not configured, the pipe the DLP agent creates is per-user.</string>
-      <string id="ContentAnalysis_PipePathName">Pipe Path Name</string>
-      <string id="ContentAnalysis_PipePathName_Explain">If this policy is enabled, you can change the name of the pipe for the DLP agent.
+Если эта политика включена или не настроена, канал, создаваемый DLP-агентом, является пользовательским.</string>
+      <string id="ContentAnalysis_PipePathName">Имя пути к каналу</string>
+      <string id="ContentAnalysis_PipePathName_Explain">Если эта политика включена, вы можете изменить имя канала для DLP-агента.
 
-If this policy is disabled or not configured, the default pipe name of 'path_user' is used.</string>
-      <string id="ContentAnalysis_ShowBlockedResult">Show Blocked Result</string>
-      <string id="ContentAnalysis_ShowBlockedResult_Explain">If this policy is disabled, Firefox will not show a notification when a DLP request is denied.
+Если эта политика отключена или не настроена, используется имя канала по умолчанию 'path_user'.</string>
+      <string id="ContentAnalysis_ShowBlockedResult">Уведомление об отклонении DLP-запроса</string>
+      <string id="ContentAnalysis_ShowBlockedResult_Explain">Если эта политика отключена, Firefox не будет отображать уведомление, когда DLP-запрос отклонен.
 
-If this policy is enabled or not configured, Firefox will show a notification when a DLP request is denied.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Enabled</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">If this policy is disabled, clipboard operations will not use DLP.
+Если эта политика включена или не настроена, Firefox будет отображать уведомление, когда DLP-запрос отклонен.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Использование буфера обмена с DLP</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">Если эта политика отключена, операции с буфером обмена не будут использовать DLP.
 
-If this policy is enabled or not configured, clipboard operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly">Plain Text Only</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed on the clipboard, which some DLP agents may not expect.
+Если эта политика включена или не настроена, операции с буфером обмена будут использовать DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly">Анализ только простого текста</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly_Explain">Если эта политика отключена, в буфере обмена будут анализироваться все форматы, что может быть неожиданно для некоторых DLP-агентов.
 
-If this policy is enabled or not configured, only the text/plain format will be analyzed on the clipboard.</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Enabled</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">If this policy is disabled, drag and drop operations will not use DLP.
+Если эта политика включена или не настроена, в буфере обмена будет анализироваться только формат text/plain.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Включение DLP при использовании функций Drag and Drop</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">Если эта политика отключена, операции перетаскивания не будут использовать DLP.
 
-If this policy is enabled or not configured, drag and drop operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly">Plain Text Only</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed in what is being dropped, which some DLP agents may not expect.
+Если эта политика включена или не настроена, операции перетаскивания будут использовать DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly">Использование DLP при перетаскивании простого текста</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain">Если эта политика отключена, будут анализироваться все форматы перетаскиваемого содержимого, что может быть неожиданно для некоторых DLP-агентов.
 
-If this policy is enabled or not configured, only the text/plain format will be analyzed in what is being dropped.</string>
-      <string id="ContentAnalysis_InterceptionPoints_FileUpload">File Upload</string>
-      <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">If this policy is disabled, file upload operations will not use DLP.
+Если эта политика включена или не настроена, анализироваться в отношении перетаскиваемого содержимого будет только формат text/plain.</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload">Использование DLP при загрузке файла</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">Если эта политика отключена, операции загрузки файлов не будут использовать DLP.
 
-If this policy is enabled or not configured, file upload operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Print">Print</string>
-      <string id="ContentAnalysis_InterceptionPoints_Print_Explain">If this policy is disabled, print operations will not use DLP.
+Если эта политика включена или не настроена, операции загрузки файлов будут использовать DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print">Использовать DLP при печати</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print_Explain">Если эта поли  тика отключена, операции печати не будут использовать DLP.
 
-If this policy is enabled or not configured, print operations will use DLP.</string>
-      <string id="ContentAnalysis_TimeoutResult">Timeout Result</string>
-      <string id="ContentAnalysis_TimeoutResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if the DLP agent does not respond to a request in less than AgentTimeout seconds. 
+Если эта политика включена или не настроена, операции печати будут использовать DLP.</string>
+      <string id="ContentAnalysis_TimeoutResult">Результат по истечении тайм-аута</string>
+      <string id="ContentAnalysis_TimeoutResult_Explain">Если эта политика включена, вы можете указать желаемое поведение для DLP-запросов, если DLP-агент не отвечает на запрос в течение времени, меньшего чем AgentTimeout секунд.
 
-If this policy is disabled or not configured, the request will be denied.</string>
-      <string id="SkipTermsOfUse">Skip Terms of Use</string>
-      <string id="SkipTermsOfUse_Explain">If this policy is enabled, the Firefox Terms of Use (https://www.mozilla.org/about/legal/terms/firefox/) and Privacy Notice (https://www.mozilla.org/privacy/firefox/) do not display upon startup.
+Если эта политика отключена или не настроена, запрос будет отклонен.</string>
+      <string id="SkipTermsOfUse">Пропустить Условия использования</string>
+      <string id="SkipTermsOfUse_Explain">Если эта политика включена, Условия использования Firefox (https://www.mozilla.org/about/legal/terms/firefox/) и Уведомление о конфиденциальности (https://www.mozilla.org/privacy/firefox/) не будут отображаться при запуске.
+Вы подтверждаете, что принимаете и обладаете полномочиями принимать Условия использования от имени всех лиц, которым вы предоставляете доступ к этому браузеру.
 
-You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
-
-If this policy is disabled or not configured, the Firefox Terms of Use and Privacy Notice do display upon startup.</string>
+Если эта политика отключена или не настроена, Условия использования Firefox и Уведомление о конфиденциальности будут отображаться при запуске.</string>
       <string id="Preferences_Boolean_Explain">Если эта политика включена, предпочтение заблокировано на true. Если эта политика отключена, предпочтение заблокировано на false.
 
 Описание предпочтения см.:
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+https://mozilla.github.io/policy-templates/#preferences</string>
       <string id="Preferences_String_Explain">Если эта политика включена, предпочтение привязано к введенной строке. Если эта политика отключена, она не действует.
 
 Описание предпочтения см.:
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+https://mozilla.github.io/policy-templates/#preferences</string>
       <string id="Preferences_Enum_Explain">Если эта политика включена, предпочтение привязано к выбранному значению. Если эта политика отключена, она не действует.
 
 Описание предпочтения см.:
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+https://mozilla.github.io/policy-templates/#preferences.</string>
       <string id="Preferences_Unsupported_Explain">Это предпочтение больше не поддерживается в Windows. Мы изучаем возможность создания политики.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Автоматически (0)</string>
       <string id="Preferences_accessibility_force_disabled_off">Всегда выключено (1)</string>
@@ -1419,7 +1418,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
            <label>Данные POST:</label>
         </textBox>
         <textBox refId="SearchEngine_Encoding">
-          <label>Encoding:</label>
+          <label>Кодирование:</label>
         </textBox>
       </presentation>
       <presentation id="SearchEngines_Default">
