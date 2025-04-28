@@ -2892,6 +2892,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Value = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\EmailTracking = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 ```
 #### Windows (Intune)
@@ -2914,6 +2915,14 @@ Value (string):
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/C_TrackingProtection_Fingerprinting
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/F_TrackingProtection_EmailTracking
 ```
 Value (string):
 ```
@@ -2949,6 +2958,8 @@ Value (string):
     <true/> | <false/>
     <key>Fingerprinting</key>
     <true/> | <false/>
+    <key>EmailTracking</key>
+    <true/> | <false/>
     <key>Exceptions</key>
     <array>
       <string>https://example.com</string>
@@ -2965,6 +2976,7 @@ Value (string):
       "Locked": true | false,
       "Cryptomining": true | false,
       "Fingerprinting": true | false,
+      "EmailTracking": true | false,
       "Exceptions": ["https://example.com"]
     }
   }
