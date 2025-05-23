@@ -115,7 +115,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`SanitizeOnShutdown` (All)](#sanitizeonshutdown-all)** | Clear all data on shutdown.
 | **[`SanitizeOnShutdown` (Selective)](#sanitizeonshutdown-selective)** | Clear data on shutdown.
 | **[`SearchBar`](#searchbar)** | Set whether or not search bar is displayed.
-| **[`SearchEngines`](#searchengines-this-policy-is-only-available-on-the-esr)** |
+| **[`SearchEngines`](#searchengines)** |
 | **[`SearchEngines -> Add`](#searchengines--add)** | Add new search engines.
 | **[`SearchEngines -> Default`](#searchengines--default)** | Set the default search engine.
 | **[`SearchEngines -> PreventInstalls`](#searchengines--preventinstalls)** | Prevent installing search engines from webpages.
@@ -6227,17 +6227,17 @@ Value (string):
 ```
 <a name="SearchEngines"></a>
 
-### SearchEngines (This policy is only available on the ESR.)
+### SearchEngines
+
+As of Firefox 139, this policy is available in all versions of Firefox.
 
 ### SearchEngines | Add
 
 Add new search engines. Although there are only five engines available in the ADMX template, there is no limit. To add more in the ADMX template, you can duplicate the XML.
 
-This policy is only available on the ESR. `Name` and `URLTemplate` are required.
+`Name` is the name of the search engine. (Required)
 
-`Name` is the name of the search engine.
-
-`URLTemplate` is the search URL with {searchTerms} to substitute for the search term.
+`URLTemplate` is the search URL with {searchTerms} to substitute for the search term. (Required)
 
 `Method` is either GET or POST
 
@@ -6253,7 +6253,7 @@ This policy is only available on the ESR. `Name` and `URLTemplate` are required.
 
 `Encoding` is the query charset for the engine. It defaults to UTF-8.
 
-**Compatibility:** Firefox ESR 60 (POST support in Firefox ESR 68, Encoding support in Firefox 91)\
+**Compatibility:** Firefox 139, Firefox ESR 60 (POST support in Firefox ESR 68, Encoding support in Firefox 91)\
 **CCK2 Equivalent:** `searchplugins`\
 **Preferences Affected:** N/A
 
@@ -6337,9 +6337,9 @@ Value (string):
 ```
 ### SearchEngines | Default
 
-Set the default search engine. This policy is only available on the ESR.
+Set the default search engine.
 
-**Compatibility:** Firefox ESR 60\
+**Compatibility:** Firefox 139, Firefox ESR 60\
 **CCK2 Equivalent:** `defaultSearchEngine`\
 **Preferences Affected:** N/A
 
@@ -6381,7 +6381,7 @@ Value (string):
 
 Prevent installing search engines from webpages.
 
-**Compatibility:** Firefox ESR 60\
+**Compatibility:** Firefox 139, Firefox ESR 60\
 **CCK2 Equivalent:** `disableSearchEngineInstall`\
 **Preferences Affected:** N/A
 
@@ -6420,9 +6420,9 @@ Value (string):
 ```
 ### SearchEngines | Remove
 
-Hide built-in search engines. This policy is only available on the ESR.
+Hide built-in search engines.
 
-**Compatibility:** Firefox ESR 60.2\
+**Compatibility:** Firefox 139, Firefox ESR 60.2\
 **CCK2 Equivalent:** `removeDefaultSearchEngines` (removed all built-in engines)\
 **Preferences Affected:** N/A
 
