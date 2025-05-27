@@ -37,3 +37,7 @@ If you want to set user specific policies, use ~/Library without sudo:
 defaults write ~/Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
 defaults write ~/Library/Preferences/org.mozilla.firefox Homepage__URL -string "http://example.com"
 ```
+If you find that Firefox is not using your updates immediately, you can run:
+```bash
+sudo defaults read /Library/Preferences/org.mozilla.firefox
+```
