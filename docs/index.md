@@ -53,7 +53,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`DisableFormHistory`](#disableformhistory)** | Turn off saving information on web forms and the search bar.
 | **[`DisableMasterPasswordCreation`](#disablemasterpasswordcreation)** | Remove the master password functionality.
 | **[`DisablePasswordReveal`](#disablepasswordreveal)** | Do not allow passwords to be revealed in saved logins.
-| **[`DisablePocket`](#disablepocket)** | Remove Pocket in the Firefox UI.
+| **[`DisablePocket`](#disablepocket-deprecated)** | Remove Pocket in the Firefox UI.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
 | **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
@@ -2232,7 +2232,8 @@ Value (string):
   }
 }
 ```
-### DisablePocket
+### DisablePocket (Deprecated)
+
 Remove Pocket in the Firefox UI. It does not remove it from the new tab page.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
