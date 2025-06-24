@@ -275,7 +275,7 @@
       <string id="DisablePasswordReveal_Explain">Если эта политика включена, пользователи не могут отображать пароли в сохраненных логинах.
 
 Если эта политика отключена или не настроена, пользователи могут отображать пароли в сохраненных логинах.</string>
-      <string id="DisablePocket">Отключить Pocket</string>
+      <string id="DisablePocket">Отключить Pocket (устарело)</string>
       <string id="DisablePocket_Explain">Если эта политика включена, Pocket недоступен.
 
 Если эта политика отключена или не настроена, Pocket доступен.</string>

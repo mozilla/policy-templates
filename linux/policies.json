@@ -75,7 +75,6 @@
     "DisableFormHistory": true | false,
     "DisableMasterPasswordCreation": true | false,
     "DisablePasswordReveal": true | false,
-    "DisablePocket": true | false,
     "DisablePrivateBrowsing": true | false,
     "DisableProfileImport": true | false,
     "DisableProfileRefresh": true | false,

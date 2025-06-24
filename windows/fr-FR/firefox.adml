@@ -274,7 +274,7 @@ Si cette stratégie est désactivée ou non configurée, Firefox conservera l'hi
       <string id="DisablePasswordReveal_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas afficher les mots de passe dans les connexions enregistrées.
 
 Si cette stratégie est désactivée ou non configurée, les utilisateurs peuvent afficher les mots de passe dans les connexions enregistrées.</string>
-      <string id="DisablePocket">Désactiver Pocket</string>
+      <string id="DisablePocket">Désactiver Pocket (Obsolète)</string>
       <string id="DisablePocket_Explain">Si cette stratégie est activée, Pocket n'est pas disponible.
 
 Si cette stratégie est désactivée ou non configurée, Pocket est disponible.</string>

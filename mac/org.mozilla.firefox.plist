@@ -205,8 +205,6 @@
 	<true/>
 	<key>DisablePasswordReveal</key>
 	<true/>
-	<key>DisablePocket</key>
-	<true/>
 	<key>DisablePrivateBrowsing</key>
 	<true/>
 	<key>DisableProfileImport</key>
