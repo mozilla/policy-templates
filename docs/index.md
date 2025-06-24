@@ -1739,11 +1739,14 @@ Value (string):
 }
 ```
 ### DisableBuiltinPDFViewer
+
 Disable the built in PDF viewer. PDF files are downloaded and sent externally.
+
+Note: As of Firefox 140, this policy no longer completely disables PDF.js; it changes the handler to send PDF files to the operating system. Embedded PDF files are shown in the browser. If you need to completely disable PDF.js, you can use the [`PDFjs`](#pdfjs) policy. 
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** `disablePDFjs`\
-**Preferences Affected:** `pdfjs.disabled`
+**Preferences Affected:** N/A
 
 #### Windows (GPO)
 ```
