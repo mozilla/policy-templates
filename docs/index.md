@@ -3421,7 +3421,7 @@ Value (string):
 ### FirefoxHome
 Customize the Firefox Home page.
 
-**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122)
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket)
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
 
@@ -3432,6 +3432,7 @@ Software\Policies\Mozilla\Firefox\FirefoxHome\TopSites = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredTopSites = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Highlights = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Pocket = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\FirefoxHome\Stories = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\SponsoredPocket = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Snippets = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\FirefoxHome\Locked = 0x1 | 0x0
@@ -3444,14 +3445,16 @@ OMA-URI:
 Value (string):
 ```
 <enabled/>
-<data id="FirefoxHome_Search"  value="true | false"/>
-<data id="FirefoxHome_TopSites"  value="true | false"/>
-<data id="FirefoxHome_SponsoredTopSites"  value="true | false"/>
-<data id="FirefoxHome_Highlights"  value="true | false"/>
-<data id="FirefoxHome_Pocket"  value="true | false"/>
-<data id="FirefoxHome_SponsoredPocket"  value="true | false"/>
-<data id="FirefoxHome_Snippets"  value="true | false"/>
-<data id="FirefoxHome_Locked"  value="true | false"/>
+<data id="FirefoxHome_Search" value="true | false"/>
+<data id="FirefoxHome_TopSites" value="true | false"/>
+<data id="FirefoxHome_SponsoredTopSites" value="true | false"/>
+<data id="FirefoxHome_Highlights" value="true | false"/>
+<data id="FirefoxHome_Pocket" value="true | false"/>
+<data id="FirefoxHome_Stories" value="true | false"/>
+<data id="FirefoxHome_SponsoredPocket" value="true | false"/>
+<data id="FirefoxHome_SponsoredStories" value="true | false"/>
+<data id="FirefoxHome_Snippets" value="true | false"/>
+<data id="FirefoxHome_Locked" value="true | false"/>
 ```
 #### macOS
 ```
@@ -3468,7 +3471,11 @@ Value (string):
     <true/> | <false/>
     <key>Pocket</key>
     <true/> | <false/>
+    <key>Stories</key>
+    <true/> | <false/>
     <key>SponsoredPocket</key>
+    <true/> | <false/>
+    <key>SponsoredStories</key>
     <true/> | <false/>
     <key>Snippets</key>
     <true/> | <false/>
@@ -3487,7 +3494,9 @@ Value (string):
       "SponsoredTopSites": true | false,
       "Highlights": true | false,
       "Pocket": true | false,
+      "Stories": true | false,
       "SponsoredPocket": true | false,
+      "SponsoredStories": true | false,
       "Snippets": true | false,
       "Locked": true | false
     }
@@ -5399,20 +5408,28 @@ intl.
 keyword.enabled (Firefox 95, Firefox ESR 91.4)
 layers.
 layout.
+mathml.disabled (Firefox 141, Firefox ESR 140.1)
 media.
 network.
 pdfjs. (Firefox 84, Firefox ESR 78.6)
 places.
 pref.
 print.
+privacy.baselineFingerprintingProtection, privacy.baselineFingerprintingProtection.* (Firefox 141, Firefox ESR 140.1)
+privacy.fingerprintingProtection, privacy.fingerprintingProtection.* (Firefox 141, Firefox ESR 140.1)
 privacy.globalprivacycontrol.enabled (Firefox 127, Firefox ESR 128.0)
 privacy.userContext.enabled (Firefox 126, Firefox ESR 115.11)
 privacy.userContext.ui.enabled (Firefox 126, Firefox ESR 115.11)
 signon. (Firefox 83, Firefox ESR 78.5)
 spellchecker. (Firefox 84, Firefox ESR 78.6)
+svg.context-properties.content.enabled (Firefox 141, Firefox ESR 140.1)
+svg.disabled (Firefox 141, Firefox ESR 140.1)
 toolkit.legacyUserProfileCustomizations.stylesheets (Firefox 95, Firefox ESR 91.4)
 ui.
+webgl.disabled (Firefox 141, Firefox ESR 140.1)
+webgl.force-enabled (Firefox 141, Firefox ESR 140.1)
 widget.
+xpinstall.enabled (Firefox 141, Firefox ESR 140.1)
 xpinstall.signatures.required (Firefox ESR 102.10, Firefox ESR only)
 xpinstall.whitelist.required (Firefox 118, Firefox ESR 115.3)
 ```
@@ -5420,12 +5437,14 @@ as well as the following security preferences:
 
 | Preference | Type | Default
 | --- | --- | --- |
+| security.csp.reporting.enabled | bool | true
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to false, disables CSP reporting. (Firefox 141, Firefox ESR 140.1)
 | security.default_personal_cert | string | Ask Every Time
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to Select Automatically, Firefox automatically chooses the default personal certificate.
 | security.disable_button.openCertManager | string | N/A
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to true and locked, the View Certificates button in preferences is disabled (Firefox 121, Firefox ESR 115.6)
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true and locked, the View Certificates button in preferences is disabled. (Firefox 121, Firefox ESR 115.6)
 | security.disable_button.openDeviceManager | string | N/A
-| &nbsp;&nbsp;&nbsp;&nbsp;If set to true and locked, the Security Devices button in preferences is disabled (Firefox 121, Firefox ESR 115.6)
+| &nbsp;&nbsp;&nbsp;&nbsp;If set to true and locked, the Security Devices button in preferences is disabled. (Firefox 121, Firefox ESR 115.6)
 | security.insecure_connection_text.enabled | bool | false
 | &nbsp;&nbsp;&nbsp;&nbsp;If set to true, adds the words "Not Secure" for insecure sites.
 | security.insecure_connection_text.pbmode.enabled | bool | false
