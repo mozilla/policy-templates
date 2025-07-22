@@ -80,7 +80,6 @@
       <definition name="SUPPORTED_FF131" displayName="$(string.SUPPORTED_FF131)"/>
       <definition name="SUPPORTED_FF137_ONLY" displayName="$(string.SUPPORTED_FF137_ONLY)"/>
       <definition name="SUPPORTED_FF138_ONLY" displayName="$(string.SUPPORTED_FF138_ONLY)"/>
-      <definition name="SUPPORTED_FF141" displayName="$(string.SUPPORTED_FF141)"/>
     </definitions>
   </supportedOn>
   <categories>
