@@ -2886,7 +2886,9 @@ If `EmailTracking` is set to true, hidden email tracking pixels and scripts on w
 
 `Exceptions` are origins for which tracking protection is not enabled.
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5)\
+`Category` can be either ```strict``` or ```standard```. If category is set, it overrides all other settings except `Exceptions` and the user cannot change the category.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5. Category added in Firefox 142/140.2.)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `privacy.trackingprotection.enabled`, `privacy.trackingprotection.pbmode.enabled`, `privacy.trackingprotection.cryptomining.enabled`, `privacy.trackingprotection.fingerprinting.enabled`
 
@@ -2898,6 +2900,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\EmailTracking = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Category = "strict" | "standard"
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -2949,6 +2952,14 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/G_TrackingProtection_Category
+```
+Value (string):
+```
+<data id="TrackingProtection_Category" value="strict | standard"/>
+```
 #### macOS
 ```
 <dict>
@@ -2965,6 +2976,8 @@ Value (string):
     <key>EmailTracking</key>
     <true/> | <false/>
     <key>Exceptions</key>
+    <key>Category</key>
+    <string>strict | standard</string>
     <array>
       <string>https://example.com</string>
     </array>
@@ -2981,6 +2994,7 @@ Value (string):
       "Cryptomining": true | false,
       "Fingerprinting": true | false,
       "EmailTracking": true | false,
+      "Category": "strict" | "standard",
       "Exceptions": ["https://example.com"]
     }
   }

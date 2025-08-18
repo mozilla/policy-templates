@@ -804,6 +804,12 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modi
       <string id="TrackingProtection_EmailTracking_Explain">Si cette stratégie est activée, les pixels et scripts de suivi des e-mails cachés sur les sites web sont bloqués.
 
 Si cette stratégie est désactivée ou non configurée, les pixels et scripts de suivi des e-mails cachés sur les sites web ne sont pas bloqués.</string>
+      <string id="TrackingProtection_Category">Niveau de protection contre le pistage</string>
+      <string id="TrackingProtection_Category_Explain">Si cette stratégie est activée, le niveau de protection contre le pistage peut être défini sur Standard ou Strict, et l’utilisateur ne peut pas le modifier.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre de protection contre le pistage par défaut est utilisé et l’utilisateur peut le modifier.</string>
+      <string id="Strict">Strict</string>
+      <string id="Standard">Standard</string>
       <string id="RequestedLocales">Langue demandée</string>
       <string id="RequestedLocalesString">Langue demandée (chaîne)</string>
       <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de langues demandées pour l'application, par ordre de préférence. Cela activera le pack linguistique correspondant.

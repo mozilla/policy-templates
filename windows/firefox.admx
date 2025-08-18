@@ -3687,6 +3687,24 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="G_TrackingProtection_Category" class="Both" displayName="$(string.TrackingProtection_Category)" explainText="$(string.TrackingProtection_Category_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" presentation="$(presentation.TrackingProtection_Category)">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF142"/>
+      <elements>
+        <enum id="TrackingProtection_Category" valueName="Category">
+          <item displayName="$(string.Strict)">
+            <value>
+              <string>strict</string>
+            </value>
+          </item>
+          <item displayName="$(string.Standard)">
+            <value>
+              <string>standard</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy name="UserMessaging_WhatsNew" class="Both" displayName="$(string.UserMessaging_WhatsNew)" explainText="$(string.UserMessaging_WhatsNew_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="WhatsNew">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF75_ONLY"/>

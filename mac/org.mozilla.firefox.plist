@@ -242,6 +242,8 @@
 		<true/>
 		<key>EmailTracking</key>
 		<true/>
+		<key>Category</key>
+		<string>strict</string>
 		<key>Exceptions</key>
 		<array>
 			<string>https://example.com</string>
