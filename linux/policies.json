@@ -262,7 +262,19 @@
         "Block": ["https://example.edu"],
         "Default": "allow-audio-video" | "block-audio" | "block-audio-video",
         "Locked": true | false
-      }
+      },
+      "VirtualReality": {
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
+      },
+      "ScreenShare": {
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
+      },
     },
     "PictureInPicture": {
       "Enabled": true | false,

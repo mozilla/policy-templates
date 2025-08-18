@@ -87,6 +87,7 @@
       <string id="Notifications_group">Notifications</string>
       <string id="Autoplay_group">Autoplay</string>
       <string id="VirtualReality_group">Réalité Virtuelle</string>
+      <string id="ScreenShare_group">Partage d’écran</string>
       <string id="Authentication_group">Authentification</string>
       <string id="Bookmarks_group">Favoris</string>
       <string id="Certificates_group">Certificats</string>
@@ -554,6 +555,20 @@ Si cette stratégie est désactivée ou non configurée, tout site qui ne figure
       <string id="VirtualReality_Locked_Explain">Si cette stratégie est activée, les préférences de réalité virtuelle ne peuvent pas être modifiées par l'utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, l'utilisateur peut modifier ses préférences de réalité virtuelle.</string>
+      <string id="ScreenShare_Allow_Explain">Si cette stratégie est activée, le partage d’écran est toujours autorisé pour les origines spécifiées.
+
+Si cette stratégie est désactivée ou non configurée, les demandes de partage d’écran suivent la stratégie par défaut.</string>
+      <string id="ScreenShare_Block_Explain">Si cette stratégie est activée, le partage d’écran est bloqué pour les origines spécifiées.
+
+Si cette stratégie est désactivée ou non configurée, les demandes de partage d’écran suivent la stratégie par défaut.</string>
+      <string id="ScreenShare_BlockNewRequests">Bloquer les nouvelles demandes de partage d’écran</string>
+      <string id="ScreenShare_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne figurent pas dans la stratégie « Autoriser » ne peuvent pas demander le partage d’écran.
+
+Si cette stratégie est désactivée ou non configurée, tout site qui ne figure pas dans la stratégie « Bloquer » peut demander le partage d’écran.</string>
+      <string id="ScreenShare_Locked">Ne pas autoriser la modification des préférences de partage d’écran</string>
+      <string id="ScreenShare_Locked_Explain">Si cette stratégie est activée, les préférences de partage d’écran ne peuvent pas être modifiées par l’utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier ses préférences de partage d’écran.</string>
       <string id="FirefoxHome">Personnaliser Firefox Home</string>
       <string id="FirefoxHome_Explain">Si cette stratégie est activée, vous pouvez choisir les sections affichées sur la page d'accueil de Firefox et empêcher l'utilisateur de les modifier.
 
