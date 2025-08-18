@@ -4898,6 +4898,7 @@ Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Allow\1 = "https://
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Allow\1 = "https://example.org"
 Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Allow\2 = "https://example.com"
 Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Block\1 = "https://example.edu"
