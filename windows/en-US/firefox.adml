@@ -87,6 +87,7 @@
       <string id="Notifications_group">Notifications</string>
       <string id="Autoplay_group">Autoplay</string>
       <string id="VirtualReality_group">Virtual Reality</string>
+      <string id="ScreenShare_group">Screen Sharing</string>
       <string id="Authentication_group">Authentication</string>
       <string id="Bookmarks_group">Bookmarks</string>
       <string id="Certificates_group">Certificates</string>
@@ -554,6 +555,20 @@ If this policy is disabled or not configured, any site that is not in the Block 
       <string id="VirtualReality_Locked_Explain">If this policy is enabled, virtual reality preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their virtual reality preferences.</string>
+      <string id="ScreenShare_Allow_Explain">If this policy is enabled, screen sharing is always allowed for specified origins.
+
+If this policy is disabled or not configured, screen sharing requests follow the default policy.</string>
+      <string id="ScreenShare_Block_Explain">If this policy is enabled, screen sharing is blocked for specified origins.
+
+If this policy is disabled or not configured, screen sharing requests follow the default policy.</string>
+      <string id="ScreenShare_BlockNewRequests">Block new screen sharing requests</string>
+      <string id="ScreenShare_BlockNewRequests_Explain">If this policy is enabled, sites that are not in the Allow policy cannot request screen sharing.
+
+If this policy is disabled or not configured, any site that is not in the Block policy can request screen sharing.</string>
+      <string id="ScreenShare_Locked">Do not allow screen sharing preferences to be changed</string>
+      <string id="ScreenShare_Locked_Explain">If this policy is enabled, screen sharing preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their screen sharing preferences.</string>
       <string id="FirefoxHome">Customize Firefox Home</string>
       <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
 

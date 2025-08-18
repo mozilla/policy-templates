@@ -4863,9 +4863,9 @@ Set permissions associated with camera, microphone, location, notifications, aut
 
 `Default` specifies the default value for Autoplay. block-audio-video is not supported on Firefox ESR 68.
 
-**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8, VirtualReality added in Firefox 80, Firefox ESR 78.2)\
+**Compatibility:** Firefox 62, Firefox ESR 60.2 (Autoplay added in Firefox 74, Firefox ESR 68.6, Autoplay Default/Locked added in Firefox 76, Firefox ESR 68.8, VirtualReality added in Firefox 80, Firefox ESR 78.2, ScreenShare added in Firefox 142, Firefox ESR 140.2)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `permissions.default.camera`, `permissions.default.microphone`, `permissions.default.geo`, `permissions.default.desktop-notification`, `media.autoplay.default`, `permissions.default.xr`
+**Preferences Affected:** `permissions.default.camera`, `permissions.default.microphone`, `permissions.default.geo`, `permissions.default.desktop-notification`, `media.autoplay.default`, `permissions.default.xr`, `permissions.default.screen`
 
 #### Windows (GPO)
 ```
@@ -4899,6 +4899,11 @@ Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Allow\2 = "https://
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Block\1 = "https://example.edu"
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\BlockNewRequests = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\Permissions\VirtualReality\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Allow\1 = "https://example.org"
+Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Allow\2 = "https://example.com"
+Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Block\1 = "https://example.edu"
+Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\BlockNewRequests = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Locked = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -5091,7 +5096,41 @@ Value (string):
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~Notifications/VirtualReality_Locked
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~VirtualReality/VirtualReality_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~ScreenShare/ScreenShare_Allow
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.org&#xF000;2&#xF000;https://example.com"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~ScreenShare/ScreenShare_Block
+```
+Value (string):
+```
+<enabled/>
+<data id="Permissions" value="1&#xF000;https://example.edu"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~ScreenShare/ScreenShare_BlockNewRequests
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Permissions~ScreenShare/ScreenShare_Locked
 ```
 Value (string):
 ```
@@ -5178,6 +5217,36 @@ Value (string):
       <key>Locked</key>
       <true/> | <false/>
     </dict>
+    <key>VirtualReality</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+      <key>BlockNewRequests</key>
+      <true/> | <false/>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>ScreenShare</key>
+    <dict>
+      <key>Allow</key>
+      <array>
+        <string>https://example.org</string>
+      </array>
+      <key>Block</key>
+      <array>
+        <string>https://example.edu</string>
+      </array>
+      <key>BlockNewRequests</key>
+      <true/> | <false/>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
   </dict>
 </dict>
 ```
@@ -5214,6 +5283,18 @@ Value (string):
         "Allow": ["https://example.org"],
         "Block": ["https://example.edu"],
         "Default": "allow-audio-video" | "block-audio" | "block-audio-video",
+        "Locked": true | false
+      },
+      "VirtualReality": {
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
+        "Locked": true | false
+      },
+      "ScreenShare": {
+        "Allow": ["https://example.org"],
+        "Block": ["https://example.edu"],
+        "BlockNewRequests": true | false,
         "Locked": true | false
       }
     }

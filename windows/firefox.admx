@@ -138,6 +138,9 @@
     <category displayName="$(string.VirtualReality_group)" name="VirtualReality">
       <parentCategory ref="Permissions"/>
     </category>
+    <category displayName="$(string.ScreenShare_group)" name="ScreenShare">
+      <parentCategory ref="Permissions"/>
+    </category>
     <category displayName="$(string.Preferences_group)" name="Preferences">
       <parentCategory ref="firefox"/>
     </category>
@@ -720,6 +723,39 @@
     <policy name="VirtualReality_Locked" class="Both" displayName="$(string.VirtualReality_Locked)" explainText="$(string.VirtualReality_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\VirtualReality" valueName="Locked">
       <parentCategory ref="VirtualReality"/>
       <supportedOn ref="SUPPORTED_FF80"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>    <policy name="ScreenShare_Allow" class="Both" displayName="$(string.Allow)" explainText="$(string.ScreenShare_Allow_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="ScreenShare"/>
+      <supportedOn ref="SUPPORTED_FF142"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Allow" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="ScreenShare_Block" class="Both" displayName="$(string.Block)" explainText="$(string.ScreenShare_Block_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions" presentation="$(presentation.Permissions)">
+      <parentCategory ref="ScreenShare"/>
+      <supportedOn ref="SUPPORTED_FF142"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\ScreenShare\Block" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="ScreenShare_BlockNewRequests" class="Both" displayName="$(string.ScreenShare_BlockNewRequests)" explainText="$(string.ScreenShare_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\ScreenShare" valueName="BlockNewRequests">
+      <parentCategory ref="ScreenShare"/>
+      <supportedOn ref="SUPPORTED_FF142"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ScreenShare_Locked" class="Both" displayName="$(string.ScreenShare_Locked)" explainText="$(string.ScreenShare_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\ScreenShare" valueName="Locked">
+      <parentCategory ref="ScreenShare"/>
+      <supportedOn ref="SUPPORTED_FF142"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

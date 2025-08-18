@@ -87,6 +87,7 @@
       <string id="Notifications_group">Benachrichtigungen</string>
       <string id="Autoplay_group">Automatische Wiedergabe</string>
       <string id="VirtualReality_group">Virtual Reality</string>
+      <string id="ScreenShare_group">Bildschirmfreigabe</string>
       <string id="Authentication_group">Authentifizierung</string>
       <string id="Bookmarks_group">Lesezeichen</string>
       <string id="Certificates_group">Zertifikate</string>
@@ -556,6 +557,20 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann 
       <string id="VirtualReality_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zu Virtual Reality nicht vom Anwender geändert werden.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Nutzer ihre Einstellungen zu Virtual Reality ändern.</string>
+      <string id="ScreenShare_Allow_Explain">Wenn diese Richtlinie aktiviert ist, ist die Bildschirmfreigabe für angegebene Ursprünge immer erlaubt.
+
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, folgen Anfragen zur Bildschirmfreigabe der Standardrichtlinie.</string>
+      <string id="ScreenShare_Block_Explain">Wenn diese Richtlinie aktiviert ist, wird die Bildschirmfreigabe für angegebene Ursprünge blockiert.
+
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, folgen Anfragen zur Bildschirmfreigabe der Standardrichtlinie.</string>
+      <string id="ScreenShare_BlockNewRequests">Neue Anfragen zur Bildschirmfreigabe blockieren</string>
+      <string id="ScreenShare_BlockNewRequests_Explain">Wenn diese Richtlinie aktiviert ist, können Websites, die nicht in der Richtlinie „Erlauben“ aufgeführt sind, keine Bildschirmfreigabe anfordern.
+
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, können alle Websites, die nicht in der Richtlinie „Blockieren“ aufgeführt sind, Bildschirmfreigabe anfordern.</string>
+      <string id="ScreenShare_Locked">Ändern der Einstellungen zur Bildschirmfreigabe nicht zulassen</string>
+      <string id="ScreenShare_Locked_Explain">Wenn diese Richtlinie aktiviert ist, können die Einstellungen zur Bildschirmfreigabe vom Benutzer nicht geändert werden.
+
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, kann der Benutzer seine Einstellungen zur Bildschirmfreigabe ändern.</string>
       <string id="FirefoxHome">Firefox Home anpassen</string>
       <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 

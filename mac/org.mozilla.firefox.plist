@@ -547,6 +547,21 @@
 			<key>Locked</key>
 			<true/>
 		</dict>
+		<key>ScreenShare</key>
+		<dict>
+			<key>Allow</key>
+			<array>
+				<string>https://example.org</string>
+			</array>
+			<key>Block</key>
+			<array>
+				<string>https://example.edu</string>
+			</array>
+			<key>BlockNewRequests</key>
+			<true/>
+			<key>Locked</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>PictureInPicture</key>
 	<dict>
