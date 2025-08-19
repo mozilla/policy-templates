@@ -807,7 +807,7 @@ If this policy is disabled or not configured, hidden email tracking pixels and s
       <string id="TrackingProtection_Category">Tracking Protection Mode</string>
       <string id="TrackingProtection_Category_Explain">If this policy is enabled, the tracking protection mode can be set to either Standard or Strict, and the user cannot change it.
 
-If this policy is disabled or not configured, the default tracking protection setting is used and the user can change it.</string>
+If this policy is disabled or not configured, the default tracking protection mode is used and the user can change it.</string>
       <string id="Strict">Strict</string>
       <string id="Standard">Standard</string>
       <string id="TrackingProtection_SuspectedFingerprinting">Suspected Fingerprinting</string>
