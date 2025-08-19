@@ -804,6 +804,16 @@ If this policy is disabled or not configured, the user can change tracking prote
       <string id="TrackingProtection_EmailTracking_Explain">If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.
 
 If this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.</string>
+      <string id="TrackingProtection_Category">Tracking Protection Mode</string>
+      <string id="TrackingProtection_Category_Explain">If this policy is enabled, the tracking protection mode can be set to either Standard or Strict, and the user cannot change it.
+
+If this policy is disabled or not configured, the default tracking protection mode is used and the user can change it.</string>
+      <string id="Strict">Strict</string>
+      <string id="Standard">Standard</string>
+      <string id="TrackingProtection_SuspectedFingerprinting">Suspected Fingerprinting</string>
+      <string id="TrackingProtection_SuspectedFingerprinting_Explain">If this policy is enabled, Firefox reduces the amount of information exposed to websites to protect against potential fingerprinting attempts.
+
+If this policy is disabled or not configured, Firefox does not reduce information exposure for suspected fingerprinting.</string>
       <string id="RequestedLocales">Requested locale</string>
       <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
@@ -1622,6 +1632,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="ContentAnalysis_TimeoutResult">
         <dropdownList refId="ContentAnalysis_TimeoutResult"/>
+      </presentation>
+      <presentation id="TrackingProtection_Category">
+        <dropdownList refId="TrackingProtection_Category"/>
       </presentation>
     </presentationTable>
   </resources>
