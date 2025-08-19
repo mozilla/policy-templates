@@ -810,6 +810,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, wird die standardmäßige Einstellung für den Schutz vor Aktivitätenverfolgung verwendet und der Benutzer kann sie ändern.</string>
       <string id="Strict">Streng</string>
       <string id="Standard">Standard</string>
+      <string id="TrackingProtection_SuspectedFingerprinting">Verdächtiges Fingerprinting</string>
+      <string id="TrackingProtection_SuspectedFingerprinting_Explain">Wenn diese Richtlinie aktiviert ist, reduziert Firefox die Menge an Informationen, die Websites zur Verfügung gestellt werden, um potenzielle Fingerprinting-Versuche zu verhindern.
+
+Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, reduziert Firefox die bereitgestellten Informationen für verdächtiges Fingerprinting nicht.</string>
       <string id="RequestedLocales">Angefordertes Gebietsschema</string>
       <string id="RequestedLocalesString">Angefordertes Gebietsschema (Zeichenfolge)</string>
       <string id="RequestedLocales_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste der angeforderten Gebietsschemata für die Anwendung in der Reihenfolge ihrer Präferenz angeben. Dadurch wird das entsprechende Sprachpaket aktiv.
@@ -1631,6 +1635,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="ContentAnalysis_TimeoutResult">
         <dropdownList refId="ContentAnalysis_TimeoutResult"/>
+      </presentation>
+      <presentation id="TrackingProtection_Category">
+        <dropdownList refId="TrackingProtection_Category"/>
       </presentation>
     </presentationTable>
   </resources>

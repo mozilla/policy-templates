@@ -810,6 +810,10 @@ Si cette stratégie est désactivée ou non configurée, les pixels et scripts d
 Si cette stratégie est désactivée ou non configurée, le paramètre de protection contre le pistage par défaut est utilisé et l’utilisateur peut le modifier.</string>
       <string id="Strict">Strict</string>
       <string id="Standard">Standard</string>
+      <string id="TrackingProtection_SuspectedFingerprinting">Empreinte numérique suspectée</string>
+      <string id="TrackingProtection_SuspectedFingerprinting_Explain">Si cette stratégie est activée, Firefox réduit la quantité d’informations exposées aux sites Web afin de se protéger contre les tentatives potentielles d’empreinte numérique.
+
+Si cette stratégie est désactivée ou non configurée, Firefox ne réduit pas les informations exposées pour les cas d’empreinte numérique suspectée.</string>
       <string id="RequestedLocales">Langue demandée</string>
       <string id="RequestedLocalesString">Langue demandée (chaîne)</string>
       <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de langues demandées pour l'application, par ordre de préférence. Cela activera le pack linguistique correspondant.
@@ -1628,6 +1632,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="ContentAnalysis_TimeoutResult">
         <dropdownList refId="ContentAnalysis_TimeoutResult"/>
+      </presentation>
+      <presentation id="TrackingProtection_Category">
+        <dropdownList refId="TrackingProtection_Category"/>
       </presentation>
     </presentationTable>
   </resources>

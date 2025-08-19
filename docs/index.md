@@ -2884,6 +2884,8 @@ If `Fingerprinting` is set to true, fingerprinting scripts on websites are block
 
 If `EmailTracking` is set to true, hidden email tracking pixels and scripts on websites are blocked. (Firefox 112)
 
+If `SuspectedFingerprinting` is set to true, Firefox reduces the amount of information exposed to websites to protect against potential fingerprinting attempts. (Firefox 142, Firefox ESR 140.2)
+
 `Exceptions` are origins for which tracking protection is not enabled.
 
 `Category` can be either ```strict``` or ```standard```. If category is set, it overrides all other settings except `Exceptions` and the user cannot change the category.
@@ -2899,6 +2901,7 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Locked = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Cryptomining = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Fingerprinting = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\EmailTracking = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\SuspectedFingerprinting = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Category = "strict" | "standard"
 ```
@@ -2960,6 +2963,14 @@ Value (string):
 ```
 <data id="TrackingProtection_Category" value="strict | standard"/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/H_TrackingProtection_SuspectedFingerprinting
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -2974,6 +2985,8 @@ Value (string):
     <key>Fingerprinting</key>
     <true/> | <false/>
     <key>EmailTracking</key>
+    <true/> | <false/>
+    <key>SuspectedFingerprinting</key>
     <true/> | <false/>
     <key>Exceptions</key>
     <key>Category</key>
@@ -2994,6 +3007,7 @@ Value (string):
       "Cryptomining": true | false,
       "Fingerprinting": true | false,
       "EmailTracking": true | false,
+      "SuspectedFingerprinting": true | false,
       "Category": "strict" | "standard",
       "Exceptions": ["https://example.com"]
     }
