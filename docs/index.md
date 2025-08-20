@@ -2888,7 +2888,7 @@ If `SuspectedFingerprinting` is set to true, Firefox reduces the amount of infor
 
 `Exceptions` are origins for which tracking protection is not enabled.
 
-`Category` can be either ```strict``` or ```standard```. If category is set, it overrides all other settings except `Exceptions` and the user cannot change the category.
+`Category` can be either ```strict``` or ```standard```. If category is set, it overrides all other settings except `Exceptions` and the user cannot change the category. (Firefox 142, Firefox ESR 140.2)
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5. Category added in Firefox 142/140.2.)\
 **CCK2 Equivalent:** N/A\
