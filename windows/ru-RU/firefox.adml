@@ -107,11 +107,11 @@
       <string id="PictureInPicture_group">Картинка в картинке</string>
       <string id="ProxySettings_group">Настройки прокси</string>
       <string id="SecurityDevices_group">Устройства безопасности</string>
-      <string id="FirefoxSuggest_group">Firefox Suggest (US only)</string>
+      <string id="FirefoxSuggest_group">Firefox Suggest (только для США)</string>
       <string id="ContentAnalysis_group">Анализ контента (DLP)</string>
       <string id="InterceptionPoints_group">Точки перехвата</string>
       <string id="InterceptionPoints_Clipboard_group">Буфер обмена</string>
-      <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
+      <string id="InterceptionPoints_DragAndDrop_group">Перетаскивание</string>
       <string id="Allow">Разрешённые сайты</string>
       <string id="AllowSession">Разрешённые сайты (Session Only)</string>
       <string id="Block">Заблокированные сайты</string>
@@ -179,7 +179,7 @@
       <string id="DisableSetDesktopBackground_Explain">Если эта политика включена, пользователь не может установить изображение в качестве фона рабочего стола.
 
 Если эта политика отключена или не настроена, пользователи могут установить изображения в качестве фона рабочего стола.</string>
-      <string id="CaptivePortal">Captive Portal</string>
+      <string id="CaptivePortal">Портал авторизации</string>
       <string id="CaptivePortal_Explain">Если эта политика выключена, то поддержка captive portal отключена.
 
 Если эта политика включена или не настроена, то поддержка captive portal включена.</string>
@@ -325,7 +325,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 Если эта политика отключена или не настроена, панель закладок отображается на новой вкладке по умолчанию.</string>
       <string id="DisplayBookmarksToolbar_Always">Always</string>
       <string id="DisplayBookmarksToolbar_Never">Never</string>
-      <string id="DisplayBookmarksToolbar_NewTab">New Tab</string>
+      <string id="DisplayBookmarksToolbar_NewTab">Новая вкладка</string>
       <string id="DisplayMenuBar">Показывать строку меню (устарело)</string>
       <string id="DisplayMenuBar_Explain">Если эта политика включена, строка меню по умолчанию отображается. Пользователь может её скрыть.
 
@@ -1017,7 +1017,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 Если эта политика отключена или не настроена, любой сайт, который вызывает внешний протокол, будет запрашивать у пользователя разрешение.
 
 Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#autolaunchprotocolsfromorigins.</string>
-      <string id="WindowsSSO">Windows SSO</string>
+      <string id="WindowsSSO">Windows SSO (единый вход)</string>
       <string id="WindowsSSO_Explain">Если эта политика включена, Firefox будет использовать единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях.
 
 Если эта политика отключена или не настроена, учетные данные необходимо вводить вручную.</string>
