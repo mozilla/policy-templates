@@ -5,7 +5,7 @@
   <resources>
     <stringTable>
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 ou supérieur</string>
-      <string id="UNSUPPORTED">Non pris en charge.</string>
+      <string id="UNSUPPORTED">N’est plus pris en charge</string>
       <string id="SUPPORTED_FF60">Firefox 60 ou supérieur, Firefox 60 ESR ou supérieur</string>
       <string id="SUPPORTED_FF62">Firefox 62 ou supérieur, Firefox 60.2 ESR ou supérieur</string>
       <string id="SUPPORTED_FF63">Firefox 63 ou supérieur</string>
@@ -85,13 +85,13 @@
       <string id="Microphone_group">Microphone</string>
       <string id="Location_group">Localisation</string>
       <string id="Notifications_group">Notifications</string>
-      <string id="Autoplay_group">Autoplay</string>
+      <string id="Autoplay_group">Lecture automatique</string>
       <string id="VirtualReality_group">Réalité Virtuelle</string>
       <string id="ScreenShare_group">Partage d’écran</string>
       <string id="Authentication_group">Authentification</string>
       <string id="Bookmarks_group">Favoris</string>
       <string id="Certificates_group">Certificats</string>
-      <string id="Popups_group">Popups</string>
+      <string id="Popups_group">Fenêtres contextuelles</string>
       <string id="Cookies_group">Cookies</string>
       <string id="Addons_group">Addons</string>
       <string id="Extensions_group">Extensions</string>
@@ -103,18 +103,18 @@
       <string id="DisabledCiphers_group">Chiffrements désactivés</string>
       <string id="EncryptedMediaExtensions_group">Extensions de médias cryptés</string>
       <string id="PDFjs_group">PDF.js</string>
-      <string id="PictureInPicture_group">Picture-in-Picture</string>
+      <string id="PictureInPicture_group">Image dans l’image</string>
       <string id="ProxySettings_group">Paramètres Proxy</string>
       <string id="SecurityDevices_group">Périphériques de sécurité</string>
-      <string id="FirefoxSuggest_group">Firefox Suggest (US seulement)</string>
-      <string id="ContentAnalysis_group">Content Analysis (DLP)</string>
-      <string id="InterceptionPoints_group">Interception Points</string>
-      <string id="InterceptionPoints_Clipboard_group">Clipboard</string>
-      <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
+      <string id="FirefoxSuggest_group">Firefox Suggest (États-Unis uniquement)</string>
+      <string id="ContentAnalysis_group">Analyse de contenu (DLP)</string>
+      <string id="InterceptionPoints_group">Points d’interception</string>
+      <string id="InterceptionPoints_Clipboard_group">Presse-papiers</string>
+      <string id="InterceptionPoints_DragAndDrop_group">Glisser-déposer</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
-      <string id="AppAutoUpdate">Application Autoupdate</string>
+      <string id="AppAutoUpdate">Mise à jour automatique de l’application</string>
       <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis a jour sans aprobation de l'utilisateur.
 
 Si cette stratégie est désactivée, les mises à jour de Firefox sont téléchargées mais l'utilisateur peut choisir quand installer la mise à jour.
@@ -142,11 +142,11 @@ Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/
 Si cette stratégie est désactivée ou non configurée, aucun site Web n'est approuvé pour utiliser l'authentification NTLM.
 
 Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
-      <string id="Authentication_AllowNonFQDN">Autoriser les noms de domaine imcomplets</string>
+      <string id="Authentication_AllowNonFQDN">Autoriser les noms de domaine incomplets</string>
       <string id="Authentication_AllowNonFQDN_Explain">Si cette stratégie est activée, vous pouvez toujours autoriser SPNEGO ou NTLM sur des noms de domaine autres que FQDN.
 
 Si cette stratégie est désactivée ou non configurée, NTLM et SPNEGO ne sont pas activés sur des noms de domaine autres que le nom de domaine complet.</string>
-      <string id="Authentication_AllowProxies">Autoriser les Proxys</string>
+      <string id="Authentication_AllowProxies">Autoriser les proxy</string>
       <string id="Authentication_AllowProxies_Explain">Si cette option est désactivée, SPNEGO et NTLM ne s'authentifieront pas auprès des serveurs Proxy.
 
 Si cette stratégie est activée (et les cases à cocher sont cochées) ou non configurée, NTLM et SPNEGO s'authentifieront toujours avec des Proxys.</string>
@@ -203,7 +203,7 @@ Si cette stratégie est désactivée ou non configurée, le répertoire de tél�
       <string id="DNSOverHTTPS_Enabled_Explain">Si cette stratégie est désactivée, DNS sur HTTPS est désactivé.
 
 Si cette stratégie est activée ou non configurée, DNS sur HTTPS est activé.</string>
-      <string id="DNSOverHTTPS_ProviderURL">Fournisseur URL</string>
+      <string id="DNSOverHTTPS_ProviderURL">URL du fournisseur</string>
       <string id="DNSOverHTTPS_ProviderURL_Explain">Si cette stratégie est activée, l'URL spécifiée est utilisée comme URL du fournisseur.
 
 Si cette stratégie est désactivée ou n'est pas configurée, le fournisseur par défaut est utilisé.</string>
@@ -390,7 +390,7 @@ Si cette stratégie est désactivée ou non configurée, les sites web ne peuven
       <string id="NetworkPrediction_Explain">Si cette stratégie est désactivée, la prédiction du réseau (prédiction DNS) sera désactivée.
 
 Si cette stratégie est activée ou non configurée, la prédiction du réseau (prédiction DNS) sera activée.</string>
-      <string id="NewTabPage">Page Nouvel onglet</string>
+      <string id="NewTabPage">Page du nouvel onglet</string>
       <string id="NewTabPage_Explain">Si cette stratégie est désactivée, la page du nouvel onglet sera vide.
 
 Si cette stratégie est activée ou non configurée, la page du nouvel onglet sera celle par défaut.</string>
@@ -463,8 +463,8 @@ Si cette stratégie n'est pas configurée ou est désactivée, en navigation pri
       <string id="Cookies_Behavior_Accept">Accepter tous les cookies</string>
       <string id="Cookies_Behavior_RejectForeign">Rejeter les cookies tiers</string>
       <string id="Cookies_Behavior_Reject">Rejeter tous les cookies</string>
-      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
-      <string id="Cookies_Behavior_RejectTracker">Rejeter les cookies tiers pour les sites que vous n'avez pas visités</string>
+      <string id="Cookies_Behavior_LimitForeign">Rejeter les cookies tiers pour les sites que vous n'avez pas visités</string>
+      <string id="Cookies_Behavior_RejectTracker">Rejeter les cookies des traqueurs connus</string>
       <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Rejeter les cookies pour les traceurs connus et partitionner les cookies tiers (Protection totale des cookies)</string>
       <string id="Camera_Allow_Explain">Si cette stratégie est activée, l'accès à la caméra est toujours autorisé pour les origines indiquées.
 
@@ -1169,89 +1169,90 @@ Si cette stratégie est désactivée ou non configurée, le mode de navigation p
       <string id="PrivateBrowsingModeAvailability_0">Autoriser le mode de navigation privée</string>
       <string id="PrivateBrowsingModeAvailability_1">Désactiver le mode de navigation privée</string>
       <string id="PrivateBrowsingModeAvailability_2">Forcer le mode de navigation privée</string>
-      <string id="ContentAnalysis_AgentName">Agent Name</string>
-      <string id="ContentAnalysis_AgentName_Explain">If this policy is enabled, you can specify the name of the DLP agent, used in dialogs and notifications about DLP operations.
+      <string id="ContentAnalysis_AgentName">Nom de l’agent</string>
+      <string id="ContentAnalysis_AgentName_Explain">Si cette stratégie est activée, vous pouvez spécifier le nom de l’agent DLP, utilisé dans les boîtes de dialogue et notifications concernant les opérations DLP.
 
-If this policy is disabled or not configured, the agent name "A DLP Agent" is used.</string>
-      <string id="ContentAnalysis_AgentTimeout">Agent Timeout</string>
-      <string id="ContentAnalysis_AgentTimeout_Explain">If this policy is enabled, you can specify the timeout in number of seconds after a DLP request is sent to the agent. After this timeout, the request will be denied unless 'Default Result' is set to 1 or 2.
+Si cette stratégie est désactivée ou non configurée, le nom par défaut « Un agent DLP » est utilisé.</string>
+      <string id="ContentAnalysis_AgentTimeout">Délai d’attente de l’agent</string>
+      <string id="ContentAnalysis_AgentTimeout_Explain">Si cette stratégie est activée, vous pouvez spécifier le délai en secondes après l’envoi d’une requête DLP à l’agent. Après ce délai, la requête sera refusée sauf si le « Résultat par défaut » est défini sur 1 ou 2.
 
-If this policy is disabled or not configured, the timeout is 30 seconds.</string>
-      <string id="ContentAnalysis_AllowUrlRegexList">Allow Url Regex List</string>
-      <string id="ContentAnalysis_AllowUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be allowed without consulting the agent. The default is "^about:(?!blank|srcdoc).*", meaning that any pages that start with "about:" will be exempt from DLP except for "about:blank" and "about:srcdoc", as these can be controlled by web content.
+Si cette stratégie est désactivée ou non configurée, le délai est de 30 secondes.</string>
+      <string id="ContentAnalysis_AllowUrlRegexList">Liste d’URL autorisées (expression régulière)</string>
+      <string id="ContentAnalysis_AllowUrlRegexList_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d’expressions régulières (séparées par des espaces) indiquant les URL pour lesquelles les opérations DLP seront toujours autorisées sans consulter l’agent. La valeur par défaut est « ^about:(?!blank|srcdoc).* », ce qui signifie que toutes les pages commençant par « about: » seront exemptées du DLP sauf « about:blank » et « about:srcdoc », car elles peuvent être contrôlées par le contenu web.
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
-      <string id="ContentAnalysis_BypassForSameTabOperations">Bypass For Same Tab Operations</string>
-      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">If this policy is enabled, Firefox will automatically allow DLP requests whose data comes from the same tab and frame - for example, if data is copied to the clipboard and then pasted on the same page.
+Si cette stratégie est désactivée ou non configurée, l’agent DLP sera toujours consulté.</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations">Contourner pour les opérations dans le même onglet</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">Si cette stratégie est activée, Firefox autorisera automatiquement les requêtes DLP dont les données proviennent du même onglet et cadre — par exemple, si des données sont copiées dans le presse-papiers puis collées sur la même page.
 
-If this policy is disabled or not configured, Firefox  Firefox will not pass DLP requests whose data comes from the same tab and frame to the DLP agent as normal.</string>
-      <string id="ContentAnalysis_ClientSignature">Client Signature</string>
-      <string id="ContentAnalysis_ClientSignature_Explain">If this policy is enabled, you can set the required signature of the DLP agent connected to the pipe. If this is a non-empty string and the DLP agent does not have a signature with a Subject Name that exactly matches this value, Firefox will not connect to the pipe.
+Si cette stratégie est désactivée ou non configurée, Firefox ne transmettra pas ces requêtes DLP à l’agent et les traitera normalement.</string>
+      <string id="ContentAnalysis_ClientSignature">Signature du client</string>
+      <string id="ContentAnalysis_ClientSignature_Explain">Si cette stratégie est activée, vous pouvez définir la signature requise de l’agent DLP connecté au canal. Si une chaîne non vide est indiquée et que l’agent DLP ne possède pas de signature dont le nom du sujet correspond exactement, Firefox ne se connectera pas au canal.
 
-If this policy is disabled or not configured, the signature will not be verified.</string>
-      <string id="ContentAnalysis_DefaultResult">Default Result</string>
-      <string id="ContentAnalysis_DefaultResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if there is a problem connecting to the DLP agent.
+Si cette stratégie est désactivée ou non configurée, la signature n’est pas vérifiée.</string>
+      <string id="ContentAnalysis_DefaultResult">Résultat par défaut</string>
+      <string id="ContentAnalysis_DefaultResult_Explain">Si cette stratégie est activée, vous pouvez indiquer le comportement souhaité pour les requêtes DLP en cas de problème de connexion à l’agent DLP.
 
-If this policy is disabled or not configured, the DLP request will be denied if there is a problem connecting to the agent.</string>
-      <string id="ContentAnalysis_DefaultResult_0">Deny the request</string>
-      <string id="ContentAnalysis_DefaultResult_1">Warn the user and allow them to choose whether to allow or deny</string>
-      <string id="ContentAnalysis_DefaultResult_2">Allow the request</string>
-      <string id="ContentAnalysis_DenyUrlRegexList">Deny Url Regex List</string>
-      <string id="ContentAnalysis_DenyUrlRegexList_Explain">If this policy is enabled, you can specify a space-separated list of regular expressions that indicates URLs for which DLP operations will always be denied without consulting the agent.
+Si cette stratégie est désactivée ou non configurée, la requête DLP sera refusée en cas de problème de connexion à l’agent.</string>
+      <string id="ContentAnalysis_DefaultResult_0">Refuser la requête</string>
+      <string id="ContentAnalysis_DefaultResult_1">Avertir l’utilisateur et lui permettre de choisir d’autoriser ou non</string>
+      <string id="ContentAnalysis_DefaultResult_2">Autoriser la requête</string>
 
-If this policy is disabled or not configured, the DLP agent will always be consulted.</string>
-      <string id="ContentAnalysis_Enabled">Enabled</string>
-      <string id="ContentAnalysis_Enabled_Explain">If this policy is enabled, Firefox will use DLP.
+      <string id="ContentAnalysis_DenyUrlRegexList">Liste d’URL refusées (expression régulière)</string>
+      <string id="ContentAnalysis_DenyUrlRegexList_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste d’expressions régulières (séparées par des espaces) indiquant les URL pour lesquelles les opérations DLP seront toujours refusées sans consulter l’agent.
 
-If this policy is disabled or not configured, Firefox will not use DLP.
+Si cette stratégie est désactivée ou non configurée, l’agent DLP sera toujours consulté.</string>
+      <string id="ContentAnalysis_Enabled">Activé</string>
+      <string id="ContentAnalysis_Enabled_Explain">Si cette stratégie est activée, Firefox utilisera le DLP.
 
-Note: If this policy is enabled and no DLP agent is running, all DLP requests will be denied unless Default Result is set to 1 or 2.</string>
-      <string id="ContentAnalysis_IsPerUser">Is Per User</string>
-      <string id="ContentAnalysis_IsPerUser_Explain">If this policy is disabled, the pipe the DLP agent creates is per-system.
+Si cette stratégie est désactivée ou non configurée, Firefox n’utilisera pas le DLP.
 
-If this policy is enabled or not configured, the pipe the DLP agent creates is per-user.</string>
-      <string id="ContentAnalysis_PipePathName">Pipe Path Name</string>
-      <string id="ContentAnalysis_PipePathName_Explain">If this policy is enabled, you can change the name of the pipe for the DLP agent.
+Remarque : si cette stratégie est activée et qu’aucun agent DLP n’est en cours d’exécution, toutes les requêtes DLP seront refusées sauf si le Résultat par défaut est défini sur 1 ou 2.</string>
+      <string id="ContentAnalysis_IsPerUser">Par utilisateur</string>
+      <string id="ContentAnalysis_IsPerUser_Explain">Si cette stratégie est désactivée, le canal créé par l’agent DLP est au niveau du système.
 
-If this policy is disabled or not configured, the default pipe name of 'path_user' is used.</string>
-      <string id="ContentAnalysis_ShowBlockedResult">Show Blocked Result</string>
-      <string id="ContentAnalysis_ShowBlockedResult_Explain">If this policy is disabled, Firefox will not show a notification when a DLP request is denied.
+Si cette stratégie est activée ou non configurée, le canal créé par l’agent DLP est au niveau de l’utilisateur.</string>
+      <string id="ContentAnalysis_PipePathName">Nom du canal</string>
+      <string id="ContentAnalysis_PipePathName_Explain">Si cette stratégie est activée, vous pouvez modifier le nom du canal pour l’agent DLP.
 
-If this policy is enabled or not configured, Firefox will show a notification when a DLP request is denied.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Enabled</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">If this policy is disabled, clipboard operations will not use DLP.
+Si cette stratégie est désactivée ou non configurée, le nom de canal par défaut « path_user » est utilisé.</string>
+      <string id="ContentAnalysis_ShowBlockedResult">Afficher le résultat bloqué</string>
+      <string id="ContentAnalysis_ShowBlockedResult_Explain">Si cette stratégie est désactivée, Firefox n’affichera pas de notification lorsqu’une requête DLP est refusée.
 
-If this policy is enabled or not configured, clipboard operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly">Plain Text Only</string>
-      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed on the clipboard, which some DLP agents may not expect.
+Si cette stratégie est activée ou non configurée, Firefox affichera une notification lorsqu’une requête DLP est refusée.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard">Activé</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_Explain">Si cette stratégie est désactivée, les opérations du presse-papiers n’utiliseront pas le DLP.
 
-If this policy is enabled or not configured, only the text/plain format will be analyzed on the clipboard.</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Enabled</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">If this policy is disabled, drag and drop operations will not use DLP.
+Si cette stratégie est activée ou non configurée, les opérations du presse-papiers utiliseront le DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly">Texte brut uniquement</string>
+      <string id="ContentAnalysis_InterceptionPoints_Clipboard_PlainTextOnly_Explain">Si cette stratégie est désactivée, tous les formats seront analysés dans le presse-papiers, ce qui peut ne pas être attendu par certains agents DLP.
 
-If this policy is enabled or not configured, drag and drop operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly">Plain Text Only</string>
-      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed in what is being dropped, which some DLP agents may not expect.
+Si cette stratégie est activée ou non configurée, seul le format text/plain sera analysé dans le presse-papiers.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop">Activé</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_Explain">Si cette stratégie est désactivée, les opérations de glisser-déposer n’utiliseront pas le DLP.
 
-If this policy is enabled or not configured, only the text/plain format will be analyzed in what is being dropped.</string>
-      <string id="ContentAnalysis_InterceptionPoints_FileUpload">File Upload</string>
-      <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">If this policy is disabled, file upload operations will not use DLP.
+Si cette stratégie est activée ou non configurée, les opérations de glisser-déposer utiliseront le DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly">Texte brut uniquement</string>
+      <string id="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain">Si cette stratégie est désactivée, tous les formats seront analysés dans ce qui est déposé, ce qui peut ne pas être attendu par certains agents DLP.
 
-If this policy is enabled or not configured, file upload operations will use DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Print">Print</string>
-      <string id="ContentAnalysis_InterceptionPoints_Print_Explain">If this policy is disabled, print operations will not use DLP.
+Si cette stratégie est activée ou non configurée, seul le format text/plain sera analysé dans ce qui est déposé.</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload">Téléversement de fichiers</string>
+      <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">Si cette stratégie est désactivée, les opérations de téléversement de fichiers n’utiliseront pas le DLP.
 
-If this policy is enabled or not configured, print operations will use DLP.</string>
-      <string id="ContentAnalysis_TimeoutResult">Timeout Result</string>
-      <string id="ContentAnalysis_TimeoutResult_Explain">If this policy is enabled, you can indicate the desired behavior for DLP requests if the DLP agent does not respond to a request in less than AgentTimeout seconds. 
+Si cette stratégie est activée ou non configurée, les opérations de téléversement de fichiers utiliseront le DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print">Impression</string>
+      <string id="ContentAnalysis_InterceptionPoints_Print_Explain">Si cette stratégie est désactivée, les opérations d’impression n’utiliseront pas le DLP.
 
-If this policy is disabled or not configured, the request will be denied.</string>
-      <string id="SkipTermsOfUse">Skip Terms of Use</string>
-      <string id="SkipTermsOfUse_Explain">If this policy is enabled, the Firefox Terms of Use (https://www.mozilla.org/about/legal/terms/firefox/) and Privacy Notice (https://www.mozilla.org/privacy/firefox/) do not display upon startup.
+Si cette stratégie est activée ou non configurée, les opérations d’impression utiliseront le DLP.</string>
+      <string id="ContentAnalysis_TimeoutResult">Résultat en cas de délai d’attente</string>
+      <string id="ContentAnalysis_TimeoutResult_Explain">Si cette stratégie est activée, vous pouvez indiquer le comportement souhaité pour les requêtes DLP si l’agent DLP ne répond pas dans le délai défini (AgentTimeout). 
 
-You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
+Si cette stratégie est désactivée ou non configurée, la requête sera refusée.</string>
+      <string id="SkipTermsOfUse">Ignorer les conditions d’utilisation</string>
+      <string id="SkipTermsOfUse_Explain">Si cette stratégie est activée, les Conditions d’utilisation de Firefox (https://www.mozilla.org/about/legal/terms/firefox/) et l’Avis de confidentialité (https://www.mozilla.org/privacy/firefox/) ne s’affichent pas au démarrage.
 
-If this policy is disabled or not configured, the Firefox Terms of Use and Privacy Notice do display upon startup.</string>
+Vous déclarez accepter les Conditions d’utilisation et être habilité à les accepter au nom de toutes les personnes à qui vous donnez accès à ce navigateur.
+
+Si cette stratégie est désactivée ou non configurée, les Conditions d’utilisation de Firefox et l’Avis de confidentialité s’affichent au démarrage.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :
