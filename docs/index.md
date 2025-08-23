@@ -1274,6 +1274,8 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
   * `PlainTextOnly` indicates whether to only analyze the text/plain format on the clipboard. If this
     value is false, all formats will be analyzed, which some DLP agents may not expect. Regardless of
     this value, files will be analyzed as usual. The default is true.
+* The `Download` entry controls download operations.
+  * `Enabled` indicates whether download operations should use DLP. The default is false.
 * The `DragAndDrop` entry controls drag and drop operations for files and text.
   * `Enabled` indicates whether drag and drop operations should use DLP. The default is true.
   * `PlainTextOnly` indicates whether to only analyze the text/plain format in what is being dropped.
@@ -1301,7 +1303,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
 
 **Compatibility:** Firefox 137\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`, `browser.contentanalysis.timeout_result`
+**Preferences Affected:** `browser.contentanalysis.agent_name`, `browser.contentanalysis.agent_timeout`, `browser.contentanalysis.allow_url_regex_list`, `browser.contentanalysis.bypass_for_same_tab_operations`, `browser.contentanalysis.client_signature`, `browser.contentanalysis.default_result`, `browser.contentanalysis.deny_url_regex_list`, `browser.contentanalysis.enabled`, `browser.contentanalysis.interception_point.clipboard.enabled`, `browser.contentanalysis.interception_point.clipboard.plain_text_only`, `browser.contentanalysis.interception_point.download.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.enabled`, `browser.contentanalysis.interception_point.drag_and_drop.plain_text_only`, `browser.contentanalysis.interception_point.file_upload.enabled`, `browser.contentanalysis.interception_point.print.enabled`, `browser.contentanalysis.is_per_user`, `browser.contentanalysis.pipe_path_name`, `browser.contentanalysis.show_blocked_result`, `browser.contentanalysis.timeout_result`
 
 #### Windows (GPO)
 ```
@@ -1315,6 +1317,7 @@ Software\Policies\Mozilla\Firefox\ContentAnalysis\DenyUrlRegexList = "https://ex
 Software\Policies\Mozilla\Firefox\ContentAnalysis\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Clipboard\PlainTextOnly = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Download\Enabled = 0x0 | 0x1
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop\PlainTextOnly = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\FileUpload\Enabled = 0x1 | 0x0
@@ -1414,6 +1417,14 @@ Value (string):
 ```
 OMA-URI:
 ```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints/ContentAnalysis_InterceptionPoints_Download_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~DragAndDrop/ContentAnalysis_InterceptionPoints_DragAndDrop
 ```
 Value (string):
@@ -1496,6 +1507,9 @@ Value (string):
         "Clipboard": {
           "Enabled": true | false,
           "PlainTextOnly": true | false
+        },
+        "Download": {
+          "Enabled": false | true,
         },
         "DragAndDrop": {
           "Enabled": true | false,
