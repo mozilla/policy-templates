@@ -1274,7 +1274,7 @@ Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compati
   * `PlainTextOnly` indicates whether to only analyze the text/plain format on the clipboard. If this
     value is false, all formats will be analyzed, which some DLP agents may not expect. Regardless of
     this value, files will be analyzed as usual. The default is true.
-* The `Download` entry controls download operations.
+* The `Download` entry controls download operations. (Added in Firefox 142, Firefox ESR 140.2)
   * `Enabled` indicates whether download operations should use DLP. The default is false.
 * The `DragAndDrop` entry controls drag and drop operations for files and text.
   * `Enabled` indicates whether drag and drop operations should use DLP. The default is true.
