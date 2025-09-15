@@ -4,6 +4,10 @@ An example plist file with all options is available here:
 
 https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.plist
 
+This plist file is NOT a mobileconfig. It is intended to be input to a tool like Apple Configurator, Profile Manager, Jamf Pro or Intune. For my testing, I use https://github.com/timsutton/mcxToProfile.
+
+In particular, in a mobileconfig, the configuraton must be nested in ```mcx_preference_settings``.
+
 If you want to set specific options from the command line, we also provide flattened shortcuts to any item that is nested in the plist file.
 
 For example, this policy:
