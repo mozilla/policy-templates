@@ -4580,6 +4580,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_Downloads" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Downloads)" explainText="$(string.ContentAnalysis_InterceptionPoints_Downloads_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Downloads" valueName="Enabled">
+      <parentCategory ref="InterceptionPoints"/>
+      <supportedOn ref="SUPPORTED_FF142"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="ContentAnalysis_TimeoutResult" class="Both" displayName="$(string.ContentAnalysis_TimeoutResult)" explainText="$(string.ContentAnalysis_TimeoutResult_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.ContentAnalysis_TimeoutResult)">
       <parentCategory ref="ContentAnalysis"/>
       <supportedOn ref="SUPPORTED_FF138_ONLY"/>

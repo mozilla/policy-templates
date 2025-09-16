@@ -1238,6 +1238,10 @@ If this policy is enabled or not configured, only the text/plain format will be 
       <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">If this policy is disabled, file upload operations will not use DLP.
 
 If this policy is enabled or not configured, file upload operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Downloads">Downloads</string>
+      <string id="ContentAnalysis_InterceptionPoints_Downloads_Explain">If this policy is disabled, download operations will not use DLP.
+
+If this policy is enabled or not configured, download operations will use DLP.</string>
       <string id="ContentAnalysis_InterceptionPoints_Print">Print</string>
       <string id="ContentAnalysis_InterceptionPoints_Print_Explain">If this policy is disabled, print operations will not use DLP.
 

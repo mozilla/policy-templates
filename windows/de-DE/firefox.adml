@@ -1244,6 +1244,10 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird nu
       <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird bei Datei-Upload-Vorgängen kein DLP verwendet.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird bei Datei-Upload-Vorgängen DLP verwendet.</string>
+      <string id="ContentAnalysis_InterceptionPoints_Downloads">Downloads</string>
+      <string id="ContentAnalysis_InterceptionPoints_Downloads_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird bei Download-Vorgängen kein DLP verwendet.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird bei Download-Vorgängen DLP verwendet.</string>
       <string id="ContentAnalysis_InterceptionPoints_Print">Drucken</string>
       <string id="ContentAnalysis_InterceptionPoints_Print_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird bei Druckvorgängen kein DLP verwendet.
 
