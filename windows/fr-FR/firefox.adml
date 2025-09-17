@@ -617,14 +617,14 @@ Si cette stratégie est désactivée ou non configurée, les cookies ne sont pas
       <string id="SanitizeOnShutdown_Downloads_Explain">Si cette stratégie est activée, l'historique des téléchargements est effacé lorsque le navigateur est fermé.
 
 Si cette stratégie est désactivée ou non configurée, l'historique des téléchargements n'est pas effacé lorsque le navigateur est fermé.</string>
-      <string id="SanitizeOnShutdown_FormData">Historique des formulaires et des recherches (Obsolète)</string>
+      <string id="SanitizeOnShutdown_FormData">Données de formulaire</string>
       <string id="SanitizeOnShutdown_FormData_Explain">Si cette stratégie est activée, les données de formulaire sont effacées lorsque le navigateur est fermé.
 
 Si cette stratégie est désactivée ou non configurée, les données de formulaire ne sont pas effacées lorsque le navigateur est fermé.</string>
       <string id="SanitizeOnShutdown_History">Historique</string>
-      <string id="SanitizeOnShutdown_History_Explain">Si cette stratégie est activée, l'historique de navigation, l'historique des téléchargements, l'historique des recherches et les données de formulaire sont effacés lorsque le navigateur est fermé.
+      <string id="SanitizeOnShutdown_History_Explain">Si cette stratégie est activée, l'historique de navigation et l'historique des téléchargements sont effacés lorsque le navigateur est fermé.
 
-Si cette stratégie est désactivée ou non configurée, l'historique de navigation, l'historique des téléchargements, l'historique des recherches et les données de formulaire ne sont pas effacés lorsque le navigateur est fermé.</string>
+Si cette stratégie est désactivée ou non configurée, l'historique de navigation et l'historique des téléchargements ne sont pas effacés lorsque le navigateur est fermé.</string>
       <string id="SanitizeOnShutdown_Sessions">Connexions actives</string>
       <string id="SanitizeOnShutdown_Sessions_Explain">Si cette stratégie est activée, les sessions sont effacées lorsque le navigateur est fermé.
 

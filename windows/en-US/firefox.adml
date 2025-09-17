@@ -617,14 +617,14 @@ If this policy is disabled or not configured, cookies are not cleared when the b
       <string id="SanitizeOnShutdown_Downloads_Explain">If the policy is enabled, download history is cleared when the browser is closed.
 
 If this policy is disabled or not configured, download history is not cleared when the browser is closed.</string>
-      <string id="SanitizeOnShutdown_FormData">Form &amp; Search History (Deprecated)</string>
+      <string id="SanitizeOnShutdown_FormData">Form Data</string>
       <string id="SanitizeOnShutdown_FormData_Explain">If the policy is enabled, form data is cleared when the browser is closed.
 
 If this policy is disabled or not configured, form data is not cleared when the browser is closed.</string>
       <string id="SanitizeOnShutdown_History">History</string>
-      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history, download history, search history, and form data are cleared when the browser is closed.
+      <string id="SanitizeOnShutdown_History_Explain">If the policy is enabled, browsing history and download history are cleared when the browser is closed.
 
-If this policy is disabled or not configured, browsing history, download history, search history, and form data are not cleared when the browser is closed.</string>
+If this policy is disabled or not configured, browsing history and download history are not cleared when the browser is closed.</string>
       <string id="SanitizeOnShutdown_Sessions">Active Logins</string>
       <string id="SanitizeOnShutdown_Sessions_Explain">If the policy is enabled, sessions are cleared when the browser is closed.
 

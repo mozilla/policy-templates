@@ -619,10 +619,10 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
       <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Download-Historie gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download-Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe und Formulardaten (Veraltet)</string>
-      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden eingegebene Suchbegriffe und Formulardaten gelöscht, wenn der Browser geschlossen wird.
+      <string id="SanitizeOnShutdown_FormData">Formulardaten</string>
+      <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden eingegebene Suchbegriffe und Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
       <string id="SanitizeOnShutdown_History">Chronik</string>
       <string id="SanitizeOnShutdown_History_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Chronik gelöscht, wenn der Browser geschlossen wird.
 
