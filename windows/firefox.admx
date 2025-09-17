@@ -4580,7 +4580,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="ContentAnalysis_InterceptionPoints_Downloads" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Downloads)" explainText="$(string.ContentAnalysis_InterceptionPoints_Downloads_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Downloads" valueName="Enabled">
+    <policy name="ContentAnalysis_InterceptionPoints_Download" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_Download)" explainText="$(string.ContentAnalysis_InterceptionPoints_Download_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\Download" valueName="Enabled">
       <parentCategory ref="InterceptionPoints"/>
       <supportedOn ref="SUPPORTED_FF142"/>
       <enabledValue>

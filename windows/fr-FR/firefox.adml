@@ -1239,8 +1239,8 @@ Si cette stratégie est activée ou non configurée, seul le format text/plain s
       <string id="ContentAnalysis_InterceptionPoints_FileUpload_Explain">Si cette stratégie est désactivée, les opérations de téléversement de fichiers n’utiliseront pas le DLP.
 
 Si cette stratégie est activée ou non configurée, les opérations de téléversement de fichiers utiliseront le DLP.</string>
-      <string id="ContentAnalysis_InterceptionPoints_Downloads">Téléchargements</string>
-      <string id="ContentAnalysis_InterceptionPoints_Downloads_Explain">Si cette stratégie est désactivée, les opérations de téléchargement n’utiliseront pas le DLP.
+      <string id="ContentAnalysis_InterceptionPoints_Download">Téléchargement</string>
+      <string id="ContentAnalysis_InterceptionPoints_Download_Explain">Si cette stratégie est désactivée, les opérations de téléchargement n’utiliseront pas le DLP.
 
 Si cette stratégie est activée ou non configurée, les opérations de téléchargement utiliseront le DLP.</string>
       <string id="ContentAnalysis_InterceptionPoints_Print">Impression</string>
