@@ -5945,7 +5945,7 @@ Software\Policies\Mozilla\Firefox\Proxy\UseProxyForDNS = 0x1 | 0x0
 ```
 #### Windows (Intune)
 **Note**
-These setttings were moved to a category to make them easier to configure via Intune.
+These settings were moved to a category to make them easier to configure via Intune.
 
 OMA-URI:
 ```
