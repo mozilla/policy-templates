@@ -111,7 +111,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`PrivateBrowsingModeAvailability`](#privatebrowsingmodeavailability)** | Set availability of private browsing mode.
 | **[`PromptForDownloadLocation`](#promptfordownloadlocation)** | Ask where to save each file before downloading.
 | **[`Proxy`](#proxy)** | Configure proxy settings.
-| **[`RequestedLocales`](#requestedlocales)** | Set the the list of requested locales for the application in order of preference.
+| **[`RequestedLocales`](#requestedlocales)** | Set the list of requested locales for the application in order of preference.
 | **[`SanitizeOnShutdown` (All)](#sanitizeonshutdown-all)** | Clear all data on shutdown.
 | **[`SanitizeOnShutdown` (Selective)](#sanitizeonshutdown-selective)** | Clear data on shutdown.
 | **[`SearchBar`](#searchbar)** | Set whether or not search bar is displayed.
@@ -3277,7 +3277,7 @@ The configuration for each extension is another dictionary that can contain the 
 | `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension.  If installing from the local file system, use a [```file:///``` URL](https://en.wikipedia.org/wiki/File_URI_scheme). If installing from the addons.mozilla.org, use the following URL (substituting ID with the extension ID or with the short name from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/ID/latest.xpi. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
 | `install_sources` | A list of sources from which installing extensions is allowed using URL match patterns. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
 | `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "locale" This setting can be used only for the default configuration.
-| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
+| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
 | `restricted_domains` | An array of domains on which content scripts can't be run. This setting can be used only for the default configuration.
 | `updates_disabled` | (Firefox 89, Firefox ESR 78.11) Boolean that indicates whether or not to disable automatic updates for an individual extension.
 | `default_area` | (Firefox 113) String that indicates where to place the extension icon by default. Possible values are `navbar` and `menupanel`.
@@ -6108,7 +6108,7 @@ Value (string):
 }
 ```
 ### RequestedLocales
-Set the the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
+Set the list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
 
 Note: For Firefox 68, this can now be a string so that you can specify an empty value.
 
