@@ -3172,9 +3172,9 @@ Value (string):
 ### Extensions
 Control the installation, uninstallation and locking of extensions.
 
-We strongly recommend that you use the **[`ExtensionSettings`](#extensionsettings)** policy. It has the same functionality and adds more. It does not support native paths, though, so you'll have to use file:/// URLs.
+Note: The **[`ExtensionSettings`](#extensionsettings)** policy was added in Firefox 69. It provides additional functionality and is closer in compatibility to Chrome and Edge. It does not support native paths, though, so you'll have to use file:/// URLs. I'd recommend trying it before using this policy. Any future improvements will happen in that policy.
 
-This method will be deprecated in the near future.
+We will not, however, be removing this policy.
 
 `Install` is a list of URLs or native paths for extensions to be installed.
 
