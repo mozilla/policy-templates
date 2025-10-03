@@ -1258,6 +1258,10 @@ If this policy is disabled or not configured, the request will be denied.</strin
 You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
 
 If this policy is disabled or not configured, the Firefox Terms of Use and Privacy Notice do display upon startup.</string>
+      <string id="VisualSearchEnabled">Visual Search</string>
+      <string id="VisualSearchEnabled_Explain">If this policy is disabled, visual search is disabled.
+
+If this policy is enabled or not configured, visual search is enabled.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
