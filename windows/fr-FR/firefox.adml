@@ -1253,6 +1253,10 @@ Si cette stratégie est activée ou non configurée, les opérations d’impress
       <string id="ContentAnalysis_TimeoutResult_Explain">Si cette stratégie est activée, vous pouvez indiquer le comportement souhaité pour les requêtes DLP si l’agent DLP ne répond pas dans le délai défini (AgentTimeout). 
 
 Si cette stratégie est désactivée ou non configurée, la requête sera refusée.</string>
+      <string id="VisualSearchEnabled">Recherche visuelle</string>
+      <string id="VisualSearchEnabled_Explain">Si cette stratégie est désactivée, la recherche visuelle est désactivée.
+
+Si cette stratégie est activée ou non configurée, la recherche visuelle est activée.</string>
       <string id="SkipTermsOfUse">Ignorer les conditions d’utilisation</string>
       <string id="SkipTermsOfUse_Explain">Si cette stratégie est activée, les Conditions d’utilisation de Firefox (https://www.mozilla.org/about/legal/terms/firefox/) et l’Avis de confidentialité (https://www.mozilla.org/privacy/firefox/) ne s’affichent pas au démarrage.
 
