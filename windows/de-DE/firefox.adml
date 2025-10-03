@@ -79,6 +79,8 @@
       <string id="SUPPORTED_FF138_ONLY">Firefox 138 oder höher</string>
       <string id="SUPPORTED_FF138">Firefox 138 oder höher, Firefox 128.10 ESR oder höher</string>
       <string id="SUPPORTED_FF142">Firefox 142 oder höher, Firefox 140.2 ESR oder höher</string>
+      <string id="SUPPORTED_FF144">Firefox 144 oder höher, Firefox 140.4 ESR oder höher</string>
+      <string id="SUPPORTED_FF144_ONLY">Firefox 144 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
