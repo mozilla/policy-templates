@@ -151,6 +151,12 @@
       "ImproveSuggest": true | false,
       "Locked": true | false
     },
+    "GenerativeAI": {
+      "Chatbot": true | false,
+      "LinkPreviews": true | false,
+      "TabGroups": true | false,
+      "Locked": true | false
+    },
     "GoToIntranetSiteForSingleWordEntryInAddressBar": true | false,
     "Handlers": {
       "mimeTypes": {

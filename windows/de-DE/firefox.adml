@@ -113,6 +113,7 @@
       <string id="InterceptionPoints_group">Abfangpunkte</string>
       <string id="InterceptionPoints_Clipboard_group">Zwischenablage</string>
       <string id="InterceptionPoints_DragAndDrop_group">Drag-and-Drop</string>
+      <string id="GenerativeAI_group">Generative KI</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -1264,7 +1265,23 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
 Sie versichern, dass Sie die Nutzungsbedingungen im Namen aller Personen, denen Sie Zugang zu diesem Browser gewähren, akzeptieren und befugt sind, diese zu akzeptieren.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Firefox-Nutzungsbedingungen und der Datenschutzhinweis beim Starten angezeigt.</string>
-      <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
+      <string id="GenerativeAI_Chatbot">Chatbot</string>
+      <string id="GenerativeAI_Chatbot_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, sind KI-Chatbots in der Seitenleiste nicht verfügbar.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, sind KI-Chatbots in der Seitenleiste verfügbar.</string>
+
+      <string id="GenerativeAI_LinkPreviews">Linkvorschauen</string>
+      <string id="GenerativeAI_LinkPreviews_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird KI nicht verwendet, um Linkvorschauen zu erstellen.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, kann KI verwendet werden, um Linkvorschauen zu erstellen.</string>
+
+      <string id="GenerativeAI_TabGroups">Tab-Gruppen</string>
+      <string id="GenerativeAI_TabGroups_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird KI nicht verwendet, um Namen und Tabs für Tab-Gruppen vorzuschlagen.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird KI verwendet, um Namen und Tabs für Tab-Gruppen vorzuschlagen.</string>
+
+      <string id="GenerativeAI_Locked">Änderung von Einstellungen nicht zulassen</string>
+      <string id="GenerativeAI_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Benutzer die Einstellungen für generative KI nicht ändern.</string>      <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
