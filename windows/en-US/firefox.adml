@@ -113,6 +113,7 @@
       <string id="InterceptionPoints_group">Interception Points</string>
       <string id="InterceptionPoints_Clipboard_group">Clipboard</string>
       <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
+      <string id="FirefoxHome_group">Firefox Home</string>
       <string id="Allow">Allowed Sites</string>
       <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
@@ -571,7 +572,7 @@ If this policy is disabled or not configured, any site that is not in the Block 
       <string id="ScreenShare_Locked_Explain">If this policy is enabled, screen sharing preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their screen sharing preferences.</string>
-      <string id="FirefoxHome">Customize Firefox Home</string>
+      <string id="FirefoxHome">Customize Firefox Home (Moved to category)</string>
       <string id="FirefoxHome_Explain">If this policy is enabled, you can choose the sections displayed on Firefox Home and prevent the user from changing them.
 
 If this policy is disabled or not configured, the default sections are displayed and the user can change them.</string>
@@ -1258,6 +1259,34 @@ If this policy is disabled or not configured, the request will be denied.</strin
 You represent that you accept and have the authority to accept the Terms of Use on behalf of all individuals to whom you provide access to this browser.
 
 If this policy is disabled or not configured, the Firefox Terms of Use and Privacy Notice do display upon startup.</string>
+      <string id="FirefoxHome_Search">Search</string>
+      <string id="FirefoxHome_Search_Explain">If this policy is disabled, the search field is not displayed on the new tab page.
+
+If this policy is disabled or not configured, the search field is displayed on the new tab page.</string>
+      <string id="FirefoxHome_TopSites">Shortcuts</string>
+      <string id="FirefoxHome_TopSites_Explain">If this policy is disabled, shortcuts are not displayed on the new tab page.
+
+If this policy is disabled or not configured, shortcuts are displayed on the new tab page.</string>
+      <string id="FirefoxHome_SponsoredTopSites">Sponsored Shortcuts</string>
+      <string id="FirefoxHome_SponsoredTopSites_Explain">If this policy is disabled, sponsored shortcuts are not displayed on the new tab page.
+
+If this policy is disabled or not configured, sponsored are shortcuts displayed on the new tab page.</string>
+      <string id="FirefoxHome_Highlights">Recent Activity</string>
+      <string id="FirefoxHome_Highlights_Explain">If this policy is disabled, recent activity not displayed on the new tab page.
+
+If this policy is disabled or not configured, recent activity is displayed on the new tab page.</string>
+      <string id="FirefoxHome_Stories">Stories</string>
+      <string id="FirefoxHome_Stories_Explain">If this policy is disabled, stories are not displayed on the new tab page.
+
+If this policy is disabled or not configured, stories are displayed on the new tab page.</string>
+      <string id="FirefoxHome_SponsoredStories">Sponsored Stories</string>
+      <string id="FirefoxHome_SponsoredStories_Explain">If this policy is disabled, sponsored stories are not displayed on the new tab page.
+
+If this policy is disabled or not configured, sponsored stories are displayed on the new tab page.</string>
+      <string id="FirefoxHome_Locked">Do not allow preferences to be changed</string>
+      <string id="FirefoxHome_Locked_Explain">If this policy is enabled, Firefox Home preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, the user can change their Firefox Home preferences.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
