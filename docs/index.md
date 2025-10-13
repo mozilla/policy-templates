@@ -77,6 +77,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`ExtensionUpdate`](#extensionupdate)** | Control extension updates.
 | **[`FirefoxHome`](#firefoxhome)** | Customize the Firefox Home page.
 | **[`FirefoxSuggest`](#firefoxsuggest)** | Customize Firefox Suggest.
+| **[`GenerativeAI`](#generativeai)** | Configure generative AI features.
 | **[`GoToIntranetSiteForSingleWordEntryInAddressBar`](#gotointranetsiteforsinglewordentryinaddressbar)** | Force direct intranet site navigation instead of searching when typing single word entries in the address bar.
 | **[`Handlers`](#handlers)** | Configure default application handlers.
 | **[`HardwareAcceleration`](#hardwareacceleration)** | Control hardware acceleration.
@@ -3614,6 +3615,70 @@ Value (string):
       "WebSuggestions": true | false,
       "SponsoredSuggestions": true | false,
       "ImproveSuggest": true | false,
+      "Locked": true | false
+    }
+  }
+}
+```
+### GenerativeAI
+
+Configure generative AI features.
+
+`Chatbot` If false, AI chatbots are not available in the sidebar.
+
+`LinkPreviews` If false, AI is not used to generate link previews (Firefox 144).
+
+`TabGroups` If false,  AI is not used to suggest names and tabs for tab groups (Firefox 144).
+
+`Locked` prevents the user from changing generative AI preferences.
+
+**Compatibility:** Firefox 144, Firefox ESR 140.4\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.ml.chat.enabled`, `browser.ml.linkPreview.optin`, `browser.tabs.groups.smart.userEnabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\GenerativeAI\Chatbot = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\GenerativeAI\LinkPreviews = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\GenerativeAI\TabGroups = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\GenerativeAI\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_Chatbot
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_LinkPreviews
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_TabGroups
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>GenerativeAI</key>
+  <dict>
+    <key>Chatbot</key>
+    <true/> | <false/>
+    <key>LinkPreviews</key>
+    <true/> | <false/>
+    <key>TabGroups</key>
+    <true/> | <false/>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "GenerativeAI": {
+      "Chatbot": true | false,
+      "LinkPreviews": true | false,
+      "TabGroups": true | false,
       "Locked": true | false
     }
   }

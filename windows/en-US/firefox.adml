@@ -114,6 +114,7 @@
       <string id="InterceptionPoints_Clipboard_group">Clipboard</string>
       <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
       <string id="FirefoxHome_group">Firefox Home</string>
+      <string id="GenerativeAI_group">Generative AI</string>
       <string id="Allow">Allowed Sites</string>
       <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
@@ -1291,6 +1292,22 @@ If this policy is disabled or not configured, the user can change their Firefox 
       <string id="VisualSearchEnabled_Explain">If this policy is disabled, visual search is disabled.
 
 If this policy is enabled or not configured, visual search is enabled.</string>
+      <string id="GenerativeAI_Chatbot">Chatbot</string>
+      <string id="GenerativeAI_Chatbot_Explain">If this policy is disabled, AI chatbots are not available in the sidebar.
+
+If this policy is disabled or not configured, AI chatbots are available in the sidebar.</string>
+      <string id="GenerativeAI_LinkPreviews">Link Previews</string>
+      <string id="GenerativeAI_LinkPreviews_Explain">If this policy is disabled, AI is not used to generate link previews.
+
+If this policy is disabled or not configured, AI can be used to generate link previews.</string>
+      <string id="GenerativeAI_TabGroups">Tab Groups</string>
+      <string id="GenerativeAI_TabGroups_Explain">If this policy is disabled, AI is not used to suggest names and tabs for tab groups.
+
+If this policy is disabled or not configured, AI is not used to suggest names and tabs for tab groups.</string>
+      <string id="GenerativeAI_Locked">Do not allow preferences to be changed</string>
+      <string id="GenerativeAI_Locked_Explain">If this policy is enabled, generative AI preferences cannot be changed by the user.
+
+If this policy is disabled or not configured, generative AI preferences cannot be changed by the user.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:

@@ -114,6 +114,7 @@
       <string id="InterceptionPoints_Clipboard_group">Presse-papiers</string>
       <string id="InterceptionPoints_DragAndDrop_group">Glisser-déposer</string>
       <string id="FirefoxHome_group">Page d’accueil de Firefox</string>
+      <string id="GenerativeAI_group">IA générative</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
@@ -1298,6 +1299,22 @@ Si cette stratégie est désactivée ou non configurée, l’utilisateur peut mo
       <string id="VisualSearchEnabled_Explain">Si cette stratégie est désactivée, la recherche visuelle est désactivée.
 
 Si cette stratégie est activée ou non configurée, la recherche visuelle est activée.</string>
+      <string id="GenerativeAI_Chatbot">Chatbot</string>
+      <string id="GenerativeAI_Chatbot_Explain">Si cette stratégie est désactivée, les chatbots IA ne sont pas disponibles dans la barre latérale.
+
+Si cette stratégie est activée ou non configurée, les chatbots IA sont disponibles dans la barre latérale.</string>
+      <string id="GenerativeAI_LinkPreviews">Aperçus de liens</string>
+      <string id="GenerativeAI_LinkPreviews_Explain">Si cette stratégie est désactivée, l’IA n’est pas utilisée pour générer des aperçus de liens.
+
+Si cette stratégie est activée ou non configurée, l’IA peut être utilisée pour générer des aperçus de liens.</string>
+      <string id="GenerativeAI_TabGroups">Groupes d’onglets</string>
+      <string id="GenerativeAI_TabGroups_Explain">Si cette stratégie est désactivée, l’IA n’est pas utilisée pour suggérer des noms et des onglets pour les groupes d’onglets.
+
+Si cette stratégie est activée ou non configurée, l’IA est utilisée pour suggérer des noms et des onglets pour les groupes d’onglets.</string>
+      <string id="GenerativeAI_Locked">Empêcher la modification des préférences</string>
+      <string id="GenerativeAI_Locked_Explain">Si cette stratégie est activée, les préférences de l’IA générative ne peuvent pas être modifiées par l’utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, les préférences de l’IA générative peuvent être modifiées par l’utilisateur.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

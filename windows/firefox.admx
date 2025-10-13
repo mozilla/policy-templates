@@ -81,7 +81,7 @@
       <definition name="SUPPORTED_FF137_ONLY" displayName="$(string.SUPPORTED_FF137_ONLY)"/>
       <definition name="SUPPORTED_FF138_ONLY" displayName="$(string.SUPPORTED_FF138_ONLY)"/>
       <definition name="SUPPORTED_FF142" displayName="$(string.SUPPORTED_FF142)"/>
-      <definition name="SUPPORTED_FF144" displayName="$(string.SUPPORTED_FF142)"/>
+      <definition name="SUPPORTED_FF144" displayName="$(string.SUPPORTED_FF144)"/>
       <definition name="SUPPORTED_FF144_ONLY" displayName="$(string.SUPPORTED_FF144_ONLY)"/>
     </definitions>
   </supportedOn>
@@ -192,6 +192,7 @@
       <parentCategory ref="InterceptionPoints"/>
     </category>
     <category displayName="$(string.FirefoxHome_group)" name="FirefoxHome">
+    <category displayName="$(string.GenerativeAI_group)" name="GenerativeAI">
       <parentCategory ref="firefox"/>
     </category>
   </categories>
@@ -4701,6 +4702,46 @@
     <policy name="VisualSearchEnabled" class="Both" displayName="$(string.VisualSearchEnabled)" explainText="$(string.VisualSearchEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="VisualSearchEnabled">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF144_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="GenerativeAI_Chatbot" class="Both" displayName="$(string.GenerativeAI_Chatbot)" explainText="$(string.GenerativeAI_Chatbot_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="Chatbot">
+      <parentCategory ref="GenerativeAI"/>
+      <supportedOn ref="SUPPORTED_FF144"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="GenerativeAI_LinkPreviews" class="Both" displayName="$(string.GenerativeAI_LinkPreviews)" explainText="$(string.GenerativeAI_LinkPreviews_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="LinkPreviews">
+      <parentCategory ref="GenerativeAI"/>
+      <supportedOn ref="SUPPORTED_FF144_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="GenerativeAI_TabGroups" class="Both" displayName="$(string.GenerativeAI_TabGroups)" explainText="$(string.GenerativeAI_TabGroups_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="TabGroups">
+      <parentCategory ref="GenerativeAI"/>
+      <supportedOn ref="SUPPORTED_FF144_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="GenerativeAI_Locked" class="Both" displayName="$(string.GenerativeAI_Locked)" explainText="$(string.GenerativeAI_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="Locked">
+      <parentCategory ref="GenerativeAI"/>
+      <supportedOn ref="SUPPORTED_FF144"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
