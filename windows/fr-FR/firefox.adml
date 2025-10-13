@@ -113,6 +113,7 @@
       <string id="InterceptionPoints_group">Points d’interception</string>
       <string id="InterceptionPoints_Clipboard_group">Presse-papiers</string>
       <string id="InterceptionPoints_DragAndDrop_group">Glisser-déposer</string>
+      <string id="FirefoxHome_group">Page d’accueil de Firefox</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
@@ -571,7 +572,7 @@ Si cette stratégie est désactivée ou non configurée, tout site qui ne figure
       <string id="ScreenShare_Locked_Explain">Si cette stratégie est activée, les préférences de partage d’écran ne peuvent pas être modifiées par l’utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier ses préférences de partage d’écran.</string>
-      <string id="FirefoxHome">Personnaliser Firefox Home</string>
+      <string id="FirefoxHome">Personnaliser la page d’accueil de Firefox (déplacé)</string>
       <string id="FirefoxHome_Explain">Si cette stratégie est activée, vous pouvez choisir les sections affichées sur la page d'accueil de Firefox et empêcher l'utilisateur de les modifier.
 
 Si cette stratégie est désactivée ou non configurée, les sections par défaut sont affichées et l'utilisateur peut les modifier.</string>
@@ -1259,6 +1260,40 @@ Si cette stratégie est désactivée ou non configurée, la requête sera refus�
 Vous déclarez accepter les Conditions d’utilisation et être habilité à les accepter au nom de toutes les personnes à qui vous donnez accès à ce navigateur.
 
 Si cette stratégie est désactivée ou non configurée, les Conditions d’utilisation de Firefox et l’Avis de confidentialité s’affichent au démarrage.</string>
+      <string id="FirefoxHome_Search">Recherche</string>
+      <string id="FirefoxHome_Search_Explain">Si cette stratégie est désactivée, le champ de recherche n’est pas affiché sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, le champ de recherche est affiché sur la page Nouvel onglet.</string>
+
+      <string id="FirefoxHome_TopSites">Raccourcis</string>
+      <string id="FirefoxHome_TopSites_Explain">Si cette stratégie est désactivée, les raccourcis ne sont pas affichés sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, les raccourcis sont affichés sur la page Nouvel onglet.</string>
+
+      <string id="FirefoxHome_SponsoredTopSites">Raccourcis sponsorisés</string>
+      <string id="FirefoxHome_SponsoredTopSites_Explain">Si cette stratégie est désactivée, les raccourcis sponsorisés ne sont pas affichés sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, les raccourcis sponsorisés sont affichés sur la page Nouvel onglet.</string>
+
+      <string id="FirefoxHome_Highlights">Activité récente</string>
+      <string id="FirefoxHome_Highlights_Explain">Si cette stratégie est désactivée, l’activité récente n’est pas affichée sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, l’activité récente est affichée sur la page Nouvel onglet.</string>
+
+      <string id="FirefoxHome_Stories">Articles</string>
+      <string id="FirefoxHome_Stories_Explain">Si cette stratégie est désactivée, les articles ne sont pas affichés sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, les articles sont affichés sur la page Nouvel onglet.</string>
+
+      <string id="FirefoxHome_SponsoredStories">Articles sponsorisés</string>
+      <string id="FirefoxHome_SponsoredStories_Explain">Si cette stratégie est désactivée, les articles sponsorisés ne sont pas affichés sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, les articles sponsorisés sont affichés sur la page Nouvel onglet.</string>
+
+      <string id="FirefoxHome_Locked">Empêcher la modification des préférences</string>
+      <string id="FirefoxHome_Locked_Explain">Si cette stratégie est activée, les préférences de la page d’accueil de Firefox ne peuvent pas être modifiées par l’utilisateur.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier les préférences de la page d’accueil de Firefox.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

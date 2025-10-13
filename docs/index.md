@@ -3463,7 +3463,7 @@ Value (string):
 ### FirefoxHome
 Customize the Firefox Home page.
 
-**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket.)
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket.)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
 
