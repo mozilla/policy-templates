@@ -113,6 +113,7 @@
       <string id="InterceptionPoints_group">Abfangpunkte</string>
       <string id="InterceptionPoints_Clipboard_group">Zwischenablage</string>
       <string id="InterceptionPoints_DragAndDrop_group">Drag-and-Drop</string>
+      <string id="FirefoxHome_group">Firefox-Startseite</string>
       <string id="GenerativeAI_group">Generative KI</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
@@ -574,7 +575,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="ScreenShare_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen zur Bildschirmfreigabe vom Benutzer nicht geändert werden.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer seine Einstellungen zur Bildschirmfreigabe ändern.</string>
-      <string id="FirefoxHome">Firefox Home anpassen</string>
+      <string id="FirefoxHome">Firefox-Startseite anpassen (verschoben)</string>
       <string id="FirefoxHome_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Sektionen festgelegt werden, die der Anwender sieht und der Anwender kann diese nicht mehr anpassen.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden dem Anwender die standardmäßigen Sektionen angezeigt und der Anwender kann diese anpassen.</string>
@@ -1265,6 +1266,44 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
 Sie versichern, dass Sie die Nutzungsbedingungen im Namen aller Personen, denen Sie Zugang zu diesem Browser gewähren, akzeptieren und befugt sind, diese zu akzeptieren.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Firefox-Nutzungsbedingungen und der Datenschutzhinweis beim Starten angezeigt.</string>
+      <string id="FirefoxHome_Search">Suche</string>
+      <string id="FirefoxHome_Search_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird das Suchfeld auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird das Suchfeld auf der Seite „Neuer Tab“ angezeigt.</string>
+
+      <string id="FirefoxHome_TopSites">Schnellzugriffe</string>
+      <string id="FirefoxHome_TopSites_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden die Schnellzugriffe auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden die Schnellzugriffe auf der Seite „Neuer Tab“ angezeigt.</string>
+
+      <string id="FirefoxHome_SponsoredTopSites">Gesponserte Schnellzugriffe</string>
+      <string id="FirefoxHome_SponsoredTopSites_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden gesponserte Schnellzugriffe auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden gesponserte Schnellzugriffe auf der Seite „Neuer Tab“ angezeigt.</string>
+
+      <string id="FirefoxHome_Highlights">Letzte Aktivität</string>
+      <string id="FirefoxHome_Highlights_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die letzte Aktivität auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die letzte Aktivität auf der Seite „Neuer Tab“ angezeigt.</string>
+
+      <string id="FirefoxHome_Stories">Storys</string>
+      <string id="FirefoxHome_Stories_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Storys auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Storys auf der Seite „Neuer Tab“ angezeigt.</string>
+
+      <string id="FirefoxHome_SponsoredStories">Gesponserte Storys</string>
+      <string id="FirefoxHome_SponsoredStories_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden gesponserte Storys auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden gesponserte Storys auf der Seite „Neuer Tab“ angezeigt.</string>
+
+      <string id="FirefoxHome_Locked">Änderung von Einstellungen nicht zulassen</string>
+      <string id="FirefoxHome_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen für die Firefox-Startseite vom Benutzer nicht geändert werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer die Einstellungen für die Firefox-Startseite ändern.</string>
+      <string id="VisualSearchEnabled">Visuelle Suche</string>
+      <string id="VisualSearchEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die visuelle Suche deaktiviert.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die visuelle Suche aktiviert.</string>
       <string id="GenerativeAI_Chatbot">Chatbot</string>
       <string id="GenerativeAI_Chatbot_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, sind KI-Chatbots in der Seitenleiste nicht verfügbar.
 
@@ -1281,7 +1320,10 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, kann KI
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird KI verwendet, um Namen und Tabs für Tab-Gruppen vorzuschlagen.</string>
 
       <string id="GenerativeAI_Locked">Änderung von Einstellungen nicht zulassen</string>
-      <string id="GenerativeAI_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Benutzer die Einstellungen für generative KI nicht ändern.</string>      <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
+      <string id="GenerativeAI_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen für generative KI vom Benutzer nicht geändert werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die Einstellungen für generative KI vom Benutzer geändert werden.</string>
+      <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>

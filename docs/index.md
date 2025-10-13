@@ -132,6 +132,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`TranslateEnabled`](#translateenabled)** | Enable or disable webpage translation.
 | **[`UserMessaging`](#usermessaging)** | Don't show certain messages to the user.
 | **[`UseSystemPrintDialog`](#usesystemprintdialog)** | Print using the system print dialog instead of print preview.
+| **[`VisualSearchEnabled`](#visualsearchenabled)** | Enable or disable visual search.
 | **[`WebsiteFilter`](#websitefilter)** | Block websites from being visited.
 | **[`WindowsSSO`](#windowssso)** | Allow Windows single sign-on for Microsoft, work, and school accounts.
 
@@ -3464,7 +3465,7 @@ Value (string):
 ### FirefoxHome
 Customize the Firefox Home page.
 
-**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket.)
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket.)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
 
@@ -7210,6 +7211,41 @@ Value (string):
 {
   "policies": {
     "UseSystemPrintDialog": true | false
+  }
+}
+```
+### VisualSearchEnabled
+Enable or disable visual search.
+
+**Compatibility:** Firefox 144\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.search.visualSearch.featureGate`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\VisualSearchEnabled = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/VisualSearchEnabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>VisualSearchEnabled</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "VisualSearchEnabled": true | false
   }
 }
 ```

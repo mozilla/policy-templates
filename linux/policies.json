@@ -378,6 +378,7 @@
       "Locked": true | false
     },
     "UseSystemPrintDialog": true | false.,
+    "VisualSearchEnabled": true | false.,
     "WebsiteFilter": {
       "Block": ["<all_urls>"],
       "Exceptions": ["http://example.org/*"]

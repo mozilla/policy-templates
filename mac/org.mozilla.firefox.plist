@@ -721,6 +721,8 @@
 	</dict>
 	<key>UseSystemPrintDialog</key>
 	<true/>
+	<key>VisualSearchEnabled</key>
+	<false/>
 	<key>WebsiteFilter</key>
 	<dict>
 		<key>Block</key>
