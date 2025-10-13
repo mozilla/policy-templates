@@ -191,9 +191,6 @@
     <category displayName="$(string.InterceptionPoints_DragAndDrop_group)" name="InterceptionPoints_DragAndDrop">
       <parentCategory ref="InterceptionPoints"/>
     </category>
-    <category displayName="$(string.FirefoxHome_group)" name="FirefoxHome">
-      <parentCategory ref="firefox"/>
-    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -4621,86 +4618,6 @@
     <policy name="SkipTermsOfUse" class="Both" displayName="$(string.SkipTermsOfUse)" explainText="$(string.SkipTermsOfUse_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="SkipTermsOfUse">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF138_ONLY"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_Search" class="Both" displayName="$(string.FirefoxHome_Search)" explainText="$(string.FirefoxHome_Search_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Search">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_TopSites" class="Both" displayName="$(string.FirefoxHome_TopSites)" explainText="$(string.FirefoxHome_TopSites_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="TopSites">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_SponsoredTopSites" class="Both" displayName="$(string.FirefoxHome_SponsoredTopSites)" explainText="$(string.FirefoxHome_SponsoredTopSites_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="SponsoredTopSites">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF95"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_Highlights" class="Both" displayName="$(string.FirefoxHome_Highlights)" explainText="$(string.FirefoxHome_Highlights_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Highlights">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_Stories" class="Both" displayName="$(string.FirefoxHome_Stories)" explainText="$(string.FirefoxHome_Stories_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Stories">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_SponsoredStories" class="Both" displayName="$(string.FirefoxHome_SponsoredStories)" explainText="$(string.FirefoxHome_SponsoredStories_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="SponsoredStories">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF95"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="FirefoxHome_Locked" class="Both" displayName="$(string.FirefoxHome_Locked)" explainText="$(string.FirefoxHome_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Locked">
-      <parentCategory ref="FirefoxHome"/>
-      <supportedOn ref="SUPPORTED_FF68"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-    <policy name="VisualSearchEnabled" class="Both" displayName="$(string.VisualSearchEnabled)" explainText="$(string.VisualSearchEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="VisualSearchEnabled">
-      <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF144_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

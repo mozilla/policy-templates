@@ -3464,7 +3464,7 @@ Value (string):
 ### FirefoxHome
 Customize the Firefox Home page.
 
-**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket.)
+**Compatibility:** Firefox 68, Firefox ESR 68 (SponsoredTopSites and SponsoredPocket were added in Firefox 95, Firefox ESR 91.4, Snippets was deprecated in Firefox 122, Stories and SponsoredStories were added in Firefox 141 to replace Pocket and SponsoredPocket.)\
 **CCK2 Equivalent:** N/A\
 **Preferences Affected:** `browser.newtabpage.activity-stream.showSearch`, `browser.newtabpage.activity-stream.feeds.topsites`, `browser.newtabpage.activity-stream.feeds.section.highlights`, `browser.newtabpage.activity-stream.feeds.section.topstories`, `browser.newtabpage.activity-stream.feeds.snippets`, `browser.newtabpage.activity-stream.showSponsoredTopSites`, `browser.newtabpage.activity-stream.showSponsored`
 
@@ -5609,6 +5609,8 @@ as well as the following security preferences:
 | &nbsp;&nbsp;&nbsp;&nbsp;If true, browser will accept TLS 1.0. and TLS 1.1. (Firefox 86, Firefox 78.8)
 | security.warn_submit_secure_to_insecure | boolean | true
 | &nbsp;&nbsp;&nbsp;&nbsp;If false, no warning is shown when submitting a form from https to http.
+| security.webauthn.always_allow_direct_attestation | boolean | false
+| &nbsp;&nbsp;&nbsp;&nbsp;If true, unnecessary (redundant) WebAuthn prompts are not shown.
 
 Using the preference as the key, set the `Value` to the corresponding preference value.
 
