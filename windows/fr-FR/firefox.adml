@@ -1294,6 +1294,10 @@ Si cette stratégie est activée ou non configurée, les articles sponsorisés s
       <string id="FirefoxHome_Locked_Explain">Si cette stratégie est activée, les préférences de la page d’accueil de Firefox ne peuvent pas être modifiées par l’utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier les préférences de la page d’accueil de Firefox.</string>
+      <string id="VisualSearchEnabled">Recherche visuelle</string>
+      <string id="VisualSearchEnabled_Explain">Si cette stratégie est désactivée, la recherche visuelle est désactivée.
+
+Si cette stratégie est activée ou non configurée, la recherche visuelle est activée.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

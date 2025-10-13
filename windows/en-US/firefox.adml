@@ -1287,6 +1287,10 @@ If this policy is disabled or not configured, sponsored stories are displayed on
       <string id="FirefoxHome_Locked_Explain">If this policy is enabled, Firefox Home preferences cannot be changed by the user.
 
 If this policy is disabled or not configured, the user can change their Firefox Home preferences.</string>
+      <string id="VisualSearchEnabled">Visual Search</string>
+      <string id="VisualSearchEnabled_Explain">If this policy is disabled, visual search is disabled.
+
+If this policy is enabled or not configured, visual search is enabled.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:

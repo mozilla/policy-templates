@@ -4698,9 +4698,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="VisualSearchEnabled" class="Both" displayName="$(string.VisualSearchEnabled)" explainText="$(string.VisualSearchEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="VisualSearchEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF144_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
-
-
-
-
