@@ -192,6 +192,8 @@
       <parentCategory ref="InterceptionPoints"/>
     </category>
     <category displayName="$(string.FirefoxHome_group)" name="FirefoxHome">
+      <parentCategory ref="firefox"/>
+    </category>
     <category displayName="$(string.GenerativeAI_group)" name="GenerativeAI">
       <parentCategory ref="firefox"/>
     </category>
