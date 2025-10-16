@@ -1295,15 +1295,15 @@ If this policy is enabled or not configured, visual search is enabled.</string>
       <string id="GenerativeAI_Chatbot">Chatbot</string>
       <string id="GenerativeAI_Chatbot_Explain">If this policy is disabled, AI chatbots are not available in the sidebar.
 
-If this policy is disabled or not configured, AI chatbots are available in the sidebar.</string>
+If this policy is enabled or not configured, AI chatbots are available in the sidebar.</string>
       <string id="GenerativeAI_LinkPreviews">Link Previews</string>
       <string id="GenerativeAI_LinkPreviews_Explain">If this policy is disabled, AI is not used to generate link previews.
 
-If this policy is disabled or not configured, AI can be used to generate link previews.</string>
+If this policy is enabled or not configured, AI can be used to generate link previews.</string>
       <string id="GenerativeAI_TabGroups">Tab Groups</string>
       <string id="GenerativeAI_TabGroups_Explain">If this policy is disabled, AI is not used to suggest names and tabs for tab groups.
 
-If this policy is disabled or not configured, AI is not used to suggest names and tabs for tab groups.</string>
+If this policy is enabled or not configured, AI is not used to suggest names and tabs for tab groups.</string>
       <string id="GenerativeAI_Locked">Do not allow preferences to be changed</string>
       <string id="GenerativeAI_Locked_Explain">If this policy is enabled, generative AI preferences cannot be changed by the user.
 

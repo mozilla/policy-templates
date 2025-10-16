@@ -1308,17 +1308,14 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird di
       <string id="GenerativeAI_Chatbot_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, sind KI-Chatbots in der Seitenleiste nicht verfügbar.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, sind KI-Chatbots in der Seitenleiste verfügbar.</string>
-
       <string id="GenerativeAI_LinkPreviews">Linkvorschauen</string>
       <string id="GenerativeAI_LinkPreviews_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird KI nicht verwendet, um Linkvorschauen zu erstellen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, kann KI verwendet werden, um Linkvorschauen zu erstellen.</string>
-
       <string id="GenerativeAI_TabGroups">Tab-Gruppen</string>
       <string id="GenerativeAI_TabGroups_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird KI nicht verwendet, um Namen und Tabs für Tab-Gruppen vorzuschlagen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird KI verwendet, um Namen und Tabs für Tab-Gruppen vorzuschlagen.</string>
-
       <string id="GenerativeAI_Locked">Änderung von Einstellungen nicht zulassen</string>
       <string id="GenerativeAI_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen für generative KI vom Benutzer nicht geändert werden.
 
