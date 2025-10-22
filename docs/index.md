@@ -614,7 +614,7 @@ Value (string):
 ### AutoLaunchProtocolsFromOrigins
 Define a list of external protocols that can be used from listed origins without prompting the user. The origin is the scheme plus the hostname.
 
-The syntax of this policy is exactly the same as the [Chrome AutoLaunchProtocolsFromOrigins policy](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=AutoLaunchProtocolsFromOrigins) except that you can only use valid origins (not just hostnames). This also means that you cannot specify an asterisk for all origins.
+The syntax of this policy is exactly the same as the [Chrome AutoLaunchProtocolsFromOrigins policy](https://chromeenterprise.google/policies/#AutoLaunchProtocolsFromOrigins) except that you can only use valid origins (not just hostnames). This also means that you cannot specify an asterisk for all origins.
 
 The schema is:
 ```
