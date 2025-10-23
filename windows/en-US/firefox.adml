@@ -81,6 +81,7 @@
       <string id="SUPPORTED_FF142">Firefox 142 or later, Firefox 140.2 ESR or later</string>
       <string id="SUPPORTED_FF144">Firefox 144 or later, Firefox 140.4 ESR or later</string>
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 or later</string>
+      <string id="SUPPORTED_FF145_ONLY">Firefox 145 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -818,6 +819,14 @@ If this policy is disabled or not configured, the default tracking protection mo
       <string id="TrackingProtection_SuspectedFingerprinting_Explain">If this policy is enabled, Firefox reduces the amount of information exposed to websites to protect against potential fingerprinting attempts.
 
 If this policy is disabled or not configured, Firefox does not reduce information exposure for suspected fingerprinting.</string>
+      <string id="TrackingProtection_BaselineExceptions">Baseline Exceptions</string>
+      <string id="TrackingProtection_BaselineExceptions_Explain">If this policy is enabled, Firefox will automatically apply exceptions required to avoid major website breakage.
+
+If this policy is disabled or not configured, Firefox will not automatically apply exceptions required to avoid major website breakage.</string>
+      <string id="TrackingProtection_ConvenienceExceptions">Convenience Exceptions</string>
+      <string id="TrackingProtection_ConvenienceExceptions_Explain">If this policy is enabled, Firefox will apply exceptions automatically that are only required to fix minor issues and make convenience features available.
+
+If this policy is disabled or not configured, Firefox will not Firefox will apply exceptions automatically that are only required to fix minor issues and make convenience features available.</string>
       <string id="RequestedLocales">Requested locale</string>
       <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.

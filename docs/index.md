@@ -2892,7 +2892,9 @@ If this policy is not configured, tracking protection is not enabled by default 
 
 If `Value` is set to false, tracking protection is disabled and locked in both the regular browser and private browsing.
 
-If `Value` is set to true, tracking protection is enabled by default in both the regular browser and private browsing and the `Locked` value determines whether or not a user can change it.
+If `Value` is set to true, tracking protection is enabled by default in both the regular browser and private browsing.
+
+If `Locked` is set to true, users cannot change tracking protection values.
 
 If `Cryptomining` is set to true, cryptomining scripts on websites are blocked.
 
@@ -2906,9 +2908,15 @@ If `SuspectedFingerprinting` is set to true, Firefox reduces the amount of infor
 
 `Category` can be either ```strict``` or ```standard```. If category is set, it overrides all other settings except `Exceptions` and the user cannot change the category. (Firefox 142, Firefox ESR 140.2)
 
-**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5. Category added in Firefox 142/140.2.)\
+IF `BaselineExceptions` is true, Firefox will automatically apply exceptions required to avoid major website breakage. (Firefox 145)
+
+If `ConvenienceExceptions`is true, Firefox will apply exceptions automatically that are only required to fix minor issues and make convenience features available. (Firefox 145)
+
+Note: Users can change `BaselineExceptions` and `ConvenienceExceptions` even when `Category` is set to ```strict``` unless `Locked` is set to true.
+
+**Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5. Category added in Firefox 142/140.2. BaselineExceptions and ConvenienceExceptions added in Firefox 145)\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `privacy.trackingprotection.enabled`, `privacy.trackingprotection.pbmode.enabled`, `privacy.trackingprotection.cryptomining.enabled`, `privacy.trackingprotection.fingerprinting.enabled`
+**Preferences Affected:** `privacy.trackingprotection.enabled`, `privacy.trackingprotection.pbmode.enabled`, `privacy.trackingprotection.cryptomining.enabled`, `privacy.trackingprotection.fingerprinting.enabled`, `privacy.fingerprintingProtection`, `privacy.trackingprotection.emailtracking.enabled`, `privacy.trackingprotection.emailtracking.pbmode.enabled`, `privacy.trackingprotection.allow_list.baseline.enabled`, `privacy.trackingprotection.allow_list.convenience.enabled`
 
 #### Windows (GPO)
 ```

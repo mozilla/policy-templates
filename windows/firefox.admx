@@ -83,6 +83,7 @@
       <definition name="SUPPORTED_FF142" displayName="$(string.SUPPORTED_FF142)"/>
       <definition name="SUPPORTED_FF144" displayName="$(string.SUPPORTED_FF144)"/>
       <definition name="SUPPORTED_FF144_ONLY" displayName="$(string.SUPPORTED_FF144_ONLY)"/>
+      <definition name="SUPPORTED_FF145_ONLY" displayName="$(string.SUPPORTED_FF145_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -3716,6 +3717,26 @@
     <policy name="H_TrackingProtection_SuspectedFingerprinting" class="Both" displayName="$(string.TrackingProtection_SuspectedFingerprinting)" explainText="$(string.TrackingProtection_SuspectedFingerprinting_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="SuspectedFingerprinting">
       <parentCategory ref="TrackingProtection"/>
       <supportedOn ref="SUPPORTED_FF142"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="I_TrackingProtection_BaselineExceptions" class="Both" displayName="$(string.TrackingProtection_BaselineExceptions)" explainText="$(string.TrackingProtection_BaselineExceptions_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="BaselineExceptions">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF144_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="J_TrackingProtection_ConvenienceExceptions" class="Both" displayName="$(string.TrackingProtection_ConvenienceExceptions)" explainText="$(string.TrackingProtection_ConvenienceExceptions_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="ConvenienceExceptions">
+      <parentCategory ref="TrackingProtection"/>
+      <supportedOn ref="SUPPORTED_FF144_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
