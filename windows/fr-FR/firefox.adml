@@ -1308,6 +1308,10 @@ Si cette stratégie est désactivée ou non configurée, l’utilisateur peut mo
       <string id="VisualSearchEnabled_Explain">Si cette stratégie est désactivée, la recherche visuelle est désactivée.
 
 Si cette stratégie est activée ou non configurée, la recherche visuelle est activée.</string>
+      <string id="GenerativeAI_Enabled">Activé</string>
+      <string id="GenerativeAI_Enabled_Explain">Si cette stratégie est désactivée, toutes les fonctionnalités d’IA générative sont désactivées par défaut. Les stratégies individuelles d’IA générative peuvent remplacer ce paramètre.
+
+Si cette stratégie est activée ou non configurée, les fonctionnalités d’IA générative sont activées par défaut, sauf si elles sont remplacées par des stratégies individuelles d’IA générative.</string>
       <string id="GenerativeAI_Chatbot">Chatbot</string>
       <string id="GenerativeAI_Chatbot_Explain">Si cette stratégie est désactivée, les chatbots IA ne sont pas disponibles dans la barre latérale.
 

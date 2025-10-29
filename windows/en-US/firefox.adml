@@ -1301,6 +1301,10 @@ If this policy is disabled or not configured, the user can change their Firefox 
       <string id="VisualSearchEnabled_Explain">If this policy is disabled, visual search is disabled.
 
 If this policy is enabled or not configured, visual search is enabled.</string>
+      <string id="GenerativeAI_Enabled">Enabled</string>
+      <string id="GenerativeAI_Enabled_Explain">If this policy is disabled, all generative AI features are disabled by default. Individual generative AI policies can override this setting.
+
+If this policy is enabled or not configured, generative AI features are enabled by default, unless overridden by individual generative AI policies.</string>
       <string id="GenerativeAI_Chatbot">Chatbot</string>
       <string id="GenerativeAI_Chatbot_Explain">If this policy is disabled, AI chatbots are not available in the sidebar.
 
