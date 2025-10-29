@@ -4732,6 +4732,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="GenerativeAI_Enabled" class="Both" displayName="$(string.GenerativeAI_Enabled)" explainText="$(string.GenerativeAI_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="Enabled">
+      <parentCategory ref="GenerativeAI"/>
+      <supportedOn ref="SUPPORTED_FF144"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="GenerativeAI_Chatbot" class="Both" displayName="$(string.GenerativeAI_Chatbot)" explainText="$(string.GenerativeAI_Chatbot_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="Chatbot">
       <parentCategory ref="GenerativeAI"/>
       <supportedOn ref="SUPPORTED_FF144"/>

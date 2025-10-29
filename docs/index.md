@@ -3632,20 +3632,23 @@ Value (string):
 
 Configure generative AI features.
 
-`Chatbot` If false, AI chatbots are not available in the sidebar.
+`Enabled` Controls whether generative AI features are enabled by default. If false, all generative AI features are disabled by default. Individual generative AI policies can override this setting.
 
-`LinkPreviews` If false, AI is not used to generate link previews (Firefox 144).
+`Chatbot` Controls access to AI chatbots in the sidebar. If false, AI chatbots are not available in the sidebar.
 
-`TabGroups` If false,  AI is not used to suggest names and tabs for tab groups (Firefox 144).
+`LinkPreviews` (Firefox 144+) Controls whether AI is used to generate link previews. If false, AI is not used to generate link previews.
 
-`Locked` prevents the user from changing generative AI preferences.
+`TabGroups` (Firefox 144+) Controls whether AI is used to suggest names and tabs for tab groups. If false, AI is not used to suggest names or tabs for tab groups.
+
+`Locked` Prevents the user from changing generative AI preferences.
 
 **Compatibility:** Firefox 144, Firefox ESR 140.4\
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.ml.chat.enabled`, `browser.ml.linkPreview.optin`, `browser.tabs.groups.smart.userEnabled`
+**Preferences Affected:** `browser.ml.chat.enabled`, `browser.ml.chat.page`, `browser.ml.linkPreview.optin`, `browser.tabs.groups.smart.userEnabled`
 
 #### Windows (GPO)
 ```
+Software\Policies\Mozilla\Firefox\GenerativeAI\Enabled = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\GenerativeAI\Chatbot = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\GenerativeAI\LinkPreviews = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\GenerativeAI\TabGroups = 0x1 | 0x0
@@ -3654,6 +3657,7 @@ Software\Policies\Mozilla\Firefox\GenerativeAI\Locked = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_Enabled
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_Chatbot
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_LinkPreviews
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_TabGroups
@@ -3668,6 +3672,8 @@ Value (string):
 <dict>
   <key>GenerativeAI</key>
   <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
     <key>Chatbot</key>
     <true/> | <false/>
     <key>LinkPreviews</key>
@@ -3684,6 +3690,7 @@ Value (string):
 {
   "policies": {
     "GenerativeAI": {
+      "Enabled": true | false,
       "Chatbot": true | false,
       "LinkPreviews": true | false,
       "TabGroups": true | false,
