@@ -81,6 +81,7 @@
       <string id="SUPPORTED_FF142">Firefox 142 ou supérieur, Firefox 140.2 ESR ou supérieur</string>
       <string id="SUPPORTED_FF144">Firefox 144 ou supérieur, Firefox 140.4 ESR ou supérieur</string>
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 ou supérieur</string>
+      <string id="SUPPORTED_FF145_ONLY">Firefox 145 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -818,6 +819,14 @@ Si cette stratégie est désactivée ou non configurée, le mode de protection c
       <string id="TrackingProtection_SuspectedFingerprinting_Explain">Si cette stratégie est activée, Firefox réduit la quantité d’informations exposées aux sites Web afin de se protéger contre les tentatives potentielles d’empreinte numérique.
 
 Si cette stratégie est désactivée ou non configurée, Firefox ne réduit pas les informations exposées pour les cas d’empreinte numérique suspectée.</string>
+      <string id="TrackingProtection_BaselineExceptions">Exceptions de base</string>
+      <string id="TrackingProtection_BaselineExceptions_Explain">Si cette stratégie est activée, Firefox appliquera automatiquement les exceptions nécessaires pour éviter les défaillances majeures des sites web.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n’appliquera pas automatiquement les exceptions nécessaires pour éviter les défaillances majeures des sites web.</string>
+      <string id="TrackingProtection_ConvenienceExceptions">Exceptions de commodité</string>
+      <string id="TrackingProtection_ConvenienceExceptions_Explain">Si cette stratégie est activée, Firefox appliquera automatiquement les exceptions nécessaires pour corriger de petits problèmes et rendre certaines fonctionnalités pratiques disponibles.
+
+Si cette stratégie est désactivée ou non configurée, Firefox n’appliquera pas automatiquement ces exceptions.</string>
       <string id="RequestedLocales">Langue demandée</string>
       <string id="RequestedLocalesString">Langue demandée (chaîne)</string>
       <string id="RequestedLocales_Explain">Si cette stratégie est activée, vous pouvez spécifier une liste de langues demandées pour l'application, par ordre de préférence. Cela activera le pack linguistique correspondant.
