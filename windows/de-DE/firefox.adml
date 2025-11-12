@@ -180,7 +180,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer auf Informationen zur Fehlerbehebung und about:support zugreifen.</string>
       <string id="DisableSetDesktopBackground">Als Hintergrundbild einrichten deaktivieren</string>
-      <string id="DisableSetDesktopBackground_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Bilder nicht mit Hilfe von "Als Hintergrundbild einrichten…" als Desktophintergrund festlegen.
+      <string id="DisableSetDesktopBackground_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Bilder nicht mit Hilfe von "Als Hintergrundbild einrichten..." als Desktophintergrund festlegen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Bilder mit Hilfe von "Als Hintergrundbild einrichten.." als Desktophintergrund festlegen.</string>
       <string id="CaptivePortal">Captive Portal Unterstützung</string>
@@ -252,9 +252,9 @@ Weitere Informationen über den Standard-Browser-Agent finden Sie unter https://
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können die Werkzeuge für Webentwickler in Firefox benutzt werden.</string>
       <string id="DisableFeedbackCommands">Feedback Commands deaktivieren</string>
-      <string id="DisableFeedbackCommands_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind "Feedback senden..." und "Betrügerische Website melden…" im Hilfemenü nicht verfügbar.
+      <string id="DisableFeedbackCommands_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind "Feedback senden..." und "Betrügerische Website melden..." im Hilfemenü nicht verfügbar.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind "Feedback senden..." und "Betrügerische Website melden.." im Hilfemenü verfügbar.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind "Feedback senden..." und "Betrügerische Website melden..." im Hilfemenü verfügbar.</string>
       <string id="DisableFirefoxAccounts">Firefox-Konto deaktivieren</string>
       <string id="DisableFirefoxAccounts_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht Firefox-Konto nicht zur Verfügung, dies beinhaltet auch die Synchronisierung.
 
@@ -292,7 +292,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, ist p
       <string id="DisableProfileImport">Profil-Import deaktivieren</string>
       <string id="DisableProfileImport_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht die Option "Daten von einen anderen Browser importieren.." in der Bibliothek nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option "Daten von einen anderen Browser importieren.." in der Bibliothek zur Verfügung.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option "Daten von einen anderen Browser importieren..." in der Bibliothek zur Verfügung.</string>
       <string id="DisableProfileRefresh">Firefox bereinigen deaktivieren</string>
       <string id="DisableProfileRefresh_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der "Firefox bereinigen..." Button auf der about:support Seite oder auf support.mozilla.org nicht zur Verfügung.
 
@@ -322,7 +322,7 @@ Mozilla empfiehlt, die Telemetrie nicht zu deaktivieren. Durch Telemetrie gesamm
       <string id="DisplayBookmarksToolbar">Lesezeichenleiste anzeigen (Veraltet)</string>
       <string id="DisplayBookmarksToolbar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Lesezeichenleiste standardmäßig in der Menüleiste angezeigt, der Benutzer kann diese wieder ausblenden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Lesezeichenleiste nicht in der Menüleiste angzeigt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Lesezeichenleiste nicht in der Menüleiste angezeigt.</string>
       <string id="DisplayBookmarksToolbar_Enum">Lesezeichen-Symbolleiste anzeigen</string>
       <string id="DisplayBookmarksToolbar_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kann die Standardanzeige der Lesezeichen-Symbolleiste konfiguriert werden.
 
@@ -333,7 +333,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="DisplayMenuBar">Menüleiste anzeigen (Veraltet)</string>
       <string id="DisplayMenuBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Menüleiste standardmäßig angezeigt, der Benutzer kann diese wieder ausblenden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Menüleiste standrdmäßig nicht angezeigt.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Menüleiste standardmäßig nicht angezeigt.</string>
       <string id="DisplayMenuBar_Enum">Menüleiste anzeigen</string>
       <string id="DisplayMenuBar_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie wählen, ob die Menüleiste angezeigt wird oder nicht und ob der Benutzer die Menüleiste ein- und ausblenden kann oder nicht.
 
@@ -1132,7 +1132,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erlau
       <string id="FirefoxSuggest_Locked">Keine Änderung der Firefox Suggest-Einstellungen zulassen</string>
       <string id="FirefoxSuggest_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Firefox Suggest-Einstellungen nicht vom Benutzer geändert werden.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer seine Firefox Suggest-Einstellungen ändern..</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer seine Firefox Suggest-Einstellungen ändern.</string>
       <string id="PrintingEnabled">Drucken</string>
       <string id="PrintingEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Drucken deaktiviert.
 
@@ -1279,32 +1279,26 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
       <string id="FirefoxHome_Search_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird das Suchfeld auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird das Suchfeld auf der Seite „Neuer Tab“ angezeigt.</string>
-
       <string id="FirefoxHome_TopSites">Schnellzugriffe</string>
       <string id="FirefoxHome_TopSites_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden die Schnellzugriffe auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden die Schnellzugriffe auf der Seite „Neuer Tab“ angezeigt.</string>
-
       <string id="FirefoxHome_SponsoredTopSites">Gesponserte Schnellzugriffe</string>
       <string id="FirefoxHome_SponsoredTopSites_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden gesponserte Schnellzugriffe auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden gesponserte Schnellzugriffe auf der Seite „Neuer Tab“ angezeigt.</string>
-
       <string id="FirefoxHome_Highlights">Letzte Aktivität</string>
       <string id="FirefoxHome_Highlights_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die letzte Aktivität auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die letzte Aktivität auf der Seite „Neuer Tab“ angezeigt.</string>
-
       <string id="FirefoxHome_Stories">Storys</string>
       <string id="FirefoxHome_Stories_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Storys auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Storys auf der Seite „Neuer Tab“ angezeigt.</string>
-
       <string id="FirefoxHome_SponsoredStories">Gesponserte Storys</string>
       <string id="FirefoxHome_SponsoredStories_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden gesponserte Storys auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden gesponserte Storys auf der Seite „Neuer Tab“ angezeigt.</string>
-
       <string id="FirefoxHome_Locked">Änderung von Einstellungen nicht zulassen</string>
       <string id="FirefoxHome_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen für die Firefox-Startseite vom Benutzer nicht geändert werden.
 

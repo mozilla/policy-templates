@@ -182,7 +182,7 @@ If this policy is disabled or not configured, the user can access Troubleshootin
       <string id="DisableSetDesktopBackground">Disable Set Desktop Background</string>
       <string id="DisableSetDesktopBackground_Explain">If this policy is enabled, the user cannot set an image as their desktop background.
 
-If this policy is disabled or not configured, users can set images as their desktop background.</string>
+If this policy is disabled or not configured, the user can set images as their desktop background.</string>
       <string id="CaptivePortal">Captive Portal</string>
       <string id="CaptivePortal_Explain">If this policy is disabled, captive portal support is disabled.
 
@@ -230,9 +230,9 @@ If this policy is disabled or not configured, DNS Over HTTPS uses the default Fi
 
 If this policy is enabled or not configured, Firefox will use your default DNS resolver if there is a problem with the secure DNS provider.</string>
       <string id="DisableMasterPasswordCreation">Disable Master Password Creation</string>
-      <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, users cannot create a master password.
+      <string id="DisableMasterPasswordCreation_Explain">If this policy is enabled, the user cannot create a master password.
 
-If this policy is disabled or not configured, users can create a master password.</string>
+If this policy is disabled or not configured, the user can create a master password.</string>
       <string id="DisableAppUpdate">Disable Update</string>
       <string id="DisableAppUpdate_Explain">If this policy is enabled, the browser does not receive updates.
 
@@ -278,9 +278,9 @@ If this policy is disabled or not configured, the "Forget" button is available.<
 
 If this policy is disabled or not configured, Firefox will remember form and search history.</string>
       <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
-      <string id="DisablePasswordReveal_Explain">If this policy is enabled, users cannot show passwords in saved logins.
+      <string id="DisablePasswordReveal_Explain">If this policy is enabled, the user cannot show passwords in saved logins.
 
-If this policy is disabled or not configured, users can show passwords in saved logins.</string>
+If this policy is disabled or not configured, the user can show passwords in saved logins.</string>
       <string id="DisablePocket">Disable Pocket (Deprecated)</string>
       <string id="DisablePocket_Explain">If this policy is enabled, Pocket is not available.
 
@@ -359,7 +359,7 @@ If this policy is disabled or not configured, no extensions are uninstalled.</st
       <string id="Extensions_Locked">Prevent extensions from being disabled or removed</string>
       <string id="Extensions_Locked_Explain">If this policy is enabled, you can specify a list of extension IDs that the user will be unable to uninstall or disable.
 
-If this policy is disabled or not configured, no extensions are locked</string>
+If this policy is disabled or not configured, no extensions are locked.</string>
       <string id="ExtensionUpdate">Extension Update</string>
       <string id="ExtensionUpdate_Explain">If this policy is disabled, extensions will not be updated automatically.
 
@@ -711,7 +711,7 @@ If this policy is disabled or not configured, websites are not filtered.</string
       <string id="Bookmark48">Bookmark 48</string>
       <string id="Bookmark49">Bookmark 49</string>
       <string id="Bookmark50">Bookmark 50</string>
-      <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark be added to Firefox. Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
+      <string id="Bookmark_Explain">If this policy is enabled, you can configure a bookmark to be added to Firefox. Due to a bug, you must select the location. Note that you must specify the bookmarks in order.
 
 If this policy is disabled or not configured, a new bookmark is not added.</string>
       <string id="BookmarkPlacementToolbar">Toolbar</string>
@@ -763,13 +763,13 @@ If this policy is not configured, the user is prompted for a download location, 
 
 Select the connection type and then fill in the appropriate sections. Due to a bug, you must select a value for the SOCKS proxy version.
 
-If this policy is disabled or not configured, the default network settings are used and user can change them.</string>
+If this policy is disabled or not configured, the default network settings are used and the user can change them.</string>
       <string id="SOCKSVersion4">SOCKS v4</string>
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Automatic proxy configuration URL</string>
-      <string id="AutoConfigURL_Explain">These should only be set if you selected autoConfig</string>
+      <string id="AutoConfigURL_Explain">These should only be set if you selected AutoConfig</string>
       <string id="Passthrough">Proxy bypass URLs</string>
-      <string id="Passthrough_Explain">These should only be set if you selected manual proxy</string>
+      <string id="Passthrough_Explain">These should only be set if you selected Manual Proxy</string>
       <string id="Connection">Connection Type</string>
       <string id="NoProxy">No Proxy</string>
       <string id="SystemProxy">Use system proxy settings</string>
@@ -779,9 +779,9 @@ If this policy is disabled or not configured, the default network settings are u
       <string id="TrackingProtection">Tracking Protection (Moved)</string>
       <string id="TrackingProtection_Explain">If this policy is not configured, tracking protection is not enabled by default in the browser but it is enabled by default in private browsing and the user can change it.
 
-If this policy is disabled, tracking protection is disabled and locked in both the browser and private browsing.
+If this policy is disabled, tracking protection is disabled and locked in both regular and private browsing.
 
-If this policy is enabled, private browsing is enabled by default in both the browser and private browsing and you can choose whether or not to prevent the user from changing it.</string>
+If this policy is enabled, tracking protection is enabled by default in both regular and private browsing and you can choose whether or not to prevent the user from changing it.</string>
       <string id="TrackingProtection_group">Tracking Protection</string>
       <string id="TrackingProtection_Value">Enabled</string>
       <string id="TrackingProtection_Value_Explain">If this policy is enabled, tracking protection is enabled.
@@ -826,7 +826,7 @@ If this policy is disabled or not configured, Firefox will not automatically app
       <string id="TrackingProtection_ConvenienceExceptions">Convenience Exceptions</string>
       <string id="TrackingProtection_ConvenienceExceptions_Explain">If this policy is enabled, Firefox will apply exceptions automatically that are only required to fix minor issues and make convenience features available.
 
-If this policy is disabled or not configured, Firefox will not Firefox will apply exceptions automatically that are only required to fix minor issues and make convenience features available.</string>
+If this policy is disabled or not configured, Firefox will not apply exceptions automatically that are only required to fix minor issues and make convenience features available.</string>
       <string id="RequestedLocales">Requested locale</string>
       <string id="RequestedLocalesString">Requested locale (string)</string>
       <string id="RequestedLocales_Explain">If this policy is enabled, you can specify a list of requested locales for the application in order of preference. It will cause the corresponding language pack to become active.
@@ -975,9 +975,9 @@ If this policy is disabled or not configured, Picture-in-Picture settings can be
       <string id="PrimaryPassword">Primary (Master) Password</string>
       <string id="PrimaryPassword_Explain">If this policy is enabled, a primary password is required.
 
-If this policy is disabled, users cannot create a primary password.
+If this policy is disabled, the user cannot create a primary password.
 
-If this policy is not configured, users can choose to create a primary password.</string>
+If this policy is not configured, the user can choose to create a primary password.</string>
       <string id="HandlersOneLine">Handlers (JSON on one line)</string>
       <string id="Handlers">Handlers</string>
       <string id="Handlers_Explain">If this policy is enabled, you can use JSON to configure default application handlers.
@@ -1013,9 +1013,9 @@ If this policy is disabled or not configured, managed bookmarks are not added.
 
 For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks.</string>
       <string id="AllowedDomainsForApps">Define domains allowed to access Google Workspace</string>
-      <string id="AllowedDomainsForApps_Explain">If this policy is enabled, users can only access Google Workspace for the specified domains (separated by a comma). To allow access to Gmail, you can add consumer_accounts.
+      <string id="AllowedDomainsForApps_Explain">If this policy is enabled, the user can only access Google Workspace for the specified domains (separated by a comma). To allow access to Gmail, you can add consumer_accounts.
 
-If this policy is disabled or not configured, users can access any account on Google Workspace as well as Gmail.</string>
+If this policy is disabled or not configured, the user can access any account on Google Workspace as well as Gmail.</string>
       <string id="BackgroundAppUpdate">Background updater</string>
       <string id="BackgroundAppUpdate_Explain">If this policy is disabled, the application will not try to install updates when the application is not running.
 
@@ -1097,9 +1097,9 @@ If this policy is disabled, DNS is not proxied when using SOCKS.
 
 If this policy is not configured, DNS is not proxied when using SOCKS v4, but proxied when using SOCKS v5.</string>
       <string id="DisableThirdPartyModuleBlocking">Disable Third Party Module Blocking</string>
-      <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, users are not allowed to block third-party modules from the about:third-party page.
+      <string id="DisableThirdPartyModuleBlocking_Explain">If this policy is enabled, the user is not allowed to block third-party modules from the about:third-party page.
 
-If this policy is disabled or not configured, users are allowed to block third-party modules from the about:third-party page.</string>
+If this policy is disabled or not configured, the user is allowed to block third-party modules from the about:third-party page.</string>
       <string id="ContainersOneLine">Containers (JSON on one line)</string>
       <string id="Containers">Containers</string>
       <string id="Containers_Explain">If this policy is enabled, you can use JSON to configure the default containers.
@@ -1132,13 +1132,13 @@ If this policy is disabled or not configured, the user can change their Firefox 
 
 If this policy is enabled or not configured, printing is enabled.</string>
       <string id="ManualAppUpdateOnly">Manual Update Only</string>
-      <string id="ManualAppUpdateOnly_Explain">If this policy is enabled, users will not be prompted to install updates and Firefox will not check for updates in the background. The user must manually check and install updates from the About dialog.
+      <string id="ManualAppUpdateOnly_Explain">If this policy is enabled, the user will not be prompted to install updates and Firefox will not check for updates in the background. The user must manually check and install updates from the About dialog.
 
 If this policy is disabled or not configured, the browser receives updates.
 
 This policy is not recommended for most users.</string>
       <string id="AllowFileSelectionDialogs">Allow File Selection Dialogs</string>
-      <string id="AllowFileSelectionDialogs_Explain">If this policy is disabled, users will not be able to open file selection dialogs. In most cases, Firefox will act as if the user clicked the cancel button.
+      <string id="AllowFileSelectionDialogs_Explain">If this policy is disabled, the user will not be able to open file selection dialogs. In most cases, Firefox will act as if the user clicked the cancel button.
 
 If this policy is enabled or not configured, users can open file selection dialogs.</string>
       <string id="AutofillAddressEnabled">Enable autofill for addresses</string>
@@ -1272,27 +1272,27 @@ If this policy is disabled or not configured, the Firefox Terms of Use and Priva
       <string id="FirefoxHome_Search">Search</string>
       <string id="FirefoxHome_Search_Explain">If this policy is disabled, the search field is not displayed on the new tab page.
 
-If this policy is disabled or not configured, the search field is displayed on the new tab page.</string>
+If this policy is enabled or not configured, the search field is displayed on the new tab page.</string>
       <string id="FirefoxHome_TopSites">Shortcuts</string>
       <string id="FirefoxHome_TopSites_Explain">If this policy is disabled, shortcuts are not displayed on the new tab page.
 
-If this policy is disabled or not configured, shortcuts are displayed on the new tab page.</string>
+If this policy is enabled or not configured, shortcuts are displayed on the new tab page.</string>
       <string id="FirefoxHome_SponsoredTopSites">Sponsored Shortcuts</string>
       <string id="FirefoxHome_SponsoredTopSites_Explain">If this policy is disabled, sponsored shortcuts are not displayed on the new tab page.
 
-If this policy is disabled or not configured, sponsored are shortcuts displayed on the new tab page.</string>
+If this policy is enabled or not configured, sponsored shortcuts are displayed on the new tab page.</string>
       <string id="FirefoxHome_Highlights">Recent Activity</string>
-      <string id="FirefoxHome_Highlights_Explain">If this policy is disabled, recent activity not displayed on the new tab page.
+      <string id="FirefoxHome_Highlights_Explain">If this policy is disabled, recent activity is not displayed on the new tab page.
 
-If this policy is disabled or not configured, recent activity is displayed on the new tab page.</string>
+If this policy is enabled or not configured, recent activity is displayed on the new tab page.</string>
       <string id="FirefoxHome_Stories">Stories</string>
       <string id="FirefoxHome_Stories_Explain">If this policy is disabled, stories are not displayed on the new tab page.
 
-If this policy is disabled or not configured, stories are displayed on the new tab page.</string>
+If this policy is enabled or not configured, stories are displayed on the new tab page.</string>
       <string id="FirefoxHome_SponsoredStories">Sponsored Stories</string>
       <string id="FirefoxHome_SponsoredStories_Explain">If this policy is disabled, sponsored stories are not displayed on the new tab page.
 
-If this policy is disabled or not configured, sponsored stories are displayed on the new tab page.</string>
+If this policy is enabled or not configured, sponsored stories are displayed on the new tab page.</string>
       <string id="FirefoxHome_Locked">Do not allow preferences to be changed</string>
       <string id="FirefoxHome_Locked_Explain">If this policy is enabled, Firefox Home preferences cannot be changed by the user.
 
@@ -1316,11 +1316,11 @@ If this policy is enabled or not configured, AI can be used to generate link pre
       <string id="GenerativeAI_TabGroups">Tab Groups</string>
       <string id="GenerativeAI_TabGroups_Explain">If this policy is disabled, AI is not used to suggest names and tabs for tab groups.
 
-If this policy is enabled or not configured, AI is not used to suggest names and tabs for tab groups.</string>
+If this policy is enabled or not configured, AI is used to suggest names and tabs for tab groups.</string>
       <string id="GenerativeAI_Locked">Do not allow preferences to be changed</string>
-      <string id="GenerativeAI_Locked_Explain">If this policy is enabled, generative AI preferences cannot be changed by the user.
+      <string id="GenerativeAI_Locked_Explain">If this policy is enabled, the user cannot change generative AI preferences.
 
-If this policy is disabled or not configured, generative AI preferences cannot be changed by the user.</string>
+If this policy is disabled or not configured, the user can change generative AI preferences.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:

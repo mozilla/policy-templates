@@ -120,19 +120,19 @@
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
       <string id="AppAutoUpdate">Mise à jour automatique de l’application</string>
-      <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis a jour sans aprobation de l'utilisateur.
+      <string id="AppAutoUpdate_Explain">Si cette stratégie est activée, Firefox est automatiquement mis à jour sans approbation de l'utilisateur.
 
 Si cette stratégie est désactivée, les mises à jour de Firefox sont téléchargées mais l'utilisateur peut choisir quand installer la mise à jour.
 
 Si cette stratégie n'est pas configurée, l'utilisateur peut choisir de ne pas automatiquement mettre à jour Firefox.</string>
       <string id="AppUpdateURL">URL de mise à jour personnalisée</string>
-      <string id="AppUpdateURL_Explain">Si cette stratégie est activée, vous pouvez définir une URL vers un serveur de mise à jour autre que celui par défaut. Cela pourrait être utile si vous exécutez votre propre serveur de mise à jour sur votre réseau.
+      <string id="AppUpdateURL_Explain">Si cette stratégie est activée, vous pouvez définir une URL vers un serveur de mise à jour autre que celui par défaut. Cela peut être utile si vous exécutez votre propre serveur de mise à jour sur votre réseau.
 
 Si cette stratégie est désactivée ou non configurée, l'URL de mise à jour par défaut est utilisée.</string>
       <string id="Authentication_SPNEGO">SPNEGO</string>
       <string id="Authentication_SPNEGO_Explain">Si cette stratégie est activée, les sites Web spécifiés sont autorisés à s’authentifier avec SPNEGO sur le navigateur. Les entrées de la liste sont au format mondomaine.com ou https://monautredomaine.com.
 
-Si cette stratégie est désactivée ou non configurée, aucun site Web n'est autorisé à effectuer l'authentification SPNEGO avec le navigateur..
+Si cette stratégie est désactivée ou non configurée, aucun site Web n'est autorisé à effectuer l'authentification SPNEGO avec le navigateur.
 
 Pour plus d'informations, voir https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_Delegated">Délégué</string>
@@ -154,7 +154,7 @@ Si cette stratégie est désactivée ou non configurée, NTLM et SPNEGO ne sont 
       <string id="Authentication_AllowProxies">Autoriser les proxy</string>
       <string id="Authentication_AllowProxies_Explain">Si cette option est désactivée, SPNEGO et NTLM ne s'authentifieront pas auprès des serveurs Proxy.
 
-Si cette stratégie est activée (et les cases à cocher sont cochées) ou non configurée, NTLM et SPNEGO s'authentifieront toujours avec des Proxys.</string>
+Si cette stratégie est activée (et les cases à cocher sont cochées) ou non configurée, NTLM et SPNEGO s'authentifieront toujours avec des proxies.</string>
       <string id="Authentication_Locked">Ne pas autoriser la modification des préférences d'authentification</string>
       <string id="Authentication_Locked_Explain">Si cette stratégie est désactivée, les préférences d'authentification peuvent être modifiées par l'utilisateur.
 
@@ -174,7 +174,7 @@ Si cette stratégie est désactivée ou non configurée, l'utilisateur peut acc�
       <string id="BlockAboutProfiles">Bloquer about:profiles</string>
       <string id="BlockAboutProfiles_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder à about:profiles.
 
-Si cette stratégie est désactivée ou non configurée, l'utilisateur ne peut pas accéder à about:profiles.</string>
+Si cette stratégie est désactivée ou non configurée, l'utilisateur peut accéder à about:profiles.</string>
       <string id="BlockAboutSupport">Bloquer les informations de dépannage</string>
       <string id="BlockAboutSupport_Explain">Si cette stratégie est activée, l'utilisateur ne peut pas accéder aux informations de dépannage ni à about:support.
 
@@ -470,7 +470,7 @@ Si cette stratégie n'est pas configurée ou est désactivée, en navigation pri
       <string id="Cookies_Behavior_Reject">Rejeter tous les cookies</string>
       <string id="Cookies_Behavior_LimitForeign">Rejeter les cookies tiers pour les sites que vous n'avez pas visités</string>
       <string id="Cookies_Behavior_RejectTracker">Rejeter les cookies des traqueurs connus</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Rejeter les cookies pour les traceurs connus et partitionner les cookies tiers (Protection totale des cookies)</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Rejeter les cookies pour les traqueurs connus et partitionner les cookies tiers (Protection totale des cookies)</string>
       <string id="Camera_Allow_Explain">Si cette stratégie est activée, l'accès à la caméra est toujours autorisé pour les origines indiquées.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut pour la caméra est appliquée.</string>
@@ -552,7 +552,7 @@ Si cette stratégie est désactivée ou non configurée, la stratégie par défa
       <string id="VirtualReality_Block_Explain">Si cette stratégie est activée, l'accès aux dispositifs de réalité virtuelle est bloqué pour les origines indiquées.
 
 Si cette stratégie est désactivée ou non configurée, l'accès aux dispositifs de réalité virtuelle n'est pas bloqué par défaut.</string>
-      <string id="VirtualReality_BlockNewRequests">Bloquer les nouvelles demandes d'accès aux dispositifs de réalité virtuelle.</string>
+      <string id="VirtualReality_BlockNewRequests">Bloquer les nouvelles demandes d'accès aux dispositifs de réalité virtuelle</string>
       <string id="VirtualReality_BlockNewRequests_Explain">Si cette stratégie est activée, les sites qui ne figurent pas dans la stratégie "Autoriser" ne seront pas autorisés à demander la permission d'accéder aux dispositifs de réalité virtuelle.
 
 Si cette stratégie est désactivée ou non configurée, tout site qui ne figure pas dans la stratégie "Bloquer" peut demander la permission d'accéder aux dispositifs de réalité virtuelle.</string>
@@ -857,7 +857,7 @@ Si cette stratégie est désactivée ou non configurée, aucun nouveau moteur de
       <string id="SearchBar_Separate">Séparée</string>
       <string id="SearchEngine_Method_GET">GET</string>
       <string id="SearchEngine_Method_POST">POST</string>
-      <string id="SearchEngines_Default">Moteur de rechercher par défaut</string>
+      <string id="SearchEngines_Default">Moteur de recherche par défaut</string>
       <string id="SearchEngines_Default_Explain">Si cette stratégie est activée, vous pouvez définir le nom d'un moteur de recherche à utiliser comme moteur par défaut.
 
 Si cette stratégie est désactivée ou non configurée, le moteur de recherche par défaut de Firefox est utilisé.</string>
@@ -1562,11 +1562,11 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <checkBox refId="FirefoxHome_Search">Recherche</checkBox>
         <checkBox refId="FirefoxHome_TopSites">Sites populaires</checkBox>
         <checkBox refId="FirefoxHome_SponsoredTopSites">Sites populaires sponsorisés</checkBox>
-        <checkBox refId="FirefoxHome_Highlights">Historique des téléchargements</checkBox>
+        <checkBox refId="FirefoxHome_Highlights">Activité récente</checkBox>
         <checkBox refId="FirefoxHome_Pocket">Recommandé par Pocket</checkBox>
         <checkBox refId="FirefoxHome_SponsoredPocket">Histoires sponsorisées par Pocket</checkBox>
         <checkBox refId="FirefoxHome_Snippets">Extraits</checkBox>
-        <checkBox refId="FirefoxHome_Locked">Ne pas autoriser les modifications des paramètres</checkBox>
+        <checkBox refId="FirefoxHome_Locked">Ne pas autoriser la modifications des paramètres</checkBox>
       </presentation>
       <presentation id="ExtensionSettings">
         <multiTextBox refId="ExtensionSettings"/>
