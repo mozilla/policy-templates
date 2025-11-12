@@ -2928,6 +2928,8 @@ Software\Policies\Mozilla\Firefox\EnableTrackingProtection\EmailTracking = 0x1 |
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\SuspectedFingerprinting = 0x1 | 0x0
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Exceptions\1 = "https://example.com"
 Software\Policies\Mozilla\Firefox\EnableTrackingProtection\Category = "strict" | "standard"
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\BaselineExceptions = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\EnableTrackingProtection\ConvenienceExceptions = 0x1 | 0x0
 ```
 #### Windows (Intune)
 OMA-URI:
@@ -2995,6 +2997,22 @@ Value (string):
 ```
 <enabled/> or <disabled/>
 ```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/H_TrackingProtection_BaselineExceptions
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/H_TrackingProtection_ConvenienceExceptions
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
 #### macOS
 ```
 <dict>
@@ -3018,6 +3036,10 @@ Value (string):
     <array>
       <string>https://example.com</string>
     </array>
+    <key>BaselineExceptions</key>
+    <true/> | <false/>
+    <key>ConvenienceExceptions</key>
+    <true/> | <false/>
   </dict>
 </dict>
 ```
@@ -3033,7 +3055,9 @@ Value (string):
       "EmailTracking": true | false,
       "SuspectedFingerprinting": true | false,
       "Category": "strict" | "standard",
-      "Exceptions": ["https://example.com"]
+      "Exceptions": ["https://example.com"],
+      "BaselineExceptions": true | false,
+      "ConvenienceExceptions": true | false
     }
   }
 }
