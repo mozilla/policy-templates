@@ -135,7 +135,7 @@
 
 Если эта политика отключена или не настроена, никаким веб-сайтам не разрешается использовать аутентификацию SPNEGO с помощью браузера.
 
-Для получения дополнительной информации см. Https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
+Для получения дополнительной информации см. https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_Delegated">Делегированная авторизация</string>
       <string id="Authentication_Delegated_Explain">Если эта политика включена, браузер может делегировать авторизацию пользователя серверу для указанных веб-сайтов. Записи в списке имеют формат mydomain.com или https://myotherdomain.com.
 
@@ -982,7 +982,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика не настроена, пользователи могут создать основной пароль.</string>
       <string id="HandlersOneLine">Обработчики (JSON on one line)</string>
-      <string id="Handlers">Обработчики</string>HTTP Allow
+      <string id="Handlers">Обработчики</string>
       <string id="Handlers_Explain">Если эта политика включена, вы можете использовать JSON для настройки обработчиков приложений по умолчанию.
 
 Если эта политика отключена или не настроена, используются настройки Firefox по умолчанию.
@@ -1374,7 +1374,7 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
       <string id="geo_enabled">geo.enabled</string>
       <string id="extensions_getAddons_showPane">extensions.getAddons.showPane</string>
       <string id="intl_accept_languages">intl.accept_languages</string>
-      <string id="media_eme_enabled">media.eme.enabled (Deprecated)</string>
+      <string id="media_eme_enabled">media.eme.enabled (устарело)</string>
       <string id="media_gmp-gmpopenh264_enabled">media.gmp-gmpopenh264.enabled</string>
       <string id="media_gmp-widevinecdm_enabled">media.gmp-widevinecdm.enabled</string>
       <string id="network_dns_disableIPv6">network.dns.disableIPv6</string>
