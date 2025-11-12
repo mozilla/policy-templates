@@ -1427,7 +1427,6 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
         <listBox refId="WebsiteFilter"/>
       </presentation>
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
-      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Разрешить всплывающие окна для веб-сайтов</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
       </presentation>
@@ -1439,13 +1438,6 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
       </presentation>
       <presentation id="SearchBar">
         <dropdownList refId="SearchBar"/>
-      </presentation>
-      <presentation id="TrackingProtection">
-        <checkBox refId="TrackingProtectionLocked">Не разрешать изменение настройки защиты от отслеживания.</checkBox>
-        <checkBox refId="Cryptomining">Блокировать скрипты майнинга.</checkBox>
-        <checkBox refId="Fingerprinting">Блокировать скрипты снятия отпечатков пальцев.</checkBox>
-        <text>Исключения:</text>
-        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="TrackingProtection_Exceptions">
         <listBox refId="TrackingProtection_Exceptions"/>
@@ -1524,49 +1516,6 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
       <presentation id="SearchEngines_Remove">
         <listBox refId="SearchEngines_Remove"/>
       </presentation>
-      <presentation id="Proxy">
-        <checkBox refId="ProxyLocked">Не разрешать изменение настроек прокси.</checkBox>
-         <text>Тип подключения:</text>
-         <dropdownList refId="ConnectionType"/>
-         <text>HTTP-прокси:</text>
-        <textBox refId="HTTPProxy">
-          <label/>
-        </textBox>
-        <checkBox refId="UseHTTPProxyForAllProtocols">Использовать этот прокси-сервер для всех протоколов.</checkBox>
-        <text>SSL прокси:</text>
-        <textBox refId="SSLProxy">
-          <label/>
-        </textBox>
-        <text>FTP прокси:</text>
-        <textBox refId="FTPProxy">
-          <label/>
-        </textBox>
-        <text>SOCKS хост:</text>
-        <textBox refId="SOCKSProxy">
-          <label/>
-        </textBox>
-        <text>SOCKS версия:</text>
-        <dropdownList refId="SOCKSVersion"/>
-        <text>Нет прокси для</text>
-        <textBox refId="Passthrough">
-          <label/>
-        </textBox>
-        <text>Например: .mozilla.org, .net.nz, 192.168.1.0/24</text>
-        <text>URL автоматической настройки прокси:</text>
-        <textBox refId="AutoConfigURL">
-          <label/>
-        </textBox>
-        <checkBox refId="AutoLogin">Не запрашивать аутентификацию, если пароль сохранен.</checkBox>
-         <checkBox refId="UseProxyForDNS">Прокси-сервер DNS при использовании SOCKS v5.</checkBox>
-       </presentation>
-       <presentation id="DNSOverHTTPS">
-         <text>URL-адрес поставщика:</text>
-         <textBox refId="ProviderURL">
-           <label/>
-         </textBox>
-         <checkBox refId="DNSOverHTTPSEnabled">Включить DNS через HTTPS.</checkBox>
-         <checkBox refId="DNSOverHTTPSLocked">Запретить изенение настроек DNS через HTTPS.</checkBox>
-       </presentation>
       <presentation id="SSLVersionMin">
         <dropdownList refId="SSLVersion" defaultItem="2"/>
       </presentation>
@@ -1603,16 +1552,6 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
       </presentation>
       <presentation id="LocalFileLinks">
         <listBox refId="LocalFileLinks"/>
-      </presentation>
-      <presentation id="SanitizeOnShutdown">
-        <checkBox refId="SanitizeOnShutdown_Cache">Кэш</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Cookies">Файлы cookie</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Downloads">История загрузок</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Данные форм&amp;История поиска</checkBox>
-        <checkBox refId="SanitizeOnShutdown_History">История просмотров</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Sessions">Активные логины</checkBox>
-        <checkBox refId="SanitizeOnShutdown_SiteSettings">Настройки сайта</checkBox>
-        <checkBox refId="SanitizeOnShutdown_OfflineApps">Данные автономного веб-сайта</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">Поиск</checkBox>

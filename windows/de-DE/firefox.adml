@@ -1434,7 +1434,6 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <listBox refId="WebsiteFilter"/>
       </presentation>
       <presentation id="Permissions"><listBox refId="Permissions"/></presentation>
-      <presentation id="PopupsAllow"><listBox refId="PopupsAllowDesc">Pop-up-Blocker deaktivieren</listBox></presentation>
       <presentation id="Cookies_AcceptThirdParty">
         <dropdownList refId="Cookies_AcceptThirdParty"/>
       </presentation>
@@ -1446,13 +1445,6 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="SearchBar">
         <dropdownList refId="SearchBar"/>
-      </presentation>
-      <presentation id="TrackingProtection">
-        <checkBox refId="TrackingProtectionLocked">Änderungen am Schutz vor Aktivitätenverfolgung nicht erlauben</checkBox>
-        <checkBox refId="Cryptomining">Cryptomining-Skripte blockieren.</checkBox>
-        <checkBox refId="Fingerprinting">Identifizierer-Skripte (Fingerprinter) blockieren.</checkBox>
-        <text>Ausnahmen:</text>
-        <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="TrackingProtection_Exceptions">
         <listBox refId="TrackingProtection_Exceptions"/>
@@ -1531,49 +1523,6 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       <presentation id="SearchEngines_Remove">
         <listBox refId="SearchEngines_Remove"/>
       </presentation>
-      <presentation id="Proxy">
-        <checkBox refId="ProxyLocked">Ändern der Proxy-Einstellungen nicht erlauben</checkBox>
-        <text>Verbindungs-Einstellungen</text>
-        <dropdownList refId="ConnectionType"/>
-        <text>HTTP Proxy:</text>
-        <textBox refId="HTTPProxy">
-          <label/>
-        </textBox>
-        <checkBox refId="UseHTTPProxyForAllProtocols">Für alle Protokolle diesen Proxy-Server verwenden.</checkBox>
-        <text>SSL Proxy:</text>
-        <textBox refId="SSLProxy">
-          <label/>
-        </textBox>
-        <text>FTP Proxy:</text>
-        <textBox refId="FTPProxy">
-          <label/>
-        </textBox>
-        <text>SOCKS Host:</text>
-        <textBox refId="SOCKSProxy">
-          <label/>
-        </textBox>
-        <text>SOCKS Version:</text>
-        <dropdownList refId="SOCKSVersion"/>
-        <text>Kein Proxy für:</text>
-        <textBox refId="Passthrough">
-          <label/>
-        </textBox>
-        <text>Beispiel: .mozilla.org, .net.nz, 192.168.1.0/24</text>
-        <text>Automatische Proxy-Konfigurations-Adresse:</text>
-        <textBox refId="AutoConfigURL">
-          <label/>
-        </textBox>
-        <checkBox refId="AutoLogin">Keine Authentifizierungsanfrage bei gespeichertem Passwort.</checkBox>
-        <checkBox refId="UseProxyForDNS">Bei Verwendung von SOCKS v5 den Proxy für DNS-Anfragen verwenden.</checkBox>
-      </presentation>
-      <presentation id="DNSOverHTTPS">
-        <text>Provider URL:</text>
-        <textBox refId="ProviderURL">
-          <label/>
-        </textBox>
-        <checkBox refId="DNSOverHTTPSEnabled">DNS über HTTPS aktivieren.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS-über-HTTPS Einstellungen nicht erlauben.</checkBox>
-      </presentation>
       <presentation id="SSLVersionMin">
         <dropdownList refId="SSLVersion" defaultItem="2"/>
       </presentation>
@@ -1610,16 +1559,6 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="LocalFileLinks">
         <listBox refId="LocalFileLinks"/>
-      </presentation>
-      <presentation id="SanitizeOnShutdown">
-        <checkBox refId="SanitizeOnShutdown_Cache">Cache</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Cookies">Cookies</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Downloads">Download-Chronik</checkBox>
-        <checkBox refId="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe &amp; Formulardaten</checkBox>
-        <checkBox refId="SanitizeOnShutdown_History">Besuchte Seiten</checkBox>
-        <checkBox refId="SanitizeOnShutdown_Sessions">Aktive Logins</checkBox>
-        <checkBox refId="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</checkBox>
-        <checkBox refId="SanitizeOnShutdown_OfflineApps">Offline-Website-Daten</checkBox>
       </presentation>
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">Suche</checkBox>
