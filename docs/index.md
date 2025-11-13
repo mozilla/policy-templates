@@ -3579,9 +3579,11 @@ Value (string):
 ### FirefoxSuggest
 Customize Firefox Suggest (US only).
 
+As of Firefox 146, `WebSuggestions` turns off Suggest completely.
+
 **Compatibility:** Firefox 118, Firefox ESR 115.3.
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.urlbar.suggest.quicksuggest.nonsponsored`, `browser.urlbar.suggest.quicksuggest.sponsored`, `browser.urlbar.quicksuggest.dataCollection.enabled`
+**Preferences Affected:** `browser.urlbar.suggest.quicksuggest.all`, `browser.urlbar.suggest.quicksuggest.sponsored`, `browser.urlbar.quicksuggest.dataCollection.enabled`
 
 #### Windows (GPO)
 ```
