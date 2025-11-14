@@ -84,6 +84,7 @@
       <definition name="SUPPORTED_FF144" displayName="$(string.SUPPORTED_FF144)"/>
       <definition name="SUPPORTED_FF144_ONLY" displayName="$(string.SUPPORTED_FF144_ONLY)"/>
       <definition name="SUPPORTED_FF145_ONLY" displayName="$(string.SUPPORTED_FF145_ONLY)"/>
+      <definition name="SUPPORTED_FF146_ONLY" displayName="$(string.SUPPORTED_FF146_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -196,6 +197,9 @@
       <parentCategory ref="firefox"/>
     </category>
     <category displayName="$(string.GenerativeAI_group)" name="GenerativeAI">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.BrowserDataBackup_group)" name="BrowserDataBackup">
       <parentCategory ref="firefox"/>
     </category>
   </categories>
@@ -4775,6 +4779,26 @@
     <policy name="GenerativeAI_Locked" class="Both" displayName="$(string.GenerativeAI_Locked)" explainText="$(string.GenerativeAI_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="Locked">
       <parentCategory ref="GenerativeAI"/>
       <supportedOn ref="SUPPORTED_FF144"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="BrowserDataBackup_AllowBackup" class="Both" displayName="$(string.BrowserDataBackup_AllowBackup)" explainText="$(string.BrowserDataBackup_AllowBackup_Explain)" key="Software\Policies\Mozilla\Firefox\BrowserDataBackup" valueName="AllowBackup">
+      <parentCategory ref="BrowserDataBackup"/>
+      <supportedOn ref="SUPPORTED_FF146"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="BrowserDataBackup_AllowRestore" class="Both" displayName="$(string.BrowserDataBackup_AllowRestore)" explainText="$(string.BrowserDataBackup_AllowRestore_Explain)" key="Software\Policies\Mozilla\Firefox\BrowserDataBackup" valueName="AllowRestore">
+      <parentCategory ref="BrowserDataBackup"/>
+      <supportedOn ref="SUPPORTED_FF146"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
