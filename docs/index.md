@@ -317,7 +317,9 @@ Prevent Firefox from being updated beyond the specified version.
 
 You can specify the any version as ```xx.``` and Firefox will be updated with all minor versions, but will not be updated beyond the major version.
 
-You can also specify the version as ```xx.xx``` and Firefox will be updated with all patch versions, but will not be updated beyond the minor version.
+You can also specify the version as ```xx.xx.``` and Firefox will be updated with all patch versions, but will not be updated beyond the minor version.
+
+Note: The value MUST end in a dot(.).
 
 You should specify a version that exists or is guaranteed to exist. If you specify a version that doesn't end up existing, Firefox will update beyond that version.
 
