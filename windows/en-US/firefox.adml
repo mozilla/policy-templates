@@ -82,6 +82,7 @@
       <string id="SUPPORTED_FF144">Firefox 144 or later, Firefox 140.4 ESR or later</string>
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 or later</string>
       <string id="SUPPORTED_FF145_ONLY">Firefox 145 or later</string>
+      <string id="SUPPORTED_FF146_ONLY">Firefox 146 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -116,6 +117,7 @@
       <string id="InterceptionPoints_DragAndDrop_group">Drag And Drop</string>
       <string id="FirefoxHome_group">Firefox Home</string>
       <string id="GenerativeAI_group">Generative AI</string>
+      <string id="BrowserDataBackup_group">Browser Data Backup</string>
       <string id="Allow">Allowed Sites</string>
       <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
@@ -1321,6 +1323,14 @@ If this policy is enabled or not configured, AI is used to suggest names and tab
       <string id="GenerativeAI_Locked_Explain">If this policy is enabled, the user cannot change generative AI preferences.
 
 If this policy is disabled or not configured, the user can change generative AI preferences.</string>
+      <string id="BrowserDataBackup_AllowBackup">Allow Backup</string>
+      <string id="BrowserDataBackup_AllowBackup_Explain">If this policy is disabled, backup is disabled.
+
+If this policy is enabled or not configured, backup is enabled.</string>
+      <string id="BrowserDataBackup_AllowRestore">Allow Restore</string>
+      <string id="BrowserDataBackup_AllowRestore_Explain">If this policy is disabled, restore is disabled.
+
+If this policy is enabled or not configured, restore is enabled.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
