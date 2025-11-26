@@ -31,6 +31,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
 | **[`BlockAboutSupport`](#blockaboutsupport)** | Block access to Troubleshooting Information (about:support).
 | **[`Bookmarks`](#bookmarks)** | Add bookmarks in either the bookmarks toolbar or menu.
+| **[`BrowserDataBackup`](#browserdatabackup)** | Disable backup or restore of profile data.
 | **[`CaptivePortal`](#captiveportal)** | Enable or disable the detection of captive portals.
 | **[`Certificates`](#certificates)** |
 | **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
@@ -1002,6 +1003,56 @@ Value (string):
   }
 }
 ```
+
+### BrowserDataBackup
+
+Disable backup or restore of profile data. Backup and restore can be disabled individually. 
+
+Note: The policy can be used to disable backup and restore if it would otherwise be enabled, but cannot be used to force backup or restore to be enabled under conditions where it would not otherwise be (such as a platform on which backup or restore are not yet supported).
+
+**Compatibility:** Firefox 146\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A\
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowBackup = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowRestore = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Backup/BrowserDataBackup_AllowBackup
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Backup/BrowserDataBackup_AllowRestore
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>BrowserDataBackup/key>
+  <dict>
+    <key>AllowBackup</key>
+    <true/> | <false/>
+    <key>AllowRestore</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "BrowserDataBackup": {
+      "AllowBackup": true | false,
+      "AllowRestore": true | false
+    }
+  }
+}
+```
+
 ### CaptivePortal
 Enable or disable the detection of captive portals.
 
