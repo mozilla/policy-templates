@@ -334,6 +334,7 @@
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
+      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
