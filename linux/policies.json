@@ -87,7 +87,7 @@
     "DisableSystemAddonUpdate": true | false,
     "DisableTelemetry": true | false,
     "DisplayBookmarksToolbar": "always" | "never" | "newtab",
-    "DisplayMenuBar": "always", "never", "default-on", "default-off",
+    "DisplayMenuBar": "always" | "never" | "default-on" | "default-off",
     "DNSOverHTTPS": {
       "Enabled":  true | false,
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
