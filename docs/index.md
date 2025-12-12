@@ -56,7 +56,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`DisablePasswordReveal`](#disablepasswordreveal)** | Do not allow passwords to be revealed in saved logins.
 | **[`DisablePocket`](#disablepocket-deprecated)** | Remove Pocket in the Firefox UI.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
-| **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
+| **[`DisableProfileImport`](#disableprofileimport)** | Remove the ability to import data from other browers.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
 | **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
 | **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
@@ -2375,7 +2375,7 @@ Value (string):
 }
 ```
 ### DisableProfileImport
-Disables the "Import data from another browser" option in the bookmarks window.
+Remove the ability to import data from other browers.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\

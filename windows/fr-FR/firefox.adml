@@ -290,9 +290,9 @@ Si cette stratégie est désactivée ou non configurée, Pocket est disponible.<
 
 Si cette stratégie est désactivée ou non configurée, la navigation privée est autorisée.</string>
       <string id="DisableProfileImport">Désactiver l'importation de profil</string>
-      <string id="DisableProfileImport_Explain">Si cette stratégie est activée, l'option "Importer des données depuis un autre navigateur" n’est pas disponible dans la fenêtre des favoris.
+      <string id="DisableProfileImport_Explain">Si cette stratégie est activée, vous ne pouvez pas importer de données depuis d’autres navigateurs.
 
-Si cette stratégie est désactivée ou non configurée, l'option "Importer des données depuis un autre navigateur" est disponible.</string>
+Si cette stratégie est désactivée ou non configurée, vous pouvez importer des données depuis d’autres navigateurs.</string>
       <string id="DisableProfileRefresh">Désactiver l'actualisation du profil</string>
       <string id="DisableProfileRefresh_Explain">Si cette stratégie est activée, le bouton "Actualiser Firefox" n'est pas disponible sur la page about:support ou sur support.mozilla.org.
 
