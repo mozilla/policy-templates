@@ -1,0 +1,45 @@
+name: "Policy templates"
+description: Report a problem with the policy templates
+title: "[bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If this report is about Firefox policy *implementation* or the *policy engine*, you can file it in Bugzilla directly:
+
+        https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox&component=Enterprise+Policies
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: One or two sentences describing the issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to see?
+    validations:
+      required: true
+
+  - type: input
+    id: firefox-version
+    attributes:
+      label: Firefox version
+      placeholder: "Firefox 123.0, ESR 115.6"
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 15.7.1, Ubuntu 22.04"
+    validations:
+      required: false
