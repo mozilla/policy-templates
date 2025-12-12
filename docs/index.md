@@ -30,7 +30,6 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`BlockAboutConfig`](#blockaboutconfig)** | Block access to about:config.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
 | **[`BlockAboutSupport`](#blockaboutsupport)** | Block access to Troubleshooting Information (about:support).
-| **[`BrowserDataBackup`](#browserdatabackup)** | Disable backup or restore of profile data.
 | **[`Bookmarks`](#bookmarks)** | Add bookmarks in either the bookmarks toolbar or menu.
 | **[`CaptivePortal`](#captiveportal)** | Enable or disable the detection of captive portals.
 | **[`Certificates`](#certificates)** |
@@ -904,72 +903,6 @@ Value (string):
   }
 }
 ```
-
-
-
-
-
-### BrowserDataBackup
-Clear data on shutdown.
-
-`AllowBackup`
-
-`AllowRestore`
-
-**Compatibility:** Firefox 146
-**CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.backup.enabled`, `browser.backup.archive.enabled`, `browser.backup.restore.enabled`
-
-#### Windows (GPO)
-```
-Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowBackup = 0x1 | 0x0
-Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowRestore = 0x1 | 0x0
-```
-#### Windows (Intune)
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~BrowserDataBackup/BrowserDataBackup_AllowBackup
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~BrowserDataBackup/BrowserDataBackup_AllowRestore
-```
-Value (string):
-```
-<enabled/> or <disabled/>
-```
-#### macOS
-```
-<dict>
-  <key>BrowserDataBackup</key>
-  <dict>
-    <key>AllowBackup</key>
-    <true/> | <false/>
-    <key>AllowRestore</key>
-    <true/> | <false/>
-  </dict>
-</dict>
-```
-#### policies.json
-```
-{
-  "policies": {
-    "BrowserDataBackup": {
-      "AllowBackup": true | false,
-      "AllowRestore": true | false
-    }
-  }
-}
-```
-
-
-
-
-
 ### Bookmarks
 
 Note: [`ManagedBookmarks`](#managedbookmarks) is the new recommended way to add bookmarks. This policy will continue to be supported.
