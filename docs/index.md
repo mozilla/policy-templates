@@ -6478,8 +6478,6 @@ Value (string):
   }
 }
 ```
-<a name="SearchEngines"></a>
-
 ### SearchEngines
 
 As of Firefox 139, this policy is available in all versions of Firefox.
