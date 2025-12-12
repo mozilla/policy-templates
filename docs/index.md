@@ -3344,32 +3344,36 @@ Value (string):
 ### ExtensionSettings
 Manage all aspects of extensions. This policy is based heavily on the [Chrome policy](https://dev.chromium.org/administrators/policy-list-3/extension-settings-full) of the same name.
 
-This policy maps an extension ID to its configuration. With an extension ID, the configuration will be applied to the specified extension only. A default configuration can be set for the special ID "*", which will apply to all extensions that don't have a custom configuration set in this policy.
+This policy maps an extension ID to its configuration. With an extension ID, the configuration will be applied to the specified extension only. A default configuration can be set for the special ID `"*"`, which will apply to all extensions that don't have a custom configuration set in this policy.
 
-To obtain an extension ID, install the extension and go to about:support. You will see the ID in the Extensions section. I've also created an extension that makes it easy to find the ID of extensions on AMO. You can download it [here](https://github.com/mkaply/queryamoid/releases/tag/v0.1).
-Or you can ask the Mozilla Addons API, see [docs](https://mozilla.github.io/addons-server/topics/api/addons.html#detail), which returns the ID as `guid`: https://addons.mozilla.org/api/v5/addons/addon/ublock-origin/
+To obtain an extension ID, install the extension and go to **about:support**. You will see the ID in the Extensions section. I've also created an extension that makes it easy to find the ID of extensions on AMO. You can download it [here](https://github.com/mkaply/queryamoid/releases/tag/v0.1).
 
 **Note:**
-If the extension ID is a UUID ({12345678-1234-1234-1234-1234567890ab}), you must include the curly braces around the ID.
+If the extension ID is a UUID (for example `{12345678-1234-1234-1234-1234567890ab}`), you must include the curly braces around the ID.
 
 The configuration for each extension is another dictionary that can contain the fields documented below.
 
 | Name | Description |
 | --- | --- |
-| `installation_mode` | Maps to a string indicating the installation mode for the extension. The valid strings are `allowed`,`blocked`,`force_installed`, and `normal_installed`.
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`allowed` | Allows the extension to be installed by the user. This is the default behavior. There is no need for an install_url; it will automatically be allowed based on the ID.
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blocked`| Blocks installation of the extension and removes it from the device if already installed.
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed`| The extension is automatically installed and can't be removed by the user. This option is not valid for the default configuration and requires an install_url.
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed`| The extension is automatically installed but can be disabled by the user. This option is not valid for the default configuration and requires an install_url.
-| `install_url`| Maps to a URL indicating where Firefox can download a force_installed or normal_installed extension.  If installing from the local file system, use a [```file:///``` URL](https://en.wikipedia.org/wiki/File_URI_scheme). If installing from the addons.mozilla.org, use the following URL (substituting ID with the extension ID or with the short name from the URL on AMO), https://addons.mozilla.org/firefox/downloads/latest/ID/latest.xpi. Languages packs are available from https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi. If you need to update the extension, you can change the name of the extension and it will be automatically updated. Extensions installed from file URLs will additional be updated when their internal version changes.
-| `install_sources` | A list of sources from which installing extensions is allowed using URL match patterns. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.xpi file and the page where the download is started from (i.e.  the referrer) must be allowed by these patterns. This setting can be used only for the default configuration.
-| `allowed_types` | This setting whitelists the allowed types of extension/apps that can be installed in Firefox. The value is a list of strings, each of which should be one of the following: "extension", "theme", "dictionary", "locale" This setting can be used only for the default configuration.
-| `blocked_install_message` | This maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when the extension is blocked. This could be used to direct users to your help desk, explain why a particular extension is blocked, or something else. This setting can be used only for the default configuration.
-| `restricted_domains` | An array of domains on which content scripts can't be run. This setting can be used only for the default configuration.
-| `updates_disabled` | (Firefox 89, Firefox ESR 78.11) Boolean that indicates whether or not to disable automatic updates for an individual extension.
-| `default_area` | (Firefox 113) String that indicates where to place the extension icon by default. Possible values are `navbar` and `menupanel`.
-| `temporarily_allow_weak_signatures`| (Firefox 127) A boolean that indicates whether to allow installing extensions signed using deprecated signature algorithms.
-| `private_browsing`| (Firefox 136, Firefox ESR 128.8) A boolean that indicates whether or not this extension should be enabled in private browsing.
+| `installation_mode` | Maps to a string indicating the installation mode for the extension. The valid strings are `allowed`, `blocked`, `force_installed`, and `normal_installed`. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`allowed` | Allows the extension to be installed by the user. This is the default behavior. There is no need for an `install_url`; it will automatically be allowed based on the ID. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`blocked` | Blocks installation of the extension and removes it from the device if already installed. If used in the default (`"*"`) configuration, it blocks all extensions that do not have an explicit configuration with a different `installation_mode`. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`force_installed` | Automatically installs the extension and prevents it from being removed by the user. This option is not valid for the default configuration and requires an `install_url`. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normal_installed` | Automatically installs the extension but allows it to be disabled by the user. This option is not valid for the default configuration and requires an `install_url`. |
+|`install_url` | The URL from which Firefox can download a `force_installed` or `normal_installed` extension. Firefox automatically installs, updates, or re-installs the extension when the XPI file’s internal [`version`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/version) changes.<ul><li>If installing from `addons.mozilla.org`, use `https://addons.mozilla.org/firefox/downloads/latest/ADDON_ID/latest.xpi` and substitute **ADDON_ID** with the extension’s ID (for example, `uBlock0@raymondhill.net` or `{446900e4-71c2-419f-a6a7-df9c091e268b}`). Using the AMO ID ensures Firefox always downloads the latest version that matches the user’s platform.</li><li>If installing from the local file system, use a [`file:///` URL](https://en.wikipedia.org/wiki/File_URI_scheme). Firefox will update or re-install the extension whenever the XPI file at that path changes. You can also manually trigger an update by changing the file name or path.</li><li>Language packs are available from `https://releases.mozilla.org/pub/firefox/releases/VERSION/PLATFORM/xpi/LANGUAGE.xpi` (for example, `https://releases.mozilla.org/pub/firefox/releases/111.0.1/win64/xpi/en-US.xpi`). These URLs can be used as `install_url` values for managing language pack installation.</li></ul>
+| `install_sources` | A list of sources from which installing extensions is allowed using URL match patterns. **This is unnecessary if you are only allowing the installation of certain extensions by ID.** Each item in this list is an extension-style match pattern. Users will be able to easily install items from any URL that matches an item in this list. Both the location of the `.xpi` file and the page where the download is started (the referrer) must be allowed by these patterns. This setting can be used only for the default configuration. |
+| `allowed_types` | Restricts which types of add-ons can be installed. Accepts a list of one or more of: `"extension"`, `"theme"`, `"dictionary"`, `"locale"`. <br><br>**Note:** This setting only applies when installation is otherwise allowed. If `"installation_mode": "blocked"` is set (either for a specific ID or for `"*"`), extensions remain blocked regardless of `allowed_types`. This setting can be used only for the default configuration. |
+| `blocked_install_message` | Maps to a string specifying the error message to display to users if they're blocked from installing an extension. This setting allows you to append text to the generic error message displayed when an extension is blocked. This could be used to direct users to your help desk, explain why a particular extension is blocked, or something similar. This setting can be used only for the default configuration. |
+| `restricted_domains` | An array of domains on which content scripts can't be run. This setting can be used only for the default configuration. |
+| `updates_disabled` | (Firefox 89, Firefox ESR 78.11) Boolean that indicates whether or not to disable automatic updates for an individual extension. |
+| `default_area` | (Firefox 113) String that indicates where to place the extension icon by default. Possible values are `navbar` and `menupanel`. |
+| `temporarily_allow_weak_signatures` | (Firefox 127) A boolean that indicates whether to allow installing extensions signed using deprecated signature algorithms. |
+| `private_browsing` | (Firefox 136, Firefox ESR 128.8) A boolean that indicates whether or not this extension should be enabled in private browsing. |
+
+#### Interaction Notes
+- `"installation_mode": "blocked"` takes precedence over all other settings. When set, extensions cannot be installed regardless of `allowed_types` or `install_sources`. A configuration for a specific extension ID still overrides the `"*"` configuration.
+- To block all extensions except a few, use `"installation_mode": "blocked"` for `"*"` and explicitly override it for allowed or force-installed extensions.
+- To block extensions but allow themes, dictionaries, and language packs, use `"allowed_types": ["theme", "dictionary", "locale"]` in the default (`"*"` ) configuration. (`"locale"` corresponds to Firefox language packs.)
 
 **Compatibility:** Firefox 69, Firefox ESR 68.1 (As of Firefox 85, Firefox ESR 78.7, installing a theme makes it the default.)\
 **CCK2 Equivalent:** N/A\
@@ -3382,8 +3386,7 @@ Software\Policies\Mozilla\Firefox\ExtensionSettings (REG_MULTI_SZ) =
   "*": {
     "blocked_install_message": "Custom error message.",
     "install_sources": ["https://yourwebsite.com/*"],
-    "installation_mode": "blocked",
-    "allowed_types": ["extension"]
+    "installation_mode": "blocked"
   },
   "uBlock0@raymondhill.net": {
     "installation_mode": "force_installed",
@@ -3412,8 +3415,7 @@ Value (string):
   "*": {
     "blocked_install_message": "Custom error message.",
     "install_sources": ["https://yourwebsite.com/*"],
-    "installation_mode": "blocked",
-    "allowed_types": ["extension"]
+    "installation_mode": "blocked"
   },
   "uBlock0@raymondhill.net": {
     "installation_mode": "force_installed",
@@ -3430,7 +3432,7 @@ Value (string):
 }'/>
 ```
 If you are using custom ADMX and ADML administrative templates in Intune, you can use this OMA-URI instead
-to workaround the limit on the length of strings. Put all of your JSON on one line.
+to work around the limit on the length of strings. Put all of your JSON on one line.
 
 OMA-URI:
 ```
@@ -3456,10 +3458,6 @@ Value (string):
       </array>
       <key>installation_mode</key>
       <string>blocked</string>
-      <key>allowed_types</key>
-      <array>
-        <string>extension</string>
-      </array>
     </dict>
     <key>uBlock0@raymondhill.net</key>
     <dict>
@@ -3493,8 +3491,7 @@ Value (string):
       "*": {
         "blocked_install_message": "Custom error message.",
         "install_sources": ["https://yourwebsite.com/*"],
-        "installation_mode": "blocked",
-        "allowed_types": ["extension"]
+        "installation_mode": "blocked"
       },
       "uBlock0@raymondhill.net": {
         "installation_mode": "force_installed",
