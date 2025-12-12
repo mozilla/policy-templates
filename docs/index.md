@@ -6330,8 +6330,6 @@ or
   }
 }
 ```
-<a name="SanitizeOnShutdown"></a>
-
 ### SanitizeOnShutdown (Selective)
 Clear data on shutdown.
 
@@ -6535,8 +6533,6 @@ Value (string):
   }
 }
 ```
-<a name="SearchEngines"></a>
-
 ### SearchEngines
 
 As of Firefox 139, this policy is available in all versions of Firefox.
