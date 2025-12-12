@@ -82,6 +82,7 @@
       <string id="SUPPORTED_FF144">Firefox 144 ou supérieur, Firefox 140.4 ESR ou supérieur</string>
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 ou supérieur</string>
       <string id="SUPPORTED_FF145_ONLY">Firefox 145 ou supérieur</string>
+      <string id="SUPPORTED_FF146_ONLY">Firefox 146 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -116,6 +117,7 @@
       <string id="InterceptionPoints_DragAndDrop_group">Glisser-déposer</string>
       <string id="FirefoxHome_group">Page d’accueil de Firefox</string>
       <string id="GenerativeAI_group">IA générative</string>
+      <string id="BrowserDataBackup_group">Sauvegarde des données du navigateur</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
@@ -1328,6 +1330,22 @@ Si cette stratégie est activée ou non configurée, l’IA est utilisée pour s
       <string id="GenerativeAI_Locked_Explain">Si cette stratégie est activée, les préférences de l’IA générative ne peuvent pas être modifiées par l’utilisateur.
 
 Si cette stratégie est désactivée ou non configurée, les préférences de l’IA générative peuvent être modifiées par l’utilisateur.</string>
+      <string id="BrowserDataBackup_AllowBackup">Autoriser la sauvegarde</string>
+      <string id="BrowserDataBackup_AllowBackup_Explain">Si cette stratégie est activée, les données du profil de navigateur peuvent être sauvegardées lorsque la sauvegarde est prise en charge par la plateforme.
+
+Si cette stratégie est désactivée, les données du profil de navigateur ne peuvent pas être sauvegardées.
+
+Si cette stratégie n’est pas configurée, la disponibilité de la sauvegarde suit la valeur par défaut de la plateforme.
+
+Cette stratégie ne peut pas être utilisée pour activer la sauvegarde sur des plateformes ou dans des configurations où la sauvegarde n’est pas autrement prise en charge.</string>
+      <string id="BrowserDataBackup_AllowRestore">Autoriser la restauration</string>
+      <string id="BrowserDataBackup_AllowRestore_Explain">Si cette stratégie est activée, les données du profil de navigateur peuvent être restaurées à partir de sauvegardes lorsque la restauration est prise en charge par la plateforme.
+
+Si cette stratégie est désactivée, les données du profil de navigateur ne peuvent pas être restaurées à partir de sauvegardes.
+
+Si cette stratégie n’est pas configurée, la disponibilité de la restauration suit la valeur par défaut de la plateforme.
+
+Cette stratégie ne peut pas être utilisée pour activer la restauration sur des plateformes ou dans des configurations où la restauration n’est pas autrement prise en charge.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :
