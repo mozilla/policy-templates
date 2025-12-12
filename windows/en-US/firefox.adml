@@ -1324,7 +1324,7 @@ If this policy is enabled or not configured, AI is used to suggest names and tab
 
 If this policy is disabled or not configured, the user can change generative AI preferences.</string>
       <string id="BrowserDataBackup_AllowBackup">Allow Backup</string>
-      <string id="BrowserDataBackup_AllowBackup_Explain">f this policy is enabled, browser profile data can be backed up when backup is supported on the platform.
+      <string id="BrowserDataBackup_AllowBackup_Explain">If this policy is enabled, browser profile data can be backed up when backup is supported on the platform.
 
 If this policy is disabled, browser profile data cannot be backed up.
 

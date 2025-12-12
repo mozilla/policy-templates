@@ -1022,8 +1022,8 @@ Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowRestore = 0x1 | 0x0
 #### Windows (Intune)
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Backup/BrowserDataBackup_AllowBackup
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Backup/BrowserDataBackup_AllowRestore
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~BrowserDataBackup/BrowserDataBackup_AllowBackup
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~BrowserDataBackup/BrowserDataBackup_AllowRestore
 ```
 Value (string):
 ```
