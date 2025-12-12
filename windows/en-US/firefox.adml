@@ -1324,13 +1324,21 @@ If this policy is enabled or not configured, AI is used to suggest names and tab
 
 If this policy is disabled or not configured, the user can change generative AI preferences.</string>
       <string id="BrowserDataBackup_AllowBackup">Allow Backup</string>
-      <string id="BrowserDataBackup_AllowBackup_Explain">If this policy is disabled, backup is disabled.
+      <string id="BrowserDataBackup_AllowBackup_Explain">f this policy is enabled, browser profile data can be backed up when backup is supported on the platform.
 
-If this policy is enabled or not configured, backup is enabled.</string>
+If this policy is disabled, browser profile data cannot be backed up.
+
+If this policy is not configured, backup availability follows the platform default.
+
+This policy cannot be used to enable backup on platforms or in configurations where backup is not otherwise supported.</string>
       <string id="BrowserDataBackup_AllowRestore">Allow Restore</string>
-      <string id="BrowserDataBackup_AllowRestore_Explain">If this policy is disabled, restore is disabled.
+      <string id="BrowserDataBackup_AllowRestore_Explain">If this policy is enabled, browser profile data can be restored from backups when restore is supported on the platform.
 
-If this policy is enabled or not configured, restore is enabled.</string>
+If this policy is disabled, browser profile data cannot be restored from backups.
+
+If this policy is not configured, restore availability follows the platform default.
+
+This policy cannot be used to enable restore on platforms or in configurations where restore is not otherwise supported.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
