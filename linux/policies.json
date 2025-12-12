@@ -41,7 +41,7 @@
     ],
     "CaptivePortal": true | false,
     "Certificates": {
-      "Install": ["cert1.der", "/home/username/cert2.pem"],
+      "Install": ["cert1.der", "/home/username/cert2.pem"]
     },
     "Containers": {
       "Default": [
@@ -58,12 +58,12 @@
       "Block": ["http://example.edu/"],
       "Locked": true | false,
       "Behavior": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
-      "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
+      "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
     },
     "DefaultDownloadDirectory": "${home}/Downloads",
     "DisableBuiltinPDFViewer": true | false,
     "DisabledCiphers": {
-      "CIPHER_NAME": true | false,
+      "CIPHER_NAME": true | false
     },
     "DisableDeveloperTools": true | false,
     "DisableEncryptedClientHello": true | false,
@@ -87,7 +87,7 @@
     "DisableSystemAddonUpdate": true | false,
     "DisableTelemetry": true | false,
     "DisplayBookmarksToolbar": "always" | "never" | "newtab",
-    "DisplayMenuBar": "always", "never", "default-on", "default-off",
+    "DisplayMenuBar": "always" | "never" | "default-on" | "default-off",
     "DNSOverHTTPS": {
       "Enabled":  true | false,
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
@@ -285,7 +285,7 @@
         "Block": ["https://example.edu"],
         "BlockNewRequests": true | false,
         "Locked": true | false
-      },
+      }
     },
     "PictureInPicture": {
       "Enabled": true | false,
@@ -334,6 +334,7 @@
     "SanitizeOnShutdown": {
       "Cache": true | false,
       "Cookies": true | false,
+      "FormData": true | false,
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
@@ -380,8 +381,8 @@
       "FirefoxLabs": true | false,
       "Locked": true | false
     },
-    "UseSystemPrintDialog": true | false.,
-    "VisualSearchEnabled": true | false.,
+    "UseSystemPrintDialog": true | false,
+    "VisualSearchEnabled": true | false,
     "WebsiteFilter": {
       "Block": ["<all_urls>"],
       "Exceptions": ["http://example.org/*"]

@@ -31,6 +31,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`BlockAboutProfiles`](#blockaboutprofiles)** | Block access to About Profiles (about:profiles).
 | **[`BlockAboutSupport`](#blockaboutsupport)** | Block access to Troubleshooting Information (about:support).
 | **[`Bookmarks`](#bookmarks)** | Add bookmarks in either the bookmarks toolbar or menu.
+| **[`BrowserDataBackup`](#browserdatabackup)** | Disable backup or restore of profile data.
 | **[`CaptivePortal`](#captiveportal)** | Enable or disable the detection of captive portals.
 | **[`Certificates`](#certificates)** |
 | **[`Certificates -> ImportEnterpriseRoots`](#certificates--importenterpriseroots)** | Trust certificates that have been added to the operating system certificate store by a user or administrator.
@@ -55,7 +56,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`DisablePasswordReveal`](#disablepasswordreveal)** | Do not allow passwords to be revealed in saved logins.
 | **[`DisablePocket`](#disablepocket-deprecated)** | Remove Pocket in the Firefox UI.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
-| **[`DisableProfileImport`](#disableprofileimport)** | Disables the "Import data from another browser" option in the bookmarks window.
+| **[`DisableProfileImport`](#disableprofileimport)** | Remove the ability to import data from other browers.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
 | **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
 | **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
@@ -317,7 +318,9 @@ Prevent Firefox from being updated beyond the specified version.
 
 You can specify the any version as ```xx.``` and Firefox will be updated with all minor versions, but will not be updated beyond the major version.
 
-You can also specify the version as ```xx.xx``` and Firefox will be updated with all patch versions, but will not be updated beyond the minor version.
+You can also specify the version as ```xx.xx.``` and Firefox will be updated with all patch versions, but will not be updated beyond the minor version.
+
+Note: The value MUST end in a dot(.).
 
 You should specify a version that exists or is guaranteed to exist. If you specify a version that doesn't end up existing, Firefox will update beyond that version.
 
@@ -1000,6 +1003,56 @@ Value (string):
   }
 }
 ```
+
+### BrowserDataBackup
+
+Disable backup or restore of profile data. Backup and restore can be disabled individually. 
+
+Note: The policy can be used to disable backup and restore if it would otherwise be enabled, but cannot be used to force backup or restore to be enabled under conditions where it would not otherwise be (such as a platform on which backup or restore are not yet supported).
+
+**Compatibility:** Firefox 146\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** N/A\
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowBackup = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\BrowserDataBackup\AllowRestore = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Backup/BrowserDataBackup_AllowBackup
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Backup/BrowserDataBackup_AllowRestore
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>BrowserDataBackup/key>
+  <dict>
+    <key>AllowBackup</key>
+    <true/> | <false/>
+    <key>AllowRestore</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "BrowserDataBackup": {
+      "AllowBackup": true | false,
+      "AllowRestore": true | false
+    }
+  }
+}
+```
+
 ### CaptivePortal
 Enable or disable the detection of captive portals.
 
@@ -2322,7 +2375,7 @@ Value (string):
 }
 ```
 ### DisableProfileImport
-Disables the "Import data from another browser" option in the bookmarks window.
+Remove the ability to import data from other browers.
 
 **Compatibility:** Firefox 60, Firefox ESR 60\
 **CCK2 Equivalent:** N/A\
@@ -3579,9 +3632,11 @@ Value (string):
 ### FirefoxSuggest
 Customize Firefox Suggest (US only).
 
+As of Firefox 146, `WebSuggestions` turns off Suggest completely.
+
 **Compatibility:** Firefox 118, Firefox ESR 115.3.
 **CCK2 Equivalent:** N/A\
-**Preferences Affected:** `browser.urlbar.suggest.quicksuggest.nonsponsored`, `browser.urlbar.suggest.quicksuggest.sponsored`, `browser.urlbar.quicksuggest.dataCollection.enabled`
+**Preferences Affected:** `browser.urlbar.suggest.quicksuggest.all`, `browser.urlbar.suggest.quicksuggest.sponsored`, `browser.urlbar.quicksuggest.dataCollection.enabled`
 
 #### Windows (GPO)
 ```
@@ -7142,8 +7197,6 @@ Prevent Firefox from messaging the user in certain situations.
 `MoreFromMozilla` If false, don't show the "More from Mozilla" section in Preferences. (Firefox 98)
 
 `FirefoxLabs` If false, don't show the "Firefox Labs" section in Preferences. (Firefox 130.0.1)
-
-Note: Firefox Labs is now controlled by Nimbus, our testing platform, so disabling telemetry also disables Firefox Labs.
 
 `Locked` prevents the user from changing user messaging preferences.
 

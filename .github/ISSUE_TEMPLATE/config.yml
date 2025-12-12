@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Enterprise Policies
+    url: https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox&component=Enterprise+Policies
+    about: Bugs and feature requests related to specific policies implemented in Firefox, or to the policy engine itself should go here.
+
+  - name: Ask a question
+    url: https://github.com/mozilla/policy-templates/discussions
+    about: Have a question? Consider starting a discussion.

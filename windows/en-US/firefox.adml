@@ -292,9 +292,9 @@ If this policy is disabled or not configured, Pocket is available.</string>
 
 If this policy is disabled or not configured, private browsing is allowed.</string>
       <string id="DisableProfileImport">Disable Profile Import</string>
-      <string id="DisableProfileImport_Explain">If this policy is enabled, the "Import data from another browser" option is not available in the bookmarks window.
+      <string id="DisableProfileImport_Explain">If this policy is enabled, you cannot import data from other browsers.
 
-If this policy is disabled or not configured, the "Import data from another browser" option is available.</string>
+If this policy is disabled or not configured, you can import data from other browsers.</string>
       <string id="DisableProfileRefresh">Disable Profile Refresh</string>
       <string id="DisableProfileRefresh_Explain">If this policy is enabled, the "Refresh Firefox" button is not available on the about:support page or on support.mozilla.org.
 
