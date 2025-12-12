@@ -3373,7 +3373,8 @@ The configuration for each extension is another dictionary that can contain the 
 #### Interaction Notes
 - `"installation_mode": "blocked"` takes precedence over all other settings. When set, extensions cannot be installed regardless of `allowed_types` or `install_sources`. A configuration for a specific extension ID still overrides the `"*"` configuration.
 - To block all extensions except a few, use `"installation_mode": "blocked"` for `"*"` and explicitly override it for allowed or force-installed extensions.
-- To block extensions but allow themes, dictionaries, and language packs, use `"allowed_types": ["theme", "dictionary", "locale"]` in the default (`"*"` ) configuration. (`"locale"` corresponds to Firefox language packs.)
+- To block extensions but allow themes, dictionaries, and language packs, leave the default (`"*"` ) `installation_mode` as `"allowed"` and set `"allowed_types": ["theme", "dictionary", "locale"]`. (`"locale"` corresponds to Firefox language packs.)
+  **Do not set `"installation_mode": "blocked"` in this scenario**, because `allowed_types` is ignored when installation is blocked.
 
 **Compatibility:** Firefox 69, Firefox ESR 68.1 (As of Firefox 85, Firefox ESR 78.7, installing a theme makes it the default.)\
 **CCK2 Equivalent:** N/A\
