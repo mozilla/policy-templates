@@ -7202,8 +7202,6 @@ Prevent Firefox from messaging the user in certain situations.
 
 `FirefoxLabs` If false, don't show the "Firefox Labs" section in Preferences. (Firefox 130.0.1)
 
-Note: Firefox Labs is now controlled by Nimbus, our testing platform, so disabling telemetry also disables Firefox Labs.
-
 `Locked` prevents the user from changing user messaging preferences.
 
 **Compatibility:** Firefox 75, Firefox ESR 68.7\
