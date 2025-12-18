@@ -2965,7 +2965,7 @@ IF `BaselineExceptions` is true, Firefox will automatically apply exceptions req
 
 If `ConvenienceExceptions`is true, Firefox will apply exceptions automatically that are only required to fix minor issues and make convenience features available. (Firefox 145)
 
-Note: Users can change `BaselineExceptions` and `ConvenienceExceptions` even when `Category` is set to ```strict``` unless `Locked` is set to true.
+Note: Users can change `BaselineExceptions` and `ConvenienceExceptions` even when `Category` is set to ```strict``` unless `Locked` is set to true. If `Locked` is set to true, the defaults are used unless a different value is specified in policy for `BaselineExceptions` and `ConvenienceExceptions`.
 
 **Compatibility:** Firefox 60, Firefox ESR 60 (Cryptomining and Fingerprinting added in 70/68.2, Exceptions added in 73/68.5. Category added in Firefox 142/140.2. BaselineExceptions and ConvenienceExceptions added in Firefox 145)\
 **CCK2 Equivalent:** N/A\
