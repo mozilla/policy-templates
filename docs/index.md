@@ -90,6 +90,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`LegacySameSiteCookieBehaviorEnabled`](#legacysamesitecookiebehaviorenabled)** | Enable default legacy SameSite cookie behavior setting.
 | **[`LegacySameSiteCookieBehaviorEnabledForDomainList`](#legacysamesitecookiebehaviorenabledfordomainlist)** | Revert to legacy SameSite behavior for cookies on specified sites.
 | **[`LocalFileLinks`](#localfilelinks)** | Enable linking to local files by origin.
+| **[`LocalNetworkAccess`](#localnetworkaccess)** | Configure local network access security features.
 | **[`ManagedBookmarks`](#managedbookmarks)** | Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 | **[`ManualAppUpdateOnly`](#manualappupdateonly)** | Allow manual updates only and do not notify the user about updates.
 | **[`MicrosoftEntraSSO`](#microsoftentrasso)** | Allow single sign-on for Microsoft Entra accounts on macOS.
@@ -4436,6 +4437,133 @@ Value (string):
   "policies": {
     "LocalFileLinks": ["http://example.org/",
                        "http://example.edu/"]
+  }
+}
+```
+### LocalNetworkAccess
+
+Configure local network access security features.
+
+The `LocalNetworkAccess` policy controls Firefox's behavior when websites attempt to access local network resources (localhost and local network addresses).
+
+If `Enabled` is set to false, all local network access checks are disabled and websites can freely access local network resources.
+
+If `Enabled` is set to true (default), Firefox enforces local network access security checks. This is the base flag without which none of the local network access checks below would be enforced.
+
+If `BlockTrackers` is set to true, third-party trackers are directly blocked from accessing localhost and local network resources. This is an experimental feature that helps prevent tracking scripts from scanning your local network.
+
+If `EnablePrompting` is set to true, access to local network resources will be explicitly gated via user permission prompts. Users will be asked to grant permission before a website can access local resources.
+
+`SkipDomains` is an array of domain names for which local network access checks should be skipped. This allows administrators to create exceptions for trusted domains. The array can contain both **source domains** (the website making the request) and **target domains** (the local resource being accessed):
+
+- **Source domain skipping**: When a source domain is listed, that website is allowed to access local network resources without restrictions. For example, if `"trusted-app.example.com"` is listed, that website can freely make requests to any local network resources.
+
+- **Target domain skipping**: When a target domain is listed, any website can access that specific local network resource without restrictions. For example, if `"printer.local"` is listed, all websites can access the printer device.
+
+Suffix wildcard patterns are supported using the `*.` prefix to match all subdomains:
+- `"*.company.com"` - Skips checks for all subdomains of company.com (matches app.company.com, portal.company.com, etc.)
+- `"*.internal"` - Skips checks for all .internal domains (matches device.internal, printer.internal, etc.)
+- `"web-app.example.com"` - Skips checks for this specific domain only (no subdomain matching)
+- `"*.devices.local"` - Allows access to all local devices with .devices.local suffix (printer.devices.local, scanner.devices.local, etc.)
+- `"*.corp.internal"` - Allows access to all corporate internal domains
+
+If `Locked` is set to true, users cannot change the local network access settings.
+
+**Compatibility:** Firefox 147\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `network.lna.enabled`, `network.lna.block_trackers`, `network.lna.blocking`, `network.lna.skip-domains`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\Enabled = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\BlockTrackers = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\EnablePrompting = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\SkipDomains\1 = "intranet.company.com"
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\SkipDomains\2 = "*.devices.local"
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\SkipDomains\3 = "*.corp.internal"
+Software\Policies\Mozilla\Firefox\LocalNetworkAccess\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LocalNetworkAccess_Enabled
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LocalNetworkAccess_BlockTrackers
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LocalNetworkAccess_EnablePrompting
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LocalNetworkAccess_SkipDomains
+```
+Value (string):
+```
+<enabled/>
+<data id="LocalNetworkAccess_SkipDomains" value="1&#xF000;intranet.company.com&#xF000;2&#xF000;*.devices.local&#xF000;3&#xF000;*.corp.internal"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/LocalNetworkAccess_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>LocalNetworkAccess</key>
+  <dict>
+    <key>Enabled</key>
+    <true/> | <false/>
+    <key>BlockTrackers</key>
+    <true/> | <false/>
+    <key>EnablePrompting</key>
+    <true/> | <false/>
+    <key>SkipDomains</key>
+    <array>
+      <string>intranet.company.com</string>
+      <string>*.devices.local</string>
+      <string>admin-portal.enterprise.com</string>
+      <string>*.corp.internal</string>
+    </array>
+    <key>Locked</key>
+    <true/> | <false/>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "LocalNetworkAccess": {
+      "Enabled": true | false,
+      "BlockTrackers": true | false,
+      "EnablePrompting": true | false,
+      "SkipDomains": [
+        "intranet.company.com",
+        "*.devices.local",
+        "admin-portal.enterprise.com",
+        "*.corp.internal"
+      ],
+      "Locked": true | false
+    }
   }
 }
 ```
