@@ -328,7 +328,7 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
-	<key>FirefoxHome</key>
+	<key>FirefoxSuggest</key>
 	<dict>
 		<key>WebSuggestions</key>
 		<true/>
