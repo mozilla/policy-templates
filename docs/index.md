@@ -316,7 +316,7 @@ Value (string):
 
 Prevent Firefox from being updated beyond the specified version.
 
-You can specify the any version as ```xx.``` and Firefox will be updated with all minor versions, but will not be updated beyond the major version.
+You can specify the version as ```xx.``` and Firefox will be updated with all minor versions, but will not be updated beyond the major version.
 
 You can also specify the version as ```xx.xx.``` and Firefox will be updated with all patch versions, but will not be updated beyond the minor version.
 
