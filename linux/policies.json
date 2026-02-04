@@ -39,6 +39,10 @@
         "Folder": "FolderName"
       }
     ],
+    "BrowserDataBackup": {
+      "AllowBackup": true | false,
+      "AllowRestore": true | false
+    },
     "CaptivePortal": true | false,
     "Certificates": {
       "Install": ["cert1.der", "/home/username/cert2.pem"]
