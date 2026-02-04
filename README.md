@@ -1,17 +1,16 @@
-# Policy templates for Firefox
+# Firefox Policy Templates
 
 > [!NOTE]
 > These policies are in active development and may contain changes that do not work with current versions of Firefox.
->
 > Use the [officially released versions](https://github.com/mozilla/policy-templates/releases) if you are deploying changes.
 
-The [policy reference](https://mozilla.github.io/policy-templates/) contains documentation for each policy, its intended function, the settings you can adjust, examples of valid configurations, and any platform limitations that may apply.
-
-## About policies
+This repository contains policy templates to support deploying and managing Firefox as an enterprise browser.
 
 Firefox policies allow administrators to centrally manage browser behavior, enforce security requirements, configure features, or disable certain functionality.
+Policies are commonly used in enterprise or managed environments such as businesses, schools, and public-sector organizations.
 
-Policies are commonly used in managed environments such as businesses, schools, and public-sector organizations.
-They can be deployed using platform-specific mechanisms, including Group Policy on Windows, configuration profiles on macOS, and JSON configuration files on all platforms.
+## Policy documentation
 
-This repository contains policy templates to support deploying and managing Firefox as an enterprise browser.
+Documentation for policy behavior and syntax is moving to [Firefox Admin Docs](https://firefox-admin-docs.mozilla.org/reference/policies/).
+The new docs repository is public and open to contributions, so if you want to make improvements, feel free to contribute at https://github.com/mozilla/enterprise-admin-reference.
+See the [GitHub Discussion](https://github.com/mozilla/policy-templates/discussions/1291) for more information.
