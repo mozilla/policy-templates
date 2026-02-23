@@ -4466,7 +4466,7 @@
       <parentCategory ref="ContentAnalysis"/>
       <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
-        <text id="String" valueName="AllowUrlRegexList"/>
+        <text id="String" valueName="AllowUrlRegexList" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_BypassForSameTabOperations" class="Both" displayName="$(string.ContentAnalysis_BypassForSameTabOperations)" explainText="$(string.ContentAnalysis_BypassForSameTabOperations_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="BypassForSameTabOperations">
@@ -4513,7 +4513,7 @@
       <parentCategory ref="ContentAnalysis"/>
       <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <elements>
-        <text id="String" valueName="DenyUrlRegexList"/>
+        <text id="String" valueName="DenyUrlRegexList" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="ContentAnalysis_Enabled" class="Both" displayName="$(string.ContentAnalysis_Enabled)" explainText="$(string.ContentAnalysis_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" valueName="Enabled">
