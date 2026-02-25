@@ -83,6 +83,7 @@
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 ou supérieur</string>
       <string id="SUPPORTED_FF145_ONLY">Firefox 145 ou supérieur</string>
       <string id="SUPPORTED_FF146_ONLY">Firefox 146 ou supérieur</string>
+      <string id="SUPPORTED_FF148_ONLY">Firefox 148 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -1346,6 +1347,10 @@ Si cette stratégie est désactivée, les données du profil de navigateur ne pe
 Si cette stratégie n’est pas configurée, la disponibilité de la restauration suit la valeur par défaut de la plateforme.
 
 Cette stratégie ne peut pas être utilisée pour activer la restauration sur des plateformes ou dans des configurations où la restauration n’est pas autrement prise en charge.</string>
+      <string id="DisableRemoteImprovements">Désactiver les améliorations à distance</string>
+      <string id="DisableRemoteImprovements_Explain">Si cette stratégie est activée, Firefox n’appliquera pas de modifications de performance, de stabilité ou de fonctionnalités entre les mises à jour.
+
+Si cette stratégie est désactivée ou non configurée, Firefox appliquera des modifications de performance, de stabilité ou de fonctionnalités entre les mises à jour.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

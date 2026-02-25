@@ -85,6 +85,7 @@
       <definition name="SUPPORTED_FF144_ONLY" displayName="$(string.SUPPORTED_FF144_ONLY)"/>
       <definition name="SUPPORTED_FF145_ONLY" displayName="$(string.SUPPORTED_FF145_ONLY)"/>
       <definition name="SUPPORTED_FF146_ONLY" displayName="$(string.SUPPORTED_FF146_ONLY)"/>
+      <definition name="SUPPORTED_FF148_ONLY" displayName="$(string.SUPPORTED_FF148_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -4799,6 +4800,16 @@
     <policy name="BrowserDataBackup_AllowRestore" class="Both" displayName="$(string.BrowserDataBackup_AllowRestore)" explainText="$(string.BrowserDataBackup_AllowRestore_Explain)" key="Software\Policies\Mozilla\Firefox\BrowserDataBackup" valueName="AllowRestore">
       <parentCategory ref="BrowserDataBackup"/>
       <supportedOn ref="SUPPORTED_FF146"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="DisableRemoteImprovements" class="Both" displayName="$(string.DisableRemoteImprovements)" explainText="$(string.DisableRemoteImprovements_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableRemoteImprovements">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF148"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

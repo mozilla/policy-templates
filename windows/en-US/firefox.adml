@@ -83,6 +83,7 @@
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 or later</string>
       <string id="SUPPORTED_FF145_ONLY">Firefox 145 or later</string>
       <string id="SUPPORTED_FF146_ONLY">Firefox 146 or later</string>
+      <string id="SUPPORTED_FF148_ONLY">Firefox 148 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -1339,6 +1340,10 @@ If this policy is disabled, browser profile data cannot be restored from backups
 If this policy is not configured, restore availability follows the platform default.
 
 This policy cannot be used to enable restore on platforms or in configurations where restore is not otherwise supported.</string>
+      <string id="DisableRemoteImprovements">Disable Remote Improvements</string>
+      <string id="DisableRemoteImprovements_Explain">If this policy is enabled, Firefox will not apply performance, stability, and feature changes between updates.
+
+If this policy is disabled or not configured, Firefox will apply performance, stability, and feature changes between updates.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:

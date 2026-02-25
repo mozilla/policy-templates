@@ -58,6 +58,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`DisablePrivateBrowsing`](#disableprivatebrowsing)** | Remove access to private browsing.
 | **[`DisableProfileImport`](#disableprofileimport)** | Remove the ability to import data from other browers.
 | **[`DisableProfileRefresh`](#disableprofilerefresh)** | Disable the Refresh Firefox button on about:support and support.mozilla.org
+| **[`DisableRemoteImprovements`](#disableremoteimprovements)** | Prevent Firefox from applying performance, stability, and feature changes between updates.
 | **[`DisableSafeMode`](#disablesafemode)** | Disable safe mode within the browser.
 | **[`DisableSecurityBypass`](#disablesecuritybypass)** | Prevent the user from bypassing security in certain cases.
 | **[`DisableSetDesktopBackground`](#disablesetdesktopbackground)** | Remove the "Set As Desktop Background..." menuitem when right clicking on an image.
@@ -2441,6 +2442,45 @@ Value (string):
 {
   "policies": {
     "DisableProfileRefresh": true | false
+  }
+}
+```
+### DisableRemoteImprovements
+Prevent Firefox from applying performance, stability, and feature changes between updates.
+
+For more information, see https://support.mozilla.org/en-US/kb/remote-improvements.
+
+Note: This policy is not correctly reflected in preferences. This will be fixed soon.
+
+**Compatibility:** Firefox 148\
+**CCK2 Equivalent:** N/A
+**Preferences Affected:** N/A
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DisableRemoteImprovements = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableRemoteImprovements
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>DisableRemoteImprovements</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DisableRemoteImprovements": true | false
   }
 }
 ```

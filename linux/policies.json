@@ -82,6 +82,7 @@
     "DisablePrivateBrowsing": true | false,
     "DisableProfileImport": true | false,
     "DisableProfileRefresh": true | false,
+    "DisableRemoteImprovements": true | false,
     "DisableSafeMode": true | false,
     "DisableSecurityBypass": {
       "InvalidCertificate": true | false,

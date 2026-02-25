@@ -211,6 +211,8 @@
 	<true/>
 	<key>DisableProfileRefresh</key>
 	<true/>
+	<key>DisableRemoteImprovements</key>
+	<true/>
 	<key>DisableSafeMode</key>
 	<true/>
 	<key>DisableSecurityBypass</key>

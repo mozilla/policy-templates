@@ -83,6 +83,7 @@
       <string id="SUPPORTED_FF144_ONLY">Firefox 144 oder höher</string>
       <string id="SUPPORTED_FF145_ONLY">Firefox 145 oder höher</string>
       <string id="SUPPORTED_FF146_ONLY">Firefox 146 oder höher</string>
+      <string id="SUPPORTED_FF148_ONLY">Firefox 148 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -1345,6 +1346,10 @@ Wenn diese Richtlinieneinstellung deaktiviert ist, können Browserprofil-Daten n
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, richtet sich die Verfügbarkeit der Wiederherstellung nach der Standardeinstellung der Plattform.
 
 Diese Richtlinieneinstellung kann nicht verwendet werden, um die Wiederherstellung auf Plattformen oder in Konfigurationen zu aktivieren, die die Wiederherstellung ansonsten nicht unterstützen.</string>
+      <string id="DisableRemoteImprovements">Remote-Verbesserungen deaktivieren</string>
+      <string id="DisableRemoteImprovements_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wendet Firefox zwischen Updates keine Änderungen an Leistung, Stabilität oder Funktionen an.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wendet Firefox zwischen Updates Änderungen an Leistung, Stabilität oder Funktionen an.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
