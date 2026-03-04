@@ -7376,7 +7376,7 @@ Value (string):
 }
 ```
 ### WebsiteFilter
-Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns.
+Block websites from being visited. The parameters take an array of Match Patterns, as documented in https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns.
 The arrays are limited to 1000 entries each.
 
 If you want to block all URLs, you can use `<all_urls>` or `*://*/*`. You can't have just a `*` on the right side.
