@@ -2448,7 +2448,7 @@ Value (string):
 ### DisableRemoteImprovements
 Prevent Firefox from applying performance, stability, and feature changes between updates.
 
-For more information, see https://support.mozilla.org/en-US/kb/remote-improvements.
+For more information, see [Manage remote improvements settings in Firefox](https://support.mozilla.org/en-US/kb/remote-improvements).
 
 Note: This policy is not correctly reflected in preferences. This will be fixed soon.
 
