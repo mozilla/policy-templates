@@ -84,6 +84,7 @@
       <string id="SUPPORTED_FF145_ONLY">Firefox 145 ou supérieur</string>
       <string id="SUPPORTED_FF146_ONLY">Firefox 146 ou supérieur</string>
       <string id="SUPPORTED_FF148_ONLY">Firefox 148 ou supérieur</string>
+      <string id="SUPPORTED_FF14902_ONLY">Firefox 149.0.2 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -1351,6 +1352,10 @@ Cette stratégie ne peut pas être utilisée pour activer la restauration sur de
       <string id="DisableRemoteImprovements_Explain">Si cette stratégie est activée, Firefox n’appliquera pas de modifications de performance, de stabilité ou de fonctionnalités entre les mises à jour.
 
 Si cette stratégie est désactivée ou non configurée, Firefox appliquera des modifications de performance, de stabilité ou de fonctionnalités entre les mises à jour.</string>
+      <string id="IPProtectionAvailable">Disponibilité de la protection IP (VPN)</string>
+      <string id="IPProtectionAvailable_Explain">Si cette stratégie est désactivée, le VPN intégré (Protection IP) n’est pas disponible pour les utilisateurs.
+
+Si cette stratégie est activée ou non configurée, le VPN intégré (Protection IP) est disponible.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

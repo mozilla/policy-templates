@@ -87,6 +87,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`HttpAllowlist`](#httpallowlist)** | Configure origins that will not be upgraded to HTTPS.
 | **[`HttpsOnlyMode`](#httpsonlymode)** | Configure HTTPS-Only Mode.
 | **[`InstallAddonsPermission`](#installaddonspermission)** | Configure the default extension install policy as well as origins for extension installs are allowed.
+| **[`IPProtectionAvailable`](#ipprotectionavailable)** | Prevent the built-in VPN from being available to users.
 | **[`LegacyProfiles`](#legacyprofiles)** | Disable the feature enforcing a separate profile for each installation.
 | **[`LegacySameSiteCookieBehaviorEnabled`](#legacysamesitecookiebehaviorenabled)** | Enable default legacy SameSite cookie behavior setting.
 | **[`LegacySameSiteCookieBehaviorEnabledForDomainList`](#legacysamesitecookiebehaviorenabledfordomainlist)** | Revert to legacy SameSite behavior for cookies on specified sites.
@@ -4331,6 +4332,40 @@ Value (string):
       "Default": true | false
     }
   }
+}
+```
+### IPProtectionAvailable
+Prevent the built-in VPN from being available to users.
+
+**Compatibility:** Firefox 149.0.2\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.ipProtection.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\IPProtectionAvailable = = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/IPProtectionAvailable
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>IPProtectionAvailable</key>
+  <true/> | <false/>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "IPProtectionAvailable": true | false
 }
 ```
 ### LegacyProfiles

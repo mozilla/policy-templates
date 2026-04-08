@@ -86,6 +86,7 @@
       <definition name="SUPPORTED_FF145_ONLY" displayName="$(string.SUPPORTED_FF145_ONLY)"/>
       <definition name="SUPPORTED_FF146_ONLY" displayName="$(string.SUPPORTED_FF146_ONLY)"/>
       <definition name="SUPPORTED_FF148_ONLY" displayName="$(string.SUPPORTED_FF148_ONLY)"/>
+      <definition name="SUPPORTED_FF14902_ONLY" displayName="$(string.SUPPORTED_FF14902_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -4810,6 +4811,16 @@
     <policy name="DisableRemoteImprovements" class="Both" displayName="$(string.DisableRemoteImprovements)" explainText="$(string.DisableRemoteImprovements_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableRemoteImprovements">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF148"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="IPProtectionAvailable" class="Both" displayName="$(string.IPProtectionAvailable)" explainText="$(string.IPProtectionAvailable_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="IPProtectionAvailable">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
