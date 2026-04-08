@@ -87,6 +87,7 @@
       <definition name="SUPPORTED_FF146_ONLY" displayName="$(string.SUPPORTED_FF146_ONLY)"/>
       <definition name="SUPPORTED_FF148_ONLY" displayName="$(string.SUPPORTED_FF148_ONLY)"/>
       <definition name="SUPPORTED_FF14902_ONLY" displayName="$(string.SUPPORTED_FF14902_ONLY)"/>
+      <definition name="SUPPORTED_FF150_ONLY" displayName="$(string.SUPPORTED_FF150_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -204,6 +205,31 @@
     <category displayName="$(string.BrowserDataBackup_group)" name="BrowserDataBackup">
       <parentCategory ref="firefox"/>
     </category>
+    <category displayName="$(string.AIControls_group)" name="AIControls">
+      <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.AIControls_Default_group)" name="Default">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_Translations_group)" name="Translations">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_PDFAltText_group)" name="PDFAltText">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_SmartTabGroups_group)" name="SmartTabGroups">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_LinkPreviewKeyPoints_group)" name="LinkPreviewKeyPoints">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_SidebarChatbot_group)" name="SidebarChatbot">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_SmartWindow_group)" name="SmartWindow">
+      <parentCategory ref="AIControls"/>
+    </category>
+
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -4821,6 +4847,202 @@
     <policy name="IPProtectionAvailable" class="Both" displayName="$(string.IPProtectionAvailable)" explainText="$(string.IPProtectionAvailable_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="IPProtectionAvailable">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Default_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_Default_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\Default" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="Default"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="Default_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_Default_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\Default" valueName="Locked">
+      <parentCategory ref="Default"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="Translations_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_Translations_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\Translations" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="Translations"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="Translations_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_Translations_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\Translations" valueName="Locked">
+      <parentCategory ref="Translations"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="PDFAltText_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_PDFAltText_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\PDFAltText" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="PDFAltText"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="PDFAltText_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_PDFAltText_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\PDFAltText" valueName="Locked">
+      <parentCategory ref="PDFAltText"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SmartTabGroups_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_SmartTabGroups_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SmartTabGroups" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="SmartTabGroups"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SmartTabGroups_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_SmartTabGroups_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SmartTabGroups" valueName="Locked">
+      <parentCategory ref="SmartTabGroups"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LinkPreviewKeyPoints_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_LinkPreviewKeyPoints_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\LinkPreviewKeyPoints" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="LinkPreviewKeyPoints"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="LinkPreviewKeyPoints_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_LinkPreviewKeyPoints_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\LinkPreviewKeyPoints" valueName="Locked">
+      <parentCategory ref="LinkPreviewKeyPoints"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SidebarChatbot_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_SidebarChatbot_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SidebarChatbot" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="SidebarChatbot"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SidebarChatbot_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_SidebarChatbot_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SidebarChatbot" valueName="Locked">
+      <parentCategory ref="SidebarChatbot"/>
+      <supportedOn ref="SUPPORTED_FF14902_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SmartWindow_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_SmartWindow_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SmartWindow" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="SmartWindow"/>
+      <supportedOn ref="SUPPORTED_FF150_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SmartWindow_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_SmartWindow_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SmartWindow" valueName="Locked">
+      <parentCategory ref="SmartWindow"/>
+      <supportedOn ref="SUPPORTED_FF150_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

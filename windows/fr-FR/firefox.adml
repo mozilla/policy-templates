@@ -85,6 +85,7 @@
       <string id="SUPPORTED_FF146_ONLY">Firefox 146 ou supérieur</string>
       <string id="SUPPORTED_FF148_ONLY">Firefox 148 ou supérieur</string>
       <string id="SUPPORTED_FF14902_ONLY">Firefox 149.0.2 ou supérieur</string>
+      <string id="SUPPORTED_FF150_ONLY">Firefox 150 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -120,6 +121,7 @@
       <string id="FirefoxHome_group">Page d’accueil de Firefox</string>
       <string id="GenerativeAI_group">IA générative</string>
       <string id="BrowserDataBackup_group">Sauvegarde des données du navigateur</string>
+      <string id="AIControls_group">Contrôles de l'IA</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
@@ -1356,6 +1358,73 @@ Si cette stratégie est désactivée ou non configurée, Firefox appliquera des 
       <string id="IPProtectionAvailable_Explain">Si cette stratégie est désactivée, le VPN intégré (Protection IP) n’est pas disponible pour les utilisateurs.
 
 Si cette stratégie est activée ou non configurée, le VPN intégré (Protection IP) est disponible.</string>
+      <string id="AIControls_Value_available">Disponible</string>
+      <string id="AIControls_Value_blocked">Bloqué</string>
+      <string id="Value">Valeur</string>
+      <string id="Locked">Verrouillé</string>
+      <string id="AIControls_Default_group">Par défaut</string>
+      <string id="AIControls_Translations_group">Traductions</string>
+      <string id="AIControls_PDFAltText_group">Texte alternatif des images dans le visionneur PDF</string>
+      <string id="AIControls_SmartTabGroups_group">Suggestions de groupes d'onglets</string>
+      <string id="AIControls_LinkPreviewKeyPoints_group">Points clés dans les aperçus de liens</string>
+      <string id="AIControls_SidebarChatbot_group">Chatbot dans la barre latérale</string>
+      <string id="AIControls_SmartWindow_group">Fenêtre intelligente</string>
+      <string id="AIControls_Default_Value_Explain">Contrôle l’état par défaut des fonctionnalités IA non explicitement configurées par d’autres stratégies AIControls.
+
+Si défini sur "available", les fonctionnalités IA non listées sont accessibles aux utilisateurs et peuvent être activées ou désactivées.
+
+Si défini sur "blocked", les fonctionnalités IA non listées sont désactivées et les utilisateurs ne les verront pas. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_Default_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de contrôle IA par défaut.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de contrôle IA par défaut.</string>
+      <string id="AIControls_Translations_Value_Explain">Contrôle les traductions de pages alimentées par l’IA.
+
+Si défini sur "available", les traductions sont accessibles aux utilisateurs et peuvent être activées ou désactivées.
+
+Si défini sur "blocked", les traductions sont désactivées et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_Translations_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de traductions.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de traductions.</string>
+      <string id="AIControls_PDFAltText_Value_Explain">Contrôle le texte alternatif généré par l’IA pour les images dans les documents PDF.
+
+Si défini sur "available", le texte alternatif PDF est accessible aux utilisateurs et peut être activé ou désactivé.
+
+Si défini sur "blocked", le texte alternatif PDF est désactivé et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_PDFAltText_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de texte alternatif PDF.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de texte alternatif PDF.</string>
+      <string id="AIControls_SmartTabGroups_Value_Explain">Contrôle les suggestions de regroupement d’onglets alimentées par l’IA.
+
+Si défini sur "available", les groupes d’onglets intelligents sont accessibles aux utilisateurs et peuvent être activés ou désactivés.
+
+Si défini sur "blocked", les groupes d’onglets intelligents sont désactivés et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_SmartTabGroups_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre des groupes d’onglets intelligents.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre des groupes d’onglets intelligents.</string>
+      <string id="AIControls_LinkPreviewKeyPoints_Value_Explain">Contrôle les résumés de points clés générés par l’IA dans les aperçus de liens.
+
+Si défini sur "available", les points clés d’aperçu de lien sont accessibles aux utilisateurs et peuvent être activés ou désactivés.
+
+Si défini sur "blocked", les points clés d’aperçu de lien sont désactivés et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_LinkPreviewKeyPoints_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre des points clés d’aperçu de lien.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre des points clés d’aperçu de lien.</string>
+      <string id="AIControls_SidebarChatbot_Value_Explain">Contrôle le panneau de chatbot IA dans la barre latérale de Firefox.
+
+Si défini sur "available", le chatbot de la barre latérale est accessible aux utilisateurs et peut être activé ou désactivé.
+
+Si défini sur "blocked", le chatbot de la barre latérale est désactivé et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_SidebarChatbot_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre du chatbot de la barre latérale.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre du chatbot de la barre latérale.</string>
+      <string id="AIControls_SmartWindow_Value_Explain">Contrôle les fonctionnalités d’arrangement de fenêtres alimentées par l’IA.
+
+Si défini sur "available", la fenêtre intelligente est accessible aux utilisateurs et peut être activée ou désactivée.
+
+Si défini sur "blocked", la fenêtre intelligente est désactivée et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_SmartWindow_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de fenêtre intelligente.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de fenêtre intelligente.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :
@@ -1678,6 +1747,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="TrackingProtection_Category">
         <dropdownList refId="TrackingProtection_Category"/>
+      </presentation>
+      <presentation id="AIControls_Value">
+        <dropdownList refId="AIControls_Value"/>
       </presentation>
     </presentationTable>
   </resources>

@@ -16,6 +16,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | Policy Name | Description
 | --- | --- |
 | **[`3rdparty`](#3rdparty)** | Set policies that WebExtensions can access via chrome.storage.managed.
+| **[`AIControls`](#aicontrols)** | Configure AI controls.
 | **[`AllowedDomainsForApps`](#alloweddomainsforapps)** | Define domains allowed to access Google Workspace.
 | **[`AllowFileSelectionDialogs`](#allowfileselectiondialogs)** | Allow file selection dialogs.
 | **[`AppAutoUpdate`](#appautoupdate)** | Enable or disable automatic application update.
@@ -195,6 +196,262 @@ For GPO and Intune, the extension developer should provide an ADMX file.
 }
 ```
 
+### AIControls
+Configure AI controls.
+For more information, see [Block generative AI features with Firefox AI controls](https://support.mozilla.org/en-US/kb/firefox-ai-controls) on support.mozilla.org.
+
+Each key controls the availability of a specific AI feature. The following AI feature keys are available:
+
+- `Default`: Controls the default state for AI features listed below, unless they are explicitly configured in the policy.
+- `Translations`: Controls AI-powered page translations.
+- `PDFAltText`: Controls AI-generated alt text for images in PDF documents.
+- `SmartTabGroups`: Controls AI-powered tab grouping suggestions.
+- `LinkPreviewKeyPoints`: Controls AI-generated key point summaries shown in link previews.
+- `SidebarChatbot`: Controls the AI chatbot panel in the Firefox sidebar.
+- `SmartWindow`: Controls AI-powered window arrangement features. (Firefox 150)
+
+All keys accept the following sub-keys:
+
+- `Value`:
+  - `available` makes the feature accessible to users and it can be enabled or disabled.
+  - `blocked` disables the feature and users won't see it. For on-device AI, any models already downloaded are removed.
+- `Locked`: if `true`, the user cannot change the setting.
+
+**Compatibility:** Firefox 149.0.2 (SmartWindow: Firefox 150)\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `browser.ml.chat.enabled`, `browser.ml.chat.page`, `browser.ai.control.sidebarChatbot`, `browser.translations.enable`, `browser.ai.control.translations`, `pdfjs.enableAltText`, `browser.ai.control.pdfjsAltText`, `browser.ml.linkPreview.enabled`, `browser.ai.control.linkPreviewKeyPoints`, `browser.tabs.groups.smart.userEnabled`, `browser.ai.control.smartTabGroups`, `browser.ai.control.smartWindow`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\AIControls\Default\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\Default\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AIControls\Translations\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\Translations\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AIControls\PDFAltText\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\PDFAltText\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AIControls\SmartTabGroups\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\SmartTabGroups\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AIControls\LinkPreviewKeyPoints\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\LinkPreviewKeyPoints\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AIControls\SidebarChatbot\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\SidebarChatbot\Locked = 0x1 | 0x0
+Software\Policies\Mozilla\Firefox\AIControls\SmartWindow\Value = "available" | "blocked"
+Software\Policies\Mozilla\Firefox\AIControls\SmartWindow\Locked = 0x1 | 0x0
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~Default/Default_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~Default/Default_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~Translations/Translations_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~Translations/Translations_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~PDFAltText/PDFAltText_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~PDFAltText/PDFAltText_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~SmartTabGroups/SmartTabGroups_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~SmartTabGroups/SmartTabGroups_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~LinkPreviewKeyPoints/LinkPreviewKeyPoints_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~LinkPreviewKeyPoints/LinkPreviewKeyPoints_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~SidebarChatbot/SidebarChatbot_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~SidebarChatbot/SidebarChatbot_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~SmartWindow/SmartWindow_Value
+```
+Value (string):
+```
+<enabled/>
+<data id="AIControls_Value" value="available | blocked"/>
+```
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~AIControls~SmartWindow/SmartWindow_Locked
+```
+Value (string):
+```
+<enabled/> or <disabled/>
+```
+#### macOS
+```
+<dict>
+  <key>AIControls</key>
+  <dict>
+    <key>Default</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>Translations</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>PDFAltText</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>SmartTabGroups</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>LinkPreviewKeyPoints</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>SidebarChatbot</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+    <key>SmartWindow</key>
+    <dict>
+      <key>Value</key>
+      <string>available | blocked</string>
+      <key>Locked</key>
+      <true/> | <false/>
+    </dict>
+  </dict>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "AIControls": {
+      "Default": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      },
+      "Translations": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      },
+      "PDFAltText": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      },
+      "SmartTabGroups": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      },
+      "LinkPreviewKeyPoints": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      },
+      "SidebarChatbot": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      },
+      "SmartWindow": {
+        "Value": "available" | "blocked",
+        "Locked": true | false
+      }
+    }
+  }
+}
+```
 ### AllowedDomainsForApps
 
 Define domains allowed to access Google Workspace.

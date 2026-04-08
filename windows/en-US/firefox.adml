@@ -85,6 +85,7 @@
       <string id="SUPPORTED_FF146_ONLY">Firefox 146 or later</string>
       <string id="SUPPORTED_FF148_ONLY">Firefox 148 or later</string>
       <string id="SUPPORTED_FF14902_ONLY">Firefox 149.0.2 or later</string>
+      <string id="SUPPORTED_FF150_ONLY">Firefox 150 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -120,6 +121,7 @@
       <string id="FirefoxHome_group">Firefox Home</string>
       <string id="GenerativeAI_group">Generative AI</string>
       <string id="BrowserDataBackup_group">Browser Data Backup</string>
+      <string id="AIControls_group">AI Controls</string>
       <string id="Allow">Allowed Sites</string>
       <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
@@ -1349,6 +1351,73 @@ If this policy is disabled or not configured, Firefox will apply performance, st
       <string id="IPProtectionAvailable_Explain">If this policy is disabled, the built-in VPN (IP Protection) is not available to users.
 
 If this policy is enabled or not configured, the built-in VPN (IP Protection) is available.</string>
+      <string id="AIControls_Value_available">Available</string>
+      <string id="AIControls_Value_blocked">Blocked</string>
+      <string id="Value">Value</string>
+      <string id="Locked">Locked</string>
+      <string id="AIControls_Default_group">Default</string>
+      <string id="AIControls_Translations_group">Translations</string>
+      <string id="AIControls_PDFAltText_group">PDF Image Alt Text</string>
+      <string id="AIControls_SmartTabGroups_group">Tab Group Suggestions</string>
+      <string id="AIControls_LinkPreviewKeyPoints_group">Key Points in Link Previews</string>
+      <string id="AIControls_SidebarChatbot_group">Chatbot in Sidebar</string>
+      <string id="AIControls_SmartWindow_group">Smart Window</string>
+      <string id="AIControls_Default_Value_Explain">Controls the default state for AI features not explicitly configured by other AIControls policies.
+
+If set to "available", unlisted AI features are accessible to users and can be enabled or disabled.
+
+If set to "blocked", unlisted AI features are disabled and users will not see them. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_Default_Locked_Explain">If this policy is enabled, the user cannot change the default AI controls setting.
+
+If this policy is disabled or not configured, the user can change the default AI controls setting.</string>
+      <string id="AIControls_Translations_Value_Explain">Controls AI-powered page translations.
+
+If set to "available", translations are accessible to users and can be enabled or disabled.
+
+If set to "blocked", translations are disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_Translations_Locked_Explain">If this policy is enabled, the user cannot change the translations setting.
+
+If this policy is disabled or not configured, the user can change the translations setting.</string>
+      <string id="AIControls_PDFAltText_Value_Explain">Controls AI-generated alternative text for images in PDF documents.
+
+If set to "available", PDF alt text is accessible to users and can be enabled or disabled.
+
+If set to "blocked", PDF alt text is disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_PDFAltText_Locked_Explain">If this policy is enabled, the user cannot change the PDF alt text setting.
+
+If this policy is disabled or not configured, the user can change the PDF alt text setting.</string>
+      <string id="AIControls_SmartTabGroups_Value_Explain">Controls AI-powered tab grouping suggestions.
+
+If set to "available", smart tab groups are accessible to users and can be enabled or disabled.
+
+If set to "blocked", smart tab groups are disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_SmartTabGroups_Locked_Explain">If this policy is enabled, the user cannot change the smart tab groups setting.
+
+If this policy is disabled or not configured, the user can change the smart tab groups setting.</string>
+      <string id="AIControls_LinkPreviewKeyPoints_Value_Explain">Controls AI-generated key point summaries shown in link previews.
+
+If set to "available", link preview key points are accessible to users and can be enabled or disabled.
+
+If set to "blocked", link preview key points are disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_LinkPreviewKeyPoints_Locked_Explain">If this policy is enabled, the user cannot change the link preview key points setting.
+
+If this policy is disabled or not configured, the user can change the link preview key points setting.</string>
+      <string id="AIControls_SidebarChatbot_Value_Explain">Controls the AI chatbot panel in the Firefox sidebar.
+
+If set to "available", the sidebar chatbot is accessible to users and can be enabled or disabled.
+
+If set to "blocked", the sidebar chatbot is disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_SidebarChatbot_Locked_Explain">If this policy is enabled, the user cannot change the sidebar chatbot setting.
+
+If this policy is disabled or not configured, the user can change the sidebar chatbot setting.</string>
+      <string id="AIControls_SmartWindow_Value_Explain">Controls AI-powered window arrangement features.
+
+If set to "available", smart window is accessible to users and can be enabled or disabled.
+
+If set to "blocked", smart window is disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_SmartWindow_Locked_Explain">If this policy is enabled, the user cannot change the smart window setting.
+
+If this policy is disabled or not configured, the user can change the smart window setting.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
@@ -1671,6 +1740,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="TrackingProtection_Category">
         <dropdownList refId="TrackingProtection_Category"/>
+      </presentation>
+      <presentation id="AIControls_Value">
+        <dropdownList refId="AIControls_Value"/>
       </presentation>
     </presentationTable>
   </resources>
