@@ -1,5 +1,35 @@
 {
   "policies": {
+    "AIControls": {
+      "Default": {
+        "Value": "available",
+        "Locked": true | false
+      },
+      "Translations": {
+        "Value": "available",
+        "Locked": true | false
+      },
+      "PDFAltText": {
+        "Value": "available",
+        "Locked": true | false
+      },
+      "SmartTabGroups": {
+        "Value": "available",
+        "Locked": true | false
+      },
+      "LinkPreviewKeyPoints": {
+        "Value": "available",
+        "Locked": true | false
+      },
+      "SidebarChatbot": {
+        "Value": "available",
+        "Locked": true | false
+      },
+      "SmartWindow": {
+        "Value": "available",
+        "Locked": true | false
+      }
+    },
     "AllowedDomainsForApps": "managedfirefox.com,example.com",
     "AppAutoUpdate": true | false,
     "AppUpdatePin": "106.",
@@ -210,6 +240,7 @@
                 "http://example.edu/"],
       "Default": true | false
     },
+    "IPProtectionAvailable": true | false,
     "LegacySameSiteCookieBehaviorEnabled": true | false,
     "LegacySameSiteCookieBehaviorEnabledForDomainList": ["example.org", "example.edu"],
     "LocalFileLinks": ["http://example.org/", "http://example.edu/"],

@@ -4,6 +4,58 @@
 <dict>
 	<key>EnterprisePoliciesEnabled</key>
 	<true/>
+	<key>AIControls</key>
+	<dict>
+		<key>Default</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+		<key>Translations</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+		<key>PDFAltText</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+		<key>SmartTabGroups</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+		<key>LinkPreviewKeyPoints</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+		<key>SidebarChatbot</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+		<key>SmartWindow</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>AllowedDomainsForApps</key>
 	<string>managedfirefox.com,example.com</string>
 	<key>AppAutoUpdate</key>
@@ -441,6 +493,8 @@
 		<key>Default</key>
 		<false/>
 	</dict>
+	<key>IPProtectionAvailable</key>
+	<true/>
 	<key>LocalFileLinks</key>
 	<array>
 		<string>http://example.org</string>
