@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install xmlstarlet
+        run: sudo apt-get install -y xmlstarlet
+
+      - name: Extract version (strip leading 'v')
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
+      - name: Bump ADMX/ADML revision numbers
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          xmlstarlet ed -P --inplace --update "/policyDefinitions/@revision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P --inplace --update "/policyDefinitions/resources/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/de-DE/firefox.adml
+          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/en-US/firefox.adml
+          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
+          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
+
+      - name: Commit version bump
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add windows/firefox.admx windows/de-DE/firefox.adml windows/en-US/firefox.adml windows/ru-RU/firefox.adml windows/fr-FR/firefox.adml
+          git diff --staged --quiet || git commit -m "Bump version to ${{ steps.version.outputs.version }}"
+          git push origin HEAD:master
+
+      - name: Create release ZIP
+        run: |
+          zip -r "policy_templates_${GITHUB_REF_NAME}.zip" docs/ mac/ windows/ linux/ LICENSE
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          draft: true
+          files: policy_templates_${{ github.ref_name }}.zip
