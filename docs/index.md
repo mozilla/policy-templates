@@ -41,6 +41,7 @@ Note: The `policies.json` must use the UTF-8 encoding.
 | **[`ContentAnalysis`](#contentanalysis)** | Configure Firefox to use an agent for Data Loss Prevention (DLP) that is compatible with the [Google Chrome Content Analysis Connector Agent SDK](https://github.com/chromium/content_analysis_sdk).
 | **[`Cookies`](#cookies)** | Configure cookie preferences.
 | **[`DefaultDownloadDirectory`](#defaultdownloaddirectory)** | Set the default download directory.
+| **[`DefaultSerialGuardSetting`](#defaultserialguardsetting)** | Control use of the Serial API.
 | **[`DisableAppUpdate`](#disableappupdate)** | Turn off application updates.
 | **[`DisableBuiltinPDFViewer`](#disablebuiltinpdfviewer)** | Disable the built in PDF viewer.
 | **[`DisabledCiphers`](#disabledciphers)** | Disable ciphers.
@@ -2028,6 +2029,46 @@ Value (string):
 {
   "policies": {
     "DefaultDownloadDirectory": "${home}\\Downloads"
+  }
+}
+```
+### DefaultSerialGuardSetting
+Control use of the Serial API.
+
+`2` means use of the WebSerial API is blocked.
+
+`3` means use of the WebSerial API is allowed.
+
+**Compatibility:** Firefox 151\
+**CCK2 Equivalent:** N/A\
+**Preferences Affected:** `dom.webserial.enabled`
+
+#### Windows (GPO)
+```
+Software\Policies\Mozilla\Firefox\DefaultSerialGuardSetting = 0x2 | 0x3
+```
+#### Windows (Intune)
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DefaultSerialGuardSetting
+```
+Value (string):
+```
+<enabled/>
+<data id="DefaultSerialGuardSetting" value="2 | 3"/>
+```
+#### macOS
+```
+<dict>
+  <key>DefaultSerialGuardSetting</key>
+  <integer>2 | 3</integer>
+</dict>
+```
+#### policies.json
+```
+{
+  "policies": {
+    "DefaultSerialGuardSetting": 2 | 3
   }
 }
 ```
