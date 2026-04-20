@@ -45,8 +45,10 @@ jobs:
           zip -r "policy_templates_${GITHUB_REF_NAME}.zip" docs/ mac/ windows/ linux/ LICENSE
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: ${{ github.ref_name }}
-          draft: true
-          files: policy_templates_${{ github.ref_name }}.zip
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            --title "${GITHUB_REF_NAME}" \
+            --draft \
+            "policy_templates_${GITHUB_REF_NAME}.zip"
