@@ -1,0 +1,19 @@
+<!--
+⚠️ WARNING: This repository is being migrated to
+https://github.com/mozilla/enterprise-admin-reference.
+Please open pull requests for new policy documentation there instead.
+-->
+
+**Description:**
+
+<!-- ✍️ Summarize your changes in one or two sentences. -->
+
+**Motivation:**
+
+<!-- ❓ Why are you making these changes and how do they help? -->
+
+**Related issues and pull requests:**
+
+<!-- 🔨 If this fully resolves a GitHub issue, use "Fixes #123" -->
+<!-- 👉 Highlight related pull requests using "Relates to #123" -->
+<!-- ❗ If another pull request must be merged first, use "**Depends on:** #123" -->

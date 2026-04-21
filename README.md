@@ -11,6 +11,8 @@ Policies are commonly used in enterprise or managed environments such as busines
 
 ## Policy documentation
 
-Documentation for policy behavior and syntax is moving to [Firefox Admin Docs](https://firefox-admin-docs.mozilla.org/reference/policies/).
+> [!WARNING]
+> Documentation for policy behavior and syntax is moving to [Firefox Admin Docs](https://firefox-admin-docs.mozilla.org/reference/policies/).
+
 The new docs repository is public and open to contributions, so if you want to make improvements, feel free to contribute at https://github.com/mozilla/enterprise-admin-reference.
 See the [GitHub Discussion](https://github.com/mozilla/policy-templates/discussions/1291) for more information.
