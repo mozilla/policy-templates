@@ -1842,7 +1842,7 @@ Value (string):
       "IsPerUser": true | false,
       "PipePathName": "pipe_custom_name",
       "ShowBlockedResult": true | false,
-      "TimeoutResult": 0 | 1 | 2,
+      "TimeoutResult": 0 | 1 | 2
     }
   }
 }
@@ -1983,7 +1983,7 @@ Value (string):
       "Block": ["http://example.edu/"],
       "Locked": true | false,
       "Behavior": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
-      "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign",
+      "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
     }
   }
 }
@@ -2174,7 +2174,7 @@ Value (string):
 {
   "policies": {
     "DisabledCiphers": {
-      "CIPHER_NAME": true | false,
+      "CIPHER_NAME": true | false
     }
   }
 }
@@ -3155,7 +3155,7 @@ Value (string):
       "ProviderURL": "URL_TO_ALTERNATE_PROVIDER",
       "Locked": true | false,
       "ExcludedDomains": ["example.com"],
-      "Fallback": true | false,
+      "Fallback": true | false
     }
   }
 }
