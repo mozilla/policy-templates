@@ -500,6 +500,24 @@
 		<string>http://example.org</string>
 		<string>http://example.edu</string>
 	</array>
+	<key>LocalNetworkAccess</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+		<key>BlockTrackers</key>
+		<true/>
+		<key>EnablePrompting</key>
+		<true/>
+		<key>SkipDomains</key>
+		<array>
+			<string>intranet.company.com</string>
+			<string>*.devices.local</string>
+			<string>admin-portal.enterprise.com</string>
+			<string>*.corp.internal</string>
+		</array>
+		<key>Locked</key>
+		<true/>
+	</dict>
 	<key>PrimaryPassword</key>
 	<true/>
 	<key>MicrosoftEntraSSO</key>
@@ -797,5 +815,7 @@
 			<string>https://www.yahoo.com/*</string>
 		</array>
 	</dict>
+	<key>XSLTEnabled</key>
+	<true/>
 </dict>
 </plist>

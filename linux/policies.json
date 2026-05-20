@@ -244,6 +244,18 @@
     "LegacySameSiteCookieBehaviorEnabled": true | false,
     "LegacySameSiteCookieBehaviorEnabledForDomainList": ["example.org", "example.edu"],
     "LocalFileLinks": ["http://example.org/", "http://example.edu/"],
+    "LocalNetworkAccess": {
+      "Enabled": true | false,
+      "BlockTrackers": true | false,
+      "EnablePrompting": true | false,
+      "SkipDomains": [
+        "intranet.company.com",
+        "*.devices.local",
+        "admin-portal.enterprise.com",
+        "*.corp.internal"
+      ],
+      "Locked": true | false
+    },
     "ManagedBookmarks": [
       {
         "toplevel_name": "My managed bookmarks folder"
@@ -422,6 +434,7 @@
     "WebsiteFilter": {
       "Block": ["<all_urls>"],
       "Exceptions": ["http://example.org/*"]
-    }
+    },
+    "XSLTEnabled": true | false
   }
 }
