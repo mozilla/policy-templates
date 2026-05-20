@@ -1419,6 +1419,12 @@ If set to "blocked", smart window is disabled and users will not see the feature
       <string id="AIControls_SmartWindow_Locked_Explain">If this policy is enabled, the user cannot change the smart window setting.
 
 If this policy is disabled or not configured, the user can change the smart window setting.</string>
+      <string id="XSLTEnabled">Enable XSLT</string>
+      <string id="XSLTEnabled_Explain">If this policy is enabled, XSLT (Extensible Stylesheet Language Transformations) is enabled.
+
+If this policy is disabled, XSLT (Extensible Stylesheet Language Transformations) is disabled.
+
+If this policy is not configured, the Firefox default applies.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
