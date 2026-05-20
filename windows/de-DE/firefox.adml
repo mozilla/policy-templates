@@ -123,6 +123,7 @@
       <string id="GenerativeAI_group">Generative KI</string>
       <string id="BrowserDataBackup_group">Sicherung von Browserdaten</string>
       <string id="AIControls_group">KI-Einstellungen</string>
+      <string id="LocalNetworkAccess_group">Lokaler Netzwerkzugriff</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -1431,6 +1432,24 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann 
 Wenn diese Richtlinieneinstellung deaktiviert ist, wird XSLT (Extensible Stylesheet Language Transformations) deaktiviert.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, gilt die Firefox-Standardeinstellung.</string>
+      <string id="LocalNetworkAccess_Enabled">Aktiviert</string>
+      <string id="LocalNetworkAccess_Enabled_Explain">Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Sicherheitsprüfungen für den lokalen Netzwerkzugriff erzwungen.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, werden Sicherheitsprüfungen für den lokalen Netzwerkzugriff nicht erzwungen.</string>
+      <string id="LocalNetworkAccess_BlockTrackers">Tracker blockieren</string>
+      <string id="LocalNetworkAccess_BlockTrackers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Drittanbieter-Trackern der Zugriff auf localhost und lokale Netzwerkressourcen verwehrt.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Drittanbieter-Trackern der Zugriff auf lokale Netzwerkressourcen nicht verwehrt.</string>
+      <string id="LocalNetworkAccess_EnablePrompting">Eingabeaufforderung aktivieren</string>
+      <string id="LocalNetworkAccess_EnablePrompting_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, müssen Webseiten ausdrücklich die Erlaubnis des Benutzers anfordern, bevor sie auf lokale Netzwerkressourcen zugreifen können.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Webseiten nicht zur Anforderung einer Erlaubnis für den Zugriff auf das lokale Netzwerk aufgefordert.</string>
+      <string id="LocalNetworkAccess_SkipDomains">Zu überspringende Domains</string>
+      <string id="LocalNetworkAccess_SkipDomains_Explain">Eine Liste von Domainnamen, für die die Prüfungen des lokalen Netzwerkzugriffs übersprungen werden.</string>
+      <string id="LocalNetworkAccess_Locked">Gesperrt</string>
+      <string id="LocalNetworkAccess_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kann der Benutzer die Einstellungen für den lokalen Netzwerkzugriff nicht ändern.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer die Einstellungen für den lokalen Netzwerkzugriff ändern.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
@@ -1521,6 +1540,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="RequestedLocales">
         <listBox refId="RequestedLocales"/>
+      </presentation>
+      <presentation id="LocalNetworkAccess_SkipDomains">
+        <listBox refId="LocalNetworkAccess_SkipDomains"/>
       </presentation>
       <presentation id="SecurityDevices">
         <listBox refId="SecurityDevices"/>
