@@ -1426,6 +1426,12 @@ Si défini sur "blocked", la fenêtre intelligente est désactivée et les utili
       <string id="AIControls_SmartWindow_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de fenêtre intelligente.
 
 Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de fenêtre intelligente.</string>
+      <string id="XSLTEnabled">Activer XSLT</string>
+      <string id="XSLTEnabled_Explain">Si cette stratégie est activée, XSLT (Extensible Stylesheet Language Transformations) est activé.
+
+Si cette stratégie est désactivée, XSLT (Extensible Stylesheet Language Transformations) est désactivé.
+
+Si cette stratégie n’est pas configurée, le paramètre par défaut de Firefox s’applique.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :

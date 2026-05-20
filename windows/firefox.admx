@@ -5051,5 +5051,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="XSLTEnabled" class="Both" displayName="$(string.XSLTEnabled)" explainText="$(string.XSLTEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="XSLTEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
