@@ -123,6 +123,7 @@
       <string id="GenerativeAI_group">IA générative</string>
       <string id="BrowserDataBackup_group">Sauvegarde des données du navigateur</string>
       <string id="AIControls_group">Contrôles de l'IA</string>
+      <string id="LocalNetworkAccess_group">Accès au réseau local</string>
       <string id="Allow">Sites autorisés</string>
       <string id="AllowSession">Sites autorisés (Session seulement)</string>
       <string id="Block">Sites bloqués</string>
@@ -1432,6 +1433,24 @@ Si cette stratégie est désactivée ou non configurée, l’utilisateur peut mo
 Si cette stratégie est désactivée, XSLT (Extensible Stylesheet Language Transformations) est désactivé.
 
 Si cette stratégie n’est pas configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="LocalNetworkAccess_Enabled">Activé</string>
+      <string id="LocalNetworkAccess_Enabled_Explain">Si cette stratégie est activée ou non configurée, les contrôles de sécurité pour l’accès au réseau local sont appliqués.
+
+Si cette stratégie est désactivée, les contrôles de sécurité pour l’accès au réseau local ne sont pas appliqués.</string>
+      <string id="LocalNetworkAccess_BlockTrackers">Bloquer les traqueurs</string>
+      <string id="LocalNetworkAccess_BlockTrackers_Explain">Si cette stratégie est activée, les traqueurs tiers ne peuvent pas accéder à localhost ni aux ressources du réseau local.
+
+Si cette stratégie est désactivée ou non configurée, les traqueurs tiers ne sont pas empêchés d’accéder aux ressources du réseau local.</string>
+      <string id="LocalNetworkAccess_EnablePrompting">Activer la demande d’autorisation</string>
+      <string id="LocalNetworkAccess_EnablePrompting_Explain">Si cette stratégie est activée, les sites web doivent demander explicitement l’autorisation de l’utilisateur avant d’accéder aux ressources du réseau local.
+
+Si cette stratégie est désactivée ou non configurée, les sites web ne sont pas tenus de demander une autorisation d’accès au réseau local.</string>
+      <string id="LocalNetworkAccess_SkipDomains">Domaines à ignorer</string>
+      <string id="LocalNetworkAccess_SkipDomains_Explain">Une liste de noms de domaine pour lesquels les contrôles d’accès au réseau local sont ignorés.</string>
+      <string id="LocalNetworkAccess_Locked">Verrouillé</string>
+      <string id="LocalNetworkAccess_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier les paramètres d’accès au réseau local.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier les paramètres d’accès au réseau local.</string>
       <string id="Preferences_Boolean_Explain">Si cette stratégie est activée, la préférence est verrouillée sur "true". Si cette stratégie est désactivée, la préférence est verrouillée sur "false".
 
 Pour une description de la préférence, consultez :
@@ -1525,6 +1544,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="RequestedLocales">
         <listBox refId="RequestedLocales"/>
+      </presentation>
+      <presentation id="LocalNetworkAccess_SkipDomains">
+        <listBox refId="LocalNetworkAccess_SkipDomains"/>
       </presentation>
       <presentation id="SecurityDevices">
         <listBox refId="SecurityDevices"/>

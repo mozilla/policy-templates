@@ -230,6 +230,9 @@
     <category displayName="$(string.AIControls_SmartWindow_group)" name="SmartWindow">
       <parentCategory ref="AIControls"/>
     </category>
+    <category displayName="$(string.LocalNetworkAccess_group)" name="LocalNetworkAccess">
+      <parentCategory ref="firefox"/>
+    </category>
 
   </categories>
   <policies>
@@ -5044,6 +5047,53 @@
     <policy name="SmartWindow_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_SmartWindow_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SmartWindow" valueName="Locked">
       <parentCategory ref="SmartWindow"/>
       <supportedOn ref="SUPPORTED_FF150_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LocalNetworkAccess_Enabled" class="Both" displayName="$(string.LocalNetworkAccess_Enabled)" explainText="$(string.LocalNetworkAccess_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\LocalNetworkAccess" valueName="Enabled">
+      <parentCategory ref="LocalNetworkAccess"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LocalNetworkAccess_BlockTrackers" class="Both" displayName="$(string.LocalNetworkAccess_BlockTrackers)" explainText="$(string.LocalNetworkAccess_BlockTrackers_Explain)" key="Software\Policies\Mozilla\Firefox\LocalNetworkAccess" valueName="BlockTrackers">
+      <parentCategory ref="LocalNetworkAccess"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LocalNetworkAccess_EnablePrompting" class="Both" displayName="$(string.LocalNetworkAccess_EnablePrompting)" explainText="$(string.LocalNetworkAccess_EnablePrompting_Explain)" key="Software\Policies\Mozilla\Firefox\LocalNetworkAccess" valueName="EnablePrompting">
+      <parentCategory ref="LocalNetworkAccess"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="LocalNetworkAccess_SkipDomains" class="Both" displayName="$(string.LocalNetworkAccess_SkipDomains)" explainText="$(string.LocalNetworkAccess_SkipDomains_Explain)" key="Software\Policies\Mozilla\Firefox\LocalNetworkAccess" presentation="$(presentation.LocalNetworkAccess_SkipDomains)">
+      <parentCategory ref="LocalNetworkAccess"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
+      <elements>
+        <list id="LocalNetworkAccess_SkipDomains" key="Software\Policies\Mozilla\Firefox\LocalNetworkAccess\SkipDomains" valuePrefix=""/>
+      </elements>
+    </policy>
+    <policy name="LocalNetworkAccess_Locked" class="Both" displayName="$(string.LocalNetworkAccess_Locked)" explainText="$(string.LocalNetworkAccess_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\LocalNetworkAccess" valueName="Locked">
+      <parentCategory ref="LocalNetworkAccess"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

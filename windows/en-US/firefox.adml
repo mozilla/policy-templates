@@ -123,6 +123,7 @@
       <string id="GenerativeAI_group">Generative AI</string>
       <string id="BrowserDataBackup_group">Browser Data Backup</string>
       <string id="AIControls_group">AI Controls</string>
+      <string id="LocalNetworkAccess_group">Local Network Access</string>
       <string id="Allow">Allowed Sites</string>
       <string id="AllowSession">Allowed Sites (Session Only)</string>
       <string id="Block">Blocked Sites</string>
@@ -1425,6 +1426,24 @@ If this policy is disabled or not configured, the user can change the smart wind
 If this policy is disabled, XSLT (Extensible Stylesheet Language Transformations) is disabled.
 
 If this policy is not configured, the Firefox default applies.</string>
+      <string id="LocalNetworkAccess_Enabled">Enabled</string>
+      <string id="LocalNetworkAccess_Enabled_Explain">If this policy is enabled or not configured, local network access security checks are enforced.
+
+If this policy is disabled, local network access security checks are not enforced.</string>
+      <string id="LocalNetworkAccess_BlockTrackers">Block Trackers</string>
+      <string id="LocalNetworkAccess_BlockTrackers_Explain">If this policy is enabled, third-party trackers are prevented from accessing localhost and local network resources.
+
+If this policy is disabled or not configured, third-party trackers are not blocked from accessing local network resources.</string>
+      <string id="LocalNetworkAccess_EnablePrompting">Enable Prompting</string>
+      <string id="LocalNetworkAccess_EnablePrompting_Explain">If this policy is enabled, websites must request explicit user permission before accessing local network resources.
+
+If this policy is disabled or not configured, websites are not prompted for local network access permission.</string>
+      <string id="LocalNetworkAccess_SkipDomains">Skip Domains</string>
+      <string id="LocalNetworkAccess_SkipDomains_Explain">A list of domain names for which local network access checks are skipped.</string>
+      <string id="LocalNetworkAccess_Locked">Locked</string>
+      <string id="LocalNetworkAccess_Locked_Explain">If this policy is enabled, the user cannot change Local Network Access settings.
+
+If this policy is disabled or not configured, the user can change Local Network Access settings.</string>
       <string id="Preferences_Boolean_Explain">If this policy is enabled, the preference is locked to true. If this policy is disabled, the preference is locked to false.
 
 For a description of the preference, see:
@@ -1518,6 +1537,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="RequestedLocales">
         <listBox refId="RequestedLocales"/>
+      </presentation>
+      <presentation id="LocalNetworkAccess_SkipDomains">
+        <listBox refId="LocalNetworkAccess_SkipDomains"/>
       </presentation>
       <presentation id="SecurityDevices">
         <listBox refId="SecurityDevices"/>
