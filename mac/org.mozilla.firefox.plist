@@ -193,6 +193,8 @@
 	</dict>
 	<key>DefaultDownloadDirectory</key>
 	<string>${home}/Downloads</string>
+	<key>DefaultSerialGuardSetting</key>
+	<integer>2</integer>
 	<key>DownloadDirectory</key>
 	<string>${home}/Downloads</string>
 	<key>DNSOverHTTPS</key>

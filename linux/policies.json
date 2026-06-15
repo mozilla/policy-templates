@@ -95,6 +95,7 @@
       "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "reject-tracker-and-partition-foreign"
     },
     "DefaultDownloadDirectory": "${home}/Downloads",
+    "DefaultSerialGuardSetting": 2 | 3,
     "DisableBuiltinPDFViewer": true | false,
     "DisabledCiphers": {
       "CIPHER_NAME": true | false

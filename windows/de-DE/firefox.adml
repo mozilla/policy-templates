@@ -1426,6 +1426,12 @@ Wenn auf "blocked" gesetzt, ist die intelligente Fensterverwaltung deaktiviert u
       <string id="AIControls_SmartWindow_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kann der Benutzer die Einstellung für die intelligente Fensterverwaltung nicht ändern.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer die Einstellung für die intelligente Fensterverwaltung ändern.</string>
+      <string id="DefaultSerialGuardSetting">Verwendung der Web Serial-API steuern</string>
+      <string id="DefaultSerialGuardSetting_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie festlegen, ob Webseiten den Zugriff auf serielle Ports anfordern dürfen.
+
+Hinweis: Wenn andere Richtlinieneinstellungen konfiguriert sind und diese Einstellung nicht festgelegt ist, wird die Web Serial-API standardmäßig blockiert.</string>
+      <string id="DefaultSerialGuardSetting_2">Keiner Website erlauben, über die Web Serial-API den Zugriff auf serielle Ports anzufordern</string>
+      <string id="DefaultSerialGuardSetting_3">Websites erlauben, den Benutzer um Zugriff auf einen seriellen Port zu bitten</string>
       <string id="XSLTEnabled">XSLT aktivieren</string>
       <string id="XSLTEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird XSLT (Extensible Stylesheet Language Transformations) aktiviert.
 
@@ -1760,6 +1766,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="PrivateBrowsingModeAvailability">
         <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
+      <presentation id="DefaultSerialGuardSetting">
+        <dropdownList refId="DefaultSerialGuardSetting"/>
       </presentation>
       <presentation id="ContentAnalysis_DefaultResult">
         <dropdownList refId="ContentAnalysis_DefaultResult"/>

@@ -1427,6 +1427,12 @@ Si défini sur "blocked", la fenêtre intelligente est désactivée et les utili
       <string id="AIControls_SmartWindow_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de fenêtre intelligente.
 
 Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de fenêtre intelligente.</string>
+      <string id="DefaultSerialGuardSetting">Contrôler l’utilisation de l’API Web Serial</string>
+      <string id="DefaultSerialGuardSetting_Explain">Si cette stratégie est activée, vous pouvez contrôler si les sites web peuvent demander l’accès aux ports série.
+
+Remarque : si d’autres stratégies sont configurées et que celle-ci ne l’est pas, l’API Web Serial est bloquée par défaut.</string>
+      <string id="DefaultSerialGuardSetting_2">Ne permettre à aucun site de demander l’accès aux ports série via l’API Web Serial</string>
+      <string id="DefaultSerialGuardSetting_3">Autoriser les sites à demander à l’utilisateur d’accorder l’accès à un port série</string>
       <string id="XSLTEnabled">Activer XSLT</string>
       <string id="XSLTEnabled_Explain">Si cette stratégie est activée, XSLT (Extensible Stylesheet Language Transformations) est activé.
 
@@ -1764,6 +1770,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="PrivateBrowsingModeAvailability">
         <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
+      <presentation id="DefaultSerialGuardSetting">
+        <dropdownList refId="DefaultSerialGuardSetting"/>
       </presentation>
       <presentation id="ContentAnalysis_DefaultResult">
         <dropdownList refId="ContentAnalysis_DefaultResult"/>

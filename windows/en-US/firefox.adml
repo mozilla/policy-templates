@@ -1420,6 +1420,12 @@ If set to "blocked", smart window is disabled and users will not see the feature
       <string id="AIControls_SmartWindow_Locked_Explain">If this policy is enabled, the user cannot change the smart window setting.
 
 If this policy is disabled or not configured, the user can change the smart window setting.</string>
+      <string id="DefaultSerialGuardSetting">Control use of the Web Serial API</string>
+      <string id="DefaultSerialGuardSetting_Explain">If this policy is enabled, you can control whether websites can request access to serial ports.
+
+Note: If any other policies are configured and this policy is not set, the Web Serial API is blocked by default.</string>
+      <string id="DefaultSerialGuardSetting_2">Do not allow any site to request access to serial ports via the Web Serial API</string>
+      <string id="DefaultSerialGuardSetting_3">Allow sites to ask the user to grant access to a serial port</string>
       <string id="XSLTEnabled">Enable XSLT</string>
       <string id="XSLTEnabled_Explain">If this policy is enabled, XSLT (Extensible Stylesheet Language Transformations) is enabled.
 
@@ -1757,6 +1763,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
       </presentation>
       <presentation id="PrivateBrowsingModeAvailability">
         <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
+      <presentation id="DefaultSerialGuardSetting">
+        <dropdownList refId="DefaultSerialGuardSetting"/>
       </presentation>
       <presentation id="ContentAnalysis_DefaultResult">
         <dropdownList refId="ContentAnalysis_DefaultResult"/>
