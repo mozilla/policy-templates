@@ -89,6 +89,7 @@
       <definition name="SUPPORTED_FF14902_ONLY" displayName="$(string.SUPPORTED_FF14902_ONLY)"/>
       <definition name="SUPPORTED_FF150_ONLY" displayName="$(string.SUPPORTED_FF150_ONLY)"/>
       <definition name="SUPPORTED_FF151_ONLY" displayName="$(string.SUPPORTED_FF151_ONLY)"/>
+      <definition name="SUPPORTED_FF152_ONLY" displayName="$(string.SUPPORTED_FF152_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -4741,6 +4742,16 @@
     <policy name="FirefoxHome_SponsoredStories" class="Both" displayName="$(string.FirefoxHome_SponsoredStories)" explainText="$(string.FirefoxHome_SponsoredStories_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="SponsoredStories">
       <parentCategory ref="FirefoxHome"/>
       <supportedOn ref="SUPPORTED_FF95"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="FirefoxHome_Weather" class="Both" displayName="$(string.FirefoxHome_Weather)" explainText="$(string.FirefoxHome_Weather_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome" valueName="Weather">
+      <parentCategory ref="FirefoxHome"/>
+      <supportedOn ref="SUPPORTED_FF152_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

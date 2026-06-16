@@ -87,6 +87,7 @@
       <string id="SUPPORTED_FF14902_ONLY">Firefox 149.0.2 or later</string>
       <string id="SUPPORTED_FF150_ONLY">Firefox 150 or later</string>
       <string id="SUPPORTED_FF151_ONLY">Firefox 151 or later</string>
+      <string id="SUPPORTED_FF152_ONLY">Firefox 152 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -1301,6 +1302,10 @@ If this policy is enabled or not configured, stories are displayed on the new ta
       <string id="FirefoxHome_SponsoredStories_Explain">If this policy is disabled, sponsored stories are not displayed on the new tab page.
 
 If this policy is enabled or not configured, sponsored stories are displayed on the new tab page.</string>
+      <string id="FirefoxHome_Weather">Weather</string>
+      <string id="FirefoxHome_Weather_Explain">If this policy is disabled, the weather widget is not displayed on the new tab page.
+
+If this policy is enabled or not configured, the weather widget is displayed on the new tab page.</string>
       <string id="FirefoxHome_Locked">Do not allow preferences to be changed</string>
       <string id="FirefoxHome_Locked_Explain">If this policy is enabled, Firefox Home preferences cannot be changed by the user.
 

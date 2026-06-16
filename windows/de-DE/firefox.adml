@@ -87,6 +87,7 @@
       <string id="SUPPORTED_FF14902_ONLY">Firefox 149.0.2 oder höher</string>
       <string id="SUPPORTED_FF150_ONLY">Firefox 150 oder höher</string>
       <string id="SUPPORTED_FF151_ONLY">Firefox 151 oder höher</string>
+      <string id="SUPPORTED_FF152_ONLY">Firefox 152 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -1307,6 +1308,10 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="FirefoxHome_SponsoredStories_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden gesponserte Storys auf der Seite „Neuer Tab“ nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden gesponserte Storys auf der Seite „Neuer Tab“ angezeigt.</string>
+      <string id="FirefoxHome_Weather">Wetter</string>
+      <string id="FirefoxHome_Weather_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird das Wetter-Widget auf der Seite „Neuer Tab“ nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird das Wetter-Widget auf der Seite „Neuer Tab“ angezeigt.</string>
       <string id="FirefoxHome_Locked">Änderung von Einstellungen nicht zulassen</string>
       <string id="FirefoxHome_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Einstellungen für die Firefox-Startseite vom Benutzer nicht geändert werden.
 
