@@ -5112,6 +5112,24 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DefaultSerialGuardSetting" class="Both" displayName="$(string.DefaultSerialGuardSetting)" explainText="$(string.DefaultSerialGuardSetting_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.DefaultSerialGuardSetting)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF151_ONLY"/>
+      <elements>
+        <enum id="DefaultSerialGuardSetting" valueName="DefaultSerialGuardSetting">
+          <item displayName="$(string.DefaultSerialGuardSetting_2)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+          <item displayName="$(string.DefaultSerialGuardSetting_3)">
+            <value>
+              <decimal value="3"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy name="XSLTEnabled" class="Both" displayName="$(string.XSLTEnabled)" explainText="$(string.XSLTEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="XSLTEnabled">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF151_ONLY"/>
