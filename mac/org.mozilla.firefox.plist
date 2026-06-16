@@ -379,6 +379,8 @@
 		<false/>
 		<key>Snippets</key>
 		<false/>
+		<key>Weather</key>
+		<true/>
 		<key>Locked</key>
 		<true/>
 	</dict>

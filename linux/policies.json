@@ -180,6 +180,7 @@
       "Pocket": true | false,
       "SponsoredPocket": true | false,
       "Snippets": true | false,
+      "Weather": true | false,
       "Locked": true | false
     },
     "FirefoxSuggest": {
