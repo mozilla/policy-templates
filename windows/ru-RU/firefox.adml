@@ -1585,9 +1585,8 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
         </textBox>
       </presentation>
       <presentation id="HomepageURL">
-        <text>URL:</text>
         <textBox refId="HomepageURL">
-          <label/>
+          <label>URL:</label>
         </textBox>
         <checkBox refId="HomepageLocked">Не позволять изменять домашнюю страницу.</checkBox>
        </presentation>
@@ -1598,23 +1597,18 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
         <dropdownList refId="StartPage"/>
       </presentation>
       <presentation id="Bookmark">
-        <text>Заголовок:</text>
         <textBox refId="BookmarkTitle">
-          <label/>
+          <label>Заголовок:</label>
         </textBox>
-        <text>URL:</text>
         <textBox refId="BookmarkURL">
-          <label/>
+          <label>URL:</label>
         </textBox>
-        <text>URL-адрес значка:</text>
         <textBox refId="BookmarkFavicon">
-          <label/>
+          <label>URL-адрес значка:</label>
         </textBox>
-        <text>Размещение:</text>
-        <dropdownList refId="BookmarkPlacement"/>
-        <text>Имя папки:</text>
+        <dropdownList refId="BookmarkPlacement">Размещение:</dropdownList>
         <textBox refId="BookmarkFolder">
-          <label/>
+          <label>Имя папки:</label>
         </textBox>
       </presentation>
       <presentation id="SearchEngine">
@@ -1660,17 +1654,14 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
         <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
        <presentation id="SupportMenu">
-         <text>Заголовок:</text>
          <textBox refId="SupportMenuTitle">
-           <label/>
+           <label>Заголовок:</label>
          </textBox>
-         <text>URL:</text>
          <textBox refId="SupportMenuURL">
-           <label/>
+           <label>URL:</label>
          </textBox>
-         <text>Ключ доступа:</text>
         <textBox refId="SupportMenuAccessKey">
-          <label/>
+          <label>Ключ доступа:</label>
         </textBox>
       </presentation>
       <presentation id="Preferences_String">
@@ -1745,9 +1736,8 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
         </textBox>
       </presentation>
       <presentation id="Proxy_SOCKSProxy">
-        <text>SOCKS хост:</text>
         <textBox refId="Proxy_SOCKSProxy">
-          <label/>
+          <label>SOCKS хост:</label>
         </textBox>
         <text>Версия SOCKS:</text>
         <dropdownList refId="Proxy_SOCKSVersion"/>
@@ -1758,9 +1748,8 @@ https://mozilla.github.io/policy-templates/#preferences.</string>
         </textBox>
       </presentation>
       <presentation id="Proxy_Passthrough">
-        <text>Нет прокси для</text>
         <textBox refId="Proxy_Passthrough">
-          <label/>
+          <label>Нет прокси для</label>
         </textBox>
         <text>Пример: .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>Подключения к localhost, 127.0.0.1/8 и ::1 никогда не проксируются.</text>
