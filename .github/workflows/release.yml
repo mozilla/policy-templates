@@ -25,12 +25,13 @@ jobs:
       - name: Bump ADMX/ADML revision numbers
         run: |
           VERSION="${{ steps.version.outputs.version }}"
-          xmlstarlet ed -P --inplace --update "/policyDefinitions/@revision" -v "$VERSION" windows/firefox.admx
-          xmlstarlet ed -P --inplace --update "/policyDefinitions/resources/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
-          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/de-DE/firefox.adml
-          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/en-US/firefox.adml
-          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
-          xmlstarlet ed -P --inplace --update "/policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
+          NS="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions"
+          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitions/@revision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitions/x:resources/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/de-DE/firefox.adml
+          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/en-US/firefox.adml
+          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
+          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
 
       - name: Commit version bump
         run: |

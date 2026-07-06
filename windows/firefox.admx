@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitions revision="7.12" schemaVersion="1.0">
+<policyDefinitions xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="7.12" schemaVersion="1.0">
   <policyNamespaces>
     <target prefix="firefox" namespace="Mozilla.Policies.Firefox"/>
     <using prefix="Mozilla" namespace="Mozilla.Policies"/>
@@ -570,7 +570,7 @@
       <parentCategory ref="Camera"/>
       <supportedOn ref="SUPPORTED_FF62"/>
       <elements>
-        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Camera\Permissions\Block" valuePrefix=""/>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\Permissions\Camera\Block" valuePrefix=""/>
       </elements>
     </policy>
     <policy name="Camera_BlockNewRequests" class="Both" displayName="$(string.Camera_BlockNewRequests)" explainText="$(string.Camera_BlockNewRequests_Explain)" key="Software\Policies\Mozilla\Firefox\Permissions\Camera" valueName="BlockNewRequests">
@@ -825,7 +825,7 @@
     </policy>
     <policy name="DNSOverHTTPS_Enabled" class="Both" displayName="$(string.DNSOverHTTPS_Enabled)" explainText="$(string.DNSOverHTTPS_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Enabled">
       <parentCategory ref="DNSOverHTTPS"/>
-      <supportedOn ref="SUPPORTED_FF63ESR"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -835,14 +835,14 @@
     </policy>
     <policy name="DNSOverHTTPS_ProviderURL" class="Both" displayName="$(string.DNSOverHTTPS_ProviderURL)" explainText="$(string.DNSOverHTTPS_ProviderURL_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" presentation="$(presentation.String)">
       <parentCategory ref="DNSOverHTTPS"/>
-      <supportedOn ref="SUPPORTED_FF63ESR"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <elements>
         <text id="String" valueName="ProviderURL"/>
       </elements>
     </policy>
     <policy name="DNSOverHTTPS_Locked" class="Both" displayName="$(string.DNSOverHTTPS_Locked)" explainText="$(string.DNSOverHTTPS_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\DNSOverHTTPS" valueName="Locked">
       <parentCategory ref="DNSOverHTTPS"/>
-      <supportedOn ref="SUPPORTED_FF63ESR"/>
+      <supportedOn ref="SUPPORTED_FF60ESR"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -3725,7 +3725,7 @@
     </policy>
     <policy name="F_TrackingProtection_EmailTracking" class="Both" displayName="$(string.TrackingProtection_EmailTracking)" explainText="$(string.TrackingProtection_EmailTracking_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="EmailTracking">
       <parentCategory ref="TrackingProtection"/>
-      <supportedOn ref="SUPPORTED_FF112"/>
+      <supportedOn ref="SUPPORTED_FF112_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4033,7 +4033,7 @@
     </policy>
     <policy name="DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_CHACHA20_POLY1305_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_CHACHA20_POLY1305_SHA256">
       <parentCategory ref="DisabledCiphers"/>
-      <supportedOn ref="SUPPORTED_FF138"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4043,7 +4043,7 @@
     </policy>
     <policy name="DisabledCiphers_TLS_AES_128_GCM_SHA256" class="Both" displayName="$(string.DisabledCiphers_TLS_AES_128_GCM_SHA256)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_AES_128_GCM_SHA256">
       <parentCategory ref="DisabledCiphers"/>
-      <supportedOn ref="SUPPORTED_FF138"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4053,7 +4053,7 @@
     </policy>
     <policy name="DisabledCiphers_TLS_AES_256_GCM_SHA384" class="Both" displayName="$(string.DisabledCiphers_TLS_AES_256_GCM_SHA384)" explainText="$(string.DisabledCiphers_Explain)" key="Software\Policies\Mozilla\Firefox\DisabledCiphers" valueName="TLS_AES_256_GCM_SHA384">
       <parentCategory ref="DisabledCiphers"/>
-      <supportedOn ref="SUPPORTED_FF138"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4277,14 +4277,14 @@
     </policy>
     <policy name="ContainersOneLine" class="Both" displayName="$(string.ContainersOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Containers_Explain)" presentation="$(presentation.JSONOneLine)">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF113"/>
+      <supportedOn ref="SUPPORTED_FF113_ONLY"/>
       <elements>
         <text id="JSONOneLine" valueName="Containers" maxLength="16384"/>
       </elements>
     </policy>
     <policy name="Containers" class="Both" displayName="$(string.Containers)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Containers_Explain)" presentation="$(presentation.JSON)">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF113"/>
+      <supportedOn ref="SUPPORTED_FF113_ONLY"/>
       <elements>
         <multiText id="JSON" valueName="Containers" maxLength="16384"/>
       </elements>
@@ -4831,7 +4831,7 @@
     </policy>
     <policy name="BrowserDataBackup_AllowBackup" class="Both" displayName="$(string.BrowserDataBackup_AllowBackup)" explainText="$(string.BrowserDataBackup_AllowBackup_Explain)" key="Software\Policies\Mozilla\Firefox\BrowserDataBackup" valueName="AllowBackup">
       <parentCategory ref="BrowserDataBackup"/>
-      <supportedOn ref="SUPPORTED_FF146"/>
+      <supportedOn ref="SUPPORTED_FF146_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4841,7 +4841,7 @@
     </policy>
     <policy name="BrowserDataBackup_AllowRestore" class="Both" displayName="$(string.BrowserDataBackup_AllowRestore)" explainText="$(string.BrowserDataBackup_AllowRestore_Explain)" key="Software\Policies\Mozilla\Firefox\BrowserDataBackup" valueName="AllowRestore">
       <parentCategory ref="BrowserDataBackup"/>
-      <supportedOn ref="SUPPORTED_FF146"/>
+      <supportedOn ref="SUPPORTED_FF146_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -4851,7 +4851,7 @@
     </policy>
     <policy name="DisableRemoteImprovements" class="Both" displayName="$(string.DisableRemoteImprovements)" explainText="$(string.DisableRemoteImprovements_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableRemoteImprovements">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF148"/>
+      <supportedOn ref="SUPPORTED_FF148_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
