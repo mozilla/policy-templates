@@ -33,11 +33,14 @@ jobs:
           xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
           xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
 
+      - name: Regenerate OMA-URIs reference
+        run: python3 scripts/generate_oma_uris.py > docs/oma-uris.md
+
       - name: Commit version bump
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add windows/firefox.admx windows/de-DE/firefox.adml windows/en-US/firefox.adml windows/ru-RU/firefox.adml windows/fr-FR/firefox.adml
+          git add windows/firefox.admx windows/de-DE/firefox.adml windows/en-US/firefox.adml windows/ru-RU/firefox.adml windows/fr-FR/firefox.adml docs/oma-uris.md
           git diff --staged --quiet || git commit -m "Bump version to ${{ steps.version.outputs.version }}"
           git push origin HEAD:master
 
