@@ -4,7 +4,7 @@ Auto-generated from `windows/firefox.admx` (revision `7.12`). Do not edit by han
 
 Entries are keyed by the JSON policy name (as used in `policies.json`), with the GPMC display path shown in parentheses. Policies marked "(Deprecated)" in the ADML are omitted. Numbered families (e.g. `Bookmark01`-`Bookmark50`) are collapsed into a single entry with an `NN` placeholder in the URI.
 
-Value templates are best-effort. For policies whose value is a JSON blob (e.g. `ExtensionSettings`, `ManagedBookmarks`, `Bookmarks`, `Containers`, `Handlers`, `Preferences`, `WebsiteFilter`, `AutoLaunchProtocolsFromOrigins`, `ExemptDomainFileTypePairsFromFileTypeDownloadWarnings`) see the [policy documentation](https://firefox-admin-docs.mozilla.org/) for the value shape.
+Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `ManagedBookmarks`, `Bookmarks`, `Containers`, `Handlers`, `Preferences`, `WebsiteFilter`, `AutoLaunchProtocolsFromOrigins`, `ExemptDomainFileTypePairsFromFileTypeDownloadWarnings`) show the corresponding sample from `linux/policies.json` so you can see the expected shape. Replace values as needed. For fields not covered by the sample, consult the [policy documentation](https://firefox-admin-docs.mozilla.org/).
 
 ## AIControls.Default.Locked (AI Controls > Default > Locked)
 
@@ -427,7 +427,8 @@ Value templates are best-effort. For policies whose value is a JSON blob (e.g. `
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='[]'/>
+(Put the same JSON as the `AutoLaunchProtocolsFromOrigins` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## AutoLaunchProtocolsFromOrigins (Auto Launch Protocols From Origins)
@@ -442,7 +443,13 @@ Value templates are best-effort. For policies whose value is a JSON blob (e.g. `
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+[{
+  "protocol": "zoommtg",
+  "allowed_origins": [
+    "https://somesite.zoom.us"
+  ]
+}]'/>
 ```
 
 ## BackgroundAppUpdate (Background updater)
@@ -527,7 +534,8 @@ Value templates are best-effort. For policies whose value is a JSON blob (e.g. `
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='[]'/>
+(Put the same JSON as the `Bookmarks` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## Bookmarks (Bookmarks > Bookmarks (JSON))
@@ -542,7 +550,16 @@ Value templates are best-effort. For policies whose value is a JSON blob (e.g. `
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+[
+  {
+    "Title": "Example",
+    "URL": "https://example.com",
+    "Favicon": "https://example.com/favicon.ico",
+    "Placement": "toolbar" | "menu",
+    "Folder": "FolderName"
+  }
+]'/>
 ```
 
 ## Bookmarks[N] (Bookmarks > Bookmark 01 - Bookmark 50)
@@ -634,7 +651,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='{}'/>
+(Put the same JSON as the `Containers` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## Containers (Containers)
@@ -649,7 +667,16 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+{
+  "Default": [
+    {
+      "name": "My container",
+      "icon": "pet",
+      "color": "turquoise"
+    }
+  ]
+}'/>
 ```
 
 ## ContentAnalysis.AgentName (Content Analysis (DLP) > Agent Name)
@@ -2010,7 +2037,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='[]'/>
+(Put the same JSON as the `ExemptDomainFileTypePairsFromFileTypeDownloadWarnings` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## ExemptDomainFileTypePairsFromFileTypeDownloadWarnings (Disable warnings based on file extension for specific file types on domains)
@@ -2025,7 +2053,11 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+[{
+  "file_extension": "jnlp",
+  "domains": ["example.com"]
+}]'/>
 ```
 
 ## Extensions.Install (Extensions > Extensions to Install)
@@ -2085,7 +2117,22 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+{
+  "*": {
+    "blocked_install_message": "Custom error message.",
+    "install_sources": ["https://yourwebsite.com/*"],
+    "installation_mode": "blocked",
+    "allowed_types": ["extension"]
+  },
+  "uBlock0@raymondhill.net": {
+    "installation_mode": "force_installed",
+    "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+  },
+  "https-everywhere@eff.org": {
+    "installation_mode": "allowed"
+  }
+}'/>
 ```
 
 ## ExtensionSettings (Extensions > Extension Management (JSON on one line))
@@ -2100,7 +2147,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='{}'/>
+(Put the same JSON as the `ExtensionSettings` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## ExtensionUpdate (Extensions > Extension Update)
@@ -2439,7 +2487,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='{}'/>
+(Put the same JSON as the `Handlers` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## Handlers (Handlers)
@@ -2454,7 +2503,35 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+{
+  "mimeTypes": {
+    "application/msword": {
+      "action": "useSystemDefault",
+      "ask": false
+    }
+  },
+  "schemes": {
+    "mailto": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Gmail",
+        "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+      }]
+    }
+  },
+  "extensions": {
+    "pdf": {
+      "action": "useHelperApp",
+      "ask": true | false,
+      "handlers": [{
+        "name": "Adobe Acrobat",
+        "path": "/usr/bin/acroread"
+      }]
+    }
+  }
+}'/>
 ```
 
 ## HardwareAcceleration (Hardware Acceleration)
@@ -2731,7 +2808,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='[]'/>
+(Put the same JSON as the `ManagedBookmarks` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## ManagedBookmarks (Managed Bookmarks)
@@ -2746,7 +2824,29 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+[
+  {
+    "toplevel_name": "My managed bookmarks folder"
+  },
+  {
+    "url": "example.com",
+    "name": "Example"
+  },
+  {
+    "name": "Mozilla links",
+    "children": [
+      {
+        "url": "https://mozilla.org",
+        "name": "Mozilla.org"
+      },
+      {
+        "url": "https://support.mozilla.org/",
+        "name": "SUMO"
+      }
+    ]
+  }
+]'/>
 ```
 
 ## ManualAppUpdateOnly (Manual Update Only)
@@ -3424,7 +3524,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='{}'/>
+(Put the same JSON as the `Preferences` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## Preferences (Preferences)
@@ -3439,7 +3540,21 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSON" value='
+{
+  "accessibility.force_disabled": {
+    "Value": 1,
+    "Status": "default"
+  },
+  "browser.cache.disk.parent_directory": {
+    "Value": "SOME_NATIVE_PATH",
+    "Status": "user"
+  },
+  "browser.tabs.warnOnClose": {
+    "Value": false,
+    "Status": "locked"
+  }
+}'/>
 ```
 
 ## PrimaryPassword (Primary (Master) Password)
@@ -4203,7 +4318,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ```
 <enabled/>
-<data id="JSON" value='... JSON - see policy docs for schema ...'/>
+<data id="JSONOneLine" value='{}'/>
+(Put the same JSON as the `WebsiteFilter` entry above on a single line here. This variant exists to work around Intune's per-string length limit.)
 ```
 
 ## WebsiteFilter (Website Filter (JSON))

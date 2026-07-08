@@ -26,6 +26,7 @@ from pathlib import Path
 MOZILLA_ROOT = "Mozilla:Cat_Mozilla"
 ADMX_PATH = Path("windows/firefox.admx")
 ADML_PATH = Path("windows/en-US/firefox.adml")
+SAMPLE_JSON_PATH = Path("linux/policies.json")
 
 # NS is detected at runtime from the parsed root element so this works
 # whether or not firefox.admx declares the standard ADMX namespace.
@@ -53,6 +54,103 @@ JSON_POLICIES = {
     "WebsiteFilter",
     "WebsiteFilterOneLine",
 }
+
+
+def load_json_samples(path: Path) -> dict[str, str]:
+    """Extract each top-level policy value from linux/policies.json as text.
+
+    The file isn't strict JSON (it uses "true | false" placeholders), so we
+    scan it as text and use brace/bracket depth to find the end of each
+    top-level policy value. Returned strings preserve original formatting
+    so admins can see the structure and any pseudo-JSON hints.
+    """
+    text = path.read_text(encoding="utf-8")
+    samples: dict[str, str] = {}
+
+    m = re.search(r'"policies"\s*:\s*\{', text)
+    if not m:
+        return samples
+    i, n = m.end(), len(text)
+
+    while i < n:
+        # skip whitespace and commas between entries
+        while i < n and text[i] in ' \t\r\n,':
+            i += 1
+        if i >= n or text[i] == '}':
+            break
+        if text[i] != '"':
+            i += 1
+            continue
+        # read key
+        j = i + 1
+        while j < n and text[j] != '"':
+            if text[j] == '\\':
+                j += 2
+                continue
+            j += 1
+        key = text[i + 1 : j]
+        i = j + 1
+        # skip whitespace + colon
+        while i < n and text[i] in ' \t\r\n:':
+            i += 1
+        if i >= n:
+            break
+        value_start = i
+        if text[i] in '{[':
+            open_c = text[i]
+            close_c = '}' if open_c == '{' else ']'
+            depth = 0
+            in_str = False
+            while i < n:
+                c = text[i]
+                if in_str:
+                    if c == '\\':
+                        i += 2
+                        continue
+                    if c == '"':
+                        in_str = False
+                elif c == '"':
+                    in_str = True
+                elif c == open_c:
+                    depth += 1
+                elif c == close_c:
+                    depth -= 1
+                    if depth == 0:
+                        i += 1
+                        break
+                i += 1
+            samples[key] = _dedent_sample(text[value_start:i])
+        else:
+            # scalar value - read to end of line or trailing comma
+            while i < n and text[i] not in ',\r\n':
+                i += 1
+            samples[key] = text[value_start:i].strip()
+    return samples
+
+
+def _dedent_sample(value: str) -> str:
+    """Strip the outer 4-space indent that linux/policies.json uses.
+
+    Keeps the opening bracket on the first line intact; only trims
+    subsequent lines to the minimum common indent so the JSON reads
+    cleanly when embedded in the OMA-URI value block.
+    """
+    lines = value.split("\n")
+    if len(lines) < 2:
+        return value
+    body = lines[1:]
+    indents = [
+        len(line) - len(line.lstrip(" "))
+        for line in body
+        if line.strip()
+    ]
+    if not indents:
+        return value
+    strip_n = min(indents)
+    dedented = [lines[0]] + [
+        (line[strip_n:] if len(line) >= strip_n else line) for line in body
+    ]
+    return "\n".join(dedented)
 
 
 def load_adml_strings(path: Path) -> dict[str, str]:
@@ -166,12 +264,40 @@ def enum_values(enum_el: ET.Element) -> list[str]:
     return values
 
 
-def format_value_template(policy: ET.Element) -> str:
+def format_value_template(policy: ET.Element, samples: dict[str, str]) -> str:
     name = policy.get("name")
     if name in JSON_POLICIES:
+        # Look up the JSON sample by the derived JSON policy name (e.g.
+        # "Bookmarks" for both A_Bookmarks and A_BookmarksOneLine).
+        json_name = json_policy_name(policy)
+        sample = samples.get(json_name)
+        # Distinguish the OneLine variant (uses a single <text> element) from
+        # the multi-line variant (uses <multiText>). The OneLine variant
+        # points readers to the multi-line entry rather than repeating the
+        # sample on one line.
+        elements_el = policy.find(f"{NS}elements")
+        is_oneline = False
+        if elements_el is not None:
+            children = list(elements_el)
+            if children:
+                tag = children[0].tag.split("}")[-1]
+                is_oneline = tag == "text"
+
+        data_id = "JSONOneLine" if is_oneline else "JSON"
+        if sample and not is_oneline:
+            return f"<enabled/>\n<data id=\"{data_id}\" value='\n{sample}'/>"
+        if is_oneline:
+            empty = "[]" if sample and sample.lstrip().startswith("[") else "{}"
+            return (
+                f"<enabled/>\n<data id=\"{data_id}\" value='{empty}'/>\n"
+                f"(Put the same JSON as the `{json_name}` entry above on a "
+                "single line here. This variant exists to work around "
+                "Intune's per-string length limit.)"
+            )
+        # No sample and not oneline — fall back to placeholder.
         return (
             "<enabled/>\n"
-            '<data id="JSON" value=\'... JSON - see policy docs for schema ...\'/>'
+            f'<data id="{data_id}" value=\'... JSON - see policy docs for schema ...\'/>'
         )
 
     elements = policy.find(f"{NS}elements")
@@ -259,6 +385,7 @@ def main() -> int:
         NS = "{" + root.tag.split("}")[0][1:] + "}"
 
     strings = load_adml_strings(ADML_PATH)
+    samples = load_json_samples(SAMPLE_JSON_PATH) if SAMPLE_JSON_PATH.exists() else {}
     cat_map = build_category_map(root)
     cat_display = build_category_display_map(root, strings)
 
@@ -286,7 +413,7 @@ def main() -> int:
             continue
         cat_path = "~".join(chain) if chain else "firefox"
         uri = f"./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~{cat_path}/{name}"
-        value = format_value_template(policy)
+        value = format_value_template(policy, samples)
         breadcrumb = breadcrumb_for(display, chain)
         json_name = json_policy_name(policy)
 
@@ -372,13 +499,15 @@ def main() -> int:
     )
     out.append("")
     out.append(
-        "Value templates are best-effort. For policies whose value is a JSON blob "
-        "(e.g. `ExtensionSettings`, `ManagedBookmarks`, `Bookmarks`, `Containers`, "
+        "Value templates are best-effort. JSON-blob policies "
+        "(`ExtensionSettings`, `ManagedBookmarks`, `Bookmarks`, `Containers`, "
         "`Handlers`, `Preferences`, `WebsiteFilter`, "
         "`AutoLaunchProtocolsFromOrigins`, "
-        "`ExemptDomainFileTypePairsFromFileTypeDownloadWarnings`) see the "
-        "[policy documentation](https://firefox-admin-docs.mozilla.org/) for the "
-        "value shape."
+        "`ExemptDomainFileTypePairsFromFileTypeDownloadWarnings`) show the "
+        "corresponding sample from `linux/policies.json` so you can see the "
+        "expected shape. Replace values as needed. For fields not covered by "
+        "the sample, consult the "
+        "[policy documentation](https://firefox-admin-docs.mozilla.org/)."
     )
     out.append("")
     for e in collapsed:
