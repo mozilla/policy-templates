@@ -481,7 +481,8 @@ If this policy is not configured or disabled, in private browsing, cookies are r
       <string id="Cookies_Behavior_Reject">Reject all cookies</string>
       <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
       <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
+      <string id="Cookies_Behavior_PartitionForeign">Partition third-party cookies (Total Cookie Protection)</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Deprecated - use Partition third-party cookies)</string>
       <string id="Camera_Allow_Explain">If this policy is enabled, access to the camera is always allowed for the origins indicated.
 
 If this policy is disabled or not configured, the default camera policy is followed.</string>

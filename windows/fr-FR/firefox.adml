@@ -481,7 +481,8 @@ Si cette stratégie n'est pas configurée ou est désactivée, en navigation pri
       <string id="Cookies_Behavior_Reject">Rejeter tous les cookies</string>
       <string id="Cookies_Behavior_LimitForeign">Rejeter les cookies tiers pour les sites que vous n'avez pas visités</string>
       <string id="Cookies_Behavior_RejectTracker">Rejeter les cookies des traqueurs connus</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Rejeter les cookies pour les traqueurs connus et partitionner les cookies tiers (Protection totale des cookies)</string>
+      <string id="Cookies_Behavior_PartitionForeign">Partitionner les cookies tiers (Protection totale des cookies)</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Rejeter les cookies pour les traqueurs connus et partitionner les cookies tiers (Obsolète - utiliser « Partitionner les cookies tiers »)</string>
       <string id="Camera_Allow_Explain">Si cette stratégie est activée, l'accès à la caméra est toujours autorisé pour les origines indiquées.
 
 Si cette stratégie est désactivée ou non configurée, la stratégie par défaut pour la caméra est appliquée.</string>
