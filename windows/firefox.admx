@@ -3676,6 +3676,13 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="J_SanitizeOnShutdown_Exceptions" class="Both" displayName="$(string.SanitizeOnShutdown_Exceptions)" explainText="$(string.SanitizeOnShutdown_Exceptions_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.Permissions)">
+      <parentCategory ref="SanitizeOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF154_ONLY"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\SanitizeOnShutdown\Exceptions" valuePrefix=""/>
+      </elements>
+    </policy>
     <policy name="A_TrackingProtection_Value" class="Both" displayName="$(string.TrackingProtection_Value)" explainText="$(string.TrackingProtection_Value_Explain)" key="Software\Policies\Mozilla\Firefox\EnableTrackingProtection" valueName="Value">
       <parentCategory ref="TrackingProtection"/>
       <supportedOn ref="SUPPORTED_FF74"/>

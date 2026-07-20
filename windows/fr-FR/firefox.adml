@@ -657,6 +657,8 @@ Si cette stratégie est désactivée ou non configurée, le stockage des applica
 Si cette stratégie est activée, toutes les préférences de fermeture définies explicitement via la stratégie ne peuvent pas être modifiées par l'utilisateur.
 
 Si cette stratégie n'est pas configurée, aucune préférence de fermeture ne peut être modifiée par l'utilisateur (comportement précédent).</string>
+      <string id="SanitizeOnShutdown_Exceptions">Exceptions</string>
+      <string id="SanitizeOnShutdown_Exceptions_Explain">Une liste d'origines dont les cookies et les données de site ne sont pas effacés à la fermeture. Les origines doivent inclure le protocole http ou https.</string>
       <string id="WebsiteFilter_Block">Sites web bloqués</string>
       <string id="WebsiteFilter_Block_Explain">Si cette stratégie est activée, vous pouvez spécifier des modèles de correspondance indiquant les sites à bloquer. Les modèles de correspondance sont documentés à l'adresse https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. Il y a une limite de 1000 entrées.
 

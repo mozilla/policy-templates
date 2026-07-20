@@ -657,6 +657,8 @@ If this policy is disabled or not configured, offline application storage is not
 If this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.
 
 If this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).</string>
+      <string id="SanitizeOnShutdown_Exceptions">Exceptions</string>
+      <string id="SanitizeOnShutdown_Exceptions_Explain">A list of origins whose cookies and site data are not cleared on shutdown. Origins must include the http or https protocol.</string>
       <string id="WebsiteFilter_Block">Blocked websites</string>
       <string id="WebsiteFilter_Block_Explain">If this policy is enabled, you can specify match patterns that indicate sites to be blocked. The match patterns are documented at https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns. There is a 1000 entry limit.
 
