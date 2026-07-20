@@ -8,6 +8,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.Default.Locked (AI Controls > Default > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -21,6 +23,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.Default.Value (AI Controls > Default > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -37,6 +41,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.LinkPreviewKeyPoints.Locked (AI Controls > Key Points in Link Previews > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -50,6 +56,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.LinkPreviewKeyPoints.Value (AI Controls > Key Points in Link Previews > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -66,6 +74,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.PDFAltText.Locked (AI Controls > PDF Image Alt Text > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -79,6 +89,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.PDFAltText.Value (AI Controls > PDF Image Alt Text > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -95,6 +107,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.SidebarChatbot.Locked (AI Controls > Chatbot in Sidebar > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -108,6 +122,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.SidebarChatbot.Value (AI Controls > Chatbot in Sidebar > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -124,6 +140,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.SmartTabGroups.Locked (AI Controls > Tab Group Suggestions > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -137,6 +155,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.SmartTabGroups.Value (AI Controls > Tab Group Suggestions > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -153,6 +173,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.SmartWindow.Locked (AI Controls > Smart Window > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -166,6 +188,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.SmartWindow.Value (AI Controls > Smart Window > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -182,6 +206,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AIControls.Translations.Locked (AI Controls > Translations > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
+
 **OMA-URI:**
 
 ```
@@ -195,6 +221,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AIControls.Translations.Value (AI Controls > Translations > Value)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/aicontrols/)
 
 **OMA-URI:**
 
@@ -211,6 +239,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AllowedDomainsForApps (Define domains allowed to access Google Workspace)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/alloweddomainsforapps/)
+
 **OMA-URI:**
 
 ```
@@ -226,6 +256,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AllowFileSelectionDialogs (Allow File Selection Dialogs)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/allowfileselectiondialogs/)
+
 **OMA-URI:**
 
 ```
@@ -240,6 +272,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AppAutoUpdate (Application Autoupdate)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/appautoupdate/)
+
 **OMA-URI:**
 
 ```
@@ -253,6 +287,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AppUpdatePin (Pin updates to a specific version)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/appupdatepin/)
 
 **OMA-URI:**
 
@@ -269,6 +305,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AppUpdateURL (Custom Update URL)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/appupdateurl/)
+
 **OMA-URI:**
 
 ```
@@ -283,6 +321,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## Authentication.AllowNonFQDN (Authentication > Allow Non FQDN)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
 
 **OMA-URI:**
 
@@ -300,6 +340,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## Authentication.AllowProxies (Authentication > Allow Proxies)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
+
 **OMA-URI:**
 
 ```
@@ -316,6 +358,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## Authentication.Delegated (Authentication > Delegated)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
+
 **OMA-URI:**
 
 ```
@@ -331,6 +375,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## Authentication.Locked (Authentication > Do not allow authentication preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
+
 **OMA-URI:**
 
 ```
@@ -344,6 +390,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## Authentication.NTLM (Authentication > NTLM)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
 
 **OMA-URI:**
 
@@ -360,6 +408,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## Authentication.PrivateBrowsing (Authentication > Allow authentication in private browsing)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
+
 **OMA-URI:**
 
 ```
@@ -373,6 +423,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## Authentication.SPNEGO (Authentication > SPNEGO)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/authentication/)
 
 **OMA-URI:**
 
@@ -389,6 +441,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AutofillAddressEnabled (Enable autofill for addresses)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/autofilladdressenabled/)
+
 **OMA-URI:**
 
 ```
@@ -403,6 +457,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## AutofillCreditCardEnabled (Enable autofill for payment methods)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/autofillcreditcardenabled/)
+
 **OMA-URI:**
 
 ```
@@ -416,6 +472,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AutoLaunchProtocolsFromOrigins (Auto Launch Protocols From Origins (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/autolaunchprotocolsfromorigins/)
 
 **OMA-URI:**
 
@@ -432,6 +490,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## AutoLaunchProtocolsFromOrigins (Auto Launch Protocols From Origins)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/autolaunchprotocolsfromorigins/)
 
 **OMA-URI:**
 
@@ -454,6 +514,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## BackgroundAppUpdate (Background updater)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/backgroundappupdate/)
+
 **OMA-URI:**
 
 ```
@@ -467,6 +529,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## BlockAboutAddons (Block Add-ons Manager)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/blockaboutaddons/)
 
 **OMA-URI:**
 
@@ -482,6 +546,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## BlockAboutConfig (Block about:config)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/blockaboutconfig/)
+
 **OMA-URI:**
 
 ```
@@ -495,6 +561,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## BlockAboutProfiles (Block about:profiles)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/blockaboutprofiles/)
 
 **OMA-URI:**
 
@@ -510,6 +578,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## BlockAboutSupport (Block Troubleshooting Information)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/blockaboutsupport/)
+
 **OMA-URI:**
 
 ```
@@ -523,6 +593,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## Bookmarks (Bookmarks > Bookmarks (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/bookmarks/)
 
 **OMA-URI:**
 
@@ -539,6 +611,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 ```
 
 ## Bookmarks (Bookmarks > Bookmarks (JSON))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/bookmarks/)
 
 **OMA-URI:**
 
@@ -564,6 +638,8 @@ Value templates are best-effort. JSON-blob policies (`ExtensionSettings`, `Manag
 
 ## Bookmarks[N] (Bookmarks > Bookmark 01 - Bookmark 50)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/bookmarks/)
+
 Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 slots).
 
 **OMA-URI:**
@@ -585,6 +661,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## BrowserDataBackup.AllowBackup (Browser Data Backup > Allow Backup)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/browserdatabackup/)
+
 **OMA-URI:**
 
 ```
@@ -598,6 +676,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## BrowserDataBackup.AllowRestore (Browser Data Backup > Allow Restore)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/browserdatabackup/)
 
 **OMA-URI:**
 
@@ -613,6 +693,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## CaptivePortal (Captive Portal)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/captiveportal/)
+
 **OMA-URI:**
 
 ```
@@ -627,6 +709,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Certificates.ImportEnterpriseRoots (Certificates > Import Enterprise Roots)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/certificates/)
+
 **OMA-URI:**
 
 ```
@@ -640,6 +724,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Containers (Containers (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/containers/)
 
 **OMA-URI:**
 
@@ -656,6 +742,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Containers (Containers)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/containers/)
 
 **OMA-URI:**
 
@@ -681,6 +769,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.AgentName (Content Analysis (DLP) > Agent Name)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -695,6 +785,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.AgentTimeout (Content Analysis (DLP) > Agent Timeout)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -711,6 +803,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.AllowUrlRegexList (Content Analysis (DLP) > Allow Url Regex List)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -726,6 +820,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.BypassForSameTabOperations (Content Analysis (DLP) > Bypass For Same Tab Operations)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -739,6 +835,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.ClientSignature (Content Analysis (DLP) > Client Signature)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -755,6 +853,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.DefaultResult (Content Analysis (DLP) > Default Result)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -769,6 +869,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.DenyUrlRegexList (Content Analysis (DLP) > Deny Url Regex List)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -785,6 +887,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.Enabled (Content Analysis (DLP) > Enabled)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -798,6 +902,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.InterceptionPoints.Clipboard.Enabled (Content Analysis (DLP) > Interception Points > Clipboard > Enabled)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -813,6 +919,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.InterceptionPoints.Clipboard.PlainTextOnly (Content Analysis (DLP) > Interception Points > Clipboard > Plain Text Only)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -826,6 +934,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.InterceptionPoints.Download.Enabled (Content Analysis (DLP) > Interception Points > Download)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -841,6 +951,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.InterceptionPoints.DragAndDrop.Enabled (Content Analysis (DLP) > Interception Points > Drag And Drop > Enabled)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -854,6 +966,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.InterceptionPoints.DragAndDrop.PlainTextEnabled (Content Analysis (DLP) > Interception Points > Drag And Drop > Plain Text Only)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -869,6 +983,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.InterceptionPoints.FileUpload.Enabled (Content Analysis (DLP) > Interception Points > File Upload)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -882,6 +998,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.InterceptionPoints.Print.Enabled (Content Analysis (DLP) > Interception Points > Print)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -897,6 +1015,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.IsPerUser (Content Analysis (DLP) > Is Per User)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -910,6 +1030,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.PipePathName (Content Analysis (DLP) > Pipe Path Name)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -926,6 +1048,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ContentAnalysis.ShowBlockedResult (Content Analysis (DLP) > Show Blocked Result)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
+
 **OMA-URI:**
 
 ```
@@ -939,6 +1063,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ContentAnalysis.TimeoutResult (Content Analysis (DLP) > Timeout Result)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/contentanalysis/)
 
 **OMA-URI:**
 
@@ -955,6 +1081,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Cookies.Allow (Cookies > Allowed Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
+
 **OMA-URI:**
 
 ```
@@ -969,6 +1097,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Cookies.AllowSession (Cookies > Allowed Sites (Session Only))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
 
 **OMA-URI:**
 
@@ -985,6 +1115,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Cookies.Behavior (Cookies > Cookie Behavior)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
+
 **OMA-URI:**
 
 ```
@@ -999,6 +1131,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Cookies.BehaviorPrivateBrowsing (Cookies > Cookie Behavior in private browsing)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
 
 **OMA-URI:**
 
@@ -1015,6 +1149,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Cookies.Block (Cookies > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
+
 **OMA-URI:**
 
 ```
@@ -1030,6 +1166,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Cookies.ExpireAtSessionEnd (Cookies > Keep cookies until Firefox is closed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
+
 **OMA-URI:**
 
 ```
@@ -1044,6 +1182,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Cookies.Locked (Cookies > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/cookies/)
+
 **OMA-URI:**
 
 ```
@@ -1057,6 +1197,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## CustomizeFirefoxHome (Customize Firefox Home (Moved to category))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/customizefirefoxhome/)
 
 **OMA-URI:**
 
@@ -1080,6 +1222,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DefaultDownloadDirectory (Default Download Directory)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/defaultdownloaddirectory/)
+
 **OMA-URI:**
 
 ```
@@ -1094,6 +1238,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DefaultSerialGuardSetting (Control use of the Web Serial API)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/defaultserialguardsetting/)
 
 **OMA-URI:**
 
@@ -1110,6 +1256,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableAppUpdate (Disable Update)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableappupdate/)
+
 **OMA-URI:**
 
 ```
@@ -1123,6 +1271,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableBuiltinPDFViewer (Disable Built-in PDF Viewer (PDF.js))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablebuiltinpdfviewer/)
 
 **OMA-URI:**
 
@@ -1138,6 +1288,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_AES_128_GCM_SHA256 (Disabled Ciphers > TLS_AES_128_GCM_SHA256)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1151,6 +1303,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_AES_256_GCM_SHA384 (Disabled Ciphers > TLS_AES_256_GCM_SHA384)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1166,6 +1320,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_CHACHA20_POLY1305_SHA256 (Disabled Ciphers > TLS_CHACHA20_POLY1305_SHA256)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1179,6 +1335,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_DHE_RSA_WITH_AES_128_CBC_SHA (Disabled Ciphers > TLS_DHE_RSA_WITH_AES_128_CBC_SHA)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1194,6 +1352,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_DHE_RSA_WITH_AES_256_CBC_SHA (Disabled Ciphers > TLS_DHE_RSA_WITH_AES_256_CBC_SHA)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1207,6 +1367,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (Disabled Ciphers > TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1222,6 +1384,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (Disabled Ciphers > TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1235,6 +1399,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (Disabled Ciphers > TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1250,6 +1416,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (Disabled Ciphers > TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1263,6 +1431,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (Disabled Ciphers > TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1278,6 +1448,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (Disabled Ciphers > TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1291,6 +1463,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (Disabled Ciphers > TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1306,6 +1480,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (Disabled Ciphers > TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1319,6 +1495,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Disabled Ciphers > TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1334,6 +1512,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (Disabled Ciphers > TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1347,6 +1527,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_RSA_WITH_3DES_EDE_CBC_SHA (Disabled Ciphers > TLS_RSA_WITH_3DES_EDE_CBC_SHA)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1362,6 +1544,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_RSA_WITH_AES_128_CBC_SHA (Disabled Ciphers > TLS_RSA_WITH_AES_128_CBC_SHA)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1375,6 +1559,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_RSA_WITH_AES_128_GCM_SHA256 (Disabled Ciphers > TLS_RSA_WITH_AES_128_GCM_SHA256)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1390,6 +1576,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisabledCiphers.TLS_RSA_WITH_AES_256_CBC_SHA (Disabled Ciphers > TLS_RSA_WITH_AES_256_CBC_SHA)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
+
 **OMA-URI:**
 
 ```
@@ -1403,6 +1591,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisabledCiphers.TLS_RSA_WITH_AES_256_GCM_SHA384 (Disabled Ciphers > TLS_RSA_WITH_AES_256_GCM_SHA384)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledciphers/)
 
 **OMA-URI:**
 
@@ -1418,6 +1608,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableDefaultBrowserAgent (Disable the default browser agent)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledefaultbrowseragent/)
+
 **OMA-URI:**
 
 ```
@@ -1431,6 +1623,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableDeveloperTools (Disable Developer Tools)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabledevelopertools/)
 
 **OMA-URI:**
 
@@ -1446,6 +1640,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableEncryptedClientHello (Disable Encrypted Client Hello)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableencryptedclienthello/)
+
 **OMA-URI:**
 
 ```
@@ -1459,6 +1655,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableFeedbackCommands (Disable Feedback Commands)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablefeedbackcommands/)
 
 **OMA-URI:**
 
@@ -1474,6 +1672,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableFirefoxAccounts (Disable Firefox Accounts)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablefirefoxaccounts/)
+
 **OMA-URI:**
 
 ```
@@ -1487,6 +1687,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableFirefoxScreenshots (Disable Firefox Screenshots)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablefirefoxscreenshots/)
 
 **OMA-URI:**
 
@@ -1502,6 +1704,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableFirefoxStudies (Disable Firefox Studies)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablefirefoxstudies/)
+
 **OMA-URI:**
 
 ```
@@ -1515,6 +1719,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableForgetButton (Disable Forget Button)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableforgetbutton/)
 
 **OMA-URI:**
 
@@ -1530,6 +1736,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableFormHistory (Disable Form History)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableformhistory/)
+
 **OMA-URI:**
 
 ```
@@ -1543,6 +1751,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableMasterPasswordCreation (Disable Master Password Creation)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablemasterpasswordcreation/)
 
 **OMA-URI:**
 
@@ -1558,6 +1768,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisablePasswordReveal (Do not allow passwords to be revealed in saved logins)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablepasswordreveal/)
+
 **OMA-URI:**
 
 ```
@@ -1571,6 +1783,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisablePrivateBrowsing (Disable Private Browsing)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableprivatebrowsing/)
 
 **OMA-URI:**
 
@@ -1586,6 +1800,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableProfileImport (Disable Profile Import)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableprofileimport/)
+
 **OMA-URI:**
 
 ```
@@ -1599,6 +1815,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableProfileRefresh (Disable Profile Refresh)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableprofilerefresh/)
 
 **OMA-URI:**
 
@@ -1614,6 +1832,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableRemoteImprovements (Disable Remote Improvements)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableremoteimprovements/)
+
 **OMA-URI:**
 
 ```
@@ -1627,6 +1847,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableSafeMode (Disable Safe Mode)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablesafemode/)
 
 **OMA-URI:**
 
@@ -1642,6 +1864,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableSecurityBypass.InvalidCertificate (Prevent overriding certificate errors)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablesecuritybypass/)
+
 **OMA-URI:**
 
 ```
@@ -1655,6 +1879,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableSecurityBypass.SafeBrowsing (Prevent overriding safe browsing errors)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablesecuritybypass/)
 
 **OMA-URI:**
 
@@ -1670,6 +1896,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableSetDesktopBackground (Disable Set Desktop Background)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablesetdesktopbackground/)
+
 **OMA-URI:**
 
 ```
@@ -1683,6 +1911,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisableSystemAddonUpdate (Disable System Addon Updates)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablesystemaddonupdate/)
 
 **OMA-URI:**
 
@@ -1698,6 +1928,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableTelemetry (Disable Telemetry)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disabletelemetry/)
+
 **OMA-URI:**
 
 ```
@@ -1712,6 +1944,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisableThirdPartyModuleBlocking (Disable Third Party Module Blocking)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disablethirdpartymoduleblocking/)
+
 **OMA-URI:**
 
 ```
@@ -1725,6 +1959,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DisplayBookmarksToolbar (Display Bookmarks Toolbar)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/displaybookmarkstoolbar/)
 
 **OMA-URI:**
 
@@ -1741,6 +1977,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DisplayMenuBar (Display Menu Bar)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/displaymenubar/)
+
 **OMA-URI:**
 
 ```
@@ -1756,6 +1994,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DNSOverHTTPS.Enabled (DNS Over HTTPS > Enabled)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/dnsoverhttps/)
+
 **OMA-URI:**
 
 ```
@@ -1769,6 +2009,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DNSOverHTTPS.ExcludedDomains (DNS Over HTTPS > Excluded Domains)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/dnsoverhttps/)
 
 **OMA-URI:**
 
@@ -1785,6 +2027,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DNSOverHTTPS.Fallback (DNS Over HTTPS > Fallback)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/dnsoverhttps/)
+
 **OMA-URI:**
 
 ```
@@ -1799,6 +2043,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DNSOverHTTPS.Locked (DNS Over HTTPS > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/dnsoverhttps/)
+
 **OMA-URI:**
 
 ```
@@ -1812,6 +2058,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DNSOverHTTPS.ProviderURL (DNS Over HTTPS > Provider URL)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/dnsoverhttps/)
 
 **OMA-URI:**
 
@@ -1828,6 +2076,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## DontCheckDefaultBrowser (Don't Check Default Browser)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/dontcheckdefaultbrowser/)
+
 **OMA-URI:**
 
 ```
@@ -1841,6 +2091,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## DownloadDirectory (Download Directory)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/downloaddirectory/)
 
 **OMA-URI:**
 
@@ -1857,6 +2109,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EnableTrackingProtection.BaselineExceptions (Tracking Protection > Baseline Exceptions)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
+
 **OMA-URI:**
 
 ```
@@ -1870,6 +2124,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## EnableTrackingProtection.Category (Tracking Protection > Tracking Protection Mode)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
 
 **OMA-URI:**
 
@@ -1886,6 +2142,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EnableTrackingProtection.ConvenienceExceptions (Tracking Protection > Convenience Exceptions)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
+
 **OMA-URI:**
 
 ```
@@ -1899,6 +2157,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## EnableTrackingProtection.Cryptomining (Tracking Protection > Cryptomining)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
 
 **OMA-URI:**
 
@@ -1914,6 +2174,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EnableTrackingProtection.EmailTracking (Tracking Protection > Email Tracking)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
+
 **OMA-URI:**
 
 ```
@@ -1927,6 +2189,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## EnableTrackingProtection.Exceptions (Tracking Protection > Exceptions)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
 
 **OMA-URI:**
 
@@ -1943,6 +2207,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EnableTrackingProtection.Fingerprinting (Tracking Protection > Fingerprinting)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
+
 **OMA-URI:**
 
 ```
@@ -1956,6 +2222,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## EnableTrackingProtection.Locked (Tracking Protection > Do not allow tracking protection preferences to be changed)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
 
 **OMA-URI:**
 
@@ -1971,6 +2239,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EnableTrackingProtection.SuspectedFingerprinting (Tracking Protection > Suspected Fingerprinting)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
+
 **OMA-URI:**
 
 ```
@@ -1984,6 +2254,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## EnableTrackingProtection.Value (Tracking Protection > Enabled)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/enabletrackingprotection/)
 
 **OMA-URI:**
 
@@ -1999,6 +2271,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EncryptedMediaExtensions.Enabled (Encrypted Media Extensions > Enable Encrypted Media Extensions)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/encryptedmediaextensions/)
+
 **OMA-URI:**
 
 ```
@@ -2013,6 +2287,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## EncryptedMediaExtensions.Locked (Encrypted Media Extensions > Lock Encrypted Media Extensions)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/encryptedmediaextensions/)
+
 **OMA-URI:**
 
 ```
@@ -2026,6 +2302,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ExemptDomainFileTypePairsFromFileTypeDownloadWarnings (Disable warnings based on file extension for specific file types on domains (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/exemptdomainfiletypepairsfromfiletypedownloadwarnings/)
 
 **OMA-URI:**
 
@@ -2042,6 +2320,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ExemptDomainFileTypePairsFromFileTypeDownloadWarnings (Disable warnings based on file extension for specific file types on domains)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/exemptdomainfiletypepairsfromfiletypedownloadwarnings/)
 
 **OMA-URI:**
 
@@ -2062,6 +2342,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Extensions.Install (Extensions > Extensions to Install)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/extensions/)
+
 **OMA-URI:**
 
 ```
@@ -2076,6 +2358,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Extensions.Locked (Extensions > Prevent extensions from being disabled or removed)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/extensions/)
 
 **OMA-URI:**
 
@@ -2092,6 +2376,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Extensions.Uninstall (Extensions > Extensions to Uninstall)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/extensions/)
+
 **OMA-URI:**
 
 ```
@@ -2106,6 +2392,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ExtensionSettings (Extensions > Extension Management)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/extensionsettings/)
 
 **OMA-URI:**
 
@@ -2137,6 +2425,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ExtensionSettings (Extensions > Extension Management (JSON on one line))
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/extensionsettings/)
+
 **OMA-URI:**
 
 ```
@@ -2153,6 +2443,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ExtensionUpdate (Extensions > Extension Update)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/extensionupdate/)
+
 **OMA-URI:**
 
 ```
@@ -2166,6 +2458,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FirefoxHome.Highlights (Firefox Home > Recent Activity)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
 
 **OMA-URI:**
 
@@ -2181,6 +2475,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FirefoxHome.Locked (Firefox Home > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
+
 **OMA-URI:**
 
 ```
@@ -2194,6 +2490,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FirefoxHome.Search (Firefox Home > Search)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
 
 **OMA-URI:**
 
@@ -2209,6 +2507,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FirefoxHome.SponsoredStories (Firefox Home > Sponsored Stories)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
+
 **OMA-URI:**
 
 ```
@@ -2222,6 +2522,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FirefoxHome.SponsoredTopSites (Firefox Home > Sponsored Shortcuts)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
 
 **OMA-URI:**
 
@@ -2237,6 +2539,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FirefoxHome.Stories (Firefox Home > Stories)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
+
 **OMA-URI:**
 
 ```
@@ -2250,6 +2554,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FirefoxHome.TopSites (Firefox Home > Shortcuts)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
 
 **OMA-URI:**
 
@@ -2265,6 +2571,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FirefoxHome.Weather (Firefox Home > Weather)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxhome/)
+
 **OMA-URI:**
 
 ```
@@ -2278,6 +2586,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FirefoxSuggest.ImproveSuggest (Firefox Suggest (US only) > Improve the Firefox Suggest experience)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxsuggest/)
 
 **OMA-URI:**
 
@@ -2293,6 +2603,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FirefoxSuggest.Locked (Firefox Suggest (US only) > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxsuggest/)
+
 **OMA-URI:**
 
 ```
@@ -2306,6 +2618,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FirefoxSuggest.SponsoredSuggestions (Firefox Suggest (US only) > Suggestions from sponsors)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxsuggest/)
 
 **OMA-URI:**
 
@@ -2321,6 +2635,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FirefoxSuggest.WebSuggestions (Firefox Suggest (US only) > Suggestions from the web)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxsuggest/)
+
 **OMA-URI:**
 
 ```
@@ -2334,6 +2650,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FlashPlugin.Allow (Flash > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/flashplugin/)
 
 **OMA-URI:**
 
@@ -2350,6 +2668,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FlashPlugin.Block (Flash > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/flashplugin/)
+
 **OMA-URI:**
 
 ```
@@ -2365,6 +2685,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## FlashPlugin.Default (Flash > Activate Flash on websites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/flashplugin/)
+
 **OMA-URI:**
 
 ```
@@ -2378,6 +2700,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## FlashPlugin.Locked (Flash > Do not allow preferences to be changed)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/flashplugin/)
 
 **OMA-URI:**
 
@@ -2393,6 +2717,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## GenerativeAI.Chatbot (Generative AI > Chatbot)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/generativeai/)
+
 **OMA-URI:**
 
 ```
@@ -2406,6 +2732,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## GenerativeAI.Enabled (Generative AI > Enabled)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/generativeai/)
 
 **OMA-URI:**
 
@@ -2421,6 +2749,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## GenerativeAI.LinkPreviews (Generative AI > Link Previews)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/generativeai/)
+
 **OMA-URI:**
 
 ```
@@ -2434,6 +2764,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## GenerativeAI.Locked (Generative AI > Do not allow preferences to be changed)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/generativeai/)
 
 **OMA-URI:**
 
@@ -2449,6 +2781,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## GenerativeAI.TabGroups (Generative AI > Tab Groups)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/generativeai/)
+
 **OMA-URI:**
 
 ```
@@ -2463,6 +2797,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## GoToIntranetSiteForSingleWordEntryInAddressBar (Force direct intranet site navigation on single word entries in the address bar)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/gotointranetsiteforsinglewordentryinaddressbar/)
+
 **OMA-URI:**
 
 ```
@@ -2476,6 +2812,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Handlers (Handlers (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/handlers/)
 
 **OMA-URI:**
 
@@ -2492,6 +2830,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Handlers (Handlers)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/handlers/)
 
 **OMA-URI:**
 
@@ -2536,6 +2876,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## HardwareAcceleration (Hardware Acceleration)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/hardwareacceleration/)
+
 **OMA-URI:**
 
 ```
@@ -2549,6 +2891,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Homepage (Home page > URL for Home page)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/homepage/)
 
 **OMA-URI:**
 
@@ -2566,6 +2910,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Homepage.Additional (Home page > Additional Homepages)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/homepage/)
+
 **OMA-URI:**
 
 ```
@@ -2580,6 +2926,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Homepage.StartPage (Home page > Start Page)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/homepage/)
 
 **OMA-URI:**
 
@@ -2596,6 +2944,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## HttpAllowlist (HTTP Allowlist)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/httpallowlist/)
+
 **OMA-URI:**
 
 ```
@@ -2610,6 +2960,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## HttpsOnlyMode (HTTPS-Only Mode)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/httpsonlymode/)
 
 **OMA-URI:**
 
@@ -2626,6 +2978,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## InstallAddonsPermission.Allow (Addons > Allowed Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/installaddonspermission/)
+
 **OMA-URI:**
 
 ```
@@ -2641,6 +2995,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## InstallAddonsPermission.Default (Addons > Allow add-on installs from websites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/installaddonspermission/)
+
 **OMA-URI:**
 
 ```
@@ -2654,6 +3010,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## IPProtectionAvailable (IP Protection (VPN) Availability)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/ipprotectionavailable/)
 
 **OMA-URI:**
 
@@ -2669,6 +3027,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## LegacyProfiles (Legacy Profiles)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/legacyprofiles/)
+
 **OMA-URI:**
 
 ```
@@ -2683,6 +3043,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## LegacySameSiteCookieBehaviorEnabled (Revert to legacy SameSite behavior)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/legacysamesitecookiebehaviorenabled/)
+
 **OMA-URI:**
 
 ```
@@ -2696,6 +3058,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## LegacySameSiteCookieBehaviorEnabledForDomainList (Revert to legacy SameSite behavior on specific domains)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/legacysamesitecookiebehaviorenabledfordomainlist/)
 
 **OMA-URI:**
 
@@ -2712,6 +3076,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## LocalFileLinks (Local File Links)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/localfilelinks/)
+
 **OMA-URI:**
 
 ```
@@ -2727,6 +3093,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## LocalNetworkAccess.BlockTrackers (Local Network Access > Block Trackers)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/localnetworkaccess/)
+
 **OMA-URI:**
 
 ```
@@ -2740,6 +3108,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## LocalNetworkAccess.Enabled (Local Network Access > Enabled)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/localnetworkaccess/)
 
 **OMA-URI:**
 
@@ -2755,6 +3125,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## LocalNetworkAccess.EnablePrompting (Local Network Access > Enable Prompting)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/localnetworkaccess/)
+
 **OMA-URI:**
 
 ```
@@ -2769,6 +3141,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## LocalNetworkAccess.Locked (Local Network Access > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/localnetworkaccess/)
+
 **OMA-URI:**
 
 ```
@@ -2782,6 +3156,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## LocalNetworkAccess.SkipDomains (Local Network Access > Skip Domains)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/localnetworkaccess/)
 
 **OMA-URI:**
 
@@ -2798,6 +3174,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ManagedBookmarks (Managed Bookmarks (JSON on one line))
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/managedbookmarks/)
+
 **OMA-URI:**
 
 ```
@@ -2813,6 +3191,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## ManagedBookmarks (Managed Bookmarks)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/managedbookmarks/)
 
 **OMA-URI:**
 
@@ -2851,6 +3231,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## ManualAppUpdateOnly (Manual Update Only)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/manualappupdateonly/)
+
 **OMA-URI:**
 
 ```
@@ -2864,6 +3246,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## NetworkPrediction (Network Prediction)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/networkprediction/)
 
 **OMA-URI:**
 
@@ -2879,6 +3263,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## NewTabPage (New Tab Page)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/newtabpage/)
+
 **OMA-URI:**
 
 ```
@@ -2892,6 +3278,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## NoDefaultBookmarks (No Default Bookmarks)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/nodefaultbookmarks/)
 
 **OMA-URI:**
 
@@ -2907,6 +3295,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## OfferToSaveLogins (Offer to save logins)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/offertosavelogins/)
+
 **OMA-URI:**
 
 ```
@@ -2921,6 +3311,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## OfferToSaveLoginsDefault (Offer to save logins (default))
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/offertosaveloginsdefault/)
+
 **OMA-URI:**
 
 ```
@@ -2934,6 +3326,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## OverrideFirstRunPage (Override the first run page)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/overridefirstrunpage/)
 
 **OMA-URI:**
 
@@ -2950,6 +3344,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## OverridePostUpdatePage (Override the upgrade page)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/overridepostupdatepage/)
+
 **OMA-URI:**
 
 ```
@@ -2965,6 +3361,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PasswordManagerEnabled (Password Manager)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/passwordmanagerenabled/)
+
 **OMA-URI:**
 
 ```
@@ -2978,6 +3376,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## PasswordManagerExceptions (Password Manager Exceptions)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/passwordmanagerexceptions/)
 
 **OMA-URI:**
 
@@ -2994,6 +3394,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PDFjs.Enabled (PDF.js > Enable PDF.js)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/pdfjs/)
+
 **OMA-URI:**
 
 ```
@@ -3008,6 +3410,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PDFjs.EnablePermissions (PDF.js > Enable Permissions)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/pdfjs/)
+
 **OMA-URI:**
 
 ```
@@ -3021,6 +3425,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.Autoplay.Allow (Permissions > Autoplay > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3037,6 +3443,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Autoplay.Block (Permissions > Autoplay > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3051,6 +3459,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.Autoplay.Default (Permissions > Autoplay > Default autoplay level)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3067,6 +3477,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Autoplay.Locked (Permissions > Autoplay > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3080,6 +3492,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.Camera.Allow (Permissions > Camera > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3096,6 +3510,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Camera.Block (Permissions > Camera > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3111,6 +3527,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Camera.BlockNewRequests (Permissions > Camera > Block new requests asking to access the camera)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3125,6 +3543,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Camera.Locked (Permissions > Camera > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3138,6 +3558,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.Location.Allow (Permissions > Location > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3154,6 +3576,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Location.Block (Permissions > Location > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3169,6 +3593,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Location.BlockNewRequests (Permissions > Location > Block new requests asking to access location)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3183,6 +3609,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Location.Locked (Permissions > Location > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3196,6 +3624,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.Microphone.Allow (Permissions > Microphone > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3212,6 +3642,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Microphone.Block (Permissions > Microphone > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3227,6 +3659,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Microphone.BlockNewRequests (Permissions > Microphone > Block new requests asking to access the microphone)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3241,6 +3675,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Microphone.Locked (Permissions > Microphone > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3254,6 +3690,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.Notifications.Allow (Permissions > Notifications > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3270,6 +3708,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Notifications.Block (Permissions > Notifications > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3285,6 +3725,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Notifications.BlockNewRequests (Permissions > Notifications > Block new requests asking to send notifications)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3299,6 +3741,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.Notifications.Locked (Permissions > Notifications > Do not allow preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3312,6 +3756,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.ScreenShare.Allow (Permissions > Screen Sharing > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3328,6 +3774,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.ScreenShare.Block (Permissions > Screen Sharing > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3343,6 +3791,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.ScreenShare.BlockNewRequests (Permissions > Screen Sharing > Block new screen sharing requests)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3357,6 +3807,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.ScreenShare.Locked (Permissions > Screen Sharing > Do not allow screen sharing preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3370,6 +3822,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.VirtualReality.Allow (Permissions > Virtual Reality > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3386,6 +3840,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.VirtualReality.Block (Permissions > Virtual Reality > Blocked Sites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3401,6 +3857,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Permissions.VirtualReality.BlockNewRequests (Permissions > Virtual Reality > Block new requests asking to access virtual reality devices)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
+
 **OMA-URI:**
 
 ```
@@ -3414,6 +3872,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Permissions.VirtualReality.Locked (Permissions > Virtual Reality > Do not allow preferences to be changed)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/permissions/)
 
 **OMA-URI:**
 
@@ -3429,6 +3889,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PictureInPicture.Enabled (Picture-in-Picture > Enabled)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/pictureinpicture/)
+
 **OMA-URI:**
 
 ```
@@ -3443,6 +3905,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PictureInPicture.Locked (Picture-in-Picture > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/pictureinpicture/)
+
 **OMA-URI:**
 
 ```
@@ -3456,6 +3920,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## PopupBlocking.Allow (Popups > Allowed Sites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/popupblocking/)
 
 **OMA-URI:**
 
@@ -3472,6 +3938,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PopupBlocking.Default (Popups > Block pop-ups from websites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/popupblocking/)
+
 **OMA-URI:**
 
 ```
@@ -3485,6 +3953,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## PopupBlocking.Locked (Popups > Do not allow preferences to be changed)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/popupblocking/)
 
 **OMA-URI:**
 
@@ -3500,6 +3970,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PostQuantumKeyAgreementEnabled (Enable post-quantum key agreement)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/postquantumkeyagreementenabled/)
+
 **OMA-URI:**
 
 ```
@@ -3513,6 +3985,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Preferences (Preferences (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/preferences/)
 
 **OMA-URI:**
 
@@ -3529,6 +4003,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Preferences (Preferences)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/preferences/)
 
 **OMA-URI:**
 
@@ -3559,6 +4035,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PrimaryPassword (Primary (Master) Password)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/primarypassword/)
+
 **OMA-URI:**
 
 ```
@@ -3573,6 +4051,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PrintingEnabled (Printing)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/printingenabled/)
+
 **OMA-URI:**
 
 ```
@@ -3586,6 +4066,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## PrivateBrowsingModeAvailability (Private Browsing Mode Availability)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/privatebrowsingmodeavailability/)
 
 **OMA-URI:**
 
@@ -3602,6 +4084,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## PromptForDownloadLocation (Prompt for download location)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/promptfordownloadlocation/)
+
 **OMA-URI:**
 
 ```
@@ -3615,6 +4099,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Proxy (Proxy Settings > SOCKS Host)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
 
 **OMA-URI:**
 
@@ -3632,6 +4118,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Proxy.AutoConfigURL (Proxy Settings > Automatic proxy configuration URL)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
+
 **OMA-URI:**
 
 ```
@@ -3647,6 +4135,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Proxy.AutoLogin (Proxy Settings > Do not prompt for authentication if password is saved)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
+
 **OMA-URI:**
 
 ```
@@ -3660,6 +4150,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Proxy.HTTPProxy (Proxy Settings > HTTP Proxy)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
 
 **OMA-URI:**
 
@@ -3676,6 +4168,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Proxy.Locked (Proxy Settings > Do not allow proxy settings to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
+
 **OMA-URI:**
 
 ```
@@ -3689,6 +4183,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Proxy.Mode (Proxy Settings > Connection Type)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
 
 **OMA-URI:**
 
@@ -3705,6 +4201,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Proxy.Passthrough (Proxy Settings > Proxy Passthrough)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
+
 **OMA-URI:**
 
 ```
@@ -3719,6 +4217,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## Proxy.SSLProxy (Proxy Settings > HTTPS Proxy)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
 
 **OMA-URI:**
 
@@ -3735,6 +4235,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Proxy.UseHTTPProxyForAllProtocols (Proxy Settings > Use HTTP proxy for HTTPS)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
+
 **OMA-URI:**
 
 ```
@@ -3749,6 +4251,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## Proxy.UseProxyForDNS (Proxy Settings > Proxy DNS when using SOCKS)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/proxy/)
+
 **OMA-URI:**
 
 ```
@@ -3762,6 +4266,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## RequestedLocales (Requested locale)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/requestedlocales/)
 
 **OMA-URI:**
 
@@ -3778,6 +4284,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## RequestedLocales (Requested locale (string))
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/requestedlocales/)
+
 **OMA-URI:**
 
 ```
@@ -3793,6 +4301,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## SanitizeOnShutdown.Cache (Clear data when browser is closed > Cache)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
+
 **OMA-URI:**
 
 ```
@@ -3806,6 +4316,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## SanitizeOnShutdown.Cookies (Clear data when browser is closed > Cookies)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
 
 **OMA-URI:**
 
@@ -3821,6 +4333,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## SanitizeOnShutdown.FormData (Clear data when browser is closed > Form Data)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
+
 **OMA-URI:**
 
 ```
@@ -3834,6 +4348,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## SanitizeOnShutdown.History (Clear data when browser is closed > History)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
 
 **OMA-URI:**
 
@@ -3849,6 +4365,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## SanitizeOnShutdown.Locked (Clear data when browser is closed > Locked)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
+
 **OMA-URI:**
 
 ```
@@ -3862,6 +4380,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## SanitizeOnShutdown.Sessions (Clear data when browser is closed > Active Logins)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
 
 **OMA-URI:**
 
@@ -3877,6 +4397,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ## SanitizeOnShutdown.SiteSettings (Clear data when browser is closed > Site Preferences)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sanitizeonshutdown/)
+
 **OMA-URI:**
 
 ```
@@ -3890,6 +4412,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## SearchBar (Search bar location)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/searchbar/)
 
 **OMA-URI:**
 
@@ -3905,6 +4429,8 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 
 ## SearchEngines.Add[N] (Search > Search Engine One - Search Engine Five)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/searchengines/)
 
 Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngines_5` (5 slots).
 
@@ -3931,6 +4457,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## SearchEngines.Default (Search > Default Search Engine)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/searchengines/)
+
 **OMA-URI:**
 
 ```
@@ -3946,6 +4474,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## SearchEngines.PreventInstalls (Search > Prevent Search Engine Installs)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/searchengines/)
+
 **OMA-URI:**
 
 ```
@@ -3959,6 +4489,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## SearchEngines.Remove (Search > Remove Search Engines)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/searchengines/)
 
 **OMA-URI:**
 
@@ -3975,6 +4507,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## SearchSuggestEnabled (Search > Search Suggestions)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/searchsuggestenabled/)
+
 **OMA-URI:**
 
 ```
@@ -3988,6 +4522,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## SecurityDevices (Security Devices)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/securitydevices/)
 
 **OMA-URI:**
 
@@ -4004,6 +4540,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## SecurityDevices.Add (Security Devices > Add)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/securitydevices/)
+
 **OMA-URI:**
 
 ```
@@ -4018,6 +4556,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## SecurityDevices.Delete (Security Devices > Delete)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/securitydevices/)
 
 **OMA-URI:**
 
@@ -4034,6 +4574,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## ShowHomeButton (Home page > Show Home button on toolbar)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/showhomebutton/)
+
 **OMA-URI:**
 
 ```
@@ -4048,6 +4590,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## SkipTermsOfUse (Skip Terms of Use)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/skiptermsofuse/)
+
 **OMA-URI:**
 
 ```
@@ -4061,6 +4605,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## Software.Policies.Mozilla.Certificates (Certificates > Install Certificates)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/software/)
 
 **OMA-URI:**
 
@@ -4077,6 +4623,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## Software.Policies.Mozilla.WebsiteFilter.Block (Blocked websites)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/software/)
+
 **OMA-URI:**
 
 ```
@@ -4091,6 +4639,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## Software.Policies.Mozilla.WebsiteFilter.Exceptions (Exceptions to blocked websites)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/software/)
 
 **OMA-URI:**
 
@@ -4107,6 +4657,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## SSLVersionMax (Maximum SSL version enabled)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sslversionmax/)
+
 **OMA-URI:**
 
 ```
@@ -4121,6 +4673,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## SSLVersionMin (Minimum SSL version enabled)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/sslversionmin/)
 
 **OMA-URI:**
 
@@ -4137,6 +4691,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## StartDownloadsInTempDirectory (Start Downloads in Temporary Directory)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/startdownloadsintempdirectory/)
+
 **OMA-URI:**
 
 ```
@@ -4150,6 +4706,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## SupportMenu (Support Menu)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/supportmenu/)
 
 **OMA-URI:**
 
@@ -4168,6 +4726,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## TranslateEnabled (Enable webpage translation)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/translateenabled/)
+
 **OMA-URI:**
 
 ```
@@ -4181,6 +4741,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## UserMessaging.ExtensionRecommendations (User Messaging > Extension Recommendations)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
 
 **OMA-URI:**
 
@@ -4196,6 +4758,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## UserMessaging.FeatureRecommendations (User Messaging > Feature Recommendations)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
+
 **OMA-URI:**
 
 ```
@@ -4209,6 +4773,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## UserMessaging.FirefoxLabs (User Messaging > Firefox Labs)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
 
 **OMA-URI:**
 
@@ -4224,6 +4790,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## UserMessaging.Locked (User Messaging > Do not allow user messaging preferences to be changed)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
+
 **OMA-URI:**
 
 ```
@@ -4237,6 +4805,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## UserMessaging.MoreFromMozilla (User Messaging > More from Mozilla)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
 
 **OMA-URI:**
 
@@ -4252,6 +4822,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## UserMessaging.SkipOnboarding (User Messaging > Skip Onboarding)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
+
 **OMA-URI:**
 
 ```
@@ -4265,6 +4837,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## UserMessaging.UrlbarInterventions (User Messaging > Urlbar Interventions)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usermessaging/)
 
 **OMA-URI:**
 
@@ -4280,6 +4854,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## UseSystemPrintDialog (Use System Print Dialog)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/usesystemprintdialog/)
+
 **OMA-URI:**
 
 ```
@@ -4294,6 +4870,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## VisualSearchEnabled (Visual Search)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/visualsearchenabled/)
+
 **OMA-URI:**
 
 ```
@@ -4307,6 +4885,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## WebsiteFilter (Website Filter (JSON on one line))
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/websitefilter/)
 
 **OMA-URI:**
 
@@ -4324,6 +4904,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## WebsiteFilter (Website Filter (JSON))
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/websitefilter/)
+
 **OMA-URI:**
 
 ```
@@ -4339,6 +4921,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 
 ## WindowsSSO (Windows SSO)
 
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/windowssso/)
+
 **OMA-URI:**
 
 ```
@@ -4352,6 +4936,8 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 
 ## XSLTEnabled (Enable XSLT)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/xsltenabled/)
 
 **OMA-URI:**
 

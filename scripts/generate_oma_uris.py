@@ -27,6 +27,7 @@ MOZILLA_ROOT = "Mozilla:Cat_Mozilla"
 ADMX_PATH = Path("windows/firefox.admx")
 ADML_PATH = Path("windows/en-US/firefox.adml")
 SAMPLE_JSON_PATH = Path("linux/policies.json")
+DOCS_BASE_URL = "https://firefox-admin-docs.mozilla.org/reference/policies"
 
 # NS is detected at runtime from the parsed root element so this works
 # whether or not firefox.admx declares the standard ADMX namespace.
@@ -364,6 +365,18 @@ def range_display(first_display: str, last_display: str) -> str:
     return f"{first_display} - {last_display}"
 
 
+def docs_url_for(json_name: str) -> str:
+    """Derive the firefox-admin-docs URL for a policy.
+
+    Docs pages live at /reference/policies/<lowercase-top-level-name>/.
+    Nested keys and numbered-family placeholders like 'Bookmarks[N]' link
+    to the top-level page.
+    """
+    top = json_name.split(".")[0]
+    top = re.sub(r"\[.*\]$", "", top)
+    return f"{DOCS_BASE_URL}/{top.lower()}/"
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -513,6 +526,8 @@ def main() -> int:
     for e in collapsed:
         out.append(f"## {e['json_name']} ({e['breadcrumb']})")
         out.append("")
+        out.append(f"[Full policy documentation]({docs_url_for(e['json_name'])})")
+        out.append("")
         if e.get("range_note"):
             out.append(e["range_note"])
             out.append("")
@@ -529,7 +544,9 @@ def main() -> int:
         out.append("```")
         out.append("")
 
-    sys.stdout.write("\n".join(out))
+    # Write via the raw buffer with UTF-8 bytes so line endings stay LF on
+    # Windows (Python's text-mode stdout would otherwise translate \n to \r\n).
+    sys.stdout.buffer.write("\n".join(out).encode("utf-8"))
     return 0
 
 
