@@ -1592,9 +1592,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         </textBox>
       </presentation>
       <presentation id="HomepageURL">
-        <text>URL :</text>
         <textBox refId="HomepageURL">
-          <label/>
+          <label>URL :</label>
         </textBox>
         <checkBox refId="HomepageLocked">Ne pas autoriser la modification de la page d'accueil.</checkBox>
       </presentation>
@@ -1605,23 +1604,18 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <dropdownList refId="StartPage"/>
       </presentation>
       <presentation id="Bookmark">
-        <text>Titre :</text>
         <textBox refId="BookmarkTitle">
-          <label/>
+          <label>Titre :</label>
         </textBox>
-        <text>URL :</text>
         <textBox refId="BookmarkURL">
-          <label/>
+          <label>URL :</label>
         </textBox>
-        <text>URL Favicon :</text>
         <textBox refId="BookmarkFavicon">
-          <label/>
+          <label>URL Favicon :</label>
         </textBox>
-        <text>Emplacement :</text>
-        <dropdownList refId="BookmarkPlacement"/>
-        <text>Nom du dossier :</text>
+        <dropdownList refId="BookmarkPlacement">Emplacement :</dropdownList>
         <textBox refId="BookmarkFolder">
-          <label/>
+          <label>Nom du dossier :</label>
         </textBox>
       </presentation>
       <presentation id="SearchEngine">
@@ -1667,17 +1661,14 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
-        <text>Titre :</text>
         <textBox refId="SupportMenuTitle">
-          <label/>
+          <label>Titre :</label>
         </textBox>
-        <text>URL :</text>
         <textBox refId="SupportMenuURL">
-          <label/>
+          <label>URL :</label>
         </textBox>
-        <text>Clé d'accès :</text>
         <textBox refId="SupportMenuAccessKey">
-          <label/>
+          <label>Clé d'accès :</label>
         </textBox>
       </presentation>
       <presentation id="Preferences_String">
@@ -1752,9 +1743,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         </textBox>
       </presentation>
       <presentation id="Proxy_SOCKSProxy">
-        <text>Hôte incluant le port :</text>
         <textBox refId="Proxy_SOCKSProxy">
-          <label/>
+          <label>Hôte incluant le port :</label>
         </textBox>
         <text>Version de SOCKS :</text>
         <dropdownList refId="Proxy_SOCKSVersion"/>
@@ -1765,9 +1755,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</
         </textBox>
       </presentation>
       <presentation id="Proxy_Passthrough">
-        <text>Pas de Proxy pour</text>
         <textBox refId="Proxy_Passthrough">
-          <label/>
+          <label>Pas de Proxy pour</label>
         </textBox>
         <text>Exemple : .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>Les connexions vers localhost, 127.0.0.1/8 et ::1 ne sont jamais proxyfiées.</text>

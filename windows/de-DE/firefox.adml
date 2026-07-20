@@ -1588,9 +1588,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         </textBox>
       </presentation>
       <presentation id="HomepageURL">
-        <text>URL:</text>
         <textBox refId="HomepageURL">
-          <label/>
+          <label>URL:</label>
         </textBox>
         <checkBox refId="HomepageLocked">Änderung der Startseite nicht erlauben</checkBox>
       </presentation>
@@ -1601,23 +1600,18 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <dropdownList refId="StartPage"/>
       </presentation>
       <presentation id="Bookmark">
-        <text>Titel:</text>
         <textBox refId="BookmarkTitle">
-          <label/>
+          <label>Titel:</label>
         </textBox>
-        <text>Adresse:</text>
         <textBox refId="BookmarkURL">
-          <label/>
+          <label>Adresse:</label>
         </textBox>
-        <text>Favicon Adresse:</text>
         <textBox refId="BookmarkFavicon">
-          <label/>
+          <label>Favicon Adresse:</label>
         </textBox>
-        <text>Speicherort:</text>
-        <dropdownList refId="BookmarkPlacement"/>
-        <text>Ordner:</text>
+        <dropdownList refId="BookmarkPlacement">Speicherort:</dropdownList>
         <textBox refId="BookmarkFolder">
-          <label/>
+          <label>Ordner:</label>
         </textBox>
       </presentation>
       <presentation id="SearchEngine">
@@ -1663,17 +1657,14 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
-        <text>Title:</text>
         <textBox refId="SupportMenuTitle">
-          <label/>
+          <label>Title:</label>
         </textBox>
-        <text>URL:</text>
         <textBox refId="SupportMenuURL">
-          <label/>
+          <label>URL:</label>
         </textBox>
-        <text>Taste:</text>
         <textBox refId="SupportMenuAccessKey">
-          <label/>
+          <label>Taste:</label>
         </textBox>
       </presentation>
       <presentation id="Preferences_String">
@@ -1748,9 +1739,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         </textBox>
       </presentation>
       <presentation id="Proxy_SOCKSProxy">
-        <text>Host einschließlich Port:</text>
         <textBox refId="Proxy_SOCKSProxy">
-          <label/>
+          <label>Host einschließlich Port:</label>
         </textBox>
         <text>SOCKS Version:</text>
         <dropdownList refId="Proxy_SOCKSVersion"/>
@@ -1761,9 +1751,8 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         </textBox>
       </presentation>
       <presentation id="Proxy_Passthrough">
-        <text>Kein Proxy für</text>
         <textBox refId="Proxy_Passthrough">
-          <label/>
+          <label>Kein Proxy für</label>
         </textBox>
         <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
         <text>Connections to localhost, 127.0.0.1/8, and ::1 are never proxied.</text>
