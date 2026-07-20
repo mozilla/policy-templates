@@ -513,6 +513,11 @@
               <string>reject-tracker</string>
             </value>
           </item>
+          <item displayName="$(string.Cookies_Behavior_PartitionForeign)">
+            <value>
+              <string>partition-foreign</string>
+            </value>
+          </item>
           <item displayName="$(string.Cookies_Behavior_RejectTrackerAndPartitionForeign)">
             <value>
               <string>reject-tracker-and-partition-foreign</string>
@@ -549,6 +554,11 @@
           <item displayName="$(string.Cookies_Behavior_RejectTracker)">
             <value>
               <string>reject-tracker</string>
+            </value>
+          </item>
+          <item displayName="$(string.Cookies_Behavior_PartitionForeign)">
+            <value>
+              <string>partition-foreign</string>
             </value>
           </item>
           <item displayName="$(string.Cookies_Behavior_RejectTrackerAndPartitionForeign)">

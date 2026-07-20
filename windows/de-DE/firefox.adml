@@ -481,7 +481,8 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert ist, werde
       <string id="Cookies_Behavior_Reject">Alle Cookies ablehnen</string>
       <string id="Cookies_Behavior_LimitForeign">Cookies von Drittanbietern für Websites, die Sie nicht besucht haben, ablehnen</string>
       <string id="Cookies_Behavior_RejectTracker">Cookies für bekannte Tracker ablehnen</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Ablehnung von Cookies für bekannte Tracker und Partitionierung von Drittanbieter-Cookies (Vollständiger Cookie-Schutz)</string>
+      <string id="Cookies_Behavior_PartitionForeign">Drittanbieter-Cookies partitionieren (Vollständiger Cookie-Schutz)</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Cookies für bekannte Tracker ablehnen und Drittanbieter-Cookies partitionieren (Veraltet - bitte "Drittanbieter-Cookies partitionieren" verwenden)</string>
       <string id="Camera_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Kamera für die genannten Quellen automatisch freigegeben.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
