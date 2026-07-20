@@ -1361,6 +1361,10 @@ Cette stratégie ne peut pas être utilisée pour activer la restauration sur de
       <string id="DisableRemoteImprovements_Explain">Si cette stratégie est activée, Firefox n’appliquera pas de modifications de performance, de stabilité ou de fonctionnalités entre les mises à jour.
 
 Si cette stratégie est désactivée ou non configurée, Firefox appliquera des modifications de performance, de stabilité ou de fonctionnalités entre les mises à jour.</string>
+      <string id="DisableRemoteSettingsAndAcceptSecurityConsequences">Désactiver Remote Settings et accepter les conséquences en matière de sécurité</string>
+      <string id="DisableRemoteSettingsAndAcceptSecurityConsequences_Explain">Si cette stratégie est activée, les mises à jour de Remote Settings sont désactivées et Firefox ne recevra plus de données mises à jour, telles que les listes de blocage.
+
+Si cette stratégie est désactivée ou non configurée, les mises à jour de Remote Settings sont activées.</string>
       <string id="IPProtectionAvailable">Disponibilité de la protection IP (VPN)</string>
       <string id="IPProtectionAvailable_Explain">Si cette stratégie est désactivée, le VPN intégré (Protection IP) n’est pas disponible pour les utilisateurs.
 
