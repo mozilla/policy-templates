@@ -88,6 +88,8 @@
       <string id="SUPPORTED_FF150_ONLY">Firefox 150 ou supérieur</string>
       <string id="SUPPORTED_FF151_ONLY">Firefox 151 ou supérieur</string>
       <string id="SUPPORTED_FF152_ONLY">Firefox 152 ou supérieur</string>
+      <string id="SUPPORTED_FF153_ONLY">Firefox 153 ou supérieur</string>
+      <string id="SUPPORTED_FF154_ONLY">Firefox 154 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
