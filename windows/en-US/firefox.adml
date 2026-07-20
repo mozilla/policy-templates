@@ -1363,6 +1363,10 @@ This policy cannot be used to enable restore on platforms or in configurations w
       <string id="DisableRemoteImprovements_Explain">If this policy is enabled, Firefox will not apply performance, stability, and feature changes between updates.
 
 If this policy is disabled or not configured, Firefox will apply performance, stability, and feature changes between updates.</string>
+      <string id="DisableRemoteSettingsAndAcceptSecurityConsequences">Disable Remote Settings and accept security consequences</string>
+      <string id="DisableRemoteSettingsAndAcceptSecurityConsequences_Explain">If this policy is enabled, Remote Settings updates are disabled and Firefox will no longer receive updated data such as blocklists.
+
+If this policy is disabled or not configured, Remote Settings updates are enabled.</string>
       <string id="IPProtectionAvailable">IP Protection (VPN) Availability</string>
       <string id="IPProtectionAvailable_Explain">If this policy is disabled, the built-in VPN (IP Protection) is not available to users.
 

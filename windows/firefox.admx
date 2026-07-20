@@ -4881,6 +4881,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableRemoteSettingsAndAcceptSecurityConsequences" class="Both" displayName="$(string.DisableRemoteSettingsAndAcceptSecurityConsequences)" explainText="$(string.DisableRemoteSettingsAndAcceptSecurityConsequences_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableRemoteSettingsAndAcceptSecurityConsequences">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF153_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="IPProtectionAvailable" class="Both" displayName="$(string.IPProtectionAvailable)" explainText="$(string.IPProtectionAvailable_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="IPProtectionAvailable">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF14902_ONLY"/>

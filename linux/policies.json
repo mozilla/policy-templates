@@ -114,6 +114,7 @@
     "DisableProfileImport": true | false,
     "DisableProfileRefresh": true | false,
     "DisableRemoteImprovements": true | false,
+    "DisableRemoteSettingsAndAcceptSecurityConsequences": true | false,
     "DisableSafeMode": true | false,
     "DisableSecurityBypass": {
       "InvalidCertificate": true | false,

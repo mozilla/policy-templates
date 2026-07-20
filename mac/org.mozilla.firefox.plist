@@ -267,6 +267,8 @@
 	<true/>
 	<key>DisableRemoteImprovements</key>
 	<true/>
+	<key>DisableRemoteSettingsAndAcceptSecurityConsequences</key>
+	<true/>
 	<key>DisableSafeMode</key>
 	<true/>
 	<key>DisableSecurityBypass</key>
