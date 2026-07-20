@@ -756,6 +756,12 @@ If this policy is disabled or not configured, the start page defaults to the pre
 If this policy is disabled, the home button will not appear on the toolbar by default.
 
 If this policy is not configured, Firefox will determine whether or not the home button appears on the toolbar by default.</string>
+      <string id="Homepage_NewTabOnRestore">Also open a new tab when restoring previous windows and tabs</string>
+      <string id="Homepage_NewTabOnRestore_Explain">If this policy is enabled, a new tab is also opened when restoring previous windows and tabs.
+
+If this policy is disabled, a new tab is not opened when restoring previous windows and tabs.
+
+If this policy is not configured, the Firefox default applies (Firefox may enable this on its own).</string>
       <string id="PasswordManagerEnabled">Password Manager</string>
       <string id="PasswordManagerEnabled_Explain">If this policy is disabled, the password manager is not available via preferences.
 

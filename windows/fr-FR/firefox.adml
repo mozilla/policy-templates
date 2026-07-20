@@ -756,6 +756,12 @@ Si cette stratégie est désactivée ou non configurée, la page de démarrage s
 Si cette stratégie est désactivée, le bouton Accueil n'apparaîtra pas par défaut sur la barre d'outils.
 
 Si cette stratégie n'est pas configurée, Firefox déterminera si le bouton Accueil doit apparaître ou non sur la barre d'outils par défaut.</string>
+      <string id="Homepage_NewTabOnRestore">Ouvrir également un nouvel onglet lors de la restauration des fenêtres et onglets précédents</string>
+      <string id="Homepage_NewTabOnRestore_Explain">Si cette stratégie est activée, un nouvel onglet est également ouvert lors de la restauration des fenêtres et onglets précédents.
+
+Si cette stratégie est désactivée, aucun nouvel onglet n'est ouvert lors de la restauration des fenêtres et onglets précédents.
+
+Si cette stratégie n'est pas configurée, le paramètre par défaut de Firefox s'applique (Firefox peut l'activer de lui-même).</string>
       <string id="PasswordManagerEnabled">Gestionnaire de mots de passe</string>
       <string id="PasswordManagerEnabled_Explain">Si cette stratégie est désactivée, le gestionnaire de mots de passe n'est pas accessible via les préférences.
 

@@ -1553,6 +1553,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="Homepage_NewTabOnRestore" class="Both" displayName="$(string.Homepage_NewTabOnRestore)" explainText="$(string.Homepage_NewTabOnRestore_Explain)" key="Software\Policies\Mozilla\Firefox\Homepage" valueName="NewTabOnRestore">
+      <parentCategory ref="Homepage"/>
+      <supportedOn ref="SUPPORTED_FF154_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="A_BookmarksOneLine" class="Both" displayName="$(string.BookmarksOneLine)" key="Software\Policies\Mozilla\Firefox" explainText="$(string.Bookmarks_Explain)" presentation="$(presentation.JSONOneLine)">
       <parentCategory ref="Bookmarks"/>
       <supportedOn ref="SUPPORTED_FF95"/>

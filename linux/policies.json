@@ -232,7 +232,8 @@
       "Locked": true | false,
       "Additional": ["http://example.org/",
                     "http://example.edu/"],
-      "StartPage": "none" | "homepage" | "previous-session" | "homepage-locked"
+      "StartPage": "none" | "homepage" | "previous-session" | "homepage-locked",
+      "NewTabOnRestore": true | false
     },
     "HttpAllowlist": ["http://example.org",
                        "http://example.edu"],

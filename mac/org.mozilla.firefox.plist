@@ -479,6 +479,8 @@
 		</array>
 		<key>StartPage</key>
 		<string>homepage</string>
+		<key>NewTabOnRestore</key>
+		<true/>
 	</dict>
 	<key>HttpAllowlist</key>
 	<array>
