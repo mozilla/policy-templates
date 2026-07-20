@@ -753,6 +753,12 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
 Wenn diese Richtlinieneinstellung deaktiviert ist, erscheint der Home-Button standardmäßig nicht in der Symbolleiste.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, entscheidet Firefox selbst, ob der Home-Button standardmäßig in der Symbolleiste erscheint oder nicht.</string>
+      <string id="Homepage_NewTabOnRestore">Auch einen neuen Tab öffnen, wenn vorherige Fenster und Tabs wiederhergestellt werden</string>
+      <string id="Homepage_NewTabOnRestore_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird beim Wiederherstellen der vorherigen Fenster und Tabs auch ein neuer Tab geöffnet.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, wird beim Wiederherstellen der vorherigen Fenster und Tabs kein neuer Tab geöffnet.
+
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, gilt die Firefox-Standardeinstellung (Firefox kann dies eigenständig aktivieren).</string>
       <string id="PasswordManagerEnabled">Passwort-Manager</string>
       <string id="PasswordManagerEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der Passwort-Manager nicht über die Einstellungen verfügbar.
 
