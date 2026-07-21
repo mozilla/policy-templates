@@ -1,5 +1,10 @@
 > [!WARNING]
-> Documentation for policy behavior and syntax is being migrated to the [Firefox administrator reference](https://firefox-admin-docs.mozilla.org/).
+>
+> The documentaton below is NOT current.
+>
+> Documentation for policy behavior and syntax has been moved to the [Firefox administrator reference](https://firefox-admin-docs.mozilla.org/).
+>
+> Documentaton for OMA-URIs has moved to [here](https://github.com/mozilla/policy-templates/blob/master/docs/oma-uris.md).
 
 Firefox policies can be specified using the [Group Policy templates on Windows](https://github.com/mozilla/policy-templates/tree/master/windows), [Intune on Windows](https://support.mozilla.org/kb/managing-firefox-intune), [configuration profiles on macOS](https://github.com/mozilla/policy-templates/tree/master/mac), or by creating a file called `policies.json`. On Windows, create a directory called `distribution` where the EXE is located and place the file there. On Mac, the file goes into `Firefox.app/Contents/Resources/distribution`.  On Linux, the file goes into `firefox/distribution`, where `firefox` is the installation directory for firefox, which varies by distribution or you can specify system-wide policy by placing the file in `/etc/firefox/policies`.
 
