@@ -25,13 +25,14 @@ jobs:
       - name: Bump ADMX/ADML revision numbers
         run: |
           VERSION="${{ steps.version.outputs.version }}"
-          NS="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions"
-          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitions/@revision" -v "$VERSION" windows/firefox.admx
-          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitions/x:resources/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
-          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/de-DE/firefox.adml
-          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/en-US/firefox.adml
-          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
-          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
+          # xmlstarlet ed on ubuntu-latest doesn't accept -N for namespace binding
+          # (that's a sel option), so we use local-name() to match elements
+          # regardless of the ADMX default namespace.
+          xmlstarlet ed -P --inplace --update "/*[local-name()='policyDefinitions']/@revision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P --inplace --update "/*[local-name()='policyDefinitions']/*[local-name()='resources']/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
+          for locale in de-DE en-US ru-RU fr-FR; do
+            xmlstarlet ed -P --inplace --update "/*[local-name()='policyDefinitionResources']/@revision" -v "$VERSION" "windows/$locale/firefox.adml"
+          done
 
       - name: Regenerate OMA-URIs reference
         run: python3 scripts/generate_oma_uris.py > docs/oma-uris.md
