@@ -1,6 +1,6 @@
 # Firefox ADMX OMA-URIs for Intune
 
-Auto-generated from `windows/firefox.admx` (revision `7.12`). Do not edit by hand.
+Auto-generated from `windows/firefox.admx` (revision `8.0`). Do not edit by hand.
 
 Entries are keyed by the JSON policy name (as used in `policies.json`), with the GPMC display path shown in parentheses. Policies marked "(Deprecated)" in the ADML are omitted. Numbered families (e.g. `Bookmark01`-`Bookmark50`) are collapsed into a single entry with an `NN` placeholder in the URI.
 
@@ -1127,7 +1127,7 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="Cookies_Behavior" value="accept | reject-foreign | reject | limit-foreign | reject-tracker | reject-tracker-and-partition-foreign"/>
+<data id="Cookies_Behavior" value="accept | reject-foreign | reject | limit-foreign | reject-tracker | partition-foreign | reject-tracker-and-partition-foreign"/>
 ```
 
 ## Cookies.BehaviorPrivateBrowsing (Cookies > Cookie Behavior in private browsing)
@@ -1144,7 +1144,7 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/>
-<data id="Cookies_BehaviorPrivateBrowsing" value="accept | reject-foreign | reject | limit-foreign | reject-tracker | reject-tracker-and-partition-foreign"/>
+<data id="Cookies_BehaviorPrivateBrowsing" value="accept | reject-foreign | reject | limit-foreign | reject-tracker | partition-foreign | reject-tracker-and-partition-foreign"/>
 ```
 
 ## Cookies.Block (Cookies > Blocked Sites)
@@ -1838,6 +1838,22 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableRemoteImprovements
+```
+
+**Value:**
+
+```
+<enabled/> or <disabled/>
+```
+
+## DisableRemoteSettingsAndAcceptSecurityConsequences (Disable Remote Settings and accept security consequences)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/disableremotesettingsandacceptsecurityconsequences/)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox/DisableRemoteSettingsAndAcceptSecurityConsequences
 ```
 
 **Value:**
@@ -2923,6 +2939,22 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 ```
 <enabled/>
 <data id="HomepageAdditional" value="1&#xF000;value1&#xF000;2&#xF000;value2"/>
+```
+
+## Homepage.NewTabOnRestore (Home page > Also open a new tab when restoring previous windows and tabs)
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/homepage/)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Homepage/Homepage_NewTabOnRestore
+```
+
+**Value:**
+
+```
+<enabled/> or <disabled/>
 ```
 
 ## Homepage.StartPage (Home page > Start Page)
