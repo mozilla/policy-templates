@@ -26,12 +26,12 @@ jobs:
         run: |
           VERSION="${{ steps.version.outputs.version }}"
           NS="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions"
-          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitions/@revision" -v "$VERSION" windows/firefox.admx
-          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitions/x:resources/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
-          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/de-DE/firefox.adml
-          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/en-US/firefox.adml
-          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
-          xmlstarlet ed -P -N x="$NS" --inplace --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
+          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitions/@revision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitions/x:resources/@minRequiredRevision" -v "$VERSION" windows/firefox.admx
+          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/de-DE/firefox.adml
+          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/en-US/firefox.adml
+          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/ru-RU/firefox.adml
+          xmlstarlet ed -P -N x="$NS" -L --update "/x:policyDefinitionResources/@revision" -v "$VERSION" windows/fr-FR/firefox.adml
 
       - name: Regenerate OMA-URIs reference
         run: python3 scripts/generate_oma_uris.py > docs/oma-uris.md
