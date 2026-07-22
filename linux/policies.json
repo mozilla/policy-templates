@@ -390,6 +390,7 @@
       "History": true | false,
       "Sessions": true | false,
       "SiteSettings": true | false,
+      "Exceptions": ["https://example.com"],
       "Locked": true | false
     },
     "SearchEngines": {

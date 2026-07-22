@@ -759,6 +759,10 @@
 		<true/>
 		<key>SiteSettings</key>
 		<true/>
+		<key>Exceptions</key>
+		<array>
+			<string>https://example.com</string>
+		</array>
 		<key>Locked</key>
 		<true/>
 	</dict>
