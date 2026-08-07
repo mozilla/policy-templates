@@ -288,6 +288,12 @@ Si cette stratégie est désactivée ou non configurée, le bouton "Forget" est 
       <string id="DisableFormHistory_Explain">Si cette stratégie est activée, Firefox ne conservera pas l'historique du formulaire ou de la recherche.
 
 Si cette stratégie est désactivée ou non configurée, Firefox conservera l'historique des formulaires et des recherches.</string>
+      <string id="DisableLaunchOnLogin">Désactiver le lancement à la connexion</string>
+      <string id="DisableLaunchOnLogin_Explain">Si cette stratégie est activée, Firefox ne se lance pas automatiquement lorsque l'utilisateur se connecte. Toute entrée de lancement à la connexion existante est supprimée et la case « Ouvrir Firefox automatiquement au démarrage de votre ordinateur » sous « Paramètres > Général > Au démarrage » est masquée.
+
+Si cette stratégie est désactivée ou non configurée, l'utilisateur contrôle le paramètre de lancement à la connexion.
+
+Remarque : cette stratégie n'est disponible que sous Windows.</string>
       <string id="DisablePasswordReveal">Ne pas autoriser la révélation des mots de passe dans les connexions enregistrées</string>
       <string id="DisablePasswordReveal_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent pas afficher les mots de passe dans les connexions enregistrées.
 

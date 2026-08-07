@@ -288,6 +288,12 @@ If this policy is disabled or not configured, the "Forget" button is available.<
       <string id="DisableFormHistory_Explain">If this policy is enabled, Firefox will not remember form or search history.
 
 If this policy is disabled or not configured, Firefox will remember form and search history.</string>
+      <string id="DisableLaunchOnLogin">Disable launch on login</string>
+      <string id="DisableLaunchOnLogin_Explain">If this policy is enabled, Firefox does not launch automatically when the user logs in. Any existing launch-on-login entry is removed and the "Open Firefox automatically when your computer starts up" checkbox in Settings > General > Startup is hidden.
+
+If this policy is disabled or not configured, the user controls the launch-on-login setting.
+
+Note: This policy is only available on Windows.</string>
       <string id="DisablePasswordReveal">Do not allow passwords to be revealed in saved logins</string>
       <string id="DisablePasswordReveal_Explain">If this policy is enabled, the user cannot show passwords in saved logins.
 

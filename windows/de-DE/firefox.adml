@@ -288,6 +288,12 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht
       <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox keine Formular- oder Suchverläufe speichern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird Firefox Formular- und Suchverläufe speichern.</string>
+      <string id="DisableLaunchOnLogin">Start bei Anmeldung deaktivieren</string>
+      <string id="DisableLaunchOnLogin_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox nicht automatisch beim Anmelden des Benutzers gestartet. Ein vorhandener Eintrag „Start bei Anmeldung" wird entfernt und das Kontrollkästchen „Firefox automatisch beim Start des Computers öffnen" unter „Einstellungen > Allgemein > Beim Start" wird ausgeblendet.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kontrolliert der Benutzer die Einstellung „Start bei Anmeldung".
+
+Hinweis: Diese Richtlinieneinstellung ist nur unter Windows verfügbar.</string>
       <string id="DisablePasswordReveal">Verbieten, dass Nutzer Passwörter in Gespeicherte Zugangsdaten anzeigen können</string>
       <string id="DisablePasswordReveal_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Nutzer Gespeicherte Zugangsdaten nicht anzeigen lassen.
 

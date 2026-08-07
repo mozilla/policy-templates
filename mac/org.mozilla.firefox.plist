@@ -255,6 +255,8 @@
 	<true/>
 	<key>DisableFormHistory</key>
 	<true/>
+	<key>DisableLaunchOnLogin</key>
+	<true/>
 	<key>DisableMasterPasswordCreation</key>
 	<true/>
 	<key>DisablePasswordReveal</key>

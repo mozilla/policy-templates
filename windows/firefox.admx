@@ -979,6 +979,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="DisableLaunchOnLogin" class="Both" displayName="$(string.DisableLaunchOnLogin)" explainText="$(string.DisableLaunchOnLogin_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DisableLaunchOnLogin">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF154"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="HardwareAcceleration" class="Both" displayName="$(string.HardwareAcceleration)" explainText="$(string.HardwareAcceleration_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="HardwareAcceleration">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF62"/>

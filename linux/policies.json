@@ -108,6 +108,7 @@
     "DisableFirefoxStudies": true | false,
     "DisableForgetButton": true | false,
     "DisableFormHistory": true | false,
+    "DisableLaunchOnLogin": true | false,
     "DisableMasterPasswordCreation": true | false,
     "DisablePasswordReveal": true | false,
     "DisablePrivateBrowsing": true | false,
