@@ -1461,6 +1461,13 @@ Note: If any other policies are configured and this policy is not set, the Web S
 If this policy is disabled, XSLT (Extensible Stylesheet Language Transformations) is disabled.
 
 If this policy is not configured, the Firefox default applies.</string>
+      <string id="SitePolicies">Site Policies (JSON)</string>
+      <string id="SitePoliciesOneLine">Site Policies (JSON on one line)</string>
+      <string id="SitePolicies_Explain">If this policy is enabled, you can specify per-site policy overrides via JSON.
+
+If this policy is disabled or not configured, no site-specific policies are applied.
+
+For detailed information on creating the policy, see https://firefox-admin-docs.mozilla.org/reference/policies/sitepolicies/.</string>
       <string id="LocalNetworkAccess_Enabled">Enabled</string>
       <string id="LocalNetworkAccess_Enabled_Explain">If this policy is enabled or not configured, local network access security checks are enforced.
 

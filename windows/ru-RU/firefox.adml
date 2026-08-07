@@ -1463,6 +1463,13 @@ Mozilla рекомендует не отключать телеметрию. И�
 Если эта политика отключена, XSLT (Extensible Stylesheet Language Transformations) отключён.
 
 Если эта политика не настроена, применяется настройка Firefox по умолчанию.</string>
+      <string id="SitePolicies">Политики веб-сайтов (JSON)</string>
+      <string id="SitePoliciesOneLine">Политики веб-сайтов (JSON в одной строке)</string>
+      <string id="SitePolicies_Explain">Если эта политика включена, вы можете с помощью JSON задать переопределения политик для отдельных сайтов.
+
+Если эта политика отключена или не настроена, политики для отдельных сайтов не применяются.
+
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/sitepolicies/.</string>
       <string id="LocalNetworkAccess_Enabled">Включено</string>
       <string id="LocalNetworkAccess_Enabled_Explain">Если эта политика включена или не настроена, проверки безопасности доступа к локальной сети применяются.
 

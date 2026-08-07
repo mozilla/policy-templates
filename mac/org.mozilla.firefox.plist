@@ -779,6 +779,33 @@
 	</dict>
 	<key>ShowHomeButton</key>
 	<true/>
+	<key>SitePolicies</key>
+	<array>
+		<dict>
+			<key>Match</key>
+			<array>
+				<string>*.example.com</string>
+			</array>
+			<key>Policies</key>
+			<dict>
+				<key>DisableJit</key>
+				<true/>
+				<key>HttpsOnly</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>Exceptions</key>
+			<array>
+				<string>*.example.org</string>
+			</array>
+			<key>Policies</key>
+			<dict>
+				<key>DisableJit</key>
+				<true/>
+			</dict>
+		</dict>
+	</array>
 	<key>SkipTermsOfUse</key>
 	<true/>
 	<key>SSLVersionMin</key>

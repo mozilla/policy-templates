@@ -417,6 +417,21 @@
       "NAME_OF_DEVICE": "PATH_TO_LIBRARY_FOR_DEVICE"
     },
     "ShowHomeButton": true | false,
+    "SitePolicies": [
+      {
+        "Match": ["*.example.com"],
+        "Policies": {
+          "DisableJit": true | false,
+          "HttpsOnly": true | false
+        }
+      },
+      {
+        "Exceptions": ["*.example.org"],
+        "Policies": {
+          "DisableJit": true | false
+        }
+      }
+    ],
     "SkipTermsOfUse": true | false,
     "SSLVersionMax": "tls1" | "tls1.1" | "tls1.2" | "tls1.3",
     "SSLVersionMin": "tls1" | "tls1.1" | "tls1.2" | "tls1.3",

@@ -1468,6 +1468,13 @@ Remarque : si d’autres stratégies sont configurées et que celle-ci ne l’es
 Si cette stratégie est désactivée, XSLT (Extensible Stylesheet Language Transformations) est désactivé.
 
 Si cette stratégie n’est pas configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="SitePolicies">Stratégies de sites web (JSON)</string>
+      <string id="SitePoliciesOneLine">Stratégies de sites web (JSON sur une seule ligne)</string>
+      <string id="SitePolicies_Explain">Si cette stratégie est activée, vous pouvez spécifier via JSON des surcharges de stratégie propres à certains sites.
+
+Si cette stratégie est désactivée ou non configurée, aucune stratégie propre à un site n’est appliquée.
+
+Pour plus d'informations sur la création de la stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/sitepolicies/.</string>
       <string id="LocalNetworkAccess_Enabled">Activé</string>
       <string id="LocalNetworkAccess_Enabled_Explain">Si cette stratégie est activée ou non configurée, les contrôles de sécurité pour l’accès au réseau local sont appliqués.
 

@@ -52,6 +52,8 @@ JSON_POLICIES = {
     "ManagedBookmarksOneLine",
     "Preferences",
     "PreferencesOneLine",
+    "SitePolicies",
+    "SitePoliciesOneLine",
     "WebsiteFilter",
     "WebsiteFilterOneLine",
 }

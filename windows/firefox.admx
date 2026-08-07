@@ -5200,5 +5200,19 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="SitePolicies" class="Both" displayName="$(string.SitePolicies)" explainText="$(string.SitePolicies_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.JSON)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF150_ONLY"/>
+      <elements>
+        <multiText id="JSON" valueName="SitePolicies" maxLength="16384"/>
+      </elements>
+    </policy>
+    <policy name="SitePoliciesOneLine" class="Both" displayName="$(string.SitePoliciesOneLine)" explainText="$(string.SitePolicies_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.JSONOneLine)">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF150_ONLY"/>
+      <elements>
+        <text id="JSONOneLine" valueName="SitePolicies" maxLength="16384"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
