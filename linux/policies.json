@@ -94,6 +94,7 @@
       "Behavior": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "partition-foreign" | "reject-tracker-and-partition-foreign",
       "BehaviorPrivateBrowsing": "accept" | "reject-foreign" | "reject" | "limit-foreign" | "reject-tracker" | "partition-foreign" | "reject-tracker-and-partition-foreign"
     },
+    "DefaultBrowserSettingEnabled": true | false,
     "DefaultDownloadDirectory": "${home}/Downloads",
     "DefaultSerialGuardSetting": 2 | 3,
     "DisableBuiltinPDFViewer": true | false,

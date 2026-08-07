@@ -191,6 +191,8 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>DefaultBrowserSettingEnabled</key>
+	<true/>
 	<key>DefaultDownloadDirectory</key>
 	<string>${home}/Downloads</string>
 	<key>DefaultSerialGuardSetting</key>
