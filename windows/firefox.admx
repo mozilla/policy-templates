@@ -4445,6 +4445,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="CNSA2KeyAgreementEnabled" class="Both" displayName="$(string.CNSA2KeyAgreementEnabled)" explainText="$(string.CNSA2KeyAgreementEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CNSA2KeyAgreementEnabled">
+      <parentCategory ref="firefox"/>
+      <supportedOn ref="SUPPORTED_FF154"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy name="HttpsOnlyMode" class="Both" displayName="$(string.HttpsOnlyMode)" explainText="$(string.HttpsOnlyMode_Explain)" key="Software\Policies\Mozilla\Firefox" presentation="$(presentation.HttpsOnlyMode)">
       <parentCategory ref="firefox"/>
       <supportedOn ref="SUPPORTED_FF127_ONLY"/>

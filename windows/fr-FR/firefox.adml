@@ -1181,6 +1181,10 @@ Si cette stratégie est désactivée ou non configurée, la fonctionnalité TLS 
       <string id="PostQuantumKeyAgreementEnabled_Explain">Si cette stratégie est activée, l'accord de clé post-quantique pour TLS sera activé.
 
 Si cette stratégie est désactivée ou non configurée, l'accord de clé post-quantique pour TLS sera désactivé.</string>
+      <string id="CNSA2KeyAgreementEnabled">Activer l'accord de clé CNSA 2.0</string>
+      <string id="CNSA2KeyAgreementEnabled_Explain">Si cette stratégie est activée, l'accord de clé CNSA 2.0 ML-KEM-1024 pour TLS sera activé.
+
+Si cette stratégie est désactivée ou non configurée, l'accord de clé CNSA 2.0 ML-KEM-1024 pour TLS sera désactivé.</string>
       <string id="HttpsOnlyMode">Mode HTTPS-Only</string>
       <string id="HttpsOnlyMode_Explain">Si cette stratégie est activée, vous pouvez définir le comportement par défaut pour le Mode HTTPS-Only.
 

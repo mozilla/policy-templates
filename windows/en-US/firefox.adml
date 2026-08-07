@@ -1181,6 +1181,10 @@ If this policy is disabled or not configured, the TLS feature Encrypted Client H
       <string id="PostQuantumKeyAgreementEnabled_Explain">If this policy is enabled, post-quantum key agreement for TLS will be enabled.
 
 If this policy is disabled or not configured, post-quantum key agreement for TLS will be disabled.</string>
+      <string id="CNSA2KeyAgreementEnabled">Enable CNSA 2.0 key agreement</string>
+      <string id="CNSA2KeyAgreementEnabled_Explain">If this policy is enabled, CNSA 2.0 ML-KEM-1024 key agreement for TLS will be enabled.
+
+If this policy is disabled or not configured, CNSA 2.0 ML-KEM-1024 key agreement for TLS will be disabled.</string>
       <string id="HttpsOnlyMode">HTTPS-Only Mode</string>
       <string id="HttpsOnlyMode_Explain">If this policy is enabled, you can set the default behavior for HTTPS-Only Mode.
 
