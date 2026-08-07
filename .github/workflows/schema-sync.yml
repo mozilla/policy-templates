@@ -1,0 +1,54 @@
+name: Schema sync
+
+# Watches Firefox's policies-schema.json upstream and opens (or updates) a
+# pull request whenever it changes. A PR isn't a guarantee that the ADMX/ADML
+# templates need updating -- some schema changes are internal-only. Review
+# the diff and close the PR if it doesn't require template work; merge it
+# once any needed ADMX/ADML changes have been made.
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'  # Monday 07:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: schema-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    if: github.event.repository.fork == false
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch upstream policies-schema.json
+        run: |
+          mkdir -p .schema-watch
+          curl -sSfL \
+            https://raw.githubusercontent.com/mozilla-firefox/firefox/main/browser/components/enterprisepolicies/schemas/policies-schema.json \
+            -o .schema-watch/policies-schema.json
+
+      - name: Create or update pull request if schema changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: automation/schema-sync
+          commit-message: 'chore(schema): sync policies-schema.json from upstream'
+          title: 'Upstream policies-schema.json changed - review for ADMX/ADML updates'
+          body: |
+            Upstream `browser/components/enterprisepolicies/schemas/policies-schema.json`
+            has changed since the last cached copy at
+            `.schema-watch/policies-schema.json`.
+
+            Review the diff for new, removed, or changed policies that may
+            need corresponding ADMX/ADML template work. Not every schema
+            change requires template updates - internal shape tweaks and
+            reordering can often be ignored.
+
+            Source: https://raw.githubusercontent.com/mozilla-firefox/firefox/main/browser/components/enterprisepolicies/schemas/policies-schema.json
+          labels: |
+            schema-sync
+            automated-pr
