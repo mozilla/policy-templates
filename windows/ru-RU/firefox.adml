@@ -91,6 +91,7 @@
       <string id="SUPPORTED_FF152_ONLY">Firefox 152 или более поздние версии</string>
       <string id="SUPPORTED_FF153_ONLY">Firefox 153 или более поздние версии</string>
       <string id="SUPPORTED_FF154_ONLY">Firefox 154 или более поздние версии</string>
+      <string id="SUPPORTED_FF154">Firefox 154 или более поздние версии, Firefox 153 ESR или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
