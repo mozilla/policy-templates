@@ -1,10 +1,16 @@
 name: Schema sync
 
 # Watches Firefox's policies-schema.json upstream and opens (or updates) a
-# pull request whenever it changes. A PR isn't a guarantee that the ADMX/ADML
-# templates need updating -- some schema changes are internal-only. Review
-# the diff and close the PR if it doesn't require template work; merge it
-# once any needed ADMX/ADML changes have been made.
+# pull request whenever it changes. When new top-level policies are
+# detected, scripts/generate_admx_skeleton.py scaffolds the ADMX/ADML/
+# linux/mac boilerplate for each one and commits the scaffolding into the
+# same PR. Placeholder strings are marked `TODO:` and need filling in
+# before merging.
+#
+# A PR isn't a guarantee that the ADMX/ADML templates need updating --
+# some schema changes are internal-only. Review the diff and close the
+# PR if it doesn't require template work; merge it once any needed
+# ADMX/ADML changes have been made.
 
 on:
   schedule:
@@ -25,6 +31,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Save current cached schema for diffing
+        run: |
+          if [ -f .schema-watch/policies-schema.json ]; then
+            cp .schema-watch/policies-schema.json /tmp/old-schema.json
+          fi
+
       - name: Fetch upstream policies-schema.json
         run: |
           mkdir -p .schema-watch
@@ -32,23 +44,99 @@ jobs:
             https://raw.githubusercontent.com/mozilla-firefox/firefox/main/browser/components/enterprisepolicies/schemas/policies-schema.json \
             -o .schema-watch/policies-schema.json
 
+      - name: Scaffold ADMX for newly-added top-level policies
+        id: scaffold
+        run: |
+          echo "## Summary" > /tmp/scaffold-summary.md
+          echo "" >> /tmp/scaffold-summary.md
+
+          if [ ! -f /tmp/old-schema.json ]; then
+            echo "First run - no previous cached schema to diff against." >> /tmp/scaffold-summary.md
+            exit 0
+          fi
+
+          # Diff the two schemas' top-level property names.
+          ADDED=$(python3 -c "
+          import json
+          with open('/tmp/old-schema.json') as f: old = set(json.load(f).get('properties', {}).keys())
+          with open('.schema-watch/policies-schema.json') as f: new = set(json.load(f).get('properties', {}).keys())
+          for p in sorted(new - old): print(p)
+          ")
+          REMOVED=$(python3 -c "
+          import json
+          with open('/tmp/old-schema.json') as f: old = set(json.load(f).get('properties', {}).keys())
+          with open('.schema-watch/policies-schema.json') as f: new = set(json.load(f).get('properties', {}).keys())
+          for p in sorted(old - new): print(p)
+          ")
+
+          if [ -z "$ADDED" ] && [ -z "$REMOVED" ]; then
+            echo "No top-level policies added or removed; only shape changes to existing policies. Diff the cached schema to see what changed." >> /tmp/scaffold-summary.md
+            exit 0
+          fi
+
+          if [ -n "$ADDED" ]; then
+            echo "### New top-level policies" >> /tmp/scaffold-summary.md
+            echo "" >> /tmp/scaffold-summary.md
+            echo "Scaffolding has been generated for each. Search the diff for \`TODO:\` to find the placeholder strings that need filling in before merging." >> /tmp/scaffold-summary.md
+            echo "" >> /tmp/scaffold-summary.md
+            for policy in $ADDED; do
+              echo "- \`$policy\`" >> /tmp/scaffold-summary.md
+              # Capture the generator's stderr (warnings about missing
+              # SUPPORTED_FF definitions, etc.) into the PR body.
+              if python3 scripts/generate_admx_skeleton.py "$policy" 2> /tmp/gen-stderr.txt; then
+                if grep -qi WARNING /tmp/gen-stderr.txt; then
+                  echo "  <details><summary>generator notes</summary>" >> /tmp/scaffold-summary.md
+                  echo "" >> /tmp/scaffold-summary.md
+                  echo '  ```' >> /tmp/scaffold-summary.md
+                  sed 's/^/  /' /tmp/gen-stderr.txt >> /tmp/scaffold-summary.md
+                  echo '  ```' >> /tmp/scaffold-summary.md
+                  echo "  </details>" >> /tmp/scaffold-summary.md
+                fi
+              else
+                echo "  ⚠️ Skeleton generation failed for \`$policy\`. See workflow logs." >> /tmp/scaffold-summary.md
+              fi
+            done
+            echo "" >> /tmp/scaffold-summary.md
+          fi
+
+          if [ -n "$REMOVED" ]; then
+            echo "### Removed from schema" >> /tmp/scaffold-summary.md
+            echo "" >> /tmp/scaffold-summary.md
+            echo "The following top-level policies are no longer in the upstream schema. Consider whether they should be removed from the templates or marked deprecated:" >> /tmp/scaffold-summary.md
+            echo "" >> /tmp/scaffold-summary.md
+            for policy in $REMOVED; do
+              echo "- \`$policy\`" >> /tmp/scaffold-summary.md
+            done
+            echo "" >> /tmp/scaffold-summary.md
+          fi
+
+      - name: Compose PR body
+        id: body
+        run: |
+          {
+            cat /tmp/scaffold-summary.md
+            echo "---"
+            echo ""
+            echo "Upstream \`browser/components/enterprisepolicies/schemas/policies-schema.json\` has changed since the last cached copy at \`.schema-watch/policies-schema.json\`."
+            echo ""
+            echo "Not every schema change requires template updates - internal shape tweaks and reordering can often be ignored. Review the diff, fill in any \`TODO:\` placeholders introduced by the scaffolder, and close the PR if no template work is needed."
+            echo ""
+            echo "Source: https://raw.githubusercontent.com/mozilla-firefox/firefox/main/browser/components/enterprisepolicies/schemas/policies-schema.json"
+          } > /tmp/pr-body.md
+          # Emit as multiline output.
+          {
+            echo 'body<<PR_BODY_EOF'
+            cat /tmp/pr-body.md
+            echo 'PR_BODY_EOF'
+          } >> $GITHUB_OUTPUT
+
       - name: Create or update pull request if schema changed
         uses: peter-evans/create-pull-request@v6
         with:
           branch: automation/schema-sync
           commit-message: 'chore(schema): sync policies-schema.json from upstream'
           title: 'Upstream policies-schema.json changed - review for ADMX/ADML updates'
-          body: |
-            Upstream `browser/components/enterprisepolicies/schemas/policies-schema.json`
-            has changed since the last cached copy at
-            `.schema-watch/policies-schema.json`.
-
-            Review the diff for new, removed, or changed policies that may
-            need corresponding ADMX/ADML template work. Not every schema
-            change requires template updates - internal shape tweaks and
-            reordering can often be ignored.
-
-            Source: https://raw.githubusercontent.com/mozilla-firefox/firefox/main/browser/components/enterprisepolicies/schemas/policies-schema.json
+          body: ${{ steps.body.outputs.body }}
           labels: |
             schema-sync
             automated-pr
