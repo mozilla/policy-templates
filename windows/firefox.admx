@@ -4448,7 +4448,7 @@
     </policy>
     <policy name="CNSA2KeyAgreementEnabled" class="Both" displayName="$(string.CNSA2KeyAgreementEnabled)" explainText="$(string.CNSA2KeyAgreementEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="CNSA2KeyAgreementEnabled">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF154"/>
+      <supportedOn ref="SUPPORTED_FF154_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
