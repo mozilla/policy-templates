@@ -158,6 +158,8 @@
 			<string>cert2.pem</string>
 		</array>
 	</dict>
+	<key>CNSA2KeyAgreementEnabled</key>
+	<true/>
 	<key>Default</key>
 	<dict>
 		<key>Containers</key>

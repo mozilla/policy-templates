@@ -1185,6 +1185,10 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="PostQuantumKeyAgreementEnabled_Explain">Если эта политика включена, постквантовое согласование ключей для TLS будет включено.
 
 Если эта политика отключена или не настроена, постквантовое согласование ключей для TLS будет отключено.</string>
+      <string id="CNSA2KeyAgreementEnabled">Включить согласование ключей CNSA 2.0</string>
+      <string id="CNSA2KeyAgreementEnabled_Explain">Если эта политика включена, согласование ключей CNSA 2.0 ML-KEM-1024 для TLS будет включено.
+
+Если эта политика отключена или не настроена, согласование ключей CNSA 2.0 ML-KEM-1024 для TLS будет отключено.</string>
       <string id="HttpsOnlyMode">Режим только HTTPS</string>
       <string id="HttpsOnlyMode_Explain">Если эта политика включена, вы можете задать поведение по умолчанию для режима только HTTPS.
 
