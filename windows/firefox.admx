@@ -823,7 +823,7 @@
     </policy>
     <policy name="DefaultBrowserSettingEnabled" class="Both" displayName="$(string.DefaultBrowserSettingEnabled)" explainText="$(string.DefaultBrowserSettingEnabled_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="DefaultBrowserSettingEnabled">
       <parentCategory ref="firefox"/>
-      <supportedOn ref="SUPPORTED_FF154"/>
+      <supportedOn ref="SUPPORTED_FF154_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
