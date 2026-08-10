@@ -207,6 +207,10 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="Certificates_Install_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox die gelisteten Zertifikate installieren. Es wird in folgende Verzeichnisse geschaut %USERPROFILE%\AppData\Local\Mozilla\Certificates und %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird Firefox keine weiteren Zertifikate installieren.</string>
+      <string id="DefaultBrowserSettingEnabled">Standardbrowser-Einstellung aktivieren</string>
+      <string id="DefaultBrowserSettingEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, kann der Benutzer Firefox als Standardbrowser festlegen.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, wird die Standardbrowser-Prüfung deaktiviert und die Steuerelemente zum Festlegen von Firefox als Standardbrowser werden aus den Firefox-Einstellungen entfernt.</string>
       <string id="DefaultDownloadDirectory">Standard-Download-Verzeichnis</string>
       <string id="DefaultDownloadDirectory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie das Standard-Verzeichnis für Downloads definieren. ${home} kann für den nativen Profilpfad verwendet werden.
 

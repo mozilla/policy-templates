@@ -207,6 +207,10 @@ Si cette stratégie est désactivée ou non configurée, Firefox ne lira pas les
       <string id="Certificates_Install_Explain">Si cette stratégie est activée, Firefox installera les certificats répertoriés dans Firefox. Il recherchera dans %USERPROFILE%\AppData\Local\Mozilla\Certificates et %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Si cette stratégie est désactivée ou non configurée, Firefox n'installe pas de certificats supplémentaires.</string>
+      <string id="DefaultBrowserSettingEnabled">Activer le paramètre de navigateur par défaut</string>
+      <string id="DefaultBrowserSettingEnabled_Explain">Si cette stratégie est activée ou non configurée, l'utilisateur peut définir Firefox comme navigateur par défaut.
+
+Si cette stratégie est désactivée, la vérification du navigateur par défaut est désactivée et les commandes permettant de définir Firefox comme navigateur par défaut sont supprimées des préférences de Firefox.</string>
       <string id="DefaultDownloadDirectory">Répertoire de téléchargement par défaut</string>
       <string id="DefaultDownloadDirectory_Explain">Si cette stratégie est activée, vous pouvez définir le répertoire par défaut pour les téléchargements. ${home} peut être utilisé comme chemin de base.
 

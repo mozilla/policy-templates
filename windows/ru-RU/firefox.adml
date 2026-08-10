@@ -208,6 +208,10 @@
       <string id="Certificates_Install_Explain">Если эта политика включена, Firefox установит перечисленные сертификаты в Firefox по адресу %USERPROFILE%\AppData\Local\Mozilla\Certificates и %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 Если эта политика отключена или не настроена, Firefox не будет устанавливать дополнительные сертификаты.</string>
+      <string id="DefaultBrowserSettingEnabled">Включить настройку браузера по умолчанию</string>
+      <string id="DefaultBrowserSettingEnabled_Explain">Если эта политика включена или не настроена, пользователь может установить Firefox в качестве браузера по умолчанию.
+
+Если эта политика отключена, проверка браузера по умолчанию отключается, а элементы управления для установки Firefox в качестве браузера по умолчанию удаляются из настроек Firefox.</string>
       <string id="DefaultDownloadDirectory">Каталог загрузки по умолчанию</string>
       <string id="DefaultDownloadDirectory_Explain">Если эта политика включена, вы можете установить каталог по умолчанию для загрузок. ${home} можно использовать для указания собственного домашнего каталога.
 

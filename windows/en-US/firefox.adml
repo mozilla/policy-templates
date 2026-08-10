@@ -207,6 +207,10 @@ If this policy is disabled or not configured, Firefox will not read certificates
       <string id="Certificates_Install_Explain">If this policy is enabled, Firefox will install the listed certificates into Firefox. It will look in %USERPROFILE%\AppData\Local\Mozilla\Certificates and %USERPROFILE%\AppData\Roaming\Mozilla\Certificates.
 
 If this policy is disabled or not configured, Firefox will not install additional certificates.</string>
+      <string id="DefaultBrowserSettingEnabled">Enable default browser setting</string>
+      <string id="DefaultBrowserSettingEnabled_Explain">If this policy is enabled or not configured, the user can set Firefox as the default browser.
+
+If this policy is disabled, the default browser check is disabled and the controls for setting Firefox as the default browser are removed from Firefox preferences.</string>
       <string id="DefaultDownloadDirectory">Default Download Directory</string>
       <string id="DefaultDownloadDirectory_Explain">If this policy is enabled, you can set the default directory for downloads. ${home} can be used for the native home path.
 
