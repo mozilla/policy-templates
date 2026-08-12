@@ -493,7 +493,17 @@ def main() -> int:
             }
         )
 
-    collapsed.sort(key=lambda e: e["json_name"].lower())
+    # Group entries by top-level policy name so each top-level maps to a
+    # stable GitHub anchor (## AIControls -> #aicontrols), matching the
+    # top-level policy documentation page URLs.
+    def top_level(json_name: str) -> str:
+        return re.sub(r"\[.*\]$", "", json_name.split(".")[0])
+
+    groups: dict[str, list[dict]] = {}
+    for e in collapsed:
+        groups.setdefault(top_level(e["json_name"]), []).append(e)
+    for members in groups.values():
+        members.sort(key=lambda e: e["json_name"].lower())
 
     out: list[str] = []
     out.append("# Firefox ADMX OMA-URIs for Intune")
@@ -504,11 +514,11 @@ def main() -> int:
     )
     out.append("")
     out.append(
-        "Entries are keyed by the JSON policy name (as used in "
-        "`policies.json`), with the GPMC display path shown in parentheses. "
-        "Policies marked \"(Deprecated)\" in the ADML are omitted. Numbered "
-        "families (e.g. `Bookmark01`-`Bookmark50`) are collapsed into a "
-        "single entry with an `NN` placeholder in the URI."
+        "Entries are grouped by top-level policy so a link to "
+        "`docs/oma-uris.md#policyname` (lowercased) reaches the right "
+        "section. Policies marked \"(Deprecated)\" in the ADML are omitted. "
+        "Numbered families (e.g. `Bookmark01`-`Bookmark50`) are collapsed "
+        "into a single entry with an `NN` placeholder in the URI."
     )
     out.append("")
     out.append(
@@ -523,26 +533,43 @@ def main() -> int:
         "[policy documentation](https://firefox-admin-docs.mozilla.org/)."
     )
     out.append("")
-    for e in collapsed:
-        out.append(f"## {e['json_name']} ({e['breadcrumb']})")
-        out.append("")
-        out.append(f"[Full policy documentation]({docs_url_for(e['json_name'])})")
-        out.append("")
-        if e.get("range_note"):
-            out.append(e["range_note"])
+
+    def emit_uri_block(entry: dict) -> None:
+        if entry.get("range_note"):
+            out.append(entry["range_note"])
             out.append("")
         out.append("**OMA-URI:**")
         out.append("")
         out.append("```")
-        out.append(e["uri"])
+        out.append(entry["uri"])
         out.append("```")
         out.append("")
         out.append("**Value:**")
         out.append("")
         out.append("```")
-        out.append(e["value"])
+        out.append(entry["value"])
         out.append("```")
         out.append("")
+
+    for top in sorted(groups.keys(), key=str.lower):
+        members = groups[top]
+        out.append(f"## {top}")
+        out.append("")
+        out.append(f"[Full policy documentation]({docs_url_for(top)})")
+        out.append("")
+
+        # If a top-level policy has exactly one entry and that entry's JSON
+        # name equals the top-level name (e.g. AppAutoUpdate, XSLTEnabled),
+        # skip the redundant sub-heading and put the URI/Value directly under
+        # the ## heading.
+        if len(members) == 1 and members[0]["json_name"] == top:
+            emit_uri_block(members[0])
+            continue
+
+        for entry in members:
+            out.append(f"### {entry['json_name']} ({entry['breadcrumb']})")
+            out.append("")
+            emit_uri_block(entry)
 
     # Write via the raw buffer with UTF-8 bytes so line endings stay LF on
     # Windows (Python's text-mode stdout would otherwise translate \n to \r\n).
