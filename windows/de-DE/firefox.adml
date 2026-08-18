@@ -386,7 +386,7 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden 
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Erweiterungen nicht mit einer Richtlinie verwaltet.
 
-Für detaillierte Informationen bitte die Dokumentation (in englischer Sprache) lesen: https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Für detaillierte Informationen bitte die Dokumentation (in englischer Sprache) lesen: https://firefox-admin-docs.mozilla.org/reference/policies/extensionsettings/.</string>
       <string id="HardwareAcceleration">Hardware-Beschleunigung</string>
       <string id="HardwareAcceleration_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Hardware-Beschleunigung deaktiviert.
 
@@ -1010,7 +1010,7 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert ist, können Nutzer ein Mas
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Standardeinstellungen verwendet und können vom Nutzer modifiziert werden.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/handlers/ (Englisch)</string>
       <string id="PreferencesOneLine">Einstellungen (Einzeiliger JSON-Code)</string>
       <string id="Preferences">Einstellungen</string>
       <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (Veraltet) löschen.
@@ -1020,7 +1020,7 @@ Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Einstellungen mit H
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Einstellungen nicht verändert.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch)</string>
       <string id="BookmarksOneLine">Lesezeichen (Einzeiliger JSON-Code)</string>
       <string id="Bookmarks">Lesezeichen (JSON)</string>
       <string id="Bookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Lesezeichen mit JSON konfigurieren. Mit [] können Sie alle Lesezeichen löschen.
@@ -1032,7 +1032,7 @@ Wenn diese Richtlinieneinstellung zusammen mit der für die individuellen Leseze
 Diese Richtlinieneinstellung wirkt sich nicht auf verwaltete Lesezeichen aus.
 
 Für Informationen über die JSON-Struktur, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/bookmarks/ (Englisch)</string>
       <string id="ManagedBookmarksOneLine">Verwaltete Lesezeichen (Einzeiliger JSON-Code)</string>
       <string id="ManagedBookmarks">Verwaltete Lesezeichen</string>
       <string id="ManagedBookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie verwaltete Lesezeichen mit Hilfe einer JSON-Datei konfigurieren.
@@ -1040,7 +1040,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks (Eng
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine verwalteten Lesezeichen hinzugefügt.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/managedbookmarks/ (Englisch)</string>
       <string id="AllowedDomainsForApps">Domains, die auf Google Workspace zugreifen dürfen</string>
       <string id="AllowedDomainsForApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Anwender nur für definierte Domains auf Google Workspace zugreifen. Domains werden durch Kommas getrennt. Um den Zugriff auf Gmail zu erlauben, fügen Sie consumer_accounts hinzu.
 
@@ -1056,7 +1056,7 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird jede Seite, die ein externes Protokoll ausführt, den Benutzer um Erlaubnis fragen.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/autolaunchprotocolsfromorigins/ (Englisch)</string>
       <string id="WindowsSSO">Windows SSO</string>
       <string id="WindowsSSO_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, verwendet Firefox in Windows gespeicherte Zugangsdaten, um Sie auf Webseiten von Microsoft anzumelden, einschließlich Outlook, Office 365 sowie allen anderen Geschäfts- oder Schulkonten, die Microsofts Authentifizierung verwenden.
 
@@ -1071,7 +1071,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, zeigt
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Warnungen für alle ausführbaren Dateitypen angezeigt.
 
-Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://firefox-admin-docs.mozilla.org/reference/policies/exemptdomainfiletypepairsfromfiletypedownloadwarnings/.</string>
       <string id="StartDownloadsInTempDirectory">Downloads im temporären Verzeichnis starten</string>
       <string id="StartDownloadsInTempDirectory_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, startet Firefox Downloads in einem temporären Verzeichnis und löscht sie automatisch, wenn der Browser geschlossen wird.
 
@@ -1137,7 +1137,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, dürf
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die integrierten Standardwerte verwendet.
 
-Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://firefox-admin-docs.mozilla.org/reference/policies/containers/.</string>
       <string id="FirefoxSuggest_WebSuggestions">Vorschläge aus dem Internet</string>
       <string id="FirefoxSuggest_WebSuggestions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, erhalten Sie von Firefox Vorschläge, die mit Ihrer Suche zusammenhängen.
 
@@ -1488,15 +1488,15 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann 
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch)</string>
       <string id="Preferences_String_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf den spezifizierten String-Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch)</string>
       <string id="Preferences_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist sie auf den spezifizierten Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.
 
 Für eine Beschreibung der Einstellung, siehe:
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch)</string>
       <string id="Preferences_Unsupported_Explain">Diese Richtlinieneinstellung ist nicht mehr unterstützt. Wir arbeiten an einer Lösung.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Automatisch (0)</string>
       <string id="Preferences_accessibility_force_disabled_off">Immer Aus (1)</string>

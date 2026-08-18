@@ -387,7 +387,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, расширения не будут управляться.
 
-Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#extensions.</string>
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/extensionsettings/.</string>
       <string id="HardwareAcceleration">Аппаратное ускорение</string>
       <string id="HardwareAcceleration_Explain">Если эта политика отключена, аппаратное ускорение не может быть включено.
 
@@ -1012,7 +1012,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, используются настройки Firefox по умолчанию.
 
-Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#handlers.</string>
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/handlers/.</string>
       <string id="PreferencesOneLine">Настройки (JSON on one line)</string>
       <string id="Preferences">Настройки</string>
       <string id="Preferences_Explain">Примечание. Чтобы использовать эту политику, необходимо очистить все настройки в старом разделе настроек (устарело).
@@ -1021,7 +1021,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, предпочтения не изменяются.
 
-Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#preferences.</string>
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="BookmarksOneLine">Закладки (JSON on one line)</string>
       <string id="Bookmarks">Закладки (JSON)</string>
       <string id="Bookmarks_Explain">Если эта политика включена, вы можете использовать JSON для настройки закладок, в том числе [] для удаления всех закладок.
@@ -1032,14 +1032,14 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Эта политика не влияет на управляемые закладки.
 
-Для получения подробной информации о JSON см. https://mozilla.github.io/policy-templates/#bookmarks.</string>
+Для получения подробной информации о JSON см. https://firefox-admin-docs.mozilla.org/reference/policies/bookmarks/.</string>
       <string id="ManagedBookmarksOneLine">Управляемые закладки (JSON on one line)</string>
       <string id="ManagedBookmarks">Управляемые закладки</string>
       <string id="ManagedBookmarks_Explain">Если эта политика включена, вы можете использовать JSON для настройки управляемых закладок.
 
 Если эта политика отключена или не настроена, управляемые закладки не добавляются.
 
-Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#managedbookmarks.</string>
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/managedbookmarks/.</string>
       <string id="AllowedDomainsForApps">Определить домены, которым разрешен доступ к Google Workspace</string>
       <string id="AllowedDomainsForApps_Explain">Если эта политика включена, пользователи могут получить доступ к Google Workspace только для указанных доменов (разделенных запятой). Чтобы разрешить доступ к Gmail, вы можете добавить Consumer_accounts.
 
@@ -1054,7 +1054,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, любой сайт, который вызывает внешний протокол, будет запрашивать у пользователя разрешение.
 
-Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#autolaunchprotocolsfromorigins.</string>
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/autolaunchprotocolsfromorigins/.</string>
       <string id="WindowsSSO">Windows SSO (единый вход)</string>
       <string id="WindowsSSO_Explain">Если эта политика включена, Firefox будет использовать единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях.
 
@@ -1069,7 +1069,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, предупреждения отображаются для всех типов исполняемых файлов.
 
-Для получения подробной информации о создании политики см. https://mozilla.github.io/policy-templates/#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+Для получения подробной информации о создании политики см. https://firefox-admin-docs.mozilla.org/reference/policies/exemptdomainfiletypepairsfromfiletypedownloadwarnings/.</string>
       <string id="StartDownloadsInTempDirectory">Начать загрузку во временном каталоге</string>
       <string id="StartDownloadsInTempDirectory_Explain">Если эта политика включена, Firefox начнет загрузку во временный каталог и автоматически удалит её при закрытии браузера.
 
@@ -1134,7 +1134,7 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Если эта политика отключена или не настроена, используются встроенные значения по умолчанию.
 
-Подробную информацию о создании политики см. на странице https://mozilla.github.io/policy-templates/#containers.</string>
+Подробную информацию о создании политики см. на странице https://firefox-admin-docs.mozilla.org/reference/policies/containers/.</string>
       <string id="FirefoxSuggest_WebSuggestions">Предложения из Интернета</string>
       <string id="FirefoxSuggest_WebSuggestions_Explain">Если эта политика включена, вы будете получать предложения от Firefox, связанные с вашим поиском.
 
@@ -1485,17 +1485,17 @@ Mozilla рекомендует не отключать телеметрию. И�
 
 Описание предпочтения см.:
 
-https://mozilla.github.io/policy-templates/#preferences</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/</string>
       <string id="Preferences_String_Explain">Если эта политика включена, предпочтение привязано к введенной строке. Если эта политика отключена, она не действует.
 
 Описание предпочтения см.:
 
-https://mozilla.github.io/policy-templates/#preferences</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/</string>
       <string id="Preferences_Enum_Explain">Если эта политика включена, предпочтение привязано к выбранному значению. Если эта политика отключена, она не действует.
 
 Описание предпочтения см.:
 
-https://mozilla.github.io/policy-templates/#preferences.</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="Preferences_Unsupported_Explain">Это предпочтение больше не поддерживается в Windows. Мы изучаем возможность создания политики.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Автоматически (0)</string>
       <string id="Preferences_accessibility_force_disabled_off">Всегда выключено (1)</string>

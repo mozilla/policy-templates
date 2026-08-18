@@ -385,7 +385,7 @@ Si cette stratégie est activée ou non configurée, les extensions seront mises
 
 Si cette stratégie est désactivée ou non configurée, les extensions ne seront pas gérées.
 
-Pour plus d'informations sur la création de la stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#extensionsettings.</string>
+Pour plus d'informations sur la création de la stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/extensionsettings/.</string>
       <string id="ExtensionSettingsOneLine">Gestion des extensions (JSON sur une seule ligne)</string>
       <string id="HardwareAcceleration">Accélération matérielle</string>
       <string id="HardwareAcceleration_Explain">Si cette stratégie est désactivée, l'accélération matérielle est désactivée et ne peut pas être activée.
@@ -1009,7 +1009,7 @@ Si cette stratégie n'est pas configurée, les utilisateurs peuvent choisir de c
 
 Si cette stratégie est désactivée ou non configurée, les paramètres par défaut de Firefox sont utilisés.
 
-Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#handlers.</string>
+Pour des informations détaillées sur la création de cette stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/handlers/.</string>
       <string id="PreferencesOneLine">Préférences (JSON sur une seule ligne)</string>
       <string id="Preferences">Préférences</string>
       <string id="Preferences_Explain">Note : Pour utiliser cette stratégie, vous devez supprimer tous les paramètres dans l'ancienne section Préférences (Obsolète).
@@ -1018,7 +1018,7 @@ Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les 
 
 Si cette stratégie est désactivée ou non configurée, les préférences ne sont pas modifiées.
 
-Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+Pour des informations détaillées sur la création de cette stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="BookmarksOneLine">Favoris (JSON sur une seule ligne)</string>
       <string id="Bookmarks">Favoris (JSON)</string>
       <string id="Bookmarks_Explain">Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les favoris, y compris [] pour effacer tous les favoris.
@@ -1029,14 +1029,14 @@ Si cette stratégie est activée en même temps que des favoris individuels, ces
 
 Cette stratégie n'a aucun effet sur les favoris gérés.
 
-Pour des informations détaillées sur le JSON, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+Pour des informations détaillées sur le JSON, consultez https://firefox-admin-docs.mozilla.org/reference/policies/bookmarks/.</string>
       <string id="ManagedBookmarksOneLine">Favoris gérés (JSON sur une seule ligne)</string>
       <string id="ManagedBookmarks">Favoris gérés</string>
       <string id="ManagedBookmarks_Explain">Si cette stratégie est activée, vous pouvez utiliser JSON pour configurer les favoris gérés.
 
 Si cette stratégie est désactivée ou non configurée, les favoris gérés ne sont pas ajoutés.
 
-Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#managedbookmarks.</string>
+Pour des informations détaillées sur la création de cette stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/managedbookmarks/.</string>
       <string id="AllowedDomainsForApps">Définir les domaines autorisés à accéder à Google Workspace</string>
       <string id="AllowedDomainsForApps_Explain">Si cette stratégie est activée, les utilisateurs ne peuvent accéder à Google Workspace que pour les domaines spécifiés (séparés par une virgule). Pour permettre l'accès à Gmail, vous pouvez ajouter consumer_accounts.
 
@@ -1051,7 +1051,7 @@ Si cette stratégie est activée ou non configurée, les mises à jour de l'appl
 
 Si cette stratégie est désactivée ou non configurée, tout site qui invoque un protocole externe demandera l'autorisation de l'utilisateur.
 
-Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins.</string>
+Pour des informations détaillées sur la création de cette stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/autolaunchprotocolsfromorigins/.</string>
       <string id="WindowsSSO">SSO Windows</string>
       <string id="WindowsSSO_Explain">Si cette stratégie est activée, Firefox utilisera les identifiants stockés dans Windows pour se connecter aux comptes Microsoft, professionnels et scolaires.
 
@@ -1066,7 +1066,7 @@ Si cette stratégie est désactivée ou non configurée, Firefox affichera l'ape
 
 Si cette stratégie est désactivée ou non configurée, des avertissements seront affichés pour tous les types de fichiers exécutables.
 
-Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+Pour des informations détaillées sur la création de cette stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/exemptdomainfiletypepairsfromfiletypedownloadwarnings/.</string>
       <string id="StartDownloadsInTempDirectory">Démarrer les téléchargements dans un répertoire temporaire</string>
       <string id="StartDownloadsInTempDirectory_Explain">Si cette stratégie est activée, Firefox commencera les téléchargements dans un répertoire temporaire et les supprimera automatiquement lorsque vous fermerez le navigateur.
 
@@ -1131,7 +1131,7 @@ Si cette stratégie est désactivée ou non configurée, les utilisateurs peuven
 
 Si cette stratégie est désactivée ou non configurée, les paramètres par défaut intégrés sont utilisés.
 
-Pour des informations détaillées sur la création de cette stratégie, consultez https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+Pour des informations détaillées sur la création de cette stratégie, consultez https://firefox-admin-docs.mozilla.org/reference/policies/containers/.</string>
       <string id="FirefoxSuggest_WebSuggestions">Suggestions du web</string>
       <string id="FirefoxSuggest_WebSuggestions_Explain">Si cette stratégie est activée, vous recevrez des suggestions de Firefox liées à votre recherche.
 
@@ -1490,17 +1490,17 @@ Si cette stratégie est désactivée ou non configurée, l’utilisateur peut mo
 
 Pour une description de la préférence, consultez :
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/</string>
       <string id="Preferences_String_Explain">Si cette stratégie est activée, la préférence est verrouillée sur la chaîne de caractères saisie. Si cette stratégie est désactivée, elle n'a aucun effet.
 
 Pour une description de la préférence, consultez :
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/</string>
       <string id="Preferences_Enum_Explain">Si cette stratégie est activée, la préférence est verrouillée sur la valeur sélectionnée. Si cette stratégie est désactivée, elle n'a aucun effet.
 
 Pour une description de la préférence, consultez :
 
-https://github.com/mozilla/policy-templates/blob/master/README.md#preferences.</string>
+https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="Preferences_Unsupported_Explain">Cette préférence n'est plus prise en charge sur Windows. Nous étudions la création d'une politique à ce sujet.</string>
       <string id="Preferences_accessibility_force_disabled_auto">Automatique (0)</string>
       <string id="Preferences_accessibility_force_disabled_off">Toujours désactivé (1)</string>
