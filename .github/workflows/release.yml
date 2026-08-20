@@ -45,6 +45,20 @@ jobs:
           git diff --staged --quiet || git commit -m "Bump version to ${{ steps.version.outputs.version }}"
           git push origin HEAD:master
 
+      # The tag triggers this workflow, so the bump commit is necessarily a child
+      # of the tagged commit - meaning the tag's own tree would still carry the
+      # previous release's revision numbers. Re-point the tag at the bump commit
+      # so browsing the repo at the tag shows the revision that tag released.
+      # HEAD is a direct descendant of the original tag, so nothing is lost.
+      #
+      # This does not retrigger the workflow: GitHub does not start new runs for
+      # pushes made with the default GITHUB_TOKEN. If this is ever switched to a
+      # PAT, this step becomes an infinite loop.
+      - name: Move tag to the version-bump commit
+        run: |
+          git tag -f "$GITHUB_REF_NAME" HEAD
+          git push --force origin "refs/tags/$GITHUB_REF_NAME"
+
       - name: Create release ZIP
         run: |
           zip -r "policy_templates_${GITHUB_REF_NAME}.zip" docs/ mac/ windows/ linux/ LICENSE
