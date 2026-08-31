@@ -1580,6 +1580,22 @@ Ce paramètre suit la stratégie « Locked » de la page d’accueil de Firefox.
       <string id="FirefoxHome_Widgets_Blocked_Explain">Une liste d’identifiants de widgets à désactiver individuellement sur la page Nouvel onglet. Les widgets bloqués sont toujours verrouillés, que « Locked » soit défini ou non, l’utilisateur ne peut donc pas les réactiver.
 
 Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks et weather.</string>
+      <string id="RelaunchRequired_group">Redémarrage requis</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_group">Heure du redémarrage</string>
+      <string id="RelaunchRequired_NotificationPeriodHours">Délai de notification (heures)</string>
+      <string id="RelaunchRequired_NotificationPeriodHours_Explain">Si cette stratégie est activée, les utilisateurs sont avertis au moins ce nombre d’heures avant un redémarrage requis. Cela s’applique dès qu’une mise à jour a été téléchargée ou préparée et qu’elle est prête à être installée.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Heure du redémarrage</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour_Explain">Si cette stratégie est activée, le redémarrage requis est planifié à cette heure, au format 24 heures, entre 0 et 23.
+
+Remarque : s’il reste moins d’une heure avant l’heure planifiée, le redémarrage est reporté à la même heure le jour suivant.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Minute du redémarrage</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">Si cette stratégie est activée, le redémarrage requis est planifié à cette minute, entre 0 et 59.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

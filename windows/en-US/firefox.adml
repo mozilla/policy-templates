@@ -1573,6 +1573,22 @@ This setting follows the Firefox Home "Locked" policy.</string>
       <string id="FirefoxHome_Widgets_Blocked_Explain">A list of widget ids to turn off individually on the new tab page. Blocked widgets are always locked, whether or not "Locked" is set, so the user cannot turn them back on.
 
 Valid ids are clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks and weather.</string>
+      <string id="RelaunchRequired_group">Relaunch Required</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_group">Restart Time Of Day</string>
+      <string id="RelaunchRequired_NotificationPeriodHours">Notification period (hours)</string>
+      <string id="RelaunchRequired_NotificationPeriodHours_Explain">If this policy is enabled, users are notified at least this many hours before a required relaunch. This takes effect once an update has been downloaded or staged and is ready to install.
+
+If this policy is disabled or not configured, the Firefox default applies.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Restart hour</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour_Explain">If this policy is enabled, the required relaunch is scheduled at this hour, in 24-hour format between 0 and 23.
+
+Note: If less than one hour remains until the scheduled time, the restart is deferred to the same time the following day.
+
+If this policy is disabled or not configured, the Firefox default applies.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Restart minute</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">If this policy is enabled, the required relaunch is scheduled at this minute, between 0 and 59.
+
+If this policy is disabled or not configured, the Firefox default applies.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
