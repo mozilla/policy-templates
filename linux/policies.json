@@ -189,6 +189,7 @@
     },
     "FirefoxSuggest": {
       "WebSuggestions": true | false,
+      "OnlineEnabled": true | false,
       "SponsoredSuggestions": true | false,
       "ImproveSuggest": true | false,
       "Locked": true | false

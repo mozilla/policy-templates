@@ -1561,6 +1561,12 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Enable online suggestions</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">If this policy is enabled, online Firefox Suggest suggestions are available.
+
+If this policy is disabled, online suggestions are turned off.
+
+If this policy is not configured, the Firefox default applies.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
