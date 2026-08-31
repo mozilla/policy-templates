@@ -413,6 +413,7 @@
         }
       ],
       "Default": "NAME_OF_SEARCH_ENGINE",
+      "DefaultPrivate": "DuckDuckGo",
       "PreventInstalls": true | false,
       "Remove": ["NAME_OF_SEARCH_ENGINE"]
     },

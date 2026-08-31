@@ -1575,6 +1575,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="FirefoxHome_Widgets_Blocked_Explain">Список идентификаторов виджетов, которые отключаются по отдельности на странице новой вкладки. Заблокированные виджеты всегда закреплены, независимо от того, задана ли политика «Locked», поэтому пользователь не может включить их снова.
 
 Допустимые идентификаторы: clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks и weather.</string>
+      <string id="SearchEngines_DefaultPrivate">Поисковая система по умолчанию для приватного просмотра</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">Если эта политика включена, указанная поисковая система используется по умолчанию в приватных окнах. Имя должно точно совпадать с одной из доступных поисковых систем.
+
+Если эта политика отключена или не настроена, в приватных окнах используется та же поисковая система по умолчанию, что и в обычных окнах.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1825,6 +1829,11 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

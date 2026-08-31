@@ -1580,6 +1580,10 @@ Ce paramètre suit la stratégie « Locked » de la page d’accueil de Firefox.
       <string id="FirefoxHome_Widgets_Blocked_Explain">Une liste d’identifiants de widgets à désactiver individuellement sur la page Nouvel onglet. Les widgets bloqués sont toujours verrouillés, que « Locked » soit défini ou non, l’utilisateur ne peut donc pas les réactiver.
 
 Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks et weather.</string>
+      <string id="SearchEngines_DefaultPrivate">Moteur de recherche par défaut pour la navigation privée</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">Si cette stratégie est activée, le moteur de recherche indiqué est utilisé par défaut dans les fenêtres de navigation privée. Le nom doit correspondre exactement à un moteur de recherche disponible.
+
+Si cette stratégie est désactivée ou non configurée, les fenêtres de navigation privée utilisent le même moteur de recherche par défaut que les fenêtres normales.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1830,6 +1834,11 @@ Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfThe
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
