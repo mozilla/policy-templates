@@ -1563,6 +1563,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="ContentAnalysis_MaxConnectionsCount">Максимальное число подключений</string>
+      <string id="ContentAnalysis_MaxConnectionsCount_Explain">Если эта политика включена, она задаёт максимальное число одновременных подключений к агенту DLP. По причинам стабильности значения больше 256 игнорируются.
+
+Если эта политика отключена или не настроена, применяется значение Firefox по умолчанию — 32.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
