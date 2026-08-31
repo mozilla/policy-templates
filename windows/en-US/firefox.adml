@@ -1573,6 +1573,10 @@ This setting follows the Firefox Home "Locked" policy.</string>
       <string id="FirefoxHome_Widgets_Blocked_Explain">A list of widget ids to turn off individually on the new tab page. Blocked widgets are always locked, whether or not "Locked" is set, so the user cannot turn them back on.
 
 Valid ids are clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks and weather.</string>
+      <string id="ContentAnalysis_MaxConnectionsCount">Maximum connections</string>
+      <string id="ContentAnalysis_MaxConnectionsCount_Explain">If this policy is enabled, it sets the maximum number of concurrent connections to the DLP agent. For stability reasons, values exceeding 256 are ignored.
+
+If this policy is disabled or not configured, the Firefox default of 32 applies.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
