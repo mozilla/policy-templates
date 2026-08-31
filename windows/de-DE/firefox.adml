@@ -1576,6 +1576,14 @@ Diese Einstellung folgt der Richtlinie „Locked“ der Firefox-Startseite.</str
       <string id="FirefoxHome_Widgets_Blocked_Explain">Eine Liste von Widget-IDs, die auf der Seite „Neuer Tab“ einzeln deaktiviert werden. Blockierte Widgets sind immer gesperrt, unabhängig davon, ob „Locked“ gesetzt ist, sodass Benutzer sie nicht wieder aktivieren können.
 
 Gültige IDs sind clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks und weather.</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Online-Vorschläge aktivieren</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ruft Firefox Suggest Vorschläge ab, während der Benutzer tippt.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, beschränkt sich Firefox Suggest auf lokal gespeicherte Vorschläge.
+
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, gilt die Firefox-Standardeinstellung.
+
+Diese Einstellung ersetzt die veraltete Einstellung „Das Firefox-Suggest-Erlebnis verbessern“.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
