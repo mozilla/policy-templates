@@ -398,6 +398,8 @@
 	<dict>
 		<key>WebSuggestions</key>
 		<true/>
+		<key>OnlineEnabled</key>
+		<true/>
 		<key>SponsoredSuggestions</key>
 		<false/>
 		<key>ImproveSuggest</key>
