@@ -1150,8 +1150,10 @@ If this policy is not configured, you will get suggestions from Firefox related 
 If this policy is disabled, you will not get these suggestions.
 
 If this policy is not configured, you will get occasional sponsored suggestions.</string>
-      <string id="FirefoxSuggest_ImproveSuggest">Improve the Firefox Suggest experience</string>
-      <string id="FirefoxSuggest_ImproveSuggest_Explain">If this policy is enabled, you will help create a richer search experience by allowing Mozilla to process your search queries.
+      <string id="FirefoxSuggest_ImproveSuggest">Improve the Firefox Suggest experience (Deprecated)</string>
+      <string id="FirefoxSuggest_ImproveSuggest_Explain">This policy is deprecated. Use "Enable online suggestions" instead. If both are set, "Enable online suggestions" takes precedence.
+
+If this policy is enabled, you will help create a richer search experience by allowing Mozilla to process your search queries.
 
 If this policy is disabled or not configured, you do not allow Mozilla to process your search queries.</string>
       <string id="FirefoxSuggest_Locked">Do not allow preferences to be changed</string>
@@ -1595,6 +1597,14 @@ If this policy is disabled or not configured, the Firefox default applies.</stri
       <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">If this policy is enabled, the required relaunch is scheduled at this minute, between 0 and 59.
 
 If this policy is disabled or not configured, the Firefox default applies.</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Enable online suggestions</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">If this policy is enabled, Firefox Suggest fetches suggestions as the user types.
+
+If this policy is disabled, Firefox Suggest is limited to suggestions stored locally.
+
+If this policy is not configured, the Firefox default applies.
+
+This setting replaces the deprecated "Improve the Firefox Suggest experience" setting.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
