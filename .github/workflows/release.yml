@@ -90,5 +90,6 @@ jobs:
         run: |
           gh release create "${GITHUB_REF_NAME}" \
             --title "Firefox Policy Templates Version ${{ steps.version.outputs.version }}" \
+            --notes-file .github/release-notes-template.md \
             --draft \
             "policy_templates_${GITHUB_REF_NAME}.zip"
