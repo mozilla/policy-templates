@@ -1564,6 +1564,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="SearchEngines_DefaultPrivate">Standardsuchmaschine für privates Surfen</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die angegebene Suchmaschine in privaten Fenstern als Standard verwendet. Der Name muss genau mit einer verfügbaren Suchmaschine übereinstimmen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwenden private Fenster dieselbe Standardsuchmaschine wie normale Fenster.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1814,6 +1818,11 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

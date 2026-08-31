@@ -5225,5 +5225,12 @@
         <text id="JSONOneLine" valueName="SitePolicies" maxLength="16384"/>
       </elements>
     </policy>
+    <policy name="SearchEngines_DefaultPrivate" class="Both" displayName="$(string.SearchEngines_DefaultPrivate)" explainText="$(string.SearchEngines_DefaultPrivate_Explain)" key="Software\Policies\Mozilla\Firefox\SearchEngines" presentation="$(presentation.SearchEngines_DefaultPrivate)">
+      <parentCategory ref="Search"/>
+      <supportedOn ref="SUPPORTED_FF71"/>
+      <elements>
+        <text id="SearchEngines_DefaultPrivate" valueName="DefaultPrivate" required="true"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

@@ -1563,6 +1563,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="SearchEngines_DefaultPrivate">Поисковая система по умолчанию для приватного просмотра</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">Если эта политика включена, указанная поисковая система используется по умолчанию в приватных окнах. Имя должно точно совпадать с одной из доступных поисковых систем.
+
+Если эта политика отключена или не настроена, в приватных окнах используется та же поисковая система по умолчанию, что и в обычных окнах.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1813,6 +1817,11 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
