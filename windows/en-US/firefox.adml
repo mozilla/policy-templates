@@ -1561,6 +1561,22 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="RelaunchRequired_group">Relaunch Required</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_group">Restart Time Of Day</string>
+      <string id="RelaunchRequired_NotificationPeriodHours">Notification period (hours)</string>
+      <string id="RelaunchRequired_NotificationPeriodHours_Explain">If this policy is enabled, users are notified at least this many hours before a required relaunch. This takes effect once an update has been downloaded or staged and is ready to install.
+
+If this policy is disabled or not configured, the Firefox default applies.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Restart hour</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour_Explain">If this policy is enabled, the required relaunch is scheduled at this hour, in 24-hour format between 0 and 23.
+
+Note: If less than one hour remains until the scheduled time, the restart is deferred to the same time the following day.
+
+If this policy is disabled or not configured, the Firefox default applies.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Restart minute</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">If this policy is enabled, the required relaunch is scheduled at this minute, between 0 and 59.
+
+If this policy is disabled or not configured, the Firefox default applies.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

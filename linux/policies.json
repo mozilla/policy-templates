@@ -384,6 +384,13 @@
       "AutoLogin": true | false,
       "UseProxyForDNS": true | false
     },
+    "RelaunchRequired": {
+      "NotificationPeriodHours": 24,
+      "RestartTimeOfDay": {
+        "Hour": 2,
+        "Minute": 42
+      }
+    },
     "RequestedLocales": "de,en-US",
     "SanitizeOnShutdown": {
       "Cache": true | false,

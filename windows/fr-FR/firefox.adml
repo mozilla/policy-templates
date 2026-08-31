@@ -1568,6 +1568,22 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="RelaunchRequired_group">Redémarrage requis</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_group">Heure du redémarrage</string>
+      <string id="RelaunchRequired_NotificationPeriodHours">Délai de notification (heures)</string>
+      <string id="RelaunchRequired_NotificationPeriodHours_Explain">Si cette stratégie est activée, les utilisateurs sont avertis au moins ce nombre d’heures avant un redémarrage requis. Cela s’applique dès qu’une mise à jour a été téléchargée ou préparée et qu’elle est prête à être installée.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Heure du redémarrage</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour_Explain">Si cette stratégie est activée, le redémarrage requis est planifié à cette heure, au format 24 heures, entre 0 et 23.
+
+Remarque : s’il reste moins d’une heure avant l’heure planifiée, le redémarrage est reporté à la même heure le jour suivant.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Minute du redémarrage</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">Si cette stratégie est activée, le redémarrage requis est planifié à cette minute, entre 0 et 59.
+
+Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
