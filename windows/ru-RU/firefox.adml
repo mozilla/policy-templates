@@ -1563,6 +1563,22 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="RelaunchRequired_group">Требуется перезапуск</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_group">Время перезапуска</string>
+      <string id="RelaunchRequired_NotificationPeriodHours">Период уведомления (часы)</string>
+      <string id="RelaunchRequired_NotificationPeriodHours_Explain">Если эта политика включена, пользователи получают уведомление не менее чем за указанное число часов до требуемого перезапуска. Это применяется после того, как обновление загружено или подготовлено и готово к установке.
+
+Если эта политика отключена или не настроена, применяется настройка Firefox по умолчанию.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Час перезапуска</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour_Explain">Если эта политика включена, требуемый перезапуск планируется на этот час в 24-часовом формате, от 0 до 23.
+
+Примечание: Если до запланированного времени осталось менее одного часа, перезапуск переносится на то же время следующего дня.
+
+Если эта политика отключена или не настроена, применяется настройка Firefox по умолчанию.</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Минута перезапуска</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">Если эта политика включена, требуемый перезапуск планируется на эту минуту, от 0 до 59.
+
+Если эта политика отключена или не настроена, применяется настройка Firefox по умолчанию.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
