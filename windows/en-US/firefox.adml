@@ -1561,6 +1561,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="SearchEngines_DefaultPrivate">Default search engine for private browsing</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">If this policy is enabled, the named search engine is used as the default in private browsing windows. The name must match an available search engine exactly.
+
+If this policy is disabled or not configured, private browsing windows use the same default search engine as normal windows.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1811,6 +1815,11 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

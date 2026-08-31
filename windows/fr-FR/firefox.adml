@@ -1568,6 +1568,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="SearchEngines_DefaultPrivate">Moteur de recherche par défaut pour la navigation privée</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">Si cette stratégie est activée, le moteur de recherche indiqué est utilisé par défaut dans les fenêtres de navigation privée. Le nom doit correspondre exactement à un moteur de recherche disponible.
+
+Si cette stratégie est désactivée ou non configurée, les fenêtres de navigation privée utilisent le même moteur de recherche par défaut que les fenêtres normales.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1818,6 +1822,11 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
