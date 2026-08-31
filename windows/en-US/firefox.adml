@@ -1561,6 +1561,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="ContentAnalysis_MaxConnectionsCount">Maximum connections</string>
+      <string id="ContentAnalysis_MaxConnectionsCount_Explain">If this policy is enabled, it sets the maximum number of concurrent connections to the DLP agent. For stability reasons, values exceeding 256 are ignored.
+
+If this policy is disabled or not configured, the Firefox default of 32 applies.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

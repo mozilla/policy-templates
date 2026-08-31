@@ -5225,5 +5225,12 @@
         <text id="JSONOneLine" valueName="SitePolicies" maxLength="16384"/>
       </elements>
     </policy>
+    <policy name="ContentAnalysis_MaxConnectionsCount" class="Both" displayName="$(string.ContentAnalysis_MaxConnectionsCount)" explainText="$(string.ContentAnalysis_MaxConnectionsCount_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis" presentation="$(presentation.Number)">
+      <parentCategory ref="ContentAnalysis"/>
+      <supportedOn ref="SUPPORTED_FF138_ONLY"/>
+      <elements>
+        <decimal id="Number" valueName="MaxConnectionsCount" minValue="0" maxValue="256"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
