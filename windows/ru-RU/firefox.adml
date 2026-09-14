@@ -1564,6 +1564,17 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="FirefoxHome_Widgets_group">Виджеты</string>
+      <string id="FirefoxHome_Widgets_Enabled">Виджеты</string>
+      <string id="FirefoxHome_Widgets_Enabled_Explain">Если эта политика отключена, виджеты не отображаются на странице новой вкладки.
+
+Если эта политика включена или не настроена, виджеты отображаются на странице новой вкладки.
+
+Этот параметр следует политике «Locked» домашней страницы Firefox.</string>
+      <string id="FirefoxHome_Widgets_Blocked">Заблокированные виджеты</string>
+      <string id="FirefoxHome_Widgets_Blocked_Explain">Список идентификаторов виджетов, которые отключаются по отдельности на странице новой вкладки. Заблокированные виджеты всегда закреплены, независимо от того, задана ли политика «Locked», поэтому пользователь не может включить их снова.
+
+Допустимые идентификаторы: clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks и weather.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

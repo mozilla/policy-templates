@@ -1562,6 +1562,17 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="FirefoxHome_Widgets_group">Widgets</string>
+      <string id="FirefoxHome_Widgets_Enabled">Widgets</string>
+      <string id="FirefoxHome_Widgets_Enabled_Explain">If this policy is disabled, widgets are not displayed on the new tab page.
+
+If this policy is enabled or not configured, widgets are displayed on the new tab page.
+
+This setting follows the Firefox Home "Locked" policy.</string>
+      <string id="FirefoxHome_Widgets_Blocked">Blocked widgets</string>
+      <string id="FirefoxHome_Widgets_Blocked_Explain">A list of widget ids to turn off individually on the new tab page. Blocked widgets are always locked, whether or not "Locked" is set, so the user cannot turn them back on.
+
+Valid ids are clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks and weather.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

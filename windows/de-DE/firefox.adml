@@ -1565,6 +1565,17 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/ (Englisch
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="FirefoxHome_Widgets_group">Widgets</string>
+      <string id="FirefoxHome_Widgets_Enabled">Widgets</string>
+      <string id="FirefoxHome_Widgets_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden auf der Seite „Neuer Tab“ keine Widgets angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden auf der Seite „Neuer Tab“ Widgets angezeigt.
+
+Diese Einstellung folgt der Richtlinie „Locked“ der Firefox-Startseite.</string>
+      <string id="FirefoxHome_Widgets_Blocked">Blockierte Widgets</string>
+      <string id="FirefoxHome_Widgets_Blocked_Explain">Eine Liste von Widget-IDs, die auf der Seite „Neuer Tab“ einzeln deaktiviert werden. Blockierte Widgets sind immer gesperrt, unabhängig davon, ob „Locked“ gesetzt ist, sodass Benutzer sie nicht wieder aktivieren können.
+
+Gültige IDs sind clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks und weather.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

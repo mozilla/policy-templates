@@ -1569,6 +1569,17 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="security_osclientcerts_autoload">security.osclientcerts.autoload</string>
       <string id="security_tls_hello_downgrade_check">security.tls.hello_downgrade_check</string>
       <string id="widget_content_gtk-theme-override">widget.content.gtk-theme-override</string>
+      <string id="FirefoxHome_Widgets_group">Widgets</string>
+      <string id="FirefoxHome_Widgets_Enabled">Widgets</string>
+      <string id="FirefoxHome_Widgets_Enabled_Explain">Si cette stratégie est désactivée, les widgets ne sont pas affichés sur la page Nouvel onglet.
+
+Si cette stratégie est activée ou non configurée, les widgets sont affichés sur la page Nouvel onglet.
+
+Ce paramètre suit la stratégie « Locked » de la page d’accueil de Firefox.</string>
+      <string id="FirefoxHome_Widgets_Blocked">Widgets bloqués</string>
+      <string id="FirefoxHome_Widgets_Blocked_Explain">Une liste d’identifiants de widgets à désactiver individuellement sur la page Nouvel onglet. Les widgets bloqués sont toujours verrouillés, que « Locked » soit défini ou non, l’utilisateur ne peut donc pas les réactiver.
+
+Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks et weather.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
