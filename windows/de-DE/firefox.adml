@@ -92,6 +92,7 @@
       <string id="SUPPORTED_FF154_ONLY">Firefox 154 oder höher</string>
       <string id="SUPPORTED_FF154">Firefox 154 oder höher, Firefox 153 ESR oder höher</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 oder höher</string>
+      <string id="SUPPORTED_FF156_ONLY">Firefox 156 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
