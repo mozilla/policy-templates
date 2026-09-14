@@ -181,8 +181,8 @@
       "TopSites": true | false,
       "SponsoredTopSites": true | false,
       "Highlights": true | false,
-      "Pocket": true | false,
-      "SponsoredPocket": true | false,
+      "Stories": true | false,
+      "SponsoredStories": true | false,
       "Snippets": true | false,
       "Weather": true | false,
       "Widgets": {
