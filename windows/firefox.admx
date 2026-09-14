@@ -240,6 +240,9 @@
       <parentCategory ref="firefox"/>
     </category>
 
+    <category displayName="$(string.FirefoxHome_Widgets_group)" name="FirefoxHome_Widgets">
+      <parentCategory ref="FirefoxHome"/>
+    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -5224,6 +5227,23 @@
       <supportedOn ref="SUPPORTED_FF150_ONLY"/>
       <elements>
         <text id="JSONOneLine" valueName="SitePolicies" maxLength="16384"/>
+      </elements>
+    </policy>
+    <policy name="FirefoxHome_Widgets_Enabled" class="Both" displayName="$(string.FirefoxHome_Widgets_Enabled)" explainText="$(string.FirefoxHome_Widgets_Enabled_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome\Widgets" valueName="Enabled">
+      <parentCategory ref="FirefoxHome_Widgets"/>
+      <supportedOn ref="SUPPORTED_FF156_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="FirefoxHome_Widgets_Blocked" class="Both" displayName="$(string.FirefoxHome_Widgets_Blocked)" explainText="$(string.FirefoxHome_Widgets_Blocked_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxHome\Widgets" presentation="$(presentation.List)">
+      <parentCategory ref="FirefoxHome_Widgets"/>
+      <supportedOn ref="SUPPORTED_FF156_ONLY"/>
+      <elements>
+        <list id="List" key="Software\Policies\Mozilla\Firefox\FirefoxHome\Widgets\Blocked" valuePrefix=""/>
       </elements>
     </policy>
   </policies>

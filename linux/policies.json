@@ -185,6 +185,10 @@
       "SponsoredPocket": true | false,
       "Snippets": true | false,
       "Weather": true | false,
+      "Widgets": {
+        "Enabled": true | false,
+        "Blocked": ["crossword", "stocks"]
+      },
       "Locked": true | false
     },
     "FirefoxSuggest": {

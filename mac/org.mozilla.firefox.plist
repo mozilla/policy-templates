@@ -391,6 +391,16 @@
 		<false/>
 		<key>Weather</key>
 		<true/>
+		<key>Widgets</key>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Blocked</key>
+			<array>
+				<string>crossword</string>
+				<string>stocks</string>
+			</array>
+		</dict>
 		<key>Locked</key>
 		<true/>
 	</dict>
