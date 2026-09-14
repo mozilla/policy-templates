@@ -3892,7 +3892,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="UserMessaging_FirefoxLabs" class="Both" displayName="$(string.UserMessaging_FirefoxLabs)" explainText="$(string.UserMessaging_FirefoxLabs)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="FirefoxLabs">
+    <policy name="UserMessaging_FirefoxLabs" class="Both" displayName="$(string.UserMessaging_FirefoxLabs)" explainText="$(string.UserMessaging_FirefoxLabs_Explain)" key="Software\Policies\Mozilla\Firefox\UserMessaging" valueName="FirefoxLabs">
       <parentCategory ref="UserMessaging"/>
       <supportedOn ref="SUPPORTED_FF130_ONLY"/>
       <enabledValue>
