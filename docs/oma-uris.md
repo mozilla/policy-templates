@@ -1,6 +1,6 @@
 # Firefox ADMX OMA-URIs for Intune
 
-Auto-generated from `windows/firefox.admx` (revision `8.2`). Do not edit by hand.
+Auto-generated from `windows/firefox.admx` (revision `8.3`). Do not edit by hand.
 
 Entries are grouped by top-level policy so a link to `docs/oma-uris.md#policyname` (lowercased) reaches the right section. Policies marked "(Deprecated)" in the ADML are omitted. Numbered families (e.g. `Bookmark01`-`Bookmark50`) are collapsed into a single entry with an `NN` placeholder in the URI.
 
@@ -2491,6 +2491,35 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxHome/FirefoxHome_Weather
+```
+
+**Value:**
+
+```
+<enabled/> or <disabled/>
+```
+
+### FirefoxHome.Widgets.Blocked (Firefox Home > Widgets > Blocked widgets)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxHome~FirefoxHome_Widgets/FirefoxHome_Widgets_Blocked
+```
+
+**Value:**
+
+```
+<enabled/>
+<data id="List" value="1&#xF000;value1&#xF000;2&#xF000;value2"/>
+```
+
+### FirefoxHome.Widgets.Enabled (Firefox Home > Widgets > Widgets)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxHome~FirefoxHome_Widgets/FirefoxHome_Widgets_Enabled
 ```
 
 **Value:**
