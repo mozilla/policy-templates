@@ -758,6 +758,18 @@
 		<key>Locked</key>
 		<true/>
 	</dict>
+	<key>RelaunchRequired</key>
+	<dict>
+		<key>NotificationPeriodHours</key>
+		<integer>24</integer>
+		<key>RestartTimeOfDay</key>
+		<dict>
+			<key>Hour</key>
+			<integer>2</integer>
+			<key>Minute</key>
+			<integer>42</integer>
+		</dict>
+	</dict>
 	<key>RequestedLocales</key>
 	<array>
 		<string>de</string>
