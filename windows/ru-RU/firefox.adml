@@ -1575,6 +1575,14 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="FirefoxHome_Widgets_Blocked_Explain">Список идентификаторов виджетов, которые отключаются по отдельности на странице новой вкладки. Заблокированные виджеты всегда закреплены, независимо от того, задана ли политика «Locked», поэтому пользователь не может включить их снова.
 
 Допустимые идентификаторы: clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks и weather.</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Включить онлайн-предложения</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">Если эта политика включена, Firefox Suggest получает предложения по мере ввода текста пользователем.
+
+Если эта политика отключена, Firefox Suggest ограничивается предложениями, сохранёнными локально.
+
+Если эта политика не настроена, применяется настройка Firefox по умолчанию.
+
+Этот параметр заменяет устаревший параметр «Улучшить работу Firefox Suggest».</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
