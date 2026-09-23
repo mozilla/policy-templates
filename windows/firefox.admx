@@ -4681,7 +4681,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy name="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly)" explainText="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop" valueName="PlainTextEnabled">
+    <policy name="ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly)" explainText="$(string.ContentAnalysis_InterceptionPoints_DragAndDrop_PlainTextOnly_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\DragAndDrop" valueName="PlainTextOnly">
       <parentCategory ref="InterceptionPoints_DragAndDrop"/>
       <supportedOn ref="SUPPORTED_FF138_ONLY"/>
       <enabledValue>
