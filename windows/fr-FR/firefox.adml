@@ -1580,6 +1580,10 @@ Ce paramètre suit la stratégie « Locked » de la page d’accueil de Firefox.
       <string id="FirefoxHome_Widgets_Blocked_Explain">Une liste d’identifiants de widgets à désactiver individuellement sur la page Nouvel onglet. Les widgets bloqués sont toujours verrouillés, que « Locked » soit défini ou non, l’utilisateur ne peut donc pas les réactiver.
 
 Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks et weather.</string>
+      <string id="ContentAnalysis_MaxConnectionsCount">Nombre maximal de connexions</string>
+      <string id="ContentAnalysis_MaxConnectionsCount_Explain">Si cette stratégie est activée, elle définit le nombre maximal de connexions simultanées à l’agent DLP. Pour des raisons de stabilité, les valeurs supérieures à 256 sont ignorées.
+
+Si cette stratégie est désactivée ou non configurée, la valeur par défaut de Firefox, 32, s’applique.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
