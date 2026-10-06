@@ -1580,6 +1580,14 @@ Ce paramètre suit la stratégie « Locked » de la page d’accueil de Firefox.
       <string id="FirefoxHome_Widgets_Blocked_Explain">Une liste d’identifiants de widgets à désactiver individuellement sur la page Nouvel onglet. Les widgets bloqués sont toujours verrouillés, que « Locked » soit défini ou non, l’utilisateur ne peut donc pas les réactiver.
 
 Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks et weather.</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Activer les suggestions en ligne</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">Si cette stratégie est activée, Firefox Suggest récupère des suggestions à mesure que l’utilisateur saisit du texte.
+
+Si cette stratégie est désactivée, Firefox Suggest se limite aux suggestions stockées localement.
+
+Si cette stratégie n’est pas configurée, le paramètre par défaut de Firefox s’applique.
+
+Ce paramètre remplace le paramètre obsolète « Améliorer l’expérience Firefox Suggest ».</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

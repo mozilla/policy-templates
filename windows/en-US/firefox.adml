@@ -1573,6 +1573,14 @@ This setting follows the Firefox Home "Locked" policy.</string>
       <string id="FirefoxHome_Widgets_Blocked_Explain">A list of widget ids to turn off individually on the new tab page. Blocked widgets are always locked, whether or not "Locked" is set, so the user cannot turn them back on.
 
 Valid ids are clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, recentSearches, sportsWidget, stocks and weather.</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Enable online suggestions</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">If this policy is enabled, Firefox Suggest fetches suggestions as the user types.
+
+If this policy is disabled, Firefox Suggest is limited to suggestions stored locally.
+
+If this policy is not configured, the Firefox default applies.
+
+This setting replaces the deprecated "Improve the Firefox Suggest experience" setting.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

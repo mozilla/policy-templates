@@ -5246,5 +5246,15 @@
         <list id="List" key="Software\Policies\Mozilla\Firefox\FirefoxHome\Widgets\Blocked" valuePrefix=""/>
       </elements>
     </policy>
+    <policy name="FirefoxSuggest_OnlineEnabled" class="Both" displayName="$(string.FirefoxSuggest_OnlineEnabled)" explainText="$(string.FirefoxSuggest_OnlineEnabled_Explain)" key="Software\Policies\Mozilla\Firefox\FirefoxSuggest" valueName="OnlineEnabled">
+      <parentCategory ref="FirefoxSuggest"/>
+      <supportedOn ref="SUPPORTED_FF118"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
