@@ -250,6 +250,9 @@
     <category displayName="$(string.RelaunchRequired_RestartTimeOfDay_group)" name="RelaunchRequired_RestartTimeOfDay">
       <parentCategory ref="RelaunchRequired"/>
     </category>
+    <category displayName="$(string.ClearOnShutdown_group)" name="ClearOnShutdown">
+      <parentCategory ref="firefox"/>
+    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -5296,6 +5299,73 @@
       <supportedOn ref="SUPPORTED_FF71"/>
       <elements>
         <text id="SearchEngines_DefaultPrivate" valueName="DefaultPrivate" required="true"/>
+      </elements>
+    </policy>
+    <policy name="ClearOnShutdown_All" class="Both" displayName="$(string.ClearOnShutdown_All)" explainText="$(string.ClearOnShutdown_All_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="ClearOnShutdown">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ClearOnShutdown_BrowsingHistoryAndDownloads" class="Both" displayName="$(string.ClearOnShutdown_BrowsingHistoryAndDownloads)" explainText="$(string.ClearOnShutdown_BrowsingHistoryAndDownloads_Explain)" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown" valueName="BrowsingHistoryAndDownloads">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ClearOnShutdown_CookiesAndStorage" class="Both" displayName="$(string.ClearOnShutdown_CookiesAndStorage)" explainText="$(string.ClearOnShutdown_CookiesAndStorage_Explain)" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown" valueName="CookiesAndStorage">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ClearOnShutdown_Cache" class="Both" displayName="$(string.ClearOnShutdown_Cache)" explainText="$(string.ClearOnShutdown_Cache_Explain)" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown" valueName="Cache">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ClearOnShutdown_FormData" class="Both" displayName="$(string.ClearOnShutdown_FormData)" explainText="$(string.ClearOnShutdown_FormData_Explain)" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown" valueName="FormData">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ClearOnShutdown_SiteSettings" class="Both" displayName="$(string.ClearOnShutdown_SiteSettings)" explainText="$(string.ClearOnShutdown_SiteSettings_Explain)" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown" valueName="SiteSettings">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ClearOnShutdown_Exceptions" class="Both" displayName="$(string.ClearOnShutdown_Exceptions)" explainText="$(string.ClearOnShutdown_Exceptions_Explain)" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown" presentation="$(presentation.Permissions)">
+      <parentCategory ref="ClearOnShutdown"/>
+      <supportedOn ref="SUPPORTED_FF158"/>
+      <elements>
+        <list id="Permissions" key="Software\Policies\Mozilla\Firefox\ClearOnShutdown\Exceptions" valuePrefix=""/>
       </elements>
     </policy>
   </policies>

@@ -1617,6 +1617,47 @@ Ce paramètre remplace le paramètre obsolète « Améliorer l’expérience Fir
       <string id="SearchEngines_DefaultPrivate_Explain">Si cette stratégie est activée, le moteur de recherche indiqué est utilisé par défaut dans les fenêtres de navigation privée. Le nom doit correspondre exactement à un moteur de recherche disponible.
 
 Si cette stratégie est désactivée ou non configurée, les fenêtres de navigation privée utilisent le même moteur de recherche par défaut que les fenêtres normales.</string>
+      <string id="ClearOnShutdown_group">Effacer à la fermeture</string>
+      <string id="ClearOnShutdown_All">Effacer toutes les données à la fermeture de Firefox</string>
+      <string id="ClearOnShutdown_All_Explain">Si cette stratégie est activée, toutes les catégories de données sont effacées à la fermeture de Firefox et l’utilisateur ne peut pas le modifier.
+
+Si cette stratégie est désactivée, rien n’est effacé à la fermeture de Firefox et l’utilisateur ne peut pas activer l’effacement.
+
+Si cette stratégie n’est pas configurée, l’utilisateur décide de ce qui est effacé.
+
+Remarque : si vous configurez l’une des catégories individuelles de cette section, elle est prioritaire et ce paramètre est ignoré.</string>
+      <string id="ClearOnShutdown_BrowsingHistoryAndDownloads">Historique de navigation et téléchargements</string>
+      <string id="ClearOnShutdown_BrowsingHistoryAndDownloads_Explain">Si cette stratégie est activée, historique de navigation et téléchargements sont effacés à la fermeture de Firefox.
+
+Si cette stratégie est désactivée, historique de navigation et téléchargements ne sont pas effacés à la fermeture de Firefox.
+
+Si cette stratégie n’est pas configurée, l’utilisateur décide. Seules les catégories que vous configurez sont imposées.</string>
+      <string id="ClearOnShutdown_CookiesAndStorage">Cookies et données de site</string>
+      <string id="ClearOnShutdown_CookiesAndStorage_Explain">Si cette stratégie est activée, cookies et données de site sont effacés à la fermeture de Firefox.
+
+Si cette stratégie est désactivée, cookies et données de site ne sont pas effacés à la fermeture de Firefox.
+
+Si cette stratégie n’est pas configurée, l’utilisateur décide. Seules les catégories que vous configurez sont imposées.</string>
+      <string id="ClearOnShutdown_Cache">Cache</string>
+      <string id="ClearOnShutdown_Cache_Explain">Si cette stratégie est activée, cache sont effacés à la fermeture de Firefox.
+
+Si cette stratégie est désactivée, cache ne sont pas effacés à la fermeture de Firefox.
+
+Si cette stratégie n’est pas configurée, l’utilisateur décide. Seules les catégories que vous configurez sont imposées.</string>
+      <string id="ClearOnShutdown_FormData">Données de formulaire</string>
+      <string id="ClearOnShutdown_FormData_Explain">Si cette stratégie est activée, données de formulaire sont effacés à la fermeture de Firefox.
+
+Si cette stratégie est désactivée, données de formulaire ne sont pas effacés à la fermeture de Firefox.
+
+Si cette stratégie n’est pas configurée, l’utilisateur décide. Seules les catégories que vous configurez sont imposées.</string>
+      <string id="ClearOnShutdown_SiteSettings">Paramètres des sites</string>
+      <string id="ClearOnShutdown_SiteSettings_Explain">Si cette stratégie est activée, paramètres des sites sont effacés à la fermeture de Firefox.
+
+Si cette stratégie est désactivée, paramètres des sites ne sont pas effacés à la fermeture de Firefox.
+
+Si cette stratégie n’est pas configurée, l’utilisateur décide. Seules les catégories que vous configurez sont imposées.</string>
+      <string id="ClearOnShutdown_Exceptions">Exceptions</string>
+      <string id="ClearOnShutdown_Exceptions_Explain">Une liste d’origines dont les données sont conservées à la fermeture de Firefox. Les origines doivent inclure le protocole http ou https.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

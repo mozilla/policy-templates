@@ -77,6 +77,14 @@
     "Certificates": {
       "Install": ["cert1.der", "/home/username/cert2.pem"]
     },
+    "ClearOnShutdown": {
+      "BrowsingHistoryAndDownloads": true | false,
+      "CookiesAndStorage": true | false,
+      "Cache": true | false,
+      "FormData": true | false,
+      "SiteSettings": true | false,
+      "Exceptions": ["https://example.com"]
+    },
     "CNSA2KeyAgreementEnabled": true | false,
     "Containers": {
       "Default": [

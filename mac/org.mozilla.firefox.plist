@@ -158,6 +158,23 @@
 			<string>cert2.pem</string>
 		</array>
 	</dict>
+	<key>ClearOnShutdown</key>
+	<dict>
+		<key>BrowsingHistoryAndDownloads</key>
+		<true/>
+		<key>CookiesAndStorage</key>
+		<true/>
+		<key>Cache</key>
+		<true/>
+		<key>FormData</key>
+		<true/>
+		<key>SiteSettings</key>
+		<true/>
+		<key>Exceptions</key>
+		<array>
+			<string>https://example.com</string>
+		</array>
+	</dict>
 	<key>CNSA2KeyAgreementEnabled</key>
 	<true/>
 	<key>Default</key>

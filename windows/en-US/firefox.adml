@@ -1610,6 +1610,47 @@ This setting replaces the deprecated "Improve the Firefox Suggest experience" se
       <string id="SearchEngines_DefaultPrivate_Explain">If this policy is enabled, the named search engine is used as the default in private browsing windows. The name must match an available search engine exactly.
 
 If this policy is disabled or not configured, private browsing windows use the same default search engine as normal windows.</string>
+      <string id="ClearOnShutdown_group">Clear on Shutdown</string>
+      <string id="ClearOnShutdown_All">Clear all data when Firefox closes</string>
+      <string id="ClearOnShutdown_All_Explain">If this policy is enabled, all of the data categories are cleared when Firefox closes and the user cannot change that.
+
+If this policy is disabled, nothing is cleared when Firefox closes and the user cannot turn clearing on.
+
+If this policy is not configured, the user controls what is cleared.
+
+Note: If you configure any of the individual categories in this section, they take precedence and this setting is ignored.</string>
+      <string id="ClearOnShutdown_BrowsingHistoryAndDownloads">Browsing history and downloads</string>
+      <string id="ClearOnShutdown_BrowsingHistoryAndDownloads_Explain">If this policy is enabled, browsing history and downloads is cleared when Firefox closes.
+
+If this policy is disabled, browsing history and downloads is not cleared when Firefox closes.
+
+If this policy is not configured, the user controls whether browsing history and downloads is cleared. Only the categories you configure are enforced.</string>
+      <string id="ClearOnShutdown_CookiesAndStorage">Cookies and site storage</string>
+      <string id="ClearOnShutdown_CookiesAndStorage_Explain">If this policy is enabled, cookies and site storage is cleared when Firefox closes.
+
+If this policy is disabled, cookies and site storage is not cleared when Firefox closes.
+
+If this policy is not configured, the user controls whether cookies and site storage is cleared. Only the categories you configure are enforced.</string>
+      <string id="ClearOnShutdown_Cache">Cache</string>
+      <string id="ClearOnShutdown_Cache_Explain">If this policy is enabled, cache is cleared when Firefox closes.
+
+If this policy is disabled, cache is not cleared when Firefox closes.
+
+If this policy is not configured, the user controls whether cache is cleared. Only the categories you configure are enforced.</string>
+      <string id="ClearOnShutdown_FormData">Form data</string>
+      <string id="ClearOnShutdown_FormData_Explain">If this policy is enabled, form data is cleared when Firefox closes.
+
+If this policy is disabled, form data is not cleared when Firefox closes.
+
+If this policy is not configured, the user controls whether form data is cleared. Only the categories you configure are enforced.</string>
+      <string id="ClearOnShutdown_SiteSettings">Site settings</string>
+      <string id="ClearOnShutdown_SiteSettings_Explain">If this policy is enabled, site settings is cleared when Firefox closes.
+
+If this policy is disabled, site settings is not cleared when Firefox closes.
+
+If this policy is not configured, the user controls whether site settings is cleared. Only the categories you configure are enforced.</string>
+      <string id="ClearOnShutdown_Exceptions">Exceptions</string>
+      <string id="ClearOnShutdown_Exceptions_Explain">A list of origins whose data is kept when Firefox closes. Origins must include the http or https protocol.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
