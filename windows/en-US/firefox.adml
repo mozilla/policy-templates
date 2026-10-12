@@ -1605,6 +1605,10 @@ If this policy is disabled, Firefox Suggest is limited to suggestions stored loc
 If this policy is not configured, the Firefox default applies.
 
 This setting replaces the deprecated "Improve the Firefox Suggest experience" setting.</string>
+      <string id="SearchEngines_DefaultPrivate">Default search engine for private browsing</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">If this policy is enabled, the named search engine is used as the default in private browsing windows. The name must match an available search engine exactly.
+
+If this policy is disabled or not configured, private browsing windows use the same default search engine as normal windows.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1855,6 +1859,11 @@ This setting replaces the deprecated "Improve the Firefox Suggest experience" se
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -1612,6 +1612,10 @@ Si cette stratégie est désactivée, Firefox Suggest se limite aux suggestions 
 Si cette stratégie n’est pas configurée, le paramètre par défaut de Firefox s’applique.
 
 Ce paramètre remplace le paramètre obsolète « Améliorer l’expérience Firefox Suggest ».</string>
+      <string id="SearchEngines_DefaultPrivate">Moteur de recherche par défaut pour la navigation privée</string>
+      <string id="SearchEngines_DefaultPrivate_Explain">Si cette stratégie est activée, le moteur de recherche indiqué est utilisé par défaut dans les fenêtres de navigation privée. Le nom doit correspondre exactement à un moteur de recherche disponible.
+
+Si cette stratégie est désactivée ou non configurée, les fenêtres de navigation privée utilisent le même moteur de recherche par défaut que les fenêtres normales.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
@@ -1862,6 +1866,11 @@ Ce paramètre remplace le paramètre obsolète « Améliorer l’expérience Fir
       </presentation>
       <presentation id="AIControls_Value">
         <dropdownList refId="AIControls_Value"/>
+      </presentation>
+      <presentation id="SearchEngines_DefaultPrivate">
+        <textBox refId="SearchEngines_DefaultPrivate">
+          <label/>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
