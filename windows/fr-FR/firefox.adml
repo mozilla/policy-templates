@@ -1150,10 +1150,12 @@ Si cette stratégie n'est pas configurée, vous recevrez des suggestions de Fire
 Si cette stratégie est désactivée, vous ne recevrez pas ces suggestions.
 
 Si cette stratégie n'est pas configurée, vous recevrez des suggestions sponsorisées occasionnelles.</string>
-      <string id="FirefoxSuggest_ImproveSuggest">Améliorer l'expérience Firefox Suggest</string>
-      <string id="FirefoxSuggest_ImproveSuggest_Explain">Si cette stratégie est activée, vous contribuerez à créer une expérience de recherche plus riche en permettant à Mozilla de traiter vos requêtes de recherche.
+      <string id="FirefoxSuggest_ImproveSuggest">Améliorer l’expérience Firefox Suggest (Obsolète)</string>
+      <string id="FirefoxSuggest_ImproveSuggest_Explain">Cette stratégie est obsolète. Utilisez plutôt « Activer les suggestions en ligne ». Si les deux sont définies, « Activer les suggestions en ligne » est prioritaire.
 
-Si cette stratégie est désactivée ou non configurée, vous n'autorisez pas Mozilla à traiter vos requêtes de recherche.</string>
+Si cette stratégie est activée, vous contribuerez à créer une expérience de recherche plus riche en autorisant Mozilla à traiter vos requêtes de recherche.
+
+Si cette stratégie est désactivée ou non configurée, vous n’autorisez pas Mozilla à traiter vos requêtes de recherche.</string>
       <string id="FirefoxSuggest_Locked">Ne pas autoriser la modification des préférences</string>
       <string id="FirefoxSuggest_Locked_Explain">Si cette stratégie est activée, les préférences de Firefox Suggest ne peuvent pas être modifiées par l'utilisateur.
 
@@ -1602,6 +1604,14 @@ Si cette stratégie est désactivée ou non configurée, le paramètre par défa
       <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">Si cette stratégie est activée, le redémarrage requis est planifié à cette minute, entre 0 et 59.
 
 Si cette stratégie est désactivée ou non configurée, le paramètre par défaut de Firefox s’applique.</string>
+      <string id="FirefoxSuggest_OnlineEnabled">Activer les suggestions en ligne</string>
+      <string id="FirefoxSuggest_OnlineEnabled_Explain">Si cette stratégie est activée, Firefox Suggest récupère des suggestions à mesure que l’utilisateur saisit du texte.
+
+Si cette stratégie est désactivée, Firefox Suggest se limite aux suggestions stockées localement.
+
+Si cette stratégie n’est pas configurée, le paramètre par défaut de Firefox s’applique.
+
+Ce paramètre remplace le paramètre obsolète « Améliorer l’expérience Firefox Suggest ».</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
