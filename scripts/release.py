@@ -82,7 +82,12 @@ def preflight():
                     + git('status', '--short'))
 
     print('Fetching origin...')
-    git('fetch', 'origin', '--tags', '--prune')
+    # --force matters. The release workflow re-points each tag at the version-bump
+    # commit it creates, so the local tag this script pushed is left one commit
+    # behind origin's. Without --force, git refuses to update it ("would clobber
+    # existing tag"), fails the whole fetch, and blocks every later release.
+    # Origin is authoritative for released tags, so take its version.
+    git('fetch', 'origin', '--tags', '--force', '--prune')
 
     ahead = git('rev-list', '--count', 'origin/master..HEAD')
     behind = git('rev-list', '--count', 'HEAD..origin/master')
