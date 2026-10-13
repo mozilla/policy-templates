@@ -84,12 +84,23 @@ jobs:
         run: |
           zip -r "policy_templates_${GITHUB_REF_NAME}.zip" docs/ mac/ windows/ linux/ LICENSE
 
+      # Reads the live Firefox versions from product-details so the title names
+      # the releases this build goes with, rather than hard-coding anything.
+      # Falls back to a version-only title if that fetch fails, so a network
+      # blip can't break a release.
+      - name: Compose the release title
+        id: title
+        run: |
+          TITLE="$(python3 scripts/release_title.py "${{ steps.version.outputs.version }}")"
+          echo "Release title: $TITLE"
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release create "${GITHUB_REF_NAME}" \
-            --title "Firefox Policy Templates Version ${{ steps.version.outputs.version }}" \
+            --title "${{ steps.title.outputs.title }}" \
             --notes-file .github/release-notes-template.md \
             --draft \
             "policy_templates_${GITHUB_REF_NAME}.zip"
