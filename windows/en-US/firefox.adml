@@ -1618,6 +1618,10 @@ If this policy is enabled or not configured, clipboard copy operations will use 
       <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed on clipboard copy, which some DLP agents may not expect.
 
 If this policy is enabled or not configured, only the text/plain format will be analyzed on clipboard copy.</string>
+      <string id="GenerativeAI_SmartWindow">Smart Window</string>
+      <string id="GenerativeAI_SmartWindow_Explain">If this policy is disabled, Smart Window is not available.
+
+If this policy is enabled or not configured, Smart Window is available.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

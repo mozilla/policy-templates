@@ -1620,6 +1620,10 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">Если эта политика отключена, при копировании анализируются все форматы, чего некоторые агенты DLP могут не ожидать.
 
 Если эта политика включена или не настроена, при копировании анализируется только формат text/plain.</string>
+      <string id="GenerativeAI_SmartWindow">Smart Window</string>
+      <string id="GenerativeAI_SmartWindow_Explain">Если эта политика отключена, Smart Window недоступно.
+
+Если эта политика включена или не настроена, Smart Window доступно.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

@@ -201,6 +201,7 @@
     "GenerativeAI": {
       "Enabled": true | false,
       "Chatbot": true | false,
+      "SmartWindow": true | false,
       "LinkPreviews": true | false,
       "TabGroups": true | false,
       "Locked": true | false

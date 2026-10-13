@@ -1625,6 +1625,10 @@ Si cette stratégie est activée ou non configurée, les copies dans le presse-p
       <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">Si cette stratégie est désactivée, tous les formats sont analysés lors de la copie, ce à quoi certains agents DLP peuvent ne pas s’attendre.
 
 Si cette stratégie est activée ou non configurée, seul le format text/plain est analysé lors de la copie.</string>
+      <string id="GenerativeAI_SmartWindow">Smart Window</string>
+      <string id="GenerativeAI_SmartWindow_Explain">Si cette stratégie est désactivée, Smart Window n’est pas disponible.
+
+Si cette stratégie est activée ou non configurée, Smart Window est disponible.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
