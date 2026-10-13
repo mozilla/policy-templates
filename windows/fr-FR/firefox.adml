@@ -93,6 +93,7 @@
       <string id="SUPPORTED_FF154">Firefox 154 ou supérieur, Firefox 153 ESR ou supérieur</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 ou supérieur</string>
       <string id="SUPPORTED_FF156_ONLY">Firefox 156 ou supérieur</string>
+      <string id="SUPPORTED_FF158_ONLY">Firefox 158 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Caméra</string>
@@ -1615,6 +1616,15 @@ Ce paramètre remplace le paramètre obsolète « Améliorer l’expérience Fir
       <string id="SearchEngines_DefaultPrivate_Explain">Si cette stratégie est activée, le moteur de recherche indiqué est utilisé par défaut dans les fenêtres de navigation privée. Le nom doit correspondre exactement à un moteur de recherche disponible.
 
 Si cette stratégie est désactivée ou non configurée, les fenêtres de navigation privée utilisent le même moteur de recherche par défaut que les fenêtres normales.</string>
+      <string id="InterceptionPoints_ClipboardCopy_group">Copie dans le presse-papiers</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy">Activé</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_Explain">Si cette stratégie est désactivée, les copies dans le presse-papiers n’utilisent pas la DLP.
+
+Si cette stratégie est activée ou non configurée, les copies dans le presse-papiers utilisent la DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly">Texte brut uniquement</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">Si cette stratégie est désactivée, tous les formats sont analysés lors de la copie, ce à quoi certains agents DLP peuvent ne pas s’attendre.
+
+Si cette stratégie est activée ou non configurée, seul le format text/plain est analysé lors de la copie.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

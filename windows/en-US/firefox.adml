@@ -93,6 +93,7 @@
       <string id="SUPPORTED_FF154">Firefox 154 or later, Firefox 153 ESR or later</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 or later</string>
       <string id="SUPPORTED_FF156_ONLY">Firefox 156 or later</string>
+      <string id="SUPPORTED_FF158_ONLY">Firefox 158 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
       <string id="Camera_group">Camera</string>
@@ -1608,6 +1609,15 @@ This setting replaces the deprecated "Improve the Firefox Suggest experience" se
       <string id="SearchEngines_DefaultPrivate_Explain">If this policy is enabled, the named search engine is used as the default in private browsing windows. The name must match an available search engine exactly.
 
 If this policy is disabled or not configured, private browsing windows use the same default search engine as normal windows.</string>
+      <string id="InterceptionPoints_ClipboardCopy_group">Clipboard Copy</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy">Enabled</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_Explain">If this policy is disabled, clipboard copy operations will not use DLP.
+
+If this policy is enabled or not configured, clipboard copy operations will use DLP.</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly">Plain Text Only</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">If this policy is disabled, all formats will be analyzed on clipboard copy, which some DLP agents may not expect.
+
+If this policy is enabled or not configured, only the text/plain format will be analyzed on clipboard copy.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
