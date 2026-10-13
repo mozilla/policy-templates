@@ -1579,13 +1579,12 @@ Valid ids are clocks, crossword, focusTimer, lists, pictureOfTheDay, privacy, re
       <string id="ContentAnalysis_MaxConnectionsCount_Explain">If this policy is enabled, it sets the maximum number of concurrent connections to the DLP agent. For stability reasons, values exceeding 256 are ignored.
 
 If this policy is disabled or not configured, the Firefox default of 32 applies.</string>
-      <string id="RelaunchRequired_group">Relaunch Required</string>
-      <string id="RelaunchRequired_RestartTimeOfDay_group">Restart Time Of Day</string>
+      <string id="RelaunchRequired_group">Required Relaunch After Update</string>
       <string id="RelaunchRequired_NotificationPeriodHours">Notification period (hours)</string>
       <string id="RelaunchRequired_NotificationPeriodHours_Explain">If this policy is enabled, users are notified at least this many hours before a required relaunch. This takes effect once an update has been downloaded or staged and is ready to install.
 
 If this policy is disabled or not configured, the Firefox default applies.</string>
-      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Restart hour</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Hour">Relaunch hour</string>
       <string id="RelaunchRequired_RestartTimeOfDay_Hour_Explain">If this policy is enabled, the required relaunch is scheduled at this hour, in 24-hour format between 0 and 23.
 
 At the scheduled time Firefox closes and reopens automatically. Tabs are restored, but the user is not prompted and cannot cancel the restart.
@@ -1593,7 +1592,7 @@ At the scheduled time Firefox closes and reopens automatically. Tabs are restore
 Note: If less than one hour remains until the scheduled time, the restart is deferred to the same time the following day.
 
 If this policy is disabled or not configured, the Firefox default applies.</string>
-      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Restart minute</string>
+      <string id="RelaunchRequired_RestartTimeOfDay_Minute">Relaunch minute</string>
       <string id="RelaunchRequired_RestartTimeOfDay_Minute_Explain">If this policy is enabled, the required relaunch is scheduled at this minute, between 0 and 59.
 
 If this policy is disabled or not configured, the Firefox default applies.</string>

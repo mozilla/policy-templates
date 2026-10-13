@@ -246,9 +246,6 @@
     <category displayName="$(string.RelaunchRequired_group)" name="RelaunchRequired">
       <parentCategory ref="firefox"/>
     </category>
-    <category displayName="$(string.RelaunchRequired_RestartTimeOfDay_group)" name="RelaunchRequired_RestartTimeOfDay">
-      <parentCategory ref="RelaunchRequired"/>
-    </category>
   </categories>
   <policies>
     <policy name="AppAutoUpdate" class="Both" displayName="$(string.AppAutoUpdate)" explainText="$(string.AppAutoUpdate_Explain)" key="Software\Policies\Mozilla\Firefox" valueName="AppAutoUpdate">
@@ -5267,14 +5264,14 @@
       </elements>
     </policy>
     <policy name="RelaunchRequired_RestartTimeOfDay_Hour" class="Both" displayName="$(string.RelaunchRequired_RestartTimeOfDay_Hour)" explainText="$(string.RelaunchRequired_RestartTimeOfDay_Hour_Explain)" key="Software\Policies\Mozilla\Firefox\RelaunchRequired\RestartTimeOfDay" presentation="$(presentation.Number)">
-      <parentCategory ref="RelaunchRequired_RestartTimeOfDay"/>
+      <parentCategory ref="RelaunchRequired"/>
       <supportedOn ref="SUPPORTED_FF150_ONLY"/>
       <elements>
         <decimal id="Number" valueName="Hour" minValue="0" maxValue="23"/>
       </elements>
     </policy>
     <policy name="RelaunchRequired_RestartTimeOfDay_Minute" class="Both" displayName="$(string.RelaunchRequired_RestartTimeOfDay_Minute)" explainText="$(string.RelaunchRequired_RestartTimeOfDay_Minute_Explain)" key="Software\Policies\Mozilla\Firefox\RelaunchRequired\RestartTimeOfDay" presentation="$(presentation.Number)">
-      <parentCategory ref="RelaunchRequired_RestartTimeOfDay"/>
+      <parentCategory ref="RelaunchRequired"/>
       <supportedOn ref="SUPPORTED_FF150_ONLY"/>
       <elements>
         <decimal id="Number" valueName="Minute" minValue="0" maxValue="59"/>

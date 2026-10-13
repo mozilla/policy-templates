@@ -1581,8 +1581,7 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="ContentAnalysis_MaxConnectionsCount_Explain">Если эта политика включена, она задаёт максимальное число одновременных подключений к агенту DLP. По причинам стабильности значения больше 256 игнорируются.
 
 Если эта политика отключена или не настроена, применяется значение Firefox по умолчанию — 32.</string>
-      <string id="RelaunchRequired_group">Требуется перезапуск</string>
-      <string id="RelaunchRequired_RestartTimeOfDay_group">Время перезапуска</string>
+      <string id="RelaunchRequired_group">Требуемый перезапуск после обновления</string>
       <string id="RelaunchRequired_NotificationPeriodHours">Период уведомления (часы)</string>
       <string id="RelaunchRequired_NotificationPeriodHours_Explain">Если эта политика включена, пользователи получают уведомление не менее чем за указанное число часов до требуемого перезапуска. Это применяется после того, как обновление загружено или подготовлено и готово к установке.
 
