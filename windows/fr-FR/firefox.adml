@@ -1586,8 +1586,7 @@ Les identifiants valides sont clocks, crossword, focusTimer, lists, pictureOfThe
       <string id="ContentAnalysis_MaxConnectionsCount_Explain">Si cette stratégie est activée, elle définit le nombre maximal de connexions simultanées à l’agent DLP. Pour des raisons de stabilité, les valeurs supérieures à 256 sont ignorées.
 
 Si cette stratégie est désactivée ou non configurée, la valeur par défaut de Firefox, 32, s’applique.</string>
-      <string id="RelaunchRequired_group">Redémarrage requis</string>
-      <string id="RelaunchRequired_RestartTimeOfDay_group">Heure du redémarrage</string>
+      <string id="RelaunchRequired_group">Redémarrage requis après une mise à jour</string>
       <string id="RelaunchRequired_NotificationPeriodHours">Délai de notification (heures)</string>
       <string id="RelaunchRequired_NotificationPeriodHours_Explain">Si cette stratégie est activée, les utilisateurs sont avertis au moins ce nombre d’heures avant un redémarrage requis. Cela s’applique dès qu’une mise à jour a été téléchargée ou préparée et qu’elle est prête à être installée.
 
