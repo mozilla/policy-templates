@@ -1,6 +1,6 @@
 # Firefox ADMX OMA-URIs for Intune
 
-Auto-generated from `windows/firefox.admx` (revision `8.3`). Do not edit by hand.
+Auto-generated from `windows/firefox.admx` (revision `8.4`). Do not edit by hand.
 
 Entries are grouped by top-level policy so a link to `docs/oma-uris.md#policyname` (lowercased) reaches the right section. Policies marked "(Deprecated)" in the ADML are omitted. Numbered families (e.g. `Bookmark01`-`Bookmark50`) are collapsed into a single entry with an `NN` placeholder in the URI.
 
@@ -899,6 +899,34 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 <enabled/> or <disabled/>
 ```
 
+### ContentAnalysis.InterceptionPoints.ClipboardCopy.Enabled (Content Analysis (DLP) > Interception Points > Clipboard Copy > Enabled)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~InterceptionPoints_ClipboardCopy/ContentAnalysis_InterceptionPoints_ClipboardCopy
+```
+
+**Value:**
+
+```
+<enabled/> or <disabled/>
+```
+
+### ContentAnalysis.InterceptionPoints.ClipboardCopy.PlainTextOnly (Content Analysis (DLP) > Interception Points > Clipboard Copy > Plain Text Only)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis~InterceptionPoints~InterceptionPoints_ClipboardCopy/ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly
+```
+
+**Value:**
+
+```
+<enabled/> or <disabled/>
+```
+
 ### ContentAnalysis.InterceptionPoints.Download.Enabled (Content Analysis (DLP) > Interception Points > Download)
 
 **OMA-URI:**
@@ -927,7 +955,7 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 <enabled/> or <disabled/>
 ```
 
-### ContentAnalysis.InterceptionPoints.DragAndDrop.PlainTextEnabled (Content Analysis (DLP) > Interception Points > Drag And Drop > Plain Text Only)
+### ContentAnalysis.InterceptionPoints.DragAndDrop.PlainTextOnly (Content Analysis (DLP) > Interception Points > Drag And Drop > Plain Text Only)
 
 **OMA-URI:**
 
@@ -981,6 +1009,21 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 <enabled/> or <disabled/>
+```
+
+### ContentAnalysis.MaxConnectionsCount (Content Analysis (DLP) > Maximum connections)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~ContentAnalysis/ContentAnalysis_MaxConnectionsCount
+```
+
+**Value:**
+
+```
+<enabled/>
+<data id="Number" value="0"/>
 ```
 
 ### ContentAnalysis.PipePathName (Content Analysis (DLP) > Pipe Path Name)
@@ -2532,12 +2575,12 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 [Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/firefoxsuggest/)
 
-### FirefoxSuggest.ImproveSuggest (Firefox Suggest (US only) > Improve the Firefox Suggest experience)
+### FirefoxSuggest.Locked (Firefox Suggest (US only) > Do not allow preferences to be changed)
 
 **OMA-URI:**
 
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_ImproveSuggest
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_Locked
 ```
 
 **Value:**
@@ -2546,12 +2589,12 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 <enabled/> or <disabled/>
 ```
 
-### FirefoxSuggest.Locked (Firefox Suggest (US only) > Do not allow preferences to be changed)
+### FirefoxSuggest.OnlineEnabled (Firefox Suggest (US only) > Enable online suggestions)
 
 **OMA-URI:**
 
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_Locked
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~FirefoxSuggest/FirefoxSuggest_OnlineEnabled
 ```
 
 **Value:**
@@ -2702,6 +2745,20 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 
 ```
 ./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_Locked
+```
+
+**Value:**
+
+```
+<enabled/> or <disabled/>
+```
+
+### GenerativeAI.SmartWindow (Generative AI > Smart Window)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~GenerativeAI/GenerativeAI_SmartWindow
 ```
 
 **Value:**
@@ -4130,6 +4187,55 @@ Replace `NN` with the numeric suffix from `Bookmark01` through `Bookmark50` (50 
 <enabled/> or <disabled/>
 ```
 
+## RelaunchRequired
+
+[Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/relaunchrequired/)
+
+### RelaunchRequired.NotificationPeriodHours (Required Relaunch After Update > Notification period (hours))
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~RelaunchRequired/RelaunchRequired_NotificationPeriodHours
+```
+
+**Value:**
+
+```
+<enabled/>
+<data id="Number" value="0"/>
+```
+
+### RelaunchRequired.RestartTimeOfDay.Hour (Required Relaunch After Update > Relaunch hour)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~RelaunchRequired/RelaunchRequired_RestartTimeOfDay_Hour
+```
+
+**Value:**
+
+```
+<enabled/>
+<data id="Number" value="0"/>
+```
+
+### RelaunchRequired.RestartTimeOfDay.Minute (Required Relaunch After Update > Relaunch minute)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~RelaunchRequired/RelaunchRequired_RestartTimeOfDay_Minute
+```
+
+**Value:**
+
+```
+<enabled/>
+<data id="Number" value="0"/>
+```
+
 ## RequestedLocales
 
 [Full policy documentation](https://firefox-admin-docs.mozilla.org/reference/policies/requestedlocales/)
@@ -4340,6 +4446,21 @@ Replace `NN` with the numeric suffix from `SearchEngines_1` through `SearchEngin
 ```
 <enabled/>
 <data id="SearchEngines_Default" value="STRING"/>
+```
+
+### SearchEngines.DefaultPrivate (Search > Default search engine for private browsing)
+
+**OMA-URI:**
+
+```
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Search/SearchEngines_DefaultPrivate
+```
+
+**Value:**
+
+```
+<enabled/>
+<data id="SearchEngines_DefaultPrivate" value="STRING"/>
 ```
 
 ### SearchEngines.PreventInstalls (Search > Prevent Search Engine Installs)
