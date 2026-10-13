@@ -94,6 +94,7 @@
       <string id="SUPPORTED_FF154">Firefox 154 или более поздние версии, Firefox 153 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 или более поздние версии</string>
       <string id="SUPPORTED_FF156_ONLY">Firefox 156 или более поздние версии</string>
+      <string id="SUPPORTED_FF158_ONLY">Firefox 158 или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
       <string id="Camera_group">Камера</string>
@@ -1610,6 +1611,15 @@ https://firefox-admin-docs.mozilla.org/reference/policies/preferences/.</string>
       <string id="SearchEngines_DefaultPrivate_Explain">Если эта политика включена, указанная поисковая система используется по умолчанию в приватных окнах. Имя должно точно совпадать с одной из доступных поисковых систем.
 
 Если эта политика отключена или не настроена, в приватных окнах используется та же поисковая система по умолчанию, что и в обычных окнах.</string>
+      <string id="InterceptionPoints_ClipboardCopy_group">Копирование в буфер обмена</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy">Включено</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_Explain">Если эта политика отключена, при копировании в буфер обмена DLP не используется.
+
+Если эта политика включена или не настроена, при копировании в буфер обмена DLP используется.</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly">Только обычный текст</string>
+      <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">Если эта политика отключена, при копировании анализируются все форматы, чего некоторые агенты DLP могут не ожидать.
+
+Если эта политика включена или не настроена, при копировании анализируется только формат text/plain.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">

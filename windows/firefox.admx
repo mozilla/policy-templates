@@ -95,6 +95,7 @@
       <definition name="SUPPORTED_FF154" displayName="$(string.SUPPORTED_FF154)"/>
       <definition name="SUPPORTED_FF155_ONLY" displayName="$(string.SUPPORTED_FF155_ONLY)"/>
       <definition name="SUPPORTED_FF156_ONLY" displayName="$(string.SUPPORTED_FF156_ONLY)"/>
+      <definition name="SUPPORTED_FF158_ONLY" displayName="$(string.SUPPORTED_FF158_ONLY)"/>
     </definitions>
   </supportedOn>
   <categories>
@@ -245,6 +246,9 @@
     </category>
     <category displayName="$(string.RelaunchRequired_group)" name="RelaunchRequired">
       <parentCategory ref="firefox"/>
+    </category>
+    <category displayName="$(string.InterceptionPoints_ClipboardCopy_group)" name="InterceptionPoints_ClipboardCopy">
+      <parentCategory ref="InterceptionPoints"/>
     </category>
   </categories>
   <policies>
@@ -5293,6 +5297,26 @@
       <elements>
         <text id="SearchEngines_DefaultPrivate" valueName="DefaultPrivate" required="true"/>
       </elements>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_ClipboardCopy" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_ClipboardCopy)" explainText="$(string.ContentAnalysis_InterceptionPoints_ClipboardCopy_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\ClipboardCopy" valueName="Enabled">
+      <parentCategory ref="InterceptionPoints_ClipboardCopy"/>
+      <supportedOn ref="SUPPORTED_FF158_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly" class="Both" displayName="$(string.ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly)" explainText="$(string.ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain)" key="Software\Policies\Mozilla\Firefox\ContentAnalysis\InterceptionPoints\ClipboardCopy" valueName="PlainTextOnly">
+      <parentCategory ref="InterceptionPoints_ClipboardCopy"/>
+      <supportedOn ref="SUPPORTED_FF158_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>
