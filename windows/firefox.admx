@@ -5318,5 +5318,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy name="GenerativeAI_SmartWindow" class="Both" displayName="$(string.GenerativeAI_SmartWindow)" explainText="$(string.GenerativeAI_SmartWindow_Explain)" key="Software\Policies\Mozilla\Firefox\GenerativeAI" valueName="SmartWindow">
+      <parentCategory ref="GenerativeAI"/>
+      <supportedOn ref="SUPPORTED_FF150_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

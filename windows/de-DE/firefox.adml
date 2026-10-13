@@ -1621,6 +1621,10 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird DL
       <string id="ContentAnalysis_InterceptionPoints_ClipboardCopy_PlainTextOnly_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden beim Kopieren alle Formate analysiert, womit einige DLP-Agenten möglicherweise nicht rechnen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird beim Kopieren nur das Format text/plain analysiert.</string>
+      <string id="GenerativeAI_SmartWindow">Smart Window</string>
+      <string id="GenerativeAI_SmartWindow_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist Smart Window nicht verfügbar.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist Smart Window verfügbar.</string>
     </stringTable>
     <presentationTable>
       <presentation id="AppUpdateURL">
