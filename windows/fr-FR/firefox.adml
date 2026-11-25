@@ -93,6 +93,7 @@
       <string id="SUPPORTED_FF154">Firefox 154 ou supérieur, Firefox 153 ESR ou supérieur</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 ou supérieur</string>
       <string id="SUPPORTED_FF156_ONLY">Firefox 156 ou supérieur</string>
+      <string id="SUPPORTED_FF157_ONLY">Firefox 157 ou supérieur</string>
       <string id="SUPPORTED_FF158_ONLY">Firefox 158 ou supérieur</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -1409,6 +1410,7 @@ Si cette stratégie est activée ou non configurée, le VPN intégré (Protectio
       <string id="AIControls_LinkPreviewKeyPoints_group">Points clés dans les aperçus de liens</string>
       <string id="AIControls_SidebarChatbot_group">Chatbot dans la barre latérale</string>
       <string id="AIControls_SmartWindow_group">Fenêtre intelligente</string>
+      <string id="AIControls_SpeechRecognition_group">Reconnaissance vocale</string>
       <string id="AIControls_Default_Value_Explain">Contrôle l’état par défaut des fonctionnalités IA non explicitement configurées par d’autres stratégies AIControls.
 
 Si défini sur "available", les fonctionnalités IA non listées sont accessibles aux utilisateurs et peuvent être activées ou désactivées.
@@ -1465,6 +1467,14 @@ Si défini sur "blocked", la fenêtre intelligente est désactivée et les utili
       <string id="AIControls_SmartWindow_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de fenêtre intelligente.
 
 Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de fenêtre intelligente.</string>
+      <string id="AIControls_SpeechRecognition_Value_Explain">Contrôle la reconnaissance vocale locale alimentée par l’IA.
+
+Si défini sur "available", la reconnaissance vocale est accessible aux utilisateurs et peut être activée ou désactivée.
+
+Si défini sur "blocked", la reconnaissance vocale est désactivée et les utilisateurs ne verront pas cette fonctionnalité. Pour l’IA locale, les modèles déjà téléchargés sont supprimés.</string>
+      <string id="AIControls_SpeechRecognition_Locked_Explain">Si cette stratégie est activée, l’utilisateur ne peut pas modifier le paramètre de reconnaissance vocale.
+
+Si cette stratégie est désactivée ou non configurée, l’utilisateur peut modifier le paramètre de reconnaissance vocale.</string>
       <string id="DefaultSerialGuardSetting">Contrôler l’utilisation de l’API Web Serial</string>
       <string id="DefaultSerialGuardSetting_Explain">Si cette stratégie est activée, vous pouvez contrôler si les sites web peuvent demander l’accès aux ports série.
 

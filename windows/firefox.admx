@@ -95,6 +95,7 @@
       <definition name="SUPPORTED_FF154" displayName="$(string.SUPPORTED_FF154)"/>
       <definition name="SUPPORTED_FF155_ONLY" displayName="$(string.SUPPORTED_FF155_ONLY)"/>
       <definition name="SUPPORTED_FF156_ONLY" displayName="$(string.SUPPORTED_FF156_ONLY)"/>
+      <definition name="SUPPORTED_FF157_ONLY" displayName="$(string.SUPPORTED_FF157_ONLY)"/>
       <definition name="SUPPORTED_FF158_ONLY" displayName="$(string.SUPPORTED_FF158_ONLY)"/>
     </definitions>
   </supportedOn>
@@ -235,6 +236,9 @@
       <parentCategory ref="AIControls"/>
     </category>
     <category displayName="$(string.AIControls_SmartWindow_group)" name="SmartWindow">
+      <parentCategory ref="AIControls"/>
+    </category>
+    <category displayName="$(string.AIControls_SpeechRecognition_group)" name="SpeechRecognition">
       <parentCategory ref="AIControls"/>
     </category>
     <category displayName="$(string.LocalNetworkAccess_group)" name="LocalNetworkAccess">
@@ -5140,6 +5144,34 @@
     <policy name="SmartWindow_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_SmartWindow_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SmartWindow" valueName="Locked">
       <parentCategory ref="SmartWindow"/>
       <supportedOn ref="SUPPORTED_FF150_ONLY"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy name="SpeechRecognition_Value" class="Both" displayName="$(string.Value)" explainText="$(string.AIControls_SpeechRecognition_Value_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SpeechRecognition" presentation="$(presentation.AIControls_Value)">
+      <parentCategory ref="SpeechRecognition"/>
+      <supportedOn ref="SUPPORTED_FF157_ONLY"/>
+      <elements>
+        <enum id="AIControls_Value" valueName="Value">
+          <item displayName="$(string.AIControls_Value_available)">
+            <value>
+              <string>available</string>
+            </value>
+          </item>
+          <item displayName="$(string.AIControls_Value_blocked)">
+            <value>
+              <string>blocked</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SpeechRecognition_Locked" class="Both" displayName="$(string.Locked)" explainText="$(string.AIControls_SpeechRecognition_Locked_Explain)" key="Software\Policies\Mozilla\Firefox\AIControls\SpeechRecognition" valueName="Locked">
+      <parentCategory ref="SpeechRecognition"/>
+      <supportedOn ref="SUPPORTED_FF157_ONLY"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>

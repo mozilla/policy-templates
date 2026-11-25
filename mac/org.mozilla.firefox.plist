@@ -55,6 +55,13 @@
 			<key>Locked</key>
 			<true/>
 		</dict>
+		<key>SpeechRecognition</key>
+		<dict>
+			<key>Value</key>
+			<string>available</string>
+			<key>Locked</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>AllowedDomainsForApps</key>
 	<string>managedfirefox.com,example.com</string>

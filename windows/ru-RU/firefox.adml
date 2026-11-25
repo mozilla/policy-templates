@@ -94,6 +94,7 @@
       <string id="SUPPORTED_FF154">Firefox 154 или более поздние версии, Firefox 153 ESR или более поздние версии</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 или более поздние версии</string>
       <string id="SUPPORTED_FF156_ONLY">Firefox 156 или более поздние версии</string>
+      <string id="SUPPORTED_FF157_ONLY">Firefox 157 или более поздние версии</string>
       <string id="SUPPORTED_FF158_ONLY">Firefox 158 или более поздние версии</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Разрешения</string>
@@ -1404,6 +1405,7 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="AIControls_LinkPreviewKeyPoints_group">Ключевые точки в предпросмотрах ссылок</string>
       <string id="AIControls_SidebarChatbot_group">Чат-бот на боковой панели</string>
       <string id="AIControls_SmartWindow_group">Умное окно</string>
+      <string id="AIControls_SpeechRecognition_group">Распознавание речи</string>
       <string id="AIControls_Default_Value_Explain">Управляет состоянием по умолчанию для функций ИИ, не настроенных явно другими политиками AIControls.
 
 Если установлено "available", не указанные функции ИИ доступны пользователям и могут быть включены или отключены.
@@ -1460,6 +1462,14 @@ Mozilla рекомендует не отключать телеметрию. И�
       <string id="AIControls_SmartWindow_Locked_Explain">Если эта политика включена, пользователь не может изменить настройку умного окна.
 
 Если эта политика отключена или не настроена, пользователь может изменить настройку умного окна.</string>
+      <string id="AIControls_SpeechRecognition_Value_Explain">Управляет локальным распознаванием речи с помощью ИИ.
+
+Если установлено "available", распознавание речи доступно пользователям и может быть включено или отключено.
+
+Если установлено "blocked", распознавание речи отключено и пользователи не увидят эту функцию. Для локального ИИ уже загруженные модели удаляются.</string>
+      <string id="AIControls_SpeechRecognition_Locked_Explain">Если эта политика включена, пользователь не может изменить настройку распознавания речи.
+
+Если эта политика отключена или не настроена, пользователь может изменить настройку распознавания речи.</string>
       <string id="DefaultSerialGuardSetting">Управление использованием Web Serial API</string>
       <string id="DefaultSerialGuardSetting_Explain">Если эта политика включена, вы можете указать, могут ли веб-сайты запрашивать доступ к последовательным портам.
 

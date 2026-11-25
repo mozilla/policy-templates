@@ -93,6 +93,7 @@
       <string id="SUPPORTED_FF154">Firefox 154 or later, Firefox 153 ESR or later</string>
       <string id="SUPPORTED_FF155_ONLY">Firefox 155 or later</string>
       <string id="SUPPORTED_FF156_ONLY">Firefox 156 or later</string>
+      <string id="SUPPORTED_FF157_ONLY">Firefox 157 or later</string>
       <string id="SUPPORTED_FF158_ONLY">Firefox 158 or later</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Permissions</string>
@@ -1402,6 +1403,7 @@ If this policy is enabled or not configured, the built-in VPN (IP Protection) is
       <string id="AIControls_LinkPreviewKeyPoints_group">Key Points in Link Previews</string>
       <string id="AIControls_SidebarChatbot_group">Chatbot in Sidebar</string>
       <string id="AIControls_SmartWindow_group">Smart Window</string>
+      <string id="AIControls_SpeechRecognition_group">Speech Recognition</string>
       <string id="AIControls_Default_Value_Explain">Controls the default state for AI features not explicitly configured by other AIControls policies.
 
 If set to "available", unlisted AI features are accessible to users and can be enabled or disabled.
@@ -1458,6 +1460,14 @@ If set to "blocked", smart window is disabled and users will not see the feature
       <string id="AIControls_SmartWindow_Locked_Explain">If this policy is enabled, the user cannot change the smart window setting.
 
 If this policy is disabled or not configured, the user can change the smart window setting.</string>
+      <string id="AIControls_SpeechRecognition_Value_Explain">Controls AI-powered on-device speech recognition.
+
+If set to "available", speech recognition is accessible to users and can be enabled or disabled.
+
+If set to "blocked", speech recognition is disabled and users will not see the feature. For on-device AI, any models already downloaded are removed.</string>
+      <string id="AIControls_SpeechRecognition_Locked_Explain">If this policy is enabled, the user cannot change the speech recognition setting.
+
+If this policy is disabled or not configured, the user can change the speech recognition setting.</string>
       <string id="DefaultSerialGuardSetting">Control use of the Web Serial API</string>
       <string id="DefaultSerialGuardSetting_Explain">If this policy is enabled, you can control whether websites can request access to serial ports.
 

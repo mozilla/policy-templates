@@ -28,6 +28,10 @@
       "SmartWindow": {
         "Value": "available",
         "Locked": true | false
+      },
+      "SpeechRecognition": {
+        "Value": "available",
+        "Locked": true | false
       }
     },
     "AllowedDomainsForApps": "managedfirefox.com,example.com",
