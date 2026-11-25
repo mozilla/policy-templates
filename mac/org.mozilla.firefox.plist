@@ -261,6 +261,8 @@
 	<true/>
 	<key>DisableLaunchOnLogin</key>
 	<true/>
+	<key>DisableMacOSUserPolicies</key>
+	<true/>
 	<key>DisableMasterPasswordCreation</key>
 	<true/>
 	<key>DisablePasswordReveal</key>
